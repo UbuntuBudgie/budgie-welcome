@@ -1,0 +1,302 @@
+# 
+# Translators:
+# darabosj <darabosj@gmail.com>, 2016
+# darabosj <darabosj@gmail.com>, 2016
+# Kisbenedek Márton <kmarton815@gmail.com>, 2016
+msgid ""
+msgstr ""
+"Project-Id-Version: Ubuntu MATE Welcome\n"
+"POT-Creation-Date: 2016-02-27 12:48+0100\n"
+"PO-Revision-Date: 2016-04-05 17:49+0000\n"
+"Last-Translator: darabosj <darabosj@gmail.com>\n"
+"Language-Team: Hungarian (Hungary) (http://www.transifex.com/ubuntu-mate/ubuntu-mate-welcome/language/hu_HU/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: hu_HU\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Report-Msgid-Bugs-To : you@example.com\n"
+
+#: features.html:17
+msgid "Features"
+msgstr "Jellemzők"
+
+#: features.html:25
+msgid "Modern and Full-Featured"
+msgstr "Modern és funkciógazdag"
+
+#: features.html:26
+msgid ""
+"Ubuntu MATE is a modern computer operating system, with an attractive and "
+"easy to understand user interface. Its update manager keeps not only the "
+"operating system itself, but all of its installed applications updated to "
+"the current release. The operating system is more secure, and better "
+"supported than operating systems that come pre-installed on most home "
+"computer hardware today."
+msgstr "Az Ubuntu MATE egy modern operációs rendszer egy vonzó, könnyen használható felhasználói felülettel. A frissítéskezelője nem csak az operációs rendszert, de az összes telepített alkalmazást naprakészen tartja az aktuális kiadáshoz. Az operációs rendszer biztonságosabb és jobban támogatott, mint a legtöbb otthoni számítógépre előtelepített operációs rendszer manapság."
+
+#: features.html:36
+msgid "Pre-Configured Yet Flexible"
+msgstr "Előre beállított, mégis rugalmas"
+
+#: features.html:42
+msgid ""
+"Using Ubuntu MATE provides you with the freedom to run a complete, full-"
+"featured operating system, pre-configured with most, if not all, of the "
+"applications you will need for your daily computing - or to change anything "
+"about the way it looks, the way it works, or the applications it runs to "
+"suit your taste."
+msgstr "Az Ubuntu MATE használata biztosítja számodra egy teljes, funkció gazdag operációs rendszer futtatásának szabadságát, ami előre be van állítva a legtöbb (ha nem az összes) mindennapi számítógép használathoz szükséges alkalmazással. Megváltoztathatod a kinézetét, a működésmódját, vagy a futtatott alkalmazásokat ízlésednek megfelelően."
+
+#: features.html:51
+msgid "Built-In Security"
+msgstr "Beépített biztonság"
+
+#: features.html:57
+msgid ""
+"Ubuntu MATE is designed with security in mind. Unlike operating systems that"
+" update only once a month, Ubuntu MATE receives updates continuously. The "
+"updates include security patches for Ubuntu MATE and all of its components. "
+"Security updates for all of its installed applications are also provided on "
+"the same schedule. This ensures that you have the latest protection for all "
+"of your computer's software -- as soon as it's available!"
+msgstr "Az Ubuntu MATE-t a biztonságot szem előtt tartva tervezték. Az Ubuntu MATE folyamatosan kap frissítéseket, nem úgy, mint más operációs rendszerek, amik havonta egyszer kapnak. A frissítések biztonsági javításokat tartalmaznak a rendszerhez és minden összetevőjéhez. Ugyanolyan ütemezéssel biztosítottak a telepített alkalmazásokhoz is a frissítések. Ez biztosítja, hogy minden szoftverhez megvan a legfrissebb védelmed - amint az elérhető!"
+
+#: features.html:73
+msgid ""
+"Ubuntu MATE can get viruses and other infections... but it doesn't. Rapid "
+"and timely updates ensure that there are very few, if any threats to Linux "
+"systems like Ubuntu MATE that persist in the wild. In reality, there have "
+"been very few \"public\" infections in the last 10 years that can affect "
+"Ubuntu MATE. They are no longer a threat to anyone installing or using a "
+"modern Linux distribution today. Ubuntu MATE is designed to make it "
+"difficult for viruses, root kits and other malware to be installed and run "
+"without conscious intervention by you, the user. Even if you do accidentally"
+" invite in an infection, chances are it's designed to attack Windows and "
+"won't do much, if any damage to Ubuntu MATE."
+msgstr "Az Ubuntu MATE kaphat vírusokat és más fertőzéseket... de mégsem kap. Gyors és időben történő frissítések biztosítják, hogy nagyon kevés (ha egyáltalán van) fenyegetés érje a Linux rendszereket, amik jól állják a sarat. Valójában nagyon kevés \"nyilvános\" fertőzés jött létre az elmúlt 10 évben, ami hatással lehet az Ubuntu MATE-re. Ezek már nem veszélyesek a modern Linux disztribúciót használóknak manapság. Az Ubuntu MATE-t úgy tervezték, hogy nagyon nehezen tudjanak települni és futni a vírusok, root kit-ek és más rosszindulatú szoftverek a felhasználó általi tudatos közbelépés nélkül. Még ha véletlenül be is szereznél vírust, nagy az esélye, hogy az a Windows megtámadására készült, és alig, vagy szinte semmi kárt nem tehet az Ubuntu MATE-ben."
+
+#: features.html:93
+msgid ""
+"Another significant security feature of Ubuntu MATE is that its users are "
+"not administrators by default. Administrators (\"root\" users) on any "
+"computer system have permission to do anything they want, including the "
+"ability to damage the system."
+msgstr "Az Ubuntu MATE másik jelentős biztonsági funkciója, hogy a felhasználói alapértelmezetten nem rendszergazdai jogosultságúak. A rendszergazdák (\"root\" felhasználók) bármely rendszeren engedéllyel rendelkeznek arra, hogy azt csinálják, amit akarnak beleértve a rendszer károsítását."
+
+#: features.html:97
+msgid ""
+"For example, other operating systems look at the name of a file to determine"
+" which program should open it, then immediately attempt to open it. That "
+"design makes it easy for an intruder to attack a computer. Ubuntu MATE opens"
+" a file based on what the file is, not based on its name. So even if a "
+"malicious program disguises its identity by using the name \"Last Will and "
+"Testament.txt\" Ubuntu MATE will recognize the file as a program. The system"
+" provides a warning that the file is not a text file, but that it is a "
+"program that will be run if you give it permission to continue. To be extra "
+"secure, Ubuntu MATE requires you to provide your administrator password "
+"before that permission is granted. Every single time."
+msgstr "Például más operációs rendszerek megnézik a fájl nevét ahhoz, hogy meghatározzák, hogy melyik programnak kell megnyitnia, és azonnal kísérletet tesznek a megnyitásra. Ez a tervezés megkönnyíti a betolakodóknak a számítógép megtámadását. Az Ubuntu MATE az alapján nyitja meg a fájlt, hogy valójában mi az a fájl, és nem a neve alapján. Tehát még ha egy rosszindulatú szoftver el is rejti az identitását pl. egy \"Végső akarat és végrendelet.txt\" fájlnév mögé, az Ubuntu MATE felismeri, hogy az a fájl egy program. A rendszer figyelmeztet, hogy az nem egy szövegfájl, hanem egy program, ami futni fog, ha engedélyt adsz neki. A teljes biztonságért az Ubuntu MATE kérni fogja a rendszergazdai jelszó megadását, mielőtt az engedélyt megadja. Minden egyes alkalommal."
+
+#: features.html:115
+msgid "Powerful Applications"
+msgstr "Hatékony alkalmazások"
+
+#: features.html:116
+msgid ""
+"While MATE Desktop provides the essential user interfaces to control and use"
+" a computer, Ubuntu MATE adds a collection of additional applications to "
+"turn your computer into a truly powerful workstation."
+msgstr "Míg az Ubuntu MATE biztosítja a leglényegesebb felhasználói felületeket a számítógép irányításhoz és használatához, további alkalmazások gyűjteményét is ad a rendszerhez, amikkel igazán hatékony munkaállomássá alakíthatjuk a számítógépet."
+
+#: features.html:121
+msgid "Productivity"
+msgstr "Produktivitás"
+
+#: features.html:130
+msgid ""
+"Firefox delivers safe, easy web browsing. A familiar user interface, "
+"enhanced security features including protection from online identity theft, "
+"and an integrated search to let you get the most out of the web."
+msgstr "A Firefox könnyű, biztonságos webböngészést biztosít. Egy ismerős felhasználói felület, fejlesztett biztonsági funkciók beleértve az online identitás rablás elleni védelmet, és egy beépített kereső, ami lehetővé teszi, hogy a legtöbbet hozd ki az internetből."
+
+#: features.html:142
+msgid ""
+"Thunderbird is a full-featured email, RSS and newsgroup client that makes "
+"emailing safer, faster and easier than ever before. It supports different "
+"mail accounts (POP, IMAP, Gmail), has a simple mail account setup wizard, "
+"one-click address book, tabbed interface, an integrated learning spam "
+"filter, advanced search and indexing capabilities, and offers easy "
+"organization of mails with tagging and virtual folders. It also features "
+"unrivalled extensibility."
+msgstr "A Thunderbird egy funkció gazdag email, RSS és hírcsoport kliens, ami biztonságosabbá, gyorsabbá és könnyebbé teszi a levelezést, mint valaha. Különböző postafiókokat támogat (POP, IMAP, Gmail), tartalmaz egy egyszerű postafiók beállító varázslót, egykattintásos címjegyzéket, fülekre osztott kezelőfelületet, egy beépített spam szűrőt, fejlett kereső és indexelő képességeket és könnyen rendezhetőek a levelek címkézéssel és virtuális mappákkal. "
+
+#: features.html:158
+msgid ""
+"LibreOffice is a full-featured office productivity suite that provides a "
+"near drop-in replacement for Microsoft(R) Office; its clean interface and "
+"powerful tools let you unleash your creativity and grow your productivity. "
+"LibreOffice embeds several applications that make it the most powerful Free "
+"and Open Source Office suite on the market:"
+msgstr "A LibreOffice egy funkció gazdag irodai programcsomag, ami majdnem tökéletes helyettesítője lehet a Microsoft(R) Office-nak; a letisztult kezelőfelület és a hatékony eszközök lehetővé teszik, hogy szabadjára engedd a kreativitásodat, és növeld a termelékenységedet. A LibreOffice különböző alkalmazásokat tartalmaz, amik a leghatékonyabb ingyenes és nyílt forrású irodai programcsomaggá teszik a piacon:"
+
+#: features.html:165
+msgid "Writer, the word processor."
+msgstr "Writer, a szövegszerkesztő"
+
+#: features.html:166
+msgid "Calc, the spreadsheet application."
+msgstr "Calc, a táblázatkezelő alkalmazás."
+
+#: features.html:167
+msgid "Impress, the presentation engine."
+msgstr "Impress, a prezentáció motor."
+
+#: features.html:168
+msgid "Draw, the drawing and flowcharting application"
+msgstr "Draw, a rajzoló és diagramkészítő alkalmazás."
+
+#: features.html:169
+msgid "Base, the database and database frontend."
+msgstr "Base, az adatbázis és adatbázis kezelő."
+
+#: features.html:170
+msgid "Math, for editing mathematics."
+msgstr "Math, matematikai képletek szerkesztéséhez."
+
+#: features.html:177
+msgid "Entertainment"
+msgstr "Szórakozás"
+
+#: features.html:183
+msgid ""
+"Rhythmbox is a very easy to use music playing and management program which "
+"supports a wide range of audio formats (including mp3 and ogg). Originally "
+"inspired by Apple's iTunes, the current version also supports Internet "
+"Radio, iPod integration and generic portable audio player support, Audio CD "
+"burning, Audio CD playback, music sharing, and Podcasts."
+msgstr "A Rhythmbox nagyon könnyen használható zenelejátszó és kezelő program, ami audio formátumok széles skáláját támogatja (beleértve az mp3-mat és az ogg-t). Eredetileg az Apple iTunes inspirálta, a jelenlegi verzió internetes rádiót, iPod integrációt és általános hordozható audio-t, audio CD írást, audio CD lejátszást, zenemegosztást és Podcast-eket is támogat"
+
+#: features.html:197
+msgid ""
+"Shotwell is a digital photo organizer. It allows you to import photos from "
+"disk or camera, organize them in various ways, view them in full-window or "
+"fullscreen mode, and export them to share with others. It is able to manage "
+"a lot of different image formats, also including raw CR2 files."
+msgstr "A Shotwell egy digitális fénykép szervező. Lehetővé teszi fényképek importálását lemezről vagy digitális fényképezőgépről, ezek szervezését különféle módokon, megtekintést teljes képernyős módban, és exportálást másokkal történő megosztáshoz. Képes kezelni sok különböző kép formátumot, a nyers CR2 fájlokat is."
+
+#: features.html:210
+msgid ""
+"VLC is the VideoLAN project's media player. It plays MPEG, MPEG-2, MPEG-4, "
+"DivX, MOV, WMV, QuickTime, WebM, FLAC, MP3, Ogg/Vorbis files, DVDs, VCDs, "
+"podcasts, and multimedia streams from various network sources."
+msgstr "A VLC a VideoLAN projekt média lejátszója. Lejátssza az MPEG, MPEG-2, MPEG-4, DivX, MOV, WMV, QuickTime, WebM, FLAC, MP3, Ogg/Vorbis fájlokat, DVD-ket, VCD-ket, és multimédia streameket különböző hálózati forrásokból."
+
+#: features.html:214
+msgid ""
+"VLC can also be used as a streaming server that duplicates the stream it "
+"reads and multicasts them through the network to other clients, or serves "
+"them through HTTP."
+msgstr "A VLC még stream szerverként is használható, ami megduplázza a sugárzást és kivetíti többfelé a hálózaton keresztül más klienseknek, vagy kiszolgálja őket HTTP-n keresztül."
+
+#: features.html:217
+msgid ""
+"VLC has support for on-the-fly transcoding of audio and video formats, "
+"either for broadcasting purposes or for movie format transformations."
+msgstr "A VLC támogatja a röptében történő hang és videó átkódolást műsor sugárzás vagy film átalakítás céljából."
+
+#: features.html:225
+msgid "... And a whole lot more!"
+msgstr "... és sok más!"
+
+#: features.html:227
+msgid ""
+"Naturally you'll also find a firewall, backup application, document/photo "
+"scanner and printer management all included in Ubuntu MATE. And this is just"
+" the start. The"
+msgstr "Természetesen szintén találsz majd tűzfalat, biztonsági mentés kezelőt, dokumentum/fénykép szkennelőt és nyomtatáskezelőt az Ubuntu MATE-ben. És ez csak a kezdet. A"
+
+#: features.html:230
+msgid "Software"
+msgstr "Szoftver"
+
+#: features.html:230
+msgid ""
+"sections includes best-in-class applications for most tasks and a one-click "
+"installer for an"
+msgstr "részlegek tartalmazzák a legjobb minőségű alkalmazásokat a legtöbb feladatra és egy egykattintásos telepítőt ehhez:"
+
+#: features.html:232
+msgid ""
+"that will give you access to thousands of applications suitable for just "
+"about any professional or recreational pursuit."
+msgstr "ami hozzáférést enged alkalmazások ezreihez, amik alkalmasak csaknem bármilyen professzionális, vagy szórakozási célra."
+
+#: features.html:239
+msgid "Games"
+msgstr "Játékok"
+
+#: features.html:245
+msgid ""
+"In the last couple of years Linux has become a first class gaming platform "
+"thanks to"
+msgstr "Az utóbbi néhány évben a Linux elsőosztályú játékos platformmá vált, amiért köszönetet érdemel a"
+
+#: features.html:248
+msgid "bringing the"
+msgstr "azáltal, hogy elhozta"
+
+#: features.html:250
+msgid ""
+"platform to Linux. At the time of writing Steam has more than 1000 high "
+"quality indie and AAA titles available for Linux. Ubuntu MATE is fully "
+"compatible with Steam for Linux."
+msgstr "platformot Linuxra. Jelen írás pillanatában a Steamen több mint 1000 minőségi független és AAA cím érhető el Linuxra. Az Ubuntu MATE teljes mértékben kompatibilis a Linuxos Steammel."
+
+#: features.html:255
+msgid ""
+"While Steam is a major step forward for gaming on Linux, there are also many"
+" high quality and enjoyable Open Source games titles available for Ubuntu "
+"MATE. It doesn't matter if you like flight simulators, motor racing, first "
+"person shooters, jump and run or card games, you'll find something to keep "
+"you entertained."
+msgstr "Bár a Steam egy nagy előrelépés a Linuxon történő játékban, azért sok minőségi és élvezhető nyílt forrású játék is elérhető az Ubuntu MATE-re. Akár a repülőgép szimulátort, motorversenyt, lövöldözős, ugrálós és rohangálós, vagy a kártyajátékokat szereted, mindenképp találni fogsz valamit, ami szórakoztat."
+
+#: features.html:265
+msgid "Accessibility"
+msgstr "Alkalmazások fogyatékkal élőknek"
+
+#: features.html:271
+msgid ""
+"Making an accessible operating system was a key priority when the Ubuntu "
+"MATE founders initially set out the goals of the project."
+msgstr "Egy bárki számára könnyen hozzáférhető operációs rendszer készítése kulcsfontosságú volt, mikor az Ubuntu MATE alapítói kezdetben kitűzték a projekt céljait."
+
+#: features.html:275
+msgid ""
+"Ubuntu MATE is never going to be able to offer the comprehensive integration"
+" of assistive technologies that"
+msgstr "Az Ubuntu MATE soha nem lesz képes a kisegítő technológiák olyan átfogó integrációját felajánlani, mint amit a"
+
+#: features.html:277
+msgid "Sonar GNU/Linux"
+msgstr "Sonar GNU/Linux"
+
+#: features.html:278
+msgid ""
+"provides. But Ubuntu MATE will continue to follow their lead so that Ubuntu "
+"MATE is a viable desktop solution where computer access is shared within a "
+"household or business where individual needs differ."
+msgstr "biztosít. De követni fogja a kijelölt útjukat, hogy az Ubuntu MATE egy életképes asztali megoldás legyen ott, ahol a számítógépen a különböző egyéni igényekkel rendelkező felhasználók osztoznak egy háztartásban, vagy vállalatnál."
+
+#: features.html:286
+msgid "Mobile Integration"
+msgstr "Mobileszköz integrálás"
+
+#: features.html:292
+msgid ""
+"Currently Ubuntu MATE has the essential mobile device support you'd expect. "
+"You can plug in a phone, media player or digital camera and the device is "
+"automatically detected and mounted. You can then access the files on it or "
+"sync its contents."
+msgstr "Jelenleg az Ubuntu MATE-hez megvan a lényeges mobil eszköz támogatás, ami elvárható. Csatlakoztathatsz egy telefont, médialejátszót vagy digitális fényképezőgépet és az eszközt automatikusan felismeri és csatolja a rendszer. Elérheted a rajtuk lévő fájlokat, vagy szinkronizálhatod a tartalmukat."

@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/bootstrap-2.3.2.css" rel="stylesheet" media="screen">
+  <link href="css/font-awesome.css" rel="stylesheet" media="screen">
+  <link href="css/welcome.css" rel="stylesheet" media="screen">
+  <link href="css/animate.css" rel="stylesheet">
+</head>
+<body class="backdrop-simple" style="overflow: hidden'">
+  <div id="wrapper">
+    <div class="container-fluid">
+      <div id="navigation">
+        <a id="menu-button" class="navigation-button" onclick="smoothPageFade('index.html');$('#footer-left').fadeOut();$('#non-free-toggle').fadeOut();$('#show-misc-cmds').fadeOut()">
+          <span class="fa fa-chevron-left"></span>
+        </a>
+        <div id="navigation-title" hidden>&zwnj;Software&zwnj; - <span id="navigation-sub-title"> &zwnj;Boutique&zwnj;</span></div>
+        <img id="navigation-divider" src="img/welcome/header-shadow.png" width="100%" height="11px">
+        <div id="navigation-right">
+        </div>
+      </div>
+    </div>
+    <div id="content" class="container-fluid entire-page-fade" style="margin-top: 50px" hidden>
+    <div class="online animated fadeInDown" id="category-tabs">
+      <ul id="tabs" class="nav nav-pills" data-tabs="tabs" style="text-align: center">
+        <li data-toggle="tooltip" data-placement="bottom" title="&zwnj;Accessories&zwnj;">      <a id="AccessoriesBtn" data-toggle="tab" onclick='changeCategoryTab("#Accessories", "&zwnj;Accessories&zwnj;");'>      <span class="fa fa-2x fa-va fa-scissors">       </span></a></li>
+        <li data-toggle="tooltip" data-placement="bottom" title="&zwnj;Education&zwnj;">        <a id="EducationBtn"   data-toggle="tab" onclick='changeCategoryTab("#Education",   "&zwnj;Education&zwnj;");'>        <span class="fa fa-2x fa-va fa-graduation-cap"> </span></a></li>
+        <li data-toggle="tooltip" data-placement="bottom" title="&zwnj;Games&zwnj;">            <a id="GamesBtn"       data-toggle="tab" onclick='changeCategoryTab("#Games",       "&zwnj;Games&zwnj;");'>            <span class="fa fa-2x fa-va fa-gamepad">        </span></a></li>
+        <li data-toggle="tooltip" data-placement="bottom" title="&zwnj;Graphics&zwnj;">         <a id="GraphicsBtn"    data-toggle="tab" onclick='changeCategoryTab("#Graphics",    "&zwnj;Graphics&zwnj;");'>         <span class="fa fa-2x fa-va fa-picture-o">      </span></a></li>
+        <li data-toggle="tooltip" data-placement="bottom" title="&zwnj;Internet&zwnj;">         <a id="InternetBtn"    data-toggle="tab" onclick='changeCategoryTab("#Internet",    "&zwnj;Internet&zwnj;");'>         <span class="fa fa-2x fa-va fa-globe">          </span></a></li>
+        <li data-toggle="tooltip" data-placement="bottom" title="&zwnj;Office&zwnj;">           <a id="OfficeBtn"      data-toggle="tab" onclick='changeCategoryTab("#Office",      "&zwnj;Office&zwnj;");'>           <span class="fa fa-2x fa-va fa-bar-chart">      </span></a></li>
+        <li data-toggle="tooltip" data-placement="bottom" title="&zwnj;Programming&zwnj;">      <a id="ProgrammingBtn" data-toggle="tab" onclick='changeCategoryTab("#Programming", "&zwnj;Programming&zwnj;");'>      <span class="fa fa-2x fa-va fa-code">           </span></a></li>
+        <li data-toggle="tooltip" data-placement="bottom" title="&zwnj;Sound & Video&zwnj;" >   <a id="MediaBtn"       data-toggle="tab" onclick='changeCategoryTab("#Media",       "&zwnj;Sound & Video&zwnj;");'>    <span class="fa fa-2x fa-va fa-film">           </span></a></li>
+        <li data-toggle="tooltip" data-placement="bottom" title="&zwnj;System Tools&zwnj;">     <a id="SysToolsBtn"    data-toggle="tab" onclick='changeCategoryTab("#SysTools",    "&zwnj;System Tools&zwnj;");'>     <span class="fa fa-2x fa-va fa-cog">            </span></a></li>
+        <li data-toggle="tooltip" data-placement="bottom" title="&zwnj;Universal Access&zwnj;"> <a id="UnivAccessBtn"  data-toggle="tab" onclick='changeCategoryTab("#UnivAccess",  "&zwnj;Universal Access&zwnj;");'> <span class="fa fa-2x fa-va fa-wheelchair">     </span></a></li>
+        <li data-toggle="tooltip" data-placement="bottom" title="&zwnj;Servers&zwnj;">          <a id="ServersBtn"     data-toggle="tab" onclick='changeCategoryTab("#Servers",     "&zwnj;Servers&zwnj;");'>          <span class="fa fa-2x fa-va fa-server">         </span></a></li>
+        <li data-toggle="tooltip" data-placement="bottom" title="&zwnj;More Software&zwnj;">    <a id="MoreAppsBtn"    data-toggle="tab" onclick='changeCategoryTab("#MoreApps",    "&zwnj;More Software&zwnj;");'>    <span class="fa fa-2x fa-va fa-download">       </span></a></li>
+        <li data-toggle="tooltip" data-placement="bottom" title="&zwnj;Fixes&zwnj;">            <a id="MiscBtn"        data-toggle="tab" onclick='changeCategoryTab("#Misc",        "&zwnj;Fixes&zwnj;");'>            <span class="fa fa-2x fa-va fa-wrench">         </span></a></li>
+      </ul>
+    </div>
+    <div class="row-fluid">
+        <div id="Intro">
+          <div id="featured-grid">
+            <!-- Randomly generated by welcome.js -->
+          </div>
+          <div class="online">
+            <h2>&zwnj;Software Boutique&zwnj;</h2>
+            &zwnj;There is an abundance of software available for Ubuntu MATE
+            and some people find that choice overwhelming. The Boutique is a
+            carefully curated selection of the best-in-class applications
+            chosen because they integrate well, complement
+            Ubuntu MATE and enable you to self style your computing
+            experience.&zwnj;
+            <br><br>
+            &zwnj;If you can't find what you're looking for, install one of the&zwnj;
+            <a href="#" onclick='changeCategoryTab("#MoreApps","&zwnj;Get More Apps&zwnj;"); $("#MoreAppsBtn").tab("show");'>
+            <span class="fa fa-download"></span> &zwnj;software centers&zwnj;</a>
+            &zwnj;to explore the complete Ubuntu software catalog.&zwnj;
+          </div>
+          <div class="offline">
+            <div id="offlineMessage">
+              <h2>&zwnj;More Apps Await.&zwnj;</h2>
+              <p>&zwnj;Connect your computer to the Internet to explore a wide selection
+              of applications for Ubuntu MATE.&zwnj;</p>
+              <p>&zwnj;Once online, you'll be able to download and install tried & tested
+              software right here in Welcome. Our picks ensure that the
+              software featured integrates well the Ubuntu MATE desktop.&zwnj;</p>
+
+              <div id="reconnectFailed" hidden class="alert alert-danger" style="width: 350px; margin-top: 12px">
+                <span class="fa fa-exclamation-triangle"></span>
+                &zwnj;Sorry, Welcome could not establish a connection to the
+                Ubuntu repository server. Please check your connection and try again.&zwnj;
+              </div>
+
+              <ul class="unstyled">
+                <li><a href="cmd://checkInternetConnection" onclick="reconnectTimeout();" class="btn btn-success"> <span class="fa fa-refresh"></span> &zwnj;Retry Connection&zwnj;</a></li>
+              </ul>
+              <ul class="unstyled" id="helpButton">
+                <li><a onclick='smoothFade("#offlineMessage","#helpMe"); changeSubtitle("&zwnj;Connection Troubleshooting&zwnj;"); smoothFade("#featured-grid","");' class="btn btn-default">
+                  <span class="fa fa-question-circle"></span> &zwnj;Connection Help&zwnj;</a>
+                </li>
+              </ul>
+            </div>
+
+            <div id="helpMe" hidden>
+              <h3>&zwnj;Get Connected.&zwnj;</h3>
+              <p>&zwnj;Here's a few things you can check, depending on the type of connection you have:&zwnj;</p>
+              <h5><span class="fa fa-plug"></span> &zwnj;Wired Connection&zwnj;</h5>
+              <ul>
+                <li>&zwnj;Is the cable securely plugged in?&zwnj;</li>
+                <li>&zwnj;Is the router online and can other devices access the network? Try restarting the router.&zwnj;</li>
+              </ul>
+              <hr>
+              <h5><span class="fa fa-wifi"></span> &zwnj;Wireless Connection&zwnj;</h5>
+              <li>&zwnj;Have you entered the correct wireless password from the&zwnj; <b>&zwnj;network indicator&zwnj;</b> &zwnj;in the upper-right?&zwnj;</li>
+              <ul>
+                <li>&zwnj;When disconnected, the applet looks like this:&zwnj; <img src="img/screenshots/network-applet.svg"></li>
+              </ul>
+              <li>&zwnj;Is there a physical switch that may have accidentally switched off wireless functionality?&zwnj;</li>
+              <li>
+                &zwnj;Is there a soft (keyboard) switch that toggles it off?&zwnj;
+                <ul>
+                  <li>&zwnj;You may need to hold the FN key while pressing the function key.&zwnj;</li>
+                  <li>&zwnj;Here's an example:&zwnj; <img src="img/screenshots/hardware-wifi-button.png"></li>
+                </ul>
+              </li>
+              <hr>
+              <h5>&zwnj;Not working at all or experiencing sluggish connections?&zwnj;</h5>
+              <p>&zwnj;Sorry to hear that. You will need a temporary wired connection to install working drivers.&zwnj;</p>
+              <ul>
+                <li>&zwnj;The&zwnj; <a href="cmd://drivers">&zwnj;Additional Drivers&zwnj;</a> &zwnj;tab may have them available for your system.&zwnj;</li>
+                <li>&zwnj;Otherwise, you will need to manually install third party drivers for your hardware, or a download specific
+                package containing the firmware. See&zwnj; <b>&zwnj;Drivers&zwnj;</b> &zwnj;in the&zwnj; <a onclick="smoothPageFade('gettingstarted.html')">&zwnj;Getting Started&zwnj;</a>
+                &zwnj;section for more details.&zwnj;</li>
+                <li>&zwnj;Feel free to&zwnj; <a onclick="smoothPageFade('community.html')">&zwnj;ask the community&zwnj;</a> &zwnj;if you need assistance.&zwnj;</li>
+              </ul>
+              <br>
+              <ul class="unstyled" id="helpButtonBack">
+                <li><a onclick='smoothFade("#helpMe","#offlineMessage"); changeSubtitle("&zwnj;Our Picks&zwnj;"); smoothFade("","#featured-grid");' class="btn btn-inverse">
+                  <span class="fa fa-check"></span> &zwnj;OK&zwnj;</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Apps are dynamically populated via Python -->
+
+        <div id="Accessories" hidden>
+          <div class="row-fluid">
+            <div class="span12">
+              <h2>&zwnj;Accessories&zwnj;</h2>
+              <select id="Filter-Accessories" class="filter-box">
+                <option value="none">&zwnj;No Filter&zwnj;</option>
+              </select>
+              <p>&zwnj;Handy utilities for your computing needs.&zwnj;</p>
+              <hr class="soften-light"/>
+            </div>
+          </div>
+        </div>
+
+        <div id="Education" hidden>
+          <div class="row-fluid">
+            <div class="span12">
+              <h2>&zwnj;Education&zwnj;</h2>
+              <select id="Filter-Education" class="filter-box">
+                <option value="none">&zwnj;No Filter&zwnj;</option>
+              </select>
+              <p>&zwnj;For study and children.&zwnj;</p>
+              <hr class="soften-light"/>
+            </div>
+          </div>
+        </div>
+
+        <div id="Games" hidden>
+          <div class="row-fluid">
+            <div class="span12">
+              <h2>&zwnj;Games&zwnj;</h2>
+              <select id="Filter-Games" class="filter-box">
+                <option value="none">&zwnj;No Filter&zwnj;</option>
+              </select>
+              <p>&zwnj;A selection of 2D and 3D games for your enjoyment.&zwnj;</p>
+              <hr class="soften-light"/>
+            </div>
+          </div>
+        </div>
+
+        <div id="Graphics" hidden>
+          <div class="row-fluid">
+            <div class="span12">
+              <h2>&zwnj;Graphics&zwnj;</h2>
+              <select id="Filter-Graphics" class="filter-box">
+                <option value="none">&zwnj;No Filter&zwnj;</option>
+              </select>
+              <p>&zwnj;For producing and editing works of art.&zwnj;</p>
+              <hr class="soften-light"/>
+            </div>
+          </div>
+        </div>
+
+        <div id="Internet" hidden>
+          <div class="row-fluid">
+            <div class="span12">
+              <h2>&zwnj;Internet&zwnj;</h2>
+              <select id="Filter-Internet" class="filter-box">
+                <option value="none">&zwnj;No Filter&zwnj;</option>
+              </select>
+              <p>&zwnj;For staying connected and enjoying the features of your own cloud.&zwnj;</p>
+              <hr class="soften-light"/>
+            </div>
+          </div>
+        </div>
+
+        <div id="Office" hidden>
+          <div class="row-fluid">
+            <div class="span12">
+              <h2>&zwnj;Office&zwnj;</h2>
+              <select id="Filter-Office" class="filter-box">
+                <option value="none">&zwnj;No Filter&zwnj;</option>
+              </select>
+              <p>&zwnj;For more then just documents and spreadsheets.&zwnj;</p>
+              <hr class="soften-light"/>
+            </div>
+          </div>
+        </div>
+
+        <div id="Programming" hidden>
+          <div class="row-fluid">
+            <div class="span12">
+              <h2>&zwnj;Programming&zwnj;</h2>
+              <select id="Filter-Programming" class="filter-box">
+                <option value="none">&zwnj;No Filter&zwnj;</option>
+              </select>
+              <p>&zwnj;For the developers and system administrators out there.&zwnj;</p>
+              <hr class="soften-light"/>
+            </div>
+          </div>
+        </div>
+
+        <div id="Media" hidden>
+          <div class="row-fluid">
+            <div class="span12">
+              <h2>&zwnj;Sound & Video&zwnj;</h2>
+              <select id="Filter-Media" class="filter-box">
+                <option value="none">&zwnj;No Filter&zwnj;</option>
+              </select>
+              <p>&zwnj;Multimedia software for listening and production.&zwnj;</p>
+              <hr class="soften-light"/>
+            </div>
+          </div>
+        </div>
+
+        <div id="SysTools" hidden>
+          <div class="row-fluid">
+            <div class="span12">
+              <h2>&zwnj;System Tools&zwnj;</h2>
+              <select id="Filter-SysTools" class="filter-box">
+                <option value="none">&zwnj;No Filter&zwnj;</option>
+              </select>
+              <p>&zwnj;Software that makes the most out of your system resources.&zwnj;</p>
+              <hr class="soften-light"/>
+            </div>
+          </div>
+        </div>
+
+        <div id="UnivAccess" hidden>
+          <div class="row-fluid">
+            <div class="span12">
+              <h2>&zwnj;Universal Access&zwnj;</h2>
+              <p>&zwnj;Software that makes your computer more accessible.&zwnj;</p>
+              <hr class="soften-light"/>
+            </div>
+          </div>
+        </div>
+
+        <div id="Servers" hidden>
+          <div class="row-fluid">
+            <div class="span12">
+              <h2>&zwnj;Servers&zwnj;</h2>
+              <p>&zwnj;One-click installations for serving the network.&zwnj;</p>
+              <hr class="soften-light"/>
+            </div>
+          </div>
+        </div>
+
+        <div id="MoreApps" hidden>
+          <div class="row-fluid">
+            <div class="span12">
+              <h2>&zwnj;Discover More Software&zwnj;</h2>
+              <p>&zwnj;Graphical interfaces to browse a wide selection of
+              software available for your operating system.&zwnj;</p>
+              <hr class="soften-light"/>
+            </div>
+          </div>
+        </div>
+
+        <div id="Misc" hidden>
+          <h2>&zwnj;Miscellaneous Fixes&zwnj;</h2>
+          <p>&zwnj;This section contains operations that can fix common problems should you encounter an error
+          while upgrading or installing new software.&zwnj;</p>
+          <hr class="soften" />
+
+          <div class="row-fluid">
+            <div class="span12">
+
+              <h4>&zwnj;Outdated Package Lists?&zwnj;</h4>
+              <p>&zwnj;Your repository lists may be out of date, which can cause&zwnj; <b>&zwnj;Not Found&zwnj;</b> &zwnj;errors and&zwnj; <b>&zwnj;outdated version&zwnj;</b>
+              &zwnj;information when trying to install new or newer versions of software. This is particularly the case when
+              Ubuntu MATE connects online for the first time after installation.&zwnj;</p>
+              <blockquote class="terminal miscCmd">
+                <b>&zwnj;Update the repository lists:&zwnj;</b><br>
+                <span class="fa fa-dollar"></span> sudo apt-get update
+              </blockquote>
+              <div class="text-right">
+                <a href="cmd://apt-update" class="btn btn-inverse right"><span class="fa fa-refresh"></span> &zwnj;Update Sources List&zwnj;</a>
+                <a href="cmd://upgrade-appid?ubuntu-standard" class="btn btn-inverse right"><span class="fa fa-level-up"></span> &zwnj;Upgrade Installed Packages&zwnj;</a>
+              </div>
+              <hr class="soften"/>
+
+              <h4>&zwnj;Broken Packages?&zwnj;</h4>
+              <p>&zwnj;When a previous installation or removal was
+              interrupted&zwnj; <i>&zwnj;(for instance, due to power failure or
+              loss of Internet connection)&zwnj;</i>, &zwnj;further software cannot
+              be added or removed without properly re-configuring these
+              broken packages. If necessary, you may need to also
+              resolve dependencies and install any missing packages in
+              order for the software to run properly.&zwnj;</p>
+              <blockquote class="terminal miscCmd">
+                <b>&zwnj;Configure packages that were unpacked but not configured:&zwnj;</b><br>
+                <span class="fa fa-dollar"></span> sudo dpkg --configure -a
+              </blockquote>
+              <blockquote class="terminal miscCmd">
+                <b>&zwnj;Download and install broken dependencies:&zwnj;</b><br>
+                <span class="fa fa-dollar"></span> sudo apt-get --fix-broken install
+              </blockquote>
+              <div class="text-right">
+                <a href="cmd://fix-incomplete-install" class="btn btn-inverse right"><span class="fa fa-cube"></span> &zwnj;Configure Interrupted Packages&zwnj;</a>
+                <a href="cmd://fix-broken-depends" class="btn btn-inverse right"><span class="fa fa-check"></span> &zwnj;Resolve Broken Packages&zwnj;</a>
+              </div>
+              <hr class="soften"/>
+
+              <p class="miscCmd"><b>&zwnj;In addition, listed below are terminal equivalent commands that
+              otherwise appear in the&zwnj; <a href="cmd://update">&zwnj;Software Updater&zwnj;</a>.</b></p>
+              <blockquote class="terminal miscCmd">
+                <b>&zwnj;Upgrade all packages that have a new version available:&zwnj;</b><br>
+                <span class="fa fa-dollar"></span> sudo apt-get dist-upgrade
+              </blockquote>
+              <blockquote class="terminal miscCmd">
+                <b>&zwnj;Upgrade to a new release of Ubuntu MATE:&zwnj;</b><br>
+                <span class="fa fa-dollar"></span> sudo do-release-upgrade
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="footer" class="bottom">
+      <div class="footer-content">
+        <div id="footer-left">
+          <span id="footer-global-left"></span>
+        </div>
+        <div id="footer-right" class="form">
+          <a id="non-free-toggle" data-trigger="hover" rel="freedominfo" data-original-title="&zwnj;Filter by Software License&zwnj;" hidden data-placement="top">
+            <i id="nonFreeCheckBox" class="fa fa-square fa-va"></i> &zwnj;Hide Proprietary Software&zwnj;
+          </a>
+          <a id="show-misc-cmds" hidden><i id="MiscCheckbox" class="fa fa-square fa-va"></i> &zwnj;Show Terminal Commands&zwnj;</a>
+          <span id="footer-global-right"></span>
+        </div>
+      </div>
+    </div>
+    <div id="popover_content_wrapper" style="display: none;">
+      <p><span class="fa fa-lock"></span> <b>&zwnj;Proprietary Software&zwnj;</b>
+      &zwnj;is owned by an individual or company. There may be restrictions on its
+      usage (like a license agreement), and provides no access to the source code.&zwnj;</p>
+
+      <p><span class="fa fa-heart"></span> <b>&zwnj;Free and Open Source Software&zwnj;</b>
+      &zwnj;grants the user the freedom to share, study and modify the software without
+      restriction. For instance, the GPL is an example of a 'Free Software' license.&zwnj;</p>
+    </div>
+  </div>
+  <script src="js/jquery-2.1.4.js"></script>
+  <script src="js/bootstrap-2.3.2.js"></script>
+  <script src="js/janimate.js"></script>
+  <script src="js/welcome.js"></script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" ng-app>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/bootstrap-2.3.2.css" rel="stylesheet" media="screen">
+  <link href="css/font-awesome.css" rel="stylesheet" media="screen">
+  <link href="css/animate.css" rel="stylesheet" media="screen">
+  <link href="css/welcome.css" rel="stylesheet" media="screen">
+</head>
+<body style="background-color: #3B3A36; overflow: hidden;">
+  <div class="container-fluid">
+    <div id="navigation">
+      <div id="navigation-right"></div>
+      <img id="navigation-divider" src="img/welcome/header-shadow.png" width="100%" height="11px">
+    </div>
+  </div>
+  <div id="sceneA" class="splash-center splash-text" style="padding-top:64px;" hidden>
+    &zwnj;Welcome&zwnj;
+    <div>
+      <br>
+      <div class="boot-circle-block"> <div class="boot-circle" id="circle1"></div> </div>
+      <div class="boot-circle-block"> <div class="boot-circle" id="circle2"></div> </div>
+      <div class="boot-circle-block"> <div class="boot-circle" id="circle3"></div> </div>
+      <div class="boot-circle-block"> <div class="boot-circle" id="circle4"></div> </div>
+      <div class="boot-circle-block"> <div class="boot-circle" id="circle5"></div> </div>
+    </div>
+  </div>
+  <img id="splash-multilingual" src="img/welcome/splash-multilingual.png" hidden>
+  <div id="sceneB" hidden>
+    <img src="img/welcome/ubuntu-mate-icon.svg" width="160px" height="160px"><br>
+    <img src="img/welcome/ubuntu-mate-text.svg" width="341px" height="48px">&nbsp;&nbsp;<span class="splash-version" id="os_version">16.04</span>
+  </div>
+  <div id="footer" class="bottom">
+    <div class="footer-content">
+      <div id="footer-left">
+        <span id="footer-global-left"></span>
+      </div>
+      <div id="footer-right" class="form">
+        <span id="footer-global-right"></span>
+      </div>
+    </div>
+  </div>
+  <script src="js/jquery-2.1.4.js"></script>
+  <script src="js/bootstrap-2.3.2.js"></script>
+  <script src="js/janimate.js"></script>
+  <script src="js/welcome.js"></script>
+</body>
+</html>

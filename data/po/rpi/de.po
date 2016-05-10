@@ -1,0 +1,263 @@
+# 
+# Translators:
+# Stephen, 2016
+# Stephen, 2016
+msgid ""
+msgstr ""
+"Project-Id-Version: Ubuntu MATE Welcome\n"
+"POT-Creation-Date: 2016-02-27 12:48+0100\n"
+"PO-Revision-Date: 2016-04-04 10:10+0000\n"
+"Last-Translator: Stephen\n"
+"Language-Team: German (http://www.transifex.com/ubuntu-mate/ubuntu-mate-welcome/language/de/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Report-Msgid-Bugs-To : you@example.com\n"
+
+#: rpi.html:17
+msgid "Raspberry Pi Information"
+msgstr "Raspberry Pi Information"
+
+#: rpi.html:25
+msgid "A few important notes."
+msgstr "Ein paar wichtige Hinweise."
+
+#: rpi.html:26
+msgid ""
+"While the experience is visually similar to the desktop edition of Ubuntu "
+"MATE, the underlying architecture is very different. This page will "
+"highlight a few of these differences."
+msgstr "Während die Erfahrung ist optisch ähnlich wie die Desktop- Ausgabe von Ubuntu MATE, die zugrunde liegende Architektur ist sehr unterschiedlich. Auf dieser Seite werden einige dieser Unterschiede hervorgehoben."
+
+#: rpi.html:32
+msgid "Resizing the file system"
+msgstr "Ändern der Größe des Dateisystems"
+
+#: rpi.html:35
+msgid "Your file system has already been resized."
+msgstr "Ihr Dateisystem hat bereits die neue Größe erreicht."
+
+#: rpi.html:38
+msgid ""
+"After setting up Ubuntu MATE for the first time on your Raspberry Pi, the "
+"file system will be restricted to the size of the original image, which is "
+"about 3.9 GB. Use this button to resize and fill the entire Micro-SD card."
+msgstr "Nach dem Einrichten Ubuntu MATE zum ersten Mal auf dem Raspberry Pi, das Dateisystem ist auf die Größe des ursprünglichen Bildes eingeschränkt werden, die etwa 3,9 GB entspricht. Verwenden Sie diese Taste, um die Größe zu ändern und die gesamte Micro-SD-Karte zu füllen."
+
+#: rpi.html:42
+msgid "Resize Now"
+msgstr "Große jetzt ändern"
+
+#: rpi.html:46
+msgid ""
+"To complete the resize of your Raspberry Pi file system, please close all "
+"open windows and restart now."
+msgstr "Zur Vervollständigung der Große Änderung Ihrer Raspberry Pi -Dateisystem, Bitte schließen Sie alle geöffneten Fenster, und starten Sie jetzt neu."
+
+#: rpi.html:48
+msgid "Reboot"
+msgstr "Neu starten"
+
+#: rpi.html:52
+msgid "Incompatible Software"
+msgstr "Inkompatible Software"
+
+#: rpi.html:53
+msgid ""
+"Some packages available for Ubuntu have only been written and compiled for "
+"the"
+msgstr "Manche verfügbar Paketen für Ubuntu sind nur geschrieben und kompiliert worden für die"
+
+#: rpi.html54, 109
+msgid "or"
+msgstr "oder"
+
+#: rpi.html:55
+msgid "architecture. As the Raspberry Pi is based on"
+msgstr "Architektur. Wie auf die Raspberry Pi basiert ist"
+
+#: rpi.html:56
+msgid ""
+"these packages will not be available to install. Depending on the package, "
+"it may be possible to compile these yourself or use an existing port."
+msgstr "diese Pakete stehen nicht zu installieren zur Verfügung. Je nach Paket, kann es möglich sein, diese selbst zu kompilieren oder einen vorhandenen Port zu verwenden."
+
+#: rpi.html:63
+msgid "Incompatible:"
+msgstr "Nicht kompatibel:"
+
+#: rpi.html:72
+msgid "Compatible:"
+msgstr "Kompatibel:"
+
+#: rpi.html:85
+msgid "Upgrades"
+msgstr "Aktualisierungen"
+
+#: rpi.html:86
+msgid "Please"
+msgstr "Bitte"
+
+#: rpi.html:86
+msgid "do not"
+msgstr "unterlassen Sie"
+
+#: rpi.html:86
+msgid "attempt to"
+msgstr "jede Versuch zum"
+
+#: rpi.html:86
+msgid "upgrade"
+msgstr "Aktualisieren"
+
+#: rpi.html:87
+msgid ""
+"your Raspberry Pi to a newer version of the distribution (for instance, from"
+" 15.04 to 15.10), as the underlying kernel is"
+msgstr "Ihre Raspberry Pi auf eine neuere Version der Distribution (zum Beispiel, von 15.04 auf 15.10), als der bereits vorliegende Kernel ist"
+
+#: rpi.html:89
+msgid "not designed"
+msgstr "nicht entwickelt"
+
+#: rpi.html:89
+msgid ""
+"to do this. This process will take a very long time to complete while "
+"potentially filling up your SD card to a point where there is no more free "
+"space."
+msgstr "um dies zu erreichen. Dieser Vorgang dauert eine sehr lange Zeit, während möglicherweise die SD-Karte bis zu einem Punkt auffüllen wird, wo kein Platz mehr vorhanden ist."
+
+#: rpi.html:94
+msgid ""
+"It is safer to back up all of your data you wish to keep and re-flash the "
+"card with the new image. Attempting to upgrade may corrupt the SD card, "
+"prevent your installation from booting, or cause severe glitches."
+msgstr "Es ist sicherer, eine Sicherung aller Ihrer Daten die Sie behalten möchten zu machen und die Karte mit dem neuen Bild, nochmal neu Schrieben. Der Versuch die SD-Karte zu aktualisieren, könnte möglicherweise die Installation verhindern zu Booten, beschädigen oder schwere Störungen verursachen."
+
+#: rpi.html:98
+msgid "You can, however, install"
+msgstr "Sie können, jedoch, installieren"
+
+#: rpi.html:98
+msgid "regular updates"
+msgstr "regelmäßige Aktualisierungen"
+
+#: rpi.html:98
+msgid "via the"
+msgstr "über die"
+
+#: rpi.html100, 109
+msgid "Software Updater"
+msgstr "Software -Verwaltung"
+
+#: rpi.html:100
+msgid "utility for your installed software."
+msgstr "Dienstprogramm für Ihre installierte Software."
+
+#: rpi.html:103
+msgid "Kernel Updates"
+msgstr "Kernel-Updates"
+
+#: rpi.html:104
+msgid "The same kernel provided by the"
+msgstr "Der gleiche Kern bereitgestellt von der"
+
+#: rpi.html:105
+msgid "Raspberry Pi foundation"
+msgstr "Raspberry Pi foundation"
+
+#: rpi.html:106
+msgid ""
+"is used in this edition of Ubuntu MATE. As this kernel is delivered like a "
+"\"firmware\" blob, updates are not distributed via the"
+msgstr "wird in dieser Ausgabe von Ubuntu MATE verwendet. Da dieser Kern ist wie ein \"Firmware\" Klecks geliefert, Aktualisierungen werden nicht über das verteilte"
+
+#: rpi.html:111
+msgid "Instead, to update the kernel, open a terminal and run:"
+msgstr "Stattdessen, um den Kernel zu aktualisieren, öffnen Sie ein Terminal und führen Sie folgendes aus:"
+
+#: rpi.html:115
+msgid "Hardware Acceleration"
+msgstr "Hardware-Beschleunigung"
+
+#: rpi.html:116
+msgid "Currently, hardware accelerated applications are"
+msgstr "Derzeitige Hardware-beschleunigte Anwendungen sind"
+
+#: rpi.html:116
+msgid "not supported"
+msgstr "nicht unterstützt"
+
+#: rpi.html:117
+msgid "unlike"
+msgstr "im Gegensatz"
+
+#: rpi.html:118
+msgid ""
+"Applications that depend on OpenGL ES libraries or require the GPU will fail"
+" to start."
+msgstr "zu Anwendungen, die die auf OpenGL ES-Bibliotheken benötigen oder auf die GPU abhängen, wird nicht gestartet."
+
+#: rpi.html:121
+msgid "For playing videos, the application"
+msgstr "Um Videos zu spielen, die Anwendung"
+
+#: rpi.html:121
+msgid ""
+"will be able to do this and is pre-installed. If you are looking to play "
+"MPEG-2 or VC-1 video files then"
+msgstr "wird in der Lage sein, dies zu tun und ist vorinstalliert. Wenn Sie , MPEG-2 oder VC-1 -Videodateien suchen, dann zu dies spielen"
+
+#: rpi.html:123
+msgid "you will need MPEG-2 and/or VC-1 licenses from the"
+msgstr "benötigen Sie MPEG-2 und / oder VC-1-Lizenzen von der"
+
+#: rpi.html:124
+msgid "Raspberry Pi Store."
+msgstr "Raspberry Pi Store."
+
+#: rpi.html:127
+msgid "Enable/Disable X11"
+msgstr "X11 Aktivieren/Deaktivieren"
+
+#: rpi.html:128
+msgid "For users who are looking to create their own headless"
+msgstr "Zu erstellen ihre eigenen Headless-"
+
+#: rpi.html:128
+msgid "\"server\""
+msgstr "\"Server\""
+
+#: rpi.html:128
+msgid ""
+"using Ubuntu MATE, there is a utility for toggling the graphical "
+"environment."
+msgstr "mit Ubuntu MATE, gibt es ein Programm, um die grafische Umgebung zum Hin und her schalten."
+
+#: rpi.html:131
+msgid "To disable X11 and login via the console:"
+msgstr "So deaktivieren Sie X11 und sich über die Konsole Anmelden:"
+
+#: rpi.html:135
+msgid "To enable X11 to restore the Ubuntu MATE desktop:"
+msgstr "So aktivieren Sie X11, um die Ubuntu MATE Desktop wiederherstellen:"
+
+#: rpi.html:138
+msgid "Changes take effect after a reboot."
+msgstr "Änderungen werden nach einem Neustart angewandt."
+
+#: rpi.html:142
+msgid "Release Notes"
+msgstr "Versionshinweise"
+
+#: rpi.html:143
+msgid ""
+"To read up on release notes and changes by version, visit the Ubuntu MATE "
+"website."
+msgstr "Besuchen Sie der Ubuntu-MATE-Website um Versionshinweise (Release Notes) und auf Änderungen von Versionen zu lesen. "
+
+#: rpi.html:150
+msgid "Raspberry Pi is a trademark of the"
+msgstr "Raspberry Pi ist ein Warenzeichen der"

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+  <link href="css/font-awesome.min.css" rel="stylesheet" media="screen">
+  <link href="css/welcome.css" rel="stylesheet" media="screen">
+</head>
+<body class="backdrop">
+  <div id="wrapper">
+    <div id="header" class="container-fluid">
+      <div class="row-fluid">
+        <div class="span12">
+          <h1>Read Me</h1>
+        </div>
+      </div>
+      <div id="navigation">
+        <ul>
+          <li><a href="./index.html"><i class="icon icon-3x icon-home"></i></a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="content" class="container-fluid">
+      <div class="row-fluid divider">
+        <div class="span12">
+          <h2>Getting help</h2>
+          <p>Although Antergos is designed to work as much "out of the box" as possible, it's no-where near perfect. There will be times when things go wrong, you might have questions and a desire to learn more or just want to personalise it to suit your tastes. This page provides details of some available resources to help you!</p>
+          <h3>Search the web</h3>
+          <p>Perhaps the first place to look for generic Linux help is by using your favourite search engine. Just include words like Linux or Arch in your search query.</p>
+          <p>As Antergos is based on Archlinux<a href="#footnote_1"><sup>1</sup></a> why not head on over to the official Arch site?</p>
+          <h3>Look in the forums</h3>
+          <p>For specific help with Antergos we have a dedicated online forum where you can search for topics, or create one yourself! This is probably the best place to go for collaboration, discussion and assistance. Ask for help, post your thoughts, or outline some suggestions. Don't be shy!</p>
+          <p>Antergos currently comes with the option of many desktops (Gnome, Cinnamon, Mate, Openbox, XFCE, KDE, Razor-qt, ...). They have also support forums and helpers to get you started.</p>
+          <h3>Join us on IRC (Internet Relay Chat)</h3>
+          <p>Another option is to join us on IRC by joining our #Antergos channel on the chat.freenode.net servers.
+          <!--<h3>Sign up to a mailing list</h3>
+          <p>Another way to get help is to email questions to a Antergos mailing list (you can also search the history for past discussions). Simply sign up to the list you prefer and follow the instructions. There is a list dedicated to several topics, just take a look!</p>-->
+          <h2>Other resources</h2>
+          <ul>
+            <li><a href="cmd://link?http://forum.antergos.com/viewforum.php?f=18&sid=15041a18e997677aaa949b6bc56683e9">Antergos in Spanish</a> - official, support for our spanish community</li>
+            <li><a href="cmd://link?https://aur.archlinux.org/">AUR Repository</a> - extra software not in the regular repositories, built from source.</li>
+            <li><a href="cmd://link?http://wiki.antergos.com/">Antergos Wiki</a> - official wiki for Antergos</li>
+            <!--<li><a href="cmd://link?http://manjaroartwork.com/">Antergos Artwork</a> - place to get all the fancy stuff</li>-->
+            <li><a href="cmd://link?http://webchat.freenode.net/?channels=antergos&uio=d4">IRC Chats</a> - live talk and help by users for users</li>
+            <li>User contributed</li>
+        </ul>
+          <h2>Suggestions</h2>
+          Got a suggestion on how we can make Antergos better? Found a great package you want included, or want to
+          help out? Please let us know, by posting your suggestion on the forum or drop by on IRC.
+          Thank you!
+          <p>We hope you enjoy using Antergos!</p>
+          <div class="alert alert-info">
+            <p><a name="footnote_1"><sup>1</sup></a>Antergos is not provided or supported by the Archlinux Distribution. Official, unmodified Arch software is available through the <a href="cmd://link?http://archlinux.org/">Archlinux website</a>.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="footer" class="bottom">
+      <div class="footer-content">
+        <div class="form pull-right">
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/angular.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+
+  <script>
+    $(document).ready(function() {
+      var $nav = $('#navigation');
+      $nav.css('left', -$nav.outerWidth());
+      $nav.show();
+      $nav.delay(250).animate({ left: 0 }, 500);
+    });
+  </script>
+</body>
+</html>

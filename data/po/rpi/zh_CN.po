@@ -1,0 +1,261 @@
+# 
+# Translators:
+msgid ""
+msgstr ""
+"Project-Id-Version: Ubuntu MATE Welcome\n"
+"POT-Creation-Date: 2016-02-27 12:48+0100\n"
+"PO-Revision-Date: 2016-04-03 14:00+0000\n"
+"Last-Translator: Martin Wimpress <code@flexion.org>\n"
+"Language-Team: Chinese (China) (http://www.transifex.com/ubuntu-mate/ubuntu-mate-welcome/language/zh_CN/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Report-Msgid-Bugs-To : you@example.com\n"
+
+#: rpi.html:17
+msgid "Raspberry Pi Information"
+msgstr ""
+
+#: rpi.html:25
+msgid "A few important notes."
+msgstr ""
+
+#: rpi.html:26
+msgid ""
+"While the experience is visually similar to the desktop edition of Ubuntu "
+"MATE, the underlying architecture is very different. This page will "
+"highlight a few of these differences."
+msgstr ""
+
+#: rpi.html:32
+msgid "Resizing the file system"
+msgstr ""
+
+#: rpi.html:35
+msgid "Your file system has already been resized."
+msgstr ""
+
+#: rpi.html:38
+msgid ""
+"After setting up Ubuntu MATE for the first time on your Raspberry Pi, the "
+"file system will be restricted to the size of the original image, which is "
+"about 3.9 GB. Use this button to resize and fill the entire Micro-SD card."
+msgstr ""
+
+#: rpi.html:42
+msgid "Resize Now"
+msgstr ""
+
+#: rpi.html:46
+msgid ""
+"To complete the resize of your Raspberry Pi file system, please close all "
+"open windows and restart now."
+msgstr ""
+
+#: rpi.html:48
+msgid "Reboot"
+msgstr ""
+
+#: rpi.html:52
+msgid "Incompatible Software"
+msgstr ""
+
+#: rpi.html:53
+msgid ""
+"Some packages available for Ubuntu have only been written and compiled for "
+"the"
+msgstr ""
+
+#: rpi.html54, 109
+msgid "or"
+msgstr ""
+
+#: rpi.html:55
+msgid "architecture. As the Raspberry Pi is based on"
+msgstr ""
+
+#: rpi.html:56
+msgid ""
+"these packages will not be available to install. Depending on the package, "
+"it may be possible to compile these yourself or use an existing port."
+msgstr ""
+
+#: rpi.html:63
+msgid "Incompatible:"
+msgstr ""
+
+#: rpi.html:72
+msgid "Compatible:"
+msgstr ""
+
+#: rpi.html:85
+msgid "Upgrades"
+msgstr ""
+
+#: rpi.html:86
+msgid "Please"
+msgstr ""
+
+#: rpi.html:86
+msgid "do not"
+msgstr ""
+
+#: rpi.html:86
+msgid "attempt to"
+msgstr ""
+
+#: rpi.html:86
+msgid "upgrade"
+msgstr ""
+
+#: rpi.html:87
+msgid ""
+"your Raspberry Pi to a newer version of the distribution (for instance, from"
+" 15.04 to 15.10), as the underlying kernel is"
+msgstr ""
+
+#: rpi.html:89
+msgid "not designed"
+msgstr ""
+
+#: rpi.html:89
+msgid ""
+"to do this. This process will take a very long time to complete while "
+"potentially filling up your SD card to a point where there is no more free "
+"space."
+msgstr ""
+
+#: rpi.html:94
+msgid ""
+"It is safer to back up all of your data you wish to keep and re-flash the "
+"card with the new image. Attempting to upgrade may corrupt the SD card, "
+"prevent your installation from booting, or cause severe glitches."
+msgstr ""
+
+#: rpi.html:98
+msgid "You can, however, install"
+msgstr ""
+
+#: rpi.html:98
+msgid "regular updates"
+msgstr ""
+
+#: rpi.html:98
+msgid "via the"
+msgstr ""
+
+#: rpi.html100, 109
+msgid "Software Updater"
+msgstr ""
+
+#: rpi.html:100
+msgid "utility for your installed software."
+msgstr ""
+
+#: rpi.html:103
+msgid "Kernel Updates"
+msgstr ""
+
+#: rpi.html:104
+msgid "The same kernel provided by the"
+msgstr ""
+
+#: rpi.html:105
+msgid "Raspberry Pi foundation"
+msgstr ""
+
+#: rpi.html:106
+msgid ""
+"is used in this edition of Ubuntu MATE. As this kernel is delivered like a "
+"\"firmware\" blob, updates are not distributed via the"
+msgstr ""
+
+#: rpi.html:111
+msgid "Instead, to update the kernel, open a terminal and run:"
+msgstr ""
+
+#: rpi.html:115
+msgid "Hardware Acceleration"
+msgstr ""
+
+#: rpi.html:116
+msgid "Currently, hardware accelerated applications are"
+msgstr ""
+
+#: rpi.html:116
+msgid "not supported"
+msgstr ""
+
+#: rpi.html:117
+msgid "unlike"
+msgstr ""
+
+#: rpi.html:118
+msgid ""
+"Applications that depend on OpenGL ES libraries or require the GPU will fail"
+" to start."
+msgstr ""
+
+#: rpi.html:121
+msgid "For playing videos, the application"
+msgstr ""
+
+#: rpi.html:121
+msgid ""
+"will be able to do this and is pre-installed. If you are looking to play "
+"MPEG-2 or VC-1 video files then"
+msgstr ""
+
+#: rpi.html:123
+msgid "you will need MPEG-2 and/or VC-1 licenses from the"
+msgstr ""
+
+#: rpi.html:124
+msgid "Raspberry Pi Store."
+msgstr ""
+
+#: rpi.html:127
+msgid "Enable/Disable X11"
+msgstr ""
+
+#: rpi.html:128
+msgid "For users who are looking to create their own headless"
+msgstr ""
+
+#: rpi.html:128
+msgid "\"server\""
+msgstr ""
+
+#: rpi.html:128
+msgid ""
+"using Ubuntu MATE, there is a utility for toggling the graphical "
+"environment."
+msgstr ""
+
+#: rpi.html:131
+msgid "To disable X11 and login via the console:"
+msgstr ""
+
+#: rpi.html:135
+msgid "To enable X11 to restore the Ubuntu MATE desktop:"
+msgstr ""
+
+#: rpi.html:138
+msgid "Changes take effect after a reboot."
+msgstr ""
+
+#: rpi.html:142
+msgid "Release Notes"
+msgstr ""
+
+#: rpi.html:143
+msgid ""
+"To read up on release notes and changes by version, visit the Ubuntu MATE "
+"website."
+msgstr ""
+
+#: rpi.html:150
+msgid "Raspberry Pi is a trademark of the"
+msgstr ""

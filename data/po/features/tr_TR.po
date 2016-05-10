@@ -1,0 +1,300 @@
+# 
+# Translators:
+# Kaan BODUR <kaanbodur@gmail.com>, 2016
+msgid ""
+msgstr ""
+"Project-Id-Version: Ubuntu MATE Welcome\n"
+"POT-Creation-Date: 2016-02-27 12:48+0100\n"
+"PO-Revision-Date: 2016-04-17 11:12+0000\n"
+"Last-Translator: Kaan BODUR <kaanbodur@gmail.com>\n"
+"Language-Team: Turkish (Turkey) (http://www.transifex.com/ubuntu-mate/ubuntu-mate-welcome/language/tr_TR/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: tr_TR\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Report-Msgid-Bugs-To : you@example.com\n"
+
+#: features.html:17
+msgid "Features"
+msgstr "Özellikler"
+
+#: features.html:25
+msgid "Modern and Full-Featured"
+msgstr "Modern ve Tam Teşekküllü"
+
+#: features.html:26
+msgid ""
+"Ubuntu MATE is a modern computer operating system, with an attractive and "
+"easy to understand user interface. Its update manager keeps not only the "
+"operating system itself, but all of its installed applications updated to "
+"the current release. The operating system is more secure, and better "
+"supported than operating systems that come pre-installed on most home "
+"computer hardware today."
+msgstr "Ubuntu MATE etkileyici ve anlaşılması kolay kullanıcı arayüzüne sahip, modern bir işletim sistemidir. Mevcut güncelleme yöneticisi ile sadece işletim sistemini güncellemekle kalmaz, aynı zamanda yüklü olan tüm uygulamaların en güncel sürümlerine sahip olmanızı sağlar. Ev kullanıcılarına yönelik ön tanımlı uygulamalar ile gelen günümüz işletim sistemlerinden daha güvenli ve destek oranı daha yüksektir. "
+
+#: features.html:36
+msgid "Pre-Configured Yet Flexible"
+msgstr "Yapılandırılmış Fakat Esnek "
+
+#: features.html:42
+msgid ""
+"Using Ubuntu MATE provides you with the freedom to run a complete, full-"
+"featured operating system, pre-configured with most, if not all, of the "
+"applications you will need for your daily computing - or to change anything "
+"about the way it looks, the way it works, or the applications it runs to "
+"suit your taste."
+msgstr "Ubuntu MATE size özgür, tam donanımlı, büyük ölçüde yapılandırılmış, hepsi olmasa bile günlük kullanımınız için gerekli çoğu uygulamayı içeren; görünümünü istediğiniz şekilde değiştirebileceğiniz, nasıl davranacağına karar verebileceğeniz; ya da zevkinize göre uygulamaları çalıştırabileceğiniz bir işletim sistemi kullanma olanağını sunar. "
+
+#: features.html:51
+msgid "Built-In Security"
+msgstr "Yerleşik Güvenlik"
+
+#: features.html:57
+msgid ""
+"Ubuntu MATE is designed with security in mind. Unlike operating systems that"
+" update only once a month, Ubuntu MATE receives updates continuously. The "
+"updates include security patches for Ubuntu MATE and all of its components. "
+"Security updates for all of its installed applications are also provided on "
+"the same schedule. This ensures that you have the latest protection for all "
+"of your computer's software -- as soon as it's available!"
+msgstr "Ubuntu MATE güvenlik göz önünde bulundurularak tasarlanmıştır. Sadece aylık olarak güncelleme alan işletim sistemlerinin aksine, Ubuntu MATE sürekli olarak güncellemeleri alır. Bu güncellemeler Ubuntu MATE ve tüm bileşenleri için güvenlik yamalarını içerir. Yüklü uygulamaların güncellemeleri de aynı anda sunulur. Bu, yazılımlarınızda yayımlanmış en güncel korumayı kullanmanızı sağlar. "
+
+#: features.html:73
+msgid ""
+"Ubuntu MATE can get viruses and other infections... but it doesn't. Rapid "
+"and timely updates ensure that there are very few, if any threats to Linux "
+"systems like Ubuntu MATE that persist in the wild. In reality, there have "
+"been very few \"public\" infections in the last 10 years that can affect "
+"Ubuntu MATE. They are no longer a threat to anyone installing or using a "
+"modern Linux distribution today. Ubuntu MATE is designed to make it "
+"difficult for viruses, root kits and other malware to be installed and run "
+"without conscious intervention by you, the user. Even if you do accidentally"
+" invite in an infection, chances are it's designed to attack Windows and "
+"won't do much, if any damage to Ubuntu MATE."
+msgstr "Ubuntu MATE virüs ve diğer zararlı yazılımlardan etkilenebilir... Aslında etkilenmez. Hızlı ve zamanında güncellemeler, Ubuntu MATE gibi diğer Linux sistemlere yönelebilecek tehditleri en aza indirger. Aslında son 10 yılda Ubuntu MATE'yi de etkileyebilecek çok az sayıda \"genel\" bulaşma vakası yaşandı. Modern Linux dağıtımlarını indirip kuran kullanıcılar için artık böyle tehditler mevcut değil. Ubuntu MATE virüs, rootkit ve diğer kötü amaçlı yazılımların sisteminize kurulup fark edilmeksizin çalışmasını zorlaştıracak şekilde tasarlandı. Hatayla bu yazılımlara davetiye çıkarsanız bile bunların Windows'a yönelik için tasarlanmış ve Ubuntu MATE'ye zarar vermeyen saldırılar olma ihtimali oldukça yüksek. "
+
+#: features.html:93
+msgid ""
+"Another significant security feature of Ubuntu MATE is that its users are "
+"not administrators by default. Administrators (\"root\" users) on any "
+"computer system have permission to do anything they want, including the "
+"ability to damage the system."
+msgstr "Ubuntu MATE'nin bir diğer önemli güvenlik özelliği iste ön tanımlı olarak hiç bir kullanıcı hesabının yönetici haklarına sahip olmaması. Yönetici hesapları (\"root\") işletim sistemi üzerinde sisteme zarar verme ihtimali bulunan işlemler de olmak üzere istediği değişiklikleri yapma yetkisine sahip hesaplardır. "
+
+#: features.html:97
+msgid ""
+"For example, other operating systems look at the name of a file to determine"
+" which program should open it, then immediately attempt to open it. That "
+"design makes it easy for an intruder to attack a computer. Ubuntu MATE opens"
+" a file based on what the file is, not based on its name. So even if a "
+"malicious program disguises its identity by using the name \"Last Will and "
+"Testament.txt\" Ubuntu MATE will recognize the file as a program. The system"
+" provides a warning that the file is not a text file, but that it is a "
+"program that will be run if you give it permission to continue. To be extra "
+"secure, Ubuntu MATE requires you to provide your administrator password "
+"before that permission is granted. Every single time."
+msgstr "Örneğin diğer işletim sistemlerinde, sistem dosya ismine bakar ve hangi programın açılması gerektiğine karar verir ve anında onu açar. Bu işleyiş mekanizması bilgisayarın dışarıdan gelecek saldırılara açık olmasına yol açar. Ubuntu MATE dosyayı ismine göre değil ne olduğuna bakarak açar. Yani eğer zararlı bir yazılım \"Vasiyetimdir.txt\" ismiyle kimliğini gizlese bile Ubuntu MATE onu bir program gibi algılar. Sistem bunun bir metin dosyası değil izin verdiğiniz takdirde çalışacak olan bir program olduğu uyarısını yapar. Ubuntu MATE ekstra güvenlik için, bu izin verilmeden önce  yönetici şifrenizi ister. Hem de her defasında."
+
+#: features.html:115
+msgid "Powerful Applications"
+msgstr "Güçlü Uygulamalar"
+
+#: features.html:116
+msgid ""
+"While MATE Desktop provides the essential user interfaces to control and use"
+" a computer, Ubuntu MATE adds a collection of additional applications to "
+"turn your computer into a truly powerful workstation."
+msgstr "MATE Masaüstü Ortamı bilgisayar kullanımı için gerekli olan temel kullanıcı arayüzlerini sunarken Ubuntu MATE de sisteminizi güçlü bir iş istasyonuna çevirmeye yarayacak geniş bir uygulama yelpazesini buna ekliyor.  "
+
+#: features.html:121
+msgid "Productivity"
+msgstr "Üretkenlik"
+
+#: features.html:130
+msgid ""
+"Firefox delivers safe, easy web browsing. A familiar user interface, "
+"enhanced security features including protection from online identity theft, "
+"and an integrated search to let you get the most out of the web."
+msgstr "Firefox güvenli ve kolay bir web taraması sunar. Tanıdık bir arayüz, kimlik bilgilerinizin korunmasını da içeren güçlendirilmiş güvenlik özellikleri ve tümleşik arama özellikleri ile web ortamından en iyi şekilde yararlanmanızı sağlar. "
+
+#: features.html:142
+msgid ""
+"Thunderbird is a full-featured email, RSS and newsgroup client that makes "
+"emailing safer, faster and easier than ever before. It supports different "
+"mail accounts (POP, IMAP, Gmail), has a simple mail account setup wizard, "
+"one-click address book, tabbed interface, an integrated learning spam "
+"filter, advanced search and indexing capabilities, and offers easy "
+"organization of mails with tagging and virtual folders. It also features "
+"unrivalled extensibility."
+msgstr "Thunderbird, elektronik postalarınızın her zamankinden daha güvenli, hızlı ve kolay bir şekilde yönetmenizi sağlayan tam donanımlı bir elektronik posta, RSS ve haber grubu istemcisidir. Farklı posta hesaplarını destekler(POP,IMAP,Gmail); kolay bir kurulum yönlendiricisi, tümleşik adres defteri, sekmeli arayüz, tümleşik spam filtresi, geliştirilmiş arama ve indeksleme yetenekleri ve postaların kolaylıkla organize edilmesini sağlayan etiketleme ve sanal klasörleme özelliklerine sahiptir. Aynı zamanda eşsiz bir esnekliği de mevcuttur. "
+
+#: features.html:158
+msgid ""
+"LibreOffice is a full-featured office productivity suite that provides a "
+"near drop-in replacement for Microsoft(R) Office; its clean interface and "
+"powerful tools let you unleash your creativity and grow your productivity. "
+"LibreOffice embeds several applications that make it the most powerful Free "
+"and Open Source Office suite on the market:"
+msgstr "LibreOffice Microsoft(R) Ofis'in yerini alabilecek tam donanımlı bir ofis takımıdır. Temiz arayüzü ve güçlü araçları ile yaratıcılığınızı ortaya çıkarır ve üretkenliğinizi artırır. LibreOffice piyasada bulunan çoğu Özgür ve Açık Kaynaklı Ofis takımlarının güçlü uygulamalarını beraberinde getirir. "
+
+#: features.html:165
+msgid "Writer, the word processor."
+msgstr "Writer, kelime işlemci. "
+
+#: features.html:166
+msgid "Calc, the spreadsheet application."
+msgstr "Calc, çizelge uygulaması."
+
+#: features.html:167
+msgid "Impress, the presentation engine."
+msgstr "Impress, sunum dinamosu."
+
+#: features.html:168
+msgid "Draw, the drawing and flowcharting application"
+msgstr "Draw, çizim ve akış şemaları."
+
+#: features.html:169
+msgid "Base, the database and database frontend."
+msgstr "Base, veritabanı ve veritabanı arayüzü."
+
+#: features.html:170
+msgid "Math, for editing mathematics."
+msgstr "Math, matematiksel işlemler için. "
+
+#: features.html:177
+msgid "Entertainment"
+msgstr "Eğlence"
+
+#: features.html:183
+msgid ""
+"Rhythmbox is a very easy to use music playing and management program which "
+"supports a wide range of audio formats (including mp3 and ogg). Originally "
+"inspired by Apple's iTunes, the current version also supports Internet "
+"Radio, iPod integration and generic portable audio player support, Audio CD "
+"burning, Audio CD playback, music sharing, and Podcasts."
+msgstr "Rhythmbox çok çeşitli ses biçimlerini destekleyen (mp3 ve ogg dahil olmak üzere), kullanımı kolay bir müzik yönetim ve oynatma programıdır. Apple'ın iTunes yazılımından esinlenilerek geliştirilen uygulamanın şu anki sürümüyle şunlar desteklenmektedir: İnternet Radyoları, İPod Entegrasyonu ve önde gelen medya oynatıcıları, Ses CD'si yakma, Ses CD'si oynatma, Müzik Paylaşımı ve Podcast. "
+
+#: features.html:197
+msgid ""
+"Shotwell is a digital photo organizer. It allows you to import photos from "
+"disk or camera, organize them in various ways, view them in full-window or "
+"fullscreen mode, and export them to share with others. It is able to manage "
+"a lot of different image formats, also including raw CR2 files."
+msgstr "Shotwell bir dijital fotoğraf düzenleyicidir. Kamera veya disklerden fotoğraflarınızı aktarma ve düzenlemenize; farklı şekillerde düzenlemenize; tam ekran ya da pencere şeklinde görüntülemenize ya da paylaşmak üzere aktarım yapmanıza olanak sağlar. CR2 dosyaları da olmak üzere çok farklı görüntü biçimlerini destekler. "
+
+#: features.html:210
+msgid ""
+"VLC is the VideoLAN project's media player. It plays MPEG, MPEG-2, MPEG-4, "
+"DivX, MOV, WMV, QuickTime, WebM, FLAC, MP3, Ogg/Vorbis files, DVDs, VCDs, "
+"podcasts, and multimedia streams from various network sources."
+msgstr "VLC VideoLAN Projesi'nin medya oynatıcısıdır. MPEG, MPEG-2, MPEG-4, DivX, MOV, WMV, QuickTime, WebM, FLAC, MP3, Ogg/Vorbis Dosyaları; DVD, VCD, Podcastler ve farklı ağ kaynaklarından çoklu medya akışlarını oynatır. "
+
+#: features.html:214
+msgid ""
+"VLC can also be used as a streaming server that duplicates the stream it "
+"reads and multicasts them through the network to other clients, or serves "
+"them through HTTP."
+msgstr "VLC aynı zamanda yayın sunucusu olarak da kullanılabilir. "
+
+#: features.html:217
+msgid ""
+"VLC has support for on-the-fly transcoding of audio and video formats, "
+"either for broadcasting purposes or for movie format transformations."
+msgstr "VLC yayın amaçlı ya da film biçimleri arasında dönüşüm yapma amacıyla kullanabileceğiniz, ses ve görüntü biçimlerinin \"on-the-fly\" çözümlemenmesi desteğini sunar."
+
+#: features.html:225
+msgid "... And a whole lot more!"
+msgstr "...ve daha fazlası!"
+
+#: features.html:227
+msgid ""
+"Naturally you'll also find a firewall, backup application, document/photo "
+"scanner and printer management all included in Ubuntu MATE. And this is just"
+" the start. The"
+msgstr "Ubuntu MATE ile birlikte gelen güvenlik duvarı, yedekleme uygulaması, belge/fotoğraf tarayıcı ve yazıcı yöneticisi uygulamaları göreceksiniz. Bunlar sadece başlangıç. "
+
+#: features.html:230
+msgid "Software"
+msgstr "Yazılım"
+
+#: features.html:230
+msgid ""
+"sections includes best-in-class applications for most tasks and a one-click "
+"installer for an"
+msgstr "bölümleri işlemleriniz için sınıfının en iyi uygulamaları ve tek tuşla kurulum için bir "
+
+#: features.html:232
+msgid ""
+"that will give you access to thousands of applications suitable for just "
+"about any professional or recreational pursuit."
+msgstr "bulursunuz ve bu yazılım ile profesyonel ya da keyfi kullanımlara uyacak binlerce uygulamaya ulaşma imkanı bulursunuz. "
+
+#: features.html:239
+msgid "Games"
+msgstr "Oyunlar"
+
+#: features.html:245
+msgid ""
+"In the last couple of years Linux has become a first class gaming platform "
+"thanks to"
+msgstr "Son birkaç yılda Linux birinci sınıf bir oyun platformu konumunda geldi ve bunu "
+
+#: features.html:248
+msgid "bringing the"
+msgstr "firması ve Linux'a getirdiği"
+
+#: features.html:250
+msgid ""
+"platform to Linux. At the time of writing Steam has more than 1000 high "
+"quality indie and AAA titles available for Linux. Ubuntu MATE is fully "
+"compatible with Steam for Linux."
+msgstr "'e borçlu. Bu yazının yazıldığı sırada Steam bünyesinde 1000'den fazla yüksek kalite indie ve AAA içeriyor. Ubuntu MATE Linux için Steam ile tam uyumludur. "
+
+#: features.html:255
+msgid ""
+"While Steam is a major step forward for gaming on Linux, there are also many"
+" high quality and enjoyable Open Source games titles available for Ubuntu "
+"MATE. It doesn't matter if you like flight simulators, motor racing, first "
+"person shooters, jump and run or card games, you'll find something to keep "
+"you entertained."
+msgstr "Steam'in varlığı Linux oyun dünyası için büyük bir adım olmakla birlikte, Ubuntu MATE için yüksek kaliteli birçok  Açık Kaynak oyun da bulunmaktadır. Uçuş simülasyonu, motor yarışları, FRP, zıplama ve koşma, kart oyunları... Hangisinden hoşlandığınız fark etmez, sizi eğlendirecek bir oyunu mutlaka bulacaksınız. "
+
+#: features.html:265
+msgid "Accessibility"
+msgstr "Erişilebilirlik"
+
+#: features.html:271
+msgid ""
+"Making an accessible operating system was a key priority when the Ubuntu "
+"MATE founders initially set out the goals of the project."
+msgstr "Ubuntu MATE'nin kurucuları projeye başladıklarında anahtar öneme sahip ve önceliklerinden olan bir konu da erişilebilir bir işletim sistemi yapmaktı. "
+
+#: features.html:275
+msgid ""
+"Ubuntu MATE is never going to be able to offer the comprehensive integration"
+" of assistive technologies that"
+msgstr "Ubuntu MATE hiç bir zaman "
+
+#: features.html:277
+msgid "Sonar GNU/Linux"
+msgstr "Sonar GNU/Linux"
+
+#: features.html:278
+msgid ""
+"provides. But Ubuntu MATE will continue to follow their lead so that Ubuntu "
+"MATE is a viable desktop solution where computer access is shared within a "
+"household or business where individual needs differ."
+msgstr "dağıtımının sağladığı geniş ve kapsayıcı yardımcı teknolojileri sağlayamayacak. Ancak Ubuntu MATE onların yönlendiriciliğini takip edecek ve bilgisayar erişiminin paylaşıldığı ve ihitayaca göre değiştiği aile ortamları ya da iş çevrelerinde uygulanabilir bir masaüstü alternatifi olacak. "
+
+#: features.html:286
+msgid "Mobile Integration"
+msgstr "Mobil Entegrasyonu"
+
+#: features.html:292
+msgid ""
+"Currently Ubuntu MATE has the essential mobile device support you'd expect. "
+"You can plug in a phone, media player or digital camera and the device is "
+"automatically detected and mounted. You can then access the files on it or "
+"sync its contents."
+msgstr "Şu anda Ubuntu MATE beklenen temel mobil cihaz desteğine sahip durumda. Bir telefon, medya oynatıcı ya da dijital kamerayı bilgisayarına bağlayabilirsiniz. Bağlantı yapıldığında cihazınız otomatik olarak tanınır. Cihazlarınızın içeriğine ulaşabilir ve içeriğinizi eşitleyebilirsiniz. "

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" ng-app>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/bootstrap-2.3.2.css" rel="stylesheet" media="screen">
+  <link href="css/font-awesome.css" rel="stylesheet" media="screen">
+  <link href="css/animate.css" rel="stylesheet" media="screen">
+  <link href="css/welcome.css" rel="stylesheet" media="screen">
+</head>
+<body class="backdrop-simple" style="overflow: hidden;">
+  <div id="mate-blur" class="menu-bkgnd" hidden></div>
+  <div class="container-fluid">
+    <div id="navigation">
+      <div id="navigation-title" hidden>&zwnj;Main Menu&zwnj;</div>
+      <div id="navigation-right">
+        <div hidden id="update-notification" class="heads-up entire-page-fade">
+          <a href="cmd://subscribe-updates" class="btn btn-inverse"
+             data-toggle="tooltip" data-placement="bottom" title="Ensures Welcome's documentation, translations and software picks are always up-to-date.">
+            &zwnj;Subscribe to Welcome updates&zwnj; &nbsp;<span class="fa fa-arrow-circle-up"></span>
+          </a>
+        </div>
+      </div>
+      <div hidden id="update-subscribing"  class="heads-up entire-page-fade">&zwnj;Welcome will automatically restart in a few moments...&zwnj; <img src="img/welcome/processing-dark.gif"/></div>
+      <img id="navigation-divider" src="img/welcome/header-shadow.png" width="100%" height="11px">
+    </div>
+  </div>
+  <img id="main-menu-logo" class="entire-page-fade main-menu-logo" src="img/welcome/ubuntu-mate-icon.svg" width="50%" height="50%" hidden>
+  <span id="special"></span>
+  <div class="entire-page-fade" id="wrapper" hidden>
+    <div id="header" class="container-fluid fade fade-1s" style="padding-top: 64px">
+      <div class="row-fluid">
+        <div class="span12 center splash-version">
+          <img src="img/welcome/ubuntu-mate-text.svg" width="199px" height="28px">&nbsp;<span id="os_version">16.04</span>
+        </div>
+      </div>
+      <div class="row-fluid main-menu-textbox">
+        <div class="main-menu-text">
+          &zwnj;Choose an option to discover your new operating system.&zwnj;
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid fade fade-2s">
+      <div class="row-fluid divider">
+        <div class="span4 btn-showcase">
+          <!-- Documentation -->
+          <a id="introduction"   class="btn btn-block btn-default fade fade-3s" onclick="exitMenu('introduction.html')"><span class="fa fa-2x fa-book fa-va"></span>&nbsp; &zwnj;Introduction&zwnj;</a>
+          <a id="features"       class="btn btn-block btn-default fade fade-4s" onclick="exitMenu('features.html')"><span class="fa fa-2x fa-star fa-va"></span>&nbsp; &zwnj;Features&zwnj;</a>
+          <a id="gettingstarted" class="btn btn-block btn-success fade fade-5s live-session" onclick="exitMenu('gettingstarted.html')"><span class="fa fa-2x fa-info-circle fa-va"></span>&nbsp; &zwnj;Getting Started&zwnj;</a>
+          <a id="install-guide"  class="btn btn-block btn-success fade fade-5s live-session-only" onclick="exitMenu('gettingstarted.html')"><span class="fa fa-2x fa-laptop fa-va"></span>&nbsp; &zwnj;Installation Help&zwnj;</a>
+        </div>
+        <div class="span4 btn-showcase"></div>
+        <div class="span4 btn-showcase">
+          <!-- Project -->
+          <a id="getinvolved" class="btn btn-block btn-default fade fade-3s" onclick="exitMenu('getinvolved.html')"><span class="fa fa-2x fa-code fa-va"></span>&nbsp; &zwnj;Get Involved&zwnj;</a>
+          <a id="shop"        class="btn btn-block btn-default fade fade-4s" onclick="exitMenu('shop.html')"><span class="fa fa-2x fa-shopping-cart fa-va"></span>&nbsp; &zwnj;Shop&zwnj;</a>
+          <a id="donate"      class="btn btn-block btn-success fade fade-5s" onclick="exitMenu('donate.html')"><span class="fa fa-2x fa-heart fa-va"></span>&nbsp; &zwnj;Donate&zwnj;</a>
+        </div>
+      </div>
+      <br>
+      <div class="row-fluid">
+        <div class="span4 btn-showcase">
+          <br>
+          <!-- Support -->
+          <a id="community"   class="btn btn-block btn-default fade fade-3s" onclick="exitMenu('community.html')"><span class="fa fa-2x fa-group fa-va"></span>&nbsp; &zwnj;Community&zwnj;</a>
+          <a id="chatroom"    class="btn btn-block btn-default fade fade-4s" onclick="exitMenu('chatroom.html')"><span class="fa fa-2x fa-comments fa-va"></span>&nbsp; &zwnj;Chat Room&zwnj;</a>
+          <a id="software"    class="btn btn-block btn-success fade fade-5s" onclick="exitMenu('software.html');$('#footer-left').fadeOut()"><span class="fa fa-2x fa-download fa-va"></span>&nbsp; &zwnj;Software&zwnj;</a>
+          <a id="install"     class="btn btn-block btn-success fade fade-5s" href="cmd://install"><span class="fa fa-2x fa-hdd-o fa-va"></span>&nbsp; &zwnj;Install Now&zwnj;</a>
+        </div>
+        <div class="span4 btn-showcase"></div>
+        <br>
+        <div class="span4 btn-showcase">
+          <a class="btn btn-block btn-rpi fade fade-5s rpi-only" onclick="exitMenu('rpi.html')" style="height: 95px; padding-top:10px;">
+            <img src="img/logos/raspberry-pi-mono.png"/>
+            <br>&zwnj;Raspberry Pi Information&zwnj;
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="footer" class="bottom">
+    <div class="footer-content">
+      <div id="footer-left">
+        <span id="footer-global-left"></span>
+      </div>
+      <div id="footer-right" class="form">
+        <a href="cmd://autostart" id="open-at-start" class="live-session entire-page-fade" style="display:none">
+          <span id="autostart" class="fa fa-square fa-va"></span> &zwnj;Open Welcome when I log on.&zwnj;
+        </a>
+        <span id="footer-global-right"></span>
+      </div>
+    </div>
+  </div>
+  <script src="js/jquery-2.1.4.js"></script>
+  <script src="js/bootstrap-2.3.2.js"></script>
+  <script src="js/janimate.js"></script>
+  <script src="js/confetti.js"></script>   <!-- Confetti only appears on special events -->
+  <script src="js/welcome.js"></script>
+</body>
+</html>

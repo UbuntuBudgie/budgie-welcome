@@ -1,0 +1,262 @@
+# 
+# Translators:
+# Ivan Pejić <ipejic@gmail.com>, 2016
+msgid ""
+msgstr ""
+"Project-Id-Version: Ubuntu MATE Welcome\n"
+"POT-Creation-Date: 2016-02-27 12:48+0100\n"
+"PO-Revision-Date: 2016-04-10 14:19+0000\n"
+"Last-Translator: Ivan Pejić <ipejic@gmail.com>\n"
+"Language-Team: Serbian (Latin) (http://www.transifex.com/ubuntu-mate/ubuntu-mate-welcome/language/sr@latin/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: sr@latin\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Report-Msgid-Bugs-To : you@example.com\n"
+
+#: rpi.html:17
+msgid "Raspberry Pi Information"
+msgstr "Informacije o Raspberry Pi"
+
+#: rpi.html:25
+msgid "A few important notes."
+msgstr "Par bitnih napomena."
+
+#: rpi.html:26
+msgid ""
+"While the experience is visually similar to the desktop edition of Ubuntu "
+"MATE, the underlying architecture is very different. This page will "
+"highlight a few of these differences."
+msgstr "Mada liči kao Ubuntu MATE destop izdanje, osnova na koju se oslanja je jako drugačija. Na ovoj stranici naglasićemo par bitnih razlika."
+
+#: rpi.html:32
+msgid "Resizing the file system"
+msgstr "Izmena veličine fajl sistema"
+
+#: rpi.html:35
+msgid "Your file system has already been resized."
+msgstr "Fajl sistem je uvećan."
+
+#: rpi.html:38
+msgid ""
+"After setting up Ubuntu MATE for the first time on your Raspberry Pi, the "
+"file system will be restricted to the size of the original image, which is "
+"about 3.9 GB. Use this button to resize and fill the entire Micro-SD card."
+msgstr "Nakon što po prvi put postavite Ubuntu MATE na Vaš Raspberry Pi, fajl sistem će biti ograničen na veličinu orginalne slike, oko 3.9 GB. Koristeći taster ispod možete izvršiti uvećanje do pune veličine SD kartice."
+
+#: rpi.html:42
+msgid "Resize Now"
+msgstr "Pokreni uvećanje"
+
+#: rpi.html:46
+msgid ""
+"To complete the resize of your Raspberry Pi file system, please close all "
+"open windows and restart now."
+msgstr "Da bi se završilo uvećanje Raspberry Pi fajl sistema, molim Vas zatvorite sve aktivne aplikacije i zadajte restart."
+
+#: rpi.html:48
+msgid "Reboot"
+msgstr "Restart"
+
+#: rpi.html:52
+msgid "Incompatible Software"
+msgstr "Nekompatibilni softver"
+
+#: rpi.html:53
+msgid ""
+"Some packages available for Ubuntu have only been written and compiled for "
+"the"
+msgstr "Neki od paketa dostupnih za Ubuntu su napisani i kompajlirani za"
+
+#: rpi.html54, 109
+msgid "or"
+msgstr "ili"
+
+#: rpi.html:55
+msgid "architecture. As the Raspberry Pi is based on"
+msgstr "arhitekture. Kako se Raspberry Pi zasniva na"
+
+#: rpi.html:56
+msgid ""
+"these packages will not be available to install. Depending on the package, "
+"it may be possible to compile these yourself or use an existing port."
+msgstr "ovi paketi nisu prisutni i njihova instalacija nije moguća. U zavisnosti od paketa, postoji mogućnost da ih kompajlirate sami ili da koristite tuđe."
+
+#: rpi.html:63
+msgid "Incompatible:"
+msgstr "Nekompatibilni:"
+
+#: rpi.html:72
+msgid "Compatible:"
+msgstr "Kompatibilni:"
+
+#: rpi.html:85
+msgid "Upgrades"
+msgstr "Nova izdanja"
+
+#: rpi.html:86
+msgid "Please"
+msgstr "Molim Vas"
+
+#: rpi.html:86
+msgid "do not"
+msgstr "nemojte"
+
+#: rpi.html:86
+msgid "attempt to"
+msgstr "pokušavati da"
+
+#: rpi.html:86
+msgid "upgrade"
+msgstr "nadograđujete"
+
+#: rpi.html:87
+msgid ""
+"your Raspberry Pi to a newer version of the distribution (for instance, from"
+" 15.04 to 15.10), as the underlying kernel is"
+msgstr "Vaš Raspberry Pi na novije izdanje distribucije (npr. sa 15.04 na 15.10) jer kernel u osnovi"
+
+#: rpi.html:89
+msgid "not designed"
+msgstr "nije predviđen"
+
+#: rpi.html:89
+msgid ""
+"to do this. This process will take a very long time to complete while "
+"potentially filling up your SD card to a point where there is no more free "
+"space."
+msgstr "da to podrži. Ovaj proces će trajati jako dugo i ostavlja mogućnost da u potpunosti utroši sav raspoloživi prostor na SD kartici."
+
+#: rpi.html:94
+msgid ""
+"It is safer to back up all of your data you wish to keep and re-flash the "
+"card with the new image. Attempting to upgrade may corrupt the SD card, "
+"prevent your installation from booting, or cause severe glitches."
+msgstr "Sigurnija je varijanta da na stranu sačuvate bitne podatke a SD karticu kompletnu presnimite sa novijim izdanjem. Pokušaj ažuriranja aktivnog sistema na noviju verziju može: da dovede do oštećenja podataka koji se nalaze na kartici; da sistem više nije moguće startovati; da izazove izrazite nepravilnosti u radu."
+
+#: rpi.html:98
+msgid "You can, however, install"
+msgstr "Sa druge strane, možete pokretati"
+
+#: rpi.html:98
+msgid "regular updates"
+msgstr "redovno ažuriranje"
+
+#: rpi.html:98
+msgid "via the"
+msgstr "preko"
+
+#: rpi.html100, 109
+msgid "Software Updater"
+msgstr "Software Updater"
+
+#: rpi.html:100
+msgid "utility for your installed software."
+msgstr "alata."
+
+#: rpi.html:103
+msgid "Kernel Updates"
+msgstr "Ažuriranje kernel-a"
+
+#: rpi.html:104
+msgid "The same kernel provided by the"
+msgstr "Istovetni kernel koji je dostupan od strane"
+
+#: rpi.html:105
+msgid "Raspberry Pi foundation"
+msgstr "Raspberry Pi fondacije"
+
+#: rpi.html:106
+msgid ""
+"is used in this edition of Ubuntu MATE. As this kernel is delivered like a "
+"\"firmware\" blob, updates are not distributed via the"
+msgstr "koristi se u ovom izdanju Ubuntu MATE-a. Kako se ovaj kernel distribuira kao firmver blok, ažuriranje se ne vrši kroz"
+
+#: rpi.html:111
+msgid "Instead, to update the kernel, open a terminal and run:"
+msgstr "Tako da za ažuriranje kernela, otvorite terminal i zadajte:"
+
+#: rpi.html:115
+msgid "Hardware Acceleration"
+msgstr "Hardversko ubrzanje"
+
+#: rpi.html:116
+msgid "Currently, hardware accelerated applications are"
+msgstr "Trenutno, hardversko ubrzanje aplikacija"
+
+#: rpi.html:116
+msgid "not supported"
+msgstr "nije dostupno"
+
+#: rpi.html:117
+msgid "unlike"
+msgstr "za razliku od"
+
+#: rpi.html:118
+msgid ""
+"Applications that depend on OpenGL ES libraries or require the GPU will fail"
+" to start."
+msgstr "Aplikacije koje zavise od OpenGL ES biblioteka ili zahtevaju GPU neće hteti da se pokrenu."
+
+#: rpi.html:121
+msgid "For playing videos, the application"
+msgstr "Za reprodukciju videa možete koristiti"
+
+#: rpi.html:121
+msgid ""
+"will be able to do this and is pre-installed. If you are looking to play "
+"MPEG-2 or VC-1 video files then"
+msgstr "koji je već unapred instaliran. Ako želite da reporodukujete MPEG-2 ili VC-1 video sadržaj"
+
+#: rpi.html:123
+msgid "you will need MPEG-2 and/or VC-1 licenses from the"
+msgstr "neophodne su MPEG-2 i/ili VC-1 licence iz"
+
+#: rpi.html:124
+msgid "Raspberry Pi Store."
+msgstr "Raspberry Pi prodavnice."
+
+#: rpi.html:127
+msgid "Enable/Disable X11"
+msgstr "X11 uključen/isključen"
+
+#: rpi.html:128
+msgid "For users who are looking to create their own headless"
+msgstr "Korisnicima koji žele da, koristeću Ubuntu MATE, naprave"
+
+#: rpi.html:128
+msgid "\"server\""
+msgstr "\"server\""
+
+#: rpi.html:128
+msgid ""
+"using Ubuntu MATE, there is a utility for toggling the graphical "
+"environment."
+msgstr "bez grafičkog prikaza, ostavljen je alat kojim mogu to jednostavno da izaberu."
+
+#: rpi.html:131
+msgid "To disable X11 and login via the console:"
+msgstr "Za isključeni X11, prijavite se na konzolu i zadajte:"
+
+#: rpi.html:135
+msgid "To enable X11 to restore the Ubuntu MATE desktop:"
+msgstr "Da uključite X11 i vratite nazad Ubuntu MATE desktop:"
+
+#: rpi.html:138
+msgid "Changes take effect after a reboot."
+msgstr "Izmene su aktivne nakon restarta."
+
+#: rpi.html:142
+msgid "Release Notes"
+msgstr "Izveštaji"
+
+#: rpi.html:143
+msgid ""
+"To read up on release notes and changes by version, visit the Ubuntu MATE "
+"website."
+msgstr "Za detalje o svakoj verziji i izmenama unešenim u nova izdanja pogledajte sekciju na Ubuntu MATE sajtu"
+
+#: rpi.html:150
+msgid "Raspberry Pi is a trademark of the"
+msgstr "Raspberry Pi je registrovana robna marka"

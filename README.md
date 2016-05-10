@@ -1,10 +1,17 @@
-# budgie-remix-welcome
-welcome screen for budgie-remix
 
-https://bitbucket.org/ubuntu-mate/ubuntu-mate-welcome
+budgie-remix-welcome
+================
 
-lets fork the code.
+budgie-remix welcome screen
 
-Most of the nice stuff is HTML/CSS GIFs/PNGs etc which we can rework for budgie-remix.
 
-The python stuff is easy enough to rework.
+To install:
+
+sudo apt install python3-simplejson
+git clone https://github.com/budgie-remix/budgie-remix-welcome
+
+To test:
+
+cd budgie-remix-welcome
+./budgie-remix-welcome
+
