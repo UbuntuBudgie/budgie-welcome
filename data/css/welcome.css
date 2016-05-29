@@ -102,8 +102,8 @@ body, button {
   padding: 8px;
   margin-bottom: 8px;
   z-index: 10;
-  /* Ambience Theme Integration */
-  background-color: #3C3B37;
+  /* Arc Theme Integration */
+  background-color: #383c4a;
 	font-size: 24px;
 	font-weight: normal;
   color: #DED9CB;
@@ -128,7 +128,7 @@ body, button {
 }
 
 .navigation-button:active {
-  background-color: #667E40;
+  background-color: #5294e2;
   color: #fff;
 }
 
@@ -231,7 +231,7 @@ a {
 *************************/
 
 #footer {
-  background: url("../img/welcome/footer-bg.jpg");
+  background-color: #383c4a;
   position: fixed;
   bottom: 0;
   height: 64px;
@@ -559,7 +559,7 @@ blockquote.terminal {
   vertical-align: bottom;
   font-weight: bold;
   font-size: 18px;
-  color: #5A6943;
+  color: #5294e2;
 }
 
 .menu-bkgnd {
@@ -682,7 +682,7 @@ blockquote.terminal {
   vertical-align: top;
   font-weight: bold;
   font-size: 20px;
-  color: #5A6943;
+  color: #5294e2;
   pointer-events: none;
 }
 
