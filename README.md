@@ -6,4 +6,5 @@
     $ git clone https://github.com/budgie-remix/budgie-remix-welcome
 ### Testing
 
-    $ cd budgie-remix-welcome ./budgie-remix-welcome
+    $ cd budgie-remix-welcome 
+    $ ./budgie-remix-welcome
