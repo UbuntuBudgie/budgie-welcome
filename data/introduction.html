@@ -2,10 +2,10 @@
 <html lang="en">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/bootstrap-2.3.2.css" rel="stylesheet" media="screen">
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="css/font-awesome.css" rel="stylesheet" media="screen">
     <link href="css/animate.css" rel="stylesheet" media="screen">
-    <link href="css/welcome.css" rel="stylesheet" media="screen">
+    <link href="css/welcome-bs4.css" rel="stylesheet" media="screen">
   </head>
   <body class="backdrop-simple">
     <div id="wrapper">
@@ -14,21 +14,21 @@
           <a id="menu-button" class="navigation-button" onclick="smoothPageFade('index.html')">
             <span class="fa fa-chevron-left"></span>
           </a>
-          <div id="navigation-title" hidden>&zwnj;Introduction&zwnj;</div>
+          <div id="navigation-title">&zwnj;Introduction&zwnj;</div>
           <div id="navigation-right"></div>
           <img id="navigation-divider" src="img/welcome/header-shadow.png" width="100%" height="11px">
         </div>
       </div>
-      <div id="content" class="container-fluid entire-page-fade" hidden>
-        <div class="row-fluid">
-         <div class="span12">
+      <div id="content" class="container entire-page-fade">
+        <div class="row">
+         <div class="col-md-12">
           <div class="slogan-box">
             <div class="slogan-area">
-              <img src="img/welcome/ubuntu-mate-icon.svg" width="150px" height="150px" class="animated rollIn">
+              <img src="img/welcome/distro-icon.svg" width="150px" height="150px" class="animated rollIn">
               <p class="slogan-text animated fadeInUp">&nbsp;&nbsp; &zwnj;For a retrospective future.&zwnj;</p>
             </div>
             <div class="slogan-area animated fadeInUp">
-              <a class="btn btn-success" onclick="$('html, body').animate({scrollTop: 530}, 1000);">&zwnj;What is Ubuntu MATE?&zwnj;</a>
+              <a class="btn btn-primary" onclick="$('html, body').animate({scrollTop: 530}, 1000);">&zwnj;What is Ubuntu Budgie?&zwnj;</a>
             </div>
           </div>
           <hr class="soften">
@@ -43,7 +43,7 @@
           </div>
           <br>
           <div class="wow fadeInUp">
-            <p>&zwnj;Ubuntu MATE is an operating system -- the core software
+            <p>&zwnj;Ubuntu Budgie is an operating system -- the core software
             that runs your computer, similar to&zwnj;
             <a href="cmd://link?http://www.microsoft.com">
             &nbsp;<span class="fa fa-windows"></span> &zwnj;Microsoft's Windows&zwnj;</a>,
@@ -52,7 +52,7 @@
             <a href="cmd://link?http://www.google.com/chrome">
             &nbsp;<span class="fa fa-chrome"></span> &zwnj;Google's Chrome OS&zwnj;</a>.
 
-            &zwnj;Ubuntu MATE is a distribution (variation) of
+            &zwnj;Ubuntu Budgie is a distribution (variation) of
             GNU/Linux. A dependable, secure, capable, and modern computer
             system that rivals all others in popularity and actual use.&zwnj;</p>
             <p>&zwnj;Unlike other operating systems, Linux is a major one used:&zwnj;</p>
@@ -66,19 +66,18 @@
             </ul>
           </div>
           <div class="wow fadeInUp">
-            <p>&zwnj;Ubuntu MATE is a stable, easy-to-use operating system
+            <p>&zwnj;Ubuntu Budgie is a stable, easy-to-use operating system
             with a configurable desktop environment. It is ideal for
             those who want the most out of their computers and prefer a
             traditional desktop metaphor. With modest hardware
             requirements, it is suitable for modern desktops and
-            laptops, single board computers (such as the Raspberry Pi)
-            and older hardware alike.&zwnj;</p>
+            laptops alike.&zwnj;</p>
 
             <p>&zwnj;The operating system is more secure, and better
             supported than the operating system pre-installed on most
             home computer hardware today.&zwnj;</p>
 
-            <p>&zwnj;Using Ubuntu MATE provides you with the freedom to run a
+            <p>&zwnj;Using Ubuntu Budgie provides you with the freedom to run a
             complete, full-featured operating system, pre-configured
             with most (if not all) of the applications you will need
             for your daily computing. Change anything about the
@@ -89,14 +88,13 @@
           <hr class="soften"/>
           <div class="wow fadeIn">
             <h2>&zwnj;Objectives&zwnj;</h2>
-            <p>&zwnj;Ubuntu MATE has a number of guiding objectives and goals:&zwnj;</p>
+            <p>&zwnj;Ubuntu Budgie has a number of guiding objectives and goals:&zwnj;</p>
             <ul>
               <li>&zwnj;Accessible to all, regardless of language and physical ability.&zwnj;</li>
-              <li>&zwnj;Increase both Ubuntu and MATE Desktop user adoption.&zwnj;</li>
+              <li>&zwnj;Increase both Ubuntu and Budgie Desktop user adoption.&zwnj;</li>
               <li>&zwnj;Ubuntu alternative for computers that aren't powerful enough to run a composited desktop.&zwnj;</li>
               <li>&zwnj;First choice Ubuntu platform for remote workstation solutions such as LTSP and X2Go.&zwnj;</li>
               <li>&zwnj;Recreate the halcyon days of Ubuntu for users who prefer a traditional desktop metaphor.&zwnj;</li>
-              <li>&zwnj;Use themes and artwork similar to Ubuntu so that Ubuntu MATE is immediately familiar.&zwnj;</li>
               <li>&zwnj;When possible contribute to Debian so both the Debian and Ubuntu communities benefit.&zwnj;</li>
               <li>&zwnj;Software selection will favor functionality and stability over lightness and whimsy.&zwnj;</li>
             </ul>
@@ -104,16 +102,16 @@
 
           <hr class="soften"/>
           <div class="wow fadeIn">
-            <h2>&zwnj;What is Ubuntu MATE?&zwnj;</h2>
+            <h2>&zwnj;What is Ubuntu Budgie?&zwnj;</h2>
             <h3>Ubuntu</h3>
           </div>
         </div>
 
-        <div class="row-fluid wow fadeIn">
-          <div class="span2 center-inside wow rollIn">
+        <div class="row wow fadeIn">
+          <div class="col-md-2 center-inside wow rollIn">
             <img src="img/logos/ubuntu.png" alt="Ubuntu" height="100px" width="100px"/>
           </div>
-          <div class="span10">
+          <div class="col-md-10">
             <p><a href="cmd://link?http://www.ubuntu.com">Ubuntu</a> &zwnj;is
             one of, if not the, largest deployed&zwnj; <a
             href="cmd://link?https://en.wikipedia.org/wiki/Linux">Linux</a>
@@ -126,16 +124,16 @@
 
             <p>&zwnj;Ubuntu is available in a number of different&zwnj;
             <em>&zwnj;flavors&zwnj;</em>, &zwnj;each coming with its own desktop
-            environment. Ubuntu MATE takes the Ubuntu base operating
+            environment. Ubuntu Budgie takes the Ubuntu base operating
             system and adds the&zwnj; <a
-            href="cmd://link?http://mate-desktop.org">&zwnj;MATE
+            href="cmd://link?https://solus-project.com/budgie/">&zwnj;Budgie
             Desktop&zwnj;</a>.</p>
           </div>
         </div>
 
-        <div class="row-fluid">
-          <div class="span10 wow fadeIn">
-            <h3>&zwnj;MATE Desktop&zwnj;</h3>
+        <div class="row">
+          <div class="col-md-10 wow fadeIn">
+            <h3>&zwnj;Budgie Desktop&zwnj;</h3>
             <p>&zwnj;Wikipedia says that&zwnj; <a
             href="cmd://link?http://en.wikipedia.org/wiki/Desktop_environment">
             &zwnj;a Desktop Environment is&zwnj;</a>:</p>
@@ -148,47 +146,42 @@
           </div>
         </div>
 
-        <div class="row-fluid">
-          <div class="span10 wow fadeIn">
-            <p>&zwnj;The MATE Desktop implements essential features that you'd
-            expect in a desktop environment, such as:&zwnj;
-            <table class="mate-table">
+        <div class="row">
+          <div class="col-md-10 wow fadeIn">
+            <p>&zwnj;Ubuntu Budgie comes with a lot of useful applications like&zwnj;
+            <table class="apps-table">
+              <!-- Change width of column in welcome.css when additional applications
+                   needs to be added -->
               <tr>
-                <td><img src="/usr/share/icons/Humanity/apps/48/system-file-manager.svg"/></td>
-                <td><img src="/usr/share/icons/Humanity/apps/48/accessories-calculator.svg"/></td>
-                <td><img src="/usr/share/icons/hicolor/scalable/apps/engrampa.svg"/></td>
-                <td><img src="/usr/share/icons/hicolor/scalable/apps/eom.svg"/></td>
-                <td><img src="/usr/share/icons/hicolor/48x48/apps/atril.png"/></td>
-                <td><img src="/usr/share/icons/Humanity/apps/48/utilities-system-monitor.svg"/></td>
-                <td><img src="/usr/share/icons/Humanity/apps/48/utilities-terminal.svg"/></td>
+                <td><img src="img/applications/file-manager.svg"/></td>
+                <td><img src="img/applications/firefox.png"/></td>
+                <td><img src="img/applications/libreoffice.png"/></td>
+                <td><img src="img/applications/utilities-system-monitor.svg"/></td>
+                <td><img src="img/applications/terminal.svg"/></td>
               </tr>
               <tr>
                 <th>&zwnj;File Browser&zwnj;</th>
-                <th>&zwnj;Calculator&zwnj;</th>
-                <th>&zwnj;Archive Manager&zwnj;</th>
-                <th>&zwnj;Image Viewer&zwnj;</th>
-                <th>&zwnj;Document Viewer&zwnj;</th>
+                <th>&zwnj;Firefox&zwnj;</th>
+                <th>&zwnj;LibreOffice&zwnj;</th>
                 <th>&zwnj;System Monitor&zwnj;</th>
-                <th>&zwnj;Terminal&zwnj;</th>
+                <th>&zwnj;Terminal Emulator&zwnj;</th>
               </tr>
               <tr style="color:#C8C8C8">
-                <td><small>caja</small></td>
-                <td><small>galculator</small></td>
-                <td><small>engrampa</small></td>
-                <td><small>eom</small></td>
-                <td><small>atril</small></td>
-                <td><small>mate-system-moniotr</small></td>
-                <td><small>mate-terminal</small></td>
+                <td><small>nautilus</small></td>
+                <td><small>firefox</small></td>
+                <td><small>libreoffice</small></td>
+                <td><small>gnome-system-moniotr</small></td>
+                <td><small>gnome-terminal</small></td>
               </tr>
             </table>
 
 
             &zwnj;All of which are highly customisable and
             managed via the&zwnj; &nbsp;<a href="cmd://control">
-            <img src="img/applications/control-centre.png" height="16px" width="16px" style="vertical-align:middle"/>
+            <img src="img/applications/control-center.svg" height="16px" width="16px" style="vertical-align:middle"/>
             &zwnj;Control Center&zwnj;</a>.</p>
 
-            <p>&zwnj;MATE Desktop provides an intuitive and attractive
+            <p>&zwnj;Budgie Desktop provides an intuitive and attractive
             desktop environment using traditional metaphors, which
             means if you've ever used&zwnj;
             <a href="cmd://link?http://www.microsoft.com">
@@ -197,34 +190,29 @@
             &nbsp;<span class="fa fa-apple"> </span> OS X</a>,
             &zwnj;it will feel very familiar.&zwnj;</p>
 
-            <p>&zwnj;The MATE Desktop has a rich history and is the
-            continuation of the GNOME 2 desktop, which was the default
-            desktop environment on many Linux and Unix operating
-            systems for over a decade. This means that MATE Desktop is
-            tried, tested and very reliable.&zwnj;</p>
           </div>
-          <div class="span2 center-inside wow rotateIn">
-            <img src="img/logos/mate.png" alt="MATE Desktop" height="100px" width="100px">
+          <div class="col-md-2 center-inside wow rotateIn">
+            <img src="img/logos/budgie.png" alt="Budgie Desktop" height="100px" width="100px">
           </div>
         </div>
 
         <div class="wow fadeIn">
           <h3>&zwnj;Open Source&zwnj;</h3>
         </div>
-        <div class="row-fluid">
-          <div class="span2 center-inside wow bounceIn">
+        <div class="row">
+          <div class="col-md-2 center-inside wow bounceIn">
             <img src="img/logos/osi.png" alt="Open Source Initiative" height="150px" width="150px">
           </div>
-          <div class="span10 wow fadeIn">
-            <p>&zwnj;What Linux, Ubuntu and MATE Desktop all have in common
+          <div class="col-md-10 wow fadeIn">
+            <p>&zwnj;What Linux, Ubuntu and Budgie Desktop all have in common
             is they are Open Source. This software
             can be freely used, changed, and shared (in modified
-            or unmodified form) by anyone. In a nutshell Ubuntu MATE is
+            or unmodified form) by anyone. In a nutshell Ubuntu Budgie is
             free, in the truest sense of the word.&zwnj;</p>
 
             <p>&zwnj;Although you will find some distributions (variations) of
             Linux for purchase, the vast majority are provided free of
-            charge, like Ubuntu MATE. The distribution is licensed
+            charge, like Ubuntu Budgie. The distribution is licensed
             in a way that allows anyone to give it away for free, with no
             strings attached. For example, the licence gives any member
             of the user community the freedom to use Linux for any
@@ -235,7 +223,7 @@
             possible inclusion into future versions. There is no
             guarantee that this will ever happen, but if you have made
             it better, then your changes just might be included in the
-            next release of Ubuntu MATE.&zwnj;</p>
+            next release of Ubuntu Budgie.&zwnj;</p>
 
             <p>&zwnj;Many of the users of Linux are corporations that
             use the operating system to run their businesses, or
@@ -244,7 +232,7 @@
             they use the software for their businesses.&zwnj; <a
             href="cmd://link?http://www.linuxfoundation.org/news-media/infographics/who-writes-linux-2015">
             &zwnj;These improvements are given back&zwnj;</a>
-            &zwnj;to the Linux community and Ubuntu MATE improves as a result.
+            &zwnj;to the Linux community and Ubuntu Budgie improves as a result.
             This is how we can continually improve and grow without
             having to charge our users money.&zwnj;</p>
 
@@ -254,12 +242,12 @@
             Google, Canonical, Oracle, AMD, and Microsoft. Over 4,000
             developers contributed to Linux over the last 15 years.&zwnj;</p>
 
-            <p>&zwnj;Whether you are a home user of Ubuntu MATE, an Ubuntu
-            MATE software or application developer, or an employee of
+            <p>&zwnj;Whether you are a home user of Ubuntu Budgie, an Ubuntu
+            Budgie software or application developer, or an employee of
             an organization that uses the operating system, you are a
             member of the Linux and Open Source communities and benefit
             from the efforts of the developers who contribute to Ubuntu
-            MATE and its related projects: Linux, MATE, and
+            Budgie and its related projects: Linux, Budgie, and
             Ubuntu. Members of the community run Linux
             on almost any hardware, from the prettiest Macbook to the
             cheapest netbook, from the newest Chromebook to some very
@@ -282,7 +270,7 @@
         </div>
       </div>
     <script src="js/jquery-2.1.4.js"></script>
-    <script src="js/bootstrap-2.3.2.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <script src="js/janimate.js"></script>
     <script src="js/wow.js"></script>
     <script src="js/welcome.js"></script>

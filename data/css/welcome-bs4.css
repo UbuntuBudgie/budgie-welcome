@@ -1,0 +1,868 @@
+/** 
+ * File created to fix problems while migrating to bootstrap4, 
+ * Once migration is done this can be made final 
+ */
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 300;
+}
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 700;
+}
+
+html {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  /* Behave more like an application by
+   * preventing text highlighting / dragging. */
+  -webkit-user-select: none;
+  cursor: default;
+}
+
+body, button {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+#wrapper {
+  min-height: 100%;
+  position: relative;
+}
+
+.center {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.backdrop-simple {
+  background-color: #f4f4f4;
+}
+
+.cursor-wait {
+  cursor: wait;
+}
+
+/************************
+ * Header
+*************************/
+
+#header {
+  padding: 8px 0;
+  background-color: rgba(208, 208, 208, 0.25);
+}
+
+#header .logo {
+  height: 64px;
+}
+
+#header h1 {
+  margin-left: 16px;
+  line-height: 64px;
+  text-align: center;
+
+  text-shadow: 2px 4px 8px rgba(0,0,0,0.4),
+               0px -5px 35px rgba(255,255,255,0.8);
+
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#header h2 {
+  margin-left: 16px;
+  line-height: 16px;
+  text-align: center;
+
+  text-shadow: 2px 4px 8px rgba(0,0,0,0.4),
+               0px -5px 35px rgba(255,255,255,0.8);
+
+  font-size: 16px;
+  font-weight: normal;
+}
+
+/************************
+ * Navigation
+*************************/
+
+#navigation {
+  left: 0;
+  top: 0;
+  position: fixed;
+  padding: 8px;
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 8px;
+  z-index: 10;
+  /* Arc Theme Integration */
+  background-color: #383c4a;
+	font-size: 24px;
+	font-weight: normal;
+  color: #DED9CB;
+}
+
+.navigation-button {
+  width: 11px;
+	color: #DED9CB;
+  display: inline-block;
+  padding: 4px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  line-height: 20px;
+  vertical-align: middle;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.navigation-button:hover {
+  color: #fff;
+}
+
+.navigation-button:active {
+  background-color: #5294e2;
+  color: #fff;
+}
+
+#navigation-title {
+  font-size: 18px;
+  padding-left: 4px;
+  vertical-align: middle;
+  display: inline-table;
+}
+
+#navigation-sub-title {
+  font-weight: normal;
+  font-size: 18px;
+  vertical-align: middle;
+  display: inline-table;
+  color: #959595;
+}
+
+#navigation-divider {
+  top: 47px;
+  left: 0;
+  width: 100%;
+  height: 11px;
+  position: fixed;
+}
+
+#navigation-right {
+  position: fixed;
+  top: 8px;
+  right: 8px;
+  z-index: 11;
+}
+
+/************************
+ * Content
+*************************/
+
+#content {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+.divider {
+  padding-top: 16px;
+  background: url("../img/welcome/header-shadow.png") center 0 no-repeat;
+}
+
+.btn-showcase {
+  padding: 0 8px;
+}
+
+.btn-showcase h4 {
+  text-align: center;
+}
+
+.btn-showcase .btn {
+  line-height: 32px;
+}
+
+#content h2 {
+  font-size: 24px;
+}
+
+#content h3 {
+  font-size: 20px;
+}
+
+/* Center images within the div */
+div .center-inside {
+  position: relative;
+  height: 100%;
+  min-height: 50px;
+  line-height: 50px;
+  text-align: center;
+}
+
+
+/* Prevent accidental dragging on images and links */
+img, a {
+  -webkit-user-drag: none;
+  user-drag: none;
+}
+
+/* Collapsible Sub-Sections */
+.sub-collapse {
+  cursor: pointer;
+}
+
+.sub-collapse:hover {
+  text-decoration: none;
+}
+
+/* Any link (href / onclick) shows the pointing cursor */
+a {
+  cursor: pointer;
+}
+
+/************************
+ * Footer
+*************************/
+
+#footer {
+  background-color: #383c4a;
+  position: fixed;
+  bottom: 0;
+  height: 64px;
+  width: 100%;
+  padding: 0;
+  z-index: 10;
+}
+
+#footer .footer-content {
+  background: url("../img/welcome/footer-shadow.png") center 0 no-repeat;
+  padding: 16px;
+}
+
+#footer .form {
+  display: inline-block;
+  position: absolute;
+  right: 8px;
+}
+
+#footer .form a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 8px;
+}
+
+#footer label {
+  display: inline-block;
+  padding-left: 0;
+  margin-bottom: 0;
+  vertical-align: middle;
+  margin-right: 8px;
+  color: #fff;
+}
+
+#social {
+  margin: 6px 0px 0 0;
+}
+
+#social img, #social span {
+  width: 24px; height: 24px;
+  position: relative;
+  top: 0px;
+  margin-right: 4px;
+  opacity: 0.7;
+
+  -webkit-backface-visibility: hidden;
+  transition: all 0.2s ease-in-out;
+
+  -webkit-transition-property: all;
+  -webkit-transition-duration: 0.2s;
+  -webkit-transition-timing-function: ease-in-out;
+  -webkit-transition-delay: initial;
+}
+
+#social img:hover, #social span:hover {
+  top: -4px;
+  opacity: 1.0;
+}
+
+.social-large img {
+  width: 48px !important;
+  height: 48px !important;
+  padding-bottom: 8px;
+}
+
+
+/* No margin for social icon in navbar */
+img.centered {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img.left {
+  margin-right: 10px;
+  float: left;
+}
+
+img.right {
+  margin-right: 10px;
+  float: right;
+}
+
+hr.soften {
+  height: 1px;
+  background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.8), rgba(0,0,0,0));
+  border: 0;
+}
+
+hr.soften-light {
+  height: 1px;
+  background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(150,150,150,.4), rgba(0,0,0,0));
+  border: 0;
+}
+
+.fa-va {
+  vertical-align: middle;
+}
+
+#boutique-footer {
+  color: #7F7F7F;
+  line-height: 9px;
+}
+
+#boutique-footer > #update-subscribed {
+  color: #646464;
+}
+
+#boutique-footer > #update-notification a, #update-subscribing  {
+  color: white !important;
+}
+
+/************************
+** Global
+*************************/
+
+/* All bootstrap tool-tips */
+.tooltip-inner {
+  font-size: 12px;
+}
+
+/** Fade elements on Main Menu **/
+.fade { opacity: 0 }
+.fade-1s { -webkit-animation: fadeIn 1000ms forwards 10ms;   animation: fadeIn 1000ms forwards 10ms; }   /** Header **/
+.fade-2s { -webkit-animation: fadeIn 1000ms forwards 400ms;  animation: fadeIn 1000ms forwards 400ms; }  /** Subheadings **/
+.fade-3s { -webkit-animation: fadeIn 1000ms forwards 600ms;  animation: fadeIn 1000ms forwards 600ms; }  /** Row 1 Buttons **/
+.fade-4s { -webkit-animation: fadeIn 1000ms forwards 800ms;  animation: fadeIn 1000ms forwards 800ms; }  /** Row 2 Buttons **/
+.fade-5s { -webkit-animation: fadeIn 1000ms forwards 1000ms; animation: fadeIn 1000ms forwards 1000ms; }  /** Row 3 Buttons **/
+
+@-webkit-keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.success-text {
+  color: #477301;
+}
+
+/************************
+ * Introduction Page
+*************************/
+.slogan-box {
+  position: relative;
+  top: -20px;
+  margin-left: -20px;
+  margin-right: -20px;
+  height: 530px;
+  background: url('/usr/share/backgrounds/mate/desktop/Ubuntu-Mate-Cold-no-logo.png');
+  -webkit-mask-image: -webkit-gradient(linear, left 85%, left bottom, from(rgba(0,0,0,1)), to(rgba(244,244,244,0)));
+}
+
+.slogan-area {
+  display: block;
+  width: 100%;
+  padding-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.slogan-text {
+  margin-top: 32px;
+  margin-bottom: 24px;
+  display: block;
+  font-size: 32px;
+}
+
+.apps-table{
+  width: 100%;
+  margin-bottom: 8px;
+}
+.apps-table th, .apps-table td{
+  width: 20%;
+  text-align: center;
+}
+.apps-table img {
+  height: 48px;
+}
+
+/************************
+ * Software Page / Boutique
+*************************/
+
+/* Always keep category tabs visible */
+#category-tabs {
+  position: fixed;
+  background-image: -webkit-linear-gradient(top, rgba(244,244,244,1), rgba(244,244,244,1), rgba(244,244,244,0.9), rgba(244,244,244,0));
+  width: 100%;
+  left: 0;
+  top: 48px;
+  z-index: 5;
+  padding-top: 8px;
+  margin-bottom: 2px;
+  padding-bottom: 28px;
+}
+
+/* Proprietary Software Tooltip */
+.popover-title {
+  background: url('../img/welcome/footer-bg.jpg') repeat-x top center;
+  color: #fff;
+}
+
+/* Featured Apps Grid */
+#featured-grid {
+  /* 4x4 Grid with 64px Icons */
+  width: 300px;
+  height: 271px;
+  float: right;
+  margin: 8px;
+}
+
+#featured-grid img {
+  padding: 2.5px;
+  min-width: 64px;
+  min-height: 64px;
+}
+
+/* Image with description in features page*/
+.description-icon {
+  width: 80px;
+  height: 80px
+}
+
+.grid-hidden {
+  opacity: 0 !important;
+}
+
+.grid-outer {
+  opacity: 0.3;
+  -webkit-transition: opacity .5s ease-in-out;
+}
+
+.grid-inner {
+  opacity: 0.7;
+  -webkit-transition: opacity .5s ease-in-out;
+}
+
+#featured-grid img:hover {
+  opacity: 1;
+  -webkit-transition: opacity .5s ease-in-out;
+}
+
+/* Show cursor over check boxes */
+#non-free-toggle {
+  cursor: pointer;
+}
+
+#show-misc-cmds {
+  cursor: pointer;
+}
+
+/* Terminal Commands Blockquote */
+blockquote.terminal {
+  font-family: "Ubuntu Mono";
+  font-size: 16px;
+  background-color: #000;
+  color: #D0D0D0;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+/* Installed checkmark that overlays the application's icon */
+.installed-check {
+  position: absolute;
+  bottom: -15px;
+  right: 15px;
+  color: #466E00;
+}
+
+/* Filter drop down */
+.filter-box {
+  float: right;
+  font-family: 'Ubuntu';
+}
+
+/* More details for an individual application */
+.more-details th {
+  font-family: 'Ubuntu';
+  width: 100px;
+}
+
+.more-details td {
+  font-family: 'Ubuntu';
+}
+
+.arch-in-use {
+  font-weight: bold;
+}
+
+.screenshot {
+  height: 100px;
+  margin: 4px;
+  border: 2px solid white;
+}
+
+.screenshot:hover, .screenshot:focus {
+  border: 2px solid #799251;
+}
+
+.screenshot-link {
+  cursor: -webkit-zoom-in;
+}
+
+/* Software Only Mode Splash */
+#center-spinner {
+  width: 200px;
+  height: 200px;
+  margin: auto;
+  top: 0; bottom: 0; left: 0; right: 0;
+  position: absolute;
+}
+
+/************************
+ * Main Menu
+*************************/
+.main-menu-logo {
+  width: 200px;
+  height: 200px;
+  top: 0; left: 0; bottom: 0; right: 0;
+  margin: auto;
+  position: absolute;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.main-menu-textbox {
+  height: 40px;
+  min-height: 40px;
+  white-space: nowrap;
+}
+
+.main-menu-text {
+  margin: 6px;
+  padding: 6px;
+  text-align: center;
+  vertical-align: bottom;
+  font-weight: bold;
+  font-size: 18px;
+  color: #5294e2;
+}
+
+.menu-bkgnd {
+  height: 390px;
+  width: 390px;
+  margin: auto;
+  top: 0; left: 0; bottom: 0; right: 0;
+  z-index: -10;
+  position: absolute;
+  overflow: hidden;
+  background-image: url('../img/welcome/menu-bg.png');
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
+}
+
+/* Raspberry Pi Button */
+.btn-rpi {
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #C6053D;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#C6053D), to(#C6053D));
+  background-image: -webkit-linear-gradient(top, #C6053D, #C6053D);
+  background-image: linear-gradient(to bottom, #C6053D #C6053D);
+  background-repeat: repeat-x;
+  border-color: #51a351 #51a351 #387038;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+}
+
+.btn-rpi:hover,
+.btn-rpi:focus,
+.btn-rpi:active,
+.btn-rpi.active,
+.btn-rpi.disabled,
+.btn-rpi[disabled] {
+  color: #ffffff;
+  background-color: #C6053D;
+}
+
+.btn-rpi:active,
+.btn-rpi.active {
+  background-color: #C6053D \9;
+}
+
+/* Shows a notification in the top-right corner */
+.heads-up {
+  position: fixed;
+  top: 8px;
+  right: 8px;
+  z-index: 11;
+  font-size: 16px;
+  text-align: right;
+}
+
+/************************
+ * Splash Screen
+*************************/
+/* Scene A */
+.splash-center {
+  text-align: center;
+  vertical-align: middle;
+  position: absolute;
+  z-index: -1;
+  margin: auto;
+  top: 0; left: 0; bottom: 0; right: 0;
+  margin-top: -50px;
+  width: 446px; height: 459px;
+  pointer-events: none;
+}
+
+.splash-text {
+  font-family: "Ubuntu";
+  font-weight: 100;
+  font-size: 64px;
+  color: #fff;
+  position: relative;
+  top: 30%;
+}
+
+#splash-multilingual {
+  position: absolute;
+  top: 50%;
+  width: 640px;
+  height: 190px;
+  left: 0; right: 0;
+  margin: auto;
+  font-size: 20px;
+  color: #909090;
+  text-align: center;
+  line-height: 32px;
+}
+
+.boot-circle {
+  background: #8ba34f;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  display: inline-table;
+}
+
+.boot-circle-block {
+  width: 16px;
+  height: 16px;
+  display: inline-table;
+  margin: 0;
+  padding: 0;
+}
+
+/* Scene B */
+#sceneB {
+  position: absolute;
+  top: -50px; bottom: 0; left: 0; right: 0;
+  width: 450px;
+  height: 180px;
+  margin: auto;
+  text-align: center;
+}
+
+.splash-version {
+  vertical-align: top;
+  font-weight: bold;
+  font-size: 20px;
+  color: #5294e2;
+  pointer-events: none;
+}
+
+/* Background */
+@-webkit-keyframes fade-to-menu {
+  from { background-color: #3B3A36; }
+  to   { background-color: #f4f4f4; }
+}
+
+.fade-to-menu {
+  -webkit-animation-fill-mode: forwards;
+  -webkit-animation: fade-to-menu 1s ease-in-out;
+}
+
+/************************
+ * Getting Started - Push Menu (Index)
+*************************/
+#index-menu {
+  height: 100%;
+  width: 200px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 60px;
+  padding-bottom: 50px;
+  position: fixed;
+  background: rgba(65,65,65,0.95);
+  border: 2px solid #000;
+  color: #fff;
+  z-index: 9;
+}
+
+.index-btn {
+  width: 172px;
+}
+
+#index-close {
+  float: right;
+  position: relative;
+  text-align: right;
+  color: #fff;
+}
+
+.topicContents {
+  margin-bottom: 16px;
+}
+
+#index-overlay {
+  background-color: rgba(0,0,0,0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: default;
+  z-index: 8;
+}
+
+/************************
+ * Getting Started - System Specifications
+*************************/
+#specs-icon {
+  top: 22%;
+  left: 4%;
+  width: 20%;
+  height: auto;
+  margin: auto;
+  position: absolute;
+}
+
+#specs-icon img {
+  width: 180px;
+  height: auto;
+}
+
+#specs-loading {
+  width: 80%;
+  height: 25px;
+  top: 100px; bottom: 0; left: 0; right: 0;
+  margin: auto;
+  position: absolute;
+  text-align: center;
+}
+
+#specs-box {
+  left: 25%;
+  width: 74%;
+  padding: 4px;
+  position: relative;
+}
+
+.specs-box h4 {
+  color: #758A53;
+}
+
+.specs-error {
+  color: #FF0000;
+}
+
+.secondary-value {
+  opacity: 0.5;
+}
+
+.secondary-value:hover {
+  opacity: 1;
+}
+
+#disk-usage {
+  width: 100%;
+  height: 8px;
+  background-color: #C8C8C8;
+  border: 1px solid #8C8C8C;
+  overflow: hidden;
+}
+
+.disk-line {
+  float: left;
+  height: 100%;
+}
+
+#disk-used {
+  background-color: #87A556;
+}
+
+#disk-free {
+  background-color: #C2D3A6;
+}
+
+#disk-other {
+  background-color: #484848;
+}
+
+.disk-legend {
+  width: 10px;
+  height: 10px;
+  border: 1px solid black;
+  float: left;
+  vertical-align: middle;
+  margin: 4px;
+}
+
+/************************
+ * Hello Page
+*************************/
+#hello-page {
+  padding-left: 350px;
+}
+
+#hello-image {
+  position: absolute;
+  left: -200px;
+  height: 450px;
+  width: auto;
+  z-index: -1;
+  overflow: hidden;
+}
+
+#hello-header {
+  font-weight: lighter;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  overflow: hidden;
+}
+
+.hello p {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
