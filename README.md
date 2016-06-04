@@ -1,10 +1,19 @@
-# budgie-remix welcome screen
-============================
+budgie-remix Welcome Screen
+===========================
+
+Welcome app to greet new users on their first login
+
+
 ### Installation
-    $ sudo apt install python3-simplejson
-      [password]
-    $ git clone https://github.com/budgie-remix/budgie-remix-welcome
+
+```sh
+sudo apt install python3-simplejson
+git clone https://github.com/budgie-remix/budgie-remix-welcome
+```
+
 ### Testing
 
-    $ cd budgie-remix-welcome 
-    $ ./budgie-remix-welcome
+```sh
+cd budgie-remix-welcome
+./budgie-remix-welcome
+```
