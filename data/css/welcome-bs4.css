@@ -715,7 +715,7 @@ blockquote.terminal {
 *************************/
 #index-menu {
   height: 100%;
-  width: 200px;
+  width: 270px;
   top: 0;
   left: 0;
   bottom: 0;
@@ -728,10 +728,12 @@ blockquote.terminal {
   border: 2px solid #000;
   color: #fff;
   z-index: 9;
+  display: none;
 }
 
 .index-btn {
-  width: 172px;
+  width: 100%;
+  text-align: left;
 }
 
 #index-close {
@@ -760,17 +762,18 @@ blockquote.terminal {
  * Getting Started - System Specifications
 *************************/
 #specs-icon {
-  top: 22%;
   left: 4%;
   width: 20%;
   height: auto;
   margin: auto;
   position: absolute;
+  margin-bottom: 40px;
 }
 
 #specs-icon img {
   width: 180px;
   height: auto;
+  margin-bottom: 80px;
 }
 
 #specs-loading {
@@ -795,6 +798,10 @@ blockquote.terminal {
 
 .specs-error {
   color: #FF0000;
+}
+
+#specs-more .icon {
+  width: 80px
 }
 
 .secondary-value {
@@ -865,4 +872,29 @@ blockquote.terminal {
 .hello p {
   padding-top: 8px;
   padding-bottom: 8px;
+}
+
+/******************************
+ * Missing styles in bootstrap 4
+*******************************/
+.btn-inverse {
+  color: white;
+  background: #2e2e2e;
+  margin: 2px;
+}
+
+.btn-inverse:hover {
+  border: 1px solid grey;
+}
+
+.btn-inverse:hover {
+  color: #eee;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.hidden {
+  display: none;
 }

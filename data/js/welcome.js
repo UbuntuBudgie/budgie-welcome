@@ -560,7 +560,6 @@ if ( current_page == 'splash.html' ) {
 
 // Getting Started Only - Index Pane for Selecting Topics
 if ( current_page == 'gettingstarted.html' ) {
-
   function indexOpen() {
     // Is the index already open?
     if ($('#index-menu').is(':visible')) {
@@ -589,7 +588,9 @@ if ( current_page == 'gettingstarted.html' ) {
   function changePage(id,humanText) {
     // 'id' is one used for <div>.
     // 'humanText' is displayed on navigation's sub title.
+    
     indexClose();
+    
     $('.topicContents').fadeOut();
     $('#navigation-sub-title').fadeOut();
 
