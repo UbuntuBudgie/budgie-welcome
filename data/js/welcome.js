@@ -1,6 +1,14 @@
 // Which page?
 current_page = document.location.href.match(/[^\/]+$/)[0];
 
+// Hard coding disitribution information. But only at this place.
+// This value will be injected in html code. Later, these values 
+// should be collected using `lsb_release` command.
+distro_info = {
+  name: 'Ubuntu Budgie',
+  version: 16.04
+};
+
 // Global across all pages
 $(window).load(function() {
     // Smoothly fade into the page.
@@ -22,6 +30,10 @@ function smoothPageFade(target_href) {
 
 // When page first opens
 $(document).ready(function() {
+
+  // Inject distribution name
+  $('span[name="distro-name"]').text(distro_info.name);
+
   // Animate navigation elements on page load
   if ( current_page != 'software-only.html' ) {
     $('#menu-button').jAnimateOnce('fadeInLeft');
