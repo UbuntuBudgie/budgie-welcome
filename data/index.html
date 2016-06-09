@@ -2,73 +2,120 @@
 <html lang="en" ng-app>
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="css/bootstrap-2.3.2.css" rel="stylesheet" media="screen">
+  <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
   <link href="css/font-awesome.css" rel="stylesheet" media="screen">
   <link href="css/animate.css" rel="stylesheet" media="screen">
-  <link href="css/welcome.css" rel="stylesheet" media="screen">
+  <link href="css/welcome-bs4.css" rel="stylesheet" media="screen">
 </head>
 <body class="backdrop-simple" style="overflow: hidden;">
-  <div id="mate-blur" class="menu-bkgnd" hidden></div>
+  <div id="mate-blur" class="menu-bkgnd"></div>
   <div class="container-fluid">
     <div id="navigation">
-      <div id="navigation-title" hidden>&zwnj;Main Menu&zwnj;</div>
-      <img id="navigation-divider" src="img/welcome/header-shadow.png" width="100%" height="11px">
+      <div id="navigation-title">&zwnj;Main Menu&zwnj;</div>
     </div>
   </div>
-  <img id="main-menu-logo" class="entire-page-fade main-menu-logo" src="img/welcome/ubuntu-mate-icon.svg" width="50%" height="50%" hidden>
+  
   <span id="special"></span>
-  <div class="entire-page-fade" id="wrapper" hidden>
+  <div class="entire-page-fade" id="wrapper">
     <div id="header" class="container-fluid fade fade-1s" style="padding-top: 64px">
-      <div class="row-fluid">
-        <div class="span12 center splash-version">
-          <img src="img/welcome/ubuntu-mate-text.svg" width="199px" height="28px">&nbsp;<span id="os_version">16.04</span>
+      <div class="row">
+        <div class="col-md-12 center splash-version">
+          <img src="img/welcome/ubuntu-mate-text.svg" height="50px">&nbsp;<span id="distro-version">16.04</span>
         </div>
       </div>
-      <div class="row-fluid main-menu-textbox">
+      <div class="row main-menu-textbox">
         <div class="main-menu-text">
           &zwnj;Choose an option to discover your new operating system.&zwnj;
         </div>
       </div>
     </div>
     <div class="container-fluid fade fade-2s">
-      <div class="row-fluid divider">
-        <div class="span4 btn-showcase">
+      <div class="row">
+        <div class="col-md-3 btn-showcase">
           <!-- Documentation -->
-          <a id="introduction"   class="btn btn-block btn-info fade fade-3s" onclick="exitMenu('introduction.html')"><span class="fa fa-2x fa-book fa-va"></span>&nbsp; &zwnj;Introduction&zwnj;</a>
-          <a id="features"       class="btn btn-block btn-info fade fade-4s" onclick="exitMenu('features.html')"><span class="fa fa-2x fa-star fa-va"></span>&nbsp; &zwnj;Features&zwnj;</a>
-          <a id="gettingstarted" class="btn btn-block btn-info fade fade-5s live-session" onclick="exitMenu('gettingstarted.html')"><span class="fa fa-2x fa-info-circle fa-va"></span>&nbsp; &zwnj;Getting Started&zwnj;</a>
-          <a id="install-guide"  class="btn btn-block btn-info fade fade-5s live-session-only" onclick="exitMenu('gettingstarted.html')"><span class="fa fa-2x fa-laptop fa-va"></span>&nbsp; &zwnj;Installation Help&zwnj;</a>
+          <div class="button-group">
+            <span class="btn-icon fa fa-book"></span>
+            <a id="introduction" class="btn btn-inverse fade fade-3s" onclick="exitMenu('introduction.html')">
+              &nbsp; &zwnj;Introduction&zwnj;
+            </a>
+          </div>
+          <div class="button-group">
+            <span class="btn-icon fa fa-star"></span>
+            <a id="features" class="btn btn-inverse fade fade-4s" onclick="exitMenu('features.html')">
+              &nbsp; &zwnj;Features&zwnj;
+            </a>
+          </div>
+          <div class="button-group">
+            <span class="btn-icon fa fa-info-circle"></span>
+            <a id="gettingstarted" class="btn btn-inverse fade fade-5s live-session" onclick="exitMenu('gettingstarted.html')">
+              &nbsp; &zwnj;Getting Started&zwnj;
+            </a>
+          </div>
+          <div class="button-group">
+            <span class="btn-icon fa fa-laptop"></span>
+            <a id="install-guide"  class="btn btn-inverse fade fade-5s live-session-only" onclick="exitMenu('gettingstarted.html')">
+              &nbsp; &zwnj;Installation Help&zwnj;
+            </a>
+          </div>
         </div>
-        <div class="span4 btn-showcase"></div>
-        <div class="span4 btn-showcase">
-          <!-- Project -->
-          <a id="chatroom"    class="btn btn-block btn-info fade fade-3s" onclick="exitMenu('chatroom.html')"><span class="fa fa-2x fa-comments fa-va"></span>&nbsp; &zwnj;Chat Room&zwnj;</a>
-          <a id="community"   class="btn btn-block btn-info fade fade-3s" onclick="exitMenu('community.html')"><span class="fa fa-2x fa-group fa-va"></span>&nbsp; &zwnj;Community&zwnj;</a>
-          <a id="getinvolved" class="btn btn-block btn-info fade fade-5s" onclick="exitMenu('getinvolved.html')"><span class="fa fa-2x fa-code fa-va"></span>&nbsp; &zwnj;Get Involved&zwnj;</a>
-          <a id="donate"      class="btn btn-block btn-info fade fade-5s" onclick="exitMenu('donate.html')"><span class="fa fa-2x fa-heart fa-va"></span>&nbsp; &zwnj;Donate&zwnj;</a>
-        </div>
-      </div>
-      <br>
-      <div class="row-fluid">
-        <div class="span4 btn-showcase">
-          <br>
+        <div class="col-md-6 btn-showcase">
+          <!-- Distribution Logo-->
+          <div class="row text-xs-center">
+            <div class="col-md-12">
+              <img id="main-menu-logo" class="entire-page-fade main-menu-logo animated rotateIn fadeIn" src="img/welcome/ubuntu-mate-icon.svg" width="50%" height="50%">
+            </div>
+          </div>
+          <br/>
           <!-- Support -->
-          <a id="software"    class="btn btn-block btn-info fade fade-5s" onclick="exitMenu('software.html');$('#footer-left').fadeOut()"><span class="fa fa-2x fa-download fa-va"></span>&nbsp; &zwnj;Software&zwnj;</a>
-          <a id="install"     class="btn btn-block btn-info fade fade-5s" href="cmd://install"><span class="fa fa-2x fa-hdd-o fa-va"></span>&nbsp; &zwnj;Install Now&zwnj;</a>
+          <div clas="row">
+            <div class="col-md-6">
+              <a id="software"    class="btn btn-block btn-primary fade fade-5s" onclick="exitMenu('software.html');$('#footer-left').fadeOut()"><span class="fa fa-2x fa-download fa-va"></span>&nbsp; &zwnj;Software&zwnj;</a>
+            </div>
+            <div class="col-md-6">
+              <a id="install"     class="btn btn-block btn-primary fade fade-5s" href="cmd://install"><span class="fa fa-2x fa-hdd-o fa-va"></span>&nbsp; &zwnj;Install Now&zwnj;</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 btn-showcase">
+          <!-- Project -->
+          <div class="button-group">
+            <span class="btn-icon fa fa-comments"></span>
+            <a id="chatroom" class="btn btn-inverse fade fade-3s" onclick="exitMenu('chatroom.html')">
+              &nbsp; &zwnj;Chat Room&zwnj;
+            </a>
+          </div>
+          <div class="button-group">
+            <span class="btn-icon fa fa-group"></span>
+            <a id="community" class="btn btn-inverse fade fade-3s" onclick="exitMenu('community.html')">
+              &nbsp; &zwnj;Community&zwnj;
+            </a>
+          </div>
+          <div class="button-group">
+            <span class="btn-icon fa fa-code"></span>
+            <a id="getinvolved" class="btn btn-inverse fade fade-5s" onclick="exitMenu('getinvolved.html')">
+              &nbsp; &zwnj;Get Involved&zwnj;
+            </a>
+          </div>
+          <div class="button-group">
+            <span class="btn-icon fa fa-heart"></span>
+            <a id="donate" class="btn btn-inverse fade fade-5s" onclick="exitMenu('donate.html')">
+              &nbsp; &zwnj;Donate&zwnj;
+            </a>
+          </div>
         </div>
       </div>
     </div>
   </div>
   <div id="footer" class="bottom">
-    <div class="footer-content">
-      <div id="footer-left">
-        <span id="footer-global-left"></span>
-      </div>
-      <div id="footer-right" class="form">
-        <a href="cmd://autostart" id="open-at-start" class="live-session entire-page-fade" style="display:none">
-          <span id="autostart" class="fa fa-square fa-va"></span> &zwnj;Open Welcome when I log on.&zwnj;
-        </a>
-        <span id="footer-global-right"></span>
+    <div class="container-fluid">
+      <div class="row footer-content">
+        <div class="col-md-4"></div>
+        <div class="col-md-4 form">
+          <a onclick="cmd('autostart')" id="open-at-start" class="live-session entire-page-fade" style="display:none">
+            <span id="autostart" class="fa fa-square fa-va"></span> &zwnj;Open Welcome when I log on.&zwnj;
+          </a>
+        </div>
+        <div class="col-md-4"></div>
       </div>
     </div>
   </div>
@@ -79,3 +126,4 @@
   <script src="js/welcome.js"></script>
 </body>
 </html>
+

@@ -173,11 +173,6 @@ body, button {
   padding-bottom: 64px;
 }
 
-.divider {
-  padding-top: 16px;
-  background: url("../img/welcome/header-shadow.png") center 0 no-repeat;
-}
-
 .btn-showcase {
   padding: 0 8px;
 }
@@ -187,8 +182,18 @@ body, button {
 }
 
 .btn-showcase .btn {
-  line-height: 32px;
+  text-align: left;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
+
+.button-group .btn-icon {
+  vertical-align: middle;
+  color: #448aff;
+}
+.button-group .btn {
+  width: 85%;
+} 
 
 #content h2 {
   font-size: 24px;
@@ -246,11 +251,11 @@ a {
   padding: 16px;
 }
 
-#footer .form {
-  display: inline-block;
-  position: absolute;
-  right: 8px;
-}
+/*#footer .form {*/
+/*  display: inline-block;*/
+/*  position: absolute;*/
+/*  right: 8px;*/
+/*}*/
 
 #footer .form a {
   color: #fff;
@@ -541,8 +546,9 @@ blockquote.terminal {
   width: 200px;
   height: 200px;
   margin: auto;
-  top: 0; bottom: 0; left: 0; right: 0;
+  top: 10; bottom: 0; left: 0; right: 0;
   position: absolute;
+  z-index: -2;
 }
 
 /************************
@@ -551,9 +557,10 @@ blockquote.terminal {
 .main-menu-logo {
   width: 200px;
   height: 200px;
-  top: 0; left: 0; bottom: 0; right: 0;
+  /*top: 0; left: 0; bottom: 0; right: 0;*/
   margin: auto;
-  position: absolute;
+  margin-top: 5px;
+  /*position: absolute;*/
   z-index: -1;
   pointer-events: none;
 }
@@ -569,51 +576,6 @@ blockquote.terminal {
   padding: 6px;
   text-align: center;
   vertical-align: bottom;
-  font-weight: bold;
-  font-size: 18px;
-  color: #5294e2;
-}
-
-.menu-bkgnd {
-  height: 390px;
-  width: 390px;
-  margin: auto;
-  top: 0; left: 0; bottom: 0; right: 0;
-  z-index: -10;
-  position: absolute;
-  overflow: hidden;
-  background-image: url('../img/welcome/menu-bg.png');
-  background-repeat: no-repeat;
-  background-size: auto;
-  background-position: center;
-}
-
-/* Raspberry Pi Button */
-.btn-rpi {
-  color: #ffffff;
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-  background-color: #C6053D;
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#C6053D), to(#C6053D));
-  background-image: -webkit-linear-gradient(top, #C6053D, #C6053D);
-  background-image: linear-gradient(to bottom, #C6053D #C6053D);
-  background-repeat: repeat-x;
-  border-color: #51a351 #51a351 #387038;
-  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-}
-
-.btn-rpi:hover,
-.btn-rpi:focus,
-.btn-rpi:active,
-.btn-rpi.active,
-.btn-rpi.disabled,
-.btn-rpi[disabled] {
-  color: #ffffff;
-  background-color: #C6053D;
-}
-
-.btn-rpi:active,
-.btn-rpi.active {
-  background-color: #C6053D \9;
 }
 
 /* Shows a notification in the top-right corner */
@@ -693,8 +655,6 @@ blockquote.terminal {
 .splash-version {
   vertical-align: top;
   font-weight: bold;
-  font-size: 20px;
-  color: #5294e2;
   pointer-events: none;
 }
 
@@ -874,7 +834,7 @@ blockquote.terminal {
 }
 
 /******************************
- * Missing styles in bootstrap 4
+ * Ovrride default bootstrap styles
 *******************************/
 .btn-inverse {
   color: white;
@@ -882,12 +842,10 @@ blockquote.terminal {
   margin: 2px;
 }
 
-.btn-inverse:hover {
-  border: 1px solid grey;
-}
 
 .btn-inverse:hover {
   color: #eee;
+  background: black;
 }
 
 .text-right {
@@ -896,4 +854,9 @@ blockquote.terminal {
 
 .hidden {
   display: none;
+}
+
+.btn {
+  border: 0;
+  padding: 0.1rem 1rem;
 }
