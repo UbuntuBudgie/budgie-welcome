@@ -4,22 +4,26 @@
 # Copyright 2012-2013 "Korora Project" <dev@kororaproject.org>
 # Copyright 2013 "Manjaro Linux" <support@manjaro.org>
 # Copyright 2014 Antergos
+# Copyright 2016 Bugie Remix
 #
-# Antergos Welcome is free software: you can redistribute it and/or modify
+# Budgie Remix Welcome is free software: you can redistribute it and/or modify
 # it under the temms of the GNU General Public License as published by
 # the Free Software Foundation, either version 3 of the License, or
 # (at your option) any later version.
 #
-# Antergos Welcome is distributed in the hope that it will be useful,
+# Budgie Remix Welcome is distributed in the hope that it will be useful,
 # but WITHOUT ANY WARRANTY; without even the implied warranty of
 # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 # GNU General Public License for more details.
 #
 # You should have received a copy of the GNU General Public License
-# along with Antergos Welcome. If not, see <http://www.gnu.org/licenses/>.
+# along with Budgie Remix Welcome. If not, see <http://www.gnu.org/licenses/>.
 #
 
-""" Welcome screen for Antergos """
+""" Welcome screen for Budgie Remix """
+
+import gi
+gi.require_version('WebKit', '3.0')
 
 import inspect
 import os
@@ -69,6 +73,10 @@ class WelcomeConfig(object):
                 pass
         # does autostart symlink exist
         self._autostart = os.path.exists(self._autostart_path)
+
+        # Hard code distribution name for time being. Later
+        # access it using `lsb_release` command.
+        self._distroname = 'Budgie Remix'
 
     @property
     def arch(self):
@@ -121,10 +129,11 @@ class AppView(WebKit.WebView):
         # respond accordingly, for now we just use jQuery to manually toggle
 
         self.execute_script("$('#arch').html('%s')" % self._config.arch)
-        self.execute_script(
-            "$('#autostart').toggleClass('icon-check', %s).toggleClass(\
-            'icon-check-empty', %s)" % (to_json(self._config.autostart),
-                                        to_json(not self._config.autostart)))
+        self.execute_script("$('#autostart').toggleClass('icon-check', {})\
+            .toggleClass('icon-check-empty', {})".format(to_json
+                (self._config._autostart), to_json(not self._config._autostart)))
+        self.execute_script("$('span[name=\"distro-name\"]').html('{}')".format(self._config._distroname))
+
 
         # if self._config.desktop == 'GNOME':
         #  self.execute_script("$('#gnome_help').toggleClass('hide', false);")
@@ -224,11 +233,12 @@ class WelcomeApp(object):
         # build window
         w = Gtk.Window()
         w.set_position(Gtk.WindowPosition.CENTER)
-        w.set_wmclass('Antergos Welcome', 'Antergos Welcome')
+        w.set_wmclass('Budgie Remix Welcome', 'Budgie Remix Welcome')
         w.set_title('')
         w.set_size_request(840, 520)
+        # w.set_decorated(False)
 
-        icon_dir = os.path.join(self._data_path, 'img', 'antergos-icon.png')
+        icon_dir = os.path.join(self._data_path, 'img', 'distro-icon.svg')
         w.set_icon_from_file(icon_dir)
 
         # build webkit container
