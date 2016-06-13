@@ -102,11 +102,9 @@ body, button {
   position: fixed;
   padding: 8px;
   width: 100%;
-  padding: 8px;
   margin-bottom: 8px;
-  z-index: 10;
   /* Arc Theme Integration */
-  background-color: #383c4a;
+  background: #404552 ;
 	font-size: 24px;
 	font-weight: normal;
   color: #DED9CB;
@@ -189,7 +187,7 @@ body, button {
 
 .button-group .btn-icon {
   vertical-align: middle;
-  color: #448aff;
+  color: #4c8ac9;
 }
 .button-group .btn {
   width: 85%;
@@ -238,7 +236,7 @@ a {
 *************************/
 
 #footer {
-  background-color: #383c4a;
+  background: #404552;
   position: fixed;
   bottom: 0;
   height: 64px;
@@ -261,6 +259,7 @@ a {
   color: #fff;
   text-decoration: none;
   margin-right: 8px;
+  font-size: 14px;
 }
 
 #footer label {
@@ -301,6 +300,12 @@ a {
   width: 48px !important;
   height: 48px !important;
   padding-bottom: 8px;
+}
+
+#autostart {
+  font-size: 16px;
+  vertical-align: middle;
+  color: #4c8ac9;
 }
 
 
@@ -559,7 +564,7 @@ blockquote.terminal {
   height: 200px;
   /*top: 0; left: 0; bottom: 0; right: 0;*/
   margin: auto;
-  margin-top: 5px;
+  margin-top: 15px;
   /*position: absolute;*/
   z-index: -1;
   pointer-events: none;
@@ -838,14 +843,14 @@ blockquote.terminal {
 *******************************/
 .btn-inverse {
   color: white;
-  background: #2e2e2e;
+  background: #404552 ;
   margin: 2px;
 }
 
 
 .btn-inverse:hover {
   color: #eee;
-  background: black;
+  background: #333;
 }
 
 .text-right {
@@ -859,4 +864,8 @@ blockquote.terminal {
 .btn {
   border: 0;
   padding: 0.1rem 1rem;
+}
+
+.btn-primary {
+  background: #4c8ac9;
 }

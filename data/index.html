@@ -3,7 +3,7 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
-  <link href="css/font-awesome.css" rel="stylesheet" media="screen">
+  <link href="css/material-icons.css" rel="stylesheet" media="screen">
   <link href="css/animate.css" rel="stylesheet" media="screen">
   <link href="css/welcome-bs4.css" rel="stylesheet" media="screen">
 </head>
@@ -20,7 +20,7 @@
     <div id="header" class="container-fluid fade fade-1s" style="padding-top: 64px">
       <div class="row">
         <div class="col-md-12 center splash-version">
-          <img src="img/welcome/ubuntu-mate-text.svg" height="50px">&nbsp;<span id="distro-version">16.04</span>
+          <img src="img/welcome/distro-text.png" height="">&nbsp;<span id="distro-version">16.04</span>
         </div>
       </div>
       <div class="row main-menu-textbox">
@@ -34,25 +34,25 @@
         <div class="col-md-3 btn-showcase">
           <!-- Documentation -->
           <div class="button-group">
-            <span class="btn-icon fa fa-book"></span>
+            <span class="btn-icon material-icons">info</span>
             <a id="introduction" class="btn btn-inverse fade fade-3s" onclick="exitMenu('introduction.html')">
               &nbsp; &zwnj;Introduction&zwnj;
             </a>
           </div>
           <div class="button-group">
-            <span class="btn-icon fa fa-star"></span>
+            <span class="btn-icon material-icons">stars</span>
             <a id="features" class="btn btn-inverse fade fade-4s" onclick="exitMenu('features.html')">
               &nbsp; &zwnj;Features&zwnj;
             </a>
           </div>
           <div class="button-group">
-            <span class="btn-icon fa fa-info-circle"></span>
+            <span class="btn-icon material-icons">check_circle</span>
             <a id="gettingstarted" class="btn btn-inverse fade fade-5s live-session" onclick="exitMenu('gettingstarted.html')">
               &nbsp; &zwnj;Getting Started&zwnj;
             </a>
           </div>
           <div class="button-group">
-            <span class="btn-icon fa fa-laptop"></span>
+            <span class="btn-icon material-icons">help</span>
             <a id="install-guide"  class="btn btn-inverse fade fade-5s live-session-only" onclick="exitMenu('gettingstarted.html')">
               &nbsp; &zwnj;Installation Help&zwnj;
             </a>
@@ -69,35 +69,35 @@
           <!-- Support -->
           <div clas="row">
             <div class="col-md-6">
-              <a id="software"    class="btn btn-block btn-primary fade fade-5s" onclick="exitMenu('software.html');$('#footer-left').fadeOut()"><span class="fa fa-2x fa-download fa-va"></span>&nbsp; &zwnj;Software&zwnj;</a>
+              <a id="software"    class="btn btn-block btn-primary fade fade-5s" onclick="exitMenu('software.html');$('#footer-left').fadeOut()"><span class="material-icons">computer</span>&nbsp; &zwnj;Software&zwnj;</a>
             </div>
             <div class="col-md-6">
-              <a id="install"     class="btn btn-block btn-primary fade fade-5s" href="cmd://install"><span class="fa fa-2x fa-hdd-o fa-va"></span>&nbsp; &zwnj;Install Now&zwnj;</a>
+              <a id="install"     class="btn btn-block btn-primary fade fade-5s" href="cmd://install"><span class="material-icons">cloud_download</span>&nbsp; &zwnj;Install Now&zwnj;</a>
             </div>
           </div>
         </div>
         <div class="col-md-3 btn-showcase">
           <!-- Project -->
           <div class="button-group">
-            <span class="btn-icon fa fa-comments"></span>
+            <span class="btn-icon material-icons">comment</span>
             <a id="chatroom" class="btn btn-inverse fade fade-3s" onclick="exitMenu('chatroom.html')">
-              &nbsp; &zwnj;Chat Room&zwnj;
+              &nbsp; &zwnj;Chat room&zwnj;
             </a>
           </div>
           <div class="button-group">
-            <span class="btn-icon fa fa-group"></span>
+            <span class="btn-icon material-icons">group</span>
             <a id="community" class="btn btn-inverse fade fade-3s" onclick="exitMenu('community.html')">
               &nbsp; &zwnj;Community&zwnj;
             </a>
           </div>
           <div class="button-group">
-            <span class="btn-icon fa fa-code"></span>
+            <span class="btn-icon material-icons">code</span>
             <a id="getinvolved" class="btn btn-inverse fade fade-5s" onclick="exitMenu('getinvolved.html')">
               &nbsp; &zwnj;Get Involved&zwnj;
             </a>
           </div>
           <div class="button-group">
-            <span class="btn-icon fa fa-heart"></span>
+            <span class="btn-icon material-icons">favorite</span>
             <a id="donate" class="btn btn-inverse fade fade-5s" onclick="exitMenu('donate.html')">
               &nbsp; &zwnj;Donate&zwnj;
             </a>
@@ -110,12 +110,12 @@
     <div class="container-fluid">
       <div class="row footer-content">
         <div class="col-md-3"></div>
-        <div class="col-md-6 text-md-center form">
+        <div class="col-md-3"></div>
+        <div class="col-md-6 text-md-right form">
           <a href="cmd://toggle-startup" id="open-at-start" class="live-session entire-page-fade" style="display:none">
-            <span id="autostart" class="fa fa-square fa-va"></span> &zwnj;Open Welcome when I log on.&zwnj;
+            <span id="autostart" class="material-icons">radio_button_unchecked</span> &zwnj;Show this dialog on startup?&zwnj;
           </a>
         </div>
-        <div class="col-md-3"></div>
       </div>
     </div>
   </div>
