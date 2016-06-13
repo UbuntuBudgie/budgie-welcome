@@ -108,6 +108,7 @@ body, button {
 	font-size: 24px;
 	font-weight: normal;
   color: #DED9CB;
+  z-index: 1;
 }
 
 .navigation-button {
@@ -863,9 +864,34 @@ blockquote.terminal {
 
 .btn {
   border: 0;
-  padding: 0.1rem 1rem;
+  padding: 0.1rem 0.5rem;
 }
 
 .btn-primary {
   background: #4c8ac9;
+}
+
+.btn-lg {
+  line-height: 1.8em;
+}
+
+/* button hover effect **/
+/* source: https://github.com/IanLunn/Hover/blob/master/css/hover.css*/
+/* Shadow */
+.hvr-shadow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: box-shadow;
+  transition-property: box-shadow;
+}
+.hvr-shadow:hover, .hvr-shadow:focus, .hvr-shadow:active {
+  box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
 }
