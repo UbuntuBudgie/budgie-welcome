@@ -190,8 +190,13 @@ body, button {
   vertical-align: middle;
   color: #4c8ac9;
 }
+
 .button-group .btn {
   width: 85%;
+}
+
+.button-group .material-icons {
+  font-size: 20px;
 } 
 
 #content h2 {
@@ -874,6 +879,8 @@ blockquote.terminal {
 .btn-lg {
   line-height: 1.8em;
 }
+
+
 
 /* button hover effect **/
 /* source: https://github.com/IanLunn/Hover/blob/master/css/hover.css*/
