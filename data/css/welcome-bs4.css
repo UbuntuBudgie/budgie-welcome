@@ -41,7 +41,6 @@ body, button {
   min-height: 100%;
   position: relative;
   background: white;
-  z-index: -1;
 }
 
 .center {
@@ -544,13 +543,14 @@ blockquote.terminal {
  * Main Menu
 *************************/
 .main-menu-logo {
-  width: 160px;
-  height: 160px;
+  width: 170px;
+  height: 170px;
   /*top: 0; left: 0; bottom: 0; right: 0;*/
   margin: auto;
-  margin-top: 15px;
+  margin-top: 10px;
+  margin-bottom: 15px;
   /*position: absolute;*/
-  z-index: -1;
+  /* z-index: ; */
   pointer-events: none;
 }
 

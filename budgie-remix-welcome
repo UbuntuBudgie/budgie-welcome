@@ -236,7 +236,7 @@ class WelcomeApp(object):
         w.set_wmclass('Budgie Remix Welcome', 'Budgie Remix Welcome')
         w.set_title('')
         w.set_size_request(992, 520)
-        # w.set_decorated(False)
+        w.set_decorated(False)
 
         icon_dir = os.path.join(self._data_path, 'img', 'distro-icon.svg')
         w.set_icon_from_file(icon_dir)
