@@ -40,6 +40,8 @@ body, button {
 #wrapper {
   min-height: 100%;
   position: relative;
+  background: white;
+  z-index: -1;
 }
 
 .center {
@@ -100,15 +102,23 @@ body, button {
   left: 0;
   top: 0;
   position: fixed;
-  padding: 8px;
+  padding: 4px 20px;
   width: 100%;
   margin-bottom: 8px;
   /* Arc Theme Integration */
   background: #404552 ;
 	font-size: 24px;
 	font-weight: normal;
-  color: #DED9CB;
+  color: white;
   z-index: 1;
+}
+
+#close-btn {
+  color: white; 
+  z-index: 2; 
+  position: absolute; 
+  right: 0px; 
+  padding: 10px;
 }
 
 .navigation-button {
@@ -173,17 +183,24 @@ body, button {
 }
 
 .btn-showcase {
-  padding: 0 8px;
-}
-
-.btn-showcase h4 {
-  text-align: center;
+  margin: 10px 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .btn-showcase .btn {
   text-align: left;
-  margin-top: 15px;
-  margin-bottom: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  line-height: 1.4em;
+}
+
+.btn-showcase .btn-lg {
+  font-size: 1rem;
+  text-transform: uppercase;
+  height: 40px;
+  text-align: center;
+  line-height: 2.2em
 }
 
 .button-group .btn-icon {
@@ -192,12 +209,12 @@ body, button {
 }
 
 .button-group .btn {
-  width: 85%;
+  width: 80%;
 }
 
 .button-group .material-icons {
-  font-size: 20px;
-} 
+  font-size: 28px;
+}
 
 #content h2 {
   font-size: 24px;
@@ -253,6 +270,7 @@ a {
 
 #footer .footer-content {
   padding: 16px;
+  color: white;
 }
 
 /*#footer .form {*/
@@ -262,50 +280,10 @@ a {
 /*}*/
 
 #footer .form a {
-  color: #fff;
+  color: white;
   text-decoration: none;
   margin-right: 8px;
   font-size: 14px;
-}
-
-#footer label {
-  display: inline-block;
-  padding-left: 0;
-  margin-bottom: 0;
-  vertical-align: middle;
-  margin-right: 8px;
-  color: #fff;
-}
-
-#social {
-  margin: 6px 0px 0 0;
-}
-
-#social img, #social span {
-  width: 24px; height: 24px;
-  position: relative;
-  top: 0px;
-  margin-right: 4px;
-  opacity: 0.7;
-
-  -webkit-backface-visibility: hidden;
-  transition: all 0.2s ease-in-out;
-
-  -webkit-transition-property: all;
-  -webkit-transition-duration: 0.2s;
-  -webkit-transition-timing-function: ease-in-out;
-  -webkit-transition-delay: initial;
-}
-
-#social img:hover, #social span:hover {
-  top: -4px;
-  opacity: 1.0;
-}
-
-.social-large img {
-  width: 48px !important;
-  height: 48px !important;
-  padding-bottom: 8px;
 }
 
 #autostart {
@@ -566,8 +544,8 @@ blockquote.terminal {
  * Main Menu
 *************************/
 .main-menu-logo {
-  width: 200px;
-  height: 200px;
+  width: 160px;
+  height: 160px;
   /*top: 0; left: 0; bottom: 0; right: 0;*/
   margin: auto;
   margin-top: 15px;

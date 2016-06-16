@@ -235,7 +235,7 @@ class WelcomeApp(object):
         w.set_position(Gtk.WindowPosition.CENTER)
         w.set_wmclass('Budgie Remix Welcome', 'Budgie Remix Welcome')
         w.set_title('')
-        w.set_size_request(840, 520)
+        w.set_size_request(992, 520)
         # w.set_decorated(False)
 
         icon_dir = os.path.join(self._data_path, 'img', 'distro-icon.svg')

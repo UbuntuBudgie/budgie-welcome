@@ -13,6 +13,7 @@
     <div id="navigation">
       <div id="navigation-title">&zwnj;Main Menu&zwnj;</div>
     </div>
+    <i class="material-icons" id="close-btn">&#xE14C;</i>
   </div>
   
   <span id="special"></span>
@@ -29,7 +30,7 @@
         </div>
       </div>
     </div>
-    <div class="container-fluid fade fade-2s">
+    <div class="container fade fade-2s">
       <div class="row">
         <div class="col-md-3 btn-showcase">
           <!-- Documentation -->
@@ -62,17 +63,7 @@
           <!-- Distribution Logo-->
           <div class="row text-xs-center">
             <div class="col-md-12">
-              <img id="main-menu-logo" class="entire-page-fade main-menu-logo animated rotateIn fadeIn hvr-shadow" src="img/welcome/ubuntu-mate-icon.svg" width="50%" height="50%">
-            </div>
-          </div>
-          <br/>
-          <!-- Support -->
-          <div clas="row">
-            <div class="col-md-6">
-              <a id="software"    class="btn btn-block btn-primary btn-lg fade fade-5s hvr-shadow" onclick="exitMenu('software.html');$('#footer-left').fadeOut()"><span class="material-icons">&#xE30A;</span>&nbsp; &zwnj;Software&zwnj;</a>
-            </div>
-            <div class="col-md-6">
-              <a id="install"     class="btn btn-block btn-primary btn-lg fade fade-5s hvr-shadow" href="cmd://install"><span class="material-icons">&#xE2C0;</span>&nbsp; &zwnj;Install Now&zwnj;</a>
+              <img id="main-menu-logo" class="entire-page-fade main-menu-logo animated rotateIn fadeIn hvr-shadow" src="img/welcome/ubuntu-mate-icon.svg">
             </div>
           </div>
         </div>
@@ -104,12 +95,25 @@
           </div>
         </div>
       </div>
+      <div class="row">
+        <!-- Support -->
+        <div clas="row">
+          <div class="col-md-3 col-md-push-3 btn-showcase" style="padding-right: 30px">
+            <a id="software"    class="btn btn-block btn-primary btn-lg fade fade-5s hvr-shadow" onclick="exitMenu('software.html');$('#footer-left').fadeOut()"><span class="material-icons">&#xE30A;</span>&nbsp; &zwnj;Software&zwnj;</a>
+          </div>
+          <div class="col-md-3 col-md-push-3 btn-showcase" style="padding-left: 30px">
+            <a id="install"     class="btn btn-block btn-primary btn-lg fade fade-5s hvr-shadow" href="cmd://install"><span class="material-icons">&#xE2C0;</span>&nbsp; &zwnj;Install Now&zwnj;</a>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
   <div id="footer" class="bottom">
     <div class="container-fluid">
       <div class="row footer-content">
-        <div class="col-md-3"></div>
+        <div class="col-md-3">
+          <!--google plus, reddit, github, twitter, fb-->
+        </div>
         <div class="col-md-3"></div>
         <div class="col-md-6 text-md-right form">
           <a href="cmd://toggle-startup" id="open-at-start" class="live-session entire-page-fade" style="display:none">
