@@ -20,4 +20,4 @@ cd budgie-remix-welcome
 
 ### Screenshot
 
-![Screenshot of Budgie Remix Welcome App](https://cloud.githubusercontent.com/assets/2451833/16108864/59d4eba2-33c3-11e6-8728-9ec77667d07d.png)
+![Screenshot of Budgie Remix Welcome App](https://raw.githubusercontent.com/budgie-remix/budgie-remix-welcome/master/screenshot.png)
