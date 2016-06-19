@@ -105,7 +105,7 @@ body, button {
   width: 100%;
   margin-bottom: 8px;
   /* Arc Theme Integration */
-  background: #404552 ;
+  background: #404552;
 	font-size: 24px;
 	font-weight: normal;
   color: white;
@@ -117,7 +117,7 @@ body, button {
   z-index: 2; 
   position: absolute; 
   right: 0px; 
-  padding: 10px;
+  padding: 5px 10px;
 }
 
 .navigation-button {
@@ -167,9 +167,14 @@ body, button {
 
 #navigation-right {
   position: fixed;
-  top: 8px;
-  right: 8px;
+  bottom: 16px;
+  right: 22px;
   z-index: 11;
+}
+
+#scroll-top i {
+background: #404552;
+color: white;
 }
 
 /************************
@@ -372,9 +377,7 @@ hr.soften-light {
   top: -20px;
   margin-left: -20px;
   margin-right: -20px;
-  height: 530px;
-  background: url('/usr/share/backgrounds/mate/desktop/Ubuntu-Mate-Cold-no-logo.png');
-  -webkit-mask-image: -webkit-gradient(linear, left 85%, left bottom, from(rgba(0,0,0,1)), to(rgba(244,244,244,0)));
+  height: 440px;
 }
 
 .slogan-area {

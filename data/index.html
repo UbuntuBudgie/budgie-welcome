@@ -8,17 +8,18 @@
   <link href="css/welcome-bs4.css" rel="stylesheet" media="screen">
 </head>
 <body class="backdrop-simple" style="overflow: hidden;">
-  <div id="mate-blur" class="menu-bkgnd"></div>
   <div class="container-fluid">
     <div id="navigation">
-      <div id="navigation-title">&zwnj;Main Menu&zwnj;</div>
+      <a id="menu-button" class="navigation-button" onclick="smoothPageFade('index.html')">
+        <i class="material-icons">&#xE5CB;</i>
+      </a>
+      <div id="navigation-title">&zwnj;Introduction&zwnj;</div>
+      <div id="navigation-right"></div>
+      <a href="cmd://close">
+        <i class="material-icons" id="close-btn">&#xE14C;</i>
+      </a>
     </div>
-    <a href="cmd://close">
-      <i class="material-icons" id="close-btn">&#xE14C;</i>
-    </a>
   </div>
-  
-  <span id="special"></span>
   <div class="entire-page-fade" id="wrapper">
     <div id="header" class="container-fluid fade fade-1s" style="padding-top: 64px">
       <div class="row">

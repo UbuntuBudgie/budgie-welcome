@@ -40,7 +40,7 @@ $(document).ready(function() {
       }
   });
 
-  $('#navigation-right').append('<a id="scroll-top" class="navigation-button" style="display:none"><span class="fa fa-chevron-up"></span></a>')
+  $('#navigation-right').append('<a id="scroll-top" class="navigation-button" style="display:none"><i class="material-icons">&#xE316;</i></a>')
 
   $('#scroll-top').click(function () {
       $("html, body").animate({
