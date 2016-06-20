@@ -2,30 +2,32 @@
 <html lang="en">
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="css/bootstrap-2.3.2.css" rel="stylesheet" media="screen">
-  <link href="css/font-awesome.css" rel="stylesheet" media="screen">
+  <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+  <link href="css/material-icons.css" rel="stylesheet" media="screen">
   <link href="css/animate.css" rel="stylesheet" media="screen">
-  <link href="css/welcome.css" rel="stylesheet" media="screen">
+  <link href="css/welcome-bs4.css" rel="stylesheet" media="screen">
 </head>
 <body class="backdrop-simple">
   <div id="wrapper">
     <div class="container-fluid">
       <div id="navigation">
         <a id="menu-button" class="navigation-button" onclick="smoothPageFade('index.html')">
-          <span class="fa fa-chevron-left"></span>
+          <i class="material-icons">&#xE5CB;</i>
         </a>
-        <div id="navigation-title" hidden>&zwnj;Community&zwnj;</div>
+        <div id="navigation-title">&zwnj;Community&zwnj;</div>
         <div id="navigation-right"></div>
-        <img id="navigation-divider" src="img/welcome/header-shadow.png" width="100%" height="11px">
+        <a href="cmd://close">
+          <i class="material-icons" id="close-btn">&#xE14C;</i>
+        </a>
       </div>
     </div>
-    <div id="content" class="container-fluid entire-page-fade" hidden>
-      <div class="row-fluid">
-        <div class="span12">
+    <div id="content" class="container entire-page-fade">
+      <div class="row">
+        <div class="col-md-12">
           <!--Body content-->
           <h2>&zwnj;Forum&zwnj;</h2>
-          <p>&zwnj;To play an active role and help shape the direction of Ubuntu MATE,
-          the forum is the best place to go. From here, you can talk with the Ubuntu MATE
+          <p>&zwnj;To play an active role and help shape the direction of <span name="distro-name"></span>,
+          the <span name="distro-name"></span> chat room is the best place to go. From here, you can talk with the <span name="distro-name"></span>
           team and other members of our growing community.&zwnj;</p>
           <div class="alert alert-warning offline">
             <h5>&zwnj;It appears you are not connected to the Internet. Please check your connection to access this content.&zwnj;</h5>
@@ -33,37 +35,32 @@
             <a href="cmd://checkInternetConnection" onclick="reconnectTimeout();" class="btn btn-warning"> <span class="fa fa-refresh"></span> &zwnj;Retry&zwnj;</a>
           </div>
           <div align="center">
-            <a class="btn btn-lg btn-success" href="cmd://link?https://ubuntu-mate.community"><img src="img/welcome/ubuntu-mate-gray.svg">&nbsp; ubuntu-mate.community</a>
+            <a class="btn btn-lg btn-primary" href="cmd://link?https://gitter.im/budgie-remix/community"><img src="img/welcome/distro-icon.svg" width="20">&nbsp; <span name="distro-name"></span> Chat Room</a>
           </div>
           <h2>&zwnj;Social Networks&zwnj;</h2>
-          <p>&zwnj;Ubuntu MATE is active on the following social networks.&zwnj;</p>
-        </div>
-        <div class="row-fluid">
-          <div class="span4">
-            <div id="social" class="text-center social-large">
-              <a href="cmd://link?https://plus.google.com/communities/108331279007926658904"><img src="img/social/google+.svg"></a>
-            </div>
-          </div>
-          <div class="span4">
-            <div id="social" class="text-center social-large">
-              <a href="cmd://link?https://www.facebook.com/UbuntuMATEedition/"><img src="img/social/facebook.svg"></a>
-            </div>
-          </div>
-          <div class="span4">
-            <div id="social" class="text-center social-large">
-              <a href="cmd://link?https://twitter.com/ubuntu_mate"><img src="img/social/twitter.svg"></a>
-            </div>
-          </div>
+          <p>&zwnj;<span name="distro-name"></span> is active on the following social networks.&zwnj;</p>
         </div>
       </div>
-    </div>
-    <div id="footer" class="bottom">
-      <div class="footer-content">
-        <div id="footer-left">
-          <span id="footer-global-left"></span>
+      <div class="row social-banner">
+        <div class="col-md-3">
+          <a href="cmd://link?https://plus.google.com/communities/106822666079268690759">
+            <img src="img/social/g+.svg"/>
+          </a>
         </div>
-        <div id="footer-right" class="form">
-          <span id="footer-global-right"></span>
+        <div class="col-md-3">
+          <a href="cmd://link?https://www.reddit.com/r/budgieremix">
+            <img src="img/social/reddit.svg"/>
+          </a>
+        </div>
+        <div class="col-md-3">
+          <a href="cmd://link?http://gitter.im/budgie-remix/community">
+            <img src="img/social/gitter.svg"/>
+          </a>
+        </div>
+        <div class="col-md-3">
+          <a href="cmd://link?http://github.com/budgie-remix">
+            <img src="img/social/github.svg"/>
+          </a>
         </div>
       </div>
     </div>
