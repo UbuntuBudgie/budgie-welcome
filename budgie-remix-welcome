@@ -34,10 +34,12 @@ import sys
 import urllib.request
 import urllib.error
 import webbrowser
+import socket
 
 from simplejson import dumps as to_json
 
 from gi.repository import WebKit, Gtk
+from threading import Thread
 
 
 class WelcomeConfig(object):
@@ -45,6 +47,9 @@ class WelcomeConfig(object):
     """ Manages Welcome configuration """
 
     def __init__(self):
+
+        self.is_online = False
+
         # store our base architecture
         if os.uname()[4] == 'x86_64':
             self._arch = '64-bit'
@@ -78,6 +83,13 @@ class WelcomeConfig(object):
         # access it using `lsb_release` command.
         self._distroname = 'Budgie Remix'
 
+        # Multithread to prevent holding up program execution. Copied from 
+        # Ubuntu MATE Welcome App
+        thread1 = Thread(target=self.check_internet_connection)
+        # thread2 = Thread(target=self.detect_graphics)
+        thread1.start()
+        # thread2.start()
+
     @property
     def arch(self):
         return self._arch
@@ -110,6 +122,22 @@ class WelcomeConfig(object):
     def live(self):
         return self._live
 
+    def check_internet_connection(self):
+        print('[Network Test] Checking for internet connectivity... ')
+        url = "http://archive.ubuntu.com/"
+
+        try:
+            response = urllib.request.urlopen(url, timeout=2).read().decode('utf-8')
+        except socket.timeout:
+            print("[Network Test] -- Socket timed out to URL {0}".format(url))
+            self.is_online = False
+        except:
+            print("[Network Test] -- Could not establish a connection to '{0}'. ".format(url))
+            self.is_online = False
+        else:
+            print("[Network Test] Successfully pinged '{0}' ".format(url))
+            self.is_online = True
+
 
 class AppView(WebKit.WebView):
 
@@ -135,18 +163,6 @@ class AppView(WebKit.WebView):
         self.execute_script("$('span[name=\"distro-name\"]').html('{}')".format(self._config._distroname))
 
 
-        # if self._config.desktop == 'GNOME':
-        #  self.execute_script("$('#gnome_help').toggleClass('hide', false);")
-        # elif self._config.desktop == 'KDE':
-        #  self.execute_script("$('#kde_help').toggleClass('hide', false);")
-
-        # self.execute_script("$('#codename').html('%s')" %
-        #   (to_json(self._config.codename)))
-        # self.execute_script("$('#desktop').html('%s')" %
-        #   (to_json(self._config.desktop)))
-        # self.execute_script("$('#version').html('%s')" %
-        #   (self._config.version))
-
         if self._config.live:
             self.execute_script("$('#install').toggleClass('hide', false);")
             self.execute_script(
@@ -154,6 +170,12 @@ class AppView(WebKit.WebView):
         else:
             self.execute_script("$('#build').toggleClass('hide', false);")
             self.execute_script("$('#donate').toggleClass('hide', false);")
+
+        
+        if self._config.is_online:
+            self.execute_script("$('.offline').hide()")
+        else:
+            self.execute_script("$('.offline').show()")
 
     def _load_finished_cb(self, view, frame):
         self._push_config()
@@ -175,6 +197,7 @@ class AppView(WebKit.WebView):
         if uri.startswith('cmd://'):
             self._do_command(uri)
             return True
+            
 
         self.l_uri = uri
 
@@ -201,6 +224,9 @@ class AppView(WebKit.WebView):
         elif uri == 'toggle-startup':
             # toggle autostart
             self._config.autostart ^= True
+            self._push_config()
+        elif uri == "checkInternetConnection":
+            self._config.check_internet_connection()
             self._push_config()
         elif uri.startswith("link?"):
             webbrowser.open_new_tab(uri[5:])
