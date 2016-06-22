@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en" ng-app>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/material-icons.css" rel="stylesheet" media="screen">
+    <link href="css/animate.css" rel="stylesheet" media="screen">
+    <link href="css/welcome-bs4.css" rel="stylesheet" media="screen">
+  </head>
+  <body class="backdrop-simple" style="overflow: hidden;">
+    <div class="container-fluid">
+      <div id="navigation">
+        <div id="navigation-title">&zwnj;Introduction&zwnj;</div>
+        <div id="navigation-right"></div>
+        <a href="cmd://close">
+          <i class="material-icons" id="close-btn">&#xE14C;</i>
+        </a>
+      </div>
+    </div>
+    <div class="entire-page-fade" id="wrapper">
+      <div id="header" class="container-fluid fade fade-1s" style="padding-top: 64px">
+        <div class="row">
+          <div class="col-md-12 center splash-version">
+            <img src="img/welcome/distro-text.svg" height="">
+          </div>
+        </div>
+        <div class="row main-menu-textbox">
+          <div class="main-menu-text">
+            &zwnj;Choose an option to discover your new operating system.&zwnj;
+          </div>
+        </div>
+      </div>
+      <div class="container fade fade-2s">
+        <div class="row">
+          <div class="col-md-3 btn-showcase">
+            <!-- Documentation -->
+            <div class="button-group">
+              <span class="btn-icon material-icons">&#xE88E;</span>
+              <a id="introduction" class="btn btn-inverse fade fade-3s hvr-shadow" onclick="exitMenu('introduction.html')">
+                &nbsp; &zwnj;Introduction&zwnj;
+              </a>
+            </div>
+            <div class="button-group">
+              <span class="btn-icon material-icons">&#xE8D0;</span>
+              <a id="features" class="btn btn-inverse fade fade-4s hvr-shadow" onclick="exitMenu('features.html')">
+                &nbsp; &zwnj;Features&zwnj;
+              </a>
+            </div>
+            <div class="button-group">
+              <span class="btn-icon material-icons">&#xE86C;</span>
+              <a id="gettingstarted" class="btn btn-inverse fade fade-5s live-session hvr-shadow" onclick="exitMenu('gettingstarted.html')">
+                &nbsp; &zwnj;Getting Started&zwnj;
+              </a>
+            </div>
+            <div class="button-group">
+              <span class="btn-icon material-icons">&#xE887;</span>
+              <a id="install-guide"  class="btn btn-inverse fade fade-5s live-session-only hvr-shadow" onclick="exitMenu('gettingstarted.html')">
+                &nbsp; &zwnj;Installation Help&zwnj;
+              </a>
+            </div>
+          </div>
+          <div class="col-md-6 btn-showcase">
+            <!-- Distribution Logo-->
+            <div class="row text-xs-center">
+              <div class="col-md-12">
+                <img id="main-menu-logo" class="entire-page-fade main-menu-logo animated rotateIn fadeIn hvr-shadow" src="img/welcome/distro-icon.svg">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 btn-showcase">
+            <!-- Project -->
+            <div class="button-group">
+              <span class="btn-icon material-icons">&#xE0B9;</span>
+              <a id="chatroom" class="btn btn-inverse fade fade-3s hvr-shadow" onclick="exitMenu('chatroom.html')">
+                &nbsp; &zwnj;Chat room&zwnj;
+              </a>
+            </div>
+            <div class="button-group">
+              <span class="btn-icon material-icons">&#xE7EF;</span>
+              <a id="community" class="btn btn-inverse fade fade-3s hvr-shadow" onclick="exitMenu('community.html')">
+                &nbsp; &zwnj;Community&zwnj;
+              </a>
+            </div>
+            <div class="button-group">
+              <span class="btn-icon material-icons">&#xE86F;</span>
+              <a id="getinvolved" class="btn btn-inverse fade fade-5s hvr-shadow" onclick="exitMenu('getinvolved.html')">
+                &nbsp; &zwnj;Get Involved&zwnj;
+              </a>
+            </div>
+            <div class="button-group">
+              <span class="btn-icon material-icons">&#xE87D;</span>
+              <a id="donate" class="btn btn-inverse fade fade-5s hvr-shadow" onclick="exitMenu('donate.html')">
+                &nbsp; &zwnj;Donate&zwnj;
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <!-- Support -->
+          <div clas="row">
+            <div class="col-md-3 col-md-push-3 btn-showcase" style="padding-right: 30px">
+              <a id="software"    class="btn btn-block btn-primary btn-lg fade fade-5s hvr-shadow" onclick="exitMenu('software.html');$('#footer-left').fadeOut()"><span class="material-icons">&#xE30A;</span>&nbsp; &zwnj;Software&zwnj;</a>
+            </div>
+            <div class="col-md-3 col-md-push-3 btn-showcase" style="padding-left: 30px">
+              <a id="install"     class="btn btn-block btn-primary btn-lg fade fade-5s hvr-shadow" href="cmd://install"><span class="material-icons">&#xE2C0;</span>&nbsp; &zwnj;Install Now&zwnj;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="footer" class="bottom">
+      <div class="container-fluid">
+        <div class="row footer-content">
+          <div class="col-md-3 social">
+            <a href="cmd://link?https://plus.google.com/communities/106822666079268690759">
+              <img src="img/social/g+.svg"/>
+            </a>
+            <a href="cmd://link?https://www.reddit.com/r/budgieremix">
+              <img src="img/social/reddit.svg"/>
+            </a>
+            <a href="cmd://link?http://gitter.im/budgie-remix/community">
+              <img src="img/social/gitter.svg"/>
+            </a>
+            <a href="cmd://link?http://github.com/budgie-remix">
+              <img src="img/social/github.svg"/>
+            </a>
+          </div>
+          <div class="col-md-3"></div>
+          <div class="col-md-6 text-md-right form">
+            <a href="cmd://toggle-startup" id="open-at-start" class="live-session entire-page-fade" style="display:none">
+              <span id="autostart" class="material-icons">&#xE836;</span> &zwnj;Show this dialog on startup?&zwnj;
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/jquery-2.1.4.js"></script>
+    <script src="js/bootstrap-2.3.2.js"></script>
+    <script src="js/janimate.js"></script>
+    <script src="js/confetti.js"></script>   <!-- Confetti only appears on special events -->
+    <script src="js/welcome.js"></script>
+  </body>
+</html>
+
