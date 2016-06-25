@@ -3,21 +3,24 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
-    <link href="css/font-awesome.css" rel="stylesheet" media="screen">
+    <link href="css/material-icons.css" rel="stylesheet" media="screen">
     <link href="css/animate.css" rel="stylesheet" media="screen">
     <link href="css/welcome-bs4.css" rel="stylesheet" media="screen">
   </head>
   <body class="backdrop-simple">
     <div id="wrapper">
-    <div class="container-fluid">
-      <div id="navigation">
-        <a id="menu-button" class="navigation-button" onclick="smoothPageFade('index.html')">
-          <span class="fa fa-chevron-left"></span>
-        </a>
-        <div id="navigation-title">&zwnj;Features&zwnj;</div>
-        <div id="navigation-right"></div>
+      <div class="container-fluid">
+        <div id="navigation">
+          <a id="menu-button" class="navigation-button" onclick="smoothPageFade('index.html')">
+            <i class="material-icons">&#xE5CB;</i>
+          </a>
+          <div id="navigation-title">&zwnj;Features&zwnj;</div>
+          <div id="navigation-right"></div>
+          <a href="cmd://close">
+            <i class="material-icons" id="close-btn">&#xE14C;</i>
+          </a>
+        </div>
       </div>
-    </div>
       <div id="content" class="container entire-page-fade">
         <div class="row wow fadeIn">
           <div class="col-md-12">
@@ -46,8 +49,7 @@
               it works, or the applications it runs to suit your taste.&zwnj;</p>
           </div>
         </div>
-
-        <hr class="soften">
+        <hr>
         <h3 class="wow fadeIn">&zwnj;Built-In Security&zwnj;</h3>
         <div class="row wow fadeIn">
           <div class="col-md-2 center-inside">
@@ -172,7 +174,7 @@
           </div>
         </div>
 
-        <hr class="soften">
+        <hr>
         <h3 class="wow fadeIn">&zwnj;Entertainment&zwnj;</h3>
         <div class="row wow fadeIn">
           <div class="col-md-2 center-inside">
@@ -219,8 +221,8 @@
           </div>
         </div>
         <div class="row wow fadeIn">
+          <hr>
           <div class="col-md-12">
-            <hr class="soften-light">
             <h4 class="wow pulse center">&zwnj;... And a whole lot more!&zwnj;</h4>
 
             <p>&zwnj;Naturally you'll also find a firewall, backup
@@ -234,7 +236,7 @@
           </div>
         </div>
 
-        <hr class="soften">
+        <hr>
         <h3 class="wow fadeIn">&zwnj;Games&zwnj;</h3>
         <div class="row wow fadeIn">
           <div class="col-md-2 center-inside">
@@ -260,16 +262,6 @@
           </div>
         </div>
         <br><br>
-      </div>
-      <div id="footer" class="bottom">
-        <div class="footer-content">
-          <div id="footer-left">
-            <span id="footer-global-left"></span>
-          </div>
-          <div id="footer-right" class="form">
-            <span id="footer-global-right"></span>
-          </div>
-        </div>
       </div>
     </div>
     <script src="js/jquery-2.1.4.js"></script>
