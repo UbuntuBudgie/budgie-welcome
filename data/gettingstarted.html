@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+  <link href="css/bootstrap-2.3.2.css" rel="stylesheet" media="screen">
   <link href="css/font-awesome.css" rel="stylesheet" media="screen">
   <link href="css/animate.css" rel="stylesheet" media="screen">
-  <link href="css/welcome-bs4.css" rel="stylesheet" media="screen">
+  <link href="css/welcome.css" rel="stylesheet" media="screen">
 </head>
 <body class="backdrop-simple">
   <div id="wrapper">
@@ -15,13 +16,13 @@
           <span class="fa fa-chevron-left"></span>
         </a>
         <a id="index-open" onclick="indexOpen()" class="navigation-button"><span class="fa fa-bars"></span></a>
-        <div id="navigation-title">&zwnj;Getting Started&zwnj; - <span id="navigation-sub-title"> </span></div>
+        <div id="navigation-title" hidden>&zwnj;Getting Started&zwnj; - <span id="navigation-sub-title"> </span></div>
         <div id="navigation-right"></div>
         <img id="navigation-divider" src="img/welcome/header-shadow.png" width="100%" height="11px">
       </div>
     </div>
-    <a id="index-overlay" onclick="indexClose()"></a>
-    <div id="index-menu">
+    <a id="index-overlay" onclick="indexClose()" hidden></a>
+    <div id="index-menu" hidden>
       <a id="index-close" onclick="indexClose();"><span class="fa fa-close"></span></a>
 
       <!-- Shown in live session only -->
@@ -29,12 +30,12 @@
       <a class="btn btn-inverse index-btn live-session-only" onclick='changePage("sysreq","&zwnj;System Requirements&zwnj;")'>        <span class="fa fa-laptop"></span>        &zwnj;System Requirements&zwnj;</a>
       <a class="btn btn-inverse index-btn live-session-only" onclick='changePage("prepare","&zwnj;Installation Preparations&zwnj;")'> <span class="fa fa-hdd-o"></span>         &zwnj;Installation Preparation&zwnj;</a>
       <a class="btn btn-inverse index-btn live-session-only" onclick='changePage("dualboot","&zwnj;Dual Booting&zwnj;")'>             <span class="fa fa-retweet"></span>       &zwnj;Dual Booting&zwnj;</a>
-      <a class="btn btn-success index-btn live-session-only" href="cmd://install">                                                    <span class="fa fa-download"></span>      &zwnj;Install Now&zwnj;</a>
+      <a class="btn btn-success index-btn live-session-only" onclick="cmd('install')">                                                <span class="fa fa-download"></span>      &zwnj;Install Now&zwnj;</a>
 
       <!-- Shown when installed -->
       <br class="live-session-only"/>
       <span class="live-session"><h5>&zwnj;Post-Installation&zwnj;</h5></span>
-      <a class="btn btn-inverse index-btn live-session"      onclick='changePage("updates","&zwnj;Software Updates&zwnj;")'>          <span class="fa fa-refresh"></span>       &zwnj;Software Updates&zwnj;</a>
+      <a class="btn btn-inverse index-btn live-session"      onclick='changePage("updates","&zwnj;Updates & Extras&zwnj;")'>          <span class="fa fa-refresh"></span>       &zwnj;Updates & Extras&zwnj;</a>
       <a class="btn btn-inverse index-btn live-session"      onclick='changePage("drivers","&zwnj;Drivers&zwnj;")'>                   <span class="fa fa-gear"></span>          &zwnj;Drivers&zwnj;</a>
       <a class="btn btn-inverse index-btn live-session"      onclick='changePage("languageInput","&zwnj;Language & Input&zwnj;")'>    <span class="fa fa-globe"></span>         &zwnj;Language & Input&zwnj;</a>
       <a class="btn btn-inverse index-btn live-session"      onclick='changePage("tasks","&zwnj;Optional Tasks&zwnj;")'>              <span class="fa fa-check-square"></span>  &zwnj;Optional Tasks&zwnj;</a>
@@ -48,27 +49,27 @@
       <a class="btn btn-inverse index-btn"     onclick='changePage("specs","&zwnj;System Specifications&zwnj;"); InitSystemInfo()'> <span class="fa fa-laptop"></span>        &zwnj;System Specifications&zwnj;</a>
 
     </div>
-    <div id="content" class="container entire-page-fade">
+    <div id="content" class="container-fluid entire-page-fade" hidden>
 
       <!-- Topics -->
-      <div id="initial" class="row topicContents">
-        <div class="col-md-6 col-md-push-6">
-          <h4 class="text-right">&zwnj;Please choose a topic to get started.&zwnj;</h4>
+      <div id="initial" class="row-fluid topicContents" hidden>
+        <div class="span12">
+          <h4 class="center">&zwnj;Please choose a topic to get started.&zwnj;</h4>
         </div>
       </div>
 
       <!-- System Requirements (shown in guest session only) -->
-      <div id="sysreq" class="topicContents">
-        <div class="row">
-          <div class="col-md-12">
+      <div id="sysreq" class="topicContents" hidden>
+        <div class="row-fluid">
+          <div class="span12">
             <h2>&zwnj;Modest System Requirements&zwnj;</h2>
-            <p>&zwnj;Ubuntu Budgie works well on both high-end to slow computers,
+            <p>&zwnj;Ubuntu MATE works well on both high-end to slow computers,
 	    optimized to be functional, while light on system resources.&zwnj;</p>
 
             <h5>&zwnj;Minimum&zwnj;</h5>
             <ul>
               <li>&zwnj;Pentium III 750 megahertz (MHz)&zwnj;</li>
-              <li>&zwnj;768 megabytes (MB) of RAM&zwnj;</li>
+              <li>&zwnj;512 megabytes (MB) of RAM&zwnj;</li>
               <li>&zwnj;8 gigabytes (GB) of disk space&zwnj;</li>
             </ul>
 
@@ -88,7 +89,7 @@
 
             <div class="center">
               <hr class="soften-light">
-              <a class="btn btn-default" onclick='changePage("prepare","&zwnj;Installation Preparations&zwnj;")'>
+              <a class="btn" onclick='changePage("prepare","&zwnj;Installation Preparations&zwnj;")'>
                 <b>&zwnj;Next:&zwnj;</b>&nbsp; &zwnj;Installation Preparations&zwnj; <span class="fa fa-chevron-right"></span></a>
             </div>
           </div>
@@ -96,12 +97,12 @@
       </div>
 
       <!-- Installation Preparations (shown in guest session only) -->
-      <div id="prepare" class="topicContents">
-        <div class="row">
-          <div class="col-md-12">
+      <div id="prepare" class="topicContents" hidden>
+        <div class="row-fluid">
+          <div class="span12">
             <h2>&zwnj;Preparing to Install&zwnj;</h2>
-            <p>&zwnj;Ubuntu Budgie is relatively simple to set up, whether you're looking to
-            replace your existing operating system or install Ubuntu Budgie alongside
+            <p>&zwnj;Ubuntu MATE is relatively simple to set up, whether you're looking to
+            replace your existing operating system or install Ubuntu MATE alongside
             an existing one - such as &zwnj;&nbsp;<span class="fa fa-windows"></span>
             &zwnj;Microsoft Windows or another &zwnj;<span class="fa fa-linux"></span>
             &zwnj;GNU/Linux distribution.&zwnj;</p>
@@ -117,14 +118,14 @@
 
             <img src="img/applications/ubiquity.png" class="left"/>
             <p>&zwnj;The live session you are currently in right now is a good opportunity
-            to test Ubuntu Budgie without modifying your computer, allowing you to
+            to test Ubuntu MATE without modifying your computer, allowing you to
             test all of your peripherals are working as intended before committing
             to installing it on your machine. Once you are ready, double click the
             installation icon from the desktop.&zwnj;</p>
             <hr class="soften"/>
 
             <h3>&zwnj;Modern UEFI-based computers&zwnj;</h3>
-            <p>&zwnj;If you have a modern PC that uses the Unifed Extended Firmware Interface (UEFI),
+            <p>&zwnj;If you have a modern PC that uses the Unified Extended Firmware Interface (UEFI),
             you may need to disable &zwnj; <b>&zwnj;Secure Boot&zwnj;</b> &zwnj;(or enable the&zwnj; <b>&zwnj;Unlock Bootloader&zwnj;</b>
             &zwnj;option) prior to installation, particularly if an operating system was pre-installed.&zwnj;</p>
 
@@ -167,11 +168,11 @@
       </div>
 
       <!-- Advise on Dual Booting (shown in guest session only) -->
-      <div id="dualboot" class="topicContents">
-        <div class="row">
-          <div class="col-md-12">
+      <div id="dualboot" class="topicContents" hidden>
+        <div class="row-fluid">
+          <div class="span12">
             <h3>&zwnj;Dual Booting&zwnj;</h3>
-            <p>&zwnj;Should you wish to install Ubuntu Budgie alongside your existing
+            <p>&zwnj;Should you wish to install Ubuntu MATE alongside your existing
             operating system, your partitions need to be shrunk. This results in
             sections of your hard disk being split between multiple operating systems.&zwnj;</p>
 
@@ -239,11 +240,11 @@
                   This method makes changes to partitions prior to installation.&zwnj;
                 </p>
                 <div class="center">
-                  <a href="cmd://gparted" class="btn btn-inverse"><img src="img/applications/gparted.png" width="32px" height="32px"> Open GParted</a>
+                  <a onclick="cmd('gparted')" class="btn btn-inverse"><img src="img/applications/gparted.png" width="32px" height="32px"> Open GParted</a>
                 </div>
                 <br>
                 <p>&zwnj;After completing operations to your disk, you can leave the remaining space unallocated,&zwnj;
-                &zwnj;whereby the installer will detect this unused space to install Ubuntu Budgie to.&zwnj;</p>
+                &zwnj;whereby the installer will detect this unused space to install Ubuntu MATE to.&zwnj;</p>
                 <br>
                 <h5>&zwnj;Using the Installer's "Custom" option.&zwnj;</h5>
                 <p>&zwnj;Instead or in addition to GParted, the&zwnj; <b>&zwnj;Custom&zwnj;</b> &zwnj;option during the
@@ -253,7 +254,7 @@
 
                 <p><b>&zwnj;You can specify these mount points:&zwnj;</b></p>
                 <ul>
-                  <li><code>/</code> - &zwnj;The base for Ubuntu Budgie&zwnj;</li>
+                  <li><code>/</code> - &zwnj;The base for Ubuntu MATE&zwnj;</li>
                   <li><code>/boot</code> - &zwnj;Bootloader and kernels&zwnj;</li>
                   <li><code>/home</code> - &zwnj;Your personal files and folders&zwnj;</li>
                   <li><code>/tmp</code> - &zwnj;Temporary files&zwnj;</li>
@@ -280,7 +281,7 @@
 
                 <p>&zwnj;Newer versions of Windows provide a tool to shrink the NTFS volume from within Windows.
                 This is a safer bet if it's essential that Windows still boots on your computer while
-                experiencing Ubuntu Budgie.&zwnj;</p>
+                experiencing Ubuntu MATE.&zwnj;</p>
                 <blockquote>
                   1. &zwnj;Open&zwnj; <b>&zwnj;Disk Management&zwnj;</b> &zwnj;from the start menu.&zwnj;
                   <div class="center">
@@ -298,7 +299,7 @@
                   </div>
                   <br>
                   <div class="alert alert-info">
-                    &zwnj;Remember, Ubuntu Budgie needs at minimum 8 GB of disk space.&zwnj;
+                    &zwnj;Remember, Ubuntu MATE needs at minimum 8 GB of disk space.&zwnj;
                     <b>1 GB = 1000 MB</b>
                   </div>
                 </blockquote>
@@ -306,7 +307,7 @@
                 <h5>&zwnj;Further Reading&zwnj;</h5>
                 <p>&zwnj;For further information on the best practices to modify partitions containing
                 Windows, see the following&zwnj;
-                <a href="cmd://link?https://help.ubuntu.com/community/HowtoResizeWindowsPartitions">
+                <a onclick="cmd('link?https://help.ubuntu.com/community/HowtoResizeWindowsPartitions')">
                   &zwnj;help article&zwnj;</a> &zwnj;online&zwnj;.</p>
               </div>
 
@@ -326,12 +327,12 @@
             <div class="alert alert-warning offline">
               <h5>&zwnj;Requires downloading a package.&zwnj;</h5>
               <p>&zwnj;Please connect to the Internet to download and use this utility.&zwnj;</p>
-              <div id="reconnectFailed"><p><span class="fa fa-warning"></span> &zwnj;Sorry, Welcome was unable to establish a connection.&zwnj;</p></div>
-              <a href="cmd://checkInternetConnection" onclick="reconnectTimeout();" class="btn btn-warning"> <span class="fa fa-refresh"></span> &zwnj;Retry&zwnj;</a>
+              <div id="reconnectFailed" hidden><p><span class="fa fa-warning"></span> &zwnj;Sorry, Welcome was unable to establish a connection.&zwnj;</p></div>
+              <a onclick="reconnectRetry();" class="btn btn-warning"> <span class="fa fa-refresh"></span> &zwnj;Retry&zwnj;</a>
             </div>
 
-            <a class="boot-repair-install btn btn-inverse online" href="cmd://install-appid?boot-repair"><span class="fa fa-download"></span>&nbsp; &zwnj;Download Boot Repair&zwnj;</a>
-            <a class="boot-repair-remove btn btn-success" href="cmd://run?boot-repair"><span class="fa fa-wrench"></span>&nbsp; &zwnj;Open Boot-Repair&zwnj;</a>
+            <a class="boot-repair-install btn btn-inverse online" onclick="cmd('install-appid?boot-repair')"><span class="fa fa-download"></span>&nbsp; &zwnj;Download Boot Repair&zwnj;</a>
+            <a class="boot-repair-remove btn btn-success" onclick="cmd('run?boot-repair')"><span class="fa fa-wrench"></span>&nbsp; &zwnj;Open Boot-Repair&zwnj;</a>
 
             <div class="center">
               <hr class="soften-light">
@@ -342,43 +343,121 @@
         </div>
       </div>
 
-      <!-- Software Updates -->
-      <div id="updates" class="topicContents">
-        <div class="row">
-          <div class="col-md-12">
-            <h2>&zwnj;Software Updates&zwnj;</h2>
+      <!-- Updates & Extras -->
+      <div id="updates" class="topicContents" hidden>
+        <div class="row-fluid">
+          <div class="span12">
+            <h2>&zwnj;Updates & Extras&zwnj;</h2>
 
             <div class="alert alert-warning offline">
               <h5>&zwnj;An Internet connection is required to download and install updates.&zwnj;</h5>
             </div>
-            <p>&zwnj;Ubuntu Budgie periodically will check to see if new software
-            and security updates are available for your computer. If you
-            have just installed Ubuntu Budgie, you might want to do this now.&zwnj;</p>
-            <div align="center">
-              <a class="btn btn-lg btn-inverse" href="cmd://update" onclick="smoothFade('','#updates-hint')">
-                <img src="img/applications/system-software-update.svg" width="32px" height="32px"/>&nbsp; &zwnj;Software Updater&zwnj;
-              </a>
-              <span id="updates-hint" class="center"><small>
-                <p><span class="fa fa-info-circle"></span> <b>&zwnj;Software Updater&zwnj;</b> &zwnj;can be found later in&zwnj;
-                <b><i>&zwnj;System&zwnj; <span class="fa fa-long-arrow-right"></span> &zwnj;Administration&zwnj;.</i></b></p>
-              </small></span>
+
+            <div class="row-fluid">
+              <div class="span2 center-inside">
+                <img src="img/applications/system-software-update.png" width="64px" height="64px" style="margin-top:16px;"/>
+              </div>
+              <div class="span10">
+                <h4>&zwnj;Software Updater&zwnj;</h4>
+                <p>&zwnj;Ubuntu MATE periodically will check to see if new software
+                and security updates are available for your computer. If you
+                have just installed Ubuntu MATE, you might want to do this now.&zwnj;</p>
+                <span id="updates-hint" class="center" hidden>
+                  <small><p>
+                      <span class="fa fa-info-circle"></span> <b>&zwnj;Software Updater&zwnj;</b> &zwnj;can be found later in&zwnj;
+                      <b><i>&zwnj;System&zwnj; <span class="fa fa-long-arrow-right"></span> &zwnj;Administration&zwnj;.</i></b>
+                  </p></small>
+                </span>
+                <p class="text-right">
+                  <a class="btn btn-lg btn-inverse" onclick="cmd('update'); smoothFade('','#updates-hint')">
+                    <img src="img/applications/system-software-update.png" width="20px" height="20px"/>&nbsp; &zwnj;Check for Updates&zwnj;
+                  </a>
+                </p>
+              </div>
             </div>
             <hr class="soften"/>
-            <p>&zwnj;The codecs package include a complete, cross-platform solution to
-            decode, encode, record, convert and stream audio and video.
-            It also includes a MP3 audio decoder that permits the playback
-            of MPEG 1 audio layer III (MP3).&zwnj;</p>
+
+            <div class="row-fluid">
+              <div class="span2 center-inside">
+                <img src="img/applications/codecs.png" width="64px" height="64px" style="margin-top:16px;"/>
+              </div>
+              <div class="span10">
+                <h4>&zwnj;Additional Codecs&zwnj;</h4>
+                <p>&zwnj;The codecs package include a complete, cross-platform solution to
+                decode, encode, record, convert and stream audio and video.
+                It also includes a MP3 audio decoder that permits the playback
+                of MPEG 1 audio layer III (MP3).&zwnj;</p>
+                <p class="text-right">
+                  <span class="codecs-applying"><img src="img/welcome/processing.gif" width="24px" height="24px"/> &zwnj;Applying Changes...&zwnj;</span>
+                  <a class="btn btn-lg btn-success codecs-install" onclick="cmd('install-appid?codecs')"><span class="fa fa-download"></span>&nbsp; &zwnj;Install&zwnj;</a>
+                  <a class="btn btn-lg btn-danger codecs-remove"   onclick="cmd('remove-appid?codecs')"> <span class="fa fa-trash"></span>&nbsp; &zwnj;Remove&zwnj;</a>
+                </p>
+              </div>
+            </div>
+            <hr class="soften">
+
+            <div class="row-fluid">
+              <div class="span2 center-inside">
+                <img src="img/applications/dvd.png" width="64px" height="64px" style="margin-top:16px;"/>
+              </div>
+              <div class="span10">
+                <h4>&zwnj;DVD Playback Support&zwnj;</h4>
+                <p><code>libdvdcss2</code> &zwnj;is a simple library designed for
+                accessing DVDs like a block device without having to bother
+                about the decryption. It will enable playback of DVD video in VLC.&zwnj;</p>
+                <p class="text-right">
+                  <span class="libdvdcss2-applying"><img src="img/welcome/processing.gif" width="24px" height="24px"/> &zwnj;Applying Changes...&zwnj;</span>
+                  <a class="btn btn-lg btn-success libdvdcss2-install" onclick="cmd('install-appid?libdvdcss2')"><span class="fa fa-download"></span>&nbsp; &zwnj;Install&zwnj;</a>
+                  <a class="btn btn-lg btn-danger libdvdcss2-remove"   onclick="cmd('remove-appid?libdvdcss2')"> <span class="fa fa-trash"></span>&nbsp; &zwnj;Remove&zwnj;</a>
+                </p>
+              </div>
+            </div>
+            <hr class="soften">
+
+            <div class="row-fluid">
+              <div class="span2 center-inside">
+                <img src="img/applications/xscreensaver.png" width="64px" height="64px" style="margin-top:16px;"/>
+              </div>
+              <div class="span10">
+                <h4>&zwnj;Additional Screen Savers&zwnj;</h4>
+                <p>&zwnj;Install over 200 screen savers for
+                when your computer is idle for long periods of time.
+                Screen savers were originally created to reduce burn-in for
+                cathode ray tube (CRT) monitors displaying the same
+                image for long periods of time.&zwnj;</p>
+                <p class="text-right">
+                  <span class="xscreensaver-applying"><img src="img/welcome/processing.gif" width="24px" height="24px"/> &zwnj;Applying Changes...&zwnj;</span>
+                  <a class="btn btn-lg btn-success xscreensaver-install" onclick="cmd('install-appid?xscreensaver')"><span class="fa fa-download"></span>&nbsp; &zwnj;Install&zwnj;</a>
+                  <a class="btn btn-lg btn-danger  xscreensaver-remove"  onclick="cmd('remove-appid?xscreensaver')"> <span class="fa fa-trash"></span>&nbsp; &zwnj;Remove&zwnj;</a>
+                  <a class="btn btn-lg btn-inverse" onclick="cmd('run?mate-screensaver-preferences')"> <img src="img/applications/xscreensaver.png" width="20px" height="20px">&nbsp; &zwnj;Change Screen Saver&zwnj;</a>
+                </p>
+              </div>
+            </div>
+            <hr class="soften">
+
+            <div class="row-fluid">
+              <div class="span2 center-inside">
+                <img src="img/applications/desktop.png" width="64px" height="64px" style="margin-top:16px;"/>
+              </div>
+              <div class="span10">
+                <h4>&zwnj;Additional Community Wallpapers&zwnj;</h4>
+                <p>&zwnj;The Ubuntu MATE Community have contributed dozens of
+                  desktop wallpaper images over the years. Why not install them
+                  and find something that suits your tastes?&zwnj;</p>
+                <p class="text-right">
+                  <span class="wallpapers-applying"><img src="img/welcome/processing.gif" width="24px" height="24px"/> &zwnj;Applying Changes...&zwnj;</span>
+                  <a class="btn btn-lg btn-success wallpapers-install" onclick="cmd('install-appid?wallpapers')"><span class="fa fa-download"></span>&nbsp; &zwnj;Install&zwnj;</a>
+                  <a class="btn btn-lg btn-danger  wallpapers-remove"  onclick="cmd('remove-appid?wallpapers')"> <span class="fa fa-trash"></span>&nbsp; &zwnj;Remove&zwnj;</a>
+                  <a class="btn btn-lg btn-inverse" onclick="cmd('run?mate-appearance-properties')"> <img src="img/applications/appearance.png" width="20px" height="20px">&nbsp; &zwnj;Change Appearance&zwnj;</a>
+                </p>
+              </div>
+            </div>
+
             <!-- <p>&zwnj;You'll need the Blu-ray AACS database in order
             to play AACS encrypted or BD+ protected discs.&zwnj;</p> -->
-            <div align="center">
-              <a class="btn btn-lg btn-inverse" href="cmd://install-appid?codecs">
-                <img src="img/applications/codecs.png" width="32px" height="32px"/>&nbsp; &zwnj;Install Codecs Package&zwnj;
-              </a>
-              <!-- <a class="btn btn-lg btn-inverse" href="cmd://get-aacs-db">
-                <img src="img/applications/bluray.png" width="32px" height="32px"/>&nbsp; &zwnj;Install Blu-ray AACS Database&zwnj;
-              </a> -->
-              <span class="codecs-applying bluray-applying"><br><br><img src="img/welcome/processing.gif" width="24px" height="24px"/> &zwnj;Installing...&zwnj;</span>
-            </div>
+            <!-- <a class="btn btn-lg btn-inverse" onclick="cmd('get-aacs-db')">
+              <img src="img/applications/bluray.png" width="32px" height="32px"/>&nbsp; &zwnj;Install Blu-ray AACS Database&zwnj;
+            </a> -->
 
             <div class="center">
               <hr class="soften-light">
@@ -390,12 +469,12 @@
       </div>
 
       <!-- Drivers -->
-      <div id="drivers" class="topicContents">
-        <div class="row">
-          <div class="col-md-12">
+      <div id="drivers" class="topicContents" hidden>
+        <div class="row-fluid">
+          <div class="span12">
             <h2>&zwnj;Drivers&zwnj;</h2>
             <p>&zwnj;While a wide range of hardware is compatible with Ubuntu
-            Budgie, there are some components and peripherals that
+            MATE, there are some components and peripherals that
             require proprietary drivers to function properly. Installing
             the firmware package is often required to get some devices,
             typically Bluetooth and Wi-Fi, to work correctly.&zwnj;</p>
@@ -403,35 +482,35 @@
               <h5>&zwnj;An Internet connection is required to download and install drivers.&zwnj;</h5>
             </div>
             <div align="center">
-                <a class="btn btn-inverse" href="cmd://drivers" onclick="smoothFade('','#drivers-hint')">
-                    <img src="img/humanity/jockey.svg" width="32px" height="32px"/>&nbsp; &zwnj;Additional Drivers&zwnj;
+                <a class="btn btn-inverse" onclick="cmd('drivers')" onclick="smoothFade('','#drivers-hint')">
+                    <img src="img/applications/additional-drivers.png" width="32px" height="32px"/>&nbsp; &zwnj;Additional Drivers&zwnj;
                 </a>
-                <a class="btn btn-inverse" href="cmd://install-appid?firmware">
-                    <img src="img/humanity/jockey.svg" width="32px" height="32px"/>&nbsp; &zwnj;Install Firmware Package&zwnj;
+                <a class="btn btn-inverse" onclick="cmd('install-appid?firmware')">
+                    <img src="img/applications/additional-drivers.png" width="32px" height="32px"/>&nbsp; &zwnj;Install Firmware Package&zwnj;
                 </a>
             </div>
 
-            <span id="drivers-hint" class="center"><small>
+            <span id="drivers-hint" class="center" hidden><small>
               <p><span class="fa fa-info-circle"></span> <b>&zwnj;Additional Drivers&zwnj;</b> &zwnj;can be found later in&zwnj;
               <b><i>&zwnj;System&zwnj; <span class="fa fa-long-arrow-right"></span> &zwnj;Administration&zwnj;.</i></b></p>
             </small></span>
 
             <!-- Advice about graphics -->
             <a onclick="toggleSub('graphics-section','graphics-arrow');"><h3 class="sub-collapse"><span class="fa fa-chevron-down" id="graphics-arrow"></span> &zwnj;Graphics&zwnj;</h3></a>
-            <div id="graphics-section">
+            <div id="graphics-section" hidden>
 
               <div class="graphics-unknown alert alert-danger">
                 <h5>&zwnj;Sorry, Welcome was unable to automatically identify the graphics vendor on this system.&zwnj;</h5>
                 <p><span class="fa fa-plug"></span><b> &zwnj;Card/Chipset:&zwnj; </b><i class="graphics-pci">&zwnj;Unknown&zwnj;</i></p>
               </div>
 
-              <div class="graphics-nvidia alert alert-info">
+              <div class="graphics-nvidia alert alert-info" hidden>
                 <h5>NVIDIA &zwnj;Graphics Card Detected.&zwnj;</h5>
                 <p>NVIDIA &zwnj;may have drivers for your card that can boost performance for 3D applications and games as well as deliver improvements to power management.&zwnj;</p>
                 <p><span class="fa fa-plug"></span><b> &zwnj;Card/Chipset:&zwnj; </b><i class="graphics-pci">&zwnj;Unknown&zwnj;</i></p>
               </div>
 
-              <div class="graphics-amd alert alert-success">
+              <div class="graphics-amd alert alert-success" hidden>
                 <h5>AMD &zwnj;Graphics Card Detected.&zwnj;</h5>
                 <p>&zwnj;AMD's drivers are no longer supported on Ubuntu.
                 The open source drivers you are currently using will deliver the most
@@ -439,18 +518,18 @@
                 <p><span class="fa fa-plug"></span><b> &zwnj;Card/Chipset:&zwnj; </b><i class="graphics-pci">&zwnj;Unknown&zwnj;</i></p>
               </div>
 
-              <div class="graphics-intel alert alert-success">
+              <div class="graphics-intel alert alert-success" hidden>
                 <h5>&zwnj;You're already good to go.&zwnj;</h5>
                 <p>&zwnj;Intel's drivers are open source and are maintained/updated in the kernel.&zwnj;</p>
                 <p><span class="fa fa-plug"></span><b> &zwnj;Card/Chipset:&zwnj; </b><i class="graphics-pci">&zwnj;Unknown&zwnj;</i></p>
               </div>
 
-              <div class="graphics-vbox alert alert-info">
+              <div class="graphics-vbox alert alert-info" hidden>
                 <h5>&zwnj;VirtualBox Guest Additions&zwnj;</h5>
                 <p>&zwnj;To accelerate graphics performance inside the virtual machine, please install Guest Additions.&zwnj;</p>
               </div>
 
-              <div id="graphics-proprietary">
+              <div id="graphics-proprietary" hidden>
                 <h4>&zwnj;Proprietary or Open Source Drivers?&zwnj;</h4>
                 <p>&zwnj;Proprietary drivers come directly from the manufacturer.&zwnj;
                 &zwnj;As they are not open source, Ubuntu developers are&zwnj; <b>&zwnj;unable review and improve code&zwnj;</b> &zwnj;meaning you'll have to
@@ -479,18 +558,18 @@
                   <code id="graphics-open-driver-name"></code> &zwnj;is the open source driver for your card.&zwnj;
                 </p>
 
-                <p id="graphics-nvidia">
+                <p id="graphics-nvidia" hidden>
                   <hr class="soften"/>
                   <h4>&zwnj;What about the latest NVIDIA drivers?&zwnj;</h4>
                   <p><b>&zwnj;Additional Drivers&zwnj;</b> &zwnj;fetches the latest tested driver from the Ubuntu repositories.&zwnj;
                   &zwnj;Advanced users and gamers who would like newer versions may wish to consider adding the&zwnj;
-                  <a href="cmd://link?https://launchpad.net/~graphics-drivers/+archive/ubuntu/ppa">&zwnj;Ubuntu Graphics Driver PPA&zwnj;</a>,
+                  <a onclick="cmd('link?https://launchpad.net/~graphics-drivers/+archive/ubuntu/ppa')">&zwnj;Ubuntu Graphics Driver PPA&zwnj;</a>,
                   &zwnj;which packages up the latest NVIDIA drivers for Ubuntu. These packages are not as thoroughly tested.&zwnj;</p>
                   <div class="alert alert-warning">
                     <span class="fa fa-exclamation-triangle"></span> &zwnj;This only applies for actively supported cards,
                     and not older cards using the legacy driver.&zwnj;
                   </div>
-                  <a class="btn btn-warning" href="cmd://upgrade-appid?nvidia-settings"><span class="fa fa-level-up"></span>&nbsp; &zwnj;Add Repository&zwnj;</a>
+                  <a class="btn btn-warning" onclick="cmd('upgrade-appid?nvidia-settings')"><span class="fa fa-level-up"></span>&nbsp; &zwnj;Add Repository&zwnj;</a>
                   <br><br>
                   <!-- <a class="btn btn-danger" href="#"><span class="fa fa-trash"></span>&nbsp; Remove Repository</a> -->
                   <p>&zwnj;To add the repository to the system, open a terminal and type the following:&zwnj;</p>
@@ -499,7 +578,7 @@
                     <br>&nbsp;<span class="fa fa-dollar"></span> sudo apt-get update
                   </blockquote>
                   <p>&zwnj;After the PPA is added, newer versions are presented
-                  to install in&zwnj; <a href="cmd://drivers">&zwnj;Additional Drivers:&zwnj;</a></p>
+                  to install in&zwnj; <a onclick="cmd('drivers')">&zwnj;Additional Drivers:&zwnj;</a></p>
                   <img src="img/screenshots/graphics-drivers-nvidia.png"/>
                 </p>
               </div>
@@ -507,7 +586,7 @@
 
             <!-- Advice about wireless -->
             <a onclick="toggleSub('wireless-section','wireless-arrow');"><h3 class="sub-collapse"><span class="fa fa-chevron-down" id="wireless-arrow"></span> &zwnj;Wireless, Bluetooth and Other Devices&zwnj;</h3></a>
-            <div id="wireless-section">
+            <div id="wireless-section" hidden>
              <p>&zwnj;If there were no additional drivers found for the hardware
               nor did it work after installing the firmware packages, you may
               need to research your device to find the appropriate driver.&zwnj;</p>
@@ -522,15 +601,15 @@
                provided by themselves directly. If you require assistance,
                feel free to&zwnj; <a onclick="smoothPageFade('community.html')">&zwnj;ask the community&zwnj;</a>.</p>
 
-               <p><a href="cmd://link?https://help.ubuntu.com/community/WifiDocs/WirelessTroubleShootingGuide/Drivers">
+               <p><a onclick="cmd('link?https://help.ubuntu.com/community/WifiDocs/WirelessTroubleShootingGuide/Drivers')">
                <span class="fa fa-globe"></span> &zwnj;Read more on troubleshooting wireless hardware.&zwnj;</a></p>
             </div>
 
             <!-- Advice about printers -->
             <a onclick="toggleSub('printers-section','printers-arrow');"><h3 class="sub-collapse"><span class="fa fa-chevron-down" id="printers-arrow"></span> &zwnj;Printers&zwnj;</h3></a>
-            <div id="printers-section">
+            <div id="printers-section" hidden>
               <p>&zwnj;When you set up a printer in the&zwnj;
-              <a href="cmd://printers">
+              <a onclick="cmd('printers')">
               <img src="/usr/share/icons/Humanity/actions/16/document-print.svg" width="20px" height="20px"/>
               <b>&zwnj;Printers&zwnj;</b></a>
               &zwnj;utility&zwnj; <i>(&zwnj;under&zwnj; &zwnj;System&zwnj; <span class="fa fa-long-arrow-right"></span>
@@ -539,18 +618,18 @@
 
               <p>&zwnj;Some manufacturers may provide their own drivers and
               require you to download them from their website.&zwnj;</p>
-              <p><a href="cmd://link?https://help.ubuntu.com/community/Printers">
+              <p><a onclick="cmd('link?https://help.ubuntu.com/community/Printers')">
               <span class="fa fa-globe"></span> &zwnj;Read more on
               printing&zwnj;</a>.</p>
 
               <hr class="soften"/>
 
-              <div class="row">
-                <div class="col-md-2 center-inside">
+              <div class="row-fluid">
+                <div class="span2 center-inside">
                   <img src="img/applications/hplip.png" width="64px" height="64px"/>
-                  <span class="fa fa-check-circle fa-2x installed-check gparted-remove"></span>
+                  <span class="fa fa-check-circle fa-2x installed-check hp-printer-remove"></span>
                 </div>
-                <div class="col-md-10">
+                <div class="span10">
                   <p><b>&zwnj;HP Linux Printing and Imaging System&zwnj;</b></p>
                   <p>&zwnj;Recommended if you have an HP printer as it provides
                   full support for printing on most HP SFP (single function
@@ -558,8 +637,8 @@
                   sending faxes and for photo-card access on most HP MFP
                   (multi-function peripheral) printers.&zwnj;</p>
                   <p class="text-right">
-                    <a class="btn btn-inverse hp-printer-remove" href="cmd://launch-appid?hp-printer"><img src="img/applications/hplip.png" width="20px" height="20px"/>&nbsp; &zwnj;Open&zwnj;</a>
-                    <a class="btn btn-success hp-printer-install" href="cmd://install-appid?hp-printer"><span class="fa fa-download"></span>&nbsp; &zwnj;Install&zwnj;</a>
+                    <a class="btn btn-inverse hp-printer-remove" onclick="cmd('launch-appid?hp-printer')"><img src="img/applications/hplip.png" width="20px" height="20px"/>&nbsp; &zwnj;Open&zwnj;</a>
+                    <a class="btn btn-success hp-printer-install" onclick="cmd('install-appid?hp-printer')"><span class="fa fa-download"></span>&nbsp; &zwnj;Install&zwnj;</a>
                   </p>
                 </div>
               </div>
@@ -567,8 +646,8 @@
 
             <div class="center">
               <hr class="soften-light">
-              <a class="btn" onclick='changePage("updates","&zwnj;Software Updates&zwnj;")'>
-                <span class="fa fa-chevron-left"></span> <b>&zwnj;Previous:&zwnj;</b>&nbsp; &zwnj;Software Updates&zwnj;</a>
+              <a class="btn" onclick='changePage("updates","&zwnj;Updates & Extras&zwnj;")'>
+                <span class="fa fa-chevron-left"></span> <b>&zwnj;Previous:&zwnj;</b>&nbsp; &zwnj;Updates & Extras&zwnj;</a>
               <a class="btn" onclick='changePage("languageInput","&zwnj;Language Input&zwnj;")'>
                 <b>&zwnj;Next:&zwnj;</b>&nbsp; &zwnj;Language Input&zwnj; <span class="fa fa-chevron-right"></span></a>
             </div>
@@ -577,38 +656,38 @@
       </div>
 
       <!-- Language & Input Support -->
-      <div id="languageInput" class="topicContents">
-        <div class="row">
-          <div class="col-md-12">
+      <div id="languageInput" class="topicContents" hidden>
+        <div class="row-fluid">
+          <div class="span12">
             <h2>&zwnj;Language Support&zwnj;</h2>
             <p>&zwnj;Your computer may require updates to your language and
             localization settings, or you may want to install additional
             language support.&zwnj;</p>
-            <div align="center"><a class="btn btn-lg btn-inverse" href="cmd://language" onclick="smoothFade('','#locale-hint')">
-              <img src="img/humanity/preferences-desktop-locale.svg" width="32px" height="32px"/>&nbsp; &zwnj;Language Support&zwnj;
+            <div align="center"><a class="btn btn-lg btn-inverse" onclick="cmd('language')" onclick="smoothFade('','#locale-hint')">
+              <img src="img/applications/preferences-desktop-locale.png" width="32px" height="32px"/>&nbsp; &zwnj;Language Support&zwnj;
             </a></div>
-            <span id="locale-hint" class="center"><small>
+            <span id="locale-hint" class="center" hidden><small>
               <p><span class="fa fa-info-circle"></span> <b>&zwnj;Language Support&zwnj;</b> &zwnj;can be found later in&zwnj;
               <b><i>&zwnj;System&zwnj; <span class="fa fa-long-arrow-right"></span> &zwnj;Preferences&zwnj;
                            <span class="fa fa-long-arrow-right"></span> &zwnj;Personal&zwnj;</i></b></p>
             </small></span>
           </div>
         </div>
-        <div class="row">
-          <div class="col-md-12">
+        <div class="row-fluid">
+          <div class="span12">
             <h2>&zwnj;Complex Input&zwnj;</h2>
             <p>&zwnj;Some regions of the world require complex inputs.&zwnj; </p>
           </div>
         </div>
-        <div class="row">
-          <div class="col-md-4 center">
-            <a class="btn btn-lg btn-inverse" href="cmd://install-appid?keyboard-chinese"><span class="fa fa-3x fa-keyboard-o fa-va"></span>&nbsp; &zwnj;Chinese&zwnj;</a>
+        <div class="row-fluid">
+          <div class="span4 center">
+            <a class="btn btn-lg btn-inverse" onclick="cmd('install-appid?keyboard-chinese')"><span class="fa fa-3x fa-keyboard-o fa-va"></span>&nbsp; &zwnj;Chinese&zwnj;</a>
           </div>
-          <div class="col-md-4 center">
-            <a class="btn btn-lg btn-inverse" href="cmd://install-appid?keyboard-japanese"><span class="fa fa-3x fa-keyboard-o fa-va"></span>&nbsp; &zwnj;Japanese&zwnj;</a>
+          <div class="span4 center">
+            <a class="btn btn-lg btn-inverse" onclick="cmd('install-appid?keyboard-japanese')"><span class="fa fa-3x fa-keyboard-o fa-va"></span>&nbsp; &zwnj;Japanese&zwnj;</a>
           </div>
-          <div class="col-md-4 center">
-            <a class="btn btn-lg btn-inverse" href="cmd://install-appid?keyboard-korean"><span class="fa fa-3x fa-keyboard-o fa-va"></span>&nbsp; &zwnj;Korean&zwnj;</a>
+          <div class="span4 center">
+            <a class="btn btn-lg btn-inverse" onclick="cmd('install-appid?keyboard-korean')"><span class="fa fa-3x fa-keyboard-o fa-va"></span>&nbsp; &zwnj;Korean&zwnj;</a>
           </div>
         </div>
         <div class="center">
@@ -621,21 +700,21 @@
       </div>
 
       <!-- Additional Tasks - Backups / Firewall / Users -->
-      <div id="tasks" class="topicContents">
-        <div class="row">
-          <div class="col-md-12">
+      <div id="tasks" class="topicContents" hidden>
+        <div class="row-fluid">
+          <div class="span12">
             <h2>&zwnj;Backup, Firewall and User Management&zwnj;</h2>
-            <p>&zwnj;Ubuntu Budgie provides tools to backup your files, comes with
+            <p>&zwnj;Ubuntu MATE provides tools to backup your files, comes with
             a firewall pre-installed and supports multiple user accounts.&zwnj;</p>
           </div>
         </div>
         <hr class="soften-light">
 
-        <div class="row wow fadeIn">
-          <div class="col-md-6 center-inside">
+        <div class="row-fluid wow fadeIn">
+          <div class="span6 center-inside">
             <img src="img/screenshots/tasks-backup.png">
           </div>
-          <div class="col-md-6">
+          <div class="span6">
             <h3>&zwnj;Backups&zwnj;</h3>
             <p>&zwnj;Nothing is more important then having a backup
               of your personal files, just in case something
@@ -643,10 +722,10 @@
             <p><img src="img/applications/deja-dup.png" width="20px" height="20px"/>
             <b>Deja-Dup</b> &zwnj;comes pre-installed and supports backups to
             local devices as well as online cloud-based services.&zwnj;</p>
-            <a class="btn btn-lg btn-inverse" href="cmd://backup" onclick="smoothFade('','#backup-hint')">
+            <a class="btn btn-lg btn-inverse" onclick="cmd('backup')" onclick="smoothFade('','#backup-hint')">
               <img src="img/applications/deja-dup.png" width="32px" height="32px"/>&nbsp; &zwnj;Configure Backup&zwnj;
             </a>
-            <span id="backup-hint" class="center"><small>
+            <span id="backup-hint" class="center" hidden><small>
               <p><span class="fa fa-info-circle"></span> <b>&zwnj;Backups&zwnj;</b> &zwnj;can be found later in&zwnj;
               <b><i>&zwnj;System&zwnj; <span class="fa fa-long-arrow-right"></span> &zwnj;Preferences&zwnj;
                            <span class="fa fa-long-arrow-right"></span> &zwnj;Personal&zwnj;</i></b>.</p>
@@ -655,23 +734,48 @@
         </div>
         <hr class="soften-light">
 
-        <div class="row wow fadeIn">
-          <div class="col-md-6 center-inside">
+        <div class="row-fluid wow fadeIn">
+          <div class="span6 center-inside">
+            <img src="img/screenshots/tasks-sharing.png">
+          </div>
+          <div class="span6">
+            <h3>&zwnj;Network Shares&zwnj;</h3>
+            <p>&zwnj;Need to access files and folders with multiple computers?&zwnj;
+            </p>
+            <p><img src="img/applications/caja-share.png" width="20px" height="20px"/>
+              <b>&zwnj;Samba&zwnj;</b> &zwnj;is available to install, which integrates with the Caja File
+            Manager, allowing you to seamless retrieve data stored on another computer.&zwnj;</p>
+
+            <span class="caja-share-remove">
+              <span class="fa fa-check-circle"></span>
+              <b>&zwnj;Samba is installed.&zwnj;</b>
+              <br>&zwnj;Choose a folder and select "Sharing Options".&zwnj;
+            </span>
+            <span class="caja-share-install">
+              <a class="btn btn-success" onclick="cmd('install-appid?caja-share')"><span class="fa fa-download"></span>&nbsp; &zwnj;Install&zwnj; Samba</a>
+              <br><small>&zwnj;Samba is available from the Software Boutique under "Servers".&zwnj;</small>
+            </span>
+          </div>
+        </div>
+        <hr class="soften-light">
+
+        <div class="row-fluid wow fadeIn">
+          <div class="span6 center-inside">
             <img src="img/screenshots/tasks-firewall.png">
           </div>
-          <div class="col-md-6">
+          <div class="span6">
             <h3>&zwnj;Firewall&zwnj;</h3>
             <p>&zwnj;Firewalls prevent malicious connections entering and leaving
               your computer. By default, the firewall is disabled,&zwnj;
-              <a href="cmd://link?https://help.ubuntu.com/community/DoINeedAFirewall">&zwnj;learn more about firewalls&zwnj;</a>.</p>
+              <a onclick="cmd('link?https://help.ubuntu.com/community/DoINeedAFirewall')">&zwnj;learn more about firewalls&zwnj;</a>.</p>
             <p><img src="img/applications/gufw.png" width="20px" height="20px"/>
               <b>Gufw</b> &zwnj;provides a graphical frontend to&zwnj; <code>ufw</code>
               (&zwnj;Uncomplicated Firewall&zwnj;). &zwnj;If security is important to you, there are&zwnj;
-              <a href="cmd://link?https://wiki.ubuntu.com/BasicSecurity">&zwnj;more ways to stay secure too&zwnj;</a>.</p>
-            <a class="btn btn-lg btn-inverse" href="cmd://firewall" onclick="smoothFade('','#firewall-hint')">
+              <a onclick="cmd('link?https://wiki.ubuntu.com/BasicSecurity')">&zwnj;more ways to stay secure too&zwnj;</a>.</p>
+            <a class="btn btn-lg btn-inverse" onclick="cmd('firewall')" onclick="smoothFade('','#firewall-hint')">
               <img src="img/applications/gufw.png" width="32px" height="32px"/>&nbsp; &zwnj;Configure Firewall&zwnj;
             </a>
-            <span id="firewall-hint" class="center"><small>
+            <span id="firewall-hint" class="center" hidden><small>
               <p><span class="fa fa-info-circle"></span> <b>&zwnj;Firewall Configuration&zwnj;</b> &zwnj;can be found later in&zwnj;
               <b><i>&zwnj;System&zwnj; <span class="fa fa-long-arrow-right"></span> &zwnj;Preferences&zwnj;
                            <span class="fa fa-long-arrow-right"></span> &zwnj;Internet and Network&zwnj;</i></b>.</p>
@@ -680,11 +784,11 @@
         </div>
         <hr class="soften-light">
 
-        <div class="row wow fadeIn">
-          <div class="col-md-6 center-inside">
+        <div class="row-fluid wow fadeIn">
+          <div class="span6 center-inside">
             <img src="img/screenshots/tasks-users.png">
           </div>
-          <div class="col-md-6">
+          <div class="span6">
             <h3>&zwnj;Users&zwnj;</h3>
             <p>
               &zwnj;Share your computer with others? Set up a separate user account for
@@ -692,10 +796,10 @@
             </p>
             <p>&zwnj;You can also log in to a&zwnj; <b>&zwnj;Guest Session&zwnj;</b> &zwnj;if someone
             is using your computer as a one-off.&zwnj;</p>
-            <a class="btn btn-lg btn-inverse" href="cmd://users" onclick="smoothFade('','#users-hint')">
-              <img src="img/humanity/system-users.svg" width="32px" height="32px"/>&nbsp; &zwnj;Configure Users&zwnj;
+            <a class="btn btn-lg btn-inverse" onclick="cmd('users')" onclick="smoothFade('','#users-hint')">
+              <img src="img/applications/users.png" width="32px" height="32px"/>&nbsp; &zwnj;Configure Users&zwnj;
             </a>
-            <span id="users-hint" class="center"><small>
+            <span id="users-hint" class="center" hidden><small>
               <p><span class="fa fa-info-circle"></span> <b>&zwnj;Users and Groups&zwnj;</b> &zwnj;can be found later in&zwnj;
               <b><i>&zwnj;System&zwnj; <span class="fa fa-long-arrow-right"></span> &zwnj;Administration&zwnj;
                            <span class="fa fa-long-arrow-right"></span> &zwnj;Users and Groups&zwnj;</i></b>.</p>
@@ -713,42 +817,36 @@
       </div>
 
       <!-- Customizing the Experience -->
-      <div id="customize" class="topicContents">
-        <div class="row">
-          <div class="col-md-12">
+      <div id="customize" class="topicContents" hidden>
+        <div class="row-fluid">
+          <div class="span12">
             <h2>&zwnj;User Interface&zwnj;</h2>
-            <p>&zwnj;Ubuntu Budgie provides a unique tool to transform the user
+            <p>&zwnj;Ubuntu MATE provides a unique tool to transform the user
             interface. It can be used to quickly setup the user interface
             to broadly reflect how other popular operating systems look
             and feel. The&zwnj; <b>Redmond</b> &zwnj;layouts are most similar to
             Microsoft Windows while&zwnj; <b>Cupertino</b> &zwnj;layouts are most
             similar to Apple Mac OS X.&zwnj;</p>
-            <div align="center"><a class="btn btn-lg btn-inverse" href="cmd://tweak" onclick="smoothFade('','#tweak-hint')">
-              <img src="img/applications/theme-config.svg" width="32px" height="32px"/>&nbsp; &zwnj;User Interface&zwnj;
+            <div align="center"><a class="btn btn-lg btn-inverse" onclick="cmd('tweak')" onclick="smoothFade('','#tweak-hint')">
+              <img src="img/applications/control-centre.png" width="32px" height="32px"/>&nbsp; &zwnj;User Interface&zwnj;
             </a></div>
-            <span id="tweak-hint" class="center"><small>
-              <p><span class="fa fa-info-circle"></span> <b>&zwnj;Budgie Tweak&zwnj;</b> &zwnj;can be launched by clicking on any icon located at the right side of top panel.</p>
+            <span id="tweak-hint" class="center" hidden><small>
+              <p><span class="fa fa-info-circle"></span> <b>&zwnj;MATE Tweak&zwnj;</b> &zwnj;can be found later in&zwnj;
+              <b><i>&zwnj;System&zwnj; <span class="fa fa-long-arrow-right"></span> &zwnj;Preferences&zwnj;
+                           <span class="fa fa-long-arrow-right"></span> &zwnj;Look and Feel&zwnj;</i></b>.</p>
             </small></span>
 
             <h2>&zwnj;Control Center&zwnj;</h2>
             <p>&zwnj;The utilities mentioned above are all part of the extensive
-            Control Center that Ubuntu Budgie provides. You can configure
+            Control Center that Ubuntu MATE provides. You can configure
             just about every aspect of your computer from the Control Center.&zwnj;</p>
-            <div align="center"><a class="btn btn-lg btn-inverse" href="cmd://control" onclick="smoothFade('','#control-hint')">
-              <img src="img/applications/control-center.svg" width="32px" height="32px"/>&nbsp; &zwnj;Control Center&zwnj;
+            <div align="center"><a class="btn btn-lg btn-inverse" onclick="cmd('control')" onclick="smoothFade('','#control-hint')">
+              <img src="img/applications/desktop.png" width="32px" height="32px"/>&nbsp; &zwnj;Control Center&zwnj;
             </a></div>
-            <span id="control-hint" class="center"><small>
+            <span id="control-hint" class="center" hidden><small>
               <p><span class="fa fa-info-circle"></span> <b>&zwnj;Control Center&zwnj;</b> &zwnj;can be found later in the&zwnj;
               <b><i>&zwnj;System&zwnj;</i></b> &zwnj;menu.&zwnj;</p>
             </small></span>
-
-            <h2>&zwnj;Desktop Wallpaper&zwnj;</h2>
-            <p>&zwnj;The Ubuntu Budgie Community have contributed dozens of
-            desktop wallpaper images over the years. Why not install them
-            and find something that suits your tastes?&zwnj;</p>
-            <div class="center">
-            <a class="btn btn-lg btn-inverse" href="cmd://install-appid?ubuntu-mate-wallpapers-complete"><span class="fa fa-3x fa-picture-o fa-va"></span>&nbsp; &zwnj;Wallpapers&zwnj;</a>
-            </div>
 
             <div class="center">
               <hr class="soften-light">
@@ -762,74 +860,139 @@
       </div>
 
       <!-- Keyboard Shortcuts -->
-      <div id="shortcuts" class="topicContents">
-        <div class="row">
-          <div class="col-md-12">
+      <div id="shortcuts" class="topicContents" hidden>
+        <div class="row-fluid">
+          <div class="span12">
             <h2>&zwnj;Keyboard Shortcuts&zwnj;</h2>
-            <p>&zwnj;Ubuntu Budgie has many keyboard shortcuts that help make using
+            <p>&zwnj;Ubuntu MATE has many keyboard shortcuts that help make using
             your computer more efficient.&zwnj;</p>
+
+            <div class="alert alert-fact">
+              <p>&zwnj;The&zwnj; <b><img src="img/welcome/super-key.svg"/> &zwnj;Super&zwnj;</b> &zwnj;key is your Windows key. For Mac keyboards, this is the ⌘ Command key.&zwnj;</p>
+            </div>
+
             <h3>&zwnj;Common application shortcuts&zwnj;</h3>
             <p>&zwnj;These shortcuts apply in most applications.&zwnj;</p>
 
             <table class="table">
               <tr>
-                <td><b class="btn btn-xs disabled">&zwnj;Ctrl&zwnj;</b> <b class="fa fa-plus"></b> <b class="btn btn-xs disabled">C</b></td>
+                <td>
+                  <b class="btn btn-xs disabled">&zwnj;Ctrl&zwnj;</b>
+                  <b class="fa fa-plus"></b>
+                  <b class="btn btn-xs disabled">C</b>
+                </td>
                 <td>&zwnj;Copy the selected text/object&zwnj;</td>
               </tr>
               <tr>
-                <td><b class="btn btn-xs disabled">&zwnj;Ctrl&zwnj;</b> <b class="fa fa-plus"></b> <b class="btn btn-xs disabled">X</b></td>
+                <td>
+                  <b class="btn btn-xs disabled">&zwnj;Ctrl&zwnj;</b>
+                  <b class="fa fa-plus"></b>
+                  <b class="btn btn-xs disabled">X</b>
+                </td>
                 <td>&zwnj;Cut the selected text/object&zwnj;</td>
               </tr>
               <tr>
-                <td><b class="btn btn-xs disabled">&zwnj;Ctrl&zwnj;</b> <b class="fa fa-plus"></b> <b class="btn btn-xs disabled">V</b></td>
+                <td>
+                  <b class="btn btn-xs disabled">&zwnj;Ctrl&zwnj;</b>
+                  <b class="fa fa-plus"></b>
+                  <b class="btn btn-xs disabled">V</b>
+                </td>
                 <td>&zwnj;Paste/insert the selected text/object&zwnj;</td>
               </tr>
               <tr>
-                <td><b class="btn btn-xs disabled">&zwnj;Ctrl&zwnj;</b> <b class="fa fa-plus"></b> <b class="btn btn-xs disabled">A</b></td>
+                <td>
+                  <b class="btn btn-xs disabled">&zwnj;Ctrl&zwnj;</b>
+                  <b class="fa fa-plus"></b>
+                  <b class="btn btn-xs disabled">A</b>
+                </td>
                 <td>&zwnj;Select all text&zwnj;</td>
               </tr>
               <tr>
-                <td><b class="btn btn-xs disabled">&zwnj;Ctrl&zwnj;</b> <b class="fa fa-plus"></b> <b class="btn btn-xs disabled">F</b></td>
+                <td>
+                  <b class="btn btn-xs disabled">&zwnj;Ctrl&zwnj;</b>
+                  <b class="fa fa-plus"></b>
+                  <b class="btn btn-xs disabled">F</b>
+                </td>
                 <td>&zwnj;Find and replace words&zwnj;</td>
               </tr>
               <tr>
-                <td><b class="btn btn-xs disabled">&zwnj;Ctrl&zwnj;</b> <b class="fa fa-plus"></b> <b class="btn btn-xs disabled">B</b></td>
+                <td>
+                  <b class="btn btn-xs disabled">&zwnj;Ctrl&zwnj;</b>
+                  <b class="fa fa-plus"></b>
+                  <b class="btn btn-xs disabled">B</b>
+                </td>
                 <td>&zwnj;Make the selected text bold&zwnj;</td>
               </tr>
               <tr>
-                <td><b class="btn btn-xs disabled">&zwnj;Ctrl&zwnj;</b> <b class="fa fa-plus"></b> <b class="btn btn-xs disabled">I</b></td>
+                <td>
+                  <b class="btn btn-xs disabled">&zwnj;Ctrl&zwnj;</b>
+                  <b class="fa fa-plus"></b>
+                  <b class="btn btn-xs disabled">I</b>
+                </td>
                 <td>&zwnj;Make the selected text italic&zwnj;</td>
               </tr>
               <tr>
-                <td><b class="btn btn-xs disabled">&zwnj;Ctrl&zwnj;</b> <b class="fa fa-plus"></b> <b class="btn btn-xs disabled">U</b></td>
+                <td>
+                  <b class="btn btn-xs disabled">&zwnj;Ctrl&zwnj;</b>
+                  <b class="fa fa-plus"></b>
+                  <b class="btn btn-xs disabled">U</b>
+                </td>
                 <td>&zwnj;Underline the selected text&zwnj;</td>
               </tr>
               <tr>
-                <td><b class="btn btn-xs disabled">&zwnj;Ctrl&zwnj;</b> <b class="fa fa-plus"></b> <b class="btn btn-xs disabled">N</b></td>
+                <td>
+                  <b class="btn btn-xs disabled">&zwnj;Ctrl&zwnj;</b>
+                  <b class="fa fa-plus"></b>
+                  <b class="btn btn-xs disabled">N</b>
+                </td>
                 <td>&zwnj;Open a new document or window&zwnj;</td>
               </tr>
               <tr>
-                <td><b class="btn btn-xs disabled">&zwnj;Ctrl&zwnj;</b> <b class="fa fa-plus"></b> <b class="btn btn-xs disabled">S</b></td>
+                <td>
+                  <b class="btn btn-xs disabled">&zwnj;Ctrl&zwnj;</b>
+                  <b class="fa fa-plus"></b>
+                  <b class="btn btn-xs disabled">S</b>
+                </td>
                 <td>&zwnj;Save the current document&zwnj;</td>
               </tr>
               <tr>
-                <td><b class="btn btn-xs disabled">&zwnj;Ctrl&zwnj;</b> <b class="fa fa-plus"></b> <b class="btn btn-xs disabled">O</b></td>
+                <td>
+                  <b class="btn btn-xs disabled">&zwnj;Ctrl&zwnj;</b>
+                  <b class="fa fa-plus"></b>
+                  <b class="btn btn-xs disabled">O</b>
+                </td>
                 <td>&zwnj;Open another document&zwnj;</td>
               </tr>
               <tr>
-                <td><b class="btn btn-xs disabled">&zwnj;Ctrl&zwnj;</b> <b class="fa fa-plus"></b> <b class="btn btn-xs disabled">P</b></td>
+                <td>
+                  <b class="btn btn-xs disabled">&zwnj;Ctrl&zwnj;</b>
+                  <b class="fa fa-plus"></b>
+                  <b class="btn btn-xs disabled">P</b>
+                </td>
                 <td>&zwnj;Print the current document&zwnj;</td>
               </tr>
               <tr>
-                <td><b class="btn btn-xs disabled">&zwnj;Ctrl&zwnj;</b> <b class="fa fa-plus"></b> <b class="btn btn-xs disabled">Z</b></td>
+                <td>
+                  <b class="btn btn-xs disabled">&zwnj;Ctrl&zwnj;</b>
+                  <b class="fa fa-plus"></b>
+                  <b class="btn btn-xs disabled">Z</b>
+                </td>
                 <td>&zwnj;Undo the last change you made&zwnj;</td>
               </tr>
               <tr>
-                <td><b class="btn btn-xs disabled">&zwnj;Ctrl&zwnj;</b> <b class="fa fa-plus"></b> <b class="btn btn-xs disabled">Shift</b> <b class="fa fa-plus"></b> <b class="btn btn-xs disabled">Z</b></td>
+                <td>
+                  <b class="btn btn-xs disabled">&zwnj;Ctrl&zwnj;</b>
+                  <b class="fa fa-plus"></b>
+                  <b class="btn btn-xs disabled">Shift</b>
+                  <b class="fa fa-plus"></b>
+                  <b class="btn btn-xs disabled">Z</b>
+                </td>
                 <td>&zwnj;Redo a change that you just undid&zwnj;</td>
               </tr>
               <tr>
-                <td><b class="btn btn-xs disabled">F11</b></td>
+                <td>
+                  <b class="btn btn-xs disabled">F11</b>
+                </td>
                 <td>&zwnj;Toggle the current application between full-screen and windowed&zwnj;</td>
               </tr>
             </table>
@@ -840,35 +1003,73 @@
 
             <table class="table">
               <tr>
-                <td><b class="btn btn-xs disabled">Alt</b> <b class="fa fa-plus"></b> <b class="btn btn-xs disabled">F1</b></td>
+                <td>
+                  <b class="btn btn-xs disabled">Alt</b>
+                  <b class="fa fa-plus"></b>
+                  <b class="btn btn-xs disabled">F1</b>
+                </td>
                 <td>&zwnj;Open the Applications menu&zwnj;</td>
               </tr>
               <tr>
-                <td><b class="btn btn-xs disabled">Alt</b> <b class="fa fa-plus"></b> <b class="btn btn-xs disabled">F2</b></td>
+                <td>
+                  <b class="btn btn-xs disabled">Alt</b>
+                  <b class="fa fa-plus"></b>
+                  <b class="btn btn-xs disabled">F2</b>
+                </td>
                 <td>&zwnj;Run an application by typing its name in the box which appears&zwnj;</td>
               </tr>
               <tr>
-                <td><b class="btn btn-xs disabled">&zwnj;Prt Sc&zwnj;</b></td>
+                <td>
+                  <b class="btn btn-xs disabled">&zwnj;Prt Sc&zwnj;</b>
+                </td>
                 <td>&zwnj;Take a screenshot of the whole screen&zwnj;</td>
               </tr>
               <tr>
-                <td><b class="btn btn-xs disabled">Alt</b> <b class="fa fa-plus"></b> <b class="btn btn-xs disabled">Prt Sc</b></td>
+                <td>
+                  <b class="btn btn-xs disabled">Alt</b>
+                  <b class="fa fa-plus"></b>
+                  <b class="btn btn-xs disabled">Prt Sc</b>
+                </td>
                 <td>&zwnj;Take a screenshot of the current window&zwnj;</td>
               </tr>
               <tr>
-                <td><b class="btn btn-xs disabled">&zwnj;Ctrl&zwnj;</b> <b class="fa fa-plus"></b> <b class="btn btn-xs disabled">Alt</b> <b class="fa fa-plus"></b> <b class="btn btn-xs disabled">&zwnj;Delete&zwnj;</b></td>
+                <td>
+                  <b class="btn btn-xs disabled">&zwnj;Ctrl&zwnj;</b>
+                  <b class="fa fa-plus"></b>
+                  <b class="btn btn-xs disabled">Alt</b>
+                  <b class="fa fa-plus"></b>
+                  <b class="btn btn-xs disabled">&zwnj;Delete&zwnj;</b>
+                </td>
                 <td>&zwnj;Open the dialog box to shutdown, restart or suspend.&zwnj;</td>
               </tr>
               <tr>
-                <td><b class="btn btn-xs disabled">&zwnj;Ctrl&zwnj;</b> <b class="fa fa-plus"></b> <b class="btn btn-xs disabled">Alt</b> <b class="fa fa-plus"></b> <b class="btn btn-xs disabled">L</b></td>
+                <td>
+                  <b class="btn btn-xs disabled">&zwnj;Ctrl&zwnj;</b>
+                  <b class="fa fa-plus"></b>
+                  <b class="btn btn-xs disabled">Alt</b>
+                  <b class="fa fa-plus"></b>
+                  <b class="btn btn-xs disabled">L</b>
+                </td>
                 <td>&zwnj;Lock your screen.&zwnj;</td>
               </tr>
               <tr>
-                <td><b class="btn btn-xs disabled">&zwnj;Ctrl&zwnj;</b> <b class="fa fa-plus"></b> <b class="btn btn-xs disabled">Alt</b> <b class="fa fa-plus"></b> <b class="btn btn-xs disabled">T</b></td>
+                <td>
+                  <b class="btn btn-xs disabled">&zwnj;Ctrl&zwnj;</b>
+                  <b class="fa fa-plus"></b>
+                  <b class="btn btn-xs disabled">Alt</b>
+                  <b class="fa fa-plus"></b>
+                  <b class="btn btn-xs disabled">T</b>
+                </td>
                 <td>&zwnj;Open a terminal.&zwnj;</td>
               </tr>
               <tr>
-                <td><b class="btn btn-xs disabled">Alt</b> <b class="fa fa-plus"></b> <b class="btn btn-xs disabled">Super</b> <b class="fa fa-plus"></b> <b class="btn btn-xs disabled">S</b></td>
+                <td>
+                  <b class="btn btn-xs disabled">Alt</b>
+                  <b class="fa fa-plus"></b>
+                  <b class="btn btn-xs disabled" data-toggle="tooltip" data-placement="top" title="&zwnj;Super Key&zwnj;"><img src="img/welcome/super-key.svg"></b>
+                  <b class="fa fa-plus"></b>
+                  <b class="btn btn-xs disabled">S</b>
+                </td>
                 <td>&zwnj;Screen reader enable/disable.&zwnj;</td>
               </tr>
             </table>
@@ -876,7 +1077,10 @@
             <h3>&zwnj;Window shortcuts&zwnj;</h3>
             <table class="table">
               <tr>
-                <td style="width:270px;"><b class="btn btn-xs disabled">Alt</b> <b class="fa fa-plus"></b> <b class="btn btn-xs disabled">&zwnj;Tab&zwnj;</b></td>
+                <td style="width:270px;"><b class="btn btn-xs disabled">Alt</b>
+                  <b class="fa fa-plus"></b>
+                  <b class="btn btn-xs disabled">&zwnj;Tab&zwnj;</b>
+                </td>
                 <td>
                   &zwnj;Switch between currently-open windows.&zwnj;
                   <ul>
@@ -887,7 +1091,13 @@
                 </td>
               </tr>
               <tr>
-                <td><b class="btn btn-xs disabled">&zwnj;Ctrl&zwnj;</b> <b class="fa fa-plus"></b> <b class="btn btn-xs disabled">Alt</b> <b class="fa fa-plus"></b> <b class="btn btn-xs disabled">Tab</b></td>
+                <td>
+                  <b class="btn btn-xs disabled">&zwnj;Ctrl&zwnj;</b>
+                  <b class="fa fa-plus"></b>
+                  <b class="btn btn-xs disabled">Alt</b>
+                  <b class="fa fa-plus"></b>
+                  <b class="btn btn-xs disabled">Tab</b>
+                </td>
                 <td>
                   &zwnj;Switch between currently-open windows in all Workspaces.&zwnj;
                   <ul>
@@ -897,80 +1107,201 @@
                 </td>
               </tr>
               <tr>
-                <td><b class="btn btn-xs disabled">&zwnj;Ctrl&zwnj;</b> <b class="fa fa-plus"></b> <b class="btn btn-xs disabled">Alt</b> <b class="fa fa-plus"></b> <b class="btn btn-xs disabled">&zwnj;Left&zwnj;</b></td>
+                <td>
+                  <b class="btn btn-xs disabled">&zwnj;Ctrl&zwnj;</b>
+                  <b class="fa fa-plus"></b>
+                  <b class="btn btn-xs disabled">Alt</b>
+                  <b class="fa fa-plus"></b>
+                  <b class="btn btn-xs disabled">&zwnj;Left&zwnj;</b>
+                </td>
                 <td>&zwnj;Switch to the previous workspace.&zwnj;</td>
               </tr>
               <tr>
-                <td><b class="btn btn-xs disabled">&zwnj;Ctrl&zwnj;</b> <b class="fa fa-plus"></b> <b class="btn btn-xs disabled">Alt</b> <b class="fa fa-plus"></b> <b class="btn btn-xs disabled">&zwnj;Right&zwnj;</b></td>
+                <td>
+                  <b class="btn btn-xs disabled">&zwnj;Ctrl&zwnj;</b>
+                  <b class="fa fa-plus"></b>
+                  <b class="btn btn-xs disabled">Alt</b>
+                  <b class="fa fa-plus"></b>
+                  <b class="btn btn-xs disabled">&zwnj;Right&zwnj;</b>
+                </td>
                 <td>&zwnj;Switch to the next workspace.&zwnj;</td>
               </tr>
               <tr>
-                <td><b class="btn btn-xs disabled">&zwnj;Ctrl&zwnj;</b> <b class="fa fa-plus"></b> <b class="btn btn-xs disabled">Alt</b> <b class="fa fa-plus"></b> <b class="btn btn-xs disabled">&zwnj;Shift&zwnj;</b> <b class="fa fa-plus"></b> <b class="btn btn-xs disabled">&zwnj;Left&zwnj;</b></td>
+                <td>
+                  <b class="btn btn-xs disabled">&zwnj;Ctrl&zwnj;</b>
+                  <b class="fa fa-plus"></b>
+                  <b class="btn btn-xs disabled">Alt</b>
+                  <b class="fa fa-plus"></b>
+                  <b class="btn btn-xs disabled">&zwnj;Shift&zwnj;</b>
+                  <b class="fa fa-plus"></b>
+                  <b class="btn btn-xs disabled">&zwnj;Left&zwnj;</b>
+                </td>
                 <td>&zwnj;Move the current window to the previous workspace.&zwnj;</td>
               </tr>
               <tr>
-                <td><b class="btn btn-xs disabled">&zwnj;Ctrl&zwnj;</b> <b class="fa fa-plus"></b> <b class="btn btn-xs disabled">Alt</b> <b class="fa fa-plus"></b> <b class="btn btn-xs disabled">&zwnj;Shift&zwnj;</b> <b class="fa fa-plus"></b> <b class="btn btn-xs disabled">&zwnj;Right&zwnj;</b></td>
+                <td>
+                  <b class="btn btn-xs disabled">&zwnj;Ctrl&zwnj;</b>
+                  <b class="fa fa-plus"></b>
+                  <b class="btn btn-xs disabled">Alt</b><b class="fa fa-plus"></b>
+                  <b class="btn btn-xs disabled">&zwnj;Shift&zwnj;</b>
+                  <b class="fa fa-plus"></b>
+                  <b class="btn btn-xs disabled">&zwnj;Right&zwnj;</b>
+                </td>
                 <td>&zwnj;Move the current window to the next workspace.&zwnj;</td>
               </tr>
               <tr>
-                <td><b class="btn btn-xs disabled">Alt</b> <b class="fa fa-plus"></b> <b class="btn btn-xs disabled">F4</b></td>
+                <td>
+                  <b class="btn btn-xs disabled">Alt</b>
+                  <b class="fa fa-plus"></b>
+                  <b class="btn btn-xs disabled">F4</b>
+                </td>
                 <td>&zwnj;Closes window.&zwnj;</td>
               </tr>
               <tr>
-                <td><b class="btn btn-xs disabled">Alt</b> <b class="fa fa-plus"></b> <b class="btn btn-xs disabled">F5</b></td>
+                <td>
+                  <b class="btn btn-xs disabled">Alt</b>
+                  <b class="fa fa-plus"></b>
+                  <b class="btn btn-xs disabled">F5</b>
+                </td>
                 <td>&zwnj;Returns window to 'normal' or previous size.&zwnj;</td>
               </tr>
               <tr>
-                <td><b class="btn btn-xs disabled">Alt</b> <b class="fa fa-plus"></b> <b class="btn btn-xs disabled">F7</b></td>
+                <td>
+                  <b class="btn btn-xs disabled">Alt</b>
+                  <b class="fa fa-plus"></b>
+                  <b class="btn btn-xs disabled">F7</b>
+                </td>
                 <td>&zwnj;Moves the current window (can be moved with mouse or keyboard).&zwnj;</td>
               </tr>
               <tr>
-                <td><b class="btn btn-xs disabled">Alt</b> <b class="fa fa-plus"></b> <b class="btn btn-xs disabled">F8</b></td>
+                <td>
+                  <b class="btn btn-xs disabled">Alt</b>
+                  <b class="fa fa-plus"></b>
+                  <b class="btn btn-xs disabled">F8</b>
+                </td>
                 <td>&zwnj;Resizes current window (again, can be moved with mouse or keyboard).&zwnj;</td>
               </tr>
               <tr>
-                <td><b class="btn btn-xs disabled">Alt</b> <b class="fa fa-plus"></b> <b class="btn btn-xs disabled">F9</b></td>
+                <td>
+                  <b class="btn btn-xs disabled">Alt</b>
+                  <b class="fa fa-plus"></b>
+                  <b class="btn btn-xs disabled">F9</b>
+                </td>
                 <td>&zwnj;Minimizes current window.&zwnj;</td>
               </tr>
               <tr>
-                <td><b class="btn btn-xs disabled">Alt</b> <b class="fa fa-plus"></b> <b class="btn btn-xs disabled">F10</b></td>
+                <td>
+                  <b class="btn btn-xs disabled">Alt</b>
+                  <b class="fa fa-plus"></b>
+                  <b class="btn btn-xs disabled">F10</b>
+                </td>
                 <td>&zwnj;Maximizes current window.&zwnj;</td>
               </tr>
               <tr>
-                <td><b class="btn btn-xs disabled">Alt</b> <b class="fa fa-plus"></b> <b class="btn btn-xs disabled">F12</b></td>
+                <td>
+                  <b class="btn btn-xs disabled">Alt</b>
+                  <b class="fa fa-plus"></b>
+                  <b class="btn btn-xs disabled">F12</b>
+                </td>
                 <td>&zwnj;Pulldown Terminal.&zwnj;</td>
               </tr>
               <tr>
-                <td><b class="btn btn-xs disabled">Alt</b> <b class="fa fa-plus"></b> <b class="btn btn-xs disabled">&zwnj;Space&zwnj;</b></td>
+                <td>
+                  <b class="btn btn-xs disabled">Alt</b>
+                  <b class="fa fa-plus"></b>
+                  <b class="btn btn-xs disabled">&zwnj;Space&zwnj;</b>
+                </td>
                 <td>&zwnj;Displays the window menu with options such as 'Always on Top' and 'Minimize' and 'Maximize' and above commands.&zwnj;</td>
               </tr>
               <tr>
-                <td><b class="btn btn-xs disabled">&zwnj;Ctrl&zwnj;</b> <b class="fa fa-plus"></b> <b class="btn btn-xs disabled">Alt</b> <b class="fa fa-plus"></b> <b class="btn btn-xs disabled">&zwnj;Numpad&zwnj; 7</b></td>
+                <td>
+                  <b class="btn btn-xs disabled">&zwnj;Ctrl&zwnj;</b>
+                  <b class="fa fa-plus"></b>
+                  <b class="btn btn-xs disabled">Alt</b>
+                  <b class="fa fa-plus"></b>
+                  <b class="btn btn-xs disabled">&zwnj;Numpad&zwnj; 7</b>
+                </td>
                 <td>&zwnj;Place window in top left corner of screen.&zwnj;</td>
               </tr>
               <tr>
-                <td><b class="btn btn-xs disabled">&zwnj;Ctrl&zwnj;</b> <b class="fa fa-plus"></b> <b class="btn btn-xs disabled">Alt</b> <b class="fa fa-plus"></b> <b class="btn btn-xs disabled">&zwnj;Numpad&zwnj; 8</b></td>
+                <td>
+                  <b class="btn btn-xs disabled">&zwnj;Ctrl&zwnj;</b>
+                  <b class="fa fa-plus"></b>
+                  <b class="btn btn-xs disabled">Alt</b>
+                  <b class="fa fa-plus"></b>
+                  <b class="btn btn-xs disabled">&zwnj;Numpad&zwnj; 8</b>
+                </td>
                 <td>&zwnj;Place window in top half of screen.&zwnj;</td>
               </tr>
               <tr>
-                <td><b class="btn btn-xs disabled">&zwnj;Ctrl&zwnj;</b> <b class="fa fa-plus"></b> <b class="btn btn-xs disabled">Alt</b> <b class="fa fa-plus"></b> <b class="btn btn-xs disabled">&zwnj;Numpad&zwnj; 9</b></td>
+                <td>
+                  <b class="btn btn-xs disabled">&zwnj;Ctrl&zwnj;</b>
+                  <b class="fa fa-plus"></b>
+                  <b class="btn btn-xs disabled">Alt</b>
+                  <b class="fa fa-plus"></b>
+                  <b class="btn btn-xs disabled">&zwnj;Numpad&zwnj; 9</b>
+                </td>
                 <td>&zwnj;Place window in top right corner of screen.&zwnj;</td>
               </tr>
               <tr>
-                <td><b class="btn btn-xs disabled">&zwnj;Ctrl&zwnj;</b> <b class="fa fa-plus"></b> <b class="btn btn-xs disabled">Alt</b> <b class="fa fa-plus"></b> <b class="btn btn-xs disabled">&zwnj;Numpad&zwnj; 5</b></td>
+                <td>
+                  <b class="btn btn-xs disabled">&zwnj;Ctrl&zwnj;</b>
+                  <b class="fa fa-plus"></b>
+                  <b class="btn btn-xs disabled">Alt</b>
+                  <b class="fa fa-plus"></b>
+                  <b class="btn btn-xs disabled">&zwnj;Numpad&zwnj; 5</b>
+                </td>
                 <td>&zwnj;Center/Maximize the window in the middle of the screen.&zwnj;</td>
               </tr>
               <tr>
-                <td><b class="btn btn-xs disabled">&zwnj;Ctrl&zwnj;</b> <b class="fa fa-plus"></b> <b class="btn btn-xs disabled">Alt</b> <b class="fa fa-plus"></b> <b class="btn btn-xs disabled">&zwnj;Numpad&zwnj; 1</b></td>
+                <td>
+                  <b class="btn btn-xs disabled">&zwnj;Ctrl&zwnj;</b>
+                  <b class="fa fa-plus"></b>
+                  <b class="btn btn-xs disabled">Alt</b>
+                  <b class="fa fa-plus"></b>
+                  <b class="btn btn-xs disabled">&zwnj;Numpad&zwnj; 1</b>
+                </td>
                 <td>&zwnj;Place window in the bottom left corner of the screen.&zwnj;</td>
               </tr>
               <tr>
-                <td><b class="btn btn-xs disabled">&zwnj;Ctrl&zwnj;</b> <b class="fa fa-plus"></b> <b class="btn btn-xs disabled">Alt</b> <b class="fa fa-plus"></b> <b class="btn btn-xs disabled">&zwnj;Numpad&zwnj; 2</b></td>
+                <td>
+                  <b class="btn btn-xs disabled">&zwnj;Ctrl&zwnj;</b>
+                  <b class="fa fa-plus"></b>
+                  <b class="btn btn-xs disabled">Alt</b>
+                  <b class="fa fa-plus"></b>
+                  <b class="btn btn-xs disabled">&zwnj;Numpad&zwnj; 2</b>
+                </td>
                 <td>&zwnj;Place window in the bottom half of the screen.&zwnj;</td>
               </tr>
               <tr>
-                <td><b class="btn btn-xs disabled">&zwnj;Ctrl&zwnj;</b> <b class="fa fa-plus"></b> <b class="btn btn-xs disabled">Alt</b> <b class="fa fa-plus"></b> <b class="btn btn-xs disabled">&zwnj;Numpad&zwnj; 3</b></td>
+                <td>
+                  <b class="btn btn-xs disabled">&zwnj;Ctrl&zwnj;</b>
+                  <b class="fa fa-plus"></b>
+                  <b class="btn btn-xs disabled">Alt</b>
+                  <b class="fa fa-plus"></b>
+                  <b class="btn btn-xs disabled">&zwnj;Numpad&zwnj; 3</b>
+                </td>
                 <td>&zwnj;Place window in the bottom right corner of the screen.&zwnj;</td>
+              </tr>
+            </table>
+
+            <h3>&zwnj;Mouse Shortcuts&zwnj;</h3>
+            <table class="table">
+              <tr>
+                <td>
+                  <b class="btn btn-xs disabled">Alt</b>
+                  <b class="fa fa-plus"></b>
+                  <img src="img/welcome/mouse-click-left.png" class="animated infinite wobble" data-toggle="tooltip" data-placement="top" title="&zwnj;Left-click while dragging mouse&zwnj;">
+                </td>
+                <td>&zwnj;Moves the window.&zwnj;</td>
+              </tr>
+              <tr>
+                <td>
+                  <b class="btn btn-xs disabled">Alt</b>
+                  <b class="fa fa-plus"></b>
+                  <img src="img/welcome/mouse-click-right.png" class="animated infinite wobble" data-toggle="tooltip" data-placement="top" title="&zwnj;Right-click while dragging mouse&zwnj;">
+                </td>
+                <td>&zwnj;Resizes the window (closest window edge).&zwnj;</td>
               </tr>
             </table>
 
@@ -978,56 +1309,115 @@
             <p>&zwnj;All of the shortcuts listed in this section require Compiz to be enabled.&zwnj;</p>
             <table class="table">
               <tr>
-                <td style="width: 280px"><b class="btn btn-xs disabled">&zwnj;Ctrl&zwnj;</b> <b class="fa fa-plus"></b> <b class="btn btn-xs disabled">Alt</b> <b class="fa fa-plus"></b> <b class="btn btn-xs disabled">D</b></td>
+                <td style="width: 280px"><b class="btn btn-xs disabled">&zwnj;Ctrl&zwnj;</b>
+                  <b class="fa fa-plus"></b>
+                  <b class="btn btn-xs disabled">Alt</b>
+                  <b class="fa fa-plus"></b>
+                  <b class="btn btn-xs disabled">D</b>
+                </td>
                 <td>&zwnj;Toggles 'Show Desktop'.&zwnj;</td>
               </tr>
               <!--
               <tr>
-                <td><b class="btn btn-xs disabled">&zwnj;Ctrl&zwnj;</b> <b class="fa fa-plus"></b> <b class="btn btn-xs disabled">Alt</b> <b class="fa fa-plus"></b> <b class="btn btn-xs disabled">Up</b></td>
+                <td>
+                  <b class="btn btn-xs disabled">&zwnj;Ctrl&zwnj;</b>
+                  <b class="fa fa-plus"></b>
+                  <b class="btn btn-xs disabled">Alt</b>
+                  <b class="fa fa-plus"></b>
+                  <b class="btn btn-xs disabled">Up</b>
+                </td>
                 <td>&zwnj;Enables an 'expose' like feature that presents you with all the windows you currently have open, allowing you to select the one you wish to give focus to.&zwnj;</td>
               <tr>
-                <td><b class="btn btn-xs disabled">&zwnj;Ctrl&zwnj;</b> <b class="fa fa-plus"></b> <b class="btn btn-xs disabled">Alt</b> <b class="fa fa-plus"></b> <b class="btn btn-xs disabled">Down</b></td>
+                <td>
+                  <b class="btn btn-xs disabled">&zwnj;Ctrl&zwnj;</b>
+                  <b class="fa fa-plus"></b>
+                  <b class="btn btn-xs disabled">Alt</b>
+                  <b class="fa fa-plus"></b>
+                  <b class="btn btn-xs disabled">Down</b>
+                </td>
                 <td>&zwnj;Unfolds your workspace cube allowing you to see more than one of your workspaces at once, using the left and right cursor keys with this active will allow you to select the workspace you wish to use.&zwnj;</td>
               </tr>
               -->
               <tr>
-                <td><b class="btn btn-xs disabled">&zwnj;Super&zwnj;</b> <b class="fa fa-plus"></b> <b class="btn btn-xs disabled">A</b></td>
+                <td>
+                  <b class="btn btn-xs disabled" data-toggle="tooltip" data-placement="top" title="&zwnj;Super Key&zwnj;"><img src="img/welcome/super-key.svg"></b>
+                  <b class="fa fa-plus"></b>
+                  <b class="btn btn-xs disabled">A</b>
+                </td>
                 <td>&zwnj;Zoom out, show workspace switcher.&zwnj;</td>
               </tr>
               <tr>
-                <td><b class="btn btn-xs disabled">&zwnj;Super&zwnj;</b> <b class="fa fa-plus"></b> <b class="btn btn-xs disabled">W</b></td>
+                <td>
+                  <b class="btn btn-xs disabled" data-toggle="tooltip" data-placement="top" title="&zwnj;Super Key&zwnj;"><img src="img/welcome/super-key.svg"></b>
+                  <b class="fa fa-plus"></b>
+                  <b class="btn btn-xs disabled">W</b>
+                </td>
                 <td>&zwnj;Enables the 'scale' effect, it shows all windows from the current workspace.&zwnj;</td>
               </tr>
               <tr>
-                <td><b class="btn btn-xs disabled">&zwnj;Super&zwnj;</b> <b class="fa fa-plus"></b> <b class="btn btn-xs disabled">&zwnj;Shift&zwnj;</b> <b class="fa fa-plus"></b> <b class="btn btn-xs disabled">W</b></td>
+                <td>
+                  <b class="btn btn-xs disabled" data-toggle="tooltip" data-placement="top" title="&zwnj;Super Key&zwnj;"><img src="img/welcome/super-key.svg"></b>
+                  <b class="fa fa-plus"></b>
+                  <b class="btn btn-xs disabled">&zwnj;Shift&zwnj;</b>
+                  <b class="fa fa-plus"></b>
+                  <b class="btn btn-xs disabled">W</b>
+                </td>
                 <td>&zwnj;Enables the 'scale' effect, it shows all windows from all workspaces.&zwnj;</td>
               </tr>
               <tr>
-                <td><b class="btn btn-xs disabled">&zwnj;Super&zwnj;</b> <b class="fa fa-plus"></b> <b class="btn btn-xs disabled">N</b></td>
+                <td>
+                  <b class="btn btn-xs disabled" data-toggle="tooltip" data-placement="top" title="&zwnj;Super Key&zwnj;"><img src="img/welcome/super-key.svg"></b>
+                  <b class="fa fa-plus"></b>
+                  <b class="btn btn-xs disabled">N</b>
+                </td>
                 <td>&zwnj;Invert colors of the focused window.&zwnj;</td>
               </tr>
               <tr>
-                <td><b class="btn btn-xs disabled">&zwnj;Super&zwnj;</b> <b class="fa fa-plus"></b> <b class="btn btn-xs disabled">M</b></td>
+                <td>
+                  <b class="btn btn-xs disabled" data-toggle="tooltip" data-placement="top" title="&zwnj;Super Key&zwnj;"><img src="img/welcome/super-key.svg"></b>
+                  <b class="fa fa-plus"></b>
+                  <b class="btn btn-xs disabled">M</b>
+                </td>
                 <td>&zwnj;Invert colors for the whole screen.&zwnj;</td>
               </tr>
               <tr>
-                <td><b class="btn btn-xs disabled">&zwnj;Super&zwnj;</b> <b class="fa fa-plus"></b> <b class="btn btn-xs disabled">&zwnj;Mouse Scroll&zwnj;</b></td>
+                <td>
+                  <b class="btn btn-xs disabled" data-toggle="tooltip" data-placement="top" title="&zwnj;Super Key&zwnj;"><img src="img/welcome/super-key.svg"></b>
+                  <b class="fa fa-plus"></b>
+                  <img src="img/welcome/mouse-scroll.png" data-toggle="tooltip" data-placement="top" title="&zwnj;Scroll Wheel&zwnj;">
+                </td>
                 <td>&zwnj;Zooms in on the screen.&zwnj;</td>
               </tr>
               <tr>
-                <td><b class="btn btn-xs disabled">&zwnj;Super&zwnj;</b> <b class="fa fa-plus"></b> <b class="btn btn-xs disabled">&zwnj;Middle Mouse Button&zwnj;</b></td>
+                <td>
+                  <b class="btn btn-xs disabled" data-toggle="tooltip" data-placement="top" title="&zwnj;Super Key&zwnj;"><img src="img/welcome/super-key.svg"></b>
+                  <b class="fa fa-plus"></b>
+                  <img src="img/welcome/mouse-click-middle.png" data-toggle="tooltip" data-placement="top" title="&zwnj;Middle Click&zwnj;">
+                </td>
                 <td>&zwnj;Select a region to zoom into, using a rectangle.&zwnj;</td>
               </tr>
               <tr>
-                <td><b class="btn btn-xs disabled">Alt</b> <b class="fa fa-plus"></b> <b class="btn btn-xs disabled">&zwnj;Left Mouse Button&zwnj;</b></td>
+                <td>
+                  <b class="btn btn-xs disabled">Alt</b>
+                  <b class="fa fa-plus"></b>
+                  <img src="img/welcome/mouse-click-left.png" data-toggle="tooltip" data-placement="top" title="&zwnj;Left Click&zwnj;">
+                </td>
                 <td>&zwnj;Move focused window.&zwnj;</td>
               </tr>
               <tr>
-                <td><b class="btn btn-xs disabled">Alt</b> <b class="fa fa-plus"></b> <b class="btn btn-xs disabled">&zwnj;Middle Mouse Button&zwnj;</b></td>
+                <td>
+                  <b class="btn btn-xs disabled">Alt</b>
+                  <b class="fa fa-plus"></b>
+                  <img src="img/welcome/mouse-click-middle.png" data-toggle="tooltip" data-placement="top" title="&zwnj;Middle Click&zwnj;">
+                </td>
                 <td>&zwnj;Resize focused window.&zwnj;</td>
               </tr>
               <tr>
-                <td><b class="btn btn-xs disabled">Alt</b> <b class="fa fa-plus"></b> <b class="btn btn-xs disabled">&zwnj;Right Mouse Button&zwnj;</b></td>
+                <td>
+                  <b class="btn btn-xs disabled">Alt</b>
+                  <b class="fa fa-plus"></b>
+                  <img src="img/welcome/mouse-click-right.png" data-toggle="tooltip" data-placement="top" title="&zwnj;Right Click&zwnj;">
+                </td>
                 <td>&zwnj;Show window menu.&zwnj;</td>
               </tr>
             </table>
@@ -1042,9 +1432,9 @@
       </div>
 
       <!-- What's inside my computer? -->
-      <div id="specs" class="topicContents">
-        <div class="row">
-          <div class="col-md-12">
+      <div id="specs" class="topicContents" hidden>
+        <div class="row-fluid">
+          <div class="span12">
             <h2>&zwnj;What's inside my computer?&zwnj;</h2>
             <p>&zwnj;Your machine is made up of various components that
             interact with one another. This information is useful
@@ -1052,31 +1442,30 @@
             works on your machine.&zwnj;</p>
           </div>
         </div>
-        <div id="specs-loading"><p>&zwnj;Please wait while the information is being populated...&zwnj;</p></div>
         <ul id="specs-tabs" class="nav nav-pills" data-tabs="tabs">
-          <li class="nav-item"><a class="nav-link active" onclick="smoothFade('.tab-contents','#specs-basic')" data-toggle="tab">&zwnj;Basic&zwnj;</a></li>
-          <li class="nav-item"><a class="nav-link" onclick="smoothFade('.tab-contents','#specs-detailed')" data-toggle="tab">&zwnj;Detailed&zwnj;</a></li>
-          <li class="nav-item"><a class="nav-link" onclick="smoothFade('.tab-contents','#specs-more')" data-toggle="tab">&zwnj;Utilities&zwnj;</a></li>
+          <li class="active"><a onclick="smoothFade('.tab-contents','#specs-basic')" data-toggle="tab"><img id="specs-busy-basic" src="img/welcome/processing.gif" height="16px" width="16px"> &zwnj;Basic&zwnj;</a></li>
+          <li><a onclick="smoothFade('.tab-contents','#specs-detailed')" data-toggle="tab"><img id="specs-busy-detailed" src="img/welcome/processing.gif" height="16px" width="16px"> &zwnj;Detailed&zwnj;</a></li>
+          <li><a onclick="smoothFade('.tab-contents','#specs-more')" data-toggle="tab">&zwnj;Utilities&zwnj;</a></li>
         </ul>
 
-	<hr>	
-
-        <div class="tab-contents" id="specs-basic">
+        <div class="tab-contents" id="specs-basic" hidden>
           <div id="specs-icon">
-            <img class="specs-icon" id="specs-device-normal" src="img/welcome/distro-laptop.png"/>
-            <img class="specs-icon" id="specs-device-vbox" src="img/logos/virtualbox-vbox.png"/>
-            <img class="specs-icon" id="specs-device-powerpc" src="img/logos/powerpc.png"/>
+            <img class="specs-icon" hidden id="specs-device-normal" src="img/welcome/ubuntu-mate-laptop.png"/>
+            <img class="specs-icon" hidden id="specs-device-rpi" src="img/logos/raspberry-pi.png"/>
+            <img class="specs-icon" hidden id="specs-device-vbox" src="img/logos/virtualbox-vbox.png"/>
+            <img class="specs-icon" hidden id="specs-device-powerpc" src="img/logos/powerpc.png"/>
+            <img class="specs-icon" hidden id="specs-live-session" src="img/welcome/live-session-image.png"/>
           </div>
           <div id="specs-box">
             <h4><span class="fa fa-cog"></span> &zwnj;System&zwnj;</h4>
             <table class="table">
               <tr>
                 <th>&zwnj;Distribution:&zwnj;</th>
-                <td><span id="spec-distro"></span></td>
+                <td class="specs-sel-text"><span id="spec-distro"></span></td>
               </tr>
               <tr>
                 <th>&zwnj;Kernel:&zwnj;</th>
-                <td>
+                <td class="specs-sel-text">
                   <span id="spec-kernel"></span>
                   <a data-toggle="tooltip" data-placement="right" title="&zwnj;The Linux kernel is the heart of Ubuntu.&zwnj;">
                     <span class="fa fa-info-circle"></span>
@@ -1085,11 +1474,11 @@
               </tr>
               <tr class="specs-hide-vbox specs-hide-pi">
                 <th>&zwnj;Motherboard:&zwnj;</th>
-                <td><span id="spec-motherboard"></span></td>
+                <td class="specs-sel-text"><span id="spec-motherboard"></span></td>
               </tr>
               <tr class="specs-hide-vbox specs-hide-pi">
                 <th>&zwnj;Boot Mode:&zwnj;</th>
-                <td>
+                <td class="specs-sel-text">
                   <span id="spec-boot-mode"></span>
                   <a data-toggle="tooltip" data-placement="right" title="&zwnj;Displays the mode that Ubuntu MATE is communicating with the firmware.&zwnj;">
                     <span class="fa fa-info-circle"></span>
@@ -1097,21 +1486,21 @@
                 </td>
               </tr>
             </table>
-            <hr>
+            <br>
 
             <h4><span class="fa fa-bolt"></span> &zwnj;Processor&zwnj;</h4>
             <table class="table">
               <tr>
                 <th>&zwnj;Model:&zwnj;</th>
-                <td><span id="spec-cpu-model"></span></td>
+                <td class="specs-sel-text"><span id="spec-cpu-model"></span></td>
               </tr>
               <tr>
                 <th>&zwnj;Speed:&zwnj;</th>
-                <td><span id="spec-cpu-speed"></span></td>
+                <td class="specs-sel-text"><span id="spec-cpu-speed"></span></td>
               </tr>
               <tr>
                 <th>&zwnj;Architecture in use:&zwnj;</th>
-                <td>
+                <td class="specs-sel-text">
                   <span id="spec-arch-use"></span>
                   <a data-toggle="tooltip" data-placement="right" title="&zwnj;The operating system's architecture in use. For instance, i386 = 32-bit.&zwnj;">
                     <span class="fa fa-info-circle"></span>
@@ -1120,7 +1509,7 @@
               </tr>
               <tr class="specs-hide-vbox specs-hide-pi specs-hide-ppc">
                 <th>&zwnj;Architecture(s) supported:&zwnj;</th>
-                <td>
+                <td class="specs-sel-text">
                   <span id="spec-arch-supported"></span>
                   <a data-toggle="tooltip" data-placement="right" title="&zwnj;Architectures that are supported by this processor.&zwnj;">
                     <span class="fa fa-info-circle"></span>
@@ -1128,13 +1517,13 @@
                 </td>
               </tr>
             </table>
-            <hr>
+            <br>
 
             <h4><span class="fa fa-plug"></span> &zwnj;Components&zwnj;</h4>
             <table class="table">
               <tr>
                 <th>&zwnj;Memory (RAM):&zwnj;</th>
-                <td>
+                <td class="specs-sel-text">
                   <span id="spec-memory"></span>
                   <a data-toggle="tooltip" data-placement="right" title="&zwnj;More RAM allows more applications to run simultaneously.&zwnj;">
                     <span class="fa fa-info-circle"></span>
@@ -1143,17 +1532,17 @@
               </tr>
               <tr class="specs-hide-vbox specs-hide-pi">
                 <th>&zwnj;Graphics:&zwnj;</th>
-                <td><span id="spec-graphics"></span></td>
+                <td class="specs-sel-text"><span id="spec-graphics"></span></td>
               </tr>
               <tr>
                 <th>&zwnj;Internet Access:&zwnj;</th>
-                <td>
-                  <span id="specs-has-net"    style="color:#006400">&nbsp; <span class="fa fa-check"></span> &zwnj;Connected&zwnj;</span>
-                  <span id="specs-has-no-net" style="color:#640000">&nbsp; <span class="fa fa-close"></span> &zwnj;Not Connected&zwnj;</span>
+                <td class="specs-sel-text">
+                  <span id="specs-has-net"    style="color:#006400" hidden>&nbsp; <span class="fa fa-check"></span> &zwnj;Connected&zwnj;</span>
+                  <span id="specs-has-no-net" style="color:#640000" hidden>&nbsp; <span class="fa fa-close"></span> &zwnj;Not Connected&zwnj;</span>
                 </td>
               </tr>
             </table>
-            <hr>
+            <br>
 
             <div class="specs-hide-live">
               <h4><span class="fa fa-hdd-o"></span> &zwnj;Storage&zwnj;</h4>
@@ -1161,7 +1550,7 @@
               <table class="table">
                 <tr>
                   <th>&zwnj;Root File System:&zwnj;</th>
-                  <td>
+                  <td class="specs-sel-text">
                     <span id="spec-filesystem"></span>
                     <a data-toggle="tooltip" data-placement="top" title="&zwnj;The file system where Ubuntu MATE is installed.&zwnj;">
                       <span class="fa fa-info-circle"></span>
@@ -1183,8 +1572,8 @@
                   </td>
                 </tr>
                 <tr>
-                  <th>&zwnj;Allocated for Ubuntu Budgie:&zwnj;</th>
-                  <td>
+                  <th>&zwnj;Allocated for Ubuntu MATE:&zwnj;</th>
+                  <td class="specs-sel-text">
                     <span id="spec-allocated-space"></span>
                     <a data-toggle="tooltip" data-placement="top" title="&zwnj;The size of your operating system partition.&zwnj;">
                       <span class="fa fa-info-circle"></span>
@@ -1193,19 +1582,19 @@
                 </tr>
                 <tr>
                   <th><div class="disk-legend" style="background-color: #87A556"></div> &zwnj;Used Space:&zwnj;</th>
-                  <td>
+                  <td class="specs-sel-text">
                     <span id="spec-used-space"></span>
                   </td>
                 </tr>
                 <tr>
                   <th><div class="disk-legend" style="background-color: #C2D3A6"></div> &zwnj;Free Space:&zwnj;</th>
-                  <td>
+                  <td class="specs-sel-text">
                     <span id="spec-free-space"></span>
                   </td>
                 </tr>
                 <tr>
                   <th><div class="disk-legend" style="background-color: #484848;"></div> &zwnj;Other Usage:&zwnj;</th>
-                  <td>
+                  <td class="specs-sel-text">
                     <span id="spec-other-space"></span>
                     <a data-toggle="tooltip" data-placement="top" title="&zwnj;Reserved by system, other partitions, unallocated or swap.&zwnj;">
                       <span class="fa fa-info-circle"></span>
@@ -1241,78 +1630,114 @@
           </div>
         </div>
 
-        <div class="tab-contents" id="specs-detailed">
-          <div class="row">
-            <div class="col-md-12">
-              <p><span class="fa fa-info-circle"></span> &zwnj;The following information is retrieved directly from the&zwnj; <code>inxi</code> &zwnj;command line program.&zwnj;</p>
-              <pre id="specs-inxi">&zwnj;Could not gather data.&zwnj;</pre>
+        <div class="tab-contents" id="specs-detailed" hidden>
+          <div class="row-fluid">
+            <div class="span12">
+              <p><span class="fa fa-info-circle"></span> &zwnj;The following information is retrieved directly from the inxi command line program.&zwnj;</p>
+              <div id="specs-inxi-busy" class="alert alert-warning"><h5>&zwnj;Gathering data...&zwnj;</h5></div>
+              <div id="specs-inxi-error" class="alert alert-danger" hidden><h5>&zwnj;Sorry, there was a problem gathering this information.&zwnj;</h5></div>
+              <div style="text-align: right; margin-bottom: 8px;">
+                <a id="specs-inxi-copy" class="btn btn-inverse" onclick="cmd('clipboard?inxi')" style="display:none"><span class="fa fa-clipboard"></span> Copy to Clipboard</a>
+              </div>
+              <pre id="specs-inxi" style="display:none"></pre>
             </div>
           </div>
         </div>
 
-        <div class="tab-contents" id="specs-more">
-          <div class="row">
-            <div class="col-md-2 center-inside">
-              <img class="icon" src="img/applications/profiler.svg"/>
+        <div class="tab-contents" id="specs-more" hidden>
+          <div class="row-fluid">
+            <div class="span2 center-inside">
+              <img src="img/applications/hardinfo.png"/>
               <span class="fa fa-check-circle fa-2x installed-check hardinfo-remove"></span>
             </div>
-            <div class="col-md-10">
+            <div class="span10">
               <p><b>&zwnj;System Profiler and Benchmark&zwnj;</b></p>
               <p>&zwnj;See more specific system information in a graphical window,
               including connected USBs, PCI devices and a simple CPU benchmark.&zwnj;</p>
               <p class="text-right">
-                <a class="btn btn-inverse hardinfo-remove" href="cmd://launch-appid?hardinfo"><img src="img/applications/profiler.svg" width="20px" height="20px"/>&nbsp; &zwnj;Open&zwnj;</a>
-                <a class="btn btn-success hardinfo-install" href="cmd://install-appid?hardinfo"><span class="fa fa-download"></span>&nbsp; &zwnj;Install&zwnj;</a>
+                <a class="btn btn-inverse hardinfo-remove" onclick="cmd('launch-appid?hardinfo')"><img src="img/applications/hardinfo.png" width="20px" height="20px"/>&nbsp; &zwnj;Open&zwnj;</a>
+                <a class="btn btn-success hardinfo-install" onclick="cmd('install-appid?hardinfo')"><span class="fa fa-download"></span>&nbsp; &zwnj;Install&zwnj;</a>
               </p>
             </div>
           </div>
 
-          <div class="row">
-            <div class="col-md-2 center-inside">
-              <img class="icon" src="img/applications/gnome-disk-utility.svg"/>
+          <div class="row-fluid">
+            <div class="span2 center-inside">
+              <img src="img/applications/gnome-disk-utility.png"/>
               <span class="fa fa-check-circle fa-2x installed-check gnome-disk-utility-remove"></span>
             </div>
-            <div class="col-md-10">
+            <div class="span10">
               <p><b>&zwnj;Disks&zwnj;</b></p>
               <p>&zwnj;A pre-installed utility that allows basic configuration to your disks and partitions,
               including formatting, partitioning, mounting, viewing S.M.A.R.T data and writing
               images to SD cards/USB drives.&zwnj;</p>
               <p class="text-right">
-                <a class="btn btn-inverse gnome-disk-utility-remove" href="cmd://launch-appid?gnome-disk-utility"><img src="img/applications/gnome-disk-utility.svg" width="20px" height="20px"/>&nbsp; &zwnj;Open&zwnj;</a>
-                <a class="btn btn-success gnome-disk-utility-install" href="cmd://install-appid?gnome-disk-utility"><span class="fa fa-download"></span>&nbsp; &zwnj;Install&zwnj;</a>
+                <a class="btn btn-inverse gnome-disk-utility-remove" onclick="cmd('launch-appid?gnome-disk-utility')"><img src="img/applications/gnome-disk-utility.png" width="20px" height="20px"/>&nbsp; &zwnj;Open&zwnj;</a>
+                <a class="btn btn-success gnome-disk-utility-install" onclick="cmd('install-appid?gnome-disk-utility')"><span class="fa fa-download"></span>&nbsp; &zwnj;Install&zwnj;</a>
               </p>
             </div>
           </div>
 
+          <div class="row-fluid">
+            <div class="span2 center-inside">
+              <img src="img/applications/gparted.png"/>
+              <span class="fa fa-check-circle fa-2x installed-check gparted-remove"></span>
+            </div>
+            <div class="span10">
+              <p><b>&zwnj;GParted&zwnj;</b></p>
+              <p>&zwnj;An advanced tool for viewing, creating, modifying and deleting partitions.
+              It also has features to expand/shrink file systems and supports a wide range of formats.&zwnj;</p>
+              <p class="text-right">
+                <a class="btn btn-inverse gparted-remove" onclick="cmd('launch-appid?gparted')"><img src="img/applications/gparted.png" width="20px" height="20px"/>&nbsp; &zwnj;Open&zwnj;</a>
+                <a class="btn btn-success gparted-install" onclick="cmd('install-appid?gparted')"><span class="fa fa-download"></span>&nbsp; &zwnj;Install&zwnj;</a>
+              </p>
+            </div>
+          </div>
 
-          <div class="row">
-            <div class="col-md-2 center-inside">
-              <img class="icon" src="img/applications/utilities-system-monitor.svg"/>
+          <div class="row-fluid">
+            <div class="span2 center-inside">
+              <img src="img/applications/mate-disk-usage-analyzer.png"/>
+              <span class="fa fa-check-circle fa-2x installed-check mate-disk-usage-analyzer-remove"></span>
+            </div>
+            <div class="span10">
+              <p><b>&zwnj;Disk Usage Analyser&zwnj;</b></p>
+              <p>&zwnj;A graphical tool for exploring your file system or individual folders
+              to determine how much space is being used.&zwnj;</p>
+              <p class="text-right">
+                <a class="btn btn-inverse mate-disk-usage-analyzer-remove" onclick="cmd('launch-appid?mate-disk-usage-analyzer')"><img src="img/applications/mate-disk-usage-analyzer.png" width="20px" height="20px"/>&nbsp; &zwnj;Open&zwnj;</a>
+                <a class="btn btn-success mate-disk-usage-analyzer-install" onclick="cmd('install-appid?mate-disk-usage-analyzer')"><span class="fa fa-download"></span>&nbsp; &zwnj;Install&zwnj;</a>
+              </p>
+            </div>
+          </div>
+
+          <div class="row-fluid">
+            <div class="span2 center-inside">
+              <img src="img/applications/mate-system-monitor.png"/>
               <span class="fa fa-check-circle fa-2x installed-check mate-system-monitor-remove"></span>
             </div>
-            <div class="col-md-10">
+            <div class="span10">
               <p><b>&zwnj;System Monitor&zwnj;</b></p>
               <p>&zwnj;Views currently running processes, resource usage, and the amount of space used
               and free for currently mounted file systems.&zwnj;</p>
               <p class="text-right">
-                <a class="btn btn-inverse mate-system-monitor-remove" href="cmd://launch-appid?mate-system-monitor"><img src="img/applications/utilities-system-monitor.svg" width="20px" height="20px"/>&nbsp; &zwnj;Open&zwnj;</a>
-                <a class="btn btn-success mate-system-monitor-install" href="cmd://install-appid?mate-system-monitor"><span class="fa fa-download"></span>&nbsp; &zwnj;Install&zwnj;</a>
+                <a class="btn btn-inverse mate-system-monitor-remove" onclick="cmd('launch-appid?mate-system-monitor')"><img src="img/applications/mate-system-monitor.png" width="20px" height="20px"/>&nbsp; &zwnj;Open&zwnj;</a>
+                <a class="btn btn-success mate-system-monitor-install" onclick="cmd('install-appid?mate-system-monitor')"><span class="fa fa-download"></span>&nbsp; &zwnj;Install&zwnj;</a>
               </p>
             </div>
           </div>
 
-          <div class="row">
-            <div class="col-md-2 center-inside">
-              <img class="icon"s src="img/applications/psensor.svg"/>
+          <div class="row-fluid">
+            <div class="span2 center-inside">
+              <img src="img/applications/psensor.png"/>
               <span class="fa fa-check-circle fa-2x installed-check psensor-remove"></span>
             </div>
-            <div class="col-md-10">
+            <div class="span10">
               <p><b>&zwnj;Psensor&zwnj;</b></p>
               <p>&zwnj;Views and graphs the current temperature of components attached to the
               system. Including: Motherboard, CPU, GPU and hard disks.&zwnj;</p>
               <p class="text-right">
-                <a class="btn btn-inverse psensor-remove" href="cmd://launch-appid?psensor"><img src="img/applications/psensor.svg" width="20px" height="20px"/>&nbsp; &zwnj;Open&zwnj;</a>
-                <a class="btn btn-success psensor-install" href="cmd://install-appid?psensor"><span class="fa fa-download"></span>&nbsp; &zwnj;Install&zwnj;</a>
+                <a class="btn btn-inverse psensor-remove" onclick="cmd('launch-appid?psensor')"><img src="img/applications/psensor.png" width="20px" height="20px"/>&nbsp; &zwnj;Open&zwnj;</a>
+                <a class="btn btn-success psensor-install" onclick="cmd('install-appid?psensor')"><span class="fa fa-download"></span>&nbsp; &zwnj;Install&zwnj;</a>
               </p>
             </div>
           </div>
@@ -1332,7 +1757,7 @@
     </div>
   </div>
   <script src="js/jquery-2.1.4.js"></script>
-  <script src="js/bootstrap.min.js"></script>
+  <script src="js/bootstrap-2.3.2.js"></script>
   <script src="js/janimate.js"></script>
   <script src="js/welcome.js"></script>
 </body>

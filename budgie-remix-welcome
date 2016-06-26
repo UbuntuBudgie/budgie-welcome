@@ -23,7 +23,8 @@
 """ Welcome screen for Budgie Remix """
 
 import gi
-gi.require_version('WebKit', '3.0')
+
+gi.require_version('WebKit2', '4.0')
 
 import inspect
 import os
@@ -38,7 +39,7 @@ import socket
 
 from simplejson import dumps as to_json
 
-from gi.repository import WebKit, Gtk
+from gi.repository import WebKit2, Gtk
 from threading import Thread
 
 
@@ -139,16 +140,16 @@ class WelcomeConfig(object):
             self.is_online = True
 
 
-class AppView(WebKit.WebView):
+class AppView(WebKit2.WebView):
 
     def __init__(self):
-        WebKit.WebView.__init__(self)
+        WebKit2.WebView.__init__(self)
 
         self._config = WelcomeConfig()
 
-        self.connect('load-finished', self._load_finished_cb)
-        self.connect('navigation-policy-decision-requested',
-                     self._nav_request_policy_decision_cb)
+        self.connect('load-changed', self._load_changed_cb)
+        self.connect('notify::title', self._title_changed_cb)
+        
         self.l_uri = None
 
     def _push_config(self):
@@ -156,33 +157,64 @@ class AppView(WebKit.WebView):
         # broadcast event any suitable controllers will be able to listen and
         # respond accordingly, for now we just use jQuery to manually toggle
 
-        self.execute_script("$('#arch').html('%s')" % self._config.arch)
-        self.execute_script("$('#autostart').toggleClass('icon-check', {})\
+        self.run_javascript("$('#arch').html('%s')" % self._config.arch)
+        self.run_javascript("$('#autostart').toggleClass('icon-check', {})\
             .toggleClass('icon-check-empty', {})".format(to_json
                 (self._config._autostart), to_json(not self._config._autostart)))
-        self.execute_script("$('span[name=\"distro-name\"]').html('{}')".format(self._config._distroname))
+        self.run_javascript("$('span[name=\"distro-name\"]').html('{}')".format(self._config._distroname))
 
 
         if self._config.live:
-            self.execute_script("$('#install').toggleClass('hide', false);")
-            self.execute_script(
+            self.run_javascript("$('#install').toggleClass('hide', false);")
+            self.run_javascript(
                 "$('#install-cli').toggleClass('hide', false);")
         else:
-            self.execute_script("$('#build').toggleClass('hide', false);")
-            self.execute_script("$('#donate').toggleClass('hide', false);")
+            self.run_javascript("$('#build').toggleClass('hide', false);")
+            self.run_javascript("$('#donate').toggleClass('hide', false);")
 
         
         if self._config.is_online:
-            self.execute_script("$('.offline').hide()")
+            self.run_javascript("$('.offline').hide()")
         else:
-            self.execute_script("$('.offline').show()")
+            self.run_javascript("$('.offline').show()")
 
-    def _load_finished_cb(self, view, frame):
+        ### Getting Started Page ###
+        if app.current_page == 'gettingstarted.html':
+            # Display information tailored to graphics vendor (Getting Started / Drivers)
+            self.run_javascript('var graphicsVendor = "' + systemstate.graphics_vendor + '";')
+            self.run_javascript('var graphicsGrep = "' + systemstate.graphics_grep + '";')
+            app.update_page('#boot-mode', 'html', systemstate.boot_mode)
+
+            # Update any applications featured on these pages.
+            dynamicapps.update_app_status(self, 'hardinfo')
+            dynamicapps.update_app_status(self, 'gparted')
+            dynamicapps.update_app_status(self, 'gnome-disk-utility')
+            dynamicapps.update_app_status(self, 'mate-disk-usage-analyzer')
+            dynamicapps.update_app_status(self, 'mate-system-monitor')
+            dynamicapps.update_app_status(self, 'psensor')
+            dynamicapps.update_app_status(self, 'boot-repair')
+            dynamicapps.update_app_status(self, 'codecs')
+            dynamicapps.update_app_status(self, 'firmware')
+            dynamicapps.update_app_status(self, 'hp-printer')
+            dynamicapps.update_app_status(self, 'keyboard-chinese')
+            dynamicapps.update_app_status(self, 'keyboard-japanese')
+            dynamicapps.update_app_status(self, 'keyboard-korean')
+            dynamicapps.update_app_status(self, 'caja-share')
+            dynamicapps.update_app_status(self, 'libdvdcss2')
+            dynamicapps.update_app_status(self, 'xscreensaver')
+            dynamicapps.update_app_status(self, 'wallpapers')
+
+    def _load_changed_cb(self, view, frame):
+        uri = str(self.get_uri())
+        app.current_page = uri.rsplit('/', 1)[1]
         self._push_config()
 
-    def _nav_request_policy_decision_cb(self, view, frame, net_req, nav_act,
-                                        pol_dec):
-        uri = net_req.get_uri()
+    def _title_changed_cb(self, view, frame):
+        uri = self.get_title()
+        
+        print(uri)
+        
+        raise ValueError
 
         try:
             if uri.index('#') > 0:
@@ -237,6 +269,9 @@ class AppView(WebKit.WebView):
 class WelcomeApp(object):
 
     def __init__(self):
+
+        self.current_page = ""
+
         # establish our location
         self._location = os.path.dirname(
             os.path.abspath(inspect.getfile(inspect.currentframe())))
@@ -273,7 +308,7 @@ class WelcomeApp(object):
         # load our index file
         file = os.path.abspath(os.path.join(self._data_path, 'index.html'))
         uri = 'file://' + urllib.request.pathname2url(file)
-        mv.open(uri)
+        mv.load_uri(uri)
 
         # build scrolled window widget and add our appview container
         sw = Gtk.ScrolledWindow()
