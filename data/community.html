@@ -16,7 +16,7 @@
         </a>
         <div id="navigation-title">&zwnj;Community&zwnj;</div>
         <div id="navigation-right"></div>
-        <a href="cmd://close">
+        <a onclick="cmd('close')">
           <i class="material-icons" id="close-btn">&#xE14C;</i>
         </a>
       </div>
@@ -32,10 +32,10 @@
           <div class="alert alert-warning offline">
             <h5>&zwnj;It appears you are not connected to the Internet. Please check your connection to access this content.&zwnj;</h5>
             <div id="reconnectFailed"><p><span class="fa fa-warning"></span> &zwnj;Sorry, Welcome was unable to establish a connection.&zwnj;</p></div>
-            <a href="cmd://checkInternetConnection" onclick="reconnectTimeout();" class="btn btn-warning"> <span class="fa fa-refresh"></span> &zwnj;Retry&zwnj;</a>
+            <a onclick="reconnectTimeout();" class="btn btn-warning"> <span class="fa fa-refresh"></span> &zwnj;Retry&zwnj;</a>
           </div>
           <div align="center">
-            <a class="btn btn-lg btn-primary" href="cmd://link?https://gitter.im/budgie-remix/community"><img src="img/welcome/distro-icon.svg" width="20">&nbsp; <span name="distro-name"></span> Chat Room</a>
+            <a class="btn btn-lg btn-primary" onclick="cmd('link?https://gitter.im/budgie-remix/community')"><img src="img/welcome/distro-icon.svg" width="20">&nbsp; <span name="distro-name"></span> Chat Room</a>
           </div>
           <h2>&zwnj;Social Networks&zwnj;</h2>
           <p>&zwnj;<span name="distro-name"></span> is active on the following social networks.&zwnj;</p>
@@ -43,22 +43,22 @@
       </div>
       <div class="row social-banner">
         <div class="col-md-3">
-          <a href="cmd://link?https://plus.google.com/communities/106822666079268690759">
+          <a onclick="cmd('link?https://plus.google.com/communities/106822666079268690759')">
             <img src="img/social/g+.svg"/>
           </a>
         </div>
         <div class="col-md-3">
-          <a href="cmd://link?https://www.reddit.com/r/budgieremix">
+          <a onclick="cmd('link?https://www.reddit.com/r/budgieremix')">
             <img src="img/social/reddit.svg"/>
           </a>
         </div>
         <div class="col-md-3">
-          <a href="cmd://link?http://gitter.im/budgie-remix/community">
+          <a onclick="cmd('link?http://gitter.im/budgie-remix/community')">
             <img src="img/social/gitter.svg"/>
           </a>
         </div>
         <div class="col-md-3">
-          <a href="cmd://link?http://github.com/budgie-remix">
+          <a onclick="cmd('link?http://github.com/budgie-remix')">
             <img src="img/social/github.svg"/>
           </a>
         </div>

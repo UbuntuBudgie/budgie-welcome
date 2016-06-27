@@ -149,6 +149,7 @@ class AppView(WebKit2.WebView):
 
         self.connect('load-changed', self._load_changed_cb)
         self.connect('notify::title', self._title_changed_cb)
+        self.connect('context-menu', self._context_menu_cb)
         
         self.l_uri = None
 
@@ -210,39 +211,15 @@ class AppView(WebKit2.WebView):
         self._push_config()
 
     def _title_changed_cb(self, view, frame):
-        uri = self.get_title()
+        title = self.get_title()
+        self._do_command(title)
         
-        print(uri)
-        
-        raise ValueError
-
-        try:
-            if uri.index('#') > 0:
-                uri = uri[:uri.index('#')]
-        except ValueError:
-            pass
-
-        if uri == self.l_uri:
-            pol_dec.use()
-            return True
-
-        if uri.startswith('cmd://'):
-            self._do_command(uri)
-            return True
-            
-
-        self.l_uri = uri
-
-        page = urllib.request.urlopen(uri)
-        frame.load_string(page.read().decode(),
-                          "text/html", "iso-8859-15", page.geturl())
-        pol_dec.ignore()
+    def _context_menu_cb(self, webview, menu, event, htr, user_data=None):
+        # Disable context menu.
         return True
 
     def _do_command(self, uri):
-        if uri.startswith('cmd://'):
-            uri = uri[6:]
-
+      
         if uri == 'gnome-help':
             subprocess.Popen(['yelp'])
         elif uri == 'kde-help':

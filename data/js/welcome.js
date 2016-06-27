@@ -1,6 +1,10 @@
 // Which page?
 current_page = document.location.href.match(/[^\/]+$/)[0];
 
+// Pass commands to Python
+function cmd(instruction) {
+  document.title = instruction;
+}
 
 // Global across all pages
 $(window).load(function() {

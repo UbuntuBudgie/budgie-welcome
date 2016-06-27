@@ -12,7 +12,7 @@
       <div id="navigation">
         <div id="navigation-title">&zwnj;Introduction&zwnj;</div>
         <div id="navigation-right"></div>
-        <a href="cmd://close">
+        <a onclick="cmd('close')">
           <i class="material-icons" id="close-btn">&#xE14C;</i>
         </a>
       </div>
@@ -102,7 +102,7 @@
               <a id="software"    class="btn btn-block btn-primary btn-lg fade fade-5s hvr-shadow" onclick="exitMenu('software.html');$('#footer-left').fadeOut()"><span class="material-icons">&#xE30A;</span>&nbsp; &zwnj;Software&zwnj;</a>
             </div>
             <div class="col-md-3 col-md-push-3 btn-showcase" style="padding-left: 30px">
-              <a id="install"     class="btn btn-block btn-primary btn-lg fade fade-5s hvr-shadow" href="cmd://install"><span class="material-icons">&#xE2C0;</span>&nbsp; &zwnj;Install Now&zwnj;</a>
+              <a id="install"     class="btn btn-block btn-primary btn-lg fade fade-5s hvr-shadow" onclick="cmd('install')"><span class="material-icons">&#xE2C0;</span>&nbsp; &zwnj;Install Now&zwnj;</a>
             </div>
           </div>
         </div>
@@ -112,22 +112,22 @@
       <div class="container-fluid">
         <div class="row footer-content">
           <div class="col-md-3 social">
-            <a href="cmd://link?https://plus.google.com/communities/106822666079268690759">
+            <a onclick="cmd('link?https://plus.google.com/communities/106822666079268690759')">
               <img src="img/social/g+.svg"/>
             </a>
-            <a href="cmd://link?https://www.reddit.com/r/budgieremix">
+            <a onclick="cmd('link?https://www.reddit.com/r/budgieremix')">
               <img src="img/social/reddit.svg"/>
             </a>
-            <a href="cmd://link?http://gitter.im/budgie-remix/community">
+            <a onclick="cmd('link?http://gitter.im/budgie-remix/community')">
               <img src="img/social/gitter.svg"/>
             </a>
-            <a href="cmd://link?http://github.com/budgie-remix">
+            <a onclick="cmd('link?http://github.com/budgie-remix')">
               <img src="img/social/github.svg"/>
             </a>
           </div>
           <div class="col-md-3"></div>
           <div class="col-md-6 text-md-right form">
-            <a href="cmd://toggle-startup" id="open-at-start" class="live-session entire-page-fade" style="display:none">
+            <a href="cmd('toggle-startup')" id="open-at-start" class="live-session entire-page-fade" style="display:none">
               <span id="autostart" class="material-icons">&#xE836;</span> &zwnj;Show this dialog on startup?&zwnj;
             </a>
           </div>

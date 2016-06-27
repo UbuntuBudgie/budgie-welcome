@@ -16,7 +16,7 @@
           </a>
           <div id="navigation-title">&zwnj;Chat Room&zwnj;</div>
           <div id="navigation-right"></div>
-          <a href="cmd://close">
+          <a onclick="cmd('close')">
             <i class="material-icons" id="close-btn">&#xE14C;</i>
           </a>
         </div>
@@ -36,12 +36,12 @@
               connection to access this content.&zwnj;</h5>
               <div id="reconnectFailed"><p><span class="fa fa-warning"></span> 
               &zwnj;Sorry, Welcome was unable to establish a connection.&zwnj;</p></div>
-              <a href="cmd://checkInternetConnection" onclick="reconnectTimeout();" class="btn btn-warning">
+              <a onclick="reconnectTimeout();" class="btn btn-warning">
                 <span class="fa fa-refresh"></span> &zwnj;Retry&zwnj;
               </a>
             </div>
             <div align="center">
-              <a class="btn btn-lg btn-inverse" href="cmd://chatroom">
+              <a class="btn btn-lg btn-inverse" onclick="cmd('link?https://gitter.im/budgie-remix/community')">
                 <img src="img/social/gitter.svg" width="20px" height="20px">
                 &nbsp; &zwnj;Join us in gitter&zwnj;
               </a>
