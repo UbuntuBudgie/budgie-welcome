@@ -674,7 +674,7 @@ if ( current_page == 'gettingstarted.html' ) {
   function InitSystemInfo() {
     setCursorBusy()
     setTimeout(function() {
-      window.location.href = "cmd://init-system-info";
+      cmd("init-system-info");
     }, 1000);
   }
 
