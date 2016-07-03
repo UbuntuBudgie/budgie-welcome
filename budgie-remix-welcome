@@ -238,7 +238,6 @@ class SystemState(object):
         # Set default variables
         self.is_online = False
         self.updates_subscribed = False
-        self.rpi_resize_pending = False
         self.welcome_version = 'Unknown'
 
         # Full path to binary
@@ -254,7 +253,7 @@ class SystemState(object):
         # Outputs 'i386', 'amd64', etc - Based on packages instead of kernel (eg. i686, x86_64).
         self.arch = str(subprocess.Popen(['dpkg','--print-architecture'], stdout=subprocess.PIPE).communicate()[0]).strip('\\nb\'')
 
-        # Get current version / codename of Ubuntu MATE in use.
+        # Get current version / codename of Distribution in Use in use.
         self.os_version = platform.dist()[1]    # → 14.04, 15.10, 16.04
         self.codename = platform.dist()[2]      # → trusty, wily, xenial
 
@@ -281,11 +280,6 @@ class SystemState(object):
         if os.path.exists(self.welcome_ppa_file):
             if os.path.getsize(self.welcome_ppa_file) > 0:
                 self.updates_subscribed = True
-
-        
-
-        self.dpi = 1
-        self.zoom_level = 1
 
     def reload_cache(self):
         dbg.stdout('Apt', 'Reloading cache...', 0, 3)
@@ -358,11 +352,7 @@ class SystemState(object):
             self.is_online = True
 
     def detect_graphics(self):
-        # If we're the Raspberry Pi, there is nothing to output.
-        if self.session_type == 'pi':
-            self.graphics_grep = 'Raspberry Pi'
-            self.graphics_vendor = 'Raspberry Pi'
-            return
+
 
         # TODO: Support dual graphic cards.
         dbg.stdout('Specs', 'Detecting graphics vendor... ', 1, 3)
@@ -477,7 +467,7 @@ class SystemState(object):
         except:
             dbg.stdout('Specs', 'Failed to gather data: CPU Supported Architectures', 0, 1)
 
-        ## Root partition (where Ubuntu MATE is installed) and the rest of that disk.
+        ## Root partition (where Distribution is installed) and the rest of that disk.
         try:
             if self.session_type == 'live':
                 app.update_page('.spec-hide-live-session', 'hide')
@@ -494,7 +484,7 @@ class SystemState(object):
                 else:
                     root_dev = root_partition[:-1]              # Generic
                 disk_dev_name = root_dev.split('/')[2]
-                dbg.stdout('Specs', 'Ubuntu MATE is installed on disk: ' + root_dev, 1, 4)
+                dbg.stdout('Specs', 'Distribution is installed on disk: ' + root_dev, 1, 4)
                 rootfs = os.statvfs('/')
                 root_size = rootfs.f_blocks * rootfs.f_frsize
                 root_free = rootfs.f_bavail * rootfs.f_frsize
@@ -640,13 +630,7 @@ class SystemState(object):
             app.update_page('#specs-has-no-net', 'show')
 
         # Change icon depending on what type of device we are using.
-        if self.session_type == 'pi':
-            app.update_page('#specs-device-rpi', 'show')
-            app.update_page('.specs-hide-pi', 'show')
-        elif self.arch == 'powerpc':
-            app.update_page('#specs-device-powerpc', 'show')
-            app.update_page('.specs-hide-ppc', 'hide')
-        elif self.graphics_vendor == 'VirtualBox':
+        if self.graphics_vendor == 'VirtualBox':
             app.update_page('#specs-device-vbox', 'show')
             app.update_page('.specs-hide-vbox', 'hide')
         elif self.session_type == 'live':
@@ -694,67 +678,7 @@ class SystemState(object):
             app.update_page('#specs-inxi-busy', 'slideUp')
             app.update_page('#specs-inxi-error', 'slideDown')
 
-    def rpi_resize(self, action, webkit=None):
-        if action == 'do-resize':
-            subprocess.call(['pkexec', '/usr/lib/ubuntu-mate/ubuntu-mate-welcome-rpi2-partition-resize'])
 
-            def notify(subject, body, icon):
-                Notify.init(_('Raspberry Pi Partition Resize'))
-                resize_notify=Notify.Notification.new(subject, body, icon)
-                resize_notify.show()
-
-            try:
-                with open('/tmp/notify_rpi_status') as status_file:
-                    status_code = int(status_file.read())
-            except:
-                status_code = 0
-
-            try:
-                with open('/tmp/notify_rpi_text') as misc_file:
-                    misc_text = misc_file.read()
-            except:
-                misc_text = ""
-
-            if status_code == 1:
-                notify( _("Root partition has been resized."), _("The filesystem will be enlarged upon the next reboot."), 'dialog-information' )
-                self.rpi_resize_pending = True
-                app.update_page('#rpi-resized', 'hide')
-                app.update_page('#rpi-not-resized', 'hide')
-                app.update_page('#rpi-restart-now', 'show')
-            elif status_code == 2:
-                notify( _("Don't know how to expand."), misc_text + ' ' + _("does not exist or is not a symlink."), 'dialog-error' )
-            elif status_code == 3:
-                notify( _("Don't know how to expand."), misc_text + ' ' + _("is not an SD card."), 'dialog-error' )
-            elif status_code == 4:
-                notify( _("Don't know how to expand."), _("Your partition layout is not currently supported by this tool."), 'dialog-error' )
-            elif status_code == 5:
-                notify( _("Don't know how to expand."), misc_text + ' ' + _("is not the last partition."), 'dialog-error' )
-            else:
-                notify( _("Failed to run resize script."), _("The returned error code is:") + str(status_code), 'dialog-error' )
-                dbg.stdout('Welcome', 'Unrecognised return code for Raspberry Pi resize: ' + str(status_code), 0, 1)
-
-            app.webkit._push_config()
-
-        elif action == 'check':
-            if os.path.exists('/.resized'):
-                resized = True
-            else:
-                resized = False
-
-            if resized:
-                app.update_page('#rpi-resized', 'show')
-                app.update_page('#rpi-not-resized', 'hide')
-            else:
-                app.update_page('#rpi-resized', 'hide')
-                app.update_page('#rpi-not-resized', 'show')
-
-            if self.rpi_resize_pending:
-                app.update_page('#rpi-resized', 'hide')
-                app.update_page('#rpi-not-resized', 'hide')
-                app.update_page('#rpi-restart-now', 'show')
-
-        elif action == 'reboot':
-            subprocess.call(['mate-session-save','--shutdown-dialog'])
 
     def copy_to_clipboard(self, var):
         # Copies text to clipboard, passes 'var' containing what we'd like copying.
@@ -1931,8 +1855,8 @@ class Arguments(object):
 
         for arg in sys.argv:
           if arg == '--help' or arg == '-h':
-              print('\nUbuntu MATE Welcome Parameters\n  Intended for debugging and testing purposes only!\n')
-              print('\nUsage: ubuntu-mate-welcome [arguments]')
+              print('\nWelcome App Parameters\n  Intended for debugging and testing purposes only!\n')
+              print('\nUsage: budgie-remix-welcome [arguments]')
               #     | Command                      | Help Text                                     |
               print('  -d, --dev, --debug           Disables locales and is very verbose')
               print('                               intended for development purposes.')
