@@ -4,7 +4,7 @@
 # Copyright 2012-2013 "Korora Project" <dev@kororaproject.org>
 # Copyright 2013 "Manjaro Linux" <support@manjaro.org>
 # Copyright 2014 Antergos
-# Copyright 2016 Bugie Remix
+# Copyright 2016 Budgie Remix
 #
 # Budgie Remix Welcome is free software: you can redistribute it and/or modify
 # it under the temms of the GNU General Public License as published by
@@ -20,7 +20,7 @@
 # along with Budgie Remix Welcome. If not, see <http://www.gnu.org/licenses/>.
 #
 
-""" Welcome screen for Budgie Remix """
+""" Welcome App for Budgie Remix """
 
 import gi
 
@@ -37,8 +37,6 @@ import urllib.error
 import webbrowser
 import socket
 import platform
-
-from simplejson import dumps as to_json
 
 from gi.repository import WebKit2, Gtk
 from threading import Thread
@@ -138,9 +136,13 @@ class AppView(WebKit2.WebView):
         # respond accordingly, for now we just use jQuery to manually toggle
 
         self.run_javascript("$('#arch').html('%s')" % self._config.arch)
-        self.run_javascript("$('#autostart').toggleClass('icon-check', {})\
-            .toggleClass('icon-check-empty', {})".format(to_json
-                (self._config._autostart), to_json(not self._config._autostart)))
+        
+        # Edited to remove simplejson dependency. Later use proper logic to make 
+        # this functional
+        if self._config._autostart:
+            self.run_javascript("$('#autostart').toggleClass('icon-check')")
+            self.run_javascript("$('#autostart').toggleClass('icon-check-empty')")
+            
         self.run_javascript("$('span[name=\"distro-name\"]').html('{}')".format(self._config._distroname))
 
 
