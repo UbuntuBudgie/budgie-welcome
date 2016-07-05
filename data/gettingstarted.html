@@ -3,34 +3,36 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="css/bootstrap-2.3.2.css" rel="stylesheet" media="screen">
-  <link href="css/font-awesome.css" rel="stylesheet" media="screen">
+  <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+  <link href="css/material-icons.css" rel="stylesheet" media="screen">
   <link href="css/animate.css" rel="stylesheet" media="screen">
-  <link href="css/welcome.css" rel="stylesheet" media="screen">
+  <link href="css/welcome-bs4.css" rel="stylesheet" media="screen">
 </head>
 <body class="backdrop-simple">
   <div id="wrapper">
     <div class="container-fluid">
       <div id="navigation">
-        <a id="menu-button" class="navigation-button" onclick="indexClose(); smoothPageFade('index.html')">
-          <span class="fa fa-chevron-left"></span>
+        <a id="menu-button" class="navigation-button" onclick="smoothPageFade('index.html')">
+          <i class="material-icons">&#xE5CB;</i>
         </a>
-        <a id="index-open" onclick="indexOpen()" class="navigation-button"><span class="fa fa-bars"></span></a>
-        <div id="navigation-title" hidden>&zwnj;Getting Started&zwnj; - <span id="navigation-sub-title"> </span></div>
+        <a id="index-open" onclick="indexOpen()" class="navigation-button"><i class="material-icons">&#xE8EF;</i></a>
+        <div id="navigation-title">&zwnj;Getting Started&zwnj; - <span id="navigation-sub-title"> </span></div>
         <div id="navigation-right"></div>
-        <img id="navigation-divider" src="img/welcome/header-shadow.png" width="100%" height="11px">
+        <a onclick="cmd('close')">
+          <i class="material-icons" id="close-btn">&#xE14C;</i>
+        </a>
       </div>
     </div>
-    <a id="index-overlay" onclick="indexClose()" hidden></a>
-    <div id="index-menu" hidden>
-      <a id="index-close" onclick="indexClose();"><span class="fa fa-close"></span></a>
+    <a id="index-overlay" onclick="indexClose()"></a>
+    <div id="index-menu">
+      <a id="index-close" onclick="indexClose();"><i class="material-icons">&#xE14C;</i></a>
 
       <!-- Shown in live session only -->
       <span class="live-session-only"><h5>&zwnj;Prerequisites&zwnj;</h5></span>
       <a class="btn btn-inverse index-btn live-session-only" onclick='changePage("sysreq","&zwnj;System Requirements&zwnj;")'>        <span class="fa fa-laptop"></span>        &zwnj;System Requirements&zwnj;</a>
       <a class="btn btn-inverse index-btn live-session-only" onclick='changePage("prepare","&zwnj;Installation Preparations&zwnj;")'> <span class="fa fa-hdd-o"></span>         &zwnj;Installation Preparation&zwnj;</a>
       <a class="btn btn-inverse index-btn live-session-only" onclick='changePage("dualboot","&zwnj;Dual Booting&zwnj;")'>             <span class="fa fa-retweet"></span>       &zwnj;Dual Booting&zwnj;</a>
-      <a class="btn btn-success index-btn live-session-only" onclick="cmd('install')">                                                <span class="fa fa-download"></span>      &zwnj;Install Now&zwnj;</a>
+      <a class="btn btn-primary index-btn live-session-only" onclick="cmd('install')">                                                <span class="fa fa-download"></span>      &zwnj;Install Now&zwnj;</a>
 
       <!-- Shown when installed -->
       <br class="live-session-only"/>
@@ -49,19 +51,19 @@
       <a class="btn btn-inverse index-btn"     onclick='changePage("specs","&zwnj;System Specifications&zwnj;"); InitSystemInfo()'> <span class="fa fa-laptop"></span>        &zwnj;System Specifications&zwnj;</a>
 
     </div>
-    <div id="content" class="container-fluid entire-page-fade" hidden>
+    <div id="content" class="container entire-page-fade">
 
       <!-- Topics -->
-      <div id="initial" class="row-fluid topicContents" hidden>
-        <div class="span12">
+      <div id="initial" class="row topicContents">
+        <div class="col-md-12">
           <h4 class="center">&zwnj;Please choose a topic to get started.&zwnj;</h4>
         </div>
       </div>
 
       <!-- System Requirements (shown in guest session only) -->
-      <div id="sysreq" class="topicContents" hidden>
-        <div class="row-fluid">
-          <div class="span12">
+      <div id="sysreq" class="topicContents">
+        <div class="row">
+          <div class="col-md-12">
             <h2>&zwnj;Modest System Requirements&zwnj;</h2>
             <p>&zwnj;Ubuntu MATE works well on both high-end to slow computers,
 	    optimized to be functional, while light on system resources.&zwnj;</p>
@@ -97,9 +99,9 @@
       </div>
 
       <!-- Installation Preparations (shown in guest session only) -->
-      <div id="prepare" class="topicContents" hidden>
-        <div class="row-fluid">
-          <div class="span12">
+      <div id="prepare" class="topicContents">
+        <div class="row">
+          <div class="col-md-12">
             <h2>&zwnj;Preparing to Install&zwnj;</h2>
             <p>&zwnj;Ubuntu MATE is relatively simple to set up, whether you're looking to
             replace your existing operating system or install Ubuntu MATE alongside
@@ -168,9 +170,9 @@
       </div>
 
       <!-- Advise on Dual Booting (shown in guest session only) -->
-      <div id="dualboot" class="topicContents" hidden>
-        <div class="row-fluid">
-          <div class="span12">
+      <div id="dualboot" class="topicContents">
+        <div class="row">
+          <div class="col-md-12">
             <h3>&zwnj;Dual Booting&zwnj;</h3>
             <p>&zwnj;Should you wish to install Ubuntu MATE alongside your existing
             operating system, your partitions need to be shrunk. This results in
@@ -327,7 +329,7 @@
             <div class="alert alert-warning offline">
               <h5>&zwnj;Requires downloading a package.&zwnj;</h5>
               <p>&zwnj;Please connect to the Internet to download and use this utility.&zwnj;</p>
-              <div id="reconnectFailed" hidden><p><span class="fa fa-warning"></span> &zwnj;Sorry, Welcome was unable to establish a connection.&zwnj;</p></div>
+              <div id="reconnectFailed"><p><span class="fa fa-warning"></span> &zwnj;Sorry, Welcome was unable to establish a connection.&zwnj;</p></div>
               <a onclick="reconnectRetry();" class="btn btn-warning"> <span class="fa fa-refresh"></span> &zwnj;Retry&zwnj;</a>
             </div>
 
@@ -344,25 +346,25 @@
       </div>
 
       <!-- Updates & Extras -->
-      <div id="updates" class="topicContents" hidden>
-        <div class="row-fluid">
-          <div class="span12">
+      <div id="updates" class="topicContents">
+        <div class="row">
+          <div class="col-md-12">
             <h2>&zwnj;Updates & Extras&zwnj;</h2>
 
             <div class="alert alert-warning offline">
               <h5>&zwnj;An Internet connection is required to download and install updates.&zwnj;</h5>
             </div>
 
-            <div class="row-fluid">
-              <div class="span2 center-inside">
+            <div class="row">
+              <div class="col-md-2 center-inside">
                 <img src="img/applications/system-software-update.png" width="64px" height="64px" style="margin-top:16px;"/>
               </div>
-              <div class="span10">
+              <div class="col-md-10">
                 <h4>&zwnj;Software Updater&zwnj;</h4>
                 <p>&zwnj;Ubuntu MATE periodically will check to see if new software
                 and security updates are available for your computer. If you
                 have just installed Ubuntu MATE, you might want to do this now.&zwnj;</p>
-                <span id="updates-hint" class="center" hidden>
+                <span id="updates-hint" class="center">
                   <small><p>
                       <span class="fa fa-info-circle"></span> <b>&zwnj;Software Updater&zwnj;</b> &zwnj;can be found later in&zwnj;
                       <b><i>&zwnj;System&zwnj; <span class="fa fa-long-arrow-right"></span> &zwnj;Administration&zwnj;.</i></b>
@@ -377,11 +379,11 @@
             </div>
             <hr class="soften"/>
 
-            <div class="row-fluid">
-              <div class="span2 center-inside">
+            <div class="row">
+              <div class="col-md-2 center-inside">
                 <img src="img/applications/codecs.png" width="64px" height="64px" style="margin-top:16px;"/>
               </div>
-              <div class="span10">
+              <div class="col-md-10">
                 <h4>&zwnj;Additional Codecs&zwnj;</h4>
                 <p>&zwnj;The codecs package include a complete, cross-platform solution to
                 decode, encode, record, convert and stream audio and video.
@@ -396,11 +398,11 @@
             </div>
             <hr class="soften">
 
-            <div class="row-fluid">
-              <div class="span2 center-inside">
+            <div class="row">
+              <div class="col-md-2 center-inside">
                 <img src="img/applications/dvd.png" width="64px" height="64px" style="margin-top:16px;"/>
               </div>
-              <div class="span10">
+              <div class="col-md-10">
                 <h4>&zwnj;DVD Playback Support&zwnj;</h4>
                 <p><code>libdvdcss2</code> &zwnj;is a simple library designed for
                 accessing DVDs like a block device without having to bother
@@ -414,11 +416,11 @@
             </div>
             <hr class="soften">
 
-            <div class="row-fluid">
-              <div class="span2 center-inside">
+            <div class="row">
+              <div class="col-md-2 center-inside">
                 <img src="img/applications/xscreensaver.png" width="64px" height="64px" style="margin-top:16px;"/>
               </div>
-              <div class="span10">
+              <div class="col-md-10">
                 <h4>&zwnj;Additional Screen Savers&zwnj;</h4>
                 <p>&zwnj;Install over 200 screen savers for
                 when your computer is idle for long periods of time.
@@ -435,11 +437,11 @@
             </div>
             <hr class="soften">
 
-            <div class="row-fluid">
-              <div class="span2 center-inside">
+            <div class="row">
+              <div class="col-md2 center-inside">
                 <img src="img/applications/desktop.png" width="64px" height="64px" style="margin-top:16px;"/>
               </div>
-              <div class="span10">
+              <div class="col-md-10">
                 <h4>&zwnj;Additional Community Wallpapers&zwnj;</h4>
                 <p>&zwnj;The Ubuntu MATE Community have contributed dozens of
                   desktop wallpaper images over the years. Why not install them
@@ -469,9 +471,9 @@
       </div>
 
       <!-- Drivers -->
-      <div id="drivers" class="topicContents" hidden>
-        <div class="row-fluid">
-          <div class="span12">
+      <div id="drivers" class="topicContents">
+        <div class="row">
+          <div class="col-md-12">
             <h2>&zwnj;Drivers&zwnj;</h2>
             <p>&zwnj;While a wide range of hardware is compatible with Ubuntu
             MATE, there are some components and peripherals that
@@ -490,27 +492,27 @@
                 </a>
             </div>
 
-            <span id="drivers-hint" class="center" hidden><small>
+            <span id="drivers-hint" class="center"><small>
               <p><span class="fa fa-info-circle"></span> <b>&zwnj;Additional Drivers&zwnj;</b> &zwnj;can be found later in&zwnj;
               <b><i>&zwnj;System&zwnj; <span class="fa fa-long-arrow-right"></span> &zwnj;Administration&zwnj;.</i></b></p>
             </small></span>
 
             <!-- Advice about graphics -->
             <a onclick="toggleSub('graphics-section','graphics-arrow');"><h3 class="sub-collapse"><span class="fa fa-chevron-down" id="graphics-arrow"></span> &zwnj;Graphics&zwnj;</h3></a>
-            <div id="graphics-section" hidden>
+            <div id="graphics-section">
 
               <div class="graphics-unknown alert alert-danger">
                 <h5>&zwnj;Sorry, Welcome was unable to automatically identify the graphics vendor on this system.&zwnj;</h5>
                 <p><span class="fa fa-plug"></span><b> &zwnj;Card/Chipset:&zwnj; </b><i class="graphics-pci">&zwnj;Unknown&zwnj;</i></p>
               </div>
 
-              <div class="graphics-nvidia alert alert-info" hidden>
+              <div class="graphics-nvidia alert alert-info">
                 <h5>NVIDIA &zwnj;Graphics Card Detected.&zwnj;</h5>
                 <p>NVIDIA &zwnj;may have drivers for your card that can boost performance for 3D applications and games as well as deliver improvements to power management.&zwnj;</p>
                 <p><span class="fa fa-plug"></span><b> &zwnj;Card/Chipset:&zwnj; </b><i class="graphics-pci">&zwnj;Unknown&zwnj;</i></p>
               </div>
 
-              <div class="graphics-amd alert alert-success" hidden>
+              <div class="graphics-amd alert alert-success">
                 <h5>AMD &zwnj;Graphics Card Detected.&zwnj;</h5>
                 <p>&zwnj;AMD's drivers are no longer supported on Ubuntu.
                 The open source drivers you are currently using will deliver the most
@@ -518,18 +520,18 @@
                 <p><span class="fa fa-plug"></span><b> &zwnj;Card/Chipset:&zwnj; </b><i class="graphics-pci">&zwnj;Unknown&zwnj;</i></p>
               </div>
 
-              <div class="graphics-intel alert alert-success" hidden>
+              <div class="graphics-intel alert alert-success">
                 <h5>&zwnj;You're already good to go.&zwnj;</h5>
                 <p>&zwnj;Intel's drivers are open source and are maintained/updated in the kernel.&zwnj;</p>
                 <p><span class="fa fa-plug"></span><b> &zwnj;Card/Chipset:&zwnj; </b><i class="graphics-pci">&zwnj;Unknown&zwnj;</i></p>
               </div>
 
-              <div class="graphics-vbox alert alert-info" hidden>
+              <div class="graphics-vbox alert alert-info">
                 <h5>&zwnj;VirtualBox Guest Additions&zwnj;</h5>
                 <p>&zwnj;To accelerate graphics performance inside the virtual machine, please install Guest Additions.&zwnj;</p>
               </div>
 
-              <div id="graphics-proprietary" hidden>
+              <div id="graphics-proprietary">
                 <h4>&zwnj;Proprietary or Open Source Drivers?&zwnj;</h4>
                 <p>&zwnj;Proprietary drivers come directly from the manufacturer.&zwnj;
                 &zwnj;As they are not open source, Ubuntu developers are&zwnj; <b>&zwnj;unable review and improve code&zwnj;</b> &zwnj;meaning you'll have to
@@ -558,7 +560,7 @@
                   <code id="graphics-open-driver-name"></code> &zwnj;is the open source driver for your card.&zwnj;
                 </p>
 
-                <p id="graphics-nvidia" hidden>
+                <p id="graphics-nvidia">
                   <hr class="soften"/>
                   <h4>&zwnj;What about the latest NVIDIA drivers?&zwnj;</h4>
                   <p><b>&zwnj;Additional Drivers&zwnj;</b> &zwnj;fetches the latest tested driver from the Ubuntu repositories.&zwnj;
@@ -586,7 +588,7 @@
 
             <!-- Advice about wireless -->
             <a onclick="toggleSub('wireless-section','wireless-arrow');"><h3 class="sub-collapse"><span class="fa fa-chevron-down" id="wireless-arrow"></span> &zwnj;Wireless, Bluetooth and Other Devices&zwnj;</h3></a>
-            <div id="wireless-section" hidden>
+            <div id="wireless-section">
              <p>&zwnj;If there were no additional drivers found for the hardware
               nor did it work after installing the firmware packages, you may
               need to research your device to find the appropriate driver.&zwnj;</p>
@@ -607,7 +609,7 @@
 
             <!-- Advice about printers -->
             <a onclick="toggleSub('printers-section','printers-arrow');"><h3 class="sub-collapse"><span class="fa fa-chevron-down" id="printers-arrow"></span> &zwnj;Printers&zwnj;</h3></a>
-            <div id="printers-section" hidden>
+            <div id="printers-section">
               <p>&zwnj;When you set up a printer in the&zwnj;
               <a onclick="cmd('printers')">
               <img src="/usr/share/icons/Humanity/actions/16/document-print.svg" width="20px" height="20px"/>
@@ -624,12 +626,12 @@
 
               <hr class="soften"/>
 
-              <div class="row-fluid">
-                <div class="span2 center-inside">
+              <div class="row">
+                <div class="col-md-2 center-inside">
                   <img src="img/applications/hplip.png" width="64px" height="64px"/>
                   <span class="fa fa-check-circle fa-2x installed-check hp-printer-remove"></span>
                 </div>
-                <div class="span10">
+                <div class="col-md-10">
                   <p><b>&zwnj;HP Linux Printing and Imaging System&zwnj;</b></p>
                   <p>&zwnj;Recommended if you have an HP printer as it provides
                   full support for printing on most HP SFP (single function
@@ -656,9 +658,9 @@
       </div>
 
       <!-- Language & Input Support -->
-      <div id="languageInput" class="topicContents" hidden>
-        <div class="row-fluid">
-          <div class="span12">
+      <div id="languageInput" class="topicContents">
+        <div class="row">
+          <div class="col-md-12">
             <h2>&zwnj;Language Support&zwnj;</h2>
             <p>&zwnj;Your computer may require updates to your language and
             localization settings, or you may want to install additional
@@ -666,27 +668,27 @@
             <div align="center"><a class="btn btn-lg btn-inverse" onclick="cmd('language')" onclick="smoothFade('','#locale-hint')">
               <img src="img/applications/preferences-desktop-locale.png" width="32px" height="32px"/>&nbsp; &zwnj;Language Support&zwnj;
             </a></div>
-            <span id="locale-hint" class="center" hidden><small>
+            <span id="locale-hint" class="center"><small>
               <p><span class="fa fa-info-circle"></span> <b>&zwnj;Language Support&zwnj;</b> &zwnj;can be found later in&zwnj;
               <b><i>&zwnj;System&zwnj; <span class="fa fa-long-arrow-right"></span> &zwnj;Preferences&zwnj;
                            <span class="fa fa-long-arrow-right"></span> &zwnj;Personal&zwnj;</i></b></p>
             </small></span>
           </div>
         </div>
-        <div class="row-fluid">
-          <div class="span12">
+        <div class="row">
+          <div class="col-md-12">
             <h2>&zwnj;Complex Input&zwnj;</h2>
             <p>&zwnj;Some regions of the world require complex inputs.&zwnj; </p>
           </div>
         </div>
-        <div class="row-fluid">
-          <div class="span4 center">
+        <div class="row">
+          <div class="col-md-4 center">
             <a class="btn btn-lg btn-inverse" onclick="cmd('install-appid?keyboard-chinese')"><span class="fa fa-3x fa-keyboard-o fa-va"></span>&nbsp; &zwnj;Chinese&zwnj;</a>
           </div>
-          <div class="span4 center">
+          <div class="col-md-4 center">
             <a class="btn btn-lg btn-inverse" onclick="cmd('install-appid?keyboard-japanese')"><span class="fa fa-3x fa-keyboard-o fa-va"></span>&nbsp; &zwnj;Japanese&zwnj;</a>
           </div>
-          <div class="span4 center">
+          <div class="col-md-4 center">
             <a class="btn btn-lg btn-inverse" onclick="cmd('install-appid?keyboard-korean')"><span class="fa fa-3x fa-keyboard-o fa-va"></span>&nbsp; &zwnj;Korean&zwnj;</a>
           </div>
         </div>
@@ -700,9 +702,9 @@
       </div>
 
       <!-- Additional Tasks - Backups / Firewall / Users -->
-      <div id="tasks" class="topicContents" hidden>
-        <div class="row-fluid">
-          <div class="span12">
+      <div id="tasks" class="topicContents">
+        <div class="row">
+          <div class="col-md-12">
             <h2>&zwnj;Backup, Firewall and User Management&zwnj;</h2>
             <p>&zwnj;Ubuntu MATE provides tools to backup your files, comes with
             a firewall pre-installed and supports multiple user accounts.&zwnj;</p>
@@ -710,11 +712,11 @@
         </div>
         <hr class="soften-light">
 
-        <div class="row-fluid wow fadeIn">
-          <div class="span6 center-inside">
+        <div class="row wow fadeIn">
+          <div class="col-md-6 center-inside">
             <img src="img/screenshots/tasks-backup.png">
           </div>
-          <div class="span6">
+          <div class="col-md-6">
             <h3>&zwnj;Backups&zwnj;</h3>
             <p>&zwnj;Nothing is more important then having a backup
               of your personal files, just in case something
@@ -725,7 +727,7 @@
             <a class="btn btn-lg btn-inverse" onclick="cmd('backup')" onclick="smoothFade('','#backup-hint')">
               <img src="img/applications/deja-dup.png" width="32px" height="32px"/>&nbsp; &zwnj;Configure Backup&zwnj;
             </a>
-            <span id="backup-hint" class="center" hidden><small>
+            <span id="backup-hint" class="center"><small>
               <p><span class="fa fa-info-circle"></span> <b>&zwnj;Backups&zwnj;</b> &zwnj;can be found later in&zwnj;
               <b><i>&zwnj;System&zwnj; <span class="fa fa-long-arrow-right"></span> &zwnj;Preferences&zwnj;
                            <span class="fa fa-long-arrow-right"></span> &zwnj;Personal&zwnj;</i></b>.</p>
@@ -734,11 +736,11 @@
         </div>
         <hr class="soften-light">
 
-        <div class="row-fluid wow fadeIn">
-          <div class="span6 center-inside">
+        <div class="row wow fadeIn">
+          <div class="col-md-6 center-inside">
             <img src="img/screenshots/tasks-sharing.png">
           </div>
-          <div class="span6">
+          <div class="col-md-6">
             <h3>&zwnj;Network Shares&zwnj;</h3>
             <p>&zwnj;Need to access files and folders with multiple computers?&zwnj;
             </p>
@@ -759,11 +761,11 @@
         </div>
         <hr class="soften-light">
 
-        <div class="row-fluid wow fadeIn">
-          <div class="span6 center-inside">
+        <div class="row wow fadeIn">
+          <div class="col-md-6 center-inside">
             <img src="img/screenshots/tasks-firewall.png">
           </div>
-          <div class="span6">
+          <div class="col-md-6">
             <h3>&zwnj;Firewall&zwnj;</h3>
             <p>&zwnj;Firewalls prevent malicious connections entering and leaving
               your computer. By default, the firewall is disabled,&zwnj;
@@ -775,7 +777,7 @@
             <a class="btn btn-lg btn-inverse" onclick="cmd('firewall')" onclick="smoothFade('','#firewall-hint')">
               <img src="img/applications/gufw.png" width="32px" height="32px"/>&nbsp; &zwnj;Configure Firewall&zwnj;
             </a>
-            <span id="firewall-hint" class="center" hidden><small>
+            <span id="firewall-hint" class="center"><small>
               <p><span class="fa fa-info-circle"></span> <b>&zwnj;Firewall Configuration&zwnj;</b> &zwnj;can be found later in&zwnj;
               <b><i>&zwnj;System&zwnj; <span class="fa fa-long-arrow-right"></span> &zwnj;Preferences&zwnj;
                            <span class="fa fa-long-arrow-right"></span> &zwnj;Internet and Network&zwnj;</i></b>.</p>
@@ -784,11 +786,11 @@
         </div>
         <hr class="soften-light">
 
-        <div class="row-fluid wow fadeIn">
-          <div class="span6 center-inside">
+        <div class="row wow fadeIn">
+          <div class="col-md-6 center-inside">
             <img src="img/screenshots/tasks-users.png">
           </div>
-          <div class="span6">
+          <div class="col-md-12">
             <h3>&zwnj;Users&zwnj;</h3>
             <p>
               &zwnj;Share your computer with others? Set up a separate user account for
@@ -799,7 +801,7 @@
             <a class="btn btn-lg btn-inverse" onclick="cmd('users')" onclick="smoothFade('','#users-hint')">
               <img src="img/applications/users.png" width="32px" height="32px"/>&nbsp; &zwnj;Configure Users&zwnj;
             </a>
-            <span id="users-hint" class="center" hidden><small>
+            <span id="users-hint" class="center"><small>
               <p><span class="fa fa-info-circle"></span> <b>&zwnj;Users and Groups&zwnj;</b> &zwnj;can be found later in&zwnj;
               <b><i>&zwnj;System&zwnj; <span class="fa fa-long-arrow-right"></span> &zwnj;Administration&zwnj;
                            <span class="fa fa-long-arrow-right"></span> &zwnj;Users and Groups&zwnj;</i></b>.</p>
@@ -817,9 +819,9 @@
       </div>
 
       <!-- Customizing the Experience -->
-      <div id="customize" class="topicContents" hidden>
-        <div class="row-fluid">
-          <div class="span12">
+      <div id="customize" class="topicContents">
+        <div class="row">
+          <div class="col-md-12">
             <h2>&zwnj;User Interface&zwnj;</h2>
             <p>&zwnj;Ubuntu MATE provides a unique tool to transform the user
             interface. It can be used to quickly setup the user interface
@@ -830,7 +832,7 @@
             <div align="center"><a class="btn btn-lg btn-inverse" onclick="cmd('tweak')" onclick="smoothFade('','#tweak-hint')">
               <img src="img/applications/control-centre.png" width="32px" height="32px"/>&nbsp; &zwnj;User Interface&zwnj;
             </a></div>
-            <span id="tweak-hint" class="center" hidden><small>
+            <span id="tweak-hint" class="center"><small>
               <p><span class="fa fa-info-circle"></span> <b>&zwnj;MATE Tweak&zwnj;</b> &zwnj;can be found later in&zwnj;
               <b><i>&zwnj;System&zwnj; <span class="fa fa-long-arrow-right"></span> &zwnj;Preferences&zwnj;
                            <span class="fa fa-long-arrow-right"></span> &zwnj;Look and Feel&zwnj;</i></b>.</p>
@@ -843,7 +845,7 @@
             <div align="center"><a class="btn btn-lg btn-inverse" onclick="cmd('control')" onclick="smoothFade('','#control-hint')">
               <img src="img/applications/desktop.png" width="32px" height="32px"/>&nbsp; &zwnj;Control Center&zwnj;
             </a></div>
-            <span id="control-hint" class="center" hidden><small>
+            <span id="control-hint" class="center"><small>
               <p><span class="fa fa-info-circle"></span> <b>&zwnj;Control Center&zwnj;</b> &zwnj;can be found later in the&zwnj;
               <b><i>&zwnj;System&zwnj;</i></b> &zwnj;menu.&zwnj;</p>
             </small></span>
@@ -860,9 +862,9 @@
       </div>
 
       <!-- Keyboard Shortcuts -->
-      <div id="shortcuts" class="topicContents" hidden>
-        <div class="row-fluid">
-          <div class="span12">
+      <div id="shortcuts" class="topicContents">
+        <div class="row">
+          <div class="col-md-12">
             <h2>&zwnj;Keyboard Shortcuts&zwnj;</h2>
             <p>&zwnj;Ubuntu MATE has many keyboard shortcuts that help make using
             your computer more efficient.&zwnj;</p>
@@ -1317,27 +1319,6 @@
                 </td>
                 <td>&zwnj;Toggles 'Show Desktop'.&zwnj;</td>
               </tr>
-              <!--
-              <tr>
-                <td>
-                  <b class="btn btn-xs disabled">&zwnj;Ctrl&zwnj;</b>
-                  <b class="fa fa-plus"></b>
-                  <b class="btn btn-xs disabled">Alt</b>
-                  <b class="fa fa-plus"></b>
-                  <b class="btn btn-xs disabled">Up</b>
-                </td>
-                <td>&zwnj;Enables an 'expose' like feature that presents you with all the windows you currently have open, allowing you to select the one you wish to give focus to.&zwnj;</td>
-              <tr>
-                <td>
-                  <b class="btn btn-xs disabled">&zwnj;Ctrl&zwnj;</b>
-                  <b class="fa fa-plus"></b>
-                  <b class="btn btn-xs disabled">Alt</b>
-                  <b class="fa fa-plus"></b>
-                  <b class="btn btn-xs disabled">Down</b>
-                </td>
-                <td>&zwnj;Unfolds your workspace cube allowing you to see more than one of your workspaces at once, using the left and right cursor keys with this active will allow you to select the workspace you wish to use.&zwnj;</td>
-              </tr>
-              -->
               <tr>
                 <td>
                   <b class="btn btn-xs disabled" data-toggle="tooltip" data-placement="top" title="&zwnj;Super Key&zwnj;"><img src="img/welcome/super-key.svg"></b>
@@ -1432,9 +1413,9 @@
       </div>
 
       <!-- What's inside my computer? -->
-      <div id="specs" class="topicContents" hidden>
-        <div class="row-fluid">
-          <div class="span12">
+      <div id="specs" class="topicContents">
+        <div class="row">
+          <div class="col-md-12">
             <h2>&zwnj;What's inside my computer?&zwnj;</h2>
             <p>&zwnj;Your machine is made up of various components that
             interact with one another. This information is useful
@@ -1443,18 +1424,14 @@
           </div>
         </div>
         <ul id="specs-tabs" class="nav nav-pills" data-tabs="tabs">
-          <li class="active"><a onclick="smoothFade('.tab-contents','#specs-basic')" data-toggle="tab"><img id="specs-busy-basic" src="img/welcome/processing.gif" height="16px" width="16px"> &zwnj;Basic&zwnj;</a></li>
-          <li><a onclick="smoothFade('.tab-contents','#specs-detailed')" data-toggle="tab"><img id="specs-busy-detailed" src="img/welcome/processing.gif" height="16px" width="16px"> &zwnj;Detailed&zwnj;</a></li>
-          <li><a onclick="smoothFade('.tab-contents','#specs-more')" data-toggle="tab">&zwnj;Utilities&zwnj;</a></li>
+          <li class="active">
+            <span id="specs-busy-basic">Gathering Information..</span>
+          </li>
         </ul>
 
-        <div class="tab-contents" id="specs-basic" hidden>
+        <div class="tab-contents" id="specs-basic">
           <div id="specs-icon">
-            <img class="specs-icon" hidden id="specs-device-normal" src="img/welcome/ubuntu-mate-laptop.png"/>
-            <img class="specs-icon" hidden id="specs-device-rpi" src="img/logos/raspberry-pi.png"/>
-            <img class="specs-icon" hidden id="specs-device-vbox" src="img/logos/virtualbox-vbox.png"/>
-            <img class="specs-icon" hidden id="specs-device-powerpc" src="img/logos/powerpc.png"/>
-            <img class="specs-icon" hidden id="specs-live-session" src="img/welcome/live-session-image.png"/>
+            <img class="specs-icon" id="specs-device-normal" src="img/welcome/distro-laptop.png"/>
           </div>
           <div id="specs-box">
             <h4><span class="fa fa-cog"></span> &zwnj;System&zwnj;</h4>
@@ -1537,8 +1514,8 @@
               <tr>
                 <th>&zwnj;Internet Access:&zwnj;</th>
                 <td class="specs-sel-text">
-                  <span id="specs-has-net"    style="color:#006400" hidden>&nbsp; <span class="fa fa-check"></span> &zwnj;Connected&zwnj;</span>
-                  <span id="specs-has-no-net" style="color:#640000" hidden>&nbsp; <span class="fa fa-close"></span> &zwnj;Not Connected&zwnj;</span>
+                  <span id="specs-has-net"    style="color:#006400">&nbsp; <span class="fa fa-check"></span> &zwnj;Connected&zwnj;</span>
+                  <span id="specs-has-no-net" style="color:#640000">&nbsp; <span class="fa fa-close"></span> &zwnj;Not Connected&zwnj;</span>
                 </td>
               </tr>
             </table>
@@ -1629,131 +1606,8 @@
             </p>
           </div>
         </div>
-
-        <div class="tab-contents" id="specs-detailed" hidden>
-          <div class="row-fluid">
-            <div class="span12">
-              <p><span class="fa fa-info-circle"></span> &zwnj;The following information is retrieved directly from the inxi command line program.&zwnj;</p>
-              <div id="specs-inxi-busy" class="alert alert-warning"><h5>&zwnj;Gathering data...&zwnj;</h5></div>
-              <div id="specs-inxi-error" class="alert alert-danger" hidden><h5>&zwnj;Sorry, there was a problem gathering this information.&zwnj;</h5></div>
-              <div style="text-align: right; margin-bottom: 8px;">
-                <a id="specs-inxi-copy" class="btn btn-inverse" onclick="cmd('clipboard?inxi')" style="display:none"><span class="fa fa-clipboard"></span> Copy to Clipboard</a>
-              </div>
-              <pre id="specs-inxi" style="display:none"></pre>
-            </div>
-          </div>
-        </div>
-
-        <div class="tab-contents" id="specs-more" hidden>
-          <div class="row-fluid">
-            <div class="span2 center-inside">
-              <img src="img/applications/hardinfo.png"/>
-              <span class="fa fa-check-circle fa-2x installed-check hardinfo-remove"></span>
-            </div>
-            <div class="span10">
-              <p><b>&zwnj;System Profiler and Benchmark&zwnj;</b></p>
-              <p>&zwnj;See more specific system information in a graphical window,
-              including connected USBs, PCI devices and a simple CPU benchmark.&zwnj;</p>
-              <p class="text-right">
-                <a class="btn btn-inverse hardinfo-remove" onclick="cmd('launch-appid?hardinfo')"><img src="img/applications/hardinfo.png" width="20px" height="20px"/>&nbsp; &zwnj;Open&zwnj;</a>
-                <a class="btn btn-success hardinfo-install" onclick="cmd('install-appid?hardinfo')"><span class="fa fa-download"></span>&nbsp; &zwnj;Install&zwnj;</a>
-              </p>
-            </div>
-          </div>
-
-          <div class="row-fluid">
-            <div class="span2 center-inside">
-              <img src="img/applications/gnome-disk-utility.png"/>
-              <span class="fa fa-check-circle fa-2x installed-check gnome-disk-utility-remove"></span>
-            </div>
-            <div class="span10">
-              <p><b>&zwnj;Disks&zwnj;</b></p>
-              <p>&zwnj;A pre-installed utility that allows basic configuration to your disks and partitions,
-              including formatting, partitioning, mounting, viewing S.M.A.R.T data and writing
-              images to SD cards/USB drives.&zwnj;</p>
-              <p class="text-right">
-                <a class="btn btn-inverse gnome-disk-utility-remove" onclick="cmd('launch-appid?gnome-disk-utility')"><img src="img/applications/gnome-disk-utility.png" width="20px" height="20px"/>&nbsp; &zwnj;Open&zwnj;</a>
-                <a class="btn btn-success gnome-disk-utility-install" onclick="cmd('install-appid?gnome-disk-utility')"><span class="fa fa-download"></span>&nbsp; &zwnj;Install&zwnj;</a>
-              </p>
-            </div>
-          </div>
-
-          <div class="row-fluid">
-            <div class="span2 center-inside">
-              <img src="img/applications/gparted.png"/>
-              <span class="fa fa-check-circle fa-2x installed-check gparted-remove"></span>
-            </div>
-            <div class="span10">
-              <p><b>&zwnj;GParted&zwnj;</b></p>
-              <p>&zwnj;An advanced tool for viewing, creating, modifying and deleting partitions.
-              It also has features to expand/shrink file systems and supports a wide range of formats.&zwnj;</p>
-              <p class="text-right">
-                <a class="btn btn-inverse gparted-remove" onclick="cmd('launch-appid?gparted')"><img src="img/applications/gparted.png" width="20px" height="20px"/>&nbsp; &zwnj;Open&zwnj;</a>
-                <a class="btn btn-success gparted-install" onclick="cmd('install-appid?gparted')"><span class="fa fa-download"></span>&nbsp; &zwnj;Install&zwnj;</a>
-              </p>
-            </div>
-          </div>
-
-          <div class="row-fluid">
-            <div class="span2 center-inside">
-              <img src="img/applications/mate-disk-usage-analyzer.png"/>
-              <span class="fa fa-check-circle fa-2x installed-check mate-disk-usage-analyzer-remove"></span>
-            </div>
-            <div class="span10">
-              <p><b>&zwnj;Disk Usage Analyser&zwnj;</b></p>
-              <p>&zwnj;A graphical tool for exploring your file system or individual folders
-              to determine how much space is being used.&zwnj;</p>
-              <p class="text-right">
-                <a class="btn btn-inverse mate-disk-usage-analyzer-remove" onclick="cmd('launch-appid?mate-disk-usage-analyzer')"><img src="img/applications/mate-disk-usage-analyzer.png" width="20px" height="20px"/>&nbsp; &zwnj;Open&zwnj;</a>
-                <a class="btn btn-success mate-disk-usage-analyzer-install" onclick="cmd('install-appid?mate-disk-usage-analyzer')"><span class="fa fa-download"></span>&nbsp; &zwnj;Install&zwnj;</a>
-              </p>
-            </div>
-          </div>
-
-          <div class="row-fluid">
-            <div class="span2 center-inside">
-              <img src="img/applications/mate-system-monitor.png"/>
-              <span class="fa fa-check-circle fa-2x installed-check mate-system-monitor-remove"></span>
-            </div>
-            <div class="span10">
-              <p><b>&zwnj;System Monitor&zwnj;</b></p>
-              <p>&zwnj;Views currently running processes, resource usage, and the amount of space used
-              and free for currently mounted file systems.&zwnj;</p>
-              <p class="text-right">
-                <a class="btn btn-inverse mate-system-monitor-remove" onclick="cmd('launch-appid?mate-system-monitor')"><img src="img/applications/mate-system-monitor.png" width="20px" height="20px"/>&nbsp; &zwnj;Open&zwnj;</a>
-                <a class="btn btn-success mate-system-monitor-install" onclick="cmd('install-appid?mate-system-monitor')"><span class="fa fa-download"></span>&nbsp; &zwnj;Install&zwnj;</a>
-              </p>
-            </div>
-          </div>
-
-          <div class="row-fluid">
-            <div class="span2 center-inside">
-              <img src="img/applications/psensor.png"/>
-              <span class="fa fa-check-circle fa-2x installed-check psensor-remove"></span>
-            </div>
-            <div class="span10">
-              <p><b>&zwnj;Psensor&zwnj;</b></p>
-              <p>&zwnj;Views and graphs the current temperature of components attached to the
-              system. Including: Motherboard, CPU, GPU and hard disks.&zwnj;</p>
-              <p class="text-right">
-                <a class="btn btn-inverse psensor-remove" onclick="cmd('launch-appid?psensor')"><img src="img/applications/psensor.png" width="20px" height="20px"/>&nbsp; &zwnj;Open&zwnj;</a>
-                <a class="btn btn-success psensor-install" onclick="cmd('install-appid?psensor')"><span class="fa fa-download"></span>&nbsp; &zwnj;Install&zwnj;</a>
-              </p>
-            </div>
-          </div>
-        </div>
       </div>
       <br>
-    </div>
-    <div id="footer" class="bottom">
-      <div class="footer-content">
-        <div id="footer-left">
-          <span id="footer-global-left"></span>
-        </div>
-        <div id="footer-right" class="form">
-          <span id="footer-global-right"></span>
-        </div>
-      </div>
     </div>
   </div>
   <script src="js/jquery-2.1.4.js"></script>

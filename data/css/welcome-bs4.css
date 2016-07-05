@@ -109,7 +109,7 @@ body, button {
 	font-size: 24px;
 	font-weight: normal;
   color: white;
-  z-index: 1;
+  z-index: 9;
 }
 
 #close-btn {
@@ -675,10 +675,9 @@ blockquote.terminal {
   padding-top: 60px;
   padding-bottom: 50px;
   position: fixed;
-  background: rgba(65,65,65,0.95);
-  border: 2px solid #000;
+  background: #404552;
   color: #fff;
-  z-index: 9;
+  z-index: 8;
   display: none;
 }
 
@@ -696,10 +695,10 @@ blockquote.terminal {
 
 .topicContents {
   margin-bottom: 16px;
+  display: none;
 }
 
 #index-overlay {
-  background-color: rgba(0,0,0,0.5);
   position: absolute;
   top: 0;
   left: 0;
@@ -712,13 +711,18 @@ blockquote.terminal {
 /************************
  * Getting Started - System Specifications
 *************************/
+.nav-pills > .active > a,
+.nav-pills > .active > a:hover,
+.nav-pills > .active > a:focus {
+  background: none;
+  color: black;
+}
+
 #specs-icon {
-  left: 4%;
-  width: 20%;
   height: auto;
   margin: auto;
   position: absolute;
-  margin-bottom: 40px;
+  margin-top: 120px;
 }
 
 #specs-icon img {
@@ -841,6 +845,7 @@ blockquote.terminal {
   height: 40px;
   margin-top: 16px;
 }
+
 /******************************
  * Ovrride default bootstrap styles
 *******************************/

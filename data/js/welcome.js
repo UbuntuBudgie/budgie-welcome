@@ -567,6 +567,7 @@ if ( current_page == 'splash.html' ) {
 
 // Getting Started Only - Index Pane for Selecting Topics
 if ( current_page == 'gettingstarted.html' ) {
+
   function indexOpen() {
     // Is the index already open?
     if ($('#index-menu').is(':visible')) {

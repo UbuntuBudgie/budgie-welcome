@@ -386,11 +386,6 @@ class SystemState(object):
     def get_system_info(self, webkit):
         dbg.stdout('Specs', 'Gathering system specifications...', 0, 3)
 
-        # Start collecting advanced system information in the background.
-        # (Runs in own thread to prevent holding up screen)
-        inxi_thread = Thread(target=self.get_inxi_info)
-        inxi_thread.start()
-
         # Append a failure symbol beforehand in event something goes horribly wrong.
         stat_error_msg = "Could not gather data."
         html_tag = '<a data-toggle=\'tooltip\' data-placement=\'top\' title=\'' + stat_error_msg + '\'><span class=\'fa fa-warning specs-error\'></span></a>'
@@ -468,6 +463,13 @@ class SystemState(object):
             app.update_page('#spec-arch-supported', 'html', cpu_arch_supported)
         except:
             dbg.stdout('Specs', 'Failed to gather data: CPU Supported Architectures', 0, 1)
+
+        # Adding simple strings. Later this should be converted to traslation
+        # supported strings after referring ubuntu mate welcome app
+        gb_prefix = "GB"
+        gib_prefix = "GiB"
+        mb_prefix = "MB"
+        mib_prefix = "MiB"
 
         ## Root partition (where Distribution is installed) and the rest of that disk.
         try:
@@ -564,7 +566,8 @@ class SystemState(object):
                 app.update_page('#disk-free', 'width', str(disk_percent_UM_free) + 'px')
                 app.update_page('#disk-other', 'width', str(disk_percent_other) + 'px')
 
-        except:
+        except Exception as err:
+            print(err)
             dbg.stdout('Specs', 'Failed to gather data: Storage', 0, 1)
 
         ## RAM
@@ -586,43 +589,6 @@ class SystemState(object):
         ## Graphics
         app.update_page('#spec-graphics', 'html', self.graphics_grep)
 
-        ## Collect missing data differently for some architectures.
-        if systemstate.arch == 'powerpc':
-            ## Motherboard & Revision
-            try:
-                dbg.stdout('Specs', 'Gathering Data: PowerPC Motherboard', 1, 0)
-                mb_model = run_external_command(['grep','motherboard','/proc/cpuinfo']).split(': ')[1]
-                mb_rev = run_external_command(['grep','revision','/proc/cpuinfo']).split(': ')[1]
-                app.update_page('#spec-motherboard', 'html', mb_model + ' ' + mb_rev)
-            except:
-                dbg.stdout('Specs', 'Failed to gather data: PowerPC Motherboard', 0, 1)
-
-            ## CPU and Clock Speed
-            try:
-                dbg.stdout('Specs', 'Gathering Data: PowerPC CPU', 1, 0)
-                cpu_model = run_external_command(['grep','cpu','/proc/cpuinfo']).split(': ')[1]
-                cpu_speed = run_external_command(['grep','clock','/proc/cpuinfo']).split(': ')[1]
-                app.update_page('#spec-cpu-model', 'html', cpu_model)
-                app.update_page('#spec-cpu-speed', 'html', str(cpu_speed))
-            except:
-                dbg.stdout('Specs', 'Failed to gather data: PowerPC CPU', 0, 1)
-
-            ## Device Name
-            try:
-                dbg.stdout('Specs', 'Gathering Data: PowerPC Model Name', 1, 0)
-                mb_name = run_external_command(['grep','detected','/proc/cpuinfo']).split(': ')[1]
-                app.update_page('#spec-motherboard', 'append', ' / ' + mb_name)
-            except:
-                dbg.stdout('Specs', 'Failed to gather data: PowerPC Model Name', 0, 1)
-
-            ## Boot Mode / PowerMac Generation
-            try:
-                dbg.stdout('Specs', 'Gathering Data: PowerMac Generation', 1, 0)
-                mac_generation = run_external_command(['grep','pmac-generation','/proc/cpuinfo']).split(': ')[1]
-                app.update_page('#spec-boot-mode', 'html', 'Yaboot (' + mac_generation + ')')
-            except:
-                dbg.stdout('Specs', 'Failed to gather data: PowerMac Generation', 0, 1)
-
         # Check internet connectivity status.
         if self.is_online:
             app.update_page('#specs-has-net', 'show')
@@ -631,15 +597,6 @@ class SystemState(object):
             app.update_page('#specs-has-net', 'hide')
             app.update_page('#specs-has-no-net', 'show')
 
-        # Change icon depending on what type of device we are using.
-        if self.graphics_vendor == 'VirtualBox':
-            app.update_page('#specs-device-vbox', 'show')
-            app.update_page('.specs-hide-vbox', 'hide')
-        elif self.session_type == 'live':
-            app.update_page('#specs-live-session', 'show')
-            app.update_page('.specs-live-live', 'hide')
-        else:
-            app.update_page('#specs-device-normal', 'show')
 
         # Display UEFI/BIOS boot mode.
         if systemstate.arch == 'i386' or systemstate.arch == 'amd64':
@@ -655,33 +612,7 @@ class SystemState(object):
         app.update_page('#specs-basic', 'fadeIn', 'medium')
         app.update_page('#specs-busy-basic', 'fadeOut', 'fast')
         webkit.run_javascript('setCursorNormal()')
-
-    def get_inxi_info(self):
-        dbg.stdout('Specs', 'Gathering advanced system information with "inxi"...', 1, 0)
-        try:
-            inxi_output = str(subprocess.Popen(['inxi','-c','0','-v','5','-p','-d','-xx'], stdout=subprocess.PIPE).communicate()[0])
-        except:
-            dbg.stdout('Specs', 'Failed to execute collect advanced information. Is "inxi" no longer installed?', 0, 1)
-
-        # Append advanced system information
-        try:
-            inxi_output = inxi_output.replace("b'","").replace("\\n","\n")
-            self.inxi = inxi_output
-            app.update_page('#specs-inxi', 'html', '')
-            for line in inxi_output.split('\n'):
-                app.update_page('#specs-inxi', 'append', line.strip('"').strip("'") + '<br>')
-            app.update_page('#specs-inxi-busy', 'slideUp')
-            app.update_page('#specs-inxi', 'slideDown')
-            app.update_page('#specs-busy-detailed', 'fadeOut', 'fast')
-            app.update_page('#specs-inxi-copy', 'slideDown')
-            dbg.stdout('Specs', 'Successfully appended advanced system information.', 0, 2)
-        except:
-            dbg.stdout('Specs', 'Failed to append advanced system information or communicate with "inxi" process.', 0, 1)
-            app.update_page('#specs-inxi-busy', 'slideUp')
-            app.update_page('#specs-inxi-error', 'slideDown')
-
-
-
+    
     def copy_to_clipboard(self, var):
         # Copies text to clipboard, passes 'var' containing what we'd like copying.
         if var == 'inxi':
