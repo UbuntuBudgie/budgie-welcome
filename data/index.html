@@ -10,7 +10,7 @@
   <body class="backdrop-simple" style="overflow: hidden;">
     <div class="container-fluid">
       <div id="navigation">
-        <div id="navigation-title">&zwnj;Introduction&zwnj;</div>
+        <div id="navigation-title">&zwnj;Main Menu&zwnj;</div>
         <div id="navigation-right"></div>
         <a onclick="cmd('close')">
           <i class="material-icons" id="close-btn">&#xE14C;</i>
@@ -52,10 +52,16 @@
                 &nbsp; &zwnj;Getting Started&zwnj;
               </a>
             </div>
-            <div class="button-group">
+            <div class="button-group live-session-only">
               <span class="btn-icon material-icons">&#xE887;</span>
-              <a id="install-guide"  class="btn btn-inverse fade fade-5s live-session-only hvr-shadow" onclick="exitMenu('gettingstarted.html')">
+              <a id="install-guide"  class="btn btn-inverse fade fade-5s hvr-shadow" onclick="exitMenu('gettingstarted.html')">
                 &nbsp; &zwnj;Installation Help&zwnj;
+              </a>
+            </div>
+            <div class="button-group normal-session-only">
+              <span class="btn-icon material-icons">&#xE887;</span>
+              <a id="install-guide"  class="btn btn-inverse fade fade-5s hvr-shadow" onclick="exitMenu('gettingstarted.html')">
+                &nbsp; &zwnj;Software Suggestions&zwnj;
               </a>
             </div>
           </div>
@@ -97,20 +103,15 @@
         </div>
         <div class="row">
           <!-- Support -->
-          <div clas="row">
-            <div class="col-md-3 col-md-push-3 btn-showcase" style="padding-right: 30px">
-              <a id="software" class="btn btn-block btn-primary btn-lg fade fade-5s hvr-shadow" onclick="exitMenu('software.html');$('#footer-left').fadeOut()">
-                <span class="material-icons">&#xE30A;</span>&nbsp; &zwnj;Software&zwnj;
-              </a>
-            </div>
-            <div class="col-md-3 col-md-push-3 btn-showcase" style="padding-left: 30px">
-              <a id="install" class="btn btn-block btn-primary btn-lg fade fade-5s hvr-shadow" onclick="cmd('install')">
-                <span class="material-icons">&#xE2C0;</span>&nbsp; &zwnj;Install Now&zwnj;
-              </a>
-              <a id="recommendation" class="btn btn-block btn-primary btn-lg fade fade-5s hvr-shadow" onclick="exitMenu('recommendations.html');$('#footer-left').fadeOut()">
-                <span class="material-icons">&#xE30A;</span>&nbsp; &zwnj;Recommendations&zwnj;
-              </a>
-            </div>
+          <div class="live-session-only col-md-push-4 col-md-4 btn-showcase">
+            <a id="install" class="btn btn-block btn-primary btn-lg fade fade-5s hvr-shadow" onclick="cmd('install')">
+              <span class="material-icons">&#xE2C0;</span>Install Now
+            </a>
+          </div>
+          <div class="normal-session-only col-md-push-4 col-md-4 btn-showcase">
+            <a id="recommendation" class="btn btn-block btn-primary btn-lg fade fade-5s hvr-shadow" onclick="exitMenu('recommendations.html');$('#footer-left').fadeOut()">
+              <span class="material-icons">&#xE30A;</span>Recommendations
+            </a>
           </div>
         </div>
       </div>
@@ -134,7 +135,7 @@
           </div>
           <div class="col-md-3"></div>
           <div class="col-md-6 text-md-right form">
-            <a href="cmd('toggle-startup')" id="open-at-start" class="live-session entire-page-fade" style="display:none">
+            <a href="cmd('toggle-startup')" id="open-at-start" class="entire-page-fade" style="display:none">
               <span id="autostart" class="material-icons">&#xE836;</span> &zwnj;Show this dialog on startup?&zwnj;
             </a>
           </div>

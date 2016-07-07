@@ -41,88 +41,10 @@ import platform
 from gi.repository import WebKit2, Gtk
 from threading import Thread
 
-
-class WelcomeConfig(object):
-
-    """ Manages Welcome configuration """
-
-    def __init__(self):
-
-        self.is_online = False
-
-        # store our base architecture
-        if os.uname()[4] == 'x86_64':
-            self._arch = '64-bit'
-        else:
-            self._arch = '32-bit'
-
-        # store we are a live CD session
-        self._live = (os.path.exists('/bootmnt/antergos'))
-
-        # store full path to our binary
-        self._welcome_bin_path = os.path.abspath(inspect.getfile(
-            inspect.currentframe()))
-
-        # store directory to our welcome configuration
-        self._config_dir = os.path.expanduser('~/.config/antergos/welcome/')
-
-        # store full path to our autostart symlink
-        self._autostart_path = os.path.expanduser(
-            '~/.config/autostart/antergos-welcome.desktop')
-
-        # ensure our config directory exists
-        if not os.path.exists(self._config_dir):
-            try:
-                os.makedirs(self._config_dir)
-            except OSError:
-                pass
-        # does autostart symlink exist
-        self._autostart = os.path.exists(self._autostart_path)
-
-        # Hard code distribution name for time being. Later
-        # access it using `lsb_release` command.
-        self._distroname = 'Budgie Remix'
-
-    @property
-    def arch(self):
-        return self._arch
-
-    @property
-    def autostart(self):
-        return self._autostart
-
-    @autostart.setter
-    def autostart(self, state):
-        if state and not os.path.exists(self._autostart_path):
-            # create the autostart symlink
-            try:
-                os.symlink(
-                    '/usr/share/applications/antergos-welcome.desktop',
-                    self._autostart_path)
-            except OSError:
-                pass
-        elif not state and os.path.exists(self._autostart_path):
-            # remove the autostart symlink
-            try:
-                os.unlink(self._autostart_path)
-            except OSError:
-                pass
-
-        # determine autostart state based on absence of the disable file
-        self._autostart = os.path.exists(self._autostart_path)
-
-    @property
-    def live(self):
-        return self._live
-
-
-
 class AppView(WebKit2.WebView):
 
     def __init__(self):
         WebKit2.WebView.__init__(self)
-
-        self._config = WelcomeConfig()
 
         self.connect('load-changed', self._load_changed_cb)
         self.connect('notify::title', self._title_changed_cb)
@@ -135,27 +57,23 @@ class AppView(WebKit2.WebView):
         # broadcast event any suitable controllers will be able to listen and
         # respond accordingly, for now we just use jQuery to manually toggle
 
-        self.run_javascript("$('#arch').html('%s')" % self._config.arch)
+        self.run_javascript("$('#arch').html('%s')" % systemstate.arch)
         
         # Edited to remove simplejson dependency. Later use proper logic to make 
         # this functional
-        if self._config._autostart:
+        if systemstate.autostart:
             self.run_javascript("$('#autostart').toggleClass('icon-check')")
             self.run_javascript("$('#autostart').toggleClass('icon-check-empty')")
             
-        self.run_javascript("$('span[name=\"distro-name\"]').html('{}')".format(self._config._distroname))
+        self.run_javascript("$('span[name=\"distro-name\"]').html('{}')".format(systemstate.distroname))
 
-
-        if self._config.live:
-            self.run_javascript("$('#install').toggleClass('hide', false);")
-            self.run_javascript(
-                "$('#install-cli').toggleClass('hide', false);")
+        if systemstate.session_type == 'live':
+            app.update_page('.live-session-only', 'show') 
         else:
-            self.run_javascript("$('#build').toggleClass('hide', false);")
-            self.run_javascript("$('#donate').toggleClass('hide', false);")
+            app.update_page('.normal-session-only', 'show')
 
         
-        if self._config.is_online:
+        if systemstate.is_online:
             self.run_javascript("$('.offline').hide()")
         else:
             self.run_javascript("$('.offline').show()")
@@ -195,10 +113,10 @@ class AppView(WebKit2.WebView):
             Gtk.main_quit()
         elif uri == 'toggle-startup':
             # toggle autostart
-            self._config.autostart ^= True
+            systemstate.autostart ^= True
             self._push_config()
         elif uri == "checkInternetConnection":
-            self._config.check_internet_connection()
+            systemstate.check_internet_connection()
             self._push_config()
         elif uri.startswith("link?"):
             webbrowser.open_new_tab(uri[5:])
@@ -255,12 +173,13 @@ class SystemState(object):
         # Outputs 'i386', 'amd64', etc - Based on packages instead of kernel (eg. i686, x86_64).
         self.arch = str(subprocess.Popen(['dpkg','--print-architecture'], stdout=subprocess.PIPE).communicate()[0]).strip('\\nb\'')
 
-        # Get current version / codename of Distribution in Use in use.
-        self.os_version = platform.dist()[1]    # → 14.04, 15.10, 16.04
-        self.codename = platform.dist()[2]      # → trusty, wily, xenial
+        # Collect distribution info
+        self.gatherDistroInfo()
 
         # Determine which type of session we are in.
-        if os.path.exists('/usr/share/glib-2.0/schemas/zubuntu-mate-live.gschema.override'):
+        if arg.simulate_session:
+            self.session_type = arg.simulate_session
+        elif os.path.exists('/usr/share/glib-2.0/schemas/zubuntu-mate-live.gschema.override'):
             self.session_type = 'live'
         else:
             self.session_type = 'normal'
@@ -277,11 +196,11 @@ class SystemState(object):
         thread1.start()
         thread2.start()
 
-        # Check whether Welcome is subscribed for updates.
-        self.welcome_ppa_file = '/etc/apt/sources.list.d/ubuntu-mate-dev-ubuntu-welcome-' + self.codename + '.list'
-        if os.path.exists(self.welcome_ppa_file):
-            if os.path.getsize(self.welcome_ppa_file) > 0:
-                self.updates_subscribed = True
+
+    def gatherDistroInfo(self):
+        self.distroname = self.run_external_command(['lsb_release','-i','-s'])
+        self.os_version = platform.dist()[1]    # → 14.04, 15.10, 16.04
+        self.codename = platform.dist()[2]      # → trusty, wily, xenial
 
     def reload_cache(self):
         dbg.stdout('Apt', 'Reloading cache...', 0, 3)
@@ -383,6 +302,15 @@ class SystemState(object):
         self.graphics_grep = self.graphics_grep.split("\\n",1)[0]
         dbg.stdout('Specs', 'Detected: ' + str(self.graphics_grep), 1, 2)
 
+    # Collect basic system information
+    def run_external_command(self, command, with_shell=False):
+        if with_shell:
+            raw = str(subprocess.Popen(command, stdout=subprocess.PIPE, shell=True).communicate()[0])
+        else:
+            raw = str(subprocess.Popen(command, stdout=subprocess.PIPE).communicate()[0])
+        output = raw.replace("b'","").replace('b"',"").replace("\\n'","").replace("\\n","")
+        return output
+
     def get_system_info(self, webkit):
         dbg.stdout('Specs', 'Gathering system specifications...', 0, 3)
 
@@ -393,20 +321,11 @@ class SystemState(object):
                         'arch-supported', 'memory', 'graphics', 'filesystem', 'capacity', 'allocated-space', 'free-space']:
             app.update_page('#spec'+element, 'html', html_tag)
 
-        # Collect basic system information
-        def run_external_command(command, with_shell=False):
-            if with_shell:
-                raw = str(subprocess.Popen(command, stdout=subprocess.PIPE, shell=True).communicate()[0])
-            else:
-                raw = str(subprocess.Popen(command, stdout=subprocess.PIPE).communicate()[0])
-            output = raw.replace("b'","").replace('b"',"").replace("\\n'","").replace("\\n","")
-            return output
-
         ## Distro
         try:
             dbg.stdout('Specs', 'Gathering Data: Distribution', 1, 0)
-            distro_description = run_external_command(['lsb_release','-d','-s'])
-            distro_codename = run_external_command(['lsb_release','-c','-s'])
+            distro_description = self.run_external_command(['lsb_release','-d','-s'])
+            distro_codename = self.run_external_command(['lsb_release','-c','-s'])
             app.update_page('#spec-distro', 'html', distro_description)
         except:
             dbg.stdout('Specs', 'Failed to gather data: Distribution', 0, 1)
@@ -414,7 +333,7 @@ class SystemState(object):
         ## Kernel
         try:
             dbg.stdout('Specs', 'Gathering Data: Kernel', 1, 0)
-            kernel = run_external_command(['uname','-r'])
+            kernel = self.run_external_command(['uname','-r'])
             app.update_page('#spec-kernel', 'html', kernel)
         except:
             dbg.stdout('Specs', 'Failed to gather data: Kernel', 0, 1)
@@ -422,7 +341,7 @@ class SystemState(object):
         ## Motherboard
         try:
             dbg.stdout('Specs', 'Gathering Data: Motherboard', 1, 0)
-            motherboard_name = run_external_command(['cat','/sys/devices/virtual/dmi/id/board_name'])
+            motherboard_name = self.run_external_command(['cat','/sys/devices/virtual/dmi/id/board_name'])
             app.update_page('#spec-motherboard', 'html', motherboard_name)
         except:
             dbg.stdout('Specs', 'Failed to gather data: Motherboard', 0, 1)
@@ -430,7 +349,7 @@ class SystemState(object):
         ## CPU Details
         dbg.stdout('Specs', 'Gathering Data: CPU', 1, 0)
         try:
-            cpu_model = run_external_command(['lscpu | grep "name"'], True).split(': ')[1]
+            cpu_model = self.run_external_command(['lscpu | grep "name"'], True).split(': ')[1]
             app.update_page('#spec-cpu-model', 'html', cpu_model)
         except:
             dbg.stdout('Specs', 'Failed to gather data: CPU Model', 0, 1)
@@ -438,10 +357,10 @@ class SystemState(object):
         try:
             try:
                 # Try obtaining the maximum speed first.
-                cpu_speed = int(run_external_command(['lscpu | grep "max"'], True).split(': ')[1].strip(' ').split('.')[0])
+                cpu_speed = int(self.run_external_command(['lscpu | grep "max"'], True).split(': ')[1].strip(' ').split('.')[0])
             except:
                 # Otherwise, fetch the CPU's MHz.
-                cpu_speed = int(run_external_command(['lscpu | grep "CPU MHz"'], True).split(': ')[1].strip(' ').split('.')[0])
+                cpu_speed = int(self.run_external_command(['lscpu | grep "CPU MHz"'], True).split(': ')[1].strip(' ').split('.')[0])
 
             app.update_page('#spec-cpu-speed', 'html', str(cpu_speed) + ' MHz')
         except:
@@ -459,7 +378,7 @@ class SystemState(object):
             dbg.stdout('Specs', 'Failed to gather data: CPU Architecture', 0, 1)
 
         try:
-            cpu_arch_supported = run_external_command(['lscpu | grep "mode"'], True).split(': ')[1]
+            cpu_arch_supported = self.run_external_command(['lscpu | grep "mode"'], True).split(': ')[1]
             app.update_page('#spec-arch-supported', 'html', cpu_arch_supported)
         except:
             dbg.stdout('Specs', 'Failed to gather data: CPU Supported Architectures', 0, 1)
@@ -478,7 +397,7 @@ class SystemState(object):
             else:
                 dbg.stdout('Specs', 'Gathering Data: Storage', 1, 0)
                 ## Gather entire disk data
-                root_partition = run_external_command(['mount | grep "on / "'], True).split(' ')[0]
+                root_partition = self.run_external_command(['mount | grep "on / "'], True).split(' ')[0]
                 if root_partition[:-2] == "/dev/sd":            # /dev/sdXY
                     root_dev = root_partition[:-1]
                 if root_partition[:-2] == "/dev/hd":            # /dev/hdXY
@@ -493,7 +412,7 @@ class SystemState(object):
                 root_size = rootfs.f_blocks * rootfs.f_frsize
                 root_free = rootfs.f_bavail * rootfs.f_frsize
                 root_used = root_size - root_free
-                entire_disk = run_external_command(['lsblk -b | grep "' + disk_dev_name + '" | grep "disk"'], True)
+                entire_disk = self.run_external_command(['lsblk -b | grep "' + disk_dev_name + '" | grep "disk"'], True)
                 entire_disk = int(entire_disk.split()[3])
 
                 ## Perform calculations across units
@@ -573,7 +492,7 @@ class SystemState(object):
         ## RAM
         try:
             dbg.stdout('Specs', 'Gathering Data: RAM (Memory)', 1, 0)
-            ram_bytes = run_external_command(['free -b | grep "Mem:" '], True)
+            ram_bytes = self.run_external_command(['free -b | grep "Mem:" '], True)
             ram_bytes = float(ram_bytes.split()[1])
             if round(ram_bytes / 1024 / 1024) < 1024:
                 ram_xb = str(round(ram_bytes / 1000 / 1000, 1)) + ' ' + mb_prefix
