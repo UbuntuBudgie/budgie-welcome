@@ -688,7 +688,7 @@ class Arguments(object):
           if arg.startswith('--force-session'):
               try:
                   self.simulate_session = arg.split('--force-session=')[1]
-                  if not self.simulate_session == 'guest' and not self.simulate_session == 'live' and not self.simulate_session == 'pi' and not self.simulate_session == 'vbox':
+                  if not self.simulate_session == 'normal' and not self.simulate_session == 'live':
                       dbg.stdout('Debug', 'Unrecognised session type: ' + self.simulate_session, 0, 1)
                       exit()
                   else:

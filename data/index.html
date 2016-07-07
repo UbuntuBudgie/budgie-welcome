@@ -60,8 +60,8 @@
             </div>
             <div class="button-group normal-session-only">
               <span class="btn-icon material-icons">&#xE887;</span>
-              <a id="install-guide"  class="btn btn-inverse fade fade-5s hvr-shadow" onclick="exitMenu('gettingstarted.html')">
-                &nbsp; &zwnj;Software Suggestions&zwnj;
+              <a class="btn btn-inverse fade fade-5s hvr-shadow" onclick="exitMenu('recommendations.html')">
+                &nbsp; &zwnj;Recommendations&zwnj;
               </a>
             </div>
           </div>
@@ -109,8 +109,9 @@
             </a>
           </div>
           <div class="normal-session-only col-md-push-4 col-md-4 btn-showcase">
-            <a id="recommendation" class="btn btn-block btn-primary btn-lg fade fade-5s hvr-shadow" onclick="exitMenu('recommendations.html');$('#footer-left').fadeOut()">
-              <span class="material-icons">&#xE30A;</span>Recommendations
+            <a id="recommendation" class="btn btn-block btn-primary btn-lg fade fade-5s hvr-shadow" onclick="cmd('software-center');$('#footer-left').fadeOut()">
+              <!--<span class="material-icons">&#xE2C0;</span>-->
+              <img src="img/applications/software-center.svg" style="height: 70%">Software Center
             </a>
           </div>
         </div>
