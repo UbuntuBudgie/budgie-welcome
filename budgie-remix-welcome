@@ -4,23 +4,24 @@
 # Copyright 2012-2013 "Korora Project" <dev@kororaproject.org>
 # Copyright 2013 "Manjaro Linux" <support@manjaro.org>
 # Copyright 2014 Antergos
-# Copyright 2016 Budgie Remix
+# Copyright 2016 Ubuntu Mate
+# Copyright 2016 budgie-remix
 #
-# Budgie Remix Welcome is free software: you can redistribute it and/or modify
+# budgie-remix welcome is free software: you can redistribute it and/or modify
 # it under the temms of the GNU General Public License as published by
 # the Free Software Foundation, either version 3 of the License, or
 # (at your option) any later version.
 #
-# Budgie Remix Welcome is distributed in the hope that it will be useful,
+# budgie-remix welcome is distributed in the hope that it will be useful,
 # but WITHOUT ANY WARRANTY; without even the implied warranty of
 # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 # GNU General Public License for more details.
 #
 # You should have received a copy of the GNU General Public License
-# along with Budgie Remix Welcome. If not, see <http://www.gnu.org/licenses/>.
+# along with budgie-remix welcome. If not, see <http://www.gnu.org/licenses/>.
 #
 
-""" Welcome App for Budgie Remix """
+""" Welcome App for budgie-remix """
 
 import gi
 
@@ -166,7 +167,7 @@ class SystemState(object):
         # User's autostart directory and full path to autostart symlink.
         # Used for systemstate.autostart_toggle() function.
         self._autostart_dir = os.path.expanduser('~/.config/autostart/')
-        self._autostart_path = os.path.expanduser(os.path.join(self._autostart_dir, 'ubuntu-mate-welcome.desktop'))
+        self._autostart_path = os.path.expanduser(os.path.join(self._autostart_dir, 'budgie-welcome.desktop'))
         self.autostart = self.autostart_check()
 
         # Get current architecture of system.
@@ -179,7 +180,7 @@ class SystemState(object):
         # Determine which type of session we are in.
         if arg.simulate_session:
             self.session_type = arg.simulate_session
-        elif os.path.exists('/usr/share/glib-2.0/schemas/zubuntu-mate-live.gschema.override'):
+        elif subprocess.call("df | grep -w / | grep -q '/cow'", shell=True) == 0:
             self.session_type = 'live'
         else:
             self.session_type = 'normal'
@@ -227,7 +228,7 @@ class SystemState(object):
         if not os.path.exists(self._autostart_path):
             # create the autostart symlink
             try:
-                os.symlink('/usr/share/applications/ubuntu-mate-welcome.desktop', self._autostart_path)
+                os.symlink('/usr/share/applications/budgie-welcome.desktop', self._autostart_path)
             except OSError as err:
                 dbg.stdout('Welcome', 'Error while enabling autostart: ' + str(err), 0, 1)
                 pass
@@ -383,8 +384,8 @@ class SystemState(object):
         except:
             dbg.stdout('Specs', 'Failed to gather data: CPU Supported Architectures', 0, 1)
 
-        # Adding simple strings. Later this should be converted to traslation
-        # supported strings after referring ubuntu mate welcome app
+        # Adding simple strings. Later this should be converted to translation
+        # supported strings after referring welcome app
         gb_prefix = "GB"
         gib_prefix = "GiB"
         mb_prefix = "MB"
@@ -577,7 +578,7 @@ class WelcomeApp(object):
         # build window
         w = Gtk.Window()
         w.set_position(Gtk.WindowPosition.CENTER)
-        w.set_wmclass('Budgie Remix Welcome', 'Budgie Remix Welcome')
+        w.set_wmclass('budgie-remix welcome', 'budgie-remix welcome')
         w.set_title('')
         w.set_size_request(992, 520)
         w.set_decorated(False)
@@ -663,7 +664,6 @@ class Arguments(object):
               print('  --locale=CODE                Locale to use. e.g. fr_FR.')
               print('  --simulate-changes           Simulate software package changes without')
               print('                               modifying the system.')
-              print('  -b, -boutique,               Open Welcome only for the software selections.')
               print('  --software-only              ')
               print('  -v, --verbose                Show more details to stdout (for diagnosis).')
               print('')
@@ -708,10 +708,6 @@ class Arguments(object):
           if arg == '--force-net':
               dbg.stdout('Debug', 'Forcing the application to think we\'re connected with an internet connection.', 0, 0)
               self.simulate_force_connection = True
-
-          if arg == '--software-only' or arg == '--boutique' or arg == '-b':
-              dbg.stdout('Welcome', 'Starting in Software Boutique mode.', 0, 0)
-              self.jump_software_page = True
 
           if arg == '--simulate-changes':
               dbg.stdout('Debug', 'Any changes to software will be simulated without modifying the actual system.', 0, 0)
