@@ -8,7 +8,6 @@ Welcome app to greet new users on their first login
 
 ```sh
 sudo apt install gir1.2-webkit-3.0
-sudo apt install python3-simplejson
 git clone https://github.com/budgie-remix/budgie-remix-welcome
 ```
 
