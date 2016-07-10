@@ -20,5 +20,8 @@ cd budgie-remix-welcome
 ```
 
 ### Screenshot
+#### Live session
+![Screenshot of Budgie Remix Welcome App](https://raw.githubusercontent.com/budgie-remix/budgie-remix-welcome/master/screenshot-live-session.png)
 
-![Screenshot of Budgie Remix Welcome App](https://raw.githubusercontent.com/budgie-remix/budgie-remix-welcome/master/screenshot.png)
+#### Normal session
+![Screenshot of Budgie Remix Welcome App](https://raw.githubusercontent.com/budgie-remix/budgie-remix-welcome/master/screenshot-normal-session.png)
