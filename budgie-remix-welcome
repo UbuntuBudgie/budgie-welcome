@@ -60,11 +60,7 @@ class AppView(WebKit2.WebView):
 
         self.run_javascript("$('#arch').html('%s')" % systemstate.arch)
         
-        # Edited to remove simplejson dependency. Later use proper logic to make 
-        # this functional
-        if systemstate.autostart:
-            self.run_javascript("$('#autostart').toggleClass('icon-check')")
-            self.run_javascript("$('#autostart').toggleClass('icon-check-empty')")
+        
             
         self.run_javascript("$('span[name=\"distro-name\"]').html('{}')".format(systemstate.distroname))
 
@@ -85,6 +81,12 @@ class AppView(WebKit2.WebView):
             self.run_javascript('var graphicsVendor = "' + systemstate.graphics_vendor + '";')
             self.run_javascript('var graphicsGrep = "' + systemstate.graphics_grep + '";')
             app.update_page('#boot-mode', 'html', systemstate.boot_mode)
+        ### Index Page ###
+        elif app.current_page == 'index.html':
+            if systemstate.autostart:
+                self.run_javascript("$('#autostart').html('&#xE837;')")
+            else:
+                self.run_javascript("$('#autostart').html('&#xE836;')")
 
 
     def _load_changed_cb(self, view, frame):
@@ -94,6 +96,13 @@ class AppView(WebKit2.WebView):
 
     def _title_changed_cb(self, view, frame):
         title = self.get_title()
+        
+        # An empty command get executed while toggling startup
+        # option. Actual reason for this command execution needs
+        # to be investigated.
+        if title == '':
+            return
+        
         self._do_command(title)
         
     def _context_menu_cb(self, webview, menu, event, htr, user_data=None):
@@ -114,8 +123,9 @@ class AppView(WebKit2.WebView):
             Gtk.main_quit()
         elif uri == 'toggle-startup':
             # toggle autostart
-            systemstate.autostart ^= True
-            self._push_config()
+            systemstate.autostart_toggle()
+            WebKit2.WebView.reload(self)
+            
         elif uri == "checkInternetConnection":
             systemstate.check_internet_connection()
             self._push_config()
@@ -274,8 +284,6 @@ class SystemState(object):
             self.is_online = True
 
     def detect_graphics(self):
-
-
         # TODO: Support dual graphic cards.
         dbg.stdout('Specs', 'Detecting graphics vendor... ', 1, 3)
         try:
@@ -565,11 +573,11 @@ class WelcomeApp(object):
             print('Using relative path for data source.\
                    Non-production testing.')
             self._data_path = os.path.join(self._location, 'data/')
-        elif(os.path.exists('/usr/share/antergos-welcome/')):
-            print('Using /usr/share/antergos-welcome/ path.')
-            self._data_path = '/usr/share/antergos-welcome/'
+        elif(os.path.exists('/usr/share/budgie-remix-welcome/')):
+            print('Using /usr/share/budgie-remix-welcome/ path.')
+            self._data_path = '/usr/share/budgie-remix-welcome/'
         else:
-            print('Unable to source the antergos-welcome data directory.')
+            print('Unable to source the budgie-remix-welcome data directory.')
             sys.exit(1)
 
         self._build_app()
@@ -662,9 +670,6 @@ class Arguments(object):
               print('                                -- Options: guest, live, pi, vbox')
               print('  --jump-to=PAGE               Open a specific page, excluding *.html')
               print('  --locale=CODE                Locale to use. e.g. fr_FR.')
-              print('  --simulate-changes           Simulate software package changes without')
-              print('                               modifying the system.')
-              print('  --software-only              ')
               print('  -v, --verbose                Show more details to stdout (for diagnosis).')
               print('')
               exit()
@@ -709,10 +714,6 @@ class Arguments(object):
               dbg.stdout('Debug', 'Forcing the application to think we\'re connected with an internet connection.', 0, 0)
               self.simulate_force_connection = True
 
-          if arg == '--simulate-changes':
-              dbg.stdout('Debug', 'Any changes to software will be simulated without modifying the actual system.', 0, 0)
-              self.simulate_software_changes = True
-
           if arg == '--dev' or arg == '--debug' or arg == '-d':
               dbg.stdout('Debug', 'Running in debugging mode.', 0, 0)
               dbg.verbose_level = 2
@@ -726,22 +727,6 @@ class Arguments(object):
               self.jump_to = arg.split('--jump-to=')[1]
               dbg.stdout('Debug', 'Opening page: ' + self.jump_to + '.html', 0, 0)
 
-
-    def override_arch(self):
-        if not self.simulate_arch == None:
-            systemstate.arch = self.simulate_arch
-
-    def override_session(self):
-        if not self.simulate_session == None:
-            if self.simulate_session == 'vbox':
-                systemstate.graphics_vendor = 'VirtualBox'
-                systemstate.graphics_grep = 'VirtualBox'
-            else:
-                systemstate.session_type = self.simulate_session
-
-    def override_codename(self):
-        if not self.simulate_codename == None:
-            systemstate.codename = self.simulate_codename
 
 if __name__ == "__main__":
 
