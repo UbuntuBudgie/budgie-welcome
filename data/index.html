@@ -123,7 +123,7 @@
           <p id="popup-message"></p>
           <textarea id="trace"></textarea>
           <br>
-          <a onclick="smoothPageFade('index.html')" class="btn btn-primary">&nbsp;&nbsp;OK&nbsp;&nbsp;</a>
+          <a onclick="$('#popup-message-window').fadeOut(); document.title=''" class="btn btn-primary">&nbsp;&nbsp;OK&nbsp;&nbsp;</a>
         </div>
       </div>
     
@@ -149,7 +149,7 @@
             </div>
             <div class="col-md-3"></div>
             <div class="col-md-6 text-md-right form normal-session-only">
-              <a onclick="cmd('toggle-startup')" id="open-at-start" class="entire-page-fade">
+              <a onclick="cmd('toggle-startup'); document.title = ''" id="open-at-start" class="entire-page-fade">
                 <span id="autostart" class="material-icons"></span> &zwnj;Show this dialog on startup?&zwnj;
               </a>
             </div>

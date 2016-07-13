@@ -111,10 +111,7 @@ class AppView(WebKit2.WebView):
 
     def _do_command(self, uri):
         
-        
-        if uri == 'refresh':
-            WebKit2.WebView.reload(self)
-        elif uri == 'gnome-help':
+        if uri == 'gnome-help':
             subprocess.Popen(['yelp'])
         elif uri == 'kde-help':
             subprocess.Popen(['khelpcenter'])
@@ -138,7 +135,9 @@ class AppView(WebKit2.WebView):
         elif uri == 'toggle-startup':
             # toggle autostart
             systemstate.autostart_toggle()
-            WebKit2.WebView.reload(self)
+            self._push_config()
+            self.l_uri = None
+            # WebKit2.WebView.reload(self)
             
         elif uri == "checkInternetConnection":
             systemstate.check_internet_connection()
