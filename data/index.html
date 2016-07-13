@@ -18,7 +18,7 @@
       </div>
     </div>
     <div class="entire-page-fade" id="wrapper">
-      <div id="header" class="container-fluid fade fade-1s" style="padding-top: 64px">
+      <div id="header" class="container-fluid" style="padding-top: 64px">
         <div class="row">
           <div class="col-md-12 center splash-version">
             <img src="img/welcome/distro-text.svg" height="">
@@ -109,45 +109,57 @@
             </a>
           </div>
           <div class="normal-session-only col-md-push-4 col-md-4 btn-showcase">
-            <a id="recommendation" class="btn btn-block btn-primary btn-lg fade fade-5s hvr-shadow" onclick="cmd('software-center');$('#footer-left').fadeOut()">
+            <a class="btn btn-block btn-primary btn-lg fade fade-5s hvr-shadow" onclick="cmd('software-center');$('#footer-left').fadeOut()">
               <!--<span class="material-icons">&#xE2C0;</span>-->
               <img src="img/applications/software-center.svg" style="height: 70%">Software Center
             </a>
           </div>
         </div>
       </div>
-    </div>
-    <div id="footer" class="bottom">
-      <div class="container-fluid">
-        <div class="row footer-content">
-          <div class="col-md-3 social">
-            <a onclick="cmd('link?https://plus.google.com/communities/106822666079268690759')">
-              <img src="img/social/g+.svg"/>
-            </a>
-            <a onclick="cmd('link?https://www.reddit.com/r/budgieremix')">
-              <img src="img/social/reddit.svg"/>
-            </a>
-            <a onclick="cmd('link?http://gitter.im/budgie-remix/community')">
-              <img src="img/social/gitter.svg"/>
-            </a>
-            <a onclick="cmd('link?http://github.com/budgie-remix')">
-              <img src="img/social/github.svg"/>
-            </a>
-            <a onclick="cmd('link?https://twitter.com/budgie_remix')">
-              <img src="img/social/twitter.svg"/>
-            </a>
-          </div>
-          <div class="col-md-3"></div>
-          <div class="col-md-6 text-md-right form">
-            <a onclick="cmd('toggle-startup')" id="open-at-start" class="entire-page-fade">
-              <span id="autostart" class="material-icons"></span> &zwnj;Show this dialog on startup?&zwnj;
-            </a>
+
+      <!-- Popup Message -->
+      <div id="popup-message-window">
+        <div id="popup-message-container">
+          <p id="popup-message"></p>
+          <textarea id="trace"></textarea>
+          <br>
+          <a onclick="smoothPageFade('index.html')" class="btn btn-primary">&nbsp;&nbsp;OK&nbsp;&nbsp;</a>
+        </div>
+      </div>
+    
+      <div id="footer" class="bottom">
+        <div class="container-fluid">
+          <div class="row footer-content">
+            <div class="col-md-3 social">
+              <a onclick="cmd('link?https://plus.google.com/communities/106822666079268690759')">
+                <img src="img/social/g+.svg"/>
+              </a>
+              <a onclick="cmd('link?https://www.reddit.com/r/budgieremix')">
+                <img src="img/social/reddit.svg"/>
+              </a>
+              <a onclick="cmd('link?http://gitter.im/budgie-remix/community')">
+                <img src="img/social/gitter.svg"/>
+              </a>
+              <a onclick="cmd('link?http://github.com/budgie-remix')">
+                <img src="img/social/github.svg"/>
+              </a>
+              <a onclick="cmd('link?https://twitter.com/budgie_remix')">
+                <img src="img/social/twitter.svg"/>
+              </a>
+            </div>
+            <div class="col-md-3"></div>
+            <div class="col-md-6 text-md-right form normal-session-only">
+              <a onclick="cmd('toggle-startup')" id="open-at-start" class="entire-page-fade">
+                <span id="autostart" class="material-icons"></span> &zwnj;Show this dialog on startup?&zwnj;
+              </a>
+            </div>
           </div>
         </div>
       </div>
     </div>
     <script src="js/jquery-2.1.4.js"></script>
-    <script src="js/bootstrap-2.3.2.js"></script>
+    <script src="js/tether.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <script src="js/janimate.js"></script>
     <script src="js/confetti.js"></script>   <!-- Confetti only appears on special events -->
     <script src="js/welcome.js"></script>

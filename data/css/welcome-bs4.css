@@ -63,6 +63,7 @@ body, button {
 #header {
   padding: 8px 0;
   background-color: rgba(208, 208, 208, 0.25);
+  z-index: 10
 }
 
 #header .logo {
@@ -908,4 +909,38 @@ blockquote.terminal {
 /* Live session and post installation session options */
 .live-session-only, .normal-session-only {
   display: none
+}
+
+/*Popup message */
+#popup-message-window {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1050;
+  overflow: hidden;
+  padding-top: 150px;
+  text-align: center;
+  outline: 0;
+  background: rgba(255, 255, 255, 0.8);
+  color: black;
+}
+
+#popup-message-container {
+  background: #404552;
+  width: 50%;
+  margin: auto;
+  padding: 15px;
+  color: white;
+}
+
+#popup-message {
+  text-align: left;
+}
+
+#trace {
+  color: black;
+  width: 100%
 }

@@ -110,8 +110,11 @@ class AppView(WebKit2.WebView):
         return True
 
     def _do_command(self, uri):
-      
-        if uri == 'gnome-help':
+        
+        
+        if uri == 'refresh':
+            WebKit2.WebView.reload(self)
+        elif uri == 'gnome-help':
             subprocess.Popen(['yelp'])
         elif uri == 'kde-help':
             subprocess.Popen(['khelpcenter'])
@@ -119,6 +122,17 @@ class AppView(WebKit2.WebView):
             # subprocess.Popen(['sudo','live-installer'])
         # elif uri == 'install-cli':
             # subprocess.Popen(['xdg-terminal','sudo setup'])
+        elif uri == 'software-center':
+            try:
+                subprocess.Popen(['gnome-software'])
+            except Exception as e:
+                message = "Seems that GNOME Software is not installed. If this problem persists " +\
+                           "even after installing GNOME Software, please contact us with following " +\
+                           "error message"
+                popup = PopupMessage(message, PopupMessage.ERROR, e)
+                
+                popup.showMessage()
+                
         elif uri == 'close':
             Gtk.main_quit()
         elif uri == 'toggle-startup':
@@ -163,6 +177,29 @@ class Debug(object):
         # Output the message depending how detailed it is.
         if self.verbose_level >= verbosity:
             print(start + '[' + item + '] ' + info, end)            
+
+class PopupMessage(object):
+    ERROR = 0
+    CONFIRMATION = 1
+    
+    def __init__(self, message, type, trace = None):
+        '''
+         message => Messge to user
+         type => Type of message(error, confirmation ..etc)
+         trace => Error trace, if available
+        '''
+        self.trace = trace
+        self.message = message
+        self.type = type
+        
+    def showMessage(self):
+        if self.type == PopupMessage.ERROR:
+            app.update_page('#popup-message', 'html', self.message)
+            app.update_page('#trace', 'val', str(self.trace))
+            app.update_page('#popup-message-window', 'fadeIn')
+        else:
+            dbg.stdout(self.type, 'message is not handled yet', 3)
+            
 
 class SystemState(object):
     def __init__(self):
@@ -635,6 +672,10 @@ class WelcomeApp(object):
             self.webkit.run_javascript('$("' + element + '").' + function + "('" + parm1.replace("'", '\\\'') + "')")
         else:
             self.webkit.run_javascript('$("' + element + '").' + function + '()')
+            
+    def run_javascript(self, script):
+        print("Running script", script)
+        self.webkit.run_javascript(script)
 
 class Arguments(object):
     '''Check arguments passed the application.'''
