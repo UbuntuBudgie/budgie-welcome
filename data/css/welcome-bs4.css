@@ -284,6 +284,35 @@ a {
   margin-right: 5px;
 }
 
+.social .hover-menu-block .hover-menu {
+  background: #404552;
+  z-index: 15;
+  position: absolute;
+  bottom: -18px;
+  left: 45px;
+  border: 1px solid #ddd;
+  padding: 5px 10px;
+  border-radius: 5px;
+  display: none;
+  list-style: none;
+  color: white;
+}
+.social .hover-menu-block:hover .hover-menu {
+  display: block;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+  -moz-animation: fadeIn 1s;
+}
+
+.hover-menu li {
+  cursor: pointer;
+  padding: 2px 5px;
+}
+
+.hover-menu li:hover {
+  background: #333;
+}
+
 #footer .form a {
   color: white;
   text-decoration: none;
