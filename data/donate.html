@@ -29,7 +29,7 @@
           <div class="alert alert-warning offline">
             <h5>&zwnj;It appears you are not connected to the Internet. Please check your connection to access this content.&zwnj;</h5>
             <div id="reconnectFailed" hidden><p><span class="fa fa-warning"></span> &zwnj;Sorry, Welcome was unable to establish a connection.&zwnj;</p></div>
-            <a href="cmd://checkInternetConnection" onclick="reconnectTimeout();" class="btn btn-warning"> <span class="fa fa-refresh"></span> &zwnj;Retry&zwnj;</a>
+            <a onclick="cmd('checkInternetConnection');reconnectTimeout();" class="btn btn-warning"> <span class="fa fa-refresh"></span> &zwnj;Retry&zwnj;</a>
           </div>
         </div>
       </div>
@@ -107,8 +107,10 @@
     </div>
   </div>
   <script src="js/jquery-2.1.4.js"></script>
-  <script src="js/bootstrap-2.3.2.js"></script>
+  <script src="js/tether.js"></script>
+  <script src="js/bootstrap.min.js"></script>
   <script src="js/janimate.js"></script>
+  <script src="js/confetti.js"></script>   <!-- Confetti only appears on special events -->
   <script src="js/welcome.js"></script>
 </body>
 </html>

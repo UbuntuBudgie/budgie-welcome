@@ -16,7 +16,7 @@
           </a>
           <div id="navigation-title">&zwnj;Get Involved&zwnj;</div>
           <div id="navigation-right"></div>
-          <a href="cmd://close">
+          <a onclick="cmd('close')">
             <i class="material-icons" id="close-btn">&#xE14C;</i>
           </a>
         </div>
@@ -59,12 +59,12 @@
         <div class="alert alert-warning offline">
           <h5>&zwnj;It appears you are not connected to the Internet. Please check your connection to access this content.&zwnj;</h5>
           <div id="reconnectFailed"><p><span class="fa fa-warning"></span> &zwnj;Sorry, Welcome was unable to establish a connection.&zwnj;</p></div>
-          <a href="cmd://checkInternetConnection" onclick="reconnectTimeout();" class="btn btn-warning"> <span class="fa fa-refresh"></span> &zwnj;Retry&zwnj;</a>
+          <a onclick="cmd('checkInternetConnection');reconnectTimeout()" class="btn btn-warning"> <span class="fa fa-refresh"></span> &zwnj;Retry&zwnj;</a>
         </div>
         <div class="row text-md-center">
           <div class="col-md-4">
             <div id="social" class="text-center social-large">
-              <a href="cmd://link?https://launchpad.net/budgie-remix" title="Distribution on Launchpad">
+              <a href="cmd('link?https://launchpad.net/budgie-remix')" title="Distribution on Launchpad">
                 <img class="center" src="img/logos/launchpad.png" alt="Distribution on Launchpad"/>
                 <p><b>&zwnj;<span name="distro-name"></span> Launchpad&zwnj;</b></p>
               </a>
@@ -72,7 +72,7 @@
           </div>
           <div class="col-md-4">
             <div id="social" class="text-center social-large">
-              <a href="cmd://link?https://github.com/budgie-remix" title="Distribution on Github">
+              <a href="cmd('link?https://github.com/budgie-remix')" title="Distribution on Github">
                 <img class="center" src="img/logos/github.png" alt="Distribution Bitbucket"/>
                 <p><b>&zwnj;<span name="distro-name"></span> Github&zwnj;</b></p>
               </a>
@@ -80,36 +80,21 @@
           </div>
           <div class="col-md-4">
             <div id="social" class="text-center social-large">
-              <a href="cmd://link?https://github.com/solus-project/budgie-desktop" title="Budgie Desktop on GitHub">
+              <a href="cmd('link?https://github.com/solus-project/budgie-desktop')" title="Budgie Desktop on GitHub">
                 <img class="center" src="img/logos/github.png" alt="Budgie Desktop on GitHub"/>
                 <p><b>&zwnj;Budgie Desktop GitHub&zwnj;</b></p>
               </a>
             </div>
           </div>
-<!--
-          <div class="col-md-3">
-            <div id="social" class="text-center social-large">
-              <img class="center" src="img/logos/transifex.jpg" alt="Transifex"/>
-              <p><b>&zwnj;Translations&zwnj;</b></p>
-              <p>
-                <a href="cmd://link?https://www.transifex.com/projects/p/MATE/" title="MATE Desktop on Transifex">
-                  <b>&zwnj;MATE Desktop&zwnj;</b>
-                </a>
-              </p>
-              <p>
-                <a href="cmd://link?https://www.transifex.com/ubuntu-mate/public/" title="Ubuntu MATE on Transifex">
-                  <b>&zwnj;Ubuntu MATE Applications&zwnj;</b>
-                </a>
-              </p>
-            </div>
--->
           </div>
         </div>
       </div>
     </div>
     <script src="js/jquery-2.1.4.js"></script>
-    <script src="js/bootstrap-2.3.2.js"></script>
+    <script src="js/tether.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <script src="js/janimate.js"></script>
+    <script src="js/confetti.js"></script>   <!-- Confetti only appears on special events -->
     <script src="js/welcome.js"></script>
   </body>
 </html>
