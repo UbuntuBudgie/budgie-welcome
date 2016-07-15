@@ -245,9 +245,11 @@ class SystemState(object):
 
 
     def gatherDistroInfo(self):
-        self.distroname = self.run_external_command(['lsb_release','-i','-s'])
-        # Hard code distribution name, until problem fixes in lsb_release
+        # Hard code distributin name, as running external commands would take
+        # more time and it will give content mismatch if run in a different OS.
+        # self.distroname = self.run_external_command(['lsb_release','-i','-s'])
         self.distroname = 'budgie-remix'
+        
         self.os_version = platform.dist()[1]    # → 14.04, 15.10, 16.04
         self.codename = platform.dist()[2]      # → trusty, wily, xenial
 
