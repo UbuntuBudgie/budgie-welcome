@@ -111,8 +111,8 @@ class AppView(WebKit2.WebView):
 
     def _do_command(self, uri):
         
-        if uri == 'gnome-help':
-            subprocess.Popen(['yelp'])
+        if uri == 'control':
+            subprocess.Popen(['gnome-control-center'])
         elif uri == 'kde-help':
             subprocess.Popen(['khelpcenter'])
         # elif uri == 'install':
