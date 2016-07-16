@@ -104,9 +104,14 @@ class AppView(WebKit2.WebView):
         ### Index Page ###
         elif app.current_page == 'index.html':
             if systemstate.autostart:
-                self.run_javascript("$('#autostart').html('&#xE837;')")
+                app.update_page('#autostart', 'html', '&#xE837;')
             else:
-                self.run_javascript("$('#autostart').html('&#xE836;')")
+                app.update_page('#autostart', 'html', '&#xE836;')
+                
+        # Apply intermediate actions, if any are present
+        if app.current_page in systemstate.intermediate_actions:
+            for action in systemstate.intermediate_actions[app.current_page]:
+                app.update_page(action[0], action[1], action[2], action[3])
 
 
     def _load_changed_cb(self, view, frame):
@@ -196,11 +201,20 @@ class AppView(WebKit2.WebView):
             
     def installPackage(self, code, package):
         def threadedMethod():
-            app.update_page('#' + code + '-install', 'addClass', 'disabled')    
-            app.update_page('#' + code + '-status', 'fadeIn')
+            action1 = ['#' + code + '-install', 'addClass', 'disabled', None]
+            action2 = ['#' + code + '-status', 'fadeIn', None, None]
+            
+            app.update_page(action1[0], action1[1], action1[2], action1[3])    
+            app.update_page(action2[0], action2[1], action2[2], action2[3])
+            
+            systemstate.addIntermediateAction('gettingstarted.html', action1)
+            systemstate.addIntermediateAction('gettingstarted.html', action2)
             
             pm = PackageManager()
             pm.install(package)
+            
+            systemstate.removeIntermediateAction('gettingstarted.html', action1)
+            systemstate.removeIntermediateAction('gettingstarted.html', action2)
             
             app.update_page('#' + code + '-install', 'removeClass', 'disabled')    
             app.update_page('#' + code + '-status', 'fadeOut')
@@ -211,11 +225,20 @@ class AppView(WebKit2.WebView):
         
     def removePackage(self, code, package):
         def threadedMethod():
-            app.update_page('#' + code + '-remove', 'addClass', 'disabled')    
-            app.update_page('#' + code + '-status', 'fadeIn')
+            action1 = ['#' + code + '-remove', 'addClass', 'disabled', None]
+            action2 = ['#' + code + '-status', 'fadeIn', None, None]
+            
+            app.update_page(action1[0], action1[1], action1[2], action1[3])    
+            app.update_page(action2[0], action2[1], action2[2], action2[3])
+            
+            systemstate.addIntermediateAction('gettingstarted.html', action1)
+            systemstate.addIntermediateAction('gettingstarted.html', action2)
             
             pm = PackageManager()
             pm.remove(package)
+            
+            systemstate.removeIntermediateAction('gettingstarted.html', action1)
+            systemstate.removeIntermediateAction('gettingstarted.html', action2)
             
             app.update_page('#' + code + '-remove', 'removeClass', 'disabled')    
             app.update_page('#' + code + '-status', 'fadeOut')
@@ -337,7 +360,25 @@ class SystemState(object):
         thread2 = Thread(target=self.detect_graphics)
         thread1.start()
         thread2.start()
+        
+        
+        # Retain some show/hide actions applied while changing page.
+        # This is specially required when page change happens while
+        # installation/removal is in progress.
+        self.intermediate_actions = {}
 
+    def addIntermediateAction(self, filename, action):
+        if filename not in self.intermediate_actions:
+            self.intermediate_actions[filename] = []
+            
+        self.intermediate_actions[filename].append(action)
+        
+    def removeIntermediateAction(self, filename, action):
+        self.intermediate_actions[filename].remove(action)
+        
+        if len(self.intermediate_actions[filename]) == 0:
+            del self.intermediate_actions[filename]
+            
 
     def gatherDistroInfo(self):
         # Hard code distributin name, as running external commands would take
