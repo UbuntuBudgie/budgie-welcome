@@ -134,13 +134,18 @@ body, button {
   text-decoration: none;
 }
 
-.navigation-button:hover {
-  color: #fff;
+.navigation-button i {
+background-color: #404552;
+border-radius: 0.15rem;
+color: white;
 }
 
-.navigation-button:active {
+.navigation-button i:hover {
+  background-color: #5c616c;
+}
+
+.navigation-button i:active {
   background-color: #5294e2;
-  color: #fff;
 }
 
 #navigation-title {
@@ -171,11 +176,6 @@ body, button {
   bottom: 16px;
   right: 22px;
   z-index: 11;
-}
-
-#scroll-top i {
-background: #404552;
-color: white;
 }
 
 /************************
@@ -878,18 +878,21 @@ blockquote.terminal {
 }
 
 /******************************
- * Ovrride default bootstrap styles
+ * Override default bootstrap styles
 *******************************/
 .btn-inverse {
   color: white;
-  background: #404552 ;
+  background-color: #404552;
   margin: 2px;
 }
 
-
 .btn-inverse:hover {
-  color: #eee;
-  background: #333;
+  color: white;
+  background-color: #5c616c;
+}
+
+.btn-inverse:active {
+  background-color: #5294e2;
 }
 
 .text-right {
