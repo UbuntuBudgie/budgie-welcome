@@ -140,6 +140,10 @@ class AppView(WebKit2.WebView):
             
             if code == 'restricted-extras':
                 package = 'ubuntu-restricted-extras'
+                
+                # Accept EULA before running installation script
+                subprocess.Popen('echo ttf-mscorefonts-installer msttcorefonts/accepted-mscorefonts-eula\
+                select true | pkexec debconf-set-selections', stdin=subprocess.PIPE, shell=True).wait()
             else:
                 dbg.stdout('Install', 'Unknown code' + code, colour = 1)
                 
