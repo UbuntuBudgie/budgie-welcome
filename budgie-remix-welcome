@@ -42,6 +42,8 @@ import platform
 from gi.repository import WebKit2, Gtk
 from threading import Thread
 
+import apt
+
 class AppView(WebKit2.WebView):
 
     def __init__(self):
@@ -81,6 +83,24 @@ class AppView(WebKit2.WebView):
             self.run_javascript('var graphicsVendor = "' + systemstate.graphics_vendor + '";')
             self.run_javascript('var graphicsGrep = "' + systemstate.graphics_grep + '";')
             app.update_page('#boot-mode', 'html', systemstate.boot_mode)
+            
+            def checkInstallationStatus():
+                pm = PackageManager()
+            
+                if pm.hasInstalled('ubuntu-restricted-extras'):
+                    app.update_page('#restricted-extras-remove', 'fadeIn')
+                    app.update_page('#restricted-extras-install', 'hide')
+                else:
+                    app.update_page('#restricted-extras-install', 'fadeIn')
+                    app.update_page('#restricted-extras-remove', 'hide')
+            
+            # Checking on cache will take sometime. So run it on a
+            # separate thread. It takes time even after running on thread.
+            # Needs to be investigated.        
+            thread = Thread(target = checkInstallationStatus)
+            thread.start()
+            
+            
         ### Index Page ###
         elif app.current_page == 'index.html':
             if systemstate.autostart:
@@ -113,8 +133,27 @@ class AppView(WebKit2.WebView):
         
         if uri == 'control':
             subprocess.Popen(['gnome-control-center'])
-        elif uri == 'kde-help':
-            subprocess.Popen(['khelpcenter'])
+        elif uri == 'update':
+            subprocess.Popen(['update-manager'])
+        elif uri.startswith('install?'):
+            code = uri[8:]
+            
+            if code == 'restricted-extras':
+                package = 'ubuntu-restricted-extras'
+            else:
+                dbg.stdout('Install', 'Unknown code' + code, colour = 1)
+                
+            self.installPackage(code, package)
+           
+        elif uri.startswith('remove?'):
+            code = uri[7:]
+            
+            if code == 'restricted-extras':
+                package = 'ubuntu-restricted-extras'
+            else:
+                dbg.stdout('Remove', 'Unknown code' + code, colour = 1)
+                
+            self.removePackage(code, package)
         # elif uri == 'install':
             # subprocess.Popen(['sudo','live-installer'])
         # elif uri == 'install-cli':
@@ -148,6 +187,38 @@ class AppView(WebKit2.WebView):
             systemstate.get_system_info(self)
         else:
             print('Unknown command: %s' % uri)
+            
+            
+            
+    def installPackage(self, code, package):
+        def threadedMethod():
+            app.update_page('#' + code + '-install', 'addClass', 'disabled')    
+            app.update_page('#' + code + '-status', 'fadeIn')
+            
+            pm = PackageManager()
+            pm.install(package)
+            
+            app.update_page('#' + code + '-install', 'removeClass', 'disabled')    
+            app.update_page('#' + code + '-status', 'fadeOut')
+            
+            self._push_config()
+            
+        Thread(target = threadedMethod).start()
+        
+    def removePackage(self, code, package):
+        def threadedMethod():
+            app.update_page('#' + code + '-remove', 'addClass', 'disabled')    
+            app.update_page('#' + code + '-status', 'fadeIn')
+            
+            pm = PackageManager()
+            pm.remove(package)
+            
+            app.update_page('#' + code + '-remove', 'removeClass', 'disabled')    
+            app.update_page('#' + code + '-status', 'fadeOut')
+            
+            self._push_config()
+            
+        Thread(target = threadedMethod).start()
        
 class Debug(object):
     def __init__(self):
@@ -198,6 +269,26 @@ class PopupMessage(object):
             app.update_page('#popup-message-window', 'fadeIn')
         else:
             dbg.stdout(self.type, 'message is not handled yet', 3)
+            
+class PackageManager(object):
+    
+    def __init__(self):
+        self.cache = apt.Cache()
+        
+    def hasInstalled(self, package):
+        return self.cache[package].is_installed
+    
+    
+    # Don't know how to get root privileage for installing and 
+    # removing packages using apt module. So using regular command
+    # with pkexec. Make it a blocking call and run in thread.    
+    def install(self, package):
+        process = subprocess.Popen(['pkexec', 'apt', 'install', '-y', package])
+        process.wait()
+            
+    def remove(self, package):
+        process = subprocess.Popen(['pkexec', 'apt', 'remove', '-y', package])
+        process.wait()
             
 
 class SystemState(object):

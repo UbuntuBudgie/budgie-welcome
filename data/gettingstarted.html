@@ -365,13 +365,13 @@
               </div>
               <div class="col-md-10">
                 <h4>&zwnj;Software Updater&zwnj;</h4>
-                <p>&zwnj;Ubuntu MATE periodically will check to see if new software
+                <p>&zwnj;<span name="distro-name"></span> periodically will check to see if new software
                 and security updates are available for your computer. If you
-                have just installed Ubuntu MATE, you might want to do this now.&zwnj;</p>
+                have just installed <span name="distro-name"></span>, you might want to do this now.&zwnj;</p>
                 <span id="updates-hint" class="center">
                   <small><p>
-                      <span class="fa fa-info-circle"></span> <b>&zwnj;Software Updater&zwnj;</b> &zwnj;can be found later in&zwnj;
-                      <b><i>&zwnj;System&zwnj; <span class="fa fa-long-arrow-right"></span> &zwnj;Administration&zwnj;.</i></b>
+                      <b>&zwnj;Software Updater&zwnj;</b> &zwnj;can be found later in&zwnj;
+                      <strong>Application Menu</strong>
                   </p></small>
                 </span>
                 <p class="text-right">
@@ -388,73 +388,26 @@
                 <img src="img/applications/codecs.png" width="64px" height="64px" style="margin-top:16px;"/>
               </div>
               <div class="col-md-10">
-                <h4>&zwnj;Additional Codecs&zwnj;</h4>
-                <p>&zwnj;The codecs package include a complete, cross-platform solution to
-                decode, encode, record, convert and stream audio and video.
-                It also includes a MP3 audio decoder that permits the playback
-                of MPEG 1 audio layer III (MP3).&zwnj;</p>
-                <p class="text-right">
-                  <span class="codecs-applying"><img src="img/welcome/processing.gif" width="24px" height="24px"/> &zwnj;Applying Changes...&zwnj;</span>
-                  <a class="btn btn-lg btn-success codecs-install" onclick="cmd('install-appid?codecs')"><span class="fa fa-download"></span>&nbsp; &zwnj;Install&zwnj;</a>
-                  <a class="btn btn-lg btn-danger codecs-remove"   onclick="cmd('remove-appid?codecs')"> <span class="fa fa-trash"></span>&nbsp; &zwnj;Remove&zwnj;</a>
-                </p>
-              </div>
-            </div>
-            <hr class="soften">
+                <h4>&zwnj;Restricted Extras&zwnj;</h4>
+                <p><strong>Ubuntu</strong>(base distribution of <span name="distro-name"></span> strives to make all 
+                of the most important software available to its users automatically. However patent and copyright 
+                restrictions (see Ubuntu License Policy) complicate distribution of software to support non-free formats.</p>
 
-            <div class="row">
-              <div class="col-md-2 center-inside">
-                <img src="img/applications/dvd.png" width="64px" height="64px" style="margin-top:16px;"/>
-              </div>
-              <div class="col-md-10">
-                <h4>&zwnj;DVD Playback Support&zwnj;</h4>
-                <p><code>libdvdcss2</code> &zwnj;is a simple library designed for
-                accessing DVDs like a block device without having to bother
-                about the decryption. It will enable playback of DVD video in VLC.&zwnj;</p>
-                <p class="text-right">
-                  <span class="libdvdcss2-applying"><img src="img/welcome/processing.gif" width="24px" height="24px"/> &zwnj;Applying Changes...&zwnj;</span>
-                  <a class="btn btn-lg btn-success libdvdcss2-install" onclick="cmd('install-appid?libdvdcss2')"><span class="fa fa-download"></span>&nbsp; &zwnj;Install&zwnj;</a>
-                  <a class="btn btn-lg btn-danger libdvdcss2-remove"   onclick="cmd('remove-appid?libdvdcss2')"> <span class="fa fa-trash"></span>&nbsp; &zwnj;Remove&zwnj;</a>
-                </p>
-              </div>
-            </div>
-            <hr class="soften">
+                <p>However, you can install the ability to play popular non-free media formats, including DVD, MP3, 
+                Quicktime, and Windows Media formats, by following the instructions below.</p>
 
-            <div class="row">
-              <div class="col-md-2 center-inside">
-                <img src="img/applications/xscreensaver.png" width="64px" height="64px" style="margin-top:16px;"/>
-              </div>
-              <div class="col-md-10">
-                <h4>&zwnj;Additional Screen Savers&zwnj;</h4>
-                <p>&zwnj;Install over 200 screen savers for
-                when your computer is idle for long periods of time.
-                Screen savers were originally created to reduce burn-in for
-                cathode ray tube (CRT) monitors displaying the same
-                image for long periods of time.&zwnj;</p>
-                <p class="text-right">
-                  <span class="xscreensaver-applying"><img src="img/welcome/processing.gif" width="24px" height="24px"/> &zwnj;Applying Changes...&zwnj;</span>
-                  <a class="btn btn-lg btn-success xscreensaver-install" onclick="cmd('install-appid?xscreensaver')"><span class="fa fa-download"></span>&nbsp; &zwnj;Install&zwnj;</a>
-                  <a class="btn btn-lg btn-danger  xscreensaver-remove"  onclick="cmd('remove-appid?xscreensaver')"> <span class="fa fa-trash"></span>&nbsp; &zwnj;Remove&zwnj;</a>
-                  <a class="btn btn-lg btn-inverse" onclick="cmd('run?mate-screensaver-preferences')"> <img src="img/applications/xscreensaver.png" width="20px" height="20px">&nbsp; &zwnj;Change Screen Saver&zwnj;</a>
-                </p>
-              </div>
-            </div>
-            <hr class="soften">
+                <p>Ubuntu’s commitment to only include completely free software by default means that proprietary media 
+                formats are not configured “out of the box”. See Ubuntu’s Free Software Philosophy and the Free Formats 
+                page for a more comprehensive discussion of these issues.</p>
 
-            <div class="row">
-              <div class="col-md2 center-inside">
-                <img src="img/applications/desktop.png" width="64px" height="64px" style="margin-top:16px;"/>
-              </div>
-              <div class="col-md-10">
-                <h4>&zwnj;Additional Community Wallpapers&zwnj;</h4>
-                <p>&zwnj;The Ubuntu MATE Community have contributed dozens of
-                  desktop wallpaper images over the years. Why not install them
-                  and find something that suits your tastes?&zwnj;</p>
+                <p><strong>Legal Notice</strong> Patent and copyright laws operate differently depending on which country
+                you are in. Please obtain legal advice if you are unsure whether a particular patent or restriction applies
+                to a media format you wish to use in your country.</p>
+           
                 <p class="text-right">
-                  <span class="wallpapers-applying"><img src="img/welcome/processing.gif" width="24px" height="24px"/> &zwnj;Applying Changes...&zwnj;</span>
-                  <a class="btn btn-lg btn-success wallpapers-install" onclick="cmd('install-appid?wallpapers')"><span class="fa fa-download"></span>&nbsp; &zwnj;Install&zwnj;</a>
-                  <a class="btn btn-lg btn-danger  wallpapers-remove"  onclick="cmd('remove-appid?wallpapers')"> <span class="fa fa-trash"></span>&nbsp; &zwnj;Remove&zwnj;</a>
-                  <a class="btn btn-lg btn-inverse" onclick="cmd('run?mate-appearance-properties')"> <img src="img/applications/appearance.png" width="20px" height="20px">&nbsp; &zwnj;Change Appearance&zwnj;</a>
+                  <span id="restricted-extras-status" class="hidden"><img src="img/welcome/processing.gif" width="24px" height="24px"/> &zwnj;Applying Changes...&zwnj;</span>
+                  <a id="restricted-extras-install" class="btn btn-lg btn-success" onclick="cmd('install?restricted-extras')">&nbsp; &zwnj;Install&zwnj;</a>
+                  <a id="restricted-extras-remove" class="btn btn-lg btn-danger"   onclick="cmd('remove?restricted-extras')"> <span class="fa fa-trash"></span>&nbsp; &zwnj;Remove&zwnj;</a>
                 </p>
               </div>
             </div>
