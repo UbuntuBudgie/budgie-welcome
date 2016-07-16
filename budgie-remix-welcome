@@ -93,13 +93,26 @@ class AppView(WebKit2.WebView):
                 else:
                     app.update_page('#restricted-extras-install', 'fadeIn')
                     app.update_page('#restricted-extras-remove', 'hide')
+                    
             
             # Checking on cache will take sometime. So run it on a
-            # separate thread. It takes time even after running on thread.
-            # Needs to be investigated.        
+            # separate thread.    
             thread = Thread(target = checkInstallationStatus)
             thread.start()
+
+            graphics_vendor = systemstate.graphics_vendor
             
+            if graphics_vendor == 'NVIDIA':
+                app.update_page('.graphics-nvidia', 'fadeIn')
+            elif graphics_vendor == 'AMD':
+                app.update_page('.graphics-amd', 'fadeIn')
+            elif graphics_vendor == 'Intel':
+                app.update_page('.graphics-intel', 'fadeIn')
+            elif graphics_vendor == 'VirtualBox':
+                app.update_page('.graphics-vbox', 'fadeIn')
+            else:
+                app.update_page('.graphics-unknown', 'fadeIn')
+              
             
         ### Index Page ###
         elif app.current_page == 'index.html':
@@ -140,6 +153,8 @@ class AppView(WebKit2.WebView):
             subprocess.Popen(['gnome-control-center'])
         elif uri == 'update':
             subprocess.Popen(['update-manager'])
+        elif uri == 'drivers':
+            subprocess.Popen(['software-properties-gtk', '--open-tab=4'])
         elif uri.startswith('install?'):
             code = uri[8:]
             
@@ -300,7 +315,8 @@ class PopupMessage(object):
 class PackageManager(object):
     
     def __init__(self):
-        self.cache = apt.Cache()
+        # Don't create cache object each time instead use global cache
+        self.cache = cache
         
     def hasInstalled(self, package):
         return self.cache[package].is_installed
@@ -913,6 +929,7 @@ if __name__ == "__main__":
     # Process any parameters passed to the program.
     dbg = Debug()
     arg = Arguments()
+    cache = apt.Cache()
     
     systemstate = SystemState()
     

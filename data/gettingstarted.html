@@ -96,7 +96,7 @@
             <div class="center">
               <hr class="soften-light">
               <a class="btn" onclick='changePage("prepare","&zwnj;Installation Preparations&zwnj;")'>
-                <b>&zwnj;Next:&zwnj;</b>&nbsp; &zwnj;Installation Preparations&zwnj; <span class="fa fa-chevron-right"></span></a>
+                <b>&zwnj;Next:&zwnj;</b>&nbsp; &zwnj;Installation Preparations&zwnj; <i class="material-icons">&#xE315;</i></a>
             </div>
           </div>
         </div>
@@ -165,9 +165,9 @@
             <div class="center">
               <hr class="soften-light">
               <a class="btn" onclick='changePage("sysreq","&zwnj;System Requirements&zwnj;")'>
-                <span class="fa fa-chevron-left"></span> <b>&zwnj;Previous:&zwnj;</b>&nbsp; &zwnj;System Requirements&zwnj;</a>
+                <i class="material-icons">&#xE5CB;</i> <b>&zwnj;Previous:&zwnj;</b>&nbsp; &zwnj;System Requirements&zwnj;</a>
               <a class="btn" onclick='changePage("dualboot","&zwnj;Dual Booting&zwnj;")'>
-                <b>&zwnj;Next:&zwnj;</b>&nbsp; &zwnj;Dual Booting&zwnj; <span class="fa fa-chevron-right"></span></a>
+                <b>&zwnj;Next:&zwnj;</b>&nbsp; &zwnj;Dual Booting&zwnj; <i class="material-icons">&#xE315;</i></a>
             </div>
           </div>
         </div>
@@ -343,7 +343,7 @@
             <div class="center">
               <hr class="soften-light">
               <a class="btn" onclick='changePage("prepare","&zwnj;Installation Preparations&zwnj;")'>
-                <span class="fa fa-chevron-left"></span> <b>&zwnj;Previous:&zwnj;</b>&nbsp; &zwnj;Install Preparations&zwnj;</a>
+                <i class="material-icons">&#xE5CB;</i> <b>&zwnj;Previous:&zwnj;</b>&nbsp; &zwnj;Install Preparations&zwnj;</a>
               </div>
           </div>
         </div>
@@ -421,7 +421,7 @@
             <div class="center">
               <hr class="soften-light">
               <a class="btn" onclick='changePage("drivers","&zwnj;Drivers&zwnj;")'>
-                <b>&zwnj;Next:&zwnj;</b>&nbsp; &zwnj;Drivers&zwnj; <span class="fa fa-chevron-right"></span></a>
+                <b>&zwnj;Next:&zwnj;</b>&nbsp; &zwnj;Drivers&zwnj; <i class="material-icons">&#xE315;</i></a>
             </div>
           </div>
         </div>
@@ -432,8 +432,8 @@
         <div class="row">
           <div class="col-md-12">
             <h2>&zwnj;Drivers&zwnj;</h2>
-            <p>&zwnj;While a wide range of hardware is compatible with Ubuntu
-            MATE, there are some components and peripherals that
+            <p>&zwnj;While a wide range of hardware is compatible with <span name="distro-name"></span>
+            , there are some components and peripherals that
             require proprietary drivers to function properly. Installing
             the firmware package is often required to get some devices,
             typically Bluetooth and Wi-Fi, to work correctly.&zwnj;</p>
@@ -441,49 +441,46 @@
               <h5>&zwnj;An Internet connection is required to download and install drivers.&zwnj;</h5>
             </div>
             <div align="center">
-                <a class="btn btn-inverse" onclick="cmd('drivers')" onclick="smoothFade('','#drivers-hint')">
+                <a class="btn btn-inverse" onclick="cmd('drivers');cmd('')" onclick="smoothFade('','#drivers-hint')">
                     <img src="img/applications/additional-drivers.png" width="32px" height="32px"/>&nbsp; &zwnj;Additional Drivers&zwnj;
-                </a>
-                <a class="btn btn-inverse" onclick="cmd('install-appid?firmware')">
-                    <img src="img/applications/additional-drivers.png" width="32px" height="32px"/>&nbsp; &zwnj;Install Firmware Package&zwnj;
                 </a>
             </div>
 
             <span id="drivers-hint" class="center"><small>
-              <p><span class="fa fa-info-circle"></span> <b>&zwnj;Additional Drivers&zwnj;</b> &zwnj;can be found later in&zwnj;
-              <b><i>&zwnj;System&zwnj; <span class="fa fa-long-arrow-right"></span> &zwnj;Administration&zwnj;.</i></b></p>
+              <p><b>&zwnj;Additional Drivers&zwnj;</b> &zwnj;can be found later in&zwnj;
+              <b>Application Menu</b></p>
             </small></span>
 
             <!-- Advice about graphics -->
             <a onclick="toggleSub('graphics-section','graphics-arrow');"><h3 class="sub-collapse"><span class="fa fa-chevron-down" id="graphics-arrow"></span> &zwnj;Graphics&zwnj;</h3></a>
             <div id="graphics-section">
 
-              <div class="graphics-unknown alert alert-danger">
+              <div class="graphics-unknown alert alert-danger hidden">
                 <h5>&zwnj;Sorry, Welcome was unable to automatically identify the graphics vendor on this system.&zwnj;</h5>
-                <p><span class="fa fa-plug"></span><b> &zwnj;Card/Chipset:&zwnj; </b><i class="graphics-pci">&zwnj;Unknown&zwnj;</i></p>
+                <p><b> &zwnj;Card/Chipset:&zwnj; </b><i class="graphics-pci">&zwnj;Unknown&zwnj;</i></p>
               </div>
 
-              <div class="graphics-nvidia alert alert-info">
+              <div class="graphics-nvidia alert alert-info hidden">
                 <h5>NVIDIA &zwnj;Graphics Card Detected.&zwnj;</h5>
                 <p>NVIDIA &zwnj;may have drivers for your card that can boost performance for 3D applications and games as well as deliver improvements to power management.&zwnj;</p>
-                <p><span class="fa fa-plug"></span><b> &zwnj;Card/Chipset:&zwnj; </b><i class="graphics-pci">&zwnj;Unknown&zwnj;</i></p>
+                <p><b> &zwnj;Card/Chipset:&zwnj; </b><i class="graphics-pci">&zwnj;Unknown&zwnj;</i></p>
               </div>
 
-              <div class="graphics-amd alert alert-success">
+              <div class="graphics-amd alert alert-success hidden">
                 <h5>AMD &zwnj;Graphics Card Detected.&zwnj;</h5>
                 <p>&zwnj;AMD's drivers are no longer supported on Ubuntu.
                 The open source drivers you are currently using will deliver the most
                 stable performance out of your card.&zwnj;</p>
-                <p><span class="fa fa-plug"></span><b> &zwnj;Card/Chipset:&zwnj; </b><i class="graphics-pci">&zwnj;Unknown&zwnj;</i></p>
+                <p><b> &zwnj;Card/Chipset:&zwnj; </b><i class="graphics-pci">&zwnj;Unknown&zwnj;</i></p>
               </div>
 
-              <div class="graphics-intel alert alert-success">
+              <div class="graphics-intel alert alert-success hidden">
                 <h5>&zwnj;You're already good to go.&zwnj;</h5>
                 <p>&zwnj;Intel's drivers are open source and are maintained/updated in the kernel.&zwnj;</p>
-                <p><span class="fa fa-plug"></span><b> &zwnj;Card/Chipset:&zwnj; </b><i class="graphics-pci">&zwnj;Unknown&zwnj;</i></p>
+                <p>&zwnj;Card/Chipset:&zwnj; </b><i class="graphics-pci">&zwnj;Unknown&zwnj;</i></p>
               </div>
 
-              <div class="graphics-vbox alert alert-info">
+              <div class="graphics-vbox alert alert-info hidden">
                 <h5>&zwnj;VirtualBox Guest Additions&zwnj;</h5>
                 <p>&zwnj;To accelerate graphics performance inside the virtual machine, please install Guest Additions.&zwnj;</p>
               </div>
@@ -513,11 +510,11 @@
                   <li>&zwnj;Problems with applications/games requiring hardware acceleration.&zwnj;</li>
                 </ul>
 
-                <p class="graphics-nvidia graphics-amd">
+                <p class="graphics-nvidia graphics-amd hidden">
                   <code id="graphics-open-driver-name"></code> &zwnj;is the open source driver for your card.&zwnj;
                 </p>
 
-                <p id="graphics-nvidia">
+                <div class="graphics-nvidia hidden">
                   <hr class="soften"/>
                   <h4>&zwnj;What about the latest NVIDIA drivers?&zwnj;</h4>
                   <p><b>&zwnj;Additional Drivers&zwnj;</b> &zwnj;fetches the latest tested driver from the Ubuntu repositories.&zwnj;
@@ -525,26 +522,27 @@
                   <a onclick="cmd('link?https://launchpad.net/~graphics-drivers/+archive/ubuntu/ppa')">&zwnj;Ubuntu Graphics Driver PPA&zwnj;</a>,
                   &zwnj;which packages up the latest NVIDIA drivers for Ubuntu. These packages are not as thoroughly tested.&zwnj;</p>
                   <div class="alert alert-warning">
-                    <span class="fa fa-exclamation-triangle"></span> &zwnj;This only applies for actively supported cards,
+                    &zwnj;This only applies for actively supported cards,
                     and not older cards using the legacy driver.&zwnj;
                   </div>
-                  <a class="btn btn-warning" onclick="cmd('upgrade-appid?nvidia-settings')"><span class="fa fa-level-up"></span>&nbsp; &zwnj;Add Repository&zwnj;</a>
+                  <a class="btn btn-warning" onclick="cmd('upgrade-appid?nvidia-settings')">&nbsp; &zwnj;Add Repository&zwnj;</a>
                   <br><br>
                   <!-- <a class="btn btn-danger" href="#"><span class="fa fa-trash"></span>&nbsp; Remove Repository</a> -->
                   <p>&zwnj;To add the repository to the system, open a terminal and type the following:&zwnj;</p>
                   <blockquote class="terminal miscCmd">
-                    <span class="fa fa-dollar"></span> sudo add-apt-repository ppa:graphics-drivers/ppa
-                    <br>&nbsp;<span class="fa fa-dollar"></span> sudo apt-get update
+                    &nbsp;$ sudo add-apt-repository ppa:graphics-drivers/ppa
+                    <br>
+                    &nbsp;$ sudo apt-get update
                   </blockquote>
                   <p>&zwnj;After the PPA is added, newer versions are presented
                   to install in&zwnj; <a onclick="cmd('drivers')">&zwnj;Additional Drivers:&zwnj;</a></p>
                   <img src="img/screenshots/graphics-drivers-nvidia.png"/>
-                </p>
+                </div>
               </div>
             </div>
 
             <!-- Advice about wireless -->
-            <a onclick="toggleSub('wireless-section','wireless-arrow');"><h3 class="sub-collapse"><span class="fa fa-chevron-down" id="wireless-arrow"></span> &zwnj;Wireless, Bluetooth and Other Devices&zwnj;</h3></a>
+            <a onclick="toggleSub('wireless-section','wireless-arrow');"><h3 class="sub-collapse"> &zwnj;Wireless, Bluetooth and Other Devices&zwnj;</h3></a>
             <div id="wireless-section">
              <p>&zwnj;If there were no additional drivers found for the hardware
               nor did it work after installing the firmware packages, you may
@@ -563,52 +561,13 @@
                <p><a onclick="cmd('link?https://help.ubuntu.com/community/WifiDocs/WirelessTroubleShootingGuide/Drivers')">
                <span class="fa fa-globe"></span> &zwnj;Read more on troubleshooting wireless hardware.&zwnj;</a></p>
             </div>
-
-            <!-- Advice about printers -->
-            <a onclick="toggleSub('printers-section','printers-arrow');"><h3 class="sub-collapse"><span class="fa fa-chevron-down" id="printers-arrow"></span> &zwnj;Printers&zwnj;</h3></a>
-            <div id="printers-section">
-              <p>&zwnj;When you set up a printer in the&zwnj;
-              <a onclick="cmd('printers')">
-              <img src="/usr/share/icons/Humanity/actions/16/document-print.svg" width="20px" height="20px"/>
-              <b>&zwnj;Printers&zwnj;</b></a>
-              &zwnj;utility&zwnj; <i>(&zwnj;under&zwnj; &zwnj;System&zwnj; <span class="fa fa-long-arrow-right"></span>
-              &zwnj;Administration&zwnj;)</i>, &zwnj;you will be presented with a
-              list of drivers available to use, if applicable.&zwnj;</p>
-
-              <p>&zwnj;Some manufacturers may provide their own drivers and
-              require you to download them from their website.&zwnj;</p>
-              <p><a onclick="cmd('link?https://help.ubuntu.com/community/Printers')">
-              <span class="fa fa-globe"></span> &zwnj;Read more on
-              printing&zwnj;</a>.</p>
-
-              <hr class="soften"/>
-
-              <div class="row">
-                <div class="col-md-2 center-inside">
-                  <img src="img/applications/hplip.png" width="64px" height="64px"/>
-                  <span class="fa fa-check-circle fa-2x installed-check hp-printer-remove"></span>
-                </div>
-                <div class="col-md-10">
-                  <p><b>&zwnj;HP Linux Printing and Imaging System&zwnj;</b></p>
-                  <p>&zwnj;Recommended if you have an HP printer as it provides
-                  full support for printing on most HP SFP (single function
-                  peripheral) inkjets and many LaserJets, and for scanning,
-                  sending faxes and for photo-card access on most HP MFP
-                  (multi-function peripheral) printers.&zwnj;</p>
-                  <p class="text-right">
-                    <a class="btn btn-inverse hp-printer-remove" onclick="cmd('launch-appid?hp-printer')"><img src="img/applications/hplip.png" width="20px" height="20px"/>&nbsp; &zwnj;Open&zwnj;</a>
-                    <a class="btn btn-success hp-printer-install" onclick="cmd('install-appid?hp-printer')"><span class="fa fa-download"></span>&nbsp; &zwnj;Install&zwnj;</a>
-                  </p>
-                </div>
-              </div>
-            </div>
-
+        
             <div class="center">
               <hr class="soften-light">
               <a class="btn" onclick='changePage("updates","&zwnj;Updates & Extras&zwnj;")'>
-                <span class="fa fa-chevron-left"></span> <b>&zwnj;Previous:&zwnj;</b>&nbsp; &zwnj;Updates & Extras&zwnj;</a>
+                <i class="material-icons">&#xE5CB;</i> <b>&zwnj;Previous:&zwnj;</b>&nbsp; &zwnj;Updates & Extras&zwnj;</a>
               <a class="btn" onclick='changePage("languageInput","&zwnj;Language Input&zwnj;")'>
-                <b>&zwnj;Next:&zwnj;</b>&nbsp; &zwnj;Language Input&zwnj; <span class="fa fa-chevron-right"></span></a>
+                <b>&zwnj;Next:&zwnj;</b>&nbsp; &zwnj;Language Input&zwnj; <i class="material-icons">&#xE315;</i></a>
             </div>
           </div>
         </div>
@@ -652,9 +611,9 @@
         <div class="center">
           <hr class="soften-light">
           <a class="btn" onclick='changePage("drivers","&zwnj;Drivers&zwnj;")'>
-            <span class="fa fa-chevron-left"></span> <b>&zwnj;Previous:&zwnj;</b>&nbsp; &zwnj;Drivers&zwnj;</a>
+            <i class="material-icons">&#xE5CB;</i> <b>&zwnj;Previous:&zwnj;</b>&nbsp; &zwnj;Drivers&zwnj;</a>
           <a class="btn" onclick='changePage("tasks","&zwnj;Optional Tasks&zwnj;")'>
-            <b>&zwnj;Next:&zwnj;</b>&nbsp; &zwnj;Optional Tasks&zwnj; <span class="fa fa-chevron-right"></span></a>
+            <b>&zwnj;Next:&zwnj;</b>&nbsp; &zwnj;Optional Tasks&zwnj; <i class="material-icons">&#xE315;</i></a>
         </div>
       </div>
 
@@ -769,9 +728,9 @@
         <div class="center">
           <hr class="soften-light">
           <a class="btn" onclick='changePage("languageInput","&zwnj;Language Input&zwnj;")'>
-            <span class="fa fa-chevron-left"></span> <b>&zwnj;Previous:&zwnj;</b>&nbsp; &zwnj;Language Input&zwnj;</a>
+            <i class="material-icons">&#xE5CB;</i> <b>&zwnj;Previous:&zwnj;</b>&nbsp; &zwnj;Language Input&zwnj;</a>
           <a class="btn" onclick='changePage("customize","&zwnj;Customization&zwnj;")'>
-            <b>&zwnj;Next:&zwnj;</b>&nbsp; &zwnj;Customization&zwnj; <span class="fa fa-chevron-right"></span></a>
+            <b>&zwnj;Next:&zwnj;</b>&nbsp; &zwnj;Customization&zwnj; <i class="material-icons">&#xE315;</i></a>
         </div>
       </div>
 
@@ -810,9 +769,9 @@
             <div class="center">
               <hr class="soften-light">
               <a class="btn" onclick='changePage("tasks","&zwnj;Optional Tasks&zwnj;")'>
-                <span class="fa fa-chevron-left"></span> <b>&zwnj;Previous:&zwnj;</b>&nbsp; &zwnj;Optional Tasks&zwnj;</a>
+                <i class="material-icons">&#xE5CB;</i> <b>&zwnj;Previous:&zwnj;</b>&nbsp; &zwnj;Optional Tasks&zwnj;</a>
               <a class="btn" onclick='changePage("shortcuts","&zwnj;Keyboard Shortcuts&zwnj;")'>
-                <b>&zwnj;Next:&zwnj;</b>&nbsp; &zwnj;Keyboard Shortcuts&zwnj; <span class="fa fa-chevron-right"></span></a>
+                <b>&zwnj;Next:&zwnj;</b>&nbsp; &zwnj;Keyboard Shortcuts&zwnj; <i class="material-icons">&#xE315;</i></a>
             </div>
           </div>
         </div>
@@ -1363,7 +1322,7 @@
             <div class="center">
               <hr class="soften-light">
               <a class="btn" onclick='changePage("customize","&zwnj;Customization&zwnj;")'>
-                <span class="fa fa-chevron-left"></span> <b>&zwnj;Previous:&zwnj;</b>&nbsp; &zwnj;Customization&zwnj;</a>
+                <i class="material-icons">&#xE5CB;</i> <b>&zwnj;Previous:&zwnj;</b>&nbsp; &zwnj;Customization&zwnj;</a>
             </div>
           </div>
         </div>
