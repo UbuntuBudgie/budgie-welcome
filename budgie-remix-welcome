@@ -328,10 +328,19 @@ class PackageManager(object):
     def install(self, package):
         process = subprocess.Popen(['pkexec', 'apt', 'install', '-y', package])
         process.wait()
+        
+        self.updateGlobalCache()
             
     def remove(self, package):
         process = subprocess.Popen(['pkexec', 'apt', 'remove', '-y', package])
         process.wait()
+        
+        self.updateGlobalCache()
+        
+    def updateGlobalCache(self):
+        cache.close()
+        cache.open()
+        
             
 
 class SystemState(object):
