@@ -33,7 +33,7 @@
         <a class="btn btn-inverse index-btn" onclick='changePage("sysreq","&zwnj;System Requirements&zwnj;")'>        <span class="fa fa-laptop"></span>        &zwnj;System Requirements&zwnj;</a>
         <a class="btn btn-inverse index-btn" onclick='changePage("prepare","&zwnj;Installation Preparations&zwnj;")'> <span class="fa fa-hdd-o"></span>         &zwnj;Installation Preparation&zwnj;</a>
         <a class="btn btn-inverse index-btn" onclick='changePage("dualboot","&zwnj;Dual Booting&zwnj;")'>             <span class="fa fa-retweet"></span>       &zwnj;Dual Booting&zwnj;</a>
-        <a class="btn btn-primary index-btn" onclick="cmd('install')">                                                <span class="fa fa-download"></span>      &zwnj;Install Now&zwnj;</a>
+        <a class="btn btn-primary index-btn" onclick="cmd('install')">                                                <i class="material-icons">&#xE2C4;</i>      &zwnj;Install Now&zwnj;</a>
       </div>
       <!-- Shown when installed -->
       <div class="normal-session-only">
@@ -337,7 +337,7 @@
               <a onclick="reconnectRetry();" class="btn btn-warning"> <span class="fa fa-refresh"></span> &zwnj;Retry&zwnj;</a>
             </div>
 
-            <a class="boot-repair-install btn btn-inverse online" onclick="cmd('install-appid?boot-repair')"><span class="fa fa-download"></span>&nbsp; &zwnj;Download Boot Repair&zwnj;</a>
+            <a class="boot-repair-install btn btn-inverse online" onclick="cmd('install-appid?boot-repair')"><i class="material-icons">&#xE2C4;</i>&nbsp; &zwnj;Download Boot Repair&zwnj;</a>
             <a class="boot-repair-remove btn btn-success" onclick="cmd('run?boot-repair')"><span class="fa fa-wrench"></span>&nbsp; &zwnj;Open Boot-Repair&zwnj;</a>
 
             <div class="center">
@@ -588,7 +588,7 @@
               </a>
             </div>
             <span id="locale-hint"><small>
-              <p><span class="fa fa-info-circle"></span> <b>&zwnj;Language Support&zwnj;</b> &zwnj;can be found later in&zwnj;
+              <p><i class="material-icons">&#xE88F;</i> <b>&zwnj;Language Support&zwnj;</b> &zwnj;can be found later in&zwnj;
               <b><i>&zwnj;Application Menu&zwnj; <i class="material-icons">&#xE315;</i>&zwnj;Settings&zwnj;
                            <i class="material-icons">&#xE315;</i> &zwnj;Region & Language&zwnj;</i></b></p>
             </small></span>
@@ -634,15 +634,15 @@
         <div class="row">
           <div class="col-md-12">
             <h2>&zwnj;Backup, Firewall and User Management&zwnj;</h2>
-            <p>&zwnj;Ubuntu MATE provides tools to backup your files, comes with
-            a firewall pre-installed and supports multiple user accounts.&zwnj;</p>
+            <p>&zwnj;<span name="distro-name"></span> provides option to install backup utility, firewall
+            and supports multiple user accounts.&zwnj;</p>
           </div>
         </div>
         <hr class="soften-light">
 
         <div class="row wow fadeIn">
           <div class="col-md-6 center-inside">
-            <img src="img/screenshots/tasks-backup.png">
+            <img src="img/screenshots/tasks-backup.png" style="width: 100%">
           </div>
           <div class="col-md-6">
             <h3>&zwnj;Backups&zwnj;</h3>
@@ -650,48 +650,27 @@
               of your personal files, just in case something
               disastrous happens to your computer.&zwnj;</p>
             <p><img src="img/applications/deja-dup.png" width="20px" height="20px"/>
-            <b>Deja-Dup</b> &zwnj;comes pre-installed and supports backups to
+            <b>Deja-Dup</b> &zwnj;is a powerful backup utility that can be installed in
+            <span name="distro-name"></span> and supports backups to
             local devices as well as online cloud-based services.&zwnj;</p>
-            <a class="btn btn-lg btn-inverse" onclick="cmd('backup')" onclick="smoothFade('','#backup-hint')">
-              <img src="img/applications/deja-dup.png" width="32px" height="32px"/>&nbsp; &zwnj;Configure Backup&zwnj;
-            </a>
-            <span id="backup-hint" class="center"><small>
-              <p><span class="fa fa-info-circle"></span> <b>&zwnj;Backups&zwnj;</b> &zwnj;can be found later in&zwnj;
-              <b><i>&zwnj;System&zwnj; <i class="material-icons">&#xE315;</i> &zwnj;Preferences&zwnj;
-                           <i class="material-icons">&#xE315;</i> &zwnj;Personal&zwnj;</i></b>.</p>
-            </small></span>
+            <span id="backup-status" class="hidden"><img src="img/welcome/processing.gif" width="24px" height="24px"/> &zwnj;Applying Changes...&zwnj;</span>
+            <a id="backup-install" class="btn btn-primary" onclick="cmd('install?backup');cmd('')">&nbsp; &zwnj;Install&zwnj;</a>
+            <div id="backup-remove">
+              <a class="btn btn-lg btn-inverse" onclick="cmd('backup');cmd('')">
+                <img src="img/applications/deja-dup.png" width="32px" height="32px"/>&nbsp; &zwnj;Configure Backup&zwnj;
+              </a>
+              <span id="backup-hint" class="center"><small>
+                <p><i class="material-icons">&#xE88F;</i> <b>&zwnj;Backups&zwnj;</b> &zwnj;can be found later in&zwnj;
+                <b><i>&zwnj;Application Menu&zwnj; <i class="material-icons">&#xE315;</i> &zwnj;Backup&zwnj;</b>.</p>
+              </small></span>
+            </div>
           </div>
         </div>
         <hr class="soften-light">
 
         <div class="row wow fadeIn">
           <div class="col-md-6 center-inside">
-            <img src="img/screenshots/tasks-sharing.png">
-          </div>
-          <div class="col-md-6">
-            <h3>&zwnj;Network Shares&zwnj;</h3>
-            <p>&zwnj;Need to access files and folders with multiple computers?&zwnj;
-            </p>
-            <p><img src="img/applications/caja-share.png" width="20px" height="20px"/>
-              <b>&zwnj;Samba&zwnj;</b> &zwnj;is available to install, which integrates with the Caja File
-            Manager, allowing you to seamless retrieve data stored on another computer.&zwnj;</p>
-
-            <span class="caja-share-remove">
-              <span class="fa fa-check-circle"></span>
-              <b>&zwnj;Samba is installed.&zwnj;</b>
-              <br>&zwnj;Choose a folder and select "Sharing Options".&zwnj;
-            </span>
-            <span class="caja-share-install">
-              <a class="btn btn-success" onclick="cmd('install-appid?caja-share')"><span class="fa fa-download"></span>&nbsp; &zwnj;Install&zwnj; Samba</a>
-              <br><small>&zwnj;Samba is available from the Software Boutique under "Servers".&zwnj;</small>
-            </span>
-          </div>
-        </div>
-        <hr class="soften-light">
-
-        <div class="row wow fadeIn">
-          <div class="col-md-6 center-inside">
-            <img src="img/screenshots/tasks-firewall.png">
+            <img src="img/screenshots/tasks-firewall.png" style="width: 100%">
           </div>
           <div class="col-md-6">
             <h3>&zwnj;Firewall&zwnj;</h3>
@@ -701,22 +680,27 @@
             <p><img src="img/applications/gufw.png" width="20px" height="20px"/>
               <b>Gufw</b> &zwnj;provides a graphical frontend to&zwnj; <code>ufw</code>
               (&zwnj;Uncomplicated Firewall&zwnj;). &zwnj;If security is important to you, there are&zwnj;
-              <a onclick="cmd('link?https://wiki.ubuntu.com/BasicSecurity')">&zwnj;more ways to stay secure too&zwnj;</a>.</p>
-            <a class="btn btn-lg btn-inverse" onclick="cmd('firewall')" onclick="smoothFade('','#firewall-hint')">
-              <img src="img/applications/gufw.png" width="32px" height="32px"/>&nbsp; &zwnj;Configure Firewall&zwnj;
-            </a>
-            <span id="firewall-hint" class="center"><small>
-              <p><span class="fa fa-info-circle"></span> <b>&zwnj;Firewall Configuration&zwnj;</b> &zwnj;can be found later in&zwnj;
-              <b><i>&zwnj;System&zwnj; <i class="material-icons">&#xE315;</i> &zwnj;Preferences&zwnj;
+              <a onclick="cmd('link?https://wiki.ubuntu.com/BasicSecurity')">&zwnj;more ways to stay secure too&zwnj;</a>.
+            </p>
+            <span id="firewall-status" class="hidden"><img src="img/welcome/processing.gif" width="24px" height="24px"/> &zwnj;Applying Changes...&zwnj;</span>
+            <a id="firewall-install" class="btn btn-primary" onclick="cmd('install?firewall');cmd('')">&nbsp; &zwnj;Install&zwnj;</a> 
+            <div id="firewall-remove"> 
+              <a class="btn btn-lg btn-inverse" onclick="cmd('firewall');cmd('')">
+                <img src="img/applications/gufw.png" width="32px" height="32px"/>&nbsp; &zwnj;Configure Firewall&zwnj;
+              </a>
+              <span id="firewall-hint" class="center"><small>
+                <p><i class="material-icons">&#xE88F;</i> <b>&zwnj;Firewall Configuration&zwnj;</b> &zwnj;can be found later in&zwnj;
+                <b><i>&zwnj;System&zwnj; <i class="material-icons">&#xE315;</i> &zwnj;Preferences&zwnj;
                            <i class="material-icons">&#xE315;</i> &zwnj;Internet and Network&zwnj;</i></b>.</p>
-            </small></span>
+              </small></span>
+            </div>
           </div>
         </div>
         <hr class="soften-light">
 
         <div class="row wow fadeIn">
-          <div class="col-md-6 center-inside">
-            <img src="img/screenshots/tasks-users.png">
+          <div class="col-md-12 center-inside">
+            <img src="img/screenshots/tasks-users.png" style="width: 100%">
           </div>
           <div class="col-md-12">
             <h3>&zwnj;Users&zwnj;</h3>
@@ -726,14 +710,16 @@
             </p>
             <p>&zwnj;You can also log in to a&zwnj; <b>&zwnj;Guest Session&zwnj;</b> &zwnj;if someone
             is using your computer as a one-off.&zwnj;</p>
-            <a class="btn btn-lg btn-inverse" onclick="cmd('users')" onclick="smoothFade('','#users-hint')">
-              <img src="img/applications/users.png" width="32px" height="32px"/>&nbsp; &zwnj;Configure Users&zwnj;
-            </a>
-            <span id="users-hint" class="center"><small>
-              <p><span class="fa fa-info-circle"></span> <b>&zwnj;Users and Groups&zwnj;</b> &zwnj;can be found later in&zwnj;
-              <b><i>&zwnj;System&zwnj; <i class="material-icons">&#xE315;</i> &zwnj;Administration&zwnj;
-                           <i class="material-icons">&#xE315;</i> &zwnj;Users and Groups&zwnj;</i></b>.</p>
-            </small></span>
+            <div class="text-md-center">
+              <a class="btn btn-lg btn-inverse" onclick="cmd('users');cmd('')">
+                <img src="img/applications/users.png" width="32px" height="32px"/>&nbsp; &zwnj;Configure Users&zwnj;
+              </a>
+              <span id="users-hint" class="center"><small>
+                <p><i class="material-icons">&#xE88F;</i> <b>&zwnj;Users&zwnj;</b> &zwnj;can be found later in&zwnj;
+                <b><i>&zwnj;Application Menu&zwnj; <i class="material-icons">&#xE315;</i> &zwnj;Settings&zwnj;
+                           <i class="material-icons">&#xE315;</i> &zwnj;Users&zwnj;</i></b>.</p>
+              </small></span>
+            </div>
           </div>
         </div>
 
@@ -761,7 +747,7 @@
               <img src="img/applications/control-centre.png" width="32px" height="32px"/>&nbsp; &zwnj;User Interface&zwnj;
             </a></div>
             <span id="tweak-hint" class="center"><small>
-              <p><span class="fa fa-info-circle"></span> <b>&zwnj;MATE Tweak&zwnj;</b> &zwnj;can be found later in&zwnj;
+              <p><i class="material-icons">&#xE88F;</i> <b>&zwnj;MATE Tweak&zwnj;</b> &zwnj;can be found later in&zwnj;
               <b><i>&zwnj;System&zwnj; <i class="material-icons">&#xE315;</i> &zwnj;Preferences&zwnj;
                            <i class="material-icons">&#xE315;</i> &zwnj;Look and Feel&zwnj;</i></b>.</p>
             </small></span>
@@ -774,7 +760,7 @@
               <img src="img/applications/desktop.png" width="32px" height="32px"/>&nbsp; &zwnj;Control Center&zwnj;
             </a></div>
             <span id="control-hint" class="center"><small>
-              <p><span class="fa fa-info-circle"></span> <b>&zwnj;Control Center&zwnj;</b> &zwnj;can be found later in the&zwnj;
+              <p><i class="material-icons">&#xE88F;</i> <b>&zwnj;Control Center&zwnj;</b> &zwnj;can be found later in the&zwnj;
               <b><i>&zwnj;System&zwnj;</i></b> &zwnj;menu.&zwnj;</p>
             </small></span>
 
@@ -1373,7 +1359,7 @@
                 <td class="specs-sel-text">
                   <span id="spec-kernel"></span>
                   <a data-toggle="tooltip" data-placement="right" title="&zwnj;The Linux kernel is the heart of Ubuntu.&zwnj;">
-                    <span class="fa fa-info-circle"></span>
+                    <i class="material-icons">&#xE88F;</i>
                   </a>
                 </td>
               </tr>
@@ -1386,7 +1372,7 @@
                 <td class="specs-sel-text">
                   <span id="spec-boot-mode"></span>
                   <a data-toggle="tooltip" data-placement="right" title="&zwnj;Displays the mode that Ubuntu MATE is communicating with the firmware.&zwnj;">
-                    <span class="fa fa-info-circle"></span>
+                    <i class="material-icons">&#xE88F;</i>
                   </a>
                 </td>
               </tr>
@@ -1408,7 +1394,7 @@
                 <td class="specs-sel-text">
                   <span id="spec-arch-use"></span>
                   <a data-toggle="tooltip" data-placement="right" title="&zwnj;The operating system's architecture in use. For instance, i386 = 32-bit.&zwnj;">
-                    <span class="fa fa-info-circle"></span>
+                    <i class="material-icons">&#xE88F;</i>
                   </a>
                 </td>
               </tr>
@@ -1417,7 +1403,7 @@
                 <td class="specs-sel-text">
                   <span id="spec-arch-supported"></span>
                   <a data-toggle="tooltip" data-placement="right" title="&zwnj;Architectures that are supported by this processor.&zwnj;">
-                    <span class="fa fa-info-circle"></span>
+                    <i class="material-icons">&#xE88F;</i>
                   </a>
                 </td>
               </tr>
@@ -1431,7 +1417,7 @@
                 <td class="specs-sel-text">
                   <span id="spec-memory"></span>
                   <a data-toggle="tooltip" data-placement="right" title="&zwnj;More RAM allows more applications to run simultaneously.&zwnj;">
-                    <span class="fa fa-info-circle"></span>
+                    <i class="material-icons">&#xE88F;</i>
                   </a>
                 </td>
               </tr>
@@ -1458,7 +1444,7 @@
                   <td class="specs-sel-text">
                     <span id="spec-filesystem"></span>
                     <a data-toggle="tooltip" data-placement="top" title="&zwnj;The file system where Ubuntu MATE is installed.&zwnj;">
-                      <span class="fa fa-info-circle"></span>
+                      <i class="material-icons">&#xE88F;</i>
                     </a>
                   </td>
                 </tr>
@@ -1481,7 +1467,7 @@
                   <td class="specs-sel-text">
                     <span id="spec-allocated-space"></span>
                     <a data-toggle="tooltip" data-placement="top" title="&zwnj;The size of your operating system partition.&zwnj;">
-                      <span class="fa fa-info-circle"></span>
+                      <i class="material-icons">&#xE88F;</i>
                     </a>
                   </td>
                 </tr>
@@ -1502,14 +1488,14 @@
                   <td class="specs-sel-text">
                     <span id="spec-other-space"></span>
                     <a data-toggle="tooltip" data-placement="top" title="&zwnj;Reserved by system, other partitions, unallocated or swap.&zwnj;">
-                      <span class="fa fa-info-circle"></span>
+                      <i class="material-icons">&#xE88F;</i>
                     </a>
                   </td>
                 </tr>
               </table>
 
               <a data-trigger="hover" rel="unitsinfo" data-placement="top">
-                <span class="fa fa-info-circle"></span> &zwnj;Why do I see two units?&zwnj;
+                <i class="material-icons">&#xE88F;</i> &zwnj;Why do I see two units?&zwnj;
               </a>
             </div>
 

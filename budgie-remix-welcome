@@ -90,6 +90,8 @@ class AppView(WebKit2.WebView):
             def checkInstallationStatus():
                 pm = PackageManager()
             
+                # Need to employ an easier mechanism using dictionary of
+                # short codes.
                 if pm.hasInstalled('ibus-pinyin'):
                    app.update_page('#keyboard-chinese-remove', 'fadeIn')
                 else:
@@ -109,6 +111,16 @@ class AppView(WebKit2.WebView):
                     app.update_page('#restricted-extras-remove', 'fadeIn')
                 else:
                     app.update_page('#restricted-extras-install', 'fadeIn')
+                    
+                if pm.hasInstalled('deja-dup'):
+                    app.update_page('#backup-remove', 'fadeIn')
+                else:
+                    app.update_page('#backup-install', 'fadeIn')
+                    
+                if pm.hasInstalled('gufw'):
+                    app.update_page('#firewall-remove', 'fadeIn')
+                else:
+                    app.update_page('#firewall-install', 'fadeIn')
                     
             
             # Checking on cache will take sometime. So run it on a
@@ -173,6 +185,12 @@ class AppView(WebKit2.WebView):
             subprocess.Popen(['software-properties-gtk', '--open-tab=4'])
         elif uri == 'language':
             subprocess.Popen(['gnome-control-center', 'region'])
+        elif uri == 'users':
+            subprocess.Popen(['gnome-control-center', 'user-accounts'])
+        elif uri == 'backup':
+            subprocess.Popen(['deja-dup-preferences'])
+        elif uri == 'firewall':
+            subprocess.Popen(['gufw'])
         elif uri.startswith('install?'):
             code = uri[8:]
             
@@ -295,6 +313,10 @@ class AppView(WebKit2.WebView):
             package = 'ibus-anthy'
         elif code == 'keyboard-korean':
             package = 'ibus-hangul'
+        elif code == 'backup':
+            package = 'deja-dup'
+        elif code == 'firewall':
+            package = 'gufw'
         else:
             dbg.stdout('Install', 'Unknown code' + code, colour = 1)
             package = None
