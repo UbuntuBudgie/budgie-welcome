@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE policyconfig PUBLIC
+ "-//freedesktop//DTD PolicyKit Policy Configuration 1.0//EN"
+ "http://www.freedesktop.org/standards/PolicyKit/1/policyconfig.dtd">
+<policyconfig>
+  <vendor>budgie-remix</vendor>
+  <vendor_url>http://hal.freedesktop.org/docs/PolicyKit/</vendor_url>
+
+  <action id="org.budgie-remix.welcome">
+    <description>budgie-remix Welcome Repository Installer</description>
+    <message>Helper utility for the budgie-remix Welcome screen that can enable software repositories.</message>
+    <icon_name>system-run</icon_name>
+    <defaults>
+      <allow_any>no</allow_any>
+      <allow_inactive>no</allow_inactive>
+      <allow_active>yes</allow_active>
+    </defaults>
+    <annotate key="org.freedesktop.policykit.exec.path">/usr/lib/budgie-remix/budgie-remix-welcome-repository-installer</annotate>
+  </action>
+</policyconfig>
