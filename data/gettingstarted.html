@@ -240,7 +240,7 @@
                 <p>
                   <img class="left" src="img/applications/gparted.png"/>
                   <b>&zwnj;GParted&zwnj;</b> &zwnj;is available during the live session only.&zwnj;
-                  &zwnj;It is located under the &zwnj; <b>&zwnj;System&zwnj; <span class="fa fa-long-arrow-right"></span>
+                  &zwnj;It is located under the &zwnj; <b>&zwnj;System&zwnj; <i class="material-icons">&#xE5CB;</i>
                   &zwnj;Administration&zwnj;</b> &zwnj;menu. GParted provides complete flexibility over your partitions,
                   primarily for power users who know how they'd like to layout their disks.
                   This method makes changes to partitions prior to installation.&zwnj;
@@ -581,13 +581,16 @@
             <p>&zwnj;Your computer may require updates to your language and
             localization settings, or you may want to install additional
             language support.&zwnj;</p>
-            <div align="center"><a class="btn btn-lg btn-inverse" onclick="cmd('language')" onclick="smoothFade('','#locale-hint')">
-              <img src="img/applications/preferences-desktop-locale.png" width="32px" height="32px"/>&nbsp; &zwnj;Language Support&zwnj;
-            </a></div>
-            <span id="locale-hint" class="center"><small>
+            <div align="center">
+              <a class="btn btn-lg btn-inverse" onclick="cmd('language');cmd('')">
+                <img src="img/applications/preferences-desktop-locale.png" width="32px" height="32px"/>
+                &nbsp; &zwnj;Language Support&zwnj;
+              </a>
+            </div>
+            <span id="locale-hint"><small>
               <p><span class="fa fa-info-circle"></span> <b>&zwnj;Language Support&zwnj;</b> &zwnj;can be found later in&zwnj;
-              <b><i>&zwnj;System&zwnj; <span class="fa fa-long-arrow-right"></span> &zwnj;Preferences&zwnj;
-                           <span class="fa fa-long-arrow-right"></span> &zwnj;Personal&zwnj;</i></b></p>
+              <b><i>&zwnj;Application Menu&zwnj; <i class="material-icons">&#xE315;</i>&zwnj;Settings&zwnj;
+                           <i class="material-icons">&#xE315;</i> &zwnj;Region & Language&zwnj;</i></b></p>
             </small></span>
           </div>
         </div>
@@ -599,13 +602,22 @@
         </div>
         <div class="row">
           <div class="col-md-4 center">
-            <a class="btn btn-lg btn-inverse" onclick="cmd('install-appid?keyboard-chinese')"><span class="fa fa-3x fa-keyboard-o fa-va"></span>&nbsp; &zwnj;Chinese&zwnj;</a>
+            <h5>Chinese</h5>
+            <a id="keyboard-chinese-install" class="btn btn-lg btn-inverse btn-block" onclick="cmd('install?keyboard-chinese');cmd('')"><i class="material-icons">&#xE312;</i></span>&nbsp; &zwnj;Install&zwnj;</a>
+            <a id="keyboard-chinese-remove" class="btn btn-lg btn-danger btn-block" onclick="cmd('remove?keyboard-chinese');cmd('')"><i class="material-icons">&#xE312;</i></span>&nbsp; &zwnj;Remove&zwnj;</a>
+            <span id="keyboard-chinese-status" id="keyboard-status" class="hidden"><img src="img/welcome/processing.gif" width="24px" height="24px"/> &zwnj;Applying Changes...&zwnj;</span>
           </div>
           <div class="col-md-4 center">
-            <a class="btn btn-lg btn-inverse" onclick="cmd('install-appid?keyboard-japanese')"><span class="fa fa-3x fa-keyboard-o fa-va"></span>&nbsp; &zwnj;Japanese&zwnj;</a>
+            <h5>Japanese</h5>
+            <a id="keyboard-japanese-install" class="btn btn-lg btn-inverse btn-block" onclick="cmd('install?keyboard-japanese');cmd('')"><i class="material-icons">&#xE312;</i></span>&nbsp; &zwnj;Install&zwnj;</a>
+            <a id="keyboard-japanese-remove" class="btn btn-lg btn-danger btn-block" onclick="cmd('remove?keyboard-japanese');cmd('')"><i class="material-icons">&#xE312;</i></span>&nbsp; &zwnj;Remove&zwnj;</a>
+            <span id="keyboard-japanese-status" class="hidden"><img src="img/welcome/processing.gif" width="24px" height="24px"/> &zwnj;Applying Changes...&zwnj;</span>
           </div>
           <div class="col-md-4 center">
-            <a class="btn btn-lg btn-inverse" onclick="cmd('install-appid?keyboard-korean')"><span class="fa fa-3x fa-keyboard-o fa-va"></span>&nbsp; &zwnj;Korean&zwnj;</a>
+            <h5>Korean</h5>
+            <a id="keyboard-korean-install" class="btn btn-lg btn-inverse btn-block" onclick="cmd('install?keyboard-korean');cmd('')"><i class="material-icons">&#xE312;</i></span>&nbsp; &zwnj;Install&zwnj;</a>
+            <a id="keyboard-korean-remove" class="btn btn-lg btn-danger btn-block" onclick="cmd('remove?keyboard-korean');cmd('')"><i class="material-icons">&#xE312;</i></span>&nbsp; &zwnj;Remove&zwnj;</a>
+            <span id="keyboard-korean-status" class="hidden"><img src="img/welcome/processing.gif" width="24px" height="24px"/> &zwnj;Applying Changes...&zwnj;</span>
           </div>
         </div>
         <div class="center">
@@ -645,8 +657,8 @@
             </a>
             <span id="backup-hint" class="center"><small>
               <p><span class="fa fa-info-circle"></span> <b>&zwnj;Backups&zwnj;</b> &zwnj;can be found later in&zwnj;
-              <b><i>&zwnj;System&zwnj; <span class="fa fa-long-arrow-right"></span> &zwnj;Preferences&zwnj;
-                           <span class="fa fa-long-arrow-right"></span> &zwnj;Personal&zwnj;</i></b>.</p>
+              <b><i>&zwnj;System&zwnj; <i class="material-icons">&#xE5CB;</i> &zwnj;Preferences&zwnj;
+                           <i class="material-icons">&#xE5CB;</i> &zwnj;Personal&zwnj;</i></b>.</p>
             </small></span>
           </div>
         </div>
@@ -695,8 +707,8 @@
             </a>
             <span id="firewall-hint" class="center"><small>
               <p><span class="fa fa-info-circle"></span> <b>&zwnj;Firewall Configuration&zwnj;</b> &zwnj;can be found later in&zwnj;
-              <b><i>&zwnj;System&zwnj; <span class="fa fa-long-arrow-right"></span> &zwnj;Preferences&zwnj;
-                           <span class="fa fa-long-arrow-right"></span> &zwnj;Internet and Network&zwnj;</i></b>.</p>
+              <b><i>&zwnj;System&zwnj; <i class="material-icons">&#xE5CB;</i> &zwnj;Preferences&zwnj;
+                           <i class="material-icons">&#xE5CB;</i> &zwnj;Internet and Network&zwnj;</i></b>.</p>
             </small></span>
           </div>
         </div>
@@ -719,8 +731,8 @@
             </a>
             <span id="users-hint" class="center"><small>
               <p><span class="fa fa-info-circle"></span> <b>&zwnj;Users and Groups&zwnj;</b> &zwnj;can be found later in&zwnj;
-              <b><i>&zwnj;System&zwnj; <span class="fa fa-long-arrow-right"></span> &zwnj;Administration&zwnj;
-                           <span class="fa fa-long-arrow-right"></span> &zwnj;Users and Groups&zwnj;</i></b>.</p>
+              <b><i>&zwnj;System&zwnj; <i class="material-icons">&#xE5CB;</i> &zwnj;Administration&zwnj;
+                           <i class="material-icons">&#xE5CB;</i> &zwnj;Users and Groups&zwnj;</i></b>.</p>
             </small></span>
           </div>
         </div>
@@ -750,8 +762,8 @@
             </a></div>
             <span id="tweak-hint" class="center"><small>
               <p><span class="fa fa-info-circle"></span> <b>&zwnj;MATE Tweak&zwnj;</b> &zwnj;can be found later in&zwnj;
-              <b><i>&zwnj;System&zwnj; <span class="fa fa-long-arrow-right"></span> &zwnj;Preferences&zwnj;
-                           <span class="fa fa-long-arrow-right"></span> &zwnj;Look and Feel&zwnj;</i></b>.</p>
+              <b><i>&zwnj;System&zwnj; <i class="material-icons">&#xE5CB;</i> &zwnj;Preferences&zwnj;
+                           <i class="material-icons">&#xE5CB;</i> &zwnj;Look and Feel&zwnj;</i></b>.</p>
             </small></span>
 
             <h2>&zwnj;Control Center&zwnj;</h2>
@@ -1524,6 +1536,15 @@
         </div>
       </div>
       <br>
+    </div>
+    <!-- Popup Message -->
+    <div id="popup-message-window">
+      <div id="popup-message-container">
+        <p id="popup-message"></p>
+        <textarea id="trace"></textarea>
+        <br>
+        <a onclick="$('#popup-message-window').fadeOut(); document.title=''" class="btn btn-primary">&nbsp;&nbsp;OK&nbsp;&nbsp;</a>
+      </div>
     </div>
   </div>
   <script src="js/jquery-2.1.4.js"></script>

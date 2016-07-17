@@ -83,16 +83,32 @@ class AppView(WebKit2.WebView):
             self.run_javascript('var graphicsVendor = "' + systemstate.graphics_vendor + '";')
             self.run_javascript('var graphicsGrep = "' + systemstate.graphics_grep + '";')
             app.update_page('#boot-mode', 'html', systemstate.boot_mode)
+
+            app.update_page('[id$=install]', 'hide')
+            app.update_page('[id$=remove]', 'hide')
             
             def checkInstallationStatus():
                 pm = PackageManager()
             
+                if pm.hasInstalled('ibus-pinyin'):
+                   app.update_page('#keyboard-chinese-remove', 'fadeIn')
+                else:
+                   app.update_page('#keyboard-chinese-install', 'fadeIn')
+                   
+                if pm.hasInstalled('ibus-anthy'):
+                   app.update_page('#keyboard-japanese-remove', 'fadeIn')
+                else:
+                   app.update_page('#keyboard-japanese-install', 'fadeIn')
+                   
+                if pm.hasInstalled('ibus-hangul'):
+                   app.update_page('#keyboard-korean-remove', 'fadeIn')
+                else:
+                   app.update_page('#keyboard-korean-install', 'fadeIn')
+                   
                 if pm.hasInstalled('ubuntu-restricted-extras'):
                     app.update_page('#restricted-extras-remove', 'fadeIn')
-                    app.update_page('#restricted-extras-install', 'hide')
                 else:
                     app.update_page('#restricted-extras-install', 'fadeIn')
-                    app.update_page('#restricted-extras-remove', 'hide')
                     
             
             # Checking on cache will take sometime. So run it on a
@@ -155,27 +171,19 @@ class AppView(WebKit2.WebView):
             subprocess.Popen(['update-manager'])
         elif uri == 'drivers':
             subprocess.Popen(['software-properties-gtk', '--open-tab=4'])
+        elif uri == 'language':
+            subprocess.Popen(['gnome-control-center', 'region'])
         elif uri.startswith('install?'):
             code = uri[8:]
             
-            if code == 'restricted-extras':
-                package = 'ubuntu-restricted-extras'
-                
-                # Accept EULA before running installation script
-                subprocess.Popen('echo ttf-mscorefonts-installer msttcorefonts/accepted-mscorefonts-eula\
-                select true | pkexec debconf-set-selections', stdin=subprocess.PIPE, shell=True).wait()
-            else:
-                dbg.stdout('Install', 'Unknown code' + code, colour = 1)
+            package = self.getPackageName(code)
                 
             self.installPackage(code, package)
            
         elif uri.startswith('remove?'):
             code = uri[7:]
             
-            if code == 'restricted-extras':
-                package = 'ubuntu-restricted-extras'
-            else:
-                dbg.stdout('Remove', 'Unknown code' + code, colour = 1)
+            package = self.getPackageName(code)
                 
             self.removePackage(code, package)
         # elif uri == 'install':
@@ -226,7 +234,13 @@ class AppView(WebKit2.WebView):
             systemstate.addIntermediateAction('gettingstarted.html', action2)
             
             pm = PackageManager()
-            pm.install(package)
+            try:
+                pm.install(package)
+            except Exception as e:
+                message = "Something went wrong with installation. Please contact us with following error message"
+                popup = PopupMessage(message, PopupMessage.ERROR, e)
+                
+                popup.showMessage()
             
             systemstate.removeIntermediateAction('gettingstarted.html', action1)
             systemstate.removeIntermediateAction('gettingstarted.html', action2)
@@ -250,7 +264,13 @@ class AppView(WebKit2.WebView):
             systemstate.addIntermediateAction('gettingstarted.html', action2)
             
             pm = PackageManager()
-            pm.remove(package)
+            try:
+                pm.remove(package)
+            except Exception as e:
+                message = "Something went wrong with removal. Please contact us with following error message"
+                popup = PopupMessage(message, PopupMessage.ERROR, e)
+                
+                popup.showMessage()
             
             systemstate.removeIntermediateAction('gettingstarted.html', action1)
             systemstate.removeIntermediateAction('gettingstarted.html', action2)
@@ -261,7 +281,26 @@ class AppView(WebKit2.WebView):
             self._push_config()
             
         Thread(target = threadedMethod).start()
-       
+      
+    def getPackageName(self, code):
+        if code == 'restricted-extras':
+            package = 'ubuntu-restricted-extras'
+            
+            # Accept EULA before running installation script
+            subprocess.Popen('echo ttf-mscorefonts-installer msttcorefonts/accepted-mscorefonts-eula\
+            select true | pkexec debconf-set-selections', stdin=subprocess.PIPE, shell=True).wait()
+        elif code == 'keyboard-chinese':
+            package = 'ibus-pinyin'
+        elif code == 'keyboard-japanese':
+            package = 'ibus-anthy'
+        elif code == 'keyboard-korean':
+            package = 'ibus-hangul'
+        else:
+            dbg.stdout('Install', 'Unknown code' + code, colour = 1)
+            package = None
+            
+        return package
+   
 class Debug(object):
     def __init__(self):
         self.verbose_level = 0
@@ -311,6 +350,7 @@ class PopupMessage(object):
             app.update_page('#popup-message-window', 'fadeIn')
         else:
             dbg.stdout(self.type, 'message is not handled yet', 3)
+
             
 class PackageManager(object):
     
@@ -326,14 +366,18 @@ class PackageManager(object):
     # removing packages using apt module. So using regular command
     # with pkexec. Make it a blocking call and run in thread.    
     def install(self, package):
-        process = subprocess.Popen(['pkexec', 'apt', 'install', '-y', package])
-        process.wait()
+        process = subprocess.Popen(['pkexec', 'apt', 'install', '-y', package], stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
+        retval = process.wait()
+        
+        self.processOutput(process, retval)
         
         self.updateGlobalCache()
             
     def remove(self, package):
-        process = subprocess.Popen(['pkexec', 'apt', 'remove', '-y', package])
-        process.wait()
+        process = subprocess.Popen(['pkexec', 'apt', 'remove', '-y', package], stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
+        retval = process.wait()
+        
+        self.processOutput(process, retval)
         
         self.updateGlobalCache()
         
@@ -341,6 +385,23 @@ class PackageManager(object):
         cache.close()
         cache.open()
         
+    def processOutput(self, process, retval):
+    
+        output = ''
+    
+        if process.stdout:
+            output += str(process.stdout.read())
+        
+        if process.stderr:
+            output += str(process.stderr.read())
+        
+        # Colud n't get lock for apt
+        if retval == 100:
+            message = "Seems that another installation/removal is in progress. If you think this is a mistake" +\
+                "please contact us with following error message"
+            popup = PopupMessage(message, PopupMessage.ERROR, output)
+                
+            popup.showMessage()
             
 
 class SystemState(object):
