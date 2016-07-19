@@ -698,7 +698,12 @@ hr.soften-light {
   line-height: 1.8em;
 }
 
-
+.code {
+	width: 100%;
+	padding: 5px;
+	background: #eee;
+	font-weight: bold;
+}
 
 /* button hover effect **/
 /* source: https://github.com/IanLunn/Hover/blob/master/css/hover.css*/

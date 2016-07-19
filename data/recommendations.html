@@ -22,38 +22,140 @@
         </div>
       </div>
       <div id="content" class="container entire-page-fade">
-        <h2 class="fade fade-1s">Flatpak</h2>
-        <div class="fade fade-1s card card-block">
-          <div class="card-image text-md-center">
-            <img src="img/logos/flatpak.svg">
+        <div> <!--Flatpak-->
+          <h2 class="fade fade-1s">Flatpak</h2>
+          <div class="fade fade-1s card card-block">
+            <div class="card-image text-md-center">
+              <img src="img/logos/flatpak.svg">
+            </div>
+            <p class="card-text fade fade-2s">
+            <strong>Flatpak</strong> is a new generation application distribution framework for GNU/Linux 
+            platforms. It introduced a unified packaging format across all GNU/Linux distributions. That 
+            means a single package can work on any platforms. Flatpak helps application developers to ship
+            their application in a single format which can be installed in any GNU/Linux distribution without
+            worrying about underlying operating system and it's built-in libraries. 
+            </p>
+            <a onclick="cmd('link?http://flatpak.org/#about')" class="btn btn-inverse">Learn more</a>
           </div>
-          <p class="card-text fade fade-2s">
-          <strong>Flatpak</strong> is a new generation application distribution framework for GNU/Linux 
-          platforms. It introduced a unified packaging format across all GNU/Linux distributions. That 
-          means a single package can work on any platforms. Flatpak helps application developers to ship
-          their application in a single format which can be installed in any GNU/Linux distribution without
-          worrying about underlying operating system and it's built-in libraries. 
+          <p class="fade fade-2s">
+            The <span name="distro-name"></span> recommends to install <strong>Flatpak</strong> as it will
+            open a new world of possiblities for you. With Flatpak, you can enjoy latest release of different
+            software packages as soon as it is packed by upstream project and you don't have to wait for your
+            distribution to package it for you. Flatpak is the future of packaging, and more and more developers
+            are moving to Flatpak packaging. This will increase availability of software packages drastically.
           </p>
-          <a onclick="cmd('link?http://flatpak.org/#about')" class="btn btn-inverse">Learn more</a>
-        </div>
-        <p class="fade fade-2s">
-          The <span name="distro-name"></span> recommends to install <strong>Flatpak</strong> as it will
-          open a new world of possiblities for you. With Flatpak, you can enjoy latest release of different
-          software packages as soon as it is packed by upstream project and you don't have to wait for your
-          distribution to package it for you. Flatpak is the future of packaging, and more and more developers
-          are moving to Flatpak packaging. This will increase availability of software packages drastically.
-        </p>
-        <p class="fade fade-1s">
-          Being a user friendly GNU/Linux distribution, <span name='distro-name'></span> allows you to install
-          Flatpak with a single click. After first time configuration, you can use GNOME Software to install Flatpak
-          packages.
-        </p>
-        <a id="flatpak-install" class="btn btn-primary btn-lg fade fade-5s hvr-shadow" onclick="">
-          <span class="material-icons">&#xE2C0;</span>&nbsp; &zwnj;Install & Configure Flatpak&zwnj;
-        </a>
-        <span id="flatpak-remove" class="alert alert-success">
-          Flatpak is installed
-        </span>
+          <p class="fade fade-1s">
+            Being a user friendly GNU/Linux distribution, <span name='distro-name'></span> allows you to install
+            Flatpak with a single click. After first time configuration, you can use GNOME Software to install Flatpak
+            packages.
+          </p>
+          <a id="flatpak-install" class="btn btn-primary btn-lg fade fade-5s hvr-shadow" onclick="cmd('install?flatpak');cmd('')">
+            <span class="material-icons">&#xE2C0;</span>&nbsp; &zwnj;Install & Configure Flatpak&zwnj;
+          </a>
+          <span id="flatpak-remove" class="alert alert-success">
+            Flatpak is installed
+          </span>
+        </div> <!-- End of Flatpak-->
+        <hr>
+        <div> <!--Steam-->
+          <h2 class="fade fade-1s">Steam</h2>
+          <div class="fade fade-1s card card-block">
+            <div class="card-image text-md-center">
+              <img src="img/logos/steam.svg" style="height: 180px">
+            </div>
+            <p class="card-text fade fade-2s">
+            <strong>Steam</strong> is a digital distribution platform developed by Valve Corporation 
+            offering digital rights management (DRM), multiplayer gaming and social networking services. 
+            Steam provides the user with installation and automatic updating of games on multiple computers,
+            and community features such as friends lists and groups, cloud saving, and in-game voice
+            and chat functionality. The software provides a freely available application programming
+            interface (API) called Steamworks, which developers can use to integrate many of Steam's
+            functions into their products, including networking, matchmaking, in-game achievements, 
+            micro-transactions, and support for user-created content through Steam Workshop.
+            </p>
+            <a onclick="cmd('link?https://en.wikipedia.org/wiki/Steam_(software)')" class="btn btn-inverse">Learn more</a>
+          </div>
+          <p class="fade fade-1s">
+            Being a proprietary software, Steam is not included in primary repositories of <span name="distro-name"></span>.
+            However, to provide more choice to users, Steam is shipped as a part of <em>Multiverse</em> repository.
+            <span name="distro-name"></span> provides you option to install enable <em>Multiverse</em> repository
+            and to install Steam with a single mouse click.
+          </p>
+          <a id="steam-install" class="btn btn-primary btn-lg fade fade-5s hvr-shadow" onclick="cmd('install?steam');cmd('')">
+            <span class="material-icons">&#xE2C0;</span>&nbsp; &zwnj;Install & Configure Steam&zwnj;
+          </a>
+          <span id="steam-remove" class="alert alert-success">
+            Steam is installed
+          </span>
+        </div> <!-- End of Steam-->
+        <hr>
+        <div> <!--Snapd-->
+          <h2 class="fade fade-1s">Snap</h2>
+          <div class="fade fade-1s card card-block">
+            <div class="card-image text-md-center">
+              <img src="img/logos/snap.png" style="height: 180px">
+            </div>
+            <p class="card-text fade fade-2s">
+            <strong>Snap</strong> is a new generation application packaging format developed by <em>Canonical</em>.
+            Even though it was initially developed just for different Ubuntu platforms, currently it work in many
+            other GNU/Linux distributions. It will help application developers to provide a unified package that
+            can work on different platforms. By using snap package format, applications can have their own version
+            of libraries and there is no need to worry about libraries installed in underlying operating system.
+            Snap packages enable developers to bring much newer versions of apps to <span name="distro-name"></span>.
+            Newer versions of KDE, GNOME, browser or other desktop environment apps will usually build easily on 
+            older LTS releases but the complexities of packaging and providing updates have prevented us from
+            delivering them in the past.
+            </p>
+            <a onclick="cmd('link?https://insights.ubuntu.com/2016/04/13/snaps-for-classic-ubuntu')" class="btn btn-inverse">Learn more</a>
+          </div>
+          <p class="alert alert-success">
+            Congratulations!. You already have <strong>snap</strong> installed in your system. To provide more
+            privileges to our user, <span name="distro-name"></span> comes with snap pre-installed.
+          </p>
+          <a onclick="$('#snap-guide').fadeToggle()">
+            Learn how to use snap package manager
+          </a>
+          <hr>
+          <blockquote id="snap-guide" class="hidden">
+            <h3>Search for Available Snap Packages</h3>
+            <p>To see a list of all available packages in the store, open a terminal and run the following command:</p>
+            <div class="code">$ snap find</div>
+            <p>To search for a specific package by name, just add your search term to the end of the snap find command:</p>
+            <div class="code">$ snap find name</div>
+            <p>For a more complete search–searching package descriptions as well as package names–just pipe the output of 
+            the snap find command through the grep filtering tool, like so:</p>
+            <div class="code">$ snap find | grep search</div>
+            
+            <h3>How to Install a Snap Package</h3>
+            <p>To install a Snap package, use the following command, specifying the package by name. Because this makes
+            changes to the system, you have to add a sudo before the command to run it with root privileges.</p>
+            <div class="code">$ sudo snap install package-name</div>
+            <p>The snap command will download and install the snap package you specified, displaying the progress in the
+            terminal window.</p>
+            <p>You can launch the application you installed like any other application. If it’s a graphical application, 
+            it should appear in your desktop’s applications menu. Otherwise, just start typing the application’s name at 
+            the terminal and press the “Tab” key to automatically complete it. You can then press Enter to launch the 
+            application or run the command you installed.</p>
+
+            <h3>How to Update Snaps</h3>
+            <p>To update an installed Snap package, run the following command, specifying the package’s name. If a new
+            version of the Snap is available, it will be downloaded and installed.</p>
+            <div class="code">$ sudo snap refresh package-name</div>
+            <p>There doesn’t appear to be a command that updates all installed Snaps at the moment, but we wouldn’t be
+            surprised to see one added in the future.</p>
+
+            <h3>How to List Your Installed Snaps</h3>
+            <p>To list your installed Snap packages, run the following command</p>
+            <div class="code">$ snap list</div>
+            <p>You can use this command to search your installed packages, too–just pipe the output through grep again:</p>
+            <div class="code">$ snap list | grep search</div>
+
+            <h3>How to Remove a Snap Package</h3>
+            <p>To remove an installed Snap package from your computer, run the following command:</p>
+            <div class="code">$ sudo snap remove package-name</div>
+            <a onclick="cmd('link?http://www.howtogeek.com/252047/how-to-install-and-manage-snap-packages-on-ubuntu-16.04-lts/');cmd('')">Learn more</a>
+          </blockquote>
+        </div> <!-- End of Snap-->
       </div>
     </div>
     <script src="js/jquery-2.1.4.js"></script>
