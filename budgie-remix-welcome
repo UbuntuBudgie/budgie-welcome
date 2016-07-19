@@ -59,10 +59,6 @@ class AppView(WebKit2.WebView):
         # TODO: push notification should be connected to angularjs and use a
         # broadcast event any suitable controllers will be able to listen and
         # respond accordingly, for now we just use jQuery to manually toggle
-
-        self.run_javascript("$('#arch').html('%s')" % systemstate.arch)
-        
-        
             
         self.run_javascript("$('span[name=\"distro-name\"]').html('{}')".format(systemstate.distroname))
 
@@ -76,58 +72,15 @@ class AppView(WebKit2.WebView):
             self.run_javascript("$('.offline').hide()")
         else:
             self.run_javascript("$('.offline').show()")
+            
+        current_page = app.current_page
 
         ### Getting Started Page ###
-        if app.current_page == 'gettingstarted.html':
+        if current_page == 'gettingstarted.html':
             # Display information tailored to graphics vendor (Getting Started / Drivers)
             self.run_javascript('var graphicsVendor = "' + systemstate.graphics_vendor + '";')
             self.run_javascript('var graphicsGrep = "' + systemstate.graphics_grep + '";')
             app.update_page('#boot-mode', 'html', systemstate.boot_mode)
-
-            app.update_page('[id$=install]', 'hide')
-            app.update_page('[id$=remove]', 'hide')
-            
-            def checkInstallationStatus():
-                pm = PackageManager()
-            
-                # Need to employ an easier mechanism using dictionary of
-                # short codes.
-                if pm.hasInstalled('ibus-pinyin'):
-                   app.update_page('#keyboard-chinese-remove', 'fadeIn')
-                else:
-                   app.update_page('#keyboard-chinese-install', 'fadeIn')
-                   
-                if pm.hasInstalled('ibus-anthy'):
-                   app.update_page('#keyboard-japanese-remove', 'fadeIn')
-                else:
-                   app.update_page('#keyboard-japanese-install', 'fadeIn')
-                   
-                if pm.hasInstalled('ibus-hangul'):
-                   app.update_page('#keyboard-korean-remove', 'fadeIn')
-                else:
-                   app.update_page('#keyboard-korean-install', 'fadeIn')
-                   
-                if pm.hasInstalled('ubuntu-restricted-extras'):
-                    app.update_page('#restricted-extras-remove', 'fadeIn')
-                else:
-                    app.update_page('#restricted-extras-install', 'fadeIn')
-                    
-                if pm.hasInstalled('deja-dup'):
-                    app.update_page('#backup-remove', 'fadeIn')
-                else:
-                    app.update_page('#backup-install', 'fadeIn')
-                    
-                if pm.hasInstalled('gufw'):
-                    app.update_page('#firewall-remove', 'fadeIn')
-                else:
-                    app.update_page('#firewall-install', 'fadeIn')
-                    
-            
-            # Checking on cache will take sometime. So run it on a
-            # separate thread.    
-            thread = Thread(target = checkInstallationStatus)
-            thread.start()
-
             graphics_vendor = systemstate.graphics_vendor
             
             if graphics_vendor == 'NVIDIA':
@@ -143,14 +96,35 @@ class AppView(WebKit2.WebView):
               
             
         ### Index Page ###
-        elif app.current_page == 'index.html':
+        elif current_page == 'index.html':
             if systemstate.autostart:
                 app.update_page('#autostart', 'html', '&#xE837;')
             else:
                 app.update_page('#autostart', 'html', '&#xE836;')
                 
+        ### All pages with install/removal ###
+        if current_page in ['gettingstarted.html', 'recommendations.html']:
+            app.update_page('[id$=install]', 'hide')
+            app.update_page('[id$=remove]', 'hide')
+            
+            def checkInstallationStatus():
+                pm = PackageManager()
+            
+                for code in PackageDict.getShortCodes(current_page[:-5]):
+                    package = PackageDict.getPackageName(code)
+                    
+                    if pm.hasInstalled(package):
+                        app.update_page('#' + code + '-remove', 'fadeIn')
+                    else:
+                        app.update_page('#' + code + '-install', 'fadeIn')
+            
+            # Checking on cache will take sometime. So run it on a
+            # separate thread.    
+            thread = Thread(target = checkInstallationStatus)
+            thread.start()
+                
         # Apply intermediate actions, if any are present
-        if app.current_page in systemstate.intermediate_actions:
+        if current_page in systemstate.intermediate_actions:
             for action in systemstate.intermediate_actions[app.current_page]:
                 app.update_page(action[0], action[1], action[2], action[3])
 
@@ -194,14 +168,14 @@ class AppView(WebKit2.WebView):
         elif uri.startswith('install?'):
             code = uri[8:]
             
-            package = self.getPackageName(code)
+            package = PackageDict.getPackageName(code)
                 
             self.installPackage(code, package)
            
         elif uri.startswith('remove?'):
             code = uri[7:]
             
-            package = self.getPackageName(code)
+            package = PackageDict.getPackageName(code)
                 
             self.removePackage(code, package)
         # elif uri == 'install':
@@ -300,28 +274,6 @@ class AppView(WebKit2.WebView):
             
         Thread(target = threadedMethod).start()
       
-    def getPackageName(self, code):
-        if code == 'restricted-extras':
-            package = 'ubuntu-restricted-extras'
-            
-            # Accept EULA before running installation script
-            subprocess.Popen('echo ttf-mscorefonts-installer msttcorefonts/accepted-mscorefonts-eula\
-            select true | pkexec debconf-set-selections', stdin=subprocess.PIPE, shell=True).wait()
-        elif code == 'keyboard-chinese':
-            package = 'ibus-pinyin'
-        elif code == 'keyboard-japanese':
-            package = 'ibus-anthy'
-        elif code == 'keyboard-korean':
-            package = 'ibus-hangul'
-        elif code == 'backup':
-            package = 'deja-dup'
-        elif code == 'firewall':
-            package = 'gufw'
-        else:
-            dbg.stdout('Install', 'Unknown code' + code, colour = 1)
-            package = None
-            
-        return package
    
 class Debug(object):
     def __init__(self):
@@ -381,14 +333,17 @@ class PackageManager(object):
         self.cache = cache
         
     def hasInstalled(self, package):
-        return self.cache[package].is_installed
+        try:
+            return self.cache[package].is_installed
+        except:
+            return False
     
     
     # Don't know how to get root privileage for installing and 
     # removing packages using apt module. So using regular command
     # with pkexec. Make it a blocking call and run in thread.    
     def install(self, package):
-        process = subprocess.Popen(['pkexec', 'apt', 'install', '-y', package], stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
+        process = subprocess.Popen(['pkexec', 'apt', 'install', '-y', package])
         retval = process.wait()
         
         self.processOutput(process, retval)
@@ -396,7 +351,7 @@ class PackageManager(object):
         self.updateGlobalCache()
             
     def remove(self, package):
-        process = subprocess.Popen(['pkexec', 'apt', 'remove', '-y', package], stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
+        process = subprocess.Popen(['pkexec', 'apt', 'remove', '-y', package])
         retval = process.wait()
         
         self.processOutput(process, retval)
@@ -424,6 +379,42 @@ class PackageManager(object):
             popup = PopupMessage(message, PopupMessage.ERROR, output)
                 
             popup.showMessage()
+            
+class PackageDict(object):
+    '''
+    Map some short codes with packages. Install/Remove buttons
+    will be represented by short code like #code-remove and 
+    #code-install. This will allow to check installation status
+    of each package using a loop instead of checking seperately
+    '''
+    
+    pagemap = {
+        'recommendations' : ['flatpak', 'steam'],
+        'gettingstarted' : ['restricted-extras', 'keyboard-chinese',
+        'keyboard-japanese', 'keyboard-korean', 'backup', 'firewall'
+        ]
+    }
+    codemap = {
+        'restricted-extras' : 'ubuntu-restricted-extras',
+        'keyboard-chinese' : 'ibus-pinyin',
+        'keyboard-japanese' : 'ibus-anthy',
+        'keyboard-korean' : 'ibus-hangul',
+        'backup' : 'deja-dup',
+        'firewall' : 'gufw',
+        'steam' : 'steam',
+        'flatpak' : 'flatpak'
+    }
+    
+    @staticmethod
+    def getShortCodes(filename):
+        return PackageDict.pagemap[filename]
+    
+    @staticmethod
+    def getPackageName(code):
+        try:
+            return PackageDict.codemap[code]
+        except KeyError:
+            return None
             
 
 class SystemState(object):
@@ -825,18 +816,7 @@ class SystemState(object):
         app.update_page('#specs-busy-basic', 'fadeOut', 'fast')
         webkit.run_javascript('setCursorNormal()')
     
-    def copy_to_clipboard(self, var):
-        # Copies text to clipboard, passes 'var' containing what we'd like copying.
-        if var == 'inxi':
-            contents = self.inxi
-        else:
-            dbg.stdout('Clipboard', 'Unknown variable to copy: ' + var, 0, 1)
-            return
 
-        clipboard = Gtk.Clipboard.get(Gdk.SELECTION_CLIPBOARD)
-        clipboard.set_text(contents, -1)
-        clipboard.store()
-        dbg.stdout('Clipboard', 'Copied contents of: ' + var, 1, 2)
 
 
 
