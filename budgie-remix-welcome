@@ -169,8 +169,13 @@ class AppView(WebKit2.WebView):
             code = uri[8:]
             
             package = PackageDict.getPackageName(code)
-                
-            self.installPackage(code, package)
+            
+            script = False
+            
+            if code in ["restricted-extras", "flatpak", "steam"]:
+                script = True
+            
+            self.installPackage(code, package, script)
            
         elif uri.startswith('remove?'):
             code = uri[7:]
@@ -214,7 +219,7 @@ class AppView(WebKit2.WebView):
             
             
             
-    def installPackage(self, code, package):
+    def installPackage(self, code, package, script = False):
         def threadedMethod():
             action1 = ['#' + code + '-install', 'addClass', 'disabled', None]
             action2 = ['#' + code + '-status', 'fadeIn', None, None]
@@ -227,7 +232,7 @@ class AppView(WebKit2.WebView):
             
             pm = PackageManager()
             try:
-                pm.install(package)
+                pm.install(package, script)
             except Exception as e:
                 message = "Something went wrong with installation. Please contact us with following error message"
                 popup = PopupMessage(message, PopupMessage.ERROR, e)
@@ -342,8 +347,11 @@ class PackageManager(object):
     # Don't know how to get root privileage for installing and 
     # removing packages using apt module. So using regular command
     # with pkexec. Make it a blocking call and run in thread.    
-    def install(self, package):
-        process = subprocess.Popen(['pkexec', 'apt', 'install', '-y', package])
+    def install(self, package, script = False):
+        if script:
+            process = subprocess.Popen(['pkexec', 'sh', app._data_path + '/scripts/' + package])
+        else:
+            process = subprocess.Popen(['pkexec', 'apt', 'install', '-y', package])
         retval = process.wait()
         
         self.processOutput(process, retval)

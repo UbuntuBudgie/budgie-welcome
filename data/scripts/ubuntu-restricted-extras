@@ -1,0 +1,8 @@
+#!/bin/sh
+
+REPO=multiverse
+if ! grep -q "$REPO" /etc/apt/sources.list; then
+  add-apt-repository $REPO -y
+  apt update
+fi
+apt install ubuntu-restricted-extras ttf-mscorefonts-installer- -y
