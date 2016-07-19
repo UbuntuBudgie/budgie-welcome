@@ -23,7 +23,7 @@
       </div>
       <div id="content" class="container entire-page-fade">
         <h2 class="fade fade-1s">Flatpak</h2>
-        <div class="fade fade-1s class="card card-block">
+        <div class="fade fade-1s card card-block">
           <div class="card-image text-md-center">
             <img src="img/logos/flatpak.svg">
           </div>
@@ -48,9 +48,12 @@
           Flatpak with a single click. After first time configuration, you can use GNOME Software to install Flatpak
           packages.
         </p>
-        <a class="btn btn-primary btn-lg fade fade-5s hvr-shadow" onclick="">
+        <a id="flatpak-install" class="btn btn-primary btn-lg fade fade-5s hvr-shadow" onclick="">
           <span class="material-icons">&#xE2C0;</span>&nbsp; &zwnj;Install & Configure Flatpak&zwnj;
         </a>
+        <span id="flatpak-remove" class="alert alert-success">
+          Flatpak is installed
+        </span>
       </div>
     </div>
     <script src="js/jquery-2.1.4.js"></script>
