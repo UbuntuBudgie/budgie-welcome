@@ -183,8 +183,8 @@ class AppView(WebKit2.WebView):
             package = PackageDict.getPackageName(code)
                 
             self.removePackage(code, package)
-        # elif uri == 'install':
-            # subprocess.Popen(['sudo','live-installer'])
+        elif uri == 'install':
+            subprocess.Popen(['ubiquity','gtk_ui'])
         # elif uri == 'install-cli':
             # subprocess.Popen(['xdg-terminal','sudo setup'])
         elif uri == 'software-center':
