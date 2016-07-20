@@ -438,7 +438,7 @@ class SystemState(object):
         # User's autostart directory and full path to autostart symlink.
         # Used for systemstate.autostart_toggle() function.
         self._autostart_dir = os.path.expanduser('~/.config/autostart/')
-        self._autostart_path = os.path.expanduser(os.path.join(self._autostart_dir, 'budgie-welcome.desktop'))
+        self._autostart_path = os.path.expanduser(os.path.join(self._autostart_dir, 'budgie-remix-welcome.desktop'))
         self.autostart = self.autostart_check()
 
         # Get current architecture of system.
@@ -521,7 +521,7 @@ class SystemState(object):
         if not os.path.exists(self._autostart_path):
             # create the autostart symlink
             try:
-                os.symlink('/usr/share/applications/budgie-welcome.desktop', self._autostart_path)
+                os.symlink('/usr/share/applications/budgie-remix-welcome.desktop', self._autostart_path)
             except OSError as err:
                 dbg.stdout('Welcome', 'Error while enabling autostart: ' + str(err), 0, 1)
                 pass
