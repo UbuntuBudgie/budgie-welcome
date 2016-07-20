@@ -41,7 +41,7 @@ import platform
 
 from gi.repository import WebKit2, Gtk
 from threading import Thread
-from queue import Queue
+from queue import Queue, Empty
 
 import apt
 
@@ -199,23 +199,7 @@ class AppView(WebKit2.WebView):
                 popup.showMessage()
                 
         elif uri == 'close':
-            #print("here")
-            # Wait package management queue to finish
-            # pm_queue.join()
-            # print("Number of items in queue", pm_queue.qsize())
-            # print(sys._current_frames().items())
-            #pm.join()
-            # print(pm)
-            print("1")
-            pm.join()
-            print("2")
-            pm_queue.join()
-            print("3")
-            
-            
-            Gtk.main_quit()
-            sys.exit(0)
-            print("after quit")
+            app.close()
         elif uri == 'toggle-startup':
             # toggle autostart
             systemstate.autostart_toggle()
@@ -331,6 +315,7 @@ class PackageManager(Thread):
         # Don't create cache object each time instead use global cache
         self.cache = cache
         self.queue = queue
+        self.running = True
         
     def hasInstalled(self, package):
         try:
@@ -339,27 +324,30 @@ class PackageManager(Thread):
             return False
     
     def run(self):
-        while True:
-            entry = self.queue.get()
+        while self.running:
+            try:
+                entry = self.queue.get(timeout = 1)
+            except Empty:
+                continue
             
             filename = entry.filename
             code = entry.code
             package = PackageDict.getPackageName(code)
             
             if entry.task == PMEntry.INSTALL:
-                self.install(entry.package, entry.script)
+                self.install(package, entry.script)
                 app.update_page('#' + code + '-install', 'removeClass', 'disabled')
             elif entry.task == PMEntry.REMOVE:
-                self.remove(entry.package)
+                self.remove(package)
                 app.update_page('#' + code + '-remove', 'removeClass', 'disabled')
             
             app.update_page('#' + code + '-status', 'fadeOut')
             
-            for action in entry.actions:
-                systemstate.removeIntermediateActions(filename, actions)
+            systemstate.removeIntermediateActions(filename, entry.actions)
             
-            app._push_config()
             self.reload_cache()
+            app.webkit._push_config()
+            
             
             self.queue.task_done()
     
@@ -507,7 +495,7 @@ class SystemState(object):
         # installation/removal is in progress.
         self.intermediate_actions = {}
 
-    def addIntermediateAction(self, filename, actions):
+    def addIntermediateActions(self, filename, actions):
 
         if filename not in self.intermediate_actions:
             self.intermediate_actions[filename] = []
@@ -887,7 +875,6 @@ class WelcomeApp(object):
         w.set_title('')
         w.set_size_request(992, 520)
         w.set_decorated(False)
-        w.connect("delete-event", Gtk.main_quit)
 
         icon_dir = os.path.join(self._data_path, 'img', 'distro-icon.svg')
         w.set_icon_from_file(icon_dir)
@@ -921,7 +908,12 @@ class WelcomeApp(object):
         signal.signal(signal.SIGINT, signal.SIG_DFL)
         Gtk.main()
 
-    def close(self, p1, p2):
+    def close(self, p1 = None, p2 = None):
+        pm.running = False
+        
+        pm_queue.join()
+        pm.join()
+        
         Gtk.main_quit(p1, p2)
         
     def update_page(self, element, function, parm1=None, parm2=None):
