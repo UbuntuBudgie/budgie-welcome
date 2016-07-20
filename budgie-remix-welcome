@@ -64,11 +64,14 @@ class AppView(WebKit2.WebView):
         
         self.run_javascript("$('span[name=\"distro-name\"]').html('{}')".format(systemstate.distroname))
         
+        # Remove previously injected elements
+        app.update_page('#menu-button', 'remove')
+        app.update_page('#close', 'remove')
         # Dynamically inject header controls button
         if current_page != "index.html":
             app.update_page('#navigation', 'prepend', '<a id="menu-button" class="navigation-button" \
                onclick="smoothPageFade(\'index.html\')"><i class="material-icons">&#xE5CB;</i></a>')
-        app.update_page('#navigation', 'append', '<a onclick="cmd(\'close\')">\
+        app.update_page('#navigation', 'append', '<a id="close" onclick="cmd(\'close\')">\
           <i class="material-icons" id="close-btn">&#xE14C;</i></a>')
 
         if systemstate.session_type == 'live':
