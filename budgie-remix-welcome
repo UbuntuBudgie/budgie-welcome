@@ -41,7 +41,7 @@ import platform
 
 from gi.repository import WebKit2, Gtk
 from threading import Thread
-from Queue import Queue
+from queue import Queue
 
 import apt
 
@@ -199,7 +199,23 @@ class AppView(WebKit2.WebView):
                 popup.showMessage()
                 
         elif uri == 'close':
+            #print("here")
+            # Wait package management queue to finish
+            # pm_queue.join()
+            # print("Number of items in queue", pm_queue.qsize())
+            # print(sys._current_frames().items())
+            #pm.join()
+            # print(pm)
+            print("1")
+            pm.join()
+            print("2")
+            pm_queue.join()
+            print("3")
+            
+            
             Gtk.main_quit()
+            sys.exit(0)
+            print("after quit")
         elif uri == 'toggle-startup':
             # toggle autostart
             systemstate.autostart_toggle()
@@ -231,7 +247,7 @@ class AppView(WebKit2.WebView):
             
             systemstate.addIntermediateActions(app.current_page, actions)
             
-            pmentry = PMEntry(PMEntry.INSTALL, code, actions, app.current_page, script))
+            pmentry = PMEntry(PMEntry.INSTALL, code, actions, app.current_page, script)
             
             pm_queue.put(pmentry)
             
@@ -249,7 +265,7 @@ class AppView(WebKit2.WebView):
             
             systemstate.addIntermediateActions(app.current_page, actions)
             
-            pmentry = PMEntry(PMEntry.REMOVE, code, actions, app.current_page))
+            pmentry = PMEntry(PMEntry.REMOVE, code, actions, app.current_page)
             
             pm_queue.put(pmentry)
             
@@ -330,7 +346,7 @@ class PackageManager(Thread):
             code = entry.code
             package = PackageDict.getPackageName(code)
             
-            if entry.task = PMEntry.INSTALL:
+            if entry.task == PMEntry.INSTALL:
                 self.install(entry.package, entry.script)
                 app.update_page('#' + code + '-install', 'removeClass', 'disabled')
             elif entry.task == PMEntry.REMOVE:
@@ -871,6 +887,7 @@ class WelcomeApp(object):
         w.set_title('')
         w.set_size_request(992, 520)
         w.set_decorated(False)
+        w.connect("delete-event", Gtk.main_quit)
 
         icon_dir = os.path.join(self._data_path, 'img', 'distro-icon.svg')
         w.set_icon_from_file(icon_dir)
@@ -1028,3 +1045,5 @@ if __name__ == "__main__":
     
     app = WelcomeApp()
     app.run()
+    
+    
