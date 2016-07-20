@@ -41,6 +41,7 @@ import platform
 
 from gi.repository import WebKit2, Gtk
 from threading import Thread
+from Queue import Queue
 
 import apt
 
@@ -108,8 +109,7 @@ class AppView(WebKit2.WebView):
             app.update_page('[id$=remove]', 'hide')
             
             def checkInstallationStatus():
-                pm = PackageManager()
-            
+                
                 for code in PackageDict.getShortCodes(current_page[:-5]):
                     package = PackageDict.getPackageName(code)
                     
@@ -219,63 +219,39 @@ class AppView(WebKit2.WebView):
             
             
             
-    def installPackage(self, code, package, script = False):
+    def installPackage(self, code, package, script):
         def threadedMethod():
-            action1 = ['#' + code + '-install', 'addClass', 'disabled', None]
-            action2 = ['#' + code + '-status', 'fadeIn', None, None]
+            actions = [
+                ['#' + code + '-install', 'addClass', 'disabled', None],
+                ['#' + code + '-status', 'fadeIn', None, None]
+            ]
             
-            app.update_page(action1[0], action1[1], action1[2], action1[3])    
-            app.update_page(action2[0], action2[1], action2[2], action2[3])
+            for action in actions:
+                app.update_page(action[0], action[1], action[2], action[3])
             
-            systemstate.addIntermediateAction('gettingstarted.html', action1)
-            systemstate.addIntermediateAction('gettingstarted.html', action2)
+            systemstate.addIntermediateActions(app.current_page, actions)
             
-            pm = PackageManager()
-            try:
-                pm.install(package, script)
-            except Exception as e:
-                message = "Something went wrong with installation. Please contact us with following error message"
-                popup = PopupMessage(message, PopupMessage.ERROR, e)
-                
-                popup.showMessage()
+            pmentry = PMEntry(PMEntry.INSTALL, code, actions, app.current_page, script))
             
-            systemstate.removeIntermediateAction('gettingstarted.html', action1)
-            systemstate.removeIntermediateAction('gettingstarted.html', action2)
-            
-            app.update_page('#' + code + '-install', 'removeClass', 'disabled')    
-            app.update_page('#' + code + '-status', 'fadeOut')
-            
-            self._push_config()
+            pm_queue.put(pmentry)
             
         Thread(target = threadedMethod).start()
         
     def removePackage(self, code, package):
         def threadedMethod():
-            action1 = ['#' + code + '-remove', 'addClass', 'disabled', None]
-            action2 = ['#' + code + '-status', 'fadeIn', None, None]
+            actions = [
+                ['#' + code + '-remove', 'addClass', 'disabled', None],
+                ['#' + code + '-status', 'fadeIn', None, None]
+            ]
             
-            app.update_page(action1[0], action1[1], action1[2], action1[3])    
-            app.update_page(action2[0], action2[1], action2[2], action2[3])
+            for action in actions:
+                app.update_page(action[0], action[1], action[2], action[3])
             
-            systemstate.addIntermediateAction('gettingstarted.html', action1)
-            systemstate.addIntermediateAction('gettingstarted.html', action2)
+            systemstate.addIntermediateActions(app.current_page, actions)
             
-            pm = PackageManager()
-            try:
-                pm.remove(package)
-            except Exception as e:
-                message = "Something went wrong with removal. Please contact us with following error message"
-                popup = PopupMessage(message, PopupMessage.ERROR, e)
-                
-                popup.showMessage()
+            pmentry = PMEntry(PMEntry.REMOVE, code, actions, app.current_page))
             
-            systemstate.removeIntermediateAction('gettingstarted.html', action1)
-            systemstate.removeIntermediateAction('gettingstarted.html', action2)
-            
-            app.update_page('#' + code + '-remove', 'removeClass', 'disabled')    
-            app.update_page('#' + code + '-status', 'fadeOut')
-            
-            self._push_config()
+            pm_queue.put(pmentry)
             
         Thread(target = threadedMethod).start()
       
@@ -331,11 +307,14 @@ class PopupMessage(object):
             dbg.stdout(self.type, 'message is not handled yet', 3)
 
             
-class PackageManager(object):
+class PackageManager(Thread):
     
-    def __init__(self):
+    def __init__(self, queue):
+        Thread.__init__(self)
+        
         # Don't create cache object each time instead use global cache
         self.cache = cache
+        self.queue = queue
         
     def hasInstalled(self, package):
         try:
@@ -343,6 +322,30 @@ class PackageManager(object):
         except:
             return False
     
+    def run(self):
+        while True:
+            entry = self.queue.get()
+            
+            filename = entry.filename
+            code = entry.code
+            package = PackageDict.getPackageName(code)
+            
+            if entry.task = PMEntry.INSTALL:
+                self.install(entry.package, entry.script)
+                app.update_page('#' + code + '-install', 'removeClass', 'disabled')
+            elif entry.task == PMEntry.REMOVE:
+                self.remove(entry.package)
+                app.update_page('#' + code + '-remove', 'removeClass', 'disabled')
+            
+            app.update_page('#' + code + '-status', 'fadeOut')
+            
+            for action in entry.actions:
+                systemstate.removeIntermediateActions(filename, actions)
+            
+            app._push_config()
+            self.reload_cache()
+            
+            self.queue.task_done()
     
     # Don't know how to get root privileage for installing and 
     # removing packages using apt module. So using regular command
@@ -355,20 +358,18 @@ class PackageManager(object):
         retval = process.wait()
         
         self.processOutput(process, retval)
-        
-        self.updateGlobalCache()
-            
+
     def remove(self, package):
         process = subprocess.Popen(['pkexec', 'apt', 'remove', '-y', package])
         retval = process.wait()
         
         self.processOutput(process, retval)
         
-        self.updateGlobalCache()
-        
-    def updateGlobalCache(self):
-        cache.close()
-        cache.open()
+    def reload_cache(self):
+        dbg.stdout('Apt', 'Reloading cache...', 0, 3)
+        self.cache.close()
+        self.cache = apt.Cache()
+        dbg.stdout('Apt', 'Cache reloaded.', 0, 2)
         
     def processOutput(self, process, retval):
     
@@ -424,6 +425,22 @@ class PackageDict(object):
         except KeyError:
             return None
             
+class PMEntry(object):
+    INSTALL = 0
+    REMOVE = 1
+    
+    def __init__(self, task, code, actions, filename, script = False):
+        self.task = task
+        self.code = code
+        
+        # UI updates done and remembered before starting task
+        # and need to 'forget' after finishing task
+        self.actions = actions
+        # File in which installation/removal option is listed.
+        # This is required to remove actions after installation
+        # /removal
+        self.filename = filename
+        self.script = script
 
 class SystemState(object):
     def __init__(self):
@@ -474,14 +491,17 @@ class SystemState(object):
         # installation/removal is in progress.
         self.intermediate_actions = {}
 
-    def addIntermediateAction(self, filename, action):
+    def addIntermediateAction(self, filename, actions):
+
         if filename not in self.intermediate_actions:
             self.intermediate_actions[filename] = []
             
-        self.intermediate_actions[filename].append(action)
+        self.intermediate_actions[filename] += actions
         
-    def removeIntermediateAction(self, filename, action):
-        self.intermediate_actions[filename].remove(action)
+    def removeIntermediateActions(self, filename, actions):
+    
+        for action in actions:
+            self.intermediate_actions[filename].remove(action)
         
         if len(self.intermediate_actions[filename]) == 0:
             del self.intermediate_actions[filename]
@@ -495,12 +515,6 @@ class SystemState(object):
         
         self.os_version = platform.dist()[1]    # → 14.04, 15.10, 16.04
         self.codename = platform.dist()[2]      # → trusty, wily, xenial
-
-    def reload_cache(self):
-        dbg.stdout('Apt', 'Reloading cache...', 0, 3)
-        self.apt_cache.close()
-        self.apt_cache = apt.Cache()
-        dbg.stdout('Apt', 'Cache reloaded.', 0, 2)
 
     def autostart_check(self):
         # Ensure our autostart directories exist
@@ -823,11 +837,6 @@ class SystemState(object):
         app.update_page('#specs-basic', 'fadeIn', 'medium')
         app.update_page('#specs-busy-basic', 'fadeOut', 'fast')
         webkit.run_javascript('setCursorNormal()')
-    
-
-
-
-
 
 
 class WelcomeApp(object):
@@ -1009,7 +1018,11 @@ if __name__ == "__main__":
     # Process any parameters passed to the program.
     dbg = Debug()
     arg = Arguments()
+    
     cache = apt.Cache()
+    pm_queue = Queue()
+    pm = PackageManager(pm_queue)
+    pm.start()
     
     systemstate = SystemState()
     
