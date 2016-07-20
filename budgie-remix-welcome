@@ -59,8 +59,16 @@ class AppView(WebKit2.WebView):
         # TODO: push notification should be connected to angularjs and use a
         # broadcast event any suitable controllers will be able to listen and
         # respond accordingly, for now we just use jQuery to manually toggle
-            
+        current_page = app.current_page
+        
         self.run_javascript("$('span[name=\"distro-name\"]').html('{}')".format(systemstate.distroname))
+        
+        # Dynamically inject header controls button
+        if current_page != "index.html":
+            app.update_page('#navigation', 'prepend', '<a id="menu-button" class="navigation-button" \
+               onclick="smoothPageFade(\'index.html\')"><i class="material-icons">&#xE5CB;</i></a>')
+        app.update_page('#navigation', 'append', '<a onclick="cmd(\'close\')">\
+          <i class="material-icons" id="close-btn">&#xE14C;</i></a>')
 
         if systemstate.session_type == 'live':
             app.update_page('.live-session-only', 'show') 
@@ -73,7 +81,6 @@ class AppView(WebKit2.WebView):
         else:
             self.run_javascript("$('.offline').show()")
             
-        current_page = app.current_page
 
         ### Getting Started Page ###
         if current_page == 'gettingstarted.html':
