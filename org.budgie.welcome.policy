@@ -6,7 +6,7 @@
   <vendor>budgie-remix</vendor>
   <vendor_url>http://hal.freedesktop.org/docs/PolicyKit/</vendor_url>
 
-  <action id="org.budgie-remix.welcome">
+  <action id="org.budgie.welcome">
     <description>budgie-remix Welcome Repository Installer</description>
     <message>Helper utility for the budgie-remix Welcome screen that can enable software repositories.</message>
     <icon_name>system-run</icon_name>
@@ -15,6 +15,6 @@
       <allow_inactive>no</allow_inactive>
       <allow_active>yes</allow_active>
     </defaults>
-    <annotate key="org.freedesktop.policykit.exec.path">/usr/lib/budgie-remix/budgie-remix-welcome-repository-installer</annotate>
+    <annotate key="org.freedesktop.policykit.exec.path">/usr/lib/budgie/budgie-welcome-repository-installer</annotate>
   </action>
 </policyconfig>
