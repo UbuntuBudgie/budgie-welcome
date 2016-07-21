@@ -412,7 +412,7 @@ class PackageDict(object):
     '''
     
     pagemap = {
-        'recommendations' : ['flatpak', 'steam'],
+        'recommendations' : ['flatpak', 'steam', 'screenshot'],
         'gettingstarted' : ['restricted-extras', 'keyboard-chinese',
         'keyboard-japanese', 'keyboard-korean', 'backup', 'firewall'
         ]
@@ -425,7 +425,8 @@ class PackageDict(object):
         'backup' : 'deja-dup',
         'firewall' : 'gufw',
         'steam' : 'steam',
-        'flatpak' : 'flatpak'
+        'flatpak' : 'flatpak',
+        'screenshot' : 'budgie-screenshot-applet'
     }
     
     @staticmethod

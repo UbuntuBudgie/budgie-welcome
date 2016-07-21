@@ -42,7 +42,6 @@
           <a onclick="$('#snap-guide').fadeToggle()">
             Learn how to use snap package manager
           </a>
-          <hr>
           <blockquote id="snap-guide" class="hidden">
             <h3>Search for Available Snap Packages</h3>
             <p>To see a list of all available packages in the store, open a terminal and run the following command:</p>
@@ -83,6 +82,29 @@
             <a onclick="cmd('link?http://www.howtogeek.com/252047/how-to-install-and-manage-snap-packages-on-ubuntu-16.04-lts/');cmd('')">Learn more</a>
           </blockquote>
         </div> <!-- End of Snap-->
+        <hr>
+        <div> <!--Screenshot Applet-->
+          <h2 class="fade fade-1s">Budgie Screenshot Applet</h2>
+          <div class="fade fade-1s card card-block">
+            <div class="card-image text-md-center">
+              <img src="img/screenshots/screenshot-applet.jpg" style="width: 100%">
+            </div>
+            <p class="card-text fade fade-2s">
+            <strong>Budgie Screenshot Applet</strong> is an advanced screenshot utility for capturing
+            and organizing screenshots. This screenshot applet is actually a wrapper over gnome-screenshot
+            utility. Screenshot applet let you to view recent screenshots and upload images directly to
+            <em>Imgur</em> and <em>Imagebin</em>
+            </p>
+          </div>
+          <a id="screenshot-install" class="btn btn-primary btn-lg fade fade-5s hvr-shadow" onclick="cmd('install?screenshot');cmd('')">
+            <span class="material-icons">&#xE2C0;</span>&nbsp; &zwnj;Install Screenshot Applet&zwnj;
+          </a>
+          <span id="screenshot-status" class="hidden"><img src="img/welcome/processing.gif" width="24px" height="24px"/> &zwnj;Applying Changes...&zwnj;</span>
+          <span id="screenshot-remove" class="alert alert-success">
+            Screenshot Applet is installed
+          </span>
+        </div> <!-- End of Screenshot Appelt-->
+        <hr>
         <div> <!--Flatpak-->
           <h2 class="fade fade-1s">Flatpak</h2>
           <div class="fade fade-1s card card-block">
