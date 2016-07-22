@@ -83,7 +83,7 @@ if __name__ == "__main__":
         program_id = sys.argv[4]
         target = sys.argv[5]
     except:
-        print('This script requires parameters that are retrieved via ubuntu-mate-welcome.')
+        print('This script requires parameters that are retrieved via budgie-welcome.')
         finish(1)
 
     # Load the Application Index

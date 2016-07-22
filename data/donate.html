@@ -2,106 +2,48 @@
 <html lang="en">
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="css/bootstrap-2.3.2.css" rel="stylesheet" media="screen">
+  <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
   <link href="css/material-icons.css" rel="stylesheet" media="screen">
   <link href="css/animate.css" rel="stylesheet" media="screen">
-  <link href="css/welcome.css" rel="stylesheet" media="screen">
+  <link href="css/welcome-bs4.css" rel="stylesheet" media="screen">
 </head>
 <body class="backdrop-simple">
   <div id="wrapper">
     <div class="container-fluid">
       <div id="navigation">
-        <a id="menu-button" class="navigation-button" onclick="smoothPageFade('index.html')">
-          <i class="material-icons">&#xE5CB;</i>
-        </a>
-        <div id="navigation-title" hidden>&zwnj;Donate&zwnj;</div>
+        <div id="navigation-title">&zwnj;Donate&zwnj;</div>
         <div id="navigation-right"></div>
-        <img id="navigation-divider" src="img/welcome/header-shadow.png" width="100%" height="11px">
       </div>
     </div>
-    <div id="content" class="container-fluid entire-page-fade" hidden>
-      <div class="row-fluid">
-        <div class="span12">
-          <ul id="tabs" class="nav nav-pills" data-tabs="tabs">
-            <li class="active"><a onclick="smoothFade('#supporters','#about')" data-toggle="tab" id="tabAbout">&zwnj;About Donations&zwnj;</a></li>
-            <li><a onclick="smoothFade('#about','#supporters')" data-toggle="tab" id="tabSupporters">&zwnj;Our Supporters&zwnj;</a></li>
-          </ul>
-          <div class="alert alert-warning offline">
-            <h5>&zwnj;It appears you are not connected to the Internet. Please check your connection to access this content.&zwnj;</h5>
-            <div id="reconnectFailed" hidden><p><span class="fa fa-warning"></span> &zwnj;Sorry, Welcome was unable to establish a connection.&zwnj;</p></div>
-            <a onclick="cmd('checkInternetConnection');reconnectTimeout();" class="btn btn-warning"> <span class="fa fa-refresh"></span> &zwnj;Retry&zwnj;</a>
-          </div>
-        </div>
-      </div>
+    <div id="content" class="container entire-page-fade">
+      <div class="row">
+        <div class="col-md-12">
+        <p><strong><span name="distro-name"></span></strong> is a community driven GNU/Linux distribution 
+        that combines power Ubuntu base with beautiful Budgie Desktop to provide a user friendly, modern 
+        desktop operating system.</p>
+        
+        <p>Our goal is very simple - to become an official Ubuntu community distro - "Ubuntu Budgie".
+        To do so we need to build a community - and that means you.</p>
+        
+        <p>If you believe that, our cause is worth for working and it is something that need to go
+        on without any barriers, then please consider contributing to our project</p>
+        
+        <p>We support opensource and any money raised will go towards opensource developers as well 
+        as budgie-remix itself.<p>
 
-      <div class="tab-content">
-        <div class="tab-pane active" id="about">
-          <div class="row-fluid">
-            <div class="span12">
-              <p>&zwnj;Ubuntu MATE is funded by our community. Your donations help pay towards:&zwnj;</p>
-              <ul>
-                <li>&zwnj;Web hosting and bandwidth costs.&zwnj;</li>
-                <li>&zwnj;Supporting Open Source projects that Ubuntu MATE depends upon.&zwnj;</li>
-                <li>&zwnj;Eventually pay for full time developers of Ubuntu MATE and MATE Desktop.&zwnj;</li>
-              </ul>
-              <p><b>&zwnj;Patreon&zwnj;</b> &zwnj;is a unique way to fund an Open Source project. A
-              regular monthly income ensures sustainability for the Ubuntu
-              MATE project. Patrons will be rewarded with exclusive project
-              news, updates and invited to participate in video conferences
-              where you can talk to the developers directly.&zwnj;</p>
-              <p>&zwnj;If you would prefer to use&zwnj; <b>PayPal</b> &zwnj;then we have options to
-              donate monthly or make a one off donation. Finally, we also accept
-              donations via&zwnj; <b>&zwnj;Bitcoin&zwnj;</b>.</p>
-            </div>
-          </div>
-          <div class="row-fluid">
-            <div class="span4 center">
-              <a class="btn btn-warning btn-lg" href="cmd://link?http://www.patreon.com/ubuntu_mate"><span class="fa fa-3x fa-usd fa-va"></span>&nbsp; &zwnj;Become a Patron&zwnj;</a>
-            </div>
-            <div class="span4 center">
-              <a class="btn btn-warning btn-lg" href="cmd://link?https://ubuntu-mate.org/donate/"><span class="fa fa-3x fa-paypal fa-va"></span>&nbsp; &zwnj;Donate with PayPal&zwnj;</a>
-            </div>
-            <div class="span4 center">
-              <a class="btn btn-warning btn-lg" href="cmd://link?https://ubuntu-mate.org/donate/"><span class="fa fa-3x fa-bitcoin fa-va"></span>&nbsp; &zwnj;Donate with Bitcoin&zwnj;</a>
-            </div>
-          </div>
-          <div class="row-fluid">
-            <div class="span12">
-              <hr class="soften" />
-              <p><b>&zwnj;Commercial sponsorship&zwnj;</b> &zwnj;is also available. Click the&zwnj;
-              <a href="cmd://link?http://www.patreon.com/ubuntu_mate">&zwnj;Become a Patron&zwnj;</a> &zwnj;button above to find out more.&zwnj;</p>
-            </div>
-          </div>
+        <p>Full Transparency is our goal - all money raised will be made visible here together with 
+        how your donations are used. Patreon donations will be made visible on confirmation of the 
+        donation received at the beginning of the next month. Paypal donations will appear ASAP 
+        after the donation is received.</p>
         </div>
-
-        <div class="tab-pane" id="supporters" hidden>
-          <div class="row-fluid">
-            <div class="span12">
-              <h4>&zwnj;Thank you!&zwnj;</h4>
-              <p>&zwnj;Every month, we compile a list of our donations and detail how they are spent.&zwnj;</p>
-              <p>&zwnj;This information is published monthly to the&zwnj; <a href="cmd://link?http://ubuntu-mate.org/blog/">&zwnj;Ubuntu MATE Blog&zwnj;</a>,
-              &zwnj;which you can take a look below.&zwnj;</p>
-
-              <!-- Idea = Server side word graph that compiles names of all donators together - Higher donations = Larger names. -->
-
-              <table class="table table-bordered" id="donationTable">
-                <tr>
-                  <th style="text-align:center">&zwnj;Year&zwnj;</th>
-                  <th style="text-align:center" colspan="12">&zwnj;Month&zwnj;</th>
-                </tr>
-              </table>
-            </div>
+        
+        <div class="row text-md-center" style="heigth: 40px">
+          <div class="col-md-6">
+            <a class="btn btn-primary" onclick="cmd('link?https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=ZZZLS8W5QC8US');cmd('')">Donate us via Paypal</a>
           </div>
-        </div>
-      </div>
-    </div>
-    <div id="footer" class="bottom">
-      <div class="footer-content">
-        <div id="footer-left">
-          <span id="footer-global-left"></span>
-        </div>
-        <div id="footer-right" class="form">
-          <span id="footer-global-right"></span>
+          <div class="col-md-6">
+            <a class="btn btn-primary" onclick="cmd('link?https://www.patreon.com/user?u=3038166&ty=h&u=3038166');cmd('')">Be a Patreon</a>
+          </div>
         </div>
       </div>
     </div>

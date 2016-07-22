@@ -41,6 +41,7 @@ import platform
 
 from gi.repository import WebKit2, Gtk
 from threading import Thread
+from queue import Queue, Empty
 
 import apt
 
@@ -59,8 +60,19 @@ class AppView(WebKit2.WebView):
         # TODO: push notification should be connected to angularjs and use a
         # broadcast event any suitable controllers will be able to listen and
         # respond accordingly, for now we just use jQuery to manually toggle
-            
+        current_page = app.current_page
+        
         self.run_javascript("$('span[name=\"distro-name\"]').html('{}')".format(systemstate.distroname))
+        
+        # Remove previously injected elements
+        app.update_page('#menu-button', 'remove')
+        app.update_page('#close', 'remove')
+        # Dynamically inject header controls button
+        if current_page != "index.html":
+            app.update_page('#navigation', 'prepend', '<a id="menu-button" class="navigation-button" \
+               onclick="smoothPageFade(\'index.html\')"><i class="material-icons">&#xE5CB;</i></a>')
+        app.update_page('#navigation', 'append', '<a id="close" onclick="cmd(\'close\')">\
+          <i class="material-icons" id="close-btn">&#xE14C;</i></a>')
 
         if systemstate.session_type == 'live':
             app.update_page('.live-session-only', 'show') 
@@ -73,7 +85,6 @@ class AppView(WebKit2.WebView):
         else:
             self.run_javascript("$('.offline').show()")
             
-        current_page = app.current_page
 
         ### Getting Started Page ###
         if current_page == 'gettingstarted.html':
@@ -108,8 +119,7 @@ class AppView(WebKit2.WebView):
             app.update_page('[id$=remove]', 'hide')
             
             def checkInstallationStatus():
-                pm = PackageManager()
-            
+                
                 for code in PackageDict.getShortCodes(current_page[:-5]):
                     package = PackageDict.getPackageName(code)
                     
@@ -199,7 +209,7 @@ class AppView(WebKit2.WebView):
                 popup.showMessage()
                 
         elif uri == 'close':
-            Gtk.main_quit()
+            app.close()
         elif uri == 'toggle-startup':
             # toggle autostart
             systemstate.autostart_toggle()
@@ -219,63 +229,39 @@ class AppView(WebKit2.WebView):
             
             
             
-    def installPackage(self, code, package, script = False):
+    def installPackage(self, code, package, script):
         def threadedMethod():
-            action1 = ['#' + code + '-install', 'addClass', 'disabled', None]
-            action2 = ['#' + code + '-status', 'fadeIn', None, None]
+            actions = [
+                ['#' + code + '-install', 'addClass', 'disabled', None],
+                ['#' + code + '-status', 'fadeIn', None, None]
+            ]
             
-            app.update_page(action1[0], action1[1], action1[2], action1[3])    
-            app.update_page(action2[0], action2[1], action2[2], action2[3])
+            for action in actions:
+                app.update_page(action[0], action[1], action[2], action[3])
             
-            systemstate.addIntermediateAction('gettingstarted.html', action1)
-            systemstate.addIntermediateAction('gettingstarted.html', action2)
+            systemstate.addIntermediateActions(app.current_page, actions)
             
-            pm = PackageManager()
-            try:
-                pm.install(package, script)
-            except Exception as e:
-                message = "Something went wrong with installation. Please contact us with following error message"
-                popup = PopupMessage(message, PopupMessage.ERROR, e)
-                
-                popup.showMessage()
+            pmentry = PMEntry(PMEntry.INSTALL, code, actions, app.current_page, script)
             
-            systemstate.removeIntermediateAction('gettingstarted.html', action1)
-            systemstate.removeIntermediateAction('gettingstarted.html', action2)
-            
-            app.update_page('#' + code + '-install', 'removeClass', 'disabled')    
-            app.update_page('#' + code + '-status', 'fadeOut')
-            
-            self._push_config()
+            pm_queue.put(pmentry)
             
         Thread(target = threadedMethod).start()
         
     def removePackage(self, code, package):
         def threadedMethod():
-            action1 = ['#' + code + '-remove', 'addClass', 'disabled', None]
-            action2 = ['#' + code + '-status', 'fadeIn', None, None]
+            actions = [
+                ['#' + code + '-remove', 'addClass', 'disabled', None],
+                ['#' + code + '-status', 'fadeIn', None, None]
+            ]
             
-            app.update_page(action1[0], action1[1], action1[2], action1[3])    
-            app.update_page(action2[0], action2[1], action2[2], action2[3])
+            for action in actions:
+                app.update_page(action[0], action[1], action[2], action[3])
             
-            systemstate.addIntermediateAction('gettingstarted.html', action1)
-            systemstate.addIntermediateAction('gettingstarted.html', action2)
+            systemstate.addIntermediateActions(app.current_page, actions)
             
-            pm = PackageManager()
-            try:
-                pm.remove(package)
-            except Exception as e:
-                message = "Something went wrong with removal. Please contact us with following error message"
-                popup = PopupMessage(message, PopupMessage.ERROR, e)
-                
-                popup.showMessage()
+            pmentry = PMEntry(PMEntry.REMOVE, code, actions, app.current_page)
             
-            systemstate.removeIntermediateAction('gettingstarted.html', action1)
-            systemstate.removeIntermediateAction('gettingstarted.html', action2)
-            
-            app.update_page('#' + code + '-remove', 'removeClass', 'disabled')    
-            app.update_page('#' + code + '-status', 'fadeOut')
-            
-            self._push_config()
+            pm_queue.put(pmentry)
             
         Thread(target = threadedMethod).start()
       
@@ -331,11 +317,15 @@ class PopupMessage(object):
             dbg.stdout(self.type, 'message is not handled yet', 3)
 
             
-class PackageManager(object):
+class PackageManager(Thread):
     
-    def __init__(self):
+    def __init__(self, queue):
+        Thread.__init__(self)
+        
         # Don't create cache object each time instead use global cache
         self.cache = cache
+        self.queue = queue
+        self.running = True
         
     def hasInstalled(self, package):
         try:
@@ -343,6 +333,33 @@ class PackageManager(object):
         except:
             return False
     
+    def run(self):
+        while self.running:
+            try:
+                entry = self.queue.get(timeout = 1)
+            except Empty:
+                continue
+            
+            filename = entry.filename
+            code = entry.code
+            package = PackageDict.getPackageName(code)
+            
+            if entry.task == PMEntry.INSTALL:
+                self.install(package, entry.script)
+                app.update_page('#' + code + '-install', 'removeClass', 'disabled')
+            elif entry.task == PMEntry.REMOVE:
+                self.remove(package)
+                app.update_page('#' + code + '-remove', 'removeClass', 'disabled')
+            
+            app.update_page('#' + code + '-status', 'fadeOut')
+            
+            systemstate.removeIntermediateActions(filename, entry.actions)
+            
+            self.reload_cache()
+            app.webkit._push_config()
+            
+            
+            self.queue.task_done()
     
     # Don't know how to get root privileage for installing and 
     # removing packages using apt module. So using regular command
@@ -355,20 +372,18 @@ class PackageManager(object):
         retval = process.wait()
         
         self.processOutput(process, retval)
-        
-        self.updateGlobalCache()
-            
+
     def remove(self, package):
         process = subprocess.Popen(['pkexec', 'apt', 'remove', '-y', package])
         retval = process.wait()
         
         self.processOutput(process, retval)
         
-        self.updateGlobalCache()
-        
-    def updateGlobalCache(self):
-        cache.close()
-        cache.open()
+    def reload_cache(self):
+        dbg.stdout('Apt', 'Reloading cache...', 0, 3)
+        self.cache.close()
+        self.cache = apt.Cache()
+        dbg.stdout('Apt', 'Cache reloaded.', 0, 2)
         
     def processOutput(self, process, retval):
     
@@ -397,7 +412,7 @@ class PackageDict(object):
     '''
     
     pagemap = {
-        'recommendations' : ['flatpak', 'steam'],
+        'recommendations' : ['flatpak', 'steam', 'screenshot'],
         'gettingstarted' : ['restricted-extras', 'keyboard-chinese',
         'keyboard-japanese', 'keyboard-korean', 'backup', 'firewall'
         ]
@@ -410,7 +425,8 @@ class PackageDict(object):
         'backup' : 'deja-dup',
         'firewall' : 'gufw',
         'steam' : 'steam',
-        'flatpak' : 'flatpak'
+        'flatpak' : 'flatpak',
+        'screenshot' : 'budgie-screenshot-applet'
     }
     
     @staticmethod
@@ -424,6 +440,22 @@ class PackageDict(object):
         except KeyError:
             return None
             
+class PMEntry(object):
+    INSTALL = 0
+    REMOVE = 1
+    
+    def __init__(self, task, code, actions, filename, script = False):
+        self.task = task
+        self.code = code
+        
+        # UI updates done and remembered before starting task
+        # and need to 'forget' after finishing task
+        self.actions = actions
+        # File in which installation/removal option is listed.
+        # This is required to remove actions after installation
+        # /removal
+        self.filename = filename
+        self.script = script
 
 class SystemState(object):
     def __init__(self):
@@ -438,7 +470,7 @@ class SystemState(object):
         # User's autostart directory and full path to autostart symlink.
         # Used for systemstate.autostart_toggle() function.
         self._autostart_dir = os.path.expanduser('~/.config/autostart/')
-        self._autostart_path = os.path.expanduser(os.path.join(self._autostart_dir, 'budgie-remix-welcome.desktop'))
+        self._autostart_path = os.path.expanduser(os.path.join(self._autostart_dir, 'budgie-welcome.desktop'))
         self.autostart = self.autostart_check()
 
         # Get current architecture of system.
@@ -474,14 +506,17 @@ class SystemState(object):
         # installation/removal is in progress.
         self.intermediate_actions = {}
 
-    def addIntermediateAction(self, filename, action):
+    def addIntermediateActions(self, filename, actions):
+
         if filename not in self.intermediate_actions:
             self.intermediate_actions[filename] = []
             
-        self.intermediate_actions[filename].append(action)
+        self.intermediate_actions[filename] += actions
         
-    def removeIntermediateAction(self, filename, action):
-        self.intermediate_actions[filename].remove(action)
+    def removeIntermediateActions(self, filename, actions):
+    
+        for action in actions:
+            self.intermediate_actions[filename].remove(action)
         
         if len(self.intermediate_actions[filename]) == 0:
             del self.intermediate_actions[filename]
@@ -495,12 +530,6 @@ class SystemState(object):
         
         self.os_version = platform.dist()[1]    # → 14.04, 15.10, 16.04
         self.codename = platform.dist()[2]      # → trusty, wily, xenial
-
-    def reload_cache(self):
-        dbg.stdout('Apt', 'Reloading cache...', 0, 3)
-        self.apt_cache.close()
-        self.apt_cache = apt.Cache()
-        dbg.stdout('Apt', 'Cache reloaded.', 0, 2)
 
     def autostart_check(self):
         # Ensure our autostart directories exist
@@ -521,7 +550,7 @@ class SystemState(object):
         if not os.path.exists(self._autostart_path):
             # create the autostart symlink
             try:
-                os.symlink('/usr/share/applications/budgie-remix-welcome.desktop', self._autostart_path)
+                os.symlink('/usr/share/applications/budgie-welcome.desktop', self._autostart_path)
             except OSError as err:
                 dbg.stdout('Welcome', 'Error while enabling autostart: ' + str(err), 0, 1)
                 pass
@@ -823,11 +852,6 @@ class SystemState(object):
         app.update_page('#specs-basic', 'fadeIn', 'medium')
         app.update_page('#specs-busy-basic', 'fadeOut', 'fast')
         webkit.run_javascript('setCursorNormal()')
-    
-
-
-
-
 
 
 class WelcomeApp(object):
@@ -845,11 +869,11 @@ class WelcomeApp(object):
             print('Using relative path for data source.\
                    Non-production testing.')
             self._data_path = os.path.join(self._location, 'data/')
-        elif(os.path.exists('/usr/share/budgie-remix-welcome/')):
-            print('Using /usr/share/budgie-remix-welcome/ path.')
-            self._data_path = '/usr/share/budgie-remix-welcome/'
+        elif(os.path.exists('/usr/share/budgie-welcome/')):
+            print('Using /usr/share/budgie-welcome/ path.')
+            self._data_path = '/usr/share/budgie-welcome/'
         else:
-            print('Unable to source the budgie-remix-welcome data directory.')
+            print('Unable to source the budgie-welcome data directory.')
             sys.exit(1)
 
         self._build_app()
@@ -895,7 +919,12 @@ class WelcomeApp(object):
         signal.signal(signal.SIGINT, signal.SIG_DFL)
         Gtk.main()
 
-    def close(self, p1, p2):
+    def close(self, p1 = None, p2 = None):
+        pm.running = False
+        
+        pm_queue.join()
+        pm.join()
+        
         Gtk.main_quit(p1, p2)
         
     def update_page(self, element, function, parm1=None, parm2=None):
@@ -930,7 +959,7 @@ class Arguments(object):
         for arg in sys.argv:
           if arg == '--help' or arg == '-h':
               print('\nWelcome App Parameters\n  Intended for debugging and testing purposes only!\n')
-              print('\nUsage: budgie-remix-welcome [arguments]')
+              print('\nUsage: budgie-welcome [arguments]')
               #     | Command                      | Help Text                                     |
               print('  -d, --dev, --debug           Disables locales and is very verbose')
               print('                               intended for development purposes.')
@@ -1009,9 +1038,15 @@ if __name__ == "__main__":
     # Process any parameters passed to the program.
     dbg = Debug()
     arg = Arguments()
+    
     cache = apt.Cache()
+    pm_queue = Queue()
+    pm = PackageManager(pm_queue)
+    pm.start()
     
     systemstate = SystemState()
     
     app = WelcomeApp()
     app.run()
+    
+    
