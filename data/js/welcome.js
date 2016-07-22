@@ -64,6 +64,14 @@ function changeSubtitle(textToDisplay) {
   }, 400);
 }
 
+// Remove slowly, fadeOut an element and then remove it.
+function removeSlowly(element) {
+  $(element).fadeOut()
+  setTimeout(function() {
+    $(element).remove();
+  }, 1000);
+}
+
 // For pages that depend on an internet connection, but Welcome couldn't connect.
 function reconnectTimeout() {
   if ( ! $('#reconnectFailed').is(':visible') ) {

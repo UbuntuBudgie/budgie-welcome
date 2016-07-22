@@ -67,17 +67,24 @@ class AppView(WebKit2.WebView):
         # Remove previously injected elements
         app.update_page('#menu-button', 'remove')
         app.update_page('#close', 'remove')
+        app.update_page('#status-btn', 'remove')
         # Dynamically inject header controls button
         if current_page != "index.html":
             app.update_page('#navigation', 'prepend', '<a id="menu-button" class="navigation-button" \
                onclick="smoothPageFade(\'index.html\')"><i class="material-icons">&#xE5CB;</i></a>')
+        app.update_page('#navigation', 'append', '<a onclick="cmd(\'status\')" class="btn btn-inverse" id="status-btn">Status</a>')
         app.update_page('#navigation', 'append', '<a id="close" onclick="cmd(\'close\')">\
           <i class="material-icons" id="close-btn">&#xE14C;</i></a>')
-
+        
         if systemstate.session_type == 'live':
             app.update_page('.live-session-only', 'show') 
         else:
             app.update_page('.normal-session-only', 'show')
+        
+        if pm.active: # There is atleast one task
+            app.update_page('#status-btn', 'fadeIn()')
+        else:
+            app.update_page('#status-btn', 'fadeOut()')
 
         
         if systemstate.is_online:
@@ -185,18 +192,16 @@ class AppView(WebKit2.WebView):
             if code in ["restricted-extras", "flatpak", "steam"]:
                 script = True
             
-            self.installPackage(code, package, script)
+            self.managePackage(code, package, script, PMEntry.INSTALL)
            
         elif uri.startswith('remove?'):
             code = uri[7:]
             
             package = PackageDict.getPackageName(code)
                 
-            self.removePackage(code, package)
+            self.managePackage(code, package, False, PMEntry.REMOVE)
         elif uri == 'install':
             subprocess.Popen(['ubiquity','gtk_ui'])
-        # elif uri == 'install-cli':
-            # subprocess.Popen(['xdg-terminal','sudo setup'])
         elif uri == 'software-center':
             try:
                 subprocess.Popen(['gnome-software'])
@@ -204,7 +209,7 @@ class AppView(WebKit2.WebView):
                 message = "Seems that GNOME Software is not installed. If this problem persists " +\
                            "even after installing GNOME Software, please contact us with following " +\
                            "error message"
-                popup = PopupMessage(message, PopupMessage.ERROR, e)
+                popup = PopupMessage(message, PopupMessage.ERROR, str(e))
                 
                 popup.showMessage()
                 
@@ -224,15 +229,20 @@ class AppView(WebKit2.WebView):
             webbrowser.open_new_tab(uri[5:])
         elif uri == 'init-system-info':
             systemstate.get_system_info(self)
+        elif uri == 'status':
+            message = "Following tasks are in progress"
+            popup = PopupMessage(message, PopupMessage.STATUS, pm.getTaskList())
+                
+            popup.showMessage()
         else:
             print('Unknown command: %s' % uri)
             
             
             
-    def installPackage(self, code, package, script):
+    def managePackage(self, code, package, script, operation):
         def threadedMethod():
             actions = [
-                ['#' + code + '-install', 'addClass', 'disabled', None],
+                ['#' + code + ('-install' if operation == PMEntry.INSTALL else '-remove'), 'addClass', 'disabled', None],
                 ['#' + code + '-status', 'fadeIn', None, None]
             ]
             
@@ -241,31 +251,14 @@ class AppView(WebKit2.WebView):
             
             systemstate.addIntermediateActions(app.current_page, actions)
             
-            pmentry = PMEntry(PMEntry.INSTALL, code, actions, app.current_page, script)
+            pmentry = PMEntry(operation, code, actions, app.current_page, script)
             
             pm_queue.put(pmentry)
+            
+            app.update_page('#status-btn', 'fadeIn')
             
         Thread(target = threadedMethod).start()
         
-    def removePackage(self, code, package):
-        def threadedMethod():
-            actions = [
-                ['#' + code + '-remove', 'addClass', 'disabled', None],
-                ['#' + code + '-status', 'fadeIn', None, None]
-            ]
-            
-            for action in actions:
-                app.update_page(action[0], action[1], action[2], action[3])
-            
-            systemstate.addIntermediateActions(app.current_page, actions)
-            
-            pmentry = PMEntry(PMEntry.REMOVE, code, actions, app.current_page)
-            
-            pm_queue.put(pmentry)
-            
-        Thread(target = threadedMethod).start()
-      
-   
 class Debug(object):
     def __init__(self):
         self.verbose_level = 0
@@ -297,26 +290,49 @@ class Debug(object):
 class PopupMessage(object):
     ERROR = 0
     CONFIRMATION = 1
+    STATUS = 2
     
-    def __init__(self, message, type, trace = None):
+    def __init__(self, message, type, details = None):
         '''
          message => Messge to user
          type => Type of message(error, confirmation ..etc)
-         trace => Error trace, if available
         '''
-        self.trace = trace
+        self.details = details
         self.message = message
         self.type = type
         
     def showMessage(self):
+        # Remove message window if already exists
+        app.update_page('#popup-message-window', 'remove')
+    
+        # Dynamically inject Popup message window
+        app.update_page('#wrapper', 'append', '<div id="popup-message-window">\
+        <div id="popup-message-container">\
+        </div>\
+      </div>')
+        
+        app.update_page('#popup-message-container', 'append', '<p id="popup-message">' +\
+            self.message + '</p>')
         if self.type == PopupMessage.ERROR:
-            app.update_page('#popup-message', 'html', self.message)
-            app.update_page('#trace', 'val', str(self.trace))
-            app.update_page('#popup-message-window', 'fadeIn')
+            app.update_page('#popup-message-container', 'append', '<textarea id="details">'+self.details+'</textarea>')
+        elif self.type == PopupMessage.STATUS:
+            html_table = '<table class="table table-bordered table-condensed">'
+            html_table += '<thead><th>TASK</th><th>NAME</th><th>STATUS</th></thead>'
+            for task in self.details:
+                html_table += '<tr>'
+                html_table += '<td>%s</td><td>%s</td><td>%s</td>'%(task[0], task[1], task[2])
+            html_table += '</table>'
+            
+            html_table = '<div id="status-table-container">' + html_table + '</div>'
+            
+            app.update_page('#popup-message-container', 'append', html_table)
         else:
             dbg.stdout(self.type, 'message is not handled yet', 3)
 
-            
+        app.update_page('#popup-message-container', 'append','<br><a onclick="removeSlowly(\'#popup-message-window\');'+\
+        'document.title=\'\'" class="btn btn-primary">&nbsp;&nbsp;OK&nbsp;&nbsp;</a>')
+        app.update_page('#popup-message-window', 'fadeIn')
+        
 class PackageManager(Thread):
     
     def __init__(self, queue):
@@ -326,6 +342,7 @@ class PackageManager(Thread):
         self.cache = cache
         self.queue = queue
         self.running = True
+        self.active = None
         
     def hasInstalled(self, package):
         try:
@@ -339,6 +356,8 @@ class PackageManager(Thread):
                 entry = self.queue.get(timeout = 1)
             except Empty:
                 continue
+                
+            self.active = entry
             
             filename = entry.filename
             code = entry.code
@@ -360,6 +379,8 @@ class PackageManager(Thread):
             
             
             self.queue.task_done()
+            
+            self.active = None
     
     # Don't know how to get root privileage for installing and 
     # removing packages using apt module. So using regular command
@@ -397,11 +418,23 @@ class PackageManager(Thread):
         
         # Colud n't get lock for apt
         if retval == 100:
-            message = "Seems that another installation/removal is in progress. If you think this is a mistake" +\
-                "please contact us with following error message"
+            message = "Something went wrong with installation/removal. Please restart your computer "+\
+            "and have a fresh start."
             popup = PopupMessage(message, PopupMessage.ERROR, output)
                 
             popup.showMessage()
+            
+    def getTaskList(self):
+     
+        with self.queue.mutex:
+            task_list = list(self.queue.queue)
+         
+        taskList = [["INSTALL" if self.active.task == PMEntry.INSTALL else "REMOVE", self.active.code, "ACTIVE"]]
+         
+        for task in task_list:
+            taskList.append(["INSTALL" if task.task == PMEntry.INSTALL else "REMOVE", task.code, "PENDING"])
+            
+        return taskList
             
 class PackageDict(object):
     '''
@@ -424,7 +457,7 @@ class PackageDict(object):
         'keyboard-korean' : 'ibus-hangul',
         'backup' : 'deja-dup',
         'firewall' : 'gufw',
-        'steam' : 'steam',
+        'steam' : 'steam:i386',
         'flatpak' : 'flatpak',
         'screenshot' : 'budgie-screenshot-applet'
     }
