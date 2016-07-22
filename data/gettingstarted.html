@@ -84,7 +84,8 @@
             computer meets or surpasses the recommended requirements.&zwnj;</p>
 
             <div class="center">
-              <a onclick='changePage("specs","&zwnj;System Specifications&zwnj;"); InitSystemInfo()' class="btn btn-inverse"><span class="fa fa-question-circle"></span>&nbsp; &zwnj;What's inside my computer?&zwnj;</a>
+              <a onclick='changePage("specs","&zwnj;System Specifications&zwnj;"); InitSystemInfo()' class="btn btn-inverse">
+              	<i class="material-icons">&#xE887;</i>What's inside my computer?</a>
             </div>
 
             <div class="center">
@@ -331,8 +332,8 @@
               <a onclick="reconnectRetry();" class="btn btn-warning"> <span class="fa fa-refresh"></span> &zwnj;Retry&zwnj;</a>
             </div>
 
-            <a class="boot-repair-install btn btn-inverse online" onclick="cmd('install-appid?boot-repair')"><i class="material-icons">&#xE2C4;</i>&nbsp; &zwnj;Download Boot Repair&zwnj;</a>
-            <a class="boot-repair-remove btn btn-success" onclick="cmd('run?boot-repair')"><span class="fa fa-wrench"></span>&nbsp; &zwnj;Open Boot-Repair&zwnj;</a>
+            <a class="boot-repair-install btn btn-success online" onclick="cmd('install-appid?boot-repair')">&nbsp;<i class="material-icons">&#xE2C0;</i>Download Boot Repair&nbsp;</a>
+            <a class="boot-repair-remove btn btn-inverse" onclick="cmd('run?boot-repair')">&nbsp;<i class="material-icons">&#xE8F9;</i>Open Boot-Repair&nbsp;</a>
 
             <div class="center">
               <hr class="soften-light">
@@ -369,8 +370,8 @@
                   </p></small>
                 </span>
                 <p class="text-right">
-                  <a class="btn btn-lg btn-inverse" onclick="cmd('update'); smoothFade('','#updates-hint')">
-                    <img src="img/applications/system-software-update.png" width="20px" height="20px"/>&nbsp; &zwnj;Check for Updates&zwnj;
+                  <a class="btn btn-inverse" onclick="cmd('update'); smoothFade('','#updates-hint')">
+                    &nbsp;<i class="material-icons">&#xE863;</i>Check for Updates&nbsp;
                   </a>
                 </p>
               </div>
@@ -400,8 +401,8 @@
            
                 <p class="text-right">
                   <span id="restricted-extras-status" class="hidden"><img src="img/welcome/processing.gif" width="24px" height="24px"/> &zwnj;Applying Changes...&zwnj;</span>
-                  <a id="restricted-extras-install" class="btn btn-lg btn-success" onclick="cmd('install?restricted-extras')">&nbsp; &zwnj;Install&zwnj;</a>
-                  <a id="restricted-extras-remove" class="btn btn-lg btn-danger"   onclick="cmd('remove?restricted-extras')"> <span class="fa fa-trash"></span>&nbsp; &zwnj;Remove&zwnj;</a>
+                  <a id="restricted-extras-install" class="btn btn-success" onclick="cmd('install?restricted-extras')">&nbsp;<span class="material-icons">&#xE2C0;</span>Install&nbsp;</a>
+                  <a id="restricted-extras-remove" class="btn btn-danger"   onclick="cmd('remove?restricted-extras')">&nbsp;<span class="material-icons">&#xE872;</span>Remove&nbsp;</a>
                 </p>
               </div>
             </div>
@@ -436,7 +437,7 @@
             </div>
             <div align="center">
                 <a class="btn btn-inverse" onclick="cmd('drivers');cmd('')" onclick="smoothFade('','#drivers-hint')">
-                    <img src="img/applications/additional-drivers.png" width="32px" height="32px"/>&nbsp; &zwnj;Additional Drivers&zwnj;
+                    &nbsp;<img src="img/applications/additional-drivers.png" style="height: 24px"/>&nbsp;Additional Drivers&nbsp;
                 </a>
             </div>
 
@@ -576,9 +577,9 @@
             localization settings, or you may want to install additional
             language support.&zwnj;</p>
             <div align="center">
-              <a class="btn btn-lg btn-inverse" onclick="cmd('language');cmd('')">
-                <img src="img/applications/preferences-desktop-locale.png" width="32px" height="32px"/>
-                &nbsp; &zwnj;Language Support&zwnj;
+              <a class="btn btn-inverse" onclick="cmd('language');cmd('')">
+                &nbsp;<img src="img/applications/preferences-desktop-locale.png" style="height: 24px"/>
+                &nbsp;Language Support&nbsp;
               </a>
             </div>
             <span id="locale-hint"><small>
@@ -597,21 +598,21 @@
         <div class="row">
           <div class="col-md-4 center">
             <h5>Chinese</h5>
-            <a id="keyboard-chinese-install" class="btn btn-lg btn-inverse btn-block" onclick="cmd('install?keyboard-chinese');cmd('')"><i class="material-icons">&#xE312;</i></span>&nbsp; &zwnj;Install&zwnj;</a>
-            <a id="keyboard-chinese-remove" class="btn btn-lg btn-danger btn-block" onclick="cmd('remove?keyboard-chinese');cmd('')"><i class="material-icons">&#xE312;</i></span>&nbsp; &zwnj;Remove&zwnj;</a>
-            <span id="keyboard-chinese-status" id="keyboard-status" class="hidden"><img src="img/welcome/processing.gif" width="24px" height="24px"/> &zwnj;Applying Changes...&zwnj;</span>
+            <a id="keyboard-chinese-install" class="btn btn-success btn-block" onclick="cmd('install?keyboard-chinese');cmd('')">&nbsp;<span class="material-icons">&#xE2C0;</span>Install&nbsp;</a>
+            <a id="keyboard-chinese-remove" class="btn btn-danger btn-block" onclick="cmd('remove?keyboard-chinese');cmd('')">&nbsp;<span class="material-icons">&#xE872;</span>Remove&nbsp;</a>
+            <span id="keyboard-chinese-status" id="keyboard-status" class="hidden"><img src="img/welcome/processing.gif" width="24px"/> &zwnj;Applying Changes...&zwnj;</span>
           </div>
           <div class="col-md-4 center">
             <h5>Japanese</h5>
-            <a id="keyboard-japanese-install" class="btn btn-lg btn-inverse btn-block" onclick="cmd('install?keyboard-japanese');cmd('')"><i class="material-icons">&#xE312;</i></span>&nbsp; &zwnj;Install&zwnj;</a>
-            <a id="keyboard-japanese-remove" class="btn btn-lg btn-danger btn-block" onclick="cmd('remove?keyboard-japanese');cmd('')"><i class="material-icons">&#xE312;</i></span>&nbsp; &zwnj;Remove&zwnj;</a>
-            <span id="keyboard-japanese-status" class="hidden"><img src="img/welcome/processing.gif" width="24px" height="24px"/> &zwnj;Applying Changes...&zwnj;</span>
+            <a id="keyboard-japanese-install" class="btn btn-success btn-block" onclick="cmd('install?keyboard-japanese');cmd('')">&nbsp;<span class="material-icons">&#xE2C0;</span>Install&nbsp;</a>
+            <a id="keyboard-japanese-remove" class="btn btn-danger btn-block" onclick="cmd('remove?keyboard-japanese');cmd('')">&nbsp;<span class="material-icons">&#xE872;</span>Remove&nbsp;</a>
+            <span id="keyboard-japanese-status" class="hidden"><img src="img/welcome/processing.gif" width="24px" /> &zwnj;Applying Changes...&zwnj;</span>
           </div>
           <div class="col-md-4 center">
             <h5>Korean</h5>
-            <a id="keyboard-korean-install" class="btn btn-lg btn-inverse btn-block" onclick="cmd('install?keyboard-korean');cmd('')"><i class="material-icons">&#xE312;</i></span>&nbsp; &zwnj;Install&zwnj;</a>
-            <a id="keyboard-korean-remove" class="btn btn-lg btn-danger btn-block" onclick="cmd('remove?keyboard-korean');cmd('')"><i class="material-icons">&#xE312;</i></span>&nbsp; &zwnj;Remove&zwnj;</a>
-            <span id="keyboard-korean-status" class="hidden"><img src="img/welcome/processing.gif" width="24px" height="24px"/> &zwnj;Applying Changes...&zwnj;</span>
+            <a id="keyboard-korean-install" class="btn btn-success btn-block" onclick="cmd('install?keyboard-korean');cmd('')">&nbsp;<span class="material-icons">&#xE2C0;</span>Install&nbsp;</a>
+            <a id="keyboard-korean-remove" class="btn btn-danger btn-block" onclick="cmd('remove?keyboard-korean');cmd('')">&nbsp;<span class="material-icons">&#xE872;</span>Remove&nbsp;</a>
+            <span id="keyboard-korean-status" class="hidden"><img src="img/welcome/processing.gif" width="24px"/> &zwnj;Applying Changes...&zwnj;</span>
           </div>
         </div>
         <div class="center">
@@ -648,10 +649,10 @@
             <span name="distro-name"></span> and supports backups to
             local devices as well as online cloud-based services.&zwnj;</p>
             <span id="backup-status" class="hidden"><img src="img/welcome/processing.gif" width="24px" height="24px"/> &zwnj;Applying Changes...&zwnj;</span>
-            <a id="backup-install" class="btn btn-primary" onclick="cmd('install?backup');cmd('')">&nbsp; &zwnj;Install&zwnj;</a>
+            <a id="backup-install" class="btn btn-success" onclick="cmd('install?backup');cmd('')">&nbsp;<span class="material-icons">&#xE2C0;</span>Install&nbsp;</a>
             <div id="backup-remove">
-              <a class="btn btn-lg btn-inverse" onclick="cmd('backup');cmd('')">
-                <img src="img/applications/deja-dup.png" width="32px" height="32px"/>&nbsp; &zwnj;Configure Backup&zwnj;
+              <a class="btn btn-inverse" onclick="cmd('backup');cmd('')">
+                &nbsp;<img src="img/applications/deja-dup.png" style="height: 24px"/>&nbsp;Configure Backup&nbsp;
               </a>
               <span id="backup-hint" class="center"><small>
                 <p><i class="material-icons">&#xE88F;</i> <b>&zwnj;Backups&zwnj;</b> &zwnj;can be found later in&zwnj;
@@ -677,10 +678,10 @@
               <a onclick="cmd('link?https://wiki.ubuntu.com/BasicSecurity')">&zwnj;more ways to stay secure too&zwnj;</a>.
             </p>
             <span id="firewall-status" class="hidden"><img src="img/welcome/processing.gif" width="24px" height="24px"/> &zwnj;Applying Changes...&zwnj;</span>
-            <a id="firewall-install" class="btn btn-primary" onclick="cmd('install?firewall');cmd('')">&nbsp; &zwnj;Install&zwnj;</a> 
+            <a id="firewall-install" class="btn btn-success" onclick="cmd('install?firewall');cmd('')">&nbsp;<span class="material-icons">&#xE2C0;</span>Install&nbsp;</a> 
             <div id="firewall-remove"> 
-              <a class="btn btn-lg btn-inverse" onclick="cmd('firewall');cmd('')">
-                <img src="img/applications/gufw.png" width="32px" height="32px"/>&nbsp; &zwnj;Configure Firewall&zwnj;
+              <a class="btn btn-inverse" onclick="cmd('firewall');cmd('')">
+                &nbsp;<img src="img/applications/gufw.png" style="height: 24px"/>&nbsp;Configure Firewall&nbsp;
               </a>
               <span id="firewall-hint" class="center"><small>
                 <p><i class="material-icons">&#xE88F;</i> <b>&zwnj;Firewall Configuration&zwnj;</b> &zwnj;can be found later in&zwnj;
@@ -705,8 +706,8 @@
             <p>&zwnj;You can also log in to a&zwnj; <b>&zwnj;Guest Session&zwnj;</b> &zwnj;if someone
             is using your computer as a one-off.&zwnj;</p>
             <div class="text-md-center">
-              <a class="btn btn-lg btn-inverse" onclick="cmd('users');cmd('')">
-                <img src="img/applications/users.png" width="32px" height="32px"/>&nbsp; &zwnj;Configure Users&zwnj;
+              <a class="btn btn-inverse" onclick="cmd('users');cmd('')">
+                &nbsp;<img src="img/applications/users.png" style="height: 24px"/>&nbsp;Configure Users&nbsp;
               </a>
               <span id="users-hint" class="center"><small>
                 <p><i class="material-icons">&#xE88F;</i> <b>&zwnj;Users&zwnj;</b> &zwnj;can be found later in&zwnj;
@@ -735,8 +736,8 @@
             interface. It can be used to quickly setup the user interface
             to broadly reflect how other popular operating systems look
             and feel.</p>
-            <div align="center"><a class="btn btn-lg btn-inverse" onclick="cmd('raven');cmd('')" onclick="smoothFade('','#tweak-hint')">
-              <img src="img/applications/raven-settings.png" width="32px" height="32px"/>&nbsp; &zwnj;Raven Configuration Center&zwnj;
+            <div align="center"><a class="btn btn-inverse" onclick="cmd('raven');cmd('')" onclick="smoothFade('','#tweak-hint')">
+              &nbsp;<img src="img/applications/raven-settings.png" style="height: 24px"/>&nbsp;Raven Configuration Center&nbsp;
             </a></div>
             <span id="tweak-hint" class="center"><small>
               <p><i class="material-icons">&#xE88F;</i> <b>&zwnj;Raven Configuration Center&zwnj;</b> &zwnj;can be found later in&zwnj;
@@ -747,8 +748,8 @@
             <p>&zwnj;The utilities mentioned above are all part of the extensive
             Control Center that <span name="distro-name"></span> provides. You can configure
             just about every aspect of your computer from the Control Center.&zwnj;</p>
-            <div align="center"><a class="btn btn-lg btn-inverse" onclick="cmd('control');cmd('')">
-              <img src="img/applications/control-center.svg" width="32px" height="32px"/>&nbsp; &zwnj;Control Center&zwnj;
+            <div align="center"><a class="btn btn-inverse" onclick="cmd('control');cmd('')">
+              <img src="img/applications/control-center.svg" style="height: 24px;"/>&nbsp;Control Center&nbsp;
             </a></div>
             <span id="control-hint" class="center"><small>
               <p><i class="material-icons">&#xE88F;</i> <b>&zwnj;Control Center&zwnj;</b> &zwnj;can be found later in the&zwnj;
