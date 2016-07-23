@@ -182,6 +182,8 @@ class AppView(WebKit2.WebView):
             subprocess.Popen(['deja-dup-preferences'])
         elif uri == 'firewall':
             subprocess.Popen(['gufw'])
+        elif uri == 'raven':
+            subprocess.Popen(['xdotool', 'key', 'super+a'])
         elif uri.startswith('install?'):
             code = uri[8:]
             
