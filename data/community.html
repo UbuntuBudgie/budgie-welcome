@@ -11,51 +11,68 @@
   <div id="wrapper">
     <div class="container-fluid">
       <div id="navigation">
-        <div id="navigation-title">&zwnj;Community&zwnj;</div>
+        <div id="navigation-title">Community</div>
         <div id="navigation-right"></div>
       </div>
     </div>
     <div id="content" class="container entire-page-fade">
-      <div class="row">
+      <div class="row fade fade-1s">
         <div class="col-md-12">
           <!--Body content-->
-          <h2>&zwnj;Forum&zwnj;</h2>
-          <p>&zwnj;To play an active role and help shape the direction of <span name="distro-name"></span>,
+          <h2>Forum</h2>
+          <p>To play an active role and help shape the direction of <span name="distro-name"></span>,
           the <span name="distro-name"></span> chat room is the best place to go. From here, you can talk with the <span name="distro-name"></span>
-          team and other members of our growing community.&zwnj;</p>
-          <div class="alert alert-warning offline">
-            <h5>&zwnj;It appears you are not connected to the Internet. Please check your connection to access this content.&zwnj;</h5>
-            <div id="reconnectFailed"><p><span class="fa fa-warning"></span> &zwnj;Sorry, Welcome was unable to establish a connection.&zwnj;</p></div>
-            <a onclick="reconnectTimeout();" class="btn btn-warning"> <span class="fa fa-refresh"></span> &zwnj;Retry&zwnj;</a>
+          team and other members of our growing community.</p>
+          <div class="alert alert-warning offline fade fade-2s">
+            <h5>It appears you are not connected to the Internet. Please check your connection to access this content.</h5>
+            <div id="reconnectFailed"><p><i class="material-icons">&#xE002;</i>Sorry, Welcome was unable to establish a connection.</p></div>
+            <a onclick="reconnectTimeout();" class="btn btn-warning"><i class="material-icons">&#xE5D5;</i>Retry</a>
           </div>
           <div align="center">
-            <a class="btn btn-lg btn-primary" onclick="cmd('link?https://gitter.im/budgie-remix/community')"><img src="img/welcome/distro-icon.svg" width="20">&nbsp; <span name="distro-name"></span> Chat Room</a>
+            <a class="btn btn-inverse" onclick="cmd('link?https://gitter.im/budgie-remix/community');cmd('')">
+              <img src="img/distro-icon-inverted.svg" width="20">&nbsp;<span name="distro-name"></span> Chat Room
+            </a>
           </div>
-          <h2>&zwnj;Social Networks&zwnj;</h2>
-          <p>&zwnj;<span name="distro-name"></span> is active on the following social networks.&zwnj;</p>
+          <h2>Social Networks</h2>
+          <p><span name="distro-name"></span> is active on the following social networks.</p>
         </div>
       </div>
-      <div class="row social-banner">
-        <div class="col-md-3">
-          <a onclick="cmd('link?https://plus.google.com/communities/106822666079268690759')">
+      <div class="row social-banner fade fade-3s">
+        <div class="col-md-1"><!-- Reserve space --></div>
+        <div class="col-md-2">
+          <a class="hover-menu-block">
             <img src="img/social/g+.svg"/>
+            <ul class="hover-menu">
+              <li onclick="cmd('link?https://plus.google.com/communities/106822666079268690759');cmd('')">
+                G+ Community
+              </li>
+              <li onclick="cmd('link?https://plus.google.com/b/114426521113195641057/106459857019142382817');cmd('')">
+                G+ Page
+              </li>
+            </ul>
           </a>
         </div>
-        <div class="col-md-3">
-          <a onclick="cmd('link?https://www.reddit.com/r/budgieremix')">
+        <div class="col-md-2">
+          <a onclick="cmd('link?https://www.reddit.com/r/budgieremix');cmd('')">
             <img src="img/social/reddit.svg"/>
           </a>
         </div>
-        <div class="col-md-3">
-          <a onclick="cmd('link?http://gitter.im/budgie-remix/community')">
+        <div class="col-md-2">
+          <a onclick="cmd('link?http://gitter.im/budgie-remix/community');cmd('')">
             <img src="img/social/gitter.svg"/>
           </a>
         </div>
-        <div class="col-md-3">
-          <a onclick="cmd('link?http://github.com/budgie-remix')">
+        <div class="col-md-2">
+          <a onclick="cmd('link?http://github.com/budgie-remix');cmd('')">
             <img src="img/social/github.svg"/>
           </a>
         </div>
+        <div class="col-md-2">
+          <a onclick="cmd('link?https://twitter.com/budgie_remix');cmd('')">
+            <img src="img/social/twitter.svg"/>
+          </a>
+        </div>
+        <div class="col-md-1"><!-- Reserve space --></div>
       </div>
     </div>
   </div>

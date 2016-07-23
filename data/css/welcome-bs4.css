@@ -294,20 +294,22 @@ a {
   margin-right: 5px;
 }
 
-.social .hover-menu-block .hover-menu {
+.hover-menu-block .hover-menu {
   background: #404552;
   z-index: 15;
   position: absolute;
-  bottom: -18px;
-  left: 45px;
+  /*bottom: -18px;
+  left: 45px;*/
+  bottom: 40%;
   border: 1px solid #ddd;
   padding: 5px 10px;
   border-radius: 5px;
   display: none;
   list-style: none;
   color: white;
+  width: 150px
 }
-.social .hover-menu-block:hover .hover-menu {
+.hover-menu-block:hover .hover-menu {
   display: block;
   -webkit-animation: fadeIn 1s;
   animation: fadeIn 1s;
@@ -318,6 +320,7 @@ a {
   cursor: pointer;
   padding: 2px 5px;
   border-radius: 4px;
+  text-align: left;
 }
 
 .hover-menu li:hover {
