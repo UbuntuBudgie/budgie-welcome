@@ -42,6 +42,7 @@ import platform
 from gi.repository import WebKit2, Gtk
 from threading import Thread
 from queue import Queue, Empty
+from notify2 import Notification, init as NotifyInit
 
 import apt
 
@@ -376,6 +377,10 @@ class PackageManager(Thread):
             
             systemstate.removeIntermediateActions(filename, entry.actions)
             
+            action = "removal" if entry.task == PMEntry.REMOVE else "installation"
+            
+            Notifier(Notifier.INFO, "completed " + action + " of " + entry.code).show()
+            
             self.reload_cache()
             app.webkit._push_config()
             
@@ -437,6 +442,22 @@ class PackageManager(Thread):
             taskList.append(["INSTALL" if task.task == PMEntry.INSTALL else "REMOVE", task.code, "PENDING"])
             
         return taskList
+        
+class Notifier(object):
+    INFO = 0
+    ERROR = 1
+    SUCCESS = 2
+    
+    def __init__(self, type, message):
+        
+        if type == self.INFO:
+            icon = "dialog-information"
+            
+        self.notification = Notification("Welcome App", message, icon)
+        
+    def show(self):
+        self.notification.show()
+        
             
 class PackageDict(object):
     '''
@@ -1078,6 +1099,9 @@ if __name__ == "__main__":
     pm_queue = Queue()
     pm = PackageManager(pm_queue)
     pm.start()
+    
+    # Init notification
+    NotifyInit("budgie-welcome")
     
     systemstate = SystemState()
     
