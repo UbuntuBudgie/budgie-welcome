@@ -679,6 +679,7 @@ hr.soften-light {
   color: white;
   background-color: #404552;
   margin: 2px;
+  transition: background 0.2s ease;
 }
 
 .btn-inverse:hover {
@@ -705,6 +706,7 @@ hr.soften-light {
 
 .btn-primary {
   background: #4c8ac9;
+  transition: background 0.2s ease;
 }
 
 a.btn-primary.disabled {

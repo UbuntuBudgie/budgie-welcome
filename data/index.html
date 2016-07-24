@@ -7,14 +7,14 @@
     <link href="css/animate.css" rel="stylesheet" media="screen">
     <link href="css/welcome-bs4.css" rel="stylesheet" media="screen">
   </head>
-  <body class="backdrop-simple" style="overflow: hidden;">
+  <body class="backdrop-simple hidden" style="overflow: hidden;">
     <div class="container-fluid">
       <div id="navigation">
         <div id="navigation-title">&zwnj;Main Menu&zwnj;</div>
         <div id="navigation-right"></div>
       </div>
     </div>
-    <div class="entire-page-fade" id="wrapper">
+    <div class="entire-page-fade fade fade-1s" id="wrapper">
       <div id="header" class="container-fluid" style="padding-top: 64px">
         <div class="row">
           <div class="col-md-12 center splash-version">
@@ -33,31 +33,31 @@
             <!-- Documentation -->
             <div class="button-group">
               <span class="btn-icon material-icons">&#xE88E;</span>
-              <a id="introduction" class="btn btn-inverse fade fade-3s hvr-shadow" onclick="exitMenu('introduction.html')">
+              <a id="introduction" class="btn btn-inverse fade fade-3s hvr-shadow" onclick="smoothPageFade('introduction.html')">
                 &nbsp; &zwnj;Introduction&zwnj;
               </a>
             </div>
             <div class="button-group">
               <span class="btn-icon material-icons">&#xE8D0;</span>
-              <a id="features" class="btn btn-inverse fade fade-4s hvr-shadow" onclick="exitMenu('features.html')">
+              <a id="features" class="btn btn-inverse fade fade-4s hvr-shadow" onclick="smoothPageFade('features.html')">
                 &nbsp; &zwnj;Features&zwnj;
               </a>
             </div>
             <div class="button-group">
               <span class="btn-icon material-icons">&#xE86C;</span>
-              <a id="gettingstarted" class="btn btn-inverse fade fade-5s live-session hvr-shadow" onclick="exitMenu('gettingstarted.html')">
+              <a id="gettingstarted" class="btn btn-inverse fade fade-5s live-session hvr-shadow" onclick="smoothPageFade('gettingstarted.html')">
                 &nbsp; &zwnj;Getting Started&zwnj;
               </a>
             </div>
             <div class="button-group live-session-only">
               <span class="btn-icon material-icons">&#xE887;</span>
-              <a id="install-guide"  class="btn btn-inverse fade fade-5s hvr-shadow" onclick="exitMenu('gettingstarted.html')">
+              <a id="install-guide"  class="btn btn-inverse fade fade-5s hvr-shadow" onclick="smoothPageFade('gettingstarted.html')">
                 &nbsp; &zwnj;Installation Help&zwnj;
               </a>
             </div>
             <div class="button-group normal-session-only">
               <span class="btn-icon material-icons">&#xE887;</span>
-              <a class="btn btn-inverse fade fade-5s hvr-shadow" onclick="exitMenu('recommendations.html')">
+              <a class="btn btn-inverse fade fade-5s hvr-shadow" onclick="smoothPageFade('recommendations.html')">
                 &nbsp; &zwnj;Recommendations&zwnj;
               </a>
             </div>
@@ -74,25 +74,25 @@
             <!-- Project -->
             <div class="button-group">
               <span class="btn-icon material-icons">&#xE0B9;</span>
-              <a id="chatroom" class="btn btn-inverse fade fade-3s hvr-shadow" onclick="exitMenu('chatroom.html')">
+              <a id="chatroom" class="btn btn-inverse fade fade-3s hvr-shadow" onclick="smoothPageFade('chatroom.html')">
                 &nbsp; &zwnj;Chat room&zwnj;
               </a>
             </div>
             <div class="button-group">
               <span class="btn-icon material-icons">&#xE7EF;</span>
-              <a id="community" class="btn btn-inverse fade fade-3s hvr-shadow" onclick="exitMenu('community.html')">
+              <a id="community" class="btn btn-inverse fade fade-3s hvr-shadow" onclick="smoothPageFade('community.html')">
                 &nbsp; &zwnj;Community&zwnj;
               </a>
             </div>
             <div class="button-group">
               <span class="btn-icon material-icons">&#xE86F;</span>
-              <a id="getinvolved" class="btn btn-inverse fade fade-5s hvr-shadow" onclick="exitMenu('getinvolved.html')">
+              <a id="getinvolved" class="btn btn-inverse fade fade-5s hvr-shadow" onclick="smoothPageFade('getinvolved.html')">
                 &nbsp; &zwnj;Get Involved&zwnj;
               </a>
             </div>
             <div class="button-group">
               <span class="btn-icon material-icons">&#xE87D;</span>
-              <a id="donate" class="btn btn-inverse fade fade-5s hvr-shadow" onclick="exitMenu('donate.html')">
+              <a id="donate" class="btn btn-inverse fade fade-5s hvr-shadow" onclick="smoothPageFade('donate.html')">
                 &nbsp; &zwnj;Donate&zwnj;
               </a>
             </div>
@@ -121,7 +121,6 @@
               <a class="hover-menu-block">
                 <img src="img/social/g+.svg"/>
                 <ul class="hover-menu">
-                  <li onclick="cmd('link?https://plus.google.com/communities/106822666079268690759');cmd('')">
                     G+ Community
                   </li>
                   <li onclick="cmd('link?https://plus.google.com/b/114426521113195641057/106459857019142382817');cmd('')">

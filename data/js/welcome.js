@@ -9,20 +9,15 @@ function cmd(instruction) {
 // Global across all pages
 $(window).load(function() {
     // Smoothly fade into the page.
-    $('.entire-page-fade').fadeIn('medium');
-    $('#navigation-right').hide();
-    $('#navigation-right').fadeIn('medium');
+    $('body').fadeIn('slow');
 });
 
 // Smoothly fade out of the page.
 function smoothPageFade(target_href) {
-    $('.entire-page-fade').fadeOut('medium');
-    $('#navigation-title').fadeOut('medium');
-    $('#navigation-right').fadeOut('medium');
-    $('.navigation-button').fadeOut('medium');
+    $('html').fadeOut('fast');
     setTimeout(function(){
         window.location.href = target_href;
-    }, 400);
+    }, 200);
 }
 
 // When page first opens
@@ -107,16 +102,6 @@ if ( current_page == 'index.html' ) {
     $('#mate-blur').jAnimateOnce('zoomIn');
     $('#mate-blur').show();
   }, 50);
-
-  function exitMenu(target) {
-      // Show a "wait" cursor for the Software page, as there is a slight delay.
-      if ( target == 'software.html' ) {
-          setCursorBusy()
-      }
-
-      $('#mate-blur').jAnimateOnce('zoomOut');
-      smoothPageFade(target)
-  }
 
   // Have we greeted the user already?
   if ( document.cookie == 'greeted=yes' ) {

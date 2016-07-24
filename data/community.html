@@ -7,7 +7,7 @@
   <link href="css/animate.css" rel="stylesheet" media="screen">
   <link href="css/welcome-bs4.css" rel="stylesheet" media="screen">
 </head>
-<body class="backdrop-simple">
+<body class="backdrop-simple fade fade-1s">
   <div id="wrapper">
     <div class="container-fluid">
       <div id="navigation">
@@ -16,14 +16,14 @@
       </div>
     </div>
     <div id="content" class="container entire-page-fade">
-      <div class="row fade fade-1s">
+      <div class="row">
         <div class="col-md-12">
           <!--Body content-->
           <h2>Forum</h2>
           <p>To play an active role and help shape the direction of <span name="distro-name"></span>,
           the <span name="distro-name"></span> chat room is the best place to go. From here, you can talk with the <span name="distro-name"></span>
           team and other members of our growing community.</p>
-          <div class="alert alert-warning offline fade fade-2s">
+          <div class="alert alert-warning offline">
             <h5>It appears you are not connected to the Internet. Please check your connection to access this content.</h5>
             <div id="reconnectFailed"><p><i class="material-icons">&#xE002;</i>Sorry, Welcome was unable to establish a connection.</p></div>
             <a onclick="reconnectTimeout();" class="btn btn-warning"><i class="material-icons">&#xE5D5;</i>Retry</a>
@@ -37,7 +37,7 @@
           <p><span name="distro-name"></span> is active on the following social networks.</p>
         </div>
       </div>
-      <div class="row social-banner fade fade-3s">
+      <div class="row social-banner">
         <div class="col-md-1"><!-- Reserve space --></div>
         <div class="col-md-2">
           <a class="hover-menu-block">
@@ -77,8 +77,10 @@
     </div>
   </div>
   <script src="js/jquery-2.1.4.js"></script>
-  <script src="js/bootstrap-2.3.2.js"></script>
+  <script src="js/tether.js"></script>
+  <script src="js/bootstrap.min.js"></script>
   <script src="js/janimate.js"></script>
+  <script src="js/confetti.js"></script>   <!-- Confetti only appears on special events -->
   <script src="js/welcome.js"></script>
 </body>
 </html>

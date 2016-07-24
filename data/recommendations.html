@@ -7,7 +7,7 @@
     <link href="css/animate.css" rel="stylesheet" media="screen">
     <link href="css/welcome-bs4.css" rel="stylesheet" media="screen">
   </head>
-  <body class="backdrop-simple">
+  <body class="backdrop-simple fade fade-1s">
     <div id="wrapper">
       <div class="container-fluid">
         <div id="navigation">
@@ -17,12 +17,12 @@
       </div>
       <div id="content" class="container entire-page-fade">
         <div> <!--Snapd-->
-          <h2 class="fade fade-1s">Snap</h2>
-          <div class="fade fade-1s card card-block">
+          <h2>Snap</h2>
+          <div class="card card-block">
             <div class="card-image text-md-center">
               <img src="img/logos/snap.png" style="height: 180px">
             </div>
-            <p class="card-text fade fade-2s">
+            <p class="card-text">
             <strong>Snap</strong> is a new generation application packaging format developed by <em>Canonical</em>.
             Even though it was initially developed just for different Ubuntu platforms, currently it work in many
             other GNU/Linux distributions. It will help application developers to provide a unified package that
@@ -84,39 +84,39 @@
         </div> <!-- End of Snap-->
         <hr>
         <div> <!--Screenshot Applet-->
-          <h2 class="fade fade-1s">Budgie Screenshot Applet</h2>
-          <div class="fade fade-1s card card-block">
+          <h2>Budgie Screenshot Applet</h2>
+          <div class="card card-block">
             <div class="card-image text-md-center">
               <img src="img/screenshots/screenshot-applet.jpg" style="width: 100%">
             </div>
-            <p class="card-text fade fade-2s">
+            <p class="card-text">
             <strong>Budgie Screenshot Applet</strong> is an advanced screenshot utility for capturing
             and organizing screenshots. This screenshot applet is actually a wrapper over gnome-screenshot
             utility. Screenshot applet let you to view recent screenshots and upload images directly to
             <em>Imgur</em> and <em>Imagebin</em>
             </p>
           </div>
-          <p class="fade fade-2s">
+          <p>
             The <span name="distro-name"></span> provides you an easy way to install screenshot applet.
             After installation you need to <strong>manually add applet to budgie panel by launching 
             <a onclick="cmd('raven');cmd('')">Raven</a></strong> - The Budgie Configuration Center.
           </p>
-          <a id="screenshot-install" class="btn btn-primary btn-lg fade fade-5s hvr-shadow" onclick="cmd('install?screenshot');cmd('')">
+          <a id="screenshot-install" class="btn btn-primary btn-lg hvr-shadow" onclick="cmd('install?screenshot');cmd('')">
             &nbsp;<span class="material-icons">&#xE2C0;</span>Install Screenshot Applet&nbsp;
           </a>
-          <span id="screenshot-status" class="hidden"><img src="img/welcome/processing.gif" width="24px" height="24px"/> &zwnj;Applying Changes...&zwnj;</span>
+          <span id="screenshot-status" class="hidden"><img src="img/welcome/processing.gif" style="height: 24px"/> &zwnj;Applying Changes...&zwnj;</span>
           <span id="screenshot-remove" class="alert alert-success">
             Screenshot Applet is installed
           </span>
         </div> <!-- End of Screenshot Appelt-->
         <hr>
         <div> <!--Flatpak-->
-          <h2 class="fade fade-1s">Flatpak</h2>
-          <div class="fade fade-1s card card-block">
+          <h2>Flatpak</h2>
+          <div class="card card-block">
             <div class="card-image text-md-center">
               <img src="img/logos/flatpak.svg">
             </div>
-            <p class="card-text fade fade-2s">
+            <p class="card-text">
             <strong>Flatpak</strong> is a new generation application distribution framework for GNU/Linux 
             platforms. It introduced a unified packaging format across all GNU/Linux distributions. That 
             means a single package can work on any platforms. Flatpak helps application developers to ship
@@ -125,19 +125,19 @@
             </p>
             <a onclick="cmd('link?http://flatpak.org/#about')" class="btn btn-inverse">Learn more</a>
           </div>
-          <p class="fade fade-2s">
+          <p>
             The <span name="distro-name"></span> recommends to install <strong>Flatpak</strong> as it will
             open a new world of possiblities for you. With Flatpak, you can enjoy latest release of different
             software packages as soon as it is packed by upstream project and you don't have to wait for your
             distribution to package it for you. Flatpak is the future of packaging, and more and more developers
             are moving to Flatpak packaging. This will increase availability of software packages drastically.
           </p>
-          <p class="fade fade-1s">
+          <p>
             Being a user friendly GNU/Linux distribution, <span name='distro-name'></span> allows you to install
             Flatpak with a single click. After first time configuration, you can use GNOME Software to install Flatpak
             packages.
           </p>
-          <a id="flatpak-install" class="btn btn-primary btn-lg fade fade-5s hvr-shadow" onclick="cmd('install?flatpak');cmd('')">
+          <a id="flatpak-install" class="btn btn-primary btn-lg hvr-shadow" onclick="cmd('install?flatpak');cmd('')">
             &nbsp;<span class="material-icons">&#xE2C0;</span> Install & Configure Flatpak&nbsp;
           </a>
           <span id="flatpak-status" class="hidden"><img src="img/welcome/processing.gif" width="24px" height="24px"/> &zwnj;Applying Changes...&zwnj;</span>
@@ -147,12 +147,12 @@
         </div> <!-- End of Flatpak-->
         <hr>
         <div> <!--Steam-->
-          <h2 class="fade fade-1s">Steam</h2>
-          <div class="fade fade-1s card card-block">
+          <h2>Steam</h2>
+          <div class="card card-block">
             <div class="card-image text-md-center">
               <img src="img/logos/steam.png" style="height: 180px">
             </div>
-            <p class="card-text fade fade-2s">
+            <p class="card-text">
             <strong>Steam</strong> is a digital distribution platform developed by Valve Corporation 
             offering digital rights management (DRM), multiplayer gaming and social networking services. 
             Steam provides the user with installation and automatic updating of games on multiple computers,
@@ -164,13 +164,13 @@
             </p>
             <a onclick="cmd('link?https://en.wikipedia.org/wiki/Steam_(software)')" class="btn btn-inverse">Learn more</a>
           </div>
-          <p class="fade fade-1s">
+          <p>
             Being a proprietary software, Steam is not included in primary repositories of <span name="distro-name"></span>.
             However, to provide more choice to users, Steam is shipped as a part of <em>Multiverse</em> repository.
             <span name="distro-name"></span> provides you option to install enable <em>Multiverse</em> repository
             and to install Steam with a single mouse click.
           </p>
-          <a id="steam-install" class="btn btn-primary btn-lg fade fade-5s hvr-shadow" onclick="cmd('install?steam');cmd('')">
+          <a id="steam-install" class="btn btn-primary btn-lg hvr-shadow" onclick="cmd('install?steam');cmd('')">
             &nbsp;<span class="material-icons">&#xE2C0;</span>Install & Configure Steam&nbsp;
           </a>
           <span id="steam-status" class="hidden"><img src="img/welcome/processing.gif" width="24px" height="24px"/> &zwnj;Applying Changes...&zwnj;</span>
@@ -181,8 +181,10 @@
       </div>
     </div>
     <script src="js/jquery-2.1.4.js"></script>
-    <script src="js/bootstrap-2.3.2.js"></script>
+    <script src="js/tether.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <script src="js/janimate.js"></script>
+    <script src="js/confetti.js"></script>   <!-- Confetti only appears on special events -->
     <script src="js/welcome.js"></script>
   </body>
 </html>
