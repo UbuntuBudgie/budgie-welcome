@@ -938,8 +938,8 @@ class WelcomeApp(object):
         # build window
         w = Gtk.Window()
         w.set_position(Gtk.WindowPosition.CENTER)
-        w.set_wmclass('budgie-remix welcome', 'budgie-remix welcome')
-        w.set_title('')
+        w.set_wmclass('budgie-welcome', 'budgie-welcome')
+        w.set_title('Budgie Welcome')
         w.set_size_request(992, 520)
         w.set_decorated(False)
 
