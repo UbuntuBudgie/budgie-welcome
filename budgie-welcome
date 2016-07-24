@@ -382,13 +382,13 @@ class PackageManager(Thread):
             Notifier(Notifier.INFO, "completed " + action + " of " + entry.code).show()
             
             self.reload_cache()
+            
+            self.active = None
             app.webkit._push_config()
             
             
             self.queue.task_done()
             
-            self.active = None
-    
     # Don't know how to get root privileage for installing and 
     # removing packages using apt module. So using regular command
     # with pkexec. Make it a blocking call and run in thread.    
