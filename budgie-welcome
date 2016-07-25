@@ -316,7 +316,7 @@ class PopupMessage(object):
         
         app.update_page('#popup-message-container', 'append', '<p id="popup-message">' +\
             self.message + '</p>')
-        if self.type == PopupMessage.ERROR:
+        if self.type == PopupMessage.ERROR and self.details:
             app.update_page('#popup-message-container', 'append', '<textarea id="details">'+self.details+'</textarea>')
         elif self.type == PopupMessage.STATUS:
             html_table = '<table class="table table-bordered table-condensed">'
@@ -367,19 +367,23 @@ class PackageManager(Thread):
             package = PackageDict.getPackageName(code)
             
             if entry.task == PMEntry.INSTALL:
-                self.install(package, entry.script)
+                retval = self.install(package, entry.script)
                 app.update_page('#' + code + '-install', 'removeClass', 'disabled')
             elif entry.task == PMEntry.REMOVE:
-                self.remove(package)
+                retval = self.remove(package)
                 app.update_page('#' + code + '-remove', 'removeClass', 'disabled')
             
             app.update_page('#' + code + '-status', 'fadeOut')
             
             systemstate.removeIntermediateActions(filename, entry.actions)
             
+            
             action = "removal" if entry.task == PMEntry.REMOVE else "installation"
             
-            Notifier(Notifier.INFO, "completed " + action + " of " + entry.code).show()
+            if retval == 0:
+                Notifier(Notifier.INFO, "Completed " + action + " of " + entry.code).show()
+            else:
+                Notifier(Notifier.ERROR, "Failed " + action + " of " + entry.code).show()
             
             self.reload_cache()
             
@@ -399,13 +403,13 @@ class PackageManager(Thread):
             process = subprocess.Popen(['pkexec', 'apt', 'install', '-y', package])
         retval = process.wait()
         
-        self.processOutput(process, retval)
+        return retval
 
     def remove(self, package):
         process = subprocess.Popen(['pkexec', 'apt', 'remove', '-y', package])
         retval = process.wait()
         
-        self.processOutput(process, retval)
+        return retval
         
     def reload_cache(self):
         dbg.stdout('Apt', 'Reloading cache...', 0, 3)
@@ -413,23 +417,6 @@ class PackageManager(Thread):
         self.cache = apt.Cache()
         dbg.stdout('Apt', 'Cache reloaded.', 0, 2)
         
-    def processOutput(self, process, retval):
-    
-        output = ''
-    
-        if process.stdout:
-            output += str(process.stdout.read())
-        
-        if process.stderr:
-            output += str(process.stderr.read())
-        
-        # Colud n't get lock for apt
-        if retval == 100:
-            message = "Something went wrong with installation/removal. Please restart your computer "+\
-            "and have a fresh start."
-            popup = PopupMessage(message, PopupMessage.ERROR, output)
-                
-            popup.showMessage()
             
     def getTaskList(self):
      
@@ -443,6 +430,14 @@ class PackageManager(Thread):
             
         return taskList
         
+    def clearQueue(self):
+        try:
+            while True:
+                self.queue.get_nowait()
+                self.queue.task_done()
+        except Empty:
+            dbg.stdout('PackageMangement', 'Cleared PM Queue', 1, 0)
+        
 class Notifier(object):
     INFO = 0
     ERROR = 1
@@ -452,6 +447,8 @@ class Notifier(object):
         
         if type == self.INFO:
             icon = "dialog-information"
+        elif type == self.ERROR:
+            icon = "dialog-error"
             
         self.notification = Notification("Welcome App", message, icon)
         
@@ -938,7 +935,7 @@ class WelcomeApp(object):
         # build window
         w = Gtk.Window()
         w.set_position(Gtk.WindowPosition.CENTER)
-        w.set_wmclass('budgie-welcome', 'budgie-welcome')
+        w.set_wmclass('budgie-welcome', 'Budgie Welcome')
         w.set_title('Budgie Welcome')
         w.set_size_request(992, 520)
         w.set_decorated(False)
@@ -976,7 +973,21 @@ class WelcomeApp(object):
         Gtk.main()
 
     def close(self, p1 = None, p2 = None):
+        
         pm.running = False
+        print("Close requested")
+        # Reduce race condition as much as possible
+        temp = pm.active
+        if temp:
+            task = " installation " if temp.task == PMEntry.INSTALL else " removal "
+            message = temp.code + task + " is in progress. Please wait it to complete"
+            popup = PopupMessage(message, PopupMessage.ERROR, None)
+                
+            popup.showMessage()
+            
+            pm.clearQueue()
+            
+            return
         
         pm_queue.join()
         pm.join()
