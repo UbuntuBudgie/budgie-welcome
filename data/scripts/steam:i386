@@ -5,4 +5,7 @@ if ! grep -q "$REPO" /etc/apt/sources.list; then
   add-apt-repository $REPO -y
   apt update
 fi
+
+echo steam steam/question select 'I AGREE' | debconf-set-selections
+
 apt install steam -y
