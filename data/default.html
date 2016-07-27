@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+  <link href="css/material-icons.css" rel="stylesheet" media="screen">
+  <link href="css/animate.css" rel="stylesheet" media="screen">
+  <link href="css/welcome-bs4.css" rel="stylesheet" media="screen">
+</head>
+<body class="backdrop-simple fade fade-1s">
+  <div id="wrapper">
+    <div class="container-fluid">
+      <div id="navigation">
+        <div id="navigation-title">&zwnj;Default Settings&zwnj;</div>
+        <div id="navigation-right"></div>
+      </div>
+    </div>
+    <div id="content" class="container entire-page-fade">
+      <div class="row">
+      	<div class="col-md-12">
+          <h2>Restore panels</h2>
+          <p>Did you lost your panels while playing with <span name="distro-name"></span>? Don't worry. We can
+          help you to restore your panels with a single click.
+          </p>
+          <div class="alert alert-warning">This will reset all changes that you have made on panels and will take
+          to default <span name="distro-name"></span> configuration.
+          </div>
+          <div class="text-md-right">
+        	  <a class="btn btn-primary"><i class="material-icons">&#xE8B3;</i>&nbsp;Restore Budgie Panel</a>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+      	<div class="col-md-12">
+      		<h2>Switch Appearance</h2>
+      		<p></p><span name="distro-name"></span> uses <strong>Arc</strong> as it's default theme packages. It uses Arc theme for Gtk windows,
+      		panels, login window and lock screen and <strong>Moka</strong> as icon theme.</p>
+      		
+      		<p>Another emerging design trend is <strong>Material Design</strong> which is basically a collection of desing guide lines introduced
+      		by google to bring a uniform appearance across different platforms. There are diferent theme packages inspired by google material design.
+      		</p>
+      		
+      		<p>As the <span name="distro-name"></span> values freedom of users, we provide easy option to switch between our default <em>Arc environment
+      		</em> and <em>Material environment</em></p>
+      	</div>
+      </div>
+      <div class="row text-md-center">
+      	<div class="col-md-6">
+      		<h3>Arc Design</h3>
+      		<img alt="Arc screenshot">
+      		<br>
+      		<a class="btn btn-primary"><i class="material-icons">&#xE862;</i>&nbsp;Apply Arch theme</a>
+      	</div>
+      	<div class="col-md-6">
+      		<h3>Material Design</h3>
+      		<img alt="Material screenshot">
+      		<br>
+      		<a class="btn btn-primary"><i class="material-icons">&#xE862;</i>&nbsp;Apply Material theme</a>
+      	</div>
+      </div>
+    </div>
+  </div>
+  <script src="js/jquery-2.1.4.js"></script>
+  <script src="js/tether.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/janimate.js"></script>
+  <script src="js/confetti.js"></script>   <!-- Confetti only appears on special events -->
+  <script src="js/welcome.js"></script>
+</body>
+</html>
