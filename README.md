@@ -7,8 +7,7 @@ Welcome app to greet new users on their first login
 ### Installation
 
 ```sh
-sudo apt install gir1.2-webkit-3.0
-sudo apt install python3-notify2
+sudo apt install gir1.2-webkit-3.0 python3-notify2
 git clone https://github.com/budgie-remix/budgie-welcome
 ```
 
@@ -25,3 +24,7 @@ cd budgie-welcome
 
 #### Normal session
 ![Screenshot of Budgie Remix Welcome App](https://raw.githubusercontent.com/budgie-remix/budgie-welcome/master/screenshot-normal-session.png)
+
+###LICENSES
+  the project contains files with a variety of licenses.  
+  See the debian/copyright file on the debian branch
