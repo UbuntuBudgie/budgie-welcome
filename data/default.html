@@ -26,7 +26,9 @@
           to default <span name="distro-name"></span> configuration.
           </div>
           <div class="text-md-right">
-        	  <a class="btn btn-primary"><i class="material-icons">&#xE8B3;</i>&nbsp;Restore Budgie Panel</a>
+          	<span id="panel-status"><img src="img/welcome/processing.gif" style="height: 24px"/> &zwnj;Applying Changes...&zwnj;</span>
+          	<a class="btn btn-primary panel-apply"><i class="material-icons">&#xE166;</i>&nbsp;Undo Restore</a>
+        	  <a class="btn btn-primary panel-apply"><i class="material-icons">&#xE8B3;</i>&nbsp;Restore Budgie Panel</a>
           </div>
         </div>
       </div>
@@ -50,14 +52,26 @@
       		<h3>Arc Design</h3>
       		<img alt="Arc screenshot">
       		<br>
-      		<a class="btn btn-primary"><i class="material-icons">&#xE862;</i>&nbsp;Apply Arch theme</a>
+      		<a class="btn btn-primary theme-apply"><i class="material-icons">&#xE862;</i>&nbsp;Apply Arch theme</a>
       	</div>
       	<div class="col-md-6">
       		<h3>Material Design</h3>
       		<img alt="Material screenshot">
       		<br>
-      		<a class="btn btn-primary"><i class="material-icons">&#xE862;</i>&nbsp;Apply Material theme</a>
+      		<a class="btn btn-primary theme-apply"><i class="material-icons">&#xE862;</i>&nbsp;Apply Material theme</a>
       	</div>
+      </div>
+      <div class="text-md-center">
+      	<span id="theme-status"><img src="img/welcome/processing.gif" style="height: 24px"/> &zwnj;Applying Changes...&zwnj;</span>
+      </div>
+      <br>
+      <div id="theme-undo">
+        Did n't you like the changes? Want to bring initial configurations back? Well, Here you go.
+        <div class="row">
+      	  <div class="col-md-4 text-md-center col-md-push-4">
+      		  <a class="btn btn-primary"><i class="material-icons">&#xE166;</i>&nbsp;Revert to initial state</a>
+      	  </div>
+        </div>
       </div>
     </div>
   </div>
