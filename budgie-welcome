@@ -985,7 +985,7 @@ class WelcomeApp(object):
                 
             popup.showMessage()
             
-            pm.clearQueue()
+            # pm.clearQueue()
             
             return
         
