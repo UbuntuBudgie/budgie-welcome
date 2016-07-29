@@ -1,0 +1,48 @@
+#!/usr/bin/python3
+
+import subprocess
+import sys
+
+'''
+ Should replace apt command with python-apt module.
+'''
+
+  
+def install(package, script):
+    if script:
+        process = subprocess.Popen(['sh', package])
+    else:
+        process = subprocess.Popen(['apt', 'install', '-y', package])
+    retval = process.wait()
+    
+    return retval
+
+def remove(package):
+    process = subprocess.Popen(['apt', 'remove', '-y', package])
+    retval = process.wait()
+    
+    return retval
+    
+    
+if __name__ == "__main__":
+   
+    args = sys.argv
+    
+    if len(args) < 3:
+        print("Expected arguments not found")
+        sys.exit(-1)
+    
+    action = args[1]
+    package = args[2]
+    
+    
+    script = False
+    if len(args) > 3 and args[3] == 'True':
+        script = True
+    
+    if action == 'INSTALL':
+        retval = install(package, script)
+    elif action == 'REMOVE':
+        retval = remove(package)
+        
+    sys.exit(retval)

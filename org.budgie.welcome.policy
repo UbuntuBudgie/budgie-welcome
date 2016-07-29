@@ -7,14 +7,15 @@
   <vendor_url>http://hal.freedesktop.org/docs/PolicyKit/</vendor_url>
 
   <action id="org.budgie.welcome">
-    <description>budgie-remix Welcome Repository Installer</description>
-    <message>Helper utility for the budgie-remix Welcome screen that can enable software repositories.</message>
+    <description>budgie-remix privileged actions utility</description>
+    <message>Helper utility that will allow budgie-welcome to perform privileged actions</message>
     <icon_name>system-run</icon_name>
     <defaults>
       <allow_any>no</allow_any>
       <allow_inactive>no</allow_inactive>
       <allow_active>yes</allow_active>
     </defaults>
-    <annotate key="org.freedesktop.policykit.exec.path">/usr/lib/budgie/budgie-welcome-repository-installer</annotate>
+    <!--<annotate key="org.freedesktop.policykit.exec.path">/usr/lib/budgie/privileged-actions</annotate>-->
+    <annotate key="org.freedesktop.policykit.exec.path">/home/niyasc/Coding/budgie-welcome/privileged-actions</annotate>
   </action>
 </policyconfig>

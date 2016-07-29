@@ -366,11 +366,17 @@ class PackageManager(Thread):
             code = entry.code
             package = PackageDict.getPackageName(code)
             
+            if entry.script:
+                package = app._data_path + "/scripts/" + package
+                
+            action = "INSTALL" if entry.task == PMEntry.INSTALL else "REMOVE"
+                    
+            p = subprocess.Popen(['pkexec', '/home/niyasc/Coding/budgie-welcome/privileged-actions', action, package, str(entry.script)])
+            retval = p.wait()
+            
             if entry.task == PMEntry.INSTALL:
-                retval = self.install(package, entry.script)
                 app.update_page('#' + code + '-install', 'removeClass', 'disabled')
-            elif entry.task == PMEntry.REMOVE:
-                retval = self.remove(package)
+            else:
                 app.update_page('#' + code + '-remove', 'removeClass', 'disabled')
             
             app.update_page('#' + code + '-status', 'fadeOut')
@@ -392,24 +398,6 @@ class PackageManager(Thread):
             
             
             self.queue.task_done()
-            
-    # Don't know how to get root privileage for installing and 
-    # removing packages using apt module. So using regular command
-    # with pkexec. Make it a blocking call and run in thread.    
-    def install(self, package, script = False):
-        if script:
-            process = subprocess.Popen(['pkexec', 'sh', app._data_path + '/scripts/' + package])
-        else:
-            process = subprocess.Popen(['pkexec', 'apt', 'install', '-y', package])
-        retval = process.wait()
-        
-        return retval
-
-    def remove(self, package):
-        process = subprocess.Popen(['pkexec', 'apt', 'remove', '-y', package])
-        retval = process.wait()
-        
-        return retval
         
     def reload_cache(self):
         dbg.stdout('Apt', 'Reloading cache...', 0, 3)
