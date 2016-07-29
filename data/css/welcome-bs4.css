@@ -121,6 +121,15 @@ body, button {
   padding: 5px 10px;
 }
 
+#close-btn:hover{
+  background: hsla(0, 10%, 15%, 0.3);
+  transition: background 0.5s ease
+}
+
+#close-btn:active {
+  background: #000
+}
+
 #status-btn {
   color: white; 
   z-index: 2; 
