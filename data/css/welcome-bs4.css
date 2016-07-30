@@ -1,6 +1,6 @@
-/** 
- * File created to fix problems while migrating to bootstrap4, 
- * Once migration is done this can be made final 
+/**
+ * File created to fix problems while migrating to bootstrap4,
+ * Once migration is done this can be made final
  */
 @font-face {
   font-family: 'Ubuntu';
@@ -114,10 +114,10 @@ body, button {
 }
 
 #close-btn {
-  color: white; 
-  z-index: 2; 
-  position: absolute; 
-  right: 0px; 
+  color: white;
+  z-index: 2;
+  position: absolute;
+  right: 0px;
   padding: 5px 10px;
 }
 
@@ -131,10 +131,10 @@ body, button {
 }
 
 #status-btn {
-  color: white; 
-  z-index: 2; 
-  position: absolute; 
-  right: 80px; 
+  color: white;
+  z-index: 2;
+  position: absolute;
+  right: 80px;
   padding: 4px 10px;
   border: 1px solid #888;
   display: none;
@@ -309,7 +309,7 @@ a {
   position: absolute;
   /*bottom: -18px;
   left: 45px;*/
-  bottom: 40%;
+  bottom: 45%;
   border: 1px solid #ddd;
   padding: 5px 10px;
   border-radius: 5px;
