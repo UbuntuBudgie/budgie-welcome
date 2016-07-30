@@ -194,6 +194,18 @@ class AppView(WebKit2.WebView):
             
             if code in ["restricted-extras", "flatpak", "steam"]:
                 script = True
+                
+            # Special case for steam, check for gnome-software
+            if code == 'steam' and not pm.hasInstalled('gnome-software'):
+                message = "Steam is a third party package that requires user approval of EULA" +\
+                          "(End User License Agreement). So we rely on GNOME Software for installing "+\
+                          "steam and it is not available in your system. Please install GNOME Software " +\
+                          "and try this option again" 
+                popup = PopupMessage(message, PopupMessage.ERROR, None)
+                
+                popup.showMessage()
+                
+                return
             
             self.managePackage(code, package, script, PMEntry.INSTALL)
            
@@ -386,8 +398,13 @@ class PackageManager(Thread):
                 package = app._data_path + "/scripts/" + package
                 
             action = "INSTALL" if entry.task == PMEntry.INSTALL else "REMOVE"
-                    
-            p = subprocess.Popen(['pkexec', '/home/niyasc/Coding/budgie-welcome/budgie-welcome-privileged-actions', action, package, str(entry.script)])
+            
+            # Steam requires GNOME Software and there is problem in running
+            # GNOME Software in privileged mode.        
+            if code == 'steam':
+                p = subprocess.Popen(['/home/niyasc/Coding/budgie-welcome/budgie-welcome-privileged-actions', action, package, str(entry.script)])
+            else:
+                p = subprocess.Popen(['pkexec', '/home/niyasc/Coding/budgie-welcome/budgie-welcome-privileged-actions', action, package, str(entry.script)])
             retval = p.wait()
             
             if entry.task == PMEntry.INSTALL:

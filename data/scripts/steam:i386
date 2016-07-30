@@ -1,11 +1,4 @@
 #!/bin/sh
 
-REPO=multiverse
-if ! grep -q "$REPO" /etc/apt/sources.list; then
-  add-apt-repository $REPO -y
-  apt update
-fi
-
-echo steam steam/question select 'I AGREE' | debconf-set-selections
-
-apt install steam -y
+wget https://steamcdn-a.akamaihd.net/client/installer/steam.deb -O /tmp/steam.deb
+gnome-software --local-filename=/tmp/steam.deb &
