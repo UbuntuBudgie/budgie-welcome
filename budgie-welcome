@@ -371,7 +371,7 @@ class PackageManager(Thread):
                 
             action = "INSTALL" if entry.task == PMEntry.INSTALL else "REMOVE"
                     
-            p = subprocess.Popen(['pkexec', '/home/niyasc/Coding/budgie-welcome/privileged-actions', action, package, str(entry.script)])
+            p = subprocess.Popen(['pkexec', '/home/niyasc/Coding/budgie-welcome/budgie-welcome-privileged-actions', action, package, str(entry.script)])
             retval = p.wait()
             
             if entry.task == PMEntry.INSTALL:
