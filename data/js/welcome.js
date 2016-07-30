@@ -333,9 +333,9 @@ if ( current_page == 'gettingstarted.html' ) {
   function changePage(id,humanText) {
     // 'id' is one used for <div>.
     // 'humanText' is displayed on navigation's sub title.
-    
+
     indexClose();
-    
+
     $('.topicContents').fadeOut();
     $('#navigation-sub-title').fadeOut();
 
@@ -621,4 +621,3 @@ if ( current_page == 'donate.html' ) {
 if ( current_page == 'software-only.html' ) {
     setCursorBusy()
 }
-

@@ -371,7 +371,7 @@
                 </span>
                 <p class="text-right">
                   <a class="btn btn-inverse" onclick="cmd('update'); smoothFade('','#updates-hint')">
-                    &nbsp;<i class="material-icons">&#xE863;</i>Check for Updates&nbsp;
+                    &nbsp;<i class="material-icons">&#xE863;</i><span class="button-text">Check for Updates</span>&nbsp;
                   </a>
                 </p>
               </div>
@@ -384,25 +384,25 @@
               </div>
               <div class="col-md-10">
                 <h4>Restricted Extras</h4>
-                <p><strong>Ubuntu</strong>(base distribution of <span name="distro-name"></span> strives to make all 
-                of the most important software available to its users automatically. However patent and copyright 
+                <p><strong>Ubuntu</strong>(base distribution of <span name="distro-name"></span> strives to make all
+                of the most important software available to its users automatically. However patent and copyright
                 restrictions (see Ubuntu License Policy) complicate distribution of software to support non-free formats.</p>
 
-                <p>However, you can install the ability to play popular non-free media formats, including DVD, MP3, 
+                <p>However, you can install the ability to play popular non-free media formats, including DVD, MP3,
                 Quicktime, and Windows Media formats, by following the instructions below.</p>
 
-                <p>Ubuntu’s commitment to only include completely free software by default means that proprietary media 
-                formats are not configured “out of the box”. See Ubuntu’s Free Software Philosophy and the Free Formats 
+                <p>Ubuntu’s commitment to only include completely free software by default means that proprietary media
+                formats are not configured “out of the box”. See Ubuntu’s Free Software Philosophy and the Free Formats
                 page for a more comprehensive discussion of these issues.</p>
 
                 <p><strong>Legal Notice</strong> Patent and copyright laws operate differently depending on which country
                 you are in. Please obtain legal advice if you are unsure whether a particular patent or restriction applies
                 to a media format you wish to use in your country.</p>
-           
+
                 <p class="text-right">
                   <span id="restricted-extras-status" class="hidden"><img src="img/welcome/processing.gif" width="24px" height="24px"/> Applying Changes...</span>
-                  <a id="restricted-extras-install" class="btn btn-success" onclick="cmd('install?restricted-extras')">&nbsp;<span class="material-icons">&#xE2C0;</span>Install&nbsp;</a>
-                  <a id="restricted-extras-remove" class="btn btn-danger"   onclick="cmd('remove?restricted-extras')">&nbsp;<span class="material-icons">&#xE872;</span>Remove&nbsp;</a>
+                  <a id="restricted-extras-install" class="btn btn-success" onclick="cmd('install?restricted-extras')">&nbsp;<span class="material-icons">&#xE2C0;</span><span class="button-text">Install</span>&nbsp;</a>
+                  <a id="restricted-extras-remove" class="btn btn-danger"   onclick="cmd('remove?restricted-extras')">&nbsp;<span class="material-icons">&#xE872;</span><span class="button-text">Remove</span>&nbsp;</a>
                 </p>
               </div>
             </div>
@@ -437,7 +437,7 @@
             </div>
             <div align="center">
                 <a class="btn btn-inverse" onclick="cmd('drivers');cmd('')" onclick="smoothFade('','#drivers-hint')">
-                    &nbsp;<img src="img/applications/additional-drivers.png" style="height: 24px"/>&nbsp;Additional Drivers&nbsp;
+                    &nbsp;<img src="img/applications/additional-drivers.png" style="height: 24px"/>&nbsp;<span class="button-text">Additional Drivers</span>&nbsp;
                 </a>
             </div>
 
@@ -556,7 +556,7 @@
                <p><a onclick="cmd('link?https://help.ubuntu.com/community/WifiDocs/WirelessTroubleShootingGuide/Drivers')">
                <span class="fa fa-globe"></span> Read more on troubleshooting wireless hardware.</a></p>
             </div>
-        
+
             <div class="center">
               <hr class="soften-light">
               <a class="btn" onclick='changePage("updates","Updates & Extras")'>
@@ -579,7 +579,7 @@
             <div align="center">
               <a class="btn btn-inverse" onclick="cmd('language');cmd('')">
                 &nbsp;<img src="img/applications/preferences-desktop-locale.png" style="height: 24px"/>
-                &nbsp;Language Support&nbsp;
+                &nbsp;<span class="button-text">Language Support</span>&nbsp;
               </a>
             </div>
             <span id="locale-hint"><small>
@@ -598,20 +598,20 @@
         <div class="row">
           <div class="col-md-4 center">
             <h5>Chinese</h5>
-            <a id="keyboard-chinese-install" class="btn btn-success btn-block" onclick="cmd('install?keyboard-chinese');cmd('')">&nbsp;<span class="material-icons">&#xE2C0;</span>Install&nbsp;</a>
-            <a id="keyboard-chinese-remove" class="btn btn-danger btn-block" onclick="cmd('remove?keyboard-chinese');cmd('')">&nbsp;<span class="material-icons">&#xE872;</span>Remove&nbsp;</a>
+            <a id="keyboard-chinese-install" class="btn btn-success btn-block" onclick="cmd('install?keyboard-chinese');cmd('')">&nbsp;<span class="material-icons">&#xE2C0;</span><span class="button-text">Install</span>&nbsp;</a>
+            <a id="keyboard-chinese-remove" class="btn btn-danger btn-block" onclick="cmd('remove?keyboard-chinese');cmd('')">&nbsp;<span class="material-icons">&#xE872;</span><span class="button-text">Remove</span>&nbsp;</a>
             <span id="keyboard-chinese-status" id="keyboard-status" class="hidden"><img src="img/welcome/processing.gif" width="24px"/> Applying Changes...</span>
           </div>
           <div class="col-md-4 center">
             <h5>Japanese</h5>
-            <a id="keyboard-japanese-install" class="btn btn-success btn-block" onclick="cmd('install?keyboard-japanese');cmd('')">&nbsp;<span class="material-icons">&#xE2C0;</span>Install&nbsp;</a>
-            <a id="keyboard-japanese-remove" class="btn btn-danger btn-block" onclick="cmd('remove?keyboard-japanese');cmd('')">&nbsp;<span class="material-icons">&#xE872;</span>Remove&nbsp;</a>
+            <a id="keyboard-japanese-install" class="btn btn-success btn-block" onclick="cmd('install?keyboard-japanese');cmd('')">&nbsp;<span class="material-icons">&#xE2C0;</span><span class="button-text">Install</span>&nbsp;</a>
+            <a id="keyboard-japanese-remove" class="btn btn-danger btn-block" onclick="cmd('remove?keyboard-japanese');cmd('')">&nbsp;<span class="material-icons">&#xE872;</span><span class="button-text">Remove</span>&nbsp;</a>
             <span id="keyboard-japanese-status" class="hidden"><img src="img/welcome/processing.gif" width="24px" /> Applying Changes...</span>
           </div>
           <div class="col-md-4 center">
             <h5>Korean</h5>
-            <a id="keyboard-korean-install" class="btn btn-success btn-block" onclick="cmd('install?keyboard-korean');cmd('')">&nbsp;<span class="material-icons">&#xE2C0;</span>Install&nbsp;</a>
-            <a id="keyboard-korean-remove" class="btn btn-danger btn-block" onclick="cmd('remove?keyboard-korean');cmd('')">&nbsp;<span class="material-icons">&#xE872;</span>Remove&nbsp;</a>
+            <a id="keyboard-korean-install" class="btn btn-success btn-block" onclick="cmd('install?keyboard-korean');cmd('')">&nbsp;<span class="material-icons">&#xE2C0;</span><span class="button-text">Install</span>&nbsp;</a>
+            <a id="keyboard-korean-remove" class="btn btn-danger btn-block" onclick="cmd('remove?keyboard-korean');cmd('')">&nbsp;<span class="material-icons">&#xE872;</span><span class="button-text">Remove</span>&nbsp;</a>
             <span id="keyboard-korean-status" class="hidden"><img src="img/welcome/processing.gif" width="24px"/> Applying Changes...</span>
           </div>
         </div>
@@ -649,10 +649,10 @@
             <span name="distro-name"></span> and supports backups to
             local devices as well as online cloud-based services.</p>
             <span id="backup-status" class="hidden"><img src="img/welcome/processing.gif" width="24px" height="24px"/> Applying Changes...</span>
-            <a id="backup-install" class="btn btn-success" onclick="cmd('install?backup');cmd('')">&nbsp;<span class="material-icons">&#xE2C0;</span>Install&nbsp;</a>
+            <a id="backup-install" class="btn btn-success" onclick="cmd('install?backup');cmd('')">&nbsp;<span class="material-icons">&#xE2C0;</span><span class="button-text">Install</span>&nbsp;</a>
             <div id="backup-remove">
               <a class="btn btn-inverse" onclick="cmd('backup');cmd('')">
-                &nbsp;<img src="img/applications/deja-dup.png" style="height: 24px"/>&nbsp;Configure Backup&nbsp;
+                &nbsp;<img src="img/applications/deja-dup.png" style="height: 24px"/>&nbsp;<span class="button-text">Configure Backup</span>&nbsp;
               </a>
               <span id="backup-hint" class="center"><small>
                 <p><i class="material-icons">&#xE88F;</i> <b>Backups</b> can be found later in
@@ -678,10 +678,10 @@
               <a onclick="cmd('link?https://wiki.ubuntu.com/BasicSecurity')">more ways to stay secure too</a>.
             </p>
             <span id="firewall-status" class="hidden"><img src="img/welcome/processing.gif" width="24px" height="24px"/> Applying Changes...</span>
-            <a id="firewall-install" class="btn btn-success" onclick="cmd('install?firewall');cmd('')">&nbsp;<span class="material-icons">&#xE2C0;</span>Install&nbsp;</a> 
-            <div id="firewall-remove"> 
+            <a id="firewall-install" class="btn btn-success" onclick="cmd('install?firewall');cmd('')">&nbsp;<span class="material-icons">&#xE2C0;</span><span class="button-text">Install</span>&nbsp;</a>
+            <div id="firewall-remove">
               <a class="btn btn-inverse" onclick="cmd('firewall');cmd('')">
-                &nbsp;<img src="img/applications/gufw.png" style="height: 24px"/>&nbsp;Configure Firewall&nbsp;
+                &nbsp;<img src="img/applications/gufw.png" style="height: 24px"/>&nbsp;<span class="button-text">Configure Firewall</span>&nbsp;
               </a>
               <span id="firewall-hint" class="center"><small>
                 <p><i class="material-icons">&#xE88F;</i> <b>Firewall Configuration</b> can be found later in
@@ -707,7 +707,7 @@
             is using your computer as a one-off.</p>
             <div class="text-md-center">
               <a class="btn btn-inverse" onclick="cmd('users');cmd('')">
-                &nbsp;<img src="img/applications/users.png" style="height: 24px"/>&nbsp;Configure Users&nbsp;
+                &nbsp;<img src="img/applications/users.png" style="height: 24px"/>&nbsp;<span class="button-text">Configure Users</span>&nbsp;
               </a>
               <span id="users-hint" class="center"><small>
                 <p><i class="material-icons">&#xE88F;</i> <b>Users</b> can be found later in
@@ -737,7 +737,7 @@
             to broadly reflect how other popular operating systems look
             and feel.</p>
             <div align="center"><a class="btn btn-inverse" onclick="cmd('raven');cmd('')" onclick="smoothFade('','#tweak-hint')">
-              &nbsp;<img src="img/applications/raven-settings.png" style="height: 24px"/>&nbsp;Raven Configuration Center&nbsp;
+              &nbsp;<img src="img/applications/raven-settings.png" style="height: 24px"/>&nbsp;<span class="button-text">Raven Configuration Center</span>&nbsp;
             </a></div>
             <span id="tweak-hint" class="center"><small>
               <p><i class="material-icons">&#xE88F;</i> <b>Raven Configuration Center</b> can be found later in
@@ -749,9 +749,9 @@
             Settings control center that <span name="distro-name"></span> provides. You can configure
             just about every aspect of your computer from Settings.</p>
             <div align="center"><a class="btn btn-inverse" onclick="cmd('control');cmd('')">
-              <img src="img/applications/control-center.svg" style="height: 24px;"/>&nbsp;Settings&nbsp;
+              <img src="img/applications/control-center.svg" style="height: 24px;"/>&nbsp;<span class="button-text">Settings</span>&nbsp;
             </a></div>
-            
+
             <div class="center">
               <hr class="soften-light">
               <a class="btn" onclick='changePage("tasks","Optional Tasks")'>
@@ -776,7 +776,7 @@
             </div>
             <h3>Budgie Desktop shortcuts</h3>
             <p>Some common shortcuts used in Budgie Desktop</p>
-            
+
             <table class="shortcuts">
               <tr>
                 <td>
@@ -794,7 +794,7 @@
                 </td>
                 <td>Open applet Settings in Raven</td>
               </tr>
-              
+
             </table>
             <hr>
             <h3>Common application shortcuts</h3>

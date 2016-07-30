@@ -240,6 +240,10 @@ color: white;
   font-size: 28px;
 }
 
+.button-text {
+  vertical-align: middle;
+}
+
 #content h2 {
   font-size: 24px;
 }
@@ -707,7 +711,7 @@ hr.soften-light {
 
 .btn {
   border: 0;
-  padding: 0.1rem 0.5rem;
+  padding: 0.1rem 0.5rem 0.2rem;
 }
 
 .btn-primary {
