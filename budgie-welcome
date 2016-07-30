@@ -46,6 +46,9 @@ from notify2 import Notification, init as NotifyInit
 
 import apt
 
+# global variable - path inc the suffix / of where the app is being executed
+start_location = "./" # path defined on app startup
+
 class AppView(WebKit2.WebView):
 
     def __init__(self):
@@ -400,11 +403,12 @@ class PackageManager(Thread):
             action = "INSTALL" if entry.task == PMEntry.INSTALL else "REMOVE"
             
             # Steam requires GNOME Software and there is problem in running
-            # GNOME Software in privileged mode.        
+            # GNOME Software in privileged mode.
+            global start_location
             if code == 'steam':
-                p = subprocess.Popen(['/home/niyasc/Coding/budgie-welcome/budgie-welcome-privileged-actions', action, package, str(entry.script)])
+                p = subprocess.Popen([start_location + 'budgie-welcome-privileged-actions', action, package, str(entry.script)])
             else:
-                p = subprocess.Popen(['pkexec', '/home/niyasc/Coding/budgie-welcome/budgie-welcome-privileged-actions', action, package, str(entry.script)])
+                p = subprocess.Popen(['pkexec', start_location + 'budgie-welcome-privileged-actions', action, package, str(entry.script)])
             retval = p.wait()
             
             if entry.task == PMEntry.INSTALL:
@@ -938,14 +942,17 @@ class WelcomeApp(object):
         self._location = os.path.dirname(
             os.path.abspath(inspect.getfile(inspect.currentframe())))
 
+        global start_location
         # check for relative path
         if(os.path.exists(os.path.join(self._location, 'data/'))):
             print('Using relative path for data source.\
                    Non-production testing.')
             self._data_path = os.path.join(self._location, 'data/')
+            start_location = self._location + "/"
         elif(os.path.exists('/usr/share/budgie-welcome/')):
             print('Using /usr/share/budgie-welcome/ path.')
             self._data_path = '/usr/share/budgie-welcome/'
+            start_location = '/usr/lib/budgie-welcome/'
         else:
             print('Unable to source the budgie-welcome data directory.')
             sys.exit(1)
