@@ -26,9 +26,9 @@
           to default <span name="distro-name"></span> configuration.
           </div>
           <div class="text-md-right">
-          	<span id="panel-status"><img src="img/welcome/processing.gif" style="height: 24px"/> &zwnj;Applying Changes...&zwnj;</span>
-          	<a class="btn btn-primary panel-apply"><i class="material-icons">&#xE166;</i>&nbsp;Undo Restore</a>
-        	  <a class="btn btn-primary panel-apply"><i class="material-icons">&#xE8B3;</i>&nbsp;Restore Budgie Panel</a>
+          	<span id="panel-status" class="hidden"><img src="img/welcome/processing.gif" style="height: 24px"/> &zwnj;Applying Changes...&zwnj;</span>
+          	<a id="panel-restore" onclick="cmd('panel-restore')" class="btn btn-primary panel-apply"><i class="material-icons">&#xE166;</i>&nbsp;Undo Reset</a>
+        	  <a id="panel-reset" onclick="cmd('panel-reset')" class="btn btn-primary panel-apply"><i class="material-icons">&#xE8B3;</i>&nbsp;Reset Budgie Panel</a>
           </div>
         </div>
       </div>

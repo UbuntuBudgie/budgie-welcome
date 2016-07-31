@@ -7,7 +7,7 @@ backup="$HOME/.config/panel-backup.conf"
 
 if [ ! -f $backup ]
 then
-  echo "Backup file not found"
+  # echo "Backup file not found"
   exit
 fi
 
@@ -15,4 +15,7 @@ dconf load /com/solus-project/budgie-panel/ < $backup
 
 rm -f $backup
 
-nohup budgie-panel --replace </dev/null >/dev/null 2>&1 &
+nohup budgie-panel --replace &
+
+# Just give sometime for panel to restart
+sleep 2

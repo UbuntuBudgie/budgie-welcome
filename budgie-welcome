@@ -124,6 +124,13 @@ class AppView(WebKit2.WebView):
             else:
                 app.update_page('#autostart', 'html', '&#xE836;')
                 
+        elif current_page == 'default.html':
+            backup = os.path.expanduser('~') + '/.config/panel-backup.conf'
+            if os.path.isfile(backup):
+                app.update_page('#panel-restore', 'fadeIn')
+            else:
+                app.update_page('#panel-restore', 'fadeOut')
+                
         ### All pages with install/removal ###
         if current_page in ['gettingstarted.html', 'recommendations.html']:
             app.update_page('[id$=install]', 'hide')
@@ -230,6 +237,44 @@ class AppView(WebKit2.WebView):
             if uri[11:] == 'yes':
                 subprocess.Popen(['ubiquity','gtk_ui'])
                 app.close()
+                
+        elif uri.startswith('panel'):
+        
+            def panelOperation():
+                actions = [
+                    ['.panel-apply', 'addClass', 'disabled', None],
+                    ['#panel-status', 'fadeIn', None, None]
+                ]
+                
+                for action in actions:
+                    app.update_page(action[0], action[1], action[2], action[3])
+                    
+                systemstate.addIntermediateActions(app.current_page, actions)
+                
+                operation = uri[6:]
+                
+                p = subprocess.Popen([app._data_path + "/scripts/panel-" + operation], shell=True)
+                retval = p.wait()
+                
+                systemstate.removeIntermediateActions(app.current_page, actions)
+                
+                app.update_page('.panel-apply', 'removeClass', 'disabled')
+                app.update_page('#panel-status', 'fadeOut')
+                
+                
+                # There is some problem with showing notification in this module
+                if retval == 0:
+                    pass
+                    # Notifier(Notifier.INFO, "Panel  " + operation + " completed succesfully").show()
+                else:
+                    dbg.stdout("Failed to perform panel operation", 0, 0)
+                    # Notifier(Notifier.ERROR, "Panel  " + operation + " failed").show()
+                
+                self._push_config()
+                
+            Thread(target = panelOperation).start()
+            
+            
                 
         elif uri == 'software-center':
             try:
@@ -478,7 +523,11 @@ class Notifier(object):
         self.notification = Notification("Welcome App", message, icon)
         
     def show(self):
-        self.notification.show()
+        try:
+            self.notification.show()
+        except:
+            # Some error in showing notification
+            dbg.stdout('Notification', 'Failed to show notification', 0, 0)
         
             
 class PackageDict(object):
