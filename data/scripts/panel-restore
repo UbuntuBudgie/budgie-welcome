@@ -1,0 +1,18 @@
+#!/bin/sh
+
+# Check for backup file if does n't exist show error
+# message and exit
+
+backup="$HOME/.config/panel-backup.conf"
+
+if [ ! -f $backup ]
+then
+  echo "Backup file not found"
+  exit
+fi
+
+dconf load /com/solus-project/budgie-panel/ < $backup
+
+rm -f $backup
+
+nohup budgie-panel --replace </dev/null >/dev/null 2>&1 &

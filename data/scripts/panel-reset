@@ -1,0 +1,20 @@
+#!/bin/sh
+
+# Check for backup file, if does n't exist create a new
+# file
+
+backup="$HOME/.config/panel-backup.conf"
+
+if [ -f $backup ]
+then
+  echo "Backup file found"
+else
+  echo "Backup file not found, creating new file"
+  dconf dump /com/solus-project/budgie-panel/ > $backup
+fi
+
+# Reset and restart panel
+dconf reset -f /com/solus-project/budgie-panel/
+
+nohup budgie-panel --replace </dev/null >/dev/null 2>&1 &
+
