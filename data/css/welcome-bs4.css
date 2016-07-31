@@ -227,6 +227,10 @@ color: white;
   line-height: 2.2em
 }
 
+.btn-showcase .btn-lg {
+	width: 90%;
+}
+
 .button-group .btn-icon {
   vertical-align: middle;
   color: #4c8ac9;
@@ -756,7 +760,7 @@ a.btn-primary.disabled {
 }
 
 /* Live session and post installation session options */
-.live-session-only, .normal-session-only {
+.live-session-only, .normal-session-only{
   display: none
 }
 
