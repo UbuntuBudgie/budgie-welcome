@@ -1,7 +1,7 @@
-budgie-remix Welcome Screen
-===========================
+Budgie Welcome
+==============
 
-Welcome app to greet new users on their first login
+Welcome screen app to greet new users on their first login
 
 
 ### Installation
@@ -26,5 +26,5 @@ cd budgie-welcome
 ![Screenshot of Budgie Remix Welcome App](https://raw.githubusercontent.com/budgie-remix/budgie-welcome/master/screenshot-normal-session.png)
 
 ###LICENSES
-  the project contains files with a variety of licenses.  
-  See the debian/copyright file on the debian branch
+  The project contains files with a variety of licenses.  
+  For the complete list of licenses, see [debian/copyright](https://github.com/budgie-remix/budgie-welcome/blob/debian/debian/copyright) file on the `debian branch`.

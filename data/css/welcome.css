@@ -223,12 +223,9 @@ color: white;
   font-size: 1rem;
   text-transform: uppercase;
   height: 40px;
+  width: 90%;
   text-align: center;
   line-height: 2.2em
-}
-
-.btn-showcase .btn-lg {
-	width: 90%;
 }
 
 .button-group .btn-icon {
@@ -309,7 +306,7 @@ a {
   color: white;
 }
 
-#footer .social img{
+#footer .social img {
   height: 28px;
   width: 28px;
   margin-right: 5px;
@@ -462,11 +459,11 @@ hr.soften-light {
   font-size: 32px;
 }
 
-.apps-table{
+.apps-table {
   width: 100%;
   margin-bottom: 8px;
 }
-.apps-table th, .apps-table td{
+.apps-table th, .apps-table td {
   width: 20%;
   text-align: center;
 }
@@ -764,7 +761,7 @@ a.btn-primary.disabled {
 }
 
 /* Live session and post installation session options */
-.live-session-only, .normal-session-only{
+.live-session-only, .normal-session-only {
   display: none
 }
 
@@ -808,19 +805,19 @@ a.btn-primary.disabled {
   overflow: scroll;
 }
 
-#status-table-container th{
+#status-table-container th {
   text-align: center
 }
 
 /*Donate Page*/
-.donate-banner img{
+.donate-banner img {
   height: 60px;
   border: 1px solid rgba(208, 208, 208, 0.25);
   padding: 10px;
   border-radius: 0.15rem;
   transition: background 0.5s ease;
 }
-.donate-banner img:hover{
+.donate-banner img:hover {
   border: 1px solid #ddd;
   background: #ddd;
   transition: background 0.5s ease;
