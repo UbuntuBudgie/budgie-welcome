@@ -1,0 +1,13 @@
+#!/bin/sh
+
+the_ppa='snwh/pulp'
+
+if ! grep -q "$the_ppa" /etc/apt/sources.list /etc/apt/sources.list.d/*; then
+    # commands to add the ppa ...
+
+    add-apt-repository -y ppa:$the_ppa 
+    apt-get update
+    
+fi
+
+apt install -y paper-gtk-theme paper-cursor-theme paper-icon-theme

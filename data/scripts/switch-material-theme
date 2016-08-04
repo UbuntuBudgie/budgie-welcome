@@ -1,0 +1,41 @@
+#!/bin/sh
+
+# Apply theme on gnome components
+gsettings set org.gnome.desktop.interface gtk-theme 'Paper'
+gsettings set org.gnome.desktop.interface icon-theme 'Paper'
+gsettings set org.gnome.desktop.interface cursor-theme 'Paper'
+gsettings set org.gnome.desktop.background color-shading-type 'solid'
+gsettings set org.gnome.desktop.background picture-options 'stretched'
+gsettings set org.gnome.desktop.background picture-uri 'file:////usr/share/backgrounds/budgie/sundown_beach_by_quino_al.jpg'
+gsettings set org.gnome.desktop.background primary-color '#008094'
+gsettings set org.gnome.desktop.background secondary-color '#008094'
+
+# Ensure budgie panel is using gtk theme and not default theme
+gsettings set com.solus-project.budgie-panel builtin-theme false
+gsettings set com.solus-project.budgie-panel dark-theme false
+
+# Apply theme on lightdm
+
+# Apply theme on plank
+# you could in theory have multiple docks - so need to get dock names and substitute as appropriate
+gsettings set net.launchpad.plank.dock.settings:/net/launchpad/plank/docks/dock1/ theme 'Gtk+'
+#gsettings set net.launchpad.plank.dock.settings:/net/launchpad/plank/docks/dock2/ theme 'Gtk+'
+
+# get docks into a string and remove the [] around the string
+#larray=`gsettings get net.launchpad.plank enabled-docks | sed -r 's/(\[|\])//g'`
+# convert into an array
+# array=$(echo $larray | tr "," "\n")
+
+# echo $array
+
+# array="($array)"
+
+
+# looparray="$array[@]"
+
+# for element in "${!looparray}"
+# do
+#    echo $element
+#    gsettings set net.launchpad.plank.dock.settings:/net/launchpad/plank/docks/$element/ theme 'Gtk+'
+# done
+
