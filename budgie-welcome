@@ -125,7 +125,7 @@ class AppView(WebKit2.WebView):
                 app.update_page('#autostart', 'html', '&#xE836;')
                 
         elif current_page == 'default.html':
-            backup = os.path.expanduser('~') + '/.config/panel-backup.conf'
+            backup = os.path.expanduser('~') + '/.config/budgie-welcome/panel-backup.conf'
             if os.path.isfile(backup):
                 app.update_page('#panel-restore', 'fadeIn')
             else:
@@ -1182,6 +1182,11 @@ if __name__ == "__main__":
     # Process any parameters passed to the program.
     dbg = Debug()
     arg = Arguments()
+
+    # Local data directory to store backup info
+    localdir = os.path.expanduser('~') + '/.config/budgie-welcome'
+    if not os.path.isdir(localdir):
+        os.makedirs(localdir)
     
     cache = apt.Cache()
     pm_queue = Queue()

@@ -3,7 +3,7 @@
 # Check for backup file, if does n't exist create a new
 # file
 
-backup="$HOME/.config/panel-backup.conf"
+backup="$HOME/.config/budgie-welcome/panel-backup.conf"
 
 if [ -f $backup ]
 then
