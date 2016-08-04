@@ -129,23 +129,50 @@ class AppView(WebKit2.WebView):
             if os.path.isfile(backup):
                 app.update_page('#panel-restore', 'fadeIn')
             else:
-                app.update_page('#panel-restore', 'fadeOut')
+                app.update_page('#panel-restore', 'hide')
                 
         ### All pages with install/removal ###
-        if current_page in ['gettingstarted.html', 'recommendations.html']:
+        if current_page in ['gettingstarted.html', 'recommendations.html', 'default.html']:
             app.update_page('[id$=install]', 'hide')
             app.update_page('[id$=remove]', 'hide')
             
             def checkInstallationStatus():
                 
-                for code in PackageDict.getShortCodes(current_page[:-5]):
-                    package = PackageDict.getPackageName(code)
-                    
-                    if pm.hasInstalled(package):
-                        app.update_page('#' + code + '-remove', 'fadeIn')
+                if current_page == 'default.html':
+                    arcs = ['arc-theme', 'faba-icon-theme', 'moka-icon-theme', 'arc-firefox-theme']
+                    installed = True
+                    for package in arcs:
+                        if not pm.hasInstalled(package):
+                            installed = False
+                            break
+                        
+                    if not installed:
+                        app.update_page('#arc-theme-install', 'fadeIn')
                     else:
-                        app.update_page('#' + code + '-install', 'fadeIn')
-            
+                        app.update_page('#arc-theme-remove', 'fadeIn')
+                        
+                    materials = ['paper-gtk-theme', 'paper-cursor-theme', 'paper-icon-theme']
+                    
+                    installed = True
+                    
+                    for package in materials:
+                        if not pm.hasInstalled(package):
+                            installed = False
+                            break
+                       
+                    if not installed:
+                        app.update_page('#material-theme-install', 'fadeIn')
+                    else:
+                        app.update_page('#material-theme-remove', 'fadeIn')
+
+                else:
+                    for code in PackageDict.getShortCodes(current_page[:-5]):
+                        package = PackageDict.getPackageName(code)
+                    
+                        if pm.hasInstalled(package):
+                             app.update_page('#' + code + '-remove', 'fadeIn')
+                        else:
+                             app.update_page('#' + code + '-install', 'fadeIn')            
             # Checking on cache will take sometime. So run it on a
             # separate thread.    
             thread = Thread(target = checkInstallationStatus)
@@ -202,7 +229,7 @@ class AppView(WebKit2.WebView):
             
             script = False
             
-            if code in ["restricted-extras", "flatpak", "steam"]:
+            if code in ["restricted-extras", "flatpak", "steam", "arc-theme", "material-theme"]:
                 script = True
                 
             # Special case for steam, check for gnome-software
@@ -542,7 +569,8 @@ class PackageDict(object):
         'recommendations' : ['flatpak', 'steam', 'screenshot'],
         'gettingstarted' : ['restricted-extras', 'keyboard-chinese',
         'keyboard-japanese', 'keyboard-korean', 'backup', 'firewall'
-        ]
+        ],
+        'default' : ['arc-theme', 'material-theme']
     }
     codemap = {
         'restricted-extras' : 'ubuntu-restricted-extras',
@@ -553,7 +581,9 @@ class PackageDict(object):
         'firewall' : 'gufw',
         'steam' : 'steam:i386',
         'flatpak' : 'flatpak',
-        'screenshot' : 'budgie-screenshot-applet'
+        'screenshot' : 'budgie-screenshot-applet',
+        'arc-theme' : 'arc-theme-complete',
+        'material-theme' : 'material-theme'
     }
     
     @staticmethod
@@ -1005,6 +1035,11 @@ class WelcomeApp(object):
         else:
             print('Unable to source the budgie-welcome data directory.')
             sys.exit(1)
+            
+        if arg.jump_to:
+            self._start_page = arg.jump_to
+        else:
+            self._start_page = 'index.html'
 
         self._build_app()
 
@@ -1024,7 +1059,7 @@ class WelcomeApp(object):
         mv = AppView()
 
         # load our index file
-        file = os.path.abspath(os.path.join(self._data_path, 'index.html'))
+        file = os.path.abspath(os.path.join(self._data_path, self._start_page))
         uri = 'file://' + urllib.request.pathname2url(file)
         mv.load_uri(uri)
 
