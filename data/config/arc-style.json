@@ -1,1 +1,26 @@
-[{"SCHEMA": "org.gnome.desktop.interface", "VALUES": {"cursor-theme": "Arc-Darker", "gtk-theme": "Arc-Darker", "icon-theme": "Moka"}}]
+[
+  {
+    "SCHEMA": "org.gnome.desktop.interface",
+    "VALUES": {
+      "cursor-theme": "DMZ-White",
+      "gtk-theme": "Arc-Darker",
+      "icon-theme": "Moka"
+    }
+  }, 
+  {
+    "SCHEMA": "org.gnome.desktop.background",
+    "VALUES": {
+      "color-shading-type": "solid",
+      "picture-options": "stretched",
+      "picture-uri": "file:////usr/share/backgrounds/Xplo_by_Hugo_Cliff.png",
+      "primary-color": "#008094"
+    }
+  },
+  {
+    "SCHEMA": "com.solus-project.budgie-panel",
+    "VALUES": {
+      "builtin-theme": false,
+      "dark-theme": true
+    }
+  }
+]

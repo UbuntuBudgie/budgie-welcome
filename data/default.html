@@ -86,11 +86,13 @@
       	</div>
       </div>
       <br>
-      <div id="theme-undo" class="hidden">
+      <div id="style-undo">
         Don't like the changes? Want to bring initial configurations back? Well, here you go:
         <div class="row">
       	  <div class="col-md-4 text-md-center col-md-push-4">
-      		  <a class="btn btn-primary"><i class="material-icons">&#xE166;</i>&nbsp;<span class="button-text">Revert to initial state</span></a>
+      		  <a class="btn btn-primary" onclick="cmd('theme?undo');cmd('')">
+      		    <i class="material-icons">&#xE166;</i>&nbsp;<span class="button-text">Revert to initial state</span>
+      		  </a>
       	  </div>
         </div>
       </div>

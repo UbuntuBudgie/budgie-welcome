@@ -39,6 +39,7 @@ import webbrowser
 import socket
 import platform
 import json
+import time
 
 from gi.repository import WebKit2, Gtk, Gio
 from threading import Thread
@@ -126,11 +127,17 @@ class AppView(WebKit2.WebView):
                 app.update_page('#autostart', 'html', '&#xE836;')
                 
         elif current_page == 'default.html':
-            backup = os.path.expanduser('~') + '/.config/budgie-welcome/panel-backup.conf'
-            if os.path.isfile(backup):
+            panel_backup = localdir + '/panel-backup.conf'
+            style_backup = localdir + '/style-backup.json'
+            if os.path.isfile(panel_backup):
                 app.update_page('#panel-restore', 'fadeIn')
             else:
                 app.update_page('#panel-restore', 'hide')
+                
+            if os.path.isfile(style_backup):
+                app.update_page('#style-undo', 'fadeIn')
+            else:
+                app.update_page('#style-undo', 'hide')
                 
         ### All pages with install/removal ###
         if current_page in ['gettingstarted.html', 'recommendations.html', 'default.html']:
@@ -317,20 +324,60 @@ class AppView(WebKit2.WebView):
                 
         elif uri.startswith("theme?"):
             
-            theme = uri[6:]
+            code = uri[6:]
+            
+            if code == "undo":
+                theme = localdir + '/style-backup.json'
+            else:
+                theme = app._data_path + "/config/" + code + "-style.json"
             
             def applyStyle():
-                with open(app._data_path + "/config/" + theme + "-style.json") as file:
+                with open(theme) as file:
                     config = json.load(file)
-                    
+                
+                # Create backup file if it does not exist
+                backup = localdir + '/style-backup.json'
+                if code != "undo" and not os.path.isfile(backup):
+                    data = []
+                    for item in config:
+                        schema = item["SCHEMA"]
+                        values = item["VALUES"]
+                        
+                        gsettings = Gio.Settings.new(schema)
+                        
+                        coll = {}
+                        vals = {}
+                        
+                        for key in values:
+                            vals[key] = gsettings.get_value(key).unpack()
+                            
+                        coll["SCHEMA"] = schema
+                        coll["VALUES"] = vals
+                        data.append(coll)
+                        
+                    with open(backup, "w") as file:
+                        file.write(json.dumps(data))
+                
                 for item in config:
                     schema = item["SCHEMA"]
                     values = item["VALUES"]
                     
                     gsettings = Gio.Settings.new(schema)
                     
-                    for key in values:
-                        gsettings.set_string(key, values[key])
+                    for key, value in values.items():
+                        if type(value) == bool:
+                            gsettings.set_boolean(key, value)
+                        else:
+                            gsettings.set_string(key, value)
+                          
+                if code == "undo":
+                    # Delete backup file
+                    os.remove(theme)
+                
+                # give sometime to change style
+                time.sleep(1)
+                
+                self._push_config()
 
                 
             Thread(target = applyStyle).start()
