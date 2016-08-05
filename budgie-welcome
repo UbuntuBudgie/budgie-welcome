@@ -38,8 +38,9 @@ import urllib.error
 import webbrowser
 import socket
 import platform
+import json
 
-from gi.repository import WebKit2, Gtk
+from gi.repository import WebKit2, Gtk, Gio
 from threading import Thread
 from queue import Queue, Empty
 from notify2 import Notification, init as NotifyInit
@@ -313,6 +314,26 @@ class AppView(WebKit2.WebView):
                 popup = PopupMessage(message, PopupMessage.ERROR, str(e))
                 
                 popup.showMessage()
+                
+        elif uri.startswith("theme?"):
+            
+            theme = uri[6:]
+            
+            def applyStyle():
+                with open(app._data_path + "/config/" + theme + "-style.json") as file:
+                    config = json.load(file)
+                    
+                for item in config:
+                    schema = item["SCHEMA"]
+                    values = item["VALUES"]
+                    
+                    gsettings = Gio.Settings.new(schema)
+                    
+                    for key in values:
+                        gsettings.set_string(key, values[key])
+
+                
+            Thread(target = applyStyle).start()
                 
         elif uri == 'close':
             app.close()
