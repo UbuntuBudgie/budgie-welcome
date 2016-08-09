@@ -40,6 +40,7 @@ import socket
 import platform
 import json
 import time
+import shutil
 
 from gi.repository import WebKit2, Gtk, Gio
 from threading import Thread
@@ -159,7 +160,7 @@ class AppView(WebKit2.WebView):
                     else:
                         app.update_page('#arc-theme-remove', 'fadeIn')
                         
-                    materials = ['paper-gtk-theme', 'paper-cursor-theme', 'paper-icon-theme']
+                    materials = ['adapta-gtk-theme', 'paper-cursor-theme', 'paper-icon-theme']
                     
                     installed = True
                     
@@ -325,6 +326,7 @@ class AppView(WebKit2.WebView):
         elif uri.startswith("theme?"):
             
             code = uri[6:]
+            panelstyle = os.path.expanduser('~') + "/.config/gtk-3.0/gtk.css"
             
             if code == "undo":
                 theme = localdir + '/style-backup.json'
@@ -357,6 +359,9 @@ class AppView(WebKit2.WebView):
                         
                     with open(backup, "w") as file:
                         file.write(json.dumps(data))
+                    
+                    if os.path.isfile(panelstyle):
+                        shutil.move(panelstyle, localdir + '/gtk.css')
                 
                 for item in config:
                     schema = item["SCHEMA"]
@@ -372,10 +377,24 @@ class AppView(WebKit2.WebView):
                           
                 if code == "undo":
                     # Delete backup file
+                    if os.path.isfile(localdir + '/gtk.css'):
+                        shutil.move(localdir + '/gtk.css', panelstyle)
+                    
                     os.remove(theme)
+                elif code == "material":
+                    # Make transparent panel
+                    with open(panelstyle, "w") as file:
+                        file.write(".budgie-panel {background-color: rgba(0, 0, 0, 0.1);}")
+                else:
+                    # Don't allow theme over writing
+                    try:
+                        os.remove(panelstyle)
+                    except:
+                        pass
                 
-                # give sometime to change style
-                time.sleep(1)
+                subprocess.Popen(['budgie-panel', '--replace'])
+
+
                 
                 self._push_config()
 
@@ -1297,7 +1316,10 @@ if __name__ == "__main__":
     pm.start()
     
     # Init notification
-    NotifyInit("budgie-welcome")
+    try:
+        NotifyInit("budgie-welcome")
+    except:
+        dbg.stdout("Notifier", "Failed to initialize notifier", 0, 0)
     
     systemstate = SystemState()
     

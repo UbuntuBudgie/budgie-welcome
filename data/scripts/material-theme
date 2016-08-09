@@ -1,13 +1,25 @@
 #!/bin/sh
 
-the_ppa='snwh/pulp'
+paper_ppa='snwh/pulp'
+adapta_ppa='tista/adapta'
 
-if ! grep -q "$the_ppa" /etc/apt/sources.list /etc/apt/sources.list.d/*; then
+status=0
+
+if ! grep -q "$paper_ppa" /etc/apt/sources.list /etc/apt/sources.list.d/*; then
     # commands to add the ppa ...
-
-    add-apt-repository -y ppa:$the_ppa 
-    apt-get update
-    
+    add-apt-repository -y ppa:$paper_ppa
+    status=1
 fi
 
-apt install -y paper-gtk-theme paper-cursor-theme paper-icon-theme
+if ! grep -q "$adapta_ppa" /etc/apt/sources.list /etc/apt/sources.list.d/*; then
+    # commands to add the ppa ...
+    add-apt-repository -y ppa:$adapta_ppa
+    status=1
+fi
+
+if [ $status -eq 1 ]
+then
+    sudo apt update
+fi
+
+apt install -y adapta-gtk-theme paper-cursor-theme paper-icon-theme
