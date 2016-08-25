@@ -1,0 +1,46 @@
+{
+  "recommendations" : {
+    "flatpak" : {
+      "packages" : ["flatpak"],
+      "repos" : ["ppa:alexlarsson/flatpak"]
+    },
+    "steam" : {
+      "packages" : ["steam:i386"],
+      "ubuntu-repos" : ["multiverse"]
+    },
+    "screenshot" : {
+      "packages" : ["budgie-screenshot-applet"]
+    }
+  },
+  "gettingstarted" : {
+    "restricted-extras" : {
+      "packages" : ["ubuntu-restricted-extras"],
+      "excludes" : ["ttf-mscorefonts-installer"],
+      "ubuntu-repos" : ["multiverse"]
+    },
+    "keyboard-chinese" : {
+      "packages" : ["ibus-pinyin"]
+    },
+    "keyboard-japanese" : {
+      "packages" : ["ibus-anthy"]
+    },
+    "keyboard-korean" : {
+      "packages" : "ibus-hangul"
+    },
+    "backup" : {
+      "packages" : "deja-dup"
+    },
+    "firewall" : {
+      "packages" : ["gufw"]
+    }
+  },
+  "default" : {
+    "arc-theme" : {
+      "packages" : ["arc-theme", "faba-icon-theme", "moka-icon-theme", "arc-firefox-theme"]
+    },
+    "material-theme" : {
+      "packages" : ["adapta-gtk-theme", "paper-cursor-theme", "paper-icon-theme"],
+      "repos" : ["ppa:snwh/pulp", "ppa:tista/adapta"]
+    }
+  }
+}

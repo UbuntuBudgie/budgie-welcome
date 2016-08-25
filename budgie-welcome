@@ -29,7 +29,6 @@ gi.require_version('WebKit2', '4.0')
 
 import inspect
 import os
-# import json
 import signal
 import subprocess
 import sys
@@ -67,7 +66,7 @@ class AppView(WebKit2.WebView):
         # TODO: push notification should be connected to angularjs and use a
         # broadcast event any suitable controllers will be able to listen and
         # respond accordingly, for now we just use jQuery to manually toggle
-        current_page = app.current_page
+        current_page = app.current_page[:-5]
         
         self.run_javascript("$('span[name=\"distro-name\"]').html('{}')".format(systemstate.distroname))
         
@@ -101,7 +100,7 @@ class AppView(WebKit2.WebView):
             
 
         ### Getting Started Page ###
-        if current_page == 'gettingstarted.html':
+        if current_page == 'gettingstarted':
             # Display information tailored to graphics vendor (Getting Started / Drivers)
             self.run_javascript('var graphicsVendor = "' + systemstate.graphics_vendor + '";')
             self.run_javascript('var graphicsGrep = "' + systemstate.graphics_grep + '";')
@@ -121,13 +120,13 @@ class AppView(WebKit2.WebView):
               
             
         ### Index Page ###
-        elif current_page == 'index.html':
+        elif current_page == 'index':
             if systemstate.autostart:
                 app.update_page('#autostart', 'html', '&#xE837;')
             else:
                 app.update_page('#autostart', 'html', '&#xE836;')
                 
-        elif current_page == 'default.html':
+        elif current_page == 'default':
             panel_backup = localdir + '/panel-backup.conf'
             style_backup = localdir + '/style-backup.json'
             if os.path.isfile(panel_backup):
@@ -141,47 +140,25 @@ class AppView(WebKit2.WebView):
                 app.update_page('#style-undo', 'hide')
                 
         ### All pages with install/removal ###
-        if current_page in ['gettingstarted.html', 'recommendations.html', 'default.html']:
+        if current_page in ['gettingstarted', 'recommendations', 'default']:
             app.update_page('[id$=install]', 'hide')
             app.update_page('[id$=remove]', 'hide')
             
             def checkInstallationStatus():
-                
-                if current_page == 'default.html':
-                    arcs = ['arc-theme', 'faba-icon-theme', 'moka-icon-theme', 'arc-firefox-theme']
-                    installed = True
-                    for package in arcs:
-                        if not pm.hasInstalled(package):
-                            installed = False
-                            break
-                        
-                    if not installed:
-                        app.update_page('#arc-theme-install', 'fadeIn')
-                    else:
-                        app.update_page('#arc-theme-remove', 'fadeIn')
-                        
-                    materials = ['adapta-gtk-theme', 'paper-cursor-theme', 'paper-icon-theme']
+                for code in pdata.getShortCodes(current_page):
+                    packages = pdata.getPackages(current_page, code)
                     
                     installed = True
                     
-                    for package in materials:
+                    for package in packages:
                         if not pm.hasInstalled(package):
                             installed = False
                             break
-                       
-                    if not installed:
-                        app.update_page('#material-theme-install', 'fadeIn')
+                            
+                    if installed:
+                        app.update_page('#' + code + '-remove', 'fadeIn')
                     else:
-                        app.update_page('#material-theme-remove', 'fadeIn')
-
-                else:
-                    for code in PackageDict.getShortCodes(current_page[:-5]):
-                        package = PackageDict.getPackageName(code)
-                    
-                        if pm.hasInstalled(package):
-                             app.update_page('#' + code + '-remove', 'fadeIn')
-                        else:
-                             app.update_page('#' + code + '-install', 'fadeIn')            
+                        app.update_page('#' + code + '-install', 'fadeIn')            
             # Checking on cache will take sometime. So run it on a
             # separate thread.    
             thread = Thread(target = checkInstallationStatus)
@@ -234,11 +211,11 @@ class AppView(WebKit2.WebView):
         elif uri.startswith('install?'):
             code = uri[8:]
             
-            package = PackageDict.getPackageName(code)
+            packages = pdata.getPackages(app.current_page[:-5], code)
             
             script = False
             
-            if code in ["restricted-extras", "flatpak", "steam", "arc-theme", "material-theme"]:
+            if code in ["restricted-extras", "flatpak", "steam"]:
                 script = True
                 
             # Special case for steam, check for gnome-software
@@ -253,14 +230,14 @@ class AppView(WebKit2.WebView):
                 
                 return
             
-            self.managePackage(code, package, script, PMEntry.INSTALL)
+            self.managePackage(code, packages, script, PMEntry.INSTALL)
            
         elif uri.startswith('remove?'):
             code = uri[7:]
             
-            package = PackageDict.getPackageName(code)
+            packages = PackageDict.getPackages(app.current_page[:-5], code)
                 
-            self.managePackage(code, package, False, PMEntry.REMOVE)
+            self.managePackage(code, packages, False, PMEntry.REMOVE)
         elif uri.startswith('install-os'):
             if uri == 'install-os':
                 message = "This will close Welcome App and launch installer. Do you want to proceed?"
@@ -427,7 +404,7 @@ class AppView(WebKit2.WebView):
             
             
             
-    def managePackage(self, code, package, script, operation):
+    def managePackage(self, code, packages, script, operation):
         def threadedMethod():
             actions = [
                 ['#' + code + ('-install' if operation == PMEntry.INSTALL else '-remove'), 'addClass', 'disabled', None],
@@ -439,7 +416,7 @@ class AppView(WebKit2.WebView):
             
             systemstate.addIntermediateActions(app.current_page, actions)
             
-            pmentry = PMEntry(operation, code, actions, app.current_page, script)
+            pmentry = PMEntry(operation, code, packages, actions, app.current_page, script)
             
             pm_queue.put(pmentry)
             
@@ -554,10 +531,10 @@ class PackageManager(Thread):
             
             filename = entry.filename
             code = entry.code
-            package = PackageDict.getPackageName(code)
+            packages = entry.packages
             
             if entry.script:
-                package = app._data_path + "/scripts/" + package
+                package = app._data_path + "scripts/" + packages[0]
                 
             action = "INSTALL" if entry.task == PMEntry.INSTALL else "REMOVE"
             
@@ -565,9 +542,11 @@ class PackageManager(Thread):
             # GNOME Software in privileged mode.
             global start_location
             if code == 'steam':
-                p = subprocess.Popen([start_location + 'budgie-welcome-privileged-actions', action, package, str(entry.script)])
+                p = subprocess.Popen([start_location + 'budgie-welcome-privileged-actions', action, str(entry.script), package])
+            elif entry.script:
+                p = subprocess.Popen(['pkexec', start_location + 'budgie-welcome-privileged-actions', action, str(entry.script)] + [package])
             else:
-                p = subprocess.Popen(['pkexec', start_location + 'budgie-welcome-privileged-actions', action, package, str(entry.script)])
+                p = subprocess.Popen(['pkexec', start_location + 'budgie-welcome-privileged-actions', action, str(entry.script)] + packages)
             retval = p.wait()
             
             if entry.task == PMEntry.INSTALL:
@@ -644,43 +623,24 @@ class Notifier(object):
             dbg.stdout('Notification', 'Failed to show notification', 0, 0)
         
             
-class PackageDict(object):
+class PackageData(object):
     '''
     Map some short codes with packages. Install/Remove buttons
     will be represented by short code like #code-remove and 
     #code-install. This will allow to check installation status
     of each package using a loop instead of checking seperately
     '''
+
+    def __init__(self):
+        with open(app._data_path + "/config/packages.json") as file:
+            self.data = json.load(file)    
     
-    pagemap = {
-        'recommendations' : ['flatpak', 'steam', 'screenshot'],
-        'gettingstarted' : ['restricted-extras', 'keyboard-chinese',
-        'keyboard-japanese', 'keyboard-korean', 'backup', 'firewall'
-        ],
-        'default' : ['arc-theme', 'material-theme']
-    }
-    codemap = {
-        'restricted-extras' : 'ubuntu-restricted-extras',
-        'keyboard-chinese' : 'ibus-pinyin',
-        'keyboard-japanese' : 'ibus-anthy',
-        'keyboard-korean' : 'ibus-hangul',
-        'backup' : 'deja-dup',
-        'firewall' : 'gufw',
-        'steam' : 'steam:i386',
-        'flatpak' : 'flatpak',
-        'screenshot' : 'budgie-screenshot-applet',
-        'arc-theme' : 'arc-theme-complete',
-        'material-theme' : 'material-theme'
-    }
+    def getShortCodes(self, filename):
+        return self.data[filename].keys()
     
-    @staticmethod
-    def getShortCodes(filename):
-        return PackageDict.pagemap[filename]
-    
-    @staticmethod
-    def getPackageName(code):
+    def getPackages(self, filename, code):
         try:
-            return PackageDict.codemap[code]
+            return self.data[filename][code]["packages"]
         except KeyError:
             return None
             
@@ -688,9 +648,10 @@ class PMEntry(object):
     INSTALL = 0
     REMOVE = 1
     
-    def __init__(self, task, code, actions, filename, script = False):
+    def __init__(self, task, code, packages, actions, filename, script = False):
         self.task = task
         self.code = code
+        self.packages = packages
         
         # UI updates done and remembered before starting task
         # and need to 'forget' after finishing task
@@ -1324,6 +1285,7 @@ if __name__ == "__main__":
     systemstate = SystemState()
     
     app = WelcomeApp()
+    pdata = PackageData()
     app.run()
     
     

@@ -8,17 +8,17 @@ import sys
 '''
 
   
-def install(package, script):
+def install(packages, script):
     if script:
-        process = subprocess.Popen(['sh', package])
+        process = subprocess.Popen(['sh', packages[0]])
     else:
-        process = subprocess.Popen(['apt', 'install', '-y', package])
+        process = subprocess.Popen(['apt', 'install', '--allow-unauthenticated', '-y'] + packages)
     retval = process.wait()
     
     return retval
 
-def remove(package):
-    process = subprocess.Popen(['apt', 'remove', '-y', package])
+def remove(packages):
+    process = subprocess.Popen(['apt', 'remove', '-y'] + packages)
     retval = process.wait()
     
     return retval
@@ -33,16 +33,18 @@ if __name__ == "__main__":
         sys.exit(-1)
     
     action = args[1]
-    package = args[2]
-    
     
     script = False
-    if len(args) > 3 and args[3] == 'True':
+    if args[2] == 'True':
         script = True
+        
+    packages = args[3:]
+     
+    print("[DEBUG] action : {}, script : {}, packages : {}".format(action, script, ", ".join(packages)))
     
     if action == 'INSTALL':
-        retval = install(package, script)
+        retval = install(packages, script)
     elif action == 'REMOVE':
-        retval = remove(package)
+        retval = remove(packages)
         
     sys.exit(retval)
