@@ -75,7 +75,7 @@ class AppView(WebKit2.WebView):
         app.update_page('#close', 'remove')
         app.update_page('#status-btn', 'remove')
         # Dynamically inject header controls button
-        if current_page != "index.html":
+        if current_page != "index":
             app.update_page('#navigation', 'prepend', '<a id="menu-button" class="navigation-button" \
                onclick="smoothPageFade(\'index.html\')"><i class="material-icons">&#xE5CB;</i></a>')
         app.update_page('#navigation', 'append', '<a onclick="cmd(\'status\')" class="btn btn-inverse" id="status-btn">Status</a>')
@@ -166,7 +166,7 @@ class AppView(WebKit2.WebView):
                 
         # Apply intermediate actions, if any are present
         if current_page in systemstate.intermediate_actions:
-            for action in systemstate.intermediate_actions[app.current_page]:
+            for action in systemstate.intermediate_actions[current_page]:
                 app.update_page(action[0], action[1], action[2], action[3])
 
 
@@ -211,13 +211,6 @@ class AppView(WebKit2.WebView):
         elif uri.startswith('install?'):
             code = uri[8:]
             
-            packages = pdata.getPackages(app.current_page[:-5], code)
-            
-            script = False
-            
-            if code in ["restricted-extras", "flatpak", "steam"]:
-                script = True
-                
             # Special case for steam, check for gnome-software
             if code == 'steam' and not pm.hasInstalled('gnome-software'):
                 message = "Steam is a third party package that requires user approval of EULA" +\
@@ -230,14 +223,13 @@ class AppView(WebKit2.WebView):
                 
                 return
             
-            self.managePackage(code, packages, script, PMEntry.INSTALL)
+            self.managePackage(PMEntry.INSTALL, app.current_page[:-5], code)
            
         elif uri.startswith('remove?'):
             code = uri[7:]
-            
-            packages = PackageDict.getPackages(app.current_page[:-5], code)
                 
-            self.managePackage(code, packages, False, PMEntry.REMOVE)
+            self.managePackage(PMEntry.REMOVE, app.current_page[:-5], code)
+            
         elif uri.startswith('install-os'):
             if uri == 'install-os':
                 message = "This will close Welcome App and launch installer. Do you want to proceed?"
@@ -404,7 +396,7 @@ class AppView(WebKit2.WebView):
             
             
             
-    def managePackage(self, code, packages, script, operation):
+    def managePackage(self, operation, fname, code):
         def threadedMethod():
             actions = [
                 ['#' + code + ('-install' if operation == PMEntry.INSTALL else '-remove'), 'addClass', 'disabled', None],
@@ -414,9 +406,9 @@ class AppView(WebKit2.WebView):
             for action in actions:
                 app.update_page(action[0], action[1], action[2], action[3])
             
-            systemstate.addIntermediateActions(app.current_page, actions)
+            systemstate.addIntermediateActions(fname, actions)
             
-            pmentry = PMEntry(operation, code, packages, actions, app.current_page, script)
+            pmentry = PMEntry(operation, fname, code, actions)
             
             pm_queue.put(pmentry)
             
@@ -531,10 +523,6 @@ class PackageManager(Thread):
             
             filename = entry.filename
             code = entry.code
-            packages = entry.packages
-            
-            if entry.script:
-                package = app._data_path + "scripts/" + packages[0]
                 
             action = "INSTALL" if entry.task == PMEntry.INSTALL else "REMOVE"
             
@@ -542,11 +530,9 @@ class PackageManager(Thread):
             # GNOME Software in privileged mode.
             global start_location
             if code == 'steam':
-                p = subprocess.Popen([start_location + 'budgie-welcome-privileged-actions', action, str(entry.script), package])
-            elif entry.script:
-                p = subprocess.Popen(['pkexec', start_location + 'budgie-welcome-privileged-actions', action, str(entry.script)] + [package])
+                p = subprocess.Popen([app._data_path + 'scripts/steam'])
             else:
-                p = subprocess.Popen(['pkexec', start_location + 'budgie-welcome-privileged-actions', action, str(entry.script)] + packages)
+                p = subprocess.Popen(['pkexec', start_location + 'budgie-welcome-privileged-actions', action, filename, code, app.json_path])
             retval = p.wait()
             
             if entry.task == PMEntry.INSTALL:
@@ -632,7 +618,7 @@ class PackageData(object):
     '''
 
     def __init__(self):
-        with open(app._data_path + "/config/packages.json") as file:
+        with open(app.json_path) as file:
             self.data = json.load(file)    
     
     def getShortCodes(self, filename):
@@ -648,10 +634,9 @@ class PMEntry(object):
     INSTALL = 0
     REMOVE = 1
     
-    def __init__(self, task, code, packages, actions, filename, script = False):
+    def __init__(self, task, filename, code, actions):
         self.task = task
         self.code = code
-        self.packages = packages
         
         # UI updates done and remembered before starting task
         # and need to 'forget' after finishing task
@@ -660,7 +645,6 @@ class PMEntry(object):
         # This is required to remove actions after installation
         # /removal
         self.filename = filename
-        self.script = script
 
 class SystemState(object):
     def __init__(self):
@@ -1083,7 +1067,9 @@ class WelcomeApp(object):
         else:
             print('Unable to source the budgie-welcome data directory.')
             sys.exit(1)
-            
+        
+        self.json_path = self._data_path + "/config/packages.json"    
+        
         if arg.jump_to:
             self._start_page = arg.jump_to
         else:

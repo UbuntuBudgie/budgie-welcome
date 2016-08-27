@@ -2,49 +2,105 @@
 
 import subprocess
 import sys
+import json
+from softwareproperties.SoftwareProperties \
+  import SoftwareProperties, shortcut_handler
+import aptsources
 
 '''
  Should replace apt command with python-apt module.
 '''
 
+def add_repos(repos):
+
+    if not repos: return 0  
+    
+    sp = SoftwareProperties()
+    for repo in repos:
+        # check if its a component that should be added/removed
+        distro = aptsources.distro.get_distro()
+        distro.get_sources(sp.sourceslist)
+        components = [comp.name for comp in distro.source_template.components]
+        if repo in components:
+            if line not in distro.enabled_comps:
+                distro.enable_component(line)
+        else:
+            sp.add_source_from_shortcut(shortcut_handler(repo))
+    sp.sourceslist.save()
+    
+    # Update always. Ideally, this should be done only if a new repo is added
+    # to list
+    p = subprocess.Popen(['apt', 'update'])
+    
+    return p.wait()
   
-def install(packages, script):
-    if script:
-        process = subprocess.Popen(['sh', packages[0]])
-    else:
-        process = subprocess.Popen(['apt', 'install', '--allow-unauthenticated', '-y'] + packages)
-    retval = process.wait()
+def install(fname, code):
+    info = pdata.getPackageInfo(fname, code)
+    repos = info.get("repos")
+    packages = info.get("packages")
+    excludes = info.get("excludes")
+    
+    retval = add_repos(repos)
+    
+    if excludes != None:
+        for exclude in excludes:
+            packages.append(exclude + '-')
+    
+    process = subprocess.Popen(['apt', 'install', '--allow-unauthenticated', '-y'] + packages)
+    
+    retval += process.wait()
     
     return retval
 
-def remove(packages):
+def remove(fname, code):
+    info = pdata.getPackageInfo(fname, code)
+    packages = info["packages"]
+    
     process = subprocess.Popen(['apt', 'remove', '-y'] + packages)
+    
     retval = process.wait()
     
     return retval
     
+class PackageData(object):
+
+    def __init__(self, json_path):
+        # app._data_path + "/config/packages.json"
+        with open(json_path) as file:
+            self.data = json.load(file)    
     
+    
+    def getPackageInfo(self, filename, code):
+        try:
+            return self.data[filename][code]
+        except KeyError as e:
+            print(e)
+            return None
+ 
 if __name__ == "__main__":
+    '''
+        args[1]  action to perform (INSTALL/REMOVE)
+        args[2]  file name in which package is listed
+        args[3]  code name for package
+        args[4]  path to json file containing package details
+    '''
    
     args = sys.argv
     
-    if len(args) < 3:
+    if len(args) < 5:
         print("Expected arguments not found")
         sys.exit(-1)
     
     action = args[1]
+    fname = args[2]
+    code = args[3]
+    json_path = args[4]
     
-    script = False
-    if args[2] == 'True':
-        script = True
-        
-    packages = args[3:]
-     
-    print("[DEBUG] action : {}, script : {}, packages : {}".format(action, script, ", ".join(packages)))
+    pdata = PackageData(json_path)
     
     if action == 'INSTALL':
-        retval = install(packages, script)
+        retval = install(fname, code)
     elif action == 'REMOVE':
-        retval = remove(packages)
+        retval = remove(fname, code)
         
     sys.exit(retval)
