@@ -822,12 +822,3 @@ a.btn-primary.disabled {
   background: #ddd;
   transition: background 0.5s ease;
 }
-
-img.thumbnail {
-	transition: transform 0.5s ease;
-}
-
-img.thumbnail:hover {
-	transform: scale(1.7);
-	z-index: 2;
-}
