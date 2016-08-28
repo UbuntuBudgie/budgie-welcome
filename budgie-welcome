@@ -392,7 +392,7 @@ class AppView(WebKit2.WebView):
                 
             popup.showMessage()
         else:
-            print('Unknown command: %s' % uri)
+            print('Unknown command: {}'.format(uri))
             
             
             
@@ -478,7 +478,7 @@ class PopupMessage(object):
             html_table += '<thead><th>TASK</th><th>NAME</th><th>STATUS</th></thead>'
             for task in self.details:
                 html_table += '<tr>'
-                html_table += '<td>%s</td><td>%s</td><td>%s</td>'%(task[0], task[1], task[2])
+                html_table += '<td>{}</td><td>{}</td><td>{}</td>'.format(task[0], task[1], task[2])
             html_table += '</table>'
             
             html_table = '<div id="status-table-container">' + html_table + '</div>'
