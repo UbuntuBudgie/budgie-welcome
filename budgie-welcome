@@ -233,7 +233,7 @@ class AppView(WebKit2.WebView):
         elif uri.startswith('install-os'):
             if uri == 'install-os':
                 message = "This will close Welcome App and launch installer. Do you want to proceed?"
-                actions = {'YES' : 'cmd(\'install-os?yes\')', 'NO' : 'removeSlowly(\'#popup-message-window\')'}
+                actions = dict(YES = 'cmd(\'install-os?yes\')', NO = 'removeSlowly(\'#popup-message-window\')')
                 popup = PopupMessage(message, PopupMessage.CONFIRMATION, None, actions)
                 popup.showMessage()
 
@@ -449,7 +449,7 @@ class PopupMessage(object):
     CONFIRMATION = 1
     STATUS = 2
     
-    def __init__(self, message, type, details = None, actions = {'OK' : 'removeSlowly(\'#popup-message-window\')'}):
+    def __init__(self, message, type, details = None, actions = dict(OK = 'removeSlowly(\'#popup-message-window\')')):
         '''
          message => Messge to user
          type => Type of message(error, confirmation ..etc)
