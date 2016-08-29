@@ -76,11 +76,21 @@ class AppView(WebKit2.WebView):
         app.update_page('#status-btn', 'remove')
         # Dynamically inject header controls button
         if current_page != "index":
-            app.update_page('#navigation', 'prepend', '<a id="menu-button" class="navigation-button" \
-               onclick="smoothPageFade(\'index.html\')"><i class="material-icons">&#xE5CB;</i></a>')
-        app.update_page('#navigation', 'append', '<a onclick="cmd(\'status\')" class="btn btn-inverse" id="status-btn">Status</a>')
-        app.update_page('#navigation', 'append', '<a id="close" onclick="cmd(\'close\')">\
-          <i class="material-icons" id="close-btn">&#xE14C;</i></a>')
+            app.update_page('#navigation', 'prepend', '<a id="menu-button"\
+                            class="navigation-button"\
+                            onclick="smoothPageFade(\'index.html\')">\
+                            <i class="material-icons">&#xE5CB;</i></a>')
+        
+        app.update_page('#navigation', 'append', '<a onclick="cmd(\'status\')"\
+                          class="btn btn-inverse" \
+                          id="status-btn">Status</a>')
+        app.update_page('#navigation', 'append', '<a onclick="cmd(\'about\')"\
+                          class="btn btn-inverse" \
+                          id="about-btn">About</a>')
+        app.update_page('#navigation', 'append', '<a id="close"\
+                          onclick="cmd(\'close\')">\
+                          <i class="material-icons"\
+                          id="close-btn">&#xE14C;</i></a>')
         
         if systemstate.session_type == 'live':
             app.update_page('.live-session-only', 'show') 
@@ -391,6 +401,21 @@ class AppView(WebKit2.WebView):
             popup = PopupMessage(message, PopupMessage.STATUS, pm.getTaskList())
                 
             popup.showMessage()
+        elif uri == 'about':
+            message = "<div class=\"text-md-center\">"
+            message += "<strong>Budgie Welcome</strong><br>"
+            message += "Version {}<br><br>({} {} {})".format(
+              SystemState.VERSION,
+              systemstate.distroname,
+              systemstate.os_version,
+              systemstate.codename
+            )
+            message += "</div>"
+            
+            popup = PopupMessage(message, PopupMessage.INFO)
+                
+            popup.showMessage()
+
         else:
             print('Unknown command: {}'.format(uri))
             
@@ -448,6 +473,7 @@ class PopupMessage(object):
     ERROR = 0
     CONFIRMATION = 1
     STATUS = 2
+    INFO = 3
     
     def __init__(self, message, type, details = None, actions = dict(OK = 'removeSlowly(\'#popup-message-window\')')):
         '''
@@ -484,6 +510,8 @@ class PopupMessage(object):
             html_table = '<div id="status-table-container">' + html_table + '</div>'
             
             app.update_page('#popup-message-container', 'append', html_table)
+        elif self.type == PopupMessage.INFO:
+            pass # Message is already added
         else:
             dbg.stdout(self.type, 'message is not handled yet', 3)
         
@@ -647,11 +675,13 @@ class PMEntry(object):
         self.filename = filename
 
 class SystemState(object):
+    
+    VERSION = 'v0.3.9'
+    
     def __init__(self):
         # Set default variables
         self.is_online = False
         self.updates_subscribed = False
-        self.welcome_version = 'Unknown'
 
         # Full path to binary
         self._welcome_bin_path = os.path.abspath(inspect.getfile(inspect.currentframe()))
@@ -684,11 +714,8 @@ class SystemState(object):
             self.boot_mode = 'BIOS'
 
         # Multithread to prevent holding up program execution.
-        thread1 = Thread(target=self.check_internet_connection)
-        thread2 = Thread(target=self.detect_graphics)
-        thread1.start()
-        thread2.start()
-        
+        Thread(target=self.check_internet_connection).start()
+        Thread(target=self.detect_graphics).start()
         
         # Retain some show/hide actions applied while changing page.
         # This is specially required when page change happens while
@@ -719,7 +746,7 @@ class SystemState(object):
         
         self.os_version = platform.dist()[1]    # → 14.04, 15.10, 16.04
         self.codename = platform.dist()[2]      # → trusty, wily, xenial
-
+    
     def autostart_check(self):
         # Ensure our autostart directories exist
         if not os.path.exists(self._autostart_dir):
@@ -1189,7 +1216,12 @@ class Arguments(object):
               print('  --jump-to=PAGE               Open a specific page, excluding *.html')
               print('  --locale=CODE                Locale to use. e.g. fr_FR.')
               print('  -v, --verbose                Show more details to stdout (for diagnosis).')
+              print('  -V, --version                Version information')
               print('')
+              exit()
+              
+          elif arg == '-V' or arg == '--version':
+              print('Budgie Welcome {}'.format(SystemState.VERSION))
               exit()
 
           if arg == '--verbose' or arg == '-v':

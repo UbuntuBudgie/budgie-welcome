@@ -130,14 +130,21 @@ body, button {
   background: #000
 }
 
-#status-btn {
+#status-btn, #about-btn {
   color: white;
   z-index: 2;
   position: absolute;
-  right: 80px;
   padding: 4px 10px;
   border: 1px solid #888;
-  display: none;
+}
+
+#status-btn {
+ right: 160px;
+ display: none;
+}
+
+#about-btn {
+ right: 80px;
 }
 
 .navigation-button {
