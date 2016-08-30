@@ -405,7 +405,7 @@ class AppView(WebKit2.WebView):
             message = "<div class=\"text-md-center\">"
             message += "<strong>Budgie Welcome</strong><br>"
             message += "Version {}<br><br>({} {} {})".format(
-              SystemState.VERSION,
+              systemstate.app_version,
               systemstate.distroname,
               systemstate.os_version,
               systemstate.codename
@@ -676,12 +676,11 @@ class PMEntry(object):
 
 class SystemState(object):
     
-    VERSION = 'v0.3.9'
-    
     def __init__(self):
         # Set default variables
         self.is_online = False
         self.updates_subscribed = False
+        self.app_version = 'DEV'
 
         # Full path to binary
         self._welcome_bin_path = os.path.abspath(inspect.getfile(inspect.currentframe()))
@@ -716,6 +715,7 @@ class SystemState(object):
         # Multithread to prevent holding up program execution.
         Thread(target=self.check_internet_connection).start()
         Thread(target=self.detect_graphics).start()
+        Thread(target=self.find_app_version()).start()
         
         # Retain some show/hide actions applied while changing page.
         # This is specially required when page change happens while
@@ -736,7 +736,6 @@ class SystemState(object):
         
         if len(self.intermediate_actions[filename]) == 0:
             del self.intermediate_actions[filename]
-            
 
     def gatherDistroInfo(self):
         # Hard code distributin name, as running external commands would take
@@ -1068,6 +1067,9 @@ class SystemState(object):
         app.update_page('#specs-basic', 'fadeIn', 'medium')
         app.update_page('#specs-busy-basic', 'fadeOut', 'fast')
         webkit.run_javascript('setCursorNormal()')
+        
+    def find_app_version(self):
+        self.app_version = find_app_version(cache)
 
 
 class WelcomeApp(object):
@@ -1221,7 +1223,7 @@ class Arguments(object):
               exit()
               
           elif arg == '-V' or arg == '--version':
-              print('Budgie Welcome {}'.format(SystemState.VERSION))
+              print('Budgie Welcome {}'.format(find_app_version()))
               exit()
 
           if arg == '--verbose' or arg == '-v':
@@ -1277,6 +1279,20 @@ class Arguments(object):
               self.jump_to = arg.split('--jump-to=')[1]
               dbg.stdout('Debug', 'Opening page: ' + self.jump_to + '.html', 0, 0)
 
+def find_app_version(cache=apt.Cache()):
+    # Create a new cache, if it is not available. This happens
+    # when function is invoked while processing command line arguments
+    
+    try:
+        app = cache['budgie-welcome']
+    except:
+        app = None
+    
+    if app and app.is_installed:
+        return app.installed.version
+        
+    return "DEV"
+    
 
 if __name__ == "__main__":
 
