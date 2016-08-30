@@ -715,7 +715,7 @@ class SystemState(object):
         # Multithread to prevent holding up program execution.
         Thread(target=self.check_internet_connection).start()
         Thread(target=self.detect_graphics).start()
-        Thread(target=self.find_app_version()).start()
+        Thread(target=self.find_app_version).start()
         
         # Retain some show/hide actions applied while changing page.
         # This is specially required when page change happens while
