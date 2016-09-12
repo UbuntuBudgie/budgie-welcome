@@ -27,4 +27,4 @@ cd budgie-welcome
 
 ###LICENSES
   The project contains files with a variety of licenses.  
-  For the complete list of licenses, see [debian/copyright](https://github.com/budgie-remix/budgie-welcome/blob/debian/debian/copyright) file on the `debian branch`.
+  For the complete list of licenses, see [debian/copyright](https://github.com/budgie-remix/budgie-welcome/blob/master/debian/copyright) file.
