@@ -4,8 +4,7 @@ Upstream-Contact: David Mohammed <fossfreedom@ubuntu.com>
 Source: https://github.com/budgie-remix/budgie-welcome
 
 Files: 
-    debian/*
-    LICENSE
+    *
 Copyright: 2016, David Mohammed <fossfreedom@gmail.com>
 License: GPL-2+
 
@@ -97,10 +96,10 @@ License: Apache-2.0
 
 Files:
     data/css/bootstrap.min.css
-    data/js/bootstrap.min.js
+    data/js/bootstrap*
     data/js/tether.js
-Copyright: 2013, Twitter, Inc
-License: Apache-2.0
+Copyright: 2011-2016 The Bootstrap Authors (https://github.com/twbs/bootstrap/graphs/contributors)
+License: MIT
 
 Files: data/js/jquery-2.1.4.js
 Copyright: 2005-2014 jQuery Foundation, Inc. and other contributors
