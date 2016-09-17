@@ -6,3 +6,8 @@
 override_dh_auto_install:
 	find . -name "LICENSE" -delete
 	dh_auto_install
+
+override_dh_auto_build:
+	# grunt is not (yet) packaged (#673727), so we mimic the tasks
+	# Grunt task uglify: Minify the js file
+	uglifyjs -o data/js/bootstrap.min.js data/js/bootstrap.js
