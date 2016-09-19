@@ -404,12 +404,18 @@ class AppView(WebKit2.WebView):
         elif uri == 'about':
             message = "<div class=\"text-md-center\">"
             message += "<strong>Budgie Welcome</strong><br>"
-            message += "Version {}<br><br>({} {} {})".format(
-              systemstate.app_version,
+            message += "Version {}".format(
+              systemstate.app_version
+            )
+            message += "<br><br> Budgie Desktop {}".format(
+              systemstate.budgie_version
+            )
+            message += "<br><br>({} {} {})".format(
               systemstate.distroname,
               systemstate.os_version,
               systemstate.codename
             )
+            
             message += "</div>"
             
             popup = PopupMessage(message, PopupMessage.INFO)
@@ -681,6 +687,7 @@ class SystemState(object):
         self.is_online = False
         self.updates_subscribed = False
         self.app_version = 'DEV'
+        self.budgie_version = 'NA'
 
         # Full path to binary
         self._welcome_bin_path = os.path.abspath(inspect.getfile(inspect.currentframe()))
@@ -1069,7 +1076,9 @@ class SystemState(object):
         webkit.run_javascript('setCursorNormal()')
         
     def find_app_version(self):
-        self.app_version = find_app_version(cache)
+        versions = find_app_version(cache)
+        self.app_version = versions[0]
+        self.budgie_version = versions[1]
 
 
 class WelcomeApp(object):
@@ -1223,7 +1232,8 @@ class Arguments(object):
               exit()
               
           elif arg == '-V' or arg == '--version':
-              print('Budgie Welcome {}'.format(find_app_version()))
+              versions = find_app_version()
+              print("Budgie Welcome {}\nBudgie Desktop {}".format(versions[0], versions[1]))
               exit()
 
           if arg == '--verbose' or arg == '-v':
@@ -1282,17 +1292,20 @@ class Arguments(object):
 def find_app_version(cache=apt.Cache()):
     # Create a new cache, if it is not available. This happens
     # when function is invoked while processing command line arguments
+    versions = []
     
-    try:
-        app = cache['budgie-welcome']
-    except:
-        app = None
+    for package in ['budgie-welcome', 'budgie-desktop']:
+        try:
+            app = cache[package]
+        except:
+            app = None
     
-    if app and app.is_installed:
-        return app.installed.version
+        if app and app.is_installed:
+            versions.append(app.installed.version)
+        else:
+            versions.append('NA')
         
-    return "DEV"
-    
+    return versions    
 
 if __name__ == "__main__":
 
