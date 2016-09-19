@@ -134,7 +134,7 @@ body, button {
   color: white;
   z-index: 2;
   position: absolute;
-  padding: 4px 10px;
+  padding: 2px 10px;
   border: 1px solid #888;
 }
 
@@ -145,6 +145,10 @@ body, button {
 
 #about-btn {
  right: 80px;
+}
+
+#about-btn .material-icons {
+  margin-right: 0;
 }
 
 .navigation-button {

@@ -86,7 +86,7 @@ class AppView(WebKit2.WebView):
                           id="status-btn">Status</a>')
         app.update_page('#navigation', 'append', '<a onclick="cmd(\'about\')"\
                           class="btn btn-inverse" \
-                          id="about-btn">About</a>')
+                          id="about-btn"><span class="material-icons">&#xE88F;</span></a>')
         app.update_page('#navigation', 'append', '<a id="close"\
                           onclick="cmd(\'close\')">\
                           <i class="material-icons"\
