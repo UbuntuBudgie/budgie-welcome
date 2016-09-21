@@ -751,6 +751,19 @@ a.btn-primary.disabled {
 	font-weight: bold;
 }
 
+a:not([href]):not([tabindex]),
+a:focus:not([href]):not([tabindex]),
+a:hover:not([href]):not([tabindex]) {
+  color: #337ab7
+}
+
+a:not([href]):not([tabindex]).btn,
+a:focus:not([href]):not([tabindex]).btn,
+a:hover:not([href]):not([tabindex]).btn {
+  color: white
+}
+
+
 /* button hover effect **/
 /* source: https://github.com/IanLunn/Hover/blob/master/css/hover.css*/
 /* Shadow */
