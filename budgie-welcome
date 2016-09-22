@@ -710,6 +710,8 @@ class SystemState(object):
             self.session_type = arg.simulate_session
         elif subprocess.call("df | grep -w / | grep -q '/cow'", shell=True) == 0:
             self.session_type = 'live'
+        elif subprocess.call("df | grep -q aufs", shell=True) == 0:
+            self.session_type = 'live'
         else:
             self.session_type = 'normal'
 
