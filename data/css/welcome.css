@@ -323,7 +323,10 @@ a {
   width: 28px;
   margin-right: 5px;
 }
-
+.hover-menu-block {
+  position: relative;
+  display: inline-block;
+}
 .hover-menu-block .hover-menu {
   background: #404552;
   z-index: 15;
@@ -337,7 +340,7 @@ a {
   display: none;
   list-style: none;
   color: white;
-  width: 150px
+  width: 160px
 }
 .hover-menu-block:hover .hover-menu {
   display: block;
