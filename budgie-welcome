@@ -234,6 +234,10 @@ class AppView(WebKit2.WebView):
                 return
             
             self.managePackage(PMEntry.INSTALL, app.current_page[:-5], code)
+            
+            # for skippy-xd we also need to define a keyboard shortcut
+            if code == 'skippy-xd':
+                self._define_keyboard_shortcut('skippy-xd', 'skippy-xd-toggle', '<Primary>Tab')
            
         elif uri.startswith('remove?'):
             code = uri[7:]
@@ -425,8 +429,41 @@ class AppView(WebKit2.WebView):
         else:
             print('Unknown command: {}'.format(uri))
             
-            
-            
+    def _define_keyboard_shortcut(self, name, command, shortcut):
+        # defining keys & strings to be used
+        # params example 'open gedit' 'gedit' '<Alt>7'
+        key = "org.gnome.settings-daemon.plugins.media-keys custom-keybindings"
+        subkey1 = key.replace(" ", ".")[:-1]+":"
+        item_s = "/"+key.replace(" ", "/").replace(".", "/")+"/"
+        firstname = "custom"
+        # get the current list of custom shortcuts
+        get = lambda cmd: subprocess.check_output(["/bin/bash", "-c", cmd]).decode("utf-8")
+        x = get("gsettings get "+key)
+        if '@as []' in str(x):
+           current = []
+        else:
+           current = eval(x)
+        # make sure the additional keybinding mention is no duplicate
+        n = 1
+        while True:
+            new = item_s+firstname+str(n)+"/"
+            if new in current:
+                n = n+1
+            else:
+                break
+
+        if n == 1:
+            # add the new keybinding to the list
+            current.append(new)
+            # create the shortcut, set the name, command and shortcut key
+            cmd0 = 'gsettings set '+key+' "'+str(current)+'"'
+            cmd1 = 'gsettings set '+subkey1+new+" name '"+ name +"'"
+            cmd2 = 'gsettings set '+subkey1+new+" command '"+ command +"'"
+            cmd3 = 'gsettings set '+subkey1+new+" binding '"+ shortcut +"'"
+
+            for cmd in [cmd0, cmd1, cmd2, cmd3]:
+                subprocess.call(["/bin/bash", "-c", cmd])
+
     def managePackage(self, operation, fname, code):
         def threadedMethod():
             actions = [
