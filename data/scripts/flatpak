@@ -1,8 +1,0 @@
-#!/bin/sh
-
-REPO=ppa:alexlarsson/flatpak
-if ! grep -q "$REPO" /etc/apt/sources.list; then
-  add-apt-repository $REPO -y
-  apt update
-fi
-apt install flatpak -y
