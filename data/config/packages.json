@@ -5,7 +5,8 @@
       "repos" : ["ppa:alexlarsson/flatpak"]
     },
     "skippy-xd" : {
-      "packages" : ["skippy-xd"]
+      "packages" : ["skippy-xd"],
+      "repos" : ["ppa:budgie-remix/ppa"]
     },
 
     "steam" : {
@@ -13,7 +14,8 @@
       "ubuntu-repos" : ["multiverse"]
     },
     "screenshot" : {
-      "packages" : ["budgie-screenshot-applet"]
+      "packages" : ["budgie-screenshot-applet"],
+      "repos" : ["ppa:budgie-remix/ppa"]
     }
   },
   "gettingstarted" : {
