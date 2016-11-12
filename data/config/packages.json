@@ -1,5 +1,8 @@
 {
   "recommendations" : {
+    "snap" : {
+      "packages" : ["snapd"]
+    },
     "flatpak" : {
       "packages" : ["flatpak"],
       "repos" : ["ppa:alexlarsson/flatpak"]

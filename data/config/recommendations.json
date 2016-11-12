@@ -1,0 +1,66 @@
+[
+	{
+		"id": "snap",
+		"name": "Snap",
+		"description": "<strong>Snap</strong> is a new generation application packaging format developed by <em>Canonical</em>. Even though it was initially developed just for different Ubuntu platforms, currently it work in many other GNU/Linux distributions. It will help application developers to provide a unified package that can work on different platforms. By using snap package format, applications can have their own version of libraries and there is no need to worry about libraries installed in underlying operating system. Snap packages enable developers to bring much newer versions of apps to <span name=\"distro-name\"></span>. Newer versions of KDE, GNOME, browser or other desktop environment apps will usually build easily on older LTS releases but the complexities of packaging and providing updates have prevented us from delivering them in the past.",
+		"image": "img/logos/snap.png",
+		"additional-components": [
+			"<a onclick=\"cmd('link?https://insights.ubuntu.com/2016/04/13/snaps-for-classic-ubuntu')\" class=\"btn btn-inverse\">Learn more</a>"
+		],
+		"install-message": "Install Snap",
+		"post-install-message": "Snap is already installed",
+		"learn": {
+			"id": "snap-guide",
+			"title": "Search for Available Snap Packages",
+			"content": "<h3>Search for Available Snap Packages</h3> <p>To see a list of all available packages in the store, open a terminal and run the following command:</p> <div class=\"code\">$ snap find</div> <p>To search for a specific package by name, just add your search term to the end of the snap find command:</p> <div class=\"code\">$ snap find name</div> <p>For a more complete search–searching package descriptions as well as package names–just pipe the output of the snap find command through the grep filtering tool, like so:</p> <div class=\"code\">$ snap find | grep search</div> <h3>How to Install a Snap Package</h3> <p>To install a Snap package, use the following command, specifying the package by name. Because this makes changes to the system, you have to add a sudo before the command to run it with root privileges.</p> <div class=\"code\">$ sudo snap install package-name</div> <p>The snap command will download and install the snap package you specified, displaying the progress in the terminal window.</p> <p>You can launch the application you installed like any other application. If it’s a graphical application, it should appear in your desktop’s applications menu. Otherwise, just start typing the application’s name at the terminal and press the “Tab” key to automatically complete it. You can then press Enter to launch the application or run the command you installed.</p> <h3>How to Update Snaps</h3> <p>To update an installed Snap package, run the following command, specifying the package’s name. If a new version of the Snap is available, it will be downloaded and installed.</p> <div class=\"code\">$ sudo snap refresh package-name</div> <p>There doesn’t appear to be a command that updates all installed Snaps at the moment, but we wouldn’t be surprised to see one added in the future.</p> <h3>How to List Your Installed Snaps</h3> <p>To list your installed Snap packages, run the following command</p> <div class=\"code\">$ snap list</div> <p>You can use this command to search your installed packages, too–just pipe the output through grep again:</p> <div class=\"code\">$ snap list | grep search</div> <h3>How to Remove a Snap Package</h3> <p>To remove an installed Snap package from your computer, run the following command:</p> <div class=\"code\">$ sudo snap remove package-name</div> <a onclick=\"cmd('link?http://www.howtogeek.com/252047/how-to-install-and-manage-snap-packages-on-ubuntu-16.04-lts/');cmd('')\">Learn more</a>"
+		}
+	},
+	{
+		"id": "screenshot",
+		"name": "Budgie Screenshot Applet",
+		"description": "<strong>Budgie Screenshot Applet</strong> is an advanced screenshot utility for capturing and organizing screenshots. This screenshot applet is actually a wrapper over gnome-screenshot utility. Screenshot applet let you to view recent screenshots and upload images directly to <em>Imgur</em> and <em>Imagebin</em>",
+		"image": "img/screenshots/screenshot-applet.jpg",
+		"additional-descriptions": [
+			"The <span name=\"distro-name\"></span> provides you an easy way to install screenshot applet. After installation you need to <strong>manually add applet to budgie panel by launching <a onclick=\"cmd('raven');cmd('')\">Raven</a></strong> - The Budgie Configuration Center."
+		],
+		"install-message": "Install Screenshot Applet",
+		"post-install-message": "Screenshot Applet is installed"
+	},
+	{
+		"id": "flatpak",
+		"name": "Flatpak",
+		"description": "<strong>Flatpak</strong> is a new generation application distribution framework for GNU/Linux platforms. It introduced a unified packaging format across all GNU/Linux distributions. That means a single package can work on any platforms. Flatpak helps application developers to ship their application in a single format which can be installed in any GNU/Linux distribution without worrying about underlying operating system and it's built-in libraries.",
+		"image": "img/logos/flatpak.svg",
+		"additional-descriptions": [
+			"The <span name=\"distro-name\"></span> recommends to install <strong>Flatpak</strong> as it will open a new world of possiblities for you. With Flatpak, you can enjoy latest release of different software packages as soon as it is packed by upstream project and you don't have to wait for your distribution to package it for you. Flatpak is the future of packaging, and more and more developers are moving to Flatpak packaging. This will increase availability of software packages drastically.",
+			"Being a user friendly GNU/Linux distribution, <span name='distro-name'></span> allows you to install Flatpak with a single click. After first time configuration, you can use GNOME Software to install Flatpak packages."
+		],
+		"additional-components": [
+			"<a onclick=\"cmd('link?http://flatpak.org/#about')\" class=\"btn btn-inverse\">Learn more</a>"
+		],
+		"install-message": "Install & Configure Flatpak",
+		"post-install-message": "Flatpak is installed"
+	},
+	{
+		"id": "skippy-xd",
+		"name": "skippy-xd",
+		"description": "<strong>skippy-xd</strong> adds a window expose type capability through a keyboard shortcut. For most desktops skippy-xd works well.  Note: For some multi-monitor setups, graphics drivers and within virtual machines such as VirtualBox it may not work correctly.",
+		"image": "img/logos/skippy-xd.png",
+		"additional-descriptions": [
+			"By default the installer will create a custom keyboard shortcut CTRL+TAB. You can define or change the keyboard shortcut through the Settings - Keyboard - Custom Shortcuts option. Use the command <strong>skippy-xd-toggle</strong> when defining your own custom keyboard shortcut."
+		],
+		"install-message": "Install & Configure skippy-xd",
+		"post-install-message": "skippy-xd is installed"
+	},
+	{
+		"id": "steam",
+		"name": "Steam",
+		"description": "<strong>Steam</strong> is a digital distribution platform developed by Valve Corporation offering digital rights management (DRM), multiplayer gaming and social networking services. Steam provides the user with installation and automatic updating of games on multiple computers, and community features such as friends lists and groups, cloud saving, and in-game voice and chat functionality. The software provides a freely available application programming interface (API) called Steamworks, which developers can use to integrate many of Steam's functions into their products, including networking, matchmaking, in-game achievements, micro-transactions, and support for user-created content through Steam Workshop.",
+		"image": "img/logos/steam.png",
+		"additional-descriptions": [
+			"Being a proprietary software, Steam is not included in primary repositories of <span name=\"distro-name\"></span>. However, to provide more choice to users, Steam is shipped as a part of <em>Multiverse</em> repository. <span name=\"distro-name\"></span> provides you option to install enable <em>Multiverse</em> repository and to install Steam with a single mouse click."
+		],
+		"install-message": "Install & Configure Steam",
+		"post-install-message": "Steam is installed"
+	}
+]

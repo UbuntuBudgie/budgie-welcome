@@ -6,6 +6,7 @@
 # Copyright 2014 Antergos
 # Copyright 2016 Ubuntu Mate
 # Copyright 2016 budgie-remix
+# Copyright 2016 Ubuntu Budgie
 #
 # budgie-remix welcome is free software: you can redistribute it and/or modify
 # it under the temms of the GNU General Public License as published by
@@ -67,8 +68,6 @@ class AppView(WebKit2.WebView):
         # broadcast event any suitable controllers will be able to listen and
         # respond accordingly, for now we just use jQuery to manually toggle
         current_page = app.current_page[:-5]
-        
-        self.run_javascript("$('span[name=\"distro-name\"]').html('{}')".format(systemstate.distroname))
         
         # Remove previously injected elements
         app.update_page('#menu-button', 'remove')
@@ -150,21 +149,14 @@ class AppView(WebKit2.WebView):
                 app.update_page('#style-undo', 'hide')
                 
         ### All pages with install/removal ###
-        if current_page in ['gettingstarted', 'recommendations', 'default']:
+        if current_page in ['gettingstarted', 'default']:
             app.update_page('[id$=install]', 'hide')
             app.update_page('[id$=remove]', 'hide')
             
             def checkInstallationStatus():
                 for code in pdata.getShortCodes(current_page):
-                    packages = pdata.getPackages(current_page, code)
+                    installed = pm.hasInstalled(current_page, code)
                     
-                    installed = True
-                    
-                    for package in packages:
-                        if not pm.hasInstalled(package):
-                            installed = False
-                            break
-                            
                     if installed:
                         app.update_page('#' + code + '-remove', 'fadeIn')
                     else:
@@ -173,7 +165,11 @@ class AppView(WebKit2.WebView):
             # separate thread.    
             thread = Thread(target = checkInstallationStatus)
             thread.start()
-                
+        elif current_page == 'recommendations':
+            rm.load_recommendations()
+        
+        self.run_javascript("$('span[name=\"distro-name\"]').html('{}')".format(systemstate.distroname))
+        
         # Apply intermediate actions, if any are present
         if current_page in systemstate.intermediate_actions:
             for action in systemstate.intermediate_actions[current_page]:
@@ -577,11 +573,17 @@ class PackageManager(Thread):
         self.running = True
         self.active = None
         
-    def hasInstalled(self, package):
-        try:
-            return self.cache[package].is_installed
-        except:
-            return False
+    def hasInstalled(self, current_page, code):
+        packages = pdata.getPackages(current_page, code)
+        
+        installed = True
+                    
+        for package in packages:
+            try:
+                installed = self.cache[package].is_installed
+            except:
+                installed = False
+        return installed
     
     def run(self):
         while self.running:
@@ -716,6 +718,105 @@ class PMEntry(object):
         # This is required to remove actions after installation
         # /removal
         self.filename = filename
+        
+class Recommendation(object):
+
+    def __init__(self, record):
+      
+        self.id = record["id"]
+        self.name = record["name"]
+        self.description = record["description"]
+        self.image = record["image"]
+        self.additional_descriptions = record.get("additional-descriptions")
+        self.additional_components = record.get("additional-components")
+        self.install_message = record.get("install-message")
+        self.post_install_message = record.get("post-install-message")
+        self.learn = record.get("learn")
+        
+        if self.learn:
+            self.learn_id = self.learn.get("id")
+            self.learn_title = self.learn.get("title")
+            self.learn_content = self.learn.get("content")
+            
+          
+    def update_status(self):
+        self.installed = pm.hasInstalled("recommendations", self.id)
+        
+    def get_entry(self):
+        
+        entry = "<div>"
+        entry += "<h2>{}</h2>".format(self.name)
+        entry += "<div class=\"card card-block\">"
+        entry += "<div class=\"card-image text-md-center\">\
+                  <img src=\"{}\" style=\"width: auto; max-height: 240px\"/>\
+                 </div>".format(self.image)
+        entry += "<p class=\"card-text\">{}</p>".format(self.description)
+        if self.additional_components:
+            for component in self.additional_components:
+                entry += component
+        entry += "</div>" # end of card-block
+        if self.additional_descriptions:
+            for description in self.additional_descriptions:
+                entry += "<p>{}</p>".format(description)
+        if self.learn != None:
+            entry += "<a onclick=\"$('#{}').fadeToggle()\">{}</a>".format(self.learn_id, self.learn_title)
+            entry += "<blockquote id=\"{}\" class=\"hidden\">{}</blockquote>".format(self.learn_id, self.learn_content)
+        
+        entry += "<div class=\"text-md-right\">"
+        if self.installed:
+            entry += "<span id=\"{}-remove\" class=\"alert alert-success\">\
+            <i class=\"material-icons\">&#xE876;</i>{}</span>".format(self.id, self.post_install_message)
+        else:
+            entry += "<a id=\"{}-install\" class=\"btn btn-success hvr-shadow\" onclick=\"cmd('install?{}');cmd('')\">\
+                  &nbsp;<span class=\"material-icons\">&#xE2C0;</span>{}&nbsp;</a>".format(self.id, self.id, self.install_message)
+        entry += "<span id=\"{}-status\" class=\"hidden\"><img src=\"img/welcome/processing.gif\" \
+        width=\"24px\" height=\"24px\"/> &zwnj;Applying Changes...&zwnj;</span>".format(self.id)
+        entry += "</div>"
+        
+        entry += "</div>"
+        entry += "<hr/>"
+        
+        return entry
+        
+        
+    def __lt__(self, other):
+        if self.installed == other.installed:
+            return self.id < other.id
+            
+        if self.installed == False and other.installed == True:
+            return True
+        else:
+            return False
+            
+    def __repr__(self):
+        return self.id + " => " + str(self.installed)
+        
+        
+class RecommendationManager(object):
+
+    def __init__(self):
+        with open(app._data_path + "/config/recommendations.json") as file:
+            _records = json.load(file)
+            
+        self._recommendations = []
+        
+        for record in _records:
+            recommendation = Recommendation(record)
+            self._recommendations.append(recommendation)
+            
+    def load_recommendations(self):
+        content = ""
+        
+        for recommendation in self._recommendations:
+            recommendation.update_status()
+
+        self._recommendations.sort()
+        
+        for recommendation in self._recommendations:
+            content += recommendation.get_entry()
+            
+        app.update_page("#recommendation-list", "html", content)
+
 
 class SystemState(object):
     
@@ -1148,7 +1249,7 @@ class WelcomeApp(object):
         self.json_path = self._data_path + "/config/packages.json"    
         
         if arg.jump_to:
-            self._start_page = arg.jump_to
+            self._start_page = arg.jump_to + ".html"
         else:
             self._start_page = 'index.html'
 
@@ -1361,7 +1462,6 @@ if __name__ == "__main__":
     pm_queue = Queue()
     pm = PackageManager(pm_queue)
     pm.start()
-    
     # Init notification
     try:
         NotifyInit("budgie-welcome")
@@ -1372,6 +1472,7 @@ if __name__ == "__main__":
     
     app = WelcomeApp()
     pdata = PackageData()
+    rm = RecommendationManager()
     app.run()
     
     
