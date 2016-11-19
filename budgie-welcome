@@ -127,7 +127,8 @@ class AppView(WebKit2.WebView):
             else:
                 app.update_page('.graphics-unknown', 'fadeIn')
               
-            
+            thread = Thread(target = self.check_animation_status)
+            thread.start()
         ### Index Page ###
         elif current_page == 'index':
             if systemstate.autostart:
@@ -195,6 +196,19 @@ class AppView(WebKit2.WebView):
     def _context_menu_cb(self, webview, menu, event, htr, user_data=None):
         # Disable context menu.
         return True
+        
+    def check_animation_status(self):
+        gsettings = Gio.Settings.new("org.gnome.settings-daemon.plugins.remote-display")
+        display = gsettings.get_boolean("active")
+        gsettings = Gio.Settings.new("org.gnome.desktop.interface")
+        animation = gsettings.get_boolean("enable-animations")
+        
+        if display or animation:
+          app.update_page('#performance-install', 'show')
+          app.update_page('#performance-remove', 'hide')
+        else:
+          app.update_page('#performance-install', 'hide')
+          app.update_page('#performance-remove', 'show')
 
     def _do_command(self, uri):
         
@@ -239,6 +253,25 @@ class AppView(WebKit2.WebView):
             code = uri[7:]
                 
             self.managePackage(PMEntry.REMOVE, app.current_page[:-5], code)
+        elif uri.startswith('script?'):
+            code = uri[7:]
+            script = pdata.getScript(app.current_page[:-5], code)
+            root = pdata.getRootRequirement(app.current_page[:-5], code)
+            
+            def run_script(script, root):
+                
+                if root:
+                    process = subprocess.Popen(['pkexec', start_location + 'budgie-welcome-privileged-actions', "SCRIPT", filename, root])
+                else:
+                    process = subprocess.Popen(['sh', script])
+                
+                p = process.wait()
+                
+                self._push_config()
+            
+            script = app._data_path + "/scripts/" + script
+            run_script(script, root)
+            
             
         elif uri.startswith('install-os'):
             if uri == 'install-os':
@@ -576,6 +609,8 @@ class PackageManager(Thread):
     def hasInstalled(self, current_page, code):
         packages = pdata.getPackages(current_page, code)
         
+        if not packages: return
+        
         installed = True
                     
         for package in packages:
@@ -703,9 +738,22 @@ class PackageData(object):
         except KeyError:
             return None
             
+    def getScript(self, filename, code):
+        try:
+            return self.data[filename][code]["script"]
+        except KeyError:
+            return None
+            
+    def getRootRequirement(self, filename, code):
+        try:
+            return self.data[filename][code]["root"]
+        except KeyError:
+            return None
+            
 class PMEntry(object):
     INSTALL = 0
     REMOVE = 1
+    SCRIPT = 2
     
     def __init__(self, task, filename, code, actions):
         self.task = task

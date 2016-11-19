@@ -62,6 +62,14 @@ def remove(fname, code):
     
     return retval
     
+def run_script(fname):
+ 
+    process = subprocess.Popen(['sh', fname])
+    
+    retval = process.wait()
+    
+    return retval
+    
 class PackageData(object):
 
     def __init__(self, json_path):
@@ -79,7 +87,7 @@ class PackageData(object):
  
 if __name__ == "__main__":
     '''
-        args[1]  action to perform (INSTALL/REMOVE)
+        args[1]  action to perform (INSTALL/REMOVE/SCRIPT)
         args[2]  file name in which package is listed
         args[3]  code name for package
         args[4]  path to json file containing package details
@@ -102,5 +110,7 @@ if __name__ == "__main__":
         retval = install(fname, code)
     elif action == 'REMOVE':
         retval = remove(fname, code)
-        
+    elif action == 'SCRIPT':
+        # fname -> script name, code -> requires root privilage?
+        retval = run_script(fname, code)
     sys.exit(retval)

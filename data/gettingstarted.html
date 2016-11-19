@@ -24,29 +24,51 @@
       <!-- Shown in live session only -->
       <div class="live-session-only">
         <span><h5>Prerequisites</h5></span>
-        <a class="btn btn-inverse index-btn" onclick='changePage("sysreq","System Requirements")'>        <span class="fa fa-laptop"></span>        System Requirements</a>
-        <a class="btn btn-inverse index-btn" onclick='changePage("prepare","Installation Preparations")'> <span class="fa fa-hdd-o"></span>         Installation Preparation</a>
-        <a class="btn btn-inverse index-btn" onclick='changePage("dualboot","Dual Booting")'>             <span class="fa fa-retweet"></span>       Dual Booting</a>
-        <a class="btn btn-primary index-btn" onclick="cmd('install')">                                                <i class="material-icons">&#xE2C4;</i>      Install Now</a>
+        <a class="btn btn-inverse index-btn" onclick='changePage("sysreq","System Requirements")'>
+          <i class="material-icons">&#xE31E;</i>System Requirements
+        </a>
+        <a class="btn btn-inverse index-btn" onclick='changePage("prepare","Installation Preparations")'>
+          <i class="material-icons">&#xE322;</i>Installation Preparation
+        </a>
+        <a class="btn btn-inverse index-btn" onclick='changePage("dualboot","Dual Booting")'>
+          <i class="material-icons">&#xE401;</i>Dual Booting
+        </a>
+        <a class="btn btn-primary index-btn" onclick="cmd('install')">
+          <i class="material-icons">&#xE2C4;</i>Install Now
+        </a>
       </div>
       <!-- Shown when installed -->
       <div class="normal-session-only">
-        <br/>
-        <span class="normal-session-only"><h5>Post-Installation</h5></span>
-        <a class="btn btn-inverse index-btn"      onclick='changePage("updates","Updates & Extras")'>          <span class="fa fa-refresh"></span>       Updates & Extras</a>
-        <a class="btn btn-inverse index-btn"      onclick='changePage("drivers","Drivers")'>                   <span class="fa fa-gear"></span>          Drivers</a>
-        <a class="btn btn-inverse index-btn"      onclick='changePage("languageInput","Language & Input")'>    <span class="fa fa-globe"></span>         Language & Input</a>
-        <a class="btn btn-inverse index-btn"      onclick='changePage("tasks","Optional Tasks")'>
-          <span class="fa fa-check-square"></span>  Optional Tasks
+        <h5>Post-Installation</h5>
+        <a class="btn btn-inverse index-btn" onclick='changePage("updates","Updates & Extras")'>
+          <i class="material-icons">&#xE5D5;</i>Updates & Extras
+        </a>
+        <a class="btn btn-inverse index-btn" onclick='changePage("drivers","Drivers")'>
+          <i class="material-icons">&#xE8B9;</i>Drivers
+        </a>
+        <a class="btn btn-inverse index-btn" onclick='changePage("languageInput","Language & Input")'>
+          <i class="material-icons">&#xE894;</i>Language & Input
+        </a>
+        <a class="btn btn-inverse index-btn" onclick='changePage("tasks","Optional Tasks")'>
+          <i class="material-icons">&#xE834;</i></span>  Optional Tasks
         </a>
       </div>
       <br><h5>Familiarity</h5>
-      <a class="btn btn-inverse index-btn"                   onclick='changePage("customize","Customization")'>           <span class="fa fa-adjust"></span>        Customization</a>
-      <a class="btn btn-inverse index-btn"                   onclick='changePage("shortcuts","Keyboard Shortcuts")'>      <span class="fa fa-keyboard-o"></span>    Keyboard Shortcuts</a>
+      <a class="btn btn-inverse index-btn" onclick='changePage("performance", "Performance tuning")'>
+        <i class="material-icons">&#xE90F;</i> Performance tuning
+      </a>
+      <a class="btn btn-inverse index-btn" onclick='changePage("customize","Customization")'>
+        <i class="material-icons">&#xE8A4;</i>Customization
+      </a>
+      <a class="btn btn-inverse index-btn" onclick='changePage("shortcuts","Keyboard Shortcuts")'>
+        <i class="material-icons">&#xE312;</i>Keyboard Shortcuts
+      </a>
 
       <!-- Shown in either session -->
-      <br><h5>Troubleshooting</h5>
-      <a class="btn btn-inverse index-btn"     onclick='changePage("specs","System Specifications"); InitSystemInfo()'> <span class="fa fa-laptop"></span>        System Specifications</a>
+      <h5>Troubleshooting</h5>
+      <a class="btn btn-inverse index-btn" onclick='changePage("specs","System Specifications"); InitSystemInfo()'>
+        <i class="material-icons">&#xE31E;</i>System Specifications
+      </a>
 
     </div>
     <div id="content" class="container entire-page-fade">
@@ -724,6 +746,30 @@
             <i class="material-icons">&#xE314;</i> <b>Previous:</b>&nbsp; Language Input</a>
           <a class="btn" onclick='changePage("customize","Customization")'>
             <b>Next:</b>&nbsp; Customization <i class="material-icons">&#xE315;</i></a>
+        </div>
+      </div>
+      
+      <!-- Performance tuning -->
+      <div id="performance" class="topicContents">
+        <div class="row">
+          <div class="col-md-12">
+            <p>The <span name="distro-name"></span> comes with cool effects and animations to provide you a
+            smooth user experience. However, these effects may not play well inside Virtual Machines and
+            in low resource system.</p>
+            
+            <p>So we provide an option to toggle animation and remote networking to get improved performance
+            inside Virtual Machines and low resource computers</p>
+            
+            <div class="text-md-center">
+              <a id="performance-install" class="btn btn-danger" onclick="cmd('script?enable_performance');cmd('')">
+                <i class="material-icons">&#xE909;</i><span class="button-text">Disable animations & Remote display</span>
+              </a>
+              <a id="performance-remove" class="btn btn-success" onclick="cmd('script?disable_performance');cmd('')">
+                <i class="material-icons">&#xE834;</i><span class="button-text">Enable animations & Remote display</span>
+              </a>
+            <span id="performance-status" class="hidden"><img src="img/welcome/processing.gif" width="24px"/> Applying Changes...</span>
+            </div>
+          </div>
         </div>
       </div>
 

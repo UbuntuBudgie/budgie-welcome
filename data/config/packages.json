@@ -41,6 +41,14 @@
     },
     "firewall" : {
       "packages" : ["gufw"]
+    },
+    "enable_performance" : {
+      "root" : false,
+      "script" : "enable_performance"
+    },
+    "disable_performance" : {
+      "root" : false,
+      "script" : "disable_performance"
     }
   },
   "default" : {

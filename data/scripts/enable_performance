@@ -1,0 +1,6 @@
+#!/bin/sh
+
+gsettings set org.gnome.settings-daemon.plugins.remote-display active false
+gsettings set org.gnome.desktop.interface enable-animations false
+
+nohup budgie-panel --replace &
