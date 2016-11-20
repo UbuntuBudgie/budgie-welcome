@@ -135,6 +135,8 @@ class AppView(WebKit2.WebView):
                 app.update_page('#autostart', 'html', '&#xE837;')
             else:
                 app.update_page('#autostart', 'html', '&#xE836;')
+
+            self.run_javascript('$("#wordmark").attr("src","img/welcome/' + systemstate.distro_wordmark + '");')
                 
         elif current_page == 'default':
             panel_backup = localdir + '/panel-backup.conf'
@@ -942,8 +944,10 @@ class SystemState(object):
 
         if int(self.os_version[:2]) >= 17:
             self.distroname = 'Ubuntu Budgie'
+            self.distro_wordmark = 'ubuntu-budgie-wordmark.svg'
         else:
             self.distroname = 'budgie-remix'
+            self.distro_wordmark = 'budgie-remix-wordmark.svg'
 
     def autostart_check(self):
         # Ensure our autostart directories exist
