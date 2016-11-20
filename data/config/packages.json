@@ -42,6 +42,12 @@
     "firewall" : {
       "packages" : ["gufw"]
     },
+    "firefox" : {
+      "packages" : ["firefox"]
+    },
+    "chromium" : {
+      "packages" : ["chromium-browser"]
+    },
     "enable_performance" : {
       "root" : false,
       "script" : "enable_performance"

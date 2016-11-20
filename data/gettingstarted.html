@@ -60,6 +60,8 @@
       <a class="btn btn-inverse index-btn" onclick='changePage("customize","Customization")'>
         <i class="material-icons">&#xE8A4;</i>Customization
       </a>
+      <a class="btn btn-inverse index-btn" onclick='changePage("browsers", "Browser Ballot")'>
+        <i class="material-icons">&#xE8D9;</i>Browser Ballot 
       <a class="btn btn-inverse index-btn" onclick='changePage("shortcuts","Keyboard Shortcuts")'>
         <i class="material-icons">&#xE312;</i>Keyboard Shortcuts
       </a>
@@ -767,8 +769,46 @@
               <a id="performance-remove" class="btn btn-success" onclick="cmd('script?disable_performance');cmd('')">
                 <i class="material-icons">&#xE834;</i><span class="button-text">Enable animations & Remote display</span>
               </a>
-            <span id="performance-status" class="hidden"><img src="img/welcome/processing.gif" width="24px"/> Applying Changes...</span>
+              <span id="performance-status" class="hidden"><img src="img/welcome/processing.gif" width="24px"/> Applying Changes...</span>
             </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Browser Ballot -->
+      <div id="browsers" class="topicContents">
+        To improve the amount of customizability, <span name="distro-name"></span> allows you to install/remove popular
+        web browsers with a single click.
+        <div class="row text-md-center">
+          <div class="col-md-6 application">
+            <h4>Chromium</h4>
+            <img src="img/applications/chromium.svg"/>
+            <p class="text-md-justify">Chromium is an open-source browser project that aims to build a safer, 
+            faster, and more stable way for all Internet users to experience the web.</p>
+            <a id="chromium-install" class="btn btn-success" onclick="cmd('install?chromium');cmd('')">
+              <span class="material-icons">&#xE2C0;</span><span class="button-text">Install</span>
+            </a>
+            <a id="chromium-remove" class="btn btn-danger" onclick="cmd('remove?chromium');cmd('')">
+              <span class="material-icons">&#xE872;</span><span class="button-text">Remove</span>
+            </a>
+            <span id="chromium-status" class="hidden">
+              <img src="img/welcome/processing.gif" style="width:24px" /> Applying Changes...
+            </span>
+          </div>
+          <div class="col-md-6 application">
+            <h4>Firefox</h4>
+            <img src="img/applications/firefox.svg"/>
+            <p class="text-md-justify">Mozilla Firefox is world's most popular open source web browser, developed
+            by Mozilla Foundation and it's subsidiary Mozilla Corporation.</p>
+            <a id="firefox-install" class="btn btn-success" onclick="cmd('install?firefox');cmd('')">
+              <span class="material-icons">&#xE2C0;</span><span class="button-text">Install</span>
+            </a>
+            <a id="firefox-remove" class="btn btn-danger" onclick="cmd('remove?firefox');cmd('')">
+              <span class="material-icons">&#xE872;</span><span class="button-text">Remove</span>
+            </a>
+            <span id="firefox-status" class="hidden">
+              <img src="img/welcome/processing.gif" style="width:24px" /> Applying Changes...
+            </span>
           </div>
         </div>
       </div>

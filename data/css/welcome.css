@@ -689,6 +689,25 @@ hr.soften-light {
 }
 
 /************************
+* Getting Started - Browser Ballot
+************************/
+
+.application {
+  padding: 5px;
+}
+
+.application img {
+  padding-bottom: 5px;
+  width: 72px;
+}
+
+.application .btn {
+  max-width: 160px;
+  display: block;
+  margin: auto;
+}
+
+/************************
  * Community page styles
 *************************/
 .social-banner {
@@ -766,7 +785,9 @@ a:hover:not([href]):not([tabindex]).btn {
   color: white
 }
 
-
+.text-md-justify {
+  text-align: justify
+}
 /* button hover effect **/
 /* source: https://github.com/IanLunn/Hover/blob/master/css/hover.css*/
 /* Shadow */
