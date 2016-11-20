@@ -936,11 +936,15 @@ class SystemState(object):
         # Hard code distributin name, as running external commands would take
         # more time and it will give content mismatch if run in a different OS.
         # self.distroname = self.run_external_command(['lsb_release','-i','-s'])
-        self.distroname = 'budgie-remix'
         
         self.os_version = platform.dist()[1]    # → 14.04, 15.10, 16.04
         self.codename = platform.dist()[2]      # → trusty, wily, xenial
-    
+
+        if int(self.os_version[:2]) >= 17:
+            self.distroname = 'Ubuntu Budgie'
+        else:
+            self.distroname = 'budgie-remix'
+
     def autostart_check(self):
         # Ensure our autostart directories exist
         if not os.path.exists(self._autostart_dir):
