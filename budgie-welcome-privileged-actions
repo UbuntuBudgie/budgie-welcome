@@ -111,6 +111,6 @@ if __name__ == "__main__":
     elif action == 'REMOVE':
         retval = remove(fname, code)
     elif action == 'SCRIPT':
-        # fname -> script name, code -> requires root privilage?
+        # fname -> script name, code -> requires root privilege?
         retval = run_script(fname, code)
     sys.exit(retval)

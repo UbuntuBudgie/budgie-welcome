@@ -7,9 +7,9 @@ Build-Depends:
     python3,
     node-uglify
 Standards-Version: 3.9.7
-Homepage: https://github.com/budgie-remix/budgie-welcome
-Vcs-Browser: https://github.com/budgie-remix/budgie-welcome
-Vcs-Git: https://github.com/budgie-remix/budgie-welcome.git
+Homepage: https://github.com/UbuntuBudgie/budgie-welcome
+Vcs-Browser: https://github.com/UbuntuBudgie/budgie-welcome
+Vcs-Git: https://github.com/UbuntuBudgie/budgie-welcome.git
 
 
 Package: budgie-welcome
@@ -24,8 +24,8 @@ Depends: gir1.2-gtk-3.0,
          xdotool,
          ${misc:Depends}
 Recommends: update-manager
-Description: Welcome screen for budgie-remix
- A welcome screen for budgie-remix that provides links to helpful
+Description: Welcome screen for Ubuntu Budgie
+ A welcome screen for Ubuntu Budgie that provides links to helpful
  resources and utilities. For new user accounts and a live-session
  the welcome application displays information about Ubuntu,
  budgie-desktop together with presenting options to tailor the look

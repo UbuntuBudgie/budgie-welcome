@@ -315,7 +315,7 @@ class AppView(WebKit2.WebView):
                 # There is some problem with showing notification in this module
                 if retval == 0:
                     pass
-                    # Notifier(Notifier.INFO, "Panel  " + operation + " completed succesfully").show()
+                    # Notifier(Notifier.INFO, "Panel  " + operation + " completed successfully").show()
                 else:
                     dbg.stdout("Failed to perform panel operation", 0, 0)
                     # Notifier(Notifier.ERROR, "Panel  " + operation + " failed").show()
@@ -724,7 +724,7 @@ class PackageData(object):
     Map some short codes with packages. Install/Remove buttons
     will be represented by short code like #code-remove and 
     #code-install. This will allow to check installation status
-    of each package using a loop instead of checking seperately
+    of each package using a loop instead of checking separately
     '''
 
     def __init__(self):
