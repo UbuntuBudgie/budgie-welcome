@@ -395,10 +395,10 @@ class AppView(WebKit2.WebView):
                         shutil.move(localdir + '/gtk.css', panelstyle)
                     
                     os.remove(theme)
-                elif code == "material":
+                if code == "material":
                     # Make transparent panel
                     with open(panelstyle, "w") as file:
-                        file.write(".budgie-panel {background-color: rgba(0, 0, 0, 0.1);}")
+                        file.write(".budgie-panel {background-color: rgba(0, 0, 0, 0.3);}")
                 else:
                     # Don't allow theme over writing
                     try:
