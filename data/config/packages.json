@@ -48,6 +48,10 @@
     "chromium" : {
       "packages" : ["chromium-browser"]
     },
+    "chrome" : {
+      "packages" : ["google-chrome-stable"],
+      "repos" : ["deb http://dl.google.com/linux/chrome/deb/ stable main"]
+    },
     "enable_performance" : {
       "root" : false,
       "script" : "enable_performance"
