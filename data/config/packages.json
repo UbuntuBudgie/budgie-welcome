@@ -52,6 +52,17 @@
       "packages" : ["google-chrome-stable"],
       "repos" : ["deb http://dl.google.com/linux/chrome/deb/ stable main"]
     },
+    "opera" : {
+      "packages" : ["opera-stable"],
+      "repos" : ["deb https://deb.opera.com/opera-stable/ stable non-free"],
+      "key-commands" : ["wget -qO- https://deb.opera.com/archive.key | apt-key add -"]
+    },
+    "vivaldi" : {
+      "packages" : ["vivaldi-stable"],
+      "repos" : ["deb http://repo.vivaldi.com/stable/deb/ stable main"],
+      "key-commands" : ["curl http://repo.vivaldi.com/stable/linux_signing_key.pub | sudo apt-key add -",
+                        "apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 1397BC53640DB551"]
+    },
     "enable_performance" : {
       "root" : false,
       "script" : "enable_performance"

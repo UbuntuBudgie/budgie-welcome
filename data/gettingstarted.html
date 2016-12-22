@@ -813,12 +813,11 @@
         </div>
         <hr>
         <div class="row text-md-center">
-          <div class="col-md-6 application push-md-3">
+          <div class="col-md-6 application">
             <h4>Google Chrome</h4>
             <img src="img/applications/chrome.png"/>
             <p class="text-md-justify">Google Chrome is a modern web browser backed by internet gigant Google. It
-            supports most of the html5 standards, a wide range of media codecs and offers a smooth browsing 
-            experience.</p>
+            offers a smooth browsing experience.</p>
             <a id="chrome-install" class="btn btn-success" onclick="cmd('install?chrome');cmd('')">
               <span class="material-icons">&#xE2C0;</span><span class="button-text">Install</span>
             </a>
@@ -829,7 +828,41 @@
               <img src="img/welcome/processing.gif" style="width:24px" /> Applying Changes...
             </span>
           </div>
+          <div class="col-md-6 application">
+            <h4>Vivaldi</h4>
+            <img src="img/applications/vivaldi.png"/>
+            <p class="text-md-justify">Vivaldi Web Browser is a free, fully customizable web browser. 
+            Feature rich, powerful, secure and fun! Browse the Web your way</p>
+            <a id="vivaldi-install" class="btn btn-success" onclick="cmd('install?vivaldi');cmd('')">
+              <span class="material-icons">&#xE2C0;</span><span class="button-text">Install</span>
+            </a>
+            <a id="vivaldi-remove" class="btn btn-danger" onclick="cmd('remove?vivaldi');cmd('')">
+              <span class="material-icons">&#xE872;</span><span class="button-text">Remove</span>
+            </a>
+            <span id="vivaldi-status" class="hidden">
+              <img src="img/welcome/processing.gif" style="width:24px" /> Applying Changes...
+            </span>
+          </div>
         </div>
+        <hr>
+        <!--
+        <div class="row text-md-center">
+          <div class="col-md-6 application push-md-3">
+            <h4>Opera</h4>
+            <img src="img/applications/opera.svg"/>
+            <p class="text-md-justify">Opera is a fast and secure browser. Developed in Europe, 
+            used by millions around the world. Now with a built-in ad blocker and free VPN.</p>
+            <a id="opera-install" class="btn btn-success" onclick="cmd('install?opera');cmd('')">
+              <span class="material-icons">&#xE2C0;</span><span class="button-text">Install</span>
+            </a>
+            <a id="opera-remove" class="btn btn-danger" onclick="cmd('remove?opera');cmd('')">
+              <span class="material-icons">&#xE872;</span><span class="button-text">Remove</span>
+            </a>
+            <span id="opera-status" class="hidden">
+              <img src="img/welcome/processing.gif" style="width:24px" /> Applying Changes...
+            </span>
+          </div>
+        </div>-->
       </div>
 
       <!-- Customizing the Experience -->

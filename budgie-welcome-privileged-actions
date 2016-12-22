@@ -11,7 +11,7 @@ import aptsources
  Should replace apt command with python-apt module.
 '''
 
-def add_repos(repos):
+def add_repos(repos, key_commands):
 
     if not repos: return 0  
     
@@ -28,6 +28,10 @@ def add_repos(repos):
             sp.add_source_from_shortcut(shortcut_handler(repo))
     sp.sourceslist.save()
     
+    if key_commands:
+        for key_command in key_commands:
+            subprocess.call(key_command, shell=True)
+    
     # Update always. Ideally, this should be done only if a new repo is added
     # to list
     p = subprocess.Popen(['apt', 'update'])
@@ -39,8 +43,9 @@ def install(fname, code):
     repos = info.get("repos")
     packages = info.get("packages")
     excludes = info.get("excludes")
+    key_commands = info.get("key-commands")
     
-    retval = add_repos(repos)
+    retval = add_repos(repos, key_commands)
     
     if excludes != None:
         for exclude in excludes:
