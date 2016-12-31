@@ -7,7 +7,7 @@ Welcome screen app to greet new users on their first login
 ### Installation
 
 ```sh
-sudo apt install gir1.2-webkit-3.0 python3-notify2 node-uglify
+sudo apt install gir1.2-webkit2-4.0 python3-notify2 node-uglify
 git clone https://github.com/UbuntuBudgie/budgie-welcome.git
 
 uglifyjs -o data/js/bootstrap.min.js data/js/bootstrap.js
