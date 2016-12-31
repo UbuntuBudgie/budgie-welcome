@@ -14,9 +14,8 @@ else
 fi
 
 # Reset and restart panel
-dconf reset -f /com/solus-project/budgie-panel/
 
-nohup budgie-panel --replace &
+nohup budgie-panel --reset --replace &
 
 # Just give sometime for panel to restart
 sleep 2
