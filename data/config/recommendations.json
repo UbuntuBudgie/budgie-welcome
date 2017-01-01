@@ -2,7 +2,7 @@
 	{
 		"id": "snap",
 		"name": "Snap",
-		"description": "<strong>Snap</strong> is a new generation application packaging format developed by <em>Canonical</em>. Even though it was initially developed just for different Ubuntu platforms, currently it work in many other GNU/Linux distributions. It will help application developers to provide a unified package that can work on different platforms. By using snap package format, applications can have their own version of libraries and there is no need to worry about libraries installed in underlying operating system. Snap packages enable developers to bring much newer versions of apps to <span name=\"distro-name\"></span>. Newer versions of KDE, GNOME, browser or other desktop environment apps will usually build easily on older LTS releases but the complexities of packaging and providing updates have prevented us from delivering them in the past.",
+		"description": "<strong>Snap</strong> is a new generation application packaging format developed by <em>Canonical</em>. Even though it was initially developed just for different Ubuntu platforms, currently it works in many other GNU/Linux distributions. It will help application developers to provide a unified package that can work on different platforms. By using snap package format, applications can have their own version of libraries and there is no need to worry about libraries installed in underlying operating system. Snap packages enable developers to bring much newer versions of apps to <span name=\"distro-name\"></span>. Newer versions of KDE, GNOME, browsers or other desktop environment apps will usually build easily on older LTS releases but the complexities of packaging and providing updates have prevented us from delivering them in the past.",
 		"image": "img/logos/snap.png",
 		"additional-components": [
 			"<a onclick=\"cmd('link?https://insights.ubuntu.com/2016/04/13/snaps-for-classic-ubuntu')\" class=\"btn btn-inverse\">Learn more</a>"
@@ -18,10 +18,10 @@
 	{
 		"id": "screenshot",
 		"name": "Budgie Screenshot Applet",
-		"description": "<strong>Budgie Screenshot Applet</strong> is an advanced screenshot utility for capturing and organizing screenshots. This screenshot applet is actually a wrapper over gnome-screenshot utility. Screenshot applet let you to view recent screenshots and upload images directly to <em>Imgur</em> and <em>Imagebin</em>",
+		"description": "<strong>Budgie Screenshot Applet</strong> is an advanced screenshot utility for capturing and organizing screenshots. This screenshot applet is actually a wrapper over gnome-screenshot utility. It lets you view recent screenshots and upload images directly to <em>Imgur</em> and <em>Imagebin</em>",
 		"image": "img/screenshots/screenshot-applet.jpg",
 		"additional-descriptions": [
-			"The <span name=\"distro-name\"></span> provides you an easy way to install screenshot applet. After installation you need to <strong>manually add applet to budgie panel by launching <a onclick=\"cmd('raven');cmd('')\">Raven</a></strong> - The Budgie Configuration Center."
+			"<span name=\"distro-name\"></span> provides you with an easy way to install <strong>Budgie Screenshot Applet</strong>. After installation you need to <strong>manually add the applet to budgie panel by launching <a onclick=\"cmd('raven');cmd('')\">Raven</a></strong> - The Budgie Configuration Center."
 		],
 		"install-message": "Install Screenshot Applet",
 		"post-install-message": "Screenshot Applet is installed"
@@ -29,10 +29,10 @@
 	{
 		"id": "flatpak",
 		"name": "Flatpak",
-		"description": "<strong>Flatpak</strong> is a new generation application distribution framework for GNU/Linux platforms. It introduced a unified packaging format across all GNU/Linux distributions. That means a single package can work on any platforms. Flatpak helps application developers to ship their application in a single format which can be installed in any GNU/Linux distribution without worrying about underlying operating system and it's built-in libraries.",
+		"description": "<strong>Flatpak</strong> is a new generation application distribution framework for GNU/Linux platforms. It introduces a unified packaging format across all GNU/Linux distributions. That means a single package can work on any platform. Flatpak helps application developers to ship their application in a single format which can be installed in any GNU/Linux distribution without worrying about the underlying operating system and its built-in libraries.",
 		"image": "img/logos/flatpak.svg",
 		"additional-descriptions": [
-			"The <span name=\"distro-name\"></span> recommends to install <strong>Flatpak</strong> as it will open a new world of possibilities for you. With Flatpak, you can enjoy latest release of different software packages as soon as it is packed by upstream project and you don't have to wait for your distribution to package it for you. Flatpak is the future of packaging, and more and more developers are moving to Flatpak packaging. This will increase availability of software packages drastically.",
+			"<span name=\"distro-name\"></span> recommends installing <strong>Flatpak</strong> as it will open a new world of possibilities for you. With Flatpak, you can enjoy the latest release of different software packages as soon as it is packaged by the upstream project and you don't have to wait for your distribution to package it for you. Flatpak is the future of packaging, and more and more developers are moving to Flatpak packaging. This will increase availability of software packages drastically.",
 			"Being a user friendly GNU/Linux distribution, <span name='distro-name'></span> allows you to install Flatpak with a single click. After first time configuration, you can use GNOME Software to install Flatpak packages."
 		],
 		"additional-components": [
@@ -58,7 +58,7 @@
 		"description": "<strong>Steam</strong> is a digital distribution platform developed by Valve Corporation offering digital rights management (DRM), multiplayer gaming and social networking services. Steam provides the user with installation and automatic updating of games on multiple computers, and community features such as friends lists and groups, cloud saving, and in-game voice and chat functionality. The software provides a freely available application programming interface (API) called Steamworks, which developers can use to integrate many of Steam's functions into their products, including networking, matchmaking, in-game achievements, micro-transactions, and support for user-created content through Steam Workshop.",
 		"image": "img/logos/steam.png",
 		"additional-descriptions": [
-			"Being a proprietary software, Steam is not included in primary repositories of <span name=\"distro-name\"></span>. However, to provide more choice to users, Steam is shipped as a part of <em>Multiverse</em> repository. <span name=\"distro-name\"></span> provides you option to install enable <em>Multiverse</em> repository and to install Steam with a single mouse click."
+			"Being a proprietary software, Steam is not included in primary repositories of <span name=\"distro-name\"></span>. However, to provide more choice to users, Steam is shipped as a part of the <em>Multiverse</em> repository. <span name=\"distro-name\"></span> provides you option to enable the <em>Multiverse</em> repository and to install Steam with a single mouse click."
 		],
 		"install-message": "Install & Configure Steam",
 		"post-install-message": "Steam is installed"
