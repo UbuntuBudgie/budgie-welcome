@@ -1302,10 +1302,14 @@ class WelcomeApp(object):
             print('Unable to source the budgie-welcome data directory.')
             sys.exit(1)
         
-        self.json_path = self._data_path + "/config/packages.json"    
+        self.first_run = self._check_first_run()
+        
+        self.json_path = self._data_path + "/config/packages.json"
         
         if arg.jump_to:
             self._start_page = arg.jump_to + ".html"
+        elif self.first_run:
+            self._start_page = 'gettingstarted.html'
         else:
             self._start_page = 'index.html'
 
@@ -1387,6 +1391,17 @@ class WelcomeApp(object):
     def run_javascript(self, script):
         print("Running script", script)
         self.webkit.run_javascript(script)
+        
+    def _check_first_run(self):
+        file = os.path.join(localdir, 'firstrun')
+        if os.path.exists(file):
+            return False
+        
+        #Remove autostart file on first run.
+        os.remove(systemstate._autostart_path)
+        systemstate.autostart = False
+        os.mknod(file)
+        return True
 
 class Arguments(object):
     '''Check arguments passed the application.'''
