@@ -1394,7 +1394,7 @@ class WelcomeApp(object):
         
     def _check_first_run(self):
         file = os.path.join(localdir, 'firstrun')
-        if os.path.exists(file):
+        if os.path.exists(file) or systemstate.session_type == 'live':
             return False
         
         #Remove autostart file on first run.
