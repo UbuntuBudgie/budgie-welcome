@@ -1398,7 +1398,8 @@ class WelcomeApp(object):
             return False
         
         #Remove autostart file on first run.
-        os.remove(systemstate._autostart_path)
+        if os.path.exists(systemstate._autostart_path):
+            os.remove(systemstate._autostart_path)
         systemstate.autostart = False
         os.mknod(file)
         return True
