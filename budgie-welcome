@@ -285,7 +285,7 @@ class AppView(WebKit2.WebView):
                 return
                 
             if uri[11:] == 'yes':
-                subprocess.Popen(['sh', '-c', "ubiquity gtk_ui"])
+                subprocess.Popen(['sudo', 'sh', '-c', "ubiquity gtk_ui"])
                 app.close()
                 
         elif uri.startswith('panel'):
