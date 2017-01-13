@@ -6,6 +6,7 @@ import json
 from softwareproperties.SoftwareProperties \
   import SoftwareProperties, shortcut_handler
 import aptsources
+import platform
 
 '''
  Should replace apt command with python-apt module.
@@ -16,7 +17,13 @@ def add_repos(repos, key_commands):
     if not repos: return 0  
     
     sp = SoftwareProperties()
+
+    os_version = platform.dist()[1]    # → 14.04, 15.10, 16.04
+
     for repo in repos:
+        # switch the ppa name for budgie-remix to ubuntubudgie if required
+        if int(os_version[:2]) >= 17:
+            repo=repo.replace("budgie-remix/ppa", "ubuntubudgie/backports")
         # check if its a component that should be added/removed
         distro = aptsources.distro.get_distro()
         distro.get_sources(sp.sourceslist)
