@@ -151,6 +151,23 @@ class AppView(WebKit2.WebView):
             else:
                 app.update_page('#style-undo', 'hide')
                 
+        elif current_page == 'features':
+            if int(systemstate.os_version[:2]) >= 16:
+                browser_name = "Chromium"
+                browser_icon_path = "img/applications/chromium.png"
+                video_player_name = "GNOME MPV"
+                video_player_icon = "img/applications/gnome-mpv.png"
+            else:
+                browser_name = "Firefox"
+                browser_icon_path = "img/applications/firefox.png"
+                video_player_name = "GNOME Videos"
+                video_player_icon = "img/applications/totem.png"
+                
+            self.run_javascript("$('span[name=\"browser-name\"]').html('{}')".format(browser_name))
+            self.run_javascript('$("#browser-icon").attr("src","' + browser_icon_path + '");')
+            self.run_javascript("$('span[name=\"video-player-name\"]').html('{}')".format(video_player_name))
+            self.run_javascript('$("#video-player-icon").attr("src","' + video_player_icon + '");')
+
         ### All pages with install/removal ###
         if current_page in ['gettingstarted', 'default']:
             app.update_page('[id$=install]', 'hide')
