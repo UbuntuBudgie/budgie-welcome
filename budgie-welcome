@@ -294,16 +294,10 @@ class AppView(WebKit2.WebView):
             
         elif uri.startswith('install-os'):
             if uri == 'install-os':
-                message = "This will close Welcome App and launch installer. Do you want to proceed?"
-                actions = dict(YES = 'cmd(\'install-os?yes\')', NO = 'removeSlowly(\'#popup-message-window\')')
-                popup = PopupMessage(message, PopupMessage.CONFIRMATION, None, actions)
-                popup.showMessage()
-
-                return
-                
-            if uri[11:] == 'yes':
                 subprocess.Popen(['sudo', 'sh', '-c', "ubiquity gtk_ui"])
                 app.close()
+
+                return
                 
         elif uri.startswith('panel'):
         
@@ -340,9 +334,7 @@ class AppView(WebKit2.WebView):
                 self._push_config()
                 
             Thread(target = panelOperation).start()
-            
-            
-                
+
         elif uri == 'software-center':
             try:
                 subprocess.Popen(['gnome-software'])
@@ -425,8 +417,6 @@ class AppView(WebKit2.WebView):
                 
                 subprocess.Popen(['budgie-panel', '--replace'])
 
-
-                
                 self._push_config()
 
                 

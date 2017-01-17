@@ -8,14 +8,23 @@ backup="$HOME/.config/budgie-welcome/panel-backup.conf"
 if [ -f $backup ]
 then
   : #echo "Backup file found"
-else
-  #echo "Backup file not found, creating new file"
-  dconf dump /com/solus-project/budgie-panel/ > $backup
+  rm -rf $backup
 fi
 
-# Reset and restart panel
+dconf dump /com/solus-project/budgie-panel/ > $backup
 
-nohup budgie-panel --reset --replace &
+# Reset and restart panel
+# N.B. bug upstream due to GLIB version where the standard
+# reset method does not work
+
+if cat /etc/*release | grep "16.04" > /dev/null
+then
+    nohup budgie-panel --reset --replace &
+else
+    gsettings reset-recursively com.solus-project.budgie-panel
+    sleep 1
+    nohup budgie-panel --replace &
+fi
 
 # Just give sometime for panel to restart
 sleep 2

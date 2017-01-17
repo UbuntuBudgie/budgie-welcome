@@ -13,6 +13,8 @@ fi
 
 dconf load /com/solus-project/budgie-panel/ < $backup
 
+sleep 2
+
 rm -f $backup
 
 nohup budgie-panel --replace &
