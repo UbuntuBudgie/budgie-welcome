@@ -1,18 +1,5 @@
 #!/bin/sh
 
-# Check for backup file, if does n't exist create a new
-# file
-
-backup="$HOME/.config/budgie-welcome/panel-backup.conf"
-
-if [ -f $backup ]
-then
-  : #echo "Backup file found"
-  rm -rf $backup
-fi
-
-dconf dump /com/solus-project/budgie-panel/ > $backup
-
 # Reset and restart panel
 # N.B. bug upstream due to GLIB version where the standard
 # reset method does not work

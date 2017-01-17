@@ -1,7 +1,10 @@
-budgie-welcome (0.4.3) zesty; urgency=medium
+budgie-welcome (0.4.2.2) xenial; urgency=medium
 
   * New upstream release (LP: #)
     - Page description changes
+  * Bug-fix
+    - alternative panel reset method to workaround newer GLib issues
+    - do not popup message on live-session to resolve freeze
   * Packaging Changes
     - Copyright update for revised icons
 
