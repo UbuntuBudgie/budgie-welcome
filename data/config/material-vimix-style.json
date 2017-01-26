@@ -1,0 +1,26 @@
+[
+  {
+    "SCHEMA": "org.gnome.desktop.interface",
+    "VALUES": {
+      "cursor-theme": "Paper",
+      "gtk-theme": "vimix-dark",
+      "icon-theme": "Paper"
+    }
+  }, 
+  {
+    "SCHEMA": "org.gnome.desktop.background",
+    "VALUES": {
+      "color-shading-type": "solid",
+      "picture-options": "stretched",
+      "picture-uri": "file:////usr/share/backgrounds/budgie/sundown_beach_by_quino_al.jpg",
+      "primary-color": "#008094"
+    }
+  },
+  {
+    "SCHEMA": "com.solus-project.budgie-panel",
+    "VALUES": {
+      "builtin-theme": false,
+      "dark-theme": true
+    }
+  }
+]

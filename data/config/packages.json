@@ -79,6 +79,10 @@
     "material-theme" : {
       "packages" : ["adapta-gtk-theme", "paper-cursor-theme", "paper-icon-theme"],
       "repos" : ["ppa:snwh/pulp", "ppa:tista/adapta"]
+    },
+    "material-vimix-theme" : {
+      "packages" : ["vimix-gtk-themes", "paper-cursor-theme", "paper-icon-theme"],
+      "repos" : ["ppa:snwh/pulp", "ppa:tista/adapta", "ppa:noobslab/themes"]
     }
   }
 }
