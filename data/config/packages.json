@@ -50,7 +50,8 @@
     },
     "chrome" : {
       "packages" : ["google-chrome-stable"],
-      "repos" : ["deb http://dl.google.com/linux/chrome/deb/ stable main"]
+      "repos" : ["deb http://dl.google.com/linux/chrome/deb/ stable main"],
+      "key-commands" : ["wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | apt-key add -"]
     },
     "opera" : {
       "packages" : ["opera-stable"],
