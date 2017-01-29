@@ -427,6 +427,14 @@ if ( current_page == 'gettingstarted.html' ) {
       }
   });
 
+  // If menu is not open, open menu otherwise goto home page
+  function backAction() {
+    if(!$('#index-menu').is(':visible')) {
+      indexOpen();
+    } else {
+      smoothPageFade('index.html');
+    }
+  }
 }
 
 
