@@ -157,22 +157,11 @@ class AppView(WebKit2.WebView):
             else:
                 app.update_page('#style-undo', 'hide')
                 
-        elif current_page == 'features':
-            if int(systemstate.os_version[:2]) >= 17:
-                browser_name = "Chromium"
-                browser_icon_path = "img/applications/chromium.png"
-                video_player_name = "GNOME MPV"
-                video_player_icon = "img/applications/gnome-mpv.png"
+        elif current_page in ['introduction', 'features']:
+            if systemstate.official:
+                app.update_page('.official-only', 'show')
             else:
-                browser_name = "Firefox"
-                browser_icon_path = "img/applications/firefox.png"
-                video_player_name = "GNOME Videos"
-                video_player_icon = "img/applications/totem.png"
-                
-            self.run_javascript("$('span[name=\"browser-name\"]').html('{}')".format(browser_name))
-            self.run_javascript('$("#browser-icon").attr("src","' + browser_icon_path + '");')
-            self.run_javascript("$('span[name=\"video-player-name\"]').html('{}')".format(video_player_name))
-            self.run_javascript('$("#video-player-icon").attr("src","' + video_player_icon + '");')
+                app.update_page('.unofficial-only', 'show')
 
         ### All pages with install/removal ###
         if current_page in ['gettingstarted', 'default']:
@@ -951,11 +940,14 @@ class SystemState(object):
         # Hard code distributin name, as running external commands would take
         # more time and it will give content mismatch if run in a different OS.
         # self.distroname = self.run_external_command(['lsb_release','-i','-s'])
-        
-        self.os_version = platform.dist()[1]    # → 14.04, 15.10, 16.04
+        if arg.simulate_version:
+            self.os_version = arg.simulate_version
+        else:
+            self.os_version = platform.dist()[1]    # → 14.04, 15.10, 16.04
         self.codename = platform.dist()[2]      # → trusty, wily, xenial
+        self.official = int(self.os_version[:2]) >= 17
 
-        if int(self.os_version[:2]) >= 17:
+        if self.official:
             self.distroname = 'Ubuntu Budgie'
             self.distro_wordmark = 'ubuntu-budgie-wordmark.svg'
         else:
@@ -1427,6 +1419,7 @@ class Arguments(object):
         self.simulate_codename = None
         self.simulate_no_connection = False
         self.simulate_force_connection = False
+        self.simulate_version = None
         self.jump_software_page = False
         self.simulate_software_changes = False
         self.locale = None
@@ -1448,6 +1441,7 @@ class Arguments(object):
               print('  --force-net                  Simulate a working internet connection.')
               print('  --force-no-net               Simulate no internet connection.')
               print('  --force-session=TYPE         Simulate a specific architecture.')
+              print('  --force-release=VERSION      Simulate a specific ubuntu version')
               print('                                -- Options: guest, live, pi, vbox')
               print('  --jump-to=PAGE               Open a specific page, excluding *.html')
               print('  --locale=CODE                Locale to use. e.g. fr_FR.')
@@ -1492,6 +1486,13 @@ class Arguments(object):
           if arg.startswith('--force-codename'):
               self.simulate_codename = arg.split('--force-codename=')[1]
               dbg.stdout('Debug', 'Simulating Ubuntu release: ' + self.simulate_codename, 0, 0)
+
+          if arg.startswith('--force-release'):
+              try:
+                  self.simulate_version = arg.split('--force-release=')[1]
+              except:
+                  dbg.stdout('Debug', 'Invalid arguments for "--force-session"', 0, 1)
+                  exit()
 
           if arg == '--force-no-net':
               dbg.stdout('Debug', 'Simulating the application without an internet connection.', 0, 0)

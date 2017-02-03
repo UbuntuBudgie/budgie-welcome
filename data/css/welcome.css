@@ -819,6 +819,11 @@ a:hover:not([href]):not([tabindex]).btn {
   display: none
 }
 
+/* Official releases & Unofficial releases */
+.official-only, .unofficial-only {
+  display: none;
+}
+
 /*Popup message */
 #popup-message-window {
   display: none;
