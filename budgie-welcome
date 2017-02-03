@@ -157,7 +157,7 @@ class AppView(WebKit2.WebView):
             else:
                 app.update_page('#style-undo', 'hide')
                 
-        elif current_page in ['introduction', 'features']:
+        elif current_page in ['introduction', 'features', 'community']:
             if systemstate.official:
                 app.update_page('.official-only', 'show')
             else:
