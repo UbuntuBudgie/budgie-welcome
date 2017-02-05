@@ -5,27 +5,48 @@
     },
     "flatpak" : {
       "packages" : ["flatpak"],
-      "repos" : ["ppa:alexlarsson/flatpak"]
+      "repos" : {
+        "xenial" : ["ppa:alexlarsson/flatpak"]
+      }
     },
     "skippy-xd" : {
       "packages" : ["skippy-xd"],
-      "repos" : ["ppa:budgie-remix/ppa"]
+      "repos" : {
+        "xenial" : ["ppa:budgie-remix/ppa"],
+        "yakkety" : ["ppa:budgie-remix/ppa"],
+        "zesty" : ["ppa:ubuntubudgie/backport"]
+      }
     },
 
     "steam" : {
       "packages" : ["steam:i386"],
-      "ubuntu-repos" : ["multiverse"]
+      "repos" : {
+        "all" : ["multiverse"]
+      }
     },
     "screenshot" : {
       "packages" : ["budgie-screenshot-applet"],
-      "repos" : ["ppa:budgie-remix/ppa"]
+      "repos" : {
+        "xenial" : ["ppa:budgie-remix/ppa"],
+        "yakkety" : ["ppa:budgie-remix/ppa"],
+        "zesty" : ["ppa:ubuntubudgie/backport"]
+      }
+    },
+    "backport" : {
+      "repos" : {
+        "xenial" : ["ppa:budgie-remix/ppa"],
+        "yakkety" : ["ppa:budgie-remix/ppa"],
+        "zesty" : ["ppa:ubuntubudgie/backport"]
+      }
     }
   },
   "gettingstarted" : {
     "restricted-extras" : {
       "packages" : ["ubuntu-restricted-extras"],
       "excludes" : ["ttf-mscorefonts-installer"],
-      "ubuntu-repos" : ["multiverse"]
+      "repos" : {
+        "all" : ["multiverse"]
+      }
     },
     "keyboard-chinese" : {
       "packages" : ["ibus-pinyin"]
@@ -50,17 +71,23 @@
     },
     "chrome" : {
       "packages" : ["google-chrome-stable"],
-      "repos" : ["deb http://dl.google.com/linux/chrome/deb/ stable main"],
+      "repos" : {
+        "all" : ["deb http://dl.google.com/linux/chrome/deb/ stable main"]
+      },
       "key-commands" : ["wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | apt-key add -"]
     },
     "opera" : {
       "packages" : ["opera-stable"],
-      "repos" : ["deb https://deb.opera.com/opera-stable/ stable non-free"],
+      "repos" : {
+        "all" : ["deb https://deb.opera.com/opera-stable/ stable non-free"]
+      },
       "key-commands" : ["wget -qO- https://deb.opera.com/archive.key | apt-key add -"]
     },
     "vivaldi" : {
       "packages" : ["vivaldi-stable"],
-      "repos" : ["deb http://repo.vivaldi.com/stable/deb/ stable main"],
+      "repos" : {
+        "all" : ["deb http://repo.vivaldi.com/stable/deb/ stable main"]
+      },
       "key-commands" : ["curl http://repo.vivaldi.com/stable/linux_signing_key.pub | sudo apt-key add -",
                         "apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 1397BC53640DB551"]
     },
@@ -79,11 +106,15 @@
     },
     "material-theme" : {
       "packages" : ["adapta-gtk-theme", "paper-cursor-theme", "paper-icon-theme"],
-      "repos" : ["ppa:snwh/pulp", "ppa:tista/adapta"]
+      "repos" : {
+        "all" : ["ppa:snwh/pulp", "ppa:tista/adapta"]
+      }
     },
     "material-vimix-theme" : {
       "packages" : ["vimix-gtk-themes", "paper-cursor-theme", "paper-icon-theme"],
-      "repos" : ["ppa:snwh/pulp", "ppa:tista/adapta", "ppa:noobslab/themes"]
+      "repos" : {
+        "all" : ["ppa:snwh/pulp", "ppa:tista/adapta", "ppa:noobslab/themes"]
+      }
     }
   }
 }

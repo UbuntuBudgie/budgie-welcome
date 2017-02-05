@@ -62,5 +62,13 @@
 		],
 		"install-message": "Install & Configure Steam",
 		"post-install-message": "Steam is installed"
+	},
+	{
+		"id": "backport",
+		"official": true,
+		"name": "Enable <span name=\"distro-name\"></span> backport repository",
+		"description": "Inorder to provide most up to dated versions of budgie desktop and other associated packages, we recommend to enable <span name=\"distro-name\"></span> repository.",
+		"install-message": "Enable <span name=\"distro-name\"></span> backport repository",
+		"post-install-message": "Repository is installed"
 	}
 ]

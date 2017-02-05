@@ -14,23 +14,23 @@ import platform
 
 def add_repos(repos, key_commands):
 
-    if not repos: return 0  
+    if not repos: return 0
+
+    release_code = platform.dist()[2]    # → xenial, yakkety, zesty
     
+    if "all" in repos : repos = repos["all"]
+    else : repos = repos[release_code]
+
     sp = SoftwareProperties()
 
-    os_version = platform.dist()[1]    # → 14.04, 15.10, 16.04
-
     for repo in repos:
-        # switch the ppa name for budgie-remix to ubuntubudgie if required
-        if int(os_version[:2]) >= 17:
-            repo=repo.replace("budgie-remix/ppa", "ubuntubudgie/backports")
         # check if its a component that should be added/removed
         distro = aptsources.distro.get_distro()
         distro.get_sources(sp.sourceslist)
         components = [comp.name for comp in distro.source_template.components]
         if repo in components:
-            if line not in distro.enabled_comps:
-                distro.enable_component(line)
+            if repo not in distro.enabled_comps:
+                distro.enable_component(repo)
         else:
             sp.add_source_from_shortcut(shortcut_handler(repo))
     sp.sourceslist.save()
@@ -52,6 +52,9 @@ def install(fname, code):
     excludes = info.get("excludes")
     key_commands = info.get("key-commands")
     
+    # Possibly enable repo
+    if not packages: return
+
     retval = add_repos(repos, key_commands)
     
     if excludes != None:

@@ -246,7 +246,7 @@ class AppView(WebKit2.WebView):
             code = uri[8:]
             
             # Special case for steam, check for gnome-software
-            if code == 'steam' and not pm.hasInstalled('gnome-software'):
+            if code == 'steam' and not pm.hasInstalled(None, 'gnome-software'):
                 message = "Steam is a third party package that requires user approval of EULA" +\
                           "(End User License Agreement). So we rely on GNOME Software for installing "+\
                           "steam and it is not available in your system. Please install GNOME Software " +\
@@ -609,8 +609,20 @@ class PackageManager(Thread):
         self.queue = queue
         self.running = True
         self.active = None
+    
+    def __isPackageInstalled(self, package):
+        try:
+            installed = self.cache[package].is_installed
+        except:
+            installed = False
         
+        return installed
+
     def hasInstalled(self, current_page, code):
+
+        if not current_page:
+            return self.__isPackageInstalled(code)
+
         packages = pdata.getPackages(current_page, code)
         
         if not packages: return
@@ -618,10 +630,10 @@ class PackageManager(Thread):
         installed = True
                     
         for package in packages:
-            try:
-                installed = self.cache[package].is_installed
-            except:
+            if not self.__isPackageInstalled(package):
                 installed = False
+                break
+
         return installed
     
     def run(self):
@@ -778,7 +790,8 @@ class Recommendation(object):
         self.id = record["id"]
         self.name = record["name"]
         self.description = record["description"]
-        self.image = record["image"]
+        self.official = record.get("official")
+        self.image = record.get("image")
         self.additional_descriptions = record.get("additional-descriptions")
         self.additional_components = record.get("additional-components")
         self.install_message = record.get("install-message")
@@ -795,13 +808,15 @@ class Recommendation(object):
         self.installed = pm.hasInstalled("recommendations", self.id)
         
     def get_entry(self):
-        
+        if self.official and not systemstate.official: return ""
+
         entry = "<div>"
         entry += "<h2>{}</h2>".format(self.name)
         entry += "<div class=\"card card-block\">"
-        entry += "<div class=\"card-image text-md-center\">\
-                  <img src=\"{}\" style=\"width: auto; max-height: 240px\"/>\
-                 </div>".format(self.image)
+        if self.image:
+            entry += "<div class=\"card-image text-md-center\">\
+                      <img src=\"{}\" style=\"width: auto; max-height: 240px\"/>\
+                      </div>".format(self.image)
         entry += "<p class=\"card-text\">{}</p>".format(self.description)
         if self.additional_components:
             for component in self.additional_components:
@@ -837,8 +852,8 @@ class Recommendation(object):
             
         if self.installed == False and other.installed == True:
             return True
-        else:
-            return False
+        
+        return False
             
     def __repr__(self):
         return self.id + " => " + str(self.installed)
