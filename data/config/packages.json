@@ -4,7 +4,7 @@
       "packages" : ["snapd"]
     },
     "flatpak" : {
-      "packages" : ["flatpak"],
+      "packages" : ["flatpak", "xdg-desktop-portal-gtk"],
       "repos" : {
         "xenial" : ["ppa:alexlarsson/flatpak"]
       }
@@ -102,7 +102,7 @@
   },
   "default" : {
     "arc-theme" : {
-      "packages" : ["arc-theme", "faba-icon-theme", "moka-icon-theme", "arc-firefox-theme", "pocillo-icon-theme"]
+      "packages" : ["arc-theme", "pocillo-icon-theme"]
     },
     "material-theme" : {
       "packages" : ["adapta-gtk-theme", "paper-cursor-theme", "paper-icon-theme"],
