@@ -1,14 +1,24 @@
-budgie-welcome (0.4.2.2) xenial; urgency=medium
+budgie-welcome (0.4.2.3) xenial; urgency=medium
 
   * New upstream release (LP: #)
     - Page description changes
+    - Change how third-party repos are handled
+    - Add backports PPA
+    - Add IRC channel
+    - Update Social icons
+    - Add Ask Ubuntu and Ubuntu Forums links
+    - Rework for code maintainence how 17.04 and later is differentiated
+      from prior releases
+    - Simplify to preventconfusion over Getting Start wizard navigation
+    - Add Vimix theme recommendation
   * Bug-fix
     - alternative panel reset method to workaround newer GLib issues
     - do not popup message on live-session to resolve freeze
+    - Correctly add Google Chrome repo key
   * Packaging Changes
     - Copyright update for revised icons
 
- -- David Mohammed <fossfreedom@ubuntu.com>  Sat, 14 Jan 2017 20:32:25 +0000
+ -- David Mohammed <fossfreedom@ubuntu.com>  Sun, 5 Feb 2017 10:32:25 +0000
 
 budgie-welcome (0.4.2) zesty; urgency=medium
 
