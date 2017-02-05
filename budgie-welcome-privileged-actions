@@ -19,7 +19,10 @@ def add_repos(repos, key_commands):
     release_code = platform.dist()[2]    # → xenial, yakkety, zesty
     
     if "all" in repos : repos = repos["all"]
-    else : repos = repos[release_code]
+    else : repos = repos.get(release_code)
+
+    # possibly repo is not required for this release
+    if not repos: return
 
     sp = SoftwareProperties()
 
