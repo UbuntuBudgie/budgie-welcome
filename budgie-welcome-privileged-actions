@@ -22,7 +22,7 @@ def add_repos(repos, key_commands):
     else : repos = repos.get(release_code)
 
     # possibly repo is not required for this release
-    if not repos: return
+    if not repos: return 0
 
     sp = SoftwareProperties()
 
