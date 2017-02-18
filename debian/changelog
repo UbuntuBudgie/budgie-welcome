@@ -5,9 +5,6 @@ budgie-welcome (0.4.4) zesty; urgency=medium
     - add missing curl as a dependency so that vivaldi can be installed;
       repo signature needs to be grabbed via curl
     - add missing key for Chrome installation
-    - correctly handle scenario where third-party repo does not exist
-    - correct the handling of flatpak installation
-    - remove unnecessary packages for installing arc-theme
     - correct keywords handling for the app desktop file
     - typo corrected on contribution page
 
