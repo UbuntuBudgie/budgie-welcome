@@ -1384,7 +1384,7 @@ class WelcomeApp(object):
         temp = pm.active
         if temp:
             task = " installation " if temp.task == PMEntry.INSTALL else " removal "
-            message = temp.code + task + " is in progress. Please wait it to complete"
+            message = temp.code + task + " is in progress. Please wait for it to complete"
             popup = PopupMessage(message, PopupMessage.ERROR, None)
                 
             popup.showMessage()
