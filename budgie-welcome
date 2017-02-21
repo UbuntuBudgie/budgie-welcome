@@ -41,6 +41,8 @@ import platform
 import json
 import time
 import shutil
+import locale
+import gettext
 
 from gi.repository import WebKit2, Gtk, Gio
 from threading import Thread
@@ -816,7 +818,7 @@ class Recommendation(object):
         if self.image:
             entry += "<div class=\"card-image text-md-center\">\
                       <img src=\"{}\" style=\"width: auto; max-height: 240px\"/>\
-                      </div>".format(self.image)
+                      </div>".format(translations.res_dir + self.image)
         entry += "<p class=\"card-text\">{}</p>".format(self.description)
         if self.additional_components:
             for component in self.additional_components:
@@ -1351,7 +1353,7 @@ class WelcomeApp(object):
         mv = AppView()
 
         # load our index file
-        file = os.path.abspath(os.path.join(self._data_path, self._start_page))
+        file = os.path.abspath(os.path.join(translations.get_pages_path(), self._start_page))
         uri = 'file://' + urllib.request.pathname2url(file)
         mv.load_uri(uri)
 
@@ -1548,11 +1550,117 @@ def find_app_version(cache=apt.Cache()):
         
     return versions    
 
+
+class Translations(object):
+    def __init__(self):
+        data_path = whereami()
+
+        # Pages that do not want to be translated, including '.html' extension.
+        self.excluded_pages = []
+
+        # Use locale provided by argument, or get system's locale.
+        if arg.locale:
+            self.locale = arg.locale
+        else:
+            self.locale = str(locale.getlocale()[0])
+
+        self.pages_dir = self.get_pages_path()
+
+        # Should this locale not exist, try a non-specific region. (e.g. "en_GB" → "en")
+        if self.pages_dir == data_path:
+            self.localized = False
+            self.locale = self.locale.split("_")[0]
+            self.pages_dir = self.get_pages_path()
+        else:
+            self.localized = True
+
+        # Validate all the i18n pages so we have the same structure as the original.
+        page_was_lost = False
+        if not self.pages_dir == data_path:
+            for page in os.listdir(data_path):
+                if page[-5:] == ".html":
+                    if os.path.exists(os.path.join(self.pages_dir, page)):
+                        dbg.stdout("i18n", "Page Verified: " + page, 2, 2)
+                    else:
+                        if page not in self.excluded_pages:
+                            page_was_lost = True
+                            dbg.stdout("i18n", "Page Missing: " + page, 2, 1)
+        if page_was_lost:
+            dbg.stdout("i18n", "One or more translation pages are missing! Falling back to 'en_US'", 0, 1)
+            self.pages_dir = data_path
+            self.localized = False
+        else:
+            dbg.stdout("i18n", "All translated i18n pages found.", 1, 2)
+
+        # Sets the path for resources (img/css/js)
+        if self.localized:
+            # E.g. data/i18n/en_GB/*.html → data/
+            self.res_dir = "../../"
+        else:
+            # E.g. data/*.html → data/
+            self.res_dir = ""
+
+        # Initalise i18n for Python translations.
+        if self.relative_i18n:
+            i18n_path = os.path.join(data_path, "../locale/")
+        else:
+            i18n_path = "/usr/share/locale/"
+
+        global t
+        global _
+        dbg.stdout("i18n", "Using locale for gettext: " + self.locale, 1, 0)
+        dbg.stdout("i18n", "Using path for gettext: " + i18n_path, 1, 0)
+        try:
+            t = gettext.translation("budgie-welcome", localedir=i18n_path, languages=[self.locale], fallback=True)
+            _ = t.gettext
+            dbg.stdout("i18n", "Translation found for gettext.", 1, 2)
+        except:
+            dbg.stdout("i18n", "No translation exists for gettext. Using default.", 1, 2)
+            t = gettext.translation("budgie-welcome", localedir="/usr/share/locale/", fallback=True)
+            _ = t.gettext
+
+    # Determine if localized pages exist, or fallback to original pages.
+    def get_pages_path(self):
+        data_path = whereami()
+
+        if os.path.exists(os.path.join(data_path, "i18n", self.locale)):
+            self.localized = True
+            self.relative_i18n = True
+            dbg.stdout("i18n", "Locale Set: " + self.locale + " (using relative path)", 1, 0)
+            return os.path.join(data_path, "i18n", self.locale)
+        elif (os.path.exists(os.path.join("/usr/share/budgie-welcome/i18n/", self.locale))):
+            self.localized = True
+            self.relative_i18n = False
+            dbg.stdout("i18n", "Locale Set: " + self.locale + " (using /usr/share/ path)", 1, 0)
+            return os.path.join("/usr/share/budgie-welcome/i18n/", self.locale)
+        else:
+            self.localized = False
+            self.relative_i18n = False
+            dbg.stdout("i18n", "Locale Not Available: " + self.locale + " (using en_US instead)", 1, 1)
+            return data_path
+
+
+def whereami():
+    """ Determine data source """
+    current_folder = os.path.dirname( os.path.abspath(inspect.getfile(inspect.currentframe())) )
+    if( os.path.exists( os.path.join(current_folder, 'data/' ) ) ):
+        dbg.stdout('Welcome', 'Using relative path for data source. Non-production testing.', 1, 0)
+        data_path = os.path.join(current_folder, 'data/')
+    elif( os.path.exists('/usr/share/ubuntu-mate-welcome/') ):
+        dbg.stdout('Welcome', 'Using /usr/share/ubuntu-mate-welcome/ path.', 1, 0)
+        data_path = '/usr/share/ubuntu-mate-welcome/'
+    else:
+        dbg.stdout('Welcome', 'Unable to source the ubuntu-mate-welcome data directory.', 0, 1)
+        sys.exit(1)
+    return data_path
+
+
 if __name__ == "__main__":
 
     # Process any parameters passed to the program.
     dbg = Debug()
     arg = Arguments()
+    translations = Translations()
 
     # Local data directory to store backup info
     localdir = os.path.expanduser('~') + '/.config/budgie-welcome'
