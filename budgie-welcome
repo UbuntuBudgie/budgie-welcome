@@ -261,7 +261,7 @@ class AppView(WebKit2.WebView):
             
             # for skippy-xd we also need to define a keyboard shortcut
             if code == 'skippy-xd':
-                self._define_keyboard_shortcut('skippy-xd', 'skippy-xd-toggle', '<Primary>Tab')
+                self._define_keyboard_shortcut('skippy-xd', 'skippy-xd-toggle', '<Primary>grave')
            
         elif uri.startswith('remove?'):
             code = uri[7:]
