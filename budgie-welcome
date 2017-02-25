@@ -144,8 +144,8 @@ class AppView(WebKit2.WebView):
             else:
                 app.update_page('#autostart', 'html', '&#xE836;')
 
-            self.run_javascript('$("#wordmark").attr("src","img/welcome/' + systemstate.distro_wordmark + '");')
                 
+            self.run_javascript('$("#wordmark").attr("src","' + translations.res_dir + 'img/welcome/' + systemstate.distro_wordmark + '");')
         elif current_page == 'default':
             panel_backup = localdir + '/panel-backup.conf'
             style_backup = localdir + '/style-backup.json'
@@ -249,10 +249,10 @@ class AppView(WebKit2.WebView):
             
             # Special case for steam, check for gnome-software
             if code == 'steam' and not pm.hasInstalled(None, 'gnome-software'):
-                message = "Steam is a third party package that requires user approval of EULA" +\
-                          "(End User License Agreement). So we rely on GNOME Software for installing "+\
-                          "steam and it is not available in your system. Please install GNOME Software " +\
-                          "and try this option again" 
+                message = _("Steam is a third party package that requires user approval of EULA"
+                            "(End User License Agreement). So we rely on GNOME Software for installing"
+                            " steam and it is not available in your system. Please install GNOME Software"
+                            " and try this option again")
                 popup = PopupMessage(message, PopupMessage.ERROR, None)
                 
                 popup.showMessage()
@@ -336,9 +336,9 @@ class AppView(WebKit2.WebView):
             try:
                 subprocess.Popen(['gnome-software'])
             except Exception as e:
-                message = "Seems that GNOME Software is not installed. If this problem persists " +\
-                           "even after installing GNOME Software, please contact us with following " +\
-                           "error message"
+                message = _("Seems that GNOME Software is not installed. If this problem persists "
+                           "even after installing GNOME Software, please contact us with following "
+                           "error message")
                 popup = PopupMessage(message, PopupMessage.ERROR, str(e))
                 
                 popup.showMessage()
@@ -436,17 +436,17 @@ class AppView(WebKit2.WebView):
         elif uri == 'init-system-info':
             systemstate.get_system_info(self)
         elif uri == 'status':
-            message = "Following tasks are in progress"
+            message = _("Following tasks are in progress")
             popup = PopupMessage(message, PopupMessage.STATUS, pm.getTaskList())
                 
             popup.showMessage()
         elif uri == 'about':
             message = "<div class=\"text-md-center\">"
-            message += "<strong>Budgie Welcome</strong><br>"
+            message += "<strong>" + _("Budgie Welcome") + "</strong><br>"
             message += "Version {}".format(
               systemstate.app_version
             )
-            message += "<br><br> Budgie Desktop {}".format(
+            message += "<br><br> " + _("Budgie Desktop") + " {}".format(
               systemstate.budgie_version
             )
             message += "<br><br>({} {} {})".format(
@@ -725,8 +725,8 @@ class Notifier(object):
         elif type == self.ERROR:
             icon = "dialog-error"
             
-        self.notification = Notification("Welcome App", message, icon)
         
+        self.notification = Notification(_("Welcome App"), message, icon)
     def show(self):
         try:
             self.notification.show()
@@ -838,8 +838,8 @@ class Recommendation(object):
         else:
             entry += "<a id=\"{}-install\" class=\"btn btn-success hvr-shadow\" onclick=\"cmd('install?{}');cmd('')\">\
                   &nbsp;<span class=\"material-icons\">&#xE2C0;</span>{}&nbsp;</a>".format(self.id, self.id, self.install_message)
-        entry += "<span id=\"{}-status\" class=\"hidden\"><img src=\"img/welcome/processing.gif\" \
-        width=\"24px\" height=\"24px\"/> &zwnj;Applying Changes...&zwnj;</span>".format(self.id)
+        entry += "<span id=\"{}-status\" class=\"hidden\"><img src=\"" + translations.res_dir + "img/welcome/processing.gif\" \
+        width=\"24px\" height=\"24px\"/> " + _("Applying Changes...") + "</span>".format(self.id)
         entry += "</div>"
         
         entry += "</div>"
@@ -1076,7 +1076,7 @@ class SystemState(object):
         dbg.stdout('Specs', 'Gathering system specifications...', 0, 3)
 
         # Append a failure symbol beforehand in event something goes horribly wrong.
-        stat_error_msg = "Could not gather data."
+        stat_error_msg = _("Could not gather data.")
         html_tag = '<a data-toggle=\'tooltip\' data-placement=\'top\' title=\'' + stat_error_msg + '\'><span class=\'fa fa-warning specs-error\'></span></a>'
         for element in ['distro', 'kernel', 'motherboard', 'boot-mode', 'cpu-model', 'cpu-speed', 'arch-use',
                         'arch-supported', 'memory', 'graphics', 'filesystem', 'capacity', 'allocated-space', 'free-space']:
@@ -1146,10 +1146,10 @@ class SystemState(object):
 
         # Adding simple strings. Later this should be converted to translation
         # supported strings after referring welcome app
-        gb_prefix = "GB"
-        gib_prefix = "GiB"
-        mb_prefix = "MB"
-        mib_prefix = "MiB"
+        gb_prefix = _("GB")
+        gib_prefix = _("GiB")
+        mb_prefix = _("MB")
+        mib_prefix = _("MiB")
 
         ## Root partition (where Distribution is installed) and the rest of that disk.
         try:
@@ -1341,8 +1341,8 @@ class WelcomeApp(object):
         # build window
         w = Gtk.Window()
         w.set_position(Gtk.WindowPosition.CENTER)
-        w.set_wmclass('budgie-welcome', 'Budgie Welcome')
-        w.set_title('Budgie Welcome')
+        w.set_wmclass('budgie-welcome', _("Budgie Welcome"))
+        w.set_title(_("Budgie Welcome"))
         w.set_size_request(992, 520)
         w.set_decorated(False)
 
@@ -1386,7 +1386,7 @@ class WelcomeApp(object):
         temp = pm.active
         if temp:
             task = " installation " if temp.task == PMEntry.INSTALL else " removal "
-            message = temp.code + task + " is in progress. Please wait it to complete"
+            message = temp.code + task + _(" is in progress. Please wait it to complete")
             popup = PopupMessage(message, PopupMessage.ERROR, None)
                 
             popup.showMessage()
@@ -1469,7 +1469,7 @@ class Arguments(object):
               
           elif arg == '-V' or arg == '--version':
               versions = find_app_version()
-              print("Budgie Welcome {}\nBudgie Desktop {}".format(versions[0], versions[1]))
+              print(_("Budgie Welcome") + " " + versions[0] + "\n" + _("Budgie Desktop") + " " + versions[1])
               exit()
 
           if arg == '--verbose' or arg == '-v':
