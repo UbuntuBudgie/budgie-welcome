@@ -5,10 +5,9 @@
 # Copyright 2013 "Manjaro Linux" <support@manjaro.org>
 # Copyright 2014 Antergos
 # Copyright 2016 Ubuntu Mate
-# Copyright 2016 budgie-remix
-# Copyright 2016 Ubuntu Budgie
+# Copyright 2016-2017 Ubuntu Budgie Developers
 #
-# budgie-remix welcome is free software: you can redistribute it and/or modify
+# budgie-welcome is free software: you can redistribute it and/or modify
 # it under the temms of the GNU General Public License as published by
 # the Free Software Foundation, either version 3 of the License, or
 # (at your option) any later version.
@@ -22,7 +21,7 @@
 # along with budgie-remix welcome. If not, see <http://www.gnu.org/licenses/>.
 #
 
-""" Welcome App for budgie-remix """
+""" Welcome App for Ubuntu Budgie and budgie-remix """
 
 import gi
 
@@ -134,6 +133,9 @@ class AppView(WebKit2.WebView):
                 app.update_page('.graphics-vbox', 'fadeIn')
             else:
                 app.update_page('.graphics-unknown', 'fadeIn')
+
+            if systemstate.arch == 'i386':
+                app.update_page('.64bitonly', 'hide')
               
             thread = Thread(target = self.check_animation_status)
             thread.start()
@@ -263,7 +265,7 @@ class AppView(WebKit2.WebView):
             
             # for skippy-xd we also need to define a keyboard shortcut
             if code == 'skippy-xd':
-                self._define_keyboard_shortcut('skippy-xd', 'skippy-xd-toggle', '<Primary>Tab')
+                self._define_keyboard_shortcut('skippy-xd', 'skippy-xd-toggle', '<Primary>grave')
            
         elif uri.startswith('remove?'):
             code = uri[7:]
@@ -1386,7 +1388,7 @@ class WelcomeApp(object):
         temp = pm.active
         if temp:
             task = " installation " if temp.task == PMEntry.INSTALL else " removal "
-            message = temp.code + task + _(" is in progress. Please wait it to complete")
+            message = temp.code + task + _(" is in progress. Please wait for it to complete")
             popup = PopupMessage(message, PopupMessage.ERROR, None)
                 
             popup.showMessage()
