@@ -131,6 +131,9 @@ class AppView(WebKit2.WebView):
                 app.update_page('.graphics-vbox', 'fadeIn')
             else:
                 app.update_page('.graphics-unknown', 'fadeIn')
+
+            if systemstate.arch == 'i386':
+                app.update_page('.64bitonly', 'hide')
               
             thread = Thread(target = self.check_animation_status)
             thread.start()
