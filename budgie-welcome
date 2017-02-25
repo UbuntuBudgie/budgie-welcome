@@ -40,6 +40,8 @@ import platform
 import json
 import time
 import shutil
+import locale
+import gettext
 
 from gi.repository import WebKit2, Gtk, Gio
 from threading import Thread
@@ -144,8 +146,8 @@ class AppView(WebKit2.WebView):
             else:
                 app.update_page('#autostart', 'html', '&#xE836;')
 
-            self.run_javascript('$("#wordmark").attr("src","img/welcome/' + systemstate.distro_wordmark + '");')
                 
+            self.run_javascript('$("#wordmark").attr("src","' + translations.res_dir + 'img/welcome/' + systemstate.distro_wordmark + '");')
         elif current_page == 'default':
             panel_backup = localdir + '/panel-backup.conf'
             style_backup = localdir + '/style-backup.json'
@@ -249,10 +251,10 @@ class AppView(WebKit2.WebView):
             
             # Special case for steam, check for gnome-software
             if code == 'steam' and not pm.hasInstalled(None, 'gnome-software'):
-                message = "Steam is a third party package that requires user approval of EULA" +\
-                          "(End User License Agreement). So we rely on GNOME Software for installing "+\
-                          "steam and it is not available in your system. Please install GNOME Software " +\
-                          "and try this option again" 
+                message = _("Steam is a third party package that requires user approval of EULA"
+                            "(End User License Agreement). So we rely on GNOME Software for installing"
+                            " steam and it is not available in your system. Please install GNOME Software"
+                            " and try this option again")
                 popup = PopupMessage(message, PopupMessage.ERROR, None)
                 
                 popup.showMessage()
@@ -336,9 +338,9 @@ class AppView(WebKit2.WebView):
             try:
                 subprocess.Popen(['gnome-software'])
             except Exception as e:
-                message = "Seems that GNOME Software is not installed. If this problem persists " +\
-                           "even after installing GNOME Software, please contact us with following " +\
-                           "error message"
+                message = _("Seems that GNOME Software is not installed. If this problem persists "
+                           "even after installing GNOME Software, please contact us with following "
+                           "error message")
                 popup = PopupMessage(message, PopupMessage.ERROR, str(e))
                 
                 popup.showMessage()
@@ -436,17 +438,17 @@ class AppView(WebKit2.WebView):
         elif uri == 'init-system-info':
             systemstate.get_system_info(self)
         elif uri == 'status':
-            message = "Following tasks are in progress"
+            message = _("Following tasks are in progress")
             popup = PopupMessage(message, PopupMessage.STATUS, pm.getTaskList())
                 
             popup.showMessage()
         elif uri == 'about':
             message = "<div class=\"text-md-center\">"
-            message += "<strong>Budgie Welcome</strong><br>"
+            message += "<strong>" + _("Budgie Welcome") + "</strong><br>"
             message += "Version {}".format(
               systemstate.app_version
             )
-            message += "<br><br> Budgie Desktop {}".format(
+            message += "<br><br> " + _("Budgie Desktop") + " {}".format(
               systemstate.budgie_version
             )
             message += "<br><br>({} {} {})".format(
@@ -725,8 +727,8 @@ class Notifier(object):
         elif type == self.ERROR:
             icon = "dialog-error"
             
-        self.notification = Notification("Welcome App", message, icon)
         
+        self.notification = Notification(_("Welcome App"), message, icon)
     def show(self):
         try:
             self.notification.show()
@@ -818,7 +820,7 @@ class Recommendation(object):
         if self.image:
             entry += "<div class=\"card-image text-md-center\">\
                       <img src=\"{}\" style=\"width: auto; max-height: 240px\"/>\
-                      </div>".format(self.image)
+                      </div>".format(translations.res_dir + self.image)
         entry += "<p class=\"card-text\">{}</p>".format(self.description)
         if self.additional_components:
             for component in self.additional_components:
@@ -838,8 +840,8 @@ class Recommendation(object):
         else:
             entry += "<a id=\"{}-install\" class=\"btn btn-success hvr-shadow\" onclick=\"cmd('install?{}');cmd('')\">\
                   &nbsp;<span class=\"material-icons\">&#xE2C0;</span>{}&nbsp;</a>".format(self.id, self.id, self.install_message)
-        entry += "<span id=\"{}-status\" class=\"hidden\"><img src=\"img/welcome/processing.gif\" \
-        width=\"24px\" height=\"24px\"/> &zwnj;Applying Changes...&zwnj;</span>".format(self.id)
+        entry += "<span id=\"{}-status\" class=\"hidden\"><img src=\"" + translations.res_dir + "img/welcome/processing.gif\" \
+        width=\"24px\" height=\"24px\"/> " + _("Applying Changes...") + "</span>".format(self.id)
         entry += "</div>"
         
         entry += "</div>"
@@ -1076,7 +1078,7 @@ class SystemState(object):
         dbg.stdout('Specs', 'Gathering system specifications...', 0, 3)
 
         # Append a failure symbol beforehand in event something goes horribly wrong.
-        stat_error_msg = "Could not gather data."
+        stat_error_msg = _("Could not gather data.")
         html_tag = '<a data-toggle=\'tooltip\' data-placement=\'top\' title=\'' + stat_error_msg + '\'><span class=\'fa fa-warning specs-error\'></span></a>'
         for element in ['distro', 'kernel', 'motherboard', 'boot-mode', 'cpu-model', 'cpu-speed', 'arch-use',
                         'arch-supported', 'memory', 'graphics', 'filesystem', 'capacity', 'allocated-space', 'free-space']:
@@ -1146,10 +1148,10 @@ class SystemState(object):
 
         # Adding simple strings. Later this should be converted to translation
         # supported strings after referring welcome app
-        gb_prefix = "GB"
-        gib_prefix = "GiB"
-        mb_prefix = "MB"
-        mib_prefix = "MiB"
+        gb_prefix = _("GB")
+        gib_prefix = _("GiB")
+        mb_prefix = _("MB")
+        mib_prefix = _("MiB")
 
         ## Root partition (where Distribution is installed) and the rest of that disk.
         try:
@@ -1341,8 +1343,8 @@ class WelcomeApp(object):
         # build window
         w = Gtk.Window()
         w.set_position(Gtk.WindowPosition.CENTER)
-        w.set_wmclass('budgie-welcome', 'Budgie Welcome')
-        w.set_title('Budgie Welcome')
+        w.set_wmclass('budgie-welcome', _("Budgie Welcome"))
+        w.set_title(_("Budgie Welcome"))
         w.set_size_request(992, 520)
         w.set_decorated(False)
 
@@ -1353,7 +1355,7 @@ class WelcomeApp(object):
         mv = AppView()
 
         # load our index file
-        file = os.path.abspath(os.path.join(self._data_path, self._start_page))
+        file = os.path.abspath(os.path.join(translations.get_pages_path(), self._start_page))
         uri = 'file://' + urllib.request.pathname2url(file)
         mv.load_uri(uri)
 
@@ -1386,7 +1388,7 @@ class WelcomeApp(object):
         temp = pm.active
         if temp:
             task = " installation " if temp.task == PMEntry.INSTALL else " removal "
-            message = temp.code + task + " is in progress. Please wait for it to complete"
+            message = temp.code + task + _(" is in progress. Please wait for it to complete")
             popup = PopupMessage(message, PopupMessage.ERROR, None)
                 
             popup.showMessage()
@@ -1469,7 +1471,7 @@ class Arguments(object):
               
           elif arg == '-V' or arg == '--version':
               versions = find_app_version()
-              print("Budgie Welcome {}\nBudgie Desktop {}".format(versions[0], versions[1]))
+              print(_("Budgie Welcome") + " " + versions[0] + "\n" + _("Budgie Desktop") + " " + versions[1])
               exit()
 
           if arg == '--verbose' or arg == '-v':
@@ -1550,11 +1552,117 @@ def find_app_version(cache=apt.Cache()):
         
     return versions    
 
+
+class Translations(object):
+    def __init__(self):
+        data_path = whereami()
+
+        # Pages that do not want to be translated, including '.html' extension.
+        self.excluded_pages = []
+
+        # Use locale provided by argument, or get system's locale.
+        if arg.locale:
+            self.locale = arg.locale
+        else:
+            self.locale = str(locale.getlocale()[0])
+
+        self.pages_dir = self.get_pages_path()
+
+        # Should this locale not exist, try a non-specific region. (e.g. "en_GB" → "en")
+        if self.pages_dir == data_path:
+            self.localized = False
+            self.locale = self.locale.split("_")[0]
+            self.pages_dir = self.get_pages_path()
+        else:
+            self.localized = True
+
+        # Validate all the i18n pages so we have the same structure as the original.
+        page_was_lost = False
+        if not self.pages_dir == data_path:
+            for page in os.listdir(data_path):
+                if page[-5:] == ".html":
+                    if os.path.exists(os.path.join(self.pages_dir, page)):
+                        dbg.stdout("i18n", "Page Verified: " + page, 2, 2)
+                    else:
+                        if page not in self.excluded_pages:
+                            page_was_lost = True
+                            dbg.stdout("i18n", "Page Missing: " + page, 2, 1)
+        if page_was_lost:
+            dbg.stdout("i18n", "One or more translation pages are missing! Falling back to 'en_US'", 0, 1)
+            self.pages_dir = data_path
+            self.localized = False
+        else:
+            dbg.stdout("i18n", "All translated i18n pages found.", 1, 2)
+
+        # Sets the path for resources (img/css/js)
+        if self.localized:
+            # E.g. data/i18n/en_GB/*.html → data/
+            self.res_dir = "../../"
+        else:
+            # E.g. data/*.html → data/
+            self.res_dir = ""
+
+        # Initalise i18n for Python translations.
+        if self.relative_i18n:
+            i18n_path = os.path.join(data_path, "../locale/")
+        else:
+            i18n_path = "/usr/share/locale/"
+
+        global t
+        global _
+        dbg.stdout("i18n", "Using locale for gettext: " + self.locale, 1, 0)
+        dbg.stdout("i18n", "Using path for gettext: " + i18n_path, 1, 0)
+        try:
+            t = gettext.translation("budgie-welcome", localedir=i18n_path, languages=[self.locale], fallback=True)
+            _ = t.gettext
+            dbg.stdout("i18n", "Translation found for gettext.", 1, 2)
+        except:
+            dbg.stdout("i18n", "No translation exists for gettext. Using default.", 1, 2)
+            t = gettext.translation("budgie-welcome", localedir="/usr/share/locale/", fallback=True)
+            _ = t.gettext
+
+    # Determine if localized pages exist, or fallback to original pages.
+    def get_pages_path(self):
+        data_path = whereami()
+
+        if os.path.exists(os.path.join(data_path, "i18n", self.locale)):
+            self.localized = True
+            self.relative_i18n = True
+            dbg.stdout("i18n", "Locale Set: " + self.locale + " (using relative path)", 1, 0)
+            return os.path.join(data_path, "i18n", self.locale)
+        elif (os.path.exists(os.path.join("/usr/share/budgie-welcome/i18n/", self.locale))):
+            self.localized = True
+            self.relative_i18n = False
+            dbg.stdout("i18n", "Locale Set: " + self.locale + " (using /usr/share/ path)", 1, 0)
+            return os.path.join("/usr/share/budgie-welcome/i18n/", self.locale)
+        else:
+            self.localized = False
+            self.relative_i18n = False
+            dbg.stdout("i18n", "Locale Not Available: " + self.locale + " (using en_US instead)", 1, 1)
+            return data_path
+
+
+def whereami():
+    """ Determine data source """
+    current_folder = os.path.dirname( os.path.abspath(inspect.getfile(inspect.currentframe())) )
+    if( os.path.exists( os.path.join(current_folder, 'data/' ) ) ):
+        dbg.stdout('Welcome', 'Using relative path for data source. Non-production testing.', 1, 0)
+        data_path = os.path.join(current_folder, 'data/')
+    elif( os.path.exists('/usr/share/ubuntu-mate-welcome/') ):
+        dbg.stdout('Welcome', 'Using /usr/share/ubuntu-mate-welcome/ path.', 1, 0)
+        data_path = '/usr/share/ubuntu-mate-welcome/'
+    else:
+        dbg.stdout('Welcome', 'Unable to source the ubuntu-mate-welcome data directory.', 0, 1)
+        sys.exit(1)
+    return data_path
+
+
 if __name__ == "__main__":
 
     # Process any parameters passed to the program.
     dbg = Debug()
     arg = Arguments()
+    translations = Translations()
 
     # Local data directory to store backup info
     localdir = os.path.expanduser('~') + '/.config/budgie-welcome'
