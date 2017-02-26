@@ -1,0 +1,56 @@
+[main]
+host = https://www.transifex.com
+
+[budgiewelcome.chatroom]
+file_filter = data/po/chatroom/<lang>.po
+source_file = data/po/chatroom/chatroom.pot
+source_lang = en_US
+type = PO
+
+[budgie-welcome.community]
+file_filter = data/po/community/<lang>.po
+source_file = data/po/community/community.pot
+source_lang = en_US
+type = PO
+
+[budgie-welcome.donate]
+file_filter = data/po/donate/<lang>.po
+source_file = data/po/donate/donate.pot
+source_lang = en_US
+type = PO
+
+[budgie-welcome.features]
+file_filter = data/po/features/<lang>.po
+source_file = data/po/features/features.pot
+source_lang = en_US
+type = PO
+
+[budgie-welcome.getinvolved]
+file_filter = data/po/getinvolved/<lang>.po
+source_file = data/po/getinvolved/getinvolved.pot
+source_lang = en_US
+type = PO
+
+[budgie-welcome.gettingstarted]
+file_filter = data/po/gettingstarted/<lang>.po
+source_file = data/po/gettingstarted/gettingstarted.pot
+source_lang = en_US
+type = PO
+
+[budgie-welcome.index]
+file_filter = data/po/index/<lang>.po
+source_file = data/po/index/index.pot
+source_lang = en_US
+type = PO
+
+[budgie-welcome.introduction]
+file_filter = data/po/introduction/<lang>.po
+source_file = data/po/introduction/introduction.pot
+source_lang = en_US
+type = PO
+
+[budgie-welcome.ubuntubudgiewelcome]
+file_filter = po/<lang>.po
+source_file = po/budgie-welcome.pot
+source_lang = en_US
+type = PO
