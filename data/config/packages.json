@@ -105,15 +105,15 @@
       "packages" : ["arc-theme", "pocillo-icon-theme"]
     },
     "material-theme" : {
-      "packages" : ["adapta-gtk-theme", "paper-cursor-theme", "paper-icon-theme"],
+      "packages" : ["adapta-gtk-theme", "paper-cursor-theme", "paper-icon-theme", "budgie-wallpapers-xenial"],
       "repos" : {
         "all" : ["ppa:snwh/pulp", "ppa:tista/adapta"]
       }
     },
     "material-vimix-theme" : {
-      "packages" : ["vimix-gtk-themes", "paper-cursor-theme", "paper-icon-theme"],
+      "packages" : ["vimix-gtk-themes", "paper-cursor-theme", "paper-icon-theme", "budgie-wallpapers-xenial"],
       "repos" : {
-        "all" : ["ppa:snwh/pulp", "ppa:tista/adapta", "ppa:noobslab/themes"]
+        "all" : ["ppa:snwh/pulp", "ppa:noobslab/themes"]
       }
     }
   }
