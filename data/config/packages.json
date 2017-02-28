@@ -105,13 +105,13 @@
       "packages" : ["arc-theme", "pocillo-icon-theme"]
     },
     "material-theme" : {
-      "packages" : ["adapta-gtk-theme", "paper-cursor-theme", "paper-icon-theme", "budgie-wallpapers-xenial"],
+      "packages" : ["adapta-gtk-theme", "paper-cursor-theme", "paper-icon-theme", "budgie-wallpapers-xenial", "fonts-noto"],
       "repos" : {
         "all" : ["ppa:snwh/pulp", "ppa:tista/adapta"]
       }
     },
     "material-vimix-theme" : {
-      "packages" : ["vimix-gtk-themes", "paper-cursor-theme", "paper-icon-theme", "budgie-wallpapers-xenial"],
+      "packages" : ["vimix-gtk-themes", "paper-cursor-theme", "paper-icon-theme", "budgie-wallpapers-xenial", "fonts-noto"],
       "repos" : {
         "all" : ["ppa:snwh/pulp", "ppa:noobslab/themes"]
       }
