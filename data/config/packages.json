@@ -107,13 +107,17 @@
     "material-theme" : {
       "packages" : ["adapta-gtk-theme", "paper-cursor-theme", "paper-icon-theme", "budgie-wallpapers-xenial", "fonts-noto"],
       "repos" : {
-        "all" : ["ppa:snwh/pulp", "ppa:tista/adapta"]
+        "xenial" : ["ppa:snwh/pulp", "ppa:tista/adapta"],
+        "yakkety" : ["ppa:snwh/pulp", "ppa:tista/adapta"],
+        "zesty" : ["ppa:ubuntubudgie/backports", "ppa:tista/adapta"]
       }
     },
     "material-vimix-theme" : {
       "packages" : ["vimix-gtk-themes", "paper-cursor-theme", "paper-icon-theme", "budgie-wallpapers-xenial", "fonts-noto"],
       "repos" : {
-        "all" : ["ppa:snwh/pulp", "ppa:noobslab/themes"]
+        "xenial" : ["ppa:snwh/pulp", "ppa:noobslab/themes"],
+        "yakkety" : ["ppa:snwh/pulp", "ppa:noobslab/themes"],
+        "zesty" : ["ppa:ubuntubudgie/backports", "ppa:noobslab/themes"]
       }
     }
   }
