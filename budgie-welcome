@@ -412,7 +412,7 @@ class AppView(WebKit2.WebView):
                     except:
                         pass
                 
-                subprocess.Popen(['budgie-panel', '--replace'])
+                subprocess.Popen(['budgie-panel', '--replace', '&'])
 
                 self._push_config()
 
