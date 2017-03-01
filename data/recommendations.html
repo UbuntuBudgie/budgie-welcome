@@ -20,6 +20,16 @@
         <div id="content" class="container entire-page-fade">
             <div class="row wow fadeIn">
                 <div class="col-md-12" id="recommendation-list">
+                    <div class="official-only">
+                        <h2>Backports repository</h2>
+                        <div class="card card-block">
+                            <p class="card-text">To provide the most up-to-date versions of budgie-desktop and other associated packages, we recommend to enable the
+                                <span name="distro-name"></span> backports repository.</p>
+                        </div>
+                        <div class="text-md-right"><span id="backport-remove" class="alert alert-success">            <i class="material-icons">&#xE876;</i>Repository is installed</span><a id="backport-install" class="btn btn-success hvr-shadow" onclick="cmd('install?backport');cmd('')"> &nbsp;<span class="material-icons">&#xE2C0;</span>Enable <span name="distro-name"></span> backports repository&nbsp;</a>
+                            <span id="backport-status" class="hidden"><img src="img/welcome/processing.gif" width="24px" height="24px" /> &zwnj;Applying Changes...&zwnj;</span>
+                        </div>
+                    </div>
                     <div>
                         <h2>Snap</h2>
                         <div class="card card-block">
@@ -127,16 +137,6 @@
                             <span id="steam-status" class="hidden"><img src="img/welcome/processing.gif" width="24px" height="24px" /> &zwnj;Applying Changes...&zwnj;</span>
                         </div>
                         <hr/>
-                    </div>
-                    <div class="official-only">
-                        <h2>&zwnj;Enable <span name="distro-name"></span> backports repository&zwnj;</h2>
-                        <div class="card card-block">
-                            <p class="card-text">&zwnj;To provide the most up-to-date versions of budgie-desktop and other associated packages, we recommend to enable the
-                                <span name="distro-name"></span> backports repository.&zwnj;</p>
-                        </div>
-                        <div class="text-md-right"><span id="backport-remove" class="alert alert-success">            <i class="material-icons">&#xE876;</i>&zwnj;Repository is installed&zwnj;</span><a id="backport-install" class="btn btn-success hvr-shadow" onclick="cmd('install?backport');cmd('')"> &nbsp;<span class="material-icons">&#xE2C0;</span>&zwnj;Enable <span name="distro-name"></span> backports repository&zwnj;&nbsp;</a>
-                            <span id="backport-status" class="hidden"><img src="img/welcome/processing.gif" width="24px" height="24px" /> &zwnj;Applying Changes...&zwnj;</span>
-                        </div>
                     </div>
                 </div>
             </div>

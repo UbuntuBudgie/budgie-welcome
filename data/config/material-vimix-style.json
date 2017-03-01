@@ -3,8 +3,11 @@
     "SCHEMA": "org.gnome.desktop.interface",
     "VALUES": {
       "cursor-theme": "Paper",
-      "gtk-theme": "vimix-dark",
-      "icon-theme": "Paper"
+      "gtk-theme": "VimixDark",
+      "icon-theme": "Paper",
+      "monospace-font-name": "Noto Mono 10",
+      "font-name": "Noto Sans UI 10",
+      "document-font-name": "Noto Sans UI 10"
     }
   }, 
   {
@@ -21,6 +24,19 @@
     "VALUES": {
       "builtin-theme": false,
       "dark-theme": true
+    }
+  },
+  {
+    "SCHEMA": "org.gnome.desktop.wm.preferences",
+    "VALUES": {
+      "titlebar-font": "Noto Sans UI Bold 10",
+      "theme": "VimixDark"
+    }
+  },
+  {
+    "SCHEMA": "org.gnome.nautilus.desktop",
+    "VALUES": {
+      "font": "Noto Sans UI 10"
     }
   }
 ]
