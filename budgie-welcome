@@ -179,10 +179,10 @@ class AppView(WebKit2.WebView):
                     if installed:
                         app.update_page('#' + code + '-remove', 'show')
                     else:
-                        app.update_page('#' + code + '-install', 'show')  
+                        app.update_page('#' + code + '-install', 'show')
                 # Sort recommendations after checking installation status
                 if current_page == 'recommendations':
-                    self.run_javascript("sortList()")          
+                    self.run_javascript("sortList()")
             # Checking on cache will take sometime. So run it on a
             # separate thread.
             thread = Thread(target = checkInstallationStatus)
@@ -550,7 +550,6 @@ class AppView(WebKit2.WebView):
             systemstate.addIntermediateActions(fname, actions)
 
             pmentry = PMEntry(operation, fname, code, actions)
-
             pm_queue.put(pmentry)
 
             app.update_page('#status-btn', 'fadeIn')
@@ -665,7 +664,30 @@ class PackageManager(Thread):
 
         packages = pdata.getPackages(current_page, code)
 
-        if not packages: return
+        if not packages:
+            # assume we are just dealing with ppa's
+            repos = pdata.getRepos(current_page, code)
+            found = False
+
+            if repos:
+                # for the first element of the codename (e.g. zesty)
+                # repo split by the / character to get an array
+                # first element is the ppa organisation and second
+                # is the ppa name
+                ppa = repos[systemstate.codename][0][4:].split('/')
+
+                filename = ppa[0] + "-ubuntu-" + ppa[1] + "-" + \
+                    systemstate.codename + ".list"
+                filename = '/etc/apt/sources.list.d/' + filename
+
+                p = subprocess.Popen(['grep', '^deb\ http', filename])
+                retval = p.wait()
+
+                if retval == 0:
+                    found = True
+
+
+            return found
 
         installed = True
 
@@ -803,6 +825,12 @@ class PackageData(object):
     def getRootRequirement(self, filename, code):
         try:
             return self.data[filename][code]["root"]
+        except KeyError:
+            return None
+
+    def getRepos(self, filename, code):
+        try:
+            return self.data[filename][code]["repos"]
         except KeyError:
             return None
 
