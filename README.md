@@ -1,7 +1,7 @@
 Budgie Welcome
 ==============
 
-Welcome screen app to greet new users on their first login
+Welcome screen app to greet new users on their first login.
 
 
 ### Installation
