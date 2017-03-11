@@ -26,6 +26,6 @@ cd budgie-welcome
 #### Normal session
 ![Screenshot of Budgie Remix Welcome App](https://raw.githubusercontent.com/budgie-remix/budgie-welcome/master/screenshot-normal-session.png)
 
-###LICENSES
+### LICENSES
   The project contains files with a variety of licenses.
   For the complete list of licenses, see [debian/copyright](https://github.com/budgie-remix/budgie-welcome/blob/master/debian/copyright) file.
