@@ -15,7 +15,11 @@ msgstr ""
 msgid "Recommendations"
 msgstr ""
 
-#: recommendations.html:29
+#: recommendations.html:30, 75, 89, 107, 120, 137
+msgid "Applying Changes..."
+msgstr ""
+
+#: recommendations.html:39
 msgid ""
 "<strong>Snap</strong> is a new generation application packaging format "
 "developed by <em>Canonical</em>. Even though it was initially developed just"
@@ -31,15 +35,15 @@ msgid ""
 "prevented us from delivering them in the past."
 msgstr ""
 
-#: recommendations.html:35
+#: recommendations.html:45
 msgid "Snap user guide"
 msgstr ""
 
-#: recommendations.html:37
+#: recommendations.html:47
 msgid "Search Snap Apps"
 msgstr ""
 
-#: recommendations.html:38
+#: recommendations.html:48
 msgid ""
 "If there’s a barrier to Snap app adoption (aside from few apps being made "
 "available in the format) it’s knowing which packages are available in the "
@@ -47,50 +51,50 @@ msgid ""
 "following command:"
 msgstr ""
 
-#: recommendations.html:42
+#: recommendations.html:52
 msgid ""
 "The find command lets you quickly search for and discover snaps available to"
 " install from the command line. It can be run with a query after it (e.g., "
 "‘snap find email‘, ‘snap find media’, ‘snap find messaging‘) or without."
 msgstr ""
 
-#: recommendations.html:43
+#: recommendations.html:53
 msgid "When run without a query you’ll instead see a list of featured snaps."
 msgstr ""
 
-#: recommendations.html:44
+#: recommendations.html:54
 msgid "See installed apps"
 msgstr ""
 
-#: recommendations.html:45
+#: recommendations.html:55
 msgid ""
 "Installed some Snaps but can’t remember what? Don’t panic. Use the list "
 "command to see an up-to-date list of all Snap apps installed on your system:"
 msgstr ""
 
-#: recommendations.html:47
+#: recommendations.html:57
 msgid ""
 "This list also shows you their version number, revision number and the name "
 "of the developer who uploaded it (handy when there are multiple versions of "
 "the same app in the store, e.g., Telegram)."
 msgstr ""
 
-#: recommendations.html:48
+#: recommendations.html:58
 msgid "Install & Remove Snap Apps"
 msgstr ""
 
-#: recommendations.html:49
+#: recommendations.html:59
 msgid ""
 "If you’re used to managing software using apt you’ll instantly find the "
 "analogous snap commands easy to remember. You install snap apps with the "
 "‘install’ command, and remove them using the ‘remove’ command."
 msgstr ""
 
-#: recommendations.html:52
+#: recommendations.html:62
 msgid "See details of an App"
 msgstr ""
 
-#: recommendations.html:53
+#: recommendations.html:63
 msgid ""
 "You can use this to see detailed information about any snap application, "
 "whether it is installed or not. This info includes the application’s release"
@@ -98,11 +102,11 @@ msgid ""
 "info --verbose offers a greater overview."
 msgstr ""
 
-#: recommendations.html:57
+#: recommendations.html:67
 msgid "Update a Snap App"
 msgstr ""
 
-#: recommendations.html:59
+#: recommendations.html:69
 msgid ""
 "Rather helpfully you probably won’t ever need to remember to install an "
 "update to a Snap app. This is because Snapd runs in the background and "
@@ -110,33 +114,29 @@ msgid ""
 " a specific revision)."
 msgstr ""
 
-#: recommendations.html:62
+#: recommendations.html:72
 msgid "Reference"
 msgstr ""
 
-#: recommendations.html:64
+#: recommendations.html:74
 msgid "Snap is already installed"
 msgstr ""
 
-#: recommendations.html:64
+#: recommendations.html:74
 msgid "Install Snap"
 msgstr ""
 
-#: recommendations.html:65, 79, 97, 110, 127, 138
-msgid "Applying Changes..."
-msgstr ""
-
-#: recommendations.html:70
+#: recommendations.html:80
 msgid "Budgie Screenshot Applet"
 msgstr ""
 
-#: recommendations.html:74
+#: recommendations.html:84
 msgid ""
 "Budgie Screenshot Applet</strong> is an advanced screenshot utility for "
 "capturing and organizing screenshots."
 msgstr ""
 
-#: recommendations.html:76
+#: recommendations.html:86
 msgid ""
 "<span name=\"distro-name\"></span> provides you with an easy way to install "
 "<strong>Budgie Screenshot Applet</strong>. After installation you need to "
@@ -145,19 +145,19 @@ msgid ""
 "Configuration Center."
 msgstr ""
 
-#: recommendations.html:78
+#: recommendations.html:88
 msgid "Screenshot Applet is installed"
 msgstr ""
 
-#: recommendations.html:78
+#: recommendations.html:88
 msgid "Install Screenshot Applet"
 msgstr ""
 
-#: recommendations.html:84
+#: recommendations.html:94
 msgid "Flatpak"
 msgstr ""
 
-#: recommendations.html:88
+#: recommendations.html:98
 msgid ""
 "<strong>Flatpak</strong> is a new generation application distribution "
 "framework for GNU/Linux platforms. It introduces a unified packaging format "
@@ -168,11 +168,11 @@ msgid ""
 "libraries."
 msgstr ""
 
-#: recommendations.html:90
+#: recommendations.html:100
 msgid "Learn more"
 msgstr ""
 
-#: recommendations.html:92
+#: recommendations.html:102
 msgid ""
 "<span name=\"distro-name\"></span> recommends installing "
 "<strong>Flatpak</strong> as it will open a new world of possibilities for "
@@ -183,26 +183,26 @@ msgid ""
 "packaging. This will increase availability of software packages drastically."
 msgstr ""
 
-#: recommendations.html:95
+#: recommendations.html:105
 msgid ""
 "Being a user friendly GNU/Linux distribution, <span name='distro-"
 "name'></span> allows you to install Flatpak with a single click. After first"
 " time configuration, you can use GNOME Software to install Flatpak packages."
 msgstr ""
 
-#: recommendations.html:96
+#: recommendations.html:106
 msgid "Flatpak is installed. Please reboot for the service to start"
 msgstr ""
 
-#: recommendations.html:97
+#: recommendations.html:107
 msgid "Install & Configure Flatpak"
 msgstr ""
 
-#: recommendations.html:101
+#: recommendations.html:111
 msgid "skippy-xd"
 msgstr ""
 
-#: recommendations.html:105
+#: recommendations.html:115
 msgid ""
 "<strong>skippy-xd</strong> adds a window expose type capability through a "
 "keyboard shortcut. For most desktops skippy-xd works well. Note: For some "
@@ -210,7 +210,7 @@ msgid ""
 "VirtualBox it may not work correctly."
 msgstr ""
 
-#: recommendations.html:108
+#: recommendations.html:118
 msgid ""
 "By default the installer will create a custom keyboard shortcut CTRL+grave "
 "('the key above the tab'). You can define or change the keyboard shortcut "
@@ -219,19 +219,19 @@ msgid ""
 "shortcut."
 msgstr ""
 
-#: recommendations.html:109
+#: recommendations.html:119
 msgid "skippy-xd is installed"
 msgstr ""
 
-#: recommendations.html:109
+#: recommendations.html:119
 msgid "Install & Configure skippy-xd"
 msgstr ""
 
-#: recommendations.html:115
+#: recommendations.html:125
 msgid "Steam"
 msgstr ""
 
-#: recommendations.html:119
+#: recommendations.html:129
 msgid ""
 "<strong>Steam</strong> is a digital distribution platform developed by Valve"
 " Corporation offering digital rights management (DRM), multiplayer gaming "
@@ -245,7 +245,7 @@ msgid ""
 "support for user-created content through Steam Workshop."
 msgstr ""
 
-#: recommendations.html:124
+#: recommendations.html:134
 msgid ""
 "Being a proprietary software, Steam is not included in primary repositories "
 "of <span name=\"distro-name\"></span>. However, to provide more choice to "
@@ -255,25 +255,10 @@ msgid ""
 "click."
 msgstr ""
 
-#: recommendations.html:126
+#: recommendations.html:136
 msgid "Steam is installed"
 msgstr ""
 
-#: recommendations.html:126
+#: recommendations.html:136
 msgid "Install & Configure Steam"
-msgstr ""
-
-#: recommendations.html:132, 137
-msgid "Enable <span name=\"distro-name\"></span> backports repository"
-msgstr ""
-
-#: recommendations.html:134
-msgid ""
-"To provide the most up-to-date versions of budgie-desktop and other "
-"associated packages, we recommend to enable the <span name=\"distro-"
-"name\"></span> backports repository."
-msgstr ""
-
-#: recommendations.html:137
-msgid "Repository is installed"
 msgstr ""
