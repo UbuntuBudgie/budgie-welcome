@@ -9,4 +9,5 @@ cd "$scripts_dir"
 
 ./welcome-po.py --update-pos
 ./welcome-po.py --install
+sed -i -- 's/CHARSET/UTF-8/g' ../po/*
 ./translation-support.py translate-all

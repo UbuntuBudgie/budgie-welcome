@@ -581,7 +581,7 @@ class Debug(object):
             end   = ''
 
         # Output the message depending how detailed it is.
-        if self.verbose_level >= verbosity:
+        if verbosity <= self.verbose_level:
             print(start + '[' + item + '] ' + info, end)
 
 class PopupMessage(object):
@@ -1528,7 +1528,6 @@ class Translations(object):
             self.locale = str(locale.getlocale()[0])
 
         self.pages_dir = self.get_pages_path()
-        dbg.stdout("i18n", "pages_dir: "+self.pages_dir, 2, 1)
         # Should this locale not exist, try a non-specific region. (e.g. "en_GB" → "en")
         if self.pages_dir == data_path:
             self.localized = False
