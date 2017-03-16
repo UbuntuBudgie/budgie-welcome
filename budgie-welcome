@@ -784,7 +784,7 @@ class Notifier(object):
             icon = "dialog-information"
         elif type == self.ERROR:
             icon = "dialog-error"
-        
+
         self.notification = Notification(_("Welcome App"), message, icon)
 
     def show(self):
@@ -1281,7 +1281,6 @@ class WelcomeApp(object):
             self._data_path = os.path.join(self._location, 'data/')
             start_location = self._location + "/"
         elif(os.path.exists('/usr/share/budgie-welcome/')):
-            print('Using /usr/share/budgie-welcome/ path.')
             self._data_path = '/usr/share/budgie-welcome/'
             start_location = '/usr/lib/budgie-welcome/'
         else:
@@ -1529,7 +1528,7 @@ class Translations(object):
             self.locale = str(locale.getlocale()[0])
 
         self.pages_dir = self.get_pages_path()
-
+        dbg.stdout("i18n", "pages_dir: "+self.pages_dir, 2, 1)
         # Should this locale not exist, try a non-specific region. (e.g. "en_GB" → "en")
         if self.pages_dir == data_path:
             self.localized = False
@@ -1553,6 +1552,7 @@ class Translations(object):
             dbg.stdout("i18n", "One or more translation pages are missing! Falling back to 'en_US'", 0, 1)
             self.pages_dir = data_path
             self.localized = False
+            self.locale = "en"
         else:
             dbg.stdout("i18n", "All translated i18n pages found.", 1, 2)
 
@@ -1564,6 +1564,7 @@ class Translations(object):
             # E.g. data/*.html → data/
             self.res_dir = ""
 
+        dbg.stdout("i18n", "res_dir: " + self.res_dir, 2, 0)
         # Initalise i18n for Python translations.
         if self.relative_i18n:
             i18n_path = os.path.join(data_path, "../locale/")
@@ -1607,14 +1608,15 @@ class Translations(object):
 def whereami():
     """ Determine data source """
     current_folder = os.path.dirname( os.path.abspath(inspect.getfile(inspect.currentframe())) )
+
     if( os.path.exists( os.path.join(current_folder, 'data/' ) ) ):
         dbg.stdout('Welcome', 'Using relative path for data source. Non-production testing.', 1, 0)
         data_path = os.path.join(current_folder, 'data/')
-    elif( os.path.exists('/usr/share/ubuntu-mate-welcome/') ):
-        dbg.stdout('Welcome', 'Using /usr/share/ubuntu-mate-welcome/ path.', 1, 0)
-        data_path = '/usr/share/ubuntu-mate-welcome/'
+    elif( os.path.exists('/usr/share/budgie-welcome/') ):
+        dbg.stdout('Welcome', 'Using /usr/share/budgie-welcome/ path.', 1, 0)
+        data_path = '/usr/share/budgie-welcome/'
     else:
-        dbg.stdout('Welcome', 'Unable to source the ubuntu-mate-welcome data directory.', 0, 1)
+        dbg.stdout('Welcome', 'Unable to source the budgie-welcome data directory.', 0, 1)
         sys.exit(1)
     return data_path
 
