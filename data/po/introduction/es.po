@@ -14,63 +14,63 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Report-Msgid-Bugs-To : you@example.com\n"
 
-#: introduction.html:14
+#: introduction.html:15
 msgid "Introduction"
 msgstr "Introducción"
 
-#: introduction.html:24
+#: introduction.html:25
 msgid "Simplicity and Elegance."
 msgstr "Simplicidad y elegancia."
 
-#: introduction.html28, 100
+#: introduction.html29, 101
 msgid "What is <span name=\"distro-name\"></span>?"
 msgstr "¿Qué es <span name=\"distro-name\"></span>?"
 
-#: introduction.html:43
+#: introduction.html:44
 msgid ""
 "<span name=\"distro-name\"></span> is an operating system -- the core "
 "software that runs your computer, similar to"
 msgstr ""
-"<span name=\"distro-name\"></span> es un sistema operativo: el «software» "
-"básico que hace funcionar su equipo, semejante a"
+"<span name=\"distro-name\"></span> es un sistema operativo: el "
+"<em>software</em> básico que hace funcionar su equipo, semejante a"
 
-#: introduction.html:46
+#: introduction.html:47
 msgid "Microsoft's Windows"
 msgstr "Microsoft Windows"
 
-#: introduction.html:48
+#: introduction.html:49
 msgid "Apple's OS X"
 msgstr "Apple macOS"
 
-#: introduction.html48, 117
+#: introduction.html49, 118
 msgid "and"
 msgstr "y"
 
-#: introduction.html:50
+#: introduction.html:51
 msgid "Google's Chrome OS"
 msgstr "Google Chrome OS"
 
-#: introduction.html:52
+#: introduction.html:53
 msgid ""
 "<span name=\"distro-name\"></span> is a distribution (variation) of "
 "GNU/Linux. A dependable, secure, capable, and modern computer system that "
 "rivals all others in popularity and actual use."
 msgstr ""
-"<span name=\"distro-name\"></span> es una distribución (variación) de "
+"<span name=\"distro-name\"></span> es una distribución (variante) de "
 "GNU/Linux. Se trata de un sistema informático fiable, seguro, capaz y "
-"moderno que compite con el resto en popularidad y uso."
+"moderno que compite con el resto en lo que respecta a popularidad y uso."
 
-#: introduction.html:55
+#: introduction.html:56
 msgid "Unlike other operating systems, Linux is a major one used:"
 msgstr ""
 "A diferencia de otros sistemas operativos, Linux es la elección principal "
 "en:"
 
-#: introduction.html:57
+#: introduction.html:58
 msgid "on most of the world's fastest and most powerful supercomputers"
 msgstr "la mayoría de las supercomputadoras más rápidas y potentes del mundo"
 
-#: introduction.html:59
+#: introduction.html:60
 msgid ""
 "on many of (if not most of) the computers that make up the backbone of "
 "Internet"
@@ -78,11 +78,11 @@ msgstr ""
 "muchas (si no es que la mayoría) de las computadoras que forman la red "
 "troncal de Internet"
 
-#: introduction.html:61
+#: introduction.html:62
 msgid "and on corporate servers that require stability and reliability"
 msgstr "y en servidores empresariales que requieren estabilidad y fiabilidad"
 
-#: introduction.html:66
+#: introduction.html:67
 msgid ""
 "<span name=\"distro-name\"></span> is a stable, easy-to-use operating system"
 " with a configurable desktop environment. It is ideal for those who want the"
@@ -93,11 +93,11 @@ msgstr ""
 "<span name=\"distro-name\"></span> es un sistema operativo estable y fácil "
 "de usar que incluye un entorno de escritorio configurable. Es ideal para "
 "quienes quieren sacar el mayor provecho de sus equipos y prefieren una "
-"metáfora de escritorio tradicional. Gracias a sus requisitos de «hardware» "
-"reducidos, es apto tanto para equipos de sobremesa modernos como para "
-"portátiles."
+"metáfora de escritorio tradicional. Gracias a sus requisitos de "
+"<em>hardware</em> reducidos, es apto tanto para equipos de sobremesa "
+"modernos como para portátiles."
 
-#: introduction.html:73
+#: introduction.html:74
 msgid ""
 "The operating system is more secure, and better supported than the operating"
 " system pre-installed on most home computer hardware today."
@@ -106,7 +106,7 @@ msgstr ""
 "el que se preinstala en muchos de los equipos informáticos para el hogar hoy"
 " en día."
 
-#: introduction.html:77
+#: introduction.html:78
 msgid ""
 "Using <span name=\"distro-name\"></span> provides you with the freedom to "
 "run a complete, full-featured operating system, pre-configured with most (if"
@@ -114,171 +114,203 @@ msgid ""
 " anything about the way it looks, the way it works, or the applications it "
 "runs to suit your taste."
 msgstr ""
+"Utilizar <span name=\"distro-name\"></span> le brinda la libertad de "
+"ejecutar un sistema operativo completo y lleno de funcionalidades, "
+"preconfigurado con muchas de las aplicaciones que necesitará para sus tareas"
+" diarias. Puede modificarlo todo, desde su apariencia, su funcionamiento o "
+"las aplicaciones con que funciona, según sus preferencias."
 
-#: introduction.html:87
+#: introduction.html:88
 msgid "Objectives"
 msgstr "Objetivos"
 
-#: introduction.html:88
+#: introduction.html:89
 msgid ""
 "<span name=\"distro-name\"></span> has a number of guiding objectives and "
 "goals:"
 msgstr ""
-
-#: introduction.html:90
-msgid "Accessible to all, regardless of language and physical ability."
-msgstr ""
+"A <span name=\"distro-name\"></span> lo orientan varios objetivos y metas:"
 
 #: introduction.html:91
-msgid "Increase both Ubuntu and Budgie desktop user adoption."
+msgid "Accessible to all, regardless of language and physical ability."
 msgstr ""
+"De fácil acceso para todos, sin importar su idioma o capacidades físicas."
 
 #: introduction.html:92
+msgid "Increase both Ubuntu and Budgie desktop user adoption."
+msgstr ""
+"Elevar la adopción por los usuarios tanto de Ubuntu como del escritorio "
+"Budgie."
+
+#: introduction.html:93
 msgid ""
 "Create a Ubuntu based distro for users who prefer a traditional desktop "
 "metaphor."
 msgstr ""
+"Crear una distribución basada en Ubuntu para los usuarios que prefieren una "
+"metáfora de escritorio tradicional."
 
-#: introduction.html:93
+#: introduction.html:94
 msgid ""
 "When possible contribute to Upstream projects such as Solus and Debian so "
 "all Linux communities benefit."
 msgstr ""
+"Siempre que sea posible, contribuir con los proyectos de origen, como Solus "
+"y Debian, para que todas las comunidades Linux se beneficien."
 
-#: introduction.html:94
+#: introduction.html:95
 msgid ""
 "Software selection will favor functionality and stability over lightness and"
 " whimsy."
 msgstr ""
+"La selección de programas favorecerá las funcionalidades y la estabilidad "
+"sobre la ligereza y las extravagancias."
 
-#: introduction.html:104
+#: introduction.html:105
 msgid "Ubuntu"
-msgstr ""
+msgstr "Ubuntu"
 
-#: introduction.html:111
+#: introduction.html:112
 msgid "is one of, if not the, largest deployed"
 msgstr ""
 
-#: introduction.html:114
+#: introduction.html:115
 msgid ""
 "based desktop operating systems in the world. Linux is at the heart of "
 "Ubuntu and makes it possible to create secure, powerful and versatile "
 "operating systems, such as"
 msgstr ""
 
-#: introduction.html:118
+#: introduction.html:119
 msgid ""
 "Android is now in the hands of billions of people around the world and it's "
 "also powered by Linux."
 msgstr ""
+"Android, hoy por hoy, está en manos de miles de millones de personas en todo"
+" el planeta, y también funciona gracias a Linux."
 
-#: introduction.html:121
+#: introduction.html:122
 msgid "Ubuntu is available in a number of different"
-msgstr ""
+msgstr "Ubuntu está disponible en diversos"
 
-#: introduction.html:122
+#: introduction.html:123
 msgid "flavors"
-msgstr ""
+msgstr "«sabores» o variantes"
 
-#: introduction.html:122
+#: introduction.html:123
 msgid ""
 "each coming with its own desktop environment. <span name=\"distro-"
 "name\"></span> takes the Ubuntu base operating system and adds the"
 msgstr ""
+"cada uno con su propio entorno de escritorio. <span name=\"distro-"
+"name\"></span> toma la base del sistema operativo Ubuntu y le añade el"
 
-#: introduction.html:125
+#: introduction.html:126
 msgid "Budgie desktop"
-msgstr ""
+msgstr "escritorio de Budgie"
 
-#: introduction.html:131
+#: introduction.html:132
 msgid "Budgie Desktop"
-msgstr ""
+msgstr "Escritorio de Budgie"
 
-#: introduction.html:138
+#: introduction.html:139
 msgid "Wikipedia says that a"
-msgstr ""
+msgstr "La Wikipedia informa que un"
 
-#: introduction.html:140
+#: introduction.html:141
 msgid "Desktop Environment"
-msgstr ""
+msgstr "entorno de escritorio"
 
-#: introduction.html:142
+#: introduction.html:143
 msgid ""
 "\"An implementation of the desktop metaphor made of a bundle of programs "
 "running on top of a computer operating system, which share a common "
 "graphical user interface (GUI). Desktop GUIs help the user to easily access "
 "and edit files.\""
 msgstr ""
+"es «una realización de la metáfora del escritorio compuesta por un conjunto "
+"de programas que se ejecutan en un sistema operativo informático, los cuales"
+" comparten una interfaz gráfica de usuario (GUI). Las GUI de escritorio "
+"ayudan a los usuarios a acceder a archivos y modificarlos con facilidad»."
 
-#: introduction.html:152
+#: introduction.html:153
 msgid ""
 "<span name=\"distro-name\"></span> comes with a lot of useful applications "
 "like"
 msgstr ""
+"<span name=\"distro-name\"></span> incluye muchas aplicaciones útiles, tales"
+" como"
 
-#: introduction.html:165
+#: introduction.html:166
 msgid "GNOME Files"
-msgstr ""
+msgstr "Archivos de GNOME"
 
-#: introduction.html:169
+#: introduction.html:170
 msgid "GNOME Software"
-msgstr ""
-
-#: introduction.html:173
-msgid "File Manager"
-msgstr ""
+msgstr "GNOME Software"
 
 #: introduction.html:174
-msgid "Web Browser"
-msgstr ""
+msgid "File Manager"
+msgstr "Gestor de archivos"
 
 #: introduction.html:175
-msgid "Office Suite"
-msgstr ""
+msgid "Web Browser"
+msgstr "Navegador web"
 
 #: introduction.html:176
-msgid "Software Store"
-msgstr ""
+msgid "Office Suite"
+msgstr "Paquete de oficina"
 
 #: introduction.html:177
+msgid "Software Store"
+msgstr "Tienda de programas"
+
+#: introduction.html:178
 msgid "Music Player"
-msgstr ""
+msgstr "Reproductor de música"
 
-#: introduction.html:181
+#: introduction.html:182
 msgid "All of which are highly customisable and managed via"
-msgstr ""
+msgstr "Todo ello es altamente personalizable y se puede gestionar mediante"
 
-#: introduction.html:184
+#: introduction.html:185
 msgid "Settings"
-msgstr ""
+msgstr "Configuración"
 
-#: introduction.html:186
+#: introduction.html:187
 msgid ""
 "Budgie desktop provides an intuitive and attractive desktop environment "
 "using traditional metaphors, which means if you've ever used"
 msgstr ""
+"Budgie proporciona un entorno de escritorio intuitivo y atractivo que hace "
+"uso de metáforas tradicionales, lo que significa que si ya ha utilizado"
 
-#: introduction.html:190
+#: introduction.html:191
 msgid "or"
-msgstr ""
+msgstr "o"
 
-#: introduction.html:193
+#: introduction.html:194
 msgid "it will feel very familiar."
-msgstr ""
+msgstr "le resultará muy familiar."
 
-#: introduction.html:199
+#: introduction.html:200
 msgid "Open Source"
-msgstr ""
+msgstr "Código abierto"
 
-#: introduction.html:206
+#: introduction.html:207
 msgid ""
 "What Linux, Ubuntu and Budgie desktop all have in common is they are Open "
 "Source. This software can be freely used, changed, and shared (in modified "
 "or unmodified form) by anyone. In a nutshell <span name=\"distro-"
 "name\"></span> is free, in the truest sense of the word."
 msgstr ""
+"Lo que Linux, Ubuntu y el escritorio Budgie tienen en común es que todos son"
+" de código abierto. Cualquiera puede utilizarlos, modificarlos y "
+"compartirlos (ya sea en sus formas originales o modificados). En resumidas "
+"cuentas, <span name=\"distro-name\"></span> es libre, en el más puro sentido"
+" de la palabra."
 
-#: introduction.html:212
+#: introduction.html:213
 msgid ""
 "Although you will find some distributions (variations) of Linux for "
 "purchase, the vast majority are provided free of charge, like <span name"
@@ -293,7 +325,7 @@ msgid ""
 "might be included in the next release of <span name=\"distro-name\"></span>."
 msgstr ""
 
-#: introduction.html:227
+#: introduction.html:228
 msgid ""
 "Many of the users of Linux are corporations that use the operating system to"
 " run their businesses, or include it within their products. Many of these "
@@ -301,18 +333,18 @@ msgid ""
 "software for their businesses."
 msgstr ""
 
-#: introduction.html:233
+#: introduction.html:234
 msgid "These improvements are given back"
 msgstr ""
 
-#: introduction.html:234
+#: introduction.html:235
 msgid ""
 "to the Linux community and <span name=\"distro-name\"></span> improves as a "
 "result. This is how we can continually improve and grow without having to "
 "charge our users money."
 msgstr ""
 
-#: introduction.html:238
+#: introduction.html:239
 msgid ""
 "Unlike Windows and OS X, Linux is not created and supported by just one "
 "company. It is supported by Intel, Redhat, Linaro, Samsung, IBM, SUSE, Texas"
@@ -320,7 +352,7 @@ msgid ""
 "developers contributed to Linux over the last 15 years."
 msgstr ""
 
-#: introduction.html:244
+#: introduction.html:245
 msgid ""
 "Whether you are a home user of <span name=\"distro-name\"></span>, a <span "
 "name=\"distro-name\"></span> software or application developer, or an "
