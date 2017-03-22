@@ -2,17 +2,21 @@
 # Copyright (C) YEAR ORGANIZATION
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
+# Translators:
+# Adolfo Jayme-Barrientos <fitoschido@gmail.com>, 2017
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2017-03-22 21:21+GMT\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"Last-Translator: Adolfo Jayme-Barrientos <fitoschido@gmail.com>, 2017\n"
+"Language-Team: Spanish (https://www.transifex.com/ubuntu-budgie/teams/72251/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: ENCODING\n"
 "Generated-By: pygettext.py 1.5\n"
+"Language: es\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: budgie-welcome:255
 msgid ""
@@ -21,10 +25,10 @@ msgid ""
 " is not available in your system. Please install GNOME Software and try this"
 " option again"
 msgstr ""
-"Steam is a third party package that requires user approval of EULA(End User "
-"License Agreement). So we rely on GNOME Software for installing steam and it"
-" is not available in your system. Please install GNOME Software and try this"
-" option again"
+"Steam es un paquete de terceros que requiere la aprobación por parte del "
+"usuario del CLUF (contrato de licencia del usuario final). Por este motivo, "
+"necesitamos GNOME Software, el cual no está instalado en el equipo, para "
+"instalar Steam. Instale GNOME Software y ejecute de nuevo esta opción"
 
 #: budgie-welcome:343
 msgid ""
@@ -32,30 +36,30 @@ msgid ""
 "after installing GNOME Software, please contact us with following error "
 "message"
 msgstr ""
-"Seems that GNOME Software is not installed. If this problem persists even "
-"after installing GNOME Software, please contact us with following error "
-"message"
+"Parece que GNOME Software no está instalado. Si este problema persiste "
+"incluso después de instalarlo, póngase en contacto con nosotros y "
+"compártanos este mensaje de error"
 
 #: budgie-welcome:459
 msgid "Following tasks are in progress"
-msgstr "Following tasks are in progress"
+msgstr "Las tareas siguientes están en proceso"
 
 #: budgie-welcome:465 budgie-welcome:1307 budgie-welcome:1308
 #: budgie-welcome:1435
 msgid "Budgie Welcome"
-msgstr "Budgie Welcome"
+msgstr "Bienvenida de Budgie"
 
 #: budgie-welcome:469 budgie-welcome:1435
 msgid "Budgie Desktop"
-msgstr "Budgie Desktop"
+msgstr "Escritorio de Budgie"
 
 #: budgie-welcome:788
 msgid "Welcome App"
-msgstr "Welcome App"
+msgstr "Aplicación de bienvenida"
 
 #: budgie-welcome:1043
 msgid "Could not gather data."
-msgstr "Could not gather data."
+msgstr "No se pudieron recopilar los datos."
 
 #: budgie-welcome:1113
 msgid "GB"
@@ -75,4 +79,4 @@ msgstr "MiB"
 
 #: budgie-welcome:1352
 msgid " is in progress. Please wait for it to complete"
-msgstr " is in progress. Please wait for it to complete"
+msgstr "está en proceso. Espere a que termine"

@@ -49,6 +49,18 @@ source_file = data/po/introduction/introduction.pot
 source_lang = en_US
 type = PO
 
+[budgie-welcome.recommendations]
+file_filter = data/po/recommendations/<lang>.po
+source_file = data/po/recommendations/recommendations.pot
+source_lang = en_US
+type = PO
+
+[budgie-welcome.default]
+file_filter = data/po/default/<lang>.po
+source_file = data/po/default/default.pot
+source_lang = en_US
+type = PO
+
 [budgie-welcome.ubuntubudgiewelcome]
 file_filter = po/<lang>.po
 source_file = po/budgie-welcome.pot
