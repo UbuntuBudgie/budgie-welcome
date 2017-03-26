@@ -784,7 +784,7 @@ class Notifier(object):
             icon = "dialog-information"
         elif type == self.ERROR:
             icon = "dialog-error"
-        
+
         self.notification = Notification(_("Welcome App"), message, icon)
 
     def show(self):
@@ -1307,11 +1307,24 @@ class WelcomeApp(object):
         w.set_position(Gtk.WindowPosition.CENTER)
         w.set_wmclass('budgie-welcome', _("Budgie Welcome"))
         w.set_title(_("Budgie Welcome"))
-        w.set_size_request(992, 520)
-        w.set_decorated(False)
+        w.set_size_request(1000, 520)
 
         icon_dir = os.path.join(self._data_path, 'img', 'distro-icon.svg')
         w.set_icon_from_file(icon_dir)
+
+        # Turn window into a CSD styled application and create menu entries.
+        header = Gtk.HeaderBar(title=_("Welcome"))
+        header.props.show_close_button = True
+        w.set_titlebar(header)
+
+        menu_img = Gtk.Image()
+        menu_img.set_from_file(os.path.join(self._data_path, 'img', 'welcome', 'menu.svg'))
+
+        menu_btn = Gtk.Button()
+        menu_btn.set_image(menu_img)
+        header.pack_start(menu_btn)
+
+        menu_btn.connect("clicked", self._header_menu_clicked)
 
         # build webkit container
         mv = AppView()
@@ -1389,6 +1402,10 @@ class WelcomeApp(object):
         systemstate.autostart = False
         os.mknod(file)
         return True
+
+    def _header_menu_clicked(self, btn):
+        print("Unimplemented header menu button!")
+
 
 class Arguments(object):
     '''Check arguments passed the application.'''
