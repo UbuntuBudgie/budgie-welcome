@@ -1306,11 +1306,31 @@ class WelcomeApp(object):
         w.set_position(Gtk.WindowPosition.CENTER)
         w.set_wmclass('budgie-welcome', _("Budgie Welcome"))
         w.set_title(_("Budgie Welcome"))
-        w.set_size_request(992, 520)
-        w.set_decorated(False)
+        w.set_size_request(1048, 600)
 
         icon_dir = os.path.join(self._data_path, 'img', 'distro-icon.svg')
         w.set_icon_from_file(icon_dir)
+        
+        # Turn window into a CSD styled application and create menu entries.
+        header = Gtk.HeaderBar()
+        header.props.show_close_button = False
+        w.set_titlebar(header)
+
+        menu_img = Gtk.Image()
+        close_img = Gtk.Image()
+        menu_img.set_from_file(os.path.join(self._data_path, 'img', 'welcome', 'menu.svg'))
+        close_img.set_from_file(os.path.join(self._data_path, 'img', 'welcome', 'ic_close.png'))
+
+        menu_btn = Gtk.Button()
+        menu_btn.set_image(menu_img)
+        close_btn = Gtk.Button()
+        close_btn.set_image(close_img)
+        
+        header.pack_start(menu_btn)
+        header.pack_start(close_btn)
+
+        menu_btn.connect("clicked", self._header_menu_clicked)
+        close_btn.connect("clicked", self.close)
 
         # build webkit container
         mv = AppView()
@@ -1388,6 +1408,9 @@ class WelcomeApp(object):
         systemstate.autostart = False
         os.mknod(file)
         return True
+    
+    def _header_menu_clicked(self):
+        print("Menu action not implemented!!")
 
 class Arguments(object):
     '''Check arguments passed the application.'''
