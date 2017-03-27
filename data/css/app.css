@@ -1,0 +1,28 @@
+GtkWindow {
+  box-shadow: none;
+  border: none;
+  margin: 0;
+  padding: 0
+}
+
+GtkHeaderBar{
+  background: #404552;
+  border: none;
+}
+
+GtkLabel {
+  color: white;
+  padding-left: 20px;
+  font-size: 14px;
+}
+
+GtkButton {
+  border: 1px solid #777;
+  padding: 10px;
+  transition: background ease 0.3s;
+}
+
+GtkButton:hover {
+  background: black;
+  transition: background ease 0.5s;
+}
