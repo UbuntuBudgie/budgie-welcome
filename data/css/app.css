@@ -8,6 +8,10 @@ GtkWindow {
 GtkHeaderBar{
   background: #404552;
   border: none;
+  margin: 0;
+  box-shadow: none;
+  font-size: 12px;
+  font-family: 'Ubuntu Mono';
 }
 
 GtkLabel {
@@ -16,13 +20,15 @@ GtkLabel {
   font-size: 14px;
 }
 
-GtkButton {
-  border: 1px solid #777;
-  padding: 10px;
-  transition: background ease 0.3s;
+#about-btn {
+  color: white;
+  padding: 2px 10px;
+  border: 1px solid #888;
+  background: #404552;
+  box-shadow: none;
 }
 
-GtkButton:hover {
-  background: black;
-  transition: background ease 0.5s;
+#about-btn:hover {
+  background: rgba(255, 255, 255, 0.25);
+  transition: background 0.5s ease;
 }

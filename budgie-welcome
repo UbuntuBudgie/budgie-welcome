@@ -72,7 +72,6 @@ class AppView(WebKit2.WebView):
 
         # Remove previously injected elements
         app.update_page('#menu-button', 'remove')
-        app.update_page('#close', 'remove')
         app.update_page('#status-btn', 'remove')
         # Dynamically inject header controls button
         if current_page != "index":
@@ -90,13 +89,6 @@ class AppView(WebKit2.WebView):
         app.update_page('#navigation', 'append', '<a onclick="cmd(\'status\')"\
                           class="btn btn-inverse" \
                           id="status-btn">Status</a>')
-        app.update_page('#navigation', 'append', '<a onclick="cmd(\'about\')"\
-                          class="btn btn-inverse" \
-                          id="about-btn"><span class="material-icons">&#xE88F;</span></a>')
-        app.update_page('#navigation', 'append', '<a id="close"\
-                          onclick="cmd(\'close\')">\
-                          <i class="material-icons"\
-                          id="close-btn">&#xE14C;</i></a>')
 
         if systemstate.session_type == 'live':
             app.update_page('.live-session-only', 'show')
@@ -1309,39 +1301,31 @@ class WelcomeApp(object):
         w.set_position(Gtk.WindowPosition.CENTER)
         w.set_wmclass('budgie-welcome', _("Budgie Welcome"))
         w.set_title(_("Budgie Welcome"))
+        w.set_resizable(False)
         w.set_size_request(992, 550)
 
         icon_dir = os.path.join(self._data_path, 'img', 'distro-icon.svg')
         w.set_icon_from_file(icon_dir)
         
         # Turn window into a CSD styled application and create menu entries.
-        header = Gtk.HeaderBar()
-        header.props.show_close_button = False
+        header = Gtk.HeaderBar(title=_("Budgie Welcome"))
+        header.props.show_close_button = True
         w.set_titlebar(header)
 
         section_label = Gtk.Label()
 
-        close_img = Gtk.Image()
         about_img = Gtk.Image()
-        close_img.set_from_file(os.path.join(self._data_path, 'img', 'welcome', 'ic_close.png'))
-        about_img.set_from_file(os.path.join(self._data_path, 'img', 'welcome', 'ic_info.png'))
+        about_img.set_from_file(os.path.join(self._data_path, 'img', 'welcome', 'menu.svg'))
         
-        close_btn = Gtk.Button()
         about_btn = Gtk.Button()
-        close_btn.set_image(close_img)
         about_btn.set_image(about_img)
+        about_btn.set_name("about-btn")
         
-        section_label.set_text("Main Menu")
-        _hcontainer = Gtk.Box(homogeneous=False, spacing=10)
-        _hcontainer.pack_start(section_label, expand=True, fill=True, padding=5)
-        _hcontainer.pack_start(about_btn, expand=True, fill=True, padding=5)
-        _hcontainer.pack_start(close_btn, expand=True, fill=True, padding=5)
-        header.pack_start(_hcontainer)
+        header.pack_start(about_btn)
 
         # build webkit container
         mv = AppView()
 
-        close_btn.connect("clicked", self.close)
         about_btn.connect("clicked", self._show_about)
 
         
