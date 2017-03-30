@@ -20,15 +20,14 @@ GtkLabel {
   font-size: 14px;
 }
 
-#about-btn {
+#about-btn, #status-btn {
   color: white;
-  padding: 2px 10px;
   border: 1px solid #888;
   background: #404552;
   box-shadow: none;
 }
 
-#about-btn:hover {
+#about-btn:hover, #status-btn:hover {
   background: rgba(255, 255, 255, 0.25);
   transition: background 0.5s ease;
 }

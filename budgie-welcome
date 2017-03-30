@@ -63,7 +63,7 @@ class AppView(WebKit2.WebView):
         self.connect('context-menu', self._context_menu_cb)
 
         self.l_uri = None
-
+        self.status_btn = None
         self.set_zoom_level(0.95)
 
     def _push_config(self):
@@ -74,7 +74,6 @@ class AppView(WebKit2.WebView):
 
         # Remove previously injected elements
         app.update_page('#menu-button', 'remove')
-        app.update_page('#status-btn', 'remove')
         # Dynamically inject header controls button
         if current_page != "index":
             if current_page != "gettingstarted":
@@ -88,20 +87,15 @@ class AppView(WebKit2.WebView):
                                 onclick="backAction()">\
                                 <i class="material-icons">&#xE5CB;</i></a>')
 
-        app.update_page('#navigation', 'append', '<a onclick="cmd(\'status\')"\
-                          class="btn btn-inverse" \
-                          id="status-btn">Status</a>')
-
         if systemstate.session_type == 'live':
             app.update_page('.live-session-only', 'show')
         else:
             app.update_page('.normal-session-only', 'show')
 
-        if pm.active: # There is atleast one task
-            app.update_page('#status-btn', 'fadeIn()')
+        if not pm.queue.empty() or pm.active: # There is atleast one task
+            self.status_btn.show()
         else:
-            app.update_page('#status-btn', 'fadeOut()')
-
+            self.status_btn.hide()
 
         if systemstate.is_online:
             self.run_javascript("$('.offline').hide()")
@@ -532,23 +526,19 @@ class AppView(WebKit2.WebView):
                 subprocess.call(["/bin/bash", "-c", cmd])
 
     def managePackage(self, operation, fname, code):
-        def threadedMethod():
-            actions = [
-                ['#' + code + ('-install' if operation == PMEntry.INSTALL else '-remove'), 'addClass', 'disabled', None],
-                ['#' + code + '-status', 'fadeIn', None, None]
-            ]
+        actions = [
+            ['#' + code + ('-install' if operation == PMEntry.INSTALL else '-remove'), 'addClass', 'disabled', None],
+            ['#' + code + '-status', 'fadeIn', None, None]
+        ]
 
-            for action in actions:
-                app.update_page(action[0], action[1], action[2], action[3])
+        for action in actions:
+            app.update_page(action[0], action[1], action[2], action[3])
 
-            systemstate.addIntermediateActions(fname, actions)
+        systemstate.addIntermediateActions(fname, actions)
 
-            pmentry = PMEntry(operation, fname, code, actions)
-            pm_queue.put(pmentry)
-
-            app.update_page('#status-btn', 'fadeIn')
-
-        Thread(target = threadedMethod).start()
+        pmentry = PMEntry(operation, fname, code, actions)
+        pm_queue.put(pmentry)
+        self.status_btn.show()
 
 class Debug(object):
     def __init__(self):
@@ -700,7 +690,6 @@ class PackageManager(Thread):
                 continue
 
             self.active = entry
-
             filename = entry.filename
             code = entry.code
 
@@ -1320,17 +1309,22 @@ class WelcomeApp(object):
         about_img.set_from_file(os.path.join(self._data_path, 'img', 'welcome', 'menu.svg'))
 
         about_btn = Gtk.Button()
+        status_btn = Gtk.Button(_("Status"))
+        status_btn.hide()
+        status_btn.set_name("status-btn")
         about_btn.set_image(about_img)
         about_btn.set_name("about-btn")
         about_btn.set_can_focus(False)
 
-        header.pack_start(about_btn)
+        header.pack_end(about_btn)
+        header.pack_end(status_btn)
 
         # build webkit container
         mv = AppView()
+        mv.status_btn = status_btn
 
         about_btn.connect("clicked", self._show_about)
-
+        status_btn.connect("clicked", self._show_status)
 
 
         # load our index file
@@ -1376,6 +1370,9 @@ class WelcomeApp(object):
 
     def _show_about(self, gtk_widget):
         self.webkit._do_command("about")
+    
+    def _show_status(self, gtk_widget):
+        self.webkit._do_command("status")
 
     def close(self, p1 = None, p2 = None):
 
