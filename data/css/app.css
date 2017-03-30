@@ -1,11 +1,11 @@
-GtkWindow {
+GtkWindow, decoration {
   box-shadow: none;
   border: none;
   margin: 0;
   padding: 0
 }
 
-GtkHeaderBar{
+GtkHeaderBar, headerbar{
   background: #404552;
   border: none;
   margin: 0;
@@ -14,7 +14,7 @@ GtkHeaderBar{
   font-family: 'Ubuntu Mono';
 }
 
-GtkLabel {
+GtkLabel, label {
   color: white;
   padding-left: 20px;
   font-size: 14px;
