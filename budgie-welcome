@@ -64,6 +64,8 @@ class AppView(WebKit2.WebView):
 
         self.l_uri = None
 
+        self.set_zoom_level(0.95)
+
     def _push_config(self):
         # TODO: push notification should be connected to angularjs and use a
         # broadcast event any suitable controllers will be able to listen and
@@ -1295,7 +1297,7 @@ class WelcomeApp(object):
     def _build_app(self):
         # Load custom css for App
         self._load_css()
-    
+
         # build window
         w = Gtk.Window()
         w.set_position(Gtk.WindowPosition.CENTER)
@@ -1306,7 +1308,7 @@ class WelcomeApp(object):
 
         icon_dir = os.path.join(self._data_path, 'img', 'distro-icon.svg')
         w.set_icon_from_file(icon_dir)
-        
+
         # Turn window into a CSD styled application and create menu entries.
         header = Gtk.HeaderBar(title=_("Budgie Welcome"))
         header.props.show_close_button = True
@@ -1316,11 +1318,12 @@ class WelcomeApp(object):
 
         about_img = Gtk.Image()
         about_img.set_from_file(os.path.join(self._data_path, 'img', 'welcome', 'menu.svg'))
-        
+
         about_btn = Gtk.Button()
         about_btn.set_image(about_img)
         about_btn.set_name("about-btn")
-        
+        about_btn.set_can_focus(False)
+
         header.pack_start(about_btn)
 
         # build webkit container
@@ -1328,7 +1331,7 @@ class WelcomeApp(object):
 
         about_btn.connect("clicked", self._show_about)
 
-        
+
 
         # load our index file
         file = os.path.abspath(os.path.join(translations.get_pages_path(), self._start_page))
@@ -1355,7 +1358,7 @@ class WelcomeApp(object):
     def run(self):
         signal.signal(signal.SIGINT, signal.SIG_DFL)
         Gtk.main()
-        
+
     def _load_css(self):
         '''
             Load custom css to make application consitent with embedded
@@ -1366,11 +1369,11 @@ class WelcomeApp(object):
         style_provider.load_from_file(style_file)
 
         Gtk.StyleContext.add_provider_for_screen(
-            Gdk.Screen.get_default(), 
-            style_provider,     
+            Gdk.Screen.get_default(),
+            style_provider,
             Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION
         )
-    
+
     def _show_about(self, gtk_widget):
         self.webkit._do_command("about")
 
