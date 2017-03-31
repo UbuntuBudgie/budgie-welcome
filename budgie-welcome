@@ -64,28 +64,45 @@ class AppView(WebKit2.WebView):
 
         self.l_uri = None
         self.status_btn = None
+        self.back_btn = None
+        self.page_title = None
         self.set_zoom_level(0.95)
+        
+        self.back_signal_handler = None
+        
+    def _back_action(self, data):
+        self.run_javascript("smoothPageFade('index.html')")
+    
+    def _index_action(self, data):
+        self.run_javascript("backAction()")
 
     def _push_config(self):
         # TODO: push notification should be connected to angularjs and use a
         # broadcast event any suitable controllers will be able to listen and
         # respond accordingly, for now we just use jQuery to manually toggle
         current_page = app.current_page[:-5]
-
-        # Remove previously injected elements
-        app.update_page('#menu-button', 'remove')
-        # Dynamically inject header controls button
+        title = self.get_title()
+        
+        if title:
+            self.page_title.set_label(title)
+        
+        # Dynamically toggle header controls button
+        print(current_page)
         if current_page != "index":
-            if current_page != "gettingstarted":
-                app.update_page('#navigation', 'prepend', '<a id="menu-button"\
-                                class="navigation-button"\
-                                onclick="smoothPageFade(\'index.html\')">\
-                                <i class="material-icons">&#xE5CB;</i></a>')
-            else:
-                app.update_page('#navigation', 'prepend', '<a id="menu-button"\
-                                class="navigation-button"\
-                                onclick="backAction()">\
-                                <i class="material-icons">&#xE5CB;</i></a>')
+        
+            if not self.back_btn.is_visible():
+                
+                if current_page != "gettingstarted":
+                    self.back_signal_handler = self.back_btn.connect("clicked", self._back_action)
+                else:
+                    self.back_signal_handler = self.back_btn.connect("clicked", self._index_action)
+                
+                self.back_btn.show()
+        else:
+            if self.back_signal_handler:
+                self.back_btn.disconnect(self.back_signal_handler)
+                self.back_signal_handler = None
+            self.back_btn.hide()
 
         if systemstate.session_type == 'live':
             app.update_page('.live-session-only', 'show')
@@ -101,7 +118,6 @@ class AppView(WebKit2.WebView):
             self.run_javascript("$('.offline').hide()")
         else:
             self.run_javascript("$('.offline').show()")
-
 
         ### Getting Started Page ###
         if current_page == 'gettingstarted':
@@ -1304,24 +1320,33 @@ class WelcomeApp(object):
         w.set_titlebar(header)
 
         section_label = Gtk.Label()
+        page_title = Gtk.Label()
 
         about_img = Gtk.Image()
+        back_img = Gtk.Image()
         about_img.set_from_file(os.path.join(self._data_path, 'img', 'welcome', 'menu.svg'))
+        back_img.set_from_file(os.path.join(self._data_path, 'img', 'welcome', 'ic_back.svg'))
 
-        about_btn = Gtk.Button()
+        about_btn = Gtk.Button(image=about_img)
         status_btn = Gtk.Button(_("Status"))
+        back_btn = Gtk.Button(image=back_img)
         status_btn.hide()
+        back_btn.hide()
         status_btn.set_name("status-btn")
-        about_btn.set_image(about_img)
+        back_btn.set_name("back-btn")
         about_btn.set_name("about-btn")
         about_btn.set_can_focus(False)
 
+        header.pack_start(back_btn)
+        header.pack_start(page_title)
         header.pack_end(about_btn)
         header.pack_end(status_btn)
 
         # build webkit container
         mv = AppView()
         mv.status_btn = status_btn
+        mv.back_btn = back_btn
+        mv.page_title = page_title
 
         about_btn.connect("clicked", self._show_about)
         status_btn.connect("clicked", self._show_status)

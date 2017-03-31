@@ -10,24 +10,21 @@ GtkHeaderBar, headerbar{
   border: none;
   margin: 0;
   box-shadow: none;
-  font-size: 12px;
-  font-family: 'Ubuntu Mono';
 }
 
 GtkLabel, label {
   color: white;
   padding-left: 20px;
-  font-size: 14px;
 }
 
-#about-btn, #status-btn {
+#about-btn, #status-btn, #back-btn {
   color: white;
   border: 1px solid #888;
   background: #404552;
   box-shadow: none;
 }
 
-#about-btn:hover, #status-btn:hover {
+#about-btn:hover, #status-btn:hover, #back-btn:hover {
   background: rgba(255, 255, 255, 0.25);
   transition: background 0.5s ease;
 }
