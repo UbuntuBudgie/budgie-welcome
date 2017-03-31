@@ -87,7 +87,6 @@ class AppView(WebKit2.WebView):
             self.page_title.set_label(title)
         
         # Dynamically toggle header controls button
-        print(current_page)
         if current_page != "index":
         
             if not self.back_btn.is_visible():
