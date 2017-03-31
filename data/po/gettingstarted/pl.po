@@ -1,139 +1,143 @@
-# 
+# Translators:
+# Sebastian Cygan <sebcyg@gmail.com>, 2017
 msgid ""
 msgstr ""
 "Project-Id-Version: Budgie Welcome\n"
 "POT-Creation-Date: 2016-02-27 12:48+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: : LANGUAGE <LL@li.org>\n"
+"Last-Translator: Sebastian Cygan <sebcyg@gmail.com>, 2017\n"
+"Language-Team: Polish (https://www.transifex.com/ubuntu-budgie/teams/72251/pl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: pl\n"
+"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && (n%100<12 || n%100>=14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && n%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);\n"
 "Report-Msgid-Bugs-To : you@example.com\n"
 
 #: gettingstarted.html:16
 msgid "Getting Started"
-msgstr "Getting Started"
+msgstr "Wprowadzenie"
 
 #: gettingstarted.html28, 190
 msgid "System Requirements"
-msgstr "System Requirements"
+msgstr "Wymagania systemowe"
 
 #: gettingstarted.html:31
 msgid "Installation Preparation"
-msgstr "Installation Preparation"
+msgstr "Przygotowanie do instalacji"
 
 #: gettingstarted.html34, 192, 202
 msgid "Dual Booting"
-msgstr "Dual Booting"
+msgstr "Dwa systemy operacyjne"
 
 #: gettingstarted.html:37
 msgid "Install Now"
-msgstr "Install Now"
+msgstr "Zainstaluj teraz"
 
 #: gettingstarted.html43, 44, 378, 583
 msgid "Updates & Extras"
-msgstr "Updates & Extras"
+msgstr "Aktualizacje i dodatki"
 
 #: gettingstarted.html46, 47, 440, 450, 641
 msgid "Drivers"
-msgstr "Drivers"
+msgstr "Sterowniki"
 
 #: gettingstarted.html49, 50
 msgid "Language & Input"
-msgstr "Language & Input"
+msgstr "Język i wprowadzanie"
 
 #: gettingstarted.html52, 53, 643
 msgid "Optional Tasks"
-msgstr "Optional Tasks"
+msgstr "Zadania opcjonalne"
 
 #: gettingstarted.html57, 58
 msgid "Performance tuning"
-msgstr "Performance tuning"
+msgstr "Poprawianie wydajności"
 
 #: gettingstarted.html60, 61, 746, 1264
 msgid "Customization"
-msgstr "Customization"
+msgstr "Dostosowywanie"
 
 #: gettingstarted.html63, 64
 msgid "Browser Ballot"
-msgstr "Browser Ballot"
+msgstr "Wybór przeglądarki"
 
 #: gettingstarted.html65, 66, 904
 msgid "Keyboard Shortcuts"
-msgstr "Keyboard Shortcuts"
+msgstr "Skróty klawiaturowe"
 
 #: gettingstarted.html71, 72
 msgid "System Specifications"
-msgstr "System Specifications"
+msgstr "Specyfikacja systemu"
 
 #: gettingstarted.html:81
 msgid "Please choose a topic to get started."
-msgstr "Please choose a topic to get started."
+msgstr "Wybierz temat, aby rozpocząć"
 
 #: gettingstarted.html:89
 msgid "Modest System Requirements"
-msgstr "Modest System Requirements"
+msgstr "Skromne wymagania systemowe"
 
 #: gettingstarted.html:90
 msgid ""
 "<span name=\"distro-name\"></span> works well on both high-end to older "
 "computers, optimized to be functional, while light on system resources."
 msgstr ""
-"<span name=\"distro-name\"></span> works well on both high-end to older "
-"computers, optimized to be functional, while light on system resources."
+"<span name=\"distro-name\"></span> działa dobrze zarówno na najwyższej klasy"
+" komputerach jak i na tych nieco starszych. Jest zoptymalizowany, aby "
+"zachować wysoką funkcjonalność przy niskim obciążeniu zasobów systemowych."
 
 #: gettingstarted.html:93
 msgid "Minimum"
-msgstr "Minimum"
+msgstr "Minimalne"
 
 #: gettingstarted.html:95
 msgid "Pentium Dual Core 1.6 GHz - approximately created in 2007"
-msgstr "Pentium Dual Core 1.6 GHz - approximately created in 2007"
+msgstr "Pentium Dual Core 1.6 GHz - wyprodukowane ok. 2007"
 
 #: gettingstarted.html:96
 msgid "2 gigabytes (GB) of RAM"
-msgstr "2 gigabytes (GB) of RAM"
+msgstr "2 gigabajty (GB) pamięci RAM"
 
 #: gettingstarted.html:97
 msgid "16 gigabytes (GB) of disk space"
-msgstr "16 gigabytes (GB) of disk space"
+msgstr "16 gigabajtów (GB) przestrzeni dyskowej"
 
 #: gettingstarted.html:100
 msgid "Recommended"
-msgstr "Recommended"
+msgstr "Rekomendowane"
 
 #: gettingstarted.html:102
 msgid "Pentium i3 - approximately created in 2013"
-msgstr "Pentium i3 - approximately created in 2013"
+msgstr "Pentium i3 - wyprodukowane ok. 2013"
 
 #: gettingstarted.html:103
 msgid "4 gigabytes (GB) of RAM"
-msgstr "4 gigabytes (GB) of RAM"
+msgstr "4 gigbajty (GB) pamięci RAM"
 
 #: gettingstarted.html:104
 msgid "80 gigabytes (GB) of disk space"
-msgstr "80 gigabytes (GB) of disk space"
+msgstr "80 gigbajtów (GB) przestrzeni dyskowej"
 
 #: gettingstarted.html:107
 msgid ""
 "The operating system will run much more efficiently if your computer meets "
 "or surpasses the recommended requirements."
 msgstr ""
-"The operating system will run much more efficiently if your computer meets "
-"or surpasses the recommended requirements."
+"System operacyjny będzę pracował dużo bardziej wydajnie, jeżeli Twój "
+"komputer spełnia lub przewyższa wymagania rekomendowane."
 
 #: gettingstarted.html112, 1274
 msgid "What's inside my computer?"
-msgstr "What's inside my computer?"
+msgstr "Co jest w moim komputerze?"
 
 #: gettingstarted.html:118
 msgid "Installation Preparations"
-msgstr "Installation Preparations"
+msgstr "Przygotowania do instalacji"
 
 #: gettingstarted.html:128
 msgid "Preparing to Install"
-msgstr "Preparing to Install"
+msgstr "Przygotowanie do instalacji"
 
 #: gettingstarted.html:129
 msgid ""
@@ -143,35 +147,42 @@ msgid ""
 " class=\"fa fa-windows\"></span> Microsoft Windows or another <span "
 "class=\"fa fa-linux\"></span> GNU/Linux distribution."
 msgstr ""
-"<span name=\"distro-name\"></span> is relatively simple to set up, whether "
-"you're looking to replace your existing operating system or install <span "
-"name=\"distro-name\"></span> alongside an existing one - such as &nbsp;<span"
-" class=\"fa fa-windows\"></span> Microsoft Windows or another <span "
-"class=\"fa fa-linux\"></span> GNU/Linux distribution."
+"<span name=\"distro-name\"></span> jest stosunkowo prosty w obsłudze, "
+"niezależnie od tego, czy poszukujesz alternatywy dla obecnego systemu "
+"operacyjnego czy też chcesz zainstalować <span name=\"distro-name\"></span> "
+"jako drugi system w komputerze obok takich systemów jak &nbsp;<span "
+"class=\"fa fa-windows\"></span> Microsoft Windows lub inna dystrybucja <span"
+" class=\"fa fa-linux\"></span> GNU/Linux."
 
 #: gettingstarted.html:135
 msgid "For the best results:"
-msgstr "For the best results:"
+msgstr "Dla uzyskania najlepszcyh rezultatów:"
 
 #: gettingstarted.html:137
 msgid "<u><b>Back up</b></u> any important data to another storage device."
-msgstr "<u><b>Back up</b></u> any important data to another storage device."
+msgstr ""
+"Zrób <u><b>kopię zapasową</b></u> wszystkich ważnych danych na oddzielnym "
+"urządzeniu magazynującym."
 
 #: gettingstarted.html:138
 msgid ""
 "Connect to the Internet to install all available updates during "
 "installation."
 msgstr ""
-"Connect to the Internet to install all available updates during "
-"installation."
+"Połącz się z internetem, aby zainstalować wszystkie dostępne aktualizacje "
+"podczas instalacji systemu."
 
 #: gettingstarted.html:139
 msgid "Stay connected to the Internet to install all available updates."
-msgstr "Stay connected to the Internet to install all available updates."
+msgstr ""
+"Pozostań połączony z internetem, aby zainstalować wszystkie dostępne "
+"aktualizacje."
 
 #: gettingstarted.html:140
 msgid "Plug in your device to the mains if it is running on battery power."
-msgstr "Plug in your device to the mains if it is running on battery power."
+msgstr ""
+"Podłącz swoje urządzenie do głównego zasilania, jeżeli pracuje ono na "
+"zasilaniu bateryjnym."
 
 #: gettingstarted.html:145
 msgid ""
@@ -181,15 +192,16 @@ msgid ""
 "committing to installing it on your machine. Once you are ready, double "
 "click the installation icon from the desktop."
 msgstr ""
-"The live session you are currently in right now is a good opportunity to "
-"test <span name=\"distro-name\"></span> without modifying your computer, "
-"allowing you to test all of your peripherals are working as intended before "
-"committing to installing it on your machine. Once you are ready, double "
-"click the installation icon from the desktop."
+"Uruchomiona obecnie tzw. sesja live jest dobrą okazją do przetestowania "
+"<span name=\"distro-name\"></span> bez konieczności modyfikowania komputera,"
+" pozwalając Ci sprawdzić czy wszystkie urządzenia peryferyjne działają "
+"zgodnie z oczekiwaniami przed podjęciem decyzji o zainstalowaniu systemu na "
+"komputerze. Po zakończeniu kliknij dwukrotnie ikonę instalacji znajdującą "
+"się na pulpicie."
 
 #: gettingstarted.html:152
 msgid "Modern UEFI-based computers"
-msgstr "Modern UEFI-based computers"
+msgstr "Nowsze komputery z interfejsem UEFI"
 
 #: gettingstarted.html:153
 msgid ""
@@ -198,14 +210,16 @@ msgid ""
 "Bootloader</b> option) prior to installation, particularly if an operating "
 "system was pre-installed."
 msgstr ""
-"If you have a modern PC that uses the Unified Extended Firmware Interface "
-"(UEFI), you may need to disable <b>Secure Boot</b> (or enable the <b>Unlock "
-"Bootloader</b> option) prior to installation, particularly if an operating "
-"system was pre-installed."
+"W przypadku posiadania nowoczesnego komputera PC, który używa interfejsu "
+"Unified Extended Firmware Interface (UEFI), może być konieczne wyłączenie "
+"funkcji <b>Secure Boot</b> (lub włączenie opcji <b>Unlock Bootloader</b>) "
+"przed rozpoczęciem instalacji, w szczególlności jeżeli inny system "
+"operacyjny był fabrycznie zainstalowany na komputerze."
 
 #: gettingstarted.html:157
 msgid "If you are using a legacy BIOS machine, you do not need to do this."
-msgstr "If you are using a legacy BIOS machine, you do not need to do this."
+msgstr ""
+"Jeśli używasz starszej maszyny z interfejsem BIOS, nie musisz tego robić."
 
 #: gettingstarted.html:160
 msgid ""
@@ -214,10 +228,11 @@ msgid ""
 "operating system installed in BIOS mode after installing a UEFI-enabled "
 "operating system or vice versa."
 msgstr ""
-"Especially when dual booting, it is important that you boot your system in "
-"the correct mode and use the <b> 64-bit image</b> , as you cannot boot an "
-"operating system installed in BIOS mode after installing a UEFI-enabled "
-"operating system or vice versa."
+"W szczególności, jeżeli używasz dwóch systemów operacyjnych, istotne jest, "
+"aby uruchamiać Twój system w odpowiednim trybie i używać <b> 64-bitowego "
+"obrazu systemu</b>. Nie jest bowiem możliwe uruchomienie systemu "
+"operacyjnego zainstalowanego w trybie BIOS po tym jak został zainstalowany "
+"inny system w trybie UEFI oraz na odwrót."
 
 #: gettingstarted.html:166
 msgid ""
@@ -225,21 +240,22 @@ msgid ""
 "show a \"protection layer\". <b>Do not worry,</b> your data is not lost or "
 "corrupt!"
 msgstr ""
-"Booting in BIOS mode on a UEFI system with a GPT-formatted disk will also "
-"show a \"protection layer\". <b>Do not worry,</b> your data is not lost or "
-"corrupt!"
+"Uruchamiając komputera w trybie BIOS na systemach z interfejsem UEFI oraz "
+"dyskiem z partycjonowanie GPT wyświetlona zostanie tzw. \"wartswa "
+"bezpieczeństwa\". <b>Nie przejmuj się,</b> Twoje dane nie zostaną utracone "
+"lub uszkodzone!"
 
 #: gettingstarted.html:171
 msgid ""
 "Your system is currently running in <b><span id=\"boot-mode\"></span> "
 "mode</b>."
 msgstr ""
-"Your system is currently running in <b><span id=\"boot-mode\"></span> "
-"mode</b>."
+"Twój system jest obecnie uruchomiony w <b>trybie <span id=\"boot-"
+"mode\"></span></b>."
 
 #: gettingstarted.html:176
 msgid "Swap"
-msgstr "Swap"
+msgstr "Plik wymiany - Swap"
 
 #: gettingstarted.html:177
 msgid ""
@@ -248,10 +264,12 @@ msgid ""
 "Performance will decrease when running low on memory and could possibly "
 "freeze if you completely run out of memory without anywhere to swap."
 msgstr ""
-"For computers that start to run low on memory (RAM), the operating system "
-"will start swapping to disk. Known as a \"paging file\" in Windows. "
-"Performance will decrease when running low on memory and could possibly "
-"freeze if you completely run out of memory without anywhere to swap."
+"W przypadku komputerów uruchominych z małą ilością pamięci (RAM), system "
+"operacyjny będzie wymieniał pamięc RAM z dyskową. Znane jest to jako \"plik "
+"wymiany\" w systemie Windows. Wydajność obniży się podczas pracy z małą "
+"ilością pamięci lub może dojść do zawieszenia się systemu, jeżeli braknie "
+"pamięci RAM i jednocześnie nie będzie miejsca na wymianę jej z pamięcią "
+"dyskową."
 
 #: gettingstarted.html:181
 msgid ""
@@ -259,9 +277,10 @@ msgid ""
 "example, if you have 2 GiB of RAM, then 2 GiB of hard disk space will be "
 "reserved for swap at the end of the drive."
 msgstr ""
-"By default, a swap partition is created based on the size of your RAM. For "
-"example, if you have 2 GiB of RAM, then 2 GiB of hard disk space will be "
-"reserved for swap at the end of the drive."
+"Domyślnie, partycja wymiany jest tworzona w rozmiarze zależnym od ilości "
+"pamięci RAM w komputerze. Przykładowo, jeżeli posiadasz 2 GiB pamięci RAM, "
+"wówczas obszar dysku o rozmiarze 2 GiB zostanie zarezerwowanu na rzecz "
+"partycji wymiany."
 
 #: gettingstarted.html:184
 msgid ""
@@ -270,14 +289,14 @@ msgid ""
 "reserved for the swap file. A separate swap partition is no longer required "
 "to be created."
 msgstr ""
-"By default, a swap file is created based on the size of your RAM. For "
-"example, if you have 2 GiB of RAM, then 2 GiB of hard disk space will be "
-"reserved for the swap file. A separate swap partition is no longer required "
-"to be created."
+"Domyślnie, plik wymiany jest tworzona w rozmiarze zależnym od ilości pamięci"
+" RAM w komputerze. Przykładowo, jeżeli posiadasz 2 GiB pamięci RAM, wówczas "
+"na plik wymiany zostanie zarezerwowany obszar dysku o rozmiarze 2 GiB. "
+"Oddzielna partycja wymiany obecnie nie musi już być tworzona."
 
 #: gettingstarted.html190, 368, 641, 1264
 msgid "Previous:"
-msgstr "Previous:"
+msgstr "Poprzedni krok:"
 
 #: gettingstarted.html:203
 msgid ""
@@ -286,90 +305,94 @@ msgid ""
 "in sections of your hard disk being split between multiple operating "
 "systems."
 msgstr ""
-"Should you wish to install <span name=\"distro-name\"></span> alongside your"
-" existing operating system, your partitions need to be shrunk. This results "
-"in sections of your hard disk being split between multiple operating "
-"systems."
+"Jeśli chcesz zainstalować <span name = \"distro-name\"> </ span> obok "
+"istniejącego systemu operacyjnego, należy zmniejszyć partycje. To powoduje, "
+"że obszary dysku twardego są rozdzielone między wiele systemów operacyjnych."
 
 #: gettingstarted.html:209
 msgid "I'm dual booting with"
-msgstr "I'm dual booting with"
+msgstr "Uruchamiam komputer z drugim systemem"
 
 #: gettingstarted.html:212
 msgid "To minimize the risk of data loss or failure, ensure that:"
-msgstr "To minimize the risk of data loss or failure, ensure that:"
+msgstr ""
+"W celu zminimalizowania ryzyka utraty danych lub awarii, upewnij się, że:"
 
 #: gettingstarted.html:214
 msgid "There is enough free space. 10 GB minimum is recommended."
-msgstr "There is enough free space. 10 GB minimum is recommended."
+msgstr ""
+"Jest wystarczająca ilośc wolnego miejsca. 10 GB jest rekomendowanym minimum."
 
 #: gettingstarted.html:215
 msgid "<b><u>Back up</u></b> important data to another drive."
-msgstr "<b><u>Back up</u></b> important data to another drive."
+msgstr "Zrób na oddzielnym dysku <b><u>kopię zapasową</u></b> ważnych danych."
 
 #: gettingstarted.html:216
 msgid "Defragment the hard drive."
-msgstr "Defragment the hard drive."
+msgstr "Dokonaj defragmentacji dysku twardego."
 
 #: gettingstarted.html:217
 msgid "Ensure Windows has been cleanly shut down (not hibernated)."
-msgstr "Ensure Windows has been cleanly shut down (not hibernated)."
+msgstr ""
+"Upewnij się, ze system Windows został całkowicie zamknięty (a nie "
+"zahibernowany)."
 
 #: gettingstarted.html:221
 msgid "Which approach would you prefer?"
-msgstr "Which approach would you prefer?"
+msgstr "Jakie podejście wybierasz?"
 
 #: gettingstarted.html:223
 msgid "Simple"
-msgstr "Simple"
+msgstr "Proste"
 
 #: gettingstarted.html:224
 msgid "Advanced"
-msgstr "Advanced"
+msgstr "Zaawansowane"
 
 #: gettingstarted.html:225
 msgid "Safest"
-msgstr "Safest"
+msgstr "Najbezpieczniejsze"
 
 #: gettingstarted.html:230
 msgid "The simplest method is to use the installer."
-msgstr "The simplest method is to use the installer."
+msgstr "Najprostsza metoda to użycie instalatora."
 
 #: gettingstarted.html:232
 msgid ""
 "The installer scans your disks for existing operating systems and provides a"
 " choice on what you'd like to do."
 msgstr ""
-"The installer scans your disks for existing operating systems and provides a"
-" choice on what you'd like to do."
+"Instalator skanuje Twoje dyski pod katem istniejących systemów operacyjnych,"
+" a następnie umożliwia Ci podjęcie decyzj, co do dalszych kroków."
 
 #: gettingstarted.html:235
 msgid "You will see an option similar to this:"
-msgstr "You will see an option similar to this:"
+msgstr "Zobaczysz opcje podobne do poniższych:"
 
 #: gettingstarted.html:239
 msgid "Followed by:"
-msgstr "Followed by:"
+msgstr "A następnie:"
 
 #: gettingstarted.html:245
 msgid "Do not interrupt or power off the computer during a resize operation."
-msgstr "Do not interrupt or power off the computer during a resize operation."
+msgstr ""
+"Nie resetuj ani nie wyłączaj komputera w trakcie operacji zmian partycji."
 
 #: gettingstarted.html:247
 msgid ""
 "If you do, data loss or a partition table corruption could occur. Please "
 "double check your changes before proceeding."
 msgstr ""
-"If you do, data loss or a partition table corruption could occur. Please "
-"double check your changes before proceeding."
+"Jeżeli to zrobisz, może dojść do utraty danych lub uszkodzenia tabeli "
+"partycji. Sprawdź ostatecznie planowane zmiany, zanim zostaną wykonane."
 
 #: gettingstarted.html:249
 msgid ""
 "The installer may show a <span class=\"fa fa-spinner\"></span> spinner "
 "cursor for a long period of time, depending on the size of your disk."
 msgstr ""
-"The installer may show a <span class=\"fa fa-spinner\"></span> spinner "
-"cursor for a long period of time, depending on the size of your disk."
+"Instalator może wyświetlać <span class=\"fa fa-spinner\"></span> kursor "
+"realizacji zadania przez dłuższy czas, zależnie od rozmiaru dysku."
 
 #: gettingstarted.html:253
 msgid ""
@@ -377,13 +400,14 @@ msgid ""
 "prompt to check the file system for errors. Windows may schedule this "
 "automatically. This ensures consistency for the NTFS file system."
 msgstr ""
-"When you next boot Windows, run</b> <code>chkdsk /f</code> from the command "
-"prompt to check the file system for errors. Windows may schedule this "
-"automatically. This ensures consistency for the NTFS file system."
+"Kiedy następnym razem włączysz system Windows, uruchom /b> <code>chkdsk "
+"/f</code> z linii poleceń, aby sprawdź system plików. System Windows może "
+"zaplanować tą operację automatycznie. Zapewni to spójność systemu plików "
+"NTFS."
 
 #: gettingstarted.html:261
 msgid "Use GParted or the installer's \"Custom\" option."
-msgstr "Use GParted or the installer's \"Custom\" option."
+msgstr "Użyj aplikacji GParted lub opcji instalatora \"Wybór własny\"."
 
 #: gettingstarted.html:264
 msgid ""
@@ -393,15 +417,17 @@ msgid ""
 "partitions, primarily for power users who know how they'd like to layout "
 "their disks. This method makes changes to partitions prior to installation."
 msgstr ""
-"<b>GParted</b> is available during the live session only. It is located "
-"under the <b>System <i class=\"material-icons\">&#xE315;</i> "
-"Administration</b> menu. GParted provides complete flexibility over your "
-"partitions, primarily for power users who know how they'd like to layout "
-"their disks. This method makes changes to partitions prior to installation."
+"Aplikacja <b>GParted</b> jest dostępna tylko podczas pracy w tzw. sesji "
+"live.  is available during the live session only. Znajdziesz ją w menu "
+"aplikacji <b><i class=\"material-icons\">&#xE315;</i> Administracja</b>. "
+"Aplikacja GParted pozwala dowolnie zarządzać partycjami zaawansowanymi "
+"użytkownikom, którzy dokładnie wiedzą, jak powinna wyglądać struktura ich "
+"dysków. Ta metoda realizuje zmiany w partycjach, jeszcze przed właściwą "
+"instalacją systemu."
 
 #: gettingstarted.html:271
 msgid "Open GParted"
-msgstr "Open GParted"
+msgstr "Otwórz aplikację GParted"
 
 #: gettingstarted.html:274
 msgid ""
@@ -409,13 +435,13 @@ msgid ""
 "unallocated, whereby the installer will detect this unused space to install "
 "<span name=\"distro-name\"></span> to."
 msgstr ""
-"After completing operations to your disk, you can leave the remaining space "
-"unallocated, whereby the installer will detect this unused space to install "
-"<span name=\"distro-name\"></span> to."
+"Po zakończeniu operacji na dysku, możesz zostawić pozostające miejsce "
+"niezarezerwowane, dzięki czemu instalator wykryje to nieużywane miejsce, aby"
+" zainstalować tam <span name=\"distro-name\"></span>."
 
 #: gettingstarted.html:277
 msgid "Using the Installer's \"Custom\" option."
-msgstr "Using the Installer's \"Custom\" option."
+msgstr "Użycie opcji instalatora \"Wybór własny\"."
 
 #: gettingstarted.html:278
 msgid ""
@@ -424,56 +450,58 @@ msgid ""
 " choose mount points. Dividing your disks can make it somewhat easier to re-"
 "install the operating system later if desired."
 msgstr ""
-"Instead or in addition to GParted, the <b>Custom</b> option during the "
-"installation wizard can also configure and resize your partitions as well as"
-" choose mount points. Dividing your disks can make it somewhat easier to re-"
-"install the operating system later if desired."
+"Zamiast użycia aplikacji GParted możesz wybrać opcję <b>Wybór własny</b> w "
+"kreatorze instalacji, aby skonfigurować partycje, zmienić ich rozmiar, a "
+"także wybrać punkty montowania. Podzielenie Twojego dysku na partycje "
+"uprości w przyszłości ponowną instalację systemu operacyjnego, jeśli zajdzie"
+" taka potrzeba."
 
 #: gettingstarted.html:283
 msgid "You can specify these mount points:"
-msgstr "You can specify these mount points:"
+msgstr "Możesz określić następujące punkty montowania:"
 
 #: gettingstarted.html:285
 msgid "The base for <span name=\"distro-name\"></span>"
-msgstr "The base for <span name=\"distro-name\"></span>"
+msgstr "Miejsce instalacji <span name=\"distro-name\"></span>"
 
 #: gettingstarted.html:286
 msgid "Bootloader and kernels"
-msgstr "Bootloader and kernels"
+msgstr "Pogram rozruchowy i jądra systemu"
 
 #: gettingstarted.html:287
 msgid "Your personal files and folders"
-msgstr "Your personal files and folders"
+msgstr "Twoje osobiste pliki i foldery"
 
 #: gettingstarted.html:288
 msgid "Temporary files"
-msgstr "Temporary files"
+msgstr "Pliki tymczasowe"
 
 #: gettingstarted.html:289
 msgid ""
 "Contains most of the applications <i> (binaries, documentation, libraries, "
 "etc)</i>"
 msgstr ""
-"Contains most of the applications <i> (binaries, documentation, libraries, "
-"etc)</i>"
+"Zawiera większość aplikacji <i> (pliki binarne, dokumentacje, biblioteki, "
+"itd.)</i>"
 
 #: gettingstarted.html:290
 msgid "Variable data <i>(such as system logs)</i>"
-msgstr "Variable data <i>(such as system logs)</i>"
+msgstr "Dane zmieniające się  <i>(takie jak logi systemowe)</i>"
 
 #: gettingstarted.html:291
 msgid ""
 "Data for System Services <i>(typically used for server configurations)</i>"
 msgstr ""
-"Data for System Services <i>(typically used for server configurations)</i>"
+"Dane dla Usług Systemowyh <i>(używane głównie w konfiguracjach "
+"serwerowych)</i>"
 
 #: gettingstarted.html:292
 msgid "Additional software unmanaged by the package manager"
-msgstr "Additional software unmanaged by the package manager"
+msgstr "Dodatkowe oprogramowanie niezarządzane przez menadżer pakietów"
 
 #: gettingstarted.html:293
 msgid "such as"
-msgstr "such as"
+msgstr "takie jak"
 
 #: gettingstarted.html:295
 msgid ""
@@ -484,28 +512,29 @@ msgid ""
 "<code>/</code> on an SSD, but your personal files <code>/home</code> on a "
 "mechanical hard drive."
 msgstr ""
-"Creating separate partitions for all above mount points is not necessary. "
-"The commonly partitioned directories being <code>/</code>, "
-"<code>/home</code> and <code>/boot</code>. These mount points can also be "
-"set across different physical disks, for instance, if you'd like the OS "
-"<code>/</code> on an SSD, but your personal files <code>/home</code> on a "
-"mechanical hard drive."
+"Nie jest konieczne tworzenie oddzielnych partycji dla wszystkich powyższych "
+"punktów montowania. Foldery zazwyczaj partycjonowane to: <code>/</code>, "
+"<code>/home</code> and <code>/boot</code>. Te punkty montowania mogą być "
+"również ustawione na oddzielnych fizycznie dyskach, na przykład, gdybyś "
+"chciał mieć system operacyjny <code>/</code> na dysku SSD, ale pliki "
+"osobiste <code>/home</code> na standardowym dysku magnetycznym."
 
 #: gettingstarted.html:303
 msgid "Shrink your system disk within Windows."
-msgstr "Shrink your system disk within Windows."
+msgstr "Zmniejsz rozmiar dysku systemowego wewnątrz systemu Windows."
 
 #: gettingstarted.html:305
 msgid "Applies to Windows Vista and later."
-msgstr "Applies to Windows Vista and later."
+msgstr "Ma zastosowanie do systemu Windows Vista i nowszych."
 
 #: gettingstarted.html:306
 msgid ""
 "If you are using Windows XP or earlier, you will need to use the "
 "<b>Simple</b> or <b>Advanced</b> method to shrink your disk."
 msgstr ""
-"If you are using Windows XP or earlier, you will need to use the "
-"<b>Simple</b> or <b>Advanced</b> method to shrink your disk."
+"Jeżeli używasz systemu Windows XP lub starszego, powinieneś użyć jednej z "
+"dwóch metod do zmniejszenia rozmiaru Twojego dysku: <b>Prosty</b> lub "
+"<b>Zaawansowane</b>."
 
 #: gettingstarted.html:310
 msgid ""
@@ -514,38 +543,38 @@ msgid ""
 "boots on your computer while experiencing <span name=\"distro-"
 "name\"></span>."
 msgstr ""
-"Newer versions of Windows provide a tool to shrink the NTFS volume from "
-"within Windows. This is a safer bet if it's essential that Windows still "
-"boots on your computer while experiencing <span name=\"distro-"
+"Nowsze wersje systemu Windows zawierają własne narzędzia do zmniejszania "
+"rozmiaru partycji NTFS. To jest bezpieczniejsze, jeżeli zależy Ci nadal na "
+"uruchamianiu systemu Windows korzystając z <span name=\"distro-"
 "name\"></span>."
 
 #: gettingstarted.html:314
 msgid "Open <b>Disk Management</b> from the start menu."
-msgstr "Open <b>Disk Management</b> from the start menu."
+msgstr "Otwórz <b>Zarządzanie dyskami</b> z menu Start."
 
 #: gettingstarted.html:319
 msgid ""
 "Right click your desired drive and choose <b>Shrink Partition</b> from the "
 "context menu."
 msgstr ""
-"Right click your desired drive and choose <b>Shrink Partition</b> from the "
-"context menu."
+"Kliknij prawym klawiszem myszki wybrany dysk i wybierz opcję <b>Zmniejsz "
+"partycję</b> z menu kontekstowego."
 
 #: gettingstarted.html:324
 msgid "Enter the amount to shrink your system partition by."
-msgstr "Enter the amount to shrink your system partition by."
+msgstr "Wprowadź rozmiar obszaru, o jaki partycja ma zostać zmniejszona."
 
 #: gettingstarted.html:330
 msgid ""
 "Remember, <span name=\"distro-name\"></span> needs at minimum 16 GB of disk "
 "space."
 msgstr ""
-"Remember, <span name=\"distro-name\"></span> needs at minimum 16 GB of disk "
-"space."
+"Pamiętaj, że <span name=\"distro-name\"></span> potrzebuje minimum 16 GB "
+"przestrzeni dyskowej."
 
 #: gettingstarted.html:335
 msgid "Further Reading"
-msgstr "Further Reading"
+msgstr "Dodatkowe informacje"
 
 #: gettingstarted.html:336
 msgid ""
@@ -554,14 +583,14 @@ msgid ""
 "onclick=\"cmd('link?https://help.ubuntu.com/community/HowtoResizeWindowsPartitions')\">"
 " help article</a> online."
 msgstr ""
-"For further information on the best practices to modify partitions "
-"containing Windows, see the following <a "
+"Dodatkowe informacje odnośnie najlepszych praktyk w modyfikowaniu partycji "
+"zawierających system Windows znajdziesz w <a "
 "onclick=\"cmd('link?https://help.ubuntu.com/community/HowtoResizeWindowsPartitions')\">"
-" help article</a> online."
+" sieci</a>."
 
 #: gettingstarted.html:343
 msgid "Repairing Boot Problems"
-msgstr "Repairing Boot Problems"
+msgstr "Naprawianie problemów ze startem systemu"
 
 #: gettingstarted.html:345
 msgid ""
@@ -571,51 +600,54 @@ msgid ""
 "will overwrite them, with the potential to lose access to <span name"
 "=\"distro-name\"></span> temporally."
 msgstr ""
-"Linux distributions use a boot loader known as <code>grub</code>, which "
-"looks for and bootstraps the operating system. However, some operating "
-"systems (such as Windows) do not integrate with existing boot loaders and "
-"will overwrite them, with the potential to lose access to <span name"
-"=\"distro-name\"></span> temporally."
+"Dystrybucje Linuksa używają programu ładującego tzw. bootloader o nazwie "
+"<code>grub<.code>, który odnajduje na dysku system operacyjny i uruchamia "
+"go. Jednakże, niektóre systemy operacyjne (takie jak Windows) nie "
+"współpracują z istniejącymi programami ładującymi i nadpisują je, co może "
+"prowadzić do tymczasowej utraty dostępu do <span name=\"distro-"
+"name\"></span>."
 
 #: gettingstarted.html:351
 msgid ""
 "Fortunately, you can use the <b>Boot Repair</b> tool to repair common "
 "problems caused by other operating systems."
 msgstr ""
-"Fortunately, you can use the <b>Boot Repair</b> tool to repair common "
-"problems caused by other operating systems."
+"Na szczęście, możesz użyć narzędzia <b>Boot repair</b>, aby naprawić typowe "
+"problemy spowodowane przez inne systemy operacyjne."
 
 #: gettingstarted.html:356
 msgid "Requires downloading a package."
-msgstr "Requires downloading a package."
+msgstr "Wymagania pobrania pakietu z sieci."
 
 #: gettingstarted.html:357
 msgid "Please connect to the Internet to download and use this utility."
-msgstr "Please connect to the Internet to download and use this utility."
+msgstr "Połącz się z internetem, aby pobrać i używać tego narzędzia."
 
 #: gettingstarted.html:358
 msgid "Sorry, Welcome was unable to establish a connection."
-msgstr "Sorry, Welcome was unable to establish a connection."
+msgstr "Przepraszamy, nie można nawiązać połączenia."
 
 #: gettingstarted.html:362
 msgid "Download Boot Repair"
-msgstr "Download Boot Repair"
+msgstr "Pobierz \"Boot Repair\""
 
 #: gettingstarted.html:363
 msgid "Open Boot-Repair"
-msgstr "Open Boot-Repair"
+msgstr "Otwórz \"Boot Repair\""
 
 #: gettingstarted.html:368
 msgid "Install Preparations"
-msgstr "Install Preparations"
+msgstr "Przygotowania do instalacji"
 
 #: gettingstarted.html:381
 msgid "An Internet connection is required to download and install updates."
-msgstr "An Internet connection is required to download and install updates."
+msgstr ""
+"Połączenie internetowe jest konieczne do pobrania i zainstalowania "
+"aktualizacji."
 
 #: gettingstarted.html:389
 msgid "Software Updater"
-msgstr "Software Updater"
+msgstr "Aktualizator oprogramowania"
 
 #: gettingstarted.html:390
 msgid ""
@@ -624,26 +656,26 @@ msgid ""
 "just installed <span name=\"distro-name\"></span>, you might want to do this"
 " now."
 msgstr ""
-"<span name=\"distro-name\"></span> periodically will check to see if new "
-"software and security updates are available for your computer. If you have "
-"just installed <span name=\"distro-name\"></span>, you might want to do this"
-" now."
+"<span name=\"distro-name\"></span> będzie okresowo sprawdzać, czy są "
+"dostępne aktualizacje oprogramowania lub łatki bezpieczeństwa dla Twojego "
+"komputera. Jeżeli właśnie zainstalowałeś <span name=\"distro-name\"></span>,"
+" warto wykonać to teraz."
 
 #: gettingstarted.html:395
 msgid ""
 "<b>Software Updater</b> can be found later in <strong>Application "
 "Menu</strong>"
 msgstr ""
-"<b>Software Updater</b> can be found later in <strong>Application "
-"Menu</strong>"
+"<b>Aktualizacje oprogramowania</b> znajdziesz później w <strong>Menu "
+"aplikacji</strong>"
 
 #: gettingstarted.html:401
 msgid "Check for Updates"
-msgstr "Check for Updates"
+msgstr "Sprawdź aktualizacje"
 
 #: gettingstarted.html:413
 msgid "Restricted Extras"
-msgstr "Restricted Extras"
+msgstr "Dodatki z ograniczeniami licencyjnymi"
 
 #: gettingstarted.html:414
 msgid ""
@@ -653,11 +685,12 @@ msgid ""
 "Ubuntu License Policy) complicate distribution of software to support non-"
 "free formats."
 msgstr ""
-"<strong>Ubuntu</strong>(the base distribution of <span name=\"distro-"
-"name\"></span>) strives to make all of the most important software available"
-" to its users automatically. However patent and copyright restrictions (see "
-"Ubuntu License Policy) complicate distribution of software to support non-"
-"free formats."
+"<strong>Ubuntu</strong>(dystrybucja bazowa dla <span name=\"distro-"
+"name\"></span>) stara się udostępniać użytkownikowi automatycznie większość "
+"najważniejszego oprogramowania. Jednakże patenty i ograniczenia praw "
+"autorskich komplikują udostępnianie oprogramowania wspierającego "
+"licencjonowane formaty (zobacz Politykę licencjonowania Ubuntu - Ubuntu "
+"License Policy)."
 
 #: gettingstarted.html:418
 msgid ""
@@ -665,9 +698,9 @@ msgid ""
 " including DVD, MP3, Quicktime, and Windows Media formats, by following the "
 "instructions below."
 msgstr ""
-"However, you can install the ability to play popular non-free media formats,"
-" including DVD, MP3, Quicktime, and Windows Media formats, by following the "
-"instructions below."
+"Jednakże, możesz zainstalować funkcje odtwarzania popularnych "
+"licencjonowanych formatów multimedialnych, włączając DVD, MP3, Quicktime i "
+"formaty Windows Media, postępując według poniższych instrukcji."
 
 #: gettingstarted.html:421
 msgid ""
@@ -676,10 +709,11 @@ msgid ""
 "See Ubuntu’s Free Software Philosophy and the Free Formats page for a more "
 "comprehensive discussion of these issues."
 msgstr ""
-"Ubuntu’s commitment to only include completely free software by default "
-"means that proprietary media formats are not configured “out of the box”. "
-"See Ubuntu’s Free Software Philosophy and the Free Formats page for a more "
-"comprehensive discussion of these issues."
+"Ubuntu z założenia polega wyłącznie na całkowicie bezpłatnym oprogramowaniu,"
+" co oznacza, że własnościowe formaty plików multimedialnych nie są "
+"fabrycznie skonfigurowane. Więcej informacji na ten temat można znaleźć na "
+"stronach internetowych Ubuntu: \"Free Software Philosophy\" i \"Free "
+"Formats\"."
 
 #: gettingstarted.html:425
 msgid ""
@@ -688,27 +722,27 @@ msgid ""
 " unsure whether a particular patent or restriction applies to a media format"
 " you wish to use in your country."
 msgstr ""
-"<strong>Legal Notice</strong> Patent and copyright laws operate differently "
-"depending on which country you are in. Please obtain legal advice if you are"
-" unsure whether a particular patent or restriction applies to a media format"
-" you wish to use in your country."
+"<strong>Nota prawna</strong> Prawa patentowe i prawa autorskie działają "
+"inaczej, w zależności od kraju, w którym się znajdujesz. Proszę zasięgnąć "
+"porady prawnej, jeśli nie wiesz, czy konkretny patent lub ograniczenie "
+"dotyczą formatu mediów, który chcesz używać w Twoim kraju."
 
 #: gettingstarted.html430, 623, 629, 635, 671, 700, 768, 791, 806, 824, 839,
 #: 858
 msgid "Applying Changes..."
-msgstr "Applying Changes..."
+msgstr "Zatwierdzanie zmian..."
 
 #: gettingstarted.html431, 621, 627, 633, 672, 701, 785, 800, 818, 833, 852
 msgid "Install"
-msgstr "Install"
+msgstr "Zainstaluj"
 
 #: gettingstarted.html432, 622, 628, 634, 788, 803, 821, 836, 855
 msgid "Remove"
-msgstr "Remove"
+msgstr "Usuń"
 
 #: gettingstarted.html440, 643, 746
 msgid "Next:"
-msgstr "Next:"
+msgstr "Następny krok:"
 
 #: gettingstarted.html:451
 msgid ""
@@ -718,59 +752,64 @@ msgid ""
 " often required to get some devices, typically Bluetooth and Wi-Fi, to work "
 "correctly."
 msgstr ""
-"While a wide range of hardware is compatible with <span name=\"distro-"
-"name\"></span> , there are some components and peripherals that require "
-"proprietary drivers to function properly. Installing the firmware package is"
-" often required to get some devices, typically Bluetooth and Wi-Fi, to work "
-"correctly."
+"Chociaż wiele urządzeń jest kompatybilnych z <span name=\"distro-"
+"name\"></span>, istnieją pewne podzespoły i urządzenia peryferyjne, które "
+"wymagają własnościowych sterowników do prawidłowego funkcjonowania. "
+"Instalacja pakietu oprogramowania sprzętowego jest często wymagana, aby "
+"niektóre urządzenia, zazwyczaj Bluetooth i Wi-Fi mogły działać prawidłowo."
 
 #: gettingstarted.html:457
 msgid "An Internet connection is required to download and install drivers."
-msgstr "An Internet connection is required to download and install drivers."
+msgstr ""
+"Połączenie internetowe jest konieczne do pobrania i zainstalowania "
+"sterowników."
 
 #: gettingstarted.html:461
 msgid "Additional Drivers"
-msgstr "Additional Drivers"
+msgstr "Dodatkowe sterowniki"
 
 #: gettingstarted.html:466
 msgid "Additional Drivers</b> can be found later in <b>Application Menu</b>"
-msgstr "Additional Drivers</b> can be found later in <b>Application Menu</b>"
+msgstr ""
+"</b>Aplikację <b>Dodatkowe sterowniki</b> znajdziesz później w <b>Menu "
+"aplikacji</b>."
 
 #: gettingstarted.html:471
 msgid "Graphics"
-msgstr "Graphics"
+msgstr "Grafika"
 
 #: gettingstarted.html:475
 msgid ""
 "Sorry, Welcome was unable to automatically identify the graphics vendor on "
 "this system."
 msgstr ""
-"Sorry, Welcome was unable to automatically identify the graphics vendor on "
-"this system."
+"Przepraszamy, nie udało się automatycznie wykryć producenta karty graficznej"
+" w Twoim systemie."
 
 #: gettingstarted.html476, 482, 490, 496
 msgid "Card/Chipset:"
-msgstr "Card/Chipset:"
+msgstr "Karta/chipset:"
 
 #: gettingstarted.html476, 482, 490, 496
 msgid "Unknown"
-msgstr "Unknown"
+msgstr "Nieznane"
 
 #: gettingstarted.html:480
 msgid "NVIDIA Graphics Card Detected."
-msgstr "NVIDIA Graphics Card Detected."
+msgstr "Wykryto kartę graficzną NVIDIA."
 
 #: gettingstarted.html:481
 msgid ""
 "NVIDIA may have drivers for your card that can boost performance for 3D "
 "applications and games as well as deliver improvements to power management."
 msgstr ""
-"NVIDIA may have drivers for your card that can boost performance for 3D "
-"applications and games as well as deliver improvements to power management."
+"Firma NVIDIA może posiadać sterowniki do Twojej karty graficznej, które mogą"
+" podnieść wydajność w aplikacjach i grach 3D, jak również poprawić "
+"zarządzanie energią."
 
 #: gettingstarted.html:486
 msgid "AMD Graphics Card Detected."
-msgstr "AMD Graphics Card Detected."
+msgstr "Wykryto kartę graficzną AMD."
 
 #: gettingstarted.html:487
 msgid ""
@@ -778,35 +817,36 @@ msgid ""
 " are currently using will deliver the most stable performance out of your "
 "card."
 msgstr ""
-"AMD's drivers are no longer supported on Ubuntu. The open source drivers you"
-" are currently using will deliver the most stable performance out of your "
-"card."
+"Sterowniki AMD nie są już wspierane w Ubuntu. Sterowniki otwartoźródłowe, "
+"których obecnie używasz zapewniają największą stabilność i wydajność dla "
+"Twojej karty graficznej."
 
 #: gettingstarted.html:494
 msgid "You're already good to go."
-msgstr "You're already good to go."
+msgstr "Konfiguracja jest już prawidłowo."
 
 #: gettingstarted.html:495
 msgid ""
 "Intel's drivers are open source and are maintained/updated in the kernel."
 msgstr ""
-"Intel's drivers are open source and are maintained/updated in the kernel."
+"Sterowniki firmy Intel są otwartoźródłowe i zarządzane/aktualizowane w "
+"jądrze systemu. "
 
 #: gettingstarted.html:500
 msgid "VirtualBox Guest Additions"
-msgstr "VirtualBox Guest Additions"
+msgstr "Dodatki VirtualBox"
 
 #: gettingstarted.html:501
 msgid ""
 "To accelerate graphics performance inside the virtual machine, please "
 "install Guest Additions."
 msgstr ""
-"To accelerate graphics performance inside the virtual machine, please "
-"install Guest Additions."
+"W celu zwiększenia wydajności operacji graficznych wewnątrz maszyny "
+"wirtualnej, zainstaluj Dodatki VirtualBox."
 
 #: gettingstarted.html:505
 msgid "Proprietary or Open Source Drivers?"
-msgstr "Proprietary or Open Source Drivers?"
+msgstr "Sterowniki własnościowe czy otwartoźródłowe?"
 
 #: gettingstarted.html:506
 msgid ""
@@ -814,9 +854,10 @@ msgid ""
 "open source, Ubuntu developers are <b>unable to review and improve driver "
 "code</b> meaning you'll have to rely on the manufacturer for support."
 msgstr ""
-"Proprietary drivers come directly from the manufacturer. As they are not "
-"open source, Ubuntu developers are <b>unable to review and improve driver "
-"code</b> meaning you'll have to rely on the manufacturer for support."
+"Sterowniki własnościowe pochodzą bezpośrednio od producenta. Ponieważ nie są"
+" otwartoźródłowe, programiści Ubuntu <b>nie mają możliwości dokonania "
+"rewizji i usprawnienia kodu sterownika</b>. Oznacza to, że musisz polegać na"
+" wsparciu wyłącznie ze strony producenta."
 
 #: gettingstarted.html:510
 msgid ""
@@ -824,29 +865,32 @@ msgid ""
 "performance</b> and as a result, the entire system. Users may wish to "
 "install these drivers to:"
 msgstr ""
-"In addition, proprietary drivers can <b>significantly improve graphics "
-"performance</b> and as a result, the entire system. Users may wish to "
-"install these drivers to:"
+"Dodatkowo, sterowniki własnościowe mogą <b>znacząco podnieść wydajność "
+"operacji graficznych</B>, a w rezultacie - całego systemy. Użytkownicy mogą "
+"chcieć zainstalować te sterowniki w celu:"
 
 #: gettingstarted.html:513
 msgid "Run 3D applications and games."
-msgstr "Run 3D applications and games."
+msgstr "Uruchamiania aplikacji i gier 3D"
 
 #: gettingstarted.html:514
 msgid ""
 "Improve power management, particularly if the device experiences overheating"
 " problems under open source drivers."
 msgstr ""
-"Improve power management, particularly if the device experiences overheating"
-" problems under open source drivers."
+"Poprawiania zarządzania energią, w szczególności w przypadku występowania "
+"problemu z przegrzewaniem się podzezpołów komputera podczas używania "
+"sterowników otwartoźródłowych."
 
 #: gettingstarted.html:515
 msgid "Improve support for high resolutions and multiple monitors."
-msgstr "Improve support for high resolutions and multiple monitors."
+msgstr ""
+"Rozszerzenia wsparcia dla wysokich rozdzielczości ekranu i pracy z wieloma "
+"monitorami."
 
 #: gettingstarted.html:516
 msgid "Fix blank screen issues."
-msgstr "Fix blank screen issues."
+msgstr "Naprawiania problemów z pustym ekranem."
 
 #: gettingstarted.html:519
 msgid ""
@@ -854,37 +898,37 @@ msgid ""
 "experience worse behavior, causing more issues then the open source drivers,"
 " such as:"
 msgstr ""
-"Proprietary drivers are known as \"binary blobs\". Certain hardware may "
-"experience worse behavior, causing more issues then the open source drivers,"
-" such as:"
+"Sterowniki własnościowe nazywane są \"blobami binarnymi\". Pewna grupa "
+"sprzętu może działać gorzej, powodując więcej problemów niż w przypadku "
+"używania sterowników otwartoźródłowych, tak jak:"
 
 #: gettingstarted.html:522
 msgid "Failing to boot to the graphical desktop."
-msgstr "Failing to boot to the graphical desktop."
+msgstr "Problemu z uruchomieniem systemu w trybie graficznym."
 
 #: gettingstarted.html:523
 msgid "Broken drivers after an upgrade."
-msgstr "Broken drivers after an upgrade."
+msgstr "Uszkodzenie sterowników po aktualizacji."
 
 #: gettingstarted.html:524
 msgid "Severe graphical glitches."
-msgstr "Severe graphical glitches."
+msgstr "Poważne artefakty przy wyświetlaniu obrazu."
 
 #: gettingstarted.html:525
 msgid "Problems with applications/games requiring hardware acceleration."
-msgstr "Problems with applications/games requiring hardware acceleration."
+msgstr "Problemy z aplikacjami/grai wymagającymi sprzętowej akceleracji."
 
 #: gettingstarted.html:529
 msgid ""
 "<code id=\"graphics-open-driver-name\"></code> is the open source driver for"
 " your card."
 msgstr ""
-"<code id=\"graphics-open-driver-name\"></code> is the open source driver for"
-" your card."
+"<code id=\"graphics-open-driver-name\"></code> jest sterownikiem "
+"otwartoźródłowym do Twojej karty graficznej."
 
 #: gettingstarted.html:534
 msgid "What about the latest NVIDIA drivers?"
-msgstr "What about the latest NVIDIA drivers?"
+msgstr "Co z najnowszymi sterownikami NVIDIA?"
 
 #: gettingstarted.html:535
 msgid ""
@@ -895,42 +939,45 @@ msgid ""
 "which packages up the latest NVIDIA drivers for Ubuntu. These packages are "
 "not as thoroughly tested."
 msgstr ""
-"<b>Additional Drivers</b> fetches the latest tested driver from the Ubuntu "
-"repositories. Advanced users and gamers who would like newer versions may "
-"wish to consider adding the <a onclick=\"cmd('link?https://launchpad.net"
-"/~graphics-drivers/+archive/ubuntu/ppa')\">Ubuntu Graphics Driver PPA</a>, "
-"which packages up the latest NVIDIA drivers for Ubuntu. These packages are "
-"not as thoroughly tested."
+"Aplikacja <b>Dodatkowe sterowniki</b> pobiera najnowsze sterowniki z "
+"repozytorium Ubuntu. Użytkownicy zaawansowani oraz gracze, którzy chcieliby "
+"użyć nowszej wersji sterowników, mogą rozważyć dodanie repozytorium <a "
+"onclick=\"cmd('link?https://launchpad.net/~graphics-"
+"drivers/+archive/ubuntu/ppa')\">Ubuntu Graphics Driver PPA</a>, gdzie "
+"dostępne są pakiety najnowszych sterowników NVIDIA dla Ubuntu. Te pakiety "
+"nie są jednakże dokładnie testowane."
 
 #: gettingstarted.html:540
 msgid ""
 "This only applies for actively supported cards, and not older cards using "
 "the legacy driver."
 msgstr ""
-"This only applies for actively supported cards, and not older cards using "
-"the legacy driver."
+"Ma to zastosowanie tylko do aktywnie wspieranych kart, a nie do starszych "
+"kart używających wyłącznie starszych wersji sterownika."
 
 #: gettingstarted.html:543
 msgid "Add Repository"
-msgstr "Add Repository"
+msgstr "Dodaj repozytorium"
 
 #: gettingstarted.html:546
 msgid ""
 "To add the repository to the system, open a terminal and type the following:"
 msgstr ""
-"To add the repository to the system, open a terminal and type the following:"
+"W celu dodania repozytorium do systemu, otwórz terminal i wpisz poniższe "
+"polecenia:"
 
 #: gettingstarted.html:552
 msgid ""
 "After the PPA is added, newer versions are presented to install in <a "
 "onclick=\"cmd('drivers')\">Additional Drivers:</a>"
 msgstr ""
-"After the PPA is added, newer versions are presented to install in <a "
-"onclick=\"cmd('drivers')\">Additional Drivers:</a>"
+"Po tym jak dodasz repozytorium PPA, nowsze wersje sterownika są dostępne do "
+"zainstalowania na liście aplikacji <a onclick=\"cmd('drivers')\">Dodatkowe "
+"sterowniki:</a>"
 
 #: gettingstarted.html:560
 msgid "Wireless, Bluetooth and Other Devices"
-msgstr "Wireless, Bluetooth and Other Devices"
+msgstr "Sieć bezprzewodowa, Bluetooth i inne urządzenia"
 
 #: gettingstarted.html:562
 msgid ""
@@ -938,9 +985,9 @@ msgid ""
 "after installing the firmware packages, you may need to research your device"
 " to find the appropriate driver."
 msgstr ""
-"If there were no additional drivers found for the hardware nor did it work "
-"after installing the firmware packages, you may need to research your device"
-" to find the appropriate driver."
+"Jeżeli nie znaleziono dodatkowych sterowników dla sprzętu lub nie działa on "
+"nawet po zainstalowaniu pakietów oprogramowania sprzętowego, może być "
+"konieczne samodzielne wyszukanie przez Ciebie odpowiednich sterowników."
 
 #: gettingstarted.html:566
 msgid ""
@@ -949,10 +996,10 @@ msgid ""
 "insufficient documentation to create drivers for your particular brand and "
 "model."
 msgstr ""
-"Unfortunately, this is due to the fact the manufacturer for your hardware "
-"hasn't provided any source code for developers to freely use, or there is "
-"insufficient documentation to create drivers for your particular brand and "
-"model."
+" Niestety, wynika to z faktu, że producent Twojego sprzętu nie zapewnił "
+"dostępu do kodu źródłowego dla programistów lub też dokumentacja sprzętu "
+"jest niewystarczająca, aby było możliwe opracowanie sterowników dla "
+"konketnej marki lub modelu."
 
 #: gettingstarted.html:572
 msgid ""
@@ -960,81 +1007,85 @@ msgid ""
 "directly. If you require assistance, feel free to <a "
 "onclick=\"smoothPageFade('community.html')\">ask the community</a>."
 msgstr ""
-"Some manufacturers may provide closed source drivers provided by themselves "
-"directly. If you require assistance, feel free to <a "
-"onclick=\"smoothPageFade('community.html')\">ask the community</a>."
+"Niektórzy producenci zapewniają sterowniki z zamkniętym kodem utrzymywanym "
+"bezpośrednio przez nich. Jeżeli potrzebujesz pomocy w tym temacie, nie "
+"krępuj się <a onclick=\"smoothPageFade('community.html')\">zwrócić z "
+"pytaniami do społeczności</a>."
 
 #: gettingstarted.html:577
 msgid "Read more on troubleshooting wireless hardware."
-msgstr "Read more on troubleshooting wireless hardware."
+msgstr ""
+"Dowiedz się więcej na temat rozwiązywania problemów z urządzeniami "
+"bezprzewodowami."
 
 #: gettingstarted.html585, 744
 msgid "Language Input"
-msgstr "Language Input"
+msgstr "Język wprowadzania"
 
 #: gettingstarted.html595, 602
 msgid "Language Support"
-msgstr "Language Support"
+msgstr "Wsparcie dla języków"
 
 #: gettingstarted.html:596
 msgid ""
 "Your computer may require updates to your language and localization "
 "settings, or you may want to install additional language support."
 msgstr ""
-"Your computer may require updates to your language and localization "
-"settings, or you may want to install additional language support."
+"Twój komputer może wymagać aktualizacji ustawień regionalnych i językowych. "
+"Możesz także zainstalować wsparcie dla dodatkowych języków."
 
 #: gettingstarted.html:606
 msgid ""
 "<b>Language Support</b> can be found later in <b><i>Settings <i class"
 "=\"material-icons\">&#xE315;</i> Region & Language</i></b>"
 msgstr ""
-"<b>Language Support</b> can be found later in <b><i>Settings <i class"
-"=\"material-icons\">&#xE315;</i> Region & Language</i></b>"
+"<b>Wsparcie dla języków</b> znajdziesz później w aplikacji <b><i>ustawienia "
+"<i class=\"material-icons\">&#xE315;</i> Region i język</i></b>"
 
 #: gettingstarted.html:614
 msgid "Complex Input"
-msgstr "Complex Input"
+msgstr "Złożone metody wprowadzania"
 
 #: gettingstarted.html:615
 msgid "Some regions of the world require complex inputs."
-msgstr "Some regions of the world require complex inputs."
+msgstr "Niektóre regiony świata wymagają złożonych metod wprowadzania"
 
 #: gettingstarted.html:620
 msgid "Chinese"
-msgstr "Chinese"
+msgstr "Chiński"
 
 #: gettingstarted.html:626
 msgid "Japanese"
-msgstr "Japanese"
+msgstr "Japoński"
 
 #: gettingstarted.html:632
 msgid "Korean"
-msgstr "Korean"
+msgstr "Koreański"
 
 #: gettingstarted.html:651
 msgid "Backup, Firewall and User Management"
-msgstr "Backup, Firewall and User Management"
+msgstr "Kopia zapasowa, zapora sieciowa i zarządzanie użytkownikami"
 
 #: gettingstarted.html:652
 msgid ""
 "<span name=\"distro-name\"></span> provides option to install a backup "
 "utility or firewall and supports multiple user accounts."
 msgstr ""
-"<span name=\"distro-name\"></span> provides option to install a backup "
-"utility or firewall and supports multiple user accounts."
+"<span name=\"distro-name\"></span> pozwala opcjonalnie zainstalować "
+"narzędzia do kopii zapasowych oraz zaporę ogniową. System wspiera obsługę "
+"wielu kont użytkowników."
 
 #: gettingstarted.html:663
 msgid "Backups"
-msgstr "Backups"
+msgstr "Kopie zapasowe"
 
 #: gettingstarted.html:664
 msgid ""
 "Nothing is more important then having a backup of your personal files, just "
 "in case something disastrous happens to your computer."
 msgstr ""
-"Nothing is more important then having a backup of your personal files, just "
-"in case something disastrous happens to your computer."
+"Nie ma nic ważniejszego niż posiadanie kopi zapasowej swoich plików "
+"osobistych, na wypadek gdyby coś strasznego stało się z Twoim komputerem."
 
 #: gettingstarted.html:668
 msgid ""
@@ -1042,25 +1093,26 @@ msgid ""
 "name=\"distro-name\"></span> and supports backups to local devices as well "
 "as online cloud-based services."
 msgstr ""
-"<b>Deja-Dup</b> is a powerful backup utility that can be installed in <span "
-"name=\"distro-name\"></span> and supports backups to local devices as well "
-"as online cloud-based services."
+"<b>Deja-Dup</b> jest wszechstronnym narzędziem do kopii zapasowych, które "
+"możesz zainstalować w <span name=\"distro-name\"></span>. Pozwala ono "
+"tworzyć kopie zapasowe zarówno na dyskach lokalnych, jak i w usługach "
+"przechowywania danych w chmurze."
 
 #: gettingstarted.html:675
 msgid "Configure Backup"
-msgstr "Configure Backup"
+msgstr "Konfiguruj kopie zapasowe"
 
 #: gettingstarted.html:678
 msgid ""
 "<b>Backups</b> can be found later in <b>Application Menu <i class"
 "=\"material-icons\">&#xE315;</i> Backup</b>."
 msgstr ""
-"<b>Backups</b> can be found later in <b>Application Menu <i class"
-"=\"material-icons\">&#xE315;</i> Backup</b>."
+"<b>Kopie zapasowe</b> znajdziesz później w <b>Menu aplikacji <i class"
+"=\"material-icons\">&#xE315;</i> Kopie zapasowe</b>."
 
 #: gettingstarted.html:691
 msgid "Firewall"
-msgstr "Firewall"
+msgstr "Zapora sieciowa"
 
 #: gettingstarted.html:692
 msgid ""
@@ -1069,10 +1121,10 @@ msgid ""
 "onclick=\"cmd('link?https://help.ubuntu.com/community/DoINeedAFirewall')\">learn"
 " more about firewalls</a>."
 msgstr ""
-"Firewalls prevent malicious connections entering and leaving your computer. "
-"By default, the firewall is disabled, <a "
-"onclick=\"cmd('link?https://help.ubuntu.com/community/DoINeedAFirewall')\">learn"
-" more about firewalls</a>."
+"Zapory sieciowe chronią Twój komputer przed niebezpiecznymi połączeniami "
+"sieciowymi. Domyślnie, zapora sieciowa jest wyłączona. <a "
+"onclick=\"cmd('link?https://help.ubuntu.com/community/DoINeedAFirewall')\">Dowiedz"
+" się więcej w temacie zapory sieciowej</a>."
 
 #: gettingstarted.html:696
 msgid ""
@@ -1081,14 +1133,15 @@ msgid ""
 "onclick=\"cmd('link?https://wiki.ubuntu.com/BasicSecurity')\">more ways to "
 "stay secure too</a>."
 msgstr ""
-"<b>Gufw</b> provides a graphical frontend to <code>ufw</code> (Uncomplicated"
-" Firewall). If security is important to you, there are <a "
-"onclick=\"cmd('link?https://wiki.ubuntu.com/BasicSecurity')\">more ways to "
-"stay secure too</a>."
+"Aplikacja <b>Gufw</b> udostępnia graficzny interfejs użytkownika dla "
+"narzędzia <code>ufw</code> (Uncomplicated Firewall). Jeżeli zależy Ci na "
+"bezpieczeństwie, to <a "
+"onclick=\"cmd('link?https://wiki.ubuntu.com/BasicSecurity')\">istnieją "
+"jeszcze inne metody utrzymania bezpieczeństwa</a>."
 
 #: gettingstarted.html:704
 msgid "Configure Firewall"
-msgstr "Configure Firewall"
+msgstr "Skonfiguruj zaporę sieciową"
 
 #: gettingstarted.html:707
 msgid ""
@@ -1096,13 +1149,13 @@ msgid ""
 "=\"material-icons\">&#xE315;</i> System <i class=\"material-"
 "icons\">&#xE315;</i> Firewall Configuration</i></b>."
 msgstr ""
-"Firewall Configuration</b> can be found later in <b><i>Settings <i class"
-"=\"material-icons\">&#xE315;</i> System <i class=\"material-"
-"icons\">&#xE315;</i> Firewall Configuration</i></b>."
+"Konfigurowanie zapory sieciowej</b> znajdziesz później w aplikacji "
+"<b><i>Ustawienia <i class=\"material-icons\">&#xE315;</i> System <i class"
+"=\"material-icons\">&#xE315;</i> Konfiguracja zapory sieciowej</i></b>."
 
 #: gettingstarted.html:721
 msgid "Users"
-msgstr "Users"
+msgstr "Użytkownicy"
 
 #: gettingstarted.html:723
 msgid ""
@@ -1110,29 +1163,30 @@ msgid ""
 "user to protect the individual privacy of each user sharing the same "
 "computer."
 msgstr ""
-"Share your computer with others? Set up a separate user account for each "
-"user to protect the individual privacy of each user sharing the same "
-"computer."
+"Używasz komputera razem z innymi osobami? Skonfiguruj oddzielne konta "
+"użytkownika dla każdej z tych osób, aby chronić prywatność każdego "
+"użytkownika tego samego komputera."
 
 #: gettingstarted.html:726
 msgid ""
 "You can also log in to a <b>Guest Session</b> if someone is using your "
 "computer as a one-off."
 msgstr ""
-"You can also log in to a <b>Guest Session</b> if someone is using your "
-"computer as a one-off."
+"Możesz również logować się do <b>sesji gościa</b>, jeżeli ktoś używa "
+"komputera tylko jednorazowo."
 
 #: gettingstarted.html:730
 msgid "Configure Users"
-msgstr "Configure Users"
+msgstr "Skonfiguruj użytkowników"
 
 #: gettingstarted.html:733
 msgid ""
 "<b>Users</b> can be found later in <b><i>Settings <i class=\"material-"
 "icons\">&#xE315;</i> Users</i></b>."
 msgstr ""
-"<b>Users</b> can be found later in <b><i>Settings <i class=\"material-"
-"icons\">&#xE315;</i> Users</i></b>."
+"<b>Konfigurację użytkowników<b> znajdziesz później w aplikacji "
+"<b><i>Ustawienia <i class=\"material-icons\">&#xE315;</i> "
+"Użytkownicy</i></b>."
 
 #: gettingstarted.html:754
 msgid ""
@@ -1140,41 +1194,45 @@ msgid ""
 "animations to provide you a smooth user experience. However, these effects "
 "may not play well inside Virtual Machines and in low resource system."
 msgstr ""
-"The <span name=\"distro-name\"></span> comes with cool effects and "
-"animations to provide you a smooth user experience. However, these effects "
-"may not play well inside Virtual Machines and in low resource system."
+"<span name=\"distro-name\"></span> jest wyposażony w fajne efekty i "
+"animacje, co zapewnia użytkownikom przyjemną pracę z systemem. Te efekty "
+"graficzne mogą jednak nie działać wydajnie wewnątrz maszyn wirtualnych i w "
+"systemie z ograniczonymi zasobami."
 
 #: gettingstarted.html:758
 msgid ""
 "So we provide an option to toggle animation and remote networking to get "
 "improved performance inside Virtual Machines and low resource computers."
 msgstr ""
-"So we provide an option to toggle animation and remote networking to get "
-"improved performance inside Virtual Machines and low resource computers."
+"Dlatego udostępniamy możliwość wyłączenia animacji oraz pracy zdalnej, aby "
+"poprawić wydajność wewnątrz maszyn wirtualnych oraz komputerów o "
+"ograniczonych zasobach."
 
 #: gettingstarted.html:763
 msgid "Disable animations & Remote display"
-msgstr "Disable animations & Remote display"
+msgstr "Wyłącz animacji i pulpit zdalny"
 
 #: gettingstarted.html:766
 msgid "Enable animations & Remote display"
-msgstr "Enable animations & Remote display"
+msgstr "Włącz animacje i pulpit zdalny"
 
 #: gettingstarted.html:776
 msgid ""
 "To improve the amount of customizability, <span name=\"distro-name\"></span>"
 " allows you to install/remove popular web browsers with a single click."
 msgstr ""
-"To improve the amount of customizability, <span name=\"distro-name\"></span>"
-" allows you to install/remove popular web browsers with a single click."
+"Abyś mógł jeszcze bardziej dostosować system do swoich potrzeb, <span name"
+"=\"distro-name\"></span> daje Ci możliwość zainstalowania lub usunięcia "
+"wybranych przeglądarek internetowych jednym kliknięciem."
 
 #: gettingstarted.html:782
 msgid ""
 "Chromium is an open-source browser project that aims to build a safer, "
 "faster, and more stable way for all Internet users to experience the web."
 msgstr ""
-"Chromium is an open-source browser project that aims to build a safer, "
-"faster, and more stable way for all Internet users to experience the web."
+"Chromium jest otwartoźródłowym projektem przeglądarki, który ma na celu "
+"stworzenie bezpieczniejszego, szybszego i bardziej stabilnego sposobu, w "
+"jaki użytkownicy Internetu będą mogli przeglądać sieć."
 
 #: gettingstarted.html:795
 msgid "Firefox"
@@ -1186,9 +1244,9 @@ msgid ""
 "Mozilla Foundation - a not for profit organisation. It is highly popular "
 "targeting multiple platforms."
 msgstr ""
-"Mozilla Firefox is a free and open-source web browser, developed by the "
-"Mozilla Foundation - a not for profit organisation. It is highly popular "
-"targeting multiple platforms."
+"Mozilla Firefox jest bezpłatną i otwartą przeglądarką internetową opracowaną"
+" przez Fundację Mozilla - organizację non profit. Jest bardzo popularna na "
+"wielu platformach."
 
 #: gettingstarted.html:815
 msgid ""
@@ -1196,29 +1254,31 @@ msgid ""
 "offers a smooth browsing experience plus integration with Google's "
 "proprietary services."
 msgstr ""
-"Google Chrome is a modern web browser backed by internet giant Google. It "
-"offers a smooth browsing experience plus integration with Google's "
-"proprietary services."
+"Google Chrome to nowoczesna przeglądarka internetowa wspierana przez giganta"
+" internetowego Google. Oferuje płynne przeglądanie oraz integrację z "
+"zastrzeżonymi usługami Google."
 
 #: gettingstarted.html:830
 msgid ""
 "Vivaldi Web Browser is a free, fully customizable web browser. Feature rich,"
 " powerful, secure and fun! Browse the Web your way"
 msgstr ""
-"Vivaldi Web Browser is a free, fully customizable web browser. Feature rich,"
-" powerful, secure and fun! Browse the Web your way"
+"Vivaldi jest bezpłatną, w pełni konfigurowalną przeglądarką internetową. "
+"Bogata w funkcje, wszechstronna, bezpieczna i zapewniająca rozrywkę! "
+"Przeglądaj internet na swój sposób"
 
 #: gettingstarted.html:849
 msgid ""
 "Opera is a fast and secure browser. Developed in Europe, used by millions "
 "around the world. Now with a built-in ad blocker and free VPN."
 msgstr ""
-"Opera is a fast and secure browser. Developed in Europe, used by millions "
-"around the world. Now with a built-in ad blocker and free VPN."
+"Opera to szybka i bezpieczna przeglądarka. Opracowany w Europie, używany "
+"przez miliony na całym świecie. Teraz z wbudowanym blokerem reklam i "
+"bezpłatną siecią VPN."
 
 #: gettingstarted.html:868
 msgid "User Interface"
-msgstr "User Interface"
+msgstr "Interfejs użytkownika"
 
 #: gettingstarted.html:869
 msgid ""
@@ -1226,25 +1286,26 @@ msgid ""
 "user interface. It can be used to quickly setup the user interface to "
 "broadly reflect how other popular operating systems look and feel."
 msgstr ""
-"<span name=\"distro-name\"></span> provides a unique tool to transform the "
-"user interface. It can be used to quickly setup the user interface to "
-"broadly reflect how other popular operating systems look and feel."
+"<span name=\"distro-name\"></span> udostępnia unikalne narzędzie do "
+"modyfikacji interfejsu użytkownika. Może być użyte do szybkiej konfiguracji "
+"interfejsu, aby jak najbardziej przypominał wygląda innych popularnych "
+"systemów operacyjnych."
 
 #: gettingstarted.html:874
 msgid "Raven Configuration Center"
-msgstr "Raven Configuration Center"
+msgstr "Ustawienia Budgie"
 
 #: gettingstarted.html:877
 msgid ""
 "<b>Raven Configuration Center</b> can be found later in <b>budgie panel "
 "options </b>."
 msgstr ""
-"<b>Raven Configuration Center</b> can be found later in <b>budgie panel "
-"options </b>."
+"<b>Ustawienia Budgie</b> znajdziesz później w w opcjach <b>panelu "
+"Budgie</b>."
 
 #: gettingstarted.html881, 886
 msgid "Settings"
-msgstr "Settings"
+msgstr "Ustawienia"
 
 #: gettingstarted.html:882
 msgid ""
@@ -1252,49 +1313,50 @@ msgid ""
 " center that <span name=\"distro-name\"></span> provides. You can configure "
 "just about every aspect of your computer from Settings."
 msgstr ""
-"The utilities mentioned above are all part of the extensive Settings control"
-" center that <span name=\"distro-name\"></span> provides. You can configure "
-"just about every aspect of your computer from Settings."
+"Wspomniane wcześniej narzędzia są częścią większego centrum ustawień, które "
+"jest dostępne w <span name=\"distro-name\"></span>. Możesz skonfigurować "
+"niemal każdy element systemu w Ustawieniach."
 
 #: gettingstarted.html:905
 msgid ""
 "<span name=\"distro-name\"></span> has many keyboard shortcuts that help "
 "make using your computer more efficient."
 msgstr ""
-"<span name=\"distro-name\"></span> has many keyboard shortcuts that help "
-"make using your computer more efficient."
+"<span name=\"distro-name\"></span> obsługuje wiele skrótów klawiaturowych, "
+"dzięki czemu możesz wydajniej obsługiwać swój komputer."
 
 #: gettingstarted.html:909
 msgid ""
 "The <b><img src=\"img/welcome/super-key.svg\"/> Super</b> key is your "
 "Windows key. For Mac keyboards, this is the ⌘ Command key."
 msgstr ""
-"The <b><img src=\"img/welcome/super-key.svg\"/> Super</b> key is your "
-"Windows key. For Mac keyboards, this is the ⌘ Command key."
+"Klawisz <b><img src=\"img/welcome/super-key.svg\"/> Super</b> to inaczej "
+"przycisk Windows na klawiaturze. W klawiaturach komputerów Mac, jest to "
+"przycisk ⌘ Command."
 
 #: gettingstarted.html:911
 msgid "Budgie Desktop shortcuts"
-msgstr "Budgie Desktop shortcuts"
+msgstr "Skróty Pulpitu Budgie"
 
 #: gettingstarted.html:912
 msgid "Some common shortcuts used in Budgie Desktop"
-msgstr "Some common shortcuts used in Budgie Desktop"
+msgstr "Wybrane popularne skróty klawiaturowe używane w Pulpicie Budgie"
 
 #: gettingstarted.html:921
 msgid "Open notifications in Raven"
-msgstr "Open notifications in Raven"
+msgstr "Otwiera powiadomienia"
 
 #: gettingstarted.html:929
 msgid "Open applet Settings in Raven"
-msgstr "Open applet Settings in Raven"
+msgstr "Otwiera aplet Ustawień"
 
 #: gettingstarted.html:934
 msgid "Common application shortcuts"
-msgstr "Common application shortcuts"
+msgstr "Popularne skróty aplikacji"
 
 #: gettingstarted.html:935
 msgid "These shortcuts apply in most applications."
-msgstr "These shortcuts apply in most applications."
+msgstr "Poniższe skróty klawiaturowe działają w większości aplikacji"
 
 #: gettingstarted.html940, 948, 956, 964, 972, 980, 988, 996, 1004, 1012,
 #: 1020, 1028, 1036, 1044, 1052, 1089, 1107, 1145, 1155, 1165, 1177
@@ -1303,59 +1365,59 @@ msgstr "Ctrl"
 
 #: gettingstarted.html:944
 msgid "Copy the selected text/object"
-msgstr "Copy the selected text/object"
+msgstr "Kopiuje zaznaczone teksty/obiekty"
 
 #: gettingstarted.html:952
 msgid "Cut the selected text/object"
-msgstr "Cut the selected text/object"
+msgstr "Wycina zaznaczone teksty/obiekty"
 
 #: gettingstarted.html:960
 msgid "Paste/insert the selected text/object"
-msgstr "Paste/insert the selected text/object"
+msgstr "Wkleja zaznaczone teksty/obiekty"
 
 #: gettingstarted.html:968
 msgid "Select all text"
-msgstr "Select all text"
+msgstr "Zaznacza cały tekst"
 
 #: gettingstarted.html:976
 msgid "Find words"
-msgstr "Find words"
+msgstr "Wyszukuje słowa"
 
 #: gettingstarted.html:984
 msgid "Find and replace words"
-msgstr "Find and replace words"
+msgstr "Wyszukuje i zastępuje słowa"
 
 #: gettingstarted.html:992
 msgid "Make the selected text bold"
-msgstr "Make the selected text bold"
+msgstr "Pogrubia zaznaczony tekst"
 
 #: gettingstarted.html:1000
 msgid "Make the selected text italic"
-msgstr "Make the selected text italic"
+msgstr "Pochyla (kursywa) zaznaczony tekst"
 
 #: gettingstarted.html:1008
 msgid "Underline the selected text"
-msgstr "Underline the selected text"
+msgstr "Podkreśla zaznaczony tekst"
 
 #: gettingstarted.html:1016
 msgid "Open a new document or window"
-msgstr "Open a new document or window"
+msgstr "Otwiera nowy dokument lub okno"
 
 #: gettingstarted.html:1024
 msgid "Save the current document"
-msgstr "Save the current document"
+msgstr "Zapisuje bieżący dokument"
 
 #: gettingstarted.html:1032
 msgid "Open another document"
-msgstr "Open another document"
+msgstr "Otwiera inny dokument"
 
 #: gettingstarted.html:1040
 msgid "Print the current document"
-msgstr "Print the current document"
+msgstr "Drukuje bieżący dokument"
 
 #: gettingstarted.html:1048
 msgid "Undo the last change you made"
-msgstr "Undo the last change you made"
+msgstr "Cofa ostatnią zmianę, jakiej dokonałeś"
 
 #: gettingstarted.html1054, 1169, 1180
 msgid "Shift"
@@ -1363,27 +1425,27 @@ msgstr "Shift"
 
 #: gettingstarted.html:1058
 msgid "Redo a change that you just undid"
-msgstr "Redo a change that you just undid"
+msgstr "Ponownie realizuje zmianę, którą wcześniej cofnąłeś"
 
 #: gettingstarted.html:1064
 msgid "Toggle the current application between full-screen and windowed"
-msgstr "Toggle the current application between full-screen and windowed"
+msgstr "Przełącza bieżącą aplikację między widokiem pełnoekranowym a oknem"
 
 #: gettingstarted.html:1068
 msgid "Desktop shortcuts"
-msgstr "Desktop shortcuts"
+msgstr "Skróty pulpitu"
 
 #: gettingstarted.html:1069
 msgid ""
 "This section lists common keyboard shortcuts which you can use to operate "
 "parts of the desktop."
 msgstr ""
-"This section lists common keyboard shortcuts which you can use to operate "
-"parts of the desktop."
+"To zestawienia zawiera popularne skróty klawiaturowe, które możesz użyć do "
+"wykonywania operacji na pulpicie"
 
 #: gettingstarted.html:1077
 msgid "Open Applications menu"
-msgstr "Open Applications menu"
+msgstr "Otwiera menu aplikacji"
 
 #: gettingstarted.html1081, 1091, 1109, 1117, 1131, 1147, 1157, 1167, 1179,
 #: 1188, 1196, 1204, 1212, 1236
@@ -1392,7 +1454,8 @@ msgstr "Alt"
 
 #: gettingstarted.html:1085
 msgid "Run an application by typing its name in the box which appears"
-msgstr "Run an application by typing its name in the box which appears"
+msgstr ""
+"Uruchamia aplikację poprzez wpisanie jej nazwy w okienku, które się pojawi"
 
 #: gettingstarted.html:1093
 msgid "Delete"
@@ -1400,23 +1463,23 @@ msgstr "Delete"
 
 #: gettingstarted.html:1095
 msgid "Logout"
-msgstr "Logout"
+msgstr "Wyloguj"
 
 #: gettingstarted.html:1103
 msgid "Lock your screen."
-msgstr "Lock your screen."
+msgstr "Zablokuj ekran"
 
 #: gettingstarted.html:1113
 msgid "Open a terminal."
-msgstr "Open a terminal."
+msgstr "Otwiera terminal"
 
 #: gettingstarted.html:1123
 msgid "Screen reader enable/disable."
-msgstr "Screen reader enable/disable."
+msgstr "Włącza/wyłącza czytnik ekranu."
 
 #: gettingstarted.html:1127
 msgid "Window shortcuts"
-msgstr "Window shortcuts"
+msgstr "Skróty dotyczące okien"
 
 #: gettingstarted.html:1133
 msgid "Tab"
@@ -1424,91 +1487,93 @@ msgstr "Tab"
 
 #: gettingstarted.html:1136
 msgid "Switch between currently-open windows."
-msgstr "Switch between currently-open windows."
+msgstr "Przełącza pomiędzy aktualnie otwartymi oknami."
 
 #: gettingstarted.html:1138
 msgid "Press Alt + Tab and then release Tab (but continue to hold Alt)."
-msgstr "Press Alt + Tab and then release Tab (but continue to hold Alt)."
+msgstr "Naciśnij Alt + Tab i następnie puść Tab (ale trzymaj nadal Alt)."
 
 #: gettingstarted.html:1139
 msgid ""
 "Press Tab repeatedly to cycle through the list of available windows which "
 "appears on the screen."
 msgstr ""
-"Press Tab repeatedly to cycle through the list of available windows which "
-"appears on the screen."
+"Naciskaj Tab kilkukrotnie, aby przełączać się przez listę dostępnych okien, "
+"które pojawiają się na ekranie."
 
 #: gettingstarted.html1149, 1171, 1246
 msgid "Left"
-msgstr "Left"
+msgstr "Lewy"
 
 #: gettingstarted.html:1151
 msgid "Switch to the previous workspace."
-msgstr "Switch to the previous workspace."
+msgstr "Przełącza do poprzedniego obszaru roboczego."
 
 #: gettingstarted.html1159, 1182, 1254
 msgid "Right"
-msgstr "Right"
+msgstr "Prawy"
 
 #: gettingstarted.html:1161
 msgid "Switch to the next workspace."
-msgstr "Switch to the next workspace."
+msgstr "Przełącza do następnego obszaru roboczego."
 
 #: gettingstarted.html:1173
 msgid "Move the current window to the previous workspace."
-msgstr "Move the current window to the previous workspace."
+msgstr "Przenosi bieżące okno do poprzedniego obszaru roboczego."
 
 #: gettingstarted.html:1184
 msgid "Move the current window to the next workspace."
-msgstr "Move the current window to the next workspace."
+msgstr "Przenosi bieżące okna do następnego obszaru roboczego."
 
 #: gettingstarted.html:1192
 msgid "Closes window."
-msgstr "Closes window."
+msgstr "Zamyka okno."
 
 #: gettingstarted.html:1200
 msgid "Returns window to 'normal' or previous size."
-msgstr "Returns window to 'normal' or previous size."
+msgstr "Przywraca okno do \"normalnego\" lub poprzedniego rozmiaru."
 
 #: gettingstarted.html:1208
 msgid "Moves the current window (can be moved with mouse or keyboard)."
-msgstr "Moves the current window (can be moved with mouse or keyboard)."
+msgstr "Przesuwa bieżące okno (można przesuwać myszką lub klawiaturą)."
 
 #: gettingstarted.html:1216
 msgid "Resizes current window (again, can be moved with mouse or keyboard)."
-msgstr "Resizes current window (again, can be moved with mouse or keyboard)."
+msgstr ""
+"Zmienia rozmiar bieżącego okna (tutaj również, można zmieniać rozmiar myszką"
+" lub kalwiaturą)."
 
 #: gettingstarted.html:1224
 msgid "Minimizes current window."
-msgstr "Minimizes current window."
+msgstr "Minimalizuje bieżące okno."
 
 #: gettingstarted.html:1230
 msgid "Up"
-msgstr "Up"
+msgstr "W górę"
 
 #: gettingstarted.html:1232
 msgid "Maximizes current window."
-msgstr "Maximizes current window."
+msgstr "Maksymalizuje bieżące okno."
 
 #: gettingstarted.html:1238
 msgid "Space"
-msgstr "Space"
+msgstr "Spacja"
 
 #: gettingstarted.html:1240
 msgid ""
 "Displays the window menu with options such as 'Always on Top' and 'Minimize'"
 " and 'Maximize' and above commands."
 msgstr ""
-"Displays the window menu with options such as 'Always on Top' and 'Minimize'"
-" and 'Maximize' and above commands."
+"Wyświetla menu okna z opcjami takimi jak \"Zawsze na wierzchu\", "
+"\"Minimalizuj\" czy \"Maksymalizuj\" oraz powyższymi komendami."
 
 #: gettingstarted.html:1248
 msgid "Place window on left side of screen."
-msgstr "Place window on left side of screen."
+msgstr "Umieszcza okno po lewej stronie ekranu."
 
 #: gettingstarted.html:1256
 msgid "Place window on right side of screen."
-msgstr "Place window on right side of screen."
+msgstr "Umieszcza okno po prawej stronie ekranu."
 
 #: gettingstarted.html:1275
 msgid ""
@@ -1516,13 +1581,14 @@ msgid ""
 "another. This information is useful when providing support to ensure "
 "hardware and software works on your machine."
 msgstr ""
-"Your machine is made up of various components that interact with one "
-"another. This information is useful when providing support to ensure "
-"hardware and software works on your machine."
+"Twój komputer składa się z wielu różnych elementów, które ze sobą "
+"współpracują. Informacje te są użyteczne podczas udzielania wsparcia w celu "
+"zapewnienia, że konkretny sprzęt i oprogramowanie działają na Twoim "
+"komputerze."
 
 #: gettingstarted.html:1283
 msgid "Gathering Information.."
-msgstr "Gathering Information.."
+msgstr "Zbieranie informacji..."
 
 #: gettingstarted.html:1292
 msgid "System"
@@ -1530,31 +1596,33 @@ msgstr "System"
 
 #: gettingstarted.html:1295
 msgid "Distribution:"
-msgstr "Distribution:"
+msgstr "Dystrybucja:"
 
 #: gettingstarted.html:1299
 msgid "Kernel:"
-msgstr "Kernel:"
+msgstr "Jądro systemu:"
 
 #: gettingstarted.html:1302
 msgid "The Linux kernel is the heart of Ubuntu."
-msgstr "The Linux kernel is the heart of Ubuntu."
+msgstr "Jądro Linuksa jest sercem Ubuntu."
 
 #: gettingstarted.html:1308
 msgid "Motherboard:"
-msgstr "Motherboard:"
+msgstr "Płyta główna:"
 
 #: gettingstarted.html:1312
 msgid "Boot Mode:"
-msgstr "Boot Mode:"
+msgstr "Tryb rozruchu:"
 
 #: gettingstarted.html:1315
 msgid "Displays the mode that OS is communicating with the firmware."
-msgstr "Displays the mode that OS is communicating with the firmware."
+msgstr ""
+"Wyświetla tryb, w jakim system operacyjny komunikuje się z oprogramowaniem "
+"sprzętowym."
 
 #: gettingstarted.html:1323
 msgid "Processor"
-msgstr "Processor"
+msgstr "Procesor"
 
 #: gettingstarted.html:1326
 msgid "Model:"
@@ -1562,98 +1630,101 @@ msgstr "Model:"
 
 #: gettingstarted.html:1330
 msgid "Speed:"
-msgstr "Speed:"
+msgstr "Prędkość:"
 
 #: gettingstarted.html:1334
 msgid "Architecture in use:"
-msgstr "Architecture in use:"
+msgstr "Architektura aktualnie w użyciu:"
 
 #: gettingstarted.html:1337
 msgid ""
 "The operating system's architecture in use. For instance, i386 = 32-bit."
 msgstr ""
-"The operating system's architecture in use. For instance, i386 = 32-bit."
+"Aktualnie używana architektura systemu operacyjnego. Przykładowo i386  - "
+"architektura 32 bitowa."
 
 #: gettingstarted.html:1343
 msgid "Architecture(s) supported:"
-msgstr "Architecture(s) supported:"
+msgstr "Wspierane architektury:"
 
 #: gettingstarted.html:1346
 msgid "Architectures that are supported by this processor."
-msgstr "Architectures that are supported by this processor."
+msgstr "Architektury, które są wpierane przez Twój procesor."
 
 #: gettingstarted.html:1354
 msgid "Components"
-msgstr "Components"
+msgstr "Komponenty"
 
 #: gettingstarted.html:1357
 msgid "Memory (RAM):"
-msgstr "Memory (RAM):"
+msgstr "Pamięć (RAM):"
 
 #: gettingstarted.html:1360
 msgid "More RAM allows more applications to run simultaneously."
-msgstr "More RAM allows more applications to run simultaneously."
+msgstr ""
+"Im więcej pamięci RAM tym więcej aplikacji może pracować równocześnie."
 
 #: gettingstarted.html:1366
 msgid "Graphics:"
-msgstr "Graphics:"
+msgstr "Grafika:"
 
 #: gettingstarted.html:1370
 msgid "Internet Access:"
-msgstr "Internet Access:"
+msgstr "Dostęp do internetu:"
 
 #: gettingstarted.html:1372
 msgid "Connected"
-msgstr "Connected"
+msgstr "Połączony"
 
 #: gettingstarted.html:1373
 msgid "Not Connected"
-msgstr "Not Connected"
+msgstr "Niepołączony"
 
 #: gettingstarted.html:1380
 msgid "Storage"
-msgstr "Storage"
+msgstr "Magazyn danych"
 
 #: gettingstarted.html:1384
 msgid "Root File System:"
-msgstr "Root File System:"
+msgstr "Główny system plików:"
 
 #: gettingstarted.html:1387
 msgid "The file system where OS is installed."
-msgstr "The file system where OS is installed."
+msgstr "System plików, gdzie jest zainstalowany system operacyjny."
 
 #: gettingstarted.html:1393
 msgid "Entire Disk Capacity:"
-msgstr "Entire Disk Capacity:"
+msgstr "Pojemność całego dysku:"
 
 #: gettingstarted.html:1398
 msgid "OS Usage"
-msgstr "OS Usage"
+msgstr "Użycie przez system"
 
 #: gettingstarted.html:1402
 msgid "Other Usage"
-msgstr "Other Usage"
+msgstr "Użycie pozostałe"
 
 #: gettingstarted.html:1407
 msgid "Allocated for <span name=\"distro-name\"></span>:"
-msgstr "Allocated for <span name=\"distro-name\"></span>:"
+msgstr "Przydzielone dla <span name=\"distro-name\"></span>:"
 
 #: gettingstarted.html:1410
 msgid "The size of your operating system partition."
-msgstr "The size of your operating system partition."
+msgstr "Rozmiar partycji systemu operacyjnego."
 
 #: gettingstarted.html:1416
 msgid "Used Space:"
-msgstr "Used Space:"
+msgstr "Użyta przestrzeń:"
 
 #: gettingstarted.html:1422
 msgid "Free Space:"
-msgstr "Free Space:"
+msgstr "Wolna przestrzeń:"
 
 #: gettingstarted.html:1428
 msgid "Other Usage:"
-msgstr "Other Usage:"
+msgstr "Inne użycie:"
 
 #: gettingstarted.html:1431
 msgid "Reserved by system, other partitions, unallocated or swap."
-msgstr "Reserved by system, other partitions, unallocated or swap."
+msgstr ""
+"Zarezerwowane przez system, inne partycje, nieprzydzielone lub dane wymiany."

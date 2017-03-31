@@ -1,24 +1,22 @@
 # Translators:
-# Adolfo Jayme-Barrientos <fitoschido@gmail.com>, 2017
-# Leo Arias <yo@elopio.net>, 2017
-# _-Caleb-_ <tanausugomez@gmail.com>, 2017
+# Sebastian Cygan <sebcyg@gmail.com>, 2017
 msgid ""
 msgstr ""
 "Project-Id-Version: Budgie Welcome\n"
 "POT-Creation-Date: 2016-02-27 12:48+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: _-Caleb-_ <tanausugomez@gmail.com>, 2017\n"
-"Language-Team: Spanish (https://www.transifex.com/ubuntu-budgie/teams/72251/es/)\n"
+"Last-Translator: Sebastian Cygan <sebcyg@gmail.com>, 2017\n"
+"Language-Team: Polish (https://www.transifex.com/ubuntu-budgie/teams/72251/pl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: es\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: pl\n"
+"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && (n%100<12 || n%100>=14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && n%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);\n"
 "Report-Msgid-Bugs-To : you@example.com\n"
 
 #: community.html:23
 msgid "Chat Rooms"
-msgstr "Salas de charla"
+msgstr "Czat"
 
 #: community.html:24
 msgid ""
@@ -27,38 +25,38 @@ msgid ""
 " place to go. From here, you can talk with the <span name=\"distro-"
 "name\"></span> team and other members of our growing community."
 msgstr ""
-"Para jugar un rol activo y ayudar con la dirección de <span name=\"distro-"
-"name\"></span>, la <span name=\"distro-name\"></span> sala de charla es el "
-"mejor lugar. Desde ahí, puede hablar con el equipo de <span name=\"distro-"
-"name\"></span> y otros miembros de nuestra creciente comunidad."
+"Aby odegrać aktywną rolę i pomóc w kierunkowaniu rozwoju <span name"
+"=\"distro-name\"></span>, najlepszym miejscem jest czat <span name=\"distro-"
+"name\"></span>. Tutaj możesz rozmawiać z zespołem <span name=\"distro-"
+"name\"></span> i innymi członkami naszej rozrastającej się społeczności."
 
 #: community.html:28
 msgid ""
 "It appears you are not connected to the Internet. Please check your "
 "connection to access this content."
 msgstr ""
-"Parece que no se ha conectado a Internet. Compruebe su conexión para acceder"
-" a este contenido."
+"Prawdopodobnie nie jesteś podłączony do internetu. Sprawdź Twoje połączenie,"
+" aby uzyskać dostęp do tych treści."
 
 #: community.html:29
 msgid "Sorry, Welcome was unable to establish a connection."
-msgstr "Esta aplicación no pudo establecer una conexión."
+msgstr "Przepraszamy, nie było możliwości nawiązania połączenia."
 
 #: community.html:30
 msgid "Retry"
-msgstr "Intentar de nuevo"
+msgstr "Ponów"
 
 #: community.html:34
 msgid "Chat Room"
-msgstr "Sala de charla"
+msgstr "Czat"
 
 #: community.html:38
 msgid ""
 "An alternative way is to get in touch with us via the official IRC (Internet"
 " Relay Chat) channel."
 msgstr ""
-"Una manera alternativa de comunicarse con nosotros es mediante nuestro canal"
-" de IRC (Internet Relay Chat)"
+"Alternatywnym sposobem kontaktu z nami jest oficjalny kanał IRC (Internet "
+"Relay Chat)."
 
 #: community.html:40
 msgid ""
@@ -66,61 +64,62 @@ msgid ""
 "any reply. So either leave an IRC session open - or we recommend connecting "
 "to all ubuntu IRC channels via an IRC bouncer."
 msgstr ""
-"Si se disconecta del canal, no recibirá notificaciones de respuesta. Así que"
-" deje la sesión de IRC abierta, o le recomendamos conectarse a todos los "
-"canales IRC de ubuntu a través de un «bouncer» de IRC."
+"Jeżeli odłączysz się od naszego kanału, nie będziesz otrzymywać powiadomień "
+"o udzielanych odpowiedziach. Dlatego albo pozostaw otwartą sesję IRC albo "
+"rekomendujemy połączenia się ze wszystkimi kanałami IRC poprzez skrzynkę "
+"IRC."
 
 #: community.html:45
 msgid "#Ubuntu-Budgie on FreeNode"
-msgstr "#Ubuntu-Budgie en FreeNode"
+msgstr "#Ubuntu-Budgie w serwisie FreeNode"
 
 #: community.html:53
 msgid "Forum"
-msgstr "Foro"
+msgstr "Forum"
 
 #: community.html:54
 msgid ""
 "You can also get in touch with <span name=\"distro-name\"></span> through "
 "official Ubuntu forums."
 msgstr ""
-"También puede ponerse en contacto con <span name=\"distro-name\"></span> en "
-"el for oficial de Ubuntu."
+"Możesz również skontaktować się z zespołem <span name=\"distro-"
+"name\"></span> poprzez oficjalne forum Ubuntu."
 
 #: community.html:64
 msgid "Social Networks"
-msgstr "Redes sociales"
+msgstr "Sieci społecznościowe"
 
 #: community.html:65
 msgid ""
 "<span name=\"distro-name\"></span> is active on the following social "
 "networks."
 msgstr ""
-"<span name=\"distro-name\"></span> tiene presencia activa en estas redes "
-"sociales."
+"<span name=\"distro-name\"></span> jest dostępne w poniższych sieciach "
+"społecznościowych."
 
 #: community.html:74
 msgid "G+ Community"
-msgstr "Comunidad de G+"
+msgstr "Społeczność na G+"
 
 #: community.html:77
 msgid "G+ Page"
-msgstr "Página de G+"
+msgstr "Strona na G+"
 
 #: community.html:87
 msgid "Facebook Group"
-msgstr "Grupo de Facebook"
+msgstr "Grupa na Facebook'u"
 
 #: community.html:90
 msgid "Facebook Page"
-msgstr "Página de Facebook"
+msgstr "Strona na Facebook'u"
 
 #: community.html:110
 msgid "Gitter Chat Room"
-msgstr "Sala de charla de Gitter"
+msgstr "Czat Gitter"
 
 #: community.html:139
 msgid "Local Communities"
-msgstr "Comunidades locales"
+msgstr "Społeczności lokalne"
 
 #: community.html:140
 msgid ""
@@ -131,12 +130,12 @@ msgid ""
 "name\"></span> please let us know, so that we can list it here and improve "
 "its visibility."
 msgstr ""
-"Además de las comunidades globales, <span name=\"distro-name\"></span> "
-"también apoya comunidades locales para dar soporte a personas usuarias "
-"procedentes de diversos ambientes. En esta sección, puede descubrir su "
-"comunidad local. Si le intersa gestionar una comunidad local de <span name"
-"=\"distro-name\"></span>, háganoslo saber para que podamos listarla aquí y "
-"aumentar su visibilidad."
+"Oprócz społeczności globalnych, <span name=\"distro-name\"></span> zachęca "
+"również lokalne społeczności do wspierania użytkowników pochodzących z "
+"różnych środowisk. W tej sekccji możesz odkryc lokalne społeczności. Jeżeli "
+"jesteś zainteresowany zarządzaniem lokalną społecznością <span name"
+"=\"distro-name\"></span>, daj nam znać, abyśmy mogli ją tutaj wyświetlić i "
+"poprawić jej widoczność."
 
 #: community.html154, 162
 msgid "Ubuntu Budgie Brasil"

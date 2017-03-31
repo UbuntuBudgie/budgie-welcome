@@ -1,11 +1,12 @@
 # Translators:
 # Adolfo Jayme-Barrientos <fitoschido@gmail.com>, 2017
+# Jose Luis Tirado <joseluis.tirado@gmail.com>, 2017
 msgid ""
 msgstr ""
 "Project-Id-Version: Budgie Welcome\n"
 "POT-Creation-Date: 2016-02-27 12:48+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Adolfo Jayme-Barrientos <fitoschido@gmail.com>, 2017\n"
+"Last-Translator: Jose Luis Tirado <joseluis.tirado@gmail.com>, 2017\n"
 "Language-Team: Spanish (https://www.transifex.com/ubuntu-budgie/teams/72251/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -28,12 +29,19 @@ msgid ""
 "Unhappy with your changes to the panel layout? Don't worry. We can help you "
 "to restore your panels with a single click!"
 msgstr ""
+"¿Ha perdido sus paneles mientras jugaba con <span name=\"distro-"
+"name\"></span>? ¿No está contento con los cambios a la disposición de los "
+"paneles? No se preocupe. ¡Podemos ayudarle a restaurar sus paneles son un "
+"simple clic!"
 
 #: default.html:26
 msgid ""
 "This will undo all changes that you have made on any panel and will reset "
 "back to the initial default panel layout configuration."
 msgstr ""
+"Esto deshará todos los cambios que haya realizado en cualquier panel y "
+"restaurará la disposición de paneles a la configuración inicial "
+"predeterminada."
 
 #: default.html29, 64, 82, 103
 msgid "Applying Changes..."
@@ -53,6 +61,10 @@ msgid ""
 " theme package. It uses Arc theme for GTK windows, panels, login window and "
 "lock screen and <strong>Pocillo</strong> as the icon theme."
 msgstr ""
+"<span name=\"distro-name\"></span> usa <strong>Arc</strong> como tu paquete "
+"de tema predeterminado. Se usa el tema Arc para las ventanas GTK, paneles, "
+"ventana de inicio de sesión y pantalla de bloqueo y <strong>Pocillo</strong>"
+" como el tema de iconos."
 
 #: default.html:41
 msgid ""
@@ -61,6 +73,10 @@ msgid ""
 "uniform appearance across different platforms. There are different theme "
 "packages inspired by Google&apos;s Material Design style."
 msgstr ""
+"Otra tendencia de diseño emergente es <strong>Material Design</strong> que "
+"es básicamente una colección de guías de diseño introducidas por Google para"
+" uniformizar la apariencia a través de diferentes plataformas. Hay distintos"
+" temas de paquetes inspirados en el estilo Material Design de Google."
 
 #: default.html:44
 msgid ""
@@ -68,6 +84,9 @@ msgid ""
 "provide easy options to switch between our default <em>Arc style</em> and "
 "<em>Material style</em>."
 msgstr ""
+"Como <span name=\"distro-name\"></span> valora la libertad de sus usuarios, "
+"proporcionamos opciones sencillas para cambiar entre nuestro <em>estilo "
+"Arc</em> predeterminado y el <em>estilo Material</em>."
 
 #: default.html:50
 msgid "Arc Design"
