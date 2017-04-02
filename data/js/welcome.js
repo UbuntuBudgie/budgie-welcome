@@ -306,13 +306,6 @@ if (current_page == 'index.html') {
     }
 }
 
-
-// Introduction/Features = Animation
-if (current_page == 'introduction.html' || current_page == 'features.html') {
-    new WOW().init();
-}
-
-
 // Getting Started Only - Index Pane for Selecting Topics
 if (current_page == 'gettingstarted.html') {
 
@@ -469,3 +462,10 @@ function sortList() {
     }));
 }
 //}
+
+function injectTitle() {
+    var title = $("#title-inject").text();
+    document.title = "title?" + title;
+}
+
+injectTitle();

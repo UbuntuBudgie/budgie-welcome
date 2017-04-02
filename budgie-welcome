@@ -81,10 +81,6 @@ class AppView(WebKit2.WebView):
         # broadcast event any suitable controllers will be able to listen and
         # respond accordingly, for now we just use jQuery to manually toggle
         current_page = app.current_page[:-5]
-        title = self.get_title()
-        
-        if title:
-            self.page_title.set_label(title)
         
         # Dynamically toggle header controls button
         if current_page != "index":
@@ -250,6 +246,9 @@ class AppView(WebKit2.WebView):
             subprocess.Popen(['gufw'])
         elif uri == 'raven':
             subprocess.Popen(['xdotool', 'key', 'super+a'])
+        elif uri.startswith("title?"):
+            title = uri[6:]
+            self.page_title.set_label(title)
         elif uri.startswith('install?'):
             code = uri[8:]
 

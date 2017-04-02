@@ -94,80 +94,8 @@ body, button {
   font-weight: normal;
 }
 
-/************************
- * Navigation
-*************************/
-
-#navigation {
-  left: 0;
-  top: 0;
-  position: fixed;
-  padding: 4px 2px;
-  width: 100%;
-  margin-bottom: 8px;
-  /* Arc Theme Integration */
-  background: #404552;
-	font-size: 24px;
-	font-weight: normal;
-  color: white;
-  z-index: 9;
-}
-
-.navigation-button {
-  width: 11px;
-  color: #DED9CB;
-  display: inline-block;
-  padding: 4px 20px 4px 8px;
-  margin-bottom: 0;
-  font-size: 14px;
-  line-height: 20px;
-  vertical-align: middle;
-  cursor: pointer;
-  text-decoration: none;
-}
-
-.navigation-button i {
-background-color: #404552;
-border-radius: 0.15rem;
-color: white;
-}
-
-.navigation-button i:hover {
-  background-color: #5c616c;
-}
-
-.navigation-button i:active {
-  background-color: #5294e2;
-}
-
-#navigation-title {
-  font-size: 18px;
-  padding-left: 4px;
-  vertical-align: middle;
-  display: inline-table;
-}
-
-#navigation-sub-title {
-  font-weight: normal;
-  font-size: 18px;
-  vertical-align: middle;
-  display: inline-table;
-  color: #959595;
-}
-
-#navigation-divider {
-  top: 47px;
-  left: 0;
-  width: 100%;
-  height: 11px;
-  position: fixed;
-}
-
-#navigation-right {
-  position: fixed;
-  bottom: 16px;
-  right: 22px;
-  z-index: 11;
+#title-inject {
+  display: none;
 }
 
 /************************
