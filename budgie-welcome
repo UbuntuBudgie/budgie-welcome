@@ -89,19 +89,19 @@ class AppView(WebKit2.WebView):
         # Dynamically toggle header controls button
         if current_page != "index":
         
-            if not self.back_btn.is_visible():
+            if not self.back_btn.is_sensitive():
                 
                 if current_page != "gettingstarted":
                     self.back_signal_handler = self.back_btn.connect("clicked", self._back_action)
                 else:
                     self.back_signal_handler = self.back_btn.connect("clicked", self._index_action)
                 
-                self.back_btn.show()
+                self.back_btn.set_sensitive(True)
         else:
             if self.back_signal_handler:
                 self.back_btn.disconnect(self.back_signal_handler)
                 self.back_signal_handler = None
-            self.back_btn.hide()
+            self.back_btn.set_sensitive(False)
 
         if systemstate.session_type == 'live':
             app.update_page('.live-session-only', 'show')
@@ -1330,7 +1330,7 @@ class WelcomeApp(object):
         status_btn = Gtk.Button(_("Status"))
         back_btn = Gtk.Button(image=back_img)
         status_btn.hide()
-        back_btn.hide()
+        back_btn.set_sensitive(False)
         status_btn.set_name("status-btn")
         back_btn.set_name("back-btn")
         about_btn.set_name("about-btn")
