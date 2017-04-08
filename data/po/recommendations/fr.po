@@ -1,28 +1,26 @@
 # Translators:
-# Adolfo Jayme-Barrientos <fitoschido@gmail.com>, 2017
-# Jose Luis Tirado <joseluis.tirado@gmail.com>, 2017
-# _-Caleb-_ <tanausugomez@gmail.com>, 2017
+# Emmanuel Hermellin <hermellin@lirmm.fr>, 2017
 msgid ""
 msgstr ""
 "Project-Id-Version: Budgie Welcome\n"
 "POT-Creation-Date: 2016-02-27 12:48+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: _-Caleb-_ <tanausugomez@gmail.com>, 2017\n"
-"Language-Team: Spanish (https://www.transifex.com/ubuntu-budgie/teams/72251/es/)\n"
+"Last-Translator: Emmanuel Hermellin <hermellin@lirmm.fr>, 2017\n"
+"Language-Team: French (https://www.transifex.com/ubuntu-budgie/teams/72251/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: es\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: fr\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "Report-Msgid-Bugs-To : you@example.com\n"
 
 #: recommendations.html:15
 msgid "Recommendations"
-msgstr "Recomendaciones"
+msgstr "Recommandations"
 
 #: recommendations.html26, 71, 85, 102, 115, 132
 msgid "Applying Changes..."
-msgstr "Aplicando cambios…"
+msgstr "Application des changements..."
 
 #: recommendations.html:35
 msgid ""
@@ -39,14 +37,29 @@ msgid ""
 "releases but the complexities of packaging and providing updates have "
 "prevented us from delivering them in the past."
 msgstr ""
+"<strong>Snap</strong> est un gestionnaire de paquets nouvelle génération "
+"développé par <em>Canonical</em>. Bien qu'il soit développé à la base "
+"uniquement pour Ubuntu, Snap fonctionne maintenant dans de nombreuses "
+"distributions GNU/Linux. Snap va aider les développeurs d'applications à "
+"fournir un paquet unifié qui peut fonctionner sur différentes plates-formes."
+" En utilisant les paquets Snap, les logiciels peuvent posséder leur propre "
+"version des librairies nécessaires à leurs fonctionnements sans se "
+"préoccuper des dépendances ou des librairies déjà installées sur le système "
+"d'exploitation. Les paquets Snap autorisent donc les développeurs à mettre à"
+" disposition de nouvelles versions de leur logiciel plus rapidement dans "
+"<span name=\"distro-name\"></span>. Ainsi, les nouvelles versions de KDE, "
+"GNOME ou d'autres environnements de bureau vont pouvoir être plus facilement"
+" compilées sur les anciennes versions LTS des distributions Ubuntu, ce qui "
+"n'était pas forcément possible avant du fait de la complexité de l'ancien "
+"gestionnaire de paquets et des processus de mises à jour."
 
 #: recommendations.html:41
 msgid "Snap user guide"
-msgstr "Guía de usuario de Snap"
+msgstr "Guide d'utilisation du gestionnaire de paquets Snap"
 
 #: recommendations.html:43
 msgid "Search Snap Apps"
-msgstr "Buscar aplicaciones Snap"
+msgstr "Rechercher des applications Snap"
 
 #: recommendations.html:44
 msgid ""
@@ -55,6 +68,10 @@ msgid ""
 "Snap app store. Well, wonder not. Simply pop open a terminal and run the "
 "following command:"
 msgstr ""
+"S'il y a un obstacle à l'adoption des paquets Snap, c'est de savoir quels "
+"sont justement les paquets disponibles dans ce format dans le centre de "
+"logiciels Snap. Pour le savoir, il suffit simplement d'ouvrir un terminal et"
+" d'exécuter la commande suivante:"
 
 #: recommendations.html:48
 msgid ""
@@ -62,27 +79,23 @@ msgid ""
 " install from the command line. It can be run with a query after it (e.g., "
 "‘snap find email‘, ‘snap find media’, ‘snap find messaging‘) or without."
 msgstr ""
-"La orden «find» le permite buscar rápidamente y descubrir desde la línea de "
-"órdenes Snaps disponibles para ser instaladas. Se puede ejecutar con una "
-"consulta tras ella (por ejemplo, «snap find email», «snap find media», «snap"
-" find messaging») o sin consulta."
 
 #: recommendations.html:49
 msgid "When run without a query you’ll instead see a list of featured snaps."
-msgstr "Si lo ejecuta sin una consulta, verá una lista de «snaps» destacados."
+msgstr ""
 
 #: recommendations.html:50
 msgid "See installed apps"
-msgstr "Buscar aplicaciones instaladas"
+msgstr "Voir les applications installées"
 
 #: recommendations.html:51
 msgid ""
 "Installed some Snaps but can’t remember what? Don’t panic. Use the list "
 "command to see an up-to-date list of all Snap apps installed on your system:"
 msgstr ""
-"¿Instaló algunas Snaps pero no recuerda cuáles? No se preocupe. Use la orden"
-" «list» para ver una lista actualizada de todas las aplicaciones Snap "
-"instaladas en su sistema:"
+"Vous avez installé des paquets Snap mais vous ne vous rappelez plus lesquels"
+" ? Pas de panique. Utilisez la commande list pour voir une liste à jour de "
+"toutes les applications Snap installées sur votre système :"
 
 #: recommendations.html:53
 msgid ""
@@ -90,10 +103,14 @@ msgid ""
 "of the developer who uploaded it (handy when there are multiple versions of "
 "the same app in the store, e.g., Telegram)."
 msgstr ""
+"Cette liste vous montre également le numéro de version, le numéro de "
+"révision et le nom du développeur qui l'a téléversé (pratique lorsqu'il "
+"existe plusieurs versions de la même application dans le centre des "
+"logiciels)."
 
 #: recommendations.html:54
 msgid "Install & Remove Snap Apps"
-msgstr "Instalar y eliminar aplicaciones Snap"
+msgstr "Installer et supprimer des paquets Snap"
 
 #: recommendations.html:55
 msgid ""
@@ -101,10 +118,15 @@ msgid ""
 "analogous snap commands easy to remember. You install snap apps with the "
 "‘install’ command, and remove them using the ‘remove’ command."
 msgstr ""
+"Si vous avez l'habitude de gérer vos logiciels à l'aide d'apt, vous "
+"trouverez de manière intuitive les commandes analogues pour le faire avec "
+"Snap. Ainsi, vous installez des applications grâce à la commande "
+"'installer', et supprimez ces applications en utilisant la commande "
+"'supprimer'."
 
 #: recommendations.html:58
 msgid "See details of an App"
-msgstr "Ver los detalles de una aplicación"
+msgstr "Voir les détails d'une application"
 
 #: recommendations.html:59
 msgid ""
@@ -116,7 +138,7 @@ msgstr ""
 
 #: recommendations.html:63
 msgid "Update a Snap App"
-msgstr "Actualizar una aplicación Snap"
+msgstr "Mettre à jour une application Snap"
 
 #: recommendations.html:65
 msgid ""
@@ -128,19 +150,19 @@ msgstr ""
 
 #: recommendations.html:68
 msgid "Reference"
-msgstr "Referencia"
+msgstr "Référence"
 
 #: recommendations.html:70
 msgid "Snap is already installed"
-msgstr "Ya se ha instalado Snap"
+msgstr "Snap est déjà installé"
 
 #: recommendations.html:70
 msgid "Install Snap"
-msgstr "Instalar Snap"
+msgstr "Installer Snap"
 
 #: recommendations.html:76
 msgid "Budgie Screenshot Applet"
-msgstr "Applet de Captura de Pantalla de Budgie"
+msgstr ""
 
 #: recommendations.html:80
 msgid ""
@@ -167,7 +189,7 @@ msgstr ""
 
 #: recommendations.html:90
 msgid "Flatpak"
-msgstr "Flatpak"
+msgstr ""
 
 #: recommendations.html:94
 msgid ""
@@ -182,7 +204,7 @@ msgstr ""
 
 #: recommendations.html:96
 msgid "Learn more"
-msgstr "Más información"
+msgstr ""
 
 #: recommendations.html:98
 msgid ""
@@ -203,11 +225,10 @@ msgstr ""
 #: recommendations.html:101
 msgid "Flatpak is installed. Please reboot for the service to start"
 msgstr ""
-"Se ha instalado Flatpak. Reinicie el equipo para que el servicio se inicie"
 
 #: recommendations.html:102
 msgid "Install & Configure Flatpak"
-msgstr "Instalar y configurar Flatpak"
+msgstr ""
 
 #: recommendations.html:106
 msgid "skippy-xd"
@@ -232,15 +253,15 @@ msgstr ""
 
 #: recommendations.html:114
 msgid "skippy-xd is installed"
-msgstr "Se ha instalado skippy-xd"
+msgstr ""
 
 #: recommendations.html:114
 msgid "Install & Configure skippy-xd"
-msgstr "Instalar y configurar skippy-xd"
+msgstr ""
 
 #: recommendations.html:120
 msgid "Steam"
-msgstr "Steam"
+msgstr ""
 
 #: recommendations.html:124
 msgid ""
@@ -268,8 +289,8 @@ msgstr ""
 
 #: recommendations.html:131
 msgid "Steam is installed"
-msgstr "Se ha instalado Steam"
+msgstr ""
 
 #: recommendations.html:131
 msgid "Install & Configure Steam"
-msgstr "Instalar y configurar Steam"
+msgstr ""

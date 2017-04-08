@@ -14,15 +14,15 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && (n%100<12 || n%100>=14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && n%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);\n"
 "Report-Msgid-Bugs-To : you@example.com\n"
 
-#: recommendations.html:17
+#: recommendations.html:15
 msgid "Recommendations"
 msgstr "Rekomendacje"
 
-#: recommendations.html31, 76, 90, 107, 120, 137
+#: recommendations.html26, 71, 85, 102, 115, 132
 msgid "Applying Changes..."
 msgstr "Zatwierdzanie zmian..."
 
-#: recommendations.html:40
+#: recommendations.html:35
 msgid ""
 "<strong>Snap</strong> is a new generation application packaging format "
 "developed by <em>Canonical</em>. Even though it was initially developed just"
@@ -51,102 +51,132 @@ msgstr ""
 "złożoność tworzenia pakietów oprogramowania i zapewniania aktualizacji "
 "uniemożliwiała nam ich dostarczanie w przeszłości."
 
-#: recommendations.html:46
+#: recommendations.html:41
 msgid "Snap user guide"
 msgstr "Przewodnik użytkownika Snap"
 
-#: recommendations.html:48
+#: recommendations.html:43
 msgid "Search Snap Apps"
 msgstr "Wyszukaj aplikacje Snap"
 
-#: recommendations.html:49
+#: recommendations.html:44
 msgid ""
 "If there’s a barrier to Snap app adoption (aside from few apps being made "
 "available in the format) it’s knowing which packages are available in the "
 "Snap app store. Well, wonder not. Simply pop open a terminal and run the "
 "following command:"
 msgstr ""
+"If there’s a barrier to Snap app adoption (aside from few apps being made "
+"available in the format) it’s knowing which packages are available in the "
+"Snap app store. Well, wonder not. Simply pop open a terminal and run the "
+"following command:"
 
-#: recommendations.html:53
+#: recommendations.html:48
 msgid ""
 "The find command lets you quickly search for and discover snaps available to"
 " install from the command line. It can be run with a query after it (e.g., "
 "‘snap find email‘, ‘snap find media’, ‘snap find messaging‘) or without."
 msgstr ""
+"Polecenie find pozwala szybko znajdować i odkrywać pakiety snap możliwe do "
+"instalacji z linii poleceń. Możesz go użyć wraz z szukaną treścią po samym "
+"poleceniu (przykładowo \"snap find email\", \"snap find media\", \"snap find"
+" messaging\") lub bez szukanej treści."
 
-#: recommendations.html:54
+#: recommendations.html:49
 msgid "When run without a query you’ll instead see a list of featured snaps."
 msgstr ""
+"Jeżeli uruchomisz polecenie bez szukanej treści, uzyskasz listę polecanych "
+"aplikacji. "
 
-#: recommendations.html:55
+#: recommendations.html:50
 msgid "See installed apps"
 msgstr "Zobacz zainstalowane aplikacje"
 
-#: recommendations.html:56
+#: recommendations.html:51
 msgid ""
 "Installed some Snaps but can’t remember what? Don’t panic. Use the list "
 "command to see an up-to-date list of all Snap apps installed on your system:"
 msgstr ""
+"Zainstalowałeś aplikacje Snap, ale nie pamiętasz jakie? Bez paniki. Użyj "
+"polecenia list, aby uzyskać aktualną listę wszystkich zainstalowanych na "
+"Twoim komputerze aplikacji Snap."
 
-#: recommendations.html:58
+#: recommendations.html:53
 msgid ""
 "This list also shows you their version number, revision number and the name "
 "of the developer who uploaded it (handy when there are multiple versions of "
 "the same app in the store, e.g., Telegram)."
 msgstr ""
+"Na tej liście zobaczysz również numer wersji tych aplikacji, numer "
+"kompilacji oraz nazwę dewelopera, który wgrał aplikację do sklepu Snap (jest"
+" to pomocne, kiedy jest kilka wersji tej samej aplikacji w sklepie, np. "
+"Telegram)."
 
-#: recommendations.html:59
+#: recommendations.html:54
 msgid "Install & Remove Snap Apps"
 msgstr "Zainstaluj & usuń aplikacje Snap"
 
-#: recommendations.html:60
+#: recommendations.html:55
 msgid ""
 "If you’re used to managing software using apt you’ll instantly find the "
 "analogous snap commands easy to remember. You install snap apps with the "
 "‘install’ command, and remove them using the ‘remove’ command."
 msgstr ""
+"Jeżeli jesteś przyzwyczajony do zarządzania oprogramowaniem używając "
+"polecenia apt, łatwo przywykniesz do analogicznych poleceń Snap. Instalujesz"
+" aplikacje Snap poprzez polecenie \"install\", a usuwasz z użyciem polecenia"
+" \"remove\"."
 
-#: recommendations.html:63
+#: recommendations.html:58
 msgid "See details of an App"
 msgstr "Zobacz szczegóły aplikacji"
 
-#: recommendations.html:64
+#: recommendations.html:59
 msgid ""
 "You can use this to see detailed information about any snap application, "
 "whether it is installed or not. This info includes the application’s release"
 " channel, confinement status, size, number of revisions, and more. The snap "
 "info --verbose offers a greater overview."
 msgstr ""
+"Możesz w ten sposób przejrzeć szczegółowe informacje o każdej aplikacji "
+"Snap, niezależnie czy jest zainstalowana czy nie. Te informacje zawierają "
+"kanał wydania aplikacji, status confinement (ograniczeń), rozmiar, liczbę "
+"wersji i wiele więcej. Polecenie snap info --verbose oferuje jeszcze więcej "
+"informacji."
 
-#: recommendations.html:68
+#: recommendations.html:63
 msgid "Update a Snap App"
 msgstr "Zaktualizuj aplikację Snap"
 
-#: recommendations.html:70
+#: recommendations.html:65
 msgid ""
 "Rather helpfully you probably won’t ever need to remember to install an "
 "update to a Snap app. This is because Snapd runs in the background and "
 "handles updates automatically (you can, ofc, revert a Snap update or install"
 " a specific revision)."
 msgstr ""
+"Co bardzo przydatne, prawdopodobnie nie będziesz musiał nigdy pamiętać, aby "
+"zainstalować aktualizację aplikacji Snap. To dlatego, że usługa Snapd działa"
+" w tle i automatycznie obsługuje aktualizacje (możesz, oczywiście, wycofać "
+"wybraną aktualizację lub zainstalować inną wersję)."
 
-#: recommendations.html:73
+#: recommendations.html:68
 msgid "Reference"
-msgstr ""
+msgstr "Referencje"
 
-#: recommendations.html:75
+#: recommendations.html:70
 msgid "Snap is already installed"
 msgstr "Snap już jest zainstalowany"
 
-#: recommendations.html:75
+#: recommendations.html:70
 msgid "Install Snap"
 msgstr "Zainstaluj Snap"
 
-#: recommendations.html:81
+#: recommendations.html:76
 msgid "Budgie Screenshot Applet"
 msgstr "Aplet Zrzut ekranu Budgie"
 
-#: recommendations.html:85
+#: recommendations.html:80
 msgid ""
 "Budgie Screenshot Applet</strong> is an advanced screenshot utility for "
 "capturing and organizing screenshots."
@@ -154,7 +184,7 @@ msgstr ""
 "Aplet Zrzut ekranu Budgie</strong> jest zaawansowanym narzędziem do "
 "tworzenia zrzutów ekranu i zarządzania nimi."
 
-#: recommendations.html:87
+#: recommendations.html:82
 msgid ""
 "<span name=\"distro-name\"></span> provides you with an easy way to install "
 "<strong>Budgie Screenshot Applet</strong>. After installation you need to "
@@ -167,19 +197,19 @@ msgstr ""
 "musisz  <strong>ręcznie dodać aplet do panelu Budgie przez uruchomienie <a "
 "onclick=\"cmd('raven');cmd('')\">Centrum konfiguracji Budgie</a> </strong>."
 
-#: recommendations.html:89
+#: recommendations.html:84
 msgid "Screenshot Applet is installed"
 msgstr "Aplet Zrzut ekrany jest zainstalowany"
 
-#: recommendations.html:89
+#: recommendations.html:84
 msgid "Install Screenshot Applet"
 msgstr "Zainstaluj aplet Zrzut ekranu"
 
-#: recommendations.html:95
+#: recommendations.html:90
 msgid "Flatpak"
 msgstr "Flatpak"
 
-#: recommendations.html:99
+#: recommendations.html:94
 msgid ""
 "<strong>Flatpak</strong> is a new generation application distribution "
 "framework for GNU/Linux platforms. It introduces a unified packaging format "
@@ -189,12 +219,19 @@ msgid ""
 "without worrying about the underlying operating system and its built-in "
 "libraries."
 msgstr ""
+"<strong>Flatpak</strong> jest platformą nowej generacji służącą do "
+"dystrybucji aplikacji dla GNU/Linux. Wprowadza ujednolicony format pakowania"
+" aplikacji we wszystkich dystrybucjach GNU/Linuksa. Oznacza to, że "
+"pojedynczy pakiet może pracować na dowolnej platformie. Flatpak pomaga "
+"programistom aplikacji udostępniać aplikacje w pojedynczym formacie, który "
+"można zainstalować w dowolnej dystrybucji GNU/Linuksa, nie martwiąc się o "
+"docelowy system operacyjny i wbudowane biblioteki."
 
-#: recommendations.html:101
+#: recommendations.html:96
 msgid "Learn more"
 msgstr "Dowiedz się więcej"
 
-#: recommendations.html:103
+#: recommendations.html:98
 msgid ""
 "<span name=\"distro-name\"></span> recommends installing "
 "<strong>Flatpak</strong> as it will open a new world of possibilities for "
@@ -202,37 +239,52 @@ msgid ""
 "packages as soon as it is packaged by the upstream project and you don't "
 "have to wait for your distribution to package it for you."
 msgstr ""
+"<span name=\"distro-name\"></span> rekomenduje zainstalowanie platformy "
+"<strong>Flatpak</strong>, ponieważ to otworzy przed Tobą świat nowych "
+"możliwości. Używając platformy Flatpak, możesz używać najnowszych wersji "
+"różnego oprogramowania, jak tylko zostanie ono spakowane w ramach głównego "
+"projektu i nie musi czekać na przygotowanie pakietów pod konkretne "
+"dystrybucje."
 
-#: recommendations.html:105
+#: recommendations.html:100
 msgid ""
 "Being a user friendly GNU/Linux distribution, <span name='distro-"
 "name'></span> allows you to install Flatpak with a single click. After first"
 " time configuration, you can use GNOME Software to install Flatpak packages."
 msgstr ""
+"Będąc dystrybucją GNU/Linux przyjazną dla użytkownika, <span name='distro-"
+"name'></span> umożliwia instalację platformy Flatpak pojedynczym "
+"kliknięciem. Po jednorazowej konfiguracji, będziesz mógł używać Centrum "
+"oprogramowania GNOME do instalowania pakietów Flatpak."
 
-#: recommendations.html:106
+#: recommendations.html:101
 msgid "Flatpak is installed. Please reboot for the service to start"
 msgstr ""
 "Flatpak jest zainstalowany. Uruchom ponownie komputer, aby rozpocząć "
 "działanie usługi"
 
-#: recommendations.html:107
+#: recommendations.html:102
 msgid "Install & Configure Flatpak"
 msgstr "Zainstaluj i skonfiguruj Flatpak"
 
-#: recommendations.html:111
+#: recommendations.html:106
 msgid "skippy-xd"
 msgstr "skippy-xd"
 
-#: recommendations.html:115
+#: recommendations.html:110
 msgid ""
 "<strong>skippy-xd</strong> adds a window expose type capability through a "
 "keyboard shortcut. For most desktops skippy-xd works well. Note: For some "
 "multi-monitor setups, graphics drivers and within virtual machines such as "
 "VirtualBox it may not work correctly."
 msgstr ""
+"<strong>skippy-xd</strong> dodaje obsługę funkcjonalności \"expose\" dla "
+"otwartych okien przy pomocy klawiatury. Skippy-xd pracuje bardzo dobrze w "
+"większości systemów. Uwaga: Funkcja może nie działać w pełni poprawnie w "
+"pewnych konfiguracjach z wieloma monitorami, z niektórymi sterownikami "
+"graficznymi oraz na maszynach wirtualnych (jak Virtual Box)."
 
-#: recommendations.html:118
+#: recommendations.html:113
 msgid ""
 "By default the installer will create a custom keyboard shortcut CTRL+grave "
 "('the key above the tab'). You can define or change the keyboard shortcut "
@@ -240,20 +292,25 @@ msgid ""
 "<strong>skippy-xd-toggle</strong> when defining your own custom keyboard "
 "shortcut."
 msgstr ""
+"Domyślnie, instalator utworzy skrót klawiszowy CTRL+[odwrócony apostrof] (na"
+" klawiaturze znajduje się na klawiszem Tab). Możesz zdefiniować nowy lub "
+"zmienić skrót klawiszowy poprzez opcję Ustawienia - Klawiatura - Skróty "
+"klawiszowe. Użyj polecenia <strong>skippy-xd-toggle</strong> podczas "
+"definiowania skrótu klawiszowego."
 
-#: recommendations.html:119
+#: recommendations.html:114
 msgid "skippy-xd is installed"
 msgstr "skippy-xd jest zainstalowane"
 
-#: recommendations.html:119
+#: recommendations.html:114
 msgid "Install & Configure skippy-xd"
 msgstr "Zainstaluj i skonfiguruj skippy-xd"
 
-#: recommendations.html:125
+#: recommendations.html:120
 msgid "Steam"
 msgstr "Steam"
 
-#: recommendations.html:129
+#: recommendations.html:124
 msgid ""
 "<strong>Steam</strong> is a digital distribution platform developed by Valve"
 " Corporation offering digital rights management (DRM), multiplayer gaming "
@@ -266,8 +323,20 @@ msgid ""
 "networking, matchmaking, in-game achievements, micro-transactions, and "
 "support for user-created content through Steam Workshop."
 msgstr ""
+"<strong>Steam</strong> to cyfrowa platforma dystrybucji opracowana przez "
+"firmę Valve Corporation, która oferuje usługi zarządzania prawami cyfrowymi "
+"(DRM), gry multiplayer i serwisy społecznościowe. Steam udostępnia "
+"użytkownikowi instalację i automatyczną aktualizację gier na wielu "
+"komputerach oraz funkcje społecznościowe, takie jak listy i grupy znajomych,"
+" zapisy stanu gier w chmurze oraz funkcje rozmów głosowych i czatów w grze. "
+"Oprogramowanie udostępnia ogólniedostępny interfejs API (Application "
+"Programming Interface - API) o nazwie Steamworks, który programiści mogą "
+"wykorzystywać do integracji wielu funkcji Steam z ich produktami, w tym "
+"tworzenie sieci, tworzenie meczów, osiągnięcia w grze, mikrotransakcje i "
+"wsparcie dla treści tworzonych przez użytkowników poprzez tzw. Steam "
+"Workshop."
 
-#: recommendations.html:134
+#: recommendations.html:129
 msgid ""
 "Being a proprietary software, Steam is not included in primary repositories "
 "of <span name=\"distro-name\"></span>. However, to provide more choice to "
@@ -276,11 +345,17 @@ msgid ""
 "<em>Multiverse</em> repository and to install Steam with a single mouse "
 "click."
 msgstr ""
+"Steam jest oprogramowaniem własnościowym, dlatego nie jest dostępne w "
+"podstawowych repozytoriach <span name=\"distro-name\"></span>. Jednakże, aby"
+" dać użytkownikom swobodny wybór, Steam jest dostarczany jako część "
+"repozytorium <em>Multiverse</em>. <span name=\"distro-name\"></span> daje Ci"
+" opcję na włączenie repozytorium <em>Multiverse</em> i instalację platfromy "
+"Steam przy pomocy jednego kliknięcia."
 
-#: recommendations.html:136
+#: recommendations.html:131
 msgid "Steam is installed"
 msgstr "Steam jest zainstalowany"
 
-#: recommendations.html:136
+#: recommendations.html:131
 msgid "Install & Configure Steam"
 msgstr "Zainstaluj i skonfiguruj Steam"
