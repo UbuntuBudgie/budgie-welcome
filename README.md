@@ -3,7 +3,7 @@ Budgie Welcome
 
 Welcome screen application to greet new users on their first login.
 
-###Translators
+### Translators
 
 We need to translate budgie-welcome into your language/locale.  Please
 help-out - visit
