@@ -92,12 +92,21 @@ msgid ""
 " modest hardware requirements, it is suitable for modern desktops and "
 "laptops alike."
 msgstr ""
+"<span name=\"distro-name\"></span> jest stabilnym, łatwym w użyciu systemem "
+"operacyjnym z konfigurowalnym środowiskiem pulpitowym. Jest idealnym "
+"rozwiązaniem dla tych, którzy chcą w pełnym stopniu wykorzystywać swój "
+"komputer, a przy tym preferują tradycyjne podejście do pulpitu systemu. Ze "
+"względu na niskie wymagania sprzętowe, jest odpowiedni zarówno do "
+"nowoczesnych komputeróe stacjonarnych, jak i do laptopów."
 
 #: introduction.html:69
 msgid ""
 "The operating system is more secure, and better supported than the operating"
 " system pre-installed on most home computer hardware today."
 msgstr ""
+"Ten system operacyjny jest bezpieczniejszy i posiada lepsze wsparcie niż "
+"system operaacyjny instalowany fabrycznie na większości współczesnych "
+"komputerów domowych."
 
 #: introduction.html:73
 msgid ""
@@ -107,6 +116,11 @@ msgid ""
 " anything about the way it looks, the way it works, or the applications it "
 "runs to suit your taste."
 msgstr ""
+"<span name=\"distro-name\"></span>  daje Ci pełną swobodę w używaniu "
+"kompletnego, wszechstronnego systemu operacyjnego, skonfigurowane wstępnie z"
+" większością potrzebnych aplikacji. Możesz zmieniać wygląd systemu, sposób "
+"jego działania i zestaw zainstalowanych aplikacji, aby całość idealnie "
+"wpasowywała się w Twoje potrzeby i oczekiwania."
 
 #: introduction.html:83
 msgid "Objectives"
@@ -126,6 +140,8 @@ msgstr ""
 #: introduction.html:87
 msgid "Increase both Ubuntu and Budgie desktop user adoption."
 msgstr ""
+"Zwiększenie przyswajania wśród użytkowników zarówno samego Ubuntu, jak i "
+"pulpitu Budgie."
 
 #: introduction.html:88
 msgid ""
@@ -148,6 +164,8 @@ msgid ""
 "Software selection will favor functionality and stability over lightness and"
 " whimsy."
 msgstr ""
+"Przy wyborze oprogramowania kierujemy się przede wszystkim funkcjonalnością "
+"i stabilnością, a mniej lekkością i upodobaniami."
 
 #: introduction.html:100
 msgid "Ubuntu"
@@ -156,6 +174,8 @@ msgstr "Ubuntu"
 #: introduction.html:107
 msgid "is one of, if not the, largest deployed"
 msgstr ""
+"jest jednym z bardziej (o ile nie najbardziej) rozpowszechnionych na świecie"
+" systemów operacyjnych bazujących na"
 
 #: introduction.html:110
 msgid ""
@@ -163,12 +183,16 @@ msgid ""
 "Ubuntu and makes it possible to create secure, powerful and versatile "
 "operating systems, such as"
 msgstr ""
+"Linux jest sercem Ubuntu i daje możliwość budowania bezpiecznych, "
+"wszechstronnych i elastycznych systemów operacyjnych, takich jak"
 
 #: introduction.html:114
 msgid ""
 "Android is now in the hands of billions of people around the world and it's "
 "also powered by Linux."
 msgstr ""
+"Android jest obecnie w rękach miliardów ludzi na całym świecie i jest "
+"również zbudowany w oparciu o Linuksa."
 
 #: introduction.html:117
 msgid "Ubuntu is available in a number of different"
@@ -197,11 +221,15 @@ msgstr "Pulpit Budgie"
 
 #: introduction.html:134
 msgid "Wikipedia says that a"
-msgstr ""
+msgstr "Cytują Wikipedię o tym, czym jest"
 
 #: introduction.html:136
 msgid "Desktop Environment"
-msgstr "Środowisko Pulpitowe"
+msgstr "Pulpit"
+
+#: introduction.html:136
+msgid "is:"
+msgstr ":"
 
 #: introduction.html:138
 msgid ""
@@ -210,6 +238,11 @@ msgid ""
 "graphical user interface (GUI). Desktop GUIs help the user to easily access "
 "and edit files.\""
 msgstr ""
+"\"Podstawowy obszar roboczy w systemach operacyjnych, których powłoka "
+"graficzna (interfejs GUI) oparta jest o tzw. okna. Na pulpicie znajdują się "
+"ikony, inaczej: odsyłacze lub skróty, odwołujące się do najważniejszych "
+"elementów interfejsu użytkownika, a także do istniejącego w systemie "
+"oprogramowania.\""
 
 #: introduction.html:148
 msgid ""
@@ -221,11 +254,11 @@ msgstr ""
 
 #: introduction.html:161
 msgid "GNOME Files"
-msgstr "Pliki - GNOME"
+msgstr "Pliki"
 
 #: introduction.html:165
 msgid "GNOME Software"
-msgstr "Oprogramowanie - GNOME"
+msgstr "Oprogramowanie"
 
 #: introduction.html:169
 msgid "File Manager"
@@ -269,11 +302,11 @@ msgstr "lub"
 
 #: introduction.html:189
 msgid "it will feel very familiar."
-msgstr ""
+msgstr "wszystko będzie dla Ciebie znajome."
 
 #: introduction.html:195
 msgid "Open Source"
-msgstr ""
+msgstr "Open Source"
 
 #: introduction.html:202
 msgid ""
@@ -282,6 +315,11 @@ msgid ""
 "or unmodified form) by anyone. In a nutshell <span name=\"distro-"
 "name\"></span> is free, in the truest sense of the word."
 msgstr ""
+"To co łączy Linuksa, Ubuntu i pulpit Budgie to idea Open Source. To "
+"oprogramowanie może być swobodnie przez kogokolwiek używane, zmieniane i "
+"udostępniane (w postaci zarówno zmodyfikowanej i oryginalnej). Mówiąc w "
+"skrócie, <span name=\"distro-name\"></span> jest wolnym oprogramowanime - "
+"ang. free, w najglębszym tego słowa znaczeniu."
 
 #: introduction.html:208
 msgid ""
@@ -297,6 +335,18 @@ msgid ""
 " will ever happen, but if you have made it better, then your changes just "
 "might be included in the next release of <span name=\"distro-name\"></span>."
 msgstr ""
+"Chociaż możesz znaleźć płatne dystrybucje (odmiany) Linuksa, to większość "
+"jest jednak bezpłatna, jak właśnie <span name=\"distro-name\"></span>. Ta "
+"dystrybucja jest licencjonowana na takich zasadach, że pozwala praktycznie "
+"komukolwiek rozpowszechniać ją za darmo, bez żadnych warunków. Przykładowo, "
+"licencja daje każdemu członkowi społeczności użytkowników swoboodę w "
+"używaniu Linuksa w dowolnym celu, rozpowszechnianiu go, modyfikowaniu, "
+"dystrybuowaniu w zmienionej formie, a nawet sprzedaży. Jeżeli zmodyfikujesz "
+"i udostępnisz wersję Linuksa z modyfikacjami, licencja wymaga od Ciebie "
+"przekazania tych modyfikacji do społeczności z możliwością włączenia ich do "
+"przyszłych wersji Linuksa. Nie ma gwarancji, ze tak się stanie, ale jeżeli "
+"poprawiłeś jakiś element, to jest szansa, że te zmiany będą uwzględnione w "
+"kolejnym wydaniu <span name=\"distro-name\"></span>."
 
 #: introduction.html:223
 msgid ""
@@ -305,10 +355,14 @@ msgid ""
 "corporations provide fixes and new features for Linux as they use the "
 "software for their businesses."
 msgstr ""
+"Wielu użytkowników Linuksa to korporacje, które używają tego systemu "
+"operacyjnego do prowadzenia swoich biznesów lub dołączania go do swoich "
+"produktów. Wiele korporacji tworzy poprawki i nowe funkcje dla Linuksa "
+"używając tego oprogramowania w swoim biznesie."
 
 #: introduction.html:229
 msgid "These improvements are given back"
-msgstr ""
+msgstr "Te usprawnienia są udostępniane"
 
 #: introduction.html:230
 msgid ""
@@ -316,6 +370,9 @@ msgid ""
 "result. This is how we can continually improve and grow without having to "
 "charge our users money."
 msgstr ""
+"społeczności Linuksa i dzięki temu <span name=\"distro-name\"></span> "
+"również się rozwija. W ten sposób właśnie możliwy jest stały rozwój i "
+"rozbudowa systemu bez pobierania opłat od naszych użytkowników."
 
 #: introduction.html:234
 msgid ""
@@ -324,6 +381,11 @@ msgid ""
 " Instruments, Google, Canonical, Oracle, AMD, and Microsoft. Over 4,000 "
 "developers contributed to Linux over the last 15 years."
 msgstr ""
+"W przeciwieństwie do systemów Windows i OS X, Linux nie jest tworzony i "
+"wspierany wyłącznie przez jedną firmę. Jest wspierany przez takie firmy jak "
+"Intel, Redhat, Linaro, Samsung, IBM, SUSE, Texas Instruments, Google, "
+"Canonical, oracle, AMD czy Microsoft. Ponad 4000 programistów uczestniczyło "
+"w rozwoju Linuksa przez ostatnie 15 lat."
 
 #: introduction.html:240
 msgid ""
@@ -338,3 +400,14 @@ msgid ""
 "designed for Windows, and from the most powerful Internet servers to the "
 "smallest smart thermostat."
 msgstr ""
+"Niezależnie od tego czy jesteś użytkownikiem domowym <span name=\"distro-"
+"name\"></span>, czy programistą oprogramowania i aplikacji, czy może "
+"pracownikiem organizacji, która używa tego systemu operacyjnego, to "
+"stanowisz część społeczności Linuksa i Open Source i korzystasz z wysiłku "
+"włożonego przez programistów uczestniczących w projekcie <span name"
+"=\"distro-name\"></span> i projektach powiązanych: Linux, pulpit Budgie oraz"
+" Ubuntu. Członkowie społeczności Linuksa uruchamiają go na niemal każdej "
+"konfiguracji sprzętowej, od pięknych Macbooków do najtańszych netbooków, od "
+"najnowszych Chromebooków po jakieś stare maszyny projektowane pod użycie z "
+"systemem Windows, od najpotężniejszych serwerów internetowych po najmniejsze"
+" inteligentne termostaty."
