@@ -101,6 +101,14 @@
     }
   },
   "default" : {
+    "wpc-right" : {
+      "root" : false,
+      "script" : "wpc-right"
+    },
+    "wpc-left" : {
+      "root" : false,
+      "script" : "wpc-left"
+    },
     "arc-theme" : {
       "packages" : ["arc-theme", "pocillo-icon-theme"]
     },
