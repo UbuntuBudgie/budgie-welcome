@@ -1,23 +1,26 @@
-# 
+# Translators:
+# Moo <moose@mail.ru>, 2017
 msgid ""
 msgstr ""
 "Project-Id-Version: Budgie Welcome\n"
 "POT-Creation-Date: 2016-02-27 12:48+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: : LANGUAGE <LL@li.org>\n"
+"Last-Translator: Moo <moose@mail.ru>, 2017\n"
+"Language-Team: Lithuanian (https://www.transifex.com/ubuntu-budgie/teams/72251/lt/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: lt\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "Report-Msgid-Bugs-To : you@example.com\n"
 
 #: default.html:13
 msgid "Default Settings"
-msgstr "Default Settings"
+msgstr "Numatytieji nustatymai"
 
 #: default.html:17
 msgid "Restore panels"
-msgstr "Restore panels"
+msgstr "Atkurti skydelius"
 
 #: default.html:18
 msgid ""
@@ -25,29 +28,26 @@ msgid ""
 "Unhappy with your changes to the panel layout? Don't worry. We can help you "
 "to restore your panels with a single click!"
 msgstr ""
-"Lost your panels while playing with <span name=\"distro-name\"></span>? "
-"Unhappy with your changes to the panel layout? Don't worry. We can help you "
-"to restore your panels with a single click!"
 
 #: default.html:21
 msgid ""
 "This will undo all changes that you have made on any panel and will reset "
 "back to the initial default panel layout configuration."
 msgstr ""
-"This will undo all changes that you have made on any panel and will reset "
-"back to the initial default panel layout configuration."
+"Tai atšauks visus jūsų atliktus pakeitimus visiems skydeliams ir atstatys "
+"pradinę numatytąją skydelio išdėstymo konfigūraciją."
 
 #: default.html24, 71, 89, 110
 msgid "Applying Changes..."
-msgstr "Applying Changes..."
+msgstr "Taikomi pakeitimai..."
 
 #: default.html:25
 msgid "Reset Budgie Panel"
-msgstr "Reset Budgie Panel"
+msgstr ""
 
 #: default.html:32
 msgid "Window Control Position"
-msgstr "Window Control Position"
+msgstr ""
 
 #: default.html:33
 msgid ""
@@ -57,23 +57,18 @@ msgid ""
 "maximize and appmenu), we provide a one click method to switch controls to "
 "the left or to the right."
 msgstr ""
-"People have different tastes for configuring their system. We, the <span "
-"name=\"distro-name\"></span> team, respect the choice of people. When it is "
-"about configuring the position of window control buttons (close, minimize, "
-"maximize and appmenu), we provide a one click method to switch controls to "
-"the left or to the right."
 
 #: default.html:36
 msgid "Window Controls on Left"
-msgstr "Window Controls on Left"
+msgstr ""
 
 #: default.html:37
 msgid "Window Controls on Right"
-msgstr "Window Controls on Right"
+msgstr ""
 
 #: default.html:44
 msgid "Switch Appearance"
-msgstr "Switch Appearance"
+msgstr "Perjungti išvaizdą"
 
 #: default.html:45
 msgid ""
@@ -81,9 +76,6 @@ msgid ""
 " theme package. It uses Arc theme for GTK windows, panels, login window and "
 "lock screen and <strong>Pocillo</strong> as the icon theme."
 msgstr ""
-"<span name=\"distro-name\"></span> uses <strong>Arc</strong> as it's default"
-" theme package. It uses Arc theme for GTK windows, panels, login window and "
-"lock screen and <strong>Pocillo</strong> as the icon theme."
 
 #: default.html:48
 msgid ""
@@ -92,10 +84,6 @@ msgid ""
 "uniform appearance across different platforms. There are different theme "
 "packages inspired by Google&apos;s Material Design style."
 msgstr ""
-"Another emerging design trend is <strong>Material Design</strong> which is "
-"basically a collection of design guidelines introduced by Google to bring a "
-"uniform appearance across different platforms. There are different theme "
-"packages inspired by Google&apos;s Material Design style."
 
 #: default.html:51
 msgid ""
@@ -103,42 +91,39 @@ msgid ""
 "provide easy options to switch between our default <em>Arc style</em> and "
 "<em>Material style</em>."
 msgstr ""
-"As <span name=\"distro-name\"></span> values the freedom of users, we "
-"provide easy options to switch between our default <em>Arc style</em> and "
-"<em>Material style</em>."
 
 #: default.html:57
 msgid "Arc Design"
-msgstr "Arc Design"
+msgstr ""
 
 #: default.html:62
 msgid "Install Arc theme"
-msgstr "Install Arc theme"
+msgstr ""
 
 #: default.html:66
 msgid "Apply Arc theme"
-msgstr "Apply Arc theme"
+msgstr ""
 
 #: default.html:75
 msgid "Material Design (Adapta)"
-msgstr "Material Design (Adapta)"
+msgstr ""
 
 #: default.html:80
 msgid "Install Material theme"
-msgstr "Install Material theme"
+msgstr ""
 
 #: default.html:84
 msgid "Apply Material theme"
-msgstr "Apply Material theme"
+msgstr ""
 
 #: default.html:96
 msgid "Material Design (Vimix)"
-msgstr "Material Design (Vimix)"
+msgstr ""
 
 #: default.html:101
 msgid "Install Material Vimix theme"
-msgstr "Install Material Vimix theme"
+msgstr ""
 
 #: default.html:105
 msgid "Apply Material Vimix theme"
-msgstr "Apply Material Vimix theme"
+msgstr ""

@@ -3,6 +3,13 @@ Budgie Welcome
 
 Welcome screen application to greet new users on their first login.
 
+###Translators
+
+We need to translate budgie-welcome into your language/locale.  Please
+help-out - visit
+
+https://www.transifex.com/ubuntu-budgie/budgie-welcome/
+
 ### Installation
 
 ```sh
@@ -18,6 +25,16 @@ uglifyjs -o data/js/bootstrap.min.js data/js/bootstrap.js
 cd budgie-welcome
 ./budgie-welcome
 ```
+
+To test the live session
+
+    ./budgie-welcome --force-session=live
+    
+To test a language or locale
+
+    ./budgie-welcome --language=pl
+    
+change "pl" to your language i18n shortcode
 
 ### Screenshot
 #### Live session
