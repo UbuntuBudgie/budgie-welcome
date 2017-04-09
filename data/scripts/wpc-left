@@ -1,4 +1,4 @@
-gsettings set org.gnome.settings-daemon.plugins.xsettings overrides "{'Gtk/ShellShowsAppMenu': <0>, 'Gtk/DecorationLayout': <'close,minimize,maximize,menu:'>}"
-gsettings set com.solus-project.budgie-wm button-layout 'close,minimize,maximize,appmenu:'
+gsettings set org.gnome.settings-daemon.plugins.xsettings overrides "{'Gtk/ShellShowsAppMenu': <0>, 'Gtk/DecorationLayout': <'close,minimize,maximize:menu'>}"
+gsettings set com.solus-project.budgie-wm button-layout 'close,minimize,maximize:appmenu'
 
 
