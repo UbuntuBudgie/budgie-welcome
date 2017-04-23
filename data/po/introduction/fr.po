@@ -57,6 +57,9 @@ msgid ""
 "GNU/Linux. A dependable, secure, capable, and modern computer system that "
 "rivals all others in popularity and actual use."
 msgstr ""
+"<span name=\"distro-name\"></span> est une distribution (variante) de "
+"GNU/Linux. Un système informatique fiable, sécurisé et moderne qui rivalise "
+"avec tous les autres."
 
 #: introduction.html:51
 msgid "Unlike other operating systems, Linux is a major one used:"
@@ -92,6 +95,12 @@ msgid ""
 " modest hardware requirements, it is suitable for modern desktops and "
 "laptops alike."
 msgstr ""
+"<span name=\"distro-name\"></span> est un système d'exploitation stable et "
+"facile à utiliser avec un environnement de bureau configurable. Il est idéal"
+" pour ceux qui souhaitent le meilleur de leurs ordinateurs et préfèrent une "
+"métaphore de bureau traditionnelle. Avec des exigences matérielles modestes,"
+" il convient aussi bien aux ordinateurs de bureau modernes qu'aux "
+"ordinateurs portables."
 
 #: introduction.html:69
 msgid ""
@@ -110,6 +119,12 @@ msgid ""
 " anything about the way it looks, the way it works, or the applications it "
 "runs to suit your taste."
 msgstr ""
+"L'utilisation de <span name=\"distro-name\"></span> vous offre la liberté "
+"d'exécuter un système d'exploitation complet et pré-configuré avec la "
+"plupart (sinon la totalité) des applications dont vous aurez besoin pour "
+"votre quotidien informatique. Changez n'importe quoi sur la façon dont il "
+"ressemble, la façon dont il fonctionne, ou les applications qu'il exécute "
+"selon vos goûts."
 
 #: introduction.html:83
 msgid "Objectives"
@@ -136,18 +151,24 @@ msgid ""
 "Create a Ubuntu based distro for users who prefer a traditional desktop "
 "metaphor."
 msgstr ""
+"Création d'une distribution basée sur Ubuntu pour les utilisateurs qui "
+"préfèrent avoir un environnement de bureau plus traditionnel"
 
 #: introduction.html:89
 msgid ""
 "When possible contribute to Upstream projects such as Solus and Debian so "
 "all Linux communities benefit."
 msgstr ""
+"Dans la mesure du possible, contribuez aux projets en amont tels que Solus "
+"et Debian afin que toutes les communautés Linux en bénéficient."
 
 #: introduction.html:90
 msgid ""
 "Software selection will favor functionality and stability over lightness and"
 " whimsy."
 msgstr ""
+"La sélection de logiciels favorise la fonctionnalité et la stabilité par "
+"rapport à la légèreté et à la fantaisie."
 
 #: introduction.html:100
 msgid "Ubuntu"
@@ -169,6 +190,8 @@ msgid ""
 "Android is now in the hands of billions of people around the world and it's "
 "also powered by Linux."
 msgstr ""
+"Android, qui est basé sur Linux, se retrouve aujourd'hui dans des millions "
+"de mains à travers le monde."
 
 #: introduction.html:117
 msgid "Ubuntu is available in a number of different"
@@ -192,7 +215,7 @@ msgstr "environnement de bureau Budgie"
 
 #: introduction.html:127
 msgid "Budgie Desktop"
-msgstr ""
+msgstr "Environnement de bureau Budgie"
 
 #: introduction.html:134
 msgid "Wikipedia says that a"
@@ -200,11 +223,11 @@ msgstr ""
 
 #: introduction.html:136
 msgid "Desktop Environment"
-msgstr ""
+msgstr "Environnement de bureau"
 
 #: introduction.html:136
 msgid "is:"
-msgstr ""
+msgstr "est :"
 
 #: introduction.html:138
 msgid ""
@@ -213,24 +236,30 @@ msgid ""
 "graphical user interface (GUI). Desktop GUIs help the user to easily access "
 "and edit files.\""
 msgstr ""
+"\"Un environnement de bureau est constitué d'un ensemble de programmes "
+"exécutés à la base du système d'exploitation et fournit une interface "
+"graphique pour l'utilisateur (GUI) qui va l'aider à accéder et à modifier "
+"facilement ces fichiers\"."
 
 #: introduction.html:148
 msgid ""
 "<span name=\"distro-name\"></span> comes with a lot of useful applications "
 "like"
 msgstr ""
+"<span name=\"distro-name\"></span> est livrée avec de nombreuses "
+"applications comme"
 
 #: introduction.html:161
 msgid "GNOME Files"
-msgstr ""
+msgstr "Explorateur de fichiers GNOME"
 
 #: introduction.html:165
 msgid "GNOME Software"
-msgstr ""
+msgstr "GNOME Software (Logiciels)"
 
 #: introduction.html:169
 msgid "File Manager"
-msgstr ""
+msgstr "Explorateur de fichiers"
 
 #: introduction.html:170
 msgid "Web Browser"
@@ -250,7 +279,7 @@ msgstr "Lecteur Audio"
 
 #: introduction.html:177
 msgid "All of which are highly customisable and managed via"
-msgstr ""
+msgstr "Tout cela est hautement personnalisable et peut être géré grâce à"
 
 #: introduction.html:180
 msgid "Settings"
@@ -264,7 +293,7 @@ msgstr ""
 
 #: introduction.html:186
 msgid "or"
-msgstr ""
+msgstr "ou"
 
 #: introduction.html:189
 msgid "it will feel very familiar."
@@ -281,6 +310,10 @@ msgid ""
 "or unmodified form) by anyone. In a nutshell <span name=\"distro-"
 "name\"></span> is free, in the truest sense of the word."
 msgstr ""
+"Ce que Linux, Ubuntu et Budgie ont en commun, c'est qu'ils sont Open Source."
+" Ce logiciel peut être librement utilisé, modifié et partagé (sous forme "
+"modifiée ou non modifiée) par tout le monde. En un mot, <span name=\"distro-"
+"name\"></span> est gratuit, dans le vrai sens du terme."
 
 #: introduction.html:208
 msgid ""
@@ -296,6 +329,19 @@ msgid ""
 " will ever happen, but if you have made it better, then your changes just "
 "might be included in the next release of <span name=\"distro-name\"></span>."
 msgstr ""
+"Bien que vous trouverez des distributions (variantes) de Linux payantes, la "
+"grande majorité est fournie gratuitement, comme <span name=\"distro-"
+"name\"></span>. La distribution est licenciée d'une manière qui permet à "
+"quiconque de la distribuer gratuitement, sans aucune restriction. Par "
+"exemple, la licence donne à n'importe quel membre de la communauté des "
+"utilisateurs la liberté d'utiliser Linux pour n'importe quel but, de "
+"distribuer, de modifier, de redistribuer ou même de vendre le système "
+"d'exploitation. Si vous modifiez et redistribuez Linux avec vos "
+"modifications, la licence vous oblige à soumettre vos modifications pour une"
+" éventuelle inclusion dans les versions futures. Il n'y a aucune garantie "
+"que cela se produise, mais si vous l'avez amélioré, vos modifications "
+"pourraient simplement être incluses dans la prochaine version de <span name"
+"=\"distro-name\"></span>."
 
 #: introduction.html:223
 msgid ""
@@ -304,6 +350,11 @@ msgid ""
 "corporations provide fixes and new features for Linux as they use the "
 "software for their businesses."
 msgstr ""
+"Beaucoup d'utilisateurs de Linux sont des entreprises qui utilisent le "
+"système d'exploitation pour gérer leur affaire ou l'inclure dans leurs "
+"produits. Beaucoup de ces sociétés fournissent des réparations et de "
+"nouvelles fonctionnalités pour Linux, car elles utilisent le logiciel pour "
+"leurs entreprises."
 
 #: introduction.html:229
 msgid "These improvements are given back"
@@ -323,6 +374,11 @@ msgid ""
 " Instruments, Google, Canonical, Oracle, AMD, and Microsoft. Over 4,000 "
 "developers contributed to Linux over the last 15 years."
 msgstr ""
+"Contrairement à Windows et OS X, Linux n'est pas créé et pris en charge par "
+"une seule entreprise. Il est supporté par Intel, Redhat, Linaro, Samsung, "
+"IBM, SUSE, Texas Instruments, Google, Canonical, Oracle, AMD et Microsoft. "
+"Plus de 4 000 développeurs ont contribué à Linux au cours des 15 dernières "
+"années."
 
 #: introduction.html:240
 msgid ""
@@ -337,3 +393,13 @@ msgid ""
 "designed for Windows, and from the most powerful Internet servers to the "
 "smallest smart thermostat."
 msgstr ""
+"Que vous soyez un utilisateur domestique de <span name=\"distro-"
+"name\"></span>, un développeur d'applications <span name=\"distro-"
+"name\"></span>ou un employé d'une organisation qui utilise ce système "
+"d'exploitation, vous êtes membre des communautés Linux et Open Source et "
+"bénéficiez des efforts des développeurs qui contribuent à <span name"
+"=\"distro-name\"></span> et ses projets connexes: Linux, Budgie desktop, et "
+"Ubuntu. Les membres de la communauté exécutent Linux sur presque tous les "
+"matériels, du Macbook le plus jolie au netbook le moins cher, du plus récent"
+" Chromebook à de très anciennes machines conçues pour Windows, et des "
+"serveurs Internet les plus puissants au plus petit thermostat intelligent."

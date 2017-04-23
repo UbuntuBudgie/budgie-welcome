@@ -1,11 +1,12 @@
 # Translators:
 # Emmanuel Hermellin <hermellin@lirmm.fr>, 2017
+# Jean-Charles SPOR <jean-charles.spor@hotmail.fr>, 2017
 msgid ""
 msgstr ""
 "Project-Id-Version: Budgie Welcome\n"
 "POT-Creation-Date: 2016-02-27 12:48+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Emmanuel Hermellin <hermellin@lirmm.fr>, 2017\n"
+"Last-Translator: Jean-Charles SPOR <jean-charles.spor@hotmail.fr>, 2017\n"
 "Language-Team: French (https://www.transifex.com/ubuntu-budgie/teams/72251/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -79,10 +80,14 @@ msgid ""
 " install from the command line. It can be run with a query after it (e.g., "
 "‘snap find email‘, ‘snap find media’, ‘snap find messaging‘) or without."
 msgstr ""
+"La commande find vous permet de rechercher rapidement et de découvrir les "
+"snaps disponibles et installables à partir de la ligne de commande. Elle "
+"peut être exécutée avec une requête en complément (ex: ‘snap find email‘, "
+"‘snap find media’, ‘snap find messaging‘) ou sans."
 
 #: recommendations.html:49
 msgid "When run without a query you’ll instead see a list of featured snaps."
-msgstr ""
+msgstr "Exécutée sans requête, la commande affichera une liste de Snaps."
 
 #: recommendations.html:50
 msgid "See installed apps"
@@ -135,6 +140,11 @@ msgid ""
 " channel, confinement status, size, number of revisions, and more. The snap "
 "info --verbose offers a greater overview."
 msgstr ""
+"Vous pouvez utiliser ceci pour voir des informations détaillées sur toute "
+"application Snap, installée ou non. Ces informations comprennent le canal de"
+" diffusion de l'application, son état de confinement, sa taille, son nombre "
+"de révisions et plus encore. L'option --verbose offre une meilleure vue "
+"d'ensemble."
 
 #: recommendations.html:63
 msgid "Update a Snap App"
@@ -147,6 +157,11 @@ msgid ""
 "handles updates automatically (you can, ofc, revert a Snap update or install"
 " a specific revision)."
 msgstr ""
+"Plutôt utile, vous n'aurez probablement jamais à vous souvenir d'installer "
+"une mise à jour d'une application Snap. Cela s'explique par le fait que "
+"Snapd s'exécute en arrière-plan et gère les mises à jour automatiquement "
+"(vous pouvez si besoin rétablir une mise à jour Snap ou installer une "
+"révision spécifique)."
 
 #: recommendations.html:68
 msgid "Reference"
@@ -162,13 +177,15 @@ msgstr "Installer Snap"
 
 #: recommendations.html:76
 msgid "Budgie Screenshot Applet"
-msgstr ""
+msgstr "Applet Budgie de capture d'écran"
 
 #: recommendations.html:80
 msgid ""
 "Budgie Screenshot Applet</strong> is an advanced screenshot utility for "
 "capturing and organizing screenshots."
 msgstr ""
+"L''applet Budgie de capture d'écran est un outil permettant de capturer et "
+"organiser ses captures d'écran. "
 
 #: recommendations.html:82
 msgid ""
@@ -178,18 +195,23 @@ msgid ""
 "onclick=\"cmd('raven');cmd('')\">Raven</a> </strong> - The Budgie "
 "Configuration Center."
 msgstr ""
+"<span name=\"distro-name\"></span> vous fournit un moyen simple d'installer "
+"l'<strong>Applet de capture d'écran Budgie</strong>. Après l'installation, "
+"vous devez <strong> ajouter manuellement l'applet au panneau Budgie en "
+"lançant <a onclick=\"cmd('raven');cmd('')\">Raven</a> </strong> - Le centre "
+"de configuration Budgie."
 
 #: recommendations.html:84
 msgid "Screenshot Applet is installed"
-msgstr ""
+msgstr "L'applet de capture d'écran est installé"
 
 #: recommendations.html:84
 msgid "Install Screenshot Applet"
-msgstr ""
+msgstr "Installer l'applet de capture d'écran"
 
 #: recommendations.html:90
 msgid "Flatpak"
-msgstr ""
+msgstr "Flatpak"
 
 #: recommendations.html:94
 msgid ""
@@ -201,10 +223,18 @@ msgid ""
 "without worrying about the underlying operating system and its built-in "
 "libraries."
 msgstr ""
+"<strong>Flatpak</strong> est un framework de distribution d'applications de "
+"nouvelle génération pour les plates-formes GNU/Linux. Il introduit un format"
+" d'emballage unifié sur toutes les distributions GNU/Linux. Cela signifie "
+"qu'un seul paquet peut fonctionner sur n'importe quelle plate-forme. Flatpak"
+" aide les développeurs d'applications à fournir leur application dans un "
+"seul format qui peut être installé sur n'importe quelle distribution "
+"GNU/Linux sans se soucier du système d'exploitation sous-jacent et de ses "
+"bibliothèques intégrées."
 
 #: recommendations.html:96
 msgid "Learn more"
-msgstr ""
+msgstr "En apprendre plus"
 
 #: recommendations.html:98
 msgid ""
@@ -214,6 +244,11 @@ msgid ""
 "packages as soon as it is packaged by the upstream project and you don't "
 "have to wait for your distribution to package it for you."
 msgstr ""
+"<span name=\"distro-name\"></span> recommande d'installer "
+"<strong>Flatpak</strong> car il vous ouvrira un nouveau monde de "
+"possibilités. Avec Flatpak, vous pouvez profiter de la dernière version de "
+"différents logiciels dès qu'elle est fournie par l'éditeur, vous n'avez pas "
+"à attendre la compatibilité avec votre distribution."
 
 #: recommendations.html:100
 msgid ""
@@ -221,18 +256,23 @@ msgid ""
 "name'></span> allows you to install Flatpak with a single click. After first"
 " time configuration, you can use GNOME Software to install Flatpak packages."
 msgstr ""
+"Étant une distribution GNU/Linux conviviale, <span name='distro-"
+"name'></span> vous permet d'installer Flatpak en un seul clic. Après la "
+"première configuration, vous pouvez utiliser le GNOME Software (Logiciels) "
+"pour installer des paquets Flatpak."
 
 #: recommendations.html:101
 msgid "Flatpak is installed. Please reboot for the service to start"
 msgstr ""
+"Flatpak est installé. Le lancement du service nécessite un redémarrage."
 
 #: recommendations.html:102
 msgid "Install & Configure Flatpak"
-msgstr ""
+msgstr "Installer et configurer Flatpak"
 
 #: recommendations.html:106
 msgid "skippy-xd"
-msgstr ""
+msgstr "skippy-xd"
 
 #: recommendations.html:110
 msgid ""
@@ -241,6 +281,11 @@ msgid ""
 "multi-monitor setups, graphics drivers and within virtual machines such as "
 "VirtualBox it may not work correctly."
 msgstr ""
+"<strong>skippy-xd</strong> ajoute une fonctionnalité pour exposer les "
+"fenêtres via un raccourci clavier. Pour la plupart des postes de travail, "
+"skippy-xd fonctionne bien. Remarque: pour certaines configurations multi-"
+"moniteurs, pilotes graphiques et dans les machines virtuelles telles que "
+"VirtualBox, cela peut ne pas fonctionner correctement."
 
 #: recommendations.html:113
 msgid ""
@@ -250,18 +295,23 @@ msgid ""
 "<strong>skippy-xd-toggle</strong> when defining your own custom keyboard "
 "shortcut."
 msgstr ""
+"Par défaut, le programme d'installation créera un raccourci clavier CTRL + "
+"Tab. Vous pouvez définir ou modifier le raccourci clavier en vous rendant "
+"dans Paramètres - Clavier - Raccourcis personnalisés. Utilisez la commande "
+"<strong>skippy-xd-toggle</strong> lors de la définition de votre propre "
+"raccourci clavier personnalisé."
 
 #: recommendations.html:114
 msgid "skippy-xd is installed"
-msgstr ""
+msgstr "skippy-xd est installé"
 
 #: recommendations.html:114
 msgid "Install & Configure skippy-xd"
-msgstr ""
+msgstr "Installer et configurer skippy-xd"
 
 #: recommendations.html:120
 msgid "Steam"
-msgstr ""
+msgstr "Steam"
 
 #: recommendations.html:124
 msgid ""
@@ -276,6 +326,18 @@ msgid ""
 "networking, matchmaking, in-game achievements, micro-transactions, and "
 "support for user-created content through Steam Workshop."
 msgstr ""
+"<strong>Steam</strong> est une plate-forme de distribution numérique "
+"développée par Valve Corporation offrant des services de gestion de droits "
+"numériques (DRM), de jeux multijoueurs et de réseaux sociaux. Steam fournit "
+"à l'utilisateur une installation et une mise à jour automatique des jeux sur"
+" plusieurs ordinateurs et des fonctionnalités communautaires telles que les "
+"listes et les groupes d'amis, la sauvegarde cloud et la fonctionnalité de "
+"voix et de chat dans le jeu. Le logiciel fournit une interface de "
+"programmation d'applications (API) librement disponible appelée Steamworks, "
+"que les développeurs peuvent utiliser pour intégrer plusieurs fonctions de "
+"Steam dans leurs produits, y compris la mise en réseau, l'association, les "
+"succès dans le jeu, les micro-transactions et le support pour le contenu "
+"créé par l'utilisateur par le biais de Steam Workshop."
 
 #: recommendations.html:129
 msgid ""
@@ -286,11 +348,16 @@ msgid ""
 "<em>Multiverse</em> repository and to install Steam with a single mouse "
 "click."
 msgstr ""
+"Étant un logiciel propriétaire, Steam n'est pas inclus dans les dépôts "
+"primaires de <span name=\"distro-name\"></span>. Toutefois, pour fournir "
+"plus de choix aux utilisateurs, Steam est accessible par le dépôt "
+"<em>Multiverse</em>. <span name=\"distro-name\"></span> vous offre l'option "
+"d'activer le dépôt <em>Multiverse</em> et d'installer Steam en un seul clic."
 
 #: recommendations.html:131
 msgid "Steam is installed"
-msgstr ""
+msgstr "Steam est installé"
 
 #: recommendations.html:131
 msgid "Install & Configure Steam"
-msgstr ""
+msgstr "Installer et configurer Steam"
