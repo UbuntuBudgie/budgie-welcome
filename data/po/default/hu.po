@@ -1,26 +1,26 @@
 # Translators:
-# Moo <moose@mail.ru>, 2017
+# Gyula Szabó <szabo.gyula.krisztian@gmail.com>, 2017
 msgid ""
 msgstr ""
 "Project-Id-Version: Budgie Welcome\n"
 "POT-Creation-Date: 2016-02-27 12:48+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Moo <moose@mail.ru>, 2017\n"
-"Language-Team: Lithuanian (https://www.transifex.com/ubuntu-budgie/teams/72251/lt/)\n"
+"Last-Translator: Gyula Szabó <szabo.gyula.krisztian@gmail.com>, 2017\n"
+"Language-Team: Hungarian (https://www.transifex.com/ubuntu-budgie/teams/72251/hu/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: lt\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Language: hu\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Report-Msgid-Bugs-To : you@example.com\n"
 
 #: default.html:13
 msgid "Default Settings"
-msgstr "Numatytieji nustatymai"
+msgstr "Alapértelmezett Beállítások"
 
 #: default.html:17
 msgid "Restore panels"
-msgstr "Atkurti skydelius"
+msgstr "Panelek visszaállítása"
 
 #: default.html:18
 msgid ""
@@ -28,26 +28,30 @@ msgid ""
 "Unhappy with your changes to the panel layout? Don't worry. We can help you "
 "to restore your panels with a single click!"
 msgstr ""
+"Eltűnt a panel, amíg az <span name=\"distro-name\"></span>t próbálgatta? "
+"Elégedetlen a panel elrendezésen végzett változtatásokkal? Ne aggódjon! "
+"Tudunk segíteni abban, hogy egyetlen kattintással képes legyen "
+"visszaállítani a paneleket."
 
 #: default.html:21
 msgid ""
 "This will undo all changes that you have made on any panel and will reset "
 "back to the initial default panel layout configuration."
 msgstr ""
-"Tai atšauks visus jūsų atliktus pakeitimus visiems skydeliams ir atstatys "
-"pradinę numatytąją skydelio išdėstymo konfigūraciją."
+"Ez vissza fogja vonni az összes beállítást, amely a paneleken elvégzett és "
+"visszaállítja a kezdeti alapértelmezett panel konfigurációra."
 
 #: default.html24, 59, 77, 98
 msgid "Applying Changes..."
-msgstr "Taikomi pakeitimai..."
+msgstr "Módosítások alkalmazása..."
 
 #: default.html:25
 msgid "Reset Budgie Panel"
-msgstr ""
+msgstr "A Budgie Panel visszaállítása"
 
 #: default.html:32
 msgid "Switch Appearance"
-msgstr "Perjungti išvaizdą"
+msgstr "Megjelenés váltása"
 
 #: default.html:33
 msgid ""
@@ -55,6 +59,10 @@ msgid ""
 " theme package. It uses Arc theme for GTK windows, panels, login window and "
 "lock screen and <strong>Pocillo</strong> as the icon theme."
 msgstr ""
+"Az <span name=\"distro-name\"></span> alapértelmezett téma csomagja az "
+"<strong>Arc</strong>. Arc témát használ a GTK ablakokhoz, panelekhez, "
+"bejelentkező képernyőhöz és zárolási képernyőhöz, valamint "
+"<strong>Pocillo</strong>-t ikon témaként."
 
 #: default.html:36
 msgid ""
@@ -63,6 +71,11 @@ msgid ""
 "uniform appearance across different platforms. There are different theme "
 "packages inspired by Google&apos;s Material Design style."
 msgstr ""
+"Egy másik felmerülő dizájn a <strong>Material Design</strong>, amely a "
+"Google által bevezetett tervezési iránymutatások gyűjteményén alapszik, "
+"egységes megjelenést biztosítva különböző platformokon. Vannak más olyan "
+"témacsomagok is, amelyeket a Google Material Design /Anyagszerű megjelenés/ "
+"stílusa inspirált."
 
 #: default.html:39
 msgid ""
@@ -70,39 +83,43 @@ msgid ""
 "provide easy options to switch between our default <em>Arc style</em> and "
 "<em>Material style</em>."
 msgstr ""
+"Mivel az <span name=\"distro-name\"></span> értékeli a felhasználók "
+"szabadságát, ezért egyszerű beállítási lehetőséget biztosítunk, az "
+"alapértelmezett <em>Arc stílus</em> és <em>Material stílus</em> közti "
+"váltásra."
 
 #: default.html:45
 msgid "Arc Design"
-msgstr ""
+msgstr "Arc Design"
 
 #: default.html:50
 msgid "Install Arc theme"
-msgstr ""
+msgstr "Arc téma telepítése"
 
 #: default.html:54
 msgid "Apply Arc theme"
-msgstr ""
+msgstr "Arc téma alkalmazása"
 
 #: default.html:63
 msgid "Material Design (Adapta)"
-msgstr ""
+msgstr "Material Design (Adapta)"
 
 #: default.html:68
 msgid "Install Material theme"
-msgstr ""
+msgstr "Material téma telepítése"
 
 #: default.html:72
 msgid "Apply Material theme"
-msgstr ""
+msgstr "Material téma alkalmazása"
 
 #: default.html:84
 msgid "Material Design (Vimix)"
-msgstr ""
+msgstr "Material Design (Vimix)"
 
 #: default.html:89
 msgid "Install Material Vimix theme"
-msgstr ""
+msgstr "Material Vimix téma telepítése"
 
 #: default.html:93
 msgid "Apply Material Vimix theme"
-msgstr ""
+msgstr "Material Vimix téma alkalmazása"

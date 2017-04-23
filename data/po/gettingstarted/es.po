@@ -1,11 +1,12 @@
 # Translators:
 # Adolfo Jayme-Barrientos <fitoschido@gmail.com>, 2017
+# Eduardo Van den Heuvel <eduardo.heuvel@yahoo.com>, 2017
 msgid ""
 msgstr ""
 "Project-Id-Version: Budgie Welcome\n"
 "POT-Creation-Date: 2016-02-27 12:48+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Adolfo Jayme-Barrientos <fitoschido@gmail.com>, 2017\n"
+"Last-Translator: Eduardo Van den Heuvel <eduardo.heuvel@yahoo.com>, 2017\n"
 "Language-Team: Spanish (https://www.transifex.com/ubuntu-budgie/teams/72251/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -17,6 +18,10 @@ msgstr ""
 #: gettingstarted.html:14
 msgid "Getting Started"
 msgstr "Primeros pasos"
+
+#: gettingstarted.html:21
+msgid "Prerequisites"
+msgstr "Prerrequisitos"
 
 #: gettingstarted.html23, 185
 msgid "System Requirements"
@@ -34,6 +39,10 @@ msgstr "Arranque dual"
 msgid "Install Now"
 msgstr "Instalar ahora"
 
+#: gettingstarted.html:37
+msgid "Post-Installation"
+msgstr "Postinstalación"
+
 #: gettingstarted.html38, 39, 373, 578
 msgid "Updates & Extras"
 msgstr "Actualizaciones y extras"
@@ -50,6 +59,10 @@ msgstr "Idioma y entrada de texto"
 msgid "Optional Tasks"
 msgstr "Tareas opcionales"
 
+#: gettingstarted.html:51
+msgid "Familiarity"
+msgstr "Familiaridad"
+
 #: gettingstarted.html52, 53
 msgid "Performance tuning"
 msgstr "Ajuste del rendimiento"
@@ -60,11 +73,15 @@ msgstr "Personalización"
 
 #: gettingstarted.html58, 59
 msgid "Browser Ballot"
-msgstr ""
+msgstr "Elección de navegador"
 
 #: gettingstarted.html60, 61, 899
 msgid "Keyboard Shortcuts"
 msgstr "Atajos de teclado"
+
+#: gettingstarted.html:65
+msgid "Troubleshooting"
+msgstr "Solución de problemas"
 
 #: gettingstarted.html66, 67
 msgid "System Specifications"
@@ -121,6 +138,8 @@ msgid ""
 "The operating system will run much more efficiently if your computer meets "
 "or surpasses the recommended requirements."
 msgstr ""
+"El sistema operativo se ejecutará más eficientemente si el equipo satisface "
+"o supera los requisitos recomendados."
 
 #: gettingstarted.html107, 1269
 msgid "What's inside my computer?"
@@ -128,7 +147,7 @@ msgstr "¿Qué hay dentro de mi equipo?"
 
 #: gettingstarted.html:113
 msgid "Installation Preparations"
-msgstr ""
+msgstr "Preparativos antes de instalar"
 
 #: gettingstarted.html:123
 msgid "Preparing to Install"
@@ -210,6 +229,8 @@ msgid ""
 "Your system is currently running in <b><span id=\"boot-mode\"></span> "
 "mode</b>."
 msgstr ""
+"El sistema funciona actualmente en la modalidad <b><span id=\"boot-"
+"mode\"></span></b>."
 
 #: gettingstarted.html:171
 msgid "Swap"
@@ -240,7 +261,7 @@ msgstr ""
 
 #: gettingstarted.html185, 363, 636, 1259
 msgid "Previous:"
-msgstr ""
+msgstr "Anterior:"
 
 #: gettingstarted.html:198
 msgid ""
@@ -256,39 +277,42 @@ msgstr ""
 
 #: gettingstarted.html:207
 msgid "To minimize the risk of data loss or failure, ensure that:"
-msgstr ""
+msgstr "Para minimizar el riesgo de pérdida de datos o fallos, asegúrese de:"
 
 #: gettingstarted.html:209
 msgid "There is enough free space. 10 GB minimum is recommended."
 msgstr ""
+"Que haya suficiente espacio disponible. Como mínimo, se recomiendan 10 GB."
 
 #: gettingstarted.html:210
 msgid "<b><u>Back up</u></b> important data to another drive."
 msgstr ""
+"Crear una <b><u>copia de seguridad</u></b> de los datos importantes en otra "
+"unidad."
 
 #: gettingstarted.html:211
 msgid "Defragment the hard drive."
-msgstr ""
+msgstr "Desfragmentar el disco duro."
 
 #: gettingstarted.html:212
 msgid "Ensure Windows has been cleanly shut down (not hibernated)."
-msgstr ""
+msgstr "Asegúrese de que Windows se ha apagado completamente (no hibernado)."
 
 #: gettingstarted.html:216
 msgid "Which approach would you prefer?"
-msgstr ""
+msgstr "¿Qué método prefiere?"
 
 #: gettingstarted.html:218
 msgid "Simple"
-msgstr ""
+msgstr "Sencillo"
 
 #: gettingstarted.html:219
 msgid "Advanced"
-msgstr ""
+msgstr "Avanzado"
 
 #: gettingstarted.html:220
 msgid "Safest"
-msgstr ""
+msgstr "El más seguro"
 
 #: gettingstarted.html:225
 msgid "The simplest method is to use the installer."
@@ -326,9 +350,9 @@ msgstr ""
 
 #: gettingstarted.html:248
 msgid ""
-"When you next boot Windows, run</b> <code>chkdsk /f</code> from the command "
-"prompt to check the file system for errors. Windows may schedule this "
-"automatically. This ensures consistency for the NTFS file system."
+"<b>When you next boot Windows, run</b> <code>chkdsk /f</code> from the "
+"command prompt to check the file system for errors. Windows may schedule "
+"this automatically. This ensures consistency for the NTFS file system."
 msgstr ""
 
 #: gettingstarted.html:256
@@ -461,6 +485,8 @@ msgid ""
 "Remember, <span name=\"distro-name\"></span> needs at minimum 16 GB of disk "
 "space."
 msgstr ""
+"Recuerde: <span name=\"distro-name\"></span> necesita como mínimo 16 GB de "
+"espacio en disco."
 
 #: gettingstarted.html:330
 msgid "Further Reading"
@@ -786,6 +812,8 @@ msgid ""
 "After the PPA is added, newer versions are presented to install in <a "
 "onclick=\"cmd('drivers')\">Additional Drivers:</a>"
 msgstr ""
+"Tras añadir el PPA, aparecerán versiones nuevas para su instalación en <a "
+"onclick=\"cmd('drivers')\">Controladores adicionales:</a>"
 
 #: gettingstarted.html:555
 msgid "Wireless, Bluetooth and Other Devices"
@@ -886,13 +914,15 @@ msgstr ""
 
 #: gettingstarted.html:670
 msgid "Configure Backup"
-msgstr ""
+msgstr "Configurar Copia de seguridad"
 
 #: gettingstarted.html:673
 msgid ""
 "<b>Backups</b> can be found later in <b>Application Menu <i class"
 "=\"material-icons\">&#xE315;</i> Backup</b>."
 msgstr ""
+"<b>Copias de seguridad</b> luego se encuentran en <b>Menú de Aplicaciones <i"
+" class=\"material-icons\">&#xE315;</i> Copia de Seguridad</b>."
 
 #: gettingstarted.html:686
 msgid "Firewall"
@@ -905,6 +935,10 @@ msgid ""
 "onclick=\"cmd('link?https://help.ubuntu.com/community/DoINeedAFirewall')\">learn"
 " more about firewalls</a>."
 msgstr ""
+"Cortafuegos impiden conexiones maliciosos entrando y saliendo de tu "
+"ordenador. Por defecto, el cortafuegos está deshabilitado, <a "
+"onclick=\"cmd('link?https://help.ubuntu.com/community/DoINeedAFirewall')\">aprende"
+" más sobre cortafuegos</a>."
 
 #: gettingstarted.html:691
 msgid ""
@@ -916,7 +950,7 @@ msgstr ""
 
 #: gettingstarted.html:699
 msgid "Configure Firewall"
-msgstr ""
+msgstr "Configurar el cortafuegos"
 
 #: gettingstarted.html:702
 msgid ""
@@ -935,6 +969,9 @@ msgid ""
 "user to protect the individual privacy of each user sharing the same "
 "computer."
 msgstr ""
+"¿Compartes tu ordenador con otras personas? Configura una cuenta de usuario "
+"distinta para cada usuario para proteger la privacidad individual de cada "
+"usuario que comparte el mismo ordenador."
 
 #: gettingstarted.html:721
 msgid ""
@@ -944,13 +981,15 @@ msgstr ""
 
 #: gettingstarted.html:725
 msgid "Configure Users"
-msgstr ""
+msgstr "Configurar Usuarios"
 
 #: gettingstarted.html:728
 msgid ""
 "<b>Users</b> can be found later in <b><i>Settings <i class=\"material-"
 "icons\">&#xE315;</i> Users</i></b>."
 msgstr ""
+"<b>Usuarios</b> luego se encuentran en <b><i>Ajustes <i class=\"material-"
+"icons\">&#xE315;</i> Usuarios</i></b>."
 
 #: gettingstarted.html:749
 msgid ""
@@ -958,6 +997,10 @@ msgid ""
 "animations to provide you a smooth user experience. However, these effects "
 "may not play well inside Virtual Machines and in low resource system."
 msgstr ""
+"La <span name=\"distro-name\"></span> incluye efectos y animaciones chulos "
+"para ofrecerte una experiencia de usuario fluido. Sin embargo, puede que "
+"estos efectos no funcionen bien en Maquinas Virtuales y en sistemas de pocos"
+" recursos."
 
 #: gettingstarted.html:753
 msgid ""
@@ -984,6 +1027,9 @@ msgid ""
 "Chromium is an open-source browser project that aims to build a safer, "
 "faster, and more stable way for all Internet users to experience the web."
 msgstr ""
+"Chromium es un proyecto de código abierto para crear un navegador cuyo "
+"objetivo es ofrecer a los usuarios una manera más segura, rápida y estable "
+"de utilizar la Web."
 
 #: gettingstarted.html:790
 msgid "Firefox"
@@ -1127,11 +1173,11 @@ msgstr "Buscar y reemplazar palabras"
 
 #: gettingstarted.html:987
 msgid "Make the selected text bold"
-msgstr ""
+msgstr "Aplicar negritas en el texto seleccionado"
 
 #: gettingstarted.html:995
 msgid "Make the selected text italic"
-msgstr ""
+msgstr "Aplicar bastardillas en el texto seleccionado"
 
 #: gettingstarted.html:1003
 msgid "Underline the selected text"
@@ -1235,6 +1281,8 @@ msgid ""
 "Press Tab repeatedly to cycle through the list of available windows which "
 "appears on the screen."
 msgstr ""
+"Oprima Tab repetidamente para cambiar entre las ventanas de la lista que "
+"aparece en pantalla."
 
 #: gettingstarted.html1144, 1166, 1241
 msgid "Left"
@@ -1242,7 +1290,7 @@ msgstr "←"
 
 #: gettingstarted.html:1146
 msgid "Switch to the previous workspace."
-msgstr ""
+msgstr "Cambiar al área de trabajo anterior."
 
 #: gettingstarted.html1154, 1177, 1249
 msgid "Right"
@@ -1250,15 +1298,15 @@ msgstr "→"
 
 #: gettingstarted.html:1156
 msgid "Switch to the next workspace."
-msgstr ""
+msgstr "Cambiar al área de trabajo siguiente."
 
 #: gettingstarted.html:1168
 msgid "Move the current window to the previous workspace."
-msgstr ""
+msgstr "Desplazar la ventana actual al área de trabajo anterior."
 
 #: gettingstarted.html:1179
 msgid "Move the current window to the next workspace."
-msgstr ""
+msgstr "Desplazar la ventana actual al área de trabajo siguiente."
 
 #: gettingstarted.html:1187
 msgid "Closes window."
@@ -1266,15 +1314,17 @@ msgstr "Cierra la ventana."
 
 #: gettingstarted.html:1195
 msgid "Returns window to 'normal' or previous size."
-msgstr ""
+msgstr "Devuelve la ventana a su tamaño «normal» o anterior."
 
 #: gettingstarted.html:1203
 msgid "Moves the current window (can be moved with mouse or keyboard)."
-msgstr ""
+msgstr "Desplaza la ventana actual (puede moverla con el ratón o el teclado)."
 
 #: gettingstarted.html:1211
 msgid "Resizes current window (again, can be moved with mouse or keyboard)."
 msgstr ""
+"Redimensiona la ventana actual (de nuevo, puede moverla con el ratón o el "
+"teclado)."
 
 #: gettingstarted.html:1219
 msgid "Minimizes current window."
@@ -1297,6 +1347,8 @@ msgid ""
 "Displays the window menu with options such as 'Always on Top' and 'Minimize'"
 " and 'Maximize' and above commands."
 msgstr ""
+"Muestra el menú de la ventana, que incluye opciones como «Siempre encima», "
+"«Minimizar», «Maximizar» y las órdenes anteriores."
 
 #: gettingstarted.html:1243
 msgid "Place window on left side of screen."
@@ -1312,10 +1364,13 @@ msgid ""
 "another. This information is useful when providing support to ensure "
 "hardware and software works on your machine."
 msgstr ""
+"Su equipo está conformado por varios componentes que interactúan entre sí. "
+"Esta información es útil al ofrecer asistencia para asegurar que tanto el "
+"soporte físico como el lógico funcionen adecuadamente en su equipo."
 
 #: gettingstarted.html:1278
 msgid "Gathering Information.."
-msgstr ""
+msgstr "Recabando información…"
 
 #: gettingstarted.html:1287
 msgid "System"
@@ -1399,11 +1454,11 @@ msgstr "Acceso a Internet:"
 
 #: gettingstarted.html:1367
 msgid "Connected"
-msgstr ""
+msgstr "Conexión establecida"
 
 #: gettingstarted.html:1368
 msgid "Not Connected"
-msgstr ""
+msgstr "Conexión no establecida"
 
 #: gettingstarted.html:1375
 msgid "Storage"

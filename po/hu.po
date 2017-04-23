@@ -1,32 +1,36 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR ORGANIZATION
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 # Translators:
-# Moo <moose@mail.ru>, 2017
+# Gyula Szabó <szabo.gyula.krisztian@gmail.com>, 2017
+# Bence László <laszlo.bence.27@gmail.com>, 2017
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2017-04-23 17:09+BST\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Moo <moose@mail.ru>, 2017\n"
-"Language-Team: Lithuanian (https://www.transifex.com/ubuntu-budgie/"
-"teams/72251/lt/)\n"
-"Language: lt\n"
+"Last-Translator: Bence László <laszlo.bence.27@gmail.com>, 2017\n"
+"Language-Team: Hungarian (https://www.transifex.com/ubuntu-budgie/teams/72251/hu/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: ENCODING\n"
 "Generated-By: pygettext.py 1.5\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && (n"
-"%100<10 || n%100>=20) ? 1 : 2);\n"
+"Language: hu\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: budgie-welcome:257
 msgid ""
 "Steam is a third party package that requires user approval of EULA(End User "
-"License Agreement). So we rely on GNOME Software for installing steam and it "
-"is not available in your system. Please install GNOME Software and try this "
-"option again"
+"License Agreement). So we rely on GNOME Software for installing steam and it"
+" is not available in your system. Please install GNOME Software and try this"
+" option again"
 msgstr ""
+"A Steam egy harmadik féltől származó csomag, amely megköveteli az EULA "
+"(Végfelhasználói Licensz Szerződés) elfogadását a felhasználótól. Ezért mi a"
+" GNOME Software-re támaszkodunk a Steam telepítésekor és ez nem elérhető a "
+"rendszerén. Kérjük, telepítése a GNOME Software-t és próbálja újra ezt az "
+"opciót."
 
 #: budgie-welcome:345
 msgid ""
@@ -34,27 +38,30 @@ msgid ""
 "after installing GNOME Software, please contact us with following error "
 "message"
 msgstr ""
+"Úgy tűnik a GNOME Szoftverek nincs telepítve. Amennyiben ez a probléma a "
+"GNOME Szoftverek telepítése után is megjelenik, kérjük vegye fel velünk a "
+"kapcsolatot a következő hibaüzenet csatolásával"
 
 #: budgie-welcome:461
 msgid "Following tasks are in progress"
-msgstr ""
+msgstr "A következő feladatok feldolgozás alatt állnak"
 
 #: budgie-welcome:467 budgie-welcome:1307 budgie-welcome:1308
 #: budgie-welcome:1316 budgie-welcome:1491
 msgid "Budgie Welcome"
-msgstr ""
+msgstr "Budgie Welcome"
 
 #: budgie-welcome:471 budgie-welcome:1491
 msgid "Budgie Desktop"
-msgstr ""
+msgstr "Budgie Desktop"
 
 #: budgie-welcome:785
 msgid "Welcome App"
-msgstr ""
+msgstr "Üdvözlő Alkalmazás"
 
 #: budgie-welcome:1040
 msgid "Could not gather data."
-msgstr "Nepavyko surinkti duomenų."
+msgstr "Nem sikerült adatokat gyűjteni."
 
 #: budgie-welcome:1110
 msgid "GB"
@@ -74,8 +81,8 @@ msgstr "MiB"
 
 #: budgie-welcome:1329
 msgid "Status"
-msgstr ""
+msgstr "Állapot"
 
 #: budgie-welcome:1408
 msgid " is in progress. Please wait for it to complete"
-msgstr ""
+msgstr "folyamatban. Kérjük várja meg, amíg befejeződik."
