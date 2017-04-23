@@ -1,23 +1,23 @@
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: Budgie Welcome\n"
 "POT-Creation-Date: 2016-02-27 12:48+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: : LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language-Team:: LANGUAGE <LL@li.org>\n"
 "Report-Msgid-Bugs-To : you@example.com\n"
 
 #: default.html:13
 msgid "Default Settings"
-msgstr "Default Settings"
+msgstr ""
 
 #: default.html:17
 msgid "Restore panels"
-msgstr "Restore panels"
+msgstr ""
 
 #: default.html:18
 msgid ""
@@ -25,120 +25,79 @@ msgid ""
 "Unhappy with your changes to the panel layout? Don't worry. We can help you "
 "to restore your panels with a single click!"
 msgstr ""
-"Lost your panels while playing with <span name=\"distro-name\"></span>? "
-"Unhappy with your changes to the panel layout? Don't worry. We can help you "
-"to restore your panels with a single click!"
 
 #: default.html:21
 msgid ""
 "This will undo all changes that you have made on any panel and will reset "
 "back to the initial default panel layout configuration."
 msgstr ""
-"This will undo all changes that you have made on any panel and will reset "
-"back to the initial default panel layout configuration."
 
-#: default.html24, 71, 89, 110
+#: default.html:24, 59, 77, 98
 msgid "Applying Changes..."
-msgstr "Applying Changes..."
+msgstr ""
 
 #: default.html:25
 msgid "Reset Budgie Panel"
-msgstr "Reset Budgie Panel"
+msgstr ""
 
 #: default.html:32
-msgid "Window Control Position"
-msgstr "Window Control Position"
+msgid "Switch Appearance"
+msgstr ""
 
 #: default.html:33
 msgid ""
-"People have different tastes for configuring their system. We, the <span "
-"name=\"distro-name\"></span> team, respect the choice of people. When it is "
-"about configuring the position of window control buttons (close, minimize, "
-"maximize and appmenu), we provide a one click method to switch controls to "
-"the left or to the right."
+"<span name=\"distro-name\"></span> uses <strong>Arc</strong> as it's default"
+" theme package. It uses Arc theme for GTK windows, panels, login window and "
+"lock screen and <strong>Pocillo</strong> as the icon theme."
 msgstr ""
-"People have different tastes for configuring their system. We, the <span "
-"name=\"distro-name\"></span> team, respect the choice of people. When it is "
-"about configuring the position of window control buttons (close, minimize, "
-"maximize and appmenu), we provide a one click method to switch controls to "
-"the left or to the right."
 
 #: default.html:36
-msgid "Window Controls on Left"
-msgstr "Window Controls on Left"
+msgid ""
+"Another emerging design trend is <strong>Material Design</strong> which is "
+"basically a collection of design guidelines introduced by Google to bring a "
+"uniform appearance across different platforms. There are different theme "
+"packages inspired by Google&apos;s Material Design style."
+msgstr ""
 
-#: default.html:37
-msgid "Window Controls on Right"
-msgstr "Window Controls on Right"
-
-#: default.html:44
-msgid "Switch Appearance"
-msgstr "Switch Appearance"
+#: default.html:39
+msgid ""
+"As <span name=\"distro-name\"></span> values the freedom of users, we "
+"provide easy options to switch between our default <em>Arc style</em> and "
+"<em>Material style</em>."
+msgstr ""
 
 #: default.html:45
-msgid ""
-"<span name=\"distro-name\"></span> uses <strong>Arc</strong> as it's default"
-" theme package. It uses Arc theme for GTK windows, panels, login window and "
-"lock screen and <strong>Pocillo</strong> as the icon theme."
-msgstr ""
-"<span name=\"distro-name\"></span> uses <strong>Arc</strong> as it's default"
-" theme package. It uses Arc theme for GTK windows, panels, login window and "
-"lock screen and <strong>Pocillo</strong> as the icon theme."
-
-#: default.html:48
-msgid ""
-"Another emerging design trend is <strong>Material Design</strong> which is "
-"basically a collection of design guidelines introduced by Google to bring a "
-"uniform appearance across different platforms. There are different theme "
-"packages inspired by Google&apos;s Material Design style."
-msgstr ""
-"Another emerging design trend is <strong>Material Design</strong> which is "
-"basically a collection of design guidelines introduced by Google to bring a "
-"uniform appearance across different platforms. There are different theme "
-"packages inspired by Google&apos;s Material Design style."
-
-#: default.html:51
-msgid ""
-"As <span name=\"distro-name\"></span> values the freedom of users, we "
-"provide easy options to switch between our default <em>Arc style</em> and "
-"<em>Material style</em>."
-msgstr ""
-"As <span name=\"distro-name\"></span> values the freedom of users, we "
-"provide easy options to switch between our default <em>Arc style</em> and "
-"<em>Material style</em>."
-
-#: default.html:57
 msgid "Arc Design"
-msgstr "Arc Design"
+msgstr ""
 
-#: default.html:62
+#: default.html:50
 msgid "Install Arc theme"
-msgstr "Install Arc theme"
+msgstr ""
 
-#: default.html:66
+#: default.html:54
 msgid "Apply Arc theme"
-msgstr "Apply Arc theme"
+msgstr ""
 
-#: default.html:75
+#: default.html:63
 msgid "Material Design (Adapta)"
-msgstr "Material Design (Adapta)"
+msgstr ""
 
-#: default.html:80
+#: default.html:68
 msgid "Install Material theme"
-msgstr "Install Material theme"
+msgstr ""
+
+#: default.html:72
+msgid "Apply Material theme"
+msgstr ""
 
 #: default.html:84
-msgid "Apply Material theme"
-msgstr "Apply Material theme"
-
-#: default.html:96
 msgid "Material Design (Vimix)"
-msgstr "Material Design (Vimix)"
+msgstr ""
 
-#: default.html:101
+#: default.html:89
 msgid "Install Material Vimix theme"
-msgstr "Install Material Vimix theme"
+msgstr ""
 
-#: default.html:105
+#: default.html:93
 msgid "Apply Material Vimix theme"
-msgstr "Apply Material Vimix theme"
+msgstr ""
