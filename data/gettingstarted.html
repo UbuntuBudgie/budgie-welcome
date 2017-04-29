@@ -587,6 +587,30 @@
       <div id="languageInput" class="topicContents">
         <div class="row">
           <div class="col-md-12">
+            <h2>&zwnj;Input method&zwnj;</h2>
+            <p>&zwnj;An input method framework is designed to serve as a daemon and handle user input events, 
+            output the result to target applications or layers. &zwnj;</p>
+            <p>&zwnj;In <span name="distro-name"></span>, we provide option to swith between two widely used
+            layouts. IBus(Intelligent Input Bus) and Fcitx(Free Chinese Input Toy for X).&zwnj;</p>
+          </div>
+        </div>
+        <div class="row center">
+          <div class="col-md-6">
+            <a id="ibus-install" class="btn btn-success" onclick="cmd('install?ibus');cmd('')">&nbsp;<span class="material-icons">&#xE2C0;</span><span class="button-text">&zwnj;Install & Configure IBus&zwnj;</span>&nbsp;</a>
+            <span id="ibus-remove">&nbsp;
+            <span class="alert alert-info">IBus is active now!!</span>
+            &nbsp;</span>
+            <span id="ibus-status" id="keyboard-status" class="hidden"><img src="img/welcome/processing.gif" width="24px"/> &zwnj;Applying Changes...&zwnj;</span>
+          </div>
+          <div class="col-md-6">
+            <a id="fcitx-install" class="btn btn-success" onclick="cmd('install?fcitx');cmd('')">&nbsp;<span class="material-icons">&#xE2C0;</span><span class="button-text">&zwnj;Install & Configure Fcitx&zwnj;</span>&nbsp;</a>
+            <span id="fcitx-remove">&nbsp;<span class="alert alert-info">Fcitx is active now!!</span>&nbsp;</span>
+            <span id="fcitx-status" id="keyboard-status" class="hidden"><img src="img/welcome/processing.gif" width="24px"/> &zwnj;Applying Changes...&zwnj;</span>
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col-md-12">
             <h2>&zwnj;Language Support&zwnj;</h2>
             <p>&zwnj;Your computer may require updates to your language and
             localization settings, or you may want to install additional
@@ -604,6 +628,7 @@
             </small></span>
           </div>
         </div>
+        <hr>
         <div class="row">
           <div class="col-md-12">
             <h2>&zwnj;Complex Input&zwnj;</h2>

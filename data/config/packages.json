@@ -48,6 +48,22 @@
         "all" : ["multiverse"]
       }
     },
+    "ibus" : {
+      "packages" : ["ibus"],
+      "excludes" : ["fcitx"],
+      "post-install" : "ibus-setup"
+    },
+    "fcitx" : {
+      "packages" : ["fcitx"],
+      "excludes" : ["ibus"],
+      "post-install" : "fcitx-setup"
+    },
+    "ibus-setup" : {
+      "script" : "ibus-setup"
+    },
+    "fcitx-setup" : {
+      "script" : "fcitx-setup"
+    },
     "keyboard-chinese" : {
       "packages" : ["ibus-pinyin"]
     },

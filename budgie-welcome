@@ -717,6 +717,11 @@ class PackageManager(Thread):
             else:
                 p = subprocess.Popen(['pkexec', start_location + 'budgie-welcome-privileged-actions', action, filename, code, app.json_path])
             retval = p.wait()
+            
+            post_install = pdata.getPostInstall(filename, code)
+            
+            if retval == 0 and post_install :
+                app.webkit._do_command("script?" + post_install)
 
             if entry.task == PMEntry.INSTALL:
                 app.update_page('#' + code + '-install', 'removeClass', 'disabled')
@@ -828,6 +833,12 @@ class PackageData(object):
     def getRepos(self, filename, code):
         try:
             return self.data[filename][code]["repos"]
+        except KeyError:
+            return None
+            
+    def getPostInstall(self, filename, code):
+        try:
+           return self.data[filename][code]["post-install"]
         except KeyError:
             return None
 
