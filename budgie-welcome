@@ -177,8 +177,16 @@ class AppView(WebKit2.WebView):
 
                     if installed:
                         app.update_page('#' + code + '-remove', 'show')
-                    elif (systemstate.codename in code and '-theme' in code) or \
-                      ('-theme' not in code):
+                        continue
+
+                    # we really need a generic mechanism to make codename specific app
+                    # install methods possible
+                    if current_page == 'default' and \
+                        ((systemstate.codename in code and 'vimix-theme' in code) or \
+                         ('vimix-theme' not in code)):
+                        app.update_page('#' + code + '-install', 'show')
+
+                    if current_page != 'default':
                         app.update_page('#' + code + '-install', 'show')
 
                 # Sort recommendations after checking installation status
