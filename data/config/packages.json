@@ -14,7 +14,8 @@
       "repos" : {
         "xenial" : ["ppa:budgie-remix/ppa"],
         "yakkety" : ["ppa:budgie-remix/ppa"],
-        "zesty" : ["ppa:ubuntubudgie/backports"]
+        "zesty" : ["ppa:ubuntubudgie/backports"],
+        "artful" : ["ppa:ubuntubudgie/backports"]
       }
     },
 
@@ -29,14 +30,16 @@
       "repos" : {
         "xenial" : ["ppa:budgie-remix/ppa"],
         "yakkety" : ["ppa:budgie-remix/ppa"],
-        "zesty" : ["ppa:ubuntubudgie/backports"]
+        "zesty" : ["ppa:ubuntubudgie/backports"],
+        "artful" : ["ppa:ubuntubudgie/backports"]
       }
     },
     "backport" : {
       "repos" : {
         "xenial" : ["ppa:budgie-remix/ppa"],
         "yakkety" : ["ppa:budgie-remix/ppa"],
-        "zesty" : ["ppa:ubuntubudgie/backports"]
+        "zesty" : ["ppa:ubuntubudgie/backports"],
+        "artful" : ["ppa:ubuntubudgie/backports"]
       }
     }
   },
@@ -121,18 +124,35 @@
       "packages" : ["arc-theme", "pocillo-icon-theme"]
     },
     "material-theme" : {
-      "packages" : ["adapta-gtk-theme", "paper-cursor-theme", "paper-icon-theme", "budgie-wallpapers-xenial", "fonts-noto"],
+      "packages" : ["adapta-gtk-theme", "paper-cursor-theme", "paper-icon-theme", "fonts-noto"],
       "repos" : {
         "xenial" : ["ppa:snwh/pulp", "ppa:tista/adapta"],
         "yakkety" : ["ppa:snwh/pulp", "ppa:tista/adapta"],
-        "zesty" : ["ppa:ubuntubudgie/backports", "ppa:tista/adapta"]
+        "zesty" : ["ppa:ubuntubudgie/backports", "ppa:tista/adapta"],
+        "artful" : ["ppa:ubuntubudgie/backports", "ppa:tista/adapta"]
       }
     },
-    "material-vimix-theme" : {
-      "packages" : ["vimix-gtk-themes", "paper-cursor-theme", "paper-icon-theme", "budgie-wallpapers-xenial", "fonts-noto"],
+    "material-vimix-zesty-theme" : {
+      "packages" : ["vimix-light", "vimix-dark", "paper-cursor-theme", "paper-icon-theme", "fonts-noto"],
       "repos" : {
-        "xenial" : ["ppa:snwh/pulp", "ppa:noobslab/themes"],
-        "yakkety" : ["ppa:snwh/pulp", "ppa:noobslab/themes"],
+        "zesty" : ["ppa:snwh/pulp", "ppa:noobslab/themes"]
+      }
+    },
+    "material-vimix-theme-yakkety" : {
+      "packages" : ["vimix-gtk-themes", "paper-cursor-theme", "paper-icon-theme", "fonts-noto"],
+      "repos" : {
+        "yakkety" : ["ppa:snwh/pulp", "ppa:noobslab/themes"]
+      }
+    },
+    "material-vimix-theme-zesty" : {
+      "packages" : ["vimix-gtk-themes", "paper-cursor-theme", "paper-icon-theme", "fonts-noto"],
+      "repos" : {
+        "zesty" : ["ppa:ubuntubudgie/backports", "ppa:noobslab/themes"]
+      }
+    },
+    "material-vimix-theme-artful" : {
+      "packages" : ["vimix-gtk-themes", "paper-cursor-theme", "paper-icon-theme", "fonts-noto"],
+      "repos" : {
         "zesty" : ["ppa:ubuntubudgie/backports", "ppa:noobslab/themes"]
       }
     }

@@ -67,12 +67,12 @@ class AppView(WebKit2.WebView):
         self.back_btn = None
         self.page_title = None
         #self.set_zoom_level(0.90)
-        
+
         self.back_signal_handler = None
-        
+
     def _back_action(self, data):
         self.run_javascript("smoothPageFade('index.html')")
-    
+
     def _index_action(self, data):
         self.run_javascript("backAction()")
 
@@ -81,17 +81,17 @@ class AppView(WebKit2.WebView):
         # broadcast event any suitable controllers will be able to listen and
         # respond accordingly, for now we just use jQuery to manually toggle
         current_page = app.current_page[:-5]
-        
+
         # Dynamically toggle header controls button
         if current_page != "index":
-        
+
             if not self.back_btn.is_sensitive():
-                
+
                 if current_page != "gettingstarted":
                     self.back_signal_handler = self.back_btn.connect("clicked", self._back_action)
                 else:
                     self.back_signal_handler = self.back_btn.connect("clicked", self._index_action)
-                
+
                 self.back_btn.set_sensitive(True)
         else:
             if self.back_signal_handler:
@@ -177,8 +177,10 @@ class AppView(WebKit2.WebView):
 
                     if installed:
                         app.update_page('#' + code + '-remove', 'show')
-                    else:
+                    elif (systemstate.codename in code and '-theme' in code) or \
+                      ('-theme' not in code):
                         app.update_page('#' + code + '-install', 'show')
+
                 # Sort recommendations after checking installation status
                 if current_page == 'recommendations':
                     self.run_javascript("sortList()")
@@ -717,9 +719,9 @@ class PackageManager(Thread):
             else:
                 p = subprocess.Popen(['pkexec', start_location + 'budgie-welcome-privileged-actions', action, filename, code, app.json_path])
             retval = p.wait()
-            
+
             post_install = pdata.getPostInstall(filename, code)
-            
+
             if retval == 0 and post_install :
                 app.webkit._do_command("script?" + post_install)
 
@@ -835,7 +837,7 @@ class PackageData(object):
             return self.data[filename][code]["repos"]
         except KeyError:
             return None
-            
+
     def getPostInstall(self, filename, code):
         try:
            return self.data[filename][code]["post-install"]
@@ -1404,7 +1406,7 @@ class WelcomeApp(object):
 
     def _show_about(self, gtk_widget):
         self.webkit._do_command("about")
-    
+
     def _show_status(self, gtk_widget):
         self.webkit._do_command("status")
 
