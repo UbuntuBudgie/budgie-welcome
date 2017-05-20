@@ -92,9 +92,13 @@ class PackageData(object):
         with open(json_path) as file:
             self.data = json.load(file)
 
-
     def getPackageInfo(self, filename, code):
+        release_code = platform.dist()[2]    # → xenial, yakkety, zesty
+        full_code = code + "#" + release_code
         try:
+            if full_code in self.data[filename]:
+                return self.data[filename][full_code]
+
             return self.data[filename][code]
         except KeyError as e:
             print(e)

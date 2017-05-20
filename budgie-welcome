@@ -173,20 +173,16 @@ class AppView(WebKit2.WebView):
 
             def checkInstallationStatus():
                 for code in pdata.getShortCodes(current_page):
+                    # some package names are codename specific
+                    # so we the buttons on page needs the string
+                    # without the codename
+                    code = code.split("#")[0]
                     installed = pm.hasInstalled(current_page, code)
 
                     if installed:
                         app.update_page('#' + code + '-remove', 'show')
-                        continue
-
-                    # we really need a generic mechanism to make codename specific app
-                    # install methods possible
-                    if current_page == 'default' and \
-                        ((systemstate.codename in code and 'vimix-theme' in code) or \
-                         ('vimix-theme' not in code)):
-                        app.update_page('#' + code + '-install', 'show')
-
-                    if current_page != 'default':
+                    else:
+                        dbg.stdout('Debug', "before " + code, 0, 0)
                         app.update_page('#' + code + '-install', 'show')
 
                 # Sort recommendations after checking installation status
@@ -725,7 +721,9 @@ class PackageManager(Thread):
             if code == 'steam':
                 p = subprocess.Popen([app._data_path + 'scripts/steam'])
             else:
-                p = subprocess.Popen(['pkexec', start_location + 'budgie-welcome-privileged-actions', action, filename, code, app.json_path])
+                p = subprocess.Popen(['pkexec',
+                    start_location + 'budgie-welcome-privileged-actions',
+                    action, filename, code, app.json_path])
             retval = p.wait()
 
             post_install = pdata.getPostInstall(filename, code)
@@ -824,31 +822,47 @@ class PackageData(object):
 
     def getPackages(self, filename, code):
         try:
+            full_code = code + "#" + systemstate.codename
+            if full_code in self.data[filename]:
+                return self.data[filename][full_code]["packages"]
+
             return self.data[filename][code]["packages"]
         except KeyError:
             return None
 
     def getScript(self, filename, code):
         try:
+            full_code = code + "#" + systemstate.codename
+            if full_code in self.data[filename]:
+                return self.data[filename][full_code]["script"]
             return self.data[filename][code]["script"]
         except KeyError:
             return None
 
     def getRootRequirement(self, filename, code):
         try:
+            full_code = code + "#" + systemstate.codename
+            if full_code in self.data[filename]:
+                return self.data[filename][full_code]["root"]
             return self.data[filename][code]["root"]
         except KeyError:
             return None
 
     def getRepos(self, filename, code):
         try:
+            full_code = code + "#" + systemstate.codename
+            if full_code in self.data[filename]:
+                return self.data[filename][full_code]["repos"]
             return self.data[filename][code]["repos"]
         except KeyError:
             return None
 
     def getPostInstall(self, filename, code):
         try:
-           return self.data[filename][code]["post-install"]
+            full_code = code + "#" + systemstate.codename
+            if full_code in self.data[filename]:
+                return self.data[filename][full_code]["post-install"]
+            return self.data[filename][code]["post-install"]
         except KeyError:
             return None
 
@@ -943,7 +957,12 @@ class SystemState(object):
             self.os_version = arg.simulate_version
         else:
             self.os_version = platform.dist()[1]    # → 14.04, 15.10, 16.04
-        self.codename = platform.dist()[2]      # → trusty, wily, xenial
+
+        if arg.simulate_codename:
+            self.codename = arg.simulate_codename
+        else:
+            self.codename = platform.dist()[2]      # → trusty, wily, xenial
+
         self.official = int(self.os_version[:2]) >= 17
 
         if self.official:
