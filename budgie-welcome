@@ -1359,9 +1359,9 @@ class WelcomeApp(object):
         w.set_position(Gtk.WindowPosition.CENTER)
         w.set_wmclass('budgie-welcome', _("Budgie Welcome"))
         w.set_title(_("Budgie Welcome"))
+        w.set_default_size(992, 500)
         #w.set_resizable(False)
-        w.set_default_size(992, 550)
-
+        
         icon_dir = os.path.join(self._data_path, 'img', 'distro-icon.svg')
         w.set_icon_from_file(icon_dir)
 
@@ -1395,7 +1395,10 @@ class WelcomeApp(object):
 
         # build webkit container
         mv = AppView()
-        mv.set_zoom_level(0.90)
+        if systemstate.codename == "xenial":
+            mv.set_zoom_level(0.90)
+            w.set_default_size(992, 550)
+
         mv.status_btn = status_btn
         mv.back_btn = back_btn
         mv.page_title = page_title
