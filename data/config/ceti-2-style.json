@@ -1,0 +1,42 @@
+[
+  {
+    "SCHEMA": "org.gnome.desktop.interface",
+    "VALUES": {
+      "cursor-theme": "DMZ-White",
+      "gtk-theme": "Ceti-2",
+      "icon-theme": "Pocillo",
+      "monospace-font-name": "Ubuntu Mono 13",
+      "font-name": "Ubuntu 11",
+      "document-font-name": "Sans 11"
+    }
+  }, 
+  {
+    "SCHEMA": "org.gnome.desktop.background",
+    "VALUES": {
+      "color-shading-type": "solid",
+      "picture-options": "stretched",
+      "picture-uri": "file:////usr/share/backgrounds/Xplo_by_Hugo_Cliff.png",
+      "primary-color": "#008094"
+    }
+  },
+  {
+    "SCHEMA": "com.solus-project.budgie-panel",
+    "VALUES": {
+      "builtin-theme": false,
+      "dark-theme": true
+    }
+  },
+  {
+    "SCHEMA": "org.gnome.desktop.wm.preferences",
+    "VALUES": {
+      "titlebar-font": "Ubuntu Bold 11",
+      "theme": "Ceti-2"
+    }
+  },
+  {
+    "SCHEMA": "org.gnome.nautilus.desktop",
+    "VALUES": {
+      "font": "Ubuntu 10"
+    }
+  }
+]

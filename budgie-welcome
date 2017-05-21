@@ -159,13 +159,13 @@ class AppView(WebKit2.WebView):
                 app.update_page('#style-undo', 'fadeIn')
             else:
                 app.update_page('#style-undo', 'hide')
-            
+
             # themes are distro specific so need to hide/show as appropriate
             theme = app._data_path + "/config/themes.json"
 
             with open(theme) as file:
                 config = json.load(file)
-                
+
             if systemstate.codename in config:
                 for theme in config[systemstate.codename]:
                     app.update_page("." + theme, 'show')
@@ -430,10 +430,14 @@ class AppView(WebKit2.WebView):
 
                     self._set_panel_key('enable-shadow', False)
                     self._set_panel_key('size', 37)
-                    
+
                 if code == "vertex":
                     self._set_panel_key('enable-shadow', False)
                     self._set_panel_key('size', 43)
+
+                if code == "ceti-2":
+                    self._set_panel_key('enable-shadow', False)
+                    self._set_panel_key('size', 40)
 
                 def removepanelstyle():
                     # Don't allow theme over writing
@@ -1361,7 +1365,7 @@ class WelcomeApp(object):
         w.set_title(_("Budgie Welcome"))
         w.set_default_size(992, 500)
         #w.set_resizable(False)
-        
+
         icon_dir = os.path.join(self._data_path, 'img', 'distro-icon.svg')
         w.set_icon_from_file(icon_dir)
 
