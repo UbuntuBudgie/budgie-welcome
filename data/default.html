@@ -45,7 +45,8 @@
                <div class="col-md-6 arc-theme hidden">
                    <br>
                   <h3>&zwnj;Arc Design&zwnj;</h3>
-                  <img alt="Arc screenshot" src="img/screenshots/arc-style.jpg" class="img-fluid thumbnail">
+                  <a href="img/screenshots/arc-style.jpg" data-toggle="lightbox"><img alt="Arc screenshot" src="img/screenshots/arc-style.jpg" class="img-fluid thumbnail"></a>
+                  <br>
                   <br>
                   <a id="arc-theme-install" class="btn btn-success theme-apply" onclick="cmd('install?arc-theme');cmd('')">
                   <i class="material-icons">&#xE2C4;</i>&nbsp;
@@ -64,7 +65,8 @@
                <div class="col-md-6 material-theme hidden">
                    <br>
                   <h3>&zwnj;Material Design (Adapta)&zwnj;</h3>
-                  <img alt="Material screenshot" src="img/screenshots/material-style.jpg" class="img-fluid thumbnail">
+                  <a href="img/screenshots/material-style.jpg" data-toggle="lightbox"><img alt="Material screenshot" src="img/screenshots/material-style.jpg" class="img-fluid thumbnail"></a>
+                  <br>
                   <br>
                   <a id="material-theme-install" class="btn btn-success theme-apply" onclick="cmd('install?material-theme');cmd('')">
                   <i class="material-icons">&#xE2C4;</i>&nbsp;
@@ -83,7 +85,8 @@
                <div class="col-md-6 material-vimix-theme hidden">
                    <br>
                   <h3>&zwnj;Material Design (Vimix)&zwnj;</h3>
-                  <img alt="Material Vimix screenshot" src="img/screenshots/vimix-material-theme.jpg" class="img-fluid thumbnail">
+                  <a href="img/screenshots/vimix-material-theme.jpg" data-toggle="lightbox"><img alt="Material Vimix screenshot" src="img/screenshots/vimix-material-theme.jpg" class="img-fluid thumbnail"></a>
+                  <br>
                   <br>
                   <a id="material-vimix-theme-install" class="btn btn-success theme-apply" onclick="cmd('install?material-vimix-theme');cmd('')">
                   <i class="material-icons">&#xE2C4;</i>&nbsp;
@@ -102,7 +105,8 @@
                <div class="col-md-6 vertex-theme hidden">
                    <br>
                   <h3>&zwnj;Vertex Design&zwnj;</h3>
-                  <img alt="Vertex screenshot" src="img/screenshots/vertex-theme.jpg" class="img-fluid thumbnail">
+                  <a href="img/screenshots/vertex-theme.jpg" data-toggle="lightbox"><img alt="Vertex screenshot" src="img/screenshots/vertex-theme.jpg" class="img-fluid thumbnail"></a>
+                  <br>
                   <br>
                   <a id="vertex-theme-install" class="btn btn-success theme-apply" onclick="cmd('install?vertex-theme');cmd('')">
                   <i class="material-icons">&#xE2C4;</i>&nbsp;
@@ -128,5 +132,12 @@
       <script src="js/janimate.js"></script>
       <script src="js/confetti.js"></script>   <!-- Confetti only appears on special events -->
       <script src="js/welcome.js"></script>
+      <script src="js/ekko-lightbox.min.js"></script>
+      <script type="text/javascript">
+       $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+        event.preventDefault();
+        $(this).ekkoLightbox();
+        });    
+      </script>
    </body>
 </html>
