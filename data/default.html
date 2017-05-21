@@ -1,112 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
-  <link href="css/material-icons.css" rel="stylesheet" media="screen">
-  <link href="css/animate.css" rel="stylesheet" media="screen">
-  <link href="css/welcome.css" rel="stylesheet" media="screen">
-</head>
-<body class="backdrop-simple fade fade-1s">
-  <div id="wrapper">
-    <div id="title-inject">&zwnj;Default Settings&zwnj;</div>
-    <div id="content" class="container entire-page-fade">
-      <div class="row">
-        <div class="col-md-12">
-          <h2>&zwnj;Restore panels&zwnj;</h2>
-          <p>&zwnj;Lost your panels while playing with <span name="distro-name"></span>? Unhappy with your changes to the panel layout? Don't worry. We can
-          help you to restore your panels with a single click!&zwnj; &#x1F60A;
-          </p>
-          <div class="alert alert-warning">&zwnj;This will undo all changes that you have made on any panel and will reset back to the initial default panel layout configuration.&zwnj;
-          </div>
-          <div class="text-md-right">
-            <span id="panel-status" class="hidden"><img src="img/welcome/processing.gif" style="height: 24px"/> &zwnj;Applying Changes...&zwnj;</span>
-            <a id="panel-reset" onclick="cmd('panel-reset')" class="btn btn-primary panel-apply"><i class="material-icons">&#xE8B3;</i>&nbsp;<span class="button-text">&zwnj;Reset Budgie Panel&zwnj;</span></a>
-          </div>
-        </div>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+      <link href="css/material-icons.css" rel="stylesheet" media="screen">
+      <link href="css/animate.css" rel="stylesheet" media="screen">
+      <link href="css/welcome.css" rel="stylesheet" media="screen">
+   </head>
+   <body class="backdrop-simple fade fade-1s">
+      <div id="wrapper">
+         <div id="title-inject">&zwnj;Default Settings&zwnj;</div>
+         <div id="content" class="container entire-page-fade">
+            <div class="row">
+               <div class="col-md-12">
+                  <h2>&zwnj;Restore panels&zwnj;</h2>
+                  <p>&zwnj;Lost your panels while playing with <span name="distro-name"></span>? Unhappy with your changes to the panel layout? Don't worry. We can
+                     help you to restore your panels with a single click!&zwnj; &#x1F60A;
+                  </p>
+                  <div class="alert alert-warning">&zwnj;This will undo all changes that you have made on any panel and will reset back to the initial default panel layout configuration.&zwnj;
+                  </div>
+                  <div class="text-md-right">
+                     <span id="panel-status" class="hidden"><img src="img/welcome/processing.gif" style="height: 24px"/> &zwnj;Applying Changes...&zwnj;</span>
+                     <a id="panel-reset" onclick="cmd('panel-reset')" class="btn btn-primary panel-apply"><i class="material-icons">&#xE8B3;</i>&nbsp;<span class="button-text">&zwnj;Reset Budgie Panel&zwnj;</span></a>
+                  </div>
+               </div>
+            </div>
+            <hr>
+            <div class="row">
+               <div class="col-md-12">
+                  <h2>&zwnj;Switch Appearance&zwnj;</h2>
+                  <p>&zwnj;<span name="distro-name"></span> uses <strong>Arc</strong> as it's default theme package. It uses Arc theme for GTK windows,
+                     panels, login window and lock screen and <strong>Pocillo</strong> as the icon theme.&zwnj;
+                  </p>
+                  <p>&zwnj;Another emerging design trend is <strong>Material Design</strong> which is basically a collection of design guidelines introduced
+                     by Google to bring a uniform appearance across different platforms. There are different theme packages inspired by Google&apos;s Material Design style.&zwnj;
+                  </p>
+                  <p>&zwnj;As <span name="distro-name"></span> values the freedom of users,
+                     we provide easy options to switch between our default <em>Arc style</em> and <em>Material style</em>.&zwnj;
+                  </p>
+               </div>
+            </div>
+            <div class="row text-md-center">
+               <div class="col-md-6 arc-theme hidden">
+                   <br>
+                  <h3>&zwnj;Arc Design&zwnj;</h3>
+                  <img alt="Arc screenshot" src="img/screenshots/arc-style.jpg" class="img-fluid thumbnail">
+                  <br>
+                  <a id="arc-theme-install" class="btn btn-success theme-apply" onclick="cmd('install?arc-theme');cmd('')">
+                  <i class="material-icons">&#xE2C4;</i>&nbsp;
+                  <span class="button-text">&zwnj;Install theme&zwnj;</span>
+                  </a>
+                  <a id="arc-theme-remove" class="btn btn-primary theme-apply" onclick="cmd('theme?arc');cmd('')">
+                  <i class="material-icons">&#xE862;</i>&nbsp;
+                  <span class="button-text">&zwnj;Apply theme&zwnj;</span>
+                  </a>
+                  <br>
+                  <span id="arc-theme-status" class="hidden">
+                  <img src="img/welcome/processing.gif" style="height: 24px"/>
+                  &zwnj;Applying Changes...&zwnj;
+                  </span>
+               </div>
+               <div class="col-md-6 material-theme hidden">
+                   <br>
+                  <h3>&zwnj;Material Design (Adapta)&zwnj;</h3>
+                  <img alt="Material screenshot" src="img/screenshots/material-style.jpg" class="img-fluid thumbnail">
+                  <br>
+                  <a id="material-theme-install" class="btn btn-success theme-apply" onclick="cmd('install?material-theme');cmd('')">
+                  <i class="material-icons">&#xE2C4;</i>&nbsp;
+                  <span class="button-text">&zwnj;Install theme&zwnj;</span>
+                  </a>
+                  <a id="material-theme-remove" class="btn btn-primary theme-apply" onclick="cmd('theme?material');cmd('')">
+                  <i class="material-icons">&#xE862;</i>&nbsp;
+                  <span class="button-text">&zwnj;Apply theme&zwnj;</span>
+                  </a>
+                  <br>
+                  <span id="material-theme-status" class="hidden">
+                  <img src="img/welcome/processing.gif" style="height: 24px"/>
+                  &zwnj;Applying Changes...&zwnj;
+                  </span>
+               </div>
+               <div class="col-md-6 material-vimix-theme hidden">
+                   <br>
+                  <h3>&zwnj;Material Design (Vimix)&zwnj;</h3>
+                  <img alt="Material Vimix screenshot" src="img/screenshots/vimix-material-theme.jpg" class="img-fluid thumbnail">
+                  <br>
+                  <a id="material-vimix-theme-install" class="btn btn-success theme-apply" onclick="cmd('install?material-vimix-theme');cmd('')">
+                  <i class="material-icons">&#xE2C4;</i>&nbsp;
+                  <span class="button-text">&zwnj;Install theme&zwnj;</span>
+                  </a>
+                  <a id="material-vimix-theme-remove" class="btn btn-primary theme-apply" onclick="cmd('theme?material-vimix');cmd('')">
+                  <i class="material-icons">&#xE862;</i>&nbsp;
+                  <span class="button-text">&zwnj;Apply theme&zwnj;</span>
+                  </a>
+                  <br>
+                  <span id="material-vimix-theme-status" class="hidden">
+                  <img src="img/welcome/processing.gif" style="height: 24px"/>
+                  &zwnj;Applying Changes...&zwnj;
+                  </span>
+               </div>
+               <div class="col-md-6 vertex-theme hidden">
+                   <br>
+                  <h3>&zwnj;Vertex Design&zwnj;</h3>
+                  <img alt="Vertex screenshot" src="img/screenshots/vertex-theme.jpg" class="img-fluid thumbnail">
+                  <br>
+                  <a id="vertex-theme-install" class="btn btn-success theme-apply" onclick="cmd('install?vertex-theme');cmd('')">
+                  <i class="material-icons">&#xE2C4;</i>&nbsp;
+                  <span class="button-text">&zwnj;Install theme&zwnj;</span>
+                  </a>
+                  <a id="vertex-theme-remove" class="btn btn-primary theme-apply" onclick="cmd('theme?vertex');cmd('')">
+                  <i class="material-icons">&#xE862;</i>&nbsp;
+                  <span class="button-text">&zwnj;Apply theme&zwnj;</span>
+                  </a>
+                  <br>
+                  <span id="vertex-theme-status" class="hidden">
+                  <img src="img/welcome/processing.gif" style="height: 24px"/>
+                  &zwnj;Applying Changes...&zwnj;
+                  </span>
+               </div>
+            </div>
+            <br>
+         </div>
       </div>
-      <hr>
-      <div class="row">
-        <div class="col-md-12">
-          <h2>&zwnj;Switch Appearance&zwnj;</h2>
-          <p>&zwnj;<span name="distro-name"></span> uses <strong>Arc</strong> as it's default theme package. It uses Arc theme for GTK windows,
-          panels, login window and lock screen and <strong>Pocillo</strong> as the icon theme.&zwnj;</p>
-
-          <p>&zwnj;Another emerging design trend is <strong>Material Design</strong> which is basically a collection of design guidelines introduced
-          by Google to bring a uniform appearance across different platforms. There are different theme packages inspired by Google&apos;s Material Design style.&zwnj;</p>
-
-          <p>&zwnj;As <span name="distro-name"></span> values the freedom of users,
-            we provide easy options to switch between our default <em>Arc style</em> and <em>Material style</em>.&zwnj;</p>
-        </div>
-      </div>
-      <div class="row text-md-center">
-        <div class="col-md-6">
-          <h3>&zwnj;Arc Design&zwnj;</h3>
-          <img alt="Arc screenshot" src="img/screenshots/arc-style.jpg" class="img-fluid thumbnail">
-          <br>
-          <a id="arc-theme-install" class="btn btn-success theme-apply" onclick="cmd('install?arc-theme');cmd('')">
-            <i class="material-icons">&#xE2C4;</i>&nbsp;
-            <span class="button-text">&zwnj;Install Arc theme&zwnj;</span>
-          </a>
-          <a id="arc-theme-remove" class="btn btn-primary theme-apply" onclick="cmd('theme?arc');cmd('')">
-            <i class="material-icons">&#xE862;</i>&nbsp;
-            <span class="button-text">&zwnj;Apply Arc theme&zwnj;</span>
-          </a>
-          <br>
-          <span id="arc-theme-status" class="hidden">
-            <img src="img/welcome/processing.gif" style="height: 24px"/>
-            &zwnj;Applying Changes...&zwnj;
-          </span>
-        </div>
-        <div class="col-md-6">
-      <h3>&zwnj;Material Design (Adapta)&zwnj;</h3>
-          <img alt="Material screenshot" src="img/screenshots/material-style.jpg" class="img-fluid thumbnail">
-          <br>
-          <a id="material-theme-install" class="btn btn-success theme-apply" onclick="cmd('install?material-theme');cmd('')">
-            <i class="material-icons">&#xE2C4;</i>&nbsp;
-            <span class="button-text">&zwnj;Install Material theme&zwnj;</span>
-          </a>
-          <a id="material-theme-remove" class="btn btn-primary theme-apply" onclick="cmd('theme?material');cmd('')">
-            <i class="material-icons">&#xE862;</i>&nbsp;
-            <span class="button-text">&zwnj;Apply Material theme&zwnj;</span>
-          </a>
-          <br>
-          <span id="material-theme-status" class="hidden">
-            <img src="img/welcome/processing.gif" style="height: 24px"/>
-            &zwnj;Applying Changes...&zwnj;
-          </span>
-        </div>
-      </div>
-      <br/><br/>
-      <div class="row">
-        <div class="col-md-6 push-md-3 text-md-center">
-                <h3>&zwnj;Material Design (Vimix)&zwnj;</h3>
-          <img alt="Material Vimix screenshot" src="img/screenshots/vimix-material-theme.jpg" class="img-fluid thumbnail">
-          <br>
-		  <a id="material-vimix-theme-install" class="btn btn-success theme-apply" onclick="cmd('install?material-vimix-theme');cmd('')">
-			<i class="material-icons">&#xE2C4;</i>&nbsp;
-			<span class="button-text">&zwnj;Install Material Vimix theme&zwnj;</span>
-		  </a>
-          <a id="material-vimix-theme-remove" class="btn btn-primary theme-apply" onclick="cmd('theme?material-vimix');cmd('')">
-            <i class="material-icons">&#xE862;</i>&nbsp;
-            <span class="button-text">&zwnj;Apply Material Vimix theme&zwnj;</span>
-          </a>
-          <br>
-          <span id="material-vimix-theme-status" class="hidden">
-            <img src="img/welcome/processing.gif" style="height: 24px"/>
-            &zwnj;Applying Changes...&zwnj;
-          </span>
-        </div>
-      </div>
-      <br>
-    </div>
-  </div>
-  <script src="js/jquery-2.1.4.js"></script>
-  <script src="js/tether.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/janimate.js"></script>
-  <script src="js/confetti.js"></script>   <!-- Confetti only appears on special events -->
-  <script src="js/welcome.js"></script>
-</body>
+      <script src="js/jquery-2.1.4.js"></script>
+      <script src="js/tether.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/janimate.js"></script>
+      <script src="js/confetti.js"></script>   <!-- Confetti only appears on special events -->
+      <script src="js/welcome.js"></script>
+   </body>
 </html>

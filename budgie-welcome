@@ -159,6 +159,16 @@ class AppView(WebKit2.WebView):
                 app.update_page('#style-undo', 'fadeIn')
             else:
                 app.update_page('#style-undo', 'hide')
+            
+            # themes are distro specific so need to hide/show as appropriate
+            theme = app._data_path + "/config/themes.json"
+
+            with open(theme) as file:
+                config = json.load(file)
+                
+            if systemstate.codename in config:
+                for theme in config[systemstate.codename]:
+                    app.update_page("." + theme, 'show')
 
         if current_page in ['introduction', 'features', 'community', 'recommendations', 'gettingstarted']:
             if systemstate.official:
@@ -182,7 +192,6 @@ class AppView(WebKit2.WebView):
                     if installed:
                         app.update_page('#' + code + '-remove', 'show')
                     else:
-                        dbg.stdout('Debug', "before " + code, 0, 0)
                         app.update_page('#' + code + '-install', 'show')
 
                 # Sort recommendations after checking installation status
@@ -421,6 +430,10 @@ class AppView(WebKit2.WebView):
 
                     self._set_panel_key('enable-shadow', False)
                     self._set_panel_key('size', 37)
+                    
+                if code == "vertex":
+                    self._set_panel_key('enable-shadow', False)
+                    self._set_panel_key('size', 43)
 
                 def removepanelstyle():
                     # Don't allow theme over writing
@@ -1347,7 +1360,7 @@ class WelcomeApp(object):
         w.set_wmclass('budgie-welcome', _("Budgie Welcome"))
         w.set_title(_("Budgie Welcome"))
         #w.set_resizable(False)
-        w.set_default_size(992, 500)
+        w.set_default_size(992, 550)
 
         icon_dir = os.path.join(self._data_path, 'img', 'distro-icon.svg')
         w.set_icon_from_file(icon_dir)
@@ -1382,6 +1395,7 @@ class WelcomeApp(object):
 
         # build webkit container
         mv = AppView()
+        mv.set_zoom_level(0.90)
         mv.status_btn = status_btn
         mv.back_btn = back_btn
         mv.page_title = page_title

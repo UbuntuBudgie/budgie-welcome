@@ -132,17 +132,14 @@
         "artful" : ["ppa:ubuntubudgie/backports", "ppa:tista/adapta"]
       }
     },
-    "material-vimix-theme#xenial" : {
-      "packages" : ["vimix-light", "vimix-dark", "paper-cursor-theme", "paper-icon-theme", "fonts-noto"],
-      "repos" : {
-        "xenial" : ["ppa:snwh/pulp", "ppa:noobslab/themes"]
-      }
-    },
     "material-vimix-theme" : {
       "packages" : ["vimix-gtk-themes", "paper-cursor-theme", "paper-icon-theme", "fonts-noto"],
       "repos" : {
         "all" : ["ppa:snwh/pulp", "ppa:noobslab/themes"]
       }
-    }
+    },
+    "vertex-theme" : {
+      "packages" : ["vertex-theme"]
+      }
   }
 }
