@@ -2,12 +2,13 @@
 # Pad Padington <diecolabuechse@gmail.com>, 2017
 # Mangnoppa <mangnoppa@arcor.de>, 2017
 # Johannes Prechtl <johannes.prechtl@gmail.com>, 2017
+# debianer82 <debianer82@gmail.com>, 2017
 msgid ""
 msgstr ""
 "Project-Id-Version: Budgie Welcome\n"
 "POT-Creation-Date: 2016-02-27 12:48+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Johannes Prechtl <johannes.prechtl@gmail.com>, 2017\n"
+"Last-Translator: debianer82 <debianer82@gmail.com>, 2017\n"
 "Language-Team: German (Germany) (https://www.transifex.com/ubuntu-budgie/teams/72251/de_DE/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -74,7 +75,7 @@ msgstr "Anpassung"
 
 #: gettingstarted.html58, 59
 msgid "Browser Ballot"
-msgstr ""
+msgstr "Browser Ballot"
 
 #: gettingstarted.html60, 61, 922
 msgid "Keyboard Shortcuts"
@@ -176,10 +177,14 @@ msgid ""
 "Connect to the Internet to install all available updates during "
 "installation."
 msgstr ""
+"Stellen sie eine Internetverbindung her um alle verfügbare Updates während "
+"der Installation zu installieren."
 
 #: gettingstarted.html:134
 msgid "Stay connected to the Internet to install all available updates."
 msgstr ""
+"Bleiben sie mit dem Internet verbunden um alle verfügbaren Updates zu "
+"installieren."
 
 #: gettingstarted.html:135
 msgid "Plug in your device to the mains if it is running on battery power."
@@ -253,6 +258,8 @@ msgid ""
 "example, if you have 2 GiB of RAM, then 2 GiB of hard disk space will be "
 "reserved for swap at the end of the drive."
 msgstr ""
+"Normalerweise, ist eine Swap Partition so groß, wie der Arbeitsspeicher.\n"
+"Wenn sie zum Beispiel 2 GiB Arbeitsspeicher haben, werden 2 GiB des Festplattenplatzes am Ende der Festplatte für Swap reserviert."
 
 #: gettingstarted.html:179
 msgid ""
@@ -261,6 +268,10 @@ msgid ""
 "reserved for the swap file. A separate swap partition is no longer required "
 "to be created."
 msgstr ""
+"Normalerweise wird eine Swap Datei in der Größe des Arbeitsspeichers "
+"erstellt. Wenn sie zum Beispiel 2 GiB Arbeitsspeicher haben, werden 2 GiB "
+"des Festplattenplatzes für die Swap Datei reserviert. Die Erstellung einer "
+"separaten Swap Partition wird nicht mehr benötigt.  "
 
 #: gettingstarted.html185, 363, 659, 1282
 msgid "Previous:"
@@ -276,7 +287,7 @@ msgstr ""
 
 #: gettingstarted.html:204
 msgid "I'm dual booting with"
-msgstr ""
+msgstr "Ich bin im Dual-Boot mit"
 
 #: gettingstarted.html:207
 msgid "To minimize the risk of data loss or failure, ensure that:"
@@ -292,7 +303,7 @@ msgstr ""
 
 #: gettingstarted.html:210
 msgid "<b><u>Back up</u></b> important data to another drive."
-msgstr ""
+msgstr "<b><u>Sicherung</u></b> wichtige Daten zu einem anderen Laufwerk."
 
 #: gettingstarted.html:211
 msgid "Defragment the hard drive."
@@ -320,7 +331,7 @@ msgstr ""
 
 #: gettingstarted.html:225
 msgid "The simplest method is to use the installer."
-msgstr ""
+msgstr "Die einfachste Methode ist den Installer zu benutzen."
 
 #: gettingstarted.html:227
 msgid ""
@@ -334,11 +345,13 @@ msgstr ""
 
 #: gettingstarted.html:234
 msgid "Followed by:"
-msgstr ""
+msgstr "Gefolgt von:"
 
 #: gettingstarted.html:240
 msgid "Do not interrupt or power off the computer during a resize operation."
 msgstr ""
+"Schalten sie den Computer nicht aus oder unterbrechen seine Stromzufuhr "
+"während einer Größenanpassung."
 
 #: gettingstarted.html:242
 msgid ""
@@ -475,7 +488,7 @@ msgstr ""
 
 #: gettingstarted.html:309
 msgid "Open <b>Disk Management</b> from the start menu."
-msgstr ""
+msgstr "Öffnen sie <b>Disk Management</b> aus dem Startmenü."
 
 #: gettingstarted.html:314
 msgid ""
@@ -560,7 +573,7 @@ msgstr ""
 
 #: gettingstarted.html:384
 msgid "Software Updater"
-msgstr ""
+msgstr "Software Updater"
 
 #: gettingstarted.html:385
 msgid ""
@@ -631,7 +644,7 @@ msgstr "Entfernen"
 
 #: gettingstarted.html435, 661, 764
 msgid "Next:"
-msgstr ""
+msgstr "Weiter:"
 
 #: gettingstarted.html:446
 msgid ""
@@ -739,7 +752,7 @@ msgstr ""
 
 #: gettingstarted.html:508
 msgid "Run 3D applications and games."
-msgstr ""
+msgstr "Startet 3D Anwendungen und Spiele."
 
 #: gettingstarted.html:509
 msgid ""
@@ -768,7 +781,7 @@ msgstr ""
 
 #: gettingstarted.html:518
 msgid "Broken drivers after an upgrade."
-msgstr ""
+msgstr "Defekte Treiber nach einem Upgrade."
 
 #: gettingstarted.html:519
 msgid "Severe graphical glitches."
@@ -1101,7 +1114,7 @@ msgstr ""
 
 #: gettingstarted.html:892
 msgid "Raven Configuration Center"
-msgstr ""
+msgstr "Raven Konfigurations-Center"
 
 #: gettingstarted.html:895
 msgid ""
@@ -1134,7 +1147,7 @@ msgstr ""
 
 #: gettingstarted.html:929
 msgid "Budgie Desktop shortcuts"
-msgstr ""
+msgstr "Budgie Schreibtisch Tastaturkürzel"
 
 #: gettingstarted.html:930
 msgid "Some common shortcuts used in Budgie Desktop"
@@ -1142,7 +1155,7 @@ msgstr ""
 
 #: gettingstarted.html:939
 msgid "Open notifications in Raven"
-msgstr ""
+msgstr "Öffne Benachrichtigungen in Raven"
 
 #: gettingstarted.html:947
 msgid "Open applet Settings in Raven"
@@ -1183,7 +1196,7 @@ msgstr "Suche nach Wort"
 
 #: gettingstarted.html:1002
 msgid "Find and replace words"
-msgstr ""
+msgstr "Finde und ersetze Wörter"
 
 #: gettingstarted.html:1010
 msgid "Make the selected text bold"
@@ -1232,7 +1245,7 @@ msgstr ""
 
 #: gettingstarted.html:1086
 msgid "Desktop shortcuts"
-msgstr ""
+msgstr "Schreibtisch Tastaturkürzel"
 
 #: gettingstarted.html:1087
 msgid ""
@@ -1273,11 +1286,11 @@ msgstr "Eine Kommandozeile öffnen."
 
 #: gettingstarted.html:1141
 msgid "Screen reader enable/disable."
-msgstr ""
+msgstr "Bildschirmleseprogramm aktivieren/deaktivieren."
 
 #: gettingstarted.html:1145
 msgid "Window shortcuts"
-msgstr ""
+msgstr "Fenster Tastaturkürzel"
 
 #: gettingstarted.html:1151
 msgid "Tab"

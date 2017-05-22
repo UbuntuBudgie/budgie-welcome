@@ -81,10 +81,7 @@ Files:
 Copyright: 2015, Sam Hewitt <hewittsamuel@gmail.com>
 License: CC-BY-SA-4.0
 
-Files: 
-    data/img/screenshots/*
-    data/img/os/*
-    data/img/social/*
+Files: data/img/social/*
 Copyright: 2015, Sam Hewitt <hewittsamuel@gmail.com>
 License: CC-BY-SA-4.0
 
@@ -93,6 +90,7 @@ Copyright: 2016, Google Developers <email address hidden>
 License: CC-BY-SA-4.0
 
 Files: data/img/os/*
+    data/img/screenshots/*
 Copyright: 2016-2017, David Mohammed <fossfreedom@ubuntu.com>
 License: CC-BY-SA-3.0
 
@@ -108,6 +106,11 @@ Files:
     data/js/bootstrap*
     data/js/tether.js
 Copyright: 2011-2016 The Bootstrap Authors (https://github.com/twbs/bootstrap/graphs/contributors)
+License: MIT
+
+Files:
+    data/js/ekko-lightbox.js
+Copyright: 2011-2015 ashleydw
 License: MIT
 
 Files: data/js/jquery-2.1.4.js
