@@ -1,18 +1,7 @@
 #!/bin/sh
 
 # Reset and restart panel
-# N.B. bug upstream due to GLIB version where the standard
-# reset method does not work
-
-if cat /etc/*release | grep "16.04" > /dev/null
-then
-    nohup budgie-panel --reset --replace &
-else
-    gsettings reset-recursively com.solus-project.budgie-panel
-    sleep 1
-    nohup budgie-panel --replace &
-fi
-
+nohup budgie-panel --reset --replace &
 # Just give sometime for panel to restart
 sleep 2
 
