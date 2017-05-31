@@ -1,9 +1,9 @@
 [main]
 host = https://www.transifex.com
 
-[budgie-welcome.chatroom]
-file_filter = data/po/chatroom/<lang>.po
-source_file = data/po/chatroom/chatroom.pot
+[budgie-welcome.store]
+file_filter = data/po/store/<lang>.po
+source_file = data/po/store/store.pot
 source_lang = en_US
 type = PO
 
