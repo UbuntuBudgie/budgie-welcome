@@ -138,6 +138,15 @@
         "all" : ["ppa:snwh/pulp", "ppa:noobslab/themes"]
       }
     },
+    "material-flat-plat-theme" : {
+      "packages" : ["flat-plat", "numix-icon-theme-circle", "fonts-noto"],
+      "repos" : {
+        "xenial" : ["ppa:budgie-remix/ppa", "ppa:numix/ppa"],
+        "yakkety" : ["ppa:budgie-remix/ppa", "ppa:numix/ppa"],
+        "zesty" : ["ppa:ubuntubudgie/backports", "ppa:numix/ppa"],
+        "artful" : ["ppa:ubuntubudgie/backports", "ppa:numix/ppa"]
+      }
+    },
     "vertex-theme" : {
       "packages" : ["vertex-theme"]
       },
