@@ -438,6 +438,9 @@ class AppView(WebKit2.WebView):
                 if code == "ceti-2":
                     self._set_panel_key('enable-shadow', False)
                     self._set_panel_key('size', 40)
+                    
+                if code == 'material-flat-plat':
+                    self._set_panel_key('size', 47)
 
                 def removepanelstyle():
                     # Don't allow theme over writing
