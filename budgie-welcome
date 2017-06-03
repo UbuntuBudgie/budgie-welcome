@@ -616,7 +616,7 @@ class PopupMessage(object):
 
     def __init__(self, message, type, details = None, actions = dict(OK = 'removeSlowly(\'#popup-message-window\')')):
         '''
-         message => Messge to user
+         message => Message to user
          type => Type of message(error, confirmation ..etc)
         '''
         self.details = details
@@ -829,7 +829,7 @@ class PackageData(object):
     '''
     Map some short codes with packages. Install/Remove buttons
     will be represented by short code like #code-remove and
-    #code-install. This will allow to check installation status
+    #code-install. This will allow one to check installation status
     of each package using a loop instead of checking separately
     '''
 
@@ -1684,7 +1684,7 @@ class Translations(object):
             self.res_dir = ""
 
         dbg.stdout("i18n", "res_dir: " + self.res_dir, 2, 0)
-        # Initalise i18n for Python translations.
+        # Initialise i18n for Python translations.
         if self.relative_i18n:
             i18n_path = os.path.join(data_path, "../locale/")
         else:

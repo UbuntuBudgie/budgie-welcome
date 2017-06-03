@@ -1,38 +1,16 @@
 budgie-welcome (0.4.9.5) TBD; urgency=medium
 
-  * New italian translation
+  * New Release (LP:# )
+  * Translation Support
+  * Online Shop replaces Community Chatroom
+  * Themes revamp including lightbox support
+  * Uplift to bootstrap v4 alpha 6
+  * ibus/fcitx switch
+  * Packaging Changes
+    - debian/copyright - http-->https
+      updates to bootstrap copyright year
 
  -- David Mohammed <fossfreedom@ubuntu.com>  Sat, 03 Jun 2017 08:59:08 +0100
-
-budgie-welcome (0.4.9.4) zesty; urgency=medium
-
-  * new translations
-  * online shop
-  * flat-plat support
-
- -- David Mohammed <fossfreedom@ubuntu.com>  Fri, 02 Jun 2017 20:59:09 +0100
-
-budgie-welcome (0.4.9.3) zesty; urgency=medium
-
-  * new translations
-  * xenial support
-  * reworked themes + 2 themes for xenial
-  * bootstrap v4 alpha 6 upgrade
-
- -- David Mohammed <fossfreedom@ubuntu.com>  Mon, 22 May 2017 23:35:17 +0100
-
-budgie-welcome (0.4.9.2) zesty; urgency=medium
-
-  * new release with translations
-  * include ibus/fcitx switch
-
- -- David Mohammed <fossfreedom@ubuntu.com>  Fri, 12 May 2017 19:26:17 +0100
-
-budgie-welcome (0.4.9.1) zesty; urgency=medium
-
-  * new release with translations
-
- -- David Mohammed <fossfreedom@ubuntu.com>  Thu, 09 Mar 2017 10:37:42 +0000
 
 budgie-welcome (0.4.5) zesty; urgency=medium
 
@@ -41,7 +19,7 @@ budgie-welcome (0.4.5) zesty; urgency=medium
     - inform users to reboot after installing flatpak
     - copyright year and name update for source file budgie-welcome
     - make sure chrome only installable for 64bit installs
-    - ensure start page elements align correctly for chinese locale
+    - ensure start page elements align correctly for Chinese locale
     - fix package and ppa installs so that material theme is correctly
       installed
     - Update Material designs with missing Noto fonts
