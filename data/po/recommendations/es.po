@@ -2,12 +2,13 @@
 # Adolfo Jayme Barrientos <fitoschido@gmail.com>, 2017
 # Jose Luis Tirado <joseluis.tirado@gmail.com>, 2017
 # _-Caleb-_ <tanausugomez@gmail.com>, 2017
+# Daniel Hernandez <danehernandez32@gmail.com>, 2017
 msgid ""
 msgstr ""
 "Project-Id-Version: Budgie Welcome\n"
 "POT-Creation-Date: 2016-02-27 12:48+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: _-Caleb-_ <tanausugomez@gmail.com>, 2017\n"
+"Last-Translator: Daniel Hernandez <danehernandez32@gmail.com>, 2017\n"
 "Language-Team: Spanish (https://www.transifex.com/ubuntu-budgie/teams/72251/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -80,8 +81,8 @@ msgid ""
 "Installed some Snaps but can’t remember what? Don’t panic. Use the list "
 "command to see an up-to-date list of all Snap apps installed on your system:"
 msgstr ""
-"¿Instaló algunas Snaps pero no recuerda cuáles? No se preocupe. Use la orden"
-" «list» para ver una lista actualizada de todas las aplicaciones Snap "
+"¿Instaló algunos «snaps» pero no recuerda cuáles? No se preocupe. Utilice la"
+" orden «list» para ver una lista actualizada de todas las aplicaciones Snap "
 "instaladas en su sistema:"
 
 #: recommendations.html:53
@@ -90,10 +91,13 @@ msgid ""
 "of the developer who uploaded it (handy when there are multiple versions of "
 "the same app in the store, e.g., Telegram)."
 msgstr ""
+"Esta lista también muestra los números de versión y revisión y el nombre de "
+"los desarrolladores que los cargaron (lo cual es útil si hay varias "
+"versiones de la misma aplicación en la tienda, como es el caso de Telegram)."
 
 #: recommendations.html:54
 msgid "Install & Remove Snap Apps"
-msgstr "Instalar y eliminar aplicaciones Snap"
+msgstr "Instalar y desinstalar aplicaciones Snap"
 
 #: recommendations.html:55
 msgid ""
@@ -101,6 +105,10 @@ msgid ""
 "analogous snap commands easy to remember. You install snap apps with the "
 "‘install’ command, and remove them using the ‘remove’ command."
 msgstr ""
+"Si se ha acostumbrado a gestionar programas a través de APT, no hallará "
+"difícil recordar las órdenes correspondientes de Snap. Para instalar "
+"aplicaciones en Snap, utilice «install»; para desinstalarlas, emplee "
+"«remove»."
 
 #: recommendations.html:58
 msgid "See details of an App"
@@ -211,7 +219,7 @@ msgstr "Instalar y configurar Flatpak"
 
 #: recommendations.html:106
 msgid "skippy-xd"
-msgstr ""
+msgstr "skippy-xd"
 
 #: recommendations.html:110
 msgid ""
