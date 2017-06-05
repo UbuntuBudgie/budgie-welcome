@@ -1,0 +1,271 @@
+# Translators:
+# Snevow Freelancer <ptc-snevow@hotmail.com>, 2017
+# Willian Eduardo <willianeduardot@gmail.com>, 2017
+# Lucas Dias <lucasdiaas@outlook.com>, 2017
+msgid ""
+msgstr ""
+"Project-Id-Version: Budgie Welcome\n"
+"POT-Creation-Date: 2016-02-27 12:48+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Lucas Dias <lucasdiaas@outlook.com>, 2017\n"
+"Language-Team: Portuguese (Brazil) (https://www.transifex.com/ubuntu-budgie/teams/72251/pt_BR/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: pt_BR\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Report-Msgid-Bugs-To : you@example.com\n"
+
+#: recommendations.html:15
+msgid "Recommendations"
+msgstr "Recomendações"
+
+#: recommendations.html26, 71, 85, 102, 115, 132
+msgid "Applying Changes..."
+msgstr "Aplicando Mudanças..."
+
+#: recommendations.html:35
+msgid ""
+"<strong>Snap</strong> is a new generation application packaging format "
+"developed by <em>Canonical</em>. Even though it was initially developed just"
+" for different Ubuntu platforms, currently it works in many other GNU/Linux "
+"distributions. It will help application developers to provide a unified "
+"package that can work on different platforms. By using snap package format, "
+"applications can have their own version of libraries and there is no need to"
+" worry about libraries installed in underlying operating system. Snap "
+"packages enable developers to bring much newer versions of apps to <span "
+"name=\"distro-name\"></span>. Newer versions of KDE, GNOME, browsers or "
+"other desktop environment apps will usually build easily on older LTS "
+"releases but the complexities of packaging and providing updates have "
+"prevented us from delivering them in the past."
+msgstr ""
+
+#: recommendations.html:41
+msgid "Snap user guide"
+msgstr "Guia de usuário Snap"
+
+#: recommendations.html:43
+msgid "Search Snap Apps"
+msgstr "Procurar aplicativos Snap"
+
+#: recommendations.html:44
+msgid ""
+"If there’s a barrier to Snap app adoption (aside from few apps being made "
+"available in the format) it’s knowing which packages are available in the "
+"Snap app store. Well, wonder not. Simply pop open a terminal and run the "
+"following command:"
+msgstr ""
+
+#: recommendations.html:48
+msgid ""
+"The find command lets you quickly search for and discover snaps available to"
+" install from the command line. It can be run with a query after it (e.g., "
+"‘snap find email‘, ‘snap find media’, ‘snap find messaging‘) or without."
+msgstr ""
+
+#: recommendations.html:49
+msgid "When run without a query you’ll instead see a list of featured snaps."
+msgstr ""
+
+#: recommendations.html:50
+msgid "See installed apps"
+msgstr "Ver aplicativos instalados"
+
+#: recommendations.html:51
+msgid ""
+"Installed some Snaps but can’t remember what? Don’t panic. Use the list "
+"command to see an up-to-date list of all Snap apps installed on your system:"
+msgstr ""
+"Instalou alguns Snaps mas não consegue lembrar quais? Não entre em pânico. "
+"Use o comando list para ver uma lista atualizada de todos os aplicativos "
+"Snap instalados em seu sistema:"
+
+#: recommendations.html:53
+msgid ""
+"This list also shows you their version number, revision number and the name "
+"of the developer who uploaded it (handy when there are multiple versions of "
+"the same app in the store, e.g., Telegram)."
+msgstr ""
+
+#: recommendations.html:54
+msgid "Install & Remove Snap Apps"
+msgstr "Instalar e Remover Aplicativos Snap"
+
+#: recommendations.html:55
+msgid ""
+"If you’re used to managing software using apt you’ll instantly find the "
+"analogous snap commands easy to remember. You install snap apps with the "
+"‘install’ command, and remove them using the ‘remove’ command."
+msgstr ""
+
+#: recommendations.html:58
+msgid "See details of an App"
+msgstr "Ver detalhes de um Aplicativo"
+
+#: recommendations.html:59
+msgid ""
+"You can use this to see detailed information about any snap application, "
+"whether it is installed or not. This info includes the application’s release"
+" channel, confinement status, size, number of revisions, and more. The snap "
+"info --verbose offers a greater overview."
+msgstr ""
+
+#: recommendations.html:63
+msgid "Update a Snap App"
+msgstr "Atualizar um Aplicativo Snap"
+
+#: recommendations.html:65
+msgid ""
+"Rather helpfully you probably won’t ever need to remember to install an "
+"update to a Snap app. This is because Snapd runs in the background and "
+"handles updates automatically (you can, ofc, revert a Snap update or install"
+" a specific revision)."
+msgstr ""
+
+#: recommendations.html:68
+msgid "Reference"
+msgstr ""
+
+#: recommendations.html:70
+msgid "Snap is already installed"
+msgstr "Snap já está instalado"
+
+#: recommendations.html:70
+msgid "Install Snap"
+msgstr "Instalar Snap"
+
+#: recommendations.html:76
+msgid "Budgie Screenshot Applet"
+msgstr "Applet Captura de tela Budgie"
+
+#: recommendations.html:80
+msgid ""
+"<strong>Budgie Screenshot Applet</strong> is an advanced screenshot utility "
+"for capturing and organizing screenshots."
+msgstr ""
+
+#: recommendations.html:82
+msgid ""
+"<span name=\"distro-name\"></span> provides you with an easy way to install "
+"<strong>Budgie Screenshot Applet</strong>. After installation you need to "
+"<strong>manually add the applet to budgie panel by launching <a "
+"onclick=\"cmd('raven');cmd('')\">Raven</a> </strong> - The Budgie "
+"Configuration Center."
+msgstr ""
+
+#: recommendations.html:84
+msgid "Screenshot Applet is installed"
+msgstr "Applet de Captura de Tela foi instalado"
+
+#: recommendations.html:84
+msgid "Install Screenshot Applet"
+msgstr "Instalar Applet de Captura de Tela"
+
+#: recommendations.html:90
+msgid "Flatpak"
+msgstr "Flatpak"
+
+#: recommendations.html:94
+msgid ""
+"<strong>Flatpak</strong> is a new generation application distribution "
+"framework for GNU/Linux platforms. It introduces a unified packaging format "
+"across all GNU/Linux distributions. That means a single package can work on "
+"any platform. Flatpak helps application developers to ship their application"
+" in a single format which can be installed in any GNU/Linux distribution "
+"without worrying about the underlying operating system and its built-in "
+"libraries."
+msgstr ""
+
+#: recommendations.html:96
+msgid "Learn more"
+msgstr "Aprenda mais"
+
+#: recommendations.html:98
+msgid ""
+"<span name=\"distro-name\"></span> recommends installing "
+"<strong>Flatpak</strong> as it will open a new world of possibilities for "
+"you. With Flatpak, you can enjoy the latest release of different software "
+"packages as soon as it is packaged by the upstream project and you don't "
+"have to wait for your distribution to package it for you."
+msgstr ""
+
+#: recommendations.html:100
+msgid ""
+"Being a user friendly GNU/Linux distribution, <span name='distro-"
+"name'></span> allows you to install Flatpak with a single click. After first"
+" time configuration, you can use GNOME Software to install Flatpak packages."
+msgstr ""
+
+#: recommendations.html:101
+msgid "Flatpak is installed. Please reboot for the service to start"
+msgstr ""
+"Flatpak está instalado. Por favor reinicie para o serviço ser iniciado"
+
+#: recommendations.html:102
+msgid "Install & Configure Flatpak"
+msgstr "Instale & Configure Flatpak"
+
+#: recommendations.html:106
+msgid "skippy-xd"
+msgstr "skippy-xd"
+
+#: recommendations.html:110
+msgid ""
+"<strong>skippy-xd</strong> adds a window expose type capability through a "
+"keyboard shortcut. For most desktops skippy-xd works well. Note: For some "
+"multi-monitor setups, graphics drivers and within virtual machines such as "
+"VirtualBox it may not work correctly."
+msgstr ""
+
+#: recommendations.html:113
+msgid ""
+"By default the installer will create a custom keyboard shortcut CTRL+grave "
+"('the key above the tab'). You can define or change the keyboard shortcut "
+"through the Settings - Keyboard - Custom Shortcuts option. Use the command "
+"<strong>skippy-xd-toggle</strong> when defining your own custom keyboard "
+"shortcut."
+msgstr ""
+
+#: recommendations.html:114
+msgid "skippy-xd is installed"
+msgstr "skippy-xd está instalado"
+
+#: recommendations.html:114
+msgid "Install & Configure skippy-xd"
+msgstr "Instale & Configure skippy-xd"
+
+#: recommendations.html:120
+msgid "Steam"
+msgstr "Steam"
+
+#: recommendations.html:124
+msgid ""
+"<strong>Steam</strong> is a digital distribution platform developed by Valve"
+" Corporation offering digital rights management (DRM), multiplayer gaming "
+"and social networking services. Steam provides the user with installation "
+"and automatic updating of games on multiple computers, and community "
+"features such as friends lists and groups, cloud saving, and in-game voice "
+"and chat functionality. The software provides a freely available application"
+" programming interface (API) called Steamworks, which developers can use to "
+"integrate many of Steam's functions into their products, including "
+"networking, matchmaking, in-game achievements, micro-transactions, and "
+"support for user-created content through Steam Workshop."
+msgstr ""
+
+#: recommendations.html:129
+msgid ""
+"Being a proprietary software, Steam is not included in primary repositories "
+"of <span name=\"distro-name\"></span>. However, to provide more choice to "
+"users, Steam is shipped as a part of the <em>Multiverse</em> repository. "
+"<span name=\"distro-name\"></span> provides you option to enable the "
+"<em>Multiverse</em> repository and to install Steam with a single mouse "
+"click."
+msgstr ""
+
+#: recommendations.html:131
+msgid "Steam is installed"
+msgstr "O Steam está instalado"
+
+#: recommendations.html:131
+msgid "Install & Configure Steam"
+msgstr "Instale & Configure o Steam"
