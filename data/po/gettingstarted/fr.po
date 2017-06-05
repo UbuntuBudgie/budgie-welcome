@@ -1,14 +1,15 @@
 # Translators:
 # Emmanuel Hermellin <hermellin@lirmm.fr>, 2017
-# Jean-Charles SPOR <jean-charles.spor@hotmail.fr>, 2017
 # David Mohammed <fossfreedom@ubuntu.com>, 2017
-# Scott Winkelmann <theatlantis394@gmail.com>, 2017
+# Jean-Charles SPOR <jean-charles.spor@hotmail.fr>, 2017
+# Scott <theatlantis394@gmail.com>, 2017
+# Jean-Elie ARGYRE <remy.argyre@gmail.com>, 2017
 msgid ""
 msgstr ""
 "Project-Id-Version: Budgie Welcome\n"
 "POT-Creation-Date: 2016-02-27 12:48+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Scott Winkelmann <theatlantis394@gmail.com>, 2017\n"
+"Last-Translator: Jean-Elie ARGYRE <remy.argyre@gmail.com>, 2017\n"
 "Language-Team: French (https://www.transifex.com/ubuntu-budgie/teams/72251/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -31,7 +32,7 @@ msgstr "Configuration requise"
 
 #: gettingstarted.html:26
 msgid "Installation Preparation"
-msgstr "Préparation de l'installation"
+msgstr "Préparation de l&#39;installation"
 
 #: gettingstarted.html29, 187, 197
 msgid "Dual Booting"
@@ -55,7 +56,7 @@ msgstr "Pilotes"
 
 #: gettingstarted.html44, 45
 msgid "Language & Input"
-msgstr "Langues et  périphériques d'entrée "
+msgstr "Langues et  périphériques d&#39;entrée "
 
 #: gettingstarted.html47, 48, 661
 msgid "Optional Tasks"
@@ -63,7 +64,7 @@ msgstr "Tâches optionnelles"
 
 #: gettingstarted.html:51
 msgid "Familiarity"
-msgstr ""
+msgstr "Familiarité"
 
 #: gettingstarted.html52, 53
 msgid "Performance tuning"
@@ -258,6 +259,9 @@ msgid ""
 "show a \"protection layer\". <b>Do not worry,</b> your data is not lost or "
 "corrupt!"
 msgstr ""
+"Démarrer en mode BIOS sur un système UEFI avec un disque formaté en GPT vous"
+" affichera également une \"couche protégée\". <b>Pas d'inquiétude,</b> vos "
+"données ne sont ni perdues ni corrompues."
 
 #: gettingstarted.html:166
 msgid ""
@@ -393,6 +397,9 @@ msgid ""
 "If you do, data loss or a partition table corruption could occur. Please "
 "double check your changes before proceeding."
 msgstr ""
+"Si vous le faites, il se peut que vous perdiez vos données ou que vous "
+"corrompiez votre table de partition. Veuillez revérifier vos changements "
+"avant de continuer."
 
 #: gettingstarted.html:244
 msgid ""
@@ -409,6 +416,11 @@ msgid ""
 "command prompt to check the file system for errors. Windows may schedule "
 "this automatically. This ensures consistency for the NTFS file system."
 msgstr ""
+"<b>La prochaine fois que vous démarrerai sur Windows, exécutez</b> "
+"<code>chkdsk /f</code> dans une console de commande afin de vérifier "
+"l’existence d'erreurs dans le système de fichier. Windows pourrait le faire "
+"automatiquement. Cela garantira la cohérence pour le système de fichier "
+"NTFS."
 
 #: gettingstarted.html:256
 msgid "Use GParted or the installer's \"Custom\" option."
@@ -424,6 +436,12 @@ msgid ""
 "partitions, primarily for power users who know how they'd like to layout "
 "their disks. This method makes changes to partitions prior to installation."
 msgstr ""
+"<b>GParted</b> n'est disponible que durant la session live. Il est situé "
+"sous le menu <b>System <i class=\"material-icons\">&#xE315;</i> "
+"Administration</b>. GParted vous offre une flexibilité complète quant à vos "
+"partitions, principalement pour les utilisateurs aguerris qui savent "
+"exactement comment ils veulent partitionner leurs disques. Cette méthode "
+"effectue des modifications sur les partitions avant l'installation."
 
 #: gettingstarted.html:266
 msgid "Open GParted"
@@ -458,7 +476,7 @@ msgstr ""
 
 #: gettingstarted.html:281
 msgid "Bootloader and kernels"
-msgstr ""
+msgstr "Chargeur d'amorçage et noyaux"
 
 #: gettingstarted.html:282
 msgid "Your personal files and folders"
@@ -478,12 +496,14 @@ msgstr ""
 
 #: gettingstarted.html:285
 msgid "Variable data <i>(such as system logs)</i>"
-msgstr ""
+msgstr "Données variables <i> (telles que les systèmes de journaux) </i>"
 
 #: gettingstarted.html:286
 msgid ""
 "Data for System Services <i>(typically used for server configurations)</i>"
 msgstr ""
+"Donnée pour les services système <i>(généralement utilisés pour les "
+"configurations serveur)</i>"
 
 #: gettingstarted.html:287
 msgid "Additional software unmanaged by the package manager"
@@ -595,7 +615,7 @@ msgstr ""
 
 #: gettingstarted.html:351
 msgid "Requires downloading a package."
-msgstr ""
+msgstr "Nécessite le téléchargement d'un paquet."
 
 #: gettingstarted.html:352
 msgid "Please connect to the Internet to download and use this utility."
@@ -651,7 +671,7 @@ msgstr "Vérifier les mises à jour"
 
 #: gettingstarted.html:408
 msgid "Restricted Extras"
-msgstr ""
+msgstr "Extras restreintes"
 
 #: gettingstarted.html:409
 msgid ""
@@ -700,7 +720,7 @@ msgstr "Supprimer"
 
 #: gettingstarted.html435, 661, 764
 msgid "Next:"
-msgstr ""
+msgstr "Suivant:"
 
 #: gettingstarted.html:446
 msgid ""
@@ -846,7 +866,7 @@ msgstr ""
 
 #: gettingstarted.html:519
 msgid "Severe graphical glitches."
-msgstr ""
+msgstr "Défauts graphiques graves."
 
 #: gettingstarted.html:520
 msgid "Problems with applications/games requiring hardware acceleration."
@@ -864,7 +884,7 @@ msgstr ""
 
 #: gettingstarted.html:529
 msgid "What about the latest NVIDIA drivers?"
-msgstr ""
+msgstr "Qu'en est-il des derniers pilotes NVIDIA?"
 
 #: gettingstarted.html:530
 msgid ""
@@ -1101,6 +1121,8 @@ msgid ""
 "<b>Users</b> can be found later in <b><i>Settings <i class=\"material-"
 "icons\">&#xE315;</i> Users</i></b>."
 msgstr ""
+"<b>Les utilisateurs</b> peuvent être trouvés plus tard dans <b><i>Paramètres"
+" <i class=\"material-icons\">&#xE315;</i>Utilisateurs</i></b>."
 
 #: gettingstarted.html:772
 msgid ""
@@ -1326,7 +1348,7 @@ msgstr "Annuler le dernier changement effectué"
 
 #: gettingstarted.html1072, 1187, 1198
 msgid "Shift"
-msgstr ""
+msgstr "Maj"
 
 #: gettingstarted.html:1076
 msgid "Redo a change that you just undid"
