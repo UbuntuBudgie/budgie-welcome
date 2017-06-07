@@ -148,7 +148,10 @@
       }
     },
     "vertex-theme" : {
-      "packages" : ["vertex-theme"]
+      "packages" : ["vertex-theme", "vertex-icons"],
+      "repos" : {
+        "xenial" : ["ppa:noobslab/icons"]
+        }
       },
     "ceti-2-theme" : {
       "packages" : ["ceti-2-theme"]
