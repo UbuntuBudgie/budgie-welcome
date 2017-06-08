@@ -433,7 +433,7 @@ class AppView(WebKit2.WebView):
 
                 if code == "vertex":
                     self._set_panel_key('enable-shadow', False)
-                    self._set_panel_key('size', 43)
+                    self._set_panel_key('size', 51)
 
                 if code == "ceti-2":
                     self._set_panel_key('enable-shadow', False)
