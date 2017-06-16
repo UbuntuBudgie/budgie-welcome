@@ -177,7 +177,7 @@ class AppView(WebKit2.WebView):
                 app.update_page('.unofficial-only', 'show')
 
         ### All pages with install/removal ###
-        if current_page in ['gettingstarted', 'default', 'recommendations']:
+        if current_page in ['gettingstarted', 'default', 'recommendations', 'budgie-applets']:
             app.update_page('[id$=install]', 'hide')
             app.update_page('[id$=remove]', 'hide')
 
@@ -438,7 +438,7 @@ class AppView(WebKit2.WebView):
                 if code == "ceti-2":
                     self._set_panel_key('enable-shadow', False)
                     self._set_panel_key('size', 40)
-                    
+
                 if code == 'material-flat-plat':
                     self._set_panel_key('size', 47)
 
