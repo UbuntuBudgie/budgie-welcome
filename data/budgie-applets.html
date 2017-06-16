@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+      <link href="css/material-icons.css" rel="stylesheet" media="screen">
+      <link href="css/animate.css" rel="stylesheet" media="screen">
+      <link href="css/welcome.css" rel="stylesheet" media="screen">
+   </head>
+   <body class="backdrop-simple fade fade-1s">
+      <div id="wrapper">
+         <div id="title-inject">&zwnj;Budgie Desktop Applets&zwnj;</div>
+         <div id="content" class="container entire-page-fade">
+            <div class="row text-md-center">
+               <div class="col-md-6 haste show">
+                  <br>
+                  <h2>&zwnj;Haste Applet&zwnj;</h2>
+                  <div class="card card-block">
+                     <div class="card-image text-md-center">
+                        <img src="img/screenshots/screenshot-applet.jpg" style="width: auto; max-height: 128px" />
+                     </div>
+                     <p class="card-text">&zwnj;Post any text – be it code or prose – to various services directly from your desktop.&zwnj;</p>
+                  </div>
+                  <div class="text-md-right">
+                     <span id="haste-remove" class="alert alert-success">
+                     <i class="material-icons">&#xE876;</i>&zwnj;Applet is installed&zwnj;
+                     </span>
+                     <a id="haste-install" class="btn btn-success hvr-shadow" onclick="cmd('install?haste');cmd('')"> &nbsp;
+                     <span class="material-icons">&#xE2C0;</span>&zwnj;Install Applet&zwnj;&nbsp;
+                     </a>
+                     <span id="haste-status" class="hidden">
+                     <img src="img/welcome/processing.gif" width="24px" height="24px" /> &zwnj;Applying Changes...&zwnj;
+                     </span>
+                  </div>
+                  <hr/>
+               </div>
+               <div class="col-md-6 screenshot show">
+                  <br>
+                  <h2>&zwnj;Screenshot Applet&zwnj;</h2>
+                  <div class="card card-block">
+                     <div class="card-image text-md-center">
+                        <img src="img/screenshots/screenshot-applet.jpg" style="width: auto; max-height: 128px" />
+                     </div>
+                     <p class="card-text">&zwnj;An advanced screenshot utility for capturing and organizing screenshots.&zwnj;</p>
+                  </div>
+                  <div class="text-md-right">
+                     <span id="screenshot-remove" class="alert alert-success">
+                     <i class="material-icons">&#xE876;</i>&zwnj;Applet is installed&zwnj;
+                     </span>
+                     <a id="screenshot-install" class="btn btn-success hvr-shadow" onclick="cmd('install?screenshot');cmd('')"> &nbsp;
+                     <span class="material-icons">&#xE2C0;</span>&zwnj;Install Applet&zwnj;&nbsp;
+                     </a>
+                     <span id="screenshot-status" class="hidden">
+                     <img src="img/welcome/processing.gif" width="24px" height="24px" /> &zwnj;Applying Changes...&zwnj;
+                     </span>
+                  </div>
+                  <hr/>
+               </div>
+               <div class="col-md-6 calendar show">
+                  <br>
+                  <h2>&zwnj;Calendar Applet&zwnj;</h2>
+                  <div class="card card-block">
+                     <div class="card-image text-md-center">
+                        <img src="img/screenshots/screenshot-applet.jpg" style="width: auto; max-height: 128px" />
+                     </div>
+                     <p class="card-text">&zwnj;Show date and time and when clicked show a calendar in a popover.&zwnj;</p>
+                  </div>
+                  <div class="text-md-right">
+                     <span id="calendar-remove" class="alert alert-success">
+                     <i class="material-icons">&#xE876;</i>&zwnj;Applet is installed&zwnj;
+                     </span>
+                     <a id="calendar-install" class="btn btn-success hvr-shadow" onclick="cmd('install?calendar');cmd('')"> &nbsp;
+                     <span class="material-icons">&#xE2C0;</span>&zwnj;Install Applet&zwnj;&nbsp;
+                     </a>
+                     <span id="calendar-status" class="hidden">
+                     <img src="img/welcome/processing.gif" width="24px" height="24px" /> &zwnj;Applying Changes...&zwnj;
+                     </span>
+                  </div>
+                  <hr/>
+               </div>
+               <div class="col-md-6 brightness show">
+                  <br>
+                  <h2>&zwnj;Brightness Control Applet&zwnj;</h2>
+                  <div class="card card-block">
+                     <div class="card-image text-md-center">
+                        <img src="img/screenshots/screenshot-applet.jpg" style="width: auto; max-height: 128px" />
+                     </div>
+                     <p class="card-text">&zwnj;Allows you to control the screen brightness.&zwnj;</p>
+                  </div>
+                  <div class="text-md-right">
+                     <span id="brightness-remove" class="alert alert-success">
+                     <i class="material-icons">&#xE876;</i>&zwnj;Applet is installed&zwnj;
+                     </span>
+                     <a id="brightness-install" class="btn btn-success hvr-shadow" onclick="cmd('install?brightness');cmd('')"> &nbsp;
+                     <span class="material-icons">&#xE2C0;</span>&zwnj;Install Applet&zwnj;&nbsp;
+                     </a>
+                     <span id="brightness-status" class="hidden">
+                     <img src="img/welcome/processing.gif" width="24px" height="24px" /> &zwnj;Applying Changes...&zwnj;
+                     </span>
+                  </div>
+                  <hr/>
+               </div>
+               <div class="col-md-6 brightness show">
+                  <br>
+                  <h2>&zwnj;Pixel-Saver Applet&zwnj;</h2>
+                  <div class="card card-block">
+                     <div class="card-image text-md-center">
+                        <img src="img/screenshots/screenshot-applet.jpg" style="width: auto; max-height: 128px" />
+                     </div>
+                     <p class="card-text">&zwnj;Hides the title bar from maximized windows and creates a new one inside the panel.&zwnj;</p>
+                  </div>
+                  <div class="text-md-right">
+                     <span id="pixel-remove" class="alert alert-success">
+                     <i class="material-icons">&#xE876;</i>&zwnj;Applet is installed&zwnj;
+                     </span>
+                     <a id="pixel-install" class="btn btn-success hvr-shadow" onclick="cmd('install?pixel');cmd('')"> &nbsp;
+                     <span class="material-icons">&#xE2C0;</span>&zwnj;Install Applet&zwnj;&nbsp;
+                     </a>
+                     <span id="pixel-status" class="hidden">
+                     <img src="img/welcome/processing.gif" width="24px" height="24px" /> &zwnj;Applying Changes...&zwnj;
+                     </span>
+                  </div>
+                  <hr/>
+               </div>
+            </div>
+         </div>
+      </div>
+      <script src="js/jquery-2.1.4.js"></script>
+      <script src="js/tether.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/janimate.js"></script>
+      <script src="js/confetti.js"></script>   <!-- Confetti only appears on special events -->
+      <script src="js/welcome.js"></script>
+      <script src="js/ekko-lightbox.min.js"></script>
+      <script type="text/javascript">
+         $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+          event.preventDefault();
+          $(this).ekkoLightbox();
+          });
+      </script>
+   </body>
+</html>

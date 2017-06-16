@@ -102,9 +102,15 @@
             </a>
           </div>
           <div class="normal-session-only push-md-2 col-md-4 btn-showcase">
-            <a class="btn btn-block btn-primary btn-lg fade fade-5s hvr-shadow" onclick="cmd('software-center');cmd('')">
-              &zwnj;Software Center&zwnj;
-            </a>
+			  <div class="dropup">
+				  <a class="btn btn-primary btn-lg dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">&zwnj;Install Software&zwnj;</a>
+				  <div class="dropdown-menu">
+					<a class="dropdown-item" href="#" onclick="smoothPageFade('budgie-applets.html');cmd('')">&zwnj;Budgie Applets&zwnj;</a>
+					<a class="dropdown-item" href="#" onclick="cmd('software-center');cmd('')">&zwnj;Software Center&zwnj;</a>
+					<a class="dropdown-item" href="#" onclick="cmd('link?https://uappexplorer.com/snaps')">&zwnj;Snap Apps&zwnj;</a>
+					<a class="dropdown-item" href="#" onclick="cmd('link?http://flatpak.org/apps.html')">&zwnj;Flatpak Apps&zwnj;</a>
+				  </div>
+			  </div>
           </div>
           <div class="normal-session-only push-md-2 col-md-4 btn-showcase">
             <a class="btn btn-block btn-primary btn-lg fade fade-5s hvr-shadow" onclick="smoothPageFade('default.html');cmd('')">
