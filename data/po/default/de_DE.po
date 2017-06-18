@@ -17,46 +17,15 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Report-Msgid-Bugs-To : you@example.com\n"
 
-#: default.html:13
+#: default.html13, 20
 msgid "Default Settings"
 msgstr "Standardeinstellungen"
 
-#: default.html:17
-msgid "Restore panels"
-msgstr "Leisten wiederherstellen"
-
-#: default.html:18
-msgid ""
-"Lost your panels while playing with <span name=\"distro-name\"></span>? "
-"Unhappy with your changes to the panel layout? Don't worry. We can help you "
-"to restore your panels with a single click!"
-msgstr ""
-"Sind Ihre Leisten verschwunden als Sie mit <span name=\"distro-"
-"name\"></span> herumgespielt haben? Oder sind Sie unzufrieden mit den "
-"Änderungen Ihres Leistenlayouts? Keine Sorge. Wir können Ihnen mit nur einem"
-" Klick helfen Ihre Leisten wieder herzustellen."
-
-#: default.html:21
-msgid ""
-"This will undo all changes that you have made on any panel and will reset "
-"back to the initial default panel layout configuration."
-msgstr ""
-"Dies wird alle Änderungen, welche Sie an den Leisten vorgenommen haben "
-"rückgängig machen und die Standardkonfiguration wiederherstellen."
-
-#: default.html24, 62, 82, 102, 122, 142, 162
-msgid "Applying Changes..."
-msgstr "Änderungen werden übernommen..."
-
-#: default.html:25
-msgid "Reset Budgie Panel"
-msgstr "Budgie Leiste zurücksetzen"
-
-#: default.html:32
+#: default.html17, 28
 msgid "Switch Appearance"
 msgstr "Aussehen umschalten"
 
-#: default.html:33
+#: default.html:29
 msgid ""
 "<span name=\"distro-name\"></span> uses <strong>Arc</strong> as it's default"
 " theme package. It uses Arc theme for GTK windows, panels, login window and "
@@ -67,7 +36,7 @@ msgstr ""
 "Sperrbildschirm wird das Arc Thema und <strong>Pocillo</strong> für die "
 "Symbole verwendet."
 
-#: default.html:36
+#: default.html:32
 msgid ""
 "Another emerging design trend is <strong>Material Design</strong> which is "
 "basically a collection of design guidelines introduced by Google to bring a "
@@ -80,7 +49,7 @@ msgstr ""
 "verschiedenen Plattformen sorgt. Es existieren verschiedene Themen-Pakete, "
 "welche von Google&apos;s Material Design inspiriert wurden."
 
-#: default.html:39
+#: default.html:35
 msgid ""
 "As <span name=\"distro-name\"></span> values the freedom of users, we "
 "provide easy options to switch between our default <em>Arc style</em> and "
@@ -91,34 +60,65 @@ msgstr ""
 "voreingestellten <em>Arc style</em> und dem <em>Material style</em> zu "
 "wechseln."
 
-#: default.html:47
+#: default.html:43
 msgid "Arc Design"
 msgstr "Arc Design"
 
-#: default.html53, 73, 93, 113, 133, 153
+#: default.html49, 69, 89, 109, 129, 149
 msgid "Install theme"
 msgstr "Theme installieren"
 
-#: default.html57, 77, 97, 117, 137, 157
+#: default.html53, 73, 93, 113, 133, 153
 msgid "Apply theme"
 msgstr "Theme anwenden"
 
-#: default.html:67
+#: default.html58, 78, 98, 118, 138, 158, 175
+msgid "Applying Changes..."
+msgstr "Änderungen werden übernommen..."
+
+#: default.html:63
 msgid "Material Design (Adapta)"
 msgstr "Material Design (Adapta)"
 
-#: default.html:87
+#: default.html:83
 msgid "Material Design (Vimix)"
 msgstr "Material Design (Vimix)"
 
-#: default.html:107
+#: default.html:103
 msgid "Vertex Design"
 msgstr "Vertex Design"
 
-#: default.html:127
+#: default.html:123
 msgid "Ceti-2 Design"
 msgstr "Ceti-2 Design"
 
-#: default.html:147
+#: default.html:143
 msgid "Material Design (Flat-Plat)"
 msgstr ""
+
+#: default.html:168
+msgid "Restore panels"
+msgstr "Leisten wiederherstellen"
+
+#: default.html:169
+msgid ""
+"Lost your panels while playing with <span name=\"distro-name\"></span>? "
+"Unhappy with your changes to the panel layout? Don't worry. We can help you "
+"to restore your panels with a single click!"
+msgstr ""
+"Sind Ihre Leisten verschwunden als Sie mit <span name=\"distro-"
+"name\"></span> herumgespielt haben? Oder sind Sie unzufrieden mit den "
+"Änderungen Ihres Leistenlayouts? Keine Sorge. Wir können Ihnen mit nur einem"
+" Klick helfen Ihre Leisten wieder herzustellen."
+
+#: default.html:172
+msgid ""
+"This will undo all changes that you have made on any panel and will reset "
+"back to the initial default panel layout configuration."
+msgstr ""
+"Dies wird alle Änderungen, welche Sie an den Leisten vorgenommen haben "
+"rückgängig machen und die Standardkonfiguration wiederherstellen."
+
+#: default.html:176
+msgid "Reset Budgie Panel"
+msgstr "Budgie Leiste zurücksetzen"

@@ -141,6 +141,8 @@ msgid ""
 "The operating system will run much more efficiently if your computer meets "
 "or surpasses the recommended requirements."
 msgstr ""
+"O sistema operacional funcionará muito mais eficientemente se seu computador"
+" atende ou ultrapassa os requisitos recomendados."
 
 #: gettingstarted.html107, 1292
 msgid "What's inside my computer?"
@@ -190,6 +192,7 @@ msgstr ""
 #: gettingstarted.html:135
 msgid "Plug in your device to the mains if it is running on battery power."
 msgstr ""
+"Conecte o dispositivo à rede elétrica se estiver funcionando com bateria."
 
 #: gettingstarted.html:140
 msgid ""
@@ -199,10 +202,16 @@ msgid ""
 "committing to installing it on your machine. Once you are ready, double "
 "click the installation icon from the desktop."
 msgstr ""
+"A sessão live que você está atualmente no momento é uma boa oportunidade "
+"para testar o <span name=\"distro-name\"></span> sem modificar seu "
+"computador, permitindo que você teste ser todos os seus periféricos estão "
+"funcionando como pretendido antes de comprometer-se a instalá-lo em sua "
+"máquina. Quando estiver pronto, clique duas vezes no ícone de instalação na "
+"área de trabalho."
 
 #: gettingstarted.html:147
 msgid "Modern UEFI-based computers"
-msgstr ""
+msgstr "Computadores modernos baseados em UEFI"
 
 #: gettingstarted.html:148
 msgid ""
@@ -211,10 +220,15 @@ msgid ""
 "Bootloader</b> option) prior to installation, particularly if an operating "
 "system was pre-installed."
 msgstr ""
+"Se você possui um PC moderno que usa a Interface Unificada de Firmware "
+"Extensível (UEFI), talvez seja necessário desabilitar <b>Secure Boot</b> (ou"
+" habilite a opção <b>Unlock Bootloader</b> ) antes da instalação, "
+"especialmente se um sistema operacional estiver pré-instalado."
 
 #: gettingstarted.html:152
 msgid "If you are using a legacy BIOS machine, you do not need to do this."
 msgstr ""
+"Se você estiver usando uma máquina BIOS legacy, não precisa fazer isso."
 
 #: gettingstarted.html:155
 msgid ""
@@ -223,6 +237,11 @@ msgid ""
 "operating system installed in BIOS mode after installing a UEFI-enabled "
 "operating system or vice versa."
 msgstr ""
+"Especialmente quando a dual boot, é importante que você inicialize seu "
+"sistema no modo correto e use a <b> imagem de 64-bit</b>, pois não é "
+"possível inicializar um sistema operacional instalado no modo BIOS depois de"
+" instalar um funcionamento habilitado para sistema operacional UEFI ou vice-"
+"versa."
 
 #: gettingstarted.html:161
 msgid ""
@@ -230,6 +249,9 @@ msgid ""
 "show a \"protection layer\". <b>Do not worry,</b> your data is not lost or "
 "corrupt!"
 msgstr ""
+"A inicialização no modo BIOS em um sistema UEFI com um disco com formato GPT"
+" também mostrará uma \"camada de proteção\". <b>Não se preocupe,</b> seus "
+"dados não estão perdidos ou corrompidos!"
 
 #: gettingstarted.html:166
 msgid ""
@@ -272,6 +294,10 @@ msgid ""
 "reserved for the swap file. A separate swap partition is no longer required "
 "to be created."
 msgstr ""
+"Por padrão, um arquivo swap é criado com base no tamanho da RAM. Por "
+"exemplo, se você tiver 2 GiB de RAM, então 2 GiB de espaço no disco rígido "
+"serão reservados para o arquivo swap. Uma partição swap separada não é mais "
+"necessária para ser criada."
 
 #: gettingstarted.html185, 363, 659, 1282
 msgid "Previous:"
@@ -284,10 +310,14 @@ msgid ""
 "in sections of your hard disk being split between multiple operating "
 "systems."
 msgstr ""
+"Você deseja instalar o <span name=\"distro-name\"></span> ao lado do seu "
+"sistema operacional atual, suas partições precisam ser encolhidas. Isso "
+"resulta em seções de seu disco rígido sendo divididas entre vários sistemas "
+"operacionais."
 
 #: gettingstarted.html:204
 msgid "I'm dual booting with"
-msgstr ""
+msgstr "Estou em dual boot com"
 
 #: gettingstarted.html:207
 msgid "To minimize the risk of data loss or failure, ensure that:"
@@ -301,6 +331,8 @@ msgstr "Há espaço livre suficiente. Recomenda-se um mínimo de 10 GB."
 #: gettingstarted.html:210
 msgid "<b><u>Back up</u></b> important data to another drive."
 msgstr ""
+"<b><u>Faça Backup</u></b> de qualquer dado importante para outra unidade de "
+"armazenamento."
 
 #: gettingstarted.html:211
 msgid "Defragment the hard drive."
@@ -309,10 +341,12 @@ msgstr "Desfragmentar o disco rígido."
 #: gettingstarted.html:212
 msgid "Ensure Windows has been cleanly shut down (not hibernated)."
 msgstr ""
+"Certifique-se de que o Windows foi desligado de forma limpa (sem "
+"hibernação)."
 
 #: gettingstarted.html:216
 msgid "Which approach would you prefer?"
-msgstr ""
+msgstr "Qual abordagem você prefere?"
 
 #: gettingstarted.html:218
 msgid "Simple"
@@ -328,21 +362,23 @@ msgstr "Seguro"
 
 #: gettingstarted.html:225
 msgid "The simplest method is to use the installer."
-msgstr ""
+msgstr "O método mais simples é usar o instalador."
 
 #: gettingstarted.html:227
 msgid ""
 "The installer scans your disks for existing operating systems and provides a"
 " choice on what you'd like to do."
 msgstr ""
+"O instalador verifica seus discos por sistemas operacionais existentes e "
+"fornece uma escolha sobre o que você gostaria de fazer."
 
 #: gettingstarted.html:230
 msgid "You will see an option similar to this:"
-msgstr ""
+msgstr "Você verá uma opção semelhante a esta:"
 
 #: gettingstarted.html:234
 msgid "Followed by:"
-msgstr ""
+msgstr "Seguido por:"
 
 #: gettingstarted.html:240
 msgid "Do not interrupt or power off the computer during a resize operation."
@@ -355,12 +391,16 @@ msgid ""
 "If you do, data loss or a partition table corruption could occur. Please "
 "double check your changes before proceeding."
 msgstr ""
+"Se você fizer isso, pode ocorrer perda de dados ou corrupção na tabela de "
+"partição. Verifique as alterações antes de prosseguir."
 
 #: gettingstarted.html:244
 msgid ""
 "The installer may show a <span class=\"fa fa-spinner\"></span> spinner "
 "cursor for a long period of time, depending on the size of your disk."
 msgstr ""
+"O instalador pode mostrar um <span class=\"fa fa-spinner\"></span> cursor "
+"giratório por um longo período de tempo, dependendo do tamanho do seu disco."
 
 #: gettingstarted.html:248
 msgid ""
@@ -368,10 +408,14 @@ msgid ""
 "command prompt to check the file system for errors. Windows may schedule "
 "this automatically. This ensures consistency for the NTFS file system."
 msgstr ""
+"<b>Quando você inicializa o Windows, execute</b> <code>chkdsk /f</code> a "
+"partir do prompt de comando para verificar ser o sistema de arquivos a "
+"erros. O Windows pode programar isso automaticamente. Isso garante a "
+"consistência do sistema de arquivos NTFS."
 
 #: gettingstarted.html:256
 msgid "Use GParted or the installer's \"Custom\" option."
-msgstr ""
+msgstr "Use GParted ou a opção \"Personalizada\" do instalador."
 
 #: gettingstarted.html:259
 msgid ""
@@ -381,6 +425,11 @@ msgid ""
 "partitions, primarily for power users who know how they'd like to layout "
 "their disks. This method makes changes to partitions prior to installation."
 msgstr ""
+"<b>GParted</b> está disponível apenas durante a sessão live. Está localizado"
+" sob o <b> Sistema<i class=\"material-icons\">&#xE315;</i> Administração</b>"
+" menu. O GParted fornece flexibilidade completa sobre suas partições, "
+"principalmente para usuários avançados que sabem como gostariam de dispor "
+"seus discos. Esse método faz alterações nas partições antes da instalação."
 
 #: gettingstarted.html:266
 msgid "Open GParted"
@@ -392,10 +441,13 @@ msgid ""
 "unallocated, whereby the installer will detect this unused space to install "
 "<span name=\"distro-name\"></span> to."
 msgstr ""
+"Depois de concluir as operações no seu disco, você pode deixar o espaço "
+"restante não alocado, pelo que o instalador detectará esse espaço não "
+"utilizado para instalar o <span name=\"distro-name\"></span>."
 
 #: gettingstarted.html:272
 msgid "Using the Installer's \"Custom\" option."
-msgstr ""
+msgstr "Usando a opção \"Personalizada\" do instalador."
 
 #: gettingstarted.html:273
 msgid ""
@@ -404,18 +456,23 @@ msgid ""
 " choose mount points. Dividing your disks can make it somewhat easier to re-"
 "install the operating system later if desired."
 msgstr ""
+"Em vez disso ou em adição ao GParted, a opção <b>Personalizada</b> durante o"
+" assistente de instalação também pode configurar e redimensionar suas "
+"partições, bem como escolher pontos de montagem. Dividir seus discos pode "
+"tornar mais fácil a reinstalação do sistema operacional mais tarde, se "
+"desejado."
 
 #: gettingstarted.html:278
 msgid "You can specify these mount points:"
-msgstr ""
+msgstr "Você pode especificar esses pontos de montagem:"
 
 #: gettingstarted.html:280
 msgid "The base for <span name=\"distro-name\"></span>"
-msgstr ""
+msgstr "A base para o <span name=\"distro-name\"></span>"
 
 #: gettingstarted.html:281
 msgid "Bootloader and kernels"
-msgstr ""
+msgstr "Bootloader e kernels"
 
 #: gettingstarted.html:282
 msgid "Your personal files and folders"
@@ -430,23 +487,27 @@ msgid ""
 "Contains most of the applications <i> (binaries, documentation, libraries, "
 "etc)</i>"
 msgstr ""
+"Contém a maioria dos programas <i> (binários, documentação, bibliotecas, "
+"etc)</i>"
 
 #: gettingstarted.html:285
 msgid "Variable data <i>(such as system logs)</i>"
-msgstr ""
+msgstr "Dados variáveis <i>(como logs do sistema)</i>"
 
 #: gettingstarted.html:286
 msgid ""
 "Data for System Services <i>(typically used for server configurations)</i>"
 msgstr ""
+"Dados para Serviços de Sistema <i>(normalmente usado para configurações de "
+"servidor)</i>"
 
 #: gettingstarted.html:287
 msgid "Additional software unmanaged by the package manager"
-msgstr ""
+msgstr "Software adicional não gerenciado pelo gerenciador de pacotes"
 
 #: gettingstarted.html:288
 msgid "such as"
-msgstr ""
+msgstr "tal como"
 
 #: gettingstarted.html:290
 msgid ""
@@ -457,20 +518,28 @@ msgid ""
 "<code>/</code> on an SSD, but your personal files <code>/home</code> on a "
 "mechanical hard drive."
 msgstr ""
+"Não é necessário criar partições separadas para todos os pontos de montagem "
+"acima. Os diretórios comumente compartilhados sendo <code>/</code>, "
+"<code>/home</code> e <code>/boot</code>. Esses pontos de montagem também "
+"podem ser definidos em diferentes discos físicos, por exemplo, se você "
+"quiser o sistema operacional <code>/</code> em um SSD, mas seus arquivos "
+"pessoais <code>/home</code> em um disco rígido mecânico."
 
 #: gettingstarted.html:298
 msgid "Shrink your system disk within Windows."
-msgstr ""
+msgstr "Reduzir o seu disco do sistema no Windows."
 
 #: gettingstarted.html:300
 msgid "Applies to Windows Vista and later."
-msgstr ""
+msgstr "Aplica-se ao Windows Vista e posterior."
 
 #: gettingstarted.html:301
 msgid ""
 "If you are using Windows XP or earlier, you will need to use the "
 "<b>Simple</b> or <b>Advanced</b> method to shrink your disk."
 msgstr ""
+"Se você estiver usando o Windows XP ou anterior, você precisará usar o "
+"método <b>Simples</b> ou <b>Avançado</b> para diminuir o seu disco."
 
 #: gettingstarted.html:305
 msgid ""
@@ -479,30 +548,38 @@ msgid ""
 "boots on your computer while experiencing <span name=\"distro-"
 "name\"></span>."
 msgstr ""
+"As versões mais recentes do Windows fornecem uma ferramenta para reduzir o "
+"volume NTFS do Windows. Esta é uma aposta mais segura se é essencial que o "
+"Windows ainda inicialize no seu computador enquanto experimenta o <span name"
+"=\"distro-name\"></span>."
 
 #: gettingstarted.html:309
 msgid "Open <b>Disk Management</b> from the start menu."
-msgstr ""
+msgstr "Abrar o <b>Gerenciamento de Disco</b> no menu de início."
 
 #: gettingstarted.html:314
 msgid ""
 "Right click your desired drive and choose <b>Shrink Partition</b> from the "
 "context menu."
 msgstr ""
+"Clique com o botão direito do mouse na unidade desejada e escolha "
+"<b>Encolher Partição</b> no menu de contexto."
 
 #: gettingstarted.html:319
 msgid "Enter the amount to shrink your system partition by."
-msgstr ""
+msgstr "Digite o valor para diminuir a partição do sistema."
 
 #: gettingstarted.html:325
 msgid ""
 "Remember, <span name=\"distro-name\"></span> needs at minimum 16 GB of disk "
 "space."
 msgstr ""
+"Lembre-se, o <span name=\"distro-name\"></span> precisa de no mínimo 16 GB "
+"de espaço em disco."
 
 #: gettingstarted.html:330
 msgid "Further Reading"
-msgstr ""
+msgstr "Leitura adicional"
 
 #: gettingstarted.html:331
 msgid ""
@@ -511,6 +588,10 @@ msgid ""
 "onclick=\"cmd('link?https://help.ubuntu.com/community/HowtoResizeWindowsPartitions')\">"
 " help article</a> online."
 msgstr ""
+"Para obter mais informações sobre as melhores práticas para modificar "
+"partições contendo o Windows, consulte o seguinte <a "
+"onclick=\"cmd('link?https://help.ubuntu.com/community/HowtoResizeWindowsPartitions')\">"
+" artigo de ajuda</a> online."
 
 #: gettingstarted.html:338
 msgid "Repairing Boot Problems"
@@ -524,12 +605,19 @@ msgid ""
 "will overwrite them, with the potential to lose access to <span name"
 "=\"distro-name\"></span> temporally."
 msgstr ""
+"As distribuições Linux usam um carregador de inicialização conhecido como "
+"<code>grub</code>, que procura e inicializa o sistema operacional. No "
+"entanto, alguns sistemas operacionais (como o Windows) não se integram aos "
+"carregadores de inicialização existentes e os substituirá, com o potencial "
+"de perder o acesso temporalmente ao <span name=\"distro-name\"></span>."
 
 #: gettingstarted.html:346
 msgid ""
 "Fortunately, you can use the <b>Boot Repair</b> tool to repair common "
 "problems caused by other operating systems."
 msgstr ""
+"Felizmente, você pode usar o <b>Boot Repair</b>, ferramenta para reparar "
+"problemas comuns causados por outros sistemas operacionais."
 
 #: gettingstarted.html:351
 msgid "Requires downloading a package."
@@ -537,31 +625,32 @@ msgstr "Requer o download de um pacote."
 
 #: gettingstarted.html:352
 msgid "Please connect to the Internet to download and use this utility."
-msgstr ""
+msgstr "Conecte-se à Internet para baixar e usar este utilitário."
 
 #: gettingstarted.html:353
 msgid "Sorry, Welcome was unable to establish a connection."
-msgstr ""
+msgstr "Desculpe, Boas-Vindas foi incapaz de estabelecer uma conexão."
 
 #: gettingstarted.html:357
 msgid "Download Boot Repair"
-msgstr ""
+msgstr "Baixar Boot Repair"
 
 #: gettingstarted.html:358
 msgid "Open Boot-Repair"
-msgstr ""
+msgstr "Abrir Boot-Repair"
 
 #: gettingstarted.html:363
 msgid "Install Preparations"
-msgstr ""
+msgstr "Preparações de Instalação"
 
 #: gettingstarted.html:376
 msgid "An Internet connection is required to download and install updates."
 msgstr ""
+"É necessária uma conexão com a Internet para baixar e instalar atualizações."
 
 #: gettingstarted.html:384
 msgid "Software Updater"
-msgstr ""
+msgstr "Atualizador de software"
 
 #: gettingstarted.html:385
 msgid ""

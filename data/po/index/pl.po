@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: pl\n"
-"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && (n%100<12 || n%100>=14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && n%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);\n"
+"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && (n%100<12 || n%100>14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && n%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);\n"
 "Report-Msgid-Bugs-To : you@example.com\n"
 
 #: index.html:12
@@ -64,37 +64,53 @@ msgid "Install Now"
 msgstr "Zainstaluj teraz"
 
 #: index.html:106
+msgid "Install Software"
+msgstr "Zainstaluj oprogramowanie"
+
+#: index.html:108
+msgid "Budgie Applets"
+msgstr "Aplety Budgie"
+
+#: index.html:109
 msgid "Software Center"
 msgstr "Centrum Oprogramowania"
 
+#: index.html:110
+msgid "Snap Apps"
+msgstr "Aplikacje Snap"
+
 #: index.html:111
+msgid "Flatpak Apps"
+msgstr "Aplikacje Flatpak"
+
+#: index.html:117
 msgid "Default Settings"
 msgstr "Ustawienia domyślne"
 
-#: index.html:126
+#: index.html:132
 msgid "G+ Community"
 msgstr "Społeczność na G+"
 
-#: index.html:129
+#: index.html:135
 msgid "G+ Page"
 msgstr "Strona na G+"
 
-#: index.html:138
+#: index.html:144
 msgid "Facebook Group"
 msgstr "Grupa na Facebook'u"
 
-#: index.html:141
+#: index.html:147
 msgid "Facebook Page"
 msgstr "Strona na Facebook'u"
 
-#: index.html:149
+#: index.html:155
 msgid "Reddit"
 msgstr "Reddit"
 
-#: index.html:157
+#: index.html:163
 msgid "Gitter Chat Room"
 msgstr "Czat Gitter"
 
-#: index.html:189
+#: index.html:195
 msgid "Show this dialog on startup?"
 msgstr "wyświetlać to okno przy starcie systemu?"
