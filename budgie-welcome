@@ -290,6 +290,7 @@ class AppView(WebKit2.WebView):
             code = uri[7:]
 
             self.managePackage(PMEntry.REMOVE, app.current_page[:-5], code)
+
         elif uri.startswith('script?'):
             code = uri[7:]
             script = pdata.getScript(app.current_page[:-5], code)
@@ -682,7 +683,6 @@ class PackageManager(Thread):
         return installed
 
     def hasInstalled(self, current_page, code):
-
         if not current_page:
             return self.__isPackageInstalled(code)
 
@@ -709,7 +709,6 @@ class PackageManager(Thread):
 
                 if retval == 0:
                     found = True
-
 
             return found
 

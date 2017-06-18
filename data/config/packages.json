@@ -1,6 +1,6 @@
 {
   "budgie-applets" : {
-	  "haste" : {
+	  "haste-applet" : {
 		  "packages" : ["budgie-haste-applet"],
 		  "repos" : {
 			  "xenial" : ["ppa:budgie-remix/ppa"],
@@ -9,7 +9,7 @@
               "artful" : ["ppa:ubuntubudgie/backports"]
 		  }
 	  },
-	  "screenshot" : {
+	  "screenshot-applet" : {
 		  "packages" : ["budgie-screenshot-applet"],
 		  "repos" : {
 			  "xenial" : ["ppa:budgie-remix/ppa"],
@@ -18,7 +18,7 @@
               "artful" : ["ppa:ubuntubudgie/backports"]
 		  }
 	  },
-	  "calendar" : {
+	  "calendar-applet" : {
 		  "packages" : ["budgie-calendar-applet"],
 		  "repos" : {
 			  "xenial" : ["ppa:budgie-remix/ppa"],
@@ -27,7 +27,7 @@
               "artful" : ["ppa:ubuntubudgie/backports"]
 		  }
 	  },
-	  "brightness" : {
+	  "brightness-applet" : {
 		  "packages" : ["budgie-brightness-control-applet"],
 		  "repos" : {
 			  "xenial" : ["ppa:budgie-remix/ppa"],
@@ -36,7 +36,7 @@
               "artful" : ["ppa:ubuntubudgie/backports"]
 		  }
 	  },
-	  "pixel" : {
+	  "pixel-applet" : {
 		  "packages" : ["budgie-pixel-saver-applet"],
 		  "repos" : {
 			  "xenial" : ["ppa:budgie-remix/ppa"],

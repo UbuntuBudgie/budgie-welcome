@@ -12,8 +12,10 @@
       <div id="wrapper">
          <div id="title-inject">&zwnj;Budgie Desktop Applets&zwnj;</div>
          <div id="content" class="container entire-page-fade">
+            <b>&zwnj;Logout and login after installing applets.  Open Raven - Budgie Settings - Panel to add applets&zwnj;</b>
+            <br>
             <div class="row text-md-center">
-               <div class="col-md-6 haste show">
+               <div class="col-md-6 haste-applet show">
                   <br>
                   <h2>&zwnj;Haste Applet&zwnj;</h2>
                   <div class="card card-block">
@@ -23,10 +25,10 @@
                      <p class="card-text">&zwnj;Post any text – be it code or prose – to various services directly from your desktop.&zwnj;</p>
                   </div>
                   <div class="text-md-right">
-                     <a id="haste-remove" class="btn btn-danger" onclick="cmd('remove?haste');cmd('')">
+                     <a id="haste-applet-remove" class="btn btn-danger" onclick="cmd('remove?haste-applet');cmd('')">
 						<span class="material-icons">&#xE872;</span><span class="button-text">&zwnj;Remove&zwnj;</span>
 					 </a>
-                     <a id="haste-install" class="btn btn-success hvr-shadow" onclick="cmd('install?haste');cmd('')"> &nbsp;
+                     <a id="haste-applet-install" class="btn btn-success hvr-shadow" onclick="cmd('install?haste-applet');cmd('')"> &nbsp;
                      <span class="material-icons">&#xE2C0;</span>&zwnj;Install Applet&zwnj;&nbsp;
                      </a>
                      <span id="haste-status" class="hidden">
@@ -35,7 +37,7 @@
                   </div>
                   <hr/>
                </div>
-               <div class="col-md-6 screenshot show">
+               <div class="col-md-6 screenshot-applet show">
                   <br>
                   <h2>&zwnj;Screenshot Applet&zwnj;</h2>
                   <div class="card card-block">
@@ -45,19 +47,19 @@
                      <p class="card-text">&zwnj;An advanced screenshot utility for capturing and organizing screenshots.&zwnj;</p>
                   </div>
                   <div class="text-md-right">
-                     <a id="screenshot-remove" class="btn btn-danger" onclick="cmd('remove?screenshot');cmd('')">
+                     <a id="screenshot-applet-remove" class="btn btn-danger" onclick="cmd('remove?screenshot-applet');cmd('')">
 						<span class="material-icons">&#xE872;</span><span class="button-text">&zwnj;Remove&zwnj;</span>
 					 </a>
-                     <a id="screenshot-install" class="btn btn-success hvr-shadow" onclick="cmd('install?screenshot');cmd('')"> &nbsp;
+                     <a id="screenshot-applet-install" class="btn btn-success hvr-shadow" onclick="cmd('install?screenshot-applet');cmd('')"> &nbsp;
                      <span class="material-icons">&#xE2C0;</span>&zwnj;Install Applet&zwnj;&nbsp;
                      </a>
-                     <span id="screenshot-status" class="hidden">
+                     <span id="screenshot-applet-status" class="hidden">
                      <img src="img/welcome/processing.gif" width="24px" height="24px" /> &zwnj;Applying Changes...&zwnj;
                      </span>
                   </div>
                   <hr/>
                </div>
-               <div class="col-md-6 calendar show">
+               <div class="col-md-6 calendar-applet show">
                   <br>
                   <h2>&zwnj;Calendar Applet&zwnj;</h2>
                   <div class="card card-block">
@@ -67,19 +69,19 @@
                      <p class="card-text">&zwnj;Show date and time and when clicked show a calendar in a popover.&zwnj;</p>
                   </div>
                   <div class="text-md-right">
-					 <a id="calendar-remove" class="btn btn-danger" onclick="cmd('remove?calendar');cmd('')">
+					 <a id="calendar-applet-remove" class="btn btn-danger" onclick="cmd('remove?calendar-applet');cmd('')">
 						<span class="material-icons">&#xE872;</span><span class="button-text">&zwnj;Remove&zwnj;</span>
 					 </a>
-                     <a id="calendar-install" class="btn btn-success hvr-shadow" onclick="cmd('install?calendar');cmd('')"> &nbsp;
+                     <a id="calendar-applet-install" class="btn btn-success hvr-shadow" onclick="cmd('install?calendar-applet');cmd('')"> &nbsp;
                      <span class="material-icons">&#xE2C0;</span>&zwnj;Install Applet&zwnj;&nbsp;
                      </a>
-                     <span id="calendar-status" class="hidden">
+                     <span id="calendar-applet-status" class="hidden">
                      <img src="img/welcome/processing.gif" width="24px" height="24px" /> &zwnj;Applying Changes...&zwnj;
                      </span>
                   </div>
                   <hr/>
                </div>
-               <div class="col-md-6 brightness show">
+               <div class="col-md-6 brightness-applet show">
                   <br>
                   <h2>&zwnj;Brightness Control Applet&zwnj;</h2>
                   <div class="card card-block">
@@ -89,19 +91,19 @@
                      <p class="card-text">&zwnj;Allows you to control the screen brightness.&zwnj;</p>
                   </div>
                   <div class="text-md-right">
-                     <a id="brightness-remove" class="btn btn-danger" onclick="cmd('remove?brightness');cmd('')">
+                     <a id="brightness-applet-remove" class="btn btn-danger" onclick="cmd('remove?brightness-applet');cmd('')">
 						<span class="material-icons">&#xE872;</span><span class="button-text">&zwnj;Remove&zwnj;</span>
 					 </a>
-                     <a id="brightness-install" class="btn btn-success hvr-shadow" onclick="cmd('install?brightness');cmd('')"> &nbsp;
+                     <a id="brightness-applet-install" class="btn btn-success hvr-shadow" onclick="cmd('install?brightness-applet');cmd('')"> &nbsp;
                      <span class="material-icons">&#xE2C0;</span>&zwnj;Install Applet&zwnj;&nbsp;
                      </a>
-                     <span id="brightness-status" class="hidden">
+                     <span id="brightness-applet-status" class="hidden">
                      <img src="img/welcome/processing.gif" width="24px" height="24px" /> &zwnj;Applying Changes...&zwnj;
                      </span>
                   </div>
                   <hr/>
                </div>
-               <div class="col-md-6 brightness show">
+               <div class="col-md-6 pixel-applet show">
                   <br>
                   <h2>&zwnj;Pixel-Saver Applet&zwnj;</h2>
                   <div class="card card-block">
@@ -111,13 +113,13 @@
                      <p class="card-text">&zwnj;Hides the title bar from maximized windows and creates a new one inside the panel.&zwnj;</p>
                   </div>
                   <div class="text-md-right">
-                     <a id="pixel-remove" class="btn btn-danger" onclick="cmd('remove?pixel');cmd('')">
+                     <a id="pixel-applet-remove" class="btn btn-danger" onclick="cmd('remove?pixel-applet');cmd('')">
 						<span class="material-icons">&#xE872;</span><span class="button-text">&zwnj;Remove&zwnj;</span>
 					 </a>
-                     <a id="pixel-install" class="btn btn-success hvr-shadow" onclick="cmd('install?pixel');cmd('')"> &nbsp;
+                     <a id="pixel-applet-install" class="btn btn-success hvr-shadow" onclick="cmd('install?pixel-applet');cmd('')"> &nbsp;
                      <span class="material-icons">&#xE2C0;</span>&zwnj;Install Applet&zwnj;&nbsp;
                      </a>
-                     <span id="pixel-status" class="hidden">
+                     <span id="pixel-applet-status" class="hidden">
                      <img src="img/welcome/processing.gif" width="24px" height="24px" /> &zwnj;Applying Changes...&zwnj;
                      </span>
                   </div>

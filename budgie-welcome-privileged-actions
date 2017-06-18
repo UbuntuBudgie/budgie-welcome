@@ -12,6 +12,28 @@ import platform
  Should replace apt command with python-apt module.
 '''
 
+def check_if_installed_ppa(release_code, ppa_name):
+    found = False
+
+    # for the first element of the codename (e.g. zesty)
+    # repo split by the / character to get an array
+    # first element is the ppa organisation and second
+    # is the ppa name
+    ppa = ppa_name[4:].split('/')
+
+    filename = ppa[0] + "-ubuntu-" + ppa[1] + "-" + \
+        release_code + ".list"
+    filename = '/etc/apt/sources.list.d/' + filename
+
+    p = subprocess.Popen(['grep', '^deb\ http', filename])
+
+    retval = p.wait()
+
+    if retval == 0:
+        found = True
+
+    return found
+
 def add_repos(repos, key_commands):
 
     if not repos: return 0
@@ -26,27 +48,35 @@ def add_repos(repos, key_commands):
 
     sp = SoftwareProperties()
 
+    force_update = False
+
     for repo in repos:
         # check if its a component that should be added/removed
         distro = aptsources.distro.get_distro()
         distro.get_sources(sp.sourceslist)
         components = [comp.name for comp in distro.source_template.components]
+        print (components)
+        print (repos)
         if repo in components:
             if repo not in distro.enabled_comps:
+                force_update = True
                 distro.enable_component(repo)
         else:
-            sp.add_source_from_shortcut(shortcut_handler(repo))
+            if check_if_installed_ppa( release_code, repo ) == False:
+                sp.add_source_from_shortcut(shortcut_handler(repo))
+                force_update = True
     sp.sourceslist.save()
 
     if key_commands:
         for key_command in key_commands:
             subprocess.call(key_command, shell=True)
 
-    # Update always. Ideally, this should be done only if a new repo is added
-    # to list
-    p = subprocess.Popen(['apt', 'update'])
+    if force_update:
+        p = subprocess.Popen(['apt', 'update'])
 
-    return p.wait()
+        return p.wait()
+
+    return False
 
 def install(fname, code):
     info = pdata.getPackageInfo(fname, code)
