@@ -7,13 +7,39 @@ from softwareproperties.SoftwareProperties \
   import SoftwareProperties, shortcut_handler
 import aptsources
 import platform
+import glob
 
 '''
  Should replace apt command with python-apt module.
 '''
 
+def check_if_installed_source(release_code, source_name):
+
+    source_part = source_name[4:]
+    for file in glob.glob("/etc/apt/sources.list/*.list"):
+        with open (file) as f:
+            for line in f:
+                if source_part in line and line.startswith("deb"):
+                    return True
+
+    with open ('/etc/apt/sources.list'):
+        for line in f:
+            if line.startswith(source_name):
+                return True
+
+    return False
+
+
 def check_if_installed_ppa(release_code, ppa_name):
     found = False
+
+    # check if first three letters is "deb" or "ppa"
+    # deb can be found in both /etc/apt/sources.list as well as
+    # in /etc/apt/sources.list.d
+
+
+    if ppa_name.startswith("deb"):
+        return check_if_installed_source(release_code, ppa_name)
 
     # for the first element of the codename (e.g. zesty)
     # repo split by the / character to get an array
