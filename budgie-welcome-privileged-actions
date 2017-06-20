@@ -22,7 +22,7 @@ def check_if_installed_source(release_code, source_name):
                 if source_part in line and line.startswith("deb"):
                     return True
 
-    with open ('/etc/apt/sources.list'):
+    with open ('/etc/apt/sources.list') as f:
         for line in f:
             if line.startswith(source_name):
                 return True
