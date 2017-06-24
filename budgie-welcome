@@ -442,6 +442,10 @@ class AppView(WebKit2.WebView):
 
                 if code == 'material-flat-plat':
                     self._set_panel_key('size', 47)
+                    
+                if code == 'evopop':
+                    self._set_panel_key('enable-shadow', False)
+                    self._set_panel_key('size', 39)
 
                 def removepanelstyle():
                     # Don't allow theme over writing

@@ -203,6 +203,13 @@
       },
     "ceti-2-theme" : {
       "packages" : ["ceti-2-theme"]
+      },
+    "evopop-theme" : {
+      "packages" : ["evopop-gtk-theme", "paper-icon-theme", "fonts-noto"],
+      "repos" : {
+        "zesty" : ["ppa:ubuntubudgie/backports", "ppa:snwh/pulp"],
+        "artful" : ["ppa:ubuntubudgie/backports", "ppa:snwh/pulp"]
+        }
       }
   }
 }
