@@ -1,0 +1,42 @@
+[
+  {
+    "SCHEMA": "org.gnome.desktop.interface",
+    "VALUES": {
+      "cursor-theme": "DMZ-Black",
+      "gtk-theme": "OSX-Arc-Plus",
+      "icon-theme": "Arc-OSX-P",
+      "monospace-font-name": "Liberation Mono 11",
+      "font-name": "Liberation Sans 11",
+      "document-font-name": "Liberation Sans 11"
+    }
+  }, 
+  {
+    "SCHEMA": "org.gnome.desktop.background",
+    "VALUES": {
+      "color-shading-type": "solid",
+      "picture-options": "stretched",
+      "picture-uri": "file:////usr/share/backgrounds/budgie/ubuntu_budgie_wallpaper2.jpg",
+      "primary-color": "#008094"
+    }
+  },
+  {
+    "SCHEMA": "com.solus-project.budgie-panel",
+    "VALUES": {
+      "builtin-theme": false,
+      "dark-theme": true
+    }
+  },
+  {
+    "SCHEMA": "org.gnome.desktop.wm.preferences",
+    "VALUES": {
+      "titlebar-font": "Liberation Sans Bold 11",
+      "theme": "EvoPop"
+    }
+  },
+  {
+    "SCHEMA": "org.gnome.nautilus.desktop",
+    "VALUES": {
+      "font": "Liberation Sans 11"
+    }
+  }
+]

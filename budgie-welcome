@@ -446,6 +446,11 @@ class AppView(WebKit2.WebView):
                 if code == 'evopop':
                     self._set_panel_key('enable-shadow', False)
                     self._set_panel_key('size', 39)
+                    
+                if code == 'osx-arc':
+                    self._set_panel_key('enable-shadow', True)
+                    self._set_panel_key('size', 37)
+
 
                 def removepanelstyle():
                     # Don't allow theme over writing

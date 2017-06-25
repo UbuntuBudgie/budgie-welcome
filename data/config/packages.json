@@ -183,7 +183,10 @@
     "material-vimix-theme" : {
       "packages" : ["vimix-gtk-themes", "paper-cursor-theme", "paper-icon-theme", "fonts-noto"],
       "repos" : {
-        "all" : ["ppa:snwh/pulp", "ppa:noobslab/themes"]
+        "xenial" : ["ppa:snwh/pulp", "ppa:noobslab/themes"],
+        "yakkety" : ["ppa:snwh/pulp", "ppa:noobslab/themes"],
+        "zesty" : ["ppa:snwh/pulp", "ppa:noobslab/themes"],
+        "artful" : ["ppa:ubuntubudgie/backports", "ppa:noobslab/themes"]
       }
     },
     "material-flat-plat-theme" : {
@@ -208,7 +211,14 @@
       "packages" : ["evopop-gtk-theme", "paper-icon-theme", "fonts-noto"],
       "repos" : {
         "zesty" : ["ppa:ubuntubudgie/backports", "ppa:snwh/pulp"],
-        "artful" : ["ppa:ubuntubudgie/backports", "ppa:snwh/pulp"]
+        "artful" : ["ppa:ubuntubudgie/backports"]
+        }
+      },
+    "osx-arc-theme" : {
+      "packages" : ["osx-arc-darker", "osx-arc-plus", "osx-arc-shadow", "osx-arc-white", "arc-osx-icon-theme", "paper-icon-theme", "fonts-noto"],
+      "repos" : {
+        "zesty" : ["ppa:ubuntubudgie/backports", "ppa:snwh/pulp"],
+        "artful" : ["ppa:ubuntubudgie/backports"]
         }
       }
   }
