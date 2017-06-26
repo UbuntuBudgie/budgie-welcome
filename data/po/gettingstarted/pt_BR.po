@@ -4,12 +4,13 @@
 # Heavy Heavy <diegobrinungo@gmail.com>, 2017
 # Willian Eduardo <willianeduardot@gmail.com>, 2017
 # David Mohammed <fossfreedom@ubuntu.com>, 2017
+# João Mário Domingos <joaomario.rd@hotmail.com>, 2017
 msgid ""
 msgstr ""
 "Project-Id-Version: Budgie Welcome\n"
 "POT-Creation-Date: 2016-02-27 12:48+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: David Mohammed <fossfreedom@ubuntu.com>, 2017\n"
+"Last-Translator: João Mário Domingos <joaomario.rd@hotmail.com>, 2017\n"
 "Language-Team: Portuguese (Brazil) (https://www.transifex.com/ubuntu-budgie/teams/72251/pt_BR/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -103,6 +104,9 @@ msgid ""
 "<span name=\"distro-name\"></span> works well on both high-end to older "
 "computers, optimized to be functional, while light on system resources."
 msgstr ""
+"<span name=\"distro-name\"></span> funciona bem tanto em computadores topo "
+"de gama como em computadores mais velhos! Está otimizado para ser funcional,"
+" mas sempre leve em recursos!"
 
 #: gettingstarted.html:88
 msgid "Minimum"
@@ -164,6 +168,11 @@ msgid ""
 " class=\"fa fa-windows\"></span> Microsoft Windows or another <span "
 "class=\"fa fa-linux\"></span> GNU/Linux distribution."
 msgstr ""
+"<span name=\"distro-name\"></span> é relativamente simples de configurar, "
+"quer estejam à procura de substituir o sistema operativo ou instalar o <span"
+" name=\"distro-name\"></span> em paralelo com outro sistema. Tal como "
+"&nbsp;<span class=\"fa fa-windows\"></span> Microsoft Windows ou outra <span"
+" class=\"fa fa-linux\"></span> distribuição GNU/Linux."
 
 #: gettingstarted.html:130
 msgid "For the best results:"
@@ -659,20 +668,25 @@ msgid ""
 "just installed <span name=\"distro-name\"></span>, you might want to do this"
 " now."
 msgstr ""
+"<span name=\"distro-name\"></span> verifica periodicamente se existe "
+"software novo e atualizado tal como atualizações de segurança. <span name"
+"=\"distro-name\"></span>, talvez queira fazer isto agora."
 
 #: gettingstarted.html:390
 msgid ""
 "<b>Software Updater</b> can be found later in <strong>Application "
 "Menu</strong>"
 msgstr ""
+"<b>O Atualizador de Software</b> pode ser encontrado no <strong>Menu de "
+"aplicações</strong>"
 
 #: gettingstarted.html:396
 msgid "Check for Updates"
-msgstr ""
+msgstr "Procure Atualizações"
 
 #: gettingstarted.html:408
 msgid "Restricted Extras"
-msgstr ""
+msgstr "Extras Restringidos"
 
 #: gettingstarted.html:409
 msgid ""
@@ -709,19 +723,19 @@ msgstr ""
 #: gettingstarted.html425, 601, 606, 641, 647, 653, 689, 718, 786, 809, 824,
 #: 842, 857, 876
 msgid "Applying Changes..."
-msgstr ""
+msgstr "A aplicar alterações"
 
 #: gettingstarted.html426, 639, 645, 651, 690, 719, 803, 818, 836, 851, 870
 msgid "Install"
-msgstr ""
+msgstr "Instalar"
 
 #: gettingstarted.html427, 640, 646, 652, 806, 821, 839, 854, 873
 msgid "Remove"
-msgstr ""
+msgstr "Remover"
 
 #: gettingstarted.html435, 661, 764
 msgid "Next:"
-msgstr ""
+msgstr "Próximo:"
 
 #: gettingstarted.html:446
 msgid ""
@@ -735,10 +749,11 @@ msgstr ""
 #: gettingstarted.html:452
 msgid "An Internet connection is required to download and install drivers."
 msgstr ""
+"É necessária uma conexão internet para descarregar e instalar drivers."
 
 #: gettingstarted.html:456
 msgid "Additional Drivers"
-msgstr ""
+msgstr "Drivers Adicionais"
 
 #: gettingstarted.html:461
 msgid ""
@@ -747,17 +762,19 @@ msgstr ""
 
 #: gettingstarted.html:466
 msgid "Graphics"
-msgstr ""
+msgstr "Gráficos"
 
 #: gettingstarted.html:470
 msgid ""
 "Sorry, Welcome was unable to automatically identify the graphics vendor on "
 "this system."
 msgstr ""
+"Desculpe, não conseguimos de momento identificar automáticamente a placa "
+"gráfica deste sistema."
 
 #: gettingstarted.html471, 477, 485, 491
 msgid "Card/Chipset:"
-msgstr ""
+msgstr "Placa/Chipset:"
 
 #: gettingstarted.html471, 477, 485, 491
 msgid "Unknown"
@@ -840,6 +857,8 @@ msgstr ""
 #: gettingstarted.html:510
 msgid "Improve support for high resolutions and multiple monitors."
 msgstr ""
+"Melhora o suporte para monitores de alta-resolução tal como o uso de "
+"múltiplos monitores."
 
 #: gettingstarted.html:511
 msgid "Fix blank screen issues."
@@ -854,29 +873,32 @@ msgstr ""
 
 #: gettingstarted.html:517
 msgid "Failing to boot to the graphical desktop."
-msgstr ""
+msgstr "Falhou a inicialização para o desktop gráfico."
 
 #: gettingstarted.html:518
 msgid "Broken drivers after an upgrade."
-msgstr ""
+msgstr "As drivers foram danificadas após a ultima atualização."
 
 #: gettingstarted.html:519
 msgid "Severe graphical glitches."
-msgstr ""
+msgstr "Problemas graves a nível gráfico."
 
 #: gettingstarted.html:520
 msgid "Problems with applications/games requiring hardware acceleration."
 msgstr ""
+"Problemas com as aplicações/jogos que requerem acelaração por hardware."
 
 #: gettingstarted.html:524
 msgid ""
 "<code id=\"graphics-open-driver-name\"></code> is the open source driver for"
 " your card."
 msgstr ""
+"<code id=\"graphics-open-driver-name\"></code> é uma driver open source para"
+" a sua placa."
 
 #: gettingstarted.html:529
 msgid "What about the latest NVIDIA drivers?"
-msgstr ""
+msgstr "Que tal as drivers mais recentes da NVIDIA?"
 
 #: gettingstarted.html:530
 msgid ""
@@ -896,7 +918,7 @@ msgstr ""
 
 #: gettingstarted.html:538
 msgid "Add Repository"
-msgstr ""
+msgstr "Adicionar Repositório"
 
 #: gettingstarted.html:541
 msgid ""
@@ -941,11 +963,11 @@ msgstr ""
 
 #: gettingstarted.html580, 762
 msgid "Language Input"
-msgstr ""
+msgstr "Linguagem do método de entrada de texto"
 
 #: gettingstarted.html:590
 msgid "Input method"
-msgstr ""
+msgstr "Método de entrada de texto"
 
 #: gettingstarted.html:591
 msgid ""
@@ -956,23 +978,23 @@ msgstr ""
 
 #: gettingstarted.html:597
 msgid "Install & Configure IBus"
-msgstr ""
+msgstr "Instale e configure o IBus"
 
 #: gettingstarted.html:599
 msgid "IBus is active now"
-msgstr ""
+msgstr "IBus está ativo"
 
 #: gettingstarted.html:604
 msgid "Install & Configure Fcitx"
-msgstr ""
+msgstr "Instale e configure o Fcitx"
 
 #: gettingstarted.html:605
 msgid "Fcitx is active now"
-msgstr ""
+msgstr "Fcitx está ativo"
 
 #: gettingstarted.html612, 619
 msgid "Language Support"
-msgstr ""
+msgstr "Suporte de Idioma"
 
 #: gettingstarted.html:613
 msgid ""
@@ -988,27 +1010,27 @@ msgstr ""
 
 #: gettingstarted.html:632
 msgid "Complex Input"
-msgstr ""
+msgstr "Método de Entrada Complexo"
 
 #: gettingstarted.html:633
 msgid "Some regions of the world require complex inputs."
-msgstr ""
+msgstr "Algumas regiões do mundo nessecitam de métodos de entrada complexos."
 
 #: gettingstarted.html:638
 msgid "Chinese"
-msgstr ""
+msgstr "Chinês"
 
 #: gettingstarted.html:644
 msgid "Japanese"
-msgstr ""
+msgstr "Japonês"
 
 #: gettingstarted.html:650
 msgid "Korean"
-msgstr ""
+msgstr "Coreano"
 
 #: gettingstarted.html:669
 msgid "Backup, Firewall and User Management"
-msgstr ""
+msgstr "Backup, Firewall e Gestão de Utilizadores"
 
 #: gettingstarted.html:670
 msgid ""
@@ -1018,7 +1040,7 @@ msgstr ""
 
 #: gettingstarted.html:681
 msgid "Backups"
-msgstr ""
+msgstr "Backups"
 
 #: gettingstarted.html:682
 msgid ""
@@ -1035,7 +1057,7 @@ msgstr ""
 
 #: gettingstarted.html:693
 msgid "Configure Backup"
-msgstr ""
+msgstr "Configure o Backup"
 
 #: gettingstarted.html:696
 msgid ""
@@ -1045,7 +1067,7 @@ msgstr ""
 
 #: gettingstarted.html:709
 msgid "Firewall"
-msgstr ""
+msgstr "Firewall"
 
 #: gettingstarted.html:710
 msgid ""
@@ -1065,7 +1087,7 @@ msgstr ""
 
 #: gettingstarted.html:722
 msgid "Configure Firewall"
-msgstr ""
+msgstr "Configure a Firewall"
 
 #: gettingstarted.html:725
 msgid ""
@@ -1076,7 +1098,7 @@ msgstr ""
 
 #: gettingstarted.html:739
 msgid "Users"
-msgstr ""
+msgstr "Utilizadores"
 
 #: gettingstarted.html:741
 msgid ""
@@ -1093,7 +1115,7 @@ msgstr ""
 
 #: gettingstarted.html:748
 msgid "Configure Users"
-msgstr ""
+msgstr "Configurar Utilizadores"
 
 #: gettingstarted.html:751
 msgid ""
@@ -1116,11 +1138,11 @@ msgstr ""
 
 #: gettingstarted.html:781
 msgid "Disable animations & Remote display"
-msgstr ""
+msgstr "Desligar animações e ecrã remoto"
 
 #: gettingstarted.html:784
 msgid "Enable animations & Remote display"
-msgstr ""
+msgstr "Ligar animações e ecrã remoto"
 
 #: gettingstarted.html:794
 msgid ""
