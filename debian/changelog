@@ -3,7 +3,13 @@ budgie-welcome (0.4.9.8) zesty; urgency=medium
   * New Release (LP:# )
   * Translation Support
   * Online Shop replaces Community Chatroom
+  * Install Software button on front-page to allow installation
+    for flatpak, snap and new budgie-applet page
+  * Budgie Applet page allows curated list of Budgie Desktop applets
+    to be installed
   * Themes revamp including lightbox support
+  * Default Settings reworked to differentate between makeover theming,
+    reset defaults and layout manager
   * Uplift to bootstrap v4 alpha 6
   * ibus/fcitx switch
   * Packaging Changes
@@ -88,7 +94,7 @@ budgie-welcome (0.4.1) zesty; urgency=medium
 
   * New upstream release (LP: #1645147)
     - distro name changes
-    - performance tuning page 
+    - performance tuning page
     - initial browser ballot page
     - bug-fixes
   * Packaging Changes
