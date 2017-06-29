@@ -1223,6 +1223,10 @@ msgid ""
 "animations to provide you a smooth user experience. However, these effects "
 "may not play well inside Virtual Machines and in low resource system."
 msgstr ""
+"<span name=\"distro-name\"></span> viene fornita con effetti e animazioni "
+"per offrire un'esperienza utente uniforme. Tuttavia, questi effetti "
+"potrebbero non funzionare bene all'interno di macchine virtuali e in sistemi"
+" con poche risorse."
 
 #: gettingstarted.html:776
 msgid ""
@@ -1246,6 +1250,9 @@ msgid ""
 "To improve the amount of customizability, <span name=\"distro-name\"></span>"
 " allows you to install/remove popular web browsers with a single click."
 msgstr ""
+"Per migliorare la quantità di personalizzazione, <span name=\"distro-"
+"name\"></span> consente di installare / rimuovere i browser web popolari con"
+" un solo clic."
 
 #: gettingstarted.html:800
 msgid ""
@@ -1293,6 +1300,9 @@ msgid ""
 "Opera is a fast and secure browser. Developed in Europe, used by millions "
 "around the world. Now with a built-in ad blocker and free VPN."
 msgstr ""
+"Opera è un browser veloce e sicuro. Sviluppato in Europa, utilizzato da "
+"milioni di persone in tutto il mondo. Ora con un blocco degli annunci "
+"incorporato e VPN gratuito."
 
 #: gettingstarted.html:886
 msgid "User Interface"
@@ -1304,16 +1314,22 @@ msgid ""
 "user interface. It can be used to quickly setup the user interface to "
 "broadly reflect how other popular operating systems look and feel."
 msgstr ""
+"<span name=\"distro-name\"></span>fornisce uno strumento unico per "
+"trasformare l'interfaccia utente.  Può essere utilizzato per installare "
+"rapidamente l'interfaccia utente per riflettere ampiamente come gli altri "
+"sistemi operativi più diffusi l'aspetto grafico."
 
 #: gettingstarted.html:892
 msgid "Raven Configuration Center"
-msgstr ""
+msgstr "Configuration Center di Raven"
 
 #: gettingstarted.html:895
 msgid ""
 "<b>Raven Configuration Center</b> can be found later in <b>budgie panel "
 "options </b>."
 msgstr ""
+"<b>Configuration Center di Raven</b> può essere trovato più avanti nel "
+"<b>panello delle opzioni di budgie</b>."
 
 #: gettingstarted.html899, 904
 msgid "Settings"
@@ -1325,18 +1341,26 @@ msgid ""
 " center that <span name=\"distro-name\"></span> provides. You can configure "
 "just about every aspect of your computer from Settings."
 msgstr ""
+"Le utility sopra menzionate fanno tutte parte del vasto centro di controllo "
+"delle impostazioni che <span name=\"distro-name\"></span> fornisce. È "
+"possibile configurare quasi ogni aspetto del vostro computer da "
+"Impostazioni."
 
 #: gettingstarted.html:923
 msgid ""
 "<span name=\"distro-name\"></span> has many keyboard shortcuts that help "
 "make using your computer more efficient."
 msgstr ""
+"<span name=\"distro-name\"></span> ha molte scorciatoie da tastiera che "
+"contribuiscono a rendere l'utilizzo del computer più efficiente."
 
 #: gettingstarted.html:927
 msgid ""
 "The <b><img src=\"img/welcome/super-key.svg\"/> Super</b> key is your "
 "Windows key. For Mac keyboards, this is the ⌘ Command key."
 msgstr ""
+"Il tasto <b><img src=\"img/welcome/super-key.svg\"/>Super</b> è quello di "
+"Windows. Per le tastiere di Mac, questo è il tasto di comando ⌘."
 
 #: gettingstarted.html:929
 msgid "Budgie Desktop shortcuts"
@@ -1345,22 +1369,24 @@ msgstr "Scorciatoie Budgie Desktop"
 #: gettingstarted.html:930
 msgid "Some common shortcuts used in Budgie Desktop"
 msgstr ""
+"Alcuni tasti di scelta rapida comunemente utilizzati in Budgie Desktop"
 
 #: gettingstarted.html:939
 msgid "Open notifications in Raven"
-msgstr ""
+msgstr "Avvia notifiche in Raven"
 
 #: gettingstarted.html:947
 msgid "Open applet Settings in Raven"
-msgstr ""
+msgstr "Apri applet Impostazioni in Raven"
 
 #: gettingstarted.html:952
 msgid "Common application shortcuts"
-msgstr ""
+msgstr "Scorciatoie per le applicazione comuni"
 
 #: gettingstarted.html:953
 msgid "These shortcuts apply in most applications."
 msgstr ""
+"Queste scorciatoie si applicano nella maggior parte delle applicazioni."
 
 #: gettingstarted.html958, 966, 974, 982, 990, 998, 1006, 1014, 1022, 1030,
 #: 1038, 1046, 1054, 1062, 1070, 1107, 1125, 1163, 1173, 1183, 1195
@@ -1393,23 +1419,23 @@ msgstr "Trova e sostituisci le parole"
 
 #: gettingstarted.html:1010
 msgid "Make the selected text bold"
-msgstr ""
+msgstr "Rende il testo selezionato in grassetto"
 
 #: gettingstarted.html:1018
 msgid "Make the selected text italic"
-msgstr ""
+msgstr "Rende il testo selezionato in italico"
 
 #: gettingstarted.html:1026
 msgid "Underline the selected text"
-msgstr ""
+msgstr "Sottolinea il testo selezionato"
 
 #: gettingstarted.html:1034
 msgid "Open a new document or window"
-msgstr ""
+msgstr "Apri un nuovo documento o finestra"
 
 #: gettingstarted.html:1042
 msgid "Save the current document"
-msgstr ""
+msgstr "Salva il documento corrente"
 
 #: gettingstarted.html:1050
 msgid "Open another document"
@@ -1421,7 +1447,7 @@ msgstr "Stampa il documento corrente"
 
 #: gettingstarted.html:1066
 msgid "Undo the last change you made"
-msgstr ""
+msgstr "Annulla l'ultima modifica apportata"
 
 #: gettingstarted.html1072, 1187, 1198
 msgid "Shift"
@@ -1429,11 +1455,11 @@ msgstr "Maiuscolo"
 
 #: gettingstarted.html:1076
 msgid "Redo a change that you just undid"
-msgstr ""
+msgstr "Ripristinare una modifica che appena annullata"
 
 #: gettingstarted.html:1082
 msgid "Toggle the current application between full-screen and windowed"
-msgstr ""
+msgstr "Commuta l'applicazione corrente da schermo intero e finestra"
 
 #: gettingstarted.html:1086
 msgid "Desktop shortcuts"
@@ -1444,6 +1470,8 @@ msgid ""
 "This section lists common keyboard shortcuts which you can use to operate "
 "parts of the desktop."
 msgstr ""
+"Questa sezione elenca le scorciatoie da tastiera che è possibile utilizzare "
+"per operare sul desktop."
 
 #: gettingstarted.html:1095
 msgid "Open Applications menu"
@@ -1457,6 +1485,7 @@ msgstr "Alt"
 #: gettingstarted.html:1103
 msgid "Run an application by typing its name in the box which appears"
 msgstr ""
+"Eseguire un'applicazione digitando il suo nome nella casella che appare"
 
 #: gettingstarted.html:1111
 msgid "Delete"
@@ -1476,11 +1505,11 @@ msgstr "Apri un terminale."
 
 #: gettingstarted.html:1141
 msgid "Screen reader enable/disable."
-msgstr ""
+msgstr "Attivazione/disattivazione del lettore di schermo."
 
 #: gettingstarted.html:1145
 msgid "Window shortcuts"
-msgstr ""
+msgstr "Tasti di scelta rapida della finestra"
 
 #: gettingstarted.html:1151
 msgid "Tab"
@@ -1488,17 +1517,20 @@ msgstr "Tabulazione"
 
 #: gettingstarted.html:1154
 msgid "Switch between currently-open windows."
-msgstr ""
+msgstr "Passare tra le finestre attualmente aperte."
 
 #: gettingstarted.html:1156
 msgid "Press Alt + Tab and then release Tab (but continue to hold Alt)."
 msgstr ""
+"Premere Alt + Tab e rilasciare la scheda (ma continuare a tenere Alt)."
 
 #: gettingstarted.html:1157
 msgid ""
 "Press Tab repeatedly to cycle through the list of available windows which "
 "appears on the screen."
 msgstr ""
+"Premere ripetutamente Tab per passare attraverso l'elenco delle finestre "
+"disponibili che vengono visualizzate sullo schermo."
 
 #: gettingstarted.html1167, 1189, 1264
 msgid "Left"
@@ -1506,7 +1538,7 @@ msgstr "Sinistra"
 
 #: gettingstarted.html:1169
 msgid "Switch to the previous workspace."
-msgstr ""
+msgstr "Passare allo spazio di lavoro precedente."
 
 #: gettingstarted.html1177, 1200, 1272
 msgid "Right"
@@ -1514,15 +1546,15 @@ msgstr "Destra"
 
 #: gettingstarted.html:1179
 msgid "Switch to the next workspace."
-msgstr ""
+msgstr "Passare allo spazio di lavoro successiva."
 
 #: gettingstarted.html:1191
 msgid "Move the current window to the previous workspace."
-msgstr ""
+msgstr "Spostare la finestra corrente nell'area di lavoro precedente."
 
 #: gettingstarted.html:1202
 msgid "Move the current window to the next workspace."
-msgstr ""
+msgstr "Spostare la finestra corrente nell'area di lavoro successiva."
 
 #: gettingstarted.html:1210
 msgid "Closes window."
@@ -1530,19 +1562,23 @@ msgstr "Chiudi la finestra."
 
 #: gettingstarted.html:1218
 msgid "Returns window to 'normal' or previous size."
-msgstr ""
+msgstr "Restituisce la finestra alla dimensione 'normale' o precedente."
 
 #: gettingstarted.html:1226
 msgid "Moves the current window (can be moved with mouse or keyboard)."
 msgstr ""
+"Sposta la finestra corrente (può essere spostata con il mouse o la "
+"tastiera)."
 
 #: gettingstarted.html:1234
 msgid "Resizes current window (again, can be moved with mouse or keyboard)."
 msgstr ""
+"Ridimensiona la finestra corrente (ancora una volta, può essere spostata con"
+" mouse o tastiera)."
 
 #: gettingstarted.html:1242
 msgid "Minimizes current window."
-msgstr ""
+msgstr "Minimizza la finestra corrente."
 
 #: gettingstarted.html:1248
 msgid "Up"
@@ -1561,14 +1597,16 @@ msgid ""
 "Displays the window menu with options such as 'Always on Top' and 'Minimize'"
 " and 'Maximize' and above commands."
 msgstr ""
+"Visualizza il menu della finestra con le opzioni come 'Sempre in primo "
+"piano' e 'ridurre al minimo' e 'massimizza' e sopra i comandi."
 
 #: gettingstarted.html:1266
 msgid "Place window on left side of screen."
-msgstr ""
+msgstr "Posiziona la finestra sul lato sinistro dello schermo."
 
 #: gettingstarted.html:1274
 msgid "Place window on right side of screen."
-msgstr ""
+msgstr "Posiziona la finestra sul lato destro dello schermo."
 
 #: gettingstarted.html:1293
 msgid ""
@@ -1576,6 +1614,9 @@ msgid ""
 "another. This information is useful when providing support to ensure "
 "hardware and software works on your machine."
 msgstr ""
+"La macchina è costituita da diversi componenti che interagiscono tra loro. "
+"Queste informazioni sono utili quando forniscono supporto per garantire che "
+"hardware e software funzionino sulla macchina."
 
 #: gettingstarted.html:1301
 msgid "Gathering Information.."
