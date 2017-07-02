@@ -49,9 +49,6 @@
         </a>
       </div>
       <br><h5>&zwnj;Familiarity&zwnj;</h5>
-      <a class="btn btn-inverse index-btn" onclick='changePage("performance", "&zwnj;Performance tuning&zwnj;")'>
-        <i class="material-icons">&#xE90F;</i> &zwnj;Performance tuning&zwnj;
-      </a>
       <a class="btn btn-inverse index-btn" onclick='changePage("customize","&zwnj;Customization&zwnj;")'>
         <i class="material-icons">&#xE8A4;</i> &zwnj;Customization&zwnj;
       </a>
@@ -175,7 +172,7 @@
             you completely run out of memory without anywhere to swap.&zwnj;</p>
             <p><span class="unofficial-only">&zwnj;By default, a swap partition is created based on the size of your RAM. For example, if you have
             2 GiB of RAM, then 2 GiB of hard disk space will be reserved for swap at the end of the drive.&zwnj;</span></p>
-            
+
             <p><span class="official-only">&zwnj;By default, a swap file is created based on the size of your RAM. For example, if you have
             2 GiB of RAM, then 2 GiB of hard disk space will be reserved for the swap file.  A separate swap partition is no
             longer required to be created.&zwnj;</span></p>
@@ -762,30 +759,6 @@
             <i class="material-icons">&#xE314;</i> <b>Previous:</b>&nbsp; &zwnj;Language Input&zwnj;</a>
           <a class="btn" onclick='changePage("customize","Customization")'>
             <b>&zwnj;Next:&zwnj;</b>&nbsp; &zwnj;Customization&zwnj; <i class="material-icons">&#xE315;</i></a>
-        </div>
-      </div>
-
-      <!-- Performance tuning -->
-      <div id="performance" class="topicContents">
-        <div class="row">
-          <div class="col-md-12">
-            <p>&zwnj;The <span name="distro-name"></span> comes with cool effects and animations to provide you a
-            smooth user experience. However, these effects may not play well inside Virtual Machines and
-            in low resource system.&zwnj;</p>
-
-            <p>&zwnj;So we provide an option to toggle animation and remote networking to get improved performance
-            inside Virtual Machines and low resource computers.&zwnj;</p>
-
-            <div class="text-md-center">
-              <a id="performance-install" class="btn btn-danger" onclick="cmd('script?enable_performance');cmd('')">
-                <i class="material-icons">&#xE909;</i><span class="button-text">&zwnj;Disable animations & Remote display&zwnj;</span>
-              </a>
-              <a id="performance-remove" class="btn btn-success" onclick="cmd('script?disable_performance');cmd('')">
-                <i class="material-icons">&#xE834;</i><span class="button-text">&zwnj;Enable animations & Remote display&zwnj;</span>
-              </a>
-              <span id="performance-status" class="hidden"><img src="img/welcome/processing.gif" width="24px"/> &zwnj;Applying Changes...&zwnj;</span>
-            </div>
-          </div>
         </div>
       </div>
 
