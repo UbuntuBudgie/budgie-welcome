@@ -169,7 +169,8 @@
   },
   "default" : {
     "arc-theme" : {
-      "packages" : ["arc-theme", "pocillo-icon-theme"]
+      "packages" : ["arc-theme", "pocillo-icon-theme"],
+      "size" : 60
     },
     "material-theme" : {
       "packages" : ["adapta-gtk-theme", "paper-cursor-theme", "paper-icon-theme", "fonts-noto"],

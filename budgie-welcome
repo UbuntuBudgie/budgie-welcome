@@ -49,6 +49,7 @@ from queue import Queue, Empty
 from notify2 import Notification, init as NotifyInit
 
 import apt
+import re
 
 # global variable - path inc the suffix / of where the app is being executed
 start_location = "./" # path defined on app startup
@@ -188,18 +189,29 @@ class AppView(WebKit2.WebView):
                     # without the codename
                     code = code.split("#")[0]
                     installed = pm.hasInstalled(current_page, code)
-
+                    
                     if installed:
                         app.update_page('#' + code + '-remove', 'show')
                     else:
                         app.update_page('#' + code + '-install', 'show')
+
+                    if systemstate.speed:
+                        size = pdata.get_size(current_page, code)
+                        if size:
+                            seconds = size / systemstate.speed
+                            m, s = divmod(seconds, 60)
+                            h, m = divmod(m, 60)
+                            time = "%d:%02d:%02d" % (h, m, s)
+                            timespan = "<div id='%s-time'>(%dMB ~ %d Hour(s) %d Minute(s))</div>" % (code, size, h, m)
+                            app.update_page("#%s-time" % code, 'remove')
+                            app.update_page('#' + code + '-install', 'after', timespan)
 
                 # Sort recommendations after checking installation status
                 if current_page == 'recommendations':
                     self.run_javascript("sortList()")
             # Checking on cache will take sometime. So run it on a
             # separate thread.
-            thread = Thread(target = checkInstallationStatus)
+            thread = Thread(target=checkInstallationStatus)
             thread.start()
 
         self.run_javascript("$('span[name=\"distro-name\"]').html('{}')".format(systemstate.distroname))
@@ -237,11 +249,11 @@ class AppView(WebKit2.WebView):
         animation = gsettings.get_boolean("enable-animations")
 
         if display or animation:
-          app.update_page('#performance-install', 'show')
-          app.update_page('#performance-remove', 'hide')
+            app.update_page('#performance-install', 'show')
+            app.update_page('#performance-remove', 'hide')
         else:
-          app.update_page('#performance-install', 'hide')
-          app.update_page('#performance-remove', 'show')
+            app.update_page('#performance-install', 'hide')
+            app.update_page('#performance-remove', 'show')
 
     def _do_command(self, uri):
 
@@ -894,6 +906,13 @@ class PackageData(object):
         except KeyError:
             return None
 
+    def get_size(self, filename, code):
+        try:
+            return self.data[filename][code]["size"]
+        except KeyError:
+            return None
+
+
 class PMEntry(object):
     INSTALL = 0
     REMOVE = 1
@@ -919,6 +938,7 @@ class SystemState(object):
         self.updates_subscribed = False
         self.app_version = 'DEV'
         self.budgie_version = 'NA'
+        self.speed = None
 
         # Full path to binary
         self._welcome_bin_path = os.path.abspath(inspect.getfile(inspect.currentframe()))
@@ -956,11 +976,20 @@ class SystemState(object):
         Thread(target=self.check_internet_connection).start()
         Thread(target=self.detect_graphics).start()
         Thread(target=self.find_app_version).start()
+        Thread(target=self.detect_connection_speed).start()
 
         # Retain some show/hide actions applied while changing page.
         # This is specially required when page change happens while
         # installation/removal is in progress.
         self.intermediate_actions = {}
+
+    def detect_connection_speed(self):
+        command = ['speedtest-cli', '--simple', '--bytes']
+        speed_result = subprocess.Popen(command, stdout=subprocess.PIPE).communicate()
+        download_speed = str(speed_result[0]).split('\\n')[1]
+        # Speed in MBytes/S
+        self.speed = float(re.findall(r'Download: (\d+(.\d+)*) Mbyte/s', download_speed)[0][0])
+        dbg.stdout('Download spee', 'Detected download speed as ' + str(self.speed), 0, 1)
 
     def addIntermediateActions(self, filename, actions):
 
