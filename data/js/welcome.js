@@ -436,7 +436,12 @@ if (current_page == 'gettingstarted.html') {
         if (!$('#index-menu').is(':visible')) {
             indexOpen();
         } else {
-            smoothPageFade('index.html');
+            if ($('#first-run').is(':visible')) {
+                smoothPageFade('default.html');
+            }
+            else {
+                smoothPageFade('index.html');
+            }
         }
     }
 }

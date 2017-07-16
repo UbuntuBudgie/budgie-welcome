@@ -85,9 +85,7 @@ class AppView(WebKit2.WebView):
 
         # Dynamically toggle header controls button
         if current_page != "index":
-
             if not self.back_btn.is_sensitive():
-
                 if current_page != "gettingstarted":
                     self.back_signal_handler = self.back_btn.connect("clicked", self._back_action)
                 else:
@@ -117,6 +115,9 @@ class AppView(WebKit2.WebView):
 
         ### Getting Started Page ###
         if current_page == 'gettingstarted':
+            if systemstate.first_run != True:
+                app.update_page('.first-run', 'hide')
+
             # Display information tailored to graphics vendor (Getting Started / Drivers)
             self.run_javascript('var graphicsVendor = "' + systemstate.graphics_vendor + '";')
             self.run_javascript('var graphicsGrep = "' + systemstate.graphics_grep + '";')
@@ -149,6 +150,11 @@ class AppView(WebKit2.WebView):
             self.run_javascript('$("#wordmark").attr("src","' + translations.res_dir + 'img/welcome/' + systemstate.distro_wordmark + '");')
 
         if current_page == 'default':
+            systemstate.first_run = False
+            if self.back_signal_handler:
+                self.back_btn.disconnect(self.back_signal_handler)
+            self.back_signal_handler = self.back_btn.connect("clicked", self._back_action)
+
             panel_backup = localdir + '/panel-backup.conf'
             style_backup = localdir + '/style-backup.json'
             if os.path.isfile(panel_backup):
@@ -189,7 +195,7 @@ class AppView(WebKit2.WebView):
                     # without the codename
                     code = code.split("#")[0]
                     installed = pm.hasInstalled(current_page, code)
-                    
+
                     if installed:
                         app.update_page('#' + code + '-remove', 'show')
                     else:
@@ -454,11 +460,11 @@ class AppView(WebKit2.WebView):
 
                 if code == 'material-flat-plat':
                     self._set_panel_key('size', 47)
-                    
+
                 if code == 'evopop':
                     self._set_panel_key('enable-shadow', False)
                     self._set_panel_key('size', 39)
-                    
+
                 if code == 'osx-arc':
                     self._set_panel_key('enable-shadow', True)
                     self._set_panel_key('size', 37)
@@ -939,6 +945,7 @@ class SystemState(object):
         self.app_version = 'DEV'
         self.budgie_version = 'NA'
         self.speed = None
+        self.first_run = False
 
         # Full path to binary
         self._welcome_bin_path = os.path.abspath(inspect.getfile(inspect.currentframe()))
@@ -976,7 +983,8 @@ class SystemState(object):
         Thread(target=self.check_internet_connection).start()
         Thread(target=self.detect_graphics).start()
         Thread(target=self.find_app_version).start()
-        Thread(target=self.detect_connection_speed).start()
+        # uncomment this when developing the connection speed capability
+        #Thread(target=self.detect_connection_speed).start()
 
         # Retain some show/hide actions applied while changing page.
         # This is specially required when page change happens while
@@ -1381,13 +1389,14 @@ class WelcomeApp(object):
             print('Unable to source the budgie-welcome data directory.')
             sys.exit(1)
 
-        self.first_run = self._check_first_run()
+        systemstate.first_run = self._check_first_run()
+        #systemstate.first_run = True
 
         self.json_path = self._data_path + "/config/packages.json"
 
         if arg.jump_to:
             self._start_page = arg.jump_to + ".html"
-        elif self.first_run:
+        elif systemstate.first_run:
             self._start_page = 'gettingstarted.html'
         else:
             self._start_page = 'index.html'
@@ -1479,7 +1488,7 @@ class WelcomeApp(object):
 
     def _load_css(self):
         '''
-            Load custom css to make application consitent with embedded
+            Load custom css to make application consistent with embedded
             web pages
         '''
         style_provider = Gtk.CssProvider()
