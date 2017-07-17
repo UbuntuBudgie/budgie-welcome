@@ -118,6 +118,11 @@ class AppView(WebKit2.WebView):
             if systemstate.first_run != True:
                 app.update_page('.first-run', 'hide')
 
+            if systemstate.codename in ['xenial', 'yakkety', 'zesty']:
+                app.update_page('.1710', 'hide')
+            else:
+                app.update_page('.1710', 'show')
+
             # Display information tailored to graphics vendor (Getting Started / Drivers)
             self.run_javascript('var graphicsVendor = "' + systemstate.graphics_vendor + '";')
             self.run_javascript('var graphicsGrep = "' + systemstate.graphics_grep + '";')
@@ -310,7 +315,7 @@ class AppView(WebKit2.WebView):
 
             # for skippy-xd we also need to define a keyboard shortcut
             if code == 'skippy-xd':
-                self._define_keyboard_shortcut('skippy-xd', 'skippy-xd-toggle', '<Primary>grave')
+                app.define_keyboard_shortcut('skippy-xd', 'skippy-xd-toggle', '<Primary>grave')
 
         elif uri.startswith('remove?'):
             code = uri[7:]
@@ -565,41 +570,6 @@ class AppView(WebKit2.WebView):
                 gsettings.set_int(key, value)
             else:
                 gsettings.set_string(key, value)
-
-    def _define_keyboard_shortcut(self, name, command, shortcut):
-        # defining keys & strings to be used
-        # params example 'open gedit' 'gedit' '<Alt>7'
-        key = "org.gnome.settings-daemon.plugins.media-keys custom-keybindings"
-        subkey1 = key.replace(" ", ".")[:-1]+":"
-        item_s = "/"+key.replace(" ", "/").replace(".", "/")+"/"
-        firstname = "custom"
-        # get the current list of custom shortcuts
-        get = lambda cmd: subprocess.check_output(["/bin/bash", "-c", cmd]).decode("utf-8")
-        x = get("gsettings get "+key)
-        if '@as []' in str(x):
-           current = []
-        else:
-           current = eval(x)
-        # make sure the additional keybinding mention is no duplicate
-        n = 1
-        while True:
-            new = item_s+firstname+str(n)+"/"
-            if new in current:
-                n = n+1
-            else:
-                break
-
-        if n == 1:
-            # add the new keybinding to the list
-            current.append(new)
-            # create the shortcut, set the name, command and shortcut key
-            cmd0 = 'gsettings set '+key+' "'+str(current)+'"'
-            cmd1 = 'gsettings set '+subkey1+new+" name '"+ name +"'"
-            cmd2 = 'gsettings set '+subkey1+new+" command '"+ command +"'"
-            cmd3 = 'gsettings set '+subkey1+new+" binding '"+ shortcut +"'"
-
-            for cmd in [cmd0, cmd1, cmd2, cmd3]:
-                subprocess.call(["/bin/bash", "-c", cmd])
 
     def managePackage(self, operation, fname, code):
         actions = [
@@ -1563,6 +1533,41 @@ class WelcomeApp(object):
         os.mknod(file)
         return True
 
+    def define_keyboard_shortcut(self, name, command, shortcut):
+        # defining keys & strings to be used
+        # params example 'open gedit' 'gedit' '<Alt>7'
+        key = "org.gnome.settings-daemon.plugins.media-keys custom-keybindings"
+        subkey1 = key.replace(" ", ".")[:-1]+":"
+        item_s = "/"+key.replace(" ", "/").replace(".", "/")+"/"
+        firstname = "custom"
+        # get the current list of custom shortcuts
+        get = lambda cmd: subprocess.check_output(["/bin/bash", "-c", cmd]).decode("utf-8")
+        x = get("gsettings get "+key)
+        if '@as []' in str(x):
+           current = []
+        else:
+           current = eval(x)
+        # make sure the additional keybinding mention is no duplicate
+        n = 1
+        while True:
+            new = item_s+firstname+str(n)+"/"
+            if new in current:
+                n = n+1
+            else:
+                break
+
+        if n == 1:
+            # add the new keybinding to the list
+            current.append(new)
+            # create the shortcut, set the name, command and shortcut key
+            cmd0 = 'gsettings set '+key+' "'+str(current)+'"'
+            cmd1 = 'gsettings set '+subkey1+new+" name '"+ name +"'"
+            cmd2 = 'gsettings set '+subkey1+new+" command '"+ command +"'"
+            cmd3 = 'gsettings set '+subkey1+new+" binding '"+ shortcut +"'"
+
+            for cmd in [cmd0, cmd1, cmd2, cmd3]:
+                subprocess.call(["/bin/bash", "-c", cmd])
+
 class Arguments(object):
     '''Check arguments passed the application.'''
 
@@ -1820,6 +1825,10 @@ if __name__ == "__main__":
 
     app = WelcomeApp()
     pdata = PackageData()
+
+    if systemstate.first_run and systemstate.codename not in ['xenial', 'yakkety', 'zesty']:
+        app.define_keyboard_shortcut('tilix-quake', '/usr/bin/tilix --quake', 'F12')
+
     app.run()
 
 
