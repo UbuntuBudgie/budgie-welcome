@@ -42,6 +42,7 @@ import time
 import shutil
 import locale
 import gettext
+import getpass
 
 from gi.repository import WebKit2, Gtk, Gio, Gdk
 from threading import Thread
@@ -1829,6 +1830,7 @@ if __name__ == "__main__":
     if systemstate.first_run and systemstate.codename not in ['xenial', 'yakkety', 'zesty']:
         app.define_keyboard_shortcut('tilix-quake', '/usr/bin/tilix --quake', 'F12')
 
-    app.run()
+    if getpass.getuser() != 'oem':
+        app.run()
 
 
