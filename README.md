@@ -24,16 +24,16 @@ uglifyjs -o data/js/ekko-lightbox.min.js data/js/ekko-lightbox.js
 
 ```sh
 cd budgie-welcome
-./budgie-welcome
+./budgie-welcome -d
 ```
 
 To test the live session
 
-    ./budgie-welcome --force-session=live
+    ./budgie-welcome --force-session=live -d
     
 To test a language or locale
 
-    ./budgie-welcome --language=pl
+    ./budgie-welcome --locale=pl
     
 change "pl" to your language i18n shortcode
 
