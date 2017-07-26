@@ -1,30 +1,31 @@
 # Translators:
-# Moo <moose@mail.ru>, 2017
+# Yetkin Degirmenci <yetkind@gmail.com>, 2017
+# Emre JILTA <jilta.e@gmail.com>, 2017
 msgid ""
 msgstr ""
 "Project-Id-Version: Budgie Welcome\n"
 "POT-Creation-Date: 2016-02-27 12:48+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Moo <moose@mail.ru>, 2017\n"
-"Language-Team: Lithuanian (https://www.transifex.com/ubuntu-budgie/teams/72251/lt/)\n"
+"Last-Translator: Emre JILTA <jilta.e@gmail.com>, 2017\n"
+"Language-Team: Turkish (https://www.transifex.com/ubuntu-budgie/teams/72251/tr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: lt\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Language: tr\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "Report-Msgid-Bugs-To : you@example.com\n"
 
 #: default.html13, 23
 msgid "Default Settings"
-msgstr "Numatytieji nustatymai"
+msgstr "Varsayılan Ayarlar"
 
 #: default.html17, 31
 msgid "Switch Appearance"
-msgstr "Perjungti išvaizdą"
+msgstr "Görünümü değiştir"
 
 #: default.html20, 207
 msgid "Desktop Layout"
-msgstr "Darbalaukio išdėstymas"
+msgstr "Masaüstü Görünüm"
 
 #: default.html:32
 msgid ""
@@ -32,6 +33,9 @@ msgid ""
 " theme package. It uses Arc theme for GTK windows, panels, login window and "
 "lock screen and <strong>Pocillo</strong> as the icon theme."
 msgstr ""
+"<span name=\"distro-name\"></span> varsayılan teması <strong>Arc</strong> "
+"dır. Arc temasını  GTK pencereleri, panelleri, giriş penceresi ve kilitli "
+"ekran için kullanır. <strong>Pocillo</strong>ise ikon temasıdır."
 
 #: default.html:35
 msgid ""
@@ -39,38 +43,42 @@ msgid ""
 "Budgie Welcome provides a simple method to switch your desktop appearance "
 "(theme, fonts, icons, desktop wallpaper) from the default Arc based package."
 msgstr ""
+"Birkaç ek Budgie Masaüstü uyumlu tema bulunmaktadır. Budgie Welcome "
+"varsayılan Arc tabanlı paketten basit bir yöntemle masaüstü görünümünüzü "
+"(tema, fontlar, simgeler, masaüstü arkaplânları) değiştirmenizi "
+"sağlamaktadır."
 
 #: default.html:43
 msgid "Arc Design"
-msgstr ""
+msgstr "Arc Tasarımı"
 
 #: default.html49, 69, 89, 109, 129, 149, 169, 189
 msgid "Install theme"
-msgstr ""
+msgstr "Temayı Yükle"
 
 #: default.html53, 73, 93, 113, 133, 153, 173, 193
 msgid "Apply theme"
-msgstr ""
+msgstr "Temayı Uygula"
 
 #: default.html58, 78, 98, 118, 138, 158, 178, 198, 244
 msgid "Applying Changes..."
-msgstr "Taikomi pakeitimai..."
+msgstr "Değişiklikler Uygulanıyor..."
 
 #: default.html:63
 msgid "Material Design (Adapta)"
-msgstr ""
+msgstr "Malzeme Tasarımı (Adapta)"
 
 #: default.html:83
 msgid "Material Design (Vimix)"
-msgstr ""
+msgstr "Malzeme Tasarımı (Vimix)"
 
 #: default.html:103
 msgid "Vertex Design"
-msgstr ""
+msgstr "Vertex Tasarımı"
 
 #: default.html:123
 msgid "Ceti-2 Design"
-msgstr ""
+msgstr "Ceti-2 Tasarımı"
 
 #: default.html:143
 msgid "Material Design (Flat-Plat)"
@@ -78,23 +86,23 @@ msgstr ""
 
 #: default.html:208
 msgid "Switch the layout of your desktop to suit your workflow."
-msgstr ""
+msgstr "Masaüstü görünümünüzü iş akışınıza uydurmak için değiştiriniz."
 
 #: default.html:212
 msgid "Default"
-msgstr ""
+msgstr "Varsayılan"
 
 #: default.html:216
 msgid "Classic Budgie"
-msgstr ""
+msgstr "Klasik Budgie"
 
 #: default.html:228
 msgid "Classic GNOME"
-msgstr ""
+msgstr "Klasik GNOME"
 
 #: default.html:237
 msgid "Restore panels"
-msgstr "Atkurti skydelius"
+msgstr "Panelleri geri yükle"
 
 #: default.html:238
 msgid ""
@@ -102,15 +110,19 @@ msgid ""
 "Unhappy with your changes to the panel layout? Don't worry. We can help you "
 "to restore your panels with a single click!"
 msgstr ""
+"<span name = \"distro-name\"> </ span> ile oynarken panellerinizi mi "
+"kaybettiniz ? Panel düzenindeki değişikliklerinizden memnun kalmadınız mı? "
+"Endişelenmeyin. Tek bir tıklamayla panellerinizi geri yüklemenize yardımcı "
+"olabiliriz!"
 
 #: default.html:241
 msgid ""
 "This will undo all changes that you have made on any panel and will reset "
 "back to the initial default panel layout configuration."
 msgstr ""
-"Tai atšauks visus jūsų atliktus pakeitimus visiems skydeliams ir atstatys "
-"pradinę numatytąją skydelio išdėstymo konfigūraciją."
+"Bu, herhangi bir panelde yaptığınız tüm değişiklikleri geri alır ve ilk "
+"varsayılan panel düzeni yapılandırmasına geri döner."
 
 #: default.html:245
 msgid "Reset Budgie Panel"
-msgstr ""
+msgstr "Budgie Paneli Sıfırla"

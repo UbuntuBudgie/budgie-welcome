@@ -1,26 +1,26 @@
 # Translators:
-# abuyop <abuyop@gmail.com>, 2017
+# Yetkin Degirmenci <yetkind@gmail.com>, 2017
 msgid ""
 msgstr ""
 "Project-Id-Version: Budgie Welcome\n"
 "POT-Creation-Date: 2016-02-27 12:48+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: abuyop <abuyop@gmail.com>, 2017\n"
-"Language-Team: Malay (Malaysia) (https://www.transifex.com/ubuntu-budgie/teams/72251/ms_MY/)\n"
+"Last-Translator: Yetkin Degirmenci <yetkind@gmail.com>, 2017\n"
+"Language-Team: Turkish (https://www.transifex.com/ubuntu-budgie/teams/72251/tr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ms_MY\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Language: tr\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "Report-Msgid-Bugs-To : you@example.com\n"
 
 #: community.html:13
 msgid "Community"
-msgstr "Komuniti"
+msgstr "Topluluk"
 
 #: community.html:18
 msgid "Chat Rooms"
-msgstr "Bilik Sembang"
+msgstr "Sohbet Odaları"
 
 #: community.html:19
 msgid ""
@@ -29,32 +29,38 @@ msgid ""
 " place to go. From here, you can talk with the <span name=\"distro-"
 "name\"></span> team and other members of our growing community."
 msgstr ""
+"<span name=\"distro-name\"></span> geleceğini şekillendirmede aktif bir rol "
+"edinmek için, <span name=\"distro-name\"></span> sohbet odası gidilebilecek "
+"en iyi yerdir. Burada <span name=\"distro-name\"></span> ekibi ve büyümekte "
+"olan topluluğumuzun diğer üyeleriyle konuşabilirsiniz."
 
 #: community.html:23
 msgid ""
 "It appears you are not connected to the Internet. Please check your "
 "connection to access this content."
 msgstr ""
-"Ia kelihatan anda tidak bersambung dengan Internet. Sila periksa sambungan "
-"anda supaya dapat mencapai kandungan ini."
+"İnternet'e bağlı olmadığınız anlaşılıyor. Lütfen bu içeriğe erişmek için "
+"bağlantınızı kontrol edin."
 
 #: community.html:24
 msgid "Sorry, Welcome was unable to establish a connection."
-msgstr "Maaf, Aluan tidak berupaya menjalinkan sambungan."
+msgstr "Üzgünüz, Hoşgeldin uygulaması bağlantı sağlayamadı."
 
 #: community.html:25
 msgid "Retry"
-msgstr "Cuba lagi"
+msgstr "Yeniden Dene"
 
 #: community.html:29
 msgid "Chat Room"
-msgstr "Bilik Sembang"
+msgstr "Sohbet Odası"
 
 #: community.html:33
 msgid ""
 "An alternative way is to get in touch with us via the official IRC (Internet"
 " Relay Chat) channel."
 msgstr ""
+"Bizimle iletişime geçmenin alternatif bir yolu da resmi IRC (Internet Relay "
+"Chat) kanalımızdır."
 
 #: community.html:35
 msgid ""
@@ -62,10 +68,13 @@ msgid ""
 "any reply. So either leave an IRC session open - or we recommend connecting "
 "to all ubuntu IRC channels via an IRC bouncer."
 msgstr ""
+"Kanal bağlantınız kesilirse yanıtlandığınıza dair herhangi bir bildirimi "
+"alamazsınız. Ya IRC oturumunuzu açık bırakın - yada IRC bouncer kullanarak "
+"ubuntu IRC kanallarına bağlanmanızı öneririz."
 
 #: community.html:40
 msgid "#Ubuntu-Budgie on FreeNode"
-msgstr "#Ubuntu-Budgie di FreeNode"
+msgstr "FreeNode üzerinde #Ubuntu-Budgie  "
 
 #: community.html:48
 msgid "Forum"
@@ -76,40 +85,42 @@ msgid ""
 "You can also get in touch with <span name=\"distro-name\"></span> through "
 "official Ubuntu forums."
 msgstr ""
+"Resmi Ubuntu forumlarından da <span name = \"distro-name\"> </ span> ile "
+"iletişime geçebilirsiniz."
 
 #: community.html:59
 msgid "Social Networks"
-msgstr "Rangkaian Sosial"
+msgstr "Sosyal Ağlar"
 
 #: community.html:60
 msgid ""
 "<span name=\"distro-name\"></span> is active on the following social "
 "networks."
-msgstr ""
+msgstr "<Span name = \"distro-name\"> </ span> şu sosyal ağlarda etkindir."
 
 #: community.html:69
 msgid "G+ Community"
-msgstr "Komuniti G+"
+msgstr "G+ Topluluğu"
 
 #: community.html:72
 msgid "G+ Page"
-msgstr "Laman G+"
+msgstr "G+ Sayfası"
 
 #: community.html:82
 msgid "Facebook Group"
-msgstr "Kumpulan Facebook"
+msgstr "Facebook Grubu"
 
 #: community.html:85
 msgid "Facebook Page"
-msgstr "Laman Facebook"
+msgstr "Facebook Sayfası"
 
 #: community.html:105
 msgid "Gitter Chat Room"
-msgstr "Bilik Sembang Gitter"
+msgstr "Gitter Sohbet Odası"
 
 #: community.html:134
 msgid "Local Communities"
-msgstr "Komuniti Setempat"
+msgstr "Yerel Topluluklar"
 
 #: community.html:135
 msgid ""
@@ -120,7 +131,13 @@ msgid ""
 "name\"></span> please let us know, so that we can list it here and improve "
 "its visibility."
 msgstr ""
+"Küresel topluluklara ek olarak, <span name=\"distro-name\"></span> yerel "
+"toplulukları desteklemektedir. Böylece dünyanın dört bir yanından gelen "
+"kullanıcılar birbirlerine destek olabilirler. Bu bölümde, Yerel "
+"topluluklarımızı keşfedebilirsiniz. Eğer  <span name=\"distro-name\"></span>"
+" için bir yerel topluluğu yönetmek isterseniz, Lütfen bize iletin böylece "
+"yerel topluluğunuzu burada listeler ve görünürlüğünü arttırabiliriz."
 
 #: community.html149, 157
 msgid "Ubuntu Budgie Brasil"
-msgstr "Ubuntu Budgie Brasil"
+msgstr "Ubuntu Budgie Brezilya"
