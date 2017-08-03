@@ -17,15 +17,19 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "Report-Msgid-Bugs-To : you@example.com\n"
 
-#: default.html13, 20
+#: default.html13, 23
 msgid "Default Settings"
 msgstr "Configurações Padrão"
 
-#: default.html17, 28
+#: default.html17, 31
 msgid "Switch Appearance"
 msgstr "Trocar Aparência"
 
-#: default.html:29
+#: default.html20, 207
+msgid "Desktop Layout"
+msgstr ""
+
+#: default.html:32
 msgid ""
 "<span name=\"distro-name\"></span> uses <strong>Arc</strong> as it's default"
 " theme package. It uses Arc theme for GTK windows, panels, login window and "
@@ -35,41 +39,26 @@ msgstr ""
 " tema padrão. Ele usa o tema Arc para janelas GTK, painéis, janela de login "
 "e tela de bloqueio e <strong>Pocillo</strong> como o tema de ícones."
 
-#: default.html:32
-msgid ""
-"Another emerging design trend is <strong>Material Design</strong> which is "
-"basically a collection of design guidelines introduced by Google to bring a "
-"uniform appearance across different platforms. There are different theme "
-"packages inspired by Google&apos;s Material Design style."
-msgstr ""
-"Outra tendência de design emergente é o <strong>Material Design</strong> que"
-" é basicamente uma coleção de diretrizes de design introduzidas pelo Google "
-"para trazer uma aparência uniforme em diferentes plataformas. Existem "
-"pacotes de temas diferentes inspirados no estilo Material Design do Google."
-
 #: default.html:35
 msgid ""
-"As <span name=\"distro-name\"></span> values the freedom of users, we "
-"provide easy options to switch between our default <em>Arc style</em> and "
-"<em>Material style</em>."
+"There are several additional Budgie Desktop compatible themes available. "
+"Budgie Welcome provides a simple method to switch your desktop appearance "
+"(theme, fonts, icons, desktop wallpaper) from the default Arc based package."
 msgstr ""
-"Como o <span name=\"distro-name\"></span> valoriza a liberdade dos usuários,"
-" oferecemos opções fáceis de alternar entre nossos temas padrões "
-"<em>Arc</em> e <em>Material</em>."
 
 #: default.html:43
 msgid "Arc Design"
 msgstr "Arc Design"
 
-#: default.html49, 69, 89, 109, 129, 149
+#: default.html49, 69, 89, 109, 129, 149, 169, 189
 msgid "Install theme"
 msgstr "Instalar tema"
 
-#: default.html53, 73, 93, 113, 133, 153
+#: default.html53, 73, 93, 113, 133, 153, 173, 193
 msgid "Apply theme"
 msgstr "Aplicar tema"
 
-#: default.html58, 78, 98, 118, 138, 158, 175
+#: default.html58, 78, 98, 118, 138, 158, 178, 198, 244
 msgid "Applying Changes..."
 msgstr "Aplicando Mudanças..."
 
@@ -93,11 +82,27 @@ msgstr "Ceti-2 Design"
 msgid "Material Design (Flat-Plat)"
 msgstr "Material Design (Flat-Pack)"
 
-#: default.html:168
+#: default.html:208
+msgid "Switch the layout of your desktop to suit your workflow."
+msgstr ""
+
+#: default.html:212
+msgid "Default"
+msgstr ""
+
+#: default.html:216
+msgid "Classic Budgie"
+msgstr ""
+
+#: default.html:228
+msgid "Classic GNOME"
+msgstr ""
+
+#: default.html:237
 msgid "Restore panels"
 msgstr "Restaurar painéis. "
 
-#: default.html:169
+#: default.html:238
 msgid ""
 "Lost your panels while playing with <span name=\"distro-name\"></span>? "
 "Unhappy with your changes to the panel layout? Don't worry. We can help you "
@@ -107,7 +112,7 @@ msgstr ""
 "Infeliz com suas mudanças no layout do painel? Não se preocupe. Podemos "
 "ajudá-lo a restaurar seus painéis com apenas um único clique!"
 
-#: default.html:172
+#: default.html:241
 msgid ""
 "This will undo all changes that you have made on any panel and will reset "
 "back to the initial default panel layout configuration."
@@ -115,6 +120,6 @@ msgstr ""
 "Isso anulará todas as alterações feitas em qualquer painel e reiniciará para"
 " as configurações padrão de layout do painel."
 
-#: default.html:176
+#: default.html:245
 msgid "Reset Budgie Panel"
 msgstr "Redefinir Painel do Budgie"
