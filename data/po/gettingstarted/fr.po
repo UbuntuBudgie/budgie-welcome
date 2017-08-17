@@ -1,17 +1,18 @@
 # Translators:
+# Cédric Fouétillou <cfouetillou@me.com>, 2017
 # Emmanuel Hermellin <hermellin@lirmm.fr>, 2017
 # David Mohammed <fossfreedom@ubuntu.com>, 2017
 # Jean-Charles SPOR <jean-charles.spor@hotmail.fr>, 2017
 # Scott <theatlantis394@gmail.com>, 2017
 # Jean-Elie ARGYRE <remy.argyre@gmail.com>, 2017
 # Théo Jolivet <moi@kiyo.ooo>, 2017
-# Julien Robert <julien@rbrt.fr>, 2017
+# Julien Robert <inactive+julienrbrt@transifex.com>, 2017
 msgid ""
 msgstr ""
 "Project-Id-Version: Budgie Welcome\n"
 "POT-Creation-Date: 2016-02-27 12:48+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Julien Robert <julien@rbrt.fr>, 2017\n"
+"Last-Translator: Julien Robert <inactive+julienrbrt@transifex.com>, 2017\n"
 "Language-Team: French (https://www.transifex.com/ubuntu-budgie/teams/72251/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -22,7 +23,7 @@ msgstr ""
 
 #: gettingstarted.html:14
 msgid "Getting Started"
-msgstr "Pour bien commencer"
+msgstr "Pour débuter"
 
 #: gettingstarted.html:22
 msgid "Prerequisites"
@@ -466,6 +467,11 @@ msgid ""
 " choose mount points. Dividing your disks can make it somewhat easier to re-"
 "install the operating system later if desired."
 msgstr ""
+"A la place ou en plus de GParted, les options <b>Avancees</b> pendant "
+"l'assistant d'installation permettent de configurer et redimensionner  vos "
+"partitions ainsi que de choisir le point de montage. Partager vos disques "
+"rend plus facile la réinstallation d'un système d'exploitation plus tard si "
+"vous le désirez."
 
 #: gettingstarted.html:276
 msgid "You can specify these mount points:"
@@ -617,6 +623,9 @@ msgid ""
 "Fortunately, you can use the <b>Boot Repair</b> tool to repair common "
 "problems caused by other operating systems."
 msgstr ""
+"Heureusement, vous pouvez utiliser l'utilitaire<b>Boot Repair</b> pour "
+"réparer les principaux problèmes causés par d'autres systèmes "
+"d'exploitation."
 
 #: gettingstarted.html:349
 msgid "Requires downloading a package."
@@ -944,6 +953,9 @@ msgid ""
 "after installing the firmware packages, you may need to research your device"
 " to find the appropriate driver."
 msgstr ""
+"S'il n'y avait pas de pilote additionnel trouvé pour le matériel et qu'il ne"
+" fonctionne pas après l'installation . Vous devrez rechercher votre materiel"
+" pour trouver le pilote approprié."
 
 #: gettingstarted.html:559
 msgid ""
@@ -1045,6 +1057,9 @@ msgid ""
 "<span name=\"distro-name\"></span> provides option to install a backup "
 "utility or firewall and supports multiple user accounts."
 msgstr ""
+"<span name=\"distro-name\"></span> fournit l'option d'installer un "
+"utilitaire de sauvegarde ou un pare-feu et prend en charge les comptes "
+"utilisateurs multiples."
 
 #: gettingstarted.html:679
 msgid "Backups"
@@ -1055,6 +1070,8 @@ msgid ""
 "Nothing is more important then having a backup of your personal files, just "
 "in case something disastrous happens to your computer."
 msgstr ""
+"Rien n'est plus important que de sauvegarder vos fichiers personnels, juste "
+"au cas où quelque chose de grave arrive à votre ordinateur."
 
 #: gettingstarted.html:684
 msgid ""
@@ -1084,6 +1101,10 @@ msgid ""
 "onclick=\"cmd('link?https://help.ubuntu.com/community/DoINeedAFirewall')\">learn"
 " more about firewalls</a>."
 msgstr ""
+"Les pare-feux protègent contre les connexions malveillantes qui entrent et "
+"sortent de votre ordinateur. Par défaut, le pare-feu est désactivé, <a "
+"onclick=\"cmd('link?https://help.ubuntu.com/community/DoINeedAFirewall')\">Pour"
+" en savoir plus sur les pare-feux</a>."
 
 #: gettingstarted.html:712
 msgid ""
