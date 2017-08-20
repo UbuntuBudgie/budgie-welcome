@@ -52,16 +52,30 @@
               "zesty" : ["ppa:ubuntubudgie/backports"],
               "artful" : ["universe"]
 		  }
-	  }
-	  ,
+	  },
 	  "weather-applet" : {
 		  "packages" : ["budgie-weather-applet"],
 		  "repos" : {
               "zesty" : ["ppa:ubuntubudgie/backports"],
               "artful" : ["ppa:ubuntubudgie/backports"]
 		  }
+	  },
+      "sysmonitor-applet" : {
+		  "packages" : ["budgie-sysmonitor-applet"],
+		  "repos" : {
+              "xenial": ["ppa:budgie-remix/ppa"],
+              "zesty" : ["ppa:ubuntubudgie/backports"],
+              "artful" : ["ppa:ubuntubudgie/backports"]
+		  }
+	  },
+      "wmmover-applet" : {
+		  "packages" : ["budgie-wmmover-applet"],
+		  "repos" : {
+              "xenial": ["ppa:budgie-remix/ppa"],
+              "zesty" : ["ppa:ubuntubudgie/backports"],
+              "artful" : ["ppa:ubuntubudgie/backports"]
+		  }
 	  }
-
   },
   "recommendations" : {
     "snap" : {
