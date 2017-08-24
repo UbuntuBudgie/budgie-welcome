@@ -4,12 +4,13 @@
 # Miguel Morales <miguelmorales85@gmail.com>, 2017
 # Oscar Hernandez <oscaralejandro_3@hotmail.com>, 2017
 # dan bul <daniel.lubian@outlook.es>, 2017
+# rctorr . <rictor@cuhrt.com>, 2017
 msgid ""
 msgstr ""
 "Project-Id-Version: Budgie Welcome\n"
 "POT-Creation-Date: 2016-02-27 12:48+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: dan bul <daniel.lubian@outlook.es>, 2017\n"
+"Last-Translator: rctorr . <rictor@cuhrt.com>, 2017\n"
 "Language-Team: Spanish (https://www.transifex.com/ubuntu-budgie/teams/72251/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -276,7 +277,7 @@ msgstr ""
 
 #: gettingstarted.html:202
 msgid "I'm dual booting with"
-msgstr ""
+msgstr "Estoy haciendo arranque dual con"
 
 #: gettingstarted.html:205
 msgid "To minimize the risk of data loss or failure, ensure that:"
@@ -404,7 +405,7 @@ msgstr "Puede especificar los siguientes puntos de montaje:"
 
 #: gettingstarted.html:278
 msgid "The base for <span name=\"distro-name\"></span>"
-msgstr ""
+msgstr "La base para <span name=\"distro-name\"> </span>"
 
 #: gettingstarted.html:279
 msgid "Bootloader and kernels"
@@ -423,19 +424,23 @@ msgid ""
 "Contains most of the applications <i> (binaries, documentation, libraries, "
 "etc)</i>"
 msgstr ""
+"Contiene más de las aplicaciones <i> (binarios, documentación, librerías, "
+"etc) </i>"
 
 #: gettingstarted.html:283
 msgid "Variable data <i>(such as system logs)</i>"
-msgstr ""
+msgstr "Datos variables <i> (como las bitácoras de sistema) </i>"
 
 #: gettingstarted.html:284
 msgid ""
 "Data for System Services <i>(typically used for server configurations)</i>"
 msgstr ""
+"Datos para Servicios de Sistema <i> (típicamente usados para configuraciones"
+" de servidor) </i>"
 
 #: gettingstarted.html:285
 msgid "Additional software unmanaged by the package manager"
-msgstr ""
+msgstr "Software adicional no manejado por el administrador de paquetes"
 
 #: gettingstarted.html:286
 msgid "such as"
@@ -706,13 +711,15 @@ msgstr ""
 
 #: gettingstarted.html:493
 msgid "VirtualBox Guest Additions"
-msgstr ""
+msgstr "VirtualBox Guest Additions"
 
 #: gettingstarted.html:494
 msgid ""
 "To accelerate graphics performance inside the virtual machine, please "
 "install Guest Additions."
 msgstr ""
+"Para acelerar el rendimiento gráfico en la máquina virtual, por favor "
+"instale Guest Additions"
 
 #: gettingstarted.html:498
 msgid "Proprietary or Open Source Drivers?"
