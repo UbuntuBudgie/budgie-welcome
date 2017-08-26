@@ -1,5 +1,8 @@
 #!/usr/bin/make -f
 
+export DH_VERBOSE = 1
+export LC_ALL=C.UTF-8
+
 %:
 	dh $@ 
 	
