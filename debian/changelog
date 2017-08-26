@@ -8,6 +8,8 @@ budgie-welcome (0.5.2) artful; urgency=medium
     - temporarily disable optional wmmover-applet since not available to
       be installed yet
     - update budgie-shop picture to cover missing desktop purchase options
+    - clean up source tree so that locale binaries are not included with
+      the source; these are created as part of the build
   * Latest translation updates
 
  -- David Mohammed <fossfreedom@ubuntu.com>  Fri, 25 Aug 2017 17:31:34 +0100
