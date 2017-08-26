@@ -1,3 +1,17 @@
+budgie-welcome (0.5.2ubuntu1) artful; urgency=medium
+
+  * Bug-fix releaase (LP: #)
+    - add patch disable_threads.patch
+      temporary patch to workaround showstopper segmentation faults
+      caused by experimental webkit2gtk library upload in artful
+      (upstream webkit2gtk issue 175855)
+    - temporarily disable optional wmmover-applet since not available to be
+      installed yet
+    - update budgie-shop picture to cover missing desktop purchase options
+  * Latest translation updates
+
+ -- David Mohammed <fossfreedom@ubuntu.com>  Fri, 25 Aug 2017 17:31:34 +0100
+
 budgie-welcome (0.5.1) artful; urgency=medium
 
   * New Release (LP: #1711912)
