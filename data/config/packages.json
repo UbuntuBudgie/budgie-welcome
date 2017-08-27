@@ -39,7 +39,6 @@
 	  "pixel-applet" : {
 		  "packages" : ["budgie-pixel-saver-applet"],
 		  "repos" : {
-			  "xenial" : ["ppa:budgie-remix/ppa"],
 			  "yakkety" : ["ppa:budgie-remix/ppa"],
               "zesty" : ["ppa:ubuntubudgie/backports"],
               "artful" : ["ppa:ubuntubudgie/backports"]
@@ -48,7 +47,6 @@
 	  "appmenu-applet" : {
 		  "packages" : ["budgie-appmenu-applet"],
 		  "repos" : {
-			  "xenial" : ["ppa:budgie-remix/ppa"],
               "zesty" : ["ppa:ubuntubudgie/backports"],
               "artful" : ["universe"]
 		  }
