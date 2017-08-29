@@ -104,21 +104,16 @@ class AppView(WebKit2.WebView):
         else:
             app.update_page('.normal-session-only', 'show')
 
-        print ("5")
         if not pm.queue.empty() or pm.active: # There is atleast one task
             self.status_btn.show()
         else:
             self.status_btn.hide()
 
-        print ("6")
         if systemstate.is_online:
-            print ("6.1")
             app.run_javascript("$('.offline').hide()")
         else:
-            print ("6.2")
             app.run_javascript("$('.offline').show()")
 
-        print ("7")
         ### Getting Started Page ###
         if current_page == 'gettingstarted':
             if systemstate.first_run != True:
@@ -130,8 +125,8 @@ class AppView(WebKit2.WebView):
                 app.update_page('.1710', 'show')
 
             # Display information tailored to graphics vendor (Getting Started / Drivers)
-            self.run_javascript('var graphicsVendor = "' + systemstate.graphics_vendor + '";')
-            self.run_javascript('var graphicsGrep = "' + systemstate.graphics_grep + '";')
+            app.run_javascript('var graphicsVendor = "' + systemstate.graphics_vendor + '";')
+            app.run_javascript('var graphicsGrep = "' + systemstate.graphics_grep + '";')
             app.update_page('#boot-mode', 'html', systemstate.boot_mode)
             graphics_vendor = systemstate.graphics_vendor
 
@@ -152,16 +147,14 @@ class AppView(WebKit2.WebView):
             thread = Thread(target = self.check_animation_status)
             thread.start()
         ### Index Page ###
-        print ("8")
         if current_page == 'index':
             if systemstate.autostart:
                 app.update_page('#autostart', 'html', '&#xE837;')
             else:
                 app.update_page('#autostart', 'html', '&#xE836;')
 
-            self.run_javascript('$("#wordmark").attr("src","' + translations.res_dir + 'img/welcome/' + systemstate.distro_wordmark + '");')
+            app.run_javascript('$("#wordmark").attr("src","' + translations.res_dir + 'img/welcome/' + systemstate.distro_wordmark + '");')
 
-        print ("9")
         if current_page == 'default':
             systemstate.first_run = False
             if self.back_signal_handler:
@@ -190,14 +183,12 @@ class AppView(WebKit2.WebView):
                 for theme in config[systemstate.codename]:
                     app.update_page("." + theme, 'show')
 
-        print ("10")
         if current_page in ['introduction', 'features', 'community', 'recommendations', 'gettingstarted']:
             if systemstate.official:
                 app.update_page('.official-only', 'show')
             else:
                 app.update_page('.unofficial-only', 'show')
 
-        print ("11")
         if current_page == 'features':
             if systemstate.codename in ['xenial', 'yakkety', 'zesty']:
                 app.update_page('.before1710', 'show')
@@ -206,7 +197,6 @@ class AppView(WebKit2.WebView):
                 app.update_page('.before1710', 'hide')
                 app.update_page('.1710', 'show')
 
-        print ("12")
         if current_page == 'budgie-applets':
             # applets are distro specific so need to hide/show as appropriate
             package = app._data_path + "/config/packages.json"
@@ -221,7 +211,6 @@ class AppView(WebKit2.WebView):
                     app.update_page("." + applet, 'hide')
 
         ### All pages with install/removal ###
-        print ("13")
         if current_page in ['gettingstarted', 'default', 'recommendations', 'budgie-applets']:
             app.update_page('[id$=install]', 'hide')
             app.update_page('[id$=remove]', 'hide')
@@ -258,14 +247,12 @@ class AppView(WebKit2.WebView):
             thread = Thread(target=checkInstallationStatus)
             thread.start()
 
-        print ("14")
         app.run_javascript("$('span[name=\"distro-name\"]').html('{}')".format(systemstate.distroname))
 
         # Apply intermediate actions, if any are present
         if current_page in systemstate.intermediate_actions:
             for action in systemstate.intermediate_actions[current_page]:
                 app.update_page(action[0], action[1], action[2], action[3])
-        print ("15")
 
     def _load_changed_cb(self, view, frame):
         uri = str(self.get_uri())
@@ -779,9 +766,7 @@ class PackageManager(Thread):
             post_install = pdata.getPostInstall(filename, code)
 
             if retval == 0 and post_install :
-                print ("1")
                 app.webkit._do_command("script?" + post_install)
-                print ("2")
 
             if entry.task == PMEntry.INSTALL:
                 app.update_page('#' + code + '-install', 'removeClass', 'disabled')
@@ -803,9 +788,7 @@ class PackageManager(Thread):
             self.reload_cache()
 
             self.active = None
-            print ("3")
             app.webkit._push_config()
-            print ("4")
 
             self.queue.task_done()
 
@@ -1550,14 +1533,12 @@ class WelcomeApp(object):
         Runs a JavaScript function on the page, regardless of which thread it is called from.
         GTK+ operations must be performed on the same thread to prevent crashes.
         """
-        print ("run " + script)
         GLib.idle_add(self._run_javascript, script)
 
     def _run_javascript(self, script):
         """
         Runs a JavaScript script on the page when invoked from run_javascript()
         """
-        print ("and now " + script)
         self.webkit.run_javascript(script)
         return GLib.SOURCE_REMOVE
 
