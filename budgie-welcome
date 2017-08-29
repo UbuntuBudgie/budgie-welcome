@@ -1532,8 +1532,19 @@ class WelcomeApp(object):
             self.webkit.run_javascript('$("' + element + '").' + function + '()')
 
     def run_javascript(self, script):
+        """
+        Runs a JavaScript function on the page, regardless of which thread it is called from.
+        GTK+ operations must be performed on the same thread to prevent crashes.
+        """
         print("Running script", script)
+        GLib.idle_add(self._run_javascript, script)
+
+    def _run_javascript(self, script):
+        """
+        Runs a JavaScript script on the page when invoked from run_javascript()
+        """
         self.webkit.run_javascript(script)
+        return GLib.SOURCE_REMOVE
 
     def _check_first_run(self):
         file = os.path.join(localdir, 'firstrun')
