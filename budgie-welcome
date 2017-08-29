@@ -44,7 +44,7 @@ import locale
 import gettext
 import getpass
 
-from gi.repository import WebKit2, Gtk, Gio, Gdk
+from gi.repository import WebKit2, Gtk, Gio, Gdk, GLib
 from threading import Thread
 from queue import Queue, Empty
 from notify2 import Notification, init as NotifyInit
@@ -73,10 +73,10 @@ class AppView(WebKit2.WebView):
         self.back_signal_handler = None
 
     def _back_action(self, data):
-        self.run_javascript("smoothPageFade('index.html')")
+        app.run_javascript("smoothPageFade('index.html')")
 
     def _index_action(self, data):
-        self.run_javascript("backAction()")
+        app.run_javascript("backAction()")
 
     def _push_config(self):
         # TODO: push notification should be connected to angularjs and use a
@@ -104,16 +104,21 @@ class AppView(WebKit2.WebView):
         else:
             app.update_page('.normal-session-only', 'show')
 
+        print ("5")
         if not pm.queue.empty() or pm.active: # There is atleast one task
             self.status_btn.show()
         else:
             self.status_btn.hide()
 
+        print ("6")
         if systemstate.is_online:
-            self.run_javascript("$('.offline').hide()")
+            print ("6.1")
+            app.run_javascript("$('.offline').hide()")
         else:
-            self.run_javascript("$('.offline').show()")
+            print ("6.2")
+            app.run_javascript("$('.offline').show()")
 
+        print ("7")
         ### Getting Started Page ###
         if current_page == 'gettingstarted':
             if systemstate.first_run != True:
@@ -147,6 +152,7 @@ class AppView(WebKit2.WebView):
             thread = Thread(target = self.check_animation_status)
             thread.start()
         ### Index Page ###
+        print ("8")
         if current_page == 'index':
             if systemstate.autostart:
                 app.update_page('#autostart', 'html', '&#xE837;')
@@ -155,6 +161,7 @@ class AppView(WebKit2.WebView):
 
             self.run_javascript('$("#wordmark").attr("src","' + translations.res_dir + 'img/welcome/' + systemstate.distro_wordmark + '");')
 
+        print ("9")
         if current_page == 'default':
             systemstate.first_run = False
             if self.back_signal_handler:
@@ -183,12 +190,14 @@ class AppView(WebKit2.WebView):
                 for theme in config[systemstate.codename]:
                     app.update_page("." + theme, 'show')
 
+        print ("10")
         if current_page in ['introduction', 'features', 'community', 'recommendations', 'gettingstarted']:
             if systemstate.official:
                 app.update_page('.official-only', 'show')
             else:
                 app.update_page('.unofficial-only', 'show')
 
+        print ("11")
         if current_page == 'features':
             if systemstate.codename in ['xenial', 'yakkety', 'zesty']:
                 app.update_page('.before1710', 'show')
@@ -197,6 +206,7 @@ class AppView(WebKit2.WebView):
                 app.update_page('.before1710', 'hide')
                 app.update_page('.1710', 'show')
 
+        print ("12")
         if current_page == 'budgie-applets':
             # applets are distro specific so need to hide/show as appropriate
             package = app._data_path + "/config/packages.json"
@@ -211,6 +221,7 @@ class AppView(WebKit2.WebView):
                     app.update_page("." + applet, 'hide')
 
         ### All pages with install/removal ###
+        print ("13")
         if current_page in ['gettingstarted', 'default', 'recommendations', 'budgie-applets']:
             app.update_page('[id$=install]', 'hide')
             app.update_page('[id$=remove]', 'hide')
@@ -241,19 +252,20 @@ class AppView(WebKit2.WebView):
 
                 # Sort recommendations after checking installation status
                 if current_page == 'recommendations':
-                    self.run_javascript("sortList()")
+                    app.run_javascript("sortList()")
             # Checking on cache will take sometime. So run it on a
             # separate thread.
             thread = Thread(target=checkInstallationStatus)
             thread.start()
 
-        self.run_javascript("$('span[name=\"distro-name\"]').html('{}')".format(systemstate.distroname))
+        print ("14")
+        app.run_javascript("$('span[name=\"distro-name\"]').html('{}')".format(systemstate.distroname))
 
         # Apply intermediate actions, if any are present
         if current_page in systemstate.intermediate_actions:
             for action in systemstate.intermediate_actions[current_page]:
                 app.update_page(action[0], action[1], action[2], action[3])
-
+        print ("15")
 
     def _load_changed_cb(self, view, frame):
         uri = str(self.get_uri())
@@ -767,7 +779,9 @@ class PackageManager(Thread):
             post_install = pdata.getPostInstall(filename, code)
 
             if retval == 0 and post_install :
+                print ("1")
                 app.webkit._do_command("script?" + post_install)
+                print ("2")
 
             if entry.task == PMEntry.INSTALL:
                 app.update_page('#' + code + '-install', 'removeClass', 'disabled')
@@ -789,8 +803,9 @@ class PackageManager(Thread):
             self.reload_cache()
 
             self.active = None
+            print ("3")
             app.webkit._push_config()
-
+            print ("4")
 
             self.queue.task_done()
 
@@ -1502,7 +1517,6 @@ class WelcomeApp(object):
     def close(self, p1 = None, p2 = None):
 
         pm.running = False
-        print("Close requested")
         # Reduce race condition as much as possible
         temp = pm.active
         if temp:
@@ -1514,7 +1528,7 @@ class WelcomeApp(object):
 
             # pm.clearQueue()
 
-            return
+            return True
 
         pm_queue.join()
         pm.join()
@@ -1525,24 +1539,25 @@ class WelcomeApp(object):
         """ Runs a JavaScript jQuery function on the page,
             ensuring correctly parsed quotes. """
         if parm1 and parm2:
-            self.webkit.run_javascript('$("' + element + '").' + function + "('" + parm1.replace("'", '\\\'') + "', '" + parm2.replace("'", '\\\'') + "')")
+            self.run_javascript('$("' + element + '").' + function + "('" + parm1.replace("'", '\\\'') + "', '" + parm2.replace("'", '\\\'') + "')")
         if parm1:
-            self.webkit.run_javascript('$("' + element + '").' + function + "('" + parm1.replace("'", '\\\'') + "')")
+            self.run_javascript('$("' + element + '").' + function + "('" + parm1.replace("'", '\\\'') + "')")
         else:
-            self.webkit.run_javascript('$("' + element + '").' + function + '()')
+            self.run_javascript('$("' + element + '").' + function + '()')
 
     def run_javascript(self, script):
         """
         Runs a JavaScript function on the page, regardless of which thread it is called from.
         GTK+ operations must be performed on the same thread to prevent crashes.
         """
-        print("Running script", script)
+        print ("run " + script)
         GLib.idle_add(self._run_javascript, script)
 
     def _run_javascript(self, script):
         """
         Runs a JavaScript script on the page when invoked from run_javascript()
         """
+        print ("and now " + script)
         self.webkit.run_javascript(script)
         return GLib.SOURCE_REMOVE
 
