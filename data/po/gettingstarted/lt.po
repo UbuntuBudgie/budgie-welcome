@@ -684,7 +684,7 @@ msgstr "Tikrinti ar yra atnaujinimų"
 
 #: gettingstarted.html:406
 msgid "Restricted Extras"
-msgstr ""
+msgstr "Apribota papildomoji įranga"
 
 #: gettingstarted.html:407
 msgid ""
@@ -694,6 +694,11 @@ msgid ""
 "Ubuntu License Policy) complicate distribution of software to support non-"
 "free formats."
 msgstr ""
+"<strong>Ubuntu</strong>(pagrindinė <span name=\"distro-name\"></span> "
+"distribucija) siekia padaryti visą svarbią programinę įrangą automatiškai "
+"prieinamą savo naudotojams. Kita vertus, patentų ir autorių teisių "
+"apribojimai (žiūrėkite Ubuntu licencijų politką) apsunkina programinės "
+"įrangos platinimą, skirtą palaikyti nelaisvuosius formatus."
 
 #: gettingstarted.html:411
 msgid ""
@@ -701,6 +706,9 @@ msgid ""
 " including DVD, MP3, Quicktime, and Windows Media formats, by following the "
 "instructions below."
 msgstr ""
+"Vis dėlto, sekdami žemiau pateiktomis instrukcijomis, galite įdiegti "
+"galimybę atkurti populiarius nelaisvuosius medijos formatus, įskaitant DVD, "
+"MP3, Quicktime ir Windows Media formatus."
 
 #: gettingstarted.html:414
 msgid ""
@@ -709,6 +717,11 @@ msgid ""
 "See Ubuntu’s Free Software Philosophy and the Free Formats page for a more "
 "comprehensive discussion of these issues."
 msgstr ""
+"Ubuntu pasišventimas pagal numatymą įtraukti tik visiškai laisvąją "
+"programinę įrangą reiškia, kad nuosavybiniai medijos formatai nėra "
+"sukonfigūruoti iš karto įdiegus sistemą. Labiau suprantamai diskusijai šiais"
+" klausimais, žiūrėkite Ubuntu laisvosios programinės įrangos filosofiją ir "
+"laisvųjų formatų puslapį."
 
 #: gettingstarted.html:418
 msgid ""
@@ -717,6 +730,11 @@ msgid ""
 " unsure whether a particular patent or restriction applies to a media format"
 " you wish to use in your country."
 msgstr ""
+"<strong>Teisinis pranešimas</strong> Priklausomai nuo šalies, kurioje esate,"
+" patentai ir autorių teisių įstatymai yra taikomi skirtingai. Jeigu nesate "
+"tikri, ar jūsų šalyje, jūsų norimam naudoti medijos formatui yra taikomi tam"
+" tikri patentai ar apribojimai, tuomet pasikonsultuokite dėl teisinio "
+"patarimo."
 
 #: gettingstarted.html423, 599, 604, 639, 645, 651, 687, 716, 783, 798, 816,
 #: 831, 850
@@ -762,6 +780,8 @@ msgstr "Papildomos tvarkyklės"
 msgid ""
 "<b>Additional Drivers</b> can be found later in <b>Software & Updates</b>"
 msgstr ""
+"<b>Papildomas tvarkykles</b> vėliau galima rasti <b>Programų saugyklos, "
+"atnaujinimai, valdyklės</b>"
 
 #: gettingstarted.html:464
 msgid "Graphics"
@@ -1053,7 +1073,7 @@ msgid ""
 "<b>Language Support</b> can be found later in <b><i>Settings <i class"
 "=\"material-icons\">&#xE315;</i> Region & Language</i></b>"
 msgstr ""
-"<b>Kalbos palaikymą</b> vėliau galite rasti <b><i>Nustatymai <i class"
+"<b>Kalbos palaikymą</b> vėliau galima rasti <b><i>Nustatymai <i class"
 "=\"material-icons\">&#xE315;</i> Regionas ir kalba</i></b>"
 
 #: gettingstarted.html:630
@@ -1107,6 +1127,10 @@ msgid ""
 "name=\"distro-name\"></span> and supports backups to local devices as well "
 "as online cloud-based services."
 msgstr ""
+"<b>Deja-Dup</b> yra galinga atsarginių kopijų paslaugų programa, kuri gali "
+"būti įdiegta <span name=\"distro-name\"></span> sistemoje ir kuri palaiko "
+"atsarginių kopijų darymą į vietinius įrenginius, o taip pat į debesijos "
+"paslaugas."
 
 #: gettingstarted.html:691
 msgid "Configure Backup"
@@ -1158,6 +1182,9 @@ msgid ""
 "=\"material-icons\">&#xE315;</i> System <i class=\"material-"
 "icons\">&#xE315;</i> Firewall Configuration</i></b>."
 msgstr ""
+"Užkardos konfigūravimą</b> vėliau galima rasti <b><i>Nustatymai <i class"
+"=\"material-icons\">&#xE315;</i> Sistema <i class=\"material-"
+"icons\">&#xE315;</i> Užkardos konfigūravimas</i></b>."
 
 #: gettingstarted.html:737
 msgid "Users"
@@ -1190,18 +1217,26 @@ msgid ""
 "<b>Users</b> can be found later in <b><i>Settings <i class=\"material-"
 "icons\">&#xE315;</i> Users</i></b>."
 msgstr ""
+"<b>Naudotojus</b> vėliau galima rasti <b><i>Nustatymai <i class=\"material-"
+"icons\">&#xE315;</i> Naudotojai</i></b>."
 
 #: gettingstarted.html:768
 msgid ""
 "To improve the amount of customizability, <span name=\"distro-name\"></span>"
 " allows you to install/remove popular web browsers with a single click."
 msgstr ""
+"Norėdama patobulinti tinkinimo kiekį, <span name=\"distro-name\"></span> "
+"leidžia jums vienu spustelėjimu įdiegti/šalinti populiarias saityno "
+"naršykles."
 
 #: gettingstarted.html:774
 msgid ""
 "Chromium is an open-source browser project that aims to build a safer, "
 "faster, and more stable way for all Internet users to experience the web."
 msgstr ""
+"Chromium yra atvirojo kodo naršyklės projektas, kurio tikslas - sukurti "
+"saugesnį, greitesnį ir stabilesnį būdą visiems interneto naudotojams patirti"
+" saityną."
 
 #: gettingstarted.html:787
 msgid "Firefox"
@@ -1213,6 +1248,9 @@ msgid ""
 "Mozilla Foundation - a not for profit organisation. It is highly popular "
 "targeting multiple platforms."
 msgstr ""
+"Mozilla Firefox yra nemokama ir atvirojo kodo saityno naršyklė, kurią kuria "
+"Mozilla Foundation - ne pelno siekianti organizacija. Ši naršyklė yra labai "
+"populiari ir yra skirta kelioms platformoms."
 
 #: gettingstarted.html:807
 msgid ""
@@ -1220,18 +1258,26 @@ msgid ""
 "offers a smooth browsing experience plus integration with Google's "
 "proprietary services."
 msgstr ""
+"Google Chrome yra šiuolaikinė saityno naršyklė, kurią remia interneto "
+"gigantas Google. Ji siūlo sklandų naršymo patyrimą ir integraciją su Google "
+"nuosavybinėmis paslaugomis."
 
 #: gettingstarted.html:822
 msgid ""
 "Vivaldi Web Browser is a free, fully customizable web browser. Feature rich,"
 " powerful, secure and fun! Browse the Web your way"
 msgstr ""
+"Vivaldi saityno naršyklė yra nemokama, visiškai tinkinama saityno naršyklė. "
+"Daugiafunkcė, galinga, saugi ir linksma! Naršykite po saityną savo būdu"
 
 #: gettingstarted.html:841
 msgid ""
 "Opera is a fast and secure browser. Developed in Europe, used by millions "
 "around the world. Now with a built-in ad blocker and free VPN."
 msgstr ""
+"Opera yra greita ir saugi naršyklė. Sukurta Europoje ir naudojama milijonų "
+"žmonių visame pasaulyje. Dabar su įtaisyta reklamų blokavimo programa bei "
+"nemokamu VPN."
 
 #: gettingstarted.html:860
 msgid "User Interface"
@@ -1250,13 +1296,15 @@ msgstr ""
 
 #: gettingstarted.html:866
 msgid "Raven Configuration Center"
-msgstr ""
+msgstr "Raven konfigūravimo centras"
 
 #: gettingstarted.html:869
 msgid ""
 "<b>Raven Configuration Center</b> can be found later in <b>budgie panel "
 "options </b>."
 msgstr ""
+"<b>Raven konfigūravimo centrą</b> vėliau galima rasti <b>Budgie skydelio "
+"parametruose </b>."
 
 #: gettingstarted.html873, 878
 msgid "Settings"
@@ -1294,15 +1342,15 @@ msgstr "Budgie darbalaukio trumpiniai"
 
 #: gettingstarted.html:904
 msgid "Some common shortcuts used in Budgie Desktop"
-msgstr ""
+msgstr "Kai kurie paplitę trumpiniai, naudojami Budgie darbalaukyje"
 
 #: gettingstarted.html:913
 msgid "Open notifications in Raven"
-msgstr ""
+msgstr "Atverti pranešimus, esančius Raven"
 
 #: gettingstarted.html:921
 msgid "Open applet Settings in Raven"
-msgstr ""
+msgstr "Atverti programėlės nustatymus, esančius Raven"
 
 #: gettingstarted.html:926
 msgid "Common application shortcuts"
@@ -1314,12 +1362,12 @@ msgstr "Šie trumpiniai yra pritaikomi daugumoje programų."
 
 #: gettingstarted.html:934
 msgid "Toggle Tilix Quake Mode"
-msgstr ""
+msgstr "Perjungti Tilix Quake veikseną"
 
 #: gettingstarted.html938, 946, 954, 962, 970, 978, 986, 994, 1002, 1010,
 #: 1018, 1026, 1034, 1042, 1050, 1087, 1105, 1143, 1153, 1163, 1175
 msgid "Ctrl"
-msgstr ""
+msgstr "Vald"
 
 #: gettingstarted.html:942
 msgid "Copy the selected text/object"
@@ -1379,7 +1427,7 @@ msgstr "Atšaukti paskiausiai atliktą pakeitimą"
 
 #: gettingstarted.html1052, 1167, 1178
 msgid "Shift"
-msgstr ""
+msgstr "Lyg"
 
 #: gettingstarted.html:1056
 msgid "Redo a change that you just undid"
@@ -1416,7 +1464,7 @@ msgstr "Vykdyti programą, įrašant jos pavadinimą atsiradusiame langelyje"
 
 #: gettingstarted.html:1091
 msgid "Delete"
-msgstr ""
+msgstr "Šalinti (angl. Delete)"
 
 #: gettingstarted.html:1093
 msgid "Logout"

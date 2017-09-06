@@ -1,29 +1,26 @@
 # Translators:
-# Pad Padington <diecolabuechse@gmail.com>, 2017
-# Carsten <huti1990@gmail.com>, 2017
-# codehoudini <inactive+codehoudini@transifex.com>, 2017
-# Vinzenz Vietzke <vv@tuxedocomputers.com>, 2017
+# Abolfazl Amiri <aa.smpro@gmail.com>, 2017
 msgid ""
 msgstr ""
 "Project-Id-Version: Budgie Welcome\n"
 "POT-Creation-Date: 2016-02-27 12:48+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Vinzenz Vietzke <vv@tuxedocomputers.com>, 2017\n"
-"Language-Team: German (Germany) (https://www.transifex.com/ubuntu-budgie/teams/72251/de_DE/)\n"
+"Last-Translator: Abolfazl Amiri <aa.smpro@gmail.com>, 2017\n"
+"Language-Team: Persian (https://www.transifex.com/ubuntu-budgie/teams/72251/fa/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: de_DE\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: fa\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "Report-Msgid-Bugs-To : you@example.com\n"
 
 #: recommendations.html:15
 msgid "Recommendations"
-msgstr "Empfehlungen"
+msgstr "پیشنهادات"
 
 #: recommendations.html26, 71, 85, 102, 115, 132
 msgid "Applying Changes..."
-msgstr "Änderungen werden übernommen..."
+msgstr "اعمال تغییرات..."
 
 #: recommendations.html:35
 msgid ""
@@ -43,11 +40,11 @@ msgstr ""
 
 #: recommendations.html:41
 msgid "Snap user guide"
-msgstr "Snap Benutzeranleitung"
+msgstr "راهنمای کاربر Snap"
 
 #: recommendations.html:43
 msgid "Search Snap Apps"
-msgstr "Snap Apps suchen"
+msgstr "جستجوی نرم افزارهای Snap"
 
 #: recommendations.html:44
 msgid ""
@@ -63,29 +60,20 @@ msgid ""
 " install from the command line. It can be run with a query after it (e.g., "
 "‘snap find email‘, ‘snap find media’, ‘snap find messaging‘) or without."
 msgstr ""
-"Der Befehl find ermöglicht es Ihnen schnell nach verfügbaren snaps zu "
-"suchen, die über die Kommandozeile bestellbar sind. Er kann mit einem "
-"Suchbegriff ergänzt werden (z.B. 'snap find email', 'snap find media', 'snap"
-" find messaging') oder ohne."
 
 #: recommendations.html:49
 msgid "When run without a query you’ll instead see a list of featured snaps."
 msgstr ""
-"Ohne Suchbegriff ausgeführt wird Ihnen eine Liste vorgestellter Snaps "
-"angezeigt."
 
 #: recommendations.html:50
 msgid "See installed apps"
-msgstr "Installierte Apps anzeigen"
+msgstr "مشاهده نرم افزارهای نصب شده"
 
 #: recommendations.html:51
 msgid ""
 "Installed some Snaps but can’t remember what? Don’t panic. Use the list "
 "command to see an up-to-date list of all Snap apps installed on your system:"
 msgstr ""
-"Sie haben einige Snaps installiert, jedoch vergessen welche? Keine Panik. "
-"Nutzen Sie den list Befehl um eine aktuelle Liste aller auf Ihrem System "
-"installierten Snaps Apps zu sehen:"
 
 #: recommendations.html:53
 msgid ""
@@ -93,13 +81,10 @@ msgid ""
 "of the developer who uploaded it (handy when there are multiple versions of "
 "the same app in the store, e.g., Telegram)."
 msgstr ""
-"Diese Liste zeigt Ihnen auch die jeweilige Versionsnummer, Revision Nummer "
-"und den Namen des Entwicklers welcher es hochgeladen hat (hilfreich bei "
-"mehreren im Store vorhandenen Versionen der selben App, z.B. Telegram)."
 
 #: recommendations.html:54
 msgid "Install & Remove Snap Apps"
-msgstr "Snap Apps installieren & entfernen"
+msgstr "نصب و حذف نرم افزارهای Snap"
 
 #: recommendations.html:55
 msgid ""
@@ -107,13 +92,10 @@ msgid ""
 "analogous snap commands easy to remember. You install snap apps with the "
 "‘install’ command, and remove them using the ‘remove’ command."
 msgstr ""
-"Falls Sie gewohnt sind Software mit apt zu verwalten, werden Sie sich die "
-"analogen Snap Befehle leicht merken können. Sie installieren Snap Apps mit "
-"dem Befehl 'install' und entfernen diese mit 'remove'."
 
 #: recommendations.html:58
 msgid "See details of an App"
-msgstr "Details einer App anzeigen"
+msgstr "مشاهده جزئیات یک برنامه"
 
 #: recommendations.html:59
 msgid ""
@@ -122,14 +104,10 @@ msgid ""
 " channel, confinement status, size, number of revisions, and more. The snap "
 "info --verbose offers a greater overview."
 msgstr ""
-"Sie können hiermit detaillierte Informationen über jede Snap Anwendung "
-"einsehen, gleich ob installiert oder nicht. Diese Informationen enthalten "
-"den Release Channel, Beschränkungsstatus, Größe, Anzahl der Revisionen und "
-"mehr. Über snap info --verbose erhalten Sie eine größere Übersicht."
 
 #: recommendations.html:63
 msgid "Update a Snap App"
-msgstr "Eine Snap-App aktualisieren"
+msgstr "بروز رسانی یک برنامه در Snap"
 
 #: recommendations.html:65
 msgid ""
@@ -141,27 +119,27 @@ msgstr ""
 
 #: recommendations.html:68
 msgid "Reference"
-msgstr "Referenz"
+msgstr "منبع"
 
 #: recommendations.html:70
 msgid "Snap is already installed"
-msgstr "Snap ist bereits installiert."
+msgstr "Snap قبلا نصب شده است"
 
 #: recommendations.html:70
 msgid "Install Snap"
-msgstr "Installiere Snap"
+msgstr "نصب Snap"
 
 #: recommendations.html:76
 msgid "Budgie Screenshot Applet"
-msgstr "Budgie Bildschirmfoto Applet"
+msgstr "اَپلت عکس برداری از صفحه"
 
 #: recommendations.html:80
 msgid ""
 "<strong>Budgie Screenshot Applet</strong> is an advanced screenshot utility "
 "for capturing and organizing screenshots."
 msgstr ""
-"<strong>Budgie Bildschirmfoto Applet</strong> ist ein fortgeschrittenes "
-"Werkzeug um Bildschirmfotos aufzunehmen und zu organisieren."
+"یک ابزار عکس برداری پیشرفته از صفحه برای عکس برداری و مدیریت تصاویر گرفته "
+"شده از صفحه."
 
 #: recommendations.html:82
 msgid ""
@@ -174,15 +152,15 @@ msgstr ""
 
 #: recommendations.html:84
 msgid "Screenshot Applet is installed"
-msgstr "Bildschirmfoto Applet ist installiert"
+msgstr "اَپلت عکس برداری از صفحه نصب شده است"
 
 #: recommendations.html:84
 msgid "Install Screenshot Applet"
-msgstr "Bildschirmfoto Applet installieren"
+msgstr "نصب اَپلت عکس برداری از صفحه"
 
 #: recommendations.html:90
 msgid "Flatpak"
-msgstr "Flatpak"
+msgstr "برنامه Flatpak "
 
 #: recommendations.html:94
 msgid ""
@@ -197,7 +175,7 @@ msgstr ""
 
 #: recommendations.html:96
 msgid "Learn more"
-msgstr "Mehr erfahren"
+msgstr "بیشتر بدانید"
 
 #: recommendations.html:98
 msgid ""
@@ -217,17 +195,15 @@ msgstr ""
 
 #: recommendations.html:101
 msgid "Flatpak is installed. Please reboot for the service to start"
-msgstr ""
-"Flatpak wurde installiert. Bitte starten Sie den Rechner neu um den Service "
-"zu starten"
+msgstr "Flatpak نصب شده است. برای اجرای سرویس، سیستم را راه اندازی مجدد کنید."
 
 #: recommendations.html:102
 msgid "Install & Configure Flatpak"
-msgstr "Flatpak installieren & einrichten"
+msgstr "نصب و پیکربندی Flatpak"
 
 #: recommendations.html:106
 msgid "skippy-xd"
-msgstr ""
+msgstr "برنامه skippy-xd"
 
 #: recommendations.html:110
 msgid ""
@@ -248,15 +224,15 @@ msgstr ""
 
 #: recommendations.html:114
 msgid "skippy-xd is installed"
-msgstr "skippy-xd ist installiert"
+msgstr "برنامه skippy-xd نصب شده است"
 
 #: recommendations.html:114
 msgid "Install & Configure skippy-xd"
-msgstr "skippy-xd installieren & einrichten"
+msgstr "نصب و پیکربندی برنامه skippy-xd"
 
 #: recommendations.html:120
 msgid "Steam"
-msgstr "Steam"
+msgstr "برنامه Steam"
 
 #: recommendations.html:124
 msgid ""
@@ -284,8 +260,8 @@ msgstr ""
 
 #: recommendations.html:131
 msgid "Steam is installed"
-msgstr "Steam ist installiert."
+msgstr "برنامه Steam نصب شده است"
 
 #: recommendations.html:131
 msgid "Install & Configure Steam"
-msgstr "Steam installieren & einrichten"
+msgstr "نصب و پیکربندی Steam"

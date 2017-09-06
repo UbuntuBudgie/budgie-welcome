@@ -37,6 +37,18 @@ msgid ""
 "releases but the complexities of packaging and providing updates have "
 "prevented us from delivering them in the past."
 msgstr ""
+"<strong>Snap</strong> yra naujos kartos programų pakavimo formatas, kurį "
+"sukūrė <em>Canonical</em>. Nors iš pradžių, jis buvo sukurtas tik "
+"skirtingoms Ubuntu platformoms, tačiau šiuo metu veikia daugelyje kitų "
+"GNU/Linux distribucijų. Jis padės programų kūrėjams pateikti bendrą paketą, "
+"kuris gali veikti skirtingose platformose. Naudodamos snap paketų formatą, "
+"programos gali turėti savo bibliotekų versiją ir todėl nereikia rūpintis dėl"
+" bazinėje operacinėje sistemoje įdiegtų bibliotekų. Snap paketai įgalina "
+"kūrėjus į <span name=\"distro-name\"></span> pateikti žymiai naujesnes "
+"programų versijas. Naujesnės KDE, GNOME, naršyklių ar kitų darbalaukio "
+"aplinkų programų versijos, dažniausiai bus lengvai sukuriamos senesnėse "
+"ilgojo palaikymo (LTS) laidose, tačiau pakavimo sudėtingumas ir atnaujinimų "
+"teikimas neleido mums jų teikti praeityje."
 
 #: recommendations.html:41
 msgid "Snap user guide"
@@ -44,7 +56,7 @@ msgstr "Snap naudotojo vadovas"
 
 #: recommendations.html:43
 msgid "Search Snap Apps"
-msgstr ""
+msgstr "Ieškoti Snap programų"
 
 #: recommendations.html:44
 msgid ""
@@ -53,6 +65,10 @@ msgid ""
 "Snap app store. Well, wonder not. Simply pop open a terminal and run the "
 "following command:"
 msgstr ""
+"Jeigu Snap programų pritaikymui yra barjerų (be to, kad šiuo formatu yra "
+"prieinama nedaug programų), tai vienas iš jų yra neaiškumas dėl to, kurie "
+"paketai yra prieinami Snap programų parduotuvėje. Tačiau nesirūpinkite. "
+"Tiesiog, atverkite terminalą ir įvykdykite šią komandą:"
 
 #: recommendations.html:48
 msgid ""
@@ -60,20 +76,29 @@ msgid ""
 " install from the command line. It can be run with a query after it (e.g., "
 "‘snap find email‘, ‘snap find media’, ‘snap find messaging‘) or without."
 msgstr ""
+"Komanda \"find\" leidžia jums iš komandų eilutės greitai ieškoti ir atrasti "
+"prieinamus įdiegti snap paketus. Ši komanda gali būti vykdoma su užklausa po"
+" žodžio \"find\" (pvz., \"snap find email\", \"snap find media\", \"snap "
+"find messaging\") arba be užklausos."
 
 #: recommendations.html:49
 msgid "When run without a query you’ll instead see a list of featured snaps."
 msgstr ""
+"Įvykdę šią komandą be užklausos, vietoj to, pamatysite sąrašą pasižymėjusių "
+"snap paketų."
 
 #: recommendations.html:50
 msgid "See installed apps"
-msgstr ""
+msgstr "Rodyti įdiegtas programas"
 
 #: recommendations.html:51
 msgid ""
 "Installed some Snaps but can’t remember what? Don’t panic. Use the list "
 "command to see an up-to-date list of all Snap apps installed on your system:"
 msgstr ""
+"Įdiegėte kai kuriuos Snap paketus, tačiau neprisimenate kuriuos būtent? "
+"Nesijaudinkite. Norėdami pamatyti atnaujintą visų jūsų kompiuteryje įdiegtų "
+"Snap programų sąrašą, naudokite komandą \"list\":"
 
 #: recommendations.html:53
 msgid ""
@@ -81,10 +106,13 @@ msgid ""
 "of the developer who uploaded it (handy when there are multiple versions of "
 "the same app in the store, e.g., Telegram)."
 msgstr ""
+"Šis sąrašas taip pat rodo jų versijos numerį, revizijos numerį ir programą "
+"įkėlusio kūrėjo vardą (praverčia, kai parduotuvėje yra kelios tos pačios "
+"programos versijos, pvz., Telegram)."
 
 #: recommendations.html:54
 msgid "Install & Remove Snap Apps"
-msgstr ""
+msgstr "Įdiegti ir šalinti Snap programas"
 
 #: recommendations.html:55
 msgid ""
@@ -92,10 +120,14 @@ msgid ""
 "analogous snap commands easy to remember. You install snap apps with the "
 "‘install’ command, and remove them using the ‘remove’ command."
 msgstr ""
+"Jeigu esate įpratę tvarkyti programinę įrangą, naudojant apt, tuomet jums iš"
+" karto bus lengva atsiminti analogiškas snap komandas. Snap programas "
+"įdiegiate, naudodami \"install\" komandą, o šalinate, naudodami \"remove\" "
+"komandą."
 
 #: recommendations.html:58
 msgid "See details of an App"
-msgstr ""
+msgstr "Rodyti išsamesnę programos informaciją"
 
 #: recommendations.html:59
 msgid ""
@@ -104,10 +136,14 @@ msgid ""
 " channel, confinement status, size, number of revisions, and more. The snap "
 "info --verbose offers a greater overview."
 msgstr ""
+"Jūs galite matyti išsamesnę bet kurios snap programos informaciją, "
+"nepriklausomai nuo to, ar ši programa įdiegta ar ne. Į šią informaciją įeina"
+" programos laidos kanalas, apribojimų būsena, dydis, taisymų skaičius ir "
+"daugiau. Komanda \"snap info --verbose\" siūlo dar išsamesnę apžvalgą."
 
 #: recommendations.html:63
 msgid "Update a Snap App"
-msgstr ""
+msgstr "Atnaujinti Snap programą"
 
 #: recommendations.html:65
 msgid ""
@@ -116,10 +152,14 @@ msgid ""
 "handles updates automatically (you can, ofc, revert a Snap update or install"
 " a specific revision)."
 msgstr ""
+"Gan naudinga yra tai, kad jums, ko gero, niekada nereikės prisiminti įdiegti"
+" Snap programos atnaujinimą. Taip yra todėl, kad Snapd yra vykdoma fone ir "
+"automatiškai apdoroja visus atnaujinimus (jūs, žinoma, galite sugrąžinti "
+"Snap atnaujinimą ar įdiegti specifinę programos reviziją)."
 
 #: recommendations.html:68
 msgid "Reference"
-msgstr ""
+msgstr "Nuoroda"
 
 #: recommendations.html:70
 msgid "Snap is already installed"
@@ -138,6 +178,8 @@ msgid ""
 "<strong>Budgie Screenshot Applet</strong> is an advanced screenshot utility "
 "for capturing and organizing screenshots."
 msgstr ""
+"<strong>Budgie ekrano kopijos programėlė</strong> yra išplėstinis ekrano "
+"kopijų įrankis, skirtas ekrano kopijų fotografavimui ir tvarkymui."
 
 #: recommendations.html:82
 msgid ""
@@ -147,6 +189,11 @@ msgid ""
 "onclick=\"cmd('raven');cmd('')\">Raven</a> </strong> - The Budgie "
 "Configuration Center."
 msgstr ""
+"<span name=\"distro-name\"></span> pateikia lengvą būdą įdiegti "
+"<strong>Budgie ekrano kopijos programėlę</strong>. Įdiegus jums reikia "
+"<strong>rankiniu būdu pridėti programėlę į budgie skydelį, paleidžiant <a "
+"onclick=\"cmd('raven');cmd('')\">Raven</a> </strong> - Budgie konfigūravimo "
+"centrą."
 
 #: recommendations.html:84
 msgid "Screenshot Applet is installed"
@@ -170,10 +217,17 @@ msgid ""
 "without worrying about the underlying operating system and its built-in "
 "libraries."
 msgstr ""
+"<strong>Flatpak</strong> yra naujos kartos programų platinimo karkasas, "
+"skirtas GNU/Linux platformoms. Jis pristato bendrą pakavimo formatą tarp "
+"visų GNU/Linux distribucijų. Tai reiškia, kad vienas paketas gali veikti bet"
+" kurioje platformoje. Flatpak padeda programų kūrėjams pristatyti savo "
+"programą vienu formatu, kuris gali būti įdiegtas bet kurioje GNU/Linux "
+"distribucijoje, nesirūpinant dėl bazinės operacinės sistemos ir jos įtaisytų"
+" bibliotekų."
 
 #: recommendations.html:96
 msgid "Learn more"
-msgstr ""
+msgstr "Sužinokite daugiau"
 
 #: recommendations.html:98
 msgid ""
@@ -183,6 +237,12 @@ msgid ""
 "packages as soon as it is packaged by the upstream project and you don't "
 "have to wait for your distribution to package it for you."
 msgstr ""
+"<span name=\"distro-name\"></span> rekomenduoja įdiegti "
+"<strong>Flatpak</strong>, kadangi jis atvers jums naują galimybių pasaulį. "
+"Naudodami Flatpak, mėgausitės paskiausiomis įvairios programinės įrangos "
+"versijų laidomis iš karto, kai viršesnis (angl. upstream) projektas jas "
+"supakuos, todėl jums nereikės laukti, kol jūsų distribucija supakuos jums "
+"šias laidas."
 
 #: recommendations.html:100
 msgid ""
@@ -190,10 +250,16 @@ msgid ""
 "name'></span> allows you to install Flatpak with a single click. After first"
 " time configuration, you can use GNOME Software to install Flatpak packages."
 msgstr ""
+"Būdama patogia GNU/Linux distribucija, <span name='distro-name'></span> "
+"leidžia jums vienu spustelėjimu įdiegti Flatpak. Po pirmosios "
+"konfigūracijos, Flatpak paketų įdiegimui galite naudoti GNOME programinę "
+"įrangą."
 
 #: recommendations.html:101
 msgid "Flatpak is installed. Please reboot for the service to start"
 msgstr ""
+"Flatpak yra įdiegta. Norėdami paleisti tarnybą, paleiskite kompiuterį iš "
+"naujo"
 
 #: recommendations.html:102
 msgid "Install & Configure Flatpak"
@@ -210,6 +276,10 @@ msgid ""
 "multi-monitor setups, graphics drivers and within virtual machines such as "
 "VirtualBox it may not work correctly."
 msgstr ""
+"<strong>skippy-xd</strong> per klaviatūros trumpinį prideda langų rodymo "
+"galimybę. Daugumoje darbalaukių skippy-xd veikia tinkamai. Pastaba: Esant "
+"kelių ekranų sąrankai, grafikos tvarkyklėms ar virtualių mašinų, tokių kaip "
+"VirtualBox , viduje, ji gali veikti neteisingai."
 
 #: recommendations.html:113
 msgid ""
@@ -219,6 +289,11 @@ msgid ""
 "<strong>skippy-xd-toggle</strong> when defining your own custom keyboard "
 "shortcut."
 msgstr ""
+"Pagal numatymą, diegimo programa sukurs pasirinktinį klaviatūros trumpinį "
+"VALD+kairinis kirtis (klavišas, esantis virš Tab). Jūs galite apibrėžti ar "
+"pakeisti klaviatūros trumpinį per Nustatymai - Klaviatūra - Pasirinktinių "
+"susiejimų parametrą. Apibrėždami savo asmeninį pasirinktinį klaviatūros "
+"susiejimą, naudokite komandą <strong>skippy-xd-toggle</strong>."
 
 #: recommendations.html:114
 msgid "skippy-xd is installed"
@@ -245,6 +320,17 @@ msgid ""
 "networking, matchmaking, in-game achievements, micro-transactions, and "
 "support for user-created content through Steam Workshop."
 msgstr ""
+"<strong>Steam</strong> yra skaitmeninio platinimo platforma, sukurta Valve "
+"Corporation ir siūlanti skaitmeninių teisių valdymą (angl. Digital rights "
+"management (DRM)), daugelio žaidėjų žaidimus ir socialinio tinklo paslaugas."
+" Steam teikia naudotojams automatinį žaidimų įdiegimą ir atnaujinimą "
+"keliuose kompiuteriuose ir bendruomenės ypatybes, tokias kaip draugų sąrašai"
+" ir grupės, įrašymas į debesiją, ir balso bei pokalbių funkcionalumas "
+"žaidime. Programinė įranga teikia laisvai prieinamą programų sąsają (API), "
+"pavadinimu Steamworks, kurią kūrėjai gali naudoti, norėdami į savo produktus"
+" integruoti daugelį Steam funkcijų, įskaitant darbą tinkle, sugretinimus, "
+"pasiekimus žaidime, mikro persiuntimus ir palaikymą naudotojų sukurtam "
+"turiniui per Steam Workshop."
 
 #: recommendations.html:129
 msgid ""
@@ -255,6 +341,12 @@ msgid ""
 "<em>Multiverse</em> repository and to install Steam with a single mouse "
 "click."
 msgstr ""
+"Būdama nuosavybine programine įranga, Steam nėra įtraukta į pirmines <span "
+"name=\"distro-name\"></span> saugyklas. Kita vertus, norint suteikti "
+"naudotojams daugiau pasirinkimo, Steam yra teikiama kaip <em>Multiverse</em>"
+" saugyklos dalis. <span name=\"distro-name\"></span> suteikia jums galimybę "
+"įjungti <em>Multiverse</em> saugyklą ir vienu pelės spustelėjimu įdiegti "
+"Steam."
 
 #: recommendations.html:131
 msgid "Steam is installed"
