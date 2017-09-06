@@ -1,10 +1,19 @@
-budgie-welcome (0.5.3) UNRELEASED; urgency=medium
+budgie-welcome (0.5.4) artful; urgency=medium
 
   * Bug-fix release (LP: #)
     - hide budgie-pixel-saver-applet and budgie-appmenu-applet from 16.04
       since these do not work with budgie desktop 10.4
 
- -- David Mohammed <fossfreedom@ubuntu.com>  Sun, 27 Aug 2017 16:01:55 +0100
+ -- David Mohammed <fossfreedom@ubuntu.com>  Wed, 06 Sep 2017 16:01:55 +0100
+
+budgie-welcome (0.5.3) artful; urgency=medium
+
+  * bug-fix release (LP: #1712047)
+    - rework to ensure GTK+ calls are made on the main thread
+      to avoid segmentation faults when webkit2gtk version
+      >= 2.17.90
+
+ -- David Mohammed <fossfreedom@ubuntu.com>  Tue, 05 Sep 2017 22:00:13 +0100
 
 budgie-welcome (0.5.2) artful; urgency=medium
 
