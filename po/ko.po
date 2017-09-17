@@ -3,22 +3,21 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 # Translators:
-# Adolfo Jayme-Barrientos <fitoschido@gmail.com>, 2017
-# Jose Luis Tirado <joseluis.tirado@gmail.com>, 2017
+# SD SkyKlouD <koongchi135@gmail.com>, 2017
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2017-09-11 12:32+BST\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Jose Luis Tirado <joseluis.tirado@gmail.com>, 2017\n"
-"Language-Team: Spanish (https://www.transifex.com/ubuntu-budgie/teams/72251/"
-"es/)\n"
-"Language: es\n"
+"Last-Translator: SD SkyKlouD <koongchi135@gmail.com>, 2017\n"
+"Language-Team: Korean (https://www.transifex.com/ubuntu-budgie/teams/72251/"
+"ko/)\n"
+"Language: ko\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: ENCODING\n"
 "Generated-By: pygettext.py 1.5\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 
 #: budgie-welcome:316
 msgid ""
@@ -27,10 +26,9 @@ msgid ""
 "is not available in your system. Please install GNOME Software and try this "
 "option again"
 msgstr ""
-"Steam es un paquete de terceros que requiere la aprobación por parte del "
-"usuario del CLUF (contrato de licencia del usuario final). Por este motivo, "
-"necesitamos GNOME Software, el cual no está instalado en el equipo, para "
-"instalar Steam. Instale GNOME Software y ejecute de nuevo esta opción"
+"Steam은 사용자가 EULA(최종 사용자 사용권 계약)에 동의해야 하는 제 3자 패키지"
+"입니다. 고로 GNOME 소프트웨어 없이는 시스템에 Steam을 설치할 수는 없습니다. "
+"GNOME 소프트웨어를 설치한 후 이 옵션을 다시 시도해 주세요."
 
 #: budgie-welcome:405
 msgid ""
@@ -38,30 +36,30 @@ msgid ""
 "after installing GNOME Software, please contact us with following error "
 "message"
 msgstr ""
-"Parece que GNOME Software no está instalado. Si este problema persiste "
-"incluso después de instalarlo, póngase en contacto con nosotros y "
-"compártanos este mensaje de error"
+"GNOME 소프트웨어가 설치되어 있지 않은 것 같습니다. GNOME 소프트웨어를 설치한 "
+"이후에도 이 문제가 지속되면, 다음 오류 메시지와 함께 개발 팀에게 연락해 주세"
+"요."
 
 #: budgie-welcome:541
 msgid "Following tasks are in progress"
-msgstr "Las tareas siguientes están en proceso"
+msgstr "다음 작업이 진행 중입니다."
 
 #: budgie-welcome:547 budgie-welcome:1403 budgie-welcome:1404
 #: budgie-welcome:1412 budgie-welcome:1635
 msgid "Budgie Welcome"
-msgstr "Bienvenida de Budgie"
+msgstr "Budgie 환영"
 
 #: budgie-welcome:551 budgie-welcome:1635
 msgid "Budgie Desktop"
-msgstr "Escritorio de Budgie"
+msgstr "Budgie 데스크톱"
 
 #: budgie-welcome:834
 msgid "Welcome App"
-msgstr "Aplicación de bienvenida"
+msgstr "환영 앱"
 
 #: budgie-welcome:1135
 msgid "Could not gather data."
-msgstr "No se pudieron recopilar los datos."
+msgstr "데이터 취득 실패."
 
 #: budgie-welcome:1205
 msgid "GB"
@@ -81,8 +79,8 @@ msgstr "MiB"
 
 #: budgie-welcome:1425
 msgid "Status"
-msgstr "Estado"
+msgstr "상태"
 
 #: budgie-welcome:1507
 msgid " is in progress. Please wait for it to complete"
-msgstr "está en proceso. Espere a que termine"
+msgstr "이(가) 진행 중입니다. 완료될 때까지 잠시 기다려주세요."

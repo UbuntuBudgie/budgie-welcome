@@ -1,33 +1,26 @@
 # Translators:
-# Adolfo Jayme-Barrientos <fitoschido@gmail.com>, 2017
-# Jose Luis Tirado <joseluis.tirado@gmail.com>, 2017
-# _-Caleb-_ <tanausugomez@gmail.com>, 2017
-# Daniel Hernandez <danehernandez32@gmail.com>, 2017
-# Yábir Garcia <yabirgb@gmail.com>, 2017
-# Oscar Hernandez <oscaralejandro_3@hotmail.com>, 2017
-# Jeison Perez <jeisonj_2008@hotmail.com>, 2017
-# rctorr . <rictor@cuhrt.com>, 2017
+# SD SkyKlouD <koongchi135@gmail.com>, 2017
 msgid ""
 msgstr ""
 "Project-Id-Version: Budgie Welcome\n"
 "POT-Creation-Date: 2016-02-27 12:48+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: rctorr . <rictor@cuhrt.com>, 2017\n"
-"Language-Team: Spanish (https://www.transifex.com/ubuntu-budgie/teams/72251/es/)\n"
+"Last-Translator: SD SkyKlouD <koongchi135@gmail.com>, 2017\n"
+"Language-Team: Korean (https://www.transifex.com/ubuntu-budgie/teams/72251/ko/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: es\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: ko\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "Report-Msgid-Bugs-To : you@example.com\n"
 
 #: recommendations.html:15
 msgid "Recommendations"
-msgstr "Recomendaciones"
+msgstr "추천"
 
 #: recommendations.html26, 71, 85, 102, 115, 132
 msgid "Applying Changes..."
-msgstr "Aplicando cambios…"
+msgstr "변경 사항 적용 중..."
 
 #: recommendations.html:35
 msgid ""
@@ -44,29 +37,14 @@ msgid ""
 "releases but the complexities of packaging and providing updates have "
 "prevented us from delivering them in the past."
 msgstr ""
-"<strong>Snap</strong> es un formato de empaquetado de aplicaciones de nueva "
-"generación desarrollado por <em>Canonical</em>.   A pesar de haber sido "
-"desarrollado únicamente para las plataformas Ubuntu, en la actualidad "
-"funciona en muchas otras distribuciones GNU/Linux. Esto ayudara a "
-"desarrolladores de aplicaciones a proveer un simple paquete unificado que "
-"pueda funcionar en diferentes plataformas. Con el uso del formato de "
-"paquetes snap, las aplicaciones tienen su propia versión de librerías y no "
-"hay necesidad de preocuparse por librerías instaladas de forma subyacente al"
-" sistema operativo. Los paquetes Snap permiten a los desarrolladores brindar"
-" versiones mucho mas nuevas de aplicaciones a <span name=\"distro-"
-"name\"></span>. Versiones mas recientes de KDE, GNOME, navegadores o "
-"aplicaciones propias de otros entornos de escritorio son usualmente fáciles "
-"de construir en antiguas entregas LTS, pero la complejidad de empaquetar y "
-"proveer sus actualizaciones nos habían impedido proporcionarlos en el "
-"pasado."
 
 #: recommendations.html:41
 msgid "Snap user guide"
-msgstr "Guía de usuario de Snap"
+msgstr "Snap 사용자 가이드"
 
 #: recommendations.html:43
 msgid "Search Snap Apps"
-msgstr "Buscar aplicaciones Snap"
+msgstr "Snap 앱 검색"
 
 #: recommendations.html:44
 msgid ""
@@ -75,10 +53,6 @@ msgid ""
 "Snap app store. Well, wonder not. Simply pop open a terminal and run the "
 "following command:"
 msgstr ""
-"Si hay un obstáculo para adoptar aplicaciones Snap (sin contar las pocas "
-"apps siendo desarrolladas en este formato) es conocer que paquetes están "
-"disponibles en la lista de aplicaciones de Snap. Bien, no te preocupes más. "
-"Simplemente abre una terminal y ejecuta la siguiente orden."
 
 #: recommendations.html:48
 msgid ""
@@ -86,27 +60,20 @@ msgid ""
 " install from the command line. It can be run with a query after it (e.g., "
 "‘snap find email‘, ‘snap find media’, ‘snap find messaging‘) or without."
 msgstr ""
-"La orden «find» le permite buscar rápidamente y descubrir desde la línea de "
-"órdenes Snaps disponibles para ser instaladas. Se puede ejecutar con una "
-"consulta tras ella (por ejemplo, «snap find email», «snap find media», «snap"
-" find messaging») o sin consulta."
 
 #: recommendations.html:49
 msgid "When run without a query you’ll instead see a list of featured snaps."
-msgstr "Si lo ejecuta sin una consulta, verá una lista de «snaps» destacados."
+msgstr ""
 
 #: recommendations.html:50
 msgid "See installed apps"
-msgstr "Buscar aplicaciones instaladas"
+msgstr "설치된 애플리케이션 보기"
 
 #: recommendations.html:51
 msgid ""
 "Installed some Snaps but can’t remember what? Don’t panic. Use the list "
 "command to see an up-to-date list of all Snap apps installed on your system:"
 msgstr ""
-"¿Instaló algunos «snaps» pero no recuerda cuáles? No se preocupe. Utilice la"
-" orden «list» para ver una lista actualizada de todas las aplicaciones Snap "
-"instaladas en su sistema:"
 
 #: recommendations.html:53
 msgid ""
@@ -114,13 +81,10 @@ msgid ""
 "of the developer who uploaded it (handy when there are multiple versions of "
 "the same app in the store, e.g., Telegram)."
 msgstr ""
-"Esta lista también muestra los números de versión y revisión y el nombre de "
-"los desarrolladores que los cargaron (lo cual es útil si hay varias "
-"versiones de la misma aplicación en la tienda, como es el caso de Telegram)."
 
 #: recommendations.html:54
 msgid "Install & Remove Snap Apps"
-msgstr "Instalar y desinstalar aplicaciones Snap"
+msgstr "Snap 앱 설치 및 제거"
 
 #: recommendations.html:55
 msgid ""
@@ -128,14 +92,10 @@ msgid ""
 "analogous snap commands easy to remember. You install snap apps with the "
 "‘install’ command, and remove them using the ‘remove’ command."
 msgstr ""
-"Si se ha acostumbrado a gestionar programas a través de APT, no hallará "
-"difícil recordar las órdenes correspondientes de Snap. Para instalar "
-"aplicaciones en Snap, utilice «install»; para desinstalarlas, emplee "
-"«remove»."
 
 #: recommendations.html:58
 msgid "See details of an App"
-msgstr "Ver los detalles de una aplicación"
+msgstr "앱 정보 보기"
 
 #: recommendations.html:59
 msgid ""
@@ -144,15 +104,10 @@ msgid ""
 " channel, confinement status, size, number of revisions, and more. The snap "
 "info --verbose offers a greater overview."
 msgstr ""
-"Puedes utilizar esto para ver información detallada sobre cualquier "
-"aplicación snap, sin importar si esta instalada o no. Esta información "
-"incluye el canal de entrega de la aplicación, estado de confinamiento, "
-"tamaño, numero de revisiones y mas. El comando snap info --verbose ofrece "
-"una mayor visión general."
 
 #: recommendations.html:63
 msgid "Update a Snap App"
-msgstr "Actualizar una aplicación Snap"
+msgstr "Snap 앱 업데이트"
 
 #: recommendations.html:65
 msgid ""
@@ -164,25 +119,25 @@ msgstr ""
 
 #: recommendations.html:68
 msgid "Reference"
-msgstr "Referencia"
+msgstr "참고 사항"
 
 #: recommendations.html:70
 msgid "Snap is already installed"
-msgstr "Ya se ha instalado Snap"
+msgstr "Snap이 이미 설치되어 있습니다."
 
 #: recommendations.html:70
 msgid "Install Snap"
-msgstr "Instalar Snap"
+msgstr "Snap 설치"
 
 #: recommendations.html:76
 msgid "Budgie Screenshot Applet"
-msgstr "Applet de Captura de Pantalla de Budgie"
+msgstr "Budgie 스크린샷 애플릿"
 
 #: recommendations.html:80
 msgid ""
 "<strong>Budgie Screenshot Applet</strong> is an advanced screenshot utility "
 "for capturing and organizing screenshots."
-msgstr ""
+msgstr "<strong>Budgie 스크린샷 애플릿</strong>은 스크린샷을 찍고 관리하기 위한 고급 스크린샷 유틸리티입니다"
 
 #: recommendations.html:82
 msgid ""
@@ -195,11 +150,11 @@ msgstr ""
 
 #: recommendations.html:84
 msgid "Screenshot Applet is installed"
-msgstr "Captura de pantalla está instalado"
+msgstr "스크린샷 애플릿이 설치되었습니다."
 
 #: recommendations.html:84
 msgid "Install Screenshot Applet"
-msgstr "Instalar applet de captura de pantalla."
+msgstr "스크린샷 애플릿 설치"
 
 #: recommendations.html:90
 msgid "Flatpak"
@@ -218,7 +173,7 @@ msgstr ""
 
 #: recommendations.html:96
 msgid "Learn more"
-msgstr "Más información"
+msgstr "더 알아보기"
 
 #: recommendations.html:98
 msgid ""
@@ -238,12 +193,11 @@ msgstr ""
 
 #: recommendations.html:101
 msgid "Flatpak is installed. Please reboot for the service to start"
-msgstr ""
-"Se ha instalado Flatpak. Reinicie el equipo para que el servicio se inicie"
+msgstr "Flatpak이 설치되었습니다. 시스템을 재시작하여 서비스를 시작하세요."
 
 #: recommendations.html:102
 msgid "Install & Configure Flatpak"
-msgstr "Instalar y configurar Flatpak"
+msgstr "Flatpak 설치 및 구성"
 
 #: recommendations.html:106
 msgid "skippy-xd"
@@ -268,11 +222,11 @@ msgstr ""
 
 #: recommendations.html:114
 msgid "skippy-xd is installed"
-msgstr "Se ha instalado skippy-xd"
+msgstr "skippy-xd가 설치되었습니다."
 
 #: recommendations.html:114
 msgid "Install & Configure skippy-xd"
-msgstr "Instalar y configurar skippy-xd"
+msgstr "skippy-xd 설치 및 구성"
 
 #: recommendations.html:120
 msgid "Steam"
@@ -301,17 +255,11 @@ msgid ""
 "<em>Multiverse</em> repository and to install Steam with a single mouse "
 "click."
 msgstr ""
-"Steam no está incluido en los repositorios principales de <span name"
-"=\"distro-name\"></span> porque es <em>software</em> privativo. Sin embargo,"
-" como forma de ofrecer más opciones a los usuarios, hemos añadido a Steam al"
-" repositorio <em>Multiverse</em>. <span name=\"distro-name\"></span> le "
-"permite activar este repositorio para instalar Steam con una sola pulsación "
-"del ratón."
 
 #: recommendations.html:131
 msgid "Steam is installed"
-msgstr "Se ha instalado Steam"
+msgstr "Steam이 설치되었습니다."
 
 #: recommendations.html:131
 msgid "Install & Configure Steam"
-msgstr "Instalar y configurar Steam"
+msgstr "Steam 설치 및 구성"
