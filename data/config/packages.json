@@ -80,7 +80,7 @@
       "packages" : ["snapd"]
     },
     "flatpak" : {
-      "packages" : ["flatpak", "xdg-desktop-portal-gtk"],
+      "packages" : ["flatpak", "xdg-desktop-portal-gtk", "gnome-software-plugin-flatpak"],
       "repos" : {
         "xenial" : ["ppa:alexlarsson/flatpak"]
       }
