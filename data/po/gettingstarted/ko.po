@@ -223,6 +223,8 @@ msgid ""
 "show a \"protection layer\". <b>Do not worry,</b> your data is not lost or "
 "corrupt!"
 msgstr ""
+"UEFI 시스템에서 GPT 형식으로 포맷된 디스크로 BIOS 모드로 부팅하면 \"보호 레이어\"라고 보여질 수 있습니다. <b>하지만 "
+"걱정하지 마세요!</b> 사용자의 데이터는 전혀 손실되지 않습니다."
 
 #: gettingstarted.html:164
 msgid ""
@@ -241,6 +243,9 @@ msgid ""
 "Performance will decrease when running low on memory and could possibly "
 "freeze if you completely run out of memory without anywhere to swap."
 msgstr ""
+"적은 양의 메모리(RAM)을 가진 컴퓨터에서, 운영 체제는 디스크에 스와핑을 시작할 것입니다. Windows에서의 \"페이징 파일\"과 "
+"비슷한 역할을 하죠. 적은 양의 메모리로 구동하게 되면 컴퓨터의 성능이 떨어질 것이고, 메모리 부족이 발생하면 컴퓨터 자체가 멈추는 "
+"현상이 일어날 수 있습니다."
 
 #: gettingstarted.html:174
 msgid ""
@@ -248,6 +253,8 @@ msgid ""
 "example, if you have 2 GiB of RAM, then 2 GiB of hard disk space will be "
 "reserved for swap at the end of the drive."
 msgstr ""
+"기본적으로, 스왑 파티션은 설치된 RAM의 용량에 따라 그 크기가 정해집니다. 예를 들어, 2GiB의 RAM이 설치되어 있다면 드라이브의"
+" 마지막 부분에 2GiB 만큼의 스왑 파티션을 만들게 됩니다."
 
 #: gettingstarted.html:177
 msgid ""
@@ -256,6 +263,8 @@ msgid ""
 "reserved for the swap file. A separate swap partition is no longer required "
 "to be created."
 msgstr ""
+"기본적으로, 스왑 파일은 시스템에 설치된 RAM 용량에 따라 그 크기가 정해집니다. 예를 들어, 시스템에 2 GiB만큼의 RAM이 "
+"설치되어 있다면, 2 GiB의 스왑 파일이 하드 디스크 공간에 생성됩니다. 이제는 별도의 스왑 파티션을 만들 필요가 없어졌습니다."
 
 #: gettingstarted.html183, 361, 657, 1262
 msgid "Previous:"
@@ -268,6 +277,8 @@ msgid ""
 "in sections of your hard disk being split between multiple operating "
 "systems."
 msgstr ""
+"<span name=\"distro-name\"></span>를 기존에 설치한 운영 체제와 함께 사용하고자 하기 위해, 파티션을 축소해야"
+" 합니다."
 
 #: gettingstarted.html:202
 msgid "I'm dual booting with"
@@ -317,11 +328,11 @@ msgstr "가장 간단한 방법은 설치기를 이용하는 것입니다."
 msgid ""
 "The installer scans your disks for existing operating systems and provides a"
 " choice on what you'd like to do."
-msgstr ""
+msgstr "설치기는 기존의 운영 체제를 찾기 위해 디스크를 스캔할 것이고, 그에 따라 가능한 설치 형태를 알려드립니다."
 
 #: gettingstarted.html:228
 msgid "You will see an option similar to this:"
-msgstr ""
+msgstr "다음과 비슷한 옵션을 보게 됩니다. :"
 
 #: gettingstarted.html:232
 msgid "Followed by:"
@@ -342,6 +353,8 @@ msgid ""
 "The installer may show a <span class=\"fa fa-spinner\"></span> spinner "
 "cursor for a long period of time, depending on the size of your disk."
 msgstr ""
+"디스크의 크기에 따라 설치기가 오랜 시간동안 <span class=\"fa fa-spinner\"></span> 작업 중 커서를 보일 수"
+" 있습니다."
 
 #: gettingstarted.html:246
 msgid ""
@@ -349,6 +362,8 @@ msgid ""
 "command prompt to check the file system for errors. Windows may schedule "
 "this automatically. This ensures consistency for the NTFS file system."
 msgstr ""
+"<b>다음에 Windows로 부팅</b>하게 되면, NTFS 파일 시스템의 오류를 확인하기 위해 명령 프롬프트(cmd.exe)에서 "
+"<code>chkdsk /f</code>를 실행해주세요. Windows는 오류 확인 작업을 자동적으로 예약할 것입니다. "
 
 #: gettingstarted.html:254
 msgid "Use GParted or the installer's \"Custom\" option."
@@ -373,6 +388,8 @@ msgid ""
 "unallocated, whereby the installer will detect this unused space to install "
 "<span name=\"distro-name\"></span> to."
 msgstr ""
+"디스크에 모든 작업을 마친 후, 남은 공간은 별도로 할당하지 않아도 됩니다. 설치기는 디스크의 할당되지 않은 남은 공간에 <span "
+"name=\"distro-name\"></span>를 설치하려고 할 것입니다."
 
 #: gettingstarted.html:270
 msgid "Using the Installer's \"Custom\" option."
@@ -385,6 +402,9 @@ msgid ""
 " choose mount points. Dividing your disks can make it somewhat easier to re-"
 "install the operating system later if desired."
 msgstr ""
+"GParted를 사용한 후, 혹은 GParted 대신에 설치 마법사 설정 진행 중 <b>사용자 지정</b> 옵션을 사용해도 됩니다. 이 "
+"옵션에서도 마찬가지로 파티션의 크기를 다시 조절할 수 있고, 마운트 포인트를 지정할 수도 있습니다. 디스크의 구역을 나누는 것은 나중에 "
+"운영 체제를 다시 설치하는 것보다 더 쉽고 간편한 방법입니다."
 
 #: gettingstarted.html:276
 msgid "You can specify these mount points:"
@@ -410,7 +430,7 @@ msgstr "임시 파일"
 msgid ""
 "Contains most of the applications <i> (binaries, documentation, libraries, "
 "etc)</i>"
-msgstr ""
+msgstr "대부분의 애플리케이션 포함 <i>(바이너리, 문서, 라이브러리, 기타 등등)</i>"
 
 #: gettingstarted.html:283
 msgid "Variable data <i>(such as system logs)</i>"
@@ -423,7 +443,7 @@ msgstr "시스템 서비스의 데이터 <i>(서버 환경 구축 시 주로 사
 
 #: gettingstarted.html:285
 msgid "Additional software unmanaged by the package manager"
-msgstr ""
+msgstr "패키지 매니저로 관리되지 않는 추가 소프트웨어"
 
 #: gettingstarted.html:286
 msgid "such as"
@@ -441,7 +461,7 @@ msgstr ""
 
 #: gettingstarted.html:296
 msgid "Shrink your system disk within Windows."
-msgstr ""
+msgstr "Windows 시스템 디스크의 크기를 축소합니다."
 
 #: gettingstarted.html:298
 msgid "Applies to Windows Vista and later."
@@ -462,6 +482,8 @@ msgid ""
 "boots on your computer while experiencing <span name=\"distro-"
 "name\"></span>."
 msgstr ""
+"최근 버전의 Windows에서는 Windows 내에서 바로 NTFS 볼륨의 크기를 줄일 수 있는 도구를 제공합니다. <span name"
+"=\"distro-name\"></span>를 즐기면서도 Windows를 사용해야 한다면 이 도구를 사용하는 편이 더 안전한 방법입니다."
 
 #: gettingstarted.html:307
 msgid "Open <b>Disk Management</b> from the start menu."
@@ -560,7 +582,7 @@ msgstr ""
 msgid ""
 "<b>Software Updater</b> can be found later in <strong>Application "
 "Menu</strong>"
-msgstr ""
+msgstr "<b>소프트웨어 업데이트</b> 앱은 나중에 <strong>애플리케이션 메뉴</strong>에서 찾으실 수 있습니다."
 
 #: gettingstarted.html:394
 msgid "Check for Updates"
@@ -649,7 +671,7 @@ msgstr "그래픽"
 msgid ""
 "Sorry, Welcome was unable to automatically identify the graphics vendor on "
 "this system."
-msgstr ""
+msgstr "죄송합니다. 환영에서 시스템에 설치된 그래픽 카드를 자동으로 인식할 수 없었습니다."
 
 #: gettingstarted.html469, 475, 483, 489
 msgid "Card/Chipset:"
@@ -668,6 +690,8 @@ msgid ""
 "NVIDIA may have drivers for your card that can boost performance for 3D "
 "applications and games as well as deliver improvements to power management."
 msgstr ""
+"NVIDIA는 3D 애플리케이션 및 게임을 가속하고 더 나은 전원 관리를 지원하기 위한 전용 드라이버를 출시하고 있습니다. 이 전용 "
+"드라이버를 사용하는 편이 성능 향상에 도움을 줄 수 있습니다."
 
 #: gettingstarted.html:479
 msgid "AMD Graphics Card Detected."
@@ -746,6 +770,8 @@ msgid ""
 "experience adverse behavior, causing more issues than the open source "
 "drivers, such as:"
 msgstr ""
+"사유 드라이버는 \"Binary blobs\"로도 알려져 있습니다. 일부 하드웨어 상에서 이 드라이버를 설치하면 오픈 소스 드라이버에 "
+"비해 예기치 못한 오류가 발생하거나, 예상과는 다른 행동을 보일 가능성이 큽니다. 다음은 그러한 문제의 예입니다. :"
 
 #: gettingstarted.html:515
 msgid "Failing to boot to the graphical desktop."
@@ -794,6 +820,7 @@ msgid ""
 "This only applies for actively supported cards, and not older cards using "
 "the legacy driver."
 msgstr ""
+"이는 현재 발매되고 지원되는 그래픽 카드에만 적용되며, 구 버전의 드라이버를 사용하는 예전 세대의 그래픽카드에는 적용되지 않습니다."
 
 #: gettingstarted.html:536
 msgid "Add Repository"
@@ -822,6 +849,8 @@ msgid ""
 "after installing the firmware packages, you may need to research your device"
 " to find the appropriate driver."
 msgstr ""
+"추가 드라이버가 발견되지도 않고 펌웨어 패키지를 설치한 후에도 작동하지 않는다면, 그 장치에 알맞는 드라이버를 찾기 위해 인터넷에 "
+"검색해야 할 수도 있습니다."
 
 #: gettingstarted.html:559
 msgid ""
@@ -837,6 +866,8 @@ msgid ""
 "directly. If you require assistance, feel free to <a "
 "onclick=\"smoothPageFade('community.html')\">ask the community</a>."
 msgstr ""
+"일부 제조 회사들은 자사 장치를 위해 비 오픈 소스 드라이버를 직접 제공하기도 합니다. 도움이 필요하다면, 언제든지 <a "
+"onclick=\"smoothPageFade('community.html')\">커뮤니티</a>에 질문을 올리세요."
 
 #: gettingstarted.html:570
 msgid "Read more on troubleshooting wireless hardware."
@@ -856,6 +887,9 @@ msgid ""
 "between two widely used keyboard entry layouts. IBus(Intelligent Input Bus) "
 "and Fcitx(Free Chinese Input Toy for X)."
 msgstr ""
+"<span name=\"distro-name\"></span>에선, 키보드 입력을 지원해주는 소프트웨어 두 가지 중 하나를 선택할 수 "
+"있습니다. 하나는 IBus(Intelligent Input Bus, 지능형 입력 버스)이고, 나머지 하나는 Fcitx(Free "
+"Chinese Input Toy for X, X를 위한 무료 중국어 입력기)가 있습니다."
 
 #: gettingstarted.html:595
 msgid "Install & Configure IBus"
@@ -882,6 +916,7 @@ msgid ""
 "Your computer may require updates to your language and localization "
 "settings, or you may want to install additional language support."
 msgstr ""
+"사용자의 컴퓨터는 사용하고자 하는 언어와 지역화 설정을 위해 업데이트가 필요하거나, 추가 언어 지원 패키지를 설치해야 할 수 있습니다."
 
 #: gettingstarted.html:621
 msgid ""
@@ -918,6 +953,8 @@ msgid ""
 "<span name=\"distro-name\"></span> provides option to install a backup "
 "utility or firewall and supports multiple user accounts."
 msgstr ""
+"<span name=\"distro-name\"></span>는 백업 유틸리티와 방화벽, 다중 사용자 지원을 설치할 수 있는 옵션을 "
+"제공합니다."
 
 #: gettingstarted.html:679
 msgid "Backups"
@@ -936,6 +973,8 @@ msgid ""
 "name=\"distro-name\"></span> and supports backups to local devices as well "
 "as online cloud-based services."
 msgstr ""
+"<b>데자둡 (Deja-Dup)</b>은 <span name=\"distro-name\"></span>에 설치할 수 있는 강력한 백업 "
+"유틸리티이며, 로컬 디바이스에 백업을 저장할 수 있는 것은 물론이고 온라인 클라우드 서비스에도 백업을 저장할 수 있습니다."
 
 #: gettingstarted.html:691
 msgid "Configure Backup"
@@ -946,6 +985,8 @@ msgid ""
 "<b>Backups</b> can be found later in <b>Application Menu <i class"
 "=\"material-icons\">&#xE315;</i> Backup</b>."
 msgstr ""
+"<b>백업</b>은 나중에 <b>애플리케이션 메뉴 <i class=\"material-icons\">&#xE315;</i> "
+"백업</b>에서 찾으실 수 있습니다."
 
 #: gettingstarted.html:707
 msgid "Firewall"
@@ -958,6 +999,9 @@ msgid ""
 "onclick=\"cmd('link?https://help.ubuntu.com/community/DoINeedAFirewall')\">learn"
 " more about firewalls</a>."
 msgstr ""
+"방화벽은 컴퓨터로 들어오고 나가는 의심스러운 연결을 방지합니다. 기본적으로, 방화벽은 비활성화되어 있습니다. <a "
+"onclick=\"cmd('link?https://help.ubuntu.com/community/DoINeedAFirewall')\">방화벽에"
+" 대해 더 자세히 알아보세요</a>."
 
 #: gettingstarted.html:712
 msgid ""
@@ -966,6 +1010,10 @@ msgid ""
 "onclick=\"cmd('link?https://wiki.ubuntu.com/BasicSecurity')\">more ways to "
 "stay secure too</a>."
 msgstr ""
+"<b>Gufw</b>는 <code>ufw</code> (Uncomplicated Firewall, 단순한 방화벽)의 GUI "
+"프론트엔드입니다. 만약 사용자가 보안을 중요하게 생각한다면, 이 외에도 컴퓨터의 보안을 유지시켜줄 <a "
+"onclick=\"cmd('link?https://wiki.ubuntu.com/BasicSecurity')\">다른 여러 가지 방법이 "
+"있습니다</a>."
 
 #: gettingstarted.html:720
 msgid "Configure Firewall"
@@ -988,6 +1036,7 @@ msgid ""
 "user to protect the individual privacy of each user sharing the same "
 "computer."
 msgstr ""
+"다른 사용자와 이 컴퓨터를 공유하려고 하나요? 분리된 사용자 계정을 설정하여 각자의 개인 정보를 보호하면서 컴퓨터를 같이 쓰도록 하세요."
 
 #: gettingstarted.html:742
 msgid ""
@@ -1010,6 +1059,8 @@ msgid ""
 "To improve the amount of customizability, <span name=\"distro-name\"></span>"
 " allows you to install/remove popular web browsers with a single click."
 msgstr ""
+"사용자화의 자유성을 위해, <span name=\"distro-name\"></span>는 이름 있는 웹 브라우저의 설치와 제거를 하나의"
+" 클릭으로 도와드립니다."
 
 #: gettingstarted.html:774
 msgid ""
@@ -1197,7 +1248,7 @@ msgstr "변경 사항 취소 되돌리기"
 
 #: gettingstarted.html:1062
 msgid "Toggle the current application between full-screen and windowed"
-msgstr ""
+msgstr "현재 애플리케이션을 전체 화면으로 전환/복구"
 
 #: gettingstarted.html:1066
 msgid "Desktop shortcuts"
@@ -1256,13 +1307,13 @@ msgstr "현재 열린 창 간 전환"
 
 #: gettingstarted.html:1136
 msgid "Press Alt + Tab and then release Tab (but continue to hold Alt)."
-msgstr ""
+msgstr "Alt + Tab을 누른 후 Tab 키를 떼세요 (Alt 키는 누르고 있을 것)."
 
 #: gettingstarted.html:1137
 msgid ""
 "Press Tab repeatedly to cycle through the list of available windows which "
 "appears on the screen."
-msgstr ""
+msgstr "Tab 키를 반복해서 눌러 화면에서 사용 가능한 창(애플리케이션) 간 전환합니다."
 
 #: gettingstarted.html1147, 1169, 1244
 msgid "Left"
@@ -1298,11 +1349,11 @@ msgstr "창의 크기를 일반 크기 혹은 이전 크기로 되돌립니다."
 
 #: gettingstarted.html:1206
 msgid "Moves the current window (can be moved with mouse or keyboard)."
-msgstr ""
+msgstr "현재 창을 이동합니다 (마우스나 키보드로도 이동 가능)."
 
 #: gettingstarted.html:1214
 msgid "Resizes current window (again, can be moved with mouse or keyboard)."
-msgstr ""
+msgstr "현재 창의 크기를 조절합니다 (마우스나 키보드로도 크기 조절 가능)."
 
 #: gettingstarted.html:1222
 msgid "Minimizes current window."
@@ -1371,7 +1422,7 @@ msgstr "부팅 모드 : "
 
 #: gettingstarted.html:1313
 msgid "Displays the mode that OS is communicating with the firmware."
-msgstr ""
+msgstr "OS와 펌웨어 간의 통신 모드를 표시합니다."
 
 #: gettingstarted.html:1321
 msgid "Processor"
@@ -1456,7 +1507,7 @@ msgstr "기타 사용량"
 
 #: gettingstarted.html:1405
 msgid "Allocated for <span name=\"distro-name\"></span>:"
-msgstr ""
+msgstr "<span name=\"distro-name\"></span>로 할당됨 : "
 
 #: gettingstarted.html:1408
 msgid "The size of your operating system partition."

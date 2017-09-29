@@ -7,12 +7,13 @@
 # Jean-Elie ARGYRE <remy.argyre@gmail.com>, 2017
 # Théo Jolivet <moi@kiyo.ooo>, 2017
 # Julien Robert <inactive+julienrbrt@transifex.com>, 2017
+# Couaque <teo@couaque.fr>, 2017
 msgid ""
 msgstr ""
 "Project-Id-Version: Budgie Welcome\n"
 "POT-Creation-Date: 2016-02-27 12:48+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Julien Robert <inactive+julienrbrt@transifex.com>, 2017\n"
+"Last-Translator: Couaque <teo@couaque.fr>, 2017\n"
 "Language-Team: French (https://www.transifex.com/ubuntu-budgie/teams/72251/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -530,6 +531,12 @@ msgid ""
 "<code>/</code> on an SSD, but your personal files <code>/home</code> on a "
 "mechanical hard drive."
 msgstr ""
+"Créer des partitions pour tout les points de montage ci-dessus n'est pas "
+"nécessaire. Les dossiers communément partitionnés sont <code></code>, "
+"<code></code> et <code></code>. Ces points de montage peuvent aussi être "
+"éparpillés sur différents disques physiques. Par exemple, si vous préférez "
+"votre système d'exploitation <code></code> sur un SSD, mais vos fichiers "
+"personnels <code></code> sur un disque dur physique."
 
 #: gettingstarted.html:296
 msgid "Shrink your system disk within Windows."
@@ -699,6 +706,11 @@ msgid ""
 "Ubuntu License Policy) complicate distribution of software to support non-"
 "free formats."
 msgstr ""
+"<strong></strong>(la distribution de base de <span name=\"distro-"
+"name\"></span>) tente de fournir les logiciels les plus importants à ces "
+"utilisateurs, et ce par défaut. Néanmoins les différentes lois sur les "
+"copyright et droits d'auteur (cf. politique de License d'Ubuntu) complique "
+"la distribution de logiciels afin qu'il support des formats non libres."
 
 #: gettingstarted.html:411
 msgid ""
@@ -706,6 +718,9 @@ msgid ""
 " including DVD, MP3, Quicktime, and Windows Media formats, by following the "
 "instructions below."
 msgstr ""
+"Néanmoins, vous pouvez configurer votre PC afin qu'il puisse jouer des "
+"médias propriétaires tels que les DVD, les MP3, Quicktime, et les formats de"
+" média Windows, en suivant les instructions ci-dessous."
 
 #: gettingstarted.html:414
 msgid ""
@@ -714,6 +729,11 @@ msgid ""
 "See Ubuntu’s Free Software Philosophy and the Free Formats page for a more "
 "comprehensive discussion of these issues."
 msgstr ""
+"Le fait qu'Ubuntu n'inclut que des logiciels libres par défaut signifie que "
+"les formats de média propriétaires ne sont pas pris en charge \"de base\" "
+"par Ubuntu. Allez vous renseigner sur la philosophie d'Ubuntu sur les "
+"logiciels libres et les formats libres pour une meilleure explication sur ce"
+" problème."
 
 #: gettingstarted.html:418
 msgid ""
@@ -722,6 +742,10 @@ msgid ""
 " unsure whether a particular patent or restriction applies to a media format"
 " you wish to use in your country."
 msgstr ""
+"<strong></strong>droit d'auteurs et le copyright agissent différemment selon"
+" le pays où vous vous trouvez. Veuillez vous renseigner sur les lois de "
+"votre pays si vous n'êtes pas sûr de la législation qui s'applique pour "
+"votre type de média."
 
 #: gettingstarted.html423, 599, 604, 639, 645, 651, 687, 716, 783, 798, 816,
 #: 831, 850
@@ -748,6 +772,11 @@ msgid ""
 " often required to get some devices, typically Bluetooth and Wi-Fi, to work "
 "correctly."
 msgstr ""
+"Même si une grande variété de matériel est compatible avec <span name"
+"=\"distro-name\"></span>, certains composants et périphériques requièrent "
+"des pilotes propriétaires afin de fonctionner. Installer le paquet est "
+"souvent nécessaire afin de faire fonctionner des périphériques, typiquement "
+"le Bluetooth et le Wi-Fi."
 
 #: gettingstarted.html:450
 msgid "An Internet connection is required to download and install drivers."
@@ -795,6 +824,9 @@ msgid ""
 "NVIDIA may have drivers for your card that can boost performance for 3D "
 "applications and games as well as deliver improvements to power management."
 msgstr ""
+"NVIDIA peut vous proposer des pilotes pour votre carte graphique qui peuvent"
+" augmenter ses performances pour les applications 3D ou les jeux, ainsi que "
+"proposer une gestion plus intelligente de l'alimentation."
 
 #: gettingstarted.html:479
 msgid "AMD Graphics Card Detected."
@@ -841,6 +873,10 @@ msgid ""
 "open source, Ubuntu developers are <b>unable to review and improve driver "
 "code</b> meaning you'll have to rely on the manufacturer for support."
 msgstr ""
+"Les pilotes propriétaires viennent directement du fabriquant. Puisqu'ils ne "
+"sont pas open source, les développeurs d'Ubuntu <b>ne sont pas capables de "
+"vérifier et améliorer le code du pilote</b>et de ce fait, vous devez vous "
+"reposer entièrement sur le fabriquant pour que votre matériel soit supporté."
 
 #: gettingstarted.html:503
 msgid ""
@@ -848,6 +884,9 @@ msgid ""
 "performance</b> and as a result, the entire system. Users may wish to "
 "install these drivers to:"
 msgstr ""
+"De plus, les pilotes propriétaires peuvent <b>grandement améliorer vos "
+"performances graphiques</b>et en conséquence, le système en entier. Les "
+"utilisateurs peuvent souhaiter installer ces pilotes pour :"
 
 #: gettingstarted.html:506
 msgid "Run 3D applications and games."
@@ -876,6 +915,9 @@ msgid ""
 "experience adverse behavior, causing more issues than the open source "
 "drivers, such as:"
 msgstr ""
+"Les pilotes propriétaires sont connus sous le nom de \"blobs binaires\". "
+"Certaines configurations matérielles peuvent poser plus de problème que de "
+"solutions lors de changement de drivers, tels que :"
 
 #: gettingstarted.html:515
 msgid "Failing to boot to the graphical desktop."
@@ -916,6 +958,13 @@ msgid ""
 "which packages up the latest NVIDIA drivers for Ubuntu. These packages are "
 "not as thoroughly tested."
 msgstr ""
+"<b>Les pilotes additionnels</b>récupèrent les derniers pilotes testés depuis"
+" les dépôts Ubuntu. Les utilisateurs avancés et les joueurs qui aimeraient "
+"de nouvelles versions devraient penser à ajouter <a "
+"onclick=\"cmd('link?https://launchpad.net/~graphics-"
+"drivers/+archive/ubuntu/ppa')\">le dépôt Ubuntu pour les pilotes "
+"graphiques</a>, qui contient tous les derniers pilotes NVIDIA pour Ubuntu. "
+"Ces paquets ne sont pas testés dans leur totalité."
 
 #: gettingstarted.html:533
 msgid ""
@@ -964,6 +1013,10 @@ msgid ""
 "insufficient documentation to create drivers for your particular brand and "
 "model."
 msgstr ""
+"Malheureusement, cela est dû au fait que le fabriquant de votre matériel n'a"
+" pas fourni de code source afin que des développeurs externes puissent s'en "
+"servir, ou qu'il n'y a pas assez de documentation pour pouvoir créer un "
+"pilote pour votre modèle/marque en particulier."
 
 #: gettingstarted.html:565
 msgid ""
@@ -1030,11 +1083,11 @@ msgstr ""
 
 #: gettingstarted.html:630
 msgid "Complex Input"
-msgstr ""
+msgstr "Input complexe"
 
 #: gettingstarted.html:631
 msgid "Some regions of the world require complex inputs."
-msgstr ""
+msgstr "Certaines régions du monde ont besoin d'inputs complexes."
 
 #: gettingstarted.html:636
 msgid "Chinese"
@@ -1230,6 +1283,9 @@ msgid ""
 "user interface. It can be used to quickly setup the user interface to "
 "broadly reflect how other popular operating systems look and feel."
 msgstr ""
+"<span name=\"distro-name\"></span>fournit un outil unique pour transformer "
+"l'interface utilisateur. Il peut être utilisé pour mettre rapidement en "
+"place une interface ressemblant à d'autres systèmes d'exploitation?"
 
 #: gettingstarted.html:866
 msgid "Raven Configuration Center"
@@ -1253,6 +1309,9 @@ msgid ""
 " center that <span name=\"distro-name\"></span> provides. You can configure "
 "just about every aspect of your computer from Settings."
 msgstr ""
+"Les utilitaires mentionnés plus haut font tous partie du centre des options "
+"avancées que <span name=\"distro-name\"></span>fournit. Vous pouvez "
+"configurer tous les aspects de votre ordinateur depuis l'écran des Options."
 
 #: gettingstarted.html:897
 msgid ""
