@@ -37,6 +37,11 @@ To test a language or locale
     
 change "pl" to your language i18n shortcode
 
+### Compile scss files
+```sh
+ ./sassc-compile.sh
+```
+
 ### Screenshot
 #### Live session
 ![Screenshot of Budgie Remix Welcome App](https://raw.githubusercontent.com/budgie-remix/budgie-welcome/master/screenshot-live-session.png)
