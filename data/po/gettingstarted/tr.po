@@ -1,5 +1,6 @@
 # Translators:
 # Yetkin Degirmenci <yetkind@gmail.com>, 2017
+# Muhammed Yasin Özsaraç (Harnapazade) <myasinozsarac@gmail.com>, 2017
 # Emre JILTA <jilta.e@gmail.com>, 2017
 msgid ""
 msgstr ""
@@ -98,7 +99,7 @@ msgid ""
 msgstr ""
 "<span name=\"distro-name\"></span> hem ileri teknoloji bilgisayarlarda hem "
 "eski bilgisayarlar da çalışmaktadır, sistem kaynaklarına hafif yük "
-"bindirirken, aynı zamanda fonksiyonel olmak üzere optimize edilmiştir"
+"bindirirken, aynı zamanda fonksiyonel olmak üzere optimize edilmiştir."
 
 #: gettingstarted.html:86
 msgid "Minimum"
@@ -110,11 +111,11 @@ msgstr "Pentium Dual Core 1.6 GHz - yaklaşık 2007 yılında üretildi."
 
 #: gettingstarted.html:89
 msgid "2 gigabytes (GB) of RAM"
-msgstr "2 gigabytes (GB) of RAM - Bellek"
+msgstr "2 gigabayt (GB) RAM"
 
 #: gettingstarted.html:90
 msgid "16 gigabytes (GB) of disk space"
-msgstr "16 gigabytes (GB)  diskinizde boş yer"
+msgstr "16 gigabayt (GB) disk alanı"
 
 #: gettingstarted.html:93
 msgid "Recommended"
@@ -126,11 +127,11 @@ msgstr "Pentium i3 - yaklaşık 2013 yılında üretildi"
 
 #: gettingstarted.html:96
 msgid "4 gigabytes (GB) of RAM"
-msgstr "4 gigabytes (GB) of RAM - Bellek"
+msgstr "4 gigabayt (GB) RAM"
 
 #: gettingstarted.html:97
 msgid "80 gigabytes (GB) of disk space"
-msgstr "80 gigabytes (GB) diskinizde boş yer"
+msgstr "80 gigabayt (GB) disk alanı"
 
 #: gettingstarted.html:100
 msgid ""
@@ -173,9 +174,7 @@ msgstr "En iyi sonuç için:"
 
 #: gettingstarted.html:130
 msgid "<u><b>Back up</b></u> any important data to another storage device."
-msgstr ""
-"Tüm önemli bilgi ve belgelerinizi başka bir saklama ünitesine "
-"<u><b>Yedekleyin </b></u>."
+msgstr "Önemli verileri başka bir depolama aygıtına<u><b>Yedekleyin </b></u>."
 
 #: gettingstarted.html:131
 msgid ""
@@ -229,7 +228,7 @@ msgstr ""
 #: gettingstarted.html:150
 msgid "If you are using a legacy BIOS machine, you do not need to do this."
 msgstr ""
-"Eski tip BIOS' sahip bir makine kullanıyorsanız, bunu yapmanız gerekmez."
+"Eski tip BIOS'a sahip bir makine kullanıyorsanız, bunu yapmanız gerekmez."
 
 #: gettingstarted.html:153
 msgid ""
@@ -328,9 +327,7 @@ msgstr "Yeterli boş alan var. Minimum 10 GB önerilir."
 
 #: gettingstarted.html:208
 msgid "<b><u>Back up</u></b> important data to another drive."
-msgstr ""
-"Tüm önemli bilgi ve belgelerinizi başka bir saklama ünitesine "
-"<u><b>Yedekleyin </b></u>."
+msgstr "Önemli verileri başka bir sürücüye <u><b>Yedekleyin </b></u>."
 
 #: gettingstarted.html:209
 msgid "Defragment the hard drive."
@@ -438,9 +435,9 @@ msgid ""
 "unallocated, whereby the installer will detect this unused space to install "
 "<span name=\"distro-name\"></span> to."
 msgstr ""
-"Diskinizdeki işlemleriniz tamamladıktan sonra kalan alanın ellemeden "
-"bırakabilirsiniz böylece yükleyici, <span name=\"distro-name\"></span> "
-"alanını yüklemek için kullanılmayan alanı algılar."
+"İşlemlerinizi diskinize tamamladıktan sonra, kalan alanı ayrılmamış olarak "
+"bırakabilir, böylece yükleyici <span name=\"distro-name\"></span>'yi "
+"yüklemek için bu kullanılmayan alanı algılar."
 
 #: gettingstarted.html:270
 msgid "Using the Installer's \"Custom\" option."
@@ -520,7 +517,7 @@ msgstr ""
 "ve <code> / boot </code> olmakla birlikte. Eğer isterseniz bu bağlama "
 "noktalarını  fiziksel diskler arasında ayrı ayrı ayarlayabilirsiniz, örneğin"
 " OS'u bir SSD'de  <code> / </code> uygun bulduysanız, kişisel dosyalarınızı "
-"da ayrıca <code> / home </code>  ile mekanik bir hard-diske yazabilirsiniz."
+"da ayrıca <code> / home </code>  ile mekanik bir sabit diske yazabilirsiniz."
 
 #: gettingstarted.html:296
 msgid "Shrink your system disk within Windows."
@@ -547,9 +544,9 @@ msgid ""
 "name\"></span>."
 msgstr ""
 "Windows'un daha yeni sürümleri, NTFS birimini Windows içinden küçültmek için"
-" bir araç sağlar. Bu siz <span name=\"distro-name\"></span>'yi tecrübe "
-"ederken bilgisayarınız hala varsayılan olarak Windows ile açılıyor bu daha "
-"güvenli bir işlem olacaktır."
+" bir araç sağlar. <span name=\"distro-name\"></span>'yi tecrübe edinirken "
+"Windows'un bilgisayarınızda hala açıldığı önemli ise bu daha güvenli bir "
+"bahis."
 
 #: gettingstarted.html:307
 msgid "Open <b>Disk Management</b> from the start menu."
@@ -589,7 +586,7 @@ msgstr ""
 "Windows içeren bölümleri değiştirmek için en iyi uygulamalar hakkında daha "
 "fazla bilgi için çevrimiçi aşağıdaki <a "
 "onclick=\"cmd('link?https://help.ubuntu.com/community/HowtoResizeWindowsPartitions')\">"
-" yardım makalesine </a> bakın. ."
+" yardım makalesine </a> bakın."
 
 #: gettingstarted.html:336
 msgid "Repairing Boot Problems"
@@ -604,9 +601,9 @@ msgid ""
 "=\"distro-name\"></span> temporally."
 msgstr ""
 "Linux dağıtımları <code>grub</code> isimli bir önyükleme yazılımı kullanır, "
-"bilgisayar açılışında çoklu işletim sistemlerinini yüklemeye yarar. Ancak "
-"bazı işletim sistemleri (örneğin: Windows)'un kendi önyükleme yazılımı "
-"sadece Windows işletim sistemini açmaya yönelik olarak hazırlandığı için, "
+"bilgisayar açılışında çoklu işletim sistemlerini yüklemeye yarar. Ancak bazı"
+" işletim sistemleri (örneğin: Windows)'un kendi önyükleme yazılımı sadece "
+"Windows işletim sistemini açmaya yönelik olarak hazırlandığı için, "
 "bilgisayar açılışında geçici olarak <span name=\"distro-name\"></span> "
 "erişiminizi kaybetmenizi sağlayabilir."
 
@@ -754,9 +751,9 @@ msgid ""
 msgstr ""
 "<span name=\"distro-name\"></span> geniş bir donanım yelpazesi ile uyumlu "
 "olmasına rağmen, düzgün çalışması için tescilli sürücülerin olmasını "
-"gerektiren bazı bileşenler ve çevre birimleri vardır. Çoğu zaman bellenim "
-"-Firmware- paketini kurmak, bazı aygıtların  örneğin Bluetooth ve Wi-Fi gibi"
-" düzgün çalışması için gereklidir."
+"gerektiren bazı bileşenler ve çevre birimleri vardır. Bellenim paketini "
+"kurmak, genellikle bazı aygıtların tipik olarak Bluetooth ve Wi-Fi'ın düzgün"
+" çalışması için gereklidir."
 
 #: gettingstarted.html:450
 msgid "An Internet connection is required to download and install drivers."
@@ -803,12 +800,12 @@ msgid ""
 "NVIDIA may have drivers for your card that can boost performance for 3D "
 "applications and games as well as deliver improvements to power management."
 msgstr ""
-"NVIDIA kartınız için 3D uygulamalar ve oyun performansını artırabilecek, güç"
-" yönetiminde iyileştirmeler sağlayacabilecek sürücülere sahip olabilir."
+"NVIDIA kartınız için, 3D uygulamalar ve oyun performansını arttırabildiğiniz"
+" gibi güç yönetiminde iyileştirmeler sağlayacak sürücüler de olabilir."
 
 #: gettingstarted.html:479
 msgid "AMD Graphics Card Detected."
-msgstr "AMD Grafik Kartı Tespit Edildi"
+msgstr "AMD Grafik Kartı Tespit Edildi."
 
 #: gettingstarted.html:480
 msgid ""
@@ -827,8 +824,7 @@ msgstr "Devam etmek için çoktan hazırsın."
 msgid ""
 "Intel's drivers are open source and are maintained/updated in the kernel."
 msgstr ""
-"Intel sürücüleri açık kaynaklıdır ve çekirdekte muhafaza edilir / "
-"güncellenir."
+"Intel sürücüleri açık kaynaklıdır ve çekirdekte muhafaza edilir/güncellenir."
 
 #: gettingstarted.html:493
 msgid "VirtualBox Guest Additions"
@@ -881,7 +877,7 @@ msgstr ""
 
 #: gettingstarted.html:508
 msgid "Improve support for high resolutions and multiple monitors."
-msgstr "Yüksek özünürlük ve çoklu monitör desteğini geliştir."
+msgstr "Yüksek çözünürlük ve çoklu monitör desteğini geliştir."
 
 #: gettingstarted.html:509
 msgid "Fix blank screen issues."
@@ -893,6 +889,9 @@ msgid ""
 "experience adverse behavior, causing more issues than the open source "
 "drivers, such as:"
 msgstr ""
+"Tescilli sürücüler ''ikili lekeler'' olarak bilinir. Bazı donanımlar, açık "
+"kaynaklı sürücülerden daha fazla sorun yaratan, olumsuz davranışlar "
+"yaşayabilir, örneğin:"
 
 #: gettingstarted.html:515
 msgid "Failing to boot to the graphical desktop."
@@ -932,6 +931,12 @@ msgid ""
 "which packages up the latest NVIDIA drivers for Ubuntu. These packages are "
 "not as thoroughly tested."
 msgstr ""
+"<b>Ek Sürücüler</b>, Ubuntu depolarından en son test edilmiş sürücüyü "
+"getirir. Daha yeni sürümleri kullanmak isteyen gelişmiş kullanıcılar ve "
+"oyuncular <a onclick=\"cmd('link?https://launchpad.net/~graphics-"
+"drivers/+archive/ubuntu/ppa')\">Ubuntu Grafik Sürücüsü KPA</a>'sını eklemeyi"
+" düşünebilir; bu KPA, Ubuntu'nun en yeni NVIDIA sürücülerini "
+"paketlemektedir. Bu paketler tamamen test edilmemiştir."
 
 #: gettingstarted.html:533
 msgid ""
@@ -948,14 +953,15 @@ msgstr "Veri Havuzunu Ekle"
 #: gettingstarted.html:539
 msgid ""
 "To add the repository to the system, open a terminal and type the following:"
-msgstr ""
-"Veri havuzunu sisteme eklemek için bir terminal açın ve şunları yazın:"
+msgstr "Veri havuzunu sisteme eklemek için bir uçbirim açın ve şunları yazın:"
 
 #: gettingstarted.html:545
 msgid ""
 "After the PPA is added, newer versions are presented to install in <a "
 "onclick=\"cmd('drivers')\">Additional Drivers:</a>"
 msgstr ""
+"KPA eklendikten sonra, <a onclick=\"cmd('drivers')\">Ek Sürücüler</a>'e "
+"yüklemek için daha yeni sürümler sunulmaktadır:"
 
 #: gettingstarted.html:553
 msgid "Wireless, Bluetooth and Other Devices"
@@ -989,6 +995,10 @@ msgid ""
 "directly. If you require assistance, feel free to <a "
 "onclick=\"smoothPageFade('community.html')\">ask the community</a>."
 msgstr ""
+"Bazı üreticiler doğrudan kendileri tarafından sağlanan kapalı kaynak "
+"sürücüleri sağlayabilir. Yardıma ihtiyacınız varsa, <a "
+"onclick=\"smoothPageFade('community.html')\">topluluğa sormaktan</a> "
+"çekinmeyin."
 
 #: gettingstarted.html:570
 msgid "Read more on troubleshooting wireless hardware."
@@ -1045,6 +1055,8 @@ msgid ""
 "<b>Language Support</b> can be found later in <b><i>Settings <i class"
 "=\"material-icons\">&#xE315;</i> Region & Language</i></b>"
 msgstr ""
+"<b>Dil Desteği</b>, daha sonra <b><i>Ayarlarda<i class=\"material-icons\"> "
+"&#xE315;</i> Bölge ve Dil</i></b> bulunabilir."
 
 #: gettingstarted.html:630
 msgid "Complex Input"
@@ -1075,6 +1087,8 @@ msgid ""
 "<span name=\"distro-name\"></span> provides option to install a backup "
 "utility or firewall and supports multiple user accounts."
 msgstr ""
+"<span name=\"distro-name\"></span>, bir yedekleme programı veya güvenlik "
+"duvarı kurma seçeneği sunar ve birden fazla kullanıcı hesabını destekler."
 
 #: gettingstarted.html:679
 msgid "Backups"
@@ -1094,6 +1108,9 @@ msgid ""
 "name=\"distro-name\"></span> and supports backups to local devices as well "
 "as online cloud-based services."
 msgstr ""
+"<b>Deja-Dup</b>, <span name=\"distro-name\"></span>'ye kurulabilen ve yerel "
+"cihazlara ve çevrimiçi bulut tabanlı servislere yedeklemeyi destekleyen "
+"güçlü bir yedekleme programıdır."
 
 #: gettingstarted.html:691
 msgid "Configure Backup"
@@ -1104,6 +1121,8 @@ msgid ""
 "<b>Backups</b> can be found later in <b>Application Menu <i class"
 "=\"material-icons\">&#xE315;</i> Backup</b>."
 msgstr ""
+"<b>Yedekler</b> daha sonra <b>Uygulama Menüsü'nde <i class=\"material-"
+"icons\">&#xE315;</i> Yedek</b> bulunabilir."
 
 #: gettingstarted.html:707
 msgid "Firewall"
@@ -1116,6 +1135,10 @@ msgid ""
 "onclick=\"cmd('link?https://help.ubuntu.com/community/DoINeedAFirewall')\">learn"
 " more about firewalls</a>."
 msgstr ""
+"Güvenlik duvarları, bilgisayarınıza giren ve çıkan kötü amaçlı bağlantıları "
+"önler. Varsayılan olarak, güvenlik duvarı devre dışıdır, <a "
+"onclick=\"cmd('link?https://help.ubuntu.com/community/DoINeedAFirewall')\">güvenlik"
+" duvarları hakkında daha fazla bilgi</a>."
 
 #: gettingstarted.html:712
 msgid ""
@@ -1124,6 +1147,10 @@ msgid ""
 "onclick=\"cmd('link?https://wiki.ubuntu.com/BasicSecurity')\">more ways to "
 "stay secure too</a>."
 msgstr ""
+"<b>Gufw</b>, <code>ufw</code> (Komplike Olmayan Güvenlik Duvarı) için "
+"grafiksel bir ön uç sağlar. Güvenlik sizin için önemliyse, <a "
+"onclick=\"cmd('link?https://wiki.ubuntu.com/BasicSecurity')\">güvenliğinizi "
+"korumanın başka yolları da</a> vardır."
 
 #: gettingstarted.html:720
 msgid "Configure Firewall"
@@ -1135,6 +1162,9 @@ msgid ""
 "=\"material-icons\">&#xE315;</i> System <i class=\"material-"
 "icons\">&#xE315;</i> Firewall Configuration</i></b>."
 msgstr ""
+"Güvenlik Duvarı Yapılandırması</b> daha sonra <b><i>Ayarlarda<i class"
+"=\"material-icons\">&#xE315;</i>Sistem<i class=\"material-"
+"icons\">&#xE315;</i>Güvenlik Duvarı Yapılandırması</i></b> bulunabilir."
 
 #: gettingstarted.html:737
 msgid "Users"
@@ -1146,12 +1176,17 @@ msgid ""
 "user to protect the individual privacy of each user sharing the same "
 "computer."
 msgstr ""
+"Bilgisayarınızı başkalarıyla mı paylaşıyorsunuz? Aynı bilgisayarı paylaşan "
+"her kullanıcının kişisel gizliliğini korumak için her kullanıcı için ayrı "
+"bir kullanıcı hesabı oluşturun."
 
 #: gettingstarted.html:742
 msgid ""
 "You can also log in to a <b>Guest Session</b> if someone is using your "
 "computer as a one-off."
 msgstr ""
+"Birisi bilgisayarınızı bir defalık olarak kullanıyorsa, <b>Misafir "
+"Oturumu</b>'nda da oturum açabilirsiniz."
 
 #: gettingstarted.html:746
 msgid "Configure Users"
@@ -1162,12 +1197,17 @@ msgid ""
 "<b>Users</b> can be found later in <b><i>Settings <i class=\"material-"
 "icons\">&#xE315;</i> Users</i></b>."
 msgstr ""
+"<b>Kullanıcılar</b>daha sonra <b><i>Ayarlarda<i class=\"material-"
+"icons\">&#xE315;</i>Kullanıcılar</i></b> bulunabilir."
 
 #: gettingstarted.html:768
 msgid ""
 "To improve the amount of customizability, <span name=\"distro-name\"></span>"
 " allows you to install/remove popular web browsers with a single click."
 msgstr ""
+"<span name=\"distro-name\"></span>, özelleştirilebilirlik miktarını "
+"arttırmak için popüler web tarayıcılarını tek bir tıklamayla "
+"kurmanızı/kaldırmanızı sağlar."
 
 #: gettingstarted.html:774
 msgid ""
@@ -1230,10 +1270,14 @@ msgid ""
 "user interface. It can be used to quickly setup the user interface to "
 "broadly reflect how other popular operating systems look and feel."
 msgstr ""
+"<span name=\"distro-name\"></span>, kullanıcı arayüzünü dönüştürmek için "
+"benzersiz bir araç sunar. Diğer popüler işletim sistemlerinin nasıl "
+"göründüğünü ve hissettiğini geniş ölçüde yansıtacak şekilde kullanıcı "
+"arabirimini hızlı bir şekilde kurmak için kullanılabilir."
 
 #: gettingstarted.html:866
 msgid "Raven Configuration Center"
-msgstr "Raven Ayar Merkezi"
+msgstr "Raven Yapılandırma Merkezi"
 
 #: gettingstarted.html:869
 msgid ""
@@ -1253,18 +1297,26 @@ msgid ""
 " center that <span name=\"distro-name\"></span> provides. You can configure "
 "just about every aspect of your computer from Settings."
 msgstr ""
+"Yukarıda bahsedilen yardımcı programların tümü, <span name=\"distro-"
+"name\"></span> tarafından sağlanan kapsamlı Ayarlar kontrol merkezinin bir "
+"parçasıdır. Bilgisayarınızın hemen her yönünü Ayarlar'dan "
+"yapılandırabilirsiniz."
 
 #: gettingstarted.html:897
 msgid ""
 "<span name=\"distro-name\"></span> has many keyboard shortcuts that help "
 "make using your computer more efficient."
 msgstr ""
+"<span name=\"distro-name\"></span>, bilgisayarınızı daha verimli "
+"kullanmanıza yardımcı olan birçok klavye kısayoluna sahiptir."
 
 #: gettingstarted.html:901
 msgid ""
 "The <b><img src=\"img/welcome/super-key.svg\"/> Super</b> key is your "
 "Windows key. For Mac keyboards, this is the ⌘ Command key."
 msgstr ""
+"<b><img src=\"img/welcome/super-key.svg\"/>Süper</b> anahtar Windows "
+"anahtarınızdır. Mac klavyelerinde bu, ⌘  Komut tuşudur."
 
 #: gettingstarted.html:903
 msgid "Budgie Desktop shortcuts"
@@ -1280,7 +1332,7 @@ msgstr "Raven'da bildirimleri aç"
 
 #: gettingstarted.html:921
 msgid "Open applet Settings in Raven"
-msgstr "Raven'da Ayarlar uygulamasını aç"
+msgstr "Raven'da Uygulamacık Ayarlarını aç"
 
 #: gettingstarted.html:926
 msgid "Common application shortcuts"
@@ -1288,11 +1340,11 @@ msgstr "Ortak uygulama kısayolları"
 
 #: gettingstarted.html:927
 msgid "These shortcuts apply in most applications."
-msgstr "Bu kısayollar çoğu uygulamada uygulanmaktadır"
+msgstr "Bu kısayollar çoğu uygulamada geçerlidir."
 
 #: gettingstarted.html:934
 msgid "Toggle Tilix Quake Mode"
-msgstr ""
+msgstr "Tilix Deprem Modunu Değiştir"
 
 #: gettingstarted.html938, 946, 954, 962, 970, 978, 986, 994, 1002, 1010,
 #: 1018, 1026, 1034, 1042, 1050, 1087, 1105, 1143, 1153, 1163, 1175
@@ -1361,11 +1413,11 @@ msgstr "Shift"
 
 #: gettingstarted.html:1056
 msgid "Redo a change that you just undid"
-msgstr ""
+msgstr "Yeniden açtığın bir değişikliği yeniden yap"
 
 #: gettingstarted.html:1062
 msgid "Toggle the current application between full-screen and windowed"
-msgstr ""
+msgstr "Geçerli uygulamayı tam ekran ve pencereli arasında değiştirme"
 
 #: gettingstarted.html:1066
 msgid "Desktop shortcuts"
@@ -1376,6 +1428,8 @@ msgid ""
 "This section lists common keyboard shortcuts which you can use to operate "
 "parts of the desktop."
 msgstr ""
+"Bu bölüm, masaüstünün parçalarını çalıştırmak için kullanabileceğiniz genel "
+"klavye kısayollarını listeler."
 
 #: gettingstarted.html:1075
 msgid "Open Applications menu"
@@ -1388,7 +1442,7 @@ msgstr "Alt"
 
 #: gettingstarted.html:1083
 msgid "Run an application by typing its name in the box which appears"
-msgstr ""
+msgstr "Bir uygulamayı, görünen kutuya adını yazarak çalıştırın"
 
 #: gettingstarted.html:1091
 msgid "Delete"
@@ -1408,7 +1462,7 @@ msgstr "Uçbirimi aç."
 
 #: gettingstarted.html:1121
 msgid "Screen reader enable/disable."
-msgstr ""
+msgstr "Ekran okuyucu etkinleştirme/devre dışı bırakma"
 
 #: gettingstarted.html:1125
 msgid "Window shortcuts"
@@ -1420,18 +1474,20 @@ msgstr "Tab"
 
 #: gettingstarted.html:1134
 msgid "Switch between currently-open windows."
-msgstr "Açık olan pencereler arasında geç"
+msgstr "Açık olan pencereler arasında geçiş yapın."
 
 #: gettingstarted.html:1136
 msgid "Press Alt + Tab and then release Tab (but continue to hold Alt)."
 msgstr ""
-"Alt + Tab'a tıklayın ve sonra Tab'ı bırakın (fakat Alt'ı tutmaya devam edin)"
+"Alt + Tab'a basın ve sonra Tab'ı bırakın (fakat Alt'ı tutmaya devam edin)."
 
 #: gettingstarted.html:1137
 msgid ""
 "Press Tab repeatedly to cycle through the list of available windows which "
 "appears on the screen."
 msgstr ""
+"Ekranda görüntülenen mevcut pencereler listesi arasında dolaşmak için Tab'a "
+"art arda basın."
 
 #: gettingstarted.html1147, 1169, 1244
 msgid "Left"
@@ -1439,7 +1495,7 @@ msgstr "Sol"
 
 #: gettingstarted.html:1149
 msgid "Switch to the previous workspace."
-msgstr "Önceki çalışmaya geç"
+msgstr "Önceki çalışma alanına geçin."
 
 #: gettingstarted.html1157, 1180, 1252
 msgid "Right"
@@ -1447,15 +1503,15 @@ msgstr "Sağ"
 
 #: gettingstarted.html:1159
 msgid "Switch to the next workspace."
-msgstr "Sonraki çalışmaya geç"
+msgstr "Sonraki çalışma alanına geçin."
 
 #: gettingstarted.html:1171
 msgid "Move the current window to the previous workspace."
-msgstr "Kullanılan pencereyi önceki çalışmaya taşı"
+msgstr "Kullanılan pencereyi önceki çalışma alanına taşıyın."
 
 #: gettingstarted.html:1182
 msgid "Move the current window to the next workspace."
-msgstr "Kullanılan pencereyi sonraki çalışmaya taşı"
+msgstr "Kullanılan pencereyi sonraki çalışma alanına taşıyın."
 
 #: gettingstarted.html:1190
 msgid "Closes window."
@@ -1463,19 +1519,19 @@ msgstr "Pencereyi kapatır."
 
 #: gettingstarted.html:1198
 msgid "Returns window to 'normal' or previous size."
-msgstr "Pencereyi 'normal' yada önceki boyutuna döndürür"
+msgstr "Pencereyi 'normal' yada önceki boyutuna döndürür."
 
 #: gettingstarted.html:1206
 msgid "Moves the current window (can be moved with mouse or keyboard)."
 msgstr ""
 "Kullanılan pencereyi hareket ettirir (fare yada klavye ile hareket "
-"ettirilebilir)"
+"ettirilebilir)."
 
 #: gettingstarted.html:1214
 msgid "Resizes current window (again, can be moved with mouse or keyboard)."
 msgstr ""
 "Kullanılan pencereyi yeniden boyutlandırır (tekrar, fare yada klavye ile "
-"hareket ettirilebilir)"
+"hareket ettirilebilir)."
 
 #: gettingstarted.html:1222
 msgid "Minimizes current window."
@@ -1498,14 +1554,16 @@ msgid ""
 "Displays the window menu with options such as 'Always on Top' and 'Minimize'"
 " and 'Maximize' and above commands."
 msgstr ""
+"'Daima Üstte' ve 'Minimize' ve 'Maksimize' ve yukarıdaki komutlar gibi "
+"seçeneklerle pencere menüsünü görüntüler."
 
 #: gettingstarted.html:1246
 msgid "Place window on left side of screen."
-msgstr "Pencereyi ekranın sol tarafına konumlandırır."
+msgstr "Pencereyi ekranın sol tarafına konumlandırın."
 
 #: gettingstarted.html:1254
 msgid "Place window on right side of screen."
-msgstr "Pencereyi ekranın sağ tarafına konumlandırır."
+msgstr "Pencereyi ekranın sağ tarafına konumlandırın."
 
 #: gettingstarted.html:1273
 msgid ""
@@ -1513,6 +1571,9 @@ msgid ""
 "another. This information is useful when providing support to ensure "
 "hardware and software works on your machine."
 msgstr ""
+"Makineniz, birbiriyle etkileşime giren çeşitli bileşenlerden oluşur. Bu "
+"bilgi, makinenizde donanım ve yazılımın çalışmasını sağlamak için destek "
+"sağlanırken yararlıdır."
 
 #: gettingstarted.html:1281
 msgid "Gathering Information.."
@@ -1540,11 +1601,11 @@ msgstr "Anakart:"
 
 #: gettingstarted.html:1310
 msgid "Boot Mode:"
-msgstr ""
+msgstr "Önyükleme Modu:"
 
 #: gettingstarted.html:1313
 msgid "Displays the mode that OS is communicating with the firmware."
-msgstr ""
+msgstr "İşletim Sisteminin bellenim ile iletişim kurduğu modu görüntüler."
 
 #: gettingstarted.html:1321
 msgid "Processor"
@@ -1649,4 +1710,4 @@ msgstr "Diğer Kullanımlar:"
 
 #: gettingstarted.html:1429
 msgid "Reserved by system, other partitions, unallocated or swap."
-msgstr ""
+msgstr "Sistem tarafından ayrılmış, diğer bölümler, ayrılmamış veya takas."

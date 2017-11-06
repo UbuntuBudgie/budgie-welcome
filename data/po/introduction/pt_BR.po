@@ -3,12 +3,14 @@
 # Heavy Heavy <diegobrinungo@gmail.com>, 2017
 # Lucas Dias <lucasdiaas@outlook.com>, 2017
 # João Mário Domingos <joaomario.rd@hotmail.com>, 2017
+# Willian Eduardo <willianeduardot@gmail.com>, 2017
+# Christian Weber <ccarloswo@gmail.com>, 2017
 msgid ""
 msgstr ""
 "Project-Id-Version: Budgie Welcome\n"
 "POT-Creation-Date: 2016-02-27 12:48+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: João Mário Domingos <joaomario.rd@hotmail.com>, 2017\n"
+"Last-Translator: Christian Weber <ccarloswo@gmail.com>, 2017\n"
 "Language-Team: Portuguese (Brazil) (https://www.transifex.com/ubuntu-budgie/teams/72251/pt_BR/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -83,7 +85,7 @@ msgstr ""
 
 #: introduction.html:57
 msgid "on corporate servers that require stability and reliability"
-msgstr ""
+msgstr "em servidores corporativos que requerem estabilidade e confiabilidade"
 
 #: introduction.html:62
 msgid ""
@@ -93,6 +95,11 @@ msgid ""
 " modest hardware requirements, it is suitable for modern desktops and "
 "laptops alike."
 msgstr ""
+"O <span name=\"distro-name\"></span> é um sistema operacional estável e "
+"fácil de usar com um ambiente de desktop configurável. É ideal para aqueles "
+"que querem o máximo de seus computadores e preferem uma metáfora de desktop "
+"tradicional. Com requisitos de hardware modestos, é adequado para desktops e"
+" laptops modernos."
 
 #: introduction.html:69
 msgid ""
@@ -126,32 +133,41 @@ msgid ""
 "<span name=\"distro-name\"></span> has a number of guiding objectives and "
 "goals:"
 msgstr ""
+"O <span name=\"distro-name\"></span> tem uma série de metas e objetivos "
+"orientadores:"
 
 #: introduction.html:86
 msgid "Accessible to all, regardless of language and physical ability."
 msgstr ""
+"Acessível a todos, independentemente da linguagem e habilidade física."
 
 #: introduction.html:87
 msgid "Increase both Ubuntu and Budgie desktop user adoption."
-msgstr ""
+msgstr "Aumenta a adoção de usuários ao Budgie desktop e Ubuntu."
 
 #: introduction.html:88
 msgid ""
 "Create a Ubuntu based distro for users who prefer a traditional desktop "
 "metaphor."
 msgstr ""
+"Crie uma distribuição baseada no Ubuntu para usuários que preferem uma "
+"metáfora de desktop tradicional."
 
 #: introduction.html:89
 msgid ""
 "When possible contribute to Upstream projects such as Solus and Debian so "
 "all Linux communities benefit."
 msgstr ""
+"Quando possível, contribuir para projetos Upstream, como Solus e Debian para"
+" que todas as comunidades Linux se beneficiem."
 
 #: introduction.html:90
 msgid ""
 "Software selection will favor functionality and stability over lightness and"
 " whimsy."
 msgstr ""
+"A seleção de software favorecerá a funcionalidade e a estabilidade sobre a "
+"leveza e o capricho."
 
 #: introduction.html:100
 msgid "Ubuntu"
@@ -183,7 +199,7 @@ msgstr "O Ubuntu está disponivel em vários"
 
 #: introduction.html:118
 msgid "flavors"
-msgstr "\"sabores"
+msgstr "\"sabores\""
 
 #: introduction.html:118
 msgid ""
@@ -233,11 +249,11 @@ msgstr "<span name=\"distro-name\"></span> vem com inúmeras aplicações uteis 
 
 #: introduction.html:161
 msgid "GNOME Files"
-msgstr "GNOME Files (Gestor de Ficheiros)"
+msgstr "Gestor de Ficheiros GNOME"
 
 #: introduction.html:165
 msgid "GNOME Software"
-msgstr "GNOME Software (Loja de Aplicações)"
+msgstr "Loja de aplicativos GNOME"
 
 #: introduction.html:169
 msgid "File Manager"
@@ -245,45 +261,47 @@ msgstr "Gestor de Ficheiros"
 
 #: introduction.html:170
 msgid "Web Browser"
-msgstr ""
+msgstr "Navegador de internet"
 
 #: introduction.html:171
 msgid "Office Suite"
-msgstr ""
+msgstr "Suíte Office"
 
 #: introduction.html:172
 msgid "Software Store"
-msgstr ""
+msgstr "Loja de Aplicativos"
 
 #: introduction.html:173
 msgid "Music Player"
-msgstr ""
+msgstr "Reprodutor de música"
 
 #: introduction.html:177
 msgid "All of which are highly customisable and managed via"
-msgstr ""
+msgstr "Todos eles são altamente personalizáveis ​​e gerenciados via"
 
 #: introduction.html:180
 msgid "Settings"
-msgstr ""
+msgstr "Configurações"
 
 #: introduction.html:182
 msgid ""
 "Budgie desktop provides an intuitive and attractive desktop environment "
 "using traditional metaphors, which means if you've ever used"
 msgstr ""
+"O Budgie Desktop fornece um ambiente de trabalho intuitivo e atraente usando"
+" metáforas tradicionais, o que significa que se você já usou"
 
 #: introduction.html:186
 msgid "or"
-msgstr ""
+msgstr "ou"
 
 #: introduction.html:189
 msgid "it will feel very familiar."
-msgstr ""
+msgstr "vai se sentir muito familiarizado."
 
 #: introduction.html:195
 msgid "Open Source"
-msgstr ""
+msgstr "Código aberto"
 
 #: introduction.html:202
 msgid ""
@@ -292,6 +310,11 @@ msgid ""
 "or unmodified form) by anyone. In a nutshell <span name=\"distro-"
 "name\"></span> is free, in the truest sense of the word."
 msgstr ""
+"O que o Linux, o Ubuntu e o Budgie desktop têm em comum?! São de Código "
+"Aberto. Este software pode ser usado, alterado e compartilhado gratuitamente"
+" (em forma modificada ou não modificada) por qualquer pessoa. Em poucas "
+"palavras o <span name=\"distro-name\"></span> é livre, no sentido mais "
+"verdadeiro da palavra."
 
 #: introduction.html:208
 msgid ""
@@ -307,6 +330,17 @@ msgid ""
 " will ever happen, but if you have made it better, then your changes just "
 "might be included in the next release of <span name=\"distro-name\"></span>."
 msgstr ""
+"Embora você encontre algumas distribuições (variações) do Linux para compra,"
+" a grande maioria é fornecida gratuitamente, como o <span name=\"distro-"
+"name\"></span>. A distribuição é licenciada de uma forma que permite a "
+"qualquer pessoa distribuí-la gratuitamente, sem restrições. Por exemplo, a "
+"licença dá a qualquer membro da comunidade de usuários a liberdade de usar o"
+" Linux para qualquer propósito, para distribuir, modificar, redistribuir ou "
+"mesmo vender o sistema operacional. Se você modificar, e em seguida, "
+"redistribuir o Linux com suas modificações, você é obrigado pela licença a "
+"enviar suas modificações para possível inclusão em futuras versões. Não há "
+"garantia de que isso nunca aconteça, mas se você melhorou, suas mudanças "
+"podem ser incluídas na próxima versão do <span name=\"distro-name\"></span>."
 
 #: introduction.html:223
 msgid ""
@@ -315,10 +349,14 @@ msgid ""
 "corporations provide fixes and new features for Linux as they use the "
 "software for their businesses."
 msgstr ""
+"Muitos dos usuários do Linux são corporações que usam o sistema operacional "
+"para administrar seus negócios ou incluí-lo dentro de seus produtos. Muitas "
+"dessas corporações fornecem correções e novos recursos para o Linux, pois "
+"eles usam o software para seus negócios."
 
 #: introduction.html:229
 msgid "These improvements are given back"
-msgstr ""
+msgstr "Essas melhorias são devolvidas"
 
 #: introduction.html:230
 msgid ""
@@ -326,6 +364,9 @@ msgid ""
 "result. This is how we can continually improve and grow without having to "
 "charge our users money."
 msgstr ""
+"para a comunidade Linux e o <span name=\"distro-name\"></span> melhora como "
+"resultado. É assim que podemos melhorar e crescer continuamente sem ter que "
+"cobrar dinheiro aos nossos usuários."
 
 #: introduction.html:234
 msgid ""
@@ -334,6 +375,10 @@ msgid ""
 " Instruments, Google, Canonical, Oracle, AMD, and Microsoft. Over 4,000 "
 "developers contributed to Linux over the last 15 years."
 msgstr ""
+"Ao contrário do Windows e OS X, o Linux não é criado e suportado por apenas "
+"uma empresa. É suportado pela Intel, Redhat, Linaro, Samsung, IBM, SUSE, "
+"Texas Instruments, Google, Canonical, Oracle, AMD e Microsoft. Mais de 4.000"
+" desenvolvedores contribuíram para o Linux nos últimos 15 anos."
 
 #: introduction.html:240
 msgid ""
@@ -348,3 +393,13 @@ msgid ""
 "designed for Windows, and from the most powerful Internet servers to the "
 "smallest smart thermostat."
 msgstr ""
+"Se você é um usuário doméstico do <span name=\"distro-name\"></span>, um "
+"desenvolvedor de software ou aplicativo, ou um funcionário de uma "
+"organização que usa o sistema operacional, você é membro das comunidades "
+"Linux e Código Aberto e se beneficia dos esforços dos desenvolvedores que "
+"contribuem para o <span name=\"distro-name\"></span> e seus projetos "
+"relacionados: Linux, Budgie desktop e Ubuntu. Os membros da comunidade "
+"executam o Linux em quase qualquer hardware, desde o Macbook mais bonito ao "
+"netbook mais barato, desde o mais recente Chromebook até algumas máquinas "
+"muito antigas projetadas para o Windows, e dos servidores de Internet mais "
+"poderosos para o termostato inteligente mais pequeno."

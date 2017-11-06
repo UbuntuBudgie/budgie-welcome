@@ -5,12 +5,13 @@
 # Willian Eduardo <willianeduardot@gmail.com>, 2017
 # David Mohammed <fossfreedom@ubuntu.com>, 2017
 # João Mário Domingos <joaomario.rd@hotmail.com>, 2017
+# Christian Weber <ccarloswo@gmail.com>, 2017
 msgid ""
 msgstr ""
 "Project-Id-Version: Budgie Welcome\n"
 "POT-Creation-Date: 2016-02-27 12:48+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: João Mário Domingos <joaomario.rd@hotmail.com>, 2017\n"
+"Last-Translator: Christian Weber <ccarloswo@gmail.com>, 2017\n"
 "Language-Team: Portuguese (Brazil) (https://www.transifex.com/ubuntu-budgie/teams/72251/pt_BR/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -692,6 +693,11 @@ msgid ""
 "Ubuntu License Policy) complicate distribution of software to support non-"
 "free formats."
 msgstr ""
+"<strong>Ubuntu</strong> (a base de distribuição do <span name=\"distro-"
+"name\"></span>) se esforça para tornar todos os softwares mais importantes "
+"disponíveis para seus usuários automaticamente. No entanto, as restrições de"
+" patente e direitos autorais (ver Política de Licença do Ubuntu) complicam a"
+" distribuição de software para suportar formatos não-livres."
 
 #: gettingstarted.html:411
 msgid ""
@@ -699,6 +705,9 @@ msgid ""
 " including DVD, MP3, Quicktime, and Windows Media formats, by following the "
 "instructions below."
 msgstr ""
+"No entanto, você pode instalar a capacidade de reproduzir formatos de mídia "
+"populares não-livres, incluindo formatos de DVD, MP3, Quicktime e Windows "
+"Media, seguindo as instruções abaixo."
 
 #: gettingstarted.html:414
 msgid ""
@@ -707,6 +716,11 @@ msgid ""
 "See Ubuntu’s Free Software Philosophy and the Free Formats page for a more "
 "comprehensive discussion of these issues."
 msgstr ""
+"O compromisso do Ubuntu de incluir apenas software completamente livre por "
+"padrão significa que os formatos de mídia proprietários não estão "
+"configurados \"fora da caixa\". Veja a Filosofia de Software Livre do Ubuntu"
+" e a página Formatos Livres para uma discussão mais abrangente sobre essas "
+"questões."
 
 #: gettingstarted.html:418
 msgid ""
@@ -715,6 +729,11 @@ msgid ""
 " unsure whether a particular patent or restriction applies to a media format"
 " you wish to use in your country."
 msgstr ""
+"<strong>Aviso Legal</strong> As leis de patentes e direitos autorais operam "
+"de forma diferente, de acordo com o país em que se encontra. Obtenha "
+"aconselhamento jurídico se não tiver certeza de se uma determinada patente "
+"ou restrição se aplica a um formato de mídia que você deseja usar em seu "
+"país."
 
 #: gettingstarted.html423, 599, 604, 639, 645, 651, 687, 716, 783, 798, 816,
 #: 831, 850
@@ -741,6 +760,11 @@ msgid ""
 " often required to get some devices, typically Bluetooth and Wi-Fi, to work "
 "correctly."
 msgstr ""
+"Embora uma ampla gama de hardware seja compatível com o <span name=\"distro-"
+"name\"></span>, existem alguns componentes e periféricos que exigem que os "
+"drivers proprietários funcionem devidamente. A instalação do pacote de "
+"firmware é muitas vezes necessária para que alguns dispositivos, normalmente"
+" Bluetooth e Wi-Fi, funcionem corretamente."
 
 #: gettingstarted.html:450
 msgid "An Internet connection is required to download and install drivers."
@@ -755,6 +779,8 @@ msgstr "Drivers Adicionais"
 msgid ""
 "<b>Additional Drivers</b> can be found later in <b>Software & Updates</b>"
 msgstr ""
+"<b>Drivers Adicionais</b> pode ser encontrado mais tarde em <b>Atualizações "
+"de Software</b>"
 
 #: gettingstarted.html:464
 msgid "Graphics"
@@ -785,6 +811,9 @@ msgid ""
 "NVIDIA may have drivers for your card that can boost performance for 3D "
 "applications and games as well as deliver improvements to power management."
 msgstr ""
+"A NVIDIA pode ter drivers para a sua placa de vídeo, que podem aumentar o "
+"desempenho para aplicativos 3D e jogos, além de oferecer melhorias no "
+"gerenciamento de energia."
 
 #: gettingstarted.html:479
 msgid "AMD Graphics Card Detected."
@@ -796,6 +825,9 @@ msgid ""
 " are currently using will deliver the most stable performance out of your "
 "card."
 msgstr ""
+"Os drivers da AMD não são mais suportados no Ubuntu. Os drivers de código "
+"aberto que você está usando atualmente fornecerão o desempenho mais estável "
+"para a sua placa de vídeo."
 
 #: gettingstarted.html:487
 msgid "You're already good to go."
@@ -839,16 +871,21 @@ msgid ""
 "performance</b> and as a result, the entire system. Users may wish to "
 "install these drivers to:"
 msgstr ""
+"Além disso, os drivers proprietários podem <b>melhorar significativamente o "
+"desempenho de gráficos</b> e como resultado de todo o sistema. Os usuários "
+"podem querer instalar esses drivers para: "
 
 #: gettingstarted.html:506
 msgid "Run 3D applications and games."
-msgstr "Rode aplicações 3D e jogos."
+msgstr "Roda aplicações 3D e jogos."
 
 #: gettingstarted.html:507
 msgid ""
 "Improve power management, particularly if the device experiences overheating"
 " problems under open source drivers."
 msgstr ""
+"Melhora o gerenciamento de energia, especialmente se o dispositivo tiver "
+"problemas de superaquecimento em drivers de código aberto."
 
 #: gettingstarted.html:508
 msgid "Improve support for high resolutions and multiple monitors."
@@ -858,7 +895,7 @@ msgstr ""
 
 #: gettingstarted.html:509
 msgid "Fix blank screen issues."
-msgstr "Resolva erros de tela branca."
+msgstr "Resolve erros de tela branca."
 
 #: gettingstarted.html:512
 msgid ""
@@ -866,14 +903,17 @@ msgid ""
 "experience adverse behavior, causing more issues than the open source "
 "drivers, such as:"
 msgstr ""
+"Os drivers proprietários são conhecidos como \"blobs binários\". Certos "
+"hardware podem sofrer comportamentos adversos, causando mais problemas do "
+"que os drivers de código aberto, como:"
 
 #: gettingstarted.html:515
 msgid "Failing to boot to the graphical desktop."
-msgstr "Falhou a inicialização para o desktop gráfico."
+msgstr "Falha a inicialização para o desktop gráfico."
 
 #: gettingstarted.html:516
 msgid "Broken drivers after an upgrade."
-msgstr "As drivers foram danificadas após a ultima atualização."
+msgstr "Os drivers serem danificados após a ultima atualização."
 
 #: gettingstarted.html:517
 msgid "Severe graphical glitches."
@@ -889,12 +929,12 @@ msgid ""
 "<code id=\"graphics-open-driver-name\"></code> is the open source driver for"
 " your card."
 msgstr ""
-"<code id=\"graphics-open-driver-name\"></code> é uma driver open source para"
-" a sua placa."
+"<code id=\"graphics-open-driver-name\"></code> é o driver de código aberto "
+"para a sua placa de vídeo."
 
 #: gettingstarted.html:527
 msgid "What about the latest NVIDIA drivers?"
-msgstr "Que tal as drivers mais recentes da NVIDIA?"
+msgstr "E os últimos drivers da NVIDIA?"
 
 #: gettingstarted.html:528
 msgid ""
@@ -905,12 +945,21 @@ msgid ""
 "which packages up the latest NVIDIA drivers for Ubuntu. These packages are "
 "not as thoroughly tested."
 msgstr ""
+"<b>Drivers Adicionais</b> obtém o driver testado mais recente dos "
+"repositórios do Ubuntu. Os usuários avançados e os jogadores que gostariam "
+"de versões mais recentes podem querer considerar adicionar o <a "
+"onclick=\"cmd('link?https://launchpad.net/~graphics-"
+"drivers/+archive/ubuntu/ppa')\">Driver de Gráficos do Ubuntu PPA</a>, que "
+"oferece os mais recentes drivers da NVIDIA para o Ubuntu. Esses pacotes não "
+"são tão bem testados."
 
 #: gettingstarted.html:533
 msgid ""
 "This only applies for actively supported cards, and not older cards using "
 "the legacy driver."
 msgstr ""
+"Isso aplica-se apenas as placas gráficas ativamente suportadas, e não as "
+"placas mais antigas usando o driver antigo."
 
 #: gettingstarted.html:536
 msgid "Add Repository"
@@ -920,16 +969,20 @@ msgstr "Adicionar Repositório"
 msgid ""
 "To add the repository to the system, open a terminal and type the following:"
 msgstr ""
+"Para adicionar o repositório ao sistema, abra o terminal e siga as "
+"instruções:"
 
 #: gettingstarted.html:545
 msgid ""
 "After the PPA is added, newer versions are presented to install in <a "
 "onclick=\"cmd('drivers')\">Additional Drivers:</a>"
 msgstr ""
+"Depois que a PPA for adicionada, novas versões estarão disponíveis para a "
+"instalação em: <a onclick=\"cmd('drivers')\">Drivers Adicionais</a>"
 
 #: gettingstarted.html:553
 msgid "Wireless, Bluetooth and Other Devices"
-msgstr ""
+msgstr "Rede sem fio, Bluetooth e outros dispositivos"
 
 #: gettingstarted.html:555
 msgid ""
@@ -937,6 +990,9 @@ msgid ""
 "after installing the firmware packages, you may need to research your device"
 " to find the appropriate driver."
 msgstr ""
+"Se não houve drivers adicionais para o seu hardware e nem funcionem depois "
+"de instalar os pacotes de firmware, talvez seja necessário pesquisar por seu"
+" dispositivo para encontrar o driver apropriado."
 
 #: gettingstarted.html:559
 msgid ""
@@ -945,6 +1001,10 @@ msgid ""
 "insufficient documentation to create drivers for your particular brand and "
 "model."
 msgstr ""
+"Infelizmente, isso se deve ao fato de o fabricante não ter fornecido algum "
+"código fonte para que os desenvolvedores usem livremente ou não há "
+"documentação suficiente para criar drivers para sua marca e modelo "
+"específicos."
 
 #: gettingstarted.html:565
 msgid ""
@@ -952,10 +1012,13 @@ msgid ""
 "directly. If you require assistance, feel free to <a "
 "onclick=\"smoothPageFade('community.html')\">ask the community</a>."
 msgstr ""
+"Alguns fabricantes podem fornecer drivers de fonte fechada, fornecidos por "
+"eles diretamente. Se você precisar de assistência, sinta-se à vontade para "
+"<a onclick=\"smoothPageFade('community.html')\">pergunte à comunidade</a>."
 
 #: gettingstarted.html:570
 msgid "Read more on troubleshooting wireless hardware."
-msgstr ""
+msgstr "Leia mais sobre como solucionar problemas de hardware sem fio."
 
 #: gettingstarted.html578, 760
 msgid "Language Input"
@@ -971,6 +1034,9 @@ msgid ""
 "between two widely used keyboard entry layouts. IBus(Intelligent Input Bus) "
 "and Fcitx(Free Chinese Input Toy for X)."
 msgstr ""
+"No <span name=\"distro-name\"></span>, nós fornecemos uma opção para "
+"alternar entre dois layouts de entrada de teclado amplamente utilizados. "
+"IBus (Intelligent Input Bus) e Fcitx (Free Chinese Input Toy para X)."
 
 #: gettingstarted.html:595
 msgid "Install & Configure IBus"
@@ -997,12 +1063,17 @@ msgid ""
 "Your computer may require updates to your language and localization "
 "settings, or you may want to install additional language support."
 msgstr ""
+"Seu computador pode exigir atualizações para suas configurações de idioma e "
+"localização, ou você pode querer instalar suporte a idioma adicional."
 
 #: gettingstarted.html:621
 msgid ""
 "<b>Language Support</b> can be found later in <b><i>Settings <i class"
 "=\"material-icons\">&#xE315;</i> Region & Language</i></b>"
 msgstr ""
+"<b>Suporte a Idiomas</b> pode ser encontrado mais tarde em "
+"<b><i>Configurações <i class=\"material-icons\">&#xE315;</i> Região e "
+"Idioma</i></b>"
 
 #: gettingstarted.html:630
 msgid "Complex Input"
@@ -1033,6 +1104,9 @@ msgid ""
 "<span name=\"distro-name\"></span> provides option to install a backup "
 "utility or firewall and supports multiple user accounts."
 msgstr ""
+"O <span name=\"distro-name\"></span> fornece opção para instalar um "
+"utilitário de backup ou firewall e oferece suporte a várias contas de "
+"usuários."
 
 #: gettingstarted.html:679
 msgid "Backups"
@@ -1043,6 +1117,8 @@ msgid ""
 "Nothing is more important then having a backup of your personal files, just "
 "in case something disastrous happens to your computer."
 msgstr ""
+"Nada é mais importante do que ter um backup de seus arquivos pessoais, para "
+"o caso de algo desastroso acontecer ao seu computador."
 
 #: gettingstarted.html:684
 msgid ""
@@ -1050,6 +1126,9 @@ msgid ""
 "name=\"distro-name\"></span> and supports backups to local devices as well "
 "as online cloud-based services."
 msgstr ""
+"<b>Deja-Dup</b> é um poderoso utilitário de backup que pode ser instalado no"
+" <span name=\"distro-name\"></span> e suporta backups para dispositivos "
+"locais, bem como serviços online baseados em nuvem."
 
 #: gettingstarted.html:691
 msgid "Configure Backup"
@@ -1060,6 +1139,8 @@ msgid ""
 "<b>Backups</b> can be found later in <b>Application Menu <i class"
 "=\"material-icons\">&#xE315;</i> Backup</b>."
 msgstr ""
+"<b>Backups</b> podem ser encontrado em <b>Menu de aplicações<i class"
+"=\"material-icons\">&#xE315;</i> Backup</b>."
 
 #: gettingstarted.html:707
 msgid "Firewall"
@@ -1072,6 +1153,10 @@ msgid ""
 "onclick=\"cmd('link?https://help.ubuntu.com/community/DoINeedAFirewall')\">learn"
 " more about firewalls</a>."
 msgstr ""
+"Firewalls previne conexões maliciosas de entrarem ou saírem de seu "
+"computador. Por padrão, o firewall vêm desabilitado,<a "
+"onclick=\"cmd('link?https://help.ubuntu.com/community/DoINeedAFirewall')\">Aprenda"
+" mais sobre firewalls</a>."
 
 #: gettingstarted.html:712
 msgid ""
@@ -1080,6 +1165,11 @@ msgid ""
 "onclick=\"cmd('link?https://wiki.ubuntu.com/BasicSecurity')\">more ways to "
 "stay secure too</a>."
 msgstr ""
+"<b>Gufw</b> fornece um ambiente gráfico para o <code>ufw</code> "
+"(Uncomplicated Firewall - Firewall descomplicado em português).  Se "
+"segurança for importante para você, existem <a "
+"onclick=\"cmd('link?https://wiki.ubuntu.com/BasicSecurity')\"> outras formas"
+" de se manter seguro</a>."
 
 #: gettingstarted.html:720
 msgid "Configure Firewall"
@@ -1091,6 +1181,9 @@ msgid ""
 "=\"material-icons\">&#xE315;</i> System <i class=\"material-"
 "icons\">&#xE315;</i> Firewall Configuration</i></b>."
 msgstr ""
+"Configuração de Firewall </b> pode ser encontrado em <b> <i> Configuração <i"
+" class=\"material-icons\">&#xE315; </i> Sistema <i class=\"material-"
+"icons\">&#xE315; </i> Configuração de Firewall </i> </b>."
 
 #: gettingstarted.html:737
 msgid "Users"
@@ -1102,12 +1195,17 @@ msgid ""
 "user to protect the individual privacy of each user sharing the same "
 "computer."
 msgstr ""
+"Compartilha seu computador com outros? Configure uma conta de usuário "
+"separada para cada usuário para proteger a privacidade individual de cada "
+"usuário que compartilha o mesmo computador."
 
 #: gettingstarted.html:742
 msgid ""
 "You can also log in to a <b>Guest Session</b> if someone is using your "
 "computer as a one-off."
 msgstr ""
+"Você também pode fazer um login em <b> Sessão de convidado </b> se alguém "
+"estiver usando seu computador  uma única vez. "
 
 #: gettingstarted.html:746
 msgid "Configure Users"
@@ -1118,6 +1216,8 @@ msgid ""
 "<b>Users</b> can be found later in <b><i>Settings <i class=\"material-"
 "icons\">&#xE315;</i> Users</i></b>."
 msgstr ""
+"<b>Usuários</b> podem ser encontrados em <b><i>Configuração <i class"
+"=\"material-icons\">&#xE315; </i> Usuários </i></b>."
 
 #: gettingstarted.html:768
 msgid ""
@@ -1260,7 +1360,7 @@ msgstr "Esses atalhos se aplicam na maioria dos programas."
 
 #: gettingstarted.html:934
 msgid "Toggle Tilix Quake Mode"
-msgstr ""
+msgstr "Toggle Tilix Quake Mode"
 
 #: gettingstarted.html938, 946, 954, 962, 970, 978, 986, 994, 1002, 1010,
 #: 1018, 1026, 1034, 1042, 1050, 1087, 1105, 1143, 1153, 1163, 1175
