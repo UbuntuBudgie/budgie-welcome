@@ -6,7 +6,7 @@ Welcome screen application to greet new users on their first login.
 ### Translators
 
 We need to translate budgie-welcome into your language/locale.  Please
-help-out - visit
+help-out - visit:
 
 https://www.transifex.com/ubuntu-budgie/budgie-welcome/
 
