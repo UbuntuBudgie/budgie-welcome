@@ -4,58 +4,60 @@
 		  "packages" : ["budgie-haste-applet"],
 		  "repos" : {
 			  "xenial" : ["ppa:budgie-remix/ppa"],
-			  "yakkety" : ["ppa:budgie-remix/ppa"],
               "zesty" : ["ppa:ubuntubudgie/backports"],
-              "artful" : ["ppa:ubuntubudgie/backports"]
+              "artful" : ["ppa:ubuntubudgie/backports"],
+              "bionic" : ["ppa:ubuntubudgie/backports"]
 		  }
 	  },
 	  "screenshot-applet" : {
 		  "packages" : ["budgie-screenshot-applet"],
 		  "repos" : {
 			  "xenial" : ["ppa:budgie-remix/ppa"],
-			  "yakkety" : ["ppa:budgie-remix/ppa"],
               "zesty" : ["ppa:ubuntubudgie/backports"],
-              "artful" : ["ppa:ubuntubudgie/backports"]
+              "artful" : ["ppa:ubuntubudgie/backports"],
+              "bionic" : ["ppa:ubuntubudgie/backports"]
 		  }
 	  },
 	  "calendar-applet" : {
 		  "packages" : ["budgie-calendar-applet"],
 		  "repos" : {
 			  "xenial" : ["ppa:budgie-remix/ppa"],
-			  "yakkety" : ["ppa:budgie-remix/ppa"],
               "zesty" : ["ppa:ubuntubudgie/backports"],
-              "artful" : ["ppa:ubuntubudgie/backports"]
+              "artful" : ["ppa:ubuntubudgie/backports"],
+              "bionic" : ["ppa:ubuntubudgie/backports"]
 		  }
 	  },
 	  "brightness-applet" : {
 		  "packages" : ["budgie-brightness-control-applet"],
 		  "repos" : {
 			  "xenial" : ["ppa:budgie-remix/ppa"],
-			  "yakkety" : ["ppa:budgie-remix/ppa"],
               "zesty" : ["ppa:ubuntubudgie/backports"],
-              "artful" : ["ppa:ubuntubudgie/backports"]
+              "artful" : ["ppa:ubuntubudgie/backports"],
+              "bionic" : ["ppa:ubuntubudgie/backports"]
 		  }
 	  },
 	  "pixel-applet" : {
 		  "packages" : ["budgie-pixel-saver-applet"],
 		  "repos" : {
-			  "yakkety" : ["ppa:budgie-remix/ppa"],
               "zesty" : ["ppa:ubuntubudgie/backports"],
-              "artful" : ["ppa:ubuntubudgie/backports"]
+              "artful" : ["ppa:ubuntubudgie/backports"],
+              "bionic" : ["ppa:ubuntubudgie/backports"]
 		  }
 	  },
 	  "appmenu-applet" : {
 		  "packages" : ["budgie-appmenu-applet"],
 		  "repos" : {
               "zesty" : ["ppa:ubuntubudgie/backports"],
-              "artful" : ["universe"]
+              "artful" : ["universe"],
+              "bionic" : ["universe"]
 		  }
 	  },
 	  "weather-applet" : {
 		  "packages" : ["budgie-weather-applet"],
 		  "repos" : {
               "zesty" : ["ppa:ubuntubudgie/backports"],
-              "artful" : ["ppa:ubuntubudgie/backports"]
+              "artful" : ["ppa:ubuntubudgie/backports"],
+              "bionic" : ["ppa:ubuntubudgie/backports"]
 		  }
 	  },
       "sysmonitor-applet" : {
@@ -63,15 +65,71 @@
 		  "repos" : {
               "xenial": ["ppa:budgie-remix/ppa"],
               "zesty" : ["ppa:ubuntubudgie/backports"],
-              "artful" : ["ppa:ubuntubudgie/backports"]
+              "artful" : ["ppa:ubuntubudgie/backports"],
+              "bionic" : ["ppa:ubuntubudgie/backports"]
 		  }
 	  },
-      "wmmover-applet" : {
-		  "packages" : ["budgie-wmmover-applet"],
+      "hotcorners-applet" : {
+		  "packages" : ["budgie-hotcorners-applet"],
 		  "repos" : {
-              "abc": ["ppa:budgie-remix/ppa"],
-              "def" : ["ppa:ubuntubudgie/backports"],
-              "ghi" : ["ppa:ubuntubudgie/backports"]
+              "xenial": ["ppa:budgie-remix/ppa"],
+              "zesty" : ["ppa:ubuntubudgie/backports"],
+              "artful" : ["ppa:ubuntubudgie/backports"],
+              "bionic" : ["ppa:ubuntubudgie/backports"]
+		  }
+	  },
+      "quicknote-applet" : {
+		  "packages" : ["budgie-quicknote-applet"],
+		  "repos" : {
+              "xenial": ["ppa:budgie-remix/ppa"],
+              "zesty" : ["ppa:ubuntubudgie/backports"],
+              "artful" : ["ppa:ubuntubudgie/backports"],
+              "bionic" : ["ppa:ubuntubudgie/backports"]
+		  }
+	  },
+      "previews-applet" : {
+		  "packages" : ["budgie-previews-applet"],
+		  "repos" : {
+              "xenial": ["ppa:budgie-remix/ppa"],
+              "zesty" : ["ppa:ubuntubudgie/backports"],
+              "artful" : ["ppa:ubuntubudgie/backports"],
+              "bionic" : ["ppa:ubuntubudgie/backports"]
+		  }
+	  },
+      "workspace-overview-applet" : {
+		  "packages" : ["budgie-workspace-overview-applet"],
+		  "repos" : {
+              "xenial": ["ppa:budgie-remix/ppa"],
+              "zesty" : ["ppa:ubuntubudgie/backports"],
+              "artful" : ["ppa:ubuntubudgie/backports"],
+              "bionic" : ["ppa:ubuntubudgie/backports"]
+		  }
+	  },
+      "workspace-wallpaper-applet" : {
+		  "packages" : ["budgie-workspace-wallpaper-applet"],
+		  "repos" : {
+              "xenial": ["ppa:budgie-remix/ppa"],
+              "zesty" : ["ppa:ubuntubudgie/backports"],
+              "artful" : ["ppa:ubuntubudgie/backports"],
+              "bionic" : ["ppa:ubuntubudgie/backports"]
+		  }
+	  },
+      "window-mover-applet" : {
+		  "packages" : ["budgie-window-mover-applet"],
+		  "repos" : {
+              "xenial": ["ppa:budgie-remix/ppa"],
+              "zesty" : ["ppa:ubuntubudgie/backports"],
+              "artful" : ["ppa:ubuntubudgie/backports"],
+              "bionic" : ["ppa:ubuntubudgie/backports"]
+		  }
+	  },
+      "showtime-applet" : {
+		  "packages" : ["budgie-showtime-applet"],
+		  "repos" : {
+              "xenial": ["ppa:budgie-remix/ppa"],
+              "zesty" : ["ppa:ubuntubudgie/backports"],
+              "artful" : ["ppa:ubuntubudgie/backports"],
+              "bionic" : ["ppa:ubuntubudgie/backports"]
 		  }
 	  }
   },
@@ -89,7 +147,6 @@
       "packages" : ["skippy-xd"],
       "repos" : {
         "xenial" : ["ppa:budgie-remix/ppa"],
-        "yakkety" : ["ppa:budgie-remix/ppa"],
         "zesty" : ["ppa:ubuntubudgie/backports"],
         "artful" : ["ppa:ubuntubudgie/backports"]
       }
@@ -105,17 +162,17 @@
       "packages" : ["budgie-screenshot-applet"],
       "repos" : {
         "xenial" : ["ppa:budgie-remix/ppa"],
-        "yakkety" : ["ppa:budgie-remix/ppa"],
         "zesty" : ["ppa:ubuntubudgie/backports"],
-        "artful" : ["ppa:ubuntubudgie/backports"]
+        "artful" : ["ppa:ubuntubudgie/backports"],
+        "bionic" : ["ppa:ubuntubudgie/backports"]
       }
     },
     "backport" : {
       "repos" : {
         "xenial" : ["ppa:budgie-remix/ppa"],
-        "yakkety" : ["ppa:budgie-remix/ppa"],
         "zesty" : ["ppa:ubuntubudgie/backports"],
-        "artful" : ["ppa:ubuntubudgie/backports"]
+        "artful" : ["ppa:ubuntubudgie/backports"],
+        "bionic" : ["ppa:ubuntubudgie/backports"]
       }
     }
   },
@@ -204,27 +261,27 @@
       "packages" : ["adapta-gtk-theme", "paper-cursor-theme", "paper-icon-theme", "fonts-noto"],
       "repos" : {
         "xenial" : ["ppa:snwh/pulp", "ppa:tista/adapta"],
-        "yakkety" : ["ppa:snwh/pulp", "ppa:tista/adapta"],
         "zesty" : ["ppa:ubuntubudgie/backports", "ppa:tista/adapta"],
-        "artful" : ["ppa:ubuntubudgie/backports", "ppa:tista/adapta"]
+        "artful" : ["ppa:ubuntubudgie/backports", "ppa:tista/adapta"],
+        "bionic" : ["ppa:ubuntubudgie/backports", "ppa:tista/adapta"]
       }
     },
     "material-vimix-theme" : {
       "packages" : ["vimix-gtk-themes", "paper-cursor-theme", "paper-icon-theme", "fonts-noto"],
       "repos" : {
         "xenial" : ["ppa:snwh/pulp", "ppa:noobslab/themes"],
-        "yakkety" : ["ppa:snwh/pulp", "ppa:noobslab/themes"],
         "zesty" : ["ppa:snwh/pulp", "ppa:noobslab/themes"],
-        "artful" : ["ppa:ubuntubudgie/backports", "ppa:noobslab/themes"]
+        "artful" : ["ppa:ubuntubudgie/backports", "ppa:noobslab/themes"],
+        "bionic" : ["ppa:ubuntubudgie/backports", "ppa:noobslab/themes"]
       }
     },
     "material-flat-plat-theme" : {
       "packages" : ["flat-plat", "numix-icon-theme-circle", "fonts-noto"],
       "repos" : {
         "xenial" : ["ppa:budgie-remix/ppa", "ppa:numix/ppa"],
-        "yakkety" : ["ppa:budgie-remix/ppa", "ppa:numix/ppa"],
         "zesty" : ["ppa:ubuntubudgie/backports", "ppa:numix/ppa"],
-        "artful" : ["ppa:ubuntubudgie/backports", "ppa:numix/ppa"]
+        "artful" : ["ppa:ubuntubudgie/backports", "ppa:numix/ppa"],
+        "bionic" : ["ppa:ubuntubudgie/backports", "ppa:numix/ppa"]
       }
     },
     "vertex-theme" : {
@@ -240,14 +297,15 @@
       "packages" : ["evopop-gtk-theme", "paper-icon-theme", "fonts-noto"],
       "repos" : {
         "zesty" : ["ppa:ubuntubudgie/backports", "ppa:snwh/pulp"],
-        "artful" : ["ppa:ubuntubudgie/backports"]
+        "artful" : ["ppa:ubuntubudgie/backports"],
+        "bionic" : ["ppa:ubuntubudgie/backports"]
         }
       },
     "osx-arc-theme" : {
       "packages" : ["osx-arc-darker", "osx-arc-plus", "osx-arc-shadow", "osx-arc-white", "arc-osx-icon-theme", "paper-icon-theme", "fonts-noto"],
       "repos" : {
-        "zesty" : ["ppa:ubuntubudgie/backports", "ppa:snwh/pulp"],
-        "artful" : ["ppa:ubuntubudgie/backports"]
+        "aa" : ["ppa:ubuntubudgie/backports", "ppa:snwh/pulp"],
+        "bb" : ["ppa:ubuntubudgie/backports"]
         }
       }
   }
