@@ -447,7 +447,6 @@ if (current_page == 'gettingstarted.html') {
 }
 
 
-//if (current_page == 'recommendations.html') {
 function sortList() {
     $('#recommendation-list').append($('#recommendation-list > div').sort(function(itemOne, itemTwo) {
         var statusOne = $(itemOne).find('[id$=install]').is(':visible');
@@ -466,7 +465,14 @@ function sortList() {
         return titleOne.localeCompare(titleTwo);
     }));
 }
-//}
+
+function sortAppletList() {
+    $('#applet-list').append($('#applet-list > div').sort(function(itemOne, itemTwo) {
+        var titleOne = $(itemOne).find('h2').text();
+        var titleTwo = $(itemTwo).find('h2').text();
+        return titleOne.localeCompare(titleTwo);
+    }));
+}
 
 function injectTitle() {
     var title = $("#title-inject").text();
