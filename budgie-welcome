@@ -242,8 +242,6 @@ class AppView(WebKit2.WebView):
                 # Sort recommendations and budgie-applets
                 if current_page == 'recommendations':
                     app.run_javascript("sortList()")
-                if current_page == 'budgie-applets':
-                    app.run_javascript("sortAppletList()")
             # Checking on cache will take sometime. So run it on a
             # separate thread.
             thread = Thread(target=checkInstallationStatus)
