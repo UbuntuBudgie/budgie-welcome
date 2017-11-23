@@ -936,6 +936,8 @@ class SystemState(object):
         self.budgie_version = 'NA'
         self.speed = None
         self.first_run = False
+        self.graphics_vendor = 'Unknown'
+        self.graphics_grep = 'Unknown'
 
         # Full path to binary
         self._welcome_bin_path = os.path.abspath(inspect.getfile(inspect.currentframe()))
