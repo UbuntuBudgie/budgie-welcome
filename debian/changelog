@@ -1,3 +1,10 @@
+budgie-welcome (0.5.7) UNRELEASED; urgency=medium
+
+  * Fix crash when displaying version from command line (LP: #1721711)
+  * Fix crash when graphics info cannot be found (LP: #1720623)
+
+ -- David Mohammed <fossfreedom@ubuntu.com>  Thu, 23 Nov 2017 10:23:19 +0000
+
 budgie-welcome (0.5.6) artful; urgency=medium
 
   * New release for backports

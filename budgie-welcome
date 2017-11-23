@@ -936,6 +936,8 @@ class SystemState(object):
         self.budgie_version = 'NA'
         self.speed = None
         self.first_run = False
+        self.graphics_vendor = 'Unknown'
+        self.graphics_grep = 'Unknown'
 
         # Full path to binary
         self._welcome_bin_path = os.path.abspath(inspect.getfile(inspect.currentframe()))
@@ -1632,7 +1634,7 @@ class Arguments(object):
 
           elif arg == '-V' or arg == '--version':
               versions = find_app_version()
-              print(_("Budgie Welcome") + " " + versions[0] + "\n" + _("Budgie Desktop") + " " + versions[1])
+              print("Budgie Welcome" + " " + versions[0] + "\n" + "Budgie Desktop" + " " + versions[1])
               exit()
 
           if arg == '--verbose' or arg == '-v':
