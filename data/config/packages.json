@@ -131,6 +131,15 @@
               "artful" : ["ppa:ubuntubudgie/backports"],
               "bionic" : ["ppa:ubuntubudgie/backports"]
 		  }
+	  },
+      "countdown-applet" : {
+		  "packages" : ["budgie-countdown-applet"],
+		  "repos" : {
+              "xenial": ["ppa:budgie-remix/ppa"],
+              "zesty" : ["ppa:ubuntubudgie/backports"],
+              "artful" : ["ppa:ubuntubudgie/backports"],
+              "bionic" : ["ppa:ubuntubudgie/backports"]
+		  }
 	  }
   },
   "recommendations" : {

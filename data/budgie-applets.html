@@ -345,6 +345,28 @@
                   </div>
                   <hr/>
                </div>
+               <div class="col-md-6 countdown-applet">
+                  <br>
+                  <h2><a onclick="cmd('link?https://github.com/UbuntuBudgie/budgie-extras')"><span class="material-icons">help</span></a>&zwnj;CountDown Applet&zwnj;</h2>
+                  <div class="card card-block">
+                     <div class="card-image text-md-center">
+                        <img src="img/screenshots/countdown-applet.jpg" style="width: auto; max-height: 128px" />
+                     </div>
+                     <p class="card-text">&zwnj;Set a timed countdown and run an action when the countdown completes.&zwnj;</p>
+                  </div>
+                  <div class="text-md-right">
+                     <a id="countdown-applet-remove" class="btn btn-danger" onclick="cmd('remove?countdown-applet');cmd('')">
+						<span class="material-icons">&#xE872;</span><span class="button-text">&zwnj;Remove&zwnj;</span>
+					 </a>
+                     <a id="countdown-applet-install" class="btn btn-success hvr-shadow" onclick="cmd('install?countdown-applet');cmd('')"> &nbsp;
+                     <span class="material-icons">&#xE2C0;</span>&zwnj;Install Applet&zwnj;&nbsp;
+                     </a>
+                     <span id="countdown-status" class="hidden">
+                     <img src="img/welcome/processing.gif" width="24px" height="24px" /> &zwnj;Applying Changes...&zwnj;
+                     </span>
+                  </div>
+                  <hr/>
+               </div>
             </div>
          </div>
       </div>
