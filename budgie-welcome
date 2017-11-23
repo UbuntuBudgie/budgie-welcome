@@ -1632,7 +1632,7 @@ class Arguments(object):
 
           elif arg == '-V' or arg == '--version':
               versions = find_app_version()
-              print(_("Budgie Welcome") + " " + versions[0] + "\n" + _("Budgie Desktop") + " " + versions[1])
+              print("Budgie Welcome" + " " + versions[0] + "\n" + "Budgie Desktop" + " " + versions[1])
               exit()
 
           if arg == '--verbose' or arg == '-v':
