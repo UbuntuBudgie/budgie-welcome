@@ -33,6 +33,18 @@
           <i class="material-icons">&#xE2C4;</i>&zwnj;Install Now&zwnj;
         </a>
       </div>
+      <br><h5>&zwnj;Familiarity&zwnj;</h5>
+      <div class="normal-session-only">
+		  <a class="btn btn-inverse index-btn" onclick='changePage("browsers", "&zwnj;Browser Ballot&zwnj;")'>
+			<i class="material-icons">&#xE8D9;</i> &zwnj;Browser Ballot&zwnj;
+		  </a>
+	</div>
+      <a class="btn btn-inverse index-btn" onclick='changePage("customize","&zwnj;Customization&zwnj;")'>
+        <i class="material-icons">&#xE8A4;</i> &zwnj;Customization&zwnj;
+      </a>
+      <a class="btn btn-inverse index-btn" onclick='changePage("shortcuts","&zwnj;Keyboard Shortcuts&zwnj;")'>
+        <i class="material-icons">&#xE312;</i> &zwnj;Keyboard Shortcuts&zwnj;
+      </a>
       <!-- Shown when installed -->
       <div class="normal-session-only">
         <h5>&zwnj;Post-Installation&zwnj;</h5>
@@ -49,16 +61,6 @@
           <i class="material-icons">&#xE834;</i></span> &zwnj;Optional Tasks&zwnj;
         </a>
       </div>
-      <br><h5>&zwnj;Familiarity&zwnj;</h5>
-      <a class="btn btn-inverse index-btn" onclick='changePage("customize","&zwnj;Customization&zwnj;")'>
-        <i class="material-icons">&#xE8A4;</i> &zwnj;Customization&zwnj;
-      </a>
-      <a class="btn btn-inverse index-btn" onclick='changePage("browsers", "&zwnj;Browser Ballot&zwnj;")'>
-        <i class="material-icons">&#xE8D9;</i> &zwnj;Browser Ballot&zwnj;
-      <a class="btn btn-inverse index-btn" onclick='changePage("shortcuts","&zwnj;Keyboard Shortcuts&zwnj;")'>
-        <i class="material-icons">&#xE312;</i> &zwnj;Keyboard Shortcuts&zwnj;
-      </a>
-
       <!-- Shown in either session -->
       <h5>&zwnj;Troubleshooting&zwnj;</h5>
       <a class="btn btn-inverse index-btn" onclick='changePage("specs","&zwnj;System Specifications&zwnj;"); InitSystemInfo()'>
@@ -701,7 +703,7 @@
 
         <div class="row wow fadeIn">
           <div class="col-md-6 center-inside">
-            <img src="img/screenshots/tasks-firewall.png" style="width: 100%">
+            <img src="img/screenshots/tasks-firewall.png" style="width: 50%">
           </div>
           <div class="col-md-6">
             <h3>&zwnj;Firewall&zwnj;</h3>
@@ -717,7 +719,7 @@
             <a id="firewall-install" class="btn btn-success" onclick="cmd('install?firewall');cmd('')">&nbsp;<span class="material-icons">&#xE2C0;</span><span class="button-text">&zwnj;Install&zwnj;</span>&nbsp;</a>
             <div id="firewall-remove">
               <a class="btn btn-inverse" onclick="cmd('firewall');cmd('')">
-                &nbsp;<img class="button-icon" src="img/applications/gufw.png" />&nbsp;<span class="button-text">&zwnj;Configure Firewall&zwnj;</span>&nbsp;
+                &nbsp;<img class="button-icon" src="img/applications/gufw.png"  />&nbsp;<span class="button-text">&zwnj;Configure Firewall&zwnj;</span>&nbsp;
               </a>
               <span id="firewall-hint" class="center"><small>
                 <p><i class="material-icons">&#xE88F;</i> <b>&zwnj;Firewall Configuration</b> can be found later in
@@ -730,10 +732,10 @@
         <hr class="soften-light">
 
         <div class="row wow fadeIn">
-          <div class="col-md-12 center-inside">
+          <div class="col-md-6 center-inside">
             <img src="img/screenshots/tasks-users.png" style="width: 100%">
           </div>
-          <div class="col-md-12">
+          <div class="col-md-6">
             <h3>&zwnj;Users&zwnj;</h3>
             <p>
               &zwnj;Share your computer with others? Set up a separate user account for
