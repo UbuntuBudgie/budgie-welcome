@@ -448,6 +448,3 @@ elif translate:
     translate_file (input_file, po_file, output_file, verbose)
 elif reverse_po:
     create_dummy_translations(input_file, output_file, verbose)
-
-
-

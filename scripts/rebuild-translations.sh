@@ -5,7 +5,7 @@
 
 scripts_dir="$(dirname $0)/"
 
-cd "$scripts_dir"
+cd "$scripts_dir" || exit
 sed -i -- 's/CHARSET/UTF-8/g' ../po/*
 ./welcome-po.py --update-pos
 ./welcome-po.py --install

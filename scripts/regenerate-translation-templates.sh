@@ -7,7 +7,7 @@ repo_root=$(realpath "$(dirname $0)/../")
 html_po_folder="$repo_root/data/po/"
 welcome_po_folder="$repo_root/po/"
 
-cd "$repo_root"
+cd "$repo_root" || exit
 
 if [ ! -d "$html_po_folder" ]; then
   echo "HTML PO folder does not exist. Creating..."
@@ -26,6 +26,5 @@ done
 rm "$welcome_po_folder/budgie-welcome.pot"
 pygettext -d ./po/budgie-welcome budgie-welcome
 
-cd scripts/
+cd scripts/ || exit
 ./translation-support.py create-all-pots
-
