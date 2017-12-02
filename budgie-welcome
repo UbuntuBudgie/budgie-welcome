@@ -288,7 +288,6 @@ class AppView(WebKit2.WebView):
             app.update_page('#performance-remove', 'show')
 
     def _do_command(self, uri):
-
         if uri == 'control':
             subprocess.Popen(['gnome-control-center'])
         elif uri == 'update':
@@ -308,6 +307,9 @@ class AppView(WebKit2.WebView):
         elif uri.startswith("title?"):
             title = uri[6:]
             self.page_title.set_label(title)
+        elif uri.startswith('layout?'):
+            layout = uri[7:]
+            self._apply_layout(layout)
         elif uri.startswith('install?'):
             code = uri[8:]
 
@@ -565,6 +567,38 @@ class AppView(WebKit2.WebView):
 
         else:
             print('Unknown command: {}'.format(uri))
+
+    def _apply_layout(self, layout):
+        def running_process(process):
+            "check if process is running. < process > is the name of the process."
+
+            proc = subprocess.Popen(["if pgrep " + process + " >/dev/null 2>&1; then echo 'True'; else echo 'False'; fi"], stdout=subprocess.PIPE, shell=True)
+
+            (Process_Existance, err) = proc.communicate()
+            return str(Process_Existance, 'utf-8') == 'True\n'
+
+        dtop = os.path.expanduser('~') + '/.config/autostart/plank.desktop'
+        global start_location
+                
+        if layout == 'classicbudgie':
+            if running_process('plank'):
+                subprocess.Popen(['killall', 'plank'])
+                subprocess.Popen(['rm', dtop])
+                p = subprocess.Popen(['pkexec',
+                    start_location + 'budgie-welcome-privileged-actions',
+                    'panelini', 'classic'])
+                retval = p.wait()
+            return
+            
+        if layout == 'ubuntubudgie':
+            if not running_process('plank'):
+                subprocess.Popen(['nohup', 'plank', '&'])
+                subprocess.Popen(['cp', '/usr/share/budgie-desktop/plank.desktop', dtop])
+                p = subprocess.Popen(['pkexec',
+                    start_location + 'budgie-welcome-privileged-actions',
+                    'panelini', 'ub'])
+                retval = p.wait()
+            return
 
     def _set_panel_key(self, key, value):
         # panel keys are relocatable - so need to loop through all panels
@@ -1392,6 +1426,7 @@ class WelcomeApp(object):
             self._start_page = 'gettingstarted.html'
         else:
             self._start_page = 'index.html'
+            #self._start_page = 'firstrun.html'
 
         self._build_app()
 
