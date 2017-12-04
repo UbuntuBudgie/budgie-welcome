@@ -10,3 +10,4 @@ sed -i -- 's/CHARSET/UTF-8/g' ../po/*
 ./welcome-po.py --update-pos
 ./welcome-po.py --install
 ./translation-support.py translate-all
+./update-desktop-files.sh

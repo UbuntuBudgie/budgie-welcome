@@ -579,7 +579,7 @@ class AppView(WebKit2.WebView):
 
         dtop = os.path.expanduser('~') + '/.config/autostart/plank.desktop'
         global start_location
-                
+
         if layout == 'classicbudgie':
             if running_process('plank'):
                 subprocess.Popen(['killall', 'plank'])
@@ -589,7 +589,7 @@ class AppView(WebKit2.WebView):
                     'panelini', 'classic'])
                 retval = p.wait()
             return
-            
+
         if layout == 'ubuntubudgie':
             if not running_process('plank'):
                 subprocess.Popen(['nohup', 'plank', '&'])
@@ -1839,6 +1839,22 @@ class Translations(object):
             self.relative_i18n = False
             dbg.stdout("i18n", "Locale Not Available: " + self.locale + " (using en_US instead)", 1, 1)
             return data_path
+
+def desktop_files():
+    """ dummy function that is used by the translation system
+        to capture the strings in the desktop/*.desktop files
+        so that these can be updated when budgie-welcome is
+        built with translated Names and Comments
+    """
+
+    Name =      _("Budgie Welcome")
+    Comment =   _("Find out about your operating system")
+
+    Name =      _("Budgie Themes")
+    Comment =   _("Give the desktop a makeover with new themes, icons and fonts")
+
+    Name =      _("Budgie Applets")
+    Comment =   _("Customize the desktop panel with applets that provide extra capabilities")
 
 
 def whereami():

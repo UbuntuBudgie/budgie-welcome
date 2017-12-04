@@ -4,5 +4,5 @@ org.budgie.welcome.policy usr/share/polkit-1/actions/
 budgie-welcome usr/bin/
 budgie-welcome-privileged-actions usr/lib/budgie-welcome
 budgie-welcome.1 usr/share/man/man1
-budgie-welcome.desktop etc/skel/.config/autostart/
-budgie-welcome.desktop usr/share/applications/
+desktop/budgie-welcome.desktop etc/skel/.config/autostart/
+desktop/*.desktop usr/share/applications/
