@@ -37,12 +37,6 @@ source_file = data/po/getinvolved/getinvolved.pot
 source_lang = en_US
 type = PO
 
-[budgie-welcome.gettingstarted]
-file_filter = data/po/gettingstarted/<lang>.po
-source_file = data/po/gettingstarted/gettingstarted.pot
-source_lang = en_US
-type = PO
-
 [budgie-welcome.index]
 file_filter = data/po/index/<lang>.po
 source_file = data/po/index/index.pot
@@ -70,5 +64,11 @@ type = PO
 [budgie-welcome.ubuntubudgiewelcome]
 file_filter = po/<lang>.po
 source_file = po/budgie-welcome.pot
+source_lang = en_US
+type = PO
+
+[budgie-welcome.gettingstarted]
+file_filter = data/po/gettingstarted/<lang>.po
+source_file = data/po/gettingstarted/gettingstarted.pot
 source_lang = en_US
 type = PO
