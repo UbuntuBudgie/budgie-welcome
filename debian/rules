@@ -4,11 +4,10 @@ export DH_VERBOSE = 1
 export LC_ALL=C.UTF-8
 
 %:
-	dh $@ 
-	
-VERSION = $(shell dpkg-parsechangelog -SVersion | cut -d'-' -f 1)
+	dh $@
+
 define BANNER
-/*! version : $(VERSION)
+/*! version : $(DEB_VERSION)
  =========================================================
  * Bootstrap v4.0.0-alpha.4 (https://getbootstrap.com)
  * Copyright 2011-2016 The Bootstrap Authors (https://github.com/twbs/bootstrap/graphs/contributors)
@@ -42,9 +41,9 @@ endef
 export BANNER
 
 
-override_dh_auto_install:
-	find . -name "LICENSE" -delete
-	dh_auto_install
+#override_dh_auto_install:
+#	find . -name "LICENSE" -delete
+#	dh_auto_install
 
 override_dh_auto_build:
 	# grunt is not (yet) packaged (#673727), so we mimic the tasks
