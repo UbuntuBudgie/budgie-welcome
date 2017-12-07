@@ -1,5 +1,12 @@
-budgie-welcome (0.5.7) UNRELEASED; urgency=medium
+budgie-welcome (0.5.8) UNRELEASED; urgency=medium
 
+  * 
+
+ -- David Mohammed <fossfreedom@ubuntu.com>  Thu, 07 Dec 2017 20:31:58 +0000
+
+budgie-welcome (0.5.7) artful; urgency=medium
+
+  [ David Mohammed ]
   * Fix crash when displaying version from command line (LP: #1721711)
   * Fix crash when graphics info cannot be found (LP: #1720623)
   * Add menu accessible .desktop files for themes and applets
@@ -10,7 +17,7 @@ budgie-welcome (0.5.7) UNRELEASED; urgency=medium
     - debian/control debhelper now v10
     - debian/rules remove unneeded autoinstall override
 
- -- David Mohammed <fossfreedom@ubuntu.com>  Thu, 7 Dec 2017 19:13:19 +0000
+ -- David Mohammed <fossfreedom@ubuntu.com>  Thu, 07 Dec 2017 20:31:09 +0000
 
 budgie-welcome (0.5.6) artful; urgency=medium
 
