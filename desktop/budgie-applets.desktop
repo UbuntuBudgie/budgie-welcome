@@ -3,11 +3,16 @@ Terminal=false
 Type=Application
 Categories=GNOME;GTK;System;
 StartupNotify=false
-Name[en_GB]=Budgie Themes
-Name=Budgie Themes
-Exec=budgie-welcome --jump-to=default
+Name[en_GB]=Budgie Applets
+Name[fr]=Applets Budgie
+Name[lt]=Budgie programėlės
+Name[tr]=Budgie Uygulamaları
+Name=Budgie Applets
+Exec=budgie-welcome --jump-to=budgie-applets
 Icon=distributor-logo-ubuntu-budgie
-Comment[en_GB]=Give the desktop a makeover with new themes, icons and fonts
-Comment=Give the desktop a makeover with new themes, icons and fonts
+Comment[en_GB]=Customise the desktop panel with applets that provide extra capabilities
+Comment[fr]=Customise le panel du bureau avec des applets ajoutant des fonctionnalités supplémentaires
+Comment[tr]=Ekstra yetenekler sunan uygulamalarla masaüstü panelinizi özelleştirin
+Comment=Customize the desktop panel with applets that provide extra capabilities
 Keywords=desktop;preferences;
 OnlyShowIn=Budgie;
