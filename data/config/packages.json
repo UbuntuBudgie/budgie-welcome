@@ -277,12 +277,12 @@
       "size" : 60
     },
     "material-theme" : {
-      "packages" : ["adapta-gtk-theme", "paper-cursor-theme", "paper-icon-theme", "fonts-noto"],
+      "packages" : ["adapta-gtk-theme", "breeze-cursor-theme", "papirus-icon-theme", "fonts-noto"],
       "repos" : {
-        "xenial" : ["ppa:snwh/pulp", "ppa:tista/adapta"],
-        "zesty" : ["ppa:ubuntubudgie/backports", "ppa:tista/adapta"],
-        "artful" : ["ppa:ubuntubudgie/backports", "ppa:tista/adapta"],
-        "bionic" : ["ppa:ubuntubudgie/backports", "ppa:tista/adapta"]
+        "xenial" : ["ppa:papirus/papirus", "ppa:tista/adapta"],
+        "zesty" : ["ppa:papirus/papirus", "ppa:tista/adapta"],
+        "artful" : ["ppa:papirus/papirus", "ppa:tista/adapta"],
+        "bionic" : ["ppa:papirus/papirus", "ppa:tista/adapta"]
       }
     },
     "material-vimix-theme" : {
