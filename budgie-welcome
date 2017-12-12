@@ -456,10 +456,6 @@ class AppView(WebKit2.WebView):
                     os.remove(theme)
 
                 if code == "material":
-                    # Make transparent panel
-                    with open(panelstyle, "w") as file:
-                        file.write(".budgie-panel {background-color: rgba(0, 0, 0, 0.3);}")
-
                     self._set_panel_key('enable-shadow', False)
                     self._set_panel_key('size', 37)
 
