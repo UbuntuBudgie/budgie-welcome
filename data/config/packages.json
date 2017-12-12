@@ -269,14 +269,6 @@
       },
       "key-commands" : ["curl http://repo.vivaldi.com/stable/linux_signing_key.pub | sudo apt-key add -",
                         "apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 1397BC53640DB551"]
-    },
-    "enable_performance" : {
-      "root" : false,
-      "script" : "enable_performance"
-    },
-    "disable_performance" : {
-      "root" : false,
-      "script" : "disable_performance"
     }
   },
   "default" : {

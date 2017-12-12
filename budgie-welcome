@@ -144,8 +144,6 @@ class AppView(WebKit2.WebView):
             if systemstate.arch == 'i386':
                 app.update_page('.64bitonly', 'hide')
 
-            thread = Thread(target = self.check_animation_status)
-            thread.start()
         ### Index Page ###
         if current_page == 'index':
             if systemstate.autostart:
@@ -273,19 +271,6 @@ class AppView(WebKit2.WebView):
     def _context_menu_cb(self, webview, menu, event, htr, user_data=None):
         # Disable context menu.
         return True
-
-    def check_animation_status(self):
-        gsettings = Gio.Settings.new("org.gnome.settings-daemon.plugins.remote-display")
-        display = gsettings.get_boolean("active")
-        gsettings = Gio.Settings.new("org.gnome.desktop.interface")
-        animation = gsettings.get_boolean("enable-animations")
-
-        if display or animation:
-            app.update_page('#performance-install', 'show')
-            app.update_page('#performance-remove', 'hide')
-        else:
-            app.update_page('#performance-install', 'hide')
-            app.update_page('#performance-remove', 'show')
 
     def _do_command(self, uri):
         if uri == 'control':
