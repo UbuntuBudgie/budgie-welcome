@@ -214,14 +214,14 @@
 
             <hr>
             <p><b>&zwnj;Which approach would you prefer?&zwnj;</b></p>
-            <ul id="tabs" class="nav nav-pills" data-tabs="tabs">
-              <li><a onclick="smoothFade('.partition','#partitionSimple')" data-toggle="tab">&zwnj;Simple&zwnj;</a></li>
-              <li><a onclick="smoothFade('.partition','#partitionAdvanced')" data-toggle="tab">&zwnj;Advanced&zwnj;</a></li>
-              <li><a onclick="smoothFade('.partition','#partitionWindows')" data-toggle="tab" class="dualBootWin"><span class="fa fa-windows"></span> &zwnj;Safest&zwnj;</a></li>
+            <ul role="tablist" class="nav nav-pills">
+              <li class="nav-item"><a class="nav-link active" role="tab" data-toggle="tab" href="#partitionSimple">&zwnj;Simple&zwnj;</a></li>
+              <li class="nav-item"><a class="nav-link" role="tab" data-toggle="tab" href="#partitionAdvanced">&zwnj;Advanced&zwnj;</a></li>
+              <li class="nav-item"><a class="nav-link" role="tab" data-toggle="tab" href="#partitionWindows"><span class="fa fa-windows"></span> &zwnj;Safest&zwnj;</a></li>
             </ul>
 
             <div class="tab-content">
-              <div class="tab-pane partition" id="partitionSimple">
+              <div class="tab-pane active" id="partitionSimple" role="tabpanel">
                 <h5>&zwnj;The simplest method is to use the installer.&zwnj;</h5>
                 <p>
                   &zwnj;The installer scans your disks for existing operating systems and provides
@@ -252,7 +252,7 @@
                 </p>
               </div>
 
-              <div class="tab-pane partition" id="partitionAdvanced">
+              <div class="tab-pane" id="partitionAdvanced" role="tabpanel">
                 <h5>&zwnj;Use GParted or the installer's "Custom" option.&zwnj;</h5>
                 <p>
                   <img class="left" src="img/applications/gparted.png"/>
@@ -294,7 +294,7 @@
                 but your personal files <code>/home</code> on a mechanical hard drive.&zwnj;</p>
               </div>
 
-              <div class="tab-pane partition" id="partitionWindows">
+              <div class="tab-pane" id="partitionWindows" role="tabpanel">
                 <h5>&zwnj;Shrink your system disk within Windows.&zwnj;</h5>
                 <div class="alert alert-warning">
                   <h5><span class="fa fa-exclamation-circle"></span> &zwnj;Applies to Windows Vista and later.&zwnj;</h5>
