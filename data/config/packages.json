@@ -158,6 +158,15 @@
               "artful" : ["ppa:ubuntubudgie/backports"],
               "bionic" : ["ppa:ubuntubudgie/backports"]
 		  }
+	  },
+      "clockworks-applet" : {
+		  "packages" : ["budgie-clockworks-applet"],
+		  "repos" : {
+              "xenial": ["ppa:budgie-remix/ppa"],
+              "zesty" : ["ppa:ubuntubudgie/backports"],
+              "artful" : ["ppa:ubuntubudgie/backports"],
+              "bionic" : ["ppa:ubuntubudgie/backports"]
+		  }
 	  }
   },
   "recommendations" : {
