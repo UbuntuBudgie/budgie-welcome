@@ -151,7 +151,7 @@ msgstr "Kurulum Hazırlıkları"
 
 #: gettingstarted.html:121
 msgid "Preparing to Install"
-msgstr "Kuruluma hazırlanılıyor"
+msgstr "Kuruluma Hazırlanıyor"
 
 #: gettingstarted.html:122
 msgid ""
@@ -161,12 +161,12 @@ msgid ""
 " class=\"fa fa-windows\"></span> Microsoft Windows or another <span "
 "class=\"fa fa-linux\"></span> GNU/Linux distribution."
 msgstr ""
-"<span name=\"distro-name\"></span> nispeten basit bir kuruluma sahiptir, "
-"Mevcut işletim sisteminizi yenisiyle değiştirmek veya mevcut sisteminize ek "
-"olarak <span name=\"distro-name\"></span> kurulumu yapmak istemenize "
-"bakmaksızın - örneğin &nbsp;<span class=\"fa fa-windows\"></span> Microsoft "
-"Windows veya başka <span class=\"fa fa-linux\"></span> GNU/Linux dağıtımı "
-"kurabilirsiniz."
+"Mevcut işletim sisteminizi - örneğin &nbps;<span class=\"fa fa-"
+"windows\"></span>Microsoft Windows yada başka bir <span class=\"fa fa-"
+"linux\"></span> GNU/Linux dağıtımı ile değiştirmek ya da mevcut bir işletim "
+"sisteminin yanına <span name=\"distro-name\"></span> yüklemek isteyip "
+"istemediğinize bakmaksızın, <span name=\"distro-name\"></span>'nin kurulması"
+" nispeten basittir."
 
 #: gettingstarted.html:128
 msgid "For the best results:"
@@ -190,7 +190,7 @@ msgstr "Mevcut tüm güncellemeleri yükleyebilmek için İnternet'e bağlı kal
 
 #: gettingstarted.html:133
 msgid "Plug in your device to the mains if it is running on battery power."
-msgstr "Eğer cihazını pil gücü ile çalışıyorsa, cihazınızı fişe takın."
+msgstr "Eğer cihazınız pil gücü ile çalışıyorsa, cihazınızı fişe takın."
 
 #: gettingstarted.html:138
 msgid ""
@@ -200,12 +200,11 @@ msgid ""
 "committing to installing it on your machine. Once you are ready, double "
 "click the installation icon from the desktop."
 msgstr ""
-"Şu an bulunduğunuz canlı oturum, <span name=\"distro-name\"></span>'yi "
-"makinenize yüklemeyi taahhütte bulunmadan önce test etmek için iyi bir "
-"fırsattır. Bilgisayarınızı değiştirmeden, tüm çevre birimlerinizin "
-"amaçlandığı gibi çalıştıklarını sınamanıza izin verir. Böylece hazır "
-"olduğunuzda, masaüstündeki yükleme simgesini çift tıklayıp yüklemeye "
-"başlayabilirsiniz."
+"Halihazırda bulunduğunuz canlı oturum, bilgisayarınızı değiştirmeden <span "
+"name=\"distro-name\">Ubuntu Budgie</span>'yi test etmek için iyi bir "
+"fırsattır, tüm çevre birimlerinin makinenize yüklenmeyi taahhütte bulunmadan"
+" önce amaçlanan şekilde çalıştıklarını test etmenize izin verir. Hazır "
+"olduğunuzda, masaüstündeki yükleme ikonuna çift tıklayın."
 
 #: gettingstarted.html:145
 msgid "Modern UEFI-based computers"
@@ -219,11 +218,10 @@ msgid ""
 "system was pre-installed."
 msgstr ""
 "Birleştirilmiş Genişletilmiş Ürün Yazılımı Arabirimini (UEFI) kullanan "
-"modern bir bilgisayarınız varsa, kurulumdan önce <b> Güvenli Önyükleme - "
-"Secure Boot </b> özelliğini devre dışı bırakmanız (veya <b> Önyükleme "
-"Yöneticisi Kilidini Kaldır -Unlock Bootloader</b> seçeneğini "
-"etkinleştirmeniz) gerekebilir, Özellikle daha önceden bir işletim sistemi "
-"yüklenmişse."
+"modern bir bilgisayarınız varsa, özellikle bir işletim sistemi önceden "
+"yüklenmişse, kurulumdan önce <b>Güvenli Önyükleme</b>'yi devre dışı "
+"bırakmanız (veya <b>Önyükleme Yöneticisi Kilidini Aç</b> seçeneğini "
+"etkinleştirmeniz) gerekebilir."
 
 #: gettingstarted.html:150
 msgid "If you are using a legacy BIOS machine, you do not need to do this."
@@ -237,10 +235,10 @@ msgid ""
 "operating system installed in BIOS mode after installing a UEFI-enabled "
 "operating system or vice versa."
 msgstr ""
-"Özellikle çift önyükleme yaptığınızda, sisteminizi doğru modda önyüklemeniz "
-"ve <b> 64 bit yansıma </b> kullanmanız önemlidir çünkü UEFI özellikli bir "
+"Özellikle çift önyükleme yapıldığında, sisteminizi doğru modda önyüklemeniz "
+"ve <b> 64 bit görüntüsü</b> kullanmanız önemlidir, çünkü UEFI etkin bir "
 "işletim sistemini kurduktan sonra BIOS modunda yüklenmiş bir işletim "
-"sistemini önyükleyemezsiniz Sistemi veya tersi."
+"sistemini önyükleyemezsiniz veya tam tersi."
 
 #: gettingstarted.html:159
 msgid ""
@@ -248,7 +246,7 @@ msgid ""
 "show a \"protection layer\". <b>Do not worry,</b> your data is not lost or "
 "corrupt!"
 msgstr ""
-"GPT formatlı bir disk bulunan bir UEFI sisteminde BIOS modunda başlatınca "
+"GPT formatlı bir disk bulunan bir UEFI sisteminde BIOS modunda önyükleme de "
 "\"koruma katmanı\" gösterecektir. <b> Endişelenmeyin, </b> verileriniz "
 "kaybolmaz veya bozulmaz!"
 
@@ -260,7 +258,7 @@ msgstr "Sisteminiz şu an <b><span id=\"boot-mode\"></span> modunda</b> çalış
 
 #: gettingstarted.html:169
 msgid "Swap"
-msgstr "Bellek Takası"
+msgstr "Takas"
 
 #: gettingstarted.html:170
 msgid ""
@@ -270,10 +268,9 @@ msgid ""
 "freeze if you completely run out of memory without anywhere to swap."
 msgstr ""
 "Düşük Bellek (RAM) ile çalışmaya başlayan bilgisayarlar için işletim sistemi"
-" diskle bellek takasına geçmeye başlayacaktır. Windows'da bir \"sayfa "
-"dosyası\" olarak bilinir. Ana bellekte yer azalıyorken performans düşer ve "
-"takas yapmak için herhangi bir yer bulamaz ve bellek dolarsa muhtemelen "
-"sistem dondurulabilir."
+" diskle takasa başlayacaktır. Windows'da bir \"sayfa dosyası\" olarak "
+"bilinir. Düşük bellekte çalışırken performans düşer ve herhangi bir yere "
+"takas yapmadan bellek tamamen dolarsa, sistem muhtemelen donabilir."
 
 #: gettingstarted.html:174
 msgid ""
@@ -307,10 +304,9 @@ msgid ""
 "in sections of your hard disk being split between multiple operating "
 "systems."
 msgstr ""
-"Mevcut işletim sisteminizin yanında <span name=\"distro-name\"></span> "
-"yüklemek istiyorsanız, disk bölümlerinizin küçültülmesi gerekir. Bu, sabit "
-"disk bölümlerinin birden çok işletim sistemi arasında bölünmesine neden "
-"olur."
+"Mevcut işletim sisteminizin yanında <span name=\"distro-name\"></span>'yi "
+"kurmak isterseniz, bölümleriniz küçültülmelidir. Bu, sabit disk bölümlerinin"
+" birden çok işletim sistemi arasında bölünmesine neden olur."
 
 #: gettingstarted.html:202
 msgid "I'm dual booting with"
@@ -319,7 +315,7 @@ msgstr "Ben şununla çift önyükleme yapıyorum"
 #: gettingstarted.html:205
 msgid "To minimize the risk of data loss or failure, ensure that:"
 msgstr ""
-"Veri kaybı veya hata riskini en aza indirgemek için şunlara dikkat edin:"
+"Veri kaybı veya arıza riskini en aza indirgemek için şunlara dikkat edin:"
 
 #: gettingstarted.html:207
 msgid "There is enough free space. 10 GB minimum is recommended."
@@ -335,8 +331,7 @@ msgstr "Sabit sürücüyü birleştirin."
 
 #: gettingstarted.html:210
 msgid "Ensure Windows has been cleanly shut down (not hibernated)."
-msgstr ""
-"Windows'un tamamen kapatıldığından emin olun (kış uykusu şeklinde değil)."
+msgstr "Windows'un tamamen kapatıldığından emin olun (uyku şeklinde değil)."
 
 #: gettingstarted.html:214
 msgid "Which approach would you prefer?"
@@ -363,7 +358,7 @@ msgid ""
 "The installer scans your disks for existing operating systems and provides a"
 " choice on what you'd like to do."
 msgstr ""
-"Yükleyici, disklerinizi mevcut işletim sistemleri için tarar ve ne yapmak "
+"Yükleyici, mevcut işletim sistemleri için disklerinizi tarar ve ne yapmak "
 "istediğiniz konusunda seçim yapmanızı sağlar."
 
 #: gettingstarted.html:228
@@ -402,10 +397,10 @@ msgid ""
 "command prompt to check the file system for errors. Windows may schedule "
 "this automatically. This ensures consistency for the NTFS file system."
 msgstr ""
-"<b> Bir sonraki Windows'u başlatışınızda, dosya sisteminde hatalar olup "
-"olmadığını kontrol etmek için komut satırından </b> <code> chkdsk / f "
-"</code> komutunu çalıştırın. Windows bunu otomatik olarak zamanlayabilir. "
-"Bu, NTFS dosya sistemi için tutarlılık sağlar."
+"<b>Windows'u önyüklediğinizde, dosya sisteminde hatalar olup olmadığını "
+"kontrol etmek için komut satırından </b> <code>chkdsk /f</code> komutunu "
+"çalıştırın. Windows bunu otomatik olarak zamanlayabilir. Bu, NTFS dosya "
+"sistemi için tutarlılık sağlar."
 
 #: gettingstarted.html:254
 msgid "Use GParted or the installer's \"Custom\" option."
@@ -436,7 +431,7 @@ msgid ""
 "<span name=\"distro-name\"></span> to."
 msgstr ""
 "İşlemlerinizi diskinize tamamladıktan sonra, kalan alanı ayrılmamış olarak "
-"bırakabilir, böylece yükleyici <span name=\"distro-name\"></span>'yi "
+"bırakabilirsiniz, böylece yükleyici <span name=\"distro-name\"></span>'yi "
 "yüklemek için bu kullanılmayan alanı algılar."
 
 #: gettingstarted.html:270
@@ -451,10 +446,9 @@ msgid ""
 "install the operating system later if desired."
 msgstr ""
 "Bunun yerine veya GParted'e ek olarak, yükleme sihirbazı sırasında <b> Özel "
-"</b> seçeneği ile bölümlerinizi  yapılandırabilir ve yeniden "
-"boyutlandırabilir ve/veya bağlama noktalarını seçebilirsiniz. Disklerinizi "
-"bölmek, daha sonra istediğiniz takdirde işletim sistemini yeniden yüklemeyi "
-"biraz daha kolaylaştırabilir."
+"</b> seçeneği, bölümleri yapılandırıp yeniden boyutlandırabilir ve bağlama "
+"noktalarını seçebilir. Disklerinizi bölmek, daha sonra istediğiniz takdirde "
+"işletim sistemini yeniden yüklemeyi biraz daha kolaylaştırabilir."
 
 #: gettingstarted.html:276
 msgid "You can specify these mount points:"
@@ -481,8 +475,7 @@ msgid ""
 "Contains most of the applications <i> (binaries, documentation, libraries, "
 "etc)</i>"
 msgstr ""
-"Uygulamalarının çoğunu <I>(çalıştırılabilir dosyalar, belgeler, kitaplıklar,"
-" vb.) </i> içerir"
+"Çoğu uygulamayı <I> (ikili dosyalar, belgeler, kitaplıklar, vb.)</i> içerir"
 
 #: gettingstarted.html:283
 msgid "Variable data <i>(such as system logs)</i>"
@@ -492,7 +485,7 @@ msgstr "Değişken veriler <i> (sistem günlükleri gibi) </i>"
 msgid ""
 "Data for System Services <i>(typically used for server configurations)</i>"
 msgstr ""
-"Sistem Hizmetleri için veriler <i>(genellikle sunucu yapılandırmaları için "
+"Sistem Hizmetleri Verileri<i>(genellikle sunucu yapılandırmaları için "
 "kullanılır) </i>"
 
 #: gettingstarted.html:285
@@ -512,12 +505,12 @@ msgid ""
 "<code>/</code> on an SSD, but your personal files <code>/home</code> on a "
 "mechanical hard drive."
 msgstr ""
-"Yukarıdaki tüm montaj noktaları için ayrı bölümler oluşturmak gerekli "
-"değildir. Sıklıkla bölünen dizinler <code> / </code>, <code> / home </code> "
-"ve <code> / boot </code> olmakla birlikte. Eğer isterseniz bu bağlama "
-"noktalarını  fiziksel diskler arasında ayrı ayrı ayarlayabilirsiniz, örneğin"
-" OS'u bir SSD'de  <code> / </code> uygun bulduysanız, kişisel dosyalarınızı "
-"da ayrıca <code> / home </code>  ile mekanik bir sabit diske yazabilirsiniz."
+"Yukarıdaki tüm bağlantı noktaları için ayrı bölümler oluşturmak gerekmez. "
+"Sıklıkla bölünen dizinler <code>/</code>, <code>/home</code> ve "
+"<code>/boot</code> olur. Bu bağlantı noktaları farklı fiziksel diskler "
+"arasında da ayarlanabilir, örneğin işletim sistemini <code>/</code> bir "
+"SSD'ye, ancak kişisel dosyalarınızı <code>/home</code> mekanik bir sabit "
+"sürücüye yüklemek isterseniz."
 
 #: gettingstarted.html:296
 msgid "Shrink your system disk within Windows."
@@ -583,8 +576,8 @@ msgid ""
 "onclick=\"cmd('link?https://help.ubuntu.com/community/HowtoResizeWindowsPartitions')\">"
 " help article</a> online."
 msgstr ""
-"Windows içeren bölümleri değiştirmek için en iyi uygulamalar hakkında daha "
-"fazla bilgi için çevrimiçi aşağıdaki <a "
+"Windows içeren bölümleri değiştirmeye yönelik en iyi uygulamalar hakkında "
+"daha fazla bilgi için çevrimiçi aşağıdaki <a "
 "onclick=\"cmd('link?https://help.ubuntu.com/community/HowtoResizeWindowsPartitions')\">"
 " yardım makalesine </a> bakın."
 
@@ -600,12 +593,11 @@ msgid ""
 "will overwrite them, with the potential to lose access to <span name"
 "=\"distro-name\"></span> temporally."
 msgstr ""
-"Linux dağıtımları <code>grub</code> isimli bir önyükleme yazılımı kullanır, "
-"bilgisayar açılışında çoklu işletim sistemlerini yüklemeye yarar. Ancak bazı"
-" işletim sistemleri (örneğin: Windows)'un kendi önyükleme yazılımı sadece "
-"Windows işletim sistemini açmaya yönelik olarak hazırlandığı için, "
-"bilgisayar açılışında geçici olarak <span name=\"distro-name\"></span> "
-"erişiminizi kaybetmenizi sağlayabilir."
+"Linux dağıtımları <code>grub</code> olarak bilinen ve işletim sistemini "
+"önyükleme yapan bir önyükleme yükleyicisi kullanır. Bununla birlikte, bazı "
+"işletim sistemleri (Windows gibi) mevcut önyükleme yükleyicileriyle entegre "
+"olmaz ve geçici olarak <span name=\"distro-name\">Ubuntu Budgie</span>'ye "
+"erişimi kaybetme potansiyeline sahip olacak şekilde üzerlerine yazarlar."
 
 #: gettingstarted.html:344
 msgid ""
@@ -625,7 +617,7 @@ msgstr "Bu programı indirmek ve kullanmak için lütfen İnternet'e bağlanın.
 
 #: gettingstarted.html:351
 msgid "Sorry, Welcome was unable to establish a connection."
-msgstr "Üzgünüz, Hoşgeldin uygulaması bağlantı sağlayamadı."
+msgstr "Üzgünüz, Hoşgeldiniz bir bağlantı kuramadı."
 
 #: gettingstarted.html:355
 msgid "Download Boot Repair"
@@ -657,8 +649,8 @@ msgid ""
 msgstr ""
 "<span name=\"distro-name\"> </span> periyodik olarak bilgisayarınız için "
 "yeni yazılım ve güvenlik güncelleştirmeleri olup olmadığını kontrol "
-"edecektir. Eğer <span name=\"distro-name\"> </span>'yi yeni yüklediyseniz, "
-"şimdi bunu yapmak isteyebilirsiniz."
+"edecektir. <span name=\"distro-name\"> </span>'yi yeni yüklediyseniz, şimdi "
+"bunu yapmak isteyebilirsiniz."
 
 #: gettingstarted.html:388
 msgid ""
@@ -666,7 +658,7 @@ msgid ""
 "Menu</strong>"
 msgstr ""
 "<b> Yazılım Güncelleyici </b> daha sonra <strong> Uygulama Menüsü </strong> "
-"'de bulunabilir"
+"'nde bulunabilir"
 
 #: gettingstarted.html:394
 msgid "Check for Updates"
@@ -684,7 +676,7 @@ msgid ""
 "Ubuntu License Policy) complicate distribution of software to support non-"
 "free formats."
 msgstr ""
-"<strong>Ubuntu</strong>(<span name=\"distro-name\"></span>'nun temel "
+"<strong>Ubuntu</strong> (<span name=\"distro-name\"></span>'nin temel "
 "dağıtımı), kullanıcıların kullanabileceği en önemli yazılımların tümünü "
 "otomatik olarak yapmaya çalışmaktadır. Bununla birlikte, patent ve telif "
 "hakkı kısıtlamaları (bkz. Ubuntu Lisans Politikası), özgür olmayan biçimleri"
@@ -707,10 +699,10 @@ msgid ""
 "See Ubuntu’s Free Software Philosophy and the Free Formats page for a more "
 "comprehensive discussion of these issues."
 msgstr ""
-"Ubuntu'nun taahhütü sadece özgür yazılımları kapsamaktadır. Ticari ve kapalı"
-" kaynaklı bazı yazılımları, tescilli medya formatlarını doğrudan bünyesinde "
-"barındırmamaktadır. Bu konularda daha kapsamlı tartışmaları görmek için bkz."
-" Ubuntu'nun Özgür Yazılım Felsefesi ve Özgür Formatlar sayfası."
+"Ubuntu'nun tamamen özgür yazılımı yalnızca varsayılan olarak dahil etme "
+"taahhüdü, tescilli medya formatlarının \"kutudan çıkmaz\" şekilde "
+"yapılandırılmadığı anlamına gelir. Bu konularda daha kapsamlı bir tartışma "
+"için bkz. Ubuntu'nun Özgür Yazılım Felsefesi ve Özgür Formatlar sayfası."
 
 #: gettingstarted.html:418
 msgid ""
@@ -849,9 +841,9 @@ msgid ""
 "code</b> meaning you'll have to rely on the manufacturer for support."
 msgstr ""
 "Tescilli sürücüler doğrudan üretici tarafından sağlanır. Açık kaynak "
-"olmadığı için, Ubuntu geliştiricileri <b>sürücü kodunu gözden geçiremeyecek "
-"ve geliştirmeyeceğinden</b>.destek için üreticiye güvenmek zorunda "
-"kalacaklardır."
+"olmadığı için, Ubuntu geliştiricileri <b>sürücü kodunu gözden "
+"geçiremeyeceğinden ve geliştiremeyeceğinden</b> dolayı destek için üreticiye"
+" güvenmek zorunda kalacaklardır."
 
 #: gettingstarted.html:503
 msgid ""
@@ -860,8 +852,8 @@ msgid ""
 "install these drivers to:"
 msgstr ""
 "Buna ek olarak, tescilli sürücüler <b>grafik performansını önemli ölçüde "
-"artırabilir </b> ve sonuç olarak sistemin tamamını da. Kullanıcılar belki, "
-"şu sürücüleri yüklemek isteyebilir:"
+"artırabilir </b> ve sonuç olarak sistemin tamamını da. Kullanıcılar, şu "
+"sürücüleri yüklemek isteyebilir:"
 
 #: gettingstarted.html:506
 msgid "Run 3D applications and games."
@@ -895,7 +887,7 @@ msgstr ""
 
 #: gettingstarted.html:515
 msgid "Failing to boot to the graphical desktop."
-msgstr "Grafiksel masaüstüyle önyükleme başarısızlığı."
+msgstr "Grafiksel masaüstüne önyükleme başarısız."
 
 #: gettingstarted.html:516
 msgid "Broken drivers after an upgrade."
@@ -903,12 +895,12 @@ msgstr "Yükseltme sonrasında arızalı sürücüler."
 
 #: gettingstarted.html:517
 msgid "Severe graphical glitches."
-msgstr "Şiddetli grafik hataları / arızaları"
+msgstr "Ciddi grafiksel hatalar."
 
 #: gettingstarted.html:518
 msgid "Problems with applications/games requiring hardware acceleration."
 msgstr ""
-"Donanım hızlandırma gerektiren oyunlar / uygulamalar ile ilgili sorunlar."
+"Donanım hızlandırması gerektiren oyunlar / uygulamalar ile ilgili sorunlar."
 
 #: gettingstarted.html:522
 msgid ""
@@ -974,8 +966,8 @@ msgid ""
 " to find the appropriate driver."
 msgstr ""
 "Donanım için ek bir sürücü bulunmadıysa veya ürün yazılımı paketlerini "
-"yükledikten sonra çalışmadıysa, cihazınız için uygun sürücüyü araştırmanız "
-"gerekebilir."
+"yükledikten sonra çalışmadıysa, uygun sürücüyü bulmak için aygıtınızı "
+"araştırmanız gerekebilir."
 
 #: gettingstarted.html:559
 msgid ""
@@ -985,9 +977,8 @@ msgid ""
 "model."
 msgstr ""
 "Ne yazık ki, bunun nedeni, donanım üreticisinin geliştiricilerin özgürce "
-"kullanabileceği herhangi bir kaynak kodu sağlamaması yada belirli marka ve "
-"modeller için sürücü oluşturabilme adına belgelerin ve dökümanların yetersiz"
-" olmasıdır."
+"kullanabileceği herhangi bir kaynak kodu sağlamaması ya da belirli marka ve "
+"model için sürücü oluşturabilme adına belgelerin yetersiz olması gerçeğidir."
 
 #: gettingstarted.html:565
 msgid ""
@@ -1047,7 +1038,7 @@ msgid ""
 "Your computer may require updates to your language and localization "
 "settings, or you may want to install additional language support."
 msgstr ""
-"Bilgisayarınız dil ve yerelleştirme ayarlarınızda güncellemeler "
+"Bilgisayarınız dil ve yerelleştirme ayarlarınızdaki güncellemeleri "
 "gerektirebilir veya ek dil desteği yüklemek isteyebilirsiniz."
 
 #: gettingstarted.html:621
@@ -1214,9 +1205,9 @@ msgid ""
 "Chromium is an open-source browser project that aims to build a safer, "
 "faster, and more stable way for all Internet users to experience the web."
 msgstr ""
-"Chromium tüm internet kullanıcılarının web'i tecrübe edinmeleri için "
-"güvenli, hızlı ve daha kararlı olmasını amaçlayan bir açık kaynak tarayıcı "
-"projesidir."
+"Chromium, tüm internet kullanıcılarının web deneyimlemelerine yönelik daha "
+"güvenli, daha hızlı ve daha kararlı bir yol oluşturmayı amaçlayan açık "
+"kaynaklı bir tarayıcı projesidir."
 
 #: gettingstarted.html:787
 msgid "Firefox"
@@ -1228,9 +1219,9 @@ msgid ""
 "Mozilla Foundation - a not for profit organisation. It is highly popular "
 "targeting multiple platforms."
 msgstr ""
-"Mozilla Firefox, Mozilla Vakfı - kâr amacı gütmeyen - tarafından "
-"geliştirilen özgür ve açık kaynak web tarayıcısıdır. Çoklu platformları "
-"hedefleyen popüler bir tarayıcıdır."
+"Mozilla Firefox, kar amacı gütmeyen bir organizasyon olan Mozilla Vakfı "
+"tarafından geliştirilen ücretsiz ve açık kaynaklı bir web tarayıcısıdır. "
+"Çoklu platformları hedefleyen popüler bir tarayıcıdır."
 
 #: gettingstarted.html:807
 msgid ""
@@ -1240,7 +1231,7 @@ msgid ""
 msgstr ""
 "Google Chrome, internet devi Google'ın desteklediği modern bir web "
 "tarayıcısıdır. Düzgün bir tarama deneyimi ve ayrıca Google'ın mülkiyetinde "
-"olan hizmetleri ile bütünleşmeyi sunar."
+"olan hizmetleri ile entegrasyon sunar."
 
 #: gettingstarted.html:822
 msgid ""
@@ -1332,7 +1323,7 @@ msgstr "Raven'da bildirimleri aç"
 
 #: gettingstarted.html:921
 msgid "Open applet Settings in Raven"
-msgstr "Raven'da Uygulamacık Ayarlarını aç"
+msgstr "Raven'da uygulama ayarlarını aç"
 
 #: gettingstarted.html:926
 msgid "Common application shortcuts"
@@ -1670,7 +1661,7 @@ msgstr "Saklama Alanı"
 
 #: gettingstarted.html:1382
 msgid "Root File System:"
-msgstr "Root Dosya Sistemi:"
+msgstr "Kök Dosya Sistemi:"
 
 #: gettingstarted.html:1385
 msgid "The file system where OS is installed."
