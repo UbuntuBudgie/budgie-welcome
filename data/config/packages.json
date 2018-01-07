@@ -303,11 +303,11 @@
         "bionic" : ["ppa:ubuntubudgie/backports"]
         }
       },
-    "osx-arc-theme" : {
-      "packages" : ["osx-arc-darker", "osx-arc-plus", "osx-arc-shadow", "osx-arc-white", "arc-osx-icon-theme", "paper-icon-theme", "fonts-noto"],
+    "ant-theme" : {
+      "packages" : ["ant-theme", "breeze-cursor-theme", "papirus-icon-theme"],
       "repos" : {
-        "aa" : ["ppa:ubuntubudgie/backports", "ppa:snwh/pulp"],
-        "bb" : ["ppa:ubuntubudgie/backports"]
+        "artful" : ["ppa:ubuntubudgie/backports", "ppa:papirus/papirus"],
+        "bionic" : ["ppa:ubuntubudgie/backports", "ppa:papirus/papirus"]
         }
       }
   }
