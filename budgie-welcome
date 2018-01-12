@@ -474,11 +474,6 @@ class AppView(WebKit2.WebView):
                     self._set_panel_key('enable-shadow', False)
                     self._set_panel_key('size', 39)
 
-                if code == 'osx-arc':
-                    self._set_panel_key('enable-shadow', True)
-                    self._set_panel_key('size', 37)
-
-
                 def removepanelstyle():
                     # Don't allow theme over writing
                     try:
@@ -1459,6 +1454,8 @@ class WelcomeApp(object):
         if systemstate.codename == "xenial":
             mv.set_zoom_level(0.90)
             w.set_default_size(992, 550)
+        else:
+            mv.set_zoom_level(0.98)
 
         mv.status_btn = status_btn
         mv.back_btn = back_btn
