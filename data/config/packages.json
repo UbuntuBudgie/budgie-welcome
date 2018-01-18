@@ -317,6 +317,14 @@
         "artful" : ["ppa:ubuntubudgie/backports", "ppa:papirus/papirus"],
         "bionic" : ["ppa:ubuntubudgie/backports", "ppa:papirus/papirus"]
         }
+      },
+    "pop-theme" : {
+      "packages" : ["pop-gtk-theme", "pop-fonts", "pop-icon-theme"],
+      "repos" : {
+        "artful" : ["ppa:ubuntubudgie/backports"],
+        "bionic" : ["ppa:ubuntubudgie/backports"]
+        }
       }
+      
   }
 }

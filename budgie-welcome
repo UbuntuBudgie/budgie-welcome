@@ -493,6 +493,14 @@ class AppView(WebKit2.WebView):
 
                     removepanelstyle()
 
+                if code == "pop":
+                    self._set_panel_key('enable-shadow', False)
+                    self._set_panel_key('size', 37)
+
+                if code == "ant":
+                    self._set_panel_key('enable-shadow', True)
+                    self._set_panel_key('size', 39)
+
                 subprocess.Popen(['budgie-panel', '--replace', '&'])
 
                 self._push_config()
