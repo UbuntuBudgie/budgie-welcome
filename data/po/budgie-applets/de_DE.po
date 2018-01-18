@@ -2,12 +2,13 @@
 # Ettore Atalan <atalanttore@googlemail.com>, 2017
 # Andreas Schops <ams@mailbox.org>, 2017
 # Bernhard Keppner <bernhard.keppner@gmail.com>, 2017
+# Vinzenz Vietzke <vv@tuxedocomputers.com>, 2018
 msgid ""
 msgstr ""
 "Project-Id-Version: Budgie Welcome\n"
 "POT-Creation-Date: 2016-02-27 12:48+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Bernhard Keppner <bernhard.keppner@gmail.com>, 2017\n"
+"Last-Translator: Vinzenz Vietzke <vv@tuxedocomputers.com>, 2018\n"
 "Language-Team: German (Germany) (https://www.transifex.com/ubuntu-budgie/teams/72251/de_DE/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -41,17 +42,17 @@ msgstr ""
 "verschiedenen Angeboten direkt über Ihren Desktop. "
 
 #: budgie-applets.html29, 51, 73, 95, 117, 139, 161, 183, 205, 227, 249, 271,
-#: 293, 315, 337, 359, 381, 403
+#: 293, 315, 337, 359, 381, 403, 425
 msgid "Remove"
 msgstr "Entfernen"
 
 #: budgie-applets.html32, 54, 76, 98, 120, 142, 164, 186, 208, 230, 252, 274,
-#: 296, 318, 340, 362, 384, 406
+#: 296, 318, 340, 362, 384, 406, 428
 msgid "Install Applet"
 msgstr "Applet installieren"
 
 #: budgie-applets.html35, 57, 79, 101, 123, 145, 167, 189, 211, 233, 255, 277,
-#: 299, 321, 343, 365, 387, 409
+#: 299, 321, 343, 365, 387, 409, 431
 msgid "Applying Changes..."
 msgstr "Änderungen werden übernommen..."
 
@@ -183,24 +184,36 @@ msgstr "Datum und Zeit auf dem Desktop anzeigen"
 
 #: budgie-applets.html:350
 msgid "CountDown Applet"
-msgstr ""
+msgstr "Countdown-Applet"
 
 #: budgie-applets.html:355
 msgid "Set a timed countdown and run an action when the countdown completes."
 msgstr ""
+"Stellen Sie einen zeitgesteuerten Countdown ein und führen Sie eine Aktion "
+"aus, wenn der Countdown abgeschlossen ist."
 
 #: budgie-applets.html:372
 msgid "Auto-Keyboard Switcher Applet"
-msgstr ""
+msgstr "Auto-Tastaturwechsler-Applet"
 
 #: budgie-applets.html:377
 msgid "Change the keyboard language automatically on a per application basis."
-msgstr ""
+msgstr "Ändern Sie die Tastatursprache automatisch für jede Anwendung."
 
 #: budgie-applets.html:394
 msgid "Screen Rotation Lock Applet"
-msgstr ""
+msgstr "Bildschirmrotationssperre-Applet"
 
 #: budgie-applets.html:399
 msgid "Add the ability to unlock or lock the screen from rotating."
 msgstr ""
+"Fügen Sie die Möglichkeit hinzu, den Bildschirm zu entsperren oder zu "
+"sperren, damit er sich nicht drehen kann."
+
+#: budgie-applets.html:416
+msgid "Clockworks Applet"
+msgstr "Uhrwerk-Applet"
+
+#: budgie-applets.html:421
+msgid "Display the time across multiple time zones."
+msgstr "Zeigt die Zeit über mehrere Zeitzonen hinweg an."
