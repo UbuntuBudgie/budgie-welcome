@@ -175,7 +175,6 @@
         "artful" : ["ppa:ubuntubudgie/backports"]
       }
     },
-
     "steam" : {
       "packages" : ["steam:i386"],
       "repos" : {
@@ -186,8 +185,7 @@
       "packages" : ["budgie-screenshot-applet"],
       "repos" : {
         "xenial" : ["ppa:budgie-remix/ppa"],
-        "artful" : ["ppa:ubuntubudgie/backports"],
-        "bionic" : ["ppa:ubuntubudgie/backports"]
+        "artful" : ["ppa:ubuntubudgie/backports"]
       }
     },
     "backport" : {
@@ -196,6 +194,12 @@
         "artful" : ["ppa:ubuntubudgie/backports"],
         "bionic" : ["ppa:ubuntubudgie/backports"]
       }
+    },
+    "dropbox" : {
+	"packages" : ["nautilus-dropbox"],
+	"repos" : {
+	    "all" : ["multiverse"]
+	}
     }
   },
   "gettingstarted" : {
