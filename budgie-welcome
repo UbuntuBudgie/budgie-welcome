@@ -1387,14 +1387,19 @@ class WelcomeApp(object):
 
         global start_location
         # check for relative path
+        if 'SNAP' in os.environ:
+            prepend = os.environ['SNAP']
+        else
+            prepend = ''
+
         if(os.path.exists(os.path.join(self._location, 'data/'))):
             print('Using relative path for data source.\
                    Non-production testing.')
             self._data_path = os.path.join(self._location, 'data/')
             start_location = self._location + "/"
-        elif(os.path.exists('/usr/share/budgie-welcome/')):
-            self._data_path = '/usr/share/budgie-welcome/'
-            start_location = '/usr/lib/budgie-welcome/'
+        elif(os.path.exists(prepend + '/usr/share/budgie-welcome/')):
+            self._data_path = prepend + '/usr/share/budgie-welcome/'
+            start_location = prepend + '/usr/lib/budgie-welcome/'
         else:
             print('Unable to source the budgie-welcome data directory.')
             sys.exit(1)
