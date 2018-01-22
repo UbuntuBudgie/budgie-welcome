@@ -1389,7 +1389,7 @@ class WelcomeApp(object):
         # check for relative path
         if 'SNAP' in os.environ:
             prepend = os.environ['SNAP']
-        else
+        else:
             prepend = ''
 
         if(os.path.exists(os.path.join(self._location, 'data/'))):

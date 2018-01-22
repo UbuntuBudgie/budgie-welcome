@@ -1,60 +1,27 @@
-budgie-welcome (0.5.11) artful; urgency=medium
+budgie-welcome (0.6.0) bionic; urgency=medium
 
-  * add budgie-dropby-applet
-
- -- David Mohammed <fossfreedom@ubuntu.com>  Sat, 13 Jan 2018 15:51:46 +0000
-
-budgie-welcome (0.5.10) artful; urgency=medium
-
-  * Add ant theme
-
- -- David Mohammed <fossfreedom@ubuntu.com>  Sun, 07 Jan 2018 20:04:14 +0000
-
-budgie-welcome (0.5.9) artful; urgency=medium
-
-  * Add clockworks applet
-  * Packaging changes:
-    - debian/copyright: 2018 year change
-    - debian/control: Bumped standards-version 4.1.2 - no
-      changes required
-    - debian/control: debhelper 11 ** for bionic only
-    - debian/compat: compat 11
-
- -- David Mohammed <fossfreedom@ubuntu.com>  Tue, 26 Dec 2017 20:16:38 +0000
-
-budgie-welcome (0.5.8) artful; urgency=medium
-
-  [ David Mohammed ]
   * Bug-fix to display live booting information correctly in tabs
-  * Add budgie-rotate-lock-applet
   * Remove custom CSS for adapta theme
   * Adapta theme now installs breeze cursor and papirus icons
   * latest translations
-
- -- David Mohammed <fossfreedom@ubuntu.com>  Tue, 12 Dec 2017 21:48:10 +0000
-
-budgie-welcome (0.5.7) artful; urgency=medium
-
-  [ David Mohammed ]
   * Fix crash when displaying version from command line (LP: #1721711)
   * Fix crash when graphics info cannot be found (LP: #1720623)
   * Add menu accessible .desktop files for themes and applets
   * Rename flat-plat to materia theme
-  * Add keyboard autoswitcher applet
+  * Add budgie-extras applets
+  * Add Ant theme and Pop theme
+  * Add links to project websites for applets
+  * Add recommendation for Dropbox
+  * Drop recommendation for budgie-screenshot-applet
+  * Headerbar GTK theming
   * Packaging Changes:
     - debian/control Bump standard version: No changes required
-    - debian/control debhelper now v10
+    - debian/control debhelper v11
+    - debian/control corrected Vcs locations
     - debian/rules remove unneeded autoinstall override
+    - debian/copyright: 2018 year change
 
- -- David Mohammed <fossfreedom@ubuntu.com>  Thu, 07 Dec 2017 20:31:09 +0000
-
-budgie-welcome (0.5.6) artful; urgency=medium
-
-  * New release for backports
-    - add new budgie-extras applets
-    - add links to project websites for applets
-
- -- David Mohammed <fossfreedom@ubuntu.com>  Thu, 09 Nov 2017 23:08:13 +0000
+ -- David Mohammed <fossfreedom@ubuntu.com>  Mon, 22 Jan 2018 20:16:38 +0000
 
 budgie-welcome (0.5.5) artful; urgency=medium
 
