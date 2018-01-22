@@ -507,7 +507,7 @@ msgstr "기억하세요. <span name=\"distro-name\"></span>는 최소 16GB의 �
 
 #: gettingstarted.html:328
 msgid "Further Reading"
-msgstr ""
+msgstr "이 글을 읽고 나서..."
 
 #: gettingstarted.html:329
 msgid ""
@@ -516,6 +516,9 @@ msgid ""
 "onclick=\"cmd('link?https://help.ubuntu.com/community/HowtoResizeWindowsPartitions')\">"
 " help article</a> online."
 msgstr ""
+"Windows를 포함한 디스크에서 파티션을 수정하는 좋은 방법들은 <a "
+"onclick=\"cmd('link?https://help.ubuntu.com/community/HowtoResizeWindowsPartitions')\">도움말"
+" 글 (온라인)</a>에서 읽어볼 수 있습니다."
 
 #: gettingstarted.html:336
 msgid "Repairing Boot Problems"
@@ -529,6 +532,9 @@ msgid ""
 "will overwrite them, with the potential to lose access to <span name"
 "=\"distro-name\"></span> temporally."
 msgstr ""
+"많은 리눅스 배포판들은 운영 체제를 부팅시키기 위해 <code>grub</code>라고 하는 부트로더를 사용합니다.  그러나 몇몇 운영 "
+"체제(Windows 등)는 기존에 설치되어 있는 부트로더를 무시하고 자신만의 부트로더를 덮어쓸 수도 있습니다. 이는 임시적으로 <span"
+" name=\"distro-name\"></span>로 부팅할 수 없게 만듭니다."
 
 #: gettingstarted.html:344
 msgid ""
@@ -577,6 +583,8 @@ msgid ""
 "just installed <span name=\"distro-name\"></span>, you might want to do this"
 " now."
 msgstr ""
+"<span name=\"distro-name\"></span>는 새로운 소프트웨어 및 보안 업데이트를 주기적으로 확인합니다. 이제 막 "
+"<span name=\"distro-name\"></span>를 설치하셨다면, 지금 바로 업데이트를 확인하시기 바랍니다."
 
 #: gettingstarted.html:388
 msgid ""
@@ -600,6 +608,9 @@ msgid ""
 "Ubuntu License Policy) complicate distribution of software to support non-"
 "free formats."
 msgstr ""
+"<strong>우분투 (Ubuntu)</strong> (<span name=\"distro-name\"></span>의 기반 배포판)는 "
+"사용자들이 거의 모든 주요 소프트웨어를 사용할 수 있도록 노력합니다. 그러나 일부 특허를 받았거나 저작권 제한이 있는 "
+"소프트웨어(\"우분투 라이선스 정책\" 참고)와 같이 비자유(non-free) 소프트웨어는 무작정 배포하기엔 어려움이 있습니다."
 
 #: gettingstarted.html:411
 msgid ""
@@ -607,6 +618,8 @@ msgid ""
 " including DVD, MP3, Quicktime, and Windows Media formats, by following the "
 "instructions below."
 msgstr ""
+"하지만 아래 설명을 참고하시면 DVD, MP3, QuickTime, Windows 미디어 등과 같은 포맷을 재생할 수 있는 소프트웨어를 "
+"설치할 수 있습니다."
 
 #: gettingstarted.html:414
 msgid ""
@@ -649,6 +662,9 @@ msgid ""
 " often required to get some devices, typically Bluetooth and Wi-Fi, to work "
 "correctly."
 msgstr ""
+"<span name=\"distro-name\"></span>는 넓은 범위의 하드웨어와 호환되지만, 일부 하드웨어는 정상적으로 제 기능을"
+" 하기 위해 정해진 사유 드라이버를 설치해야 합니다. 또한, 펌웨어 패키지를 설치하면 블루투스나 Wi-Fi가 정상적으로 작동되기도 "
+"합니다."
 
 #: gettingstarted.html:450
 msgid "An Internet connection is required to download and install drivers."
@@ -859,6 +875,8 @@ msgid ""
 "insufficient documentation to create drivers for your particular brand and "
 "model."
 msgstr ""
+"불행히도, 이는 제조업체가 해당 하드웨어의 드라이버 소스를 개발자들에게 자유롭게 사용하지 못하게 하거나 아예 제공을 하지 않기 때문일 "
+"수도 있고, 개발자들이 해당 하드웨어를 위한 드라이버를 만들기에는 하드웨어가 충분히 문서화되지 않았기 때문일 수도 있습니다."
 
 #: gettingstarted.html:565
 msgid ""
