@@ -1391,7 +1391,6 @@ class WelcomeApp(object):
             prepend = os.environ['SNAP']
         else:
             prepend = ''
-
         if(os.path.exists(os.path.join(self._location, 'data/'))):
             print('Using relative path for data source.\
                    Non-production testing.')
@@ -1851,13 +1850,17 @@ def desktop_files():
 def whereami():
     """ Determine data source """
     current_folder = os.path.dirname( os.path.abspath(inspect.getfile(inspect.currentframe())) )
+    if 'SNAP' in os.environ:
+        prepend = os.environ['SNAP']
+    else:
+        prepend = ''
 
     if( os.path.exists( os.path.join(current_folder, 'data/' ) ) ):
         dbg.stdout('Welcome', 'Using relative path for data source. Non-production testing.', 1, 0)
         data_path = os.path.join(current_folder, 'data/')
-    elif( os.path.exists('/usr/share/budgie-welcome/') ):
-        dbg.stdout('Welcome', 'Using /usr/share/budgie-welcome/ path.', 1, 0)
-        data_path = '/usr/share/budgie-welcome/'
+    elif( os.path.exists(prepend + '/usr/share/budgie-welcome/') ):
+        dbg.stdout('Welcome', 'Using ' + prepend + '/usr/share/budgie-welcome/ path.', 1, 0)
+        data_path = prepend + '/usr/share/budgie-welcome/'
     else:
         dbg.stdout('Welcome', 'Unable to source the budgie-welcome data directory.', 0, 1)
         sys.exit(1)
