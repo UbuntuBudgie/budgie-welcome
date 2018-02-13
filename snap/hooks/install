@@ -1,0 +1,15 @@
+#!/bin/sh
+set -e
+
+# Run any commands needed to setup the snap.
+# This could be downloading a list of dynamic configuration options or creating a database.
+
+# Enable autostart by default. Requires classic confinement.
+mkdir -p /etc/skel/.config/autostart/
+cp $SNAP/usr/share/applications/budgie-welcome.desktop /etc/skel/.config/autostart/
+
+# Get polkit into the real file system
+
+cp -r $SNAP/usr/share/polkit-1/actions/* /usr/share/polkit-1/actions/
+sed -i 's#<annotate key="org.freedesktop.policykit.exec.path">/usr/lib/budgie-welcome/budgie-welcome-privileged-actions</annotate>#<annotate key="org.freedesktop.policykit.exec.path">'"$SNAP"'/usr/lib/budgie-welcome/budgie-welcome-privileged-actions</annotate>#' /usr/share/polkit-1/actions/org.budgie.welcome.policy
+exit 0
