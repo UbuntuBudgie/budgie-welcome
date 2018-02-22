@@ -1,6 +1,6 @@
-name: ubuntu-budgie-welcome # you probably want to 'snapcraft register <name>'
-version: '0.6.1' # just for humans, typically '1.2+git' or '1.3.2'
-summary: Welcome screen application to greet new users on their first login. # 79 char long summary
+name: ubuntu-budgie-welcome
+version: '0.6.1'
+summary: Welcome screen application to greet new users on their first login.
 description: |
   The ubuntu-budgie-welcome application was designed to greet a new user at the
   first run after installing Ubuntu Budgie. This app will show you around
@@ -8,33 +8,23 @@ description: |
   of the available budgie applets (to personalize your desktop), and ease the
   installation effort around a few common applications.
 
-grade: stable # must be 'stable' to release into candidate/stable channels
-confinement: classic # use 'strict' once you have the right plugs and slots
+grade: stable
+confinement: classic
 
 apps:
   budgie-welcome:
     command: bin/launcher $SNAP/usr/bin/budgie-welcome
     desktop: usr/share/applications/budgie-welcome.desktop
-    #plugs:
-    #  - home
-    #  - gsettings
 
   budgie-themes:
     command: bin/launcher $SNAP/usr/bin/budgie-welcome --jump-to=default
     desktop: usr/share/applications/budgie-themes.desktop
-    #plugs:
-    #  - home
-    #  - gsettings
 
   budgie-applets:
     command: bin/launcher $SNAP/usr/bin/budgie-welcome --jump-to=budgie-applets
     desktop: usr/share/applications/budgie-applets.desktop
-    #plugs:
-    #  - home
-    #  - gsettings
 
 parts:
-  # start the main app build
   budgie-welcome:
     plugin: dump
     source: https://github.com/UbuntuBudgie/budgie-welcome/archive/v$SNAPCRAFT_PROJECT_VERSION.tar.gz
