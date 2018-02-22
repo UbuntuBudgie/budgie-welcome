@@ -15,23 +15,23 @@ apps:
   budgie-welcome:
     command: bin/launcher $SNAP/usr/bin/budgie-welcome
     desktop: usr/share/applications/budgie-welcome.desktop
-    plugs:
-      - home
-      - gsettings
+    #plugs:
+    #  - home
+    #  - gsettings
 
   budgie-themes:
     command: bin/launcher $SNAP/usr/bin/budgie-welcome --jump-to=default
     desktop: usr/share/applications/budgie-themes.desktop
-    plugs:
-      - home
-      - gsettings
+    #plugs:
+    #  - home
+    #  - gsettings
 
   budgie-applets:
     command: bin/launcher $SNAP/usr/bin/budgie-welcome --jump-to=budgie-applets
     desktop: usr/share/applications/budgie-applets.desktop
-    plugs:
-      - home
-      - gsettings
+    #plugs:
+    #  - home
+    #  - gsettings
 
 parts:
   # start the main app build
