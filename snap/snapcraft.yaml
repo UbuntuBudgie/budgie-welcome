@@ -43,7 +43,6 @@ parts:
       - python3-notify2
       - xdotool
       - curl
-      - libc6
     build: |
       cd scripts && ./rebuild-translations.sh
       cd ../ && uglifyjs -o data/js/bootstrap.min.js data/js/bootstrap.js && uglifyjs -o data/js/ekko-lightbox.min.js data/js/ekko-lightbox.js
