@@ -13,20 +13,20 @@ confinement: classic
 
 apps:
   budgie-welcome:
-    command: bin/launcher $SNAP/usr/bin/budgie-welcome
+    command: usr/bin/budgie-welcome
     desktop: usr/share/applications/budgie-welcome.desktop
 
   budgie-themes:
-    command: bin/launcher $SNAP/usr/bin/budgie-welcome --jump-to=default
+    command: usr/bin/budgie-welcome --jump-to=default
     desktop: usr/share/applications/budgie-themes.desktop
 
   budgie-applets:
-    command: bin/launcher $SNAP/usr/bin/budgie-welcome --jump-to=budgie-applets
+    command: usr/bin/budgie-welcome --jump-to=budgie-applets
     desktop: usr/share/applications/budgie-applets.desktop
 
 parts:
   budgie-welcome:
-    plugin: dump
+    plugin: nil
     source: https://github.com/UbuntuBudgie/budgie-welcome/archive/v$SNAPCRAFT_PROJECT_VERSION.tar.gz
     build-packages:
       - python3
@@ -43,6 +43,7 @@ parts:
       - python3-notify2
       - xdotool
       - curl
+      - libc6
     build: |
       cd scripts && ./rebuild-translations.sh
       cd ../ && uglifyjs -o data/js/bootstrap.min.js data/js/bootstrap.js && uglifyjs -o data/js/ekko-lightbox.min.js data/js/ekko-lightbox.js
@@ -183,9 +184,9 @@ parts:
       - $cruft_python_wheel
 #      - $cruft_x11
 
-  create-desktop-files:
-    plugin: dump
-    source: snap/scripts
-    organize:
-      launcher: bin/launcher
-    after: [budgie-welcome]
+#  create-desktop-files:
+#    plugin: dump
+#    source: snap/scripts
+#    organize:
+#      launcher: bin/launcher
+#    after: [budgie-welcome]
