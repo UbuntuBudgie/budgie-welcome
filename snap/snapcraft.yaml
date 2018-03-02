@@ -13,15 +13,15 @@ confinement: classic
 
 apps:
   budgie-welcome:
-    command: usr/bin/budgie-welcome
+    command: bin/welcome-wrapper
     desktop: usr/share/applications/budgie-welcome.desktop
 
   budgie-themes:
-    command: usr/bin/budgie-welcome --jump-to=default
+    command: bin/welcome-wrapper --jump-to=default
     desktop: usr/share/applications/budgie-themes.desktop
 
   budgie-applets:
-    command: usr/bin/budgie-welcome --jump-to=budgie-applets
+    command: bin/welcome-wrapper --jump-to=budgie-applets
     desktop: usr/share/applications/budgie-applets.desktop
 
 parts:
@@ -183,9 +183,9 @@ parts:
       - $cruft_python_wheel
 #      - $cruft_x11
 
-#  create-desktop-files:
-#    plugin: dump
-#    source: snap/scripts
-#    organize:
-#      launcher: bin/launcher
-#    after: [budgie-welcome]
+  create-desktop-files:
+    plugin: dump
+    source: snap/scripts
+    organize:
+      welcome-wrapper: bin/welcome-wrapper
+    after: [budgie-welcome]
