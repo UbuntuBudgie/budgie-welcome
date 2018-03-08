@@ -13,10 +13,13 @@ fi
 export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:$SNAP/lib:$SNAP/usr/lib:$SNAP/lib/$ARCH:$SNAP/usr/lib/$ARCH"
 
 # Set those environments here. If exported in snapcraft.yaml, they don't have any effect (while being exported) anymore.
-export PYTHONUSERBASE=$SNAP
-export PYTHONHOME=$SNAP/usr
+#export PYTHONUSERBASE=$SNAP
+#export PYTHONHOME=$SNAP/usr
+#export PYTHONPATH=$SNAP/usr
 
 # We need to set our local python3 binary in PATH so that system one isn't used (especially when executing subprocess if sudo needed)
-export PATH=$SNAP/usr/bin/:$PATH
+#export PATH=$SNAP/usr/bin/:$PATH
 
-exec "$SNAP/usr/bin/budgie-welcome" "$@"
+#exec "$SNAP/usr/bin/budgie-welcome" "$@"
+export PATH="$SNAP/usr/sbin:$SNAP/usr/bin:$SNAP/sbin:$SNAP/bin:$PATH"
+exec "$SNAP/usr/bin/python3" "$SNAP/usr/bin/budgie-welcome" "$@"
