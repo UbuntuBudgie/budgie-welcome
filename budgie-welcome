@@ -1735,6 +1735,8 @@ def find_app_version(cache=apt.Cache()):
 
         if app and app.is_installed:
             versions.append(app.installed.version)
+        elif package == 'budgie-welcome' and 'SNAP_VERSION' in os.environ:
+            versions.append(os.environ['SNAP_VERSION'])
         else:
             versions.append('NA')
 
