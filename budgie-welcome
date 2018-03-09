@@ -287,8 +287,8 @@ class AppView(WebKit2.WebView):
             subprocess.Popen(['deja-dup-preferences'])
         elif uri == 'firewall':
             subprocess.Popen(['gufw'])
-        elif uri == 'raven':
-            subprocess.Popen(['xdotool', 'key', 'super+a'])
+        elif uri == 'budgie-desktop-settings':
+            subprocess.Popen(['budgie-desktop-settings'])
         elif uri.startswith("title?"):
             title = uri[6:]
             self.page_title.set_label(title)
