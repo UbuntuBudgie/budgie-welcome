@@ -28,6 +28,7 @@ parts:
   budgie-welcome:
     plugin: nil
     source: https://github.com/UbuntuBudgie/budgie-welcome/archive/v$SNAPCRAFT_PROJECT_VERSION.tar.gz
+    #source: .
     build-packages:
       - python3
       - python3-polib
