@@ -4,12 +4,13 @@
 # codehoudini, 2017
 # Vinzenz Vietzke <vv@tuxedocomputers.com>, 2017
 # Bernhard Keppner <bernhard.keppner@gmail.com>, 2018
+# Tim Fahrner <tim@fahrner.name>, 2018
 msgid ""
 msgstr ""
 "Project-Id-Version: Budgie Welcome\n"
 "POT-Creation-Date: 2016-02-27 12:48+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Bernhard Keppner <bernhard.keppner@gmail.com>, 2018\n"
+"Last-Translator: Tim Fahrner <tim@fahrner.name>, 2018\n"
 "Language-Team: German (Germany) (https://www.transifex.com/ubuntu-budgie/teams/72251/de_DE/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -350,6 +351,12 @@ msgid ""
 "enable the <em>Multiverse</em> repository and to install Steam with a single"
 " mouse click."
 msgstr ""
+"Da es sich um proprietäre Software handelt, ist Steam nicht in den primären "
+"Paketquellen von <span name=\"distro-name\"></span> enthalten. Um den "
+"Benutzern mehr Auswahl zu bieten, wird Steam jedoch als Teil der "
+"<em>Multiverse</em>-Paketquelle ausgeliefert. <span name=\"distro-"
+"name\"></span> bietet Ihnen die Option, die <em>Multiverse</em>- Paketquelle"
+" zu aktivieren und Steam mit einem einzigen Mausklick zu installieren."
 
 #: recommendations.html:131
 msgid "Steam is installed"
@@ -374,12 +381,21 @@ msgid ""
 "enable the <em>Multiverse</em> repository and to install Dropbox with a "
 "single mouse click."
 msgstr ""
+"Da es sich um proprietäre Software handelt, ist Dropbox nicht in den "
+"primären Paketquellen von <span name=\"distro-name\"></span> enthalten. Um "
+"den Benutzern mehr Auswahl zu bieten, wird Dropbox jedoch als Teil der "
+"<em>Multiverse</em> -Paketquelle ausgeliefert. <span name=\"distro-"
+"name\"></span> bietet Ihnen die Option, die <em>Multiverse</em> - "
+"Paketquelle zu aktivieren und Dropbox mit einem einzigen Mausklick zu "
+"installieren."
 
 #: recommendations.html:145
 msgid ""
 "After installing, logout and login and follow the dropbox instructions that "
 "are then displayed."
 msgstr ""
+"Nach der Installation logge dich neu ein und folge den anschließend "
+"angezeigten Dropbox Anweisungen."
 
 #: recommendations.html:146
 msgid "Dropbox is installed"
@@ -387,4 +403,4 @@ msgstr "Dropbox ist installiert."
 
 #: recommendations.html:146
 msgid "Install & Configure Dropbox"
-msgstr ""
+msgstr "Dropbox installieren & einrichten"
