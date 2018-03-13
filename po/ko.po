@@ -1,104 +1,127 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR ORGANIZATION
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 # Translators:
 # SD SkyKlouD <koongchi135@gmail.com>, 2017
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2018-01-19 19:12+GMT\n"
+"POT-Creation-Date: 2018-03-13 23:07+GMT\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: SD SkyKlouD <koongchi135@gmail.com>, 2017\n"
-"Language-Team: Korean (https://www.transifex.com/ubuntu-budgie/teams/72251/ko/)\n"
+"Language-Team: Korean (https://www.transifex.com/ubuntu-budgie/teams/72251/"
+"ko/)\n"
+"Language: ko\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: ENCODING\n"
 "Generated-By: pygettext.py 1.5\n"
-"Language: ko\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: budgie-welcome:303
+#: budgie-welcome:307
 msgid ""
 "Steam is a third party package that requires user approval of EULA(End User "
-"License Agreement). So we rely on GNOME Software for installing steam and it"
-" is not available in your system. Please install GNOME Software and try this"
-" option again"
+"License Agreement). So we rely on GNOME Software for installing steam and it "
+"is not available in your system. Please install GNOME Software and try this "
+"option again"
 msgstr ""
-"Steam은 사용자가 EULA(최종 사용자 사용권 계약)에 동의해야 하는 제 3자 패키지입니다. 고로 GNOME 소프트웨어 없이는 "
-"시스템에 Steam을 설치할 수는 없습니다. GNOME 소프트웨어를 설치한 후 이 옵션을 다시 시도해 주세요."
+"Steam은 사용자가 EULA(최종 사용자 사용권 계약)에 동의해야 하는 제 3자 패키지"
+"입니다. 고로 GNOME 소프트웨어 없이는 시스템에 Steam을 설치할 수는 없습니다. "
+"GNOME 소프트웨어를 설치한 후 이 옵션을 다시 시도해 주세요."
 
-#: budgie-welcome:392
+#: budgie-welcome:399
 msgid ""
 "Seems that GNOME Software is not installed. If this problem persists even "
 "after installing GNOME Software, please contact us with following error "
 "message"
 msgstr ""
-"GNOME 소프트웨어가 설치되어 있지 않은 것 같습니다. GNOME 소프트웨어를 설치한 이후에도 이 문제가 지속되면, 다음 오류 메시지와"
-" 함께 개발 팀에게 연락해 주세요."
+"GNOME 소프트웨어가 설치되어 있지 않은 것 같습니다. GNOME 소프트웨어를 설치한 "
+"이후에도 이 문제가 지속되면, 다음 오류 메시지와 함께 개발 팀에게 연락해 주세"
+"요."
 
-#: budgie-welcome:527
+#: budgie-welcome:534
 msgid "Following tasks are in progress"
 msgstr "다음 작업이 진행 중입니다."
 
-#: budgie-welcome:533 budgie-welcome:1424 budgie-welcome:1425
-#: budgie-welcome:1433 budgie-welcome:1836
+#: budgie-welcome:540 budgie-welcome:1512 budgie-welcome:1513
+#: budgie-welcome:1521 budgie-welcome:1932
 msgid "Budgie Welcome"
 msgstr "Budgie 환영"
 
-#: budgie-welcome:537
+#: budgie-welcome:544
 msgid "Budgie Desktop"
 msgstr "Budgie 데스크톱"
 
-#: budgie-welcome:852
+#: budgie-welcome:625
+msgid ""
+"The following third-party repositories need to be added to complete the "
+"installation:"
+msgstr ""
+
+#: budgie-welcome:652
+msgid ""
+"Third-Party repositories are not supported by Ubuntu. You should only "
+"continue if you trust the maintainers of the proposed repositories."
+msgstr ""
+
+#: budgie-welcome:655
+msgid "Continue with the installation?"
+msgstr ""
+
+#: budgie-welcome:661
+msgid "Third-Party Repositories"
+msgstr ""
+
+#: budgie-welcome:922
 msgid "Welcome App"
 msgstr "환영 앱"
 
-#: budgie-welcome:1155
+#: budgie-welcome:1229
 msgid "Could not gather data."
 msgstr "데이터 취득 실패."
 
-#: budgie-welcome:1225
+#: budgie-welcome:1302
 msgid "GB"
 msgstr "GB"
 
-#: budgie-welcome:1226
+#: budgie-welcome:1303
 msgid "GiB"
 msgstr "GiB"
 
-#: budgie-welcome:1227
+#: budgie-welcome:1304
 msgid "MB"
 msgstr "MB"
 
-#: budgie-welcome:1228
+#: budgie-welcome:1305
 msgid "MiB"
 msgstr "MiB"
 
-#: budgie-welcome:1446
+#: budgie-welcome:1534
 msgid "Status"
 msgstr "상태"
 
-#: budgie-welcome:1530
+#: budgie-welcome:1618
 msgid " is in progress. Please wait for it to complete"
 msgstr "이(가) 진행 중입니다. 완료될 때까지 잠시 기다려주세요."
 
-#: budgie-welcome:1837
+#: budgie-welcome:1933
 msgid "Find out about your operating system"
 msgstr "설치된 운영 체제에 대해 알아보기"
 
-#: budgie-welcome:1839
+#: budgie-welcome:1935
 msgid "Budgie Themes"
 msgstr "Budgie 테마"
 
-#: budgie-welcome:1840
+#: budgie-welcome:1936
 msgid "Give the desktop a makeover with new themes, icons and fonts"
 msgstr "데스크톱에 새로운 테마, 아이콘 및 폰트로 꾸며주기"
 
-#: budgie-welcome:1842
+#: budgie-welcome:1938
 msgid "Budgie Applets"
 msgstr "Budgie 애플릿"
 
-#: budgie-welcome:1843
+#: budgie-welcome:1939
 msgid ""
 "Customize the desktop panel with applets that provide extra capabilities"
 msgstr "다양한 기능을 제공하는 애플릿으로 데스크톱 패널을 커스터마이징하기"
