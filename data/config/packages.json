@@ -303,6 +303,12 @@
         "bionic" : ["ppa:ubuntubudgie/backports", "ppa:numix/ppa"]
       }
     },
+    "material-materia2-theme" : {
+      "packages" : ["materia-gtk-theme", "numix-icon-theme-circle", "fonts-noto"],
+      "repos" : {
+        "bionic" : ["universe", "ppa:numix/ppa"]
+      }
+    },
     "vertex-theme" : {
       "packages" : ["vertex-theme", "vertex-icons"],
       "repos" : {

@@ -55,6 +55,8 @@ import re
 # global variable - path inc the suffix / of where the app is being executed
 start_location = "./" # path defined on app startup
 
+win = None
+
 class AppView(WebKit2.WebView):
 
     def __init__(self):
@@ -309,6 +311,9 @@ class AppView(WebKit2.WebView):
 
                 popup.showMessage()
 
+                return
+
+            if not self.checkPermissions(app.current_page[:-5], code):
                 return
 
             self.managePackage(PMEntry.INSTALL, app.current_page[:-5], code)
@@ -601,6 +606,81 @@ class AppView(WebKit2.WebView):
                 gsettings.set_int(key, value)
             else:
                 gsettings.set_string(key, value)
+
+    def checkPermissions(self, fname, code):
+        # we check if third-party stuff is going to be installed.  If it is
+        # we need to display a PopUp message describing what is being installed and
+        # getting a positive yes from the user in that they have understood the risks
+
+        print ("code:" + code + "fname: "+fname)
+        installed = pm.hasInstalled(fname, code)
+
+        if installed:
+            print ("is installed" + code)
+            return False
+        else:
+            print ("is not installed" + code)
+
+        print ("packages: ")
+        packages = pdata.getPackages(fname, code)
+
+        if not packages:
+            print ("we are only dealing with PPAs")
+        repos = pdata.getRepos(fname, code)
+        print (repos)
+        message = _("The following third-party repositories need to be added to complete the installation:")
+        message += "\n"
+        if repos:
+            print ("hmm?")
+            if 'all' in repos:
+                checkrepos=repos['all']
+            else:
+                checkrepos=repos[systemstate.codename]
+            todo = False
+            for val in checkrepos:
+                print (val)
+                if val[:3] == 'ppa':
+                    ppa = val[4:].split('/')
+                    print (ppa)
+
+                    filename = ppa[0] + "-ubuntu-" + ppa[1] + "-" + \
+                        systemstate.codename + ".list"
+                    filename = '/etc/apt/sources.list.d/' + filename
+
+                    p = subprocess.Popen(['grep', '^deb\ http', filename])
+                    retval = p.wait()
+
+                    if retval == 0:
+                        print ("found")
+                    else:
+                        message += "\n" + val
+                        todo = True
+                elif val[:3] == 'deb':
+                    message += "\n" + val
+                    todo = True
+            if todo:
+                message += "\n\n"
+                message += _("Third-Party repositories are not supported by Ubuntu. You should only continue if you trust the maintainers of the proposed repositories.")
+                message += "\n\n"
+                message += _("Continue with the installation?")
+
+                messagedialog = Gtk.MessageDialog(None,
+                                          Gtk.DialogFlags.MODAL,
+                                          Gtk.MessageType.WARNING,
+                                          Gtk.ButtonsType.OK_CANCEL,
+                                          _("Third-Party Repositories"))
+                messagedialog.format_secondary_text(message)
+                ret = messagedialog.run()
+                messagedialog.destroy()
+                if ret == Gtk.ResponseType.OK:
+                    print("clicked ok")
+                    # should be true
+                    return True
+
+                return False
+        # really return True
+        print ('Success')
+        return True
 
     def managePackage(self, operation, fname, code):
         actions = [
@@ -1420,7 +1500,7 @@ class WelcomeApp(object):
 
     def _build_app(self):
         # Load custom css for App
-        self._load_css()
+        #self._load_css()
 
         # build window
         w = Gtk.Window()
@@ -1497,6 +1577,7 @@ class WelcomeApp(object):
         w.show_all()
 
         self._window = w
+        win = w
         self.webkit = mv
 
     def run(self):
