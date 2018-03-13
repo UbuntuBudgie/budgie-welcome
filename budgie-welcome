@@ -38,7 +38,6 @@ import webbrowser
 import socket
 import platform
 import json
-import time
 import shutil
 import locale
 import gettext
@@ -53,9 +52,10 @@ import apt
 import re
 
 # global variable - path inc the suffix / of where the app is being executed
-start_location = "./" # path defined on app startup
+start_location = "./"  # path defined on app startup
 
 win = None
+
 
 class AppView(WebKit2.WebView):
 
@@ -70,7 +70,7 @@ class AppView(WebKit2.WebView):
         self.status_btn = None
         self.back_btn = None
         self.page_title = None
-        #self.set_zoom_level(0.90)
+        # self.set_zoom_level(0.90)
 
         self.back_signal_handler = None
 
@@ -106,7 +106,7 @@ class AppView(WebKit2.WebView):
         else:
             app.update_page('.normal-session-only', 'show')
 
-        if not pm.queue.empty() or pm.active: # There is atleast one task
+        if not pm.queue.empty() or pm.active:  # There is atleast one task
             self.status_btn.show()
         else:
             self.status_btn.hide()
@@ -153,7 +153,8 @@ class AppView(WebKit2.WebView):
             else:
                 app.update_page('#autostart', 'html', '&#xE836;')
 
-            app.run_javascript('$("#wordmark").attr("src","' + translations.res_dir + 'img/welcome/' + systemstate.distro_wordmark + '");')
+            app.run_javascript(
+                '$("#wordmark").attr("src","' + translations.res_dir + 'img/welcome/' + systemstate.distro_wordmark + '");')
 
         if current_page == 'default':
             systemstate.first_run = False
@@ -242,6 +243,7 @@ class AppView(WebKit2.WebView):
                 # Sort recommendations and budgie-applets
                 if current_page == 'recommendations':
                     app.run_javascript("sortList()")
+
             # Checking on cache will take sometime. So run it on a
             # separate thread.
             thread = Thread(target=checkInstallationStatus)
@@ -335,7 +337,8 @@ class AppView(WebKit2.WebView):
             def run_script(script, root):
 
                 if root:
-                    process = subprocess.Popen(['pkexec', start_location + 'budgie-welcome-privileged-actions', "SCRIPT", filename, root])
+                    process = subprocess.Popen(
+                        ['pkexec', start_location + 'budgie-welcome-privileged-actions', "SCRIPT", filename, root])
                 else:
                     process = subprocess.Popen(['sh', script])
 
@@ -377,7 +380,6 @@ class AppView(WebKit2.WebView):
                 app.update_page('.panel-apply', 'removeClass', 'disabled')
                 app.update_page('#panel-status', 'fadeOut')
 
-
                 # There is some problem with showing notification in this module
                 if retval == 0:
                     pass
@@ -388,15 +390,15 @@ class AppView(WebKit2.WebView):
 
                 self._push_config()
 
-            Thread(target = panelOperation).start()
+            Thread(target=panelOperation).start()
 
         elif uri == 'software-center':
             try:
                 subprocess.Popen(['gnome-software'])
             except Exception as e:
                 message = _("Seems that GNOME Software is not installed. If this problem persists "
-                           "even after installing GNOME Software, please contact us with following "
-                           "error message")
+                            "even after installing GNOME Software, please contact us with following "
+                            "error message")
                 popup = PopupMessage(message, PopupMessage.ERROR, str(e))
 
                 popup.showMessage()
@@ -510,7 +512,7 @@ class AppView(WebKit2.WebView):
 
                 self._push_config()
 
-            Thread(target = applyStyle).start()
+            Thread(target=applyStyle).start()
 
         elif uri == 'close':
             app.close()
@@ -537,15 +539,15 @@ class AppView(WebKit2.WebView):
             message = "<div class=\"text-md-center\">"
             message += "<strong>" + _("Budgie Welcome") + "</strong><br>"
             message += "Version {}".format(
-              systemstate.app_version
+                systemstate.app_version
             )
             message += "<br><br> " + _("Budgie Desktop") + " {}".format(
-              systemstate.budgie_version
+                systemstate.budgie_version
             )
             message += "<br><br>({} {} {})".format(
-              systemstate.distroname,
-              systemstate.os_version,
-              systemstate.codename
+                systemstate.distroname,
+                systemstate.os_version,
+                systemstate.codename
             )
 
             message += "</div>"
@@ -561,7 +563,9 @@ class AppView(WebKit2.WebView):
         def running_process(process):
             "check if process is running. < process > is the name of the process."
 
-            proc = subprocess.Popen(["if pgrep " + process + " >/dev/null 2>&1; then echo 'True'; else echo 'False'; fi"], stdout=subprocess.PIPE, shell=True)
+            proc = subprocess.Popen(
+                ["if pgrep " + process + " >/dev/null 2>&1; then echo 'True'; else echo 'False'; fi"],
+                stdout=subprocess.PIPE, shell=True)
 
             (Process_Existance, err) = proc.communicate()
             return str(Process_Existance, 'utf-8') == 'True\n'
@@ -574,8 +578,8 @@ class AppView(WebKit2.WebView):
                 subprocess.Popen(['killall', 'plank'])
                 subprocess.Popen(['rm', dtop])
                 p = subprocess.Popen(['pkexec',
-                    start_location + 'budgie-welcome-privileged-actions',
-                    'panelini', 'classic'])
+                                      start_location + 'budgie-welcome-privileged-actions',
+                                      'panelini', 'classic'])
                 retval = p.wait()
             return
 
@@ -584,8 +588,8 @@ class AppView(WebKit2.WebView):
                 subprocess.Popen(['nohup', 'plank', '&'])
                 subprocess.Popen(['cp', '/usr/share/budgie-desktop/plank.desktop', dtop])
                 p = subprocess.Popen(['pkexec',
-                    start_location + 'budgie-welcome-privileged-actions',
-                    'panelini', 'ub'])
+                                      start_location + 'budgie-welcome-privileged-actions',
+                                      'panelini', 'ub'])
                 retval = p.wait()
             return
 
@@ -599,7 +603,7 @@ class AppView(WebKit2.WebView):
 
         for panel in panels:
             gsettings = Gio.Settings.new_with_path('com.solus-project.budgie-panel.panel',
-                '/com/solus-project/budgie-panel/panels/{' + panel + '}/')
+                                                   '/com/solus-project/budgie-panel/panels/{' + panel + '}/')
             if type(value) == bool:
                 gsettings.set_boolean(key, value)
             elif type(value) == int:
@@ -612,47 +616,32 @@ class AppView(WebKit2.WebView):
         # we need to display a PopUp message describing what is being installed and
         # getting a positive yes from the user in that they have understood the risks
 
-        print ("code:" + code + "fname: "+fname)
         installed = pm.hasInstalled(fname, code)
 
         if installed:
-            print ("is installed" + code)
             return False
-        else:
-            print ("is not installed" + code)
 
-        print ("packages: ")
-        packages = pdata.getPackages(fname, code)
-
-        if not packages:
-            print ("we are only dealing with PPAs")
         repos = pdata.getRepos(fname, code)
-        print (repos)
         message = _("The following third-party repositories need to be added to complete the installation:")
         message += "\n"
         if repos:
-            print ("hmm?")
             if 'all' in repos:
-                checkrepos=repos['all']
+                checkrepos = repos['all']
             else:
-                checkrepos=repos[systemstate.codename]
+                checkrepos = repos[systemstate.codename]
             todo = False
             for val in checkrepos:
-                print (val)
                 if val[:3] == 'ppa':
                     ppa = val[4:].split('/')
-                    print (ppa)
 
                     filename = ppa[0] + "-ubuntu-" + ppa[1] + "-" + \
-                        systemstate.codename + ".list"
+                               systemstate.codename + ".list"
                     filename = '/etc/apt/sources.list.d/' + filename
 
                     p = subprocess.Popen(['grep', '^deb\ http', filename])
                     retval = p.wait()
 
-                    if retval == 0:
-                        print ("found")
-                    else:
+                    if retval != 0:
                         message += "\n" + val
                         todo = True
                 elif val[:3] == 'deb':
@@ -660,26 +649,23 @@ class AppView(WebKit2.WebView):
                     todo = True
             if todo:
                 message += "\n\n"
-                message += _("Third-Party repositories are not supported by Ubuntu. You should only continue if you trust the maintainers of the proposed repositories.")
+                message += _(
+                    "Third-Party repositories are not supported by Ubuntu. You should only continue if you trust the maintainers of the proposed repositories.")
                 message += "\n\n"
                 message += _("Continue with the installation?")
 
                 messagedialog = Gtk.MessageDialog(None,
-                                          Gtk.DialogFlags.MODAL,
-                                          Gtk.MessageType.WARNING,
-                                          Gtk.ButtonsType.OK_CANCEL,
-                                          _("Third-Party Repositories"))
+                                                  Gtk.DialogFlags.MODAL,
+                                                  Gtk.MessageType.WARNING,
+                                                  Gtk.ButtonsType.OK_CANCEL,
+                                                  _("Third-Party Repositories"))
                 messagedialog.format_secondary_text(message)
                 ret = messagedialog.run()
                 messagedialog.destroy()
                 if ret == Gtk.ResponseType.OK:
-                    print("clicked ok")
-                    # should be true
                     return True
 
                 return False
-        # really return True
-        print ('Success')
         return True
 
     def managePackage(self, operation, fname, code):
@@ -697,6 +683,7 @@ class AppView(WebKit2.WebView):
         pm_queue.put(pmentry)
         self.status_btn.show()
 
+
 class Debug(object):
     def __init__(self):
         self.verbose_level = 0
@@ -705,25 +692,26 @@ class Debug(object):
         # Only colourise output if running in a real terminal.
         if sys.stdout.isatty():
             end = '\033[0m'
-            if colour == 1:            # Failure (Red)
+            if colour == 1:  # Failure (Red)
                 start = '\033[91m'
-            elif colour == 2:          # Success (Green)
+            elif colour == 2:  # Success (Green)
                 start = '\033[92m'
-            elif colour == 3:          # Action (Yellow)
+            elif colour == 3:  # Action (Yellow)
                 start = '\033[93m'
-            elif colour == 4:          # Debug (Blue)
+            elif colour == 4:  # Debug (Blue)
                 start = '\033[96m'
-            else:                      # Normal/Misc (White)
+            else:  # Normal/Misc (White)
                 start = '\033[0m'
 
         # Ignore colours when redirected or piped.
         else:
             start = ''
-            end   = ''
+            end = ''
 
         # Output the message depending how detailed it is.
         if verbosity <= self.verbose_level:
             print(start + '[' + item + '] ' + info, end)
+
 
 class PopupMessage(object):
     ERROR = 0
@@ -731,7 +719,7 @@ class PopupMessage(object):
     STATUS = 2
     INFO = 3
 
-    def __init__(self, message, type, details = None, actions = dict(OK = 'removeSlowly(\'#popup-message-window\')')):
+    def __init__(self, message, type, details=None, actions=dict(OK='removeSlowly(\'#popup-message-window\')')):
         '''
          message => Message to user
          type => Type of message(error, confirmation ..etc)
@@ -751,10 +739,11 @@ class PopupMessage(object):
         </div>\
       </div>')
 
-        app.update_page('#popup-message-container', 'append', '<p id="popup-message">' +\
-            self.message + '</p>')
+        app.update_page('#popup-message-container', 'append', '<p id="popup-message">' + \
+                        self.message + '</p>')
         if self.type == PopupMessage.ERROR and self.details:
-            app.update_page('#popup-message-container', 'append', '<textarea id="details">'+self.details+'</textarea>')
+            app.update_page('#popup-message-container', 'append',
+                            '<textarea id="details">' + self.details + '</textarea>')
         elif self.type == PopupMessage.STATUS:
             html_table = '<table class="table table-bordered table-condensed">'
             html_table += '<thead><th>TASK</th><th>NAME</th><th>STATUS</th></thead>'
@@ -767,17 +756,19 @@ class PopupMessage(object):
 
             app.update_page('#popup-message-container', 'append', html_table)
         elif self.type == PopupMessage.INFO:
-            pass # Message is already added
+            pass  # Message is already added
         else:
             dbg.stdout(self.type, 'message is not handled yet', 3)
 
         buttons = ''
 
         for action in self.actions:
-            buttons += '<a class="btn btn-primary" onclick="'+self.actions[action]+';document.title=\'\'">&emsp;' + action + '&emsp;</a>&emsp;'
+            buttons += '<a class="btn btn-primary" onclick="' + self.actions[
+                action] + ';document.title=\'\'">&emsp;' + action + '&emsp;</a>&emsp;'
 
-        app.update_page('#popup-message-container', 'append','<div class="text-md-right">' + buttons + '</div>')
+        app.update_page('#popup-message-container', 'append', '<div class="text-md-right">' + buttons + '</div>')
         app.update_page('#popup-message-window', 'fadeIn')
+
 
 class PackageManager(Thread):
 
@@ -817,7 +808,7 @@ class PackageManager(Thread):
                 ppa = repos[systemstate.codename][0][4:].split('/')
 
                 filename = ppa[0] + "-ubuntu-" + ppa[1] + "-" + \
-                    systemstate.codename + ".list"
+                           systemstate.codename + ".list"
                 filename = '/etc/apt/sources.list.d/' + filename
 
                 p = subprocess.Popen(['grep', '^deb\ http', filename])
@@ -840,7 +831,7 @@ class PackageManager(Thread):
     def run(self):
         while self.running:
             try:
-                entry = self.queue.get(timeout = 1)
+                entry = self.queue.get(timeout=1)
             except Empty:
                 continue
 
@@ -857,13 +848,13 @@ class PackageManager(Thread):
                 p = subprocess.Popen([app._data_path + 'scripts/steam'])
             else:
                 p = subprocess.Popen(['pkexec',
-                    start_location + 'budgie-welcome-privileged-actions',
-                    action, filename, code, app.json_path])
+                                      start_location + 'budgie-welcome-privileged-actions',
+                                      action, filename, code, app.json_path])
             retval = p.wait()
 
             post_install = pdata.getPostInstall(filename, code)
 
-            if retval == 0 and post_install :
+            if retval == 0 and post_install:
                 app.webkit._do_command("script?" + post_install)
 
             if entry.task == PMEntry.INSTALL:
@@ -874,7 +865,6 @@ class PackageManager(Thread):
             app.update_page('#' + code + '-status', 'fadeOut')
 
             systemstate.removeIntermediateActions(filename, entry.actions)
-
 
             action = "removal" if entry.task == PMEntry.REMOVE else "installation"
 
@@ -896,7 +886,6 @@ class PackageManager(Thread):
         self.cache = apt.Cache()
         dbg.stdout('Apt', 'Cache reloaded.', 0, 2)
 
-
     def getTaskList(self):
 
         with self.queue.mutex:
@@ -916,6 +905,7 @@ class PackageManager(Thread):
                 self.queue.task_done()
         except Empty:
             dbg.stdout('PackageMangement', 'Cleared PM Queue', 1, 0)
+
 
 class Notifier(object):
     INFO = 0
@@ -1024,6 +1014,7 @@ class PMEntry(object):
         # /removal
         self.filename = filename
 
+
 class SystemState(object):
 
     def __init__(self):
@@ -1048,7 +1039,8 @@ class SystemState(object):
 
         # Get current architecture of system.
         # Outputs 'i386', 'amd64', etc - Based on packages instead of kernel (eg. i686, x86_64).
-        self.arch = str(subprocess.Popen(['dpkg','--print-architecture'], stdout=subprocess.PIPE).communicate()[0]).strip('\\nb\'')
+        self.arch = str(
+            subprocess.Popen(['dpkg', '--print-architecture'], stdout=subprocess.PIPE).communicate()[0]).strip('\\nb\'')
 
         # Collect distribution info
         self.gatherDistroInfo()
@@ -1074,7 +1066,7 @@ class SystemState(object):
         Thread(target=self.detect_graphics).start()
         Thread(target=self.find_app_version).start()
         # uncomment this when developing the connection speed capability
-        #Thread(target=self.detect_connection_speed).start()
+        # Thread(target=self.detect_connection_speed).start()
 
         # Retain some show/hide actions applied while changing page.
         # This is specially required when page change happens while
@@ -1111,12 +1103,12 @@ class SystemState(object):
         if arg.simulate_version:
             self.os_version = arg.simulate_version
         else:
-            self.os_version = platform.dist()[1]    # → 14.04, 15.10, 16.04
+            self.os_version = platform.dist()[1]  # → 14.04, 15.10, 16.04
 
         if arg.simulate_codename:
             self.codename = arg.simulate_codename
         else:
-            self.codename = platform.dist()[2]      # → trusty, wily, xenial
+            self.codename = platform.dist()[2]  # → trusty, wily, xenial
 
         self.official = int(self.os_version[:2]) >= 17
 
@@ -1167,14 +1159,16 @@ class SystemState(object):
         dbg.stdout('Network Test', 'Establishing a connection test to "' + url + '"', 1, 3)
 
         if arg.simulate_no_connection:
-            dbg.stdout('Network Test', 'Simulation flag: Forcing no connection presence. Retrying will reset this.', 0, 1)
+            dbg.stdout('Network Test', 'Simulation flag: Forcing no connection presence. Retrying will reset this.', 0,
+                       1)
             arg.simulate_no_connection = False
             self.is_online = False
             return
 
         if arg.simulate_force_connection:
             dbg.stdout('Network Test', 'Simulation flag: Forcing a connection presence.', 0, 2)
-            dbg.stdout('Network Test', 'WARNING: Do not attempt to install/remove software offline as this may cause problems!', 0, 1)
+            dbg.stdout('Network Test',
+                       'WARNING: Do not attempt to install/remove software offline as this may cause problems!', 0, 1)
             arg.simulate_connection = False
             self.is_online = True
             return
@@ -1215,8 +1209,8 @@ class SystemState(object):
             self.graphics_vendor = 'Unknown'
 
         self.graphics_grep = repr(output)
-        self.graphics_grep = self.graphics_grep.split("controller: ",1)[1]
-        self.graphics_grep = self.graphics_grep.split("\\n",1)[0]
+        self.graphics_grep = self.graphics_grep.split("controller: ", 1)[1]
+        self.graphics_grep = self.graphics_grep.split("\\n", 1)[0]
         dbg.stdout('Specs', 'Detected: ' + str(self.graphics_grep), 1, 2)
 
     # Collect basic system information
@@ -1225,7 +1219,7 @@ class SystemState(object):
             raw = str(subprocess.Popen(command, stdout=subprocess.PIPE, shell=True).communicate()[0])
         else:
             raw = str(subprocess.Popen(command, stdout=subprocess.PIPE).communicate()[0])
-        output = raw.replace("b'","").replace('b"',"").replace("\\n'","").replace("\\n","")
+        output = raw.replace("b'", "").replace('b"', "").replace("\\n'", "").replace("\\n", "")
         return output
 
     def get_system_info(self, webkit):
@@ -1235,14 +1229,15 @@ class SystemState(object):
         stat_error_msg = _("Could not gather data.")
         html_tag = '<a data-toggle=\'tooltip\' data-placement=\'top\' title=\'' + stat_error_msg + '\'><span class=\'fa fa-warning specs-error\'></span></a>'
         for element in ['distro', 'kernel', 'motherboard', 'boot-mode', 'cpu-model', 'cpu-speed', 'arch-use',
-                        'arch-supported', 'memory', 'graphics', 'filesystem', 'capacity', 'allocated-space', 'free-space']:
-            app.update_page('#spec'+element, 'html', html_tag)
+                        'arch-supported', 'memory', 'graphics', 'filesystem', 'capacity', 'allocated-space',
+                        'free-space']:
+            app.update_page('#spec' + element, 'html', html_tag)
 
         ## Distro
         try:
             dbg.stdout('Specs', 'Gathering Data: Distribution', 1, 0)
-            distro_description = self.run_external_command(['lsb_release','-d','-s'])
-            distro_codename = self.run_external_command(['lsb_release','-c','-s'])
+            distro_description = self.run_external_command(['lsb_release', '-d', '-s'])
+            distro_codename = self.run_external_command(['lsb_release', '-c', '-s'])
             app.update_page('#spec-distro', 'html', distro_description)
         except:
             dbg.stdout('Specs', 'Failed to gather data: Distribution', 0, 1)
@@ -1250,7 +1245,7 @@ class SystemState(object):
         ## Kernel
         try:
             dbg.stdout('Specs', 'Gathering Data: Kernel', 1, 0)
-            kernel = self.run_external_command(['uname','-r'])
+            kernel = self.run_external_command(['uname', '-r'])
             app.update_page('#spec-kernel', 'html', kernel)
         except:
             dbg.stdout('Specs', 'Failed to gather data: Kernel', 0, 1)
@@ -1258,7 +1253,7 @@ class SystemState(object):
         ## Motherboard
         try:
             dbg.stdout('Specs', 'Gathering Data: Motherboard', 1, 0)
-            motherboard_name = self.run_external_command(['cat','/sys/devices/virtual/dmi/id/board_name'])
+            motherboard_name = self.run_external_command(['cat', '/sys/devices/virtual/dmi/id/board_name'])
             app.update_page('#spec-motherboard', 'html', motherboard_name)
         except:
             dbg.stdout('Specs', 'Failed to gather data: Motherboard', 0, 1)
@@ -1274,10 +1269,12 @@ class SystemState(object):
         try:
             try:
                 # Try obtaining the maximum speed first.
-                cpu_speed = int(self.run_external_command(['lscpu | grep "max"'], True).split(': ')[1].strip(' ').split('.')[0])
+                cpu_speed = int(
+                    self.run_external_command(['lscpu | grep "max"'], True).split(': ')[1].strip(' ').split('.')[0])
             except:
                 # Otherwise, fetch the CPU's MHz.
-                cpu_speed = int(self.run_external_command(['lscpu | grep "CPU MHz"'], True).split(': ')[1].strip(' ').split('.')[0])
+                cpu_speed = int(
+                    self.run_external_command(['lscpu | grep "CPU MHz"'], True).split(': ')[1].strip(' ').split('.')[0])
 
             app.update_page('#spec-cpu-speed', 'html', str(cpu_speed) + ' MHz')
         except:
@@ -1315,14 +1312,14 @@ class SystemState(object):
                 dbg.stdout('Specs', 'Gathering Data: Storage', 1, 0)
                 ## Gather entire disk data
                 root_partition = self.run_external_command(['mount | grep "on / "'], True).split(' ')[0]
-                if root_partition[:-2] == "/dev/sd":            # /dev/sdXY
+                if root_partition[:-2] == "/dev/sd":  # /dev/sdXY
                     root_dev = root_partition[:-1]
-                if root_partition[:-2] == "/dev/hd":            # /dev/hdXY
+                if root_partition[:-2] == "/dev/hd":  # /dev/hdXY
                     root_dev = root_partition[:-1]
-                if root_partition[:-3] == "/dev/mmcblk":        # /dev/mmcblkXpY
+                if root_partition[:-3] == "/dev/mmcblk":  # /dev/mmcblkXpY
                     root_dev = root_partition[:-2]
                 else:
-                    root_dev = root_partition[:-1]              # Generic
+                    root_dev = root_partition[:-1]  # Generic
                 disk_dev_name = root_dev.split('/')[2]
                 dbg.stdout('Specs', 'Distribution is installed on disk: ' + root_dev, 1, 4)
                 rootfs = os.statvfs('/')
@@ -1333,70 +1330,78 @@ class SystemState(object):
                 entire_disk = int(entire_disk.split()[3])
 
                 ## Perform calculations across units
-                capacity_GB =   round(entire_disk/1000/1000/1000,1)
-                capacity_GiB =  round(entire_disk/1024/1024/1024,1)
-                allocated_GB =  round(root_size/1000/1000/1000,1)
-                allocated_GiB = round(root_size/1024/1024/1024,1)
-                used_GB =       round(root_used/1000/1000/1000,1)
-                used_GiB =      round(root_used/1024/1024/1024,1)
-                free_GB =       round(root_free/1000/1000/1000,1)
-                free_GiB =      round(root_free/1024/1024/1024,1)
-                other_GB =      round((entire_disk-root_size)/1000/1000/1000,1)
-                other_GiB =     round((entire_disk-root_size)/1024/1024/1024,1)
+                capacity_GB = round(entire_disk / 1000 / 1000 / 1000, 1)
+                capacity_GiB = round(entire_disk / 1024 / 1024 / 1024, 1)
+                allocated_GB = round(root_size / 1000 / 1000 / 1000, 1)
+                allocated_GiB = round(root_size / 1024 / 1024 / 1024, 1)
+                used_GB = round(root_used / 1000 / 1000 / 1000, 1)
+                used_GiB = round(root_used / 1024 / 1024 / 1024, 1)
+                free_GB = round(root_free / 1000 / 1000 / 1000, 1)
+                free_GiB = round(root_free / 1024 / 1024 / 1024, 1)
+                other_GB = round((entire_disk - root_size) / 1000 / 1000 / 1000, 1)
+                other_GiB = round((entire_disk - root_size) / 1024 / 1024 / 1024, 1)
 
                 # Show megabytes/mebibytes (in red) if gigabytes are too small.
                 if capacity_GB <= 1:
-                    capacity_GB = str(round(entire_disk/1000/1000,1)) + ' ' + mb_prefix
-                    capacity_GiB = str(round(entire_disk/1024/1024,1)) + ' ' + mib_prefix
+                    capacity_GB = str(round(entire_disk / 1000 / 1000, 1)) + ' ' + mb_prefix
+                    capacity_GiB = str(round(entire_disk / 1024 / 1024, 1)) + ' ' + mib_prefix
                 else:
                     capacity_GB = str(capacity_GB) + ' ' + gb_prefix
                     capacity_GiB = str(capacity_GiB) + ' ' + gib_prefix
 
                 if allocated_GB <= 1:
-                    allocated_GB =  str(round(root_size/1000/1000,1)) + ' ' + mb_prefix
-                    allocated_GiB = str(round(root_size/1024/1024,1)) + ' ' + mib_prefix
+                    allocated_GB = str(round(root_size / 1000 / 1000, 1)) + ' ' + mb_prefix
+                    allocated_GiB = str(round(root_size / 1024 / 1024, 1)) + ' ' + mib_prefix
                 else:
                     allocated_GB = str(allocated_GB) + ' ' + gb_prefix
                     allocated_GiB = str(allocated_GiB) + ' ' + gib_prefix
 
                 if used_GB <= 1:
-                    used_GB =  str(round(root_used/1000/1000,1)) + ' ' + mb_prefix
-                    used_GiB = str(round(root_used/1024/1024,1)) + ' ' + mib_prefix
+                    used_GB = str(round(root_used / 1000 / 1000, 1)) + ' ' + mb_prefix
+                    used_GiB = str(round(root_used / 1024 / 1024, 1)) + ' ' + mib_prefix
                 else:
                     used_GB = str(used_GB) + ' ' + gb_prefix
                     used_GiB = str(used_GiB) + ' ' + gib_prefix
 
                 if free_GB <= 1:
-                    free_GB =  str(round(root_free/1000/1000,1)) + ' ' + mb_prefix
-                    free_GiB = str(round(root_free/1024/1024,1)) + ' ' + mib_prefix
+                    free_GB = str(round(root_free / 1000 / 1000, 1)) + ' ' + mb_prefix
+                    free_GiB = str(round(root_free / 1024 / 1024, 1)) + ' ' + mib_prefix
                     app.update_page('#spec-free-space', 'addClass', 'specs-error')
                 else:
                     free_GB = str(free_GB) + ' ' + gb_prefix
                     free_GiB = str(free_GiB) + ' ' + gib_prefix
 
                 if other_GB <= 1:
-                    other_GB =  str(round((entire_disk-root_size)/1000/1000,1)) + ' ' + mb_prefix
-                    other_GiB = str(round((entire_disk-root_size)/1024/1024,1)) + ' ' + mib_prefix
+                    other_GB = str(round((entire_disk - root_size) / 1000 / 1000, 1)) + ' ' + mb_prefix
+                    other_GiB = str(round((entire_disk - root_size) / 1024 / 1024, 1)) + ' ' + mib_prefix
                 else:
                     other_GB = str(other_GB) + ' ' + gb_prefix
                     other_GiB = str(other_GiB) + ' ' + gib_prefix
 
                 ## Append data to HTML.
                 app.update_page('#spec-filesystem', 'html', root_partition)
-                app.update_page('#spec-capacity', 'html', capacity_GB + ' <span class=\'secondary-value\'>(' + capacity_GiB + ')</span>')
-                app.update_page('#spec-allocated-space', 'html',  allocated_GB + ' <span class=\'secondary-value\'>(' + allocated_GiB + ')</span>')
-                app.update_page('#spec-used-space', 'html', used_GB + ' <span class=\'secondary-value\'>(' + used_GiB + ')</span>')
-                app.update_page('#spec-free-space', 'html', free_GB + ' <span class=\'secondary-value\'>(' + free_GiB + ')</span>')
-                app.update_page('#spec-other-space', 'html', other_GB + ' <span class=\'secondary-value\'>(' + other_GiB + ')</span>')
+                app.update_page('#spec-capacity', 'html',
+                                capacity_GB + ' <span class=\'secondary-value\'>(' + capacity_GiB + ')</span>')
+                app.update_page('#spec-allocated-space', 'html',
+                                allocated_GB + ' <span class=\'secondary-value\'>(' + allocated_GiB + ')</span>')
+                app.update_page('#spec-used-space', 'html',
+                                used_GB + ' <span class=\'secondary-value\'>(' + used_GiB + ')</span>')
+                app.update_page('#spec-free-space', 'html',
+                                free_GB + ' <span class=\'secondary-value\'>(' + free_GiB + ')</span>')
+                app.update_page('#spec-other-space', 'html',
+                                other_GB + ' <span class=\'secondary-value\'>(' + other_GiB + ')</span>')
 
                 ## Calculate representation across physical disk
                 disk_percent_UM_used = int(round(root_used / entire_disk * 100)) * 2
                 disk_percent_UM_free = int(round(root_free / entire_disk * 100)) * 2
-                disk_percent_other   = (200 - disk_percent_UM_used - disk_percent_UM_free)
+                disk_percent_other = (200 - disk_percent_UM_used - disk_percent_UM_free)
                 dbg.stdout('Specs', ' Disk: ' + root_dev, 1, 4)
-                dbg.stdout('Specs', '  -- OS Used: ' + str(root_used) + ' bytes (' + str(disk_percent_UM_used/2) + '%)', 1, 4)
-                dbg.stdout('Specs', '  -- OS Free: ' + str(root_free) + ' bytes (' + str(disk_percent_UM_free/2) + '%)', 1, 4)
-                dbg.stdout('Specs', '  -- Other Partitions: ' + str(entire_disk - root_size) + ' bytes (' + str(disk_percent_other/2) + '%)', 1, 4)
+                dbg.stdout('Specs',
+                           '  -- OS Used: ' + str(root_used) + ' bytes (' + str(disk_percent_UM_used / 2) + '%)', 1, 4)
+                dbg.stdout('Specs',
+                           '  -- OS Free: ' + str(root_free) + ' bytes (' + str(disk_percent_UM_free / 2) + '%)', 1, 4)
+                dbg.stdout('Specs', '  -- Other Partitions: ' + str(entire_disk - root_size) + ' bytes (' + str(
+                    disk_percent_other / 2) + '%)', 1, 4)
 
                 app.update_page('#disk-used', 'width', str(disk_percent_UM_used) + 'px')
                 app.update_page('#disk-free', 'width', str(disk_percent_UM_free) + 'px')
@@ -1415,7 +1420,7 @@ class SystemState(object):
                 ram_xb = str(round(ram_bytes / 1000 / 1000, 1)) + ' ' + mb_prefix
                 ram_xib = str(round(ram_bytes / 1024 / 1024, 1)) + ' ' + mib_prefix
             else:
-                ram_xb =  str(round(ram_bytes / 1000 / 1000 / 1000, 1)) + ' ' + gb_prefix
+                ram_xb = str(round(ram_bytes / 1000 / 1000 / 1000, 1)) + ' ' + gb_prefix
                 ram_xib = str(round(ram_bytes / 1024 / 1024 / 1024, 1)) + ' ' + gib_prefix
             ram_string = ram_xb + ' <span class=\'secondary-value\'>(' + ram_xib + ')</span>'
             app.update_page('#spec-memory', 'html', ram_string)
@@ -1432,7 +1437,6 @@ class SystemState(object):
         else:
             app.update_page('#specs-has-net', 'hide')
             app.update_page('#specs-has-no-net', 'show')
-
 
         # Display UEFI/BIOS boot mode.
         if systemstate.arch == 'i386' or systemstate.arch == 'amd64':
@@ -1471,12 +1475,12 @@ class WelcomeApp(object):
             prepend = os.environ['SNAP']
         else:
             prepend = ''
-        if(os.path.exists(os.path.join(self._location, 'data/'))):
+        if (os.path.exists(os.path.join(self._location, 'data/'))):
             print('Using relative path for data source.\
                    Non-production testing.')
             self._data_path = os.path.join(self._location, 'data/')
             start_location = self._location + "/"
-        elif(os.path.exists(prepend + '/usr/share/budgie-welcome/')):
+        elif (os.path.exists(prepend + '/usr/share/budgie-welcome/')):
             self._data_path = prepend + '/usr/share/budgie-welcome/'
             start_location = prepend + '/usr/lib/budgie-welcome/'
         else:
@@ -1484,7 +1488,7 @@ class WelcomeApp(object):
             sys.exit(1)
 
         systemstate.first_run = self._check_first_run()
-        #systemstate.first_run = True
+        # systemstate.first_run = True
 
         self.json_path = self._data_path + "/config/packages.json"
 
@@ -1494,13 +1498,13 @@ class WelcomeApp(object):
             self._start_page = 'gettingstarted.html'
         else:
             self._start_page = 'index.html'
-            #self._start_page = 'firstrun.html'
+            # self._start_page = 'firstrun.html'
 
         self._build_app()
 
     def _build_app(self):
         # Load custom css for App
-        #self._load_css()
+        # self._load_css()
 
         # build window
         w = Gtk.Window()
@@ -1508,7 +1512,7 @@ class WelcomeApp(object):
         w.set_wmclass('budgie-welcome', _("Budgie Welcome"))
         w.set_title(_("Budgie Welcome"))
         w.set_default_size(992, 500)
-        #w.set_resizable(False)
+        # w.set_resizable(False)
 
         icon_dir = os.path.join(self._data_path, 'img', 'distro-icon.svg')
         w.set_icon_from_file(icon_dir)
@@ -1555,7 +1559,6 @@ class WelcomeApp(object):
 
         about_btn.connect("clicked", self._show_about)
         status_btn.connect("clicked", self._show_status)
-
 
         # load our index file
         file = os.path.abspath(os.path.join(translations.get_pages_path(), self._start_page))
@@ -1605,7 +1608,7 @@ class WelcomeApp(object):
     def _show_status(self, gtk_widget):
         self.webkit._do_command("status")
 
-    def close(self, p1 = None, p2 = None):
+    def close(self, p1=None, p2=None):
 
         pm.running = False
         # Reduce race condition as much as possible
@@ -1630,7 +1633,9 @@ class WelcomeApp(object):
         """ Runs a JavaScript jQuery function on the page,
             ensuring correctly parsed quotes. """
         if parm1 and parm2:
-            self.run_javascript('$("' + element + '").' + function + "('" + parm1.replace("'", '\\\'') + "', '" + parm2.replace("'", '\\\'') + "')")
+            self.run_javascript(
+                '$("' + element + '").' + function + "('" + parm1.replace("'", '\\\'') + "', '" + parm2.replace("'",
+                                                                                                                '\\\'') + "')")
         if parm1:
             self.run_javascript('$("' + element + '").' + function + "('" + parm1.replace("'", '\\\'') + "')")
         else:
@@ -1655,7 +1660,7 @@ class WelcomeApp(object):
         if os.path.exists(file) or systemstate.session_type == 'live':
             return False
 
-        #Remove autostart file on first run.
+        # Remove autostart file on first run.
         if os.path.exists(systemstate._autostart_path):
             os.remove(systemstate._autostart_path)
         systemstate.autostart = False
@@ -1666,22 +1671,22 @@ class WelcomeApp(object):
         # defining keys & strings to be used
         # params example 'open gedit' 'gedit' '<Alt>7'
         key = "org.gnome.settings-daemon.plugins.media-keys custom-keybindings"
-        subkey1 = key.replace(" ", ".")[:-1]+":"
-        item_s = "/"+key.replace(" ", "/").replace(".", "/")+"/"
+        subkey1 = key.replace(" ", ".")[:-1] + ":"
+        item_s = "/" + key.replace(" ", "/").replace(".", "/") + "/"
         firstname = "custom"
         # get the current list of custom shortcuts
         get = lambda cmd: subprocess.check_output(["/bin/bash", "-c", cmd]).decode("utf-8")
-        x = get("gsettings get "+key)
+        x = get("gsettings get " + key)
         if '@as []' in str(x):
-           current = []
+            current = []
         else:
-           current = eval(x)
+            current = eval(x)
         # make sure the additional keybinding mention is no duplicate
         n = 1
         while True:
-            new = item_s+firstname+str(n)+"/"
+            new = item_s + firstname + str(n) + "/"
             if new in current:
-                n = n+1
+                n = n + 1
             else:
                 break
 
@@ -1689,13 +1694,14 @@ class WelcomeApp(object):
             # add the new keybinding to the list
             current.append(new)
             # create the shortcut, set the name, command and shortcut key
-            cmd0 = 'gsettings set '+key+' "'+str(current)+'"'
-            cmd1 = 'gsettings set '+subkey1+new+" name '"+ name +"'"
-            cmd2 = 'gsettings set '+subkey1+new+" command '"+ command +"'"
-            cmd3 = 'gsettings set '+subkey1+new+" binding '"+ shortcut +"'"
+            cmd0 = 'gsettings set ' + key + ' "' + str(current) + '"'
+            cmd1 = 'gsettings set ' + subkey1 + new + " name '" + name + "'"
+            cmd2 = 'gsettings set ' + subkey1 + new + " command '" + command + "'"
+            cmd3 = 'gsettings set ' + subkey1 + new + " binding '" + shortcut + "'"
 
             for cmd in [cmd0, cmd1, cmd2, cmd3]:
                 subprocess.call(["/bin/bash", "-c", cmd])
+
 
 class Arguments(object):
     '''Check arguments passed the application.'''
@@ -1714,94 +1720,96 @@ class Arguments(object):
         self.jump_to = None
 
         for arg in sys.argv:
-          if arg == '--help' or arg == '-h':
-              print('\nWelcome App Parameters\n  Intended for debugging and testing purposes only!\n')
-              print('\nUsage: budgie-welcome [arguments]')
-              #     | Command                      | Help Text                                     |
-              print('  -d, --dev, --debug           Disables locales and is very verbose')
-              print('                               intended for development purposes.')
-              print('  --font-dpi=NUMBER            Adapt zoom setting based on DPI. Default 96.')
-              print('  -h, --help                   Show this help text.')
-              print('  --force-arch=ARCH            Simulate a specific architecture.')
-              print('                                -- Options: i386, amd64, armhf, powerpc')
-              print('  --force-codename=CODENAME    Simulate a specific release.')
-              print('                                -- Examples: trusty, wily, xenial')
-              print('  --force-net                  Simulate a working internet connection.')
-              print('  --force-no-net               Simulate no internet connection.')
-              print('  --force-session=TYPE         Simulate a specific architecture.')
-              print('  --force-release=VERSION      Simulate a specific ubuntu version')
-              print('                                -- Options: guest, live, pi, vbox')
-              print('  --jump-to=PAGE               Open a specific page, excluding *.html')
-              print('  --locale=CODE                Locale to use. e.g. fr_FR.')
-              print('  -v, --verbose                Show more details to stdout (for diagnosis).')
-              print('  -V, --version                Version information')
-              print('')
-              exit()
+            if arg == '--help' or arg == '-h':
+                print('\nWelcome App Parameters\n  Intended for debugging and testing purposes only!\n')
+                print('\nUsage: budgie-welcome [arguments]')
+                #     | Command                      | Help Text                                     |
+                print('  -d, --dev, --debug           Disables locales and is very verbose')
+                print('                               intended for development purposes.')
+                print('  --font-dpi=NUMBER            Adapt zoom setting based on DPI. Default 96.')
+                print('  -h, --help                   Show this help text.')
+                print('  --force-arch=ARCH            Simulate a specific architecture.')
+                print('                                -- Options: i386, amd64, armhf, powerpc')
+                print('  --force-codename=CODENAME    Simulate a specific release.')
+                print('                                -- Examples: trusty, wily, xenial')
+                print('  --force-net                  Simulate a working internet connection.')
+                print('  --force-no-net               Simulate no internet connection.')
+                print('  --force-session=TYPE         Simulate a specific architecture.')
+                print('  --force-release=VERSION      Simulate a specific ubuntu version')
+                print('                                -- Options: guest, live, pi, vbox')
+                print('  --jump-to=PAGE               Open a specific page, excluding *.html')
+                print('  --locale=CODE                Locale to use. e.g. fr_FR.')
+                print('  -v, --verbose                Show more details to stdout (for diagnosis).')
+                print('  -V, --version                Version information')
+                print('')
+                exit()
 
-          elif arg == '-V' or arg == '--version':
-              versions = find_app_version()
-              print("Budgie Welcome" + " " + versions[0] + "\n" + "Budgie Desktop" + " " + versions[1])
-              exit()
+            elif arg == '-V' or arg == '--version':
+                versions = find_app_version()
+                print("Budgie Welcome" + " " + versions[0] + "\n" + "Budgie Desktop" + " " + versions[1])
+                exit()
 
-          if arg == '--verbose' or arg == '-v':
-              dbg.stdout('Debug', 'Verbose mode enabled.', 0, 0)
-              dbg.verbose_level = 1
+            if arg == '--verbose' or arg == '-v':
+                dbg.stdout('Debug', 'Verbose mode enabled.', 0, 0)
+                dbg.verbose_level = 1
 
-          if arg.startswith('--force-arch'):
-              try:
-                  self.simulate_arch = arg.split('--force-arch=')[1]
-                  if not self.simulate_arch == 'i386' and not self.simulate_arch == 'amd64' and not self.simulate_arch == 'armhf' and not self.simulate_arch == 'powerpc':
-                      dbg.stdout('Debug', 'Unrecognised architecture: ' + self.simulate_arch, 0, 1)
-                      exit()
-                  else:
-                      dbg.stdout('Debug', 'Simulating architecture: ' + self.simulate_arch, 0, 0)
-              except:
-                  dbg.stdout('Debug', 'Invalid arguments for "--force-arch"', 0, 1)
-                  exit()
+            if arg.startswith('--force-arch'):
+                try:
+                    self.simulate_arch = arg.split('--force-arch=')[1]
+                    if not self.simulate_arch == 'i386' and not self.simulate_arch == 'amd64' and not self.simulate_arch == 'armhf' and not self.simulate_arch == 'powerpc':
+                        dbg.stdout('Debug', 'Unrecognised architecture: ' + self.simulate_arch, 0, 1)
+                        exit()
+                    else:
+                        dbg.stdout('Debug', 'Simulating architecture: ' + self.simulate_arch, 0, 0)
+                except:
+                    dbg.stdout('Debug', 'Invalid arguments for "--force-arch"', 0, 1)
+                    exit()
 
-          if arg.startswith('--force-session'):
-              try:
-                  self.simulate_session = arg.split('--force-session=')[1]
-                  if not self.simulate_session == 'normal' and not self.simulate_session == 'live':
-                      dbg.stdout('Debug', 'Unrecognised session type: ' + self.simulate_session, 0, 1)
-                      exit()
-                  else:
-                      dbg.stdout('Debug', 'Simulating session: ' + self.simulate_session, 0, 0)
-              except:
-                  dbg.stdout('Debug', 'Invalid arguments for "--force-session"', 0, 1)
-                  exit()
+            if arg.startswith('--force-session'):
+                try:
+                    self.simulate_session = arg.split('--force-session=')[1]
+                    if not self.simulate_session == 'normal' and not self.simulate_session == 'live':
+                        dbg.stdout('Debug', 'Unrecognised session type: ' + self.simulate_session, 0, 1)
+                        exit()
+                    else:
+                        dbg.stdout('Debug', 'Simulating session: ' + self.simulate_session, 0, 0)
+                except:
+                    dbg.stdout('Debug', 'Invalid arguments for "--force-session"', 0, 1)
+                    exit()
 
-          if arg.startswith('--force-codename'):
-              self.simulate_codename = arg.split('--force-codename=')[1]
-              dbg.stdout('Debug', 'Simulating Ubuntu release: ' + self.simulate_codename, 0, 0)
+            if arg.startswith('--force-codename'):
+                self.simulate_codename = arg.split('--force-codename=')[1]
+                dbg.stdout('Debug', 'Simulating Ubuntu release: ' + self.simulate_codename, 0, 0)
 
-          if arg.startswith('--force-release'):
-              try:
-                  self.simulate_version = arg.split('--force-release=')[1]
-              except:
-                  dbg.stdout('Debug', 'Invalid arguments for "--force-session"', 0, 1)
-                  exit()
+            if arg.startswith('--force-release'):
+                try:
+                    self.simulate_version = arg.split('--force-release=')[1]
+                except:
+                    dbg.stdout('Debug', 'Invalid arguments for "--force-session"', 0, 1)
+                    exit()
 
-          if arg == '--force-no-net':
-              dbg.stdout('Debug', 'Simulating the application without an internet connection.', 0, 0)
-              self.simulate_no_connection = True
+            if arg == '--force-no-net':
+                dbg.stdout('Debug', 'Simulating the application without an internet connection.', 0, 0)
+                self.simulate_no_connection = True
 
-          if arg == '--force-net':
-              dbg.stdout('Debug', 'Forcing the application to think we\'re connected with an internet connection.', 0, 0)
-              self.simulate_force_connection = True
+            if arg == '--force-net':
+                dbg.stdout('Debug', 'Forcing the application to think we\'re connected with an internet connection.', 0,
+                           0)
+                self.simulate_force_connection = True
 
-          if arg == '--dev' or arg == '--debug' or arg == '-d':
-              dbg.stdout('Debug', 'Running in debugging mode.', 0, 0)
-              dbg.verbose_level = 2
-              self.locale = 'null'
+            if arg == '--dev' or arg == '--debug' or arg == '-d':
+                dbg.stdout('Debug', 'Running in debugging mode.', 0, 0)
+                dbg.verbose_level = 2
+                self.locale = 'null'
 
-          if arg.startswith('--locale='):
-              self.locale = arg.split('--locale=')[1]
-              dbg.stdout('Debug', 'Setting locale to: ' + self.locale, 0, 0)
+            if arg.startswith('--locale='):
+                self.locale = arg.split('--locale=')[1]
+                dbg.stdout('Debug', 'Setting locale to: ' + self.locale, 0, 0)
 
-          if arg.startswith('--jump-to='):
-              self.jump_to = arg.split('--jump-to=')[1]
-              dbg.stdout('Debug', 'Opening page: ' + self.jump_to + '.html', 0, 0)
+            if arg.startswith('--jump-to='):
+                self.jump_to = arg.split('--jump-to=')[1]
+                dbg.stdout('Debug', 'Opening page: ' + self.jump_to + '.html', 0, 0)
+
 
 def find_app_version(cache=apt.Cache()):
     # Create a new cache, if it is not available. This happens
@@ -1913,6 +1921,7 @@ class Translations(object):
             dbg.stdout("i18n", "Locale Not Available: " + self.locale + " (using en_US instead)", 1, 1)
             return data_path
 
+
 def desktop_files():
     """ dummy function that is used by the translation system
         to capture the strings in the desktop/*.desktop files
@@ -1920,28 +1929,28 @@ def desktop_files():
         built with translated Names and Comments
     """
 
-    Name =      _("Budgie Welcome")
-    Comment =   _("Find out about your operating system")
+    Name = _("Budgie Welcome")
+    Comment = _("Find out about your operating system")
 
-    Name =      _("Budgie Themes")
-    Comment =   _("Give the desktop a makeover with new themes, icons and fonts")
+    Name = _("Budgie Themes")
+    Comment = _("Give the desktop a makeover with new themes, icons and fonts")
 
-    Name =      _("Budgie Applets")
-    Comment =   _("Customize the desktop panel with applets that provide extra capabilities")
+    Name = _("Budgie Applets")
+    Comment = _("Customize the desktop panel with applets that provide extra capabilities")
 
 
 def whereami():
     """ Determine data source """
-    current_folder = os.path.dirname( os.path.abspath(inspect.getfile(inspect.currentframe())) )
+    current_folder = os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))
     if 'SNAP' in os.environ:
         prepend = os.environ['SNAP']
     else:
         prepend = ''
 
-    if( os.path.exists( os.path.join(current_folder, 'data/' ) ) ):
+    if (os.path.exists(os.path.join(current_folder, 'data/'))):
         dbg.stdout('Welcome', 'Using relative path for data source. Non-production testing.', 1, 0)
         data_path = os.path.join(current_folder, 'data/')
-    elif( os.path.exists(prepend + '/usr/share/budgie-welcome/') ):
+    elif (os.path.exists(prepend + '/usr/share/budgie-welcome/')):
         dbg.stdout('Welcome', 'Using ' + prepend + '/usr/share/budgie-welcome/ path.', 1, 0)
         data_path = prepend + '/usr/share/budgie-welcome/'
     else:
@@ -1982,5 +1991,3 @@ if __name__ == "__main__":
 
     if getpass.getuser() != 'oem':
         app.run()
-
-
