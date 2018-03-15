@@ -198,6 +198,13 @@ class AppView(WebKit2.WebView):
                 app.update_page('.before1710', 'hide')
                 app.update_page('.1710', 'show')
 
+        if current_page == 'recommendations':
+            if systemstate.codename in ['xenial', 'artful']:
+                app.update_page('.before1804', 'show')
+            else:
+                app.update_page('.before1804', 'hide')
+
+
         if current_page == 'budgie-applets':
             # applets are distro specific so need to hide/show as appropriate
             package = app._data_path + "/config/packages.json"
