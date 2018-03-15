@@ -22,88 +22,74 @@ msgstr "تنظیمات پیشفرض"
 msgid "Switch Appearance"
 msgstr "تغییر ظاهر"
 
-#: default.html20, 227
+#: default.html20, 264
 msgid "Desktop Layout"
 msgstr "طرح میزکار"
 
 #: default.html:32
 msgid ""
-"<span name=\"distro-name\"></span> uses <strong>Arc</strong> as it's default"
-" theme package. It uses Arc theme for GTK windows, panels, login window and "
-"lock screen and <strong>Pocillo</strong> as the icon theme."
-msgstr ""
-"<span name=\"distro-name\"></span> از <strong>Arc</strong>به عنوان بسته تم "
-"پیشفرض استفاده میکند. از تم Arc برای پنجره های GTK، پنل ها، پنجره ورود، و "
-"صفحه قفل استفاده میشود، و برای آیکون ها از تم <strong>Pocillo</strong> "
-"استفاده شده است."
-
-#: default.html:35
-msgid ""
 "There are several additional Budgie Desktop compatible themes available. "
 "Budgie Welcome provides a simple method to switch your desktop appearance "
-"(theme, fonts, icons, desktop wallpaper) from the default Arc based package."
+"(theme, fonts, icons, desktop wallpaper)."
 msgstr ""
-"تم های زیادی سازگار با میزکار بادجی وجود دارد. صفحه خوش آمد گویی بادجی یک "
-"راه ساده برای تغییر ظاهر میزکار (تم، فونت، آیکون، صفحه زمینه) از بسته پیشفرض"
-" با پایه Arc فراهم میکند."
 
-#: default.html:43
-msgid "Arc Design"
-msgstr "طرح Arc"
-
-#: default.html49, 69, 89, 109, 129, 149, 169, 189, 209
+#: default.html46, 66, 86, 106, 126, 146, 166, 186, 206, 226, 246
 msgid "Install theme"
 msgstr "نصب تم"
 
-#: default.html53, 73, 93, 113, 133, 153, 173, 193, 213
+#: default.html50, 70, 90, 110, 130, 150, 170, 190, 210, 230, 250
 msgid "Apply theme"
 msgstr "اعمال تم"
 
-#: default.html58, 78, 98, 118, 138, 158, 178, 198, 218, 264
+#: default.html55, 75, 95, 115, 135, 155, 175, 195, 215, 235, 255, 301
 msgid "Applying Changes..."
 msgstr "اعمال تغییرات..."
 
-#: default.html:63
+#: default.html:60
+msgid "Arc Design"
+msgstr "طرح Arc"
+
+#: default.html:80
 msgid "Material Design (Adapta)"
 msgstr "طرح متریال (Adapta)"
 
-#: default.html:83
+#: default.html:100
 msgid "Material Design (Vimix)"
 msgstr "طرح متریال (Vimix)"
 
-#: default.html:103
+#: default.html:120
 msgid "Vertex Design"
 msgstr "طرح Vertex "
 
-#: default.html:123
+#: default.html:140
 msgid "Ceti-2 Design"
 msgstr "طرح Ceti-2"
 
-#: default.html:143
+#: default.html160, 180
 msgid "Material Design (Materia)"
 msgstr ""
 
-#: default.html:228
+#: default.html:265
 msgid "Switch the layout of your desktop to suit your workflow."
 msgstr "ظاهر میزکار خود را متناسب با کار خود تغییر بدهید."
 
-#: default.html:232
+#: default.html:269
 msgid "Default"
 msgstr "پیشفرض"
 
-#: default.html:236
+#: default.html:273
 msgid "Classic Budgie"
 msgstr "بادجی کلاسیک"
 
-#: default.html:248
+#: default.html:285
 msgid "Classic GNOME"
 msgstr "گنوم کلاسیک"
 
-#: default.html:257
+#: default.html:294
 msgid "Restore panels"
 msgstr "بازگرداندن پنل ها"
 
-#: default.html:258
+#: default.html:295
 msgid ""
 "Lost your panels while playing with <span name=\"distro-name\"></span>? "
 "Unhappy with your changes to the panel layout? Don't worry. We can help you "
@@ -113,7 +99,7 @@ msgstr ""
 "داده اید؟ از تغییرات ظاهر پنل ناراضی هستید؟! نگران نباشید. ما میتوانیم به "
 "شما برای بازگردانی پنل هایتان تنها با یک کلیک کمک کنیم."
 
-#: default.html:261
+#: default.html:298
 msgid ""
 "This will undo all changes that you have made on any panel and will reset "
 "back to the initial default panel layout configuration."
@@ -121,6 +107,6 @@ msgstr ""
 "این کار باعث بازگردانی تمامی تغییرات ایجاد شده در همه پنل ها و بازگردانی "
 "ظاهر پنل ها به پیکربندی پیشفرض میشود."
 
-#: default.html:265
+#: default.html:302
 msgid "Reset Budgie Panel"
 msgstr "بازنشانی پنل بادجی"

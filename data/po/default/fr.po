@@ -26,91 +26,76 @@ msgstr "Paramètres par défaut"
 msgid "Switch Appearance"
 msgstr "Changer d'apparence"
 
-#: default.html20, 227
+#: default.html20, 264
 msgid "Desktop Layout"
 msgstr "Disposition du bureau"
 
 #: default.html:32
 msgid ""
-"<span name=\"distro-name\"></span> uses <strong>Arc</strong> as it's default"
-" theme package. It uses Arc theme for GTK windows, panels, login window and "
-"lock screen and <strong>Pocillo</strong> as the icon theme."
-msgstr ""
-"<span name=\"distro-name\"></span> utilise le thème <strong>Arc</strong> par"
-" défaut. Arc est un thème GTK qui permet de personnaliser les fenêtres, "
-"menus, fenêtre de connexion et de verouillage, etc. Le thème des icônes est "
-"<strong>Pocillo</strong>."
-
-#: default.html:35
-msgid ""
 "There are several additional Budgie Desktop compatible themes available. "
 "Budgie Welcome provides a simple method to switch your desktop appearance "
-"(theme, fonts, icons, desktop wallpaper) from the default Arc based package."
+"(theme, fonts, icons, desktop wallpaper)."
 msgstr ""
-"Il y a plusieurs thèmes supplémentaire compatible avec l'environnement de "
-"bureau Budgie et disponible. Budgie Bienvenue vous permet de changer "
-"simplement l'apparence du bureau (thème, polices, icônes, fond d'écran) à "
-"partir du thème par défaut Arc."
 
-#: default.html:43
-msgid "Arc Design"
-msgstr "Thème Arc"
-
-#: default.html49, 69, 89, 109, 129, 149, 169, 189, 209
+#: default.html46, 66, 86, 106, 126, 146, 166, 186, 206, 226, 246
 msgid "Install theme"
 msgstr "Installer le thème"
 
-#: default.html53, 73, 93, 113, 133, 153, 173, 193, 213
+#: default.html50, 70, 90, 110, 130, 150, 170, 190, 210, 230, 250
 msgid "Apply theme"
 msgstr "Appliquer le thème"
 
-#: default.html58, 78, 98, 118, 138, 158, 178, 198, 218, 264
+#: default.html55, 75, 95, 115, 135, 155, 175, 195, 215, 235, 255, 301
 msgid "Applying Changes..."
 msgstr "Application des changements..."
 
-#: default.html:63
+#: default.html:60
+msgid "Arc Design"
+msgstr "Thème Arc"
+
+#: default.html:80
 msgid "Material Design (Adapta)"
 msgstr "Thème Material (Adapta)"
 
-#: default.html:83
+#: default.html:100
 msgid "Material Design (Vimix)"
 msgstr "Thème Material (Vimix)"
 
-#: default.html:103
+#: default.html:120
 msgid "Vertex Design"
 msgstr "Thème Vertex"
 
-#: default.html:123
+#: default.html:140
 msgid "Ceti-2 Design"
 msgstr "Thème Ceti-2"
 
-#: default.html:143
+#: default.html160, 180
 msgid "Material Design (Materia)"
 msgstr "Material Design (Materia)"
 
-#: default.html:228
+#: default.html:265
 msgid "Switch the layout of your desktop to suit your workflow."
 msgstr ""
 "Changer la disposition de votre bureau pour aller avec votre flux de "
 "travaux."
 
-#: default.html:232
+#: default.html:269
 msgid "Default"
 msgstr "Défaut"
 
-#: default.html:236
+#: default.html:273
 msgid "Classic Budgie"
 msgstr "Budgie Classique"
 
-#: default.html:248
+#: default.html:285
 msgid "Classic GNOME"
 msgstr "GNOME Classique"
 
-#: default.html:257
+#: default.html:294
 msgid "Restore panels"
 msgstr "Restaurer les menus"
 
-#: default.html:258
+#: default.html:295
 msgid ""
 "Lost your panels while playing with <span name=\"distro-name\"></span>? "
 "Unhappy with your changes to the panel layout? Don't worry. We can help you "
@@ -120,7 +105,7 @@ msgstr ""
 "name\"></span> ? Vous n'êtes pas satisfait des modifications réalisées ? Ne "
 "vous inquiétez pas. Vous pouvez restaurer tous vos menus en un seul clic !"
 
-#: default.html:261
+#: default.html:298
 msgid ""
 "This will undo all changes that you have made on any panel and will reset "
 "back to the initial default panel layout configuration."
@@ -128,6 +113,6 @@ msgstr ""
 "Cela va annuler toutes les modifications effectuées sur tous les panels et "
 "va réinitialiser leur configuration à leur état initial."
 
-#: default.html:265
+#: default.html:302
 msgid "Reset Budgie Panel"
 msgstr "Réinitialiser le menu Budgie"
