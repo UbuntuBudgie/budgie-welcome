@@ -2,6 +2,7 @@
 # Cédric Fouétillou <cfouetillou@me.com>, 2017
 # Emmanuel Hermellin <hermellin@lirmm.fr>, 2017
 # David Mohammed <fossfreedom@ubuntu.com>, 2017
+# Guillaume Fayard <guillaume2.fayard@wanadoo.fr>, 2017
 # Jean-Charles SPOR <jean-charles.spor@hotmail.fr>, 2017
 # Scott <theatlantis394@gmail.com>, 2017
 # Jean-Elie ARGYRE <remy.argyre@gmail.com>, 2017
@@ -40,7 +41,7 @@ msgstr "Préparation de l&#39;installation"
 
 #: gettingstarted.html30, 187, 197
 msgid "Dual Booting"
-msgstr "Double boot"
+msgstr "Dual boot"
 
 #: gettingstarted.html:33
 msgid "Install Now"
@@ -176,7 +177,7 @@ msgstr ""
 
 #: gettingstarted.html:130
 msgid "For the best results:"
-msgstr "Pour les meilleurs résultats:"
+msgstr "Pour de meilleurs résultats :"
 
 #: gettingstarted.html:132
 msgid "<u><b>Back up</b></u> any important data to another storage device."
@@ -188,13 +189,13 @@ msgid ""
 "Connect to the Internet to install all available updates during "
 "installation."
 msgstr ""
-"Connectez vous à Internet pour installer toutes les mises à jour disponibles"
+"Connectez vous à internet pour installer toutes les mises à jour disponibles"
 " durant l'installation."
 
 #: gettingstarted.html:134
 msgid "Stay connected to the Internet to install all available updates."
 msgstr ""
-"Restez connecté à Internet pour installer toutes les mises à jour "
+"Restez connecté à internet pour installer toutes les mises à jour "
 "disponibles."
 
 #: gettingstarted.html:135
@@ -246,12 +247,12 @@ msgid ""
 "operating system installed in BIOS mode after installing a UEFI-enabled "
 "operating system or vice versa."
 msgstr ""
-"Il est très important de démarrer l'ordinateur et de booter sur le système "
-"d'exploitation en utilisant les bons modes, surtout lorsque l'on utilise un "
-"double boot. Ainsi, il est recommandé d'utiliser <b> l'image 64-bits </b>.  "
-"Il également savoir qu'il n'est pas possible de booter sur un système "
-"d'exploitation installé en mode BIOS après avoir installé un système "
-"d'exploitation en mode UEFI et vice versa."
+"Il est très important de démarrer le système d'exploitation en utilisant le "
+"bon mode, surtout lorsque l'on utilise un dual boot. Ainsi, il est "
+"recommandé d'utiliser <b> l'image 64-bits </b>.  Il faut également savoir "
+"qu'il n'est pas possible de démarrer sur un système d'exploitation installé "
+"en mode BIOS après avoir installé un système d'exploitation en mode UEFI et "
+"vice-versa."
 
 #: gettingstarted.html:161
 msgid ""
@@ -312,7 +313,7 @@ msgstr ""
 
 #: gettingstarted.html185, 363, 659, 1264
 msgid "Previous:"
-msgstr "Précédent:"
+msgstr "Précédent :"
 
 #: gettingstarted.html:198
 msgid ""
@@ -328,15 +329,15 @@ msgstr ""
 
 #: gettingstarted.html:204
 msgid "I'm dual booting with"
-msgstr "J'utilise un double boot avec"
+msgstr "J'utilise un dual boot avec"
 
 #: gettingstarted.html:207
 msgid "To minimize the risk of data loss or failure, ensure that:"
-msgstr "Afin de minimiser les risques pour vos données, assurez vous que:"
+msgstr "Afin de minimiser les risques pour vos données, assurez vous que :"
 
 #: gettingstarted.html:209
 msgid "There is enough free space. 10 GB minimum is recommended."
-msgstr "L'espace libre est suffisant. Un minimum de 10GB est recommandé."
+msgstr "L'espace libre est suffisant. Un minimum de 10 GB est recommandé."
 
 #: gettingstarted.html:210
 msgid "<b><u>Back up</u></b> important data to another drive."
@@ -352,7 +353,7 @@ msgstr "Windows a bien été arrêté correctement (pas d'hibernation)."
 
 #: gettingstarted.html:216
 msgid "Which approach would you prefer?"
-msgstr "Quel approche préférez vous?"
+msgstr "Quelle approche préférez vous?"
 
 #: gettingstarted.html:218
 msgid "Simple"
@@ -375,16 +376,16 @@ msgid ""
 "The installer scans your disks for existing operating systems and provides a"
 " choice on what you'd like to do."
 msgstr ""
-"Le programme d'installation scanne vos disques pour les systèmes "
+"Le programme d'installation scanne vos disques pour détecter les systèmes "
 "d'exploitation existants et offre un choix sur ce que vous souhaitez faire."
 
 #: gettingstarted.html:230
 msgid "You will see an option similar to this:"
-msgstr "Vous verrez une option similaire à celle-ci:"
+msgstr "Vous verrez une option similaire à celle-ci :"
 
 #: gettingstarted.html:234
 msgid "Followed by:"
-msgstr "Suivi par:"
+msgstr "Suivi par :"
 
 #: gettingstarted.html:240
 msgid "Do not interrupt or power off the computer during a resize operation."
@@ -416,7 +417,7 @@ msgid ""
 "command prompt to check the file system for errors. Windows may schedule "
 "this automatically. This ensures consistency for the NTFS file system."
 msgstr ""
-"<b>La prochaine fois que vous démarrerai sur Windows, exécutez</b> "
+"<b>La prochaine fois que vous démarrerez sur Windows, exécutez</b> "
 "<code>chkdsk /f</code> dans une console de commande afin de vérifier "
 "l’existence d'erreurs dans le système de fichier. Windows pourrait le faire "
 "automatiquement. Cela garantira la cohérence pour le système de fichier "
@@ -468,7 +469,7 @@ msgid ""
 " choose mount points. Dividing your disks can make it somewhat easier to re-"
 "install the operating system later if desired."
 msgstr ""
-"A la place ou en plus de GParted, les options <b>Avancees</b> pendant "
+"A la place ou en plus de GParted, les options <b>Avancées</b> pendant "
 "l'assistant d'installation permettent de configurer et redimensionner  vos "
 "partitions ainsi que de choisir le point de montage. Partager vos disques "
 "rend plus facile la réinstallation d'un système d'exploitation plus tard si "
@@ -1133,6 +1134,8 @@ msgid ""
 "Nothing is more important than having a backup of your personal files, just "
 "in case something disastrous happens to your computer."
 msgstr ""
+"Rien n'est plus important que de sauvegarder vos fichiers personnels, juste "
+"au cas où quelque chose de grave arrive à votre ordinateur."
 
 #: gettingstarted.html:686
 msgid ""
@@ -1229,6 +1232,9 @@ msgid ""
 "<b>Users</b> can be found later in the menu <b><i>Administration <i class"
 "=\"material-icons\">&#xE315;</i> Users</i></b>."
 msgstr ""
+"<b>Les utilisateurs</b> peuvent être modifiés plus tard dans "
+"<b><i>Paramètres <i class=\"material-"
+"icons\">&#xE315;</i>Utilisateurs</i></b>."
 
 #: gettingstarted.html:770
 msgid ""
@@ -1307,13 +1313,15 @@ msgstr ""
 
 #: gettingstarted.html:868
 msgid "Budgie Desktop Settings"
-msgstr ""
+msgstr "Paramètres du bureau Budgie"
 
 #: gettingstarted.html:871
 msgid ""
 "<b>Budgie Desktop Settings</b> can be found later in the menu <b>System "
 "Tools</b>."
 msgstr ""
+"<b>Paramètres du bureau Budgie</b> se trouvent dans le menu <b>Outils "
+"Système</b>."
 
 #: gettingstarted.html875, 880
 msgid "Settings"
@@ -1611,15 +1619,15 @@ msgstr "Rassemblement d'informations..."
 
 #: gettingstarted.html:1292
 msgid "System"
-msgstr "Système:"
+msgstr "Système :"
 
 #: gettingstarted.html:1295
 msgid "Distribution:"
-msgstr "Distribution:"
+msgstr "Distribution :"
 
 #: gettingstarted.html:1299
 msgid "Kernel:"
-msgstr "Noyau:"
+msgstr "Noyau :"
 
 #: gettingstarted.html:1302
 msgid "The Linux kernel is the heart of Ubuntu."
@@ -1627,11 +1635,11 @@ msgstr "Le noyau Linux est le cœur d'Ubuntu."
 
 #: gettingstarted.html:1308
 msgid "Motherboard:"
-msgstr "Carte mère:"
+msgstr "Carte mère :"
 
 #: gettingstarted.html:1312
 msgid "Boot Mode:"
-msgstr "Mode de démarrage:"
+msgstr "Mode de démarrage :"
 
 #: gettingstarted.html:1315
 msgid "Displays the mode that OS is communicating with the firmware."
@@ -1645,15 +1653,15 @@ msgstr "Processeur"
 
 #: gettingstarted.html:1326
 msgid "Model:"
-msgstr "Modèle:"
+msgstr "Modèle :"
 
 #: gettingstarted.html:1330
 msgid "Speed:"
-msgstr "Vitesse:"
+msgstr "Vitesse :"
 
 #: gettingstarted.html:1334
 msgid "Architecture in use:"
-msgstr "Architecture utilisée:"
+msgstr "Architecture utilisée :"
 
 #: gettingstarted.html:1337
 msgid ""
@@ -1676,7 +1684,7 @@ msgstr "Composants"
 
 #: gettingstarted.html:1357
 msgid "Memory (RAM):"
-msgstr "Mémoire (RAM):"
+msgstr "Mémoire (RAM) :"
 
 #: gettingstarted.html:1360
 msgid "More RAM allows more applications to run simultaneously."
@@ -1684,11 +1692,11 @@ msgstr "Plus de RAM permet d'utiliser plus d'applications simultanément."
 
 #: gettingstarted.html:1366
 msgid "Graphics:"
-msgstr "Graphismes:"
+msgstr "Graphismes :"
 
 #: gettingstarted.html:1370
 msgid "Internet Access:"
-msgstr "Accès internet:"
+msgstr "Accès internet :"
 
 #: gettingstarted.html:1372
 msgid "Connected"
@@ -1704,7 +1712,7 @@ msgstr "Stockage"
 
 #: gettingstarted.html:1384
 msgid "Root File System:"
-msgstr "Partition racine:"
+msgstr "Partition racine :"
 
 #: gettingstarted.html:1387
 msgid "The file system where OS is installed."
@@ -1712,7 +1720,7 @@ msgstr "La partition où est installé le système d'exploitation."
 
 #: gettingstarted.html:1393
 msgid "Entire Disk Capacity:"
-msgstr "Capacité totale du disque:"
+msgstr "Capacité totale du disque :"
 
 #: gettingstarted.html:1398
 msgid "OS Usage"
@@ -1724,7 +1732,7 @@ msgstr "Autre utilisation:"
 
 #: gettingstarted.html:1407
 msgid "Allocated for <span name=\"distro-name\"></span>:"
-msgstr "Alloué pour <span name=\"distro-name\"></span>:"
+msgstr "Alloué pour <span name=\"distro-name\"></span> :"
 
 #: gettingstarted.html:1410
 msgid "The size of your operating system partition."
@@ -1732,15 +1740,15 @@ msgstr "Taille de la partition de votre système d'exploitation."
 
 #: gettingstarted.html:1416
 msgid "Used Space:"
-msgstr "Espace utilisé:"
+msgstr "Espace utilisé :"
 
 #: gettingstarted.html:1422
 msgid "Free Space:"
-msgstr "Espace libre:"
+msgstr "Espace libre :"
 
 #: gettingstarted.html:1428
 msgid "Other Usage:"
-msgstr "Autre utilisation:"
+msgstr "Autre utilisation :"
 
 #: gettingstarted.html:1431
 msgid "Reserved by system, other partitions, unallocated or swap."
