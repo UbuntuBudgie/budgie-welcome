@@ -165,7 +165,9 @@
     "flatpak" : {
       "packages" : ["flatpak", "xdg-desktop-portal-gtk", "gnome-software-plugin-flatpak"],
       "repos" : {
-        "xenial" : ["ppa:alexlarsson/flatpak"]
+        "xenial" : ["ppa:alexlarsson/flatpak"],
+	"artful" : ["universe"],
+	"bionic" : ["universe"]
       }
     },
     "skippy-xd" : {
