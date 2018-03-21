@@ -415,42 +415,19 @@ class AppView(WebKit2.WebView):
             code = uri[6:]
             panelstyle = os.path.expanduser('~') + "/.config/gtk-3.0/gtk.css"
 
-            if code == "undo":
-                theme = localdir + '/style-backup.json'
-            else:
-                theme = app._data_path + "/config/" + code + "-style.json"
+            theme = app._data_path + "/config/" + code + "-style.json"
 
             def applyStyle():
                 with open(theme) as file:
                     config = json.load(file)
 
-                # Create backup file if it does not exist
-                backup = localdir + '/style-backup.json'
-                if code != "undo" and not os.path.isfile(backup):
-                    data = []
-                    for item in config:
-                        schema = item["SCHEMA"]
-                        values = item["VALUES"]
-
-                        gsettings = Gio.Settings.new(schema)
-
-                        coll = {}
-                        vals = {}
-
-                        for key in values:
-                            vals[key] = gsettings.get_value(key).unpack()
-
-                        coll["SCHEMA"] = schema
-                        coll["VALUES"] = vals
-                        data.append(coll)
-
-                    with open(backup, "w") as file:
-                        file.write(json.dumps(data))
-
-                    if os.path.isfile(panelstyle):
-                        shutil.move(panelstyle, localdir + '/gtk.css')
-
+                attrib = None
+                
                 for item in config:
+                    if "panel-attrib" in item:
+                        attrib = item["panel-attrib"]
+                        continue
+                        
                     schema = item["SCHEMA"]
                     values = item["VALUES"]
 
@@ -462,58 +439,15 @@ class AppView(WebKit2.WebView):
                         else:
                             gsettings.set_string(key, value)
 
-                if code == "undo":
-                    # Delete backup file
-                    if os.path.isfile(localdir + '/gtk.css'):
-                        shutil.move(localdir + '/gtk.css', panelstyle)
-
-                    os.remove(theme)
-
-                if code == "material":
-                    self._set_panel_key('enable-shadow', False)
-                    self._set_panel_key('size', 37)
-
-                if code == "vertex":
-                    self._set_panel_key('enable-shadow', False)
-                    self._set_panel_key('size', 51)
-
-                if code == "ceti-2":
-                    self._set_panel_key('enable-shadow', False)
-                    self._set_panel_key('size', 40)
-
-                if code == 'material-flat-plat':
-                    self._set_panel_key('size', 47)
-
-                if code == 'evopop':
-                    self._set_panel_key('enable-shadow', False)
-                    self._set_panel_key('size', 39)
-
-                def removepanelstyle():
-                    # Don't allow theme over writing
-                    try:
-                        os.remove(panelstyle)
-                    except:
-                        pass
-
-                if code == "material-vimix":
-                    self._set_panel_key('enable-shadow', False)
-                    self._set_panel_key('size', 37)
-
-                    removepanelstyle()
-
-                if code in ["arc", "pocillo"]:
+                if attrib:                    
+                    self._set_panel_key('enable-shadow', attrib['enable-shadow'])
+                    self._set_panel_key('size', attrib['size'])
+                    self._set_panel_key('transparency', attrib['transparency'])
+                else:
+                    # sane defaults
                     self._set_panel_key('enable-shadow', True)
-                    self._set_panel_key('size', 39)
-
-                    removepanelstyle()
-
-                if code == "pop":
-                    self._set_panel_key('enable-shadow', False)
                     self._set_panel_key('size', 37)
-
-                if code == "ant":
-                    self._set_panel_key('enable-shadow', True)
-                    self._set_panel_key('size', 39)
+                    self._set_panel_key('transparency', None)
 
                 subprocess.Popen(['budgie-panel', '--replace', '&'])
 

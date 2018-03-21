@@ -1,9 +1,16 @@
 [
   {
+      "panel-attrib" : {
+        "enable-shadow": true,
+        "size" : 39,
+        "transparency": "none"
+    }
+  },
+  {
     "SCHEMA": "org.gnome.desktop.interface",
     "VALUES": {
       "cursor-theme": "Paper",
-      "gtk-theme": "VimixDark",
+      "gtk-theme": "Vimix",
       "icon-theme": "Paper",
       "monospace-font-name": "Noto Mono 11",
       "font-name": "Noto Sans UI 11",
