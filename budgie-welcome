@@ -1784,7 +1784,10 @@ class Translations(object):
         if arg.locale:
             self.locale = arg.locale
         else:
-            self.locale = str(locale.getlocale()[0])
+            try:
+              self.locale = str(locale.getlocale()[0])
+            except ValueError:
+              self.locale = "en_US"
 
         self.pages_dir = self.get_pages_path()
         # Should this locale not exist, try a non-specific region. (e.g. "en_GB" → "en")
