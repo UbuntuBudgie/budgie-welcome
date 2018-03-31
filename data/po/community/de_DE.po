@@ -2,12 +2,13 @@
 # Carsten <huti1990@gmail.com>, 2017
 # Bernhard Keppner <bernhard.keppner@gmail.com>, 2017
 # Pad Padington <diecolabuechse@gmail.com>, 2017
+# Vinzenz Vietzke <vv@tuxedocomputers.com>, 2018
 msgid ""
 msgstr ""
 "Project-Id-Version: Budgie Welcome\n"
 "POT-Creation-Date: 2016-02-27 12:48+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Pad Padington <diecolabuechse@gmail.com>, 2017\n"
+"Last-Translator: Vinzenz Vietzke <vv@tuxedocomputers.com>, 2018\n"
 "Language-Team: German (Germany) (https://www.transifex.com/ubuntu-budgie/teams/72251/de_DE/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -21,23 +22,21 @@ msgid "Community"
 msgstr "Community"
 
 #: community.html:18
-msgid "Chat Rooms"
-msgstr "Chat­rooms"
+msgid "Get Support"
+msgstr "Hilfe erhalten"
 
 #: community.html:19
 msgid ""
-"To play an active role and help shape the direction of <span name=\"distro-"
-"name\"></span>, the <span name=\"distro-name\"></span> chat room is the best"
-" place to go. From here, you can talk with the <span name=\"distro-"
-"name\"></span> team and other members of our growing community."
+"To get support for <span name=\"distro-name\"></span> specific issues, the "
+"<span name=\"distro-name\"></span> Discourse website is the best place to "
+"go. You can raise issues and help other members of our growing community."
 msgstr ""
-"Um eine aktive Rolle zu übernehmen und dabei zu helfen die Entwicklung von "
-"<span name=\"distro-name\"></span> mitzugestalten, ist der <span name"
-"=\"distro-name\"></span> Chat­room der beste Ort. Dort können Sie mit dem "
-"<span name=\"distro-name\"></span> Team und anderen Mitgliedern unserer "
-"wachsenden Gemeinschaft Kontakt aufnehmen."
+"Um Unterstützung für <span name=\"distro-name\"></span> bestimmte Themen zu "
+"erhalten, ist die <span name=\"distro-name\"></span> Discourse-Website die "
+"beste Anlaufstelle. Sie können Probleme ansprechen und anderen Mitgliedern "
+"unserer wachsenden Gemeinschaft helfen."
 
-#: community.html:23
+#: community.html:21
 msgid ""
 "It appears you are not connected to the Internet. Please check your "
 "connection to access this content."
@@ -45,29 +44,25 @@ msgstr ""
 "Es scheint, dass Sie nicht mit dem Internet verbunden sind. Bitte überprüfen"
 " Sie Ihre Verbindung, um auf diesen Inhalt zuzugreifen."
 
-#: community.html:24
+#: community.html:22
 msgid "Sorry, Welcome was unable to establish a connection."
 msgstr ""
 "Es tut uns Leid, es konnte keine Verbindung mit dem Internet hergestellt "
 "werden."
 
-#: community.html:25
+#: community.html:23
 msgid "Retry"
 msgstr "Erneut versuchen"
 
-#: community.html:29
-msgid "Chat Room"
-msgstr "Chatroom"
+#: community.html:31
+msgid ""
+"An alternative way to get in touch is via our official IRC (Internet Relay "
+"Chat) channel."
+msgstr ""
+"Eine alternative Möglichkeit der Kontaktaufnahme ist unser offizieller IRC-"
+"Kanal (Internet Relay Chat)."
 
 #: community.html:33
-msgid ""
-"An alternative way is to get in touch with us via the official IRC (Internet"
-" Relay Chat) channel."
-msgstr ""
-"Sie können auch über unseren offiziellen IRC (Internet Relay Chat) Channel "
-"mit uns Kontakt aufnehmen."
-
-#: community.html:35
 msgid ""
 "If you disconnect from the channel you will not receive a notification of "
 "any reply. So either leave an IRC session open - or we recommend connecting "
@@ -77,27 +72,27 @@ msgstr ""
 "Benachrichtigung über neue Nachrichten. Lassen Sie entweder die Chatsitzung "
 "offen oder verbinden Sie sich über einen IRC Bouncer."
 
-#: community.html:40
+#: community.html:38
 msgid "#Ubuntu-Budgie on FreeNode"
 msgstr "#Ubuntu-Budgie auf FreeNode"
 
-#: community.html:48
+#: community.html:46
 msgid "Forum"
 msgstr "Forum"
 
-#: community.html:49
+#: community.html:47
 msgid ""
-"You can also get in touch with <span name=\"distro-name\"></span> through "
-"official Ubuntu forums."
+"You can also get support for <span name=\"distro-name\"></span> through "
+"these official Ubuntu forums:"
 msgstr ""
-"Sie können auch mit <span name=\"distro-name\"></span> Kontakt aufnehmen "
-"indem Sie die offiziellen Ubuntu Foren besuchen."
+"Sie können auch Hilfe für <span name=\"distro-name\"></span> in diesen "
+"offiziellen Ubuntu-Foren bekommen:"
 
-#: community.html:59
+#: community.html:57
 msgid "Social Networks"
 msgstr "Soziale Netzwerke"
 
-#: community.html:60
+#: community.html:58
 msgid ""
 "<span name=\"distro-name\"></span> is active on the following social "
 "networks."
@@ -105,31 +100,27 @@ msgstr ""
 "<span name=\"distro-name\"></span> ist bei den folgenden sozialen Netzwerken"
 " aktiv."
 
-#: community.html:69
+#: community.html:67
 msgid "G+ Community"
 msgstr "G+ Community"
 
-#: community.html:72
+#: community.html:70
 msgid "G+ Page"
 msgstr "G+ Seite"
 
-#: community.html:82
+#: community.html:80
 msgid "Facebook Group"
 msgstr "Facebook Gruppe"
 
-#: community.html:85
+#: community.html:83
 msgid "Facebook Page"
 msgstr "Facebook Seite"
 
-#: community.html:105
-msgid "Gitter Chat Room"
-msgstr "Gitter Chat­room"
-
-#: community.html:134
+#: community.html:122
 msgid "Local Communities"
 msgstr "Lokale Gemeinschaften"
 
-#: community.html:135
+#: community.html:123
 msgid ""
 "In addition to global communities, <span name=\"distro-name\"></span> also "
 "encourages local communities to support users coming from diverse "
@@ -146,6 +137,6 @@ msgstr ""
 "mit. Wir werden diese hier aufnehmen und dadurch die Erreichbarkeit "
 "verbessern."
 
-#: community.html149, 157
+#: community.html137, 145
 msgid "Ubuntu Budgie Brasil"
 msgstr "Ubuntu Budgie Brasilien"
