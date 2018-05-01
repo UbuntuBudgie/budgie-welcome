@@ -1,36 +1,34 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR ORGANIZATION
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 # Translators:
 # Moo, 2017
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2018-03-31 00:13+BST\n"
+"POT-Creation-Date: 2018-03-19 23:08+GMT\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Moo, 2017\n"
-"Language-Team: Lithuanian (https://www.transifex.com/ubuntu-budgie/"
-"teams/72251/lt/)\n"
-"Language: lt\n"
+"Language-Team: Lithuanian (https://www.transifex.com/ubuntu-budgie/teams/72251/lt/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: ENCODING\n"
 "Generated-By: pygettext.py 1.5\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && (n"
-"%100<10 || n%100>=20) ? 1 : 2);\n"
+"Language: lt\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
 #: budgie-welcome:314
 msgid ""
 "Steam is a third party package that requires user approval of EULA(End User "
-"License Agreement). So we rely on GNOME Software for installing steam and it "
-"is not available in your system. Please install GNOME Software and try this "
-"option again"
+"License Agreement). So we rely on GNOME Software for installing steam and it"
+" is not available in your system. Please install GNOME Software and try this"
+" option again"
 msgstr ""
-"Steam yra trečiųjų šalių paketas, reikalaujantis, kad naudotojas patvirtintų "
-"GVLS (Galutinio Vartotojo Licencijos Sutartį). Taigi, mes patikime Steam "
-"įdiegimą GNOME programinei įrangai, tačiau ji jūsų sistemoje nėra prieinama. "
-"Įdiekite GNOME programinę įrangą ir bandykite šį parametrą dar kartą"
+"Steam yra trečiųjų šalių paketas, reikalaujantis, kad naudotojas patvirtintų"
+" GVLS (Galutinio Vartotojo Licencijos Sutartį). Taigi, mes patikime Steam "
+"įdiegimą GNOME programinei įrangai, tačiau ji jūsų sistemoje nėra prieinama."
+" Įdiekite GNOME programinę įrangą ir bandykite šį parametrą dar kartą"
 
 #: budgie-welcome:406
 msgid ""
@@ -39,30 +37,30 @@ msgid ""
 "message"
 msgstr ""
 "Atrodo, kad GNOME programinė įranga nėra įdiegta. Jei ši problema išlieka, "
-"netgi įdiegus GNOME programinę įrangą, tuomet susisiekite su mumis naudojant "
-"šį klaidos pranešimą"
+"netgi įdiegus GNOME programinę įrangą, tuomet susisiekite su mumis naudojant"
+" šį klaidos pranešimą"
 
-#: budgie-welcome:475
+#: budgie-welcome:541
 msgid "Following tasks are in progress"
 msgstr "Šios užduotys yra eigoje"
 
-#: budgie-welcome:481 budgie-welcome:1453 budgie-welcome:1454
-#: budgie-welcome:1462 budgie-welcome:1876
+#: budgie-welcome:547 budgie-welcome:1519 budgie-welcome:1520
+#: budgie-welcome:1528 budgie-welcome:1939
 msgid "Budgie Welcome"
 msgstr "Budgie Sveiki"
 
-#: budgie-welcome:485
+#: budgie-welcome:551
 msgid "Budgie Desktop"
 msgstr "Budgie darbalaukis"
 
-#: budgie-welcome:566
+#: budgie-welcome:632
 msgid ""
 "The following third-party repositories need to be added to complete the "
 "installation:"
 msgstr ""
 "Norint užbaigti diegimą, turi būti pridėtos šios trečiųjų šalių saugyklos:"
 
-#: budgie-welcome:593
+#: budgie-welcome:659
 msgid ""
 "Third-Party repositories are not supported by Ubuntu. You should only "
 "continue if you trust the maintainers of the proposed repositories."
@@ -70,63 +68,63 @@ msgstr ""
 "Ubuntu nepalaiko trečiųjų šalių saugyklas. Jūs turėtumėte tęsti tik tuo "
 "atveju, jeigu pasitikite siūlomų saugyklų prižiūrėtojais."
 
-#: budgie-welcome:596
+#: budgie-welcome:662
 msgid "Continue with the installation?"
 msgstr "Tęsti diegimą?"
 
-#: budgie-welcome:602
+#: budgie-welcome:668
 msgid "Third-Party Repositories"
 msgstr "Trečiųjų šalių saugyklos"
 
-#: budgie-welcome:863
+#: budgie-welcome:929
 msgid "Welcome App"
 msgstr "Programa \"Sveiki\""
 
-#: budgie-welcome:1170
+#: budgie-welcome:1236
 msgid "Could not gather data."
 msgstr "Nepavyko surinkti duomenų."
 
-#: budgie-welcome:1243
+#: budgie-welcome:1309
 msgid "GB"
 msgstr "GB"
 
-#: budgie-welcome:1244
+#: budgie-welcome:1310
 msgid "GiB"
 msgstr "GiB"
 
-#: budgie-welcome:1245
+#: budgie-welcome:1311
 msgid "MB"
 msgstr "MB"
 
-#: budgie-welcome:1246
+#: budgie-welcome:1312
 msgid "MiB"
 msgstr "MiB"
 
-#: budgie-welcome:1475
+#: budgie-welcome:1541
 msgid "Status"
 msgstr "Būsena"
 
-#: budgie-welcome:1559
+#: budgie-welcome:1625
 msgid " is in progress. Please wait for it to complete"
 msgstr " yra eigoje. Palaukite, kol ji bus užbaigta"
 
-#: budgie-welcome:1877
+#: budgie-welcome:1940
 msgid "Find out about your operating system"
 msgstr "Sužinokite apie savo operacinę sistemą"
 
-#: budgie-welcome:1879
+#: budgie-welcome:1942
 msgid "Budgie Themes"
 msgstr "Budgie temos"
 
-#: budgie-welcome:1880
+#: budgie-welcome:1943
 msgid "Give the desktop a makeover with new themes, icons and fonts"
 msgstr "Pagražinkite darbalaukį naujomis temomis, piktogramomis ir šriftais"
 
-#: budgie-welcome:1882
+#: budgie-welcome:1945
 msgid "Budgie Applets"
 msgstr "Budgie programėlės"
 
-#: budgie-welcome:1883
+#: budgie-welcome:1946
 msgid ""
 "Customize the desktop panel with applets that provide extra capabilities"
 msgstr ""
