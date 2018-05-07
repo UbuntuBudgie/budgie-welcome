@@ -156,6 +156,12 @@
               "artful" : ["ppa:ubuntubudgie/backports"],
               "bionic" : ["universe"]
 		  }
+	  },
+      "advanced-brightness-applet" : {
+		  "packages" : ["budgie-advanced-brightness-controller"],
+		  "repos" : {
+              "bionic" : ["ppa:ubuntubudgie/backports"]
+		  }
 	  }
   },
   "recommendations" : {

@@ -1,5 +1,5 @@
 name: ubuntu-budgie-welcome
-version: '0.6.4'
+version: '0.6.5'
 summary: Welcome screen to greet new Ubuntu Budgie users on their first login.
 description: |
   The ubuntu-budgie-welcome application was designed to greet a new user at the
@@ -36,10 +36,10 @@ parts:
       - node-uglify
     stage-packages:
       - python3-apt
-    build: |
+      - libc6
+    override-build: |
       cd scripts && ./rebuild-translations.sh
       cd ../ && uglifyjs -o data/js/bootstrap.min.js data/js/bootstrap.js && uglifyjs -o data/js/ekko-lightbox.min.js data/js/ekko-lightbox.js
-    install: |
       mkdir -p $SNAPCRAFT_PART_INSTALL/usr/share/budgie-welcome/
       cp -r data/* $SNAPCRAFT_PART_INSTALL/usr/share/budgie-welcome/
       mkdir -p $SNAPCRAFT_PART_INSTALL/usr/share/locale/
