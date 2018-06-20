@@ -162,7 +162,19 @@
 		  "repos" : {
               "bionic" : ["ppa:ubuntubudgie/backports"]
 		  }
-	  }
+	  },
+      "browser-profile-launcher-applet" : {
+      "packages" : ["budgie-browser-profile-launcher"],
+      "repos" : {
+              "bionic" : ["ppa:ubuntubudgie/backports"]
+      }
+    },
+      "kangaroo-applet" : {
+      "packages" : ["budgie-kangaroo-applet"],
+      "repos" : {
+              "bionic" : ["ppa:ubuntubudgie/backports"]
+      }
+    }
   },
   "recommendations" : {
     "snap" : {
