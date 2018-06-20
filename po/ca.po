@@ -3,24 +3,21 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 # Translators:
-# Arkelis <guillaume2.fayard@wanadoo.fr>, 2017
-# Emmanuel Hermellin <hermellin@lirmm.fr>, 2017
-# Jean-Charles SPOR <jean-charles.spor@hotmail.fr>, 2017
-# Téo le Dozo <teo@couaque.fr>, 2017
+# Davidmp <medipas@gmail.com>, 2018
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2018-03-31 00:13+BST\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Téo le Dozo <teo@couaque.fr>, 2017\n"
-"Language-Team: French (https://www.transifex.com/ubuntu-budgie/teams/72251/"
-"fr/)\n"
-"Language: fr\n"
+"Last-Translator: Davidmp <medipas@gmail.com>, 2018\n"
+"Language-Team: Catalan (https://www.transifex.com/ubuntu-budgie/teams/72251/"
+"ca/)\n"
+"Language: ca\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: ENCODING\n"
 "Generated-By: pygettext.py 1.5\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: budgie-welcome:314
 msgid ""
@@ -29,10 +26,11 @@ msgid ""
 "is not available in your system. Please install GNOME Software and try this "
 "option again"
 msgstr ""
-"Steam est une application tierce qui nécessite l'acceptation d'une licence "
-"EULA (End User License Agreement). C'est pourquoi elle n'est pas disponible "
-"sur votre système. Pour installer Steam, il vous faut au préalable GNOME "
-"Logiciels."
+"L'Steam és un paquet de tercers que requereix que l'usuari accepti l'EULA "
+"(End User License Agreement). Per tant, confiem en el Programari del GNOME a "
+"l'hora d'instal·lar l'Steam, però no està disponible al vostre sistema. Si "
+"us plau, instal·leu el Programari del GNOME Software i torneu a intentar "
+"aquesta opció."
 
 #: budgie-welcome:406
 msgid ""
@@ -40,54 +38,54 @@ msgid ""
 "after installing GNOME Software, please contact us with following error "
 "message"
 msgstr ""
-"Il semble que GNOME Logiciels ne soit pas installé. Si ce problème persiste "
-"même après avoir installé GNOME Logiciels, merci de nous contacter et de "
-"nous fournir le message d'erreur correspondant."
+"Sembla que no hi hagi instal·lat el Programari del GNOME. Si aquest problema "
+"persisteix després d'instal·lar-lo, si us plau, contacteu amb nosaltres amb "
+"el missatge d'error següent."
 
 #: budgie-welcome:475
 msgid "Following tasks are in progress"
-msgstr "Les tâches suivantes sont en cours"
+msgstr "Les tasques següents estan en curs"
 
 #: budgie-welcome:481 budgie-welcome:1453 budgie-welcome:1454
 #: budgie-welcome:1462 budgie-welcome:1876
 msgid "Budgie Welcome"
-msgstr "Budgie Bienvenue"
+msgstr "Benvinguda del Budgie"
 
 #: budgie-welcome:485
 msgid "Budgie Desktop"
-msgstr "Environnement de bureau Budgie"
+msgstr "Escriptori Budgie"
 
 #: budgie-welcome:566
 msgid ""
 "The following third-party repositories need to be added to complete the "
 "installation:"
 msgstr ""
-"Pour terminer l'installation, il est nécessaire d'ajouter le dépôt tiers "
-"suivant :"
+"Per completar la instal·lació, cal afegir els repositoris de tercers "
+"següents:"
 
 #: budgie-welcome:593
 msgid ""
 "Third-Party repositories are not supported by Ubuntu. You should only "
 "continue if you trust the maintainers of the proposed repositories."
 msgstr ""
-"Les dépôts tiers ne sont pas maintenus par Ubuntu. Continuez seulement si "
-"vous faites confiance aux éditeurs des dépôts proposés."
+"Els repositoris de tercers no tenen suport d'Ubuntu. Només hauríeu de "
+"continuar si confieu en els mantenidors dels repositoris proposats."
 
 #: budgie-welcome:596
 msgid "Continue with the installation?"
-msgstr "Continuer l'installation ?"
+msgstr "Voleu continuar la instal·lació?"
 
 #: budgie-welcome:602
 msgid "Third-Party Repositories"
-msgstr "Dépôts tiers"
+msgstr "Repositoris de tercers"
 
 #: budgie-welcome:863
 msgid "Welcome App"
-msgstr "Application de bienvenue"
+msgstr "Aplicació de benvinguda"
 
 #: budgie-welcome:1170
 msgid "Could not gather data."
-msgstr "Impossible de récupérer les données."
+msgstr "No s'han pogut obtenir les dades."
 
 #: budgie-welcome:1243
 msgid "GB"
@@ -107,33 +105,31 @@ msgstr "MiB"
 
 #: budgie-welcome:1475
 msgid "Status"
-msgstr "Statut"
+msgstr "Estat"
 
 #: budgie-welcome:1559
 msgid " is in progress. Please wait for it to complete"
-msgstr "est en cours. Merci de patienter."
+msgstr "En curs. Si us plau, espereu que acabi."
 
 #: budgie-welcome:1877
 msgid "Find out about your operating system"
-msgstr "Informations sur votre système d'exploitation"
+msgstr "Descobriu el sistema operatiu"
 
 #: budgie-welcome:1879
 msgid "Budgie Themes"
-msgstr "Thèmes Budgie"
+msgstr "Temes del Budgie"
 
 #: budgie-welcome:1880
 msgid "Give the desktop a makeover with new themes, icons and fonts"
-msgstr ""
-"Personnalisation de l'apparence du bureau avec de nouvelles icônes, polices "
-"et thèmes."
+msgstr "Maquilleu l'escriptori amb temes, icones i lletres noves."
 
 #: budgie-welcome:1882
 msgid "Budgie Applets"
-msgstr "Applets Budgie"
+msgstr "Miniaplicacions del Budgie"
 
 #: budgie-welcome:1883
 msgid ""
 "Customize the desktop panel with applets that provide extra capabilities"
 msgstr ""
-"Personnaliser le panel du bureau avec des applets qui ajoutent des "
-"fonctionnalités supplémentaires"
+"Personalitzeu el plafó de l'escriptori amb miniaplicacions que proporcionin "
+"funcions extres."
