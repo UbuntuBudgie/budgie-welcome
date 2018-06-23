@@ -521,6 +521,28 @@
                 </div>
                 <hr/>
              </div>
+             <div class="col-md-6 weathershow-applet">
+                <br>
+                <h2><a onclick="cmd('link?https://github.com/UbuntuBudgie/budgie-extras')"><span class="material-icons">help</span></a>&zwnj;Weather and Forecast Applet&zwnj;</h2>
+                <div class="card card-block">
+                   <div class="card-image text-md-center">
+                      <a href="img/screenshots/weathershow-applet.jpg" data-toggle="lightbox"><img src="img/screenshots/weathershow-applet.jpg" style="width: auto; max-height: 128px" /></a>
+                   </div>
+                   <p class="card-text">&zwnj;Weather forecast every three hours and over five days.&zwnj;</p>
+                </div>
+                <div class="text-md-right">
+                   <a id="weathershow-applet-remove" class="btn btn-danger" onclick="cmd('remove?weathershow-applet');cmd('')">
+                      <span class="material-icons">&#xE872;</span><span class="button-text">&zwnj;Remove&zwnj;</span>
+                   </a>
+                   <a id="weathershow-applet-install" class="btn btn-success hvr-shadow" onclick="cmd('install?weathershow-applet');cmd('')"> &nbsp;
+                   <span class="material-icons">&#xE2C0;</span>&zwnj;Install Applet&zwnj;&nbsp;
+                   </a>
+                   <span id="weathershow-applet-status" class="hidden">
+                   <img src="img/welcome/processing.gif" width="24px" height="24px" /> &zwnj;Applying Changes...&zwnj;
+                   </span>
+                </div>
+                <hr/>
+             </div>
             </div>
          </div>
       </div>
