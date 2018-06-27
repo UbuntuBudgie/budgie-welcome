@@ -18,7 +18,7 @@ msgstr ""
 msgid "Recommendations"
 msgstr "Rekomendacje"
 
-#: recommendations.html26, 71, 85, 102, 115, 132, 147
+#: recommendations.html26, 71, 88, 101, 118, 133
 msgid "Applying Changes..."
 msgstr "Zatwierdzanie zmian..."
 
@@ -173,43 +173,10 @@ msgid "Install Snap"
 msgstr "Zainstaluj Snap"
 
 #: recommendations.html:76
-msgid "Budgie Screenshot Applet"
-msgstr "Aplet Zrzut ekranu Budgie"
-
-#: recommendations.html:80
-msgid ""
-"<strong>Budgie Screenshot Applet</strong> is an advanced screenshot utility "
-"for capturing and organizing screenshots."
-msgstr ""
-"<strong>Aplet Budgie Screenshot</strong> jest zaawansowanym narzędziem do "
-"tworzenia zrzutów ekranu i zarządzania nimi."
-
-#: recommendations.html:82
-msgid ""
-"<span name=\"distro-name\"></span> provides you with an easy way to install "
-"<strong>Budgie Screenshot Applet</strong>. After installation you need to "
-"<strong>manually add the applet to budgie panel by launching <a "
-"onclick=\"cmd('raven');cmd('')\">Raven</a> </strong> - The Budgie "
-"Configuration Center."
-msgstr ""
-"<span name=\"distro-name\"></span> umożliwia Ci zainstalowanie w posty "
-"sposób  <strong>Apletu Zrzut ekranu Budgie</strong>. Po zainstalowaniu "
-"musisz  <strong>ręcznie dodać aplet do panelu Budgie przez uruchomienie <a "
-"onclick=\"cmd('raven');cmd('')\">Centrum konfiguracji Budgie</a> </strong>."
-
-#: recommendations.html:84
-msgid "Screenshot Applet is installed"
-msgstr "Aplet Zrzut ekrany jest zainstalowany"
-
-#: recommendations.html:84
-msgid "Install Screenshot Applet"
-msgstr "Zainstaluj aplet Zrzut ekranu"
-
-#: recommendations.html:90
 msgid "Flatpak"
 msgstr "Flatpak"
 
-#: recommendations.html:94
+#: recommendations.html:80
 msgid ""
 "<strong>Flatpak</strong> is a new generation application distribution "
 "framework for GNU/Linux platforms. It introduces a unified packaging format "
@@ -227,11 +194,11 @@ msgstr ""
 "można zainstalować w dowolnej dystrybucji GNU/Linuksa, nie martwiąc się o "
 "docelowy system operacyjny i wbudowane biblioteki."
 
-#: recommendations.html:96
+#: recommendations.html:82
 msgid "Learn more"
 msgstr "Dowiedz się więcej"
 
-#: recommendations.html:98
+#: recommendations.html:84
 msgid ""
 "<span name=\"distro-name\"></span> recommends installing "
 "<strong>Flatpak</strong> as it will open a new world of possibilities for "
@@ -246,7 +213,7 @@ msgstr ""
 "projektu i nie musi czekać na przygotowanie pakietów pod konkretne "
 "dystrybucje."
 
-#: recommendations.html:100
+#: recommendations.html:86
 msgid ""
 "Being a user friendly GNU/Linux distribution, <span name='distro-"
 "name'></span> allows you to install Flatpak with a single click. After first"
@@ -257,21 +224,21 @@ msgstr ""
 "kliknięciem. Po jednorazowej konfiguracji, będziesz mógł używać Centrum "
 "oprogramowania GNOME do instalowania pakietów Flatpak."
 
-#: recommendations.html:101
+#: recommendations.html:87
 msgid "Flatpak is installed. Please reboot for the service to start"
 msgstr ""
 "Flatpak jest zainstalowany. Uruchom ponownie komputer, aby rozpocząć "
 "działanie usługi"
 
-#: recommendations.html:102
+#: recommendations.html:88
 msgid "Install & Configure Flatpak"
 msgstr "Zainstaluj i skonfiguruj Flatpak"
 
-#: recommendations.html:106
+#: recommendations.html:92
 msgid "skippy-xd"
 msgstr "skippy-xd"
 
-#: recommendations.html:110
+#: recommendations.html:96
 msgid ""
 "<strong>skippy-xd</strong> adds a window expose type capability through a "
 "keyboard shortcut. For most desktops skippy-xd works well. Note: For some "
@@ -284,7 +251,7 @@ msgstr ""
 "pewnych konfiguracjach z wieloma monitorami, z niektórymi sterownikami "
 "graficznymi oraz na maszynach wirtualnych (jak Virtual Box)."
 
-#: recommendations.html:113
+#: recommendations.html:99
 msgid ""
 "By default the installer will create a custom keyboard shortcut CTRL+grave "
 "('the key above the tab'). You can define or change the keyboard shortcut "
@@ -298,19 +265,19 @@ msgstr ""
 "klawiszowe. Użyj polecenia <strong>skippy-xd-toggle</strong> podczas "
 "definiowania skrótu klawiszowego."
 
-#: recommendations.html:114
+#: recommendations.html:100
 msgid "skippy-xd is installed"
 msgstr "skippy-xd jest zainstalowane"
 
-#: recommendations.html:114
+#: recommendations.html:100
 msgid "Install & Configure skippy-xd"
 msgstr "Zainstaluj i skonfiguruj skippy-xd"
 
-#: recommendations.html:120
+#: recommendations.html:106
 msgid "Steam"
 msgstr "Steam"
 
-#: recommendations.html:124
+#: recommendations.html:110
 msgid ""
 "<strong>Steam</strong> is a digital distribution platform developed by Valve"
 " Corporation offering digital rights management (DRM), multiplayer gaming "
@@ -336,7 +303,7 @@ msgstr ""
 "wsparcie dla treści tworzonych przez użytkowników poprzez tzw. Steam "
 "Workshop."
 
-#: recommendations.html:129
+#: recommendations.html:115
 msgid ""
 "Being proprietary software, Steam is not included in the primary "
 "repositories of <span name=\"distro-name\"></span>. However, to provide more"
@@ -352,22 +319,22 @@ msgstr ""
 " opcję na włączenie repozytorium <em>Multiverse</em> i instalację platfromy "
 "Steam przy pomocy jednego kliknięcia."
 
-#: recommendations.html:131
+#: recommendations.html:117
 msgid "Steam is installed"
 msgstr "Steam jest zainstalowany"
 
-#: recommendations.html:131
+#: recommendations.html:117
 msgid "Install & Configure Steam"
 msgstr "Zainstaluj i skonfiguruj Steam"
 
-#: recommendations.html:141
+#: recommendations.html:127
 msgid ""
 "<strong>Dropbox</strong> is a secure file sharing and storage solution."
 msgstr ""
 "<strong>Dropbox</strong> jest rozwiązaniem do bezpiecznego współdzielenia i "
 "przechowywania plików."
 
-#: recommendations.html:143
+#: recommendations.html:129
 msgid ""
 "Being proprietary software, Dropbox is not included in the primary "
 "repositories of <span name=\"distro-name\"></span>. However, to provide more"
@@ -383,7 +350,7 @@ msgstr ""
 " opcję na włączenie repozytorium <em>Multiverse</em> i instalację "
 "oprogramowania Dropbox przy pomocy jednego kliknięcia."
 
-#: recommendations.html:145
+#: recommendations.html:131
 msgid ""
 "After installing, logout and login and follow the dropbox instructions that "
 "are then displayed."
@@ -391,10 +358,10 @@ msgstr ""
 "Po instalacji, wyloguj się i zaloguj ponownie, a następnie postępuj zgodnie "
 "z instrukcjami wyświetlanymi w aplikacji Dropbox."
 
-#: recommendations.html:146
+#: recommendations.html:132
 msgid "Dropbox is installed"
 msgstr "Oprogramowanie Dropbox zostało zainstalowane."
 
-#: recommendations.html:146
+#: recommendations.html:132
 msgid "Install & Configure Dropbox"
 msgstr "Zainstaluj i skonfiguruj oprogramowanie Dropbox"
