@@ -18,11 +18,34 @@ msgstr ""
 msgid "Recommendations"
 msgstr "Rekomendacijos"
 
-#: recommendations.html26, 71, 88, 101, 118, 133
+#: recommendations.html:20
+msgid "Backports repository"
+msgstr ""
+
+#: recommendations.html:22
+msgid ""
+"To provide the most up-to-date versions of budgie-desktop and other "
+"associated packages, we recommend to enable the <span name=\"distro-"
+"name\"></span> backports repository."
+msgstr ""
+
+#: recommendations.html:24
+msgid "Repository is installed"
+msgstr "Saugykla yra įdiegta"
+
+#: recommendations.html:24
+msgid "Enable <span name=\"distro-name\"></span> backports repository"
+msgstr ""
+
+#: recommendations.html25, 70, 87, 100, 117, 132
 msgid "Applying Changes..."
 msgstr "Taikomi pakeitimai..."
 
-#: recommendations.html:35
+#: recommendations.html:29
+msgid "Snap Applications"
+msgstr "Snap programos"
+
+#: recommendations.html:34
 msgid ""
 "<strong>Snap</strong> is a new generation application packaging format "
 "developed by <em>Canonical</em>. Even though it was initially developed just"
@@ -50,15 +73,19 @@ msgstr ""
 "ilgojo palaikymo (LTS) laidose, tačiau pakavimo sudėtingumas ir atnaujinimų "
 "teikimas neleido mums jų teikti praeityje."
 
-#: recommendations.html:41
+#: recommendations.html38, 81
+msgid "Learn more"
+msgstr "Sužinokite daugiau"
+
+#: recommendations.html:40
 msgid "Snap user guide"
 msgstr "Snap naudotojo vadovas"
 
-#: recommendations.html:43
+#: recommendations.html:42
 msgid "Search Snap Apps"
 msgstr "Ieškoti Snap programų"
 
-#: recommendations.html:44
+#: recommendations.html:43
 msgid ""
 "If there’s a barrier to Snap app adoption (aside from few apps being made "
 "available in the format) it’s knowing which packages are available in the "
@@ -70,7 +97,7 @@ msgstr ""
 "paketai yra prieinami Snap programų parduotuvėje. Tačiau nesirūpinkite. "
 "Tiesiog, atverkite terminalą ir įvykdykite šią komandą:"
 
-#: recommendations.html:48
+#: recommendations.html:47
 msgid ""
 "The find command lets you quickly search for and discover snaps available to"
 " install from the command line. It can be run with a query after it (e.g., "
@@ -81,17 +108,17 @@ msgstr ""
 " žodžio \"find\" (pvz., \"snap find email\", \"snap find media\", \"snap "
 "find messaging\") arba be užklausos."
 
-#: recommendations.html:49
+#: recommendations.html:48
 msgid "When run without a query you’ll instead see a list of featured snaps."
 msgstr ""
 "Įvykdę šią komandą be užklausos, vietoj to, pamatysite sąrašą pasižymėjusių "
 "snap paketų."
 
-#: recommendations.html:50
+#: recommendations.html:49
 msgid "See installed apps"
 msgstr "Rodyti įdiegtas programas"
 
-#: recommendations.html:51
+#: recommendations.html:50
 msgid ""
 "Installed some Snaps but can’t remember what? Don’t panic. Use the list "
 "command to see an up-to-date list of all Snap apps installed on your system:"
@@ -100,7 +127,7 @@ msgstr ""
 "Nesijaudinkite. Norėdami pamatyti atnaujintą visų jūsų kompiuteryje įdiegtų "
 "Snap programų sąrašą, naudokite komandą \"list\":"
 
-#: recommendations.html:53
+#: recommendations.html:52
 msgid ""
 "This list also shows you their version number, revision number and the name "
 "of the developer who uploaded it (handy when there are multiple versions of "
@@ -110,11 +137,11 @@ msgstr ""
 "įkėlusio kūrėjo vardą (praverčia, kai parduotuvėje yra kelios tos pačios "
 "programos versijos, pvz., Telegram)."
 
-#: recommendations.html:54
+#: recommendations.html:53
 msgid "Install & Remove Snap Apps"
 msgstr "Įdiegti ir šalinti Snap programas"
 
-#: recommendations.html:55
+#: recommendations.html:54
 msgid ""
 "If you’re used to managing software using apt you’ll instantly find the "
 "analogous snap commands easy to remember. You install snap apps with the "
@@ -125,11 +152,11 @@ msgstr ""
 "įdiegiate, naudodami \"install\" komandą, o šalinate, naudodami \"remove\" "
 "komandą."
 
-#: recommendations.html:58
+#: recommendations.html:57
 msgid "See details of an App"
 msgstr "Rodyti išsamesnę programos informaciją"
 
-#: recommendations.html:59
+#: recommendations.html:58
 msgid ""
 "You can use this to see detailed information about any snap application, "
 "whether it is installed or not. This info includes the application’s release"
@@ -141,11 +168,11 @@ msgstr ""
 " programos laidos kanalas, apribojimų būsena, dydis, taisymų skaičius ir "
 "daugiau. Komanda \"snap info --verbose\" siūlo dar išsamesnę apžvalgą."
 
-#: recommendations.html:63
+#: recommendations.html:62
 msgid "Update a Snap App"
 msgstr "Atnaujinti Snap programą"
 
-#: recommendations.html:65
+#: recommendations.html:64
 msgid ""
 "Rather helpfully you probably won’t ever need to remember to install an "
 "update to a Snap app. This is because Snapd runs in the background and "
@@ -157,23 +184,23 @@ msgstr ""
 "automatiškai apdoroja visus atnaujinimus (jūs, žinoma, galite sugrąžinti "
 "Snap atnaujinimą ar įdiegti specifinę programos reviziją)."
 
-#: recommendations.html:68
+#: recommendations.html:67
 msgid "Reference"
 msgstr "Nuoroda"
 
-#: recommendations.html:70
+#: recommendations.html:69
 msgid "Snap is already installed"
 msgstr "Snap jau yra įdiegta"
 
-#: recommendations.html:70
+#: recommendations.html:69
 msgid "Install Snap"
 msgstr "Įdiegti Snap"
 
-#: recommendations.html:76
+#: recommendations.html:75
 msgid "Flatpak"
 msgstr "Flatpak"
 
-#: recommendations.html:80
+#: recommendations.html:79
 msgid ""
 "<strong>Flatpak</strong> is a new generation application distribution "
 "framework for GNU/Linux platforms. It introduces a unified packaging format "
@@ -191,11 +218,7 @@ msgstr ""
 "distribucijoje, nesirūpinant dėl bazinės operacinės sistemos ir jos įtaisytų"
 " bibliotekų."
 
-#: recommendations.html:82
-msgid "Learn more"
-msgstr "Sužinokite daugiau"
-
-#: recommendations.html:84
+#: recommendations.html:83
 msgid ""
 "<span name=\"distro-name\"></span> recommends installing "
 "<strong>Flatpak</strong> as it will open a new world of possibilities for "
@@ -210,7 +233,7 @@ msgstr ""
 "supakuos, todėl jums nereikės laukti, kol jūsų distribucija supakuos jums "
 "šias laidas."
 
-#: recommendations.html:86
+#: recommendations.html:85
 msgid ""
 "Being a user friendly GNU/Linux distribution, <span name='distro-"
 "name'></span> allows you to install Flatpak with a single click. After first"
@@ -221,21 +244,21 @@ msgstr ""
 "konfigūracijos, Flatpak paketų įdiegimui galite naudoti GNOME programinę "
 "įrangą."
 
-#: recommendations.html:87
+#: recommendations.html:86
 msgid "Flatpak is installed. Please reboot for the service to start"
 msgstr ""
 "Flatpak yra įdiegta. Norėdami paleisti tarnybą, paleiskite kompiuterį iš "
 "naujo"
 
-#: recommendations.html:88
+#: recommendations.html:87
 msgid "Install & Configure Flatpak"
 msgstr "Įdiegti ir konfigūruoti Flatpak"
 
-#: recommendations.html:92
+#: recommendations.html:91
 msgid "skippy-xd"
 msgstr "skippy-xd"
 
-#: recommendations.html:96
+#: recommendations.html:95
 msgid ""
 "<strong>skippy-xd</strong> adds a window expose type capability through a "
 "keyboard shortcut. For most desktops skippy-xd works well. Note: For some "
@@ -247,7 +270,7 @@ msgstr ""
 "kelių ekranų sąrankai, grafikos tvarkyklėms ar virtualių mašinų, tokių kaip "
 "VirtualBox , viduje, ji gali veikti neteisingai."
 
-#: recommendations.html:99
+#: recommendations.html:98
 msgid ""
 "By default the installer will create a custom keyboard shortcut CTRL+grave "
 "('the key above the tab'). You can define or change the keyboard shortcut "
@@ -261,19 +284,19 @@ msgstr ""
 "susiejimų parametrą. Apibrėždami savo asmeninį pasirinktinį klaviatūros "
 "susiejimą, naudokite komandą <strong>skippy-xd-toggle</strong>."
 
-#: recommendations.html:100
+#: recommendations.html:99
 msgid "skippy-xd is installed"
 msgstr "skippy-xd yra įdiegta"
 
-#: recommendations.html:100
+#: recommendations.html:99
 msgid "Install & Configure skippy-xd"
 msgstr "Įdiegti ir konfigūruoti skippy-xd"
 
-#: recommendations.html:106
+#: recommendations.html:105
 msgid "Steam"
 msgstr "Steam"
 
-#: recommendations.html:110
+#: recommendations.html:109
 msgid ""
 "<strong>Steam</strong> is a digital distribution platform developed by Valve"
 " Corporation offering digital rights management (DRM), multiplayer gaming "
@@ -298,7 +321,7 @@ msgstr ""
 "pasiekimus žaidime, mikro persiuntimus ir palaikymą naudotojų sukurtam "
 "turiniui per Steam Workshop."
 
-#: recommendations.html:115
+#: recommendations.html:114
 msgid ""
 "Being proprietary software, Steam is not included in the primary "
 "repositories of <span name=\"distro-name\"></span>. However, to provide more"
@@ -313,22 +336,22 @@ msgstr ""
 " saugyklos dalis. <span name=\"distro-name\"></span> suteikia jums galimybę "
 "įjungti <em>Multiverse</em> saugyklą ir vienu spustelėjimu įdiegti Steam."
 
-#: recommendations.html:117
+#: recommendations.html:116
 msgid "Steam is installed"
 msgstr "Steam yra įdiegta"
 
-#: recommendations.html:117
+#: recommendations.html:116
 msgid "Install & Configure Steam"
 msgstr "Įdiegti ir konfigūruoti Steam"
 
-#: recommendations.html:127
+#: recommendations.html:126
 msgid ""
 "<strong>Dropbox</strong> is a secure file sharing and storage solution."
 msgstr ""
 "<strong>Dropbox</strong> yra saugus failų bendrinimo ir saugojimo "
 "sprendimas."
 
-#: recommendations.html:129
+#: recommendations.html:128
 msgid ""
 "Being proprietary software, Dropbox is not included in the primary "
 "repositories of <span name=\"distro-name\"></span>. However, to provide more"
@@ -344,7 +367,7 @@ msgstr ""
 "suteikia jums galimybę įjungti <em>Multiverse</em> saugyklą ir vienu "
 "spustelėjimu įdiegti Dropbox."
 
-#: recommendations.html:131
+#: recommendations.html:130
 msgid ""
 "After installing, logout and login and follow the dropbox instructions that "
 "are then displayed."
@@ -352,10 +375,10 @@ msgstr ""
 "Įdiegę, atsijukite ir vėl prisijunkite, o tuomet sekite rodomą dropbox "
 "instrukciją."
 
-#: recommendations.html:132
+#: recommendations.html:131
 msgid "Dropbox is installed"
 msgstr "Dropbox yra įdiegta"
 
-#: recommendations.html:132
+#: recommendations.html:131
 msgid "Install & Configure Dropbox"
 msgstr "Įdiegti ir konfigūruoti Dropbox"

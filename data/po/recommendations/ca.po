@@ -18,11 +18,34 @@ msgstr ""
 msgid "Recommendations"
 msgstr "Recomanacions"
 
-#: recommendations.html26, 71, 88, 101, 118, 133
+#: recommendations.html:20
+msgid "Backports repository"
+msgstr ""
+
+#: recommendations.html:22
+msgid ""
+"To provide the most up-to-date versions of budgie-desktop and other "
+"associated packages, we recommend to enable the <span name=\"distro-"
+"name\"></span> backports repository."
+msgstr ""
+
+#: recommendations.html:24
+msgid "Repository is installed"
+msgstr ""
+
+#: recommendations.html:24
+msgid "Enable <span name=\"distro-name\"></span> backports repository"
+msgstr ""
+
+#: recommendations.html25, 70, 87, 100, 117, 132
 msgid "Applying Changes..."
 msgstr "S'apliquen els canvis..."
 
-#: recommendations.html:35
+#: recommendations.html:29
+msgid "Snap Applications"
+msgstr ""
+
+#: recommendations.html:34
 msgid ""
 "<strong>Snap</strong> is a new generation application packaging format "
 "developed by <em>Canonical</em>. Even though it was initially developed just"
@@ -52,15 +75,19 @@ msgstr ""
 " però les complexitats d'empaquetament i subministrament d'actualitzacions "
 "ens han impedit lliurar-les en el passat."
 
-#: recommendations.html:41
+#: recommendations.html38, 81
+msgid "Learn more"
+msgstr ""
+
+#: recommendations.html:40
 msgid "Snap user guide"
 msgstr "Guia d'ús d'Snap"
 
-#: recommendations.html:43
+#: recommendations.html:42
 msgid "Search Snap Apps"
 msgstr "Cerca d'aplicacions Snap"
 
-#: recommendations.html:44
+#: recommendations.html:43
 msgid ""
 "If there’s a barrier to Snap app adoption (aside from few apps being made "
 "available in the format) it’s knowing which packages are available in the "
@@ -68,50 +95,50 @@ msgid ""
 "following command:"
 msgstr ""
 
-#: recommendations.html:48
+#: recommendations.html:47
 msgid ""
 "The find command lets you quickly search for and discover snaps available to"
 " install from the command line. It can be run with a query after it (e.g., "
 "‘snap find email‘, ‘snap find media’, ‘snap find messaging‘) or without."
 msgstr ""
 
-#: recommendations.html:49
+#: recommendations.html:48
 msgid "When run without a query you’ll instead see a list of featured snaps."
 msgstr ""
 
-#: recommendations.html:50
+#: recommendations.html:49
 msgid "See installed apps"
 msgstr ""
 
-#: recommendations.html:51
+#: recommendations.html:50
 msgid ""
 "Installed some Snaps but can’t remember what? Don’t panic. Use the list "
 "command to see an up-to-date list of all Snap apps installed on your system:"
 msgstr ""
 
-#: recommendations.html:53
+#: recommendations.html:52
 msgid ""
 "This list also shows you their version number, revision number and the name "
 "of the developer who uploaded it (handy when there are multiple versions of "
 "the same app in the store, e.g., Telegram)."
 msgstr ""
 
-#: recommendations.html:54
+#: recommendations.html:53
 msgid "Install & Remove Snap Apps"
 msgstr ""
 
-#: recommendations.html:55
+#: recommendations.html:54
 msgid ""
 "If you’re used to managing software using apt you’ll instantly find the "
 "analogous snap commands easy to remember. You install snap apps with the "
 "‘install’ command, and remove them using the ‘remove’ command."
 msgstr ""
 
-#: recommendations.html:58
+#: recommendations.html:57
 msgid "See details of an App"
 msgstr ""
 
-#: recommendations.html:59
+#: recommendations.html:58
 msgid ""
 "You can use this to see detailed information about any snap application, "
 "whether it is installed or not. This info includes the application’s release"
@@ -119,11 +146,11 @@ msgid ""
 "info --verbose offers a greater overview."
 msgstr ""
 
-#: recommendations.html:63
+#: recommendations.html:62
 msgid "Update a Snap App"
 msgstr ""
 
-#: recommendations.html:65
+#: recommendations.html:64
 msgid ""
 "Rather helpfully you probably won’t ever need to remember to install an "
 "update to a Snap app. This is because Snapd runs in the background and "
@@ -131,23 +158,23 @@ msgid ""
 " a specific revision)."
 msgstr ""
 
-#: recommendations.html:68
+#: recommendations.html:67
 msgid "Reference"
 msgstr ""
 
-#: recommendations.html:70
+#: recommendations.html:69
 msgid "Snap is already installed"
 msgstr ""
 
-#: recommendations.html:70
+#: recommendations.html:69
 msgid "Install Snap"
 msgstr ""
 
-#: recommendations.html:76
+#: recommendations.html:75
 msgid "Flatpak"
 msgstr ""
 
-#: recommendations.html:80
+#: recommendations.html:79
 msgid ""
 "<strong>Flatpak</strong> is a new generation application distribution "
 "framework for GNU/Linux platforms. It introduces a unified packaging format "
@@ -158,11 +185,7 @@ msgid ""
 "libraries."
 msgstr ""
 
-#: recommendations.html:82
-msgid "Learn more"
-msgstr ""
-
-#: recommendations.html:84
+#: recommendations.html:83
 msgid ""
 "<span name=\"distro-name\"></span> recommends installing "
 "<strong>Flatpak</strong> as it will open a new world of possibilities for "
@@ -171,26 +194,26 @@ msgid ""
 "have to wait for your distribution to package it for you."
 msgstr ""
 
-#: recommendations.html:86
+#: recommendations.html:85
 msgid ""
 "Being a user friendly GNU/Linux distribution, <span name='distro-"
 "name'></span> allows you to install Flatpak with a single click. After first"
 " time configuration, you can use GNOME Software to install Flatpak packages."
 msgstr ""
 
-#: recommendations.html:87
+#: recommendations.html:86
 msgid "Flatpak is installed. Please reboot for the service to start"
 msgstr ""
 
-#: recommendations.html:88
+#: recommendations.html:87
 msgid "Install & Configure Flatpak"
 msgstr ""
 
-#: recommendations.html:92
+#: recommendations.html:91
 msgid "skippy-xd"
 msgstr ""
 
-#: recommendations.html:96
+#: recommendations.html:95
 msgid ""
 "<strong>skippy-xd</strong> adds a window expose type capability through a "
 "keyboard shortcut. For most desktops skippy-xd works well. Note: For some "
@@ -198,7 +221,7 @@ msgid ""
 "VirtualBox it may not work correctly."
 msgstr ""
 
-#: recommendations.html:99
+#: recommendations.html:98
 msgid ""
 "By default the installer will create a custom keyboard shortcut CTRL+grave "
 "('the key above the tab'). You can define or change the keyboard shortcut "
@@ -207,19 +230,19 @@ msgid ""
 "shortcut."
 msgstr ""
 
-#: recommendations.html:100
+#: recommendations.html:99
 msgid "skippy-xd is installed"
 msgstr ""
 
-#: recommendations.html:100
+#: recommendations.html:99
 msgid "Install & Configure skippy-xd"
 msgstr ""
 
-#: recommendations.html:106
+#: recommendations.html:105
 msgid "Steam"
 msgstr ""
 
-#: recommendations.html:110
+#: recommendations.html:109
 msgid ""
 "<strong>Steam</strong> is a digital distribution platform developed by Valve"
 " Corporation offering digital rights management (DRM), multiplayer gaming "
@@ -233,7 +256,7 @@ msgid ""
 "support for user-created content through Steam Workshop."
 msgstr ""
 
-#: recommendations.html:115
+#: recommendations.html:114
 msgid ""
 "Being proprietary software, Steam is not included in the primary "
 "repositories of <span name=\"distro-name\"></span>. However, to provide more"
@@ -243,20 +266,20 @@ msgid ""
 " mouse click."
 msgstr ""
 
-#: recommendations.html:117
+#: recommendations.html:116
 msgid "Steam is installed"
 msgstr ""
 
-#: recommendations.html:117
+#: recommendations.html:116
 msgid "Install & Configure Steam"
 msgstr ""
 
-#: recommendations.html:127
+#: recommendations.html:126
 msgid ""
 "<strong>Dropbox</strong> is a secure file sharing and storage solution."
 msgstr ""
 
-#: recommendations.html:129
+#: recommendations.html:128
 msgid ""
 "Being proprietary software, Dropbox is not included in the primary "
 "repositories of <span name=\"distro-name\"></span>. However, to provide more"
@@ -266,16 +289,16 @@ msgid ""
 "single mouse click."
 msgstr ""
 
-#: recommendations.html:131
+#: recommendations.html:130
 msgid ""
 "After installing, logout and login and follow the dropbox instructions that "
 "are then displayed."
 msgstr ""
 
-#: recommendations.html:132
+#: recommendations.html:131
 msgid "Dropbox is installed"
 msgstr ""
 
-#: recommendations.html:132
+#: recommendations.html:131
 msgid "Install & Configure Dropbox"
 msgstr ""
