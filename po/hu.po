@@ -3,27 +3,22 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 # Translators:
-# Snevow Freelancer, 2017
-# Tiago Pro <tiagooprocopio@gmail.com>, 2017
-# Robson Cordeiro, 2017
-# Willian Eduardo <willianeduardot@gmail.com>, 2017
-# João Mário Domingos <joaomario.rd@hotmail.com>, 2017
-# Francisco Edno <ednofco@gmail.com>, 2017
-# Rainer Bode <rainer.uwe@hotmail.com>, 2018
+# Gyula Szabó <szabo.gyula.krisztian@gmail.com>, 2017
+# Bence László <laszlo.bence.27@gmail.com>, 2017
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2018-07-03 12:41+BST\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Rainer Bode <rainer.uwe@hotmail.com>, 2018\n"
-"Language-Team: Portuguese (Brazil) (https://www.transifex.com/ubuntu-budgie/"
-"teams/72251/pt_BR/)\n"
-"Language: pt_BR\n"
+"Last-Translator: Bence László <laszlo.bence.27@gmail.com>, 2017\n"
+"Language-Team: Hungarian (https://www.transifex.com/ubuntu-budgie/"
+"teams/72251/hu/)\n"
+"Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: ENCODING\n"
 "Generated-By: pygettext.py 1.5\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: budgie-welcome:314
 msgid ""
@@ -32,10 +27,11 @@ msgid ""
 "is not available in your system. Please install GNOME Software and try this "
 "option again"
 msgstr ""
-"Steam é um pacote de terceiros que requer a aprovação do EULA (Contrato de "
-"Licença de Usuário Final) do usuário. Assim, contamos com o GNOME Software "
-"para a instalação do steam que não está disponível no seu sistema. Instale o "
-"GNOME Software e tente esta opção novamente"
+"A Steam egy harmadik féltől származó csomag, amely megköveteli az EULA "
+"(Végfelhasználói Licensz Szerződés) elfogadását a felhasználótól. Ezért mi a "
+"GNOME Software-re támaszkodunk a Steam telepítésekor és ez nem elérhető a "
+"rendszerén. Kérjük, telepítése a GNOME Software-t és próbálja újra ezt az "
+"opciót."
 
 #: budgie-welcome:406
 msgid ""
@@ -43,53 +39,50 @@ msgid ""
 "after installing GNOME Software, please contact us with following error "
 "message"
 msgstr ""
-"Parece que o GNOME Software não está instalado. Se o problema persistir após "
-"a instalação do GNOME Software, por favor nos contate com a mensagem de erro"
+"Úgy tűnik a GNOME Szoftverek nincs telepítve. Amennyiben ez a probléma a "
+"GNOME Szoftverek telepítése után is megjelenik, kérjük vegye fel velünk a "
+"kapcsolatot a következő hibaüzenet csatolásával"
 
 #: budgie-welcome:475
 msgid "Following tasks are in progress"
-msgstr "As seguintes tarefas estão em andamento"
+msgstr "A következő feladatok feldolgozás alatt állnak"
 
 #: budgie-welcome:481 budgie-welcome:1453 budgie-welcome:1454
 #: budgie-welcome:1462 budgie-welcome:1876
 msgid "Budgie Welcome"
-msgstr "Boas-Vindas Budgie"
+msgstr "Budgie Welcome"
 
 #: budgie-welcome:485
 msgid "Budgie Desktop"
-msgstr "Desktop Budgie"
+msgstr "Budgie Desktop"
 
 #: budgie-welcome:566
 msgid ""
 "The following third-party repositories need to be added to complete the "
 "installation:"
 msgstr ""
-"Os seguintes repositórios de terceiros precisam ser adicionados para "
-"completar a instalação: "
 
 #: budgie-welcome:593
 msgid ""
 "Third-Party repositories are not supported by Ubuntu. You should only "
 "continue if you trust the maintainers of the proposed repositories."
 msgstr ""
-"O Ubuntu não apoia repositórios de terceiros. Você só deve continuar se "
-"confiar nos mantenedores do repositório em questão.  "
 
 #: budgie-welcome:596
 msgid "Continue with the installation?"
-msgstr "Continuar com a instalação? "
+msgstr ""
 
 #: budgie-welcome:602
 msgid "Third-Party Repositories"
-msgstr "Repositórios de terceiros"
+msgstr ""
 
 #: budgie-welcome:863
 msgid "Welcome App"
-msgstr "Aplicativo de Boas-Vindas"
+msgstr "Üdvözlő Alkalmazás"
 
 #: budgie-welcome:1170
 msgid "Could not gather data."
-msgstr "Não foi possível obter os dados."
+msgstr "Nem sikerült adatokat gyűjteni."
 
 #: budgie-welcome:1243
 msgid "GB"
@@ -109,31 +102,29 @@ msgstr "MiB"
 
 #: budgie-welcome:1475
 msgid "Status"
-msgstr "Status"
+msgstr "Állapot"
 
 #: budgie-welcome:1559
 msgid " is in progress. Please wait for it to complete"
-msgstr "está em progresso. Por favor espere até terminar."
+msgstr "folyamatban. Kérjük várja meg, amíg befejeződik."
 
 #: budgie-welcome:1877
 msgid "Find out about your operating system"
-msgstr "Veja informações sobre o seu sistema"
+msgstr ""
 
 #: budgie-welcome:1879
 msgid "Budgie Themes"
-msgstr "Temas Budgie"
+msgstr ""
 
 #: budgie-welcome:1880
 msgid "Give the desktop a makeover with new themes, icons and fonts"
-msgstr "Mude o visual da sua área de trabalho com novos temas, ícones e fontes"
+msgstr ""
 
 #: budgie-welcome:1882
 msgid "Budgie Applets"
-msgstr "Miniaplicativos do Budgie"
+msgstr "Budgie appletek"
 
 #: budgie-welcome:1883
 msgid ""
 "Customize the desktop panel with applets that provide extra capabilities"
 msgstr ""
-"Personalize o painel da área de trabalho com miniaplicativos que fornecem "
-"funcionalidades extras"

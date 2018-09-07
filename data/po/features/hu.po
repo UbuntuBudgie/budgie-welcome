@@ -1,26 +1,27 @@
 # Translators:
-# abuyop <abuyop@gmail.com>, 2017
+# Gyula Szabó <szabo.gyula.krisztian@gmail.com>, 2017
+# Bence László <laszlo.bence.27@gmail.com>, 2017
 msgid ""
 msgstr ""
 "Project-Id-Version: Budgie Welcome\n"
 "POT-Creation-Date: 2016-02-27 12:48+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: abuyop <abuyop@gmail.com>, 2017\n"
-"Language-Team: Malay (Malaysia) (https://www.transifex.com/ubuntu-budgie/teams/72251/ms_MY/)\n"
+"Last-Translator: Bence László <laszlo.bence.27@gmail.com>, 2017\n"
+"Language-Team: Hungarian (https://www.transifex.com/ubuntu-budgie/teams/72251/hu/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ms_MY\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Language: hu\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Report-Msgid-Bugs-To : you@example.com\n"
 
 #: features.html:13
 msgid "Features"
-msgstr "Fitur"
+msgstr "Jellemzők"
 
 #: features.html:18
 msgid "Modern and Full-Featured"
-msgstr "Modern dan Berfitur-Lengkap"
+msgstr "Modern és teljes funkcionalitású"
 
 #: features.html:19
 msgid ""
@@ -31,16 +32,17 @@ msgid ""
 "secure, and better supported than operating systems that come pre-installed "
 "on most home computer hardware today."
 msgstr ""
-"<span name=\"distro-name\"></span> merupakan sistem pengoperasian komputer "
-"yang modern, dengan antaramuka pengguna yang menarik dan mudah difahami. "
-"Pengurus kemaskini bukan sahaja mengurus sistem pengoperasian sahaja, tetapi"
-" semua aplikasi terpasang telah dikemaskini dengan keluaran semasa. Sistem "
-"pengoperasian lebih selamat, dan lebih sokongan berbanding sistem "
-"pengoperasian jenis dipra-pasang pada kebanyakan komputer rumah masa kini."
+"Az <span name=\"distro-name\"></span>egy modern számítógépes operációs "
+"rendszer, vonzó és egyszerűen érhető felhasználói felülettel. A "
+"frissítéskezelője nemcsak az operációs rendszert magát, hanem az összes "
+"telepített alkalmazását és frissíti az aktuális kiadáshoz. Az operációs "
+"rendszer biztonságosabb, és jobban támogatott, mint azok az operációs "
+"rendszerek, amelyek a hardverre előre telepítetten érkeznek a legtöbb "
+"otthoni számítógépre manapság."
 
 #: features.html:29
 msgid "Pre-Configured Yet Flexible"
-msgstr "Dipra-Konfigur Tetapi Fleksibel"
+msgstr "Előre konfigurált, mégis rugalmas"
 
 #: features.html:35
 msgid ""
@@ -53,7 +55,7 @@ msgstr ""
 
 #: features.html:43
 msgid "Built-In Security"
-msgstr "Keselamatan Terbina-Dalam"
+msgstr "Beépített Védelem"
 
 #: features.html:49
 msgid ""
@@ -101,7 +103,7 @@ msgstr ""
 
 #: features.html:101
 msgid "Powerful Applications"
-msgstr "Aplikasi Hebat"
+msgstr "Erőteljes alkalmazások"
 
 #: features.html:102
 msgid ""
@@ -113,7 +115,7 @@ msgstr ""
 
 #: features.html:107
 msgid "Productivity"
-msgstr "Produktiviti"
+msgstr "Termelékenység"
 
 #: features.html:117
 msgid ""
@@ -132,30 +134,36 @@ msgid ""
 "LibreOffice embeds several applications that make it the most powerful Free "
 "and Open Source Office suite on the market:"
 msgstr ""
+"A LibreOffice egy teljes funkcionalitású irodai produktivitási csomag, amely"
+" közel drop-in helyettesítsée a Microsoft(R) Office-nak; a tiszta felülete "
+"és az erőteljes eszközei lehetővé teszik a kreativitásod szabadon eresztését"
+" és a produktivitásod növelését. A LibreOffice beágyaz néhány alkalmazást, "
+"amely a legerőteljesebb szbad és nyílt forráskódú irodai csomaggá teszik a "
+"piacon:"
 
 #: features.html:139
 msgid "Writer, the word processor."
-msgstr "Writer, pemprosesan perkataan."
+msgstr "Writer, a szövegszerkesztő."
 
 #: features.html:140
 msgid "Calc, the spreadsheet application."
-msgstr "Calc, aplikasi hamparan elektronik."
+msgstr "Calc, a táblázatkezelő alkalmazás."
 
 #: features.html:141
 msgid "Impress, the presentation engine."
-msgstr "Impress, enjin persembahan."
+msgstr "Impress, a prezentáció készítő."
 
 #: features.html:142
 msgid "Draw, the drawing and flowcharting application"
-msgstr "Draw, aplikasi melukis dan membina carta alir"
+msgstr "Draw, a rajzoló és folyamatábra készítő alkalmazás."
 
 #: features.html:143
 msgid "Math, for editing mathematics."
-msgstr "Math, untuk penyuntingan matematik."
+msgstr "Math, a matematikai műveletekhez."
 
 #: features.html:150
 msgid "Entertainment"
-msgstr "Hiburan"
+msgstr "Szórakozás"
 
 #: features.html:156
 msgid ""
@@ -165,6 +173,12 @@ msgid ""
 "Radio, iPod integration and generic portable audio player support, Audio CD "
 "burning, Audio CD playback, music sharing, and Podcasts."
 msgstr ""
+"A Rhythmbox egy nagyon egyszerűen használható zenelejátsztó és -kezelő "
+"program, amely audioformátumok széles skáláját (beleértve az mp3-at és az "
+"ogg-t) támogatja. Eredetileg az Apple iTunessa inspirálta, az aktuális "
+"verzió támogatja az internetes rádiót, rendelkezik iPod-integrációval és "
+"általános hordozható zenelejátszó-támogatással, audio CD-k írásásának, "
+"lejátszásának képességével, támogatja a zenemegosztást és a podcasteket."
 
 #: features.html:170
 msgid ""
@@ -174,12 +188,6 @@ msgid ""
 "in full-window or fullscreen mode, and export them to share with others. It "
 "is able to manage a lot of different image formats."
 msgstr ""
-"<span class=\"before1710\">Foto GNOME</span> <span "
-"class=\"1710\">gThumb</span> merupakan pengurus foto digital. Ia membolehkan"
-" anda import foto dari cakera atau kamera, urus ia dalam pelbagai cara, "
-"lihat ia dalam tetingkap berskrin-penuh atau mod skrin penuh, dan eksport ia"
-" untuk dikongsikan dengan orang lain. Ia berupaya mengurus banyak jenis "
-"format imej."
 
 #: features.html:185
 msgid ""
@@ -188,15 +196,10 @@ msgid ""
 " DivX, MOV, WMV, QuickTime, WebM, FLAC, MP3, Ogg/Vorbis files, DVDs, VCDs, "
 "podcasts, and multimedia streams from various network sources."
 msgstr ""
-"<span class=\"official-only\">MPV GNOME</span> <span class=\"unofficial-"
-"only\">Video GNOME</span> merupakan sebuah pemain media. Ia dapat memainkan "
-"fail video dalam format MPEG, MPEG-2, MPEG-4, DivX, MOV, WMV, QuickTime, "
-"WebM, FLAC, MP3, Ogg/Vorbis, DVDs, VCDs, podcast, dan strim multimedia dari "
-"pelbagai sumber rangkaian."
 
 #: features.html:197
 msgid "... And a whole lot more!"
-msgstr "... Dan banyak lagi!"
+msgstr "... És még sok más!"
 
 #: features.html:199
 msgid ""
@@ -207,16 +210,10 @@ msgid ""
 "give you access to thousands of applications suitable for just about any "
 "professional or recreational pursuit."
 msgstr ""
-"Kebiasaannya anda dapati pengurusan pencetak dan pengimbas dokumen/foto "
-"disertakan sekali dalam <span name=\"distro-name\"></span>. Sebenarnya ianya"
-" baru permulaan cerita. <a onclick=\"cmd('software-"
-"center');cmd('')\">Perisian GNOME </a> mengandungi aplikasi kelas-terbaik "
-"untuk kebanyakan tugas dan dengan hanya seklik anda dapat mencapai beribu-"
-"ribu aplikasi yang sesuai untuk apa jua tujuan profesion mahupun rekreasi."
 
 #: features.html:209
 msgid "Games"
-msgstr "Permainan"
+msgstr "Játékok"
 
 #: features.html:215
 msgid ""
@@ -237,10 +234,8 @@ msgid ""
 "simulators, motor racing, first person shooters, jump and run or card games,"
 " you'll find something to keep you entertained."
 msgstr ""
-"Steam merupakah satu langkah besar yang dapat menjadikan Linux sebagai "
-"platfom permainan, terdapat juga banyak permainan berSumber Terbuka yang "
-"berkualiti tinggi dan menghiburkan untuk <span name=\"distro-name\"></span>."
-" Tidak kira sama ada anda menyukai simulasi penerbangan, permainan "
-"perlumbaan motor, permainan penembak pihak pertama, permainan lompat dan "
-"lair ataupun permainan kad, anda dapati ada sahaja permainan yang terus "
-"menerus menghiburkan anda."
+"Bár a Steam egy nagy előrelépés a Linuxon való játéknak, van néhány magas "
+"minőségű és élvezhető nyílt forrású játék, amely elérhető az <span name"
+"=\"distro-name\"></span>ra. Nem számít, hogy a repülőszimulátorokat, a "
+"motorversenyzést, az FPS-eket, az ugrás és futtás vagy kártyajátékokat "
+"kedveled, találni fogsz valamit, ami szórakoztatva tart."

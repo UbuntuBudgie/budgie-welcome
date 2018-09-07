@@ -1,55 +1,56 @@
 # Translators:
-# abuyop <abuyop@gmail.com>, 2017
-# Dxnxsh Fxrhxn <danishfarhan700@gmail.com>, 2018
+# Gyula Szabó <szabo.gyula.krisztian@gmail.com>, 2017
+# Bence László <laszlo.bence.27@gmail.com>, 2017
+# Krisztián Kecskés <hello.krisztian@gmail.com>, 2017
 msgid ""
 msgstr ""
 "Project-Id-Version: Budgie Welcome\n"
 "POT-Creation-Date: 2016-02-27 12:48+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Dxnxsh Fxrhxn <danishfarhan700@gmail.com>, 2018\n"
-"Language-Team: Malay (Malaysia) (https://www.transifex.com/ubuntu-budgie/teams/72251/ms_MY/)\n"
+"Last-Translator: Krisztián Kecskés <hello.krisztian@gmail.com>, 2017\n"
+"Language-Team: Hungarian (https://www.transifex.com/ubuntu-budgie/teams/72251/hu/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ms_MY\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Language: hu\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Report-Msgid-Bugs-To : you@example.com\n"
 
 #: introduction.html:13
 msgid "Introduction"
-msgstr "Pengenalan"
+msgstr "Bemutatás"
 
 #: introduction.html:20
 msgid "Simplicity and Elegance."
-msgstr "Ringkas dan Anggun."
+msgstr "Egyszerűség és Elegancia."
 
 #: introduction.html24, 96
 msgid "What is <span name=\"distro-name\"></span>?"
-msgstr "Apa itu <span name=\"distro-name\"></span>?"
+msgstr "Mi az <span name=\"distro-name\"></span>?"
 
 #: introduction.html:39
 msgid ""
 "<span name=\"distro-name\"></span> is an operating system -- the core "
 "software that runs your computer, similar to"
 msgstr ""
-"<span name=\"distro-name\"></span>ialah sebuah sistem operasi -- perisian "
-"teras yang menggerakkan komputer anda, sama dengan"
+"<span name=\"distro-name\"></span>egy operációs rendszer - a szoftermag, ami"
+" működteti a számítógéped, hasonlóan"
 
 #: introduction.html:42
 msgid "Microsoft's Windows"
-msgstr "Microsoft's Windows"
+msgstr "MS Windows"
 
 #: introduction.html:44
 msgid "Apple's OS X"
-msgstr "Apple's OS X"
+msgstr "Apple OS X-e"
 
 #: introduction.html44, 113
 msgid "and"
-msgstr "dan"
+msgstr "és"
 
 #: introduction.html:46
 msgid "Google's Chrome OS"
-msgstr "Google's Chrome OS"
+msgstr "Google Chrome OS-e"
 
 #: introduction.html:48
 msgid ""
@@ -57,14 +58,19 @@ msgid ""
 "GNU/Linux. A dependable, secure, capable, and modern computer system that "
 "rivals all others in popularity and actual use."
 msgstr ""
+"<span name=\"distro-name\"></span>egy GNU/Linux-disztribúció (variáció). Egy"
+" megbízható, biztonságos, alkalmas, és modern számítópées rendszer, ami "
+"vetekedik a többivel népszerűségben és használatban."
 
 #: introduction.html:51
 msgid "Unlike other operating systems, Linux is a major one used:"
 msgstr ""
+"A többi operációs rendszertől eltérően, a Linuxot ezeken a területeken a "
+"legelterjedtebb:"
 
 #: introduction.html:53
 msgid "on most of the world's fastest and most powerful supercomputers"
-msgstr ""
+msgstr "a világ leggyorsabb és legerősebb szuperszámítógépeinek többségén"
 
 #: introduction.html:55
 msgid ""
@@ -102,7 +108,7 @@ msgstr ""
 
 #: introduction.html:83
 msgid "Objectives"
-msgstr "Objektif"
+msgstr "Célok"
 
 #: introduction.html:84
 msgid ""
@@ -113,11 +119,12 @@ msgstr ""
 #: introduction.html:86
 msgid "Accessible to all, regardless of language and physical ability."
 msgstr ""
-"Boleh dicapai untuk semua orang, tidak mengira bahasa dan keupayaan fizikal."
+"Elérhető mindenkinek, nyelv és fizikai képességekre való tekintet nélkül."
 
 #: introduction.html:87
 msgid "Increase both Ubuntu and Budgie desktop user adoption."
-msgstr "Tingkatkan penggunaan kedua-dua Ubuntu dan desktop Budgie."
+msgstr ""
+"Egyszerre növelni az Ubuntu és a Budge desktop felhasználói adaptációját."
 
 #: introduction.html:88
 msgid ""
@@ -157,14 +164,16 @@ msgid ""
 "Android is now in the hands of billions of people around the world and it's "
 "also powered by Linux."
 msgstr ""
+"Az Android emberek milliárdjainak kezében van a világon és azt is Linux "
+"hajtja."
 
 #: introduction.html:117
 msgid "Ubuntu is available in a number of different"
-msgstr "Ubuntu tersedia dalam sebilangan"
+msgstr "Az Ubuntu elérhető több különböző"
 
 #: introduction.html:118
 msgid "flavors"
-msgstr "varian"
+msgstr ""
 
 #: introduction.html:118
 msgid ""
@@ -174,23 +183,23 @@ msgstr ""
 
 #: introduction.html:121
 msgid "Budgie desktop"
-msgstr "Desktop Budgie"
+msgstr "Budgie desktop"
 
 #: introduction.html:127
 msgid "Budgie Desktop"
-msgstr "Desktop Budgie"
+msgstr "Budgie Desktop"
 
 #: introduction.html:134
 msgid "Wikipedia says that a"
-msgstr "Wikipedia menjelaskan"
+msgstr "A Wikipédia szerint"
 
 #: introduction.html:136
 msgid "Desktop Environment"
-msgstr "Persekitaran Desktop"
+msgstr "Asztali Környezet"
 
 #: introduction.html:136
 msgid "is:"
-msgstr "ialah:"
+msgstr ""
 
 #: introduction.html:138
 msgid ""
@@ -205,65 +214,62 @@ msgid ""
 "<span name=\"distro-name\"></span> comes with a lot of useful applications "
 "like"
 msgstr ""
-"<span name=\"distro-name\"></span> disertakan dengan pelbagai aplikasi "
-"berguna seperti"
 
 #: introduction.html:161
 msgid "GNOME Files"
-msgstr "GNOME Files"
+msgstr "GNOME fájlok"
 
 #: introduction.html:165
 msgid "GNOME Software"
-msgstr "Perisian GNOME"
+msgstr "GNOME Szoftverek"
 
 #: introduction.html:169
 msgid "File Manager"
-msgstr "Pengurus Fail"
+msgstr "Fájlkezelő"
 
 #: introduction.html:170
 msgid "Web Browser"
-msgstr "Pelayar Sesawang"
+msgstr "Webböngésző"
 
 #: introduction.html:171
 msgid "Office Suite"
-msgstr "Suit Pejabat"
+msgstr "Irodai csomag"
 
 #: introduction.html:172
 msgid "Software Store"
-msgstr "Kedai Perisian"
+msgstr "Szofveráruház"
 
 #: introduction.html:173
 msgid "Music Player"
-msgstr "Pemain Muzik"
+msgstr "Zenelejátszó"
 
 #: introduction.html:177
 msgid "All of which are highly customisable and managed via"
-msgstr "Semuanya boleh disuaikan dan diurus melalui"
+msgstr "Ezek közül mindegyik magasan testre szabható és kezelhető a"
 
 #: introduction.html:180
 msgid "Settings"
-msgstr "Tetapan"
+msgstr "Beállítások"
 
 #: introduction.html:182
 msgid ""
 "Budgie desktop provides an intuitive and attractive desktop environment "
 "using traditional metaphors, which means if you've ever used"
 msgstr ""
-"Desktop Budgie menyediakan satu persekitaran desktop yang menarik dan "
-"berintuitif iaitu dengan penggunaan metafora tradisional, bermaksud anda "
-"seolah-oleh pernah menggunakannya"
+"A Budgie desktop egy intuitív és attraktív asztali környezet, a hagyományos "
+"megoldások használatával, ami azt jelenti, ha valaha használt"
 
 #: introduction.html:186
 msgid "or"
-msgstr "atau"
+msgstr "vagy"
 
 #: introduction.html:189
 msgid "it will feel very familiar."
-msgstr "ia akan berasa sangat serasi."
+msgstr "akkor nagyon ismerős érzést fog nyújtani."
 
 #: introduction.html:195
 msgid "Open Source"
-msgstr "Sumber Terbuka"
+msgstr "Nyílt forráskód"
 
 #: introduction.html:202
 msgid ""
@@ -298,7 +304,7 @@ msgstr ""
 
 #: introduction.html:229
 msgid "These improvements are given back"
-msgstr ""
+msgstr "Ezek a fejlesztések visszajutnak"
 
 #: introduction.html:230
 msgid ""
@@ -306,6 +312,9 @@ msgid ""
 "result. This is how we can continually improve and grow without having to "
 "charge our users money."
 msgstr ""
+"a Linux közösséghez és az <span name=\"distro-name\"></span> fejlődik "
+"ezáltal. Így tudjunk folyamatosan fejlődni és növekedni anélkül, hogy "
+"felhasználóknak pénzt kellene fizetniük."
 
 #: introduction.html:234
 msgid ""
@@ -314,6 +323,10 @@ msgid ""
 " Instruments, Google, Canonical, Oracle, AMD, and Microsoft. Over 4,000 "
 "developers contributed to Linux over the last 15 years."
 msgstr ""
+"A Windowstól és az OS X-től eltérően, a Linuxot nem egy vállalat készítette "
+"és támogatja. Támogatja az Intel, a Redhat, a Linaro, a Samsung, az IBM, a "
+"Texas Instruments, a Google, a Canonical, az Oracle, az AMD és a Microsoft. "
+"Több, mint 4000 fejlesztő működött közre a Linuxhoz az elmúlt 15 évben."
 
 #: introduction.html:240
 msgid ""
