@@ -5,12 +5,13 @@
 # Vinzenz Vietzke <vv@tuxedocomputers.com>, 2017
 # Bernhard Keppner <bernhard.keppner@gmail.com>, 2018
 # Tim Fahrner <tim@fahrner.name>, 2018
+# Daniel Breuer <daniel3reuer@gmail.com>, 2018
 msgid ""
 msgstr ""
 "Project-Id-Version: Budgie Welcome\n"
 "POT-Creation-Date: 2016-02-27 12:48+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Tim Fahrner <tim@fahrner.name>, 2018\n"
+"Last-Translator: Daniel Breuer <daniel3reuer@gmail.com>, 2018\n"
 "Language-Team: German (Germany) (https://www.transifex.com/ubuntu-budgie/teams/72251/de_DE/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -25,7 +26,7 @@ msgstr "Empfehlungen"
 
 #: recommendations.html:20
 msgid "Backports repository"
-msgstr ""
+msgstr "Backports-Paketquelle"
 
 #: recommendations.html:22
 msgid ""
@@ -33,14 +34,17 @@ msgid ""
 "associated packages, we recommend to enable the <span name=\"distro-"
 "name\"></span> backports repository."
 msgstr ""
+"Um die aktuellste Version von dem Budgie-Deskop nutzen zu können, empfelen "
+"wir die<span name=\"distro-name\"></span> Backports-Paketquelle zu "
+"aktivieren."
 
 #: recommendations.html:24
 msgid "Repository is installed"
-msgstr ""
+msgstr "Paketquelle ist installiert."
 
 #: recommendations.html:24
 msgid "Enable <span name=\"distro-name\"></span> backports repository"
-msgstr ""
+msgstr "aktiviere die <span name=\"distro-name\"></span>Backports-Paketquelle "
 
 #: recommendations.html25, 70, 87, 100, 117, 132
 msgid "Applying Changes..."
@@ -48,7 +52,7 @@ msgstr "Änderungen werden übernommen..."
 
 #: recommendations.html:29
 msgid "Snap Applications"
-msgstr ""
+msgstr "Snap Anwendungen"
 
 #: recommendations.html:34
 msgid ""
