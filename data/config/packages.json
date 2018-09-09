@@ -204,6 +204,27 @@
               "bionic" : ["ppa:ubuntubudgie/backports"],
               "cosmic" : ["universe"]
       }
+    },
+      "recentlyused-applet" : {
+      "packages" : ["budgie-recentlyused-applet"],
+      "repos" : {
+              "bionic" : ["ppa:ubuntubudgie/backports"],
+              "cosmic" : ["universe"]
+      }
+    },
+      "trash-applet" : {
+      "packages" : ["budgie-trash-applet"],
+      "repos" : {
+              "bionic" : ["ppa:ubuntubudgie/backports"],
+              "cosmic" : ["universe"]
+      }
+    },
+      "applauncher-applet" : {
+      "packages" : ["budgie-app-launcher-applet"],
+      "repos" : {
+              "bionic" : ["ppa:ubuntubudgie/backports"],
+              "cosmic" : ["universe"]
+      }
     }
   },
   "recommendations" : {
@@ -389,6 +410,6 @@
         "bionic" : ["ppa:ubuntubudgie/backports"]
         }
       }
-      
+
   }
 }
