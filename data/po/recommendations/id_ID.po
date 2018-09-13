@@ -1,26 +1,27 @@
 # Translators:
-# Moo, 2017
+# zk, 2017
+# Afrizal Yusren <yusrenz@gmail.com>, 2018
 msgid ""
 msgstr ""
 "Project-Id-Version: Budgie Welcome\n"
 "POT-Creation-Date: 2016-02-27 12:48+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Moo, 2017\n"
-"Language-Team: Lithuanian (https://www.transifex.com/ubuntu-budgie/teams/72251/lt/)\n"
+"Last-Translator: Afrizal Yusren <yusrenz@gmail.com>, 2018\n"
+"Language-Team: Indonesian (Indonesia) (https://www.transifex.com/ubuntu-budgie/teams/72251/id_ID/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: lt\n"
-"Plural-Forms: nplurals=4; plural=(n % 10 == 1 && (n % 100 > 19 || n % 100 < 11) ? 0 : (n % 10 >= 2 && n % 10 <=9) && (n % 100 > 19 || n % 100 < 11) ? 1 : n % 1 != 0 ? 2: 3);\n"
+"Language: id_ID\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "Report-Msgid-Bugs-To : you@example.com\n"
 
 #: recommendations.html:15
 msgid "Recommendations"
-msgstr "Rekomendacijos"
+msgstr "Rekomendasi"
 
 #: recommendations.html:20
 msgid "Backports repository"
-msgstr "Naujų versijų paketų saugykla"
+msgstr "Repository Backport"
 
 #: recommendations.html:22
 msgid ""
@@ -28,25 +29,25 @@ msgid ""
 "associated packages, we recommend to enable the <span name=\"distro-"
 "name\"></span> backports repository."
 msgstr ""
-"Tam, kad būtų pateiktos naujausios Budgie darbalaukio ir kitų susijusių "
-"paketų versijos, siūlome įjungti <span name=\"distro-name\"></span> naujų "
-"versijų paketų saugyklą."
+"Untuk menyediakan versi paling baru dari budgie-desktop dan paket terkait "
+"lainnya, kami menyarankan untuk mengaktifkan<span name=\"distro-"
+"name\"></span> repository backport."
 
 #: recommendations.html:24
 msgid "Repository is installed"
-msgstr "Saugykla yra įdiegta"
+msgstr "Repository terinstall."
 
 #: recommendations.html:24
 msgid "Enable <span name=\"distro-name\"></span> backports repository"
-msgstr "Įjungti <span name=\"distro-name\"></span> naujų versijų paketų saugyklą"
+msgstr "Aktifkan <span name=\"distro-name\"></span> backports repository"
 
 #: recommendations.html25, 70, 87, 100, 117, 132
 msgid "Applying Changes..."
-msgstr "Taikomi pakeitimai..."
+msgstr "Menerapkan Perubahan..."
 
 #: recommendations.html:29
 msgid "Snap Applications"
-msgstr "Snap programos"
+msgstr "Aplikasi Snap"
 
 #: recommendations.html:34
 msgid ""
@@ -63,30 +64,31 @@ msgid ""
 "releases but the complexities of packaging and providing updates have "
 "prevented us from delivering them in the past."
 msgstr ""
-"<strong>Snap</strong> yra naujos kartos programų pakavimo formatas, kurį "
-"sukūrė <em>Canonical</em>. Nors iš pradžių, jis buvo sukurtas tik "
-"skirtingoms Ubuntu platformoms, tačiau šiuo metu veikia daugelyje kitų "
-"GNU/Linux distribucijų. Jis padės programų kūrėjams pateikti bendrą paketą, "
-"kuris gali veikti skirtingose platformose. Naudodamos snap paketų formatą, "
-"programos gali turėti savo bibliotekų versiją ir todėl nereikia rūpintis dėl"
-" bazinėje operacinėje sistemoje įdiegtų bibliotekų. Snap paketai įgalina "
-"kūrėjus į <span name=\"distro-name\"></span> pateikti žymiai naujesnes "
-"programų versijas. Naujesnės KDE, GNOME, naršyklių ar kitų darbalaukio "
-"aplinkų programų versijos, dažniausiai bus lengvai sukuriamos senesnėse "
-"ilgojo palaikymo (LTS) laidose, tačiau pakavimo sudėtingumas ir atnaujinimų "
-"teikimas neleido mums jų teikti praeityje."
+"<strong>Snap</strong> adalah format paket aplikasi generasi baru yang "
+"diciptakan oleh  <em>Canonical</em>. Meskipun awalnya dikembangkan hanya "
+"untuk platform Ubuntu yang berbeda, saat ini ia berfungsi di banyak "
+"distribusi GNU / Linux lainnya. Ini akan membantu pengembang aplikasi untuk "
+"menyediakan paket terpadu yang dapat berfungsi di berbagai platform. Dengan "
+"menggunakan format paket snap, aplikasi dapat memiliki versi pustaka mereka "
+"sendiri dan tidak perlu khawatir tentang pustaka yang dipasang di sistem "
+"operasi yang mendasarinya. Paket Snap memungkinkan pengembang untuk "
+"menghadirkan banyak versi aplikasi yang lebih baru untuk<span name=\"distro-"
+"name\"></span>. Versi KDE, GNOME, browser, atau aplikasi lingkungan desktop "
+"yang lebih baru biasanya akan dengan mudah dibuat pada rilis LTS yang lebih "
+"lama tetapi kerumitan penyediaan pengemasan dan pembaruan telah membuat kami"
+" tidak mampu mengupayakannya di masa lalu."
 
 #: recommendations.html38, 81
 msgid "Learn more"
-msgstr "Sužinokite daugiau"
+msgstr "Pelajari lebih lanjut"
 
 #: recommendations.html:40
 msgid "Snap user guide"
-msgstr "Snap naudotojo vadovas"
+msgstr "Panduan Pengguna Snap"
 
 #: recommendations.html:42
 msgid "Search Snap Apps"
-msgstr "Ieškoti Snap programų"
+msgstr "Cari Aplikasi Snap"
 
 #: recommendations.html:43
 msgid ""
@@ -95,10 +97,10 @@ msgid ""
 "Snap app store. Well, wonder not. Simply pop open a terminal and run the "
 "following command:"
 msgstr ""
-"Jeigu Snap programų pritaikymui yra barjerų (be to, kad šiuo formatu yra "
-"prieinama nedaug programų), tai vienas iš jų yra neaiškumas dėl to, kurie "
-"paketai yra prieinami Snap programų parduotuvėje. Tačiau nesirūpinkite. "
-"Tiesiog, atverkite terminalą ir įvykdykite šią komandą:"
+"Jika ada penghalang untuk mengadopsi adopsi aplikasi (selain dari beberapa "
+"aplikasi yang tersedia dalam format umum), snap akan mengetahui paket mana "
+"yang tersedia di toko aplikasi Snap. Yah, jangan heran. Cukup buka terminal "
+"dan jalankan perintah berikut:"
 
 #: recommendations.html:47
 msgid ""
@@ -106,29 +108,28 @@ msgid ""
 " install from the command line. It can be run with a query after it (e.g., "
 "‘snap find email‘, ‘snap find media’, ‘snap find messaging‘) or without."
 msgstr ""
-"Komanda \"find\" leidžia jums iš komandų eilutės greitai ieškoti ir atrasti "
-"prieinamus įdiegti snap paketus. Ši komanda gali būti vykdoma su užklausa po"
-" žodžio \"find\" (pvz., \"snap find email\", \"snap find media\", \"snap "
-"find messaging\") arba be užklausos."
+"Perintah find memungkinkan Anda dengan cepat mencari dan menemukan aplikasi "
+"snap yang tersedia untuk diinstal dari terminal. Ini dapat dijalankan dengan"
+" kueri setelahnya (misalnya, ‘snap find email‘, ‘snap find media’, ‘snap "
+"find messaging‘) atau tanpa perintah tersebut."
 
 #: recommendations.html:48
 msgid "When run without a query you’ll instead see a list of featured snaps."
 msgstr ""
-"Įvykdę šią komandą be užklausos, vietoj to, pamatysite sąrašą pasižymėjusių "
-"snap paketų."
+"Saat dijalankan tanpa kueri, Anda malah akan melihat daftar fitur snap."
 
 #: recommendations.html:49
 msgid "See installed apps"
-msgstr "Rodyti įdiegtas programas"
+msgstr "Lihat apl terpasang"
 
 #: recommendations.html:50
 msgid ""
 "Installed some Snaps but can’t remember what? Don’t panic. Use the list "
 "command to see an up-to-date list of all Snap apps installed on your system:"
 msgstr ""
-"Įdiegėte kai kuriuos Snap paketus, tačiau neprisimenate kuriuos būtent? "
-"Nesijaudinkite. Norėdami pamatyti atnaujintą visų jūsų kompiuteryje įdiegtų "
-"Snap programų sąrašą, naudokite komandą \"list\":"
+"Memasang beberapa Snap tetapi lupa apa? Jangan panik. Gunakan perintah list "
+"untuk melihat daftar terbaru dari semua aplikasi Snap yang diinstal di "
+"sistem Anda:"
 
 #: recommendations.html:52
 msgid ""
@@ -136,13 +137,13 @@ msgid ""
 "of the developer who uploaded it (handy when there are multiple versions of "
 "the same app in the store, e.g., Telegram)."
 msgstr ""
-"Šis sąrašas taip pat rodo jų versijos numerį, revizijos numerį ir programą "
-"įkėlusio kūrėjo vardą (praverčia, kai parduotuvėje yra kelios tos pačios "
-"programos versijos, pvz., Telegram)."
+"Daftar ini juga menunjukkan nomor versi, nomor revisi, dan nama pengembang "
+"yang mengunggahnya (berguna saat ada beberapa versi dari aplikasi yang sama "
+"di store, misalnya, Telegram)."
 
 #: recommendations.html:53
 msgid "Install & Remove Snap Apps"
-msgstr "Įdiegti ir šalinti Snap programas"
+msgstr "Pasang & Buang Apl Snap"
 
 #: recommendations.html:54
 msgid ""
@@ -150,14 +151,14 @@ msgid ""
 "analogous snap commands easy to remember. You install snap apps with the "
 "‘install’ command, and remove them using the ‘remove’ command."
 msgstr ""
-"Jeigu esate įpratę tvarkyti programinę įrangą, naudojant apt, tuomet jums iš"
-" karto bus lengva atsiminti analogiškas snap komandas. Snap programas "
-"įdiegiate, naudodami \"install\" komandą, o šalinate, naudodami \"remove\" "
-"komandą."
+"Jika Anda terbiasa mengelola perangkat lunak menggunakan apt, Anda akan "
+"segera menemukan perintah snap analog yang mudah diingat. Anda menginstal "
+"aplikasi snap dengan perintah ‘install’, dan menghapusnya menggunakan "
+"perintah ‘remove’."
 
 #: recommendations.html:57
 msgid "See details of an App"
-msgstr "Rodyti išsamesnę programos informaciją"
+msgstr "Lihat detail sebuah Apl"
 
 #: recommendations.html:58
 msgid ""
@@ -166,14 +167,14 @@ msgid ""
 " channel, confinement status, size, number of revisions, and more. The snap "
 "info --verbose offers a greater overview."
 msgstr ""
-"Jūs galite matyti išsamesnę bet kurios snap programos informaciją, "
-"nepriklausomai nuo to, ar ši programa įdiegta ar ne. Į šią informaciją įeina"
-" programos laidos kanalas, apribojimų būsena, dydis, taisymų skaičius ir "
-"daugiau. Komanda \"snap info --verbose\" siūlo dar išsamesnę apžvalgą."
+"Anda dapat menggunakan ini untuk melihat informasi terperinci tentang "
+"aplikasi snap apa pun, apakah dipasang atau tidak. Info ini mencakup saluran"
+" rilis aplikasi, status pengurungan, ukuran, jumlah revisi, dan banyak lagi."
+" Info snap --verbose menawarkan gambaran umum yang lebih luas."
 
 #: recommendations.html:62
 msgid "Update a Snap App"
-msgstr "Atnaujinti Snap programą"
+msgstr "Perbarui Apl Snap"
 
 #: recommendations.html:64
 msgid ""
@@ -182,22 +183,22 @@ msgid ""
 "handles updates automatically (you can, ofc, revert a Snap update or install"
 " a specific revision)."
 msgstr ""
-"Gan naudinga yra tai, kad jums, ko gero, niekada nereikės prisiminti įdiegti"
-" Snap programos atnaujinimą. Taip yra todėl, kad Snapd yra vykdoma fone ir "
-"automatiškai apdoroja visus atnaujinimus (jūs, žinoma, galite sugrąžinti "
-"Snap atnaujinimą ar įdiegti specifinę programos reviziją)."
+"Sebaliknya, Anda mungkin tidak perlu mengingat untuk memasang pembaruan ke "
+"aplikasi Snap. Ini karena Snapd berjalan di latar belakang dan menangani "
+"pembaruan secara otomatis (Anda dapat, ofc, mengembalikan pembaruan Snap "
+"atau menginstal revisi tertentu)."
 
 #: recommendations.html:67
 msgid "Reference"
-msgstr "Nuoroda"
+msgstr "Referensi"
 
 #: recommendations.html:69
 msgid "Snap is already installed"
-msgstr "Snap jau yra įdiegta"
+msgstr "Snap sudah terpasang"
 
 #: recommendations.html:69
 msgid "Install Snap"
-msgstr "Įdiegti Snap"
+msgstr "Pasang Snap"
 
 #: recommendations.html:75
 msgid "Flatpak"
@@ -213,13 +214,13 @@ msgid ""
 "without worrying about the underlying operating system and its built-in "
 "libraries."
 msgstr ""
-"<strong>Flatpak</strong> yra naujos kartos programų platinimo karkasas, "
-"skirtas GNU/Linux platformoms. Jis pristato bendrą pakavimo formatą tarp "
-"visų GNU/Linux distribucijų. Tai reiškia, kad vienas paketas gali veikti bet"
-" kurioje platformoje. Flatpak padeda programų kūrėjams pristatyti savo "
-"programą vienu formatu, kuris gali būti įdiegtas bet kurioje GNU/Linux "
-"distribucijoje, nesirūpinant dėl bazinės operacinės sistemos ir jos įtaisytų"
-" bibliotekų."
+"<strong>Flatpak</strong> adalah kerangka distribusi aplikasi generasi baru "
+"untuk platform GNU / Linux. Dengan memperkenalkan format kemasan terpadu di "
+"semua distribusi GNU / Linux. Itu berarti satu paket dapat berfungsi di "
+"platform apa pun. Flatpak membantu pengembang aplikasi untuk mengirimkan "
+"aplikasi mereka dalam satu format yang dapat diinstal dalam distribusi GNU /"
+" Linux tanpa khawatir tentang sistem operasi yang mendasarinya dan pustaka "
+"yang ada di dalamnya."
 
 #: recommendations.html:83
 msgid ""
@@ -229,12 +230,12 @@ msgid ""
 "packages as soon as it is packaged by the upstream project and you don't "
 "have to wait for your distribution to package it for you."
 msgstr ""
-"<span name=\"distro-name\"></span> rekomenduoja įdiegti "
-"<strong>Flatpak</strong>, kadangi jis atvers jums naują galimybių pasaulį. "
-"Naudodami Flatpak, mėgausitės paskiausiomis įvairios programinės įrangos "
-"versijų laidomis iš karto, kai viršesnis (angl. upstream) projektas jas "
-"supakuos, todėl jums nereikės laukti, kol jūsų distribucija supakuos jums "
-"šias laidas."
+"<span name=\"distro-name\"></span> merekomendasikan anda memasang "
+"<strong>Flatpak</strong> karena akan membuka kemungkinan dunia baru untuk "
+"Anda. Dengan Flatpak, Anda dapat menikmati rilis terbaru dari paket "
+"perangkat lunak yang berbeda segera setelah dikemas oleh proyek hulu dan "
+"Anda tidak perlu menunggu tim distribusi Ubuntu untuk mengemasnya untuk "
+"Anda."
 
 #: recommendations.html:85
 msgid ""
@@ -242,20 +243,19 @@ msgid ""
 "name'></span> allows you to install Flatpak with a single click. After first"
 " time configuration, you can use GNOME Software to install Flatpak packages."
 msgstr ""
-"Būdama patogia GNU/Linux distribucija, <span name='distro-name'></span> "
-"leidžia jums vienu spustelėjimu įdiegti Flatpak. Po pirmosios "
-"konfigūracijos, Flatpak paketų įdiegimui galite naudoti GNOME programinę "
-"įrangą."
+"Menjadi distribusi GNU / Linux yang user friendly, <span name='distro-"
+"name'></span>  memungkinkan Anda untuk menginstal Flatpak dengan satu klik. "
+"Setelah konfigurasi pertama kali, Anda dapat menggunakan Perangkat Lunak "
+"GNOME untuk menginstal paket Flatpak."
 
 #: recommendations.html:86
 msgid "Flatpak is installed. Please reboot for the service to start"
 msgstr ""
-"Flatpak yra įdiegta. Norėdami paleisti tarnybą, paleiskite kompiuterį iš "
-"naujo"
+"Flatpak sudah terpasang. Silakan mulai ulang agar layanan bisa dijalankan"
 
 #: recommendations.html:87
 msgid "Install & Configure Flatpak"
-msgstr "Įdiegti ir konfigūruoti Flatpak"
+msgstr "Pasang & Konfigurasi Flatpak"
 
 #: recommendations.html:91
 msgid "skippy-xd"
@@ -268,10 +268,10 @@ msgid ""
 "multi-monitor setups, graphics drivers and within virtual machines such as "
 "VirtualBox it may not work correctly."
 msgstr ""
-"<strong>skippy-xd</strong> per klaviatūros trumpinį prideda langų rodymo "
-"galimybę. Daugumoje darbalaukių skippy-xd veikia tinkamai. Pastaba: Esant "
-"kelių ekranų sąrankai, grafikos tvarkyklėms ar virtualių mašinų, tokių kaip "
-"VirtualBox , viduje, ji gali veikti neteisingai."
+"<strong>skippy-xd</strong> menambahkan jendela ekspos melalui pintasan "
+"keyboard. Untuk kebanyakan desktop, skippy-xd berfungsi dengan baik. "
+"Catatan: Untuk beberapa pengaturan multi-monitor, driver grafis dan dalam "
+"mesin virtual seperti VirtualBox mungkin tidak berfungsi dengan benar."
 
 #: recommendations.html:98
 msgid ""
@@ -281,19 +281,19 @@ msgid ""
 "<strong>skippy-xd-toggle</strong> when defining your own custom keyboard "
 "shortcut."
 msgstr ""
-"Pagal numatymą, diegimo programa sukurs pasirinktinį klaviatūros trumpinį "
-"VALD+kairinis kirtis (klavišas, esantis virš Tab). Jūs galite apibrėžti ar "
-"pakeisti klaviatūros trumpinį per Nustatymai - Klaviatūra - Pasirinktinių "
-"susiejimų parametrą. Apibrėždami savo asmeninį pasirinktinį klaviatūros "
-"susiejimą, naudokite komandą <strong>skippy-xd-toggle</strong>."
+"Secara default, pemasang akan membuat pintasan keyboard khusus CTRL + grave "
+"('tombol di atas Tab'). Anda dapat menentukan atau mengubah pintasan "
+"keyboard melalui Pengaturan - Keyboard - Opsi Pintasan Kustom. Gunakan "
+"perintah <strong>skippy-xd-toggle</strong> saat menentukan pintasan keyboard"
+" khusus Anda sendiri."
 
 #: recommendations.html:99
 msgid "skippy-xd is installed"
-msgstr "skippy-xd yra įdiegta"
+msgstr "skippy-xd terpasang"
 
 #: recommendations.html:99
 msgid "Install & Configure skippy-xd"
-msgstr "Įdiegti ir konfigūruoti skippy-xd"
+msgstr "Pasang dan konfigurasi skippy-xd"
 
 #: recommendations.html:105
 msgid "Steam"
@@ -312,17 +312,17 @@ msgid ""
 "networking, matchmaking, in-game achievements, micro-transactions, and "
 "support for user-created content through Steam Workshop."
 msgstr ""
-"<strong>Steam</strong> yra skaitmeninio platinimo platforma, sukurta Valve "
-"Corporation ir siūlanti skaitmeninių teisių valdymą (angl. Digital rights "
-"management (DRM)), daugelio žaidėjų žaidimus ir socialinio tinklo paslaugas."
-" Steam teikia naudotojams automatinį žaidimų įdiegimą ir atnaujinimą "
-"keliuose kompiuteriuose ir bendruomenės ypatybes, tokias kaip draugų sąrašai"
-" ir grupės, įrašymas į debesiją, ir balso bei pokalbių funkcionalumas "
-"žaidime. Programinė įranga teikia laisvai prieinamą programų sąsają (API), "
-"pavadinimu Steamworks, kurią kūrėjai gali naudoti, norėdami į savo produktus"
-" integruoti daugelį Steam funkcijų, įskaitant darbą tinkle, sugretinimus, "
-"pasiekimus žaidime, mikro persiuntimus ir palaikymą naudotojų sukurtam "
-"turiniui per Steam Workshop."
+"<strong>Steam</strong> adalah platform distribusi digital yang dikembangkan "
+"oleh Valve Corporation yang menawarkan manajemen hak digital (DRM), game "
+"multiplayer, dan layanan jejaring sosial. Steam menyediakan pengguna dengan "
+"instalasi dan pembaruan otomatis game di banyak komputer, dan fitur "
+"komunitas seperti daftar teman dan grup, penyimpanan cloud, dan fungsi suara"
+" dan obrolan dalam game. Perangkat lunak ini menyediakan antarmuka "
+"pemrograman aplikasi gratis (API) yang disebut Steamworks, yang dapat "
+"digunakan oleh pengembang untuk mengintegrasikan banyak fungsi Steam ke "
+"dalam produk mereka, termasuk jaringan, perjodohan, pencapaian dalam game, "
+"transaksi mikro, dan dukungan untuk konten yang dibuat pengguna. melalui "
+"Steam Workshop."
 
 #: recommendations.html:114
 msgid ""
@@ -333,26 +333,26 @@ msgid ""
 "enable the <em>Multiverse</em> repository and to install Steam with a single"
 " mouse click."
 msgstr ""
-"Būdama nuosavybine programine įranga, Steam nėra įtraukta į pirmines <span "
-"name=\"distro-name\"></span> saugyklas. Kita vertus, norint suteikti "
-"naudotojams daugiau pasirinkimo, Steam yra teikiama kaip <em>Multiverse</em>"
-" saugyklos dalis. <span name=\"distro-name\"></span> suteikia jums galimybę "
-"įjungti <em>Multiverse</em> saugyklą ir vienu spustelėjimu įdiegti Steam."
+"Menjadi perangkat lunak milik pihak ke-3, Steam tidak termasuk dalam "
+"repositori utama. Namun, untuk menyediakan lebih banyak pilihan bagi "
+"pengguna, Steam dikirim sebagai bagian dari repositori Multiverse.  <span "
+"name=\"distro-name\"></span> memberi Anda pilihan untuk mengaktifkan "
+"repositori <em>Multiverse</em> dan menginstal Steam dengan satu klik mouse. "
 
 #: recommendations.html:116
 msgid "Steam is installed"
-msgstr "Steam yra įdiegta"
+msgstr "Steam terpasang"
 
 #: recommendations.html:116
 msgid "Install & Configure Steam"
-msgstr "Įdiegti ir konfigūruoti Steam"
+msgstr "Pasang dan Atur Steam"
 
 #: recommendations.html:126
 msgid ""
 "<strong>Dropbox</strong> is a secure file sharing and storage solution."
 msgstr ""
-"<strong>Dropbox</strong> yra saugus failų bendrinimo ir saugojimo "
-"sprendimas."
+"<strong>Dropbox</strong> adalah solusi penyimpanan dan berbagi berkas yang "
+"aman."
 
 #: recommendations.html:128
 msgid ""
@@ -363,25 +363,25 @@ msgid ""
 "enable the <em>Multiverse</em> repository and to install Dropbox with a "
 "single mouse click."
 msgstr ""
-"Būdama nuosavybine programine įranga, Dropbox nėra įtraukta į pirmines <span"
-" name=\"distro-name\"></span> saugyklas. Kita vertus, norint suteikti "
-"naudotojams daugiau pasirinkimo, Dropbox yra teikiama kaip "
-"<em>Multiverse</em> saugyklos dalis. <span name=\"distro-name\"></span> "
-"suteikia jums galimybę įjungti <em>Multiverse</em> saugyklą ir vienu "
-"spustelėjimu įdiegti Dropbox."
+"Menjadi perangkat lunak milik pihak ke-3, Steam tidak termasuk dalam "
+"repositori utama. Namun, untuk menyediakan lebih banyak pilihan bagi "
+"pengguna, Steam dikirim sebagai bagian dari repositori <em>Multiverse</em>. "
+"<span name=\"distro-name\"></span> memberi anda pilihan untuk mengaktifkan "
+"repositori <em>Multiverse</em> dan menginstall Dropbox dengan sekali klik "
+"mouse."
 
 #: recommendations.html:130
 msgid ""
 "After installing, logout and login and follow the dropbox instructions that "
 "are then displayed."
 msgstr ""
-"Įdiegę, atsijukite ir vėl prisijunkite, o tuomet sekite rodomą dropbox "
-"instrukciją."
+"Setelah menginstal, login ulang dan ikuti instruksi dropbox yang kemudian "
+"ditampilkan."
 
 #: recommendations.html:131
 msgid "Dropbox is installed"
-msgstr "Dropbox yra įdiegta"
+msgstr "Dropbox terpasang"
 
 #: recommendations.html:131
 msgid "Install & Configure Dropbox"
-msgstr "Įdiegti ir konfigūruoti Dropbox"
+msgstr "Pasang dan Atur Dropbox"
