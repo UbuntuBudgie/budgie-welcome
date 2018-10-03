@@ -1,55 +1,55 @@
 # Translators:
-# abuyop <abuyop@gmail.com>, 2017
-# DxnxshFxrhxn <danishfarhan700@gmail.com>, 2018
+# Ronald van Zuijlen, 2017
+# Machiel Heinen, 2017
 msgid ""
 msgstr ""
 "Project-Id-Version: Budgie Welcome\n"
 "POT-Creation-Date: 2016-02-27 12:48+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: DxnxshFxrhxn <danishfarhan700@gmail.com>, 2018\n"
-"Language-Team: Malay (Malaysia) (https://www.transifex.com/ubuntu-budgie/teams/72251/ms_MY/)\n"
+"Last-Translator: Machiel Heinen, 2017\n"
+"Language-Team: Dutch (Netherlands) (https://www.transifex.com/ubuntu-budgie/teams/72251/nl_NL/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ms_MY\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Language: nl_NL\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Report-Msgid-Bugs-To : you@example.com\n"
 
 #: introduction.html:13
 msgid "Introduction"
-msgstr "Pengenalan"
+msgstr "Introductie"
 
 #: introduction.html:20
 msgid "Simplicity and Elegance."
-msgstr "Ringkas dan Anggun."
+msgstr "Eenvoud en elegantie."
 
 #: introduction.html24, 96
 msgid "What is <span name=\"distro-name\"></span>?"
-msgstr "Apa itu <span name=\"distro-name\"></span>?"
+msgstr "Wat is <span name=\"distro-name\"></span>?"
 
 #: introduction.html:39
 msgid ""
 "<span name=\"distro-name\"></span> is an operating system -- the core "
 "software that runs your computer, similar to"
 msgstr ""
-"<span name=\"distro-name\"></span>ialah sebuah sistem operasi -- perisian "
-"teras yang menggerakkan komputer anda, sama dengan"
+"<span name=\"distro-name\"></span> is een besturingssysteem -- de kern "
+"software die jouw computer doet werken, vergelijkbaar met"
 
 #: introduction.html:42
 msgid "Microsoft's Windows"
-msgstr "Microsoft's Windows"
+msgstr "Microsoft Windows"
 
 #: introduction.html:44
 msgid "Apple's OS X"
-msgstr "Apple's OS X"
+msgstr "OS X van Apple"
 
 #: introduction.html44, 113
 msgid "and"
-msgstr "dan"
+msgstr "en"
 
 #: introduction.html:46
 msgid "Google's Chrome OS"
-msgstr "Google's Chrome OS"
+msgstr "Chrome OS van Google"
 
 #: introduction.html:48
 msgid ""
@@ -57,24 +57,32 @@ msgid ""
 "GNU/Linux. A dependable, secure, capable, and modern computer system that "
 "rivals all others in popularity and actual use."
 msgstr ""
+"<span name=\"distro-name\"></span> is een distributie (variant) van "
+"GNU/Linux. Een betrouwbaar, veilig, bekwaam en modern besturingssysteem dat "
+"de concurrentie aangaat met alle anderen in populariteit en feitelijk "
+"gebruik."
 
 #: introduction.html:51
 msgid "Unlike other operating systems, Linux is a major one used:"
 msgstr ""
+"Anders dan andere besturingssystemen, is Linux een veel gebruikt systeem op:"
 
 #: introduction.html:53
 msgid "on most of the world's fastest and most powerful supercomputers"
 msgstr ""
+"het overgrote deel van 's werelds snelste en krachtigste supercomputers"
 
 #: introduction.html:55
 msgid ""
 "on many of (if not most of) the computers that make up the backbone of "
 "Internet"
 msgstr ""
+"veel (zo niet de meeste) computers die ervoor zorgen dat de motor van het "
+"internet werkt"
 
 #: introduction.html:57
 msgid "on corporate servers that require stability and reliability"
-msgstr ""
+msgstr "op stabiele en betrouwbare zakelijke servers"
 
 #: introduction.html:62
 msgid ""
@@ -84,12 +92,19 @@ msgid ""
 " modest hardware requirements, it is suitable for modern desktops and "
 "laptops alike."
 msgstr ""
+"<span name=\"distro-name\"></span> is een stabiel, gemakkelijk te gebruiken "
+"besturingssysteem met een configureerbaar bureaubladomgeving. Het is ideaal "
+"voor diegenen onder ons die het meeste uit hun computers willen persen en "
+"die een traditioneel bureaublad verkiezen. Het is geschikt voor moderne "
+"desktops en laptops."
 
 #: introduction.html:69
 msgid ""
 "The operating system is more secure, and better supported than the operating"
 " system pre-installed on most home computer hardware today."
 msgstr ""
+"Het besturingssysteem is veiliger en beter ondersteund dan het "
+"besturingssysteem dat op de meeste computers vooraf geïnstalleerd wordt."
 
 #: introduction.html:73
 msgid ""
@@ -99,43 +114,55 @@ msgid ""
 " anything about the way it looks, the way it works, or the applications it "
 "runs to suit your taste."
 msgstr ""
+"Als je  <span name=\"distro-name\"></span> gebruikt krijg je de vrijheid van"
+" een compleet besturingssysteem met alle benodigde functies en vooraf "
+"ingesteld met de meeste (zo niet alle) programma's die je nodig hebt voor je"
+" dagelijks computer gebruik. Je kan alles veranderen aan uiterlijk, werking "
+"of inhoud van de programma's naar eigen inzicht."
 
 #: introduction.html:83
 msgid "Objectives"
-msgstr "Objektif"
+msgstr "Doelen"
 
 #: introduction.html:84
 msgid ""
 "<span name=\"distro-name\"></span> has a number of guiding objectives and "
 "goals:"
-msgstr ""
+msgstr "<span name=\"distro-name\"></span> heeft een aantal hoofddoelen:"
 
 #: introduction.html:86
 msgid "Accessible to all, regardless of language and physical ability."
-msgstr ""
-"Boleh dicapai untuk semua orang, tidak mengira bahasa dan keupayaan fizikal."
+msgstr "Toegankelijk voor iedereen, los van taal en fysiek vermogen."
 
 #: introduction.html:87
 msgid "Increase both Ubuntu and Budgie desktop user adoption."
-msgstr "Tingkatkan penggunaan kedua-dua Ubuntu dan desktop Budgie."
+msgstr ""
+"Verhoog de acceptatie van Ubuntu en de Budgie bureaubladomgeving door "
+"gebruikers."
 
 #: introduction.html:88
 msgid ""
 "Create a Ubuntu based distro for users who prefer a traditional desktop "
 "metaphor."
 msgstr ""
+"Het creëren een Ubuntu gebaseerde distrobutie voor gebruikers die een "
+"traditionele desktop ervaring willen."
 
 #: introduction.html:89
 msgid ""
 "When possible contribute to Upstream projects such as Solus and Debian so "
 "all Linux communities benefit."
 msgstr ""
+"Bijdragen aan upstream projecten zoals Solus en Debian, zodat alle Linux "
+"communities de voordelen ervaren."
 
 #: introduction.html:90
 msgid ""
 "Software selection will favor functionality and stability over lightness and"
 " whimsy."
 msgstr ""
+"Software selectie zal altijd het nut en de stabiliteit verkiezen boven "
+"gewicht en eigenzinnigheid."
 
 #: introduction.html:100
 msgid "Ubuntu"
@@ -143,7 +170,7 @@ msgstr "Ubuntu"
 
 #: introduction.html:107
 msgid "is one of, if not the, largest deployed"
-msgstr ""
+msgstr "is één van de meest, zo niet, hét meest gebruikte"
 
 #: introduction.html:110
 msgid ""
@@ -151,46 +178,53 @@ msgid ""
 "Ubuntu and makes it possible to create secure, powerful and versatile "
 "operating systems, such as"
 msgstr ""
+"gebaseerde besturingssysteem in de wereld. Linux vormt het hart van Ubuntu "
+"en vormt de basis voor veilige, krachtige en flexibele besturingssystemen "
+"als "
 
 #: introduction.html:114
 msgid ""
 "Android is now in the hands of billions of people around the world and it's "
 "also powered by Linux."
 msgstr ""
+"Android wordt door miljoenen mensen over de hele wereld gebruik en is ook "
+"gebaseerd op Linux."
 
 #: introduction.html:117
 msgid "Ubuntu is available in a number of different"
-msgstr "Ubuntu tersedia dalam sebilangan"
+msgstr "Ubuntu is beschikbaar in een aantal verschillende"
 
 #: introduction.html:118
 msgid "flavors"
-msgstr "varian"
+msgstr "smaken"
 
 #: introduction.html:118
 msgid ""
 "each coming with its own desktop environment. <span name=\"distro-"
 "name\"></span> takes the Ubuntu base operating system and adds the"
 msgstr ""
+"waarbij elke smaak z'n eigen desktopomgeving aanbiedt. <span name=\"distro-"
+"name\"></span> gebruikt de basis van Ubuntu en complementeert dat met de"
 
 #: introduction.html:121
 msgid "Budgie desktop"
-msgstr "Desktop Budgie"
+msgstr "Budgie desktop"
 
 #: introduction.html:127
 msgid "Budgie Desktop"
-msgstr "Desktop Budgie"
+msgstr "Budgie Desktop"
 
 #: introduction.html:134
 msgid "Wikipedia says that a"
-msgstr "Wikipedia menjelaskan"
+msgstr "Volgens Wikipedia"
 
 #: introduction.html:136
 msgid "Desktop Environment"
-msgstr "Persekitaran Desktop"
+msgstr "is een desktopomgeving"
 
 #: introduction.html:136
 msgid "is:"
-msgstr "ialah:"
+msgstr ":"
 
 #: introduction.html:138
 msgid ""
@@ -199,14 +233,18 @@ msgid ""
 "graphical user interface (GUI). Desktop GUIs help the user to easily access "
 "and edit files.\""
 msgstr ""
+"een uitvoering van een desktopmatefoor gemaakt van een bundeling van "
+"programma's die  draaien op het besturingssysteem en een gemeenschappelijke "
+"grafische gebruikersinterface (GUI) delen. Desktop GUI's helpen de gebruiker"
+" eenvoudig toegang te krijgen tot en het bewerken van bestanden."
 
 #: introduction.html:148
 msgid ""
 "<span name=\"distro-name\"></span> comes with a lot of useful applications "
 "like"
 msgstr ""
-"<span name=\"distro-name\"></span> disertakan dengan pelbagai aplikasi "
-"berguna seperti"
+"<span name=\"distro-name\"></span> heeft vele goede programma's die je "
+"verwacht van een goede desktopomgeving, zoals"
 
 #: introduction.html:161
 msgid "GNOME Files"
@@ -214,56 +252,57 @@ msgstr "GNOME Files"
 
 #: introduction.html:165
 msgid "GNOME Software"
-msgstr "Perisian GNOME"
+msgstr "GNOME Software"
 
 #: introduction.html:169
 msgid "File Manager"
-msgstr "Pengurus Fail"
+msgstr "Bestandsbeheerder"
 
 #: introduction.html:170
 msgid "Web Browser"
-msgstr "Pelayar Sesawang"
+msgstr "Browser"
 
 #: introduction.html:171
 msgid "Office Suite"
-msgstr "Suit Pejabat"
+msgstr "Kantoorapplicaties"
 
 #: introduction.html:172
 msgid "Software Store"
-msgstr "Kedai Perisian"
+msgstr "Software Centrum"
 
 #: introduction.html:173
 msgid "Music Player"
-msgstr "Pemain Muzik"
+msgstr "Muziekspeler"
 
 #: introduction.html:177
 msgid "All of which are highly customisable and managed via"
-msgstr "Semuanya boleh disuaikan dan diurus melalui"
+msgstr ""
+"Allemaal zijn ze in hoge mate aanpasbaar en kunnen beheerd worden via de"
 
 #: introduction.html:180
 msgid "Settings"
-msgstr "Tetapan"
+msgstr "Instellingen"
 
 #: introduction.html:182
 msgid ""
 "Budgie desktop provides an intuitive and attractive desktop environment "
 "using traditional metaphors, which means if you've ever used"
 msgstr ""
-"Desktop Budgie menyediakan satu persekitaran desktop yang menarik dan "
-"berintuitif iaitu dengan penggunaan metafora tradisional, bermaksud anda "
-"seolah-oleh pernah menggunakannya"
+"De Budgie desktopomgeving biedt een intuïtieve en aantrekkelijke omgeving "
+"die de traditionele look hanteert, wat betekent dat als je ooit gebruik hebt"
+" gemaakt van "
 
 #: introduction.html:186
 msgid "or"
-msgstr "atau"
+msgstr "of"
 
 #: introduction.html:189
 msgid "it will feel very familiar."
-msgstr "ia akan berasa sangat serasi."
+msgstr "het  heel vertrouwd zal aanvoelen."
 
 #: introduction.html:195
 msgid "Open Source"
-msgstr "Sumber Terbuka"
+msgstr "Open Source"
 
 #: introduction.html:202
 msgid ""
@@ -272,6 +311,11 @@ msgid ""
 "or unmodified form) by anyone. In a nutshell <span name=\"distro-"
 "name\"></span> is free, in the truest sense of the word."
 msgstr ""
+"Wat Linux, Ubuntu en de Budgie desktopomgeving allemaal gemeen hebben, is "
+"dat ze open source software zijn. Deze software kan geheel vrij worden "
+"gebruikt, gewijzigd en gedeeld (in aangepaste of originele vorm) door wie "
+"dan ook. Kortom: <span name=\"distro-name\"></span> is vrije software, in de"
+" breedste zin van het woord."
 
 #: introduction.html:208
 msgid ""
@@ -287,6 +331,17 @@ msgid ""
 " will ever happen, but if you have made it better, then your changes just "
 "might be included in the next release of <span name=\"distro-name\"></span>."
 msgstr ""
+"Ondanks dat er een aantal Linux distributies (varianten) te koop worden "
+"aangeboden, wordt het overgrote deel gratis aangeboden, zoals <span name"
+"=\"distro-name\"></span>. De distributie heeft een licentie die het iedereen"
+" toestaat de software gratis te verspreiden, zonder voorwaarden. Een "
+"voorbeeld: de licentie staat elke gebruiker binnen de gemeenschap toe om de "
+"software te gebruiken, aan te passen of te delen met aanpassingen, of zelfs "
+"te verkopen. De enige voorwaarde is dat je eventuele aanpassingen meldt "
+"zodat het mogelijk op kan worden genomen in de toekomstige versie. Er is "
+"geen garantie dat dit altijd gebeurt, maar als je iets verbeterd hebt, dan "
+"zouden je wijzigingen zomaar eens te vinden kunnen zijn in de volgende "
+"versie van <span name=\"distro-name\"></span>."
 
 #: introduction.html:223
 msgid ""
@@ -295,10 +350,15 @@ msgid ""
 "corporations provide fixes and new features for Linux as they use the "
 "software for their businesses."
 msgstr ""
+"Veel van de Linux-gebruikers zijn bedrijven die het besturingssysteem "
+"dagelijks binnen het bedrijf gebruiken, of het zelfs meeleveren met hun "
+"product. Veel van deze bedrijven leveren verbeteringen en zelfs nieuwe "
+"functionaliteit op voor Linux tijdens het gebruik van de software voor het "
+"bedrijf."
 
 #: introduction.html:229
 msgid "These improvements are given back"
-msgstr ""
+msgstr "Deze verbeteringen worden teruggekoppeld"
 
 #: introduction.html:230
 msgid ""
@@ -306,6 +366,9 @@ msgid ""
 "result. This is how we can continually improve and grow without having to "
 "charge our users money."
 msgstr ""
+"naar de Linux gemeenschap met als gevolg dat <span name=\"distro-"
+"name\"></span> beter wordt. Op deze manier kunnen we constant verbeteren en "
+"groeien zonder aan onze gebruikers een bijdrage te moeten vragen."
 
 #: introduction.html:234
 msgid ""
@@ -314,6 +377,11 @@ msgid ""
 " Instruments, Google, Canonical, Oracle, AMD, and Microsoft. Over 4,000 "
 "developers contributed to Linux over the last 15 years."
 msgstr ""
+"In tegenstelling tot Windows en OS X, is Linux niet ontworpen en onderhouden"
+" door één enkel bedrijf. Het wordt ondersteund door Intel, Redhat, Linaro, "
+"Samsung, IBM, SUSE, Texas Instruments, Google, Canonical, Oracle, AMD, en "
+"Microsoft. Meer dan 4000 ontwikkelaars hebben de laatste 15 jaar bijgedragen"
+" aan Linux."
 
 #: introduction.html:240
 msgid ""
@@ -328,3 +396,13 @@ msgid ""
 "designed for Windows, and from the most powerful Internet servers to the "
 "smallest smart thermostat."
 msgstr ""
+"Als lid van de Linux en Open Source gemeenschap - of je nu thuisgebruiker "
+"van <span name=\"distro-name\"></span> bent, of software ontwikkelaar, of "
+"een medewerker van een bedrijf bent die het besturingssysteem gebruikt - "
+"pluk je de vruchten van de inspanningen van de ontwikkelaars die werken aan "
+"<span name=\"distro-name\"></span> en de gerelateerde projecten: Linux, "
+"Budgie Desktop en Ubuntu. Leden van de Linux en Open Source gemeenschap "
+"draaien Linux op praktisch alle hardware, van de mooiste Macbook tot de "
+"goedkoopste netbook, van de nieuwste Chromebook tot de meeste gedateerde "
+"machines die ontworpen zijn voor Windows, van de meeste krachtige Internet "
+"servers tot de kleinste slimme thermostaat."
