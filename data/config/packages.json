@@ -355,7 +355,8 @@
       "repos" : {
         "xenial" : ["ppa:papirus/papirus", "ppa:tista/adapta"],
         "artful" : ["ppa:papirus/papirus", "ppa:tista/adapta"],
-        "bionic" : ["universe", "ppa:tista/adapta"]
+        "bionic" : ["universe", "ppa:tista/adapta"],
+        "cosmic" : ["universe", "ppa:tista/adapta"]
       }
     },
     "material-vimix-theme" : {
@@ -363,21 +364,22 @@
       "repos" : {
         "xenial" : ["ppa:snwh/pulp", "ppa:noobslab/themes"],
         "artful" : ["ppa:ubuntubudgie/backports", "ppa:noobslab/themes"],
-        "bionic" : ["ppa:ubuntubudgie/backports"]
+        "bionic" : ["ppa:ubuntubudgie/backports"],
+        "cosmic" : ["ppa:ubuntubudgie/backports"]
       }
     },
     "material-materia-theme" : {
       "packages" : ["materia-theme", "numix-icon-theme-circle", "fonts-noto"],
       "repos" : {
         "xenial" : ["ppa:budgie-remix/ppa", "ppa:numix/ppa"],
-        "artful" : ["ppa:ubuntubudgie/backports", "ppa:numix/ppa"],
-        "bionic" : ["ppa:ubuntubudgie/backports", "ppa:numix/ppa"]
+        "artful" : ["ppa:ubuntubudgie/backports", "ppa:numix/ppa"]
       }
     },
     "material-materia2-theme" : {
       "packages" : ["materia-gtk-theme", "numix-icon-theme-circle", "fonts-noto"],
       "repos" : {
-        "bionic" : ["universe", "ppa:numix/ppa"]
+        "bionic" : ["universe", "ppa:numix/ppa"],
+        "cosmic" : ["universe", "ppa:numix/ppa"]
       }
     },
     "vertex-theme" : {
@@ -393,21 +395,24 @@
       "packages" : ["evopop-gtk-theme", "paper-icon-theme", "fonts-noto"],
       "repos" : {
         "artful" : ["ppa:ubuntubudgie/backports"],
-        "bionic" : ["ppa:ubuntubudgie/backports"]
+        "bionic" : ["ppa:ubuntubudgie/backports"],
+        "cosmic" : ["ppa:ubuntubudgie/backports"]
         }
       },
     "ant-theme" : {
       "packages" : ["ant-theme", "breeze-cursor-theme", "papirus-icon-theme"],
       "repos" : {
         "artful" : ["ppa:ubuntubudgie/backports", "ppa:papirus/papirus"],
-        "bionic" : ["ppa:ubuntubudgie/backports"]
+        "bionic" : ["ppa:ubuntubudgie/backports"],
+        "cosmic" : ["ppa:ubuntubudgie/backports"]
         }
       },
     "pop-theme" : {
       "packages" : ["pop-gtk-theme", "pop-fonts", "pop-icon-theme"],
       "repos" : {
         "artful" : ["ppa:ubuntubudgie/backports"],
-        "bionic" : ["ppa:ubuntubudgie/backports"]
+        "bionic" : ["ppa:ubuntubudgie/backports"],
+        "cosmic" : ["ppa:ubuntubudgie/backports"]
         }
       }
 
