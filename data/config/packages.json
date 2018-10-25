@@ -235,8 +235,9 @@
       "packages" : ["flatpak", "xdg-desktop-portal-gtk", "gnome-software-plugin-flatpak"],
       "repos" : {
         "xenial" : ["ppa:alexlarsson/flatpak"],
-	"artful" : ["universe"],
-	"bionic" : ["universe"]
+        "artful" : ["universe"],
+        "bionic" : ["universe"],
+        "cosmic" : ["universe"]
       }
     },
     "skippy-xd" : {
@@ -263,7 +264,8 @@
       "repos" : {
         "xenial" : ["ppa:budgie-remix/ppa"],
         "artful" : ["ppa:ubuntubudgie/backports"],
-        "bionic" : ["ppa:ubuntubudgie/backports"]
+        "bionic" : ["ppa:ubuntubudgie/backports"],
+        "cosmic" : ["ppa:ubuntubudgie/backports"]
       }
     },
     "dropbox" : {
