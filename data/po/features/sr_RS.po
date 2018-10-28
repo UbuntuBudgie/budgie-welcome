@@ -1,0 +1,295 @@
+# Translators:
+# Nikola Stojic <nikolas@grindam.com>, 2018
+msgid ""
+msgstr ""
+"Project-Id-Version: Budgie Welcome\n"
+"POT-Creation-Date: 2016-02-27 12:48+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Nikola Stojic <nikolas@grindam.com>, 2018\n"
+"Language-Team: Serbian (Serbia) (https://www.transifex.com/ubuntu-budgie/teams/72251/sr_RS/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: sr_RS\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Report-Msgid-Bugs-To : you@example.com\n"
+
+#: features.html:13
+msgid "Features"
+msgstr "Karakteristike"
+
+#: features.html:18
+msgid "Modern and Full-Featured"
+msgstr "Moderan i Pun mogućnosti"
+
+#: features.html:19
+msgid ""
+"<span name=\"distro-name\"></span> is a modern computer operating system, "
+"with an attractive and easy to understand user interface. Its update manager"
+" keeps not only the operating system itself, but all of its installed "
+"applications updated to the current release. The operating system is more "
+"secure, and better supported than operating systems that come pre-installed "
+"on most home computer hardware today."
+msgstr ""
+"<span name=\"distro-name\"></span>je moderan operativni sistem, sa "
+"atraktivnim i prepoznatljivim interfejsom. Njegov menadžer za ažuriranje ne "
+"ažurira samo sistem već i sve instalirane aplikacije sa najnovijom dostupnom"
+" verzijom. Operativni sistem na taj način je bezbedniji i bolje podržan nego"
+" operativni sistemi koji dolaze preinstalirani na većini kućnih računara "
+"danas."
+
+#: features.html:29
+msgid "Pre-Configured Yet Flexible"
+msgstr "Prekonfigurisan a fleksibilan"
+
+#: features.html:35
+msgid ""
+"Using <span name=\"distro-name\"></span> provides you with the freedom to "
+"run a complete, full-featured operating system, pre-configured with most, if"
+" not all, of the applications you will need for your daily computing - or to"
+" change anything about the way it looks, the way it works, or the "
+"applications it runs to suit your taste."
+msgstr ""
+"Koristeći <span name=\"distro-name\"></span> daje vam slobodu da koristite "
+"kompletan sistem, koji dolazi prekonfigurisan sa svim, ako ne sa svim, sa "
+"većinom aplikacija koje će vam biti potrebni u svakodnevno radu, da menjate "
+"kako izgleda kao i set aplikacija po svom ukusu."
+
+#: features.html:43
+msgid "Built-In Security"
+msgstr "Ugrađjena bezbednost"
+
+#: features.html:49
+msgid ""
+"<span name=\"distro-name\"></span> is designed with security in mind. Unlike"
+" operating systems that update only once a month, <span name=\"distro-"
+"name\"></span> receives updates continuously. The updates include security "
+"patches for <span name=\"distro-name\"></span> and all of its components. "
+"Security updates for all of its installed applications are also provided on "
+"the same schedule. This ensures that you have the latest protection for all "
+"of your computer's software -- as soon as it's available!"
+msgstr ""
+"<span name=\"distro-name\"></span> je dizajniran sa bezbednošću na umu. Za "
+"razliku od drugih operativnih sistema koji se ažuriraju jedanput mesečno, "
+"<span name=\"distro-name\"></span>dobija ažuriranja kontinuirano. Ažuriranja"
+" sadrže bezbednosne zakrpe za <span name=\"distro-name\"></span>i sve "
+"njegove komponente. Bezbednosne zakrpe za sve instalirane aplikacije se "
+"takodje salju u istom vremenskom periodu. Ovo omogućava da imate najnoviju "
+"zaštitu za čitvav softver istog momenta kada postane dostupna."
+
+#: features.html:65
+msgid ""
+"<span name=\"distro-name\"></span> can get viruses and other infections... "
+"but it is rare. Rapid and timely updates make it difficult for viruses, root"
+" kits and other malware to be installed and run without conscious "
+"intervention by you, the user. Even if you do accidentally invite in an "
+"infection, chances are it's designed to attack Windows and won't do much, if"
+" any damage to <span name=\"distro-name\"></span>."
+msgstr ""
+"<span name=\"distro-name\"></span> Može biti meta virusa i drugih "
+"infekcija.... što je retko. Rapidno ažuriranje čini situaciju otežanu za "
+"viruse, rootkitove, i durge oblike malware-a da budu instalirani i pokretuti"
+" bez interfencije korisnika. Čak i da aktivirate infekciju, šanse su da je "
+"dizajnirana da napadne Windows te neće naneti mnogo ili nikakvu štetu <span "
+"name=\"distro-name\"></span>."
+
+#: features.html:80
+msgid ""
+"Another significant security feature of <span name=\"distro-name\"></span> "
+"is that its users are not superusers by default. Superusers (also known as "
+"\"root\" users or administrators) on any computer system have permission to "
+"do anything they want, including the ability to damage the system."
+msgstr ""
+"Još jedan bezbednosni dodatak <span name=\"distro-name\"></span>je da "
+"njegovi korisnici nisu administratori po default-u. Super korisnici (odnosno"
+" root ili administratori) na bilo kom kompjuteru imaju dozvole da urade bilo"
+" šta što žele, uključujući i mogućnost da oštete sistem."
+
+#: features.html:84
+msgid ""
+"For example, other operating systems look at the name of a file to determine"
+" which program should open it, then immediately attempt to open it. That "
+"design makes it easy for an intruder to attack a computer. <span name"
+"=\"distro-name\"></span> opens a file based on what the file is, not based "
+"on its name. So even if a malicious program disguises its identity by using "
+"the name \"Last Will and Testament.txt\" <span name=\"distro-name\"></span> "
+"will recognize the file as a program. The system provides a warning that the"
+" file is not a text file, but that it is a program that will be run if you "
+"give it permission to continue. To be extra secure, <span name=\"distro-"
+"name\"></span> requires you to provide your administrator password before "
+"that permission is granted. Every single time."
+msgstr ""
+"Na primer, drugi operativni sistemi gledaju na ime fajl kako bi odredili "
+"koji program treba da ga otvore, i onda zatim ga otvaraju. To čini dizajn "
+"lakšim za napadača da napadne kompjuter. <span name=\"distro-name\"></span> "
+"otvara fajl baziran na tome šta fajl jeste a ne na tome kako se zove "
+"\"Poslednja volja i Testament.txt\" <span name=\"distro-name\"></span> će "
+"preposnati fajl kao program. Sistem daje upozorenje da fajl nije tekstualni "
+"fajl već da je program koji će biti pokrenut ako mu date dozvolu. Da bi bili"
+" dodatno bezbedni <span name=\"distro-name\"></span> vam traži da pružite "
+"vašu administratorsku šifru pre nego što dozvole budu dodeljene. Svaki put."
+
+#: features.html:101
+msgid "Powerful Applications"
+msgstr "Moćne aplikacije"
+
+#: features.html:102
+msgid ""
+"While budgie-desktop provides the essential user interface to control and "
+"use a computer, <span name=\"distro-name\"></span> adds a collection of "
+"additional applications to turn your computer into a truly powerful "
+"workstation."
+msgstr ""
+"Dok Budgie-desktop pruža esencijalni interfejs <span name=\"distro-"
+"name\"></span> dodaje kolekciju dodatnih aplikacija koji pretvaraju vaš "
+"kompjuter u močnu radnu stanicu."
+
+#: features.html:107
+msgid "Productivity"
+msgstr "Produktivnost"
+
+#: features.html:117
+msgid ""
+"<span class=\"official-only\">Chromium</span> <span class=\"unofficial-"
+"only\">Firefox</span> delivers safe, easy web browsing. A familiar user "
+"interface, enhanced security features including protection from online "
+"identity theft, and an integrated search to let you get the most out of the "
+"web."
+msgstr ""
+"<span class=\"official-only\">Chromium</span><span class=\"unofficial-"
+"only\">Firefox</span> omogućavaju bezbedan i lak surf.  Familijarni izgled, "
+"poboljšane bezbednosne postavke, uključujući zaštitu od kradje identiteta, i"
+" integrisana pretraga koja vam omogućava da iskoristite maksimum od web-a. "
+
+#: features.html:132
+msgid ""
+"LibreOffice is a full-featured office productivity suite that provides a "
+"near drop-in replacement for Microsoft(R) Office; its clean interface and "
+"powerful tools let you unleash your creativity and grow your productivity. "
+"LibreOffice embeds several applications that make it the most powerful Free "
+"and Open Source Office suite on the market:"
+msgstr ""
+"LibreOffice je punokrvni office paket koji je zamena za Microsoft Office. "
+"Njegov čist interfejs i moćan set alata, omogućava vam da oslobodite vašu "
+"kreativnost i da povećate vašu produktivnosti. LibreOffice sadrži više "
+"aplikacija koje ga čine najmoćnijim Besplatnim i Otvorenim Office paketom na"
+" tržištu."
+
+#: features.html:139
+msgid "Writer, the word processor."
+msgstr "Writer, word procesor"
+
+#: features.html:140
+msgid "Calc, the spreadsheet application."
+msgstr "Calc, aplikacija za izradu tabela"
+
+#: features.html:141
+msgid "Impress, the presentation engine."
+msgstr "Impress, prezentacioni softver"
+
+#: features.html:142
+msgid "Draw, the drawing and flowcharting application"
+msgstr "Draw za crtanje i pravljenje chartova"
+
+#: features.html:143
+msgid "Math, for editing mathematics."
+msgstr "Math za matematiku"
+
+#: features.html:150
+msgid "Entertainment"
+msgstr "Zabava"
+
+#: features.html:156
+msgid ""
+"Rhythmbox is a very easy to use music playing and management program which "
+"supports a wide range of audio formats (including mp3 and ogg). Originally "
+"inspired by Apple's iTunes, the current version also supports Internet "
+"Radio, iPod integration and generic portable audio player support, Audio CD "
+"burning, Audio CD playback, music sharing, and Podcasts."
+msgstr ""
+"Rhythmbox je veoma lak za uređjenje muzike i menadžment program koji "
+"uključuje širok spektar audio forma (uključujući mp3 i ogg). Originalno "
+"urađjen po uzoro na Apple-ov Itunes, trenutna verzija takođje podržava "
+"Internet Radio, iPod integraciju, generične portabilne plejere. "
+
+#: features.html:170
+msgid ""
+"<span class=\"before1710\">GNOME Photos</span> <span "
+"class=\"1710\">gThumb</span> is a digital photo organizer. It allows you to "
+"import photos from disk or camera, organize them in various ways, view them "
+"in full-window or fullscreen mode, and export them to share with others. It "
+"is able to manage a lot of different image formats."
+msgstr ""
+"<span class=\"before1710\">GNOME Fotografije<span "
+"class=\"1710\">gThumb</span> je digitalni foto organizer. Omogućava vam da "
+"importujete slike sa diska ili kamere, organizujete ih na različite načine, "
+"pregledate ih preko celo ekrana, i eksportujete da biste delili  sa drugima."
+" "
+
+#: features.html:185
+msgid ""
+"<span class=\"official-only\">GNOME MPV</span> <span class=\"unofficial-"
+"only\">GNOME Videos</span> is a media player. It plays MPEG, MPEG-2, MPEG-4,"
+" DivX, MOV, WMV, QuickTime, WebM, FLAC, MP3, Ogg/Vorbis files, DVDs, VCDs, "
+"podcasts, and multimedia streams from various network sources."
+msgstr ""
+"<span class=\"official-only\">GNOME MPV</span><span class=\"unofficial-"
+"only\">Gnome Video</span> je media plejer. Pušta MPEG, MPEG-2, MPEG-4, DivX,"
+" MOV, WMV, QuickTime, WebM, FLAC, MP3, Ogg/Vorbis fajlove, DVDs, VCDs, "
+"podkastove, i multimeedijalne prenose sa različitih izvora na netu."
+
+#: features.html:197
+msgid "... And a whole lot more!"
+msgstr "... I mnogo više!"
+
+#: features.html:199
+msgid ""
+"Naturally you'll also find a document/photo scanner and printer management "
+"all included in <span name=\"distro-name\"></span>. And this is just the "
+"start. The <a onclick=\"cmd('software-center');cmd('')\">GNOME Software</a> "
+"includes best-in-class applications for most tasks and a single click will "
+"give you access to thousands of applications suitable for just about any "
+"professional or recreational pursuit."
+msgstr ""
+"Takođje, naćićete dokument i skener i softver za menadžment štampača koji su"
+" uključeni u <span name=\"distro-name\"></span>. I to je samo početak. <a "
+"onclick=\"cmd('software-center');cmd('')\">Gnome Softver</a> uključuje "
+"najbolje aplikacije koje su napravljeni za svaki zadatak, i sa samo jednim "
+"klikom će vam dati pristup preko 1000 dostupnih aplikacije primerenih za "
+"bilo koji profesionalni ili kućni rad."
+
+#: features.html:209
+msgid "Games"
+msgstr "Igre"
+
+#: features.html:215
+msgid ""
+"In the last couple of years Linux has become a first class gaming platform "
+"thanks to <a onclick=\"cmd('link?https://www.valvesoftware.com')\">Valve</a>"
+" bringing their <a "
+"onclick=\"cmd('link?https://store.steampowered.com')\">Steam</a> platform to"
+" Linux. At the time of writing Steam has more than 2000 high quality indie "
+"and AAA titles available for Linux. <span name=\"distro-name\"></span> is "
+"fully compatible with Steam for Linux."
+msgstr ""
+"U poslednjih nekoliko godina Linux je postao građjanin prve klase za igre "
+"zahvaljujući platformama kao što je  <a "
+"onclick=\"cmd('link?https://www.valvesoftware.com')\">Valve</a> koji su "
+"omogućili postojanje njihove <a "
+"onclick=\"cmd('link?https://store.steampowered.com')\">Steam</a> platforme "
+"za Linux. U momentu pisanja, Steam ima više od 2000 kvalitetnih naslova i "
+"AAA igara koje su dostupne za Linux. <span name=\"distro-name\"></span> je u"
+" celini kompatibilan sa Steamom za Linux."
+
+#: features.html:225
+msgid ""
+"While Steam is a major step forward for gaming on Linux, there are also many"
+" high quality and enjoyable Open Source games titles available for <span "
+"name=\"distro-name\"></span>. It doesn't matter if you like flight "
+"simulators, motor racing, first person shooters, jump and run or card games,"
+" you'll find something to keep you entertained."
+msgstr ""
+"Dok je Steam značajan korak ka gejmingu na Linux-u, tu su takođje dosta "
+"igara visokog kvaliteta i otvorenog koda dostupni za <span name=\"distro-"
+"name\"></span>. Nebitno je da li volite simulator letenja ili motorne trke, "
+"pucaćine ili platforme, uvek se može naći nešto za svačiji ukus."
