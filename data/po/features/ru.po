@@ -1,0 +1,267 @@
+# Translators:
+# Денис Алексеёнок <d.alexeenok@gmail.com>, 2017
+# Keeper Holderson <falex7835@gmail.com>, 2017
+msgid ""
+msgstr ""
+"Project-Id-Version: Budgie Welcome\n"
+"POT-Creation-Date: 2016-02-27 12:48+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Keeper Holderson <falex7835@gmail.com>, 2017\n"
+"Language-Team: Russian (https://www.transifex.com/ubuntu-budgie/teams/72251/ru/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ru\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
+"Report-Msgid-Bugs-To : you@example.com\n"
+
+#: features.html:13
+msgid "Features"
+msgstr "Особенности"
+
+#: features.html:18
+msgid "Modern and Full-Featured"
+msgstr "Современная и продвинутая"
+
+#: features.html:19
+msgid ""
+"<span name=\"distro-name\"></span> is a modern computer operating system, "
+"with an attractive and easy to understand user interface. Its update manager"
+" keeps not only the operating system itself, but all of its installed "
+"applications updated to the current release. The operating system is more "
+"secure, and better supported than operating systems that come pre-installed "
+"on most home computer hardware today."
+msgstr ""
+"<span name=\"distro-name\"></span>- это современная операционная система с "
+"элегантным и интуитивным пользовательским интерфейсом. Встроенный менеджер "
+"обновлений поддерживает не только саму операционную систему, но и все "
+"установленные приложения обновленные до последнего релиза. Эта операционная "
+"сиситема защищена лучше, чем другие, зараннее утановленные на большинстве "
+"современных домашних компьютерах, операционные системы."
+
+#: features.html:29
+msgid "Pre-Configured Yet Flexible"
+msgstr "Уже настроенная, но все еще гибкая"
+
+#: features.html:35
+msgid ""
+"Using <span name=\"distro-name\"></span> provides you with the freedom to "
+"run a complete, full-featured operating system, pre-configured with most, if"
+" not all, of the applications you will need for your daily computing - or to"
+" change anything about the way it looks, the way it works, or the "
+"applications it runs to suit your taste."
+msgstr ""
+"Использование <span name=\"distro-name\"></span> обеспечивает вас свободой "
+"управлять полностью функциональной операционной системой, обладающей, если "
+"не всеми, то большинством приложений для вашей повседневной работы. Вы "
+"можете менять ее вид, ее функциональность и приложения в соответствии с "
+"вашим вкусом."
+
+#: features.html:43
+msgid "Built-In Security"
+msgstr "Встроенная система защиты"
+
+#: features.html:49
+msgid ""
+"<span name=\"distro-name\"></span> is designed with security in mind. Unlike"
+" operating systems that update only once a month, <span name=\"distro-"
+"name\"></span> receives updates continuously. The updates include security "
+"patches for <span name=\"distro-name\"></span> and all of its components. "
+"Security updates for all of its installed applications are also provided on "
+"the same schedule. This ensures that you have the latest protection for all "
+"of your computer's software -- as soon as it's available!"
+msgstr ""
+"<span name=\"distro-name\"></span> разработана с приоритетом на "
+"бозопасности. В отличии от других операционных систем, обновляющихся раз в "
+"месяц, <span name=\"distro-name\"></span> обновляется постоянно. Обновления "
+"включают в себя патчи системы бызопасности для <span name=\"distro-"
+"name\"></span> и для всех ее компонентов. Обновления систем безопасности для"
+" всех установленных приложений поступают по тому же расписанию. Все это "
+"обеспечивает ваши приложения более надежной защитой как только она становтся"
+" доступной."
+
+#: features.html:65
+msgid ""
+"<span name=\"distro-name\"></span> can get viruses and other infections... "
+"but it is rare. Rapid and timely updates make it difficult for viruses, root"
+" kits and other malware to be installed and run without conscious "
+"intervention by you, the user. Even if you do accidentally invite in an "
+"infection, chances are it's designed to attack Windows and won't do much, if"
+" any damage to <span name=\"distro-name\"></span>."
+msgstr ""
+"<span name=\"distro-name\"></span> может быть заражена вредоносной "
+"программой, но это редкость. Быстрые и стабильные обновления не дают "
+"вирусам, руткитам и другим вредоносам  бы установенными и действовать без "
+"вашего ведома. Даже если вы случайно впустите к себе вредоносную программу, "
+"скорее всего, она разработана для атаки на Windows, и не принесет ущерба "
+"вам."
+
+#: features.html:80
+msgid ""
+"Another significant security feature of <span name=\"distro-name\"></span> "
+"is that its users are not superusers by default. Superusers (also known as "
+"\"root\" users or administrators) on any computer system have permission to "
+"do anything they want, including the ability to damage the system."
+msgstr ""
+
+#: features.html:84
+msgid ""
+"For example, other operating systems look at the name of a file to determine"
+" which program should open it, then immediately attempt to open it. That "
+"design makes it easy for an intruder to attack a computer. <span name"
+"=\"distro-name\"></span> opens a file based on what the file is, not based "
+"on its name. So even if a malicious program disguises its identity by using "
+"the name \"Last Will and Testament.txt\" <span name=\"distro-name\"></span> "
+"will recognize the file as a program. The system provides a warning that the"
+" file is not a text file, but that it is a program that will be run if you "
+"give it permission to continue. To be extra secure, <span name=\"distro-"
+"name\"></span> requires you to provide your administrator password before "
+"that permission is granted. Every single time."
+msgstr ""
+"К примеру, другие операционные системы смотрят на имя файла, чтобы "
+"определить, какая программа может открыть этот файл, и затем немедленно "
+"пытается его открыть. Такой дизайн делает атаку на компьютер очень простой "
+"задачей для нарушителя. <span name=\"distro-name\"></span> открывает файлы, "
+"основываясь на том, чем они являются, а не их названии. Так что если "
+"вредоносная программа замаскирует себя под именем \"Последнее желание и "
+"завещание.txt\", <span name=\"distro-name\"></span> распознает этот файл как"
+" программу. Система оповестит вас о том, что это не текстовый документ, а "
+"пограмма, которая запустится, если вы дадите ей разрешение. Для большей "
+"надежности <span name=\"distro-name\"></span> требует у вас пароль, прежде "
+"чем дать какое-либо разрешение. Каждый раз."
+
+#: features.html:101
+msgid "Powerful Applications"
+msgstr ""
+
+#: features.html:102
+msgid ""
+"While budgie-desktop provides the essential user interface to control and "
+"use a computer, <span name=\"distro-name\"></span> adds a collection of "
+"additional applications to turn your computer into a truly powerful "
+"workstation."
+msgstr ""
+"Budgie-desktop дает основной пользовательский интерфейс для использования "
+"компьютера, а <span name=\"distro-name\"></span> добавляет коллекцию "
+"приложений, чтобы сделать из вашего компьтеря поистине мощьную платформу."
+
+#: features.html:107
+msgid "Productivity"
+msgstr "Производительность"
+
+#: features.html:117
+msgid ""
+"<span class=\"official-only\">Chromium</span> <span class=\"unofficial-"
+"only\">Firefox</span> delivers safe, easy web browsing. A familiar user "
+"interface, enhanced security features including protection from online "
+"identity theft, and an integrated search to let you get the most out of the "
+"web."
+msgstr ""
+"<span class=\"official-only\">Chromium</span><span class=\"unofficial-"
+"only\">Firefox</span> предоставляет безопасный и простой способ поиска в "
+"интернете. Удобный пользовательский интерфейс, продвинутая система защиты, "
+"включающая защиту от кражи вашей онлайн личности, и встроенный поиск, чтобы "
+"выжать максимум из сети."
+
+#: features.html:132
+msgid ""
+"LibreOffice is a full-featured office productivity suite that provides a "
+"near drop-in replacement for Microsoft(R) Office; its clean interface and "
+"powerful tools let you unleash your creativity and grow your productivity. "
+"LibreOffice embeds several applications that make it the most powerful Free "
+"and Open Source Office suite on the market:"
+msgstr ""
+"LibreOffice - это полнофункциональный офисный редактор, предоставляющий "
+"практически полную замену Microsoft(R) Office. Его чистый интерфейс и мощный"
+" набор интсрументов позволяет вам высвободить свою креативность и "
+"преумножить свою производительность. LibreOffice имеет ряд встроенных "
+"приложений, делающих его наиболее мощьным Свободным и Открытым програмным "
+"обеспечением из всех, присутствующих на рынке."
+
+#: features.html:139
+msgid "Writer, the word processor."
+msgstr "Текстовый редактор."
+
+#: features.html:140
+msgid "Calc, the spreadsheet application."
+msgstr "Редактор таблиц."
+
+#: features.html:141
+msgid "Impress, the presentation engine."
+msgstr "Редактор презентаций."
+
+#: features.html:142
+msgid "Draw, the drawing and flowcharting application"
+msgstr ""
+
+#: features.html:143
+msgid "Math, for editing mathematics."
+msgstr ""
+
+#: features.html:150
+msgid "Entertainment"
+msgstr ""
+
+#: features.html:156
+msgid ""
+"Rhythmbox is a very easy to use music playing and management program which "
+"supports a wide range of audio formats (including mp3 and ogg). Originally "
+"inspired by Apple's iTunes, the current version also supports Internet "
+"Radio, iPod integration and generic portable audio player support, Audio CD "
+"burning, Audio CD playback, music sharing, and Podcasts."
+msgstr ""
+
+#: features.html:170
+msgid ""
+"<span class=\"before1710\">GNOME Photos</span> <span "
+"class=\"1710\">gThumb</span> is a digital photo organizer. It allows you to "
+"import photos from disk or camera, organize them in various ways, view them "
+"in full-window or fullscreen mode, and export them to share with others. It "
+"is able to manage a lot of different image formats."
+msgstr ""
+
+#: features.html:185
+msgid ""
+"<span class=\"official-only\">GNOME MPV</span> <span class=\"unofficial-"
+"only\">GNOME Videos</span> is a media player. It plays MPEG, MPEG-2, MPEG-4,"
+" DivX, MOV, WMV, QuickTime, WebM, FLAC, MP3, Ogg/Vorbis files, DVDs, VCDs, "
+"podcasts, and multimedia streams from various network sources."
+msgstr ""
+
+#: features.html:197
+msgid "... And a whole lot more!"
+msgstr ""
+
+#: features.html:199
+msgid ""
+"Naturally you'll also find a document/photo scanner and printer management "
+"all included in <span name=\"distro-name\"></span>. And this is just the "
+"start. The <a onclick=\"cmd('software-center');cmd('')\">GNOME Software</a> "
+"includes best-in-class applications for most tasks and a single click will "
+"give you access to thousands of applications suitable for just about any "
+"professional or recreational pursuit."
+msgstr ""
+
+#: features.html:209
+msgid "Games"
+msgstr ""
+
+#: features.html:215
+msgid ""
+"In the last couple of years Linux has become a first class gaming platform "
+"thanks to <a onclick=\"cmd('link?https://www.valvesoftware.com')\">Valve</a>"
+" bringing their <a "
+"onclick=\"cmd('link?https://store.steampowered.com')\">Steam</a> platform to"
+" Linux. At the time of writing Steam has more than 2000 high quality indie "
+"and AAA titles available for Linux. <span name=\"distro-name\"></span> is "
+"fully compatible with Steam for Linux."
+msgstr ""
+
+#: features.html:225
+msgid ""
+"While Steam is a major step forward for gaming on Linux, there are also many"
+" high quality and enjoyable Open Source games titles available for <span "
+"name=\"distro-name\"></span>. It doesn't matter if you like flight "
+"simulators, motor racing, first person shooters, jump and run or card games,"
+" you'll find something to keep you entertained."
+msgstr ""
