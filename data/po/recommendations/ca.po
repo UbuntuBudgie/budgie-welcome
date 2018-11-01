@@ -1,10 +1,11 @@
 # Translators:
 # Davidmp <medipas@gmail.com>, 2018
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: Budgie Welcome\n"
 "POT-Creation-Date: 2016-02-27 12:48+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2017-03-22 21:33+0000\n"
 "Last-Translator: Davidmp <medipas@gmail.com>, 2018\n"
 "Language-Team: Catalan (https://www.transifex.com/ubuntu-budgie/teams/72251/ca/)\n"
 "MIME-Version: 1.0\n"
@@ -20,7 +21,7 @@ msgstr "Recomanacions"
 
 #: recommendations.html:20
 msgid "Backports repository"
-msgstr ""
+msgstr "Repositori Backports"
 
 #: recommendations.html:22
 msgid ""
@@ -28,14 +29,17 @@ msgid ""
 "associated packages, we recommend to enable the <span name=\"distro-"
 "name\"></span> backports repository."
 msgstr ""
+"Per proporcionar les versions més actualitzades de budgie-desktop i altres "
+"paquets associats, us recomanem que activeu el repositori Backports de <span"
+" name=\"distro-name\"></span>."
 
 #: recommendations.html:24
 msgid "Repository is installed"
-msgstr ""
+msgstr "El repositori està instal·lat."
 
 #: recommendations.html:24
 msgid "Enable <span name=\"distro-name\"></span> backports repository"
-msgstr ""
+msgstr "Habilita el repositori Backports de <span name=\"distro-name\"></span>."
 
 #: recommendations.html25, 70, 87, 100, 117, 132
 msgid "Applying Changes..."
@@ -43,7 +47,7 @@ msgstr "S'apliquen els canvis..."
 
 #: recommendations.html:29
 msgid "Snap Applications"
-msgstr ""
+msgstr "Aplicacions Snap"
 
 #: recommendations.html:34
 msgid ""
@@ -77,7 +81,7 @@ msgstr ""
 
 #: recommendations.html38, 81
 msgid "Learn more"
-msgstr ""
+msgstr "Apreneu-ne més"
 
 #: recommendations.html:40
 msgid "Snap user guide"
@@ -94,6 +98,10 @@ msgid ""
 "Snap app store. Well, wonder not. Simply pop open a terminal and run the "
 "following command:"
 msgstr ""
+"Si hi ha una barrera per a l'adopció d'aplicacions Snap (a part que hi ha "
+"poques aplicacions  disponibles en el format), és saber quins paquets estan "
+"disponibles a la botiga d'aplicacions Snap. Bé, no us ho pregunteu. "
+"Simplement obriu un terminal i executeu l'ordre següent:"
 
 #: recommendations.html:47
 msgid ""
@@ -101,20 +109,27 @@ msgid ""
 " install from the command line. It can be run with a query after it (e.g., "
 "‘snap find email‘, ‘snap find media’, ‘snap find messaging‘) or without."
 msgstr ""
+"L'odre de cerca (find) us permet de cercar ràpidament i descobrir snaps "
+"disponibles per instal·lar des de la línia d'ordres. Es pot executar amb una"
+" consulta a continuació (per exemple: snap find email, snap find media, snap"
+" find messaging) o sense."
 
 #: recommendations.html:48
 msgid "When run without a query you’ll instead see a list of featured snaps."
 msgstr ""
+"Quan s'executi sense una consulta, veureu una llista de snaps disponibles."
 
 #: recommendations.html:49
 msgid "See installed apps"
-msgstr ""
+msgstr "Vegeu les aplicacions instal·lades"
 
 #: recommendations.html:50
 msgid ""
 "Installed some Snaps but can’t remember what? Don’t panic. Use the list "
 "command to see an up-to-date list of all Snap apps installed on your system:"
 msgstr ""
+"Heu instal·lat snaps però no podeu recordar quines? No patiu. Useu l'ordre "
+"\"list\" per veure una llista d'aplicacions d'Snap instal·lades al sistema:"
 
 #: recommendations.html:52
 msgid ""
@@ -122,10 +137,13 @@ msgid ""
 "of the developer who uploaded it (handy when there are multiple versions of "
 "the same app in the store, e.g., Telegram)."
 msgstr ""
+"Aquesta llista també us mostra el número de versió, el número de revisió i "
+"el nom del desenvolupador que l'ha penjat (pràctic quan hi ha diverses "
+"versions de la mateixa aplicació a la botiga, p. ex., Telegram)."
 
 #: recommendations.html:53
 msgid "Install & Remove Snap Apps"
-msgstr ""
+msgstr "Instal·la i suprimeix aplicacions Snap"
 
 #: recommendations.html:54
 msgid ""
@@ -133,10 +151,14 @@ msgid ""
 "analogous snap commands easy to remember. You install snap apps with the "
 "‘install’ command, and remove them using the ‘remove’ command."
 msgstr ""
+"Si esteu acostumat a gestionar programari usant apt, trobareu fàcilment les "
+"ordres de snap anàlogues de manera fàcil de recordar. Podeu instal·lar "
+"aplicacions amb l'ordre \"install\" i suprimir-les mitjançant l'ordre "
+"\"remove\"."
 
 #: recommendations.html:57
 msgid "See details of an App"
-msgstr ""
+msgstr "Vegeu els detalls d'una aplicació"
 
 #: recommendations.html:58
 msgid ""
@@ -145,10 +167,15 @@ msgid ""
 " channel, confinement status, size, number of revisions, and more. The snap "
 "info --verbose offers a greater overview."
 msgstr ""
+"Podeu usar-ho per veure informació detallada sobre qualsevol aplicació snap,"
+" tant si està instal·lada o com si no ho està. Aquesta informació inclou el "
+"canal de publicació de l'aplicació, l'estat de confinament, la mida, el "
+"nombre de revisions i molt més. La informació de snap --verbose n'ofereix "
+"una visió més detallada."
 
 #: recommendations.html:62
 msgid "Update a Snap App"
-msgstr ""
+msgstr "Actualitzeu una aplicació Snap"
 
 #: recommendations.html:64
 msgid ""
@@ -157,22 +184,26 @@ msgid ""
 "handles updates automatically (you can, ofc, revert a Snap update or install"
 " a specific revision)."
 msgstr ""
+"És molt útil que mai no hàgiu de recordar instal·lar una actualització d'una"
+" aplicació Snap. Això es deu al fet que Snapd s'executa en segon pla i "
+"gestiona les actualitzacions automàticament (podeu, per exemple, revertir "
+"una actualització de Snap o instal·lar-ne una revisió específica)."
 
 #: recommendations.html:67
 msgid "Reference"
-msgstr ""
+msgstr "Referència"
 
 #: recommendations.html:69
 msgid "Snap is already installed"
-msgstr ""
+msgstr "L'Snap ja està instal·lat."
 
 #: recommendations.html:69
 msgid "Install Snap"
-msgstr ""
+msgstr "Instal·la l'Snap"
 
 #: recommendations.html:75
 msgid "Flatpak"
-msgstr ""
+msgstr "Flatpak"
 
 #: recommendations.html:79
 msgid ""
@@ -184,6 +215,14 @@ msgid ""
 "without worrying about the underlying operating system and its built-in "
 "libraries."
 msgstr ""
+"<strong>Flatpak</strong> és un marc de distribució d'aplicacions de nova "
+"generació per a plataformes GNU / Linux. Introdueix un format d'empaquetatge"
+" unificat per a totes les distribucions de GNU / Linux. Això vol dir que un "
+"únic paquet pot funcionar en qualsevol plataforma. Flatpak ajuda els "
+"desenvolupadors d'aplicacions a enviar la seva aplicació en un sol format "
+"que es pugui instal·lar en qualsevol distribució GNU / Linux sense "
+"preocupar-se del sistema operatiu subjacent i de les biblioteques "
+"incorporades."
 
 #: recommendations.html:83
 msgid ""
@@ -193,6 +232,11 @@ msgid ""
 "packages as soon as it is packaged by the upstream project and you don't "
 "have to wait for your distribution to package it for you."
 msgstr ""
+"<span name=\"distro-name\"></span> recomana instal·lar Flatpak ja que us "
+"obrirà un nou món de possibilitats. Amb Flatpak, podeu gaudir de l'última "
+"versió de diferents paquets de programari tan aviat com hagi estat "
+"empaquetada pel projecte d'origen i no haureu d'esperar que la vostra "
+"distribució us la inclogui."
 
 #: recommendations.html:85
 msgid ""
@@ -200,18 +244,22 @@ msgid ""
 "name'></span> allows you to install Flatpak with a single click. After first"
 " time configuration, you can use GNOME Software to install Flatpak packages."
 msgstr ""
+"Sent una distribució GNU / Linux fàcil d'usar, <span name='distro-"
+"name'></span> us permet instal·lar Flatpak amb un sol clic. Després de la "
+"configuració de la primera vegada, podeu utilitzar el Programari del GNOME "
+"per instal·lar paquets de Flatpak."
 
 #: recommendations.html:86
 msgid "Flatpak is installed. Please reboot for the service to start"
-msgstr ""
+msgstr "Flatpak està instal·lat. Reinicieu per iniciar-ne el servei."
 
 #: recommendations.html:87
 msgid "Install & Configure Flatpak"
-msgstr ""
+msgstr "Instal·leu i configureu Flatpak"
 
 #: recommendations.html:91
 msgid "skippy-xd"
-msgstr ""
+msgstr "skippy-xd"
 
 #: recommendations.html:95
 msgid ""
@@ -232,15 +280,15 @@ msgstr ""
 
 #: recommendations.html:99
 msgid "skippy-xd is installed"
-msgstr ""
+msgstr "skippy-xd està instal·lat"
 
 #: recommendations.html:99
 msgid "Install & Configure skippy-xd"
-msgstr ""
+msgstr "Instal·leu i configureu skippy-xd"
 
 #: recommendations.html:105
 msgid "Steam"
-msgstr ""
+msgstr "Steam"
 
 #: recommendations.html:109
 msgid ""
@@ -268,16 +316,18 @@ msgstr ""
 
 #: recommendations.html:116
 msgid "Steam is installed"
-msgstr ""
+msgstr "L'Steam està instal·lat"
 
 #: recommendations.html:116
 msgid "Install & Configure Steam"
-msgstr ""
+msgstr "Instal·leu i configureu l'Steam"
 
 #: recommendations.html:126
 msgid ""
 "<strong>Dropbox</strong> is a secure file sharing and storage solution."
 msgstr ""
+"<strong>Dropbox</strong> és una solució segura d'emmagatzematge i "
+"compartició de fitxers."
 
 #: recommendations.html:128
 msgid ""
@@ -297,8 +347,8 @@ msgstr ""
 
 #: recommendations.html:131
 msgid "Dropbox is installed"
-msgstr ""
+msgstr "El Dropbox està instal·lat"
 
 #: recommendations.html:131
 msgid "Install & Configure Dropbox"
-msgstr ""
+msgstr "Instal·leu i configureu el Dropbox"
