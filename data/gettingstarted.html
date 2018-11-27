@@ -535,15 +535,15 @@
                     &zwnj;This only applies for actively supported cards,
                     and not older cards using the legacy driver.&zwnj;
                   </div>
-                  <a class="btn btn-warning" onclick="cmd('upgrade-appid?nvidia-settings')">&nbsp; &zwnj;Add Repository&zwnj;</a>
+                  <a id="nvidia-install" class="btn btn-success" onclick="cmd('install?nvidia');cmd('')">
+                      <span class="material-icons">&#xE2C0;</span><span class="button-text">&zwnj;Add Repository&zwnj;</span>
+                  </a>
+                  <span id="nvidia-status" class="hidden">
+                    <img src="img/welcome/processing.gif" style="width:24px" /> &zwnj;Applying Changes...&zwnj;
+                  </span>
+
                   <br><br>
-                  <!-- <a class="btn btn-danger" href="#"><span class="fa fa-trash"></span>&nbsp; Remove Repository</a> -->
-                  <p>&zwnj;To add the repository to the system, open a terminal and type the following:&zwnj;</p>
-                  <blockquote class="terminal miscCmd">
-                    &nbsp;$ sudo add-apt-repository ppa:graphics-drivers/ppa
-                    <br>
-                    &nbsp;$ sudo apt-get update
-                  </blockquote>
+
                   <p>&zwnj;After the PPA is added, newer versions are presented
                   to install in <a onclick="cmd('drivers')">Additional Drivers:</a>&zwnj;</p>
                   <img src="img/screenshots/graphics-drivers-nvidia.png"/>

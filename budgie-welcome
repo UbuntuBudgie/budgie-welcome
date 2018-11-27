@@ -422,12 +422,12 @@ class AppView(WebKit2.WebView):
                     config = json.load(file)
 
                 attrib = None
-                
+
                 for item in config:
                     if "panel-attrib" in item:
                         attrib = item["panel-attrib"]
                         continue
-                        
+
                     schema = item["SCHEMA"]
                     values = item["VALUES"]
 
@@ -439,7 +439,7 @@ class AppView(WebKit2.WebView):
                         else:
                             gsettings.set_string(key, value)
 
-                if attrib:                    
+                if attrib:
                     self._set_panel_key('enable-shadow', attrib['enable-shadow'])
                     self._set_panel_key('size', attrib['size'])
                     self._set_panel_key('transparency', attrib['transparency'])
@@ -1149,6 +1149,9 @@ class SystemState(object):
         else:
             self.graphics_vendor = 'Unknown'
 
+        if arg.graphics_vendor != '':
+            self.graphics_vendor = arg.graphics_vendor
+
         self.graphics_grep = repr(output)
         self.graphics_grep = self.graphics_grep.split("controller: ", 1)[1]
         self.graphics_grep = self.graphics_grep.split("\\n", 1)[0]
@@ -1657,6 +1660,7 @@ class Arguments(object):
         self.simulate_version = None
         self.jump_software_page = False
         self.simulate_software_changes = False
+        self.graphics_vendor = ''
         self.locale = None
         self.jump_to = None
 
@@ -1673,6 +1677,8 @@ class Arguments(object):
                 print('                                -- Options: i386, amd64, armhf, powerpc')
                 print('  --force-codename=CODENAME    Simulate a specific release.')
                 print('                                -- Examples: trusty, wily, xenial')
+                print(' --force-graphics=GRAPHICS    Simulate a specific graphics card.')
+                print('                                -- Examples: NVIDIA, AMD, Intel, VirtualBox')
                 print('  --force-net                  Simulate a working internet connection.')
                 print('  --force-no-net               Simulate no internet connection.')
                 print('  --force-session=TYPE         Simulate a specific architecture.')
@@ -1728,6 +1734,9 @@ class Arguments(object):
                 except:
                     dbg.stdout('Debug', 'Invalid arguments for "--force-session"', 0, 1)
                     exit()
+
+            if arg.startswith('--force-graphics'):
+                self.graphics_vendor = arg.split('--force-graphics=')[1]
 
             if arg == '--force-no-net':
                 dbg.stdout('Debug', 'Simulating the application without an internet connection.', 0, 0)

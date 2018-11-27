@@ -273,10 +273,10 @@
       }
     },
     "dropbox" : {
-	"packages" : ["nautilus-dropbox"],
-	"repos" : {
-	    "all" : ["multiverse"]
-	}
+      "packages" : ["nautilus-dropbox"],
+      "repos" : {
+          "all" : ["multiverse"]
+	    }
     }
   },
   "gettingstarted" : {
@@ -345,6 +345,14 @@
       },
       "key-commands" : ["curl http://repo.vivaldi.com/stable/linux_signing_key.pub | sudo apt-key add -",
                         "apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 1397BC53640DB551"]
+    },
+    "nvidia" : {
+      "repos" : {
+        "xenial" : ["ppa:graphics-drivers/ppa"],
+        "bionic" : ["ppa:graphics-drivers/ppa"],
+        "cosmic" : ["ppa:graphics-drivers/ppa"],
+        "disco" : ["ppa:graphics-drivers/ppa"]
+      }
     }
   },
   "default" : {
