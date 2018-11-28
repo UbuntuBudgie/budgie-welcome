@@ -279,6 +279,12 @@ class AppView(WebKit2.WebView):
 
         self._do_command(title)
 
+        # Clear title after executing a command. Otherwise, if the same
+        # command is executed with another event, it won't be identified
+        # as there is no effective title change. Consider links in applets
+        # page. Multiple links refers to budgie-extras repository.
+        self.run_javascript("document.title = ''")
+
     def _context_menu_cb(self, webview, menu, event, htr, user_data=None):
         # Disable context menu.
         return True
