@@ -18,6 +18,7 @@ git clone https://github.com/UbuntuBudgie/budgie-welcome.git
 
 uglifyjs -o data/js/bootstrap.min.js data/js/bootstrap.js
 uglifyjs -o data/js/ekko-lightbox.min.js data/js/ekko-lightbox.js
+uglifyjs -o data/js/popper.min.js data/js/popper.js
 ```
 
 ### Testing
