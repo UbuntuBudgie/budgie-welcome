@@ -17,7 +17,8 @@ sudo apt install gir1.2-webkit2-4.0 python3-notify2 node-uglify
 git clone https://github.com/UbuntuBudgie/budgie-welcome.git
 
 uglifyjs -o data/js/bootstrap.min.js data/js/bootstrap.js
-uglifyjs -o data/js/ekko-lightbox.min.js data/js/ekko-lightbox.js
+uglifyjs -o data/js/baguetteBox.min.js data/js/baguetteBox.js
+uglifyjs -o data/js/popper.min.js data/js/popper.js
 ```
 
 ### Testing
