@@ -39,7 +39,7 @@ parts:
       - libc6
     override-build: |
       cd scripts && ./rebuild-translations.sh
-      cd ../ && uglifyjs -o data/js/bootstrap.min.js data/js/bootstrap.js && uglifyjs -o data/js/baguetteBox.min.js data/js/baguetteBox.js
+      cd ../ && uglifyjs -o data/js/bootstrap.min.js data/js/bootstrap.js && uglifyjs -o data/js/baguetteBox.min.js data/js/baguetteBox.js  && uglifyjs -o data/js/popper.min.js data/js/popper.js
       mkdir -p $SNAPCRAFT_PART_INSTALL/usr/share/budgie-welcome/
       cp -r data/* $SNAPCRAFT_PART_INSTALL/usr/share/budgie-welcome/
       mkdir -p $SNAPCRAFT_PART_INSTALL/usr/share/locale/
