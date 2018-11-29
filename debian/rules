@@ -49,7 +49,7 @@ override_dh_auto_build:
 	# grunt is not (yet) packaged (#673727), so we mimic the tasks
 	# Grunt task uglify: Minify the js file
 	uglifyjs --preamble "$$BANNER" -o data/js/bootstrap.min.js data/js/bootstrap.js
-	uglifyjs -o data/js/ekko-lightbox.min.js data/js/ekko-lightbox.js
+	uglifyjs -o data/js/baguetteBox.min.js data/js/baguetteBox.js
 
 override_dh_prep:
 	./scripts/rebuild-translations.sh

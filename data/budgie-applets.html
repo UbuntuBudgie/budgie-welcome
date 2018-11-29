@@ -7,6 +7,7 @@
       <link href="css/material-icons.css" rel="stylesheet" media="screen">
       <link href="css/animate.css" rel="stylesheet" media="screen">
       <link href="css/welcome.css" rel="stylesheet" media="screen">
+      <link href="css/baguetteBox.min.css" rel="stylesheet" media="screen">
    </head>
    <body class="backdrop-simple fade fade-1s" onload="sortAppletList();">
       <div id="wrapper">
@@ -618,12 +619,11 @@
       <script src="js/janimate.js"></script>
       <script src="js/confetti.js"></script>   <!-- Confetti only appears on special events -->
       <script src="js/welcome.js"></script>
-      <script src="js/ekko-lightbox.min.js"></script>
+      <script src="js/baguetteBox.min.js"></script>
       <script type="text/javascript">
-         $(document).on('click', '[data-toggle="lightbox"]', function(event) {
-          event.preventDefault();
-          $(this).ekkoLightbox();
-          });
+         baguetteBox.run('[data-toggle="lightbox"]', {
+            // Custom options
+         });
       </script>
    </body>
 </html>
