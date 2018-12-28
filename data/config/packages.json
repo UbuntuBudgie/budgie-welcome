@@ -231,6 +231,14 @@
               "cosmic" : ["universe"],
               "disco" : ["universe"]
       }
+    },
+      "network-applet" : {
+      "packages" : ["budgie-network-applet"],
+      "repos" : {
+              "bionic" : ["ppa:ubuntubudgie/backports"],
+              "cosmic" : ["ppa:ubuntubudgie/backports"],
+              "disco" : ["ppa:ubuntubudgie/backports"]
+      }
     }
   },
   "recommendations" : {
