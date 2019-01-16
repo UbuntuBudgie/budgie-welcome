@@ -3,6 +3,8 @@ Budgie Welcome
 
 Welcome screen application to greet new users on their first login.
 
+[![Get it from the Snap Store](https://snapcraft.io/static/images/badges/en/snap-store-white.svg)](https://snapcraft.io/ubuntu-budgie-welcome)
+
 ### Translators
 
 We need to translate budgie-welcome into your language/locale.  Please
