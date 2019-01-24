@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" ng-app>
+
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <link href="css/animate.css" rel="stylesheet" media="screen">
     <link href="css/welcome.css" rel="stylesheet" media="screen">
   </head>
+
   <body class="backdrop-simple hidden" style="overflow: hidden;">
     <div id="title-inject">&zwnj;Main Menu&zwnj;</div>
     <div class="entire-page-fade fade fade-1s" id="wrapper">
@@ -47,7 +49,7 @@
             </div>
             <div class="button-group live-session-only">
               <span class="btn-icon material-icons">&#xE887;</span>
-              <a id="install-guide"  class="btn btn-inverse fade fade-5s hvr-shadow" onclick="smoothPageFade('gettingstarted.html')">
+              <a id="install-guide" class="btn btn-inverse fade fade-5s hvr-shadow" onclick="smoothPageFade('gettingstarted.html')">
                 &nbsp; &zwnj;Installation Help&zwnj;
               </a>
             </div>
@@ -62,7 +64,8 @@
             <!-- Distribution Logo-->
             <div class="row text-xs-center">
               <div class="col-md-12 center">
-                <img id="main-menu-logo" class="entire-page-fade main-menu-logo animated rotateIn fadeIn hvr-shadow" src="img/distro-icon.svg">
+                <img id="main-menu-logo" class="entire-page-fade main-menu-logo animated rotateIn fadeIn hvr-shadow"
+                  src="img/distro-icon.svg">
               </div>
             </div>
           </div>
@@ -104,16 +107,20 @@
           </div>
           <div class="normal-session-only col-md-2"></div>
           <div class="normal-session-only col-md-4 btn-showcase">
-			  <div class="dropup">
-				  <a class="btn btn-primary btn-lg dropdown-toggle fade fade-5s hvr-shadow" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">&zwnj;Install Software&zwnj;</a>
-				  <div class="dropdown-menu">
-					<a class="dropdown-item" href="#" onclick="smoothPageFade('budgie-applets.html');cmd('')">&zwnj;Budgie Applets&zwnj;</a>
-					<a class="dropdown-item" href="#" onclick="smoothPageFade('recommendations.html');cmd('')">&zwnj;Recommendations&zwnj;</a>
-					<a class="dropdown-item" href="#" onclick="cmd('software-center');cmd('')">&zwnj;Software Center&zwnj;</a>
-					<a class="dropdown-item" href="#" onclick="cmd('link?https://snapcraft.io/store')">&zwnj;Snap Apps&zwnj;</a>
-					<a class="dropdown-item" href="#" onclick="cmd('link?https://flathub.org/apps.html')">&zwnj;Flatpak Apps&zwnj;</a>
-				  </div>
-			  </div>
+            <div class="dropup">
+              <a class="btn btn-primary btn-lg dropdown-toggle fade fade-5s hvr-shadow" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">&zwnj;Install Software&zwnj;</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#" onclick="smoothPageFade('budgie-applets.html');cmd('')">&zwnj;Budgie
+                  Applets&zwnj;</a>
+                <a class="dropdown-item" href="#" onclick="smoothPageFade('recommendations.html');cmd('')">&zwnj;Recommendations&zwnj;</a>
+                <a class="dropdown-item" href="#" onclick="cmd('software-center');cmd('')">&zwnj;Software Center&zwnj;</a>
+                <a class="dropdown-item" href="#" onclick="cmd('link?https://snapcraft.io/store')">&zwnj;Snap
+                  Apps&zwnj;</a>
+                <a class="dropdown-item" href="#" onclick="cmd('link?https://flathub.org/apps.html')">&zwnj;Flatpak
+                  Apps&zwnj;</a>
+              </div>
+            </div>
           </div>
           <div class="normal-session-only col-md-4 btn-showcase">
             <a class="btn btn-block btn-primary btn-lg fade fade-5s hvr-shadow" onclick="smoothPageFade('default.html');cmd('')">
@@ -128,27 +135,15 @@
           <div class="row footer-content">
             <div class="col-md-6 text-md-left">
               &zwnj;Get Support:&zwnj;
-              <a onclick="cmd('link?https://discourse.ubuntubudgie.org/'); document.title = ''" id="open-at-start" class="entire-page-fade">
-                <img src="img/logos/Discourse_logo.png" alt="discourse" height="36px" width="120px" style="padding-bottom: 4px"/>
+              <a onclick="cmd('link?https://discourse.ubuntubudgie.org/'); document.title = ''" id="open-at-start"
+                class="entire-page-fade">
+                <img src="img/logos/Discourse_logo.png" alt="discourse" height="36px" width="120px" style="padding-bottom: 4px" />
               </a>
             </div>
             <div class="col-md-2"></div>
-            <div class="col-md-4 social">
-              <!-- onclick="cmd('link?https://plus.google.com/communities/106822666079268690759')" -->
+            <div class="col-md-4 social text-md-right">
               <a class="hover-menu-block">
-                <img src="img/social/g+.svg"/>
-                <ul class="hover-menu">
-                  <li onclick="cmd('link?https://plus.google.com/communities/106822666079268690759');cmd('')">
-                    &zwnj;G+ Community&zwnj;
-                  </li>
-                  <li onclick="cmd('link?https://google.com/+UbuntuBudgie');cmd('')">
-                    &zwnj;G+ Page&zwnj;
-                  </li>
-                </ul>
-              </a>
-
-              <a class="hover-menu-block">
-                <img src="img/social/facebook.svg"/>
+                <img src="img/social/facebook.svg" />
                 <ul class="hover-menu">
                   <li onclick="cmd('link?https://www.facebook.com/groups/UbuntuBudgie/');cmd('')">
                     &zwnj;Facebook Group&zwnj;
@@ -159,15 +154,7 @@
                 </ul>
               </a>
               <a class="hover-menu-block">
-                <img src="img/social/reddit.svg"/>
-                <ul class="hover-menu">
-                  <li onclick="cmd('link?https://www.reddit.com/r/budgieremix')">
-                    &zwnj;Reddit&zwnj;
-                  </li>
-                </ul>
-              </a>
-              <a class="hover-menu-block">
-                <img src="img/social/github.svg"/>
+                <img src="img/social/github.svg" />
                 <ul class="hover-menu">
                   <li onclick="cmd('link?https://github.com/ubuntubudgie')">
                     GitHub
@@ -175,7 +162,7 @@
                 </ul>
               </a>
               <a class="hover-menu-block">
-                <img src="img/social/twitter.svg"/>
+                <img src="img/social/twitter.svg" />
                 <ul class="hover-menu">
                   <li onclick="cmd('link?https://twitter.com/ubuntubudgie')">
                     Twitter
@@ -183,7 +170,7 @@
                 </ul>
               </a>
               <a class="hover-menu-block">
-                <img src="img/social/irc.svg"/>
+                <img src="img/social/irc.svg" />
                 <ul class="hover-menu">
                   <li onclick="cmd('link?https://ubuntubudgie.org/irc')">
                     IRC
@@ -200,7 +187,8 @@
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/janimate.js"></script>
-    <script src="js/confetti.js"></script>   <!-- Confetti only appears on special events -->
+    <script src="js/confetti.js"></script> <!-- Confetti only appears on special events -->
     <script src="js/welcome.js"></script>
   </body>
+
 </html>
