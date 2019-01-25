@@ -7,13 +7,14 @@
 # Keeper Holderson <falex7835@gmail.com>, 2018
 # Kirill Lipskii <Likivik@gmail.com>, 2018
 # Max Frei <schtaufenberg@yandex.ru>, 2018
+# David Mohammed <foss.freedom@gmail.com>, 2019
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2018-12-28 23:28+GMT\n"
 "PO-Revision-Date: 2017-03-11 16:44+0000\n"
-"Last-Translator: Max Frei <schtaufenberg@yandex.ru>, 2018\n"
+"Last-Translator: David Mohammed <foss.freedom@gmail.com>, 2019\n"
 "Language-Team: Russian (https://www.transifex.com/ubuntu-budgie/teams/72251/"
 "ru/)\n"
 "Language: ru\n"
@@ -32,6 +33,10 @@ msgid ""
 "is not available in your system. Please install GNOME Software and try this "
 "option again"
 msgstr ""
+"Steam это сторонний пакет, который требует принятия Вами соглашения "
+"конечного  пользователя (EULA). Мы основываемся на GNOME Software - "
+"программе для установки Steam, отсутствующей у Вас в данный момент. "
+"Попробуйте повторить данное действия после установки программы GNOME Software"
 
 #: budgie-welcome:412
 msgid ""
@@ -54,31 +59,34 @@ msgstr "Приветствие Budgie"
 
 #: budgie-welcome:491
 msgid "Budgie Desktop"
-msgstr ""
+msgstr "Рабочий стол Budgie"
 
 #: budgie-welcome:572
 msgid ""
 "The following third-party repositories need to be added to complete the "
 "installation:"
-msgstr ""
+msgstr "Следующие сторонние пакеты требуются для завершенияшения установки:"
 
 #: budgie-welcome:599
 msgid ""
 "Third-Party repositories are not supported by Ubuntu. You should only "
 "continue if you trust the maintainers of the proposed repositories."
 msgstr ""
+"Сторонние репозитории программ не поддерживаются в Ubuntu. Вам требуется "
+"дать разрешение на использование хранящихся там программ только если Вы "
+"доверяете людям поддерживающим данные сторонние репозитории."
 
 #: budgie-welcome:602
 msgid "Continue with the installation?"
-msgstr ""
+msgstr "Продолжить с инсталляции?"
 
 #: budgie-welcome:608
 msgid "Third-Party Repositories"
-msgstr ""
+msgstr "Сторонние репозитории"
 
 #: budgie-welcome:869
 msgid "Welcome App"
-msgstr ""
+msgstr "Программа приветствия"
 
 #: budgie-welcome:1179
 msgid "Could not gather data."
@@ -86,19 +94,19 @@ msgstr "Не получилось собрать информацию"
 
 #: budgie-welcome:1252
 msgid "GB"
-msgstr "GB"
+msgstr "Гб"
 
 #: budgie-welcome:1253
 msgid "GiB"
-msgstr "GiB"
+msgstr "ГиБ"
 
 #: budgie-welcome:1254
 msgid "MB"
-msgstr "MB"
+msgstr "МБ"
 
 #: budgie-welcome:1255
 msgid "MiB"
-msgstr "MiB"
+msgstr "МиБ"
 
 #: budgie-welcome:1484
 msgid "Status"
