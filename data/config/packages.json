@@ -240,6 +240,22 @@
               "cosmic" : ["ppa:ubuntubudgie/backports"],
               "disco" : ["ppa:ubuntubudgie/backports"]
       }
+    },
+      "cpufreq-applet" : {
+      "packages" : ["budgie-cpufreq-applet"],
+      "repos" : {
+              "bionic" : ["ppa:ubuntubudgie/backports"],
+              "cosmic" : ["ppa:ubuntubudgie/backports"],
+              "disco" : ["ppa:ubuntubudgie/backports"]
+      }
+    },
+      "sys-monitor-applet" : {
+      "packages" : ["budgie-sys-monitor-applet"],
+      "repos" : {
+              "bionic" : ["ppa:ubuntubudgie/backports"],
+              "cosmic" : ["ppa:ubuntubudgie/backports"],
+              "disco" : ["ppa:ubuntubudgie/backports"]
+      }
     }
   },
   "recommendations" : {

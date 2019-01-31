@@ -104,6 +104,50 @@
                   </div>
                   <hr/>
                </div>
+               <div class="col-md-6 cpufreq-applet">
+                  <br>
+                  <h2><a onclick="cmd('link?https://github.com/Dirli/budgie-cpufreq-applet')"><span class="material-icons">help</span></a>&zwnj;CPU Frequency Applet&zwnj;</h2>
+                  <div class="card card-block">
+                     <div class="card-image text-md-center">
+                        <a href="img/screenshots/cpufreq-applet.jpg" data-toggle="lightbox"><img src="img/screenshots/cpufreq-applet.jpg" style="width: auto; max-height: 128px" /></a>
+                     </div>
+                     <p class="card-text">&zwnj;Control the frequency of the processor (Sandy Bridge and newer).&zwnj;</p>
+                  </div>
+                  <div class="text-md-right">
+                     <a id="cpufreq-applet-remove" class="btn btn-danger" onclick="cmd('remove?cpufreq-applet');cmd('')">
+                     <span class="material-icons">&#xE872;</span><span class="button-text">&zwnj;Remove&zwnj;</span>
+                     </a>
+                     <a id="cpufreq-applet-install" class="btn btn-success hvr-shadow" onclick="cmd('install?cpufreq-applet');cmd('')"> &nbsp;
+                     <span class="material-icons">&#xE2C0;</span>&zwnj;Install Applet&zwnj;&nbsp;
+                     </a>
+                     <span id="cpufreq-applet-status" class="hidden">
+                     <img src="img/welcome/processing.gif" width="24px" height="24px" /> &zwnj;Applying Changes...&zwnj;
+                     </span>
+                  </div>
+                  <hr/>
+               </div>
+               <div class="col-md-6 sys-monitor-applet-applet">
+                  <br>
+                  <h2><a onclick="cmd('link?https://github.com/Dirli/budgie-sys-monitor-applet')"><span class="material-icons">help</span></a>&zwnj;System Monitor Applet&zwnj;</h2>
+                  <div class="card card-block">
+                     <div class="card-image text-md-center">
+                        <a href="img/screenshots/sys-monitor-applet.jpg" data-toggle="lightbox"><img src="img/screenshots/sys-monitor-applet.jpg" style="width: auto; max-height: 128px" /></a>
+                     </div>
+                     <p class="card-text">&zwnj;Show frequency, ram, swap & network values.&zwnj;</p>
+                  </div>
+                  <div class="text-md-right">
+                     <a id="sys-monitor-applet-remove" class="btn btn-danger" onclick="cmd('remove?sys-monitor-applet');cmd('')">
+                     <span class="material-icons">&#xE872;</span><span class="button-text">&zwnj;Remove&zwnj;</span>
+                     </a>
+                     <a id="sys-monitor-applet-install" class="btn btn-success hvr-shadow" onclick="cmd('install?sys-monitor-applet');cmd('')"> &nbsp;
+                     <span class="material-icons">&#xE2C0;</span>&zwnj;Install Applet&zwnj;&nbsp;
+                     </a>
+                     <span id="sys-monitor-applet-status" class="hidden">
+                     <img src="img/welcome/processing.gif" width="24px" height="24px" /> &zwnj;Applying Changes...&zwnj;
+                     </span>
+                  </div>
+                  <hr/>
+               </div>
                <div class="col-md-6 brightness-applet">
                   <br>
                   <h2><a onclick="cmd('link?https://github.com/ilgarmehmetali/budgie-brightness-control-applet')"><span class="material-icons">help</span></a>&zwnj;Brightness Control Applet&zwnj;</h2>
