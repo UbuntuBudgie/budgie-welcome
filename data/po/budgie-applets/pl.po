@@ -41,19 +41,19 @@ msgstr ""
 
 #: budgie-applets.html30, 52, 74, 96, 118, 140, 162, 184, 206, 228, 250, 272,
 #: 294, 316, 338, 360, 382, 404, 426, 448, 470, 492, 514, 536, 558, 580, 602,
-#: 624
+#: 624, 646, 668
 msgid "Remove"
 msgstr "Usuń"
 
 #: budgie-applets.html33, 55, 77, 99, 121, 143, 165, 187, 209, 231, 253, 275,
 #: 297, 319, 341, 363, 385, 407, 429, 451, 473, 495, 517, 539, 561, 583, 605,
-#: 627
+#: 627, 649, 671
 msgid "Install Applet"
 msgstr "Zainstaluj aplet"
 
 #: budgie-applets.html36, 58, 80, 102, 124, 146, 168, 190, 212, 234, 256, 278,
 #: 300, 322, 344, 366, 388, 410, 432, 454, 476, 498, 520, 542, 564, 586, 608,
-#: 630
+#: 630, 652, 674
 msgid "Applying Changes..."
 msgstr "Zatwierdzanie zmian..."
 
@@ -84,18 +84,34 @@ msgid "Network connectivity applet."
 msgstr "Aplet połączeń sieciowych"
 
 #: budgie-applets.html:109
+msgid "CPU Frequency Applet"
+msgstr ""
+
+#: budgie-applets.html:114
+msgid "Control the frequency of the processor (Sandy Bridge and newer)."
+msgstr ""
+
+#: budgie-applets.html131, 241
+msgid "System Monitor Applet"
+msgstr "Aplet - Monitor systemu"
+
+#: budgie-applets.html:136
+msgid "Show frequency, ram, swap & network values."
+msgstr ""
+
+#: budgie-applets.html:153
 msgid "Brightness Control Applet"
 msgstr "Aplet kontroli jasności"
 
-#: budgie-applets.html:114
+#: budgie-applets.html:158
 msgid "Allows you to control the screen brightness."
 msgstr "Pozwala kontrolować jasność ekranu."
 
-#: budgie-applets.html:131
+#: budgie-applets.html:175
 msgid "Pixel-Saver Applet"
 msgstr "Aplet Pixel-Saver"
 
-#: budgie-applets.html:136
+#: budgie-applets.html:180
 msgid ""
 "Hides the title bar from maximized windows and creates a new one inside the "
 "panel."
@@ -103,35 +119,31 @@ msgstr ""
 "Ukrywa pasek tytułowy ze zmaksymalizowanych okien i tworzy nowy wewnątrz "
 "panelu pulpitu."
 
-#: budgie-applets.html:153
+#: budgie-applets.html:197
 msgid "Global Menu Applet"
 msgstr "Aplet Menu Globalne"
 
-#: budgie-applets.html:158
+#: budgie-applets.html:202
 msgid "Moves the menu from applications into the panel."
 msgstr "Przenosi menu aplikacji do panelu."
 
-#: budgie-applets.html:175
+#: budgie-applets.html:219
 msgid "Weather Applet"
 msgstr "Aplet Pogoda"
 
-#: budgie-applets.html:180
+#: budgie-applets.html:224
 msgid "Displays the weather on your panel."
 msgstr "Wyświetla stan pogody na panelu."
 
-#: budgie-applets.html:197
-msgid "System Monitor Applet"
-msgstr "Aplet - Monitor systemu"
-
-#: budgie-applets.html:202
+#: budgie-applets.html:246
 msgid "Customize and display system information on the panel."
 msgstr "Dostosuj i wyświetlaj informacje systemowe w panelu."
 
-#: budgie-applets.html:219
+#: budgie-applets.html:263
 msgid "Hotcorners Applet"
 msgstr "Aplet - Aktywne narożniki"
 
-#: budgie-applets.html:224
+#: budgie-applets.html:268
 msgid ""
 "Allow user defined commands to be executed when the mouse cursor is pushed "
 "into a corner of the main desktop."
@@ -139,102 +151,102 @@ msgstr ""
 "Pozwala użytkownikowi zdefiniować polecenia wykonywane, kiedy kursor myszki "
 "jest przesuwany do jednego z narożników pulpitu."
 
-#: budgie-applets.html:241
+#: budgie-applets.html:285
 msgid "Quicknote Applet"
 msgstr "Aplet - Szybkie notatki"
 
-#: budgie-applets.html:246
+#: budgie-applets.html:290
 msgid "Quickly record a text based note."
 msgstr "Szybko zapisuj notatki tekstowe."
 
-#: budgie-applets.html:263
+#: budgie-applets.html:307
 msgid "Previews Applet"
 msgstr "Aplet - Podgląd"
 
-#: budgie-applets.html:268
+#: budgie-applets.html:312
 msgid "Show an overview of windows in an exposé like way."
 msgstr "Wyświetla widok okien pulpitu w stylu ekspozycji."
 
-#: budgie-applets.html:285
+#: budgie-applets.html:329
 msgid "Workspace Overview Applet"
 msgstr "Aplet - Obszary robocze"
 
-#: budgie-applets.html:290
+#: budgie-applets.html:334
 msgid "Quickly navigate workspaces using the applet's menu."
 msgstr ""
 "Pozwala na nawigowanie pomiędzy obszarami roboczymi z poziomu menu apletu."
 
-#: budgie-applets.html:307
+#: budgie-applets.html:351
 msgid "Workspace Wallpaper Applet"
 msgstr "Aplet - Tapety obszarów roboczych"
 
-#: budgie-applets.html:312
+#: budgie-applets.html:356
 msgid "Show a different wallpaper on each workspace."
 msgstr "Wyświetla różne tapety pulpitu dla każdego obszaru roboczego."
 
-#: budgie-applets.html:329
+#: budgie-applets.html:373
 msgid "Window Mover Applet"
 msgstr "Aplet - Przenoszenie okien"
 
-#: budgie-applets.html:334
+#: budgie-applets.html:378
 msgid "Quickly move windows between workspaces."
 msgstr "Szybko przenoś okna pomiędzy obszarami roboczymi"
 
-#: budgie-applets.html:351
+#: budgie-applets.html:395
 msgid "Desktop Showtime Applet"
 msgstr "Aplet - Zegar na pulpicie"
 
-#: budgie-applets.html:356
+#: budgie-applets.html:400
 msgid "Display the date and time on the Desktop."
 msgstr "Wyświetla datę i aktualny czas na pulpicie."
 
-#: budgie-applets.html:373
+#: budgie-applets.html:417
 msgid "CountDown Applet"
 msgstr "Aplet CountDown"
 
-#: budgie-applets.html:378
+#: budgie-applets.html:422
 msgid "Set a timed countdown and run an action when the countdown completes."
 msgstr ""
 "Ustawia czasomierz i uruchamia wybrana akcję, kiedy zakończy się odliczanie."
 
-#: budgie-applets.html:395
+#: budgie-applets.html:439
 msgid "Auto-Keyboard Switcher Applet"
 msgstr "Aplet Auto-Keyboard Switcher"
 
-#: budgie-applets.html:400
+#: budgie-applets.html:444
 msgid "Change the keyboard language automatically on a per application basis."
 msgstr ""
 "Przełącza automatycznie układ klawiatury w zależności od używanej aplikacji."
 
-#: budgie-applets.html:417
+#: budgie-applets.html:461
 msgid "Screen Rotation Lock Applet"
 msgstr "Aplet Screen Rotation Lock"
 
-#: budgie-applets.html:422
+#: budgie-applets.html:466
 msgid "Add the ability to unlock or lock the screen from rotating."
 msgstr "Dodaje możliwość odblokowania i zablokowania obracania ekranu."
 
-#: budgie-applets.html:439
+#: budgie-applets.html:483
 msgid "Clockworks Applet"
 msgstr "Aplet Clockworks"
 
-#: budgie-applets.html:444
+#: budgie-applets.html:488
 msgid "Display the time across multiple time zones."
 msgstr "Wyświetla aktualny czas w różnych strefach czasowych."
 
-#: budgie-applets.html:461
+#: budgie-applets.html:505
 msgid "DropBy Applet"
 msgstr "Aplet DropBy"
 
-#: budgie-applets.html:466
+#: budgie-applets.html:510
 msgid "Display a pop-up in the panel when a USB device is connected."
 msgstr "Wyświetla powiadomienie, kiedy urządzenie USB jest podłączane."
 
-#: budgie-applets.html:483
+#: budgie-applets.html:527
 msgid "Advanced Brightness Applet"
 msgstr "Aplet zaawansowanej kontroli jasności"
 
-#: budgie-applets.html:488
+#: budgie-applets.html:532
 msgid ""
 "Control the backlight via your graphics driver controller or GNOME's "
 "brightness controller."
@@ -242,19 +254,19 @@ msgstr ""
 "Kontroluje podświetlanie ekranu poprzez kontroler karty graficznej lub "
 "kontroler jasności GNOME."
 
-#: budgie-applets.html:505
+#: budgie-applets.html:549
 msgid "Browser Profile Launcher Applet"
 msgstr "Aplet profilów Chrome"
 
-#: budgie-applets.html:510
+#: budgie-applets.html:554
 msgid "Launch and create multiple Chromium/Chrome profiles."
 msgstr "Uruchamia i tworzy kilka profilów przeglądarek Chrome/Chromium."
 
-#: budgie-applets.html:527
+#: budgie-applets.html:571
 msgid "Find Fast 'Kangaroo' Applet"
 msgstr "Aplet wyszukiwania 'Kangaroo'"
 
-#: budgie-applets.html:532
+#: budgie-applets.html:576
 msgid ""
 "Quick and easy browsing, across (possibly) many folder layers, without "
 "having to-do a single mouse click."
@@ -262,34 +274,34 @@ msgstr ""
 "Szybkie i łatwe przeglądanie plików wśród wielu folderów, bez chociażby "
 "jednego kliknięcia."
 
-#: budgie-applets.html:549
+#: budgie-applets.html:593
 msgid "Weather and Forecast Applet"
 msgstr "Aplet pogody"
 
-#: budgie-applets.html:554
+#: budgie-applets.html:598
 msgid "Weather forecast every three hours and over five days."
 msgstr "Prognoza pogody co 3 godziny na 5 dni w przód"
 
-#: budgie-applets.html:571
+#: budgie-applets.html:615
 msgid "Recently Used Applet"
 msgstr "Aplet ostatnio używanych elementów"
 
-#: budgie-applets.html:576
+#: budgie-applets.html:620
 msgid "Show recently used items in a menu."
 msgstr "Zapisuj w menu ostatnio używane elementy"
 
-#: budgie-applets.html:593
+#: budgie-applets.html:637
 msgid "Trash Applet"
 msgstr "Aplet kosza"
 
-#: budgie-applets.html:598
+#: budgie-applets.html:642
 msgid "Show, hide and restore trash items."
 msgstr "Wyświetlaj, ukrywaj i przywracaj elementy w koszu."
 
-#: budgie-applets.html:615
+#: budgie-applets.html:659
 msgid "Application Launcher Applet"
 msgstr "Aplet uruchamiania aplikacji"
 
-#: budgie-applets.html:620
+#: budgie-applets.html:664
 msgid "Display your favorite applications in a menu and on the panel."
 msgstr "Wyświetlaj swoje ulubione aplikacji w menu i w panelu."

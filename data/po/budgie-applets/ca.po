@@ -42,19 +42,19 @@ msgstr ""
 
 #: budgie-applets.html30, 52, 74, 96, 118, 140, 162, 184, 206, 228, 250, 272,
 #: 294, 316, 338, 360, 382, 404, 426, 448, 470, 492, 514, 536, 558, 580, 602,
-#: 624
+#: 624, 646, 668
 msgid "Remove"
 msgstr "Elimina"
 
 #: budgie-applets.html33, 55, 77, 99, 121, 143, 165, 187, 209, 231, 253, 275,
 #: 297, 319, 341, 363, 385, 407, 429, 451, 473, 495, 517, 539, 561, 583, 605,
-#: 627
+#: 627, 649, 671
 msgid "Install Applet"
 msgstr "Instal·la la miniaplicació"
 
 #: budgie-applets.html36, 58, 80, 102, 124, 146, 168, 190, 212, 234, 256, 278,
 #: 300, 322, 344, 366, 388, 410, 432, 454, 476, 498, 520, 542, 564, 586, 608,
-#: 630
+#: 630, 652, 674
 msgid "Applying Changes..."
 msgstr "S'apliquen els canvis..."
 
@@ -85,18 +85,34 @@ msgid "Network connectivity applet."
 msgstr ""
 
 #: budgie-applets.html:109
+msgid "CPU Frequency Applet"
+msgstr ""
+
+#: budgie-applets.html:114
+msgid "Control the frequency of the processor (Sandy Bridge and newer)."
+msgstr ""
+
+#: budgie-applets.html131, 241
+msgid "System Monitor Applet"
+msgstr "Miniaplicació de monitor de sistema"
+
+#: budgie-applets.html:136
+msgid "Show frequency, ram, swap & network values."
+msgstr ""
+
+#: budgie-applets.html:153
 msgid "Brightness Control Applet"
 msgstr "Miniaplicació de control de la brillantor"
 
-#: budgie-applets.html:114
+#: budgie-applets.html:158
 msgid "Allows you to control the screen brightness."
 msgstr "Us permet controlar la brillantor de la pantalla."
 
-#: budgie-applets.html:131
+#: budgie-applets.html:175
 msgid "Pixel-Saver Applet"
 msgstr "Miniaplicació d'estalvi de píxels"
 
-#: budgie-applets.html:136
+#: budgie-applets.html:180
 msgid ""
 "Hides the title bar from maximized windows and creates a new one inside the "
 "panel."
@@ -104,35 +120,31 @@ msgstr ""
 "Amaga la barra de títol de les finestres maximitzades i en crea una altra "
 "dins del plafó."
 
-#: budgie-applets.html:153
+#: budgie-applets.html:197
 msgid "Global Menu Applet"
 msgstr "Miniaplicació de menú global"
 
-#: budgie-applets.html:158
+#: budgie-applets.html:202
 msgid "Moves the menu from applications into the panel."
 msgstr "Mou el menú de les aplicacions al plafó."
 
-#: budgie-applets.html:175
+#: budgie-applets.html:219
 msgid "Weather Applet"
 msgstr "Miniaplicació del temps"
 
-#: budgie-applets.html:180
+#: budgie-applets.html:224
 msgid "Displays the weather on your panel."
 msgstr "Mostra la informació meteorològica al plafó."
 
-#: budgie-applets.html:197
-msgid "System Monitor Applet"
-msgstr "Miniaplicació de monitor de sistema"
-
-#: budgie-applets.html:202
+#: budgie-applets.html:246
 msgid "Customize and display system information on the panel."
 msgstr "Personalitzeu i visualitzeu la informació del sistema des del plafó."
 
-#: budgie-applets.html:219
+#: budgie-applets.html:263
 msgid "Hotcorners Applet"
 msgstr "Miniaplicació dels cantons actius"
 
-#: budgie-applets.html:224
+#: budgie-applets.html:268
 msgid ""
 "Allow user defined commands to be executed when the mouse cursor is pushed "
 "into a corner of the main desktop."
@@ -140,103 +152,103 @@ msgstr ""
 "Permet que s'executin ordres definides per l'usuari quan s'empenyi el cursor"
 " cap a un cantó de l'escriptori principal."
 
-#: budgie-applets.html:241
+#: budgie-applets.html:285
 msgid "Quicknote Applet"
 msgstr "Miniapliacació de notes ràpides"
 
-#: budgie-applets.html:246
+#: budgie-applets.html:290
 msgid "Quickly record a text based note."
 msgstr "Deseu una anotació de text ràpidament."
 
-#: budgie-applets.html:263
+#: budgie-applets.html:307
 msgid "Previews Applet"
 msgstr "Miniapliacació de previsualització"
 
-#: budgie-applets.html:268
+#: budgie-applets.html:312
 msgid "Show an overview of windows in an exposé like way."
 msgstr ""
 "Mostra una visualització general de finestres en una mena d'exposició."
 
-#: budgie-applets.html:285
+#: budgie-applets.html:329
 msgid "Workspace Overview Applet"
 msgstr "Miniapliacació de visualització d'escriptoris"
 
-#: budgie-applets.html:290
+#: budgie-applets.html:334
 msgid "Quickly navigate workspaces using the applet's menu."
 msgstr ""
 "Navegueu ràpidament pels espais de treball usant la miniaplicació del menú."
 
-#: budgie-applets.html:307
+#: budgie-applets.html:351
 msgid "Workspace Wallpaper Applet"
 msgstr "Miniapliacació de fons d'escriptori"
 
-#: budgie-applets.html:312
+#: budgie-applets.html:356
 msgid "Show a different wallpaper on each workspace."
 msgstr "Mostra un fons diferent a cada espai de treball."
 
-#: budgie-applets.html:329
+#: budgie-applets.html:373
 msgid "Window Mover Applet"
 msgstr "Miniapliacació per moure finestres"
 
-#: budgie-applets.html:334
+#: budgie-applets.html:378
 msgid "Quickly move windows between workspaces."
 msgstr "Desplaceu finestres entre espais de treball ràpidament."
 
-#: budgie-applets.html:351
+#: budgie-applets.html:395
 msgid "Desktop Showtime Applet"
 msgstr "Miniapliacació per mostrar l'hora"
 
-#: budgie-applets.html:356
+#: budgie-applets.html:400
 msgid "Display the date and time on the Desktop."
 msgstr "Mostra l'hora i la data a l'escriptori."
 
-#: budgie-applets.html:373
+#: budgie-applets.html:417
 msgid "CountDown Applet"
 msgstr "Miniapliacació de compte enrere"
 
-#: budgie-applets.html:378
+#: budgie-applets.html:422
 msgid "Set a timed countdown and run an action when the countdown completes."
 msgstr "Establiu un compte enrere i una acció per executar en arribar a zero."
 
-#: budgie-applets.html:395
+#: budgie-applets.html:439
 msgid "Auto-Keyboard Switcher Applet"
 msgstr "Miniapliacació de canvi de disposició del teclat"
 
-#: budgie-applets.html:400
+#: budgie-applets.html:444
 msgid "Change the keyboard language automatically on a per application basis."
 msgstr "Canvieu la llengua del teclat automàticament segons l'aplicació."
 
-#: budgie-applets.html:417
+#: budgie-applets.html:461
 msgid "Screen Rotation Lock Applet"
 msgstr "Miniapliacació de bloqueig de rotació"
 
-#: budgie-applets.html:422
+#: budgie-applets.html:466
 msgid "Add the ability to unlock or lock the screen from rotating."
 msgstr ""
 "Afegiu l'habilitat de bloquejar i desbloquejar la rotació de la pantalla."
 
-#: budgie-applets.html:439
+#: budgie-applets.html:483
 msgid "Clockworks Applet"
 msgstr "Miniapliacació d'hores múltiples"
 
-#: budgie-applets.html:444
+#: budgie-applets.html:488
 msgid "Display the time across multiple time zones."
 msgstr "Mostra l'hora de moltes zones horàries."
 
-#: budgie-applets.html:461
+#: budgie-applets.html:505
 msgid "DropBy Applet"
 msgstr "Miniapliacació per a USB"
 
-#: budgie-applets.html:466
+#: budgie-applets.html:510
 msgid "Display a pop-up in the panel when a USB device is connected."
 msgstr ""
 "Mostra una finestra emergent al plafó quan es connecti un dispositiu USB."
 
-#: budgie-applets.html:483
+#: budgie-applets.html:527
 msgid "Advanced Brightness Applet"
 msgstr "Miniaplicació de brillantor avançada"
 
-#: budgie-applets.html:488
+#: budgie-applets.html:532
 msgid ""
 "Control the backlight via your graphics driver controller or GNOME's "
 "brightness controller."
@@ -244,19 +256,19 @@ msgstr ""
 "Control de la retroiluminació via el driver controlador de gràfics o el "
 "controlador de brillantor del GENOME"
 
-#: budgie-applets.html:505
+#: budgie-applets.html:549
 msgid "Browser Profile Launcher Applet"
 msgstr "Iniciador de la miniapliació de perfil del navegador"
 
-#: budgie-applets.html:510
+#: budgie-applets.html:554
 msgid "Launch and create multiple Chromium/Chrome profiles."
 msgstr "Inicieu i creeu múltiples perfils de Chromium/Chrome"
 
-#: budgie-applets.html:527
+#: budgie-applets.html:571
 msgid "Find Fast 'Kangaroo' Applet"
 msgstr "Miniaplicació de cerca  Fast \"Kangaroo\""
 
-#: budgie-applets.html:532
+#: budgie-applets.html:576
 msgid ""
 "Quick and easy browsing, across (possibly) many folder layers, without "
 "having to-do a single mouse click."
@@ -264,34 +276,34 @@ msgstr ""
 "Navegació ràpida i senzilla, a través de (possiblement) moltes capes de "
 "carpetes, sense haver de fer un sol clic de ratolí."
 
-#: budgie-applets.html:549
+#: budgie-applets.html:593
 msgid "Weather and Forecast Applet"
 msgstr "Miniaplicació Meteorològica"
 
-#: budgie-applets.html:554
+#: budgie-applets.html:598
 msgid "Weather forecast every three hours and over five days."
 msgstr "Predicció meteorològica cada tres hores a cinc dies vista"
 
-#: budgie-applets.html:571
+#: budgie-applets.html:615
 msgid "Recently Used Applet"
 msgstr "Miniaplicacions utilitzades recentment"
 
-#: budgie-applets.html:576
+#: budgie-applets.html:620
 msgid "Show recently used items in a menu."
 msgstr "Mostra en un menú els items més recents"
 
-#: budgie-applets.html:593
+#: budgie-applets.html:637
 msgid "Trash Applet"
 msgstr "Miniaplicació paperera"
 
-#: budgie-applets.html:598
+#: budgie-applets.html:642
 msgid "Show, hide and restore trash items."
 msgstr "Mostra, amaga i restableix items de la paperera"
 
-#: budgie-applets.html:615
+#: budgie-applets.html:659
 msgid "Application Launcher Applet"
 msgstr "Miniaplicació iniciadora d'apliacions"
 
-#: budgie-applets.html:620
+#: budgie-applets.html:664
 msgid "Display your favorite applications in a menu and on the panel."
 msgstr "Mostra en un menú i en un panell les teves apliacions preferides"

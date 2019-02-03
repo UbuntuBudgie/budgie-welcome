@@ -10,12 +10,12 @@
     {
       "SCHEMA": "org.gnome.desktop.interface",
       "VALUES": {
-        "cursor-theme": "breeze_cursors",
-        "gtk-theme": "Ant",
-        "icon-theme": "Papirus-Light",
-        "monospace-font-name": "Ubuntu Mono 13",
-        "font-name": "Ubuntu 11",
-        "document-font-name": "Sans 11"
+        "cursor-theme": "Pop",
+        "gtk-theme": "Pop",
+        "icon-theme": "Pop",
+        "monospace-font-name": "Fira Mono 11",
+        "font-name": "Fira Sans Semi-Light 10",
+        "document-font-name": "Roboto Slab 11"
       }
     },
     {
@@ -23,7 +23,7 @@
       "VALUES": {
         "color-shading-type": "solid",
         "picture-options": "stretched",
-        "picture-uri": "file:////usr/share/backgrounds/budgie/ubuntu_budgie_wallpaper2.jpg",
+        "picture-uri": "file:////usr/share/backgrounds/budgie/ubuntu_budgie_wallpaper1.jpg",
         "primary-color": "#008094"
       }
     },
@@ -37,14 +37,14 @@
     {
       "SCHEMA": "org.gnome.desktop.wm.preferences",
       "VALUES": {
-        "titlebar-font": "Ubuntu Bold 11",
-        "theme": "Ant"
+        "titlebar-font": "Fira Sans Semi-Bold 10",
+        "theme": "Pop"
       }
     },
     {
       "SCHEMA": "org.gnome.nautilus.desktop",
       "VALUES": {
-        "font": "Ubuntu 10"
+        "font": "Fira Sans Semi-Light 10"
       }
     }
   ]

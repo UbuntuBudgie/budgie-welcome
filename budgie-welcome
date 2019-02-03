@@ -425,9 +425,13 @@ class AppView(WebKit2.WebView):
 
             def applyStyle():
                 with open(theme) as file:
-                    config = json.load(file)
+                    whole_config = json.load(file)
 
                 attrib = None
+                if systemstate.codename in whole_config:
+                    config = whole_config[systemstate.codename]
+                else:
+                    config = whole_config["default"]
 
                 for item in config:
                     if "panel-attrib" in item:
