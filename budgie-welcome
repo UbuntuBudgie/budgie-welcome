@@ -126,6 +126,11 @@ class AppView(WebKit2.WebView):
             else:
                 app.update_page('.1710', 'show')
 
+            if systemstate.codename in ['xenial', 'bionic', 'cosmic']:
+                app.update_page('.1904', 'hide')
+            else:
+                app.update_page('.1904', 'show')
+
             # Display information tailored to graphics vendor (Getting Started / Drivers)
             app.run_javascript('var graphicsVendor = "' + systemstate.graphics_vendor + '";')
             app.run_javascript('var graphicsGrep = "' + systemstate.graphics_grep + '";')
