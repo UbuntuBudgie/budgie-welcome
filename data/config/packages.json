@@ -392,25 +392,25 @@
     "material-theme" : {
       "packages" : ["adapta-gtk-theme", "breeze-cursor-theme", "papirus-icon-theme", "fonts-noto"],
       "repos" : {
-        "xenial" : ["ppa:papirus/papirus", "ppa:tista/adapta"],
+        "xenial" : ["universe", "ppa:papirus/papirus", "ppa:tista/adapta"],
         "bionic" : ["universe", "ppa:tista/adapta"],
         "cosmic" : ["universe", "ppa:tista/adapta"],
-        "disco" : ["universe", "ppa:tista/adapta"]
+        "disco" : ["universe"]
       }
     },
     "material-vimix-theme" : {
       "packages" : ["vimix-gtk-themes", "paper-cursor-theme", "paper-icon-theme", "fonts-noto"],
       "repos" : {
-        "xenial" : ["ppa:snwh/pulp", "ppa:noobslab/themes"],
-        "bionic" : ["ppa:ubuntubudgie/backports"],
-        "cosmic" : ["ppa:ubuntubudgie/backports"],
-        "disco" : ["ppa:ubuntubudgie/backports"]
+        "xenial" : ["universe", "ppa:snwh/pulp", "ppa:noobslab/themes"],
+        "bionic" : ["universe", "ppa:ubuntubudgie/backports"],
+        "cosmic" : ["universe", "ppa:ubuntubudgie/backports"],
+        "disco" : ["universe", "ppa:ubuntubudgie/backports"]
       }
     },
     "material-materia-theme" : {
       "packages" : ["materia-theme", "numix-icon-theme-circle", "fonts-noto"],
       "repos" : {
-        "xenial" : ["ppa:budgie-remix/ppa", "ppa:numix/ppa"]
+        "xenial" : ["universe", "ppa:budgie-remix/ppa", "ppa:numix/ppa"]
       }
     },
     "material-materia2-theme" : {
@@ -433,25 +433,25 @@
     "evopop-theme" : {
       "packages" : ["evopop-gtk-theme", "paper-icon-theme", "fonts-noto"],
       "repos" : {
-        "bionic" : ["ppa:ubuntubudgie/backports"],
-        "cosmic" : ["ppa:ubuntubudgie/backports"],
-        "disco" : ["ppa:ubuntubudgie/backports"]
+        "bionic" : ["universe", "ppa:ubuntubudgie/backports"],
+        "cosmic" : ["universe", "ppa:ubuntubudgie/backports"],
+        "disco" : ["universe", "ppa:ubuntubudgie/backports"]
         }
       },
     "ant-theme" : {
       "packages" : ["ant-theme", "breeze-cursor-theme", "papirus-icon-theme"],
       "repos" : {
-        "bionic" : ["ppa:ubuntubudgie/backports"],
-        "cosmic" : ["ppa:ubuntubudgie/backports"],
-        "disco" : ["ppa:ubuntubudgie/backports"]
+        "bionic" : ["universe", "ppa:ubuntubudgie/backports"],
+        "cosmic" : ["universe", "ppa:ubuntubudgie/backports"],
+        "disco" : ["universe", "ppa:ubuntubudgie/backports"]
         }
       },
-    "pop-theme" : {
-      "packages" : ["pop-gtk-theme", "pop-fonts", "pop-icon-theme"],
+    "plata-theme" : {
+      "packages" : ["plata-theme", "breeze-cursor-theme", "papirus-icon-theme"],
       "repos" : {
-        "bionic" : ["ppa:ubuntubudgie/backports"],
-        "cosmic" : ["ppa:ubuntubudgie/backports"],
-        "disco" : ["ppa:ubuntubudgie/backports"]
+        "bionic" : ["universe", "ppa:tista/plata-theme"],
+        "cosmic" : ["universe", "ppa:tista/plata-theme"],
+        "disco" : ["universe", "ppa:tista/plata-theme"]
         }
       }
 
