@@ -2,13 +2,14 @@
 # Gyula Szabó <szabo.gyula.krisztian@gmail.com>, 2017
 # Bence László <laszlo.bence.27@gmail.com>, 2017
 # Krisztián Kecskés <hello.krisztian@gmail.com>, 2017
+# Benjamin Piller <benpiller@gmail.com>, 2019
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: Budgie Welcome\n"
 "POT-Creation-Date: 2016-02-27 12:48+0100\n"
 "PO-Revision-Date: 2017-03-15 13:49+0000\n"
-"Last-Translator: Krisztián Kecskés <hello.krisztian@gmail.com>, 2017\n"
+"Last-Translator: Benjamin Piller <benpiller@gmail.com>, 2019\n"
 "Language-Team: Hungarian (https://www.transifex.com/ubuntu-budgie/teams/72251/hu/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -34,16 +35,16 @@ msgid ""
 "<span name=\"distro-name\"></span> is an operating system -- the core "
 "software that runs your computer, similar to"
 msgstr ""
-"<span name=\"distro-name\"></span>egy operációs rendszer - a szoftermag, ami"
-" működteti a számítógéped, hasonlóan"
+"<span name=\"distro-name\"></span> egy operációs rendszer - a szoftermag, "
+"ami hasonlóan működteti a számítógépét, mint a"
 
 #: introduction.html:42
 msgid "Microsoft's Windows"
-msgstr "MS Windows"
+msgstr "Microsoft Windows"
 
 #: introduction.html:44
 msgid "Apple's OS X"
-msgstr "Apple OS X-e"
+msgstr "Apple macOS"
 
 #: introduction.html44, 113
 msgid "and"
@@ -51,7 +52,7 @@ msgstr "és"
 
 #: introduction.html:46
 msgid "Google's Chrome OS"
-msgstr "Google Chrome OS-e"
+msgstr "Google Chrome OS"
 
 #: introduction.html:48
 msgid ""
@@ -60,13 +61,13 @@ msgid ""
 "rivals all others in popularity and actual use."
 msgstr ""
 "<span name=\"distro-name\"></span>egy GNU/Linux-disztribúció (variáció). Egy"
-" megbízható, biztonságos, alkalmas, és modern számítópées rendszer, ami "
+" megbízható, biztonságos, alkalmas, és modern számítógépes rendszer, ami "
 "vetekedik a többivel népszerűségben és használatban."
 
 #: introduction.html:51
 msgid "Unlike other operating systems, Linux is a major one used:"
 msgstr ""
-"A többi operációs rendszertől eltérően, a Linuxot ezeken a területeken a "
+"A többi operációs rendszertől eltérően, a Linux ezeken a területeken a "
 "legelterjedtebb:"
 
 #: introduction.html:53
@@ -78,10 +79,13 @@ msgid ""
 "on many of (if not most of) the computers that make up the backbone of "
 "Internet"
 msgstr ""
+"A legtöbb (ha nem az összes) számítógépen, amik az internet csontvázát "
+"alkotják"
 
 #: introduction.html:57
 msgid "on corporate servers that require stability and reliability"
 msgstr ""
+"vállalati szervereken, amelyek stabilitást és megbízhatóságot igényelnek"
 
 #: introduction.html:62
 msgid ""
@@ -91,12 +95,19 @@ msgid ""
 " modest hardware requirements, it is suitable for modern desktops and "
 "laptops alike."
 msgstr ""
+"Az <span name=\"distro-name\"></span> egy stabil, könnyen használható "
+"operációs rendszer, konfigurálható asztali környezettel. Ideális azok "
+"számára, akik a legtöbbet szeretnék kihozni a számítógépükből, és inkább "
+"hagyományos asztali metaforát szeretnek. A szerény hardverkövetelményeknek "
+"köszönhetően modern asztali számítógépeken és laptopokon is használható."
 
 #: introduction.html:69
 msgid ""
 "The operating system is more secure, and better supported than the operating"
 " system pre-installed on most home computer hardware today."
 msgstr ""
+"Az operációs rendszer biztonságosabb és jobban támogatott, mint a ma már "
+"legtöbb otthoni számítógépes hardveren előre telepített operációs rendszer."
 
 #: introduction.html:73
 msgid ""
@@ -116,6 +127,8 @@ msgid ""
 "<span name=\"distro-name\"></span> has a number of guiding objectives and "
 "goals:"
 msgstr ""
+"Az <span name=\"distro-name\"></span>-nak számos irányadó feladatai és "
+"céljai vannak:"
 
 #: introduction.html:86
 msgid "Accessible to all, regardless of language and physical ability."
