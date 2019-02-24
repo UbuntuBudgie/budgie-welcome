@@ -306,10 +306,14 @@ msgid ""
 "in sections of your hard disk being split between multiple operating "
 "systems."
 msgstr ""
+"Ha az <span name=\"distro-name\"></span>-t a meglévő operációs rendszer "
+"mellé szeretné telepíteni, akkor a partícióknak zsugorodniuk kell. Ez azt "
+"eredményezi, hogy a merevlemez részei több operációs rendszer között "
+"oszlanak meg."
 
 #: gettingstarted.html:204
 msgid "I'm dual booting with"
-msgstr ""
+msgstr "Kettős rendszerindításom van"
 
 #: gettingstarted.html:207
 msgid "To minimize the risk of data loss or failure, ensure that:"
@@ -418,6 +422,12 @@ msgid ""
 "partitions, primarily for power users who know how they'd like to layout "
 "their disks. This method makes changes to partitions prior to installation."
 msgstr ""
+"A <b>GParted</b> csak az élő munkafolyamat alatt érhető el. Ez megtalálható "
+"a <b>Rendszer <i class=\"material-icons\">&#xE315;</i> Adminisztráció</b> "
+"menüben. A GParted teljes rugalmasságot kínál a partíciók felett, elsősorban"
+" tapasztalt felhasználóknak, akik tudják, hogy hogyan szeretnék a lemezeket "
+"elrendezni. Ezzel a módszerrel változtatásokat csinálhat a partíciókon a "
+"telepítés előtt."
 
 #: gettingstarted.html:266
 msgid "Open GParted"
@@ -429,6 +439,10 @@ msgid ""
 "unallocated, whereby the installer will detect this unused space to install "
 "<span name=\"distro-name\"></span> to."
 msgstr ""
+"A lemezen való változtatások végrehajtása után a hátralévő helyet "
+"felhasználatlanul hagyhatja, mivel a telepítő fel fogja deríteni a "
+"kihasználatlan helyet és oda fogja telepíteni az <span name=\"distro-"
+"name\"></span>-t."
 
 #: gettingstarted.html:272
 msgid "Using the Installer's \"Custom\" option."
@@ -441,6 +455,10 @@ msgid ""
 " choose mount points. Dividing your disks can make it somewhat easier to re-"
 "install the operating system later if desired."
 msgstr ""
+"A GParted helyett vagy mellett az <b>Egyedi</b> opció a telepítés alatt is "
+"kínál lehetőséget a partíciók átméretezésére és konfigurálására, valamint a "
+"csatolási pontok megadására. A lemez felosztása megkönnyítheti az operációs "
+"rendszer újratelepítését később ha szeretné."
 
 #: gettingstarted.html:278
 msgid "You can specify these mount points:"
@@ -467,19 +485,23 @@ msgid ""
 "Contains most of the applications <i> (binaries, documentation, libraries, "
 "etc)</i>"
 msgstr ""
+"Tartalmazza a legtöbb alkalmazást <i> (binárisok, dokumentáció, könyvtárak "
+"stb.)</i>"
 
 #: gettingstarted.html:285
 msgid "Variable data <i>(such as system logs)</i>"
-msgstr ""
+msgstr "Változó adatok <i>(például rendszernaplók)</i>"
 
 #: gettingstarted.html:286
 msgid ""
 "Data for System Services <i>(typically used for server configurations)</i>"
 msgstr ""
+"Rendszerszolgáltatások adatai <i>(általában a szerver konfigurációkhoz "
+"használatosak)</i>"
 
 #: gettingstarted.html:287
 msgid "Additional software unmanaged by the package manager"
-msgstr ""
+msgstr "A csomagkezelő által kezelt további szoftverek"
 
 #: gettingstarted.html:288
 msgid "such as"
@@ -494,10 +516,16 @@ msgid ""
 "<code>/</code> on an SSD, but your personal files <code>/home</code> on a "
 "mechanical hard drive."
 msgstr ""
+"Külön partíciók létrehozása nem szükséges a fenti csatolási pontokhoz. A "
+"leggyakrabban megosztott könyvtárak a <code>/</code>, <code>/home</code> és "
+"a <code>/boot</code>. Ezek a csatlakoztatási pontok különböző fizikai "
+"lemezeken is beállíthatók, például ha az operációs rendszert <code>/</code> "
+"SSD-n szeretné használni, de a személyes fájljait <code>/home</code> egy "
+"mechanikus merevlemezen. "
 
 #: gettingstarted.html:298
 msgid "Shrink your system disk within Windows."
-msgstr ""
+msgstr "Zsugorítsa a rendszerlemezt a Windowsban."
 
 #: gettingstarted.html:300
 msgid "Applies to Windows Vista and later."
@@ -508,6 +536,8 @@ msgid ""
 "If you are using Windows XP or earlier, you will need to use the "
 "<b>Simple</b> or <b>Advanced</b> method to shrink your disk."
 msgstr ""
+"Ha Windows XP-t használ vagy korábbit, akkor az <b>Egyszerű</b> vagy "
+"<b>Haladó</b> módszert kell használnia a lemez zsugorításához."
 
 #: gettingstarted.html:305
 msgid ""
@@ -516,26 +546,34 @@ msgid ""
 "boots on your computer while experiencing <span name=\"distro-"
 "name\"></span>."
 msgstr ""
+"Újabb verziójú Windows rendszerek egy eszközt kínálnak az NTFS kötet "
+"zsugorításához Windowson belül. Ez biztonságosabb és létfontosságú ha "
+"Windows indítása fontos a gépen az <span name=\"distro-name\"></span> "
+"használata közben."
 
 #: gettingstarted.html:309
 msgid "Open <b>Disk Management</b> from the start menu."
-msgstr ""
+msgstr "Nyissa meg a <b>Lemezkezelőt</b> a start menüből."
 
 #: gettingstarted.html:314
 msgid ""
 "Right click your desired drive and choose <b>Shrink Partition</b> from the "
 "context menu."
 msgstr ""
+"Jobb klikk a kívánt meghajtóra majd válassza a <b>Partíció zsugorítását</b> "
+"a helyi menüből."
 
 #: gettingstarted.html:319
 msgid "Enter the amount to shrink your system partition by."
-msgstr ""
+msgstr "Adja meg, hogy mennyivel zsugorodjon a rendszer partíció."
 
 #: gettingstarted.html:325
 msgid ""
 "Remember, <span name=\"distro-name\"></span> needs at minimum 16 GB of disk "
 "space."
 msgstr ""
+"Emlékezzen, az <span name=\"distro-name\"></span>-nak minimum 16 GB helyre "
+"van szüksége."
 
 #: gettingstarted.html:330
 msgid "Further Reading"
@@ -548,6 +586,9 @@ msgid ""
 "onclick=\"cmd('link?https://help.ubuntu.com/community/HowtoResizeWindowsPartitions')\">"
 " help article</a> online."
 msgstr ""
+"További praktikus információért, hogy hogyan módosítsunk partíciókat amiken "
+"Windows található, látogassa meg a következő online <a "
+"onclick=\"cmd('link?https://help.ubuntu.com/community/HowtoResizeWindowsPartitions')\">cikket</a>."
 
 #: gettingstarted.html:338
 msgid "Repairing Boot Problems"
@@ -567,14 +608,18 @@ msgid ""
 "Fortunately, you can use the <b>Boot Repair</b> tool to repair common "
 "problems caused by other operating systems."
 msgstr ""
+"Szerencsére használhatja az <b>Indításjavító</b> eszközt, a más operációs "
+"rendszerek által okozott problémák kijavításához."
 
 #: gettingstarted.html:351
 msgid "Requires downloading a package."
-msgstr ""
+msgstr "Egy csomag letöltése szükséges."
 
 #: gettingstarted.html:352
 msgid "Please connect to the Internet to download and use this utility."
 msgstr ""
+"Kérem csatlakozzon az internethez a segédeszköz letöltéséhez és "
+"használatához."
 
 #: gettingstarted.html:353
 msgid "Sorry, Welcome was unable to establish a connection."
@@ -583,11 +628,11 @@ msgstr ""
 
 #: gettingstarted.html:357
 msgid "Download Boot Repair"
-msgstr ""
+msgstr "Indításjavító letöltése"
 
 #: gettingstarted.html:358
 msgid "Open Boot-Repair"
-msgstr ""
+msgstr "Indításjavító megnyitása"
 
 #: gettingstarted.html:363
 msgid "Install Preparations"
@@ -696,6 +741,8 @@ msgstr "További driverek"
 msgid ""
 "<b>Additional Drivers</b> can be found later in <b>Software & Updates</b>"
 msgstr ""
+"<b>További driverek</b> a <b>Szoftver és frissítésekben</b> található meg "
+"később"
 
 #: gettingstarted.html:466
 msgid "Graphics"
@@ -706,10 +753,12 @@ msgid ""
 "Sorry, Welcome was unable to automatically identify the graphics vendor on "
 "this system."
 msgstr ""
+"Elnézést, a Welcome nem tudta a grafikus kártya gyártóját azonosítani ezen a"
+" rendszeren."
 
 #: gettingstarted.html471, 477, 485, 491
 msgid "Card/Chipset:"
-msgstr "Kártya/chipset"
+msgstr "Kártya/lapkakészlet"
 
 #: gettingstarted.html471, 477, 485, 491
 msgid "Unknown"
@@ -738,7 +787,7 @@ msgstr ""
 
 #: gettingstarted.html:489
 msgid "You're already good to go."
-msgstr ""
+msgstr "Már rendben van."
 
 #: gettingstarted.html:490
 msgid ""
@@ -789,7 +838,7 @@ msgstr ""
 
 #: gettingstarted.html:511
 msgid "Fix blank screen issues."
-msgstr ""
+msgstr "Üres képernyőhibák javítása."
 
 #: gettingstarted.html:514
 msgid ""
