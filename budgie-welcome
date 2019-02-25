@@ -36,12 +36,16 @@ import urllib.request
 import urllib.error
 import webbrowser
 import socket
-import platform
 import json
 import shutil
 import locale
 import gettext
 import getpass
+
+try:
+    import distro
+except:
+    import platform
 
 from gi.repository import WebKit2, Gtk, Gio, Gdk, GLib
 from threading import Thread
@@ -1067,12 +1071,19 @@ class SystemState(object):
         if arg.simulate_version:
             self.os_version = arg.simulate_version
         else:
-            self.os_version = platform.dist()[1]  # → 14.04, 15.10, 16.04
+            try:
+                self.os_version = distro.version()
+            except:
+                self.os_version = platform.dist()[1]  # → 14.04, 15.10, 16.04
+
 
         if arg.simulate_codename:
             self.codename = arg.simulate_codename
         else:
-            self.codename = platform.dist()[2]  # → trusty, wily, xenial
+            try:
+                self.codename = distro.codename().split(' ')[0].lower()
+            except:
+                self.codename = platform.dist()[2]  # → trusty, wily, xenial
 
         self.official = int(self.os_version[:2]) >= 17
 
@@ -1476,7 +1487,7 @@ class WelcomeApp(object):
         # build window
         w = Gtk.Window()
         w.set_position(Gtk.WindowPosition.CENTER)
-        w.set_wmclass('budgie-welcome', _("Budgie Welcome"))
+        #w.set_wmclass('budgie-welcome', _("Budgie Welcome"))
         w.set_title(_("Budgie Welcome"))
         w.set_default_size(992, 500)
         # w.set_resizable(False)
@@ -1498,7 +1509,7 @@ class WelcomeApp(object):
         back_img.set_from_file(os.path.join(self._data_path, 'img', 'welcome', 'ic_back.svg'))
 
         about_btn = Gtk.Button(image=about_img)
-        status_btn = Gtk.Button(_("Status"))
+        status_btn = Gtk.Button.new_with_label(_("Status"))
         back_btn = Gtk.Button(image=back_img)
         status_btn.hide()
         back_btn.set_sensitive(False)
