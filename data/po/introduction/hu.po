@@ -1,7 +1,6 @@
 # Translators:
 # Gyula Szabó <szabo.gyula.krisztian@gmail.com>, 2017
 # Bence László <laszlo.bence.27@gmail.com>, 2017
-# Krisztián Kecskés <hello.krisztian@gmail.com>, 2017
 # Benjamin Piller <benpiller@gmail.com>, 2019
 # 
 msgid ""
@@ -117,6 +116,11 @@ msgid ""
 " anything about the way it looks, the way it works, or the applications it "
 "runs to suit your taste."
 msgstr ""
+"Az <span name=\"distro-name\"></span> használata lehetővé teszi, hogy teljes"
+" körű, teljes funkcionalitású operációs rendszert futtasson, amely a legtöbb"
+" (ha nem az összes) alkalmazással van ellátva a napi kihívásokhoz. Ízlése "
+"szerint változthatja a dolgok kinézetét, működését vagy alkalmazásokat, "
+"ahogyan az Önnek a legjobban megfelel."
 
 #: introduction.html:83
 msgid "Objectives"
@@ -145,18 +149,24 @@ msgid ""
 "Create a Ubuntu based distro for users who prefer a traditional desktop "
 "metaphor."
 msgstr ""
+"Hozzon létre egy Ubuntu alapú disztribúciót azoknak a felhasználóknak, akik "
+"hagyományos asztali metaforát szeretnek."
 
 #: introduction.html:89
 msgid ""
 "When possible contribute to Upstream projects such as Solus and Debian so "
 "all Linux communities benefit."
 msgstr ""
+"Ha lehetséges, akkor járuljon hozzá olyan Upstream projektekhez, mint a "
+"Solus és a Debian, így minden Linux közösség előnyben részesül."
 
 #: introduction.html:90
 msgid ""
 "Software selection will favor functionality and stability over lightness and"
 " whimsy."
 msgstr ""
+"A szoftver választék előtérbe helyezi a funkcionalitást és a stabilitást a "
+"könnyedség és szeszélyesség helyett."
 
 #: introduction.html:100
 msgid "Ubuntu"
@@ -164,7 +174,7 @@ msgstr "Ubuntu"
 
 #: introduction.html:107
 msgid "is one of, if not the, largest deployed"
-msgstr ""
+msgstr "az egyik, ha nem a legjobban elterjedt"
 
 #: introduction.html:110
 msgid ""
@@ -172,13 +182,16 @@ msgid ""
 "Ubuntu and makes it possible to create secure, powerful and versatile "
 "operating systems, such as"
 msgstr ""
+"alapú asztali operációs rendszer a világon. A Linux az Ubuntu szívében "
+"található és lehetővé teszi biztonságos, erőteljes és sokoldalú operációs "
+"rendszerek létrehozását, úgy mint a"
 
 #: introduction.html:114
 msgid ""
 "Android is now in the hands of billions of people around the world and it's "
 "also powered by Linux."
 msgstr ""
-"Az Android emberek milliárdjainak kezében van a világon és azt is Linux "
+"az Android emberek milliárdjainak kezében van a világon és azt is Linux "
 "hajtja."
 
 #: introduction.html:117
@@ -187,25 +200,27 @@ msgstr "Az Ubuntu elérhető több különböző"
 
 #: introduction.html:118
 msgid "flavors"
-msgstr ""
+msgstr "változatban"
 
 #: introduction.html:118
 msgid ""
 "each coming with its own desktop environment. <span name=\"distro-"
 "name\"></span> takes the Ubuntu base operating system and adds the"
 msgstr ""
+"mindegyik a a saját asztali környezetével. <span name=\"distro-"
+"name\"></span> az Ubuntu operációs rendszert veszi alapul, ötvözve a"
 
 #: introduction.html:121
 msgid "Budgie desktop"
-msgstr "Budgie desktop"
+msgstr "Budgie asztallal"
 
 #: introduction.html:127
 msgid "Budgie Desktop"
-msgstr "Budgie Desktop"
+msgstr "A Budgie Asztal"
 
 #: introduction.html:134
 msgid "Wikipedia says that a"
-msgstr "A Wikipédia szerint"
+msgstr "a Wikipédia szerint egy"
 
 #: introduction.html:136
 msgid "Desktop Environment"
@@ -213,7 +228,7 @@ msgstr "Asztali Környezet"
 
 #: introduction.html:136
 msgid "is:"
-msgstr ""
+msgstr "amely:"
 
 #: introduction.html:138
 msgid ""
@@ -228,6 +243,8 @@ msgid ""
 "<span name=\"distro-name\"></span> comes with a lot of useful applications "
 "like"
 msgstr ""
+"Az <span name=\"distro-name\"></span> rengeteg hasznos alkalmazással "
+"érkezik, olyanokkal mint a "
 
 #: introduction.html:161
 msgid "GNOME Files"
@@ -292,6 +309,10 @@ msgid ""
 "or unmodified form) by anyone. In a nutshell <span name=\"distro-"
 "name\"></span> is free, in the truest sense of the word."
 msgstr ""
+"A Linuxban, az Ubuntuban és a Budgieban az a közös, hogy mindhárom nyílt "
+"forráskódú. Ez a szoftver szabadon használható, módosítható és megosztható "
+"(módosított vagy módosítatlan formában) bárki által. Dióhéjban az <span name"
+"=\"distro-name\"></span> szabad, a szó szoros értelmében."
 
 #: introduction.html:208
 msgid ""
@@ -307,6 +328,16 @@ msgid ""
 " will ever happen, but if you have made it better, then your changes just "
 "might be included in the next release of <span name=\"distro-name\"></span>."
 msgstr ""
+"Bár megvásárolhatóak a Linux egyes disztribúciói (variációk), a túlnyomó "
+"többsége ingyenes, mint az <span name=\"distro-name\"></span>. A terjesztés "
+"oly módon engedélyezett, hogy bárki szabadon terjesztheti, korlátok nélkül. "
+"Például a licenc a felhasználói közösség minden tagjának szabadon biztosítja"
+" a Linuxot bármilyen célra, az operációs rendszer terjesztését, módosítását,"
+" vagy akár eladását. Ha módosítja a Linuxot, majd újraterjeszti a "
+"módosításokat, akkor a licenc megköveteli, hogy a módosításokat a későbbi "
+"verziókba való bekerülésre benyújtsa. Nincs garancia arra, hogy ez mindig "
+"megtörténik, de ha valamin javított, akkor a változások az <span name"
+"=\"distro-name\"></span> következő kiadásában szerepelhetnek."
 
 #: introduction.html:223
 msgid ""
@@ -315,6 +346,11 @@ msgid ""
 "corporations provide fixes and new features for Linux as they use the "
 "software for their businesses."
 msgstr ""
+"A Linux számos felhasználói között vannak olyan vállalatok, amelyek az "
+"operációs rendszert használják üzleti tevékenységük futtatására, vagy "
+"termékeiken belül. Ezek közül sok vállalat javításokat és új funkciókat "
+"biztosít a Linux számára, mivel a szoftvert üzleti tevékenységükhöz "
+"használják."
 
 #: introduction.html:229
 msgid "These improvements are given back"
@@ -355,3 +391,13 @@ msgid ""
 "designed for Windows, and from the most powerful Internet servers to the "
 "smallest smart thermostat."
 msgstr ""
+"Függetlenül attól, hogy Ön az <span name=\"distro-name\"></span> otthoni "
+"felhasználója, egy <span name=\"distro-name\"></span> szoftver vagy "
+"alkalmazásfejlesztő, vagy az operációs rendszert használó szervezet "
+"alkalmazottja, Ön tagja a Linux és az Open Source közösségeknek, és részesül"
+" a fejlesztők erőfeszítéseiből, akik hozzájárulnak  a(z) <span name"
+"=\"distro-name\"></span>hez kapcsolódó projektekhez: Linux, Budgie desktop "
+"és Ubuntu. A közösség tagjai szinte bármilyen hardveren futtatják a Linuxot,"
+" a legszebb Macbooktól a legolcsóbb netbookig, a legújabb Chromebooktól "
+"néhány nagyon régi Windows-hoz tervezett géphez, és a legerősebb "
+"internetkiszolgálóktól a legkisebb intelligens termosztátig."

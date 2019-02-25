@@ -602,6 +602,11 @@ msgid ""
 "will overwrite them, with the potential to lose access to <span name"
 "=\"distro-name\"></span> temporally."
 msgstr ""
+"A linux disztribúciók egy rendszerindítót használnak ami <code>grub</code> "
+"néven ismert, ami megkeresi és betölti az operációs rendszert. Habár egyes "
+"operációs rendszerek (mint a Windows) nem integrálnak meglévő "
+"rendszerbetöltőket és felülírja azokat, ami ideiglenes hozzáférés "
+"veszteséget okoz az <span name=\"distro-name\"></span>-hoz."
 
 #: gettingstarted.html:346
 msgid ""
@@ -654,6 +659,10 @@ msgid ""
 "just installed <span name=\"distro-name\"></span>, you might want to do this"
 " now."
 msgstr ""
+"<span name=\"distro-name\"></span> időközönként ellenőrizni fogja, hogy van "
+"e számítógépre elérhető új szoftver vagy biztonsági frissítés. Ha éppen most"
+" telepítette az <span name=\"distro-name\"></span>-t, lehet hogy ezt most "
+"meg kell tennie."
 
 #: gettingstarted.html:390
 msgid ""
@@ -679,6 +688,11 @@ msgid ""
 "Ubuntu License Policy) complicate distribution of software to support non-"
 "free formats."
 msgstr ""
+"<strong>Ubuntu</strong>(az <span name=\"distro-name\"></span> alapja) "
+"törekszik, hogy az összes fontos szoftvert automatikusan elérhetővé tegye "
+"felhasználói számára. Habár a szabadalmi és szerzői jog korlátozások (lásd "
+"Ubuntu Licensz Irányelvek) bonyolítják a nem szabad szoftver formátumok "
+"terjesztését és támogatását."
 
 #: gettingstarted.html:413
 msgid ""
@@ -686,6 +700,9 @@ msgid ""
 " including DVD, MP3, Quicktime, and Windows Media formats, by following the "
 "instructions below."
 msgstr ""
+"Azonban az alábbi utasítások betartásával telepítheti a népszerű, nem "
+"ingyenes médiaformátumokat, beleértve a DVD, MP3, Quicktime és Windows Media"
+" formátumokat is."
 
 #: gettingstarted.html:416
 msgid ""
@@ -694,6 +711,11 @@ msgid ""
 "See Ubuntu’s Free Software Philosophy and the Free Formats page for a more "
 "comprehensive discussion of these issues."
 msgstr ""
+"Az Ubuntu elkötelezett, hogy alapértelmezetten csak teljesen ingyenes "
+"szoftvert tartalmazzon, ami azt jelenti, hogy a szabadalmaztatott "
+"médiaformátumok nincsenek a „dobozon kívül” konfigurálva. Az Ubuntu Szabad "
+"Szoftver Filozófiája és a Szabad Formátumok oldalon olvashat részletesebben "
+"ezekről a kérdésekről."
 
 #: gettingstarted.html:420
 msgid ""
@@ -702,6 +724,10 @@ msgid ""
 " unsure whether a particular patent or restriction applies to a media format"
 " you wish to use in your country."
 msgstr ""
+"<strong>Jogi nyilatkozat</strong> A szabadalmi és szerzői jogi törvények "
+"eltérően működnek attól függően, hogy melyik országban tartózkodik. Kérjük, "
+"kérjen jogi tanácsot, ha nem biztos abban, hogy egy adott szabadalom vagy "
+"korlátozás vonatkozik-e az országában használni kívánt médiaformátumra."
 
 #: gettingstarted.html425, 542, 601, 606, 641, 647, 653, 689, 718, 785, 800,
 #: 818, 833, 852
@@ -728,6 +754,11 @@ msgid ""
 " often required to get some devices, typically Bluetooth and Wi-Fi, to work "
 "correctly."
 msgstr ""
+"Míg a hardverek széles skálája kompatibilis az <span name=\"distro-"
+"name\"></span>-val, vannak olyan alkatrészek és perifériák, amelyek saját "
+"illesztőprogramokat igényelnek, hogy megfelelően működjenek. A firmware-"
+"csomag telepítése gyakran szükséges ahhoz, hogy bizonyos eszközök, például "
+"Bluetooth és Wi-Fi, megfelelően működjenek."
 
 #: gettingstarted.html:452
 msgid "An Internet connection is required to download and install drivers."
@@ -735,14 +766,14 @@ msgstr "Internetkapcsolat szükséges a driverek letöltéséhez és telepítés
 
 #: gettingstarted.html:456
 msgid "Additional Drivers"
-msgstr "További driverek"
+msgstr "További illesztőprogramok"
 
 #: gettingstarted.html:461
 msgid ""
 "<b>Additional Drivers</b> can be found later in <b>Software & Updates</b>"
 msgstr ""
-"<b>További driverek</b> a <b>Szoftver és frissítésekben</b> található meg "
-"később"
+"<b>További illesztőprogramok</b> a <b>Szoftver és frissítésekben</b> "
+"található meg később"
 
 #: gettingstarted.html:466
 msgid "Graphics"
@@ -773,6 +804,9 @@ msgid ""
 "NVIDIA may have drivers for your card that can boost performance for 3D "
 "applications and games as well as deliver improvements to power management."
 msgstr ""
+"Az NVIDIA-nak lehetnek illesztőprogramjai a grafikus kártyához, amely "
+"növelheti a 3D alkalmazások és játékok teljesítményét, valamint javíthatja "
+"az energiagazdálkodást."
 
 #: gettingstarted.html:481
 msgid "AMD Graphics Card Detected."
@@ -784,6 +818,9 @@ msgid ""
 " are currently using will deliver the most stable performance out of your "
 "card."
 msgstr ""
+"Az AMD illesztőprogramjait az Ubuntun már nem támogatottak. A jelenleg "
+"használt nyílt forráskódú illesztőprogramok a legstabilabb teljesítményt "
+"biztosítják a grafikus kártyához."
 
 #: gettingstarted.html:489
 msgid "You're already good to go."
@@ -793,20 +830,24 @@ msgstr "Már rendben van."
 msgid ""
 "Intel's drivers are open source and are maintained/updated in the kernel."
 msgstr ""
+"Az Intel illesztőprogramjai nyílt forráskódúak, és a kernelben vannak "
+"karbantartva/frissítve."
 
 #: gettingstarted.html:495
 msgid "VirtualBox Guest Additions"
-msgstr ""
+msgstr "VirtualBox vendég kiegészítések"
 
 #: gettingstarted.html:496
 msgid ""
 "To accelerate graphics performance inside the virtual machine, please "
 "install Guest Additions."
 msgstr ""
+"A virtuális gépen belüli grafikus teljesítmény gyorsítása érdekében "
+"telepítse a Vendég kiegészítőket."
 
 #: gettingstarted.html:500
 msgid "Proprietary or Open Source Drivers?"
-msgstr "Tulajdonosi vagy nyílt forráskódú driverek?"
+msgstr "Szabadalmaztatott vagy nyílt forráskódú illesztőprogramok?"
 
 #: gettingstarted.html:501
 msgid ""
@@ -814,6 +855,10 @@ msgid ""
 "open source, Ubuntu developers are <b>unable to review and improve driver "
 "code</b> meaning you'll have to rely on the manufacturer for support."
 msgstr ""
+"A szabadalmaztatott illesztőprogramok közvetlenül a gyártótól érkeznek. "
+"Mivel ezek nem nyílt forráskódúak, az Ubuntu fejlesztők <b>nem tudják "
+"ellenőrizni és javítani a driver kódot</b>, ezért támogatást a gyártó tud "
+"csak nyújtani."
 
 #: gettingstarted.html:505
 msgid ""
@@ -821,6 +866,9 @@ msgid ""
 "performance</b> and as a result, the entire system. Users may wish to "
 "install these drivers to:"
 msgstr ""
+"Ezenkívül a szabadalmaztatott illesztőprogramok <b>jelentősen javíthatják a "
+"grafikus teljesítményt</b> és ennek eredményeként a teljes rendszert. A "
+"felhasználók az alábbi illesztőprogramokat telepíthetik:"
 
 #: gettingstarted.html:508
 msgid "Run 3D applications and games."
@@ -831,10 +879,12 @@ msgid ""
 "Improve power management, particularly if the device experiences overheating"
 " problems under open source drivers."
 msgstr ""
+"Javítsa az energiagazdálkodást, különösen, ha a készüléknél túlmelegedési "
+"problémákat tapasztal a nyílt forráskódú driverek használatánál."
 
 #: gettingstarted.html:510
 msgid "Improve support for high resolutions and multiple monitors."
-msgstr ""
+msgstr "A nagy felbontások és több monitorok támogatásának javítása."
 
 #: gettingstarted.html:511
 msgid "Fix blank screen issues."
@@ -846,32 +896,37 @@ msgid ""
 "experience adverse behavior, causing more issues than the open source "
 "drivers, such as:"
 msgstr ""
+"A szabadalmaztatott illesztőprogramokat \"bináris blobok\" néven ismerik. "
+"Bizonyos hardverek hátrányosan viselkedhetnek, ami több problémát okoz, mint"
+" a nyílt forráskódú illesztőprogramok, például:"
 
 #: gettingstarted.html:517
 msgid "Failing to boot to the graphical desktop."
-msgstr ""
+msgstr "Grafikus asztal sikertelen indítása."
 
 #: gettingstarted.html:518
 msgid "Broken drivers after an upgrade."
-msgstr ""
+msgstr "Elromlott illesztőprogramok frissítés után."
 
 #: gettingstarted.html:519
 msgid "Severe graphical glitches."
-msgstr ""
+msgstr "Súlyos grafikus hibák."
 
 #: gettingstarted.html:520
 msgid "Problems with applications/games requiring hardware acceleration."
-msgstr ""
+msgstr "Problémák hardveres gyorsítást igénylő alkalmazásokkal/játékokkal."
 
 #: gettingstarted.html:524
 msgid ""
 "<code id=\"graphics-open-driver-name\"></code> is the open source driver for"
 " your card."
 msgstr ""
+"<code id=\"graphics-open-driver-name\"></code> a kártya nyíltforráskódú "
+"illesztőprogramja."
 
 #: gettingstarted.html:529
 msgid "What about the latest NVIDIA drivers?"
-msgstr "Mi a helyzet a legfrissebb NVIDIA-meghajtókkal?"
+msgstr "Mi a helyzet a legfrissebb NVIDIA-illesztőprogramokkal?"
 
 #: gettingstarted.html:530
 msgid ""
@@ -882,12 +937,21 @@ msgid ""
 "which packages up the latest NVIDIA drivers for Ubuntu. These packages are "
 "not as thoroughly tested."
 msgstr ""
+"A <b>további illesztőprogramok</b> a legújabb tesztelt illesztőprogramot az "
+"Ubuntu tárolókból szerzi be. Azok a fejlett felhasználók és játékosok, akik "
+"újabb verziókat szeretnének, fontolóra vehetik az <a "
+"onclick=\"cmd('link?https://launchpad.net/~graphics-"
+"drivers/+archive/ubuntu/ppa')\">Ubuntu grafikus illesztőprogram PPA</a> "
+"hozzáadását, amely az Ubuntu legújabb NVIDIA illesztőprogramjait biztosítja."
+" Ezek a csomagok nincsenek alaposan tesztelve."
 
 #: gettingstarted.html:535
 msgid ""
 "This only applies for actively supported cards, and not older cards using "
 "the legacy driver."
 msgstr ""
+"Ez csak az aktívan támogatott kártyákra vonatkozik, nem pedig a régebbi "
+"kártyákra, amelyek a régebbi illesztőprogramot használnak."
 
 #: gettingstarted.html:539
 msgid "Add Repository"
@@ -898,6 +962,8 @@ msgid ""
 "After the PPA is added, newer versions are presented to install in <a "
 "onclick=\"cmd('drivers')\">Additional Drivers:</a>"
 msgstr ""
+"A PPA hozzáadását követően újabb verziók kerülnek bemutatásra a <a "
+"onclick=\"cmd('drivers')\">További illesztőprogramok</a> telepítéséhez:"
 
 #: gettingstarted.html:555
 msgid "Wireless, Bluetooth and Other Devices"
@@ -909,6 +975,9 @@ msgid ""
 "after installing the firmware packages, you may need to research your device"
 " to find the appropriate driver."
 msgstr ""
+"Ha a hardverhez nem talált további illesztőprogramokat, és nem működött a "
+"firmware-csomagok telepítése után sem, akkor előfordulhat, hogy a "
+"készülékhez saját kezűleg kell keresni egy megfelelő illesztőprogramot."
 
 #: gettingstarted.html:561
 msgid ""
@@ -917,6 +986,10 @@ msgid ""
 "insufficient documentation to create drivers for your particular brand and "
 "model."
 msgstr ""
+"Sajnos ez annak köszönhető, hogy a hardvergyártó nem adott forráskódot a "
+"fejlesztőknek, hogy szabadon használhassák őket, vagy nem áll rendelkezésre "
+"elegendő dokumentáció az illesztőprogramok létrehozásához az adott márkához "
+"és modellhez."
 
 #: gettingstarted.html:567
 msgid ""
@@ -924,10 +997,13 @@ msgid ""
 "directly. If you require assistance, feel free to <a "
 "onclick=\"smoothPageFade('community.html')\">ask the community</a>."
 msgstr ""
+"Egyes gyártók zárt forrású illesztőprogramokat biztosíthatnak közvetlenül. "
+"Ha segítségre van szüksége, <a "
+"onclick=\"smoothPageFade('community.html')\">kérdezze meg a közösséget</a>."
 
 #: gettingstarted.html:572
 msgid "Read more on troubleshooting wireless hardware."
-msgstr ""
+msgstr "További információ a vezeték nélküli hardver hibaelhárításáról."
 
 #: gettingstarted.html580, 762
 msgid "Language Input"
@@ -935,7 +1011,7 @@ msgstr "Nyelvi bemenet"
 
 #: gettingstarted.html:590
 msgid "Input method"
-msgstr ""
+msgstr "Beviteli mód"
 
 #: gettingstarted.html:591
 msgid ""
@@ -943,6 +1019,9 @@ msgid ""
 "between two widely used keyboard entry layouts. IBus(Intelligent Input Bus) "
 "and Fcitx(Free Chinese Input Toy for X)."
 msgstr ""
+"Az <span name=\"distro-name\"></span>-ban lehetőség van arra, hogy két "
+"széles körben használt billentyűzetbeviteli elrendezés között váltsunk. "
+"IBus(Intelligent Input Bus) és Fcitx(Free Chinese Input Toy for X)."
 
 #: gettingstarted.html:597
 msgid "Install & Configure IBus"
@@ -969,12 +1048,16 @@ msgid ""
 "Your computer may require updates to your language and localization "
 "settings, or you may want to install additional language support."
 msgstr ""
+"A számítógépnek szüksége lehet a nyelvi és lokalizációs beállításainak "
+"frissítésére, vagy további nyelvi támogatást kell telepítenie."
 
 #: gettingstarted.html:623
 msgid ""
 "<b>Language Support</b> can be found later in <b><i>Settings <i class"
 "=\"material-icons\">&#xE315;</i> Region & Language</i></b>"
 msgstr ""
+"A <b>nyelvi támogatás</b> később a <b><i>Beállítások <i class=\"material-"
+"icons\"> &#xE315; </i> Régió és nyelvnél </i></b> található meg"
 
 #: gettingstarted.html:632
 msgid "Complex Input"
@@ -1005,6 +1088,9 @@ msgid ""
 "<span name=\"distro-name\"></span> provides option to install a backup "
 "utility or firewall and supports multiple user accounts."
 msgstr ""
+"Az <span name=\"distro-name\"></span> lehetőséget biztosít a biztonsági "
+"mentés segédprogram vagy tűzfal telepítésére, és több felhasználói fiókot is"
+" támogat."
 
 #: gettingstarted.html:681
 msgid "Backups"
@@ -1015,6 +1101,8 @@ msgid ""
 "Nothing is more important than having a backup of your personal files, just "
 "in case something disastrous happens to your computer."
 msgstr ""
+"Semmi sem fontosabb, mint a személyes fájlok biztonsági mentése, abban az "
+"esetben, ha valami katasztrofális történik a számítógépével."
 
 #: gettingstarted.html:686
 msgid ""
@@ -1022,6 +1110,10 @@ msgid ""
 "name=\"distro-name\"></span> and supports backups to local devices as well "
 "as online cloud-based services."
 msgstr ""
+"A <b>Deja-Dup</b> egy hatékony biztonsági mentés segédprogram, amely "
+"telepíthető <span name=\"distro-name\"></span>-ben és támogatja a helyi "
+"eszközök biztonsági mentéseit, valamint az online felhőalapú "
+"szolgáltatásokat."
 
 #: gettingstarted.html:693
 msgid "Configure Backup"
@@ -1032,6 +1124,8 @@ msgid ""
 "<b>Backups</b> can be found later in <b>Application Menu <i class"
 "=\"material-icons\">&#xE315;</i> Backup</b>."
 msgstr ""
+"A <b>Biztonsági mentés</b> megtalálható később az <b>Alkalmazás menü <i "
+"class=\"material-icons\">&#xE315;</i>Biztonsági mentésnél</b>."
 
 #: gettingstarted.html:709
 msgid "Firewall"
@@ -1044,6 +1138,10 @@ msgid ""
 "onclick=\"cmd('link?https://help.ubuntu.com/community/DoINeedAFirewall')\">learn"
 " more about firewalls</a>."
 msgstr ""
+"A tűzfalak megakadályozzák, hogy a rosszindulatú kapcsolatok számítógépét "
+"veszélyeztessék. Alapértelmezés szerint a tűzfal le van tiltva, <a "
+"onclick=\"cmd('link?https://help.ubuntu.com/community/DoINeedAFirewall')\">tudjon"
+" meg többet a tűzfalakról</a>."
 
 #: gettingstarted.html:714
 msgid ""
@@ -1052,6 +1150,10 @@ msgid ""
 "onclick=\"cmd('link?https://wiki.ubuntu.com/BasicSecurity')\">more ways to "
 "stay secure too</a>."
 msgstr ""
+"A <b>Gufw</b> grafikus frontendet biztosít az <code>ufw</code>-hez (nem "
+"komplex tűzfal). Ha a biztonság fontos az Ön számára, <a "
+"onclick=\"cmd('link?https://wiki.ubuntu.com/BasicSecurity')\">még több módja"
+" van a biztonságban való maradásnak</a>."
 
 #: gettingstarted.html:722
 msgid "Configure Firewall"
@@ -1063,6 +1165,9 @@ msgid ""
 "=\"material-icons\">&#xE315;</i> System <i class=\"material-"
 "icons\">&#xE315;</i> Firewall Configuration</i></b>."
 msgstr ""
+"A tűzfal konfigurálása</b> később a <b><i>Beállítások <i class=\"material-"
+"icons\"> &#xE315;</i> Rendszer <i class=\"material-icons\">&#xE315;</i>  "
+"Tűzfal-konfigurációnál</i></b> található meg."
 
 #: gettingstarted.html:739
 msgid "Users"
@@ -1074,12 +1179,17 @@ msgid ""
 "user to protect the individual privacy of each user sharing the same "
 "computer."
 msgstr ""
+"Megosztja számítógépét másokkal? Állítson be külön felhasználói fiókot "
+"minden felhasználó számára, hogy védje minden egyes felhasználó saját "
+"adatait ugyanazon a számítógépen."
 
 #: gettingstarted.html:744
 msgid ""
 "You can also log in to a <b>Guest Session</b> if someone is using your "
 "computer as a one-off."
 msgstr ""
+"A <b>Vendégszekcióba</b> is bejelentkezhet, ha valaki egyszer használja a "
+"számítógépet."
 
 #: gettingstarted.html:748
 msgid "Configure Users"
@@ -1090,18 +1200,26 @@ msgid ""
 "<b>Users</b> can be found later in the menu <b><i>Administration <i class"
 "=\"material-icons\">&#xE315;</i> Users</i></b>."
 msgstr ""
+"A <b>felhasználók</b> később az <b><i>Adminisztráció<i class=\"material-"
+"icons\">&#xE315;</i> Felhasználók</i></b> menüben található meg."
 
 #: gettingstarted.html:770
 msgid ""
 "To improve the amount of customizability, <span name=\"distro-name\"></span>"
 " allows you to install/remove popular web browsers with a single click."
 msgstr ""
+"A testreszabhatóság növelése érdekében az <span name=\"distro-name\"></span>"
+" lehetővé teszi a népszerű webböngészők egyetlen kattintással történő "
+"telepítését / eltávolítását."
 
 #: gettingstarted.html:776
 msgid ""
 "Chromium is an open-source browser project that aims to build a safer, "
 "faster, and more stable way for all Internet users to experience the web."
 msgstr ""
+"A Chromium egy nyílt forráskódú böngészőprojekt, amelynek célja, hogy "
+"biztonságosabb, gyorsabb és stabilabb módot teremtsen az internethasználók "
+"számára, hogy felfedezzék az internetet."
 
 #: gettingstarted.html:789
 msgid "Firefox"
@@ -1133,8 +1251,8 @@ msgid ""
 " powerful, secure and fun! Browse the Web your way"
 msgstr ""
 "A Vivaldi webböngésző egy ingyenes, teljesen személyre szabható webböngésző."
-" Funkciógazdag, erőteljes, biztonságos és vicces! Böngészd a webed a saját "
-"módodon"
+" Funkciógazdag, erőteljes, biztonságos és vicces! Böngéssze a webet ahogyan "
+"szeretné"
 
 #: gettingstarted.html:843
 msgid ""
@@ -1155,6 +1273,10 @@ msgid ""
 "user interface. It can be used to quickly setup the user interface to "
 "broadly reflect how other popular operating systems look and feel."
 msgstr ""
+"Az <span name=\"distro-name\"></span> egyedi eszközt biztosít a felhasználói"
+" felület átalakításához. Használhatja a felhasználói felület gyors "
+"beállítását, hogy az operációs rendszer kinézetét más, többek által kedvelt "
+"kinézetre és érzetre állítsa. "
 
 #: gettingstarted.html:868
 msgid "Budgie Desktop Settings"
@@ -1165,6 +1287,8 @@ msgid ""
 "<b>Budgie Desktop Settings</b> can be found later in the menu <b>System "
 "Tools</b>."
 msgstr ""
+"A <b>Budgie Asztalbeállítások</b> később a <b>Rendszereszközök</b> menüben "
+"található meg."
 
 #: gettingstarted.html875, 880
 msgid "Settings"
@@ -1176,46 +1300,54 @@ msgid ""
 " center that <span name=\"distro-name\"></span> provides. You can configure "
 "just about every aspect of your computer from Settings."
 msgstr ""
+"A fent említett segédprogramok a kiterjedt <span name=\"distro-"
+"name\"></span> Beállítások vezérlőközpont részét képezik. A számítógép "
+"beállításainak csaknem minden részletét a Beállítások menüpontban "
+"konfigurálhatja."
 
 #: gettingstarted.html:899
 msgid ""
 "<span name=\"distro-name\"></span> has many keyboard shortcuts that help "
 "make using your computer more efficient."
 msgstr ""
+"Az <span name=\"distro-name\"></span> számos billentyűparancssal "
+"rendelkezik, amelyek segítenek a számítógépet hatékonyan használni."
 
 #: gettingstarted.html:903
 msgid ""
 "The <b><img src=\"img/welcome/super-key.svg\"/> Super</b> key is your "
 "Windows key. For Mac keyboards, this is the ⌘ Command key."
 msgstr ""
+"A <b><img src=\"img/welcome/super-key.svg\"/>Super</b> billentyű a Windows "
+"billentyű. A Mac billentyűzet esetén ez a ⌘ Parancs gomb."
 
 #: gettingstarted.html:905
 msgid "Budgie Desktop shortcuts"
-msgstr ""
+msgstr "Budgie Asztali parancsikonok"
 
 #: gettingstarted.html:906
 msgid "Some common shortcuts used in Budgie Desktop"
-msgstr ""
+msgstr "A Budgie Asztalon használt néhány gyakori parancsikon"
 
 #: gettingstarted.html:915
 msgid "Open notifications in Raven"
-msgstr ""
+msgstr "Értesítések megnyitása Ravenben"
 
 #: gettingstarted.html:923
 msgid "Open applet Settings in Raven"
-msgstr ""
+msgstr "Applet beállítások megnyitása Ravenben"
 
 #: gettingstarted.html:928
 msgid "Common application shortcuts"
-msgstr ""
+msgstr "Áltatlános alkalmazások parancsikonjai"
 
 #: gettingstarted.html:929
 msgid "These shortcuts apply in most applications."
-msgstr ""
+msgstr "Ezek a parancsikonok a legtöbb alkalmazásban érvényesek."
 
 #: gettingstarted.html:936
 msgid "Toggle Tilix Quake Mode"
-msgstr ""
+msgstr "Váltás Tilix Quake módra"
 
 #: gettingstarted.html940, 948, 956, 964, 972, 980, 988, 996, 1004, 1012,
 #: 1020, 1028, 1036, 1044, 1052, 1089, 1107, 1145, 1155, 1165, 1177
@@ -1289,6 +1421,7 @@ msgstr "Visszavont változtatás újbóli alkalmazása"
 #: gettingstarted.html:1064
 msgid "Toggle the current application between full-screen and windowed"
 msgstr ""
+"Aktuális alkalmazás váltása a teljes képernyős és az ablakos üzemmód között"
 
 #: gettingstarted.html:1068
 msgid "Desktop shortcuts"
@@ -1299,6 +1432,8 @@ msgid ""
 "This section lists common keyboard shortcuts which you can use to operate "
 "parts of the desktop."
 msgstr ""
+"Ez a rész a leggyakoribb billentyűparancsokat sorolja fel, amelyeket az "
+"asztal részeinek működtetésére használhat."
 
 #: gettingstarted.html:1077
 msgid "Open Applications menu"
@@ -1311,7 +1446,7 @@ msgstr "Alt"
 
 #: gettingstarted.html:1085
 msgid "Run an application by typing its name in the box which appears"
-msgstr ""
+msgstr "Futtasson egy alkalmazást a nevének beírásával a megjelenő mezőbe"
 
 #: gettingstarted.html:1093
 msgid "Delete"
@@ -1331,7 +1466,7 @@ msgstr "Egy terminál megnyitása."
 
 #: gettingstarted.html:1123
 msgid "Screen reader enable/disable."
-msgstr ""
+msgstr "A képernyőolvasó engedélyezése/letiltása."
 
 #: gettingstarted.html:1127
 msgid "Window shortcuts"
@@ -1343,17 +1478,21 @@ msgstr "Tab"
 
 #: gettingstarted.html:1136
 msgid "Switch between currently-open windows."
-msgstr ""
+msgstr "Váltás a jelenleg nyitott ablakok között."
 
 #: gettingstarted.html:1138
 msgid "Press Alt + Tab and then release Tab (but continue to hold Alt)."
 msgstr ""
+"Nyomja le az Alt + Tab billentyűket, majd engedje fel a Tab billentyűt (de "
+"továbbra is tartsa az Alt billentyűt)."
 
 #: gettingstarted.html:1139
 msgid ""
 "Press Tab repeatedly to cycle through the list of available windows which "
 "appears on the screen."
 msgstr ""
+"Nyomja meg többször a Tab billentyűt a képernyőn megjelenő ablakok "
+"listájának megtekintéséhez."
 
 #: gettingstarted.html1149, 1171, 1246
 msgid "Left"
@@ -1373,31 +1512,34 @@ msgstr "Váltás a következő munkaterületre."
 
 #: gettingstarted.html:1173
 msgid "Move the current window to the previous workspace."
-msgstr ""
+msgstr "Mozgassa az aktuális ablakot az előző munkaterületre."
 
 #: gettingstarted.html:1184
 msgid "Move the current window to the next workspace."
-msgstr ""
+msgstr "Mozgassa az aktuális ablakot a következő munkaterületre."
 
 #: gettingstarted.html:1192
 msgid "Closes window."
-msgstr ""
+msgstr "Bezárja az ablakot."
 
 #: gettingstarted.html:1200
 msgid "Returns window to 'normal' or previous size."
-msgstr ""
+msgstr "Visszatér az ablak \"normál\" vagy korábbi méretéhez."
 
 #: gettingstarted.html:1208
 msgid "Moves the current window (can be moved with mouse or keyboard)."
 msgstr ""
+"Az aktuális ablak mozgatása (egérrel vagy billentyűzettel mozgatható)."
 
 #: gettingstarted.html:1216
 msgid "Resizes current window (again, can be moved with mouse or keyboard)."
 msgstr ""
+"Az aktuális ablak átméretezése (ismét egérrel vagy billentyűzettel "
+"mozgatható)."
 
 #: gettingstarted.html:1224
 msgid "Minimizes current window."
-msgstr ""
+msgstr "Minimalizálja az aktuális ablakot."
 
 #: gettingstarted.html:1230
 msgid "Up"
@@ -1405,7 +1547,7 @@ msgstr "Fel"
 
 #: gettingstarted.html:1232
 msgid "Maximizes current window."
-msgstr ""
+msgstr "Maximalizálja az aktuális ablakot."
 
 #: gettingstarted.html:1238
 msgid "Space"
@@ -1416,6 +1558,8 @@ msgid ""
 "Displays the window menu with options such as 'Always on Top' and 'Minimize'"
 " and 'Maximize' and above commands."
 msgstr ""
+"Megjeleníti az ablakmenüt olyan opciókkal, mint a \"Mindig felül”, "
+"\"Minimizálás”, \"Maximizálás” és fenti parancsokkal."
 
 #: gettingstarted.html:1248
 msgid "Place window on left side of screen."
@@ -1431,6 +1575,9 @@ msgid ""
 "another. This information is useful when providing support to ensure "
 "hardware and software works on your machine."
 msgstr ""
+"A gépe különböző összetevőkből áll, amelyek kölcsönhatásban állnak "
+"egymással. Ez az információ akkor hasznos, ha támogatást kap a hardver és a "
+"szoftver működésének biztosításához."
 
 #: gettingstarted.html:1283
 msgid "Gathering Information.."
