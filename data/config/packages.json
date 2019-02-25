@@ -60,7 +60,7 @@
               "disco" : ["ppa:ubuntubudgie/backports"]
 		  }
 	  },
-      "sysmonitor-applet" : {
+    "sysmonitor-applet" : {
 		  "packages" : ["budgie-sysmonitor-applet"],
 		  "repos" : {
               "xenial": ["ppa:budgie-remix/ppa"],
@@ -69,7 +69,7 @@
               "disco" : ["ppa:ubuntubudgie/backports"]
 		  }
 	  },
-      "hotcorners-applet" : {
+    "hotcorners-applet" : {
 		  "packages" : ["budgie-hotcorners-applet"],
 		  "repos" : {
               "xenial": ["ppa:budgie-remix/ppa"],
@@ -78,7 +78,7 @@
               "disco" : ["universe"]
 		  }
 	  },
-      "quicknote-applet" : {
+    "quicknote-applet" : {
 		  "packages" : ["budgie-quicknote-applet"],
 		  "repos" : {
               "xenial": ["ppa:budgie-remix/ppa"],
@@ -87,7 +87,7 @@
               "disco" : ["universe"]
 		  }
 	  },
-      "previews-applet" : {
+    "previews-applet" : {
 		  "packages" : ["budgie-previews-applet"],
 		  "repos" : {
               "xenial": ["ppa:budgie-remix/ppa"],
@@ -96,7 +96,7 @@
               "disco" : ["universe"]
 		  }
 	  },
-      "workspace-overview-applet" : {
+    "workspace-overview-applet" : {
 		  "packages" : ["budgie-workspace-overview-applet"],
 		  "repos" : {
               "xenial": ["ppa:budgie-remix/ppa"],
@@ -105,7 +105,7 @@
               "disco" : ["universe"]
 		  }
 	  },
-      "workspace-wallpaper-applet" : {
+    "workspace-wallpaper-applet" : {
 		  "packages" : ["budgie-workspace-wallpaper-applet"],
 		  "repos" : {
               "xenial": ["ppa:budgie-remix/ppa"],
@@ -114,7 +114,7 @@
               "disco" : ["universe"]
 		  }
 	  },
-      "window-mover-applet" : {
+    "window-mover-applet" : {
 		  "packages" : ["budgie-window-mover-applet"],
 		  "repos" : {
               "xenial": ["ppa:budgie-remix/ppa"],
@@ -123,7 +123,7 @@
               "disco" : ["universe"]
 		  }
 	  },
-      "showtime-applet" : {
+    "showtime-applet" : {
 		  "packages" : ["budgie-showtime-applet"],
 		  "repos" : {
               "xenial": ["ppa:budgie-remix/ppa"],
@@ -132,7 +132,7 @@
               "disco" : ["universe"]
 		  }
 	  },
-      "countdown-applet" : {
+    "countdown-applet" : {
 		  "packages" : ["budgie-countdown-applet"],
 		  "repos" : {
               "xenial": ["ppa:budgie-remix/ppa"],
@@ -141,7 +141,7 @@
               "disco" : ["universe"]
 		  }
 	  },
-      "keyboard-language-applet" : {
+    "keyboard-language-applet" : {
 		  "packages" : ["budgie-keyboard-autoswitch-applet"],
 		  "repos" : {
               "xenial": ["ppa:budgie-remix/ppa"],
@@ -150,7 +150,7 @@
               "disco" : ["universe"]
 		  }
 	  },
-      "rotation-lock-applet" : {
+    "rotation-lock-applet" : {
 		  "packages" : ["budgie-rotation-lock-applet"],
 		  "repos" : {
               "xenial": ["ppa:budgie-remix/ppa"],
@@ -159,7 +159,7 @@
               "disco" : ["universe"]
 		  }
 	  },
-      "clockworks-applet" : {
+    "clockworks-applet" : {
 		  "packages" : ["budgie-clockworks-applet"],
 		  "repos" : {
               "xenial": ["ppa:budgie-remix/ppa"],
@@ -168,7 +168,7 @@
               "disco" : ["universe"]
 		  }
 	  },
-      "dropby-applet" : {
+    "dropby-applet" : {
 		  "packages" : ["budgie-dropby-applet"],
 		  "repos" : {
               "xenial": ["ppa:budgie-remix/ppa"],
@@ -177,7 +177,7 @@
               "disco" : ["universe"]
 		  }
 	  },
-      "advanced-brightness-applet" : {
+    "advanced-brightness-applet" : {
 		  "packages" : ["budgie-advanced-brightness-controller"],
 		  "repos" : {
               "bionic" : ["ppa:ubuntubudgie/backports"],
@@ -185,7 +185,7 @@
               "disco" : ["ppa:ubuntubudgie/backports"]
 		  }
 	  },
-      "browser-profile-launcher-applet" : {
+    "browser-profile-launcher-applet" : {
       "packages" : ["budgie-browser-profile-launcher"],
       "repos" : {
               "bionic" : ["ppa:ubuntubudgie/backports"],
@@ -193,7 +193,7 @@
               "disco" : ["ppa:ubuntubudgie/backports"]
       }
     },
-      "kangaroo-applet" : {
+    "kangaroo-applet" : {
       "packages" : ["budgie-kangaroo-applet"],
       "repos" : {
               "bionic" : ["ppa:ubuntubudgie/backports"],
@@ -201,7 +201,7 @@
               "disco" : ["universe"]
       }
     },
-      "weathershow-applet" : {
+    "weathershow-applet" : {
       "packages" : ["budgie-weathershow-applet"],
       "repos" : {
               "bionic" : ["ppa:ubuntubudgie/backports"],
@@ -209,7 +209,7 @@
               "disco" : ["universe"]
       }
     },
-      "recentlyused-applet" : {
+    "recentlyused-applet" : {
       "packages" : ["budgie-recentlyused-applet"],
       "repos" : {
               "bionic" : ["ppa:ubuntubudgie/backports"],
@@ -217,7 +217,7 @@
               "disco" : ["universe"]
       }
     },
-      "trash-applet" : {
+    "trash-applet" : {
       "packages" : ["budgie-trash-applet"],
       "repos" : {
               "bionic" : ["ppa:ubuntubudgie/backports"],
@@ -225,7 +225,7 @@
               "disco" : ["universe"]
       }
     },
-      "applauncher-applet" : {
+    "applauncher-applet" : {
       "packages" : ["budgie-app-launcher-applet"],
       "repos" : {
               "bionic" : ["ppa:ubuntubudgie/backports"],
@@ -233,7 +233,7 @@
               "disco" : ["universe"]
       }
     },
-      "network-applet" : {
+    "network-applet" : {
       "packages" : ["budgie-network-applet"],
       "repos" : {
               "bionic" : ["ppa:ubuntubudgie/backports"],
@@ -241,7 +241,7 @@
               "disco" : ["ppa:ubuntubudgie/backports"]
       }
     },
-      "cpufreq-applet" : {
+    "cpufreq-applet" : {
       "packages" : ["budgie-cpufreq-applet"],
       "repos" : {
               "bionic" : ["ppa:ubuntubudgie/backports"],
@@ -249,7 +249,7 @@
               "disco" : ["ppa:ubuntubudgie/backports"]
       }
     },
-      "sys-monitor-applet" : {
+    "sys-monitor-applet" : {
       "packages" : ["budgie-sys-monitor-applet"],
       "repos" : {
               "bionic" : ["ppa:ubuntubudgie/backports"],
