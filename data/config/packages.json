@@ -302,6 +302,12 @@
       "repos" : {
           "all" : ["multiverse"]
 	    }
+    },
+    "nemodropbox" : {
+      "packages" : ["nemo-dropbox"],
+      "repos" : {
+        "disco" : ["ppa:ubuntubudgie/backports"]
+	    }
     }
   },
   "gettingstarted" : {

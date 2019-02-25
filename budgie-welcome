@@ -204,10 +204,18 @@ class AppView(WebKit2.WebView):
                 app.update_page('.after1810', 'show')
 
         if current_page == 'recommendations':
-            if systemstate.codename in ['xenial', 'artful']:
+            if systemstate.codename in ['xenial']:
                 app.update_page('.before1804', 'show')
             else:
                 app.update_page('.before1804', 'hide')
+
+        if current_page == 'recommendations':
+            if systemstate.codename in ['xenial', 'bionic', 'cosmic']:
+                app.update_page('.before1904', 'show')
+                app.update_page('.after1904', 'hide')
+            else:
+                app.update_page('.before1904', 'hide')
+                app.update_page('.after1904', 'show')
 
 
         if current_page == 'budgie-applets':
