@@ -41,7 +41,7 @@ msgstr "El repositori està instal·lat."
 msgid "Enable <span name=\"distro-name\"></span> backports repository"
 msgstr "Habilita el repositori Backports de <span name=\"distro-name\"></span>."
 
-#: recommendations.html25, 70, 87, 100, 117, 133
+#: recommendations.html25, 70, 87, 100, 117, 135, 142
 msgid "Applying Changes..."
 msgstr "S'apliquen els canvis..."
 
@@ -351,10 +351,11 @@ msgstr "Instal·leu i configureu l'Steam"
 
 #: recommendations.html:126
 msgid ""
-"<strong>Dropbox</strong> is a popular file sharing and storage solution."
+"<strong>Dropbox</strong> is a popular proprietary file sharing and storage "
+"solution."
 msgstr ""
 
-#: recommendations.html:128
+#: recommendations.html:129
 msgid ""
 "Being proprietary software, Dropbox is not included in the primary "
 "repositories of <span name=\"distro-name\"></span>. However, to provide more"
@@ -370,7 +371,7 @@ msgstr ""
 "l'opció d'habilitar el repositori <em>Multiverse</em> i d'instal·lar el "
 "Dropbox amb un sol clic."
 
-#: recommendations.html:130
+#: recommendations.html131, 138
 msgid ""
 "After installing, logout and login and follow the dropbox instructions that "
 "are then displayed."
@@ -378,16 +379,10 @@ msgstr ""
 "Després de la instal·lació, sortiu de la sessió i torneu-hi a entrar i "
 "seguiu les instruccions del Dropbox que es mostrin."
 
-#: recommendations.html:131
-msgid ""
-"Important: This version of Dropbox will only work if Files (Nautilus) is the"
-" file-manager. It will not work with Nemo."
-msgstr ""
-
-#: recommendations.html:132
+#: recommendations.html134, 141
 msgid "Dropbox is installed"
 msgstr "El Dropbox està instal·lat"
 
-#: recommendations.html:132
+#: recommendations.html134, 141
 msgid "Install & Configure Dropbox"
 msgstr "Instal·leu i configureu el Dropbox"

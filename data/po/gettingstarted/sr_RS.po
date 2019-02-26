@@ -47,7 +47,7 @@ msgstr "Poznato"
 msgid "Browser Ballot"
 msgstr "Izbornik čitača"
 
-#: gettingstarted.html42, 43, 764, 1264
+#: gettingstarted.html42, 43, 764, 1397
 msgid "Customization"
 msgstr "Izmene"
 
@@ -140,7 +140,7 @@ msgstr ""
 "Operativni sistem će funkcionisati mnogo efikasnije ako vaš kompjuter "
 "zadovoljava ili prevazilazi preporučene zahteve."
 
-#: gettingstarted.html107, 1274
+#: gettingstarted.html107, 1407
 msgid "What's inside my computer?"
 msgstr "Šta je unutar mog kompjutera?"
 
@@ -294,7 +294,7 @@ msgstr ""
 "imate 2 GB rama, onda će 2GB na hard disku biti rezervisano za svaw fajl. "
 "Posebna particija za svapovanje nije više obavezna."
 
-#: gettingstarted.html185, 363, 659, 1264
+#: gettingstarted.html185, 363, 659, 1397
 msgid "Previous:"
 msgstr "Prethodno:"
 
@@ -1326,7 +1326,8 @@ msgid "Toggle Tilix Quake Mode"
 msgstr "Menjaj Tilix Quake Mode"
 
 #: gettingstarted.html940, 948, 956, 964, 972, 980, 988, 996, 1004, 1012,
-#: 1020, 1028, 1036, 1044, 1052, 1089, 1107, 1145, 1155, 1165, 1177
+#: 1020, 1028, 1036, 1044, 1052, 1089, 1107, 1143, 1153, 1163, 1175, 1304,
+#: 1314, 1324, 1334, 1344, 1354, 1364, 1374, 1384
 msgid "Ctrl"
 msgstr "Ctrl"
 
@@ -1386,7 +1387,7 @@ msgstr "Štampaj trenutni dokument"
 msgid "Undo the last change you made"
 msgstr "Vratite promenu koju ste napravili. "
 
-#: gettingstarted.html1054, 1169, 1180
+#: gettingstarted.html1054, 1167, 1178
 msgid "Shift"
 msgstr "Shift."
 
@@ -1414,8 +1415,9 @@ msgstr ""
 msgid "Open Applications menu"
 msgstr "Otvori meni aplikacija"
 
-#: gettingstarted.html1081, 1091, 1109, 1117, 1131, 1147, 1157, 1167, 1179,
-#: 1188, 1196, 1204, 1212, 1236
+#: gettingstarted.html1081, 1091, 1109, 1129, 1145, 1155, 1165, 1177, 1186,
+#: 1194, 1202, 1210, 1242, 1306, 1316, 1326, 1336, 1346, 1356, 1366, 1376,
+#: 1386
 msgid "Alt"
 msgstr "Alt"
 
@@ -1439,28 +1441,28 @@ msgstr "Zaključaj ekran."
 msgid "Open a terminal."
 msgstr "Otvori terminal."
 
-#: gettingstarted.html:1123
-msgid "Screen reader enable/disable."
-msgstr "Screen reader omogući/onemogući."
+#: gettingstarted.html:1117
+msgid "Window shortcuts - general"
+msgstr ""
 
-#: gettingstarted.html:1127
-msgid "Window shortcuts"
-msgstr "Prečice prozora."
+#: gettingstarted.html:1125
+msgid "Call Window Shuffler gui (window tiling grid)."
+msgstr ""
 
-#: gettingstarted.html:1133
+#: gettingstarted.html:1131
 msgid "Tab"
 msgstr "Tab"
 
-#: gettingstarted.html:1136
+#: gettingstarted.html:1134
 msgid "Switch between currently-open windows."
 msgstr "Prebaci izmedju trenutno otvrenih prozora."
 
-#: gettingstarted.html:1138
+#: gettingstarted.html:1136
 msgid "Press Alt + Tab and then release Tab (but continue to hold Alt)."
 msgstr ""
 "Pritisnite Alt + Tab i onda pustite Tab (ali nastavite da držite Alt)."
 
-#: gettingstarted.html:1139
+#: gettingstarted.html:1137
 msgid ""
 "Press Tab repeatedly to cycle through the list of available windows which "
 "appears on the screen."
@@ -1468,64 +1470,72 @@ msgstr ""
 "Pritisnite Tab više puta kako bi videli listu svih prozora koji se "
 "pojavljuju na ekranu."
 
-#: gettingstarted.html1149, 1171, 1246
+#: gettingstarted.html1147, 1169, 1252
 msgid "Left"
 msgstr "Levo"
 
-#: gettingstarted.html:1151
+#: gettingstarted.html:1149
 msgid "Switch to the previous workspace."
 msgstr "Predji na prethodnu radnu površinu."
 
-#: gettingstarted.html1159, 1182, 1254
+#: gettingstarted.html1157, 1180, 1260
 msgid "Right"
 msgstr "Desno"
 
-#: gettingstarted.html:1161
+#: gettingstarted.html:1159
 msgid "Switch to the next workspace."
 msgstr "Predji na sledecu radnu površinu."
 
-#: gettingstarted.html:1173
+#: gettingstarted.html:1171
 msgid "Move the current window to the previous workspace."
 msgstr "Pomeri trenutni prozor na prethodnu radnu površinu."
 
-#: gettingstarted.html:1184
+#: gettingstarted.html:1182
 msgid "Move the current window to the next workspace."
 msgstr "Pomeri trenutni prozor na sledeću radnu površinu."
 
-#: gettingstarted.html:1192
+#: gettingstarted.html:1190
 msgid "Closes window."
 msgstr "Zatvara prozor."
 
-#: gettingstarted.html:1200
+#: gettingstarted.html:1198
 msgid "Returns window to 'normal' or previous size."
 msgstr "Vrazi porzor na normalnu ili prethodnu veličinu."
 
-#: gettingstarted.html:1208
+#: gettingstarted.html:1206
 msgid "Moves the current window (can be moved with mouse or keyboard)."
 msgstr "Pomeri trenutni prozor (sa mišom ili tastaturom)."
 
-#: gettingstarted.html:1216
+#: gettingstarted.html:1214
 msgid "Resizes current window (again, can be moved with mouse or keyboard)."
 msgstr ""
 "Promeni veličinu prozora (opet možete ga poemeriti sa mišom ili tastaturom)."
 
-#: gettingstarted.html:1224
+#: gettingstarted.html:1222
 msgid "Minimizes current window."
 msgstr "Minimizuj trenutni prozor."
 
-#: gettingstarted.html:1230
+#: gettingstarted.html:1228
 msgid "Up"
 msgstr "Gore"
 
-#: gettingstarted.html:1232
+#: gettingstarted.html:1230
 msgid "Maximizes current window."
 msgstr "Maksimiziraj trenutni prozor."
 
+#: gettingstarted.html:1236
+msgid "Down"
+msgstr ""
+
 #: gettingstarted.html:1238
+msgid "Unmaximizes current window."
+msgstr ""
+
+#: gettingstarted.html:1244
 msgid "Space"
 msgstr "Prostor"
 
-#: gettingstarted.html:1240
+#: gettingstarted.html:1246
 msgid ""
 "Displays the window menu with options such as 'Always on Top' and 'Minimize'"
 " and 'Maximize' and above commands."
@@ -1533,15 +1543,111 @@ msgstr ""
 "Prikazuje prozorski meni sa opcijama kao što su \"Always on Top\",  "
 "\"Minimize\" i \"Maximize\" i druge komande iznad."
 
-#: gettingstarted.html:1248
+#: gettingstarted.html:1254
 msgid "Place window on left side of screen."
 msgstr "Postavi prozor na levoj strani ekrana."
 
-#: gettingstarted.html:1256
+#: gettingstarted.html:1262
 msgid "Place window on right side of screen."
 msgstr "Postavi prozor na desnoj strani ekrana."
 
-#: gettingstarted.html:1275
+#: gettingstarted.html1268, 1338
+msgid "1"
+msgstr ""
+
+#: gettingstarted.html:1270
+msgid "Quarter tiling: top left."
+msgstr ""
+
+#: gettingstarted.html1276, 1368
+msgid "2"
+msgstr ""
+
+#: gettingstarted.html:1278
+msgid "Quarter tiling: top right."
+msgstr ""
+
+#: gettingstarted.html1284, 1328
+msgid "3"
+msgstr ""
+
+#: gettingstarted.html:1286
+msgid "Quarter tiling: bottom left."
+msgstr ""
+
+#: gettingstarted.html1292, 1378
+msgid "4"
+msgstr ""
+
+#: gettingstarted.html:1294
+msgid "Quarter tiling: bottom right."
+msgstr ""
+
+#: gettingstarted.html:1299
+msgid "Window shortcuts - numeric keypad"
+msgstr ""
+
+#: gettingstarted.html:1300
+msgid "Tiling shortcuts on the numeric keypad."
+msgstr ""
+
+#: gettingstarted.html:1308
+msgid "7"
+msgstr ""
+
+#: gettingstarted.html:1310
+msgid "Quarter top left."
+msgstr ""
+
+#: gettingstarted.html:1318
+msgid "9"
+msgstr ""
+
+#: gettingstarted.html:1320
+msgid "Quarter top right."
+msgstr ""
+
+#: gettingstarted.html:1330
+msgid "Quarter bottom right."
+msgstr ""
+
+#: gettingstarted.html:1340
+msgid "Quarter bottom left."
+msgstr ""
+
+#: gettingstarted.html:1348
+msgid "8"
+msgstr ""
+
+#: gettingstarted.html:1350
+msgid "Half top."
+msgstr ""
+
+#: gettingstarted.html:1358
+msgid "6"
+msgstr ""
+
+#: gettingstarted.html:1360
+msgid "Half right."
+msgstr ""
+
+#: gettingstarted.html:1370
+msgid "Half bottom."
+msgstr ""
+
+#: gettingstarted.html:1380
+msgid "Half left."
+msgstr ""
+
+#: gettingstarted.html:1388
+msgid "5"
+msgstr ""
+
+#: gettingstarted.html:1390
+msgid "Toggle maximize."
+msgstr ""
+
+#: gettingstarted.html:1408
 msgid ""
 "Your machine is made up of various components that interact with one "
 "another. This information is useful when providing support to ensure "
@@ -1551,139 +1657,139 @@ msgstr ""
 " sa drugom. Ova informacija je korisnika kada se pruža podrška kako bi se "
 "osiguralo da hardware i software rade na vašem kompjuteru."
 
-#: gettingstarted.html:1283
+#: gettingstarted.html:1416
 msgid "Gathering Information.."
 msgstr "Skupljanje informacija..."
 
-#: gettingstarted.html:1292
+#: gettingstarted.html:1425
 msgid "System"
 msgstr "Sistem"
 
-#: gettingstarted.html:1295
+#: gettingstarted.html:1428
 msgid "Distribution:"
 msgstr "Distribucija:"
 
-#: gettingstarted.html:1299
+#: gettingstarted.html:1432
 msgid "Kernel:"
 msgstr "Kernel:"
 
-#: gettingstarted.html:1302
+#: gettingstarted.html:1435
 msgid "The Linux kernel is the heart of Ubuntu."
 msgstr "Linux kernel je srce Ubunta."
 
-#: gettingstarted.html:1308
+#: gettingstarted.html:1441
 msgid "Motherboard:"
 msgstr "Matična ploča:"
 
-#: gettingstarted.html:1312
+#: gettingstarted.html:1445
 msgid "Boot Mode:"
 msgstr "Boot Mode:"
 
-#: gettingstarted.html:1315
+#: gettingstarted.html:1448
 msgid "Displays the mode that OS is communicating with the firmware."
 msgstr "Prikazuje mode u kome OS komunicira sa firmware-om."
 
-#: gettingstarted.html:1323
+#: gettingstarted.html:1456
 msgid "Processor"
 msgstr "Procesor"
 
-#: gettingstarted.html:1326
+#: gettingstarted.html:1459
 msgid "Model:"
 msgstr "Model:"
 
-#: gettingstarted.html:1330
+#: gettingstarted.html:1463
 msgid "Speed:"
 msgstr "Brzina:"
 
-#: gettingstarted.html:1334
+#: gettingstarted.html:1467
 msgid "Architecture in use:"
 msgstr "Arhitektura u uptorebi:"
 
-#: gettingstarted.html:1337
+#: gettingstarted.html:1470
 msgid ""
 "The operating system's architecture in use. For instance, i386 = 32-bit."
 msgstr "Arhitektura trenutno u upotrebi. Na primer i386 = 32-bit."
 
-#: gettingstarted.html:1343
+#: gettingstarted.html:1476
 msgid "Architecture(s) supported:"
 msgstr "Podržane arhitekture:"
 
-#: gettingstarted.html:1346
+#: gettingstarted.html:1479
 msgid "Architectures that are supported by this processor."
 msgstr "Arhitekture koje su podržane od strane ovog procesora"
 
-#: gettingstarted.html:1354
+#: gettingstarted.html:1487
 msgid "Components"
 msgstr "Komponente"
 
-#: gettingstarted.html:1357
+#: gettingstarted.html:1490
 msgid "Memory (RAM):"
 msgstr "Memorija (RAM):"
 
-#: gettingstarted.html:1360
+#: gettingstarted.html:1493
 msgid "More RAM allows more applications to run simultaneously."
 msgstr "Više RAM-a vam dopušta da pokrenete više aplikacija istovremeno."
 
-#: gettingstarted.html:1366
+#: gettingstarted.html:1499
 msgid "Graphics:"
 msgstr "Grafika:"
 
-#: gettingstarted.html:1370
+#: gettingstarted.html:1503
 msgid "Internet Access:"
 msgstr "Internet pristup:"
 
-#: gettingstarted.html:1372
+#: gettingstarted.html:1505
 msgid "Connected"
 msgstr "Konektovan"
 
-#: gettingstarted.html:1373
+#: gettingstarted.html:1506
 msgid "Not Connected"
 msgstr "Diskonektovan"
 
-#: gettingstarted.html:1380
+#: gettingstarted.html:1513
 msgid "Storage"
 msgstr "Skladište"
 
-#: gettingstarted.html:1384
+#: gettingstarted.html:1517
 msgid "Root File System:"
 msgstr "Root fajl sistem:"
 
-#: gettingstarted.html:1387
+#: gettingstarted.html:1520
 msgid "The file system where OS is installed."
 msgstr "Fajl sistem gde je OS instaliran."
 
-#: gettingstarted.html:1393
+#: gettingstarted.html:1526
 msgid "Entire Disk Capacity:"
 msgstr "Čitav kapacitet hard diska:"
 
-#: gettingstarted.html:1398
+#: gettingstarted.html:1531
 msgid "OS Usage"
 msgstr "OS Upotreba"
 
-#: gettingstarted.html:1402
+#: gettingstarted.html:1535
 msgid "Other Usage"
 msgstr "Druga upotreba:"
 
-#: gettingstarted.html:1407
+#: gettingstarted.html:1540
 msgid "Allocated for <span name=\"distro-name\"></span>:"
 msgstr "Alocirano za <span name=\"distro-name\"></span>:"
 
-#: gettingstarted.html:1410
+#: gettingstarted.html:1543
 msgid "The size of your operating system partition."
 msgstr "Veličina particije vašeg operativnog sistema"
 
-#: gettingstarted.html:1416
+#: gettingstarted.html:1549
 msgid "Used Space:"
 msgstr "Iskorišćen prostor:"
 
-#: gettingstarted.html:1422
+#: gettingstarted.html:1555
 msgid "Free Space:"
 msgstr "Slobodan prostor:"
 
-#: gettingstarted.html:1428
+#: gettingstarted.html:1561
 msgid "Other Usage:"
 msgstr "Druga upotreba:"
 
-#: gettingstarted.html:1431
+#: gettingstarted.html:1564
 msgid "Reserved by system, other partitions, unallocated or swap."
 msgstr "Rezervisano od sistema, drugih particija, nelocirano ili swap."

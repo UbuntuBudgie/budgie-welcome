@@ -47,7 +47,7 @@ msgstr "آشنایی"
 msgid "Browser Ballot"
 msgstr ""
 
-#: gettingstarted.html42, 43, 764, 1264
+#: gettingstarted.html42, 43, 764, 1397
 msgid "Customization"
 msgstr "شخصی سازی"
 
@@ -140,7 +140,7 @@ msgstr ""
 "اگر رایانه شما همانند سیستم توصیه شده یا بهتر از آن باشد، سیستم عامل خیلی "
 "موثرتر و بهتر میتواند اجرا شود."
 
-#: gettingstarted.html107, 1274
+#: gettingstarted.html107, 1407
 msgid "What's inside my computer?"
 msgstr "چه چیزی داخل رایانه من است؟!"
 
@@ -264,7 +264,7 @@ msgid ""
 "to be created."
 msgstr ""
 
-#: gettingstarted.html185, 363, 659, 1264
+#: gettingstarted.html185, 363, 659, 1397
 msgid "Previous:"
 msgstr "قبلی:"
 
@@ -1123,7 +1123,8 @@ msgid "Toggle Tilix Quake Mode"
 msgstr ""
 
 #: gettingstarted.html940, 948, 956, 964, 972, 980, 988, 996, 1004, 1012,
-#: 1020, 1028, 1036, 1044, 1052, 1089, 1107, 1145, 1155, 1165, 1177
+#: 1020, 1028, 1036, 1044, 1052, 1089, 1107, 1143, 1153, 1163, 1175, 1304,
+#: 1314, 1324, 1334, 1344, 1354, 1364, 1374, 1384
 msgid "Ctrl"
 msgstr "Ctrl"
 
@@ -1183,7 +1184,7 @@ msgstr "سند کنونی را چاپ میکند"
 msgid "Undo the last change you made"
 msgstr "بازگردانی آخرین تغییری که انجام داده اید."
 
-#: gettingstarted.html1054, 1169, 1180
+#: gettingstarted.html1054, 1167, 1178
 msgid "Shift"
 msgstr "Shift"
 
@@ -1211,8 +1212,9 @@ msgstr ""
 msgid "Open Applications menu"
 msgstr "منوی برنامه ها را باز میکند."
 
-#: gettingstarted.html1081, 1091, 1109, 1117, 1131, 1147, 1157, 1167, 1179,
-#: 1188, 1196, 1204, 1212, 1236
+#: gettingstarted.html1081, 1091, 1109, 1129, 1145, 1155, 1165, 1177, 1186,
+#: 1194, 1202, 1210, 1242, 1306, 1316, 1326, 1336, 1346, 1356, 1366, 1376,
+#: 1386
 msgid "Alt"
 msgstr "Alt"
 
@@ -1236,29 +1238,29 @@ msgstr "صفحه نمایش را قفل میکند."
 msgid "Open a terminal."
 msgstr "ترمینال را باز میکند."
 
-#: gettingstarted.html:1123
-msgid "Screen reader enable/disable."
-msgstr "فعال/غیرفعال کردن خواننده صفحه نمایش."
+#: gettingstarted.html:1117
+msgid "Window shortcuts - general"
+msgstr ""
 
-#: gettingstarted.html:1127
-msgid "Window shortcuts"
-msgstr "میانبرهای پنجره ها"
+#: gettingstarted.html:1125
+msgid "Call Window Shuffler gui (window tiling grid)."
+msgstr ""
 
-#: gettingstarted.html:1133
+#: gettingstarted.html:1131
 msgid "Tab"
 msgstr "Tab"
 
-#: gettingstarted.html:1136
+#: gettingstarted.html:1134
 msgid "Switch between currently-open windows."
 msgstr "میان پنجرهایی که اکنون بازهستند جابجا شوید."
 
-#: gettingstarted.html:1138
+#: gettingstarted.html:1136
 msgid "Press Alt + Tab and then release Tab (but continue to hold Alt)."
 msgstr ""
 "کلیدهای Alt + Tab را فشار دهید و سپس کلید Tab را رها کنید (اما همچنان کلید "
 "Alt را نگه دارید)."
 
-#: gettingstarted.html:1139
+#: gettingstarted.html:1137
 msgid ""
 "Press Tab repeatedly to cycle through the list of available windows which "
 "appears on the screen."
@@ -1266,218 +1268,322 @@ msgstr ""
 "کلید Tab را مکرراً فشار دهید تا درون لیستی از پنجره های موجود که روی صفحه "
 "نمایش داده میشود، دور بزنید."
 
-#: gettingstarted.html1149, 1171, 1246
+#: gettingstarted.html1147, 1169, 1252
 msgid "Left"
 msgstr "چپ"
 
-#: gettingstarted.html:1151
+#: gettingstarted.html:1149
 msgid "Switch to the previous workspace."
 msgstr "تغییر دادن فضای کاری، به فضای کاری قبلی."
 
-#: gettingstarted.html1159, 1182, 1254
+#: gettingstarted.html1157, 1180, 1260
 msgid "Right"
 msgstr "راست"
 
-#: gettingstarted.html:1161
+#: gettingstarted.html:1159
 msgid "Switch to the next workspace."
 msgstr "تغییر دادن فضای کاری، به فضای کاری بعدی."
 
-#: gettingstarted.html:1173
+#: gettingstarted.html:1171
 msgid "Move the current window to the previous workspace."
 msgstr "پنجره کنونی را به فضای کاری (ورک اسپیس) قبلی انتقال میدهد."
 
-#: gettingstarted.html:1184
+#: gettingstarted.html:1182
 msgid "Move the current window to the next workspace."
 msgstr "پنجره کنونی را به فضای کاری (ورک اسپیس) بعدی انتقال میدهد."
 
-#: gettingstarted.html:1192
+#: gettingstarted.html:1190
 msgid "Closes window."
 msgstr "بستن پنجره."
 
-#: gettingstarted.html:1200
+#: gettingstarted.html:1198
 msgid "Returns window to 'normal' or previous size."
 msgstr "پنجره را به حالت \"طبیعی\" یا سایز قبلی آن برمیگرداند."
 
-#: gettingstarted.html:1208
+#: gettingstarted.html:1206
 msgid "Moves the current window (can be moved with mouse or keyboard)."
 msgstr "حرکت دادن پنجره کنونی (میتواند توسط موس یا صفحه کلید حرکت کند)"
 
-#: gettingstarted.html:1216
+#: gettingstarted.html:1214
 msgid "Resizes current window (again, can be moved with mouse or keyboard)."
 msgstr "تغییر اندازه پنجره کنونی (میتواند توسط موس یا صفحه کلید حرکت کند)"
 
-#: gettingstarted.html:1224
+#: gettingstarted.html:1222
 msgid "Minimizes current window."
 msgstr "کوچکنمایی پنجره کنونی."
 
-#: gettingstarted.html:1230
+#: gettingstarted.html:1228
 msgid "Up"
 msgstr "بالا"
 
-#: gettingstarted.html:1232
+#: gettingstarted.html:1230
 msgid "Maximizes current window."
 msgstr "بزرگنمایی پنجره کنونی."
 
+#: gettingstarted.html:1236
+msgid "Down"
+msgstr ""
+
 #: gettingstarted.html:1238
+msgid "Unmaximizes current window."
+msgstr ""
+
+#: gettingstarted.html:1244
 msgid "Space"
 msgstr "فضا"
 
-#: gettingstarted.html:1240
+#: gettingstarted.html:1246
 msgid ""
 "Displays the window menu with options such as 'Always on Top' and 'Minimize'"
 " and 'Maximize' and above commands."
 msgstr ""
 
-#: gettingstarted.html:1248
+#: gettingstarted.html:1254
 msgid "Place window on left side of screen."
 msgstr "پنجره را در سمت چپ صفحه نمایش قرار میدهد."
 
-#: gettingstarted.html:1256
+#: gettingstarted.html:1262
 msgid "Place window on right side of screen."
 msgstr "پنجره را در سمت راست صفحه نمایش قرار میدهد."
 
-#: gettingstarted.html:1275
+#: gettingstarted.html1268, 1338
+msgid "1"
+msgstr ""
+
+#: gettingstarted.html:1270
+msgid "Quarter tiling: top left."
+msgstr ""
+
+#: gettingstarted.html1276, 1368
+msgid "2"
+msgstr ""
+
+#: gettingstarted.html:1278
+msgid "Quarter tiling: top right."
+msgstr ""
+
+#: gettingstarted.html1284, 1328
+msgid "3"
+msgstr ""
+
+#: gettingstarted.html:1286
+msgid "Quarter tiling: bottom left."
+msgstr ""
+
+#: gettingstarted.html1292, 1378
+msgid "4"
+msgstr ""
+
+#: gettingstarted.html:1294
+msgid "Quarter tiling: bottom right."
+msgstr ""
+
+#: gettingstarted.html:1299
+msgid "Window shortcuts - numeric keypad"
+msgstr ""
+
+#: gettingstarted.html:1300
+msgid "Tiling shortcuts on the numeric keypad."
+msgstr ""
+
+#: gettingstarted.html:1308
+msgid "7"
+msgstr ""
+
+#: gettingstarted.html:1310
+msgid "Quarter top left."
+msgstr ""
+
+#: gettingstarted.html:1318
+msgid "9"
+msgstr ""
+
+#: gettingstarted.html:1320
+msgid "Quarter top right."
+msgstr ""
+
+#: gettingstarted.html:1330
+msgid "Quarter bottom right."
+msgstr ""
+
+#: gettingstarted.html:1340
+msgid "Quarter bottom left."
+msgstr ""
+
+#: gettingstarted.html:1348
+msgid "8"
+msgstr ""
+
+#: gettingstarted.html:1350
+msgid "Half top."
+msgstr ""
+
+#: gettingstarted.html:1358
+msgid "6"
+msgstr ""
+
+#: gettingstarted.html:1360
+msgid "Half right."
+msgstr ""
+
+#: gettingstarted.html:1370
+msgid "Half bottom."
+msgstr ""
+
+#: gettingstarted.html:1380
+msgid "Half left."
+msgstr ""
+
+#: gettingstarted.html:1388
+msgid "5"
+msgstr ""
+
+#: gettingstarted.html:1390
+msgid "Toggle maximize."
+msgstr ""
+
+#: gettingstarted.html:1408
 msgid ""
 "Your machine is made up of various components that interact with one "
 "another. This information is useful when providing support to ensure "
 "hardware and software works on your machine."
 msgstr ""
 
-#: gettingstarted.html:1283
+#: gettingstarted.html:1416
 msgid "Gathering Information.."
 msgstr "جمع آوری اطلاعات..."
 
-#: gettingstarted.html:1292
+#: gettingstarted.html:1425
 msgid "System"
 msgstr "سیستم:"
 
-#: gettingstarted.html:1295
+#: gettingstarted.html:1428
 msgid "Distribution:"
 msgstr "توزیع:"
 
-#: gettingstarted.html:1299
+#: gettingstarted.html:1432
 msgid "Kernel:"
 msgstr "کِرنل:"
 
-#: gettingstarted.html:1302
+#: gettingstarted.html:1435
 msgid "The Linux kernel is the heart of Ubuntu."
 msgstr "کِرنل لینوکس قلب اوبونتو است."
 
-#: gettingstarted.html:1308
+#: gettingstarted.html:1441
 msgid "Motherboard:"
 msgstr "بُرد اصلی:"
 
-#: gettingstarted.html:1312
+#: gettingstarted.html:1445
 msgid "Boot Mode:"
 msgstr "حالت بوت:"
 
-#: gettingstarted.html:1315
+#: gettingstarted.html:1448
 msgid "Displays the mode that OS is communicating with the firmware."
 msgstr ""
 "نحوه و حالت ارتباط برقرار کردن سیستم عامل با سخت افزار را نمایش میدهد."
 
-#: gettingstarted.html:1323
+#: gettingstarted.html:1456
 msgid "Processor"
 msgstr "پردازنده:"
 
-#: gettingstarted.html:1326
+#: gettingstarted.html:1459
 msgid "Model:"
 msgstr "مدل:"
 
-#: gettingstarted.html:1330
+#: gettingstarted.html:1463
 msgid "Speed:"
 msgstr "سرعت:"
 
-#: gettingstarted.html:1334
+#: gettingstarted.html:1467
 msgid "Architecture in use:"
 msgstr "معماری مورد استفاده:"
 
-#: gettingstarted.html:1337
+#: gettingstarted.html:1470
 msgid ""
 "The operating system's architecture in use. For instance, i386 = 32-bit."
 msgstr "معماری سیستم عامل درحال استفاده. برای نمونه i386 = 32-bit."
 
-#: gettingstarted.html:1343
+#: gettingstarted.html:1476
 msgid "Architecture(s) supported:"
 msgstr "معماری(های) پشتیبانی شده:"
 
-#: gettingstarted.html:1346
+#: gettingstarted.html:1479
 msgid "Architectures that are supported by this processor."
 msgstr "معماری هایی که توسط این پردازنده پشتیبانی میشوند."
 
-#: gettingstarted.html:1354
+#: gettingstarted.html:1487
 msgid "Components"
 msgstr "اجزاء"
 
-#: gettingstarted.html:1357
+#: gettingstarted.html:1490
 msgid "Memory (RAM):"
 msgstr "حافظه (رَم):"
 
-#: gettingstarted.html:1360
+#: gettingstarted.html:1493
 msgid "More RAM allows more applications to run simultaneously."
 msgstr ""
 "فضای رَم بیشتر امکان اجرای برنامه های بیشتری را بصورت هم زمان فراهم میکند."
 
-#: gettingstarted.html:1366
+#: gettingstarted.html:1499
 msgid "Graphics:"
 msgstr "گرافیک:"
 
-#: gettingstarted.html:1370
+#: gettingstarted.html:1503
 msgid "Internet Access:"
 msgstr "دستریس به اینترنت:"
 
-#: gettingstarted.html:1372
+#: gettingstarted.html:1505
 msgid "Connected"
 msgstr "متصل است"
 
-#: gettingstarted.html:1373
+#: gettingstarted.html:1506
 msgid "Not Connected"
 msgstr "متصل نیست"
 
-#: gettingstarted.html:1380
+#: gettingstarted.html:1513
 msgid "Storage"
 msgstr "ذخیره سازی"
 
-#: gettingstarted.html:1384
+#: gettingstarted.html:1517
 msgid "Root File System:"
 msgstr "ریشه سیستم فایل:"
 
-#: gettingstarted.html:1387
+#: gettingstarted.html:1520
 msgid "The file system where OS is installed."
 msgstr "سیستم فایل جایی که سیستم عامل نصب شده است."
 
-#: gettingstarted.html:1393
+#: gettingstarted.html:1526
 msgid "Entire Disk Capacity:"
 msgstr "تمام ظرفیت دیسک:"
 
-#: gettingstarted.html:1398
+#: gettingstarted.html:1531
 msgid "OS Usage"
 msgstr "مورد استفاده سیستم عامل"
 
-#: gettingstarted.html:1402
+#: gettingstarted.html:1535
 msgid "Other Usage"
 msgstr "مورد استفاده دیگر"
 
-#: gettingstarted.html:1407
+#: gettingstarted.html:1540
 msgid "Allocated for <span name=\"distro-name\"></span>:"
 msgstr "اختصاص داده شده برای <span name=\"distro-name\"></span>:"
 
-#: gettingstarted.html:1410
+#: gettingstarted.html:1543
 msgid "The size of your operating system partition."
 msgstr "اندازه پارتیشن سیستم عامل شما."
 
-#: gettingstarted.html:1416
+#: gettingstarted.html:1549
 msgid "Used Space:"
 msgstr "فضای استفاده شده:"
 
-#: gettingstarted.html:1422
+#: gettingstarted.html:1555
 msgid "Free Space:"
 msgstr "فضای خالی:"
 
-#: gettingstarted.html:1428
+#: gettingstarted.html:1561
 msgid "Other Usage:"
 msgstr "مورد استفاده دیگر:"
 
-#: gettingstarted.html:1431
+#: gettingstarted.html:1564
 msgid "Reserved by system, other partitions, unallocated or swap."
 msgstr ""

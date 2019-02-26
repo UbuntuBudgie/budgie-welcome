@@ -41,7 +41,7 @@ msgstr "Saugykla yra įdiegta"
 msgid "Enable <span name=\"distro-name\"></span> backports repository"
 msgstr "Įjungti <span name=\"distro-name\"></span> naujų versijų paketų saugyklą"
 
-#: recommendations.html25, 70, 87, 100, 117, 133
+#: recommendations.html25, 70, 87, 100, 117, 135, 142
 msgid "Applying Changes..."
 msgstr "Taikomi pakeitimai..."
 
@@ -350,12 +350,13 @@ msgstr "Įdiegti ir konfigūruoti Steam"
 
 #: recommendations.html:126
 msgid ""
-"<strong>Dropbox</strong> is a popular file sharing and storage solution."
+"<strong>Dropbox</strong> is a popular proprietary file sharing and storage "
+"solution."
 msgstr ""
-"<strong>Dropbox</strong> yra populiarus failų bendrinimo ir talpinimo "
-"sprendimas."
+"<strong>Dropbox</strong> yra populiarus nuosavybinis failų bendrinimo ir "
+"talpinimo sprendimas."
 
-#: recommendations.html:128
+#: recommendations.html:129
 msgid ""
 "Being proprietary software, Dropbox is not included in the primary "
 "repositories of <span name=\"distro-name\"></span>. However, to provide more"
@@ -371,7 +372,7 @@ msgstr ""
 "suteikia jums galimybę įjungti <em>Multiverse</em> saugyklą ir vienu "
 "spustelėjimu įdiegti Dropbox."
 
-#: recommendations.html:130
+#: recommendations.html131, 138
 msgid ""
 "After installing, logout and login and follow the dropbox instructions that "
 "are then displayed."
@@ -379,18 +380,10 @@ msgstr ""
 "Įdiegę, atsijukite ir vėl prisijunkite, o tuomet sekite rodomą dropbox "
 "instrukciją."
 
-#: recommendations.html:131
-msgid ""
-"Important: This version of Dropbox will only work if Files (Nautilus) is the"
-" file-manager. It will not work with Nemo."
-msgstr ""
-"Svarbu: Ši Dropbox versija veiks tik tuo atveju, jei failų tvarkytuve yra "
-"programa Failai (Nautilus). Ši versija neveiks su Nemo."
-
-#: recommendations.html:132
+#: recommendations.html134, 141
 msgid "Dropbox is installed"
 msgstr "Dropbox yra įdiegta"
 
-#: recommendations.html:132
+#: recommendations.html134, 141
 msgid "Install & Configure Dropbox"
 msgstr "Įdiegti ir konfigūruoti Dropbox"

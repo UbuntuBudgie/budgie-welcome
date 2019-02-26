@@ -1,13 +1,13 @@
 # Translators:
-# Paweł Rubacha, 2018
 # Sebastian Cygan <sebcyg@gmail.com>, 2018
+# Paweł Rubacha, 2018
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: Budgie Welcome\n"
 "POT-Creation-Date: 2016-02-27 12:48+0100\n"
 "PO-Revision-Date: 2017-03-22 21:33+0000\n"
-"Last-Translator: Sebastian Cygan <sebcyg@gmail.com>, 2018\n"
+"Last-Translator: Paweł Rubacha, 2018\n"
 "Language-Team: Polish (https://www.transifex.com/ubuntu-budgie/teams/72251/pl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -42,7 +42,7 @@ msgstr "Repozytorium jest zainstalowane"
 msgid "Enable <span name=\"distro-name\"></span> backports repository"
 msgstr "Włącz repozytorium <span name=\"distro-name\"></span> backports"
 
-#: recommendations.html25, 70, 87, 100, 117, 133
+#: recommendations.html25, 70, 87, 100, 117, 135, 142
 msgid "Applying Changes..."
 msgstr "Zatwierdzanie zmian..."
 
@@ -357,12 +357,11 @@ msgstr "Zainstaluj i skonfiguruj Steam"
 
 #: recommendations.html:126
 msgid ""
-"<strong>Dropbox</strong> is a popular file sharing and storage solution."
+"<strong>Dropbox</strong> is a popular proprietary file sharing and storage "
+"solution."
 msgstr ""
-"<strong>Dropbox</strong> to popularna usługa do współdzielenia i "
-"przechowywania plików."
 
-#: recommendations.html:128
+#: recommendations.html:129
 msgid ""
 "Being proprietary software, Dropbox is not included in the primary "
 "repositories of <span name=\"distro-name\"></span>. However, to provide more"
@@ -378,7 +377,7 @@ msgstr ""
 " opcję na włączenie repozytorium <em>Multiverse</em> i instalację "
 "oprogramowania Dropbox przy pomocy jednego kliknięcia."
 
-#: recommendations.html:130
+#: recommendations.html131, 138
 msgid ""
 "After installing, logout and login and follow the dropbox instructions that "
 "are then displayed."
@@ -386,16 +385,10 @@ msgstr ""
 "Po instalacji, wyloguj się i zaloguj ponownie, a następnie postępuj zgodnie "
 "z instrukcjami wyświetlanymi w aplikacji Dropbox."
 
-#: recommendations.html:131
-msgid ""
-"Important: This version of Dropbox will only work if Files (Nautilus) is the"
-" file-manager. It will not work with Nemo."
-msgstr ""
-
-#: recommendations.html:132
+#: recommendations.html134, 141
 msgid "Dropbox is installed"
 msgstr "Oprogramowanie Dropbox zostało zainstalowane."
 
-#: recommendations.html:132
+#: recommendations.html134, 141
 msgid "Install & Configure Dropbox"
 msgstr "Zainstaluj i skonfiguruj oprogramowanie Dropbox"

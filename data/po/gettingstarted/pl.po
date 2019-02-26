@@ -48,7 +48,7 @@ msgstr "Dopasowanie pod siebie"
 msgid "Browser Ballot"
 msgstr "Wybór przeglądarki"
 
-#: gettingstarted.html42, 43, 764, 1264
+#: gettingstarted.html42, 43, 764, 1397
 msgid "Customization"
 msgstr "Dostosowywanie"
 
@@ -141,7 +141,7 @@ msgstr ""
 "System operacyjny będzę pracował dużo bardziej wydajnie, jeżeli Twój "
 "komputer spełnia lub przewyższa wymagania rekomendowane."
 
-#: gettingstarted.html107, 1274
+#: gettingstarted.html107, 1407
 msgid "What's inside my computer?"
 msgstr "Co jest w moim komputerze?"
 
@@ -308,7 +308,7 @@ msgstr ""
 "na plik wymiany zostanie zarezerwowany obszar dysku o rozmiarze 2 GiB. "
 "Oddzielna partycja wymiany obecnie nie musi już być tworzona."
 
-#: gettingstarted.html185, 363, 659, 1264
+#: gettingstarted.html185, 363, 659, 1397
 msgid "Previous:"
 msgstr "Poprzedni krok:"
 
@@ -1372,7 +1372,8 @@ msgid "Toggle Tilix Quake Mode"
 msgstr "Przełącz tryb Tilix Quake"
 
 #: gettingstarted.html940, 948, 956, 964, 972, 980, 988, 996, 1004, 1012,
-#: 1020, 1028, 1036, 1044, 1052, 1089, 1107, 1145, 1155, 1165, 1177
+#: 1020, 1028, 1036, 1044, 1052, 1089, 1107, 1143, 1153, 1163, 1175, 1304,
+#: 1314, 1324, 1334, 1344, 1354, 1364, 1374, 1384
 msgid "Ctrl"
 msgstr "Ctrl"
 
@@ -1432,7 +1433,7 @@ msgstr "Drukuje bieżący dokument"
 msgid "Undo the last change you made"
 msgstr "Cofa ostatnią zmianę, jakiej dokonałeś"
 
-#: gettingstarted.html1054, 1169, 1180
+#: gettingstarted.html1054, 1167, 1178
 msgid "Shift"
 msgstr "Shift"
 
@@ -1460,8 +1461,9 @@ msgstr ""
 msgid "Open Applications menu"
 msgstr "Otwiera menu aplikacji"
 
-#: gettingstarted.html1081, 1091, 1109, 1117, 1131, 1147, 1157, 1167, 1179,
-#: 1188, 1196, 1204, 1212, 1236
+#: gettingstarted.html1081, 1091, 1109, 1129, 1145, 1155, 1165, 1177, 1186,
+#: 1194, 1202, 1210, 1242, 1306, 1316, 1326, 1336, 1346, 1356, 1366, 1376,
+#: 1386
 msgid "Alt"
 msgstr "Alt"
 
@@ -1486,27 +1488,27 @@ msgstr "Zablokuj ekran"
 msgid "Open a terminal."
 msgstr "Otwiera terminal"
 
-#: gettingstarted.html:1123
-msgid "Screen reader enable/disable."
-msgstr "Włącza/wyłącza czytnik ekranu."
+#: gettingstarted.html:1117
+msgid "Window shortcuts - general"
+msgstr ""
 
-#: gettingstarted.html:1127
-msgid "Window shortcuts"
-msgstr "Skróty dotyczące okien"
+#: gettingstarted.html:1125
+msgid "Call Window Shuffler gui (window tiling grid)."
+msgstr ""
 
-#: gettingstarted.html:1133
+#: gettingstarted.html:1131
 msgid "Tab"
 msgstr "Tab"
 
-#: gettingstarted.html:1136
+#: gettingstarted.html:1134
 msgid "Switch between currently-open windows."
 msgstr "Przełącza pomiędzy aktualnie otwartymi oknami."
 
-#: gettingstarted.html:1138
+#: gettingstarted.html:1136
 msgid "Press Alt + Tab and then release Tab (but continue to hold Alt)."
 msgstr "Naciśnij Alt + Tab i następnie puść Tab (ale trzymaj nadal Alt)."
 
-#: gettingstarted.html:1139
+#: gettingstarted.html:1137
 msgid ""
 "Press Tab repeatedly to cycle through the list of available windows which "
 "appears on the screen."
@@ -1514,65 +1516,73 @@ msgstr ""
 "Naciskaj Tab kilkukrotnie, aby przełączać się przez listę dostępnych okien, "
 "które pojawiają się na ekranie."
 
-#: gettingstarted.html1149, 1171, 1246
+#: gettingstarted.html1147, 1169, 1252
 msgid "Left"
 msgstr "Lewy"
 
-#: gettingstarted.html:1151
+#: gettingstarted.html:1149
 msgid "Switch to the previous workspace."
 msgstr "Przełącza do poprzedniego obszaru roboczego."
 
-#: gettingstarted.html1159, 1182, 1254
+#: gettingstarted.html1157, 1180, 1260
 msgid "Right"
 msgstr "Prawy"
 
-#: gettingstarted.html:1161
+#: gettingstarted.html:1159
 msgid "Switch to the next workspace."
 msgstr "Przełącza do następnego obszaru roboczego."
 
-#: gettingstarted.html:1173
+#: gettingstarted.html:1171
 msgid "Move the current window to the previous workspace."
 msgstr "Przenosi bieżące okno do poprzedniego obszaru roboczego."
 
-#: gettingstarted.html:1184
+#: gettingstarted.html:1182
 msgid "Move the current window to the next workspace."
 msgstr "Przenosi bieżące okna do następnego obszaru roboczego."
 
-#: gettingstarted.html:1192
+#: gettingstarted.html:1190
 msgid "Closes window."
 msgstr "Zamyka okno."
 
-#: gettingstarted.html:1200
+#: gettingstarted.html:1198
 msgid "Returns window to 'normal' or previous size."
 msgstr "Przywraca okno do \"normalnego\" lub poprzedniego rozmiaru."
 
-#: gettingstarted.html:1208
+#: gettingstarted.html:1206
 msgid "Moves the current window (can be moved with mouse or keyboard)."
 msgstr "Przesuwa bieżące okno (można przesuwać myszką lub klawiaturą)."
 
-#: gettingstarted.html:1216
+#: gettingstarted.html:1214
 msgid "Resizes current window (again, can be moved with mouse or keyboard)."
 msgstr ""
 "Zmienia rozmiar bieżącego okna (tutaj również, można zmieniać rozmiar myszką"
 " lub kalwiaturą)."
 
-#: gettingstarted.html:1224
+#: gettingstarted.html:1222
 msgid "Minimizes current window."
 msgstr "Minimalizuje bieżące okno."
 
-#: gettingstarted.html:1230
+#: gettingstarted.html:1228
 msgid "Up"
 msgstr "W górę"
 
-#: gettingstarted.html:1232
+#: gettingstarted.html:1230
 msgid "Maximizes current window."
 msgstr "Maksymalizuje bieżące okno."
 
+#: gettingstarted.html:1236
+msgid "Down"
+msgstr ""
+
 #: gettingstarted.html:1238
+msgid "Unmaximizes current window."
+msgstr ""
+
+#: gettingstarted.html:1244
 msgid "Space"
 msgstr "Spacja"
 
-#: gettingstarted.html:1240
+#: gettingstarted.html:1246
 msgid ""
 "Displays the window menu with options such as 'Always on Top' and 'Minimize'"
 " and 'Maximize' and above commands."
@@ -1580,15 +1590,111 @@ msgstr ""
 "Wyświetla menu okna z opcjami takimi jak \"Zawsze na wierzchu\", "
 "\"Minimalizuj\" czy \"Maksymalizuj\" oraz powyższymi komendami."
 
-#: gettingstarted.html:1248
+#: gettingstarted.html:1254
 msgid "Place window on left side of screen."
 msgstr "Umieszcza okno po lewej stronie ekranu."
 
-#: gettingstarted.html:1256
+#: gettingstarted.html:1262
 msgid "Place window on right side of screen."
 msgstr "Umieszcza okno po prawej stronie ekranu."
 
-#: gettingstarted.html:1275
+#: gettingstarted.html1268, 1338
+msgid "1"
+msgstr ""
+
+#: gettingstarted.html:1270
+msgid "Quarter tiling: top left."
+msgstr ""
+
+#: gettingstarted.html1276, 1368
+msgid "2"
+msgstr ""
+
+#: gettingstarted.html:1278
+msgid "Quarter tiling: top right."
+msgstr ""
+
+#: gettingstarted.html1284, 1328
+msgid "3"
+msgstr ""
+
+#: gettingstarted.html:1286
+msgid "Quarter tiling: bottom left."
+msgstr ""
+
+#: gettingstarted.html1292, 1378
+msgid "4"
+msgstr ""
+
+#: gettingstarted.html:1294
+msgid "Quarter tiling: bottom right."
+msgstr ""
+
+#: gettingstarted.html:1299
+msgid "Window shortcuts - numeric keypad"
+msgstr ""
+
+#: gettingstarted.html:1300
+msgid "Tiling shortcuts on the numeric keypad."
+msgstr ""
+
+#: gettingstarted.html:1308
+msgid "7"
+msgstr ""
+
+#: gettingstarted.html:1310
+msgid "Quarter top left."
+msgstr ""
+
+#: gettingstarted.html:1318
+msgid "9"
+msgstr ""
+
+#: gettingstarted.html:1320
+msgid "Quarter top right."
+msgstr ""
+
+#: gettingstarted.html:1330
+msgid "Quarter bottom right."
+msgstr ""
+
+#: gettingstarted.html:1340
+msgid "Quarter bottom left."
+msgstr ""
+
+#: gettingstarted.html:1348
+msgid "8"
+msgstr ""
+
+#: gettingstarted.html:1350
+msgid "Half top."
+msgstr ""
+
+#: gettingstarted.html:1358
+msgid "6"
+msgstr ""
+
+#: gettingstarted.html:1360
+msgid "Half right."
+msgstr ""
+
+#: gettingstarted.html:1370
+msgid "Half bottom."
+msgstr ""
+
+#: gettingstarted.html:1380
+msgid "Half left."
+msgstr ""
+
+#: gettingstarted.html:1388
+msgid "5"
+msgstr ""
+
+#: gettingstarted.html:1390
+msgid "Toggle maximize."
+msgstr ""
+
+#: gettingstarted.html:1408
 msgid ""
 "Your machine is made up of various components that interact with one "
 "another. This information is useful when providing support to ensure "
@@ -1599,145 +1705,145 @@ msgstr ""
 "zapewnienia, że konkretny sprzęt i oprogramowanie działają na Twoim "
 "komputerze."
 
-#: gettingstarted.html:1283
+#: gettingstarted.html:1416
 msgid "Gathering Information.."
 msgstr "Zbieranie informacji..."
 
-#: gettingstarted.html:1292
+#: gettingstarted.html:1425
 msgid "System"
 msgstr "System"
 
-#: gettingstarted.html:1295
+#: gettingstarted.html:1428
 msgid "Distribution:"
 msgstr "Dystrybucja:"
 
-#: gettingstarted.html:1299
+#: gettingstarted.html:1432
 msgid "Kernel:"
 msgstr "Jądro systemu:"
 
-#: gettingstarted.html:1302
+#: gettingstarted.html:1435
 msgid "The Linux kernel is the heart of Ubuntu."
 msgstr "Jądro Linuksa jest sercem Ubuntu."
 
-#: gettingstarted.html:1308
+#: gettingstarted.html:1441
 msgid "Motherboard:"
 msgstr "Płyta główna:"
 
-#: gettingstarted.html:1312
+#: gettingstarted.html:1445
 msgid "Boot Mode:"
 msgstr "Tryb rozruchu:"
 
-#: gettingstarted.html:1315
+#: gettingstarted.html:1448
 msgid "Displays the mode that OS is communicating with the firmware."
 msgstr ""
 "Wyświetla tryb, w jakim system operacyjny komunikuje się z oprogramowaniem "
 "sprzętowym."
 
-#: gettingstarted.html:1323
+#: gettingstarted.html:1456
 msgid "Processor"
 msgstr "Procesor"
 
-#: gettingstarted.html:1326
+#: gettingstarted.html:1459
 msgid "Model:"
 msgstr "Model:"
 
-#: gettingstarted.html:1330
+#: gettingstarted.html:1463
 msgid "Speed:"
 msgstr "Prędkość:"
 
-#: gettingstarted.html:1334
+#: gettingstarted.html:1467
 msgid "Architecture in use:"
 msgstr "Architektura aktualnie w użyciu:"
 
-#: gettingstarted.html:1337
+#: gettingstarted.html:1470
 msgid ""
 "The operating system's architecture in use. For instance, i386 = 32-bit."
 msgstr ""
 "Aktualnie używana architektura systemu operacyjnego. Przykładowo i386  - "
 "architektura 32 bitowa."
 
-#: gettingstarted.html:1343
+#: gettingstarted.html:1476
 msgid "Architecture(s) supported:"
 msgstr "Wspierane architektury:"
 
-#: gettingstarted.html:1346
+#: gettingstarted.html:1479
 msgid "Architectures that are supported by this processor."
 msgstr "Architektury, które są wpierane przez Twój procesor."
 
-#: gettingstarted.html:1354
+#: gettingstarted.html:1487
 msgid "Components"
 msgstr "Komponenty"
 
-#: gettingstarted.html:1357
+#: gettingstarted.html:1490
 msgid "Memory (RAM):"
 msgstr "Pamięć (RAM):"
 
-#: gettingstarted.html:1360
+#: gettingstarted.html:1493
 msgid "More RAM allows more applications to run simultaneously."
 msgstr ""
 "Im więcej pamięci RAM tym więcej aplikacji może pracować równocześnie."
 
-#: gettingstarted.html:1366
+#: gettingstarted.html:1499
 msgid "Graphics:"
 msgstr "Grafika:"
 
-#: gettingstarted.html:1370
+#: gettingstarted.html:1503
 msgid "Internet Access:"
 msgstr "Dostęp do internetu:"
 
-#: gettingstarted.html:1372
+#: gettingstarted.html:1505
 msgid "Connected"
 msgstr "Połączony"
 
-#: gettingstarted.html:1373
+#: gettingstarted.html:1506
 msgid "Not Connected"
 msgstr "Niepołączony"
 
-#: gettingstarted.html:1380
+#: gettingstarted.html:1513
 msgid "Storage"
 msgstr "Magazyn danych"
 
-#: gettingstarted.html:1384
+#: gettingstarted.html:1517
 msgid "Root File System:"
 msgstr "Główny system plików:"
 
-#: gettingstarted.html:1387
+#: gettingstarted.html:1520
 msgid "The file system where OS is installed."
 msgstr "System plików, gdzie jest zainstalowany system operacyjny."
 
-#: gettingstarted.html:1393
+#: gettingstarted.html:1526
 msgid "Entire Disk Capacity:"
 msgstr "Pojemność całego dysku:"
 
-#: gettingstarted.html:1398
+#: gettingstarted.html:1531
 msgid "OS Usage"
 msgstr "Użycie przez system"
 
-#: gettingstarted.html:1402
+#: gettingstarted.html:1535
 msgid "Other Usage"
 msgstr "Użycie pozostałe"
 
-#: gettingstarted.html:1407
+#: gettingstarted.html:1540
 msgid "Allocated for <span name=\"distro-name\"></span>:"
 msgstr "Przydzielone dla <span name=\"distro-name\"></span>:"
 
-#: gettingstarted.html:1410
+#: gettingstarted.html:1543
 msgid "The size of your operating system partition."
 msgstr "Rozmiar partycji systemu operacyjnego."
 
-#: gettingstarted.html:1416
+#: gettingstarted.html:1549
 msgid "Used Space:"
 msgstr "Użyta przestrzeń:"
 
-#: gettingstarted.html:1422
+#: gettingstarted.html:1555
 msgid "Free Space:"
 msgstr "Wolna przestrzeń:"
 
-#: gettingstarted.html:1428
+#: gettingstarted.html:1561
 msgid "Other Usage:"
 msgstr "Inne użycie:"
 
-#: gettingstarted.html:1431
+#: gettingstarted.html:1564
 msgid "Reserved by system, other partitions, unallocated or swap."
 msgstr ""
 "Zarezerwowane przez system, inne partycje, nieprzydzielone lub dane wymiany."

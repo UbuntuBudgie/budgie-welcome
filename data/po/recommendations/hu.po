@@ -1,13 +1,14 @@
 # Translators:
 # Gyula Szabó <szabo.gyula.krisztian@gmail.com>, 2017
 # Bence László <laszlo.bence.27@gmail.com>, 2017
+# Benjamin Piller <benpiller@gmail.com>, 2019
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: Budgie Welcome\n"
 "POT-Creation-Date: 2016-02-27 12:48+0100\n"
 "PO-Revision-Date: 2017-03-22 21:33+0000\n"
-"Last-Translator: Bence László <laszlo.bence.27@gmail.com>, 2017\n"
+"Last-Translator: Benjamin Piller <benpiller@gmail.com>, 2019\n"
 "Language-Team: Hungarian (https://www.transifex.com/ubuntu-budgie/teams/72251/hu/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -22,7 +23,7 @@ msgstr "Ajánlások"
 
 #: recommendations.html:20
 msgid "Backports repository"
-msgstr ""
+msgstr "Backports tároló"
 
 #: recommendations.html:22
 msgid ""
@@ -30,22 +31,25 @@ msgid ""
 "associated packages, we recommend to enable the <span name=\"distro-"
 "name\"></span> backports repository."
 msgstr ""
+"A budgie-asztal és egyéb kapcsolódó csomagok legújabb verzióinak eléréséhez "
+"javasoljuk a(z) <span name=\"distro-name\"></span> backports tároló "
+"engedélyezését."
 
 #: recommendations.html:24
 msgid "Repository is installed"
-msgstr ""
+msgstr "Tároló telepítve"
 
 #: recommendations.html:24
 msgid "Enable <span name=\"distro-name\"></span> backports repository"
-msgstr ""
+msgstr "<span name=\"distro-name\"></span> backports tároló engedélyezése"
 
-#: recommendations.html25, 70, 87, 100, 117, 133
+#: recommendations.html25, 70, 87, 100, 117, 135, 142
 msgid "Applying Changes..."
 msgstr "Változások alkalmazása..."
 
 #: recommendations.html:29
 msgid "Snap Applications"
-msgstr ""
+msgstr "Snap alkalmazások"
 
 #: recommendations.html:34
 msgid ""
@@ -102,12 +106,16 @@ msgid ""
 " install from the command line. It can be run with a query after it (e.g., "
 "‘snap find email‘, ‘snap find media’, ‘snap find messaging‘) or without."
 msgstr ""
+"A \"find\" paranccsal a parancssorból gyorsan kereshet és fedezhet fel "
+"elérhető snapeket telepítésre. Ez keresőkifejezéssel együtt is futtatható "
+"(pl.: \"snap find email\", \"snap find media\", \"snap find messaging\") "
+"vagy anélkül."
 
 #: recommendations.html:48
 msgid "When run without a query you’ll instead see a list of featured snaps."
 msgstr ""
-"Ha lekérdezés nélküld futtatod, ehelyett a kiemelt snapek listáját fogod "
-"látni."
+"Ha keresőkifejezés nélkül futtatja a parancsot, akkor a kiemelt snapek "
+"listáját láthatja."
 
 #: recommendations.html:49
 msgid "See installed apps"
@@ -118,9 +126,9 @@ msgid ""
 "Installed some Snaps but can’t remember what? Don’t panic. Use the list "
 "command to see an up-to-date list of all Snap apps installed on your system:"
 msgstr ""
-"Van néhány Snap telepítve, de nem emlékszik mik? Ne pánikoljon. Használja a "
-"listázás parancsot, hogy lásson egy naprakész listát a rendszerén telepített"
-" összes Snap alkalmazásról. "
+"Telepített néhány Snap-et, de nem emlékszik melyiket? Semmi probléma. "
+"Használja a \"list\" parancsot az összes telepített Snap alkalmazás "
+"megtekintéséhez a rendszeren."
 
 #: recommendations.html:52
 msgid ""
@@ -158,11 +166,10 @@ msgid ""
 " channel, confinement status, size, number of revisions, and more. The snap "
 "info --verbose offers a greater overview."
 msgstr ""
-"Használhatja ezt, hogy részletes információt láthasson bármelyik snap "
-"alkalmazásrl, akár telepített, akár nem. Ez az infó tartalmazza az "
-"alkalmazás kiadási csatornáját, korlátozottsági állaptát, méretét, az "
-"ellenőrzések számát és még többet. A snap info --verbose nagyobb betekintést"
-" nyújt."
+"Használhatja ezt, a részletes snap alkalmazás információk megtekintéséhez, "
+"akár telepített, akár nem. Ez az infó tartalmazza az alkalmazás kiadási "
+"csatornáját, korlátozottsági állapotát, méretét, az ellenőrzések számát és "
+"még többet. A snap info --verbose bővebb részleteket mutat."
 
 #: recommendations.html:62
 msgid "Update a Snap App"
@@ -175,6 +182,10 @@ msgid ""
 "handles updates automatically (you can, ofc, revert a Snap update or install"
 " a specific revision)."
 msgstr ""
+"Hasznos továbbá, hogy Önnek nincs szüksége egy Snap alkalmazás frisstéseivel"
+" törődnie, ugyanis a Snapd a háttérben fut és automatikusan gondoskodik a "
+"frissítésekről (Természetesen meg van a lehetősége egy frissítés "
+"visszavonására vagy egyedi verzió telepítésére)."
 
 #: recommendations.html:67
 msgid "Reference"
@@ -292,17 +303,18 @@ msgid ""
 "networking, matchmaking, in-game achievements, micro-transactions, and "
 "support for user-created content through Steam Workshop."
 msgstr ""
-"<strong>Steam</strong> egy digitális disztribúciós platform, amelyet a Valve"
-" Corporation fejlesztett. Kínál digitális jogkezelést (DRM), többjátékos "
-"játékot és közösségi hálózat szolgáltatásokat. A Steam a felhasználónak "
-"játékok automatikus telepítését és frissítését kínálja több számítógépen, "
-"emellett közösségi funkciókat, mint a barátlisták és csoportok, mentés a "
-"felhőbe, in-game hang és chat funkciók. A szoftver ingyenesen elérhető, "
-"Steamworks nevű alkalmazásprogramozási interfészt (API) kínál, amellyel a "
-"fejlesztők a Steam sok funkcióját integrálhatják a termékeikbe, beleértve a "
-"networkinget, matchmakinget, in-game teljesítményeket, mikrotranzakciókat, "
-"és a felhasználók által készített tartalom támogatását a Steam Workshopon "
-"keresztül."
+"A <strong>Steam</strong> egy digitális disztribúciós platform, amelyet a "
+"Valve Corporation fejlesztett. Digitális jogkezelést (DRM), többjátékos "
+"módot és közösség hálózati szolgáltatásokat kínál. A Steam játékok "
+"automatikus telepítését és frissítését kínálja több számítógépen a "
+"felhasználónak, valamint közösségi funkciókat, mint például a barátok "
+"listáit és csoportjait, a felhőmentést és a játékon belüli hang- és "
+"csevegési funkciókat. A szoftver az ingyenesen elérhető, Steamworks nevű "
+"alkalmazásprogramozási interfészt (API) is tartalmazza, amelyet a fejlesztők"
+" számos Steam funkció integrálására használhatnak termékeikbe, beleértve a "
+"hálózatépítést, a meccset, a játékban elért eredményeket, a mikro-"
+"tranzakciókat és a felhasználó által létrehozott tartalom támogatását a "
+"Steam Workshopon keresztül."
 
 #: recommendations.html:114
 msgid ""
@@ -313,6 +325,12 @@ msgid ""
 "enable the <em>Multiverse</em> repository and to install Steam with a single"
 " mouse click."
 msgstr ""
+"Mivel a Steam egy szabadalmaztatott szoftver, ezért az elsődleges <span name"
+"=\"distro-name\"></span> tárolokból nem érhető el. Annak érdekében, hogy a "
+"felhasználóknak több lehetőséget biztosítsunk, a Steam elérhető a "
+"<em>Multiverse</em> tárolóból. A(z) <span name=\"distro-name\"></span> "
+"lehetőséget kínál a <em>Multiverse</em> tároló engedélyezésére, így a Steam "
+"pár kattintással telepíthető. "
 
 #: recommendations.html:116
 msgid "Steam is installed"
@@ -324,10 +342,13 @@ msgstr "Steam telepítése és konfigurálása"
 
 #: recommendations.html:126
 msgid ""
-"<strong>Dropbox</strong> is a popular file sharing and storage solution."
+"<strong>Dropbox</strong> is a popular proprietary file sharing and storage "
+"solution."
 msgstr ""
+"A <strong>Dropbox</strong> egy kedvelt fájlmegosztó és fájltárolási "
+"szolgáltatás."
 
-#: recommendations.html:128
+#: recommendations.html:129
 msgid ""
 "Being proprietary software, Dropbox is not included in the primary "
 "repositories of <span name=\"distro-name\"></span>. However, to provide more"
@@ -336,23 +357,25 @@ msgid ""
 "enable the <em>Multiverse</em> repository and to install Dropbox with a "
 "single mouse click."
 msgstr ""
+"Mivel a Dropbox egy szabadalmaztatott szoftver, ezért az elsődleges <span "
+"name=\"distro-name\"></span> tárolokból nem érhető el. Annak érdekében, hogy"
+" a felhasználóknak több lehetőséget biztosítsunk, a Dropbox elérhető a "
+"<em>Multiverse</em> tárolóból. A(z) <span name=\"distro-name\"></span> "
+"lehetőséget kínál a <em>Multiverse</em> tároló engedélyezésére, így a "
+"Dropbox pár kattintással telepíthető. "
 
-#: recommendations.html:130
+#: recommendations.html131, 138
 msgid ""
 "After installing, logout and login and follow the dropbox instructions that "
 "are then displayed."
 msgstr ""
+"Telepítés után jelentkezzen ki majd be és kövesse a képernyőn látható "
+"dropbox utasításokat."
 
-#: recommendations.html:131
-msgid ""
-"Important: This version of Dropbox will only work if Files (Nautilus) is the"
-" file-manager. It will not work with Nemo."
-msgstr ""
-
-#: recommendations.html:132
+#: recommendations.html134, 141
 msgid "Dropbox is installed"
-msgstr ""
+msgstr "Dropbox telepítve"
 
-#: recommendations.html:132
+#: recommendations.html134, 141
 msgid "Install & Configure Dropbox"
-msgstr ""
+msgstr "Dropbox telepítése és konfigurálása"
