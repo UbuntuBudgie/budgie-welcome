@@ -256,6 +256,14 @@
               "cosmic" : ["ppa:ubuntubudgie/backports"],
               "disco" : ["ppa:ubuntubudgie/backports"]
       }
+    },
+    "takeabreak-applet" : {
+      "packages" : ["budgie-takeabreak-applet"],
+      "repos" : {
+              "bionic" : ["ppa:ubuntubudgie/backports"],
+              "cosmic" : ["ppa:ubuntubudgie/backports"],
+              "disco" : ["universe"]
+      }
     }
   },
   "recommendations" : {
