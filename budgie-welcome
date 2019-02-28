@@ -5,7 +5,7 @@
 # Copyright 2013 "Manjaro Linux" <support@manjaro.org>
 # Copyright 2014 Antergos
 # Copyright 2016 Ubuntu Mate
-# Copyright 2016-2018 Ubuntu Budgie Developers
+# Copyright 2016-2019 Ubuntu Budgie Developers
 #
 # budgie-welcome is free software: you can redistribute it and/or modify
 # it under the temms of the GNU General Public License as published by
@@ -234,6 +234,11 @@ class AppView(WebKit2.WebView):
                     app.update_page("." + applet, 'show')
                 else:
                     app.update_page("." + applet, 'hide')
+
+            if systemstate.bde_version == 'NA':
+                app.update_page(".showhide", 'show')
+            else:
+                app.update_page(".showhide", 'hide')
 
         ### All pages with install/removal ###
         if current_page in ['gettingstarted', 'default', 'recommendations', 'budgie-applets']:
@@ -991,6 +996,7 @@ class SystemState(object):
         self.updates_subscribed = False
         self.app_version = 'DEV'
         self.budgie_version = 'NA'
+        self.bde_version = 'NA'
         self.speed = None
         self.first_run = False
         self.graphics_vendor = 'Unknown'
@@ -1435,6 +1441,7 @@ class SystemState(object):
         versions = find_app_version(cache)
         self.app_version = versions[0]
         self.budgie_version = versions[1]
+        self.bde_version = versions[2]
 
 
 class WelcomeApp(object):
@@ -1800,7 +1807,7 @@ def find_app_version(cache=apt.Cache()):
     # when function is invoked while processing command line arguments
     versions = []
 
-    for package in ['budgie-welcome', 'budgie-desktop']:
+    for package in ['budgie-welcome', 'budgie-desktop', 'budgie-desktop-environment']:
         try:
             app = cache[package]
         except:
