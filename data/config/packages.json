@@ -371,11 +371,7 @@
       "key-commands" : ["wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | apt-key add -"]
     },
     "opera" : {
-      "packages" : ["opera-stable"],
-      "repos" : {
-        "all" : ["deb https://deb.opera.com/opera-stable/ stable non-free"]
-      },
-      "key-commands" : ["wget -qO- https://deb.opera.com/archive.key | apt-key add -"]
+      "snap" : ["opera"]
     },
     "vivaldi" : {
       "packages" : ["vivaldi-stable"],

@@ -98,8 +98,7 @@ def add_repos(repos, key_commands):
         distro = aptsources.distro.get_distro()
         distro.get_sources(sp.sourceslist)
         components = [comp.name for comp in distro.source_template.components]
-        print (components)
-        print (repos)
+
         if repo in components:
             if repo not in distro.enabled_comps:
                 force_update = True
@@ -124,10 +123,23 @@ def add_repos(repos, key_commands):
 def install(fname, code):
     info = pdata.getPackageInfo(fname, code)
     repos = info.get("repos")
+    snaps = info.get("snap")
     packages = info.get("packages")
     excludes = info.get("excludes")
     key_commands = info.get("key-commands")
+    retval = 0
 
+    if snaps and len(snaps) > 0:
+        # we are dealing with snap installs
+        print (snaps)
+        for snap in snaps:
+            print (snap)
+            process = subprocess.Popen(['snap', 'install', snap])
+            retval += process.wait()
+        print ("exiting")
+        return retval
+
+    # we are dealing with repo and package installs
     retval = add_repos(repos, key_commands)
 
     if excludes != None:
@@ -142,6 +154,18 @@ def install(fname, code):
 
 def remove(fname, code):
     info = pdata.getPackageInfo(fname, code)
+    snaps = info.get("snap")
+    retval = 0
+
+    if snaps and len(snaps) > 0:
+        # we are dealing with snap removals
+        for snap in snaps:
+            process = subprocess.Popen(['snap', 'remove', snap])
+            retval += process.wait()
+
+        return retval
+
+    # we are dealing with package removals
     packages = info["packages"]
 
     process = subprocess.Popen(['apt', 'remove', '-y'] + packages)

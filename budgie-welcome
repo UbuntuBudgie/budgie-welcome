@@ -248,7 +248,7 @@ class AppView(WebKit2.WebView):
             def checkInstallationStatus():
                 for code in pdata.getShortCodes(current_page):
                     # some package names are codename specific
-                    # so we the buttons on page needs the string
+                    # so the buttons on page needs the string
                     # without the codename
                     code = code.split("#")[0]
                     installed = pm.hasInstalled(current_page, code)
@@ -762,6 +762,19 @@ class PackageManager(Thread):
 
         return installed
 
+    def __isSnapInstalled(self, snap):
+        installed = False
+        try:
+            p = subprocess.Popen(['snap', 'list', snap])
+            retval = p.wait()
+
+            if retval == 0:
+                installed = True
+        except:
+            installed = False
+
+        return installed
+
     def hasInstalled(self, current_page, code):
         if not current_page:
             return self.__isPackageInstalled(code)
@@ -769,7 +782,7 @@ class PackageManager(Thread):
         packages = pdata.getPackages(current_page, code)
 
         if not packages:
-            # assume we are just dealing with ppa's
+            # assume we are just dealing with either snaps or ppa's
             repos = pdata.getRepos(current_page, code)
             found = False
 
@@ -789,6 +802,18 @@ class PackageManager(Thread):
 
                 if retval == 0:
                     found = True
+            else:
+                # if there are no repos we must be dealing with snaps
+                snaps = pdata.getSnap(current_page, code)
+
+                if snaps and len(snaps) > 0:
+                    installed = True
+                    for snap in snaps:
+                        if not self.__isSnapInstalled(snap):
+                            installed = False
+                            break
+
+                    return installed
 
             return found
 
@@ -951,6 +976,12 @@ class PackageData(object):
             if full_code in self.data[filename]:
                 return self.data[filename][full_code]["repos"]
             return self.data[filename][code]["repos"]
+        except KeyError:
+            return None
+
+    def getSnap(self, filename, code):
+        try:
+            return self.data[filename][code]["snap"]
         except KeyError:
             return None
 
