@@ -784,6 +784,16 @@
             <span id="chromium-status" class="hidden">
               <img src="img/welcome/processing.gif" style="width:24px" /> &zwnj;Applying Changes...&zwnj;
             </span>
+            <p></p>
+            <a id="chromium-snap-install" class="btn btn-success" onclick="cmd('install?chromium-snap');cmd('')">
+              <span class="material-icons">&#xE2C0;</span><span class="button-text">&zwnj;Snap Install&zwnj;</span>
+            </a>
+            <a id="chromium-snap-remove" class="btn btn-danger" onclick="cmd('remove?chromium-snap');cmd('')">
+              <span class="material-icons">&#xE872;</span><span class="button-text">&zwnj;Snap Remove&zwnj;</span>
+            </a>
+            <span id="chromium-snap-status" class="hidden">
+              <img src="img/welcome/processing.gif" style="width:24px" /> &zwnj;Applying Changes...&zwnj;
+            </span>
           </div>
           <div class="col-md-6 application border rounded">
             <h4>&zwnj;Firefox&zwnj;</h4>
@@ -797,6 +807,16 @@
               <span class="material-icons">&#xE872;</span><span class="button-text">&zwnj;Remove&zwnj;</span>
             </a>
             <span id="firefox-status" class="hidden">
+              <img src="img/welcome/processing.gif" style="width:24px" /> &zwnj;Applying Changes...&zwnj;
+            </span>
+            <p></p>
+            <a id="firefox-snap-install" class="btn btn-success" onclick="cmd('install?firefox-snap');cmd('')">
+              <span class="material-icons">&#xE2C0;</span><span class="button-text">&zwnj;Snap Install&zwnj;</span>
+            </a>
+            <a id="firefox-snap-remove" class="btn btn-danger" onclick="cmd('remove?firefox-snap');cmd('')">
+              <span class="material-icons">&#xE872;</span><span class="button-text">&zwnj;Snap Remove&zwnj;</span>
+            </a>
+            <span id="firefox-snap-status" class="hidden">
               <img src="img/welcome/processing.gif" style="width:24px" /> &zwnj;Applying Changes...&zwnj;
             </span>
           </div>
@@ -866,8 +886,7 @@
             </span>
           </div>
         </div>
-      </div>
-      <p></p>
+        <p></p>
         <div class="row text-md-center">
           <div class="col-md-6 application push-md-3 border rounded">
             <h4>GNOME Web</h4>
