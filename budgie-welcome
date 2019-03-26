@@ -1963,6 +1963,8 @@ def desktop_files():
     Name = _("Budgie Applets")
     Comment = _("Customize the desktop panel with applets that provide extra capabilities")
 
+    Name = _("Budgie Discourse")
+    Comment = _("Be part of the Ubuntu Budgie Community")
 
 def whereami():
     """ Determine data source """
@@ -2011,8 +2013,8 @@ if __name__ == "__main__":
     app = WelcomeApp()
     pdata = PackageData()
 
-    if systemstate.first_run and systemstate.codename not in ['xenial']:
-        app.define_keyboard_shortcut('tilix-quake', '/usr/bin/tilix --quake', 'F12')
+    #if systemstate.first_run and systemstate.codename not in ['xenial']:
+    #    app.define_keyboard_shortcut('tilix-quake', '/usr/bin/tilix --quake', 'F12')
 
     if getpass.getuser() != 'oem':
         app.run()

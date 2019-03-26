@@ -1,5 +1,5 @@
 name: ubuntu-budgie-welcome
-version: '0.8.1'
+version: '0.8.2'
 summary: Welcome screen to greet new Ubuntu Budgie users on their first login.
 description: |
   The ubuntu-budgie-welcome application was designed to greet a new user at the
@@ -23,6 +23,10 @@ apps:
   budgie-applets:
     command: usr/bin/budgie-welcome --jump-to=budgie-applets
     desktop: usr/share/applications/budgie-applets.desktop
+
+  budgie-discourse:
+    command: xdg-open "https://discourse.ubuntubudgie.org"
+    desktop: usr/share/applications/budgie-discourse.desktop
 
 parts:
   budgie-welcome:
