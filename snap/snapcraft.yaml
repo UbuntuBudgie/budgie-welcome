@@ -38,9 +38,9 @@ parts:
       - python3-polib
       - gettext
       - node-uglify
+      - xdg-utils
     stage-packages:
       - python3-apt
-      - libc6
     override-build: |
       cd scripts && ./rebuild-translations.sh
       cd ../ && uglifyjs -o data/js/bootstrap.min.js data/js/bootstrap.js && uglifyjs -o data/js/baguetteBox.min.js data/js/baguetteBox.js  && uglifyjs -o data/js/popper.min.js data/js/popper.js
