@@ -277,7 +277,11 @@
         "bionic": ["universe"],
         "cosmic": ["universe"],
         "disco": ["universe"]
-      }
+      },
+      "post-install": "flatpak-setup"
+    },
+    "flatpak-setup": {
+      "script": "flatpak-remote"
     },
     "skippy-xd": {
       "packages": ["skippy-xd"],

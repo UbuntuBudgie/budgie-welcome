@@ -957,6 +957,7 @@ class PackageData(object):
             full_code = code + "#" + systemstate.codename
             if full_code in self.data[filename]:
                 return self.data[filename][full_code]["script"]
+
             return self.data[filename][code]["script"]
         except KeyError:
             return None
