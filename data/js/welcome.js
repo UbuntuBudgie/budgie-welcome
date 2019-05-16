@@ -7,7 +7,7 @@ function cmd(instruction) {
 }
 
 // Global across all pages
-$(window).load(function() {
+$(window).load(function () {
     // Smoothly fade into the page.
     $('body').fadeIn('slow');
 });
@@ -15,16 +15,16 @@ $(window).load(function() {
 // Smoothly fade out of the page.
 function smoothPageFade(target_href) {
     $('html').fadeOut('fast');
-    setTimeout(function() {
+    setTimeout(function () {
         window.location.href = target_href;
     }, 200);
 }
 
 // When page first opens
-$(document).ready(function() {
+$(document).ready(function () {
 
     // Back to the top
-    $(window).scroll(function() {
+    $(window).scroll(function () {
         if ($(this).scrollTop() > 90) {
             $('#scroll-top').fadeIn();
         } else {
@@ -34,7 +34,7 @@ $(document).ready(function() {
 
     $('#navigation-right').append('<a id="scroll-top" class="navigation-button" style="display:none"><i class="material-icons">&#xE316;</i></a>')
 
-    $('#scroll-top').click(function() {
+    $('#scroll-top').click(function () {
         $("html, body").animate({
             scrollTop: 0
         }, 600);
@@ -46,14 +46,16 @@ $(document).ready(function() {
 // Smoothly fade between two elements (by ID)
 function smoothFade(from, to) {
     $(from).fadeOut();
-    setTimeout(function() { $(to).fadeIn(); }, 400);
+    setTimeout(function () {
+        $(to).fadeIn();
+    }, 400);
 }
 
 // Smoothly fade the navigation sub-title
 function changeSubtitle(textToDisplay) {
     // Smoothly fade subtitle
     $('#navigation-sub-title').fadeOut();
-    setTimeout(function() {
+    setTimeout(function () {
         $('#navigation-sub-title').html(textToDisplay);
         $('#navigation-sub-title').fadeIn();
     }, 400);
@@ -62,7 +64,7 @@ function changeSubtitle(textToDisplay) {
 // Remove slowly, fadeOut an element and then remove it.
 function removeSlowly(element) {
     $(element).fadeOut()
-    setTimeout(function() {
+    setTimeout(function () {
         $(element).remove();
     }, 1000);
 }
@@ -98,7 +100,7 @@ if (current_page == 'index.html') {
     $('#main-menu-logo').jAnimateOnce('rotateIn');
     $('.main-menu-text').fadeIn('slow');
     $('#open-at-start').jAnimateOnce('fadeIn');
-    setTimeout(function() {
+    setTimeout(function () {
         $('#mate-blur').jAnimateOnce('zoomIn');
         $('#mate-blur').show();
     }, 50);
@@ -106,7 +108,7 @@ if (current_page == 'index.html') {
     // Have we greeted the user already?
     if (document.cookie == 'greeted=yes') {
 
-        $(document).ready(function() {
+        $(document).ready(function () {
             $(".fade").removeClass("fade");
             $(".fade-1s").removeClass("fade-1s");
             $(".fade-2s").removeClass("fade-2s");
@@ -125,35 +127,35 @@ if (current_page == 'index.html') {
 
     // Sssh... You found the little secrets! ;)
     //// Logo starts to animate after a minute.
-    setTimeout(function() {
+    setTimeout(function () {
         $('#main-menu-logo').jAnimateOnce('tada');
     }, 60000);
 
-    setTimeout(function() {
+    setTimeout(function () {
         $('#main-menu-logo').jAnimateOnce('flip');
     }, 60000);
 
-    setTimeout(function() {
+    setTimeout(function () {
         $('#main-menu-logo').jAnimateOnce('rotateOut');
     }, 70000);
 
-    setTimeout(function() {
+    setTimeout(function () {
         $('#main-menu-logo').jAnimateOnce('rotateIn');
     }, 71000);
 
-    setTimeout(function() {
+    setTimeout(function () {
         $('#main-menu-logo').jAnimateOnce('rollOut');
     }, 80000);
 
-    setTimeout(function() {
+    setTimeout(function () {
         $('#main-menu-logo').jAnimateOnce('rollIn');
     }, 81000);
 
-    setTimeout(function() {
+    setTimeout(function () {
         $('#main-menu-logo').jAnimateOnce('zoomOut');
     }, 90000);
 
-    setTimeout(function() {
+    setTimeout(function () {
         $('#main-menu-logo').jAnimateOnce('zoomIn');
     }, 91000);
 
@@ -222,10 +224,10 @@ if (current_page == 'index.html') {
     function checkDates() {
         // String variables are passed via Python. See _push_config for "Special Event Strings".
 
-        // Official Flavour Status - 26/Feb/2015
-        var age = today.getFullYear() - 2015;
+        // Official Flavour Status - 26/Nov/2017
+        var age = today.getFullYear() - 2017;
         dd = 26;
-        mm = 02;
+        mm = 11;
         yyyy = null;
         specialEventCheck(dateAsNumber(dd, mm, yyyy) - 7, flavour_anniversary_future + ' ' + days_in + ' 7 ' + future_days, false, 'calendar');
         specialEventCheck(dateAsNumber(dd, mm, yyyy) - 6, flavour_anniversary_future + ' ' + days_in + ' 6 ' + future_days, false, 'calendar');
@@ -243,10 +245,10 @@ if (current_page == 'index.html') {
         specialEventCheck(dateAsNumber(dd, mm, yyyy) + 6, flavour_anniversary_past + ' 6 ' + days_ago, false, 'calendar');
         specialEventCheck(dateAsNumber(dd, mm, yyyy) + 7, flavour_anniversary_past + ' 7 ' + days_ago, false, 'calendar');
 
-        // Project Birthday - 21/Jun/2014
-        var age = today.getFullYear() - 2014;
-        dd = 21;
-        mm = 06;
+        // Project Birthday - 01/02/2017
+        var age = today.getFullYear() - 2017;
+        dd = 01;
+        mm = 02;
         yyyy = null;
         specialEventCheck(dateAsNumber(dd, mm, yyyy) - 7, project_birthday_future + ' ' + age + ' ' + years_old + ' ' + days_in + ' 7 ' + future_days, false, 'calendar');
         specialEventCheck(dateAsNumber(dd, mm, yyyy) - 6, project_birthday_future + ' ' + age + ' ' + years_old + ' ' + days_in + ' 6 ' + future_days, false, 'birthday-cake');
@@ -268,11 +270,11 @@ if (current_page == 'index.html') {
         specialEventCheck(dateAsNumber(31, 12, null), celebrate_new_year, true, 'calendar');
         specialEventCheck(dateAsNumber(01, 01, null), celebrate_new_year, true, 'calendar');
 
-        // 16.04 Beta 2
+        // 18.04 Beta 2
         dd = 24;
         mm = 03;
-        yyyy = 2016;
-        release = 'Ubuntu MATE 16.04 Beta 2';
+        yyyy = 2018;
+        release = 'Ubuntu MATE 18.04 Beta 2';
         specialEventCheck(dateAsNumber(dd, mm, yyyy) - 3, release + ' ' + project_release_future + ' ' + days_in + ' 3 ' + future_days, false, 'bug');
         specialEventCheck(dateAsNumber(dd, mm, yyyy) - 2, release + ' ' + project_release_future + ' ' + days_in + ' 2 ' + future_days, false, 'bug');
         specialEventCheck(dateAsNumber(dd, mm, yyyy) - 1, release + ' ' + project_release_future + ' ' + tomorrow, false, 'bug');
@@ -284,8 +286,8 @@ if (current_page == 'index.html') {
         // 16.04 Final Release
         dd = 21;
         mm = 04;
-        yyyy = 2016;
-        release = 'Ubuntu MATE 16.04 LTS';
+        yyyy = 2018;
+        release = 'Ubuntu Budgie 18.04 LTS';
         specialEventCheck(dateAsNumber(dd, mm, yyyy) - 7, release + ' ' + project_release_future + ' ' + days_in + ' 7 ' + future_days, false, 'calendar');
         specialEventCheck(dateAsNumber(dd, mm, yyyy) - 6, release + ' ' + project_release_future + ' ' + days_in + ' 7 ' + future_days, false, 'calendar');
         specialEventCheck(dateAsNumber(dd, mm, yyyy) - 5, release + ' ' + project_release_future + ' ' + days_in + ' 7 ' + future_days, false, 'calendar');
@@ -328,7 +330,7 @@ if (current_page == 'gettingstarted.html') {
         $('#index-open').prop('disabled', false);
         if ($('#index-menu').is(':visible')) {
             $("#index-overlay").fadeOut();
-            $('#index-menu').jAnimateOnce('fadeOutLeft', function() {
+            $('#index-menu').jAnimateOnce('fadeOutLeft', function () {
                 $("#index-menu").hide();
             });
         }
@@ -344,7 +346,7 @@ if (current_page == 'gettingstarted.html') {
         $('#navigation-sub-title').fadeOut();
 
         // Smoothly fade between topics
-        setTimeout(function() {
+        setTimeout(function () {
             $('#navigation-sub-title').html(humanText);
             $('#navigation-sub-title').fadeIn();
             $('#' + id).fadeIn();
@@ -353,12 +355,14 @@ if (current_page == 'gettingstarted.html') {
 
     // Show initial page and index pane on page load
     changePage('initial', 'Choose a Topic');
-    setTimeout(function() { indexOpen(); }, 500);
+    setTimeout(function () {
+        indexOpen();
+    }, 500);
     $('#index-open').jAnimateOnce('fadeInDown');
 
     // Show additional information on the page based on checkbox state.
     $('.dualBootWin').hide();
-    $('#showDualBootWin').click(function() {
+    $('#showDualBootWin').click(function () {
         if ($(this).prop('checked') == true) {
             $('.dualBootWin').fadeIn();
         } else {
@@ -368,7 +372,7 @@ if (current_page == 'gettingstarted.html') {
 
     // Graphics Detection
     // Must be executed shortly after page fully loads in order for variables to exist.
-    setTimeout(function() {
+    setTimeout(function () {
         $('.graphics-pci').html(graphicsGrep);
 
         // Auto detection alert initially displays "failed".
@@ -415,18 +419,20 @@ if (current_page == 'gettingstarted.html') {
     // Wait a couple of seconds so it doesn't look like application had frozen.
     function InitSystemInfo() {
         setCursorBusy()
-        setTimeout(function() {
+        setTimeout(function () {
             cmd("init-system-info");
         }, 1000);
     }
 
     // Show popovers on hover.
-    $(document).ready(function() {
-        $("body").tooltip({ selector: '[data-toggle=tooltip]' });
+    $(document).ready(function () {
+        $("body").tooltip({
+            selector: '[data-toggle=tooltip]'
+        });
     });
     $('[rel=unitsinfo]').popover({
         html: true,
-        content: function() {
+        content: function () {
             return $('#popover_units').html();
         }
     });
@@ -438,8 +444,7 @@ if (current_page == 'gettingstarted.html') {
         } else {
             if ($('#first-run').is(':visible')) {
                 smoothPageFade('default.html');
-            }
-            else {
+            } else {
                 smoothPageFade('index.html');
             }
         }
@@ -448,7 +453,7 @@ if (current_page == 'gettingstarted.html') {
 
 
 function sortList() {
-    $('#recommendation-list').append($('#recommendation-list > div').sort(function(itemOne, itemTwo) {
+    $('#recommendation-list').append($('#recommendation-list > div').sort(function (itemOne, itemTwo) {
         var statusOne = $(itemOne).find('[id$=install]').is(':visible');
         var statusTwo = $(itemTwo).find('[id$=install]').is(':visible');
 
@@ -467,7 +472,7 @@ function sortList() {
 }
 
 function sortAppletList() {
-    $('#applet-list').append($('#applet-list > div').sort(function(itemOne, itemTwo) {
+    $('#applet-list').append($('#applet-list > div').sort(function (itemOne, itemTwo) {
         var titleOne = $(itemOne).find('h2').text();
         var titleTwo = $(itemTwo).find('h2').text();
         return titleOne.localeCompare(titleTwo);

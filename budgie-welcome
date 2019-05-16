@@ -791,17 +791,18 @@ class PackageManager(Thread):
                 # repo split by the / character to get an array
                 # first element is the ppa organisation and second
                 # is the ppa name
-                ppa = repos[systemstate.codename][0][4:].split('/')
+                if systemstate.codename in repos:
+                    ppa = repos[systemstate.codename][0][4:].split('/')
 
-                filename = ppa[0] + "-ubuntu-" + ppa[1] + "-" + \
-                           systemstate.codename + ".list"
-                filename = '/etc/apt/sources.list.d/' + filename
+                    filename = ppa[0] + "-ubuntu-" + ppa[1] + "-" + \
+                            systemstate.codename + ".list"
+                    filename = '/etc/apt/sources.list.d/' + filename
 
-                p = subprocess.Popen(['grep', '^deb\ http', filename])
-                retval = p.wait()
+                    p = subprocess.Popen(['grep', '^deb\ http', filename])
+                    retval = p.wait()
 
-                if retval == 0:
-                    found = True
+                    if retval == 0:
+                        found = True
             else:
                 # if there are no repos we must be dealing with snaps
                 snaps = pdata.getSnap(current_page, code)
