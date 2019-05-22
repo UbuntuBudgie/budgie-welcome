@@ -1241,11 +1241,11 @@
                 <td>
                   <b class="btn btn-xs disabled">&zwnj;Shift&zwnj;</b>
                   <i class="material-icons">&#xE145;</i>
-                  <b class="btn btn-xs disabled">&zwnj;Shift&zwnj;</b>
+                  <b class="btn btn-xs disabled">&zwnj;Ctrl&zwnj;</b>
                   <i class="material-icons">&#xE145;</i>
                   <b class="btn btn-xs disabled">Print</b>
                 </td>
-                 <td>&zwnj;Copy a screenshot of an area to clipboard&zwnj;</td>
+                <td>&zwnj;Copy a screenshot of an area to clipboard&zwnj;</td>
               </tr>
               <tr>
                 <td>
@@ -1253,7 +1253,7 @@
                   <i class="material-icons">&#xE145;</i>
                   <b class="btn btn-xs disabled">Print</b>
                 </td>
-                <td>&zwnj;Save a screenshot of an area to Pictures&zwnj;</td>
+                <td>&zwnj;Save a screenshot of an area to the $HOME/Pictures directory&zwnj;</td>
               </tr>
               <tr>
                 <td>
@@ -1269,13 +1269,13 @@
                   <i class="material-icons">&#xE145;</i>
                   <b class="btn btn-xs disabled">Print</b>
                 </td>
-                <td>&zwnj;Save a screenshot of a window to Pictures&zwnj;</td>
+                <td>&zwnj;Save a screenshot of a window to the $HOME/Pictures directory&zwnj;</td>
               </tr>
               <tr>
                 <td>
                   <b class="btn btn-xs disabled">Print</b>
                 </td>
-                <td>&zwnj;Save a screenshot to Pictures&zwnj;</td>
+                <td>&zwnj;Save a screenshot to the $HOME/Pictures directory&zwnj;</td>
               </tr>
               <tr>
                 <td>
@@ -1326,10 +1326,12 @@
                   <b class="btn btn-xs disabled">S</b>
                 </td>
                 <td>&zwnj;Call Window Shuffler gui (window tiling grid).&zwnj;
-<ul>
-  <li><a onclick="cmd('link?https://www.youtube.com/watch?v=Ii4n8H4XEzc&feature=youtu.be')">&nbsp;Window Shuffler Demonstration&nbsp;</a></li>
-</ul>
-                  </td>
+                  <a class="btn btn-inverse"
+                    onclick="cmd('link?https://www.youtube.com/watch?v=Ii4n8H4XEzc&feature=youtu.be');cmd('')">
+                    <img class="button-icon" src="img/distro-icon-inverted.svg">&nbsp;<span class="button-text">
+                      &zwnj; Window Shuffler Demonstration&zwnj;</span>
+
+                </td>
               </tr>
               <tr>
                 <td style="width:270px;">
@@ -1607,13 +1609,18 @@
                   </td>
                   <td>&zwnj;Toggle maximize.&zwnj;</td>
                 </tr>
-                             <div class="1904 hidden">
-              <tr>
-               <td>
-                 <b>Find and change these shortcuts in the Settings App, in the Devices -> Keyboards section.</b>
-               </td>
-              </tr>
-            </div>
+
+                <div class="1904 hidden">
+                  <tr>
+                    <td>
+                        <div align="center"><a class="btn btn-inverse" onclick="cmd('keyboard');cmd('')"
+                          onclick="smoothFade('','#tweak-hint')">
+                          &nbsp;<img class="button-icon" src="img/applications/raven-settings.png" />&nbsp;<span
+                            class="button-text">&zwnj;Find and change these shortcuts in the Settings App&zwnj;</span>&nbsp;
+                        </a></div>
+                    </td>
+                  </tr>
+                </div>
               </table>
             </div>
             <div class="center">
