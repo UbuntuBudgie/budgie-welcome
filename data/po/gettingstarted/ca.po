@@ -554,6 +554,8 @@ msgid ""
 "Right click your desired drive and choose <b>Shrink Partition</b> from the "
 "context menu."
 msgstr ""
+"Feu clic amb el botó dret del ratolí a la unitat que vulgueu i trieu <b> "
+"Encongeix la partició </b> al menú contextual."
 
 #: gettingstarted.html:342
 msgid "Enter the amount to shrink your system partition by."
@@ -595,6 +597,11 @@ msgid ""
 "will overwrite them, with the potential to lose access to <span name"
 "=\"distro-name\"></span> temporally."
 msgstr ""
+"Les distribucions de Linux utilitzen un gestor d’arrencada conegut com a "
+"<code>grub</code>, que cerca i arrenca el sistema operatiu. No obstant això,"
+" alguns sistemes operatius (com ara Windows) no s'integren amb els gestors "
+"existents i els sobreescriuran, amb el potencial de perdre l'accés a <span "
+"name=\"distro-name\"></span> de manera temporal."
 
 #: gettingstarted.html:369
 msgid ""
@@ -673,6 +680,8 @@ msgid ""
 "Ubuntu License Policy) complicate distribution of software to support non-"
 "free formats."
 msgstr ""
+"<strong>Ubuntu</strong> (la distribució base de <span name=\"distro-name\"></span>) s'esforça per fer que tots els programes més importants siguin disponibles per als seus usuaris de manera automàtica. No obstant això, les restriccions de patents i copyright (vegeu la política de llicències d'Ubuntu) compliquen la distribució del programari per \n"
+"admetre formats no lliures."
 
 #: gettingstarted.html:448
 msgid ""
@@ -704,6 +713,11 @@ msgid ""
 " unsure whether a particular patent or restriction applies to a media format"
 " you wish to use in your country."
 msgstr ""
+"<strong>Avís legal</strong> Les lleis de patents i drets de propietat "
+"intel·lectual operen de manera diferent segons el país en què us trobeu. Si "
+"us plau, obteniu assessorament legal si no esteu segurs si una patent o "
+"restricció concreta s'aplica a un format multimèdia que voleu utilitzar al "
+"vostre país."
 
 #: gettingstarted.html466, 601, 666, 675, 715, 726, 737, 774, 807, 878, 888,
 #: 904, 914, 932, 947, 965, 982, 1002
@@ -730,6 +744,11 @@ msgid ""
 " often required to get some devices, typically Bluetooth and Wi-Fi, to work "
 "correctly."
 msgstr ""
+"Tot i que una àmplia gamma de maquinari és compatible amb <span name"
+"=\"distro-name\"></span>, hi ha alguns components i perifèrics que "
+"requereixen que els controladors privats funcionin correctament. Sovint es "
+"requereix instal·lar el paquet de microprogramari perquè alguns dispositius,"
+" normalment de Bluetooth i Wi-Fi, funcionin correctament."
 
 #: gettingstarted.html:497
 msgid "An Internet connection is required to download and install drivers."
@@ -744,6 +763,8 @@ msgstr "Controladors addicionals"
 msgid ""
 "<b>Additional Drivers</b> can be found later in <b>Software & Updates</b>"
 msgstr ""
+"Els <b>controladors addicionals</b> es poden trobar a <b>Programari i "
+"actualitzacions</b>"
 
 #: gettingstarted.html:513
 msgid "Graphics"
@@ -825,6 +846,10 @@ msgid ""
 "open source, Ubuntu developers are <b>unable to review and improve driver "
 "code</b> meaning you'll have to rely on the manufacturer for support."
 msgstr ""
+"Els controladors privats provenen directament del fabricant. Com que no són "
+"de codi obert, els desenvolupadors d’Ubuntu <b>no poden revisar i millorar "
+"el codi del controlador</b>, cosa que significa que haureu de comptar amb el"
+" fabricant per obtenir-ne ajuda."
 
 #: gettingstarted.html:558
 msgid ""
@@ -832,6 +857,9 @@ msgid ""
 "performance</b> and as a result, the entire system. Users may wish to "
 "install these drivers to:"
 msgstr ""
+"A més, els controladors privats poden <b>millorar de manera significativa el"
+" rendiment dels gràfics</b> i, per tant, tot el sistema. Els usuaris poden "
+"desitjar instal·lar aquests controladors:"
 
 #: gettingstarted.html:562
 msgid "Run 3D applications and games."
