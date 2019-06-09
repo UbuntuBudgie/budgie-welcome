@@ -1088,6 +1088,10 @@
               <tr class="1710">
                 <td>
                   <b class="btn btn-xs disabled">F12</b>
+                  <b class="btn btn-xs disabled">&zwnj;OR&zwnj;</b>
+                  <b class="btn btn-xs disabled">Alt</b>
+                  <i class="material-icons">&#xE145;</i>
+                  <b class="btn btn-xs disabled">Q</b>
                 </td>
                 <td>&zwnj;Toggle Tilix Quake Mode&zwnj;</td>
               </tr>
@@ -1219,11 +1223,14 @@
                 </td>
                 <td>&zwnj;Toggle the current application between full-screen and windowed&zwnj;</td>
               </tr>
+
             </table>
+
             <hr>
             <h3>&zwnj;Desktop shortcuts&zwnj;</h3>
             <p>&zwnj;This section lists common keyboard shortcuts which you can
               use to operate parts of the desktop.&zwnj;</p>
+
 
             <table class="shortcuts">
               <tr>
@@ -1232,6 +1239,46 @@
                       src="img/welcome/super-key.svg"></b>&nbsp;
                 </td>
                 <td>&zwnj;Open Applications menu&zwnj;</td>
+              </tr>
+              <tr>
+                <td>
+                  <b class="btn btn-xs disabled">&zwnj;Shift&zwnj;</b>
+                  <i class="material-icons">&#xE145;</i>
+                  <b class="btn btn-xs disabled">&zwnj;Ctrl&zwnj;</b>
+                  <i class="material-icons">&#xE145;</i>
+                  <b class="btn btn-xs disabled">Print</b>
+                </td>
+                <td>&zwnj;Copy a screenshot of an area to clipboard&zwnj;</td>
+              </tr>
+              <tr>
+                <td>
+                  <b class="btn btn-xs disabled">&zwnj;Shift&zwnj;</b>
+                  <i class="material-icons">&#xE145;</i>
+                  <b class="btn btn-xs disabled">Print</b>
+                </td>
+                <td>&zwnj;Save a screenshot of an area to the $HOME/Pictures directory&zwnj;</td>
+              </tr>
+              <tr>
+                <td>
+                  <b class="btn btn-xs disabled">&zwnj;Ctrl&zwnj;</b>
+                  <i class="material-icons">&#xE145;</i>
+                  <b class="btn btn-xs disabled">Print</b>
+                </td>
+                <td>&zwnj;Copy a screenshot of a window to clipboard&zwnj;</td>
+              </tr>
+              <tr>
+                <td>
+                  <b class="btn btn-xs disabled">&zwnj;Alt&zwnj;</b>
+                  <i class="material-icons">&#xE145;</i>
+                  <b class="btn btn-xs disabled">Print</b>
+                </td>
+                <td>&zwnj;Save a screenshot of a window to the $HOME/Pictures directory&zwnj;</td>
+              </tr>
+              <tr>
+                <td>
+                  <b class="btn btn-xs disabled">Print</b>
+                </td>
+                <td>&zwnj;Save a screenshot to the $HOME/Pictures directory&zwnj;</td>
               </tr>
               <tr>
                 <td>
@@ -1281,7 +1328,14 @@
                   <i class="material-icons">&#xE145;</i>
                   <b class="btn btn-xs disabled">S</b>
                 </td>
-                <td>&zwnj;Call Window Shuffler gui (window tiling grid).&zwnj;</td>
+                <td>&zwnj;Call Window Shuffler gui (window tiling grid).&zwnj;
+                  <p class="text-right"></p>
+                  <a class="btn btn-inverse"
+                    onclick="cmd('link?https://www.youtube.com/watch?v=Ii4n8H4XEzc&feature=youtu.be');cmd('')">
+                    <img class="button-icon" src="img/distro-icon-inverted.svg">&nbsp;<span class="button-text">
+                      &zwnj; Window Shuffler Demonstration&zwnj;</span>&nbsp;
+
+                </td>
               </tr>
               <tr>
                 <td style="width:270px;">
@@ -1559,12 +1613,47 @@
                   </td>
                   <td>&zwnj;Toggle maximize.&zwnj;</td>
                 </tr>
+                <div class="1904 hidden">
+                  <tr>
+                    <td>
+                      <div align="center">
+                        <a class="btn btn-inverse" onclick="cmd('keyboard');cmd('')"
+                          onclick="smoothFade('','#tweak-hint')">
+                          &nbsp;<img class="button-icon" src="img/applications/raven-settings.png" />&nbsp;
+                          <span class="button-text">&zwnj;Find and change these shortcuts in the Settings
+                            App&zwnj;</span>&nbsp;
+                        </a>
+                      </div>
+                    </td>
+                  </tr>
+                  <div class="1904 hidden">
+                    <hr>
+                    <table class="shortcuts">
+                      <tr>
+                        <td>&zwnj;File Manager&zwnj;
+                          <p class="text-center"></p>
+                          <a class="btn btn-inverse"
+                            onclick="cmd('link?https://shortcutworld.com/Linux-Mint/linux/Linux-Mint_Shortcuts#File_Manager_(Nemo)');cmd('')">
+                            <img class="button-icon" src="img/distro-icon-inverted.svg">&nbsp;<span class="button-text">
+                              &zwnj;Find shortcuts here for Nemo&zwnj;</span>&nbsp;
+                            <p class="text-right"></p>
+                            <a class="btn btn-inverse"
+                              onclick="cmd('link?https://shortcutworld.com/Nautilus/linux/Nautilus-File-Manager_2_Shortcuts');cmd('')">
+                              <img class="button-icon" src="img/distro-icon-inverted.svg">&nbsp;<span
+                                class="button-text">
+                                &zwnj;Find shortcuts here for Nautilus&zwnj;</span>&nbsp;
+                        </td>
+                      </tr>
+
+                    </table>
+                  </div>
               </table>
             </div>
             <div class="center">
               <hr class="soften-light">
               <a class="btn" onclick='changePage("customize","Customization")'>
-                <i class="material-icons">&#xE314;</i> <b>&zwnj;Previous:&zwnj;</b>&nbsp; &zwnj;Customization&zwnj;</a>
+                <i class="material-icons">&#xE314;</i> <b>&zwnj;Previous:&zwnj;</b>&nbsp;
+                &zwnj;Customization&zwnj;</a>
             </div>
           </div>
         </div>
