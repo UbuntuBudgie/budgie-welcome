@@ -428,6 +428,12 @@ msgid ""
 "partitions, primarily for power users who know how they'd like to layout "
 "their disks. This method makes changes to partitions prior to installation."
 msgstr ""
+"El <b>GParted</b> només està disponible durant la sessió autònoma. Es troba "
+"sota el menú <b>Sistema <i class=\"material-icons\">& # xE315;</i> "
+"Administració</b>. El GParted proporciona una flexibilitat total a les "
+"vostres particions, principalment per als usuaris que saben com els "
+"agradaria dissenyar els seus discs. Aquest mètode fa canvis a les particions"
+" abans de la instal·lació."
 
 #: gettingstarted.html:283
 msgid "Open GParted"
@@ -536,6 +542,8 @@ msgid ""
 "If you are using Windows XP or earlier, you will need to use the "
 "<b>Simple</b> or <b>Advanced</b> method to shrink your disk."
 msgstr ""
+"Si utilitzeu Windows XP o una versió anterior, haureu d’utilitzar el mètode "
+"<b>Simple</b> o <b>Avançat</b> per encongir el disc."
 
 #: gettingstarted.html:327
 msgid ""
@@ -544,10 +552,14 @@ msgid ""
 "boots on your computer while experiencing <span name=\"distro-"
 "name\"></span>."
 msgstr ""
+"Les versions més recents de Windows proporcionen una eina per reduir el "
+"volum NTFS des de Windows. Aquesta és una aposta més segura si és "
+"imprescindible que Windows arrenqui al vostre equip mentre experimenteu amb "
+"<span name=\"distro-name\"> </span>."
 
 #: gettingstarted.html:331
 msgid "Open <b>Disk Management</b> from the start menu."
-msgstr ""
+msgstr "Obriu la <b>gestió de disc</b> des del menú d'inici."
 
 #: gettingstarted.html:336
 msgid ""
@@ -1013,6 +1025,9 @@ msgid ""
 "between two widely used keyboard entry layouts. IBus(Intelligent Input Bus) "
 "and Fcitx(Free Chinese Input Toy for X)."
 msgstr ""
+"A <span name=\"distro-name\"> </span>, oferim una opció per canviar entre "
+"dues disposicions d’entrada de teclat àmpliament utilitzades. IBus "
+"(Intelligent Input Bus) i Fcitx (Joguina d’entrada gratuïta xinesa per a X)."
 
 #: gettingstarted.html:660
 msgid "Install & Configure IBus"
@@ -1048,6 +1063,9 @@ msgid ""
 "<b>Language Support</b> can be found later in <b><i>Settings <i class"
 "=\"material-icons\">&#xE315;</i> Region & Language</i></b>"
 msgstr ""
+"El <b>suport per a idiomes</b> es pot trobar més endavant a "
+"</b></i>Configuració <i class=\"material-icons\">&#xE315;</i> Regió i "
+"llengua </i></b>"
 
 #: gettingstarted.html:701
 msgid "Complex Input"
@@ -1099,6 +1117,9 @@ msgid ""
 "name=\"distro-name\"></span> and supports backups to local devices as well "
 "as online cloud-based services."
 msgstr ""
+"<b>Deja-Dup</b> és una eina potent de còpia de seguretat que es pot "
+"instal·lar a <span name=\"distro-name\"> </span> i admet còpies de seguretat"
+" de dispositius locals i serveis en línia basats en núvol."
 
 #: gettingstarted.html:780
 msgid "Configure Backup"
@@ -1109,6 +1130,9 @@ msgid ""
 "<b>Backups</b> can be found later in <b>Application Menu <i class"
 "=\"material-icons\">&#xE315;</i> Backup</b>."
 msgstr ""
+"Les <b>còpies de seguretat</b> es poden trobar més endavant al <b>Menú "
+"d'aplicacions <i class=\"material-icons\">&#xE315; </i> Còpia de "
+"seguretat</b>."
 
 #: gettingstarted.html:796
 msgid "Firewall"
@@ -1133,6 +1157,10 @@ msgid ""
 "onclick=\"cmd('link?https://wiki.ubuntu.com/BasicSecurity')\">more ways to "
 "stay secure too</a>."
 msgstr ""
+"<b>Gufw</b> proporciona una interfície gràfica a <code>ufw</code> (Tallafoc "
+"sense complicacions). Si la seguretat és important, també hi ha <a "
+"onclick=\"cmd('link?https://wiki.ubuntu.com/BasicSecurity')\">més maneres de"
+" mantenir-vos segurs</a>."
 
 #: gettingstarted.html:813
 msgid "Configure Firewall"
@@ -1144,6 +1172,9 @@ msgid ""
 "=\"material-icons\">&#xE315;</i> System <i class=\"material-"
 "icons\">&#xE315;</i> Firewall Configuration</i></b>."
 msgstr ""
+"La configuració del tallafoc</b> es pot trobar més endavant a <b><i> "
+"Configuració <i class=\"material-icons\">&#xE315; </i> Sistema <i class"
+"=\"material-icons\">#xE315; </i> Configuració del tallafoc</i></b>."
 
 #: gettingstarted.html:830
 msgid "Users"
@@ -1183,6 +1214,8 @@ msgid ""
 "To improve the amount of customizability, <span name=\"distro-name\"></span>"
 " allows you to install/remove popular web browsers with a single click."
 msgstr ""
+"Per millorar la personalització, <span name=\"distro-name\"> </span> us "
+"permet instal·lar / suprimir navegadors web populars amb un sol clic."
 
 #: gettingstarted.html:869
 msgid ""
@@ -1211,6 +1244,9 @@ msgid ""
 "Mozilla Foundation - a not for profit organisation. It is highly popular "
 "targeting multiple platforms."
 msgstr ""
+"El Mozilla Firefox és un navegador web gratuït i de codi obert, desenvolupat"
+" per la Fundació Mozilla, una organització no lucrativa. És molt popular ja "
+"que funciona en múltiples plataformes."
 
 #: gettingstarted.html:923
 msgid ""
@@ -1218,18 +1254,27 @@ msgid ""
 "offers a smooth browsing experience plus integration with Google's "
 "proprietary services."
 msgstr ""
+"El Google Chrome és un navegador web modern amb el suport del gegant "
+"d'Internet Google. Ofereix una experiència de navegació planera i la "
+"integració amb els serveis privats de Google."
 
 #: gettingstarted.html:938
 msgid ""
 "Vivaldi Web Browser is a free, fully customizable web browser. Feature rich,"
 " powerful, secure and fun! Browse the Web your way"
 msgstr ""
+"El navegador web Vivaldi és un navegador web totalment personalitzable i "
+"gratuït. Ric de funcions, potent, segur i divertit! Navegueu per la xarxa a "
+"la vostra manera."
 
 #: gettingstarted.html:956
 msgid ""
 "Opera is a fast and secure browser. Developed in Europe, used by millions "
 "around the world. Now with a built-in ad blocker and free VPN."
 msgstr ""
+"L'Opera és un navegador ràpid i segur. Desenvolupat a Europa, utilitzat per "
+"milions de persones a tot el món. Ara, amb un bloquejador d'anuncis integrat"
+" i una XPV gratuïta."
 
 #: gettingstarted.html:971
 msgid ""
@@ -1238,6 +1283,10 @@ msgid ""
 "machines with a core temperature exceeding that of planet earth. And it "
 "looks good doing that, too. Oh, and of course it's free software."
 msgstr ""
+"El Midori és un navegador lleuger però potent que funciona bé tant en petits"
+" ordinadors encastats que reben el nom de pastissos deliciosos, com en "
+"màquines amb una temperatura central superior a la del planeta Terra. I "
+"també té bon aspecte a l'hora fer-ho. Ah, i és clar, és programari lliure."
 
 #: gettingstarted.html:991
 msgid ""
@@ -1247,6 +1296,11 @@ msgid ""
 "this is the browser for you. GNOME Web is often referred to by its code "
 "name, Epiphany."
 msgstr ""
+"El navegador web per a GNOME, amb una integració ajustada amb l'escriptori i"
+" una interfície d’usuari senzilla i intuïtiva que us permetrà centrar-vos en"
+" les vostres pàgines web. Si cerqueu una vista senzilla, neta i bonica de la"
+" xarxa, aquest és el vostre navegador. Sovint es fa referència al lloc web "
+"del GNOME mitjançant el seu nom de codi: Epiphany."
 
 #: gettingstarted.html:1011
 msgid "User Interface"
@@ -1258,6 +1312,10 @@ msgid ""
 "user interface. It can be used to quickly setup the user interface to "
 "broadly reflect how other popular operating systems look and feel."
 msgstr ""
+"<span name=\"distro-name\"></span>proporciona una eina única per transformar"
+" la interfície d’usuari. Es pot utilitzar per configurar ràpidament la "
+"interfície d’usuari per reflectir àmpliament com es veuen els altres "
+"sistemes operatius populars."
 
 #: gettingstarted.html:1019
 msgid "Budgie Desktop Settings"
@@ -1268,6 +1326,8 @@ msgid ""
 "<b>Budgie Desktop Settings</b> can be found later in the menu <b>System "
 "Tools</b>."
 msgstr ""
+"Els <b>paràmetres de l'escriptori Budgie</b> es poden trobar més endavant al"
+" menú <b>Eines del sistema</b>."
 
 #: gettingstarted.html1027, 1033
 msgid "Settings"
@@ -1279,388 +1339,406 @@ msgid ""
 " center that <span name=\"distro-name\"></span> provides. You can configure "
 "just about every aspect of your computer from Settings."
 msgstr ""
+"Les utilitats esmentades anteriorment formen part de l’extens centre de "
+"control de configuracions que proporciona <span name=\"distro-name\"> "
+"</span>. Podeu configurar gairebé tots els aspectes de l’ordinador des de la"
+" Configuració."
 
 #: gettingstarted.html:1052
 msgid ""
 "<span name=\"distro-name\"></span> has many keyboard shortcuts that help "
 "make using your computer more efficient."
 msgstr ""
+"<span name=\"distro-name\"></span> té moltes dreceres de teclat que us "
+"ajuden a fer que l’equip sigui més eficient."
 
 #: gettingstarted.html:1056
 msgid ""
 "The <b><img src=\"img/welcome/super-key.svg\" /> Super</b> key is your "
 "Windows key. For Mac keyboards, this is the ⌘ Command key."
 msgstr ""
+"La tecla <b><img src=\"img/welcome/super-key.svg\" /> Súper</b> és la tecla "
+"de Windows. Per als teclats de Mac, aquesta és la tecla Command ⌘."
 
 #: gettingstarted.html:1059
 msgid "Budgie Desktop shortcuts"
-msgstr ""
+msgstr "Dreceres de l'escriptori Budgie"
 
 #: gettingstarted.html:1060
 msgid "Some common shortcuts used in Budgie Desktop"
-msgstr ""
+msgstr "Algunes dreceres comunes utilitzades a l'escriptori Budgie"
 
 #: gettingstarted.html:1070
 msgid "Open notifications in Raven"
-msgstr ""
+msgstr "Obre les notificacions al Raven"
 
 #: gettingstarted.html:1079
 msgid "Open applet Settings in Raven"
-msgstr ""
+msgstr "Obre la configuració de les miniaplicacions al Raven"
 
 #: gettingstarted.html:1084
 msgid "Common application shortcuts"
-msgstr ""
+msgstr "Dreceres d'aplicacions comunes"
 
 #: gettingstarted.html:1085
 msgid "These shortcuts apply in most applications."
-msgstr ""
+msgstr "Aquestes dreceres s'apliquen a la majoria de les aplicacions."
 
 #: gettingstarted.html:1094
 msgid "Toggle Tilix Quake Mode"
-msgstr ""
+msgstr "Commuta el mode Quake de Tilix"
 
 #: gettingstarted.html1098, 1106, 1114, 1122, 1130, 1138, 1146, 1154, 1162,
 #: 1170, 1178, 1186, 1194, 1202, 1210, 1242, 1258, 1288, 1307, 1352, 1362,
 #: 1372, 1384, 1523, 1533, 1543, 1553, 1563, 1573, 1583, 1593, 1603
 msgid "Ctrl"
-msgstr ""
+msgstr "Ctrl"
 
 #: gettingstarted.html:1102
 msgid "Copy the selected text/object"
-msgstr ""
+msgstr "Copia el text / objecte seleccionat"
 
 #: gettingstarted.html:1110
 msgid "Cut the selected text/object"
-msgstr ""
+msgstr "Retalla el text / objecte seleccionat"
 
 #: gettingstarted.html:1118
 msgid "Paste/insert the selected text/object"
-msgstr ""
+msgstr "Enganxa / insereix el text / objecte seleccionat"
 
 #: gettingstarted.html:1126
 msgid "Select all text"
-msgstr ""
+msgstr "Selecciona tot el text"
 
 #: gettingstarted.html:1134
 msgid "Find words"
-msgstr ""
+msgstr "Troba paraules"
 
 #: gettingstarted.html:1142
 msgid "Find and replace words"
-msgstr ""
+msgstr "Troba i reemplaça paraules"
 
 #: gettingstarted.html:1150
 msgid "Make the selected text bold"
-msgstr ""
+msgstr "Marca el text seleccionat en negreta"
 
 #: gettingstarted.html:1158
 msgid "Make the selected text italic"
-msgstr ""
+msgstr "Marca el text seleccionat en cursiva"
 
 #: gettingstarted.html:1166
 msgid "Underline the selected text"
-msgstr ""
+msgstr "Subratlla el text seleccionat"
 
 #: gettingstarted.html:1174
 msgid "Open a new document or window"
-msgstr ""
+msgstr "Obre un document o una finestra nova"
 
 #: gettingstarted.html:1182
 msgid "Save the current document"
-msgstr ""
+msgstr "Desa el document actual"
 
 #: gettingstarted.html:1190
 msgid "Open another document"
-msgstr ""
+msgstr "Obre un altre document"
 
 #: gettingstarted.html:1198
 msgid "Print the current document"
-msgstr ""
+msgstr "Imprimeix la documentació actual"
 
 #: gettingstarted.html:1206
 msgid "Undo the last change you made"
-msgstr ""
+msgstr "Desfeu el darrer canvi que heu fet"
 
 #: gettingstarted.html1212, 1240, 1250, 1376, 1387
 msgid "Shift"
-msgstr ""
+msgstr "Maj."
 
 #: gettingstarted.html:1216
 msgid "Redo a change that you just undid"
-msgstr ""
+msgstr "Refeu un canvi que heu acabat de desfer"
 
 #: gettingstarted.html:1222
 msgid "Toggle the current application between full-screen and windowed"
-msgstr ""
+msgstr "Commuteu l'aplicació actual entre pantalla completa i finestra"
 
 #: gettingstarted.html:1226
 msgid "Desktop shortcuts"
-msgstr ""
+msgstr "Dreceres de l'escriptori"
 
 #: gettingstarted.html:1227
 msgid ""
 "This section lists common keyboard shortcuts which you can use to operate "
 "parts of the desktop."
 msgstr ""
+"Aquesta secció llista les dreceres de teclat comunes que podeu utilitzar per"
+" fer funcionar parts de l’escriptori."
 
 #: gettingstarted.html:1236
 msgid "Open Applications menu"
-msgstr ""
+msgstr "Obriu el menú d'aplicacions"
 
 #: gettingstarted.html:1246
 msgid "Copy a screenshot of an area to clipboard"
-msgstr ""
+msgstr "Copieu una captura de pantalla d’una àrea al porta-retalls"
 
 #: gettingstarted.html:1254
 msgid "Save a screenshot of an area to the Pictures directory"
-msgstr ""
+msgstr "Deseu una captura de pantalla d’una àrea al directori d’imatges"
 
 #: gettingstarted.html:1262
 msgid "Copy a screenshot of a window to clipboard"
-msgstr ""
+msgstr "Copieu una captura de pantalla d’una finestra al porta-retalls"
 
 #: gettingstarted.html1266, 1280, 1290, 1309, 1337, 1354, 1364, 1374, 1386,
 #: 1395, 1403, 1411, 1419, 1454, 1525, 1535, 1545, 1555, 1565, 1575, 1585,
 #: 1595, 1605
 msgid "Alt"
-msgstr ""
+msgstr "Alt"
 
 #: gettingstarted.html:1270
 msgid "Save a screenshot of a window to the Pictures directory"
-msgstr ""
+msgstr "Deseu una captura de pantalla d’una finestra al directori d’imatges"
 
 #: gettingstarted.html:1276
 msgid "Save a screenshot to the Pictures directory"
-msgstr ""
+msgstr "Deseu una captura de pantalla al directori d'imatges"
 
 #: gettingstarted.html:1284
 msgid "Run an application by typing its name in the box which appears"
-msgstr ""
+msgstr "Executeu una aplicació escrivint-ne el nom al quadre que apareix"
 
 #: gettingstarted.html:1292
 msgid "Delete"
-msgstr ""
+msgstr "Suprimeix"
 
 #: gettingstarted.html:1294
 msgid "Logout"
-msgstr ""
+msgstr "Surt"
 
 #: gettingstarted.html:1303
 msgid "Lock your screen."
-msgstr ""
+msgstr "Bloquegeu la pantalla."
 
 #: gettingstarted.html:1313
 msgid "Open a terminal."
-msgstr ""
+msgstr "Obriu un terminal."
 
 #: gettingstarted.html:1317
 msgid "Window shortcuts - general"
-msgstr ""
+msgstr "Dreceres de teclat: general"
 
 #: gettingstarted.html:1326
 msgid "Call Window Shuffler gui (window tiling grid)."
 msgstr ""
+"Crida la interfície de canvi de finestra (quadrícula de mosaic de "
+"finestres)."
 
 #: gettingstarted.html:1331
 msgid "Video Demonstration"
-msgstr ""
+msgstr "Demostració de vídeo"
 
 #: gettingstarted.html:1339
 msgid "Tab"
-msgstr ""
+msgstr "Pestanya"
 
 #: gettingstarted.html:1342
 msgid "Switch between currently-open windows."
-msgstr ""
+msgstr "Canvieu entre les finestres obertes actualment."
 
 #: gettingstarted.html:1344
 msgid "Press Alt + Tab and then release Tab (but continue to hold Alt)."
 msgstr ""
+"Premeu Alt + Tab i, a continuació, deixeu anar Tab (però continueu mantenint"
+" premuda Alt)."
 
 #: gettingstarted.html:1345
 msgid ""
 "Press Tab repeatedly to cycle through the list of available windows which "
 "appears on the screen."
 msgstr ""
+"Premeu Tab repetidament per passar per la llista de finestres disponibles "
+"que apareix a la pantalla."
 
 #: gettingstarted.html1356, 1378, 1466
 msgid "Left"
-msgstr ""
+msgstr "Esquerra"
 
 #: gettingstarted.html:1358
 msgid "Switch to the previous workspace."
-msgstr ""
+msgstr "Canvieu a l'espai de treball anterior."
 
 #: gettingstarted.html1366, 1389, 1475
 msgid "Right"
-msgstr ""
+msgstr "Dreta"
 
 #: gettingstarted.html:1368
 msgid "Switch to the next workspace."
-msgstr ""
+msgstr "Canvieu a l'espai de treball següent"
 
 #: gettingstarted.html:1380
 msgid "Move the current window to the previous workspace."
-msgstr ""
+msgstr "Moveu la finestra actual a l'espai de treball anterior."
 
 #: gettingstarted.html:1391
 msgid "Move the current window to the next workspace."
-msgstr ""
+msgstr "Moveu la finestra actual a l'espai de treball següent."
 
 #: gettingstarted.html:1399
 msgid "Closes window."
-msgstr ""
+msgstr "Tanca la finestra."
 
 #: gettingstarted.html:1407
 msgid "Returns window to 'normal' or previous size."
-msgstr ""
+msgstr "Torna la finestra a una mida normal o anterior."
 
 #: gettingstarted.html:1415
 msgid "Moves the current window (can be moved with mouse or keyboard)."
-msgstr ""
+msgstr "Mou la finestra actual (es pot moure amb el ratolí o amb el teclat)."
 
 #: gettingstarted.html:1423
 msgid "Resizes current window (again, can be moved with mouse or keyboard)."
-msgstr ""
+msgstr "Canvia la mida de la finestra actual (amb el ratolí o el teclat)."
 
 #: gettingstarted.html:1432
 msgid "Minimizes current window."
-msgstr ""
+msgstr "Minimitza a finestra actual."
 
 #: gettingstarted.html:1439
 msgid "Up"
-msgstr ""
+msgstr "A dalt"
 
 #: gettingstarted.html:1441
 msgid "Maximizes current window."
-msgstr ""
+msgstr "Maximitza la finestra actual."
 
 #: gettingstarted.html:1448
 msgid "Down"
-msgstr ""
+msgstr "A baix"
 
 #: gettingstarted.html:1450
 msgid "Unmaximizes current window."
-msgstr ""
+msgstr "Desmaximitza la finestra actual."
 
 #: gettingstarted.html:1456
 msgid "Space"
-msgstr ""
+msgstr "Espai"
 
 #: gettingstarted.html:1458
 msgid ""
 "Displays the window menu with options such as 'Always on Top' and 'Minimize'"
 " and 'Maximize' and above commands."
 msgstr ""
+"Mostra el menú de la finestra amb opcions com ara \"Sempre a dalt\" i "
+"\"Minimitza\" i \"Maximitza\" sobre les ordres."
 
 #: gettingstarted.html:1468
 msgid "Place window on left side of screen."
-msgstr ""
+msgstr "Situa la finestra a l'esquerra de la pantalla."
 
 #: gettingstarted.html:1477
 msgid "Place window on right side of screen."
-msgstr ""
+msgstr "Situa la finestra a la dreta de la pantalla."
 
 #: gettingstarted.html1484, 1557
 msgid "1"
-msgstr ""
+msgstr "1"
 
 #: gettingstarted.html:1486
 msgid "Quarter tiling: top left."
-msgstr ""
+msgstr "Mosaic de quarts: a dalt a l'esquerra."
 
 #: gettingstarted.html1493, 1587
 msgid "2"
-msgstr ""
+msgstr "2"
 
 #: gettingstarted.html:1495
 msgid "Quarter tiling: top right."
-msgstr ""
+msgstr "Mosaic de quarts: a dalt a la dreta."
 
 #: gettingstarted.html1502, 1547
 msgid "3"
-msgstr ""
+msgstr "3"
 
 #: gettingstarted.html:1504
 msgid "Quarter tiling: bottom left."
-msgstr ""
+msgstr "Mosaic de quarts: a baix a l'esquerra."
 
 #: gettingstarted.html1511, 1597
 msgid "4"
-msgstr ""
+msgstr "4"
 
 #: gettingstarted.html:1513
 msgid "Quarter tiling: bottom right."
-msgstr ""
+msgstr "Mosaic de quarts: a baix a la dreta."
 
 #: gettingstarted.html:1518
 msgid "Window shortcuts - numeric keypad"
-msgstr ""
+msgstr "Dreceres de finestres: teclat numèric"
 
 #: gettingstarted.html:1519
 msgid "Tiling shortcuts on the numeric keypad."
-msgstr ""
+msgstr "Dreceres en mosaic al teclat numèric."
 
 #: gettingstarted.html:1527
 msgid "7"
-msgstr ""
+msgstr "7"
 
 #: gettingstarted.html:1529
 msgid "Quarter top left."
-msgstr ""
+msgstr "Quart superior esquerre."
 
 #: gettingstarted.html:1537
 msgid "9"
-msgstr ""
+msgstr "9"
 
 #: gettingstarted.html:1539
 msgid "Quarter top right."
-msgstr ""
+msgstr "Quart superior dret."
 
 #: gettingstarted.html:1549
 msgid "Quarter bottom right."
-msgstr ""
+msgstr "Quart inferior dret."
 
 #: gettingstarted.html:1559
 msgid "Quarter bottom left."
-msgstr ""
+msgstr "Quart inferior esquerre."
 
 #: gettingstarted.html:1567
 msgid "8"
-msgstr ""
+msgstr "8"
 
 #: gettingstarted.html:1569
 msgid "Half top."
-msgstr ""
+msgstr "Meitat superior."
 
 #: gettingstarted.html:1577
 msgid "6"
-msgstr ""
+msgstr "6"
 
 #: gettingstarted.html:1579
 msgid "Half right."
-msgstr ""
+msgstr "Meitat dreta."
 
 #: gettingstarted.html:1589
 msgid "Half bottom."
-msgstr ""
+msgstr "Meitat inferior."
 
 #: gettingstarted.html:1599
 msgid "Half left."
-msgstr ""
+msgstr "Meitat esquerra."
 
 #: gettingstarted.html:1607
 msgid "5"
-msgstr ""
+msgstr "5"
 
 #: gettingstarted.html:1609
 msgid "Toggle maximize."
-msgstr ""
+msgstr "Commuta la maximització."
 
 #: gettingstarted.html:1618
 msgid "Update shortcuts in the Settings App"
-msgstr ""
+msgstr "Actualitzeu les dreceres a l'aplicació de Configuració"
 
 #: gettingstarted.html:1639
 msgid ""
@@ -1668,140 +1746,147 @@ msgid ""
 "another. This information is useful when providing support to ensure "
 "hardware and software works on your machine."
 msgstr ""
+"La vostra màquina està formada per diversos components que interactuen entre"
+" si. Aquesta informació és útil quan es proporciona suport per garantir que "
+"el maquinari i el programari funcionin a la vostra màquina."
 
 #: gettingstarted.html:1647
 msgid "Gathering Information.."
-msgstr ""
+msgstr "Es recopila informació..."
 
 #: gettingstarted.html:1656
 msgid "System"
-msgstr ""
+msgstr "Sistema"
 
 #: gettingstarted.html:1659
 msgid "Distribution:"
-msgstr ""
+msgstr "Distribució:"
 
 #: gettingstarted.html:1663
 msgid "Kernel:"
-msgstr ""
+msgstr "Nucli:"
 
 #: gettingstarted.html:1667
 msgid "The Linux kernel is the heart of Ubuntu."
-msgstr ""
+msgstr "El nucli de Linux és el cor de l'Ubuntu."
 
 #: gettingstarted.html:1673
 msgid "Motherboard:"
-msgstr ""
+msgstr "Placa base:"
 
 #: gettingstarted.html:1677
 msgid "Boot Mode:"
-msgstr ""
+msgstr "Mode d'arrencada:"
 
 #: gettingstarted.html:1681
 msgid "Displays the mode that OS is communicating with the firmware."
 msgstr ""
+"Mostra el mode en què el sistema operatiu es comunica amb el "
+"microprogramari."
 
 #: gettingstarted.html:1689
 msgid "Processor"
-msgstr ""
+msgstr "Processador:"
 
 #: gettingstarted.html:1692
 msgid "Model:"
-msgstr ""
+msgstr "Model:"
 
 #: gettingstarted.html:1696
 msgid "Speed:"
-msgstr ""
+msgstr "Velocitat:"
 
 #: gettingstarted.html:1700
 msgid "Architecture in use:"
-msgstr ""
+msgstr "Arquitectura en ús:"
 
 #: gettingstarted.html:1704
 msgid ""
 "The operating system's architecture in use. For instance, i386 = 32-bit."
 msgstr ""
+"L'arquitectura del sistema operatiu en ús. Per exemple, i386 = 32 bits."
 
 #: gettingstarted.html:1710
 msgid "Architecture(s) supported:"
-msgstr ""
+msgstr "Arquitectures admeses:"
 
 #: gettingstarted.html:1714
 msgid "Architectures that are supported by this processor."
-msgstr ""
+msgstr "Arquitectures que admet aquest processador."
 
 #: gettingstarted.html:1722
 msgid "Components"
-msgstr ""
+msgstr "Components"
 
 #: gettingstarted.html:1725
 msgid "Memory (RAM):"
-msgstr ""
+msgstr "Memòria (RAM):"
 
 #: gettingstarted.html:1729
 msgid "More RAM allows more applications to run simultaneously."
-msgstr ""
+msgstr "Més memòria RAM permet que funcionin més aplicacions simultàniament."
 
 #: gettingstarted.html:1735
 msgid "Graphics:"
-msgstr ""
+msgstr "Gràfics:"
 
 #: gettingstarted.html:1739
 msgid "Internet Access:"
-msgstr ""
+msgstr "Accés a Internet:"
 
 #: gettingstarted.html:1742
 msgid "Connected"
-msgstr ""
+msgstr "Connectat"
 
 #: gettingstarted.html:1743
 msgid "Not Connected"
-msgstr ""
+msgstr "No connectat"
 
 #: gettingstarted.html:1751
 msgid "Storage"
-msgstr ""
+msgstr "Emmagatzematge"
 
 #: gettingstarted.html:1755
 msgid "Root File System:"
-msgstr ""
+msgstr "Sistema de fitxers d'arrel:"
 
 #: gettingstarted.html:1759
 msgid "The file system where OS is installed."
-msgstr ""
+msgstr "El sistema de fitxers on hi ha instal·lat el sistema operatiu."
 
 #: gettingstarted.html:1765
 msgid "Entire Disk Capacity:"
-msgstr ""
+msgstr "Capacitat total del disc:"
 
 #: gettingstarted.html:1771
 msgid "OS Usage"
-msgstr ""
+msgstr "Ús del sistema operatiu"
 
 #: gettingstarted.html:1776
 msgid "Other Usage"
-msgstr ""
+msgstr "Altres usos"
 
 #: gettingstarted.html:1781
 msgid "Allocated for <span name=\"distro-name\"></span>:"
-msgstr ""
+msgstr "Assignat per a <span name=\"distro-name\"> </span>:"
 
 #: gettingstarted.html:1785
 msgid "The size of your operating system partition."
-msgstr ""
+msgstr "La mida de la partició del sistema operatiu."
 
 #: gettingstarted.html:1792
 msgid "Used Space:"
-msgstr ""
+msgstr "Espai usat:"
 
 #: gettingstarted.html:1800
 msgid "Free Space:"
-msgstr ""
+msgstr "Espai lliure:"
 
 #: gettingstarted.html:1808
 msgid "Other Usage:"
-msgstr ""
+msgstr "Altres usos:"
 
 #: gettingstarted.html:1813
 msgid "Reserved by system, other partitions, unallocated or swap."
 msgstr ""
+"Reservat per al sistema, altres particions, sense assignar o l'intercanvi."
