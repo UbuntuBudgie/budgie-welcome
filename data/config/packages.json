@@ -197,13 +197,13 @@
         "eoan": ["universe"]
       }
     },
-    "advanced-brightness-applet": {
-      "packages": ["budgie-advanced-brightness-controller"],
+    "brightness-controller-applet": {
+      "packages": ["budgie-brightness-controller-applet"],
       "repos": {
         "bionic": ["ppa:ubuntubudgie/backports"],
         "cosmic": ["ppa:ubuntubudgie/backports"],
         "disco": ["ppa:ubuntubudgie/backports"],
-        "eoan": ["ppa:ubuntubudgie/backports"]
+        "eoan": ["universe"]
       }
     },
     "browser-profile-launcher-applet": {
@@ -293,6 +293,33 @@
         "bionic": ["ppa:ubuntubudgie/backports"],
         "cosmic": ["ppa:ubuntubudgie/backports"],
         "disco": ["universe"],
+        "eoan": ["universe"]
+      }
+    },
+    "fuzzyclock-applet": {
+      "packages": ["budgie-fuzzyclock-applet"],
+      "repos": {
+        "bionic": ["ppa:ubuntubudgie/backports"],
+        "cosmic": ["ppa:ubuntubudgie/backports"],
+        "disco": ["ppa:ubuntubudgie/backports"],
+        "eoan": ["universe"]
+      }
+    },
+    "workspace-stopwatch-applet": {
+      "packages": ["budgie-workspace-stopwatch-applet"],
+      "repos": {
+        "bionic": ["ppa:ubuntubudgie/backports"],
+        "cosmic": ["ppa:ubuntubudgie/backports"],
+        "disco": ["ppa:ubuntubudgie/backports"],
+        "eoan": ["universe"]
+      }
+    },
+    "quickchar": {
+      "packages": ["budgie-quickchar"],
+      "repos": {
+        "bionic": ["ppa:ubuntubudgie/backports"],
+        "cosmic": ["ppa:ubuntubudgie/backports"],
+        "disco": ["ppa:ubuntubudgie/backports"],
         "eoan": ["universe"]
       }
     }
