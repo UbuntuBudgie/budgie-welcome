@@ -30,13 +30,18 @@
         "eoan": ["ppa:ubuntubudgie/backports"]
       }
     },
-    "brightness-applet": {
-      "packages": ["budgie-brightness-control-applet"],
+    "advanced-brightness-controller-applet": {
+      "packages": ["budgie-advanced-brightness-controller-applet"],
       "repos": {
         "xenial": ["ppa:budgie-remix/ppa"],
         "bionic": ["ppa:ubuntubudgie/backports"],
         "cosmic": ["ppa:ubuntubudgie/backports"],
-        "disco": ["ppa:ubuntubudgie/backports"],
+        "disco": ["ppa:ubuntubudgie/backports"]
+      }
+    },
+    "brightness-controller-applet": {
+      "packages": ["budgie-brightness-control-applet"],
+      "repos": {
         "eoan": ["ppa:ubuntubudgie/backports"]
       }
     },
@@ -193,16 +198,18 @@
         "xenial": ["ppa:budgie-remix/ppa"],
         "bionic": ["universe"],
         "cosmic": ["universe"],
-        "disco": ["universe"],
+        "disco": ["universe"]
+      }
+    },
+    "dropby-window-applet": {
+      "packages": ["budgie-dropby-applet"],
+      "repos": {
         "eoan": ["universe"]
       }
     },
     "brightness-controller-applet": {
       "packages": ["budgie-brightness-controller-applet"],
       "repos": {
-        "bionic": ["ppa:ubuntubudgie/backports"],
-        "cosmic": ["ppa:ubuntubudgie/backports"],
-        "disco": ["ppa:ubuntubudgie/backports"],
         "eoan": ["universe"]
       }
     },
@@ -299,27 +306,18 @@
     "fuzzyclock-applet": {
       "packages": ["budgie-fuzzyclock-applet"],
       "repos": {
-        "bionic": ["ppa:ubuntubudgie/backports"],
-        "cosmic": ["ppa:ubuntubudgie/backports"],
-        "disco": ["ppa:ubuntubudgie/backports"],
         "eoan": ["universe"]
       }
     },
     "workspace-stopwatch-applet": {
       "packages": ["budgie-workspace-stopwatch-applet"],
       "repos": {
-        "bionic": ["ppa:ubuntubudgie/backports"],
-        "cosmic": ["ppa:ubuntubudgie/backports"],
-        "disco": ["ppa:ubuntubudgie/backports"],
         "eoan": ["universe"]
       }
     },
     "quickchar": {
       "packages": ["budgie-quickchar"],
       "repos": {
-        "bionic": ["ppa:ubuntubudgie/backports"],
-        "cosmic": ["ppa:ubuntubudgie/backports"],
-        "disco": ["ppa:ubuntubudgie/backports"],
         "eoan": ["universe"]
       }
     }
