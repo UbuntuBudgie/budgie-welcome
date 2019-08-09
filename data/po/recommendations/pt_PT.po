@@ -1,0 +1,407 @@
+# Translators:
+# Hugo Carvalho <hugokarvalho@hotmail.com>, 2019
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Budgie Welcome\n"
+"POT-Creation-Date: 2016-02-27 12:48+0100\n"
+"PO-Revision-Date: 2017-03-22 21:33+0000\n"
+"Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>, 2019\n"
+"Language-Team: Portuguese (Portugal) (https://www.transifex.com/ubuntu-budgie/teams/72251/pt_PT/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: pt_PT\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Report-Msgid-Bugs-To : you@example.com\n"
+
+#: recommendations.html:15
+msgid "Recommendations"
+msgstr "Recomendações"
+
+#: recommendations.html:20
+msgid "Backports repository"
+msgstr "Repositório backports"
+
+#: recommendations.html:22
+msgid ""
+"To provide the most up-to-date versions of budgie-desktop and other "
+"associated packages, we recommend to enable the <span name=\"distro-"
+"name\"></span> backports repository."
+msgstr ""
+"Para fornecer as versões mais atualizadas do Budgie Desktop e de outros "
+"pacotes associados, recomendamos ativar o repositório backports do <span "
+"name=\"distro-name\"></span>."
+
+#: recommendations.html:24
+msgid "Repository is installed"
+msgstr "O repositório está instalado"
+
+#: recommendations.html:24
+msgid "Enable <span name=\"distro-name\"></span> backports repository"
+msgstr "Ativar o repositório backports do <span name=\"distro-name\"></span>"
+
+#: recommendations.html25, 70, 87, 100, 117, 135, 142, 153
+msgid "Applying Changes..."
+msgstr "A Aplicar Alterações..."
+
+#: recommendations.html:29
+msgid "Snap Applications"
+msgstr "Aplicações Snap"
+
+#: recommendations.html:34
+msgid ""
+"<strong>Snap</strong> is a new generation application packaging format "
+"developed by <em>Canonical</em>. Even though it was initially developed just"
+" for different Ubuntu platforms, currently it works in many other GNU/Linux "
+"distributions. It will help application developers to provide a unified "
+"package that can work on different platforms. By using snap package format, "
+"applications can have their own version of libraries and there is no need to"
+" worry about libraries installed in underlying operating system. Snap "
+"packages enable developers to bring much newer versions of apps to <span "
+"name=\"distro-name\"></span>. Newer versions of KDE, GNOME, browsers or "
+"other desktop environment apps will usually build easily on older LTS "
+"releases but the complexities of packaging and providing updates have "
+"prevented us from delivering them in the past."
+msgstr ""
+"<strong>Snap</strong> é um formato de empacotamento de aplicações da nova "
+"geração desenvolvido pela <em>Canonical</em>. Embora inicialmente tenha sido"
+" desenvolvido apenas para diferentes plataformas do Ubuntu, atualmente "
+"funciona em muitas outras distribuições GNU/Linux. Isso ajudará os "
+"programadores de aplicações a fornecer um pacote unificado que possa "
+"funcionar em diferentes plataformas. Ao usar o formato de pacote snap, as "
+"aplicações podem ter a sua própria versão de bibliotecas e não há "
+"necessidade de se preocupar com as bibliotecas instaladas no sistema "
+"operacional subjacente. Os pacotes snap permitem que os programadores "
+"ofereçam versões muito mais novas de aplicações para o <span name=\"distro-"
+"name\"></span>. As versões mais recentes do KDE, GNOME, navegadores ou "
+"outros programas de ambientes de trabalho geralmente serão construídos com "
+"facilidade em lançamentos LTS mais antigos, mas a complexidade dos pacotes e"
+" o fornecimento de atualizações nos impediram de entregá-los no passado."
+
+#: recommendations.html38, 81
+msgid "Learn more"
+msgstr "Aprenda mais"
+
+#: recommendations.html:40
+msgid "Snap user guide"
+msgstr "Guia de utilizador Snap"
+
+#: recommendations.html:42
+msgid "Search Snap Apps"
+msgstr "Procurar aplicações Snap"
+
+#: recommendations.html:43
+msgid ""
+"If there’s a barrier to Snap app adoption (aside from few apps being made "
+"available in the format) it’s knowing which packages are available in the "
+"Snap app store. Well, wonder not. Simply pop open a terminal and run the "
+"following command:"
+msgstr ""
+"Se houver uma barreira para a adoção da aplicação Snap (além de algumas "
+"aplicações serem disponibilizados no formato), é saber quais pacotes estão "
+"disponíveis na loja de aplicações Snap. Bem, não se pergunte. Basta abrir um"
+" terminal e executar o seguinte comando:"
+
+#: recommendations.html:47
+msgid ""
+"The find command lets you quickly search for and discover snaps available to"
+" install from the command line. It can be run with a query after it (e.g., "
+"‘snap find email‘, ‘snap find media’, ‘snap find messaging‘) or without."
+msgstr ""
+"O comando find permite pesquisar rapidamente e descobrir snaps disponíveis "
+"para instalar a partir da linha de comando. Ele pode ser executado com uma "
+"consulta após ele (por exemplo, 'snap find email', 'snap find media', 'snap "
+"find messaging') ou sem."
+
+#: recommendations.html:48
+msgid "When run without a query you’ll instead see a list of featured snaps."
+msgstr ""
+"Quando for executado sem uma consulta você verá uma lista de Snaps "
+"destacados."
+
+#: recommendations.html:49
+msgid "See installed apps"
+msgstr "Ver aplicações instaladas"
+
+#: recommendations.html:50
+msgid ""
+"Installed some Snaps but can’t remember what? Don’t panic. Use the list "
+"command to see an up-to-date list of all Snap apps installed on your system:"
+msgstr ""
+"Instalou alguns Snaps mas não consegue lembrar quais? Não entre em pânico. "
+"Use o comando list para ver uma lista atualizada de todas as aplicações Snap"
+" instaladas no seu sistema:"
+
+#: recommendations.html:52
+msgid ""
+"This list also shows you their version number, revision number and the name "
+"of the developer who uploaded it (handy when there are multiple versions of "
+"the same app in the store, e.g., Telegram)."
+msgstr ""
+"Esta lista também mostra o seu número de versão, número de revisão e o nome "
+"do programador que o enviou (útil quando há várias versões da mesmo "
+"aplicação na loja, por exemplo, Telegram)."
+
+#: recommendations.html:53
+msgid "Install & Remove Snap Apps"
+msgstr "Instalar e Remover Aplicações Snap"
+
+#: recommendations.html:54
+msgid ""
+"If you’re used to managing software using apt you’ll instantly find the "
+"analogous snap commands easy to remember. You install snap apps with the "
+"‘install’ command, and remove them using the ‘remove’ command."
+msgstr ""
+"Se estiver acostumado a gerir programas usando o apt, você encontrará "
+"instantaneamente os comandos de snap análogos fáceis de lembrar. Você "
+"instala aplicações snap com o comando 'install' e remove-as usando o comando"
+" 'remove'."
+
+#: recommendations.html:57
+msgid "See details of an App"
+msgstr "Ver detalhes de uma Aplicação"
+
+#: recommendations.html:58
+msgid ""
+"You can use this to see detailed information about any snap application, "
+"whether it is installed or not. This info includes the application’s release"
+" channel, confinement status, size, number of revisions, and more. The snap "
+"info --verbose offers a greater overview."
+msgstr ""
+"Você pode usar isto para ver informações detalhadas sobre qualquer aplicação"
+" snap, esteja ela instalada ou não. Esta informação inclui o canal de "
+"lançamento da aplicação, estado de confinamento, tamanho, número de revisões"
+" e muito mais. O snap info --verbose oferece uma maior visão geral."
+
+#: recommendations.html:62
+msgid "Update a Snap App"
+msgstr "Atualizar uma Aplicação Snap"
+
+#: recommendations.html:64
+msgid ""
+"Rather helpfully you probably won’t ever need to remember to install an "
+"update to a Snap app. This is because Snapd runs in the background and "
+"handles updates automatically (you can, ofc, revert a Snap update or install"
+" a specific revision)."
+msgstr ""
+"Em vez disso, você provavelmente nunca precisará se lembrar de instalar uma "
+"atualização em uma aplicação Snap. Isto ocorre porque o Snapd é executado em"
+" segundo plano e lida com as atualizações automaticamente (você pode "
+"reverter uma atualização Snap ou instalar uma revisão específica)."
+
+#: recommendations.html:67
+msgid "Reference"
+msgstr "Referência"
+
+#: recommendations.html:69
+msgid "Snap is already installed"
+msgstr "O Snap já está instalado"
+
+#: recommendations.html:69
+msgid "Install Snap"
+msgstr "Instalar Snap"
+
+#: recommendations.html:75
+msgid "Flatpak"
+msgstr "Flatpak"
+
+#: recommendations.html:79
+msgid ""
+"<strong>Flatpak</strong> is a new generation application distribution "
+"framework for GNU/Linux platforms. It introduces a unified packaging format "
+"across all GNU/Linux distributions. That means a single package can work on "
+"any platform. Flatpak helps application developers to ship their application"
+" in a single format which can be installed in any GNU/Linux distribution "
+"without worrying about the underlying operating system and its built-in "
+"libraries."
+msgstr ""
+"<strong>Flatpak</strong> é uma estrutura de distribuição de aplicações de "
+"nova geração para plataformas GNU/Linux. Ele introduz um formato de "
+"empacotamento unificado em todas as distribuições GNU/Linux. Isso significa "
+"que um único pacote pode funcionar em qualquer plataforma. O Flatpak ajuda "
+"os programadores de aplicações a enviar sua aplicação num único formato que "
+"pode ser instalado em qualquer distribuição GNU/Linux sem se preocupar com o"
+" sistema operacional subjacente e suas bibliotecas integradas."
+
+#: recommendations.html:83
+msgid ""
+"<span name=\"distro-name\"></span> recommends installing "
+"<strong>Flatpak</strong> as it will open a new world of possibilities for "
+"you. With Flatpak, you can enjoy the latest release of different software "
+"packages as soon as it is packaged by the upstream project and you don't "
+"have to wait for your distribution to package it for you."
+msgstr ""
+"<span name=\"distro-name\"></span> recomenda a instalação do "
+"<strong>Flatpak</strong> pois abrirá um novo mundo de possibilidades para "
+"você. Com o Flatpak, você pode aproveitar o último lançamento de diferentes "
+"pacotes de software assim que for empacotado pelo projeto a montante e você "
+"não precisa de esperar para que sua distribuição o envie para si."
+
+#: recommendations.html:85
+msgid ""
+"Being a user friendly GNU/Linux distribution, <span name='distro-"
+"name'></span> allows you to install Flatpak with a single click. After first"
+" time configuration, you can use GNOME Software to install Flatpak packages."
+msgstr ""
+"Sendo uma distribuição GNU/Linux amigável, o <span name='distro-"
+"name'></span> permite que você instale o Flatpak com um único clique. Após a"
+" primeira configuração, você pode usar o GNOME Software para instalar "
+"pacotes Flatpak."
+
+#: recommendations.html:86
+msgid "Flatpak is installed. Please reboot for the service to start"
+msgstr ""
+"O Flatpak está instalado. Por favor reinicie para o serviço ser iniciado"
+
+#: recommendations.html:87
+msgid "Install & Configure Flatpak"
+msgstr "Instale & Configure o Flatpak"
+
+#: recommendations.html:91
+msgid "skippy-xd"
+msgstr "skippy-xd"
+
+#: recommendations.html:95
+msgid ""
+"<strong>skippy-xd</strong> adds a window expose type capability through a "
+"keyboard shortcut. For most desktops skippy-xd works well. Note: For some "
+"multi-monitor setups, graphics drivers and within virtual machines such as "
+"VirtualBox it may not work correctly."
+msgstr ""
+"<strong>skippy-xd</strong> adiciona uma janela que expõe o recurso de tipo, "
+"através de um atalho de teclado. Para a maioria dos desktops, o skippy-xd "
+"funciona bem. Observação: para algumas configurações de vários monitores, "
+"drivers de gráficos e em máquinas virtuais, como o VirtualBox, pode não "
+"funcionar corretamente."
+
+#: recommendations.html:98
+msgid ""
+"By default the installer will create a custom keyboard shortcut CTRL+grave "
+"('the key above the tab'). You can define or change the keyboard shortcut "
+"through the Settings - Keyboard - Custom Shortcuts option. Use the command "
+"<strong>skippy-xd-toggle</strong> when defining your own custom keyboard "
+"shortcut."
+msgstr ""
+"Por padrão, o instalador criará um atalho de teclado personalizado "
+"CTRL+grave ('o botão acima do tab'). Você pode definir ou alterar o atalho "
+"do teclado através da opção Definições - Teclado - opção Atalhos "
+"Personalizados. Use o comando <strong>skippy-xd-toggle</strong> ao definir o"
+" seu próprio atalho de teclado personalizado."
+
+#: recommendations.html:99
+msgid "skippy-xd is installed"
+msgstr "skippy-xd está instalado"
+
+#: recommendations.html:99
+msgid "Install & Configure skippy-xd"
+msgstr "Instale & Configure o skippy-xd"
+
+#: recommendations.html:105
+msgid "Steam"
+msgstr "Steam"
+
+#: recommendations.html:109
+msgid ""
+"<strong>Steam</strong> is a digital distribution platform developed by Valve"
+" Corporation offering digital rights management (DRM), multiplayer gaming "
+"and social networking services. Steam provides the user with installation "
+"and automatic updating of games on multiple computers, and community "
+"features such as friends lists and groups, cloud saving, and in-game voice "
+"and chat functionality. The software provides a freely available application"
+" programming interface (API) called Steamworks, which developers can use to "
+"integrate many of Steam's functions into their products, including "
+"networking, matchmaking, in-game achievements, micro-transactions, and "
+"support for user-created content through Steam Workshop."
+msgstr ""
+"<strong>Steam</strong> é uma plataforma de distribuição digital desenvolvida"
+" pela Valve Corporation que oferece gestão de direitos digitais (DRM), jogos"
+" multi-jogadores e serviços de redes sociais. O Steam fornece ao utilizador "
+"a instalação e atualização automática de jogos em vários computadores e "
+"recursos da comunidade, como listas e grupos de amigos, guardar na cloud e "
+"funcionalidade de voz e conversação no jogo. O software fornece uma "
+"interface de programação de aplicações (API) gratuita chamada Steamworks, "
+"que os programadores podem usar para integrar muitas das funções da Steam "
+"nos seus produtos, incluindo redes, correspondência, conquistas no jogo, "
+"micro-transações e suporte para conteúdo criado pelo utilizador através do "
+"Steam Workshop."
+
+#: recommendations.html:114
+msgid ""
+"Being proprietary software, Steam is not included in the primary "
+"repositories of <span name=\"distro-name\"></span>. However, to provide more"
+" choice to users, Steam is shipped as a part of the <em>Multiverse</em> "
+"repository. <span name=\"distro-name\"></span> provides you the option to "
+"enable the <em>Multiverse</em> repository and to install Steam with a single"
+" mouse click."
+msgstr ""
+"Sendo software proprietário, o Steam não está incluído nos repositórios "
+"primários do <span name=\"distro-name\"></span>. No entanto, para fornecer "
+"mais opções aos utilizadores, o Steam é enviado como parte do repositório "
+"<em>Multiverse</em>. <span name=\"distro-name\"></span> fornece a opção para"
+" ativar o repositório <em>Multiverse</em> e instalar o Steam com um simples "
+"clique do rato."
+
+#: recommendations.html:116
+msgid "Steam is installed"
+msgstr "O Steam está instalado"
+
+#: recommendations.html:116
+msgid "Install & Configure Steam"
+msgstr "Instale & Configure o Steam"
+
+#: recommendations.html:126
+msgid ""
+"<strong>Dropbox</strong> is a popular proprietary file sharing and storage "
+"solution."
+msgstr ""
+"<strong>Dropbox</strong> é uma solução proprietária popular de armazenamento"
+" e compartilhamento de ficheiros."
+
+#: recommendations.html:129
+msgid ""
+"Being proprietary software, Dropbox is not included in the primary "
+"repositories of <span name=\"distro-name\"></span>. However, to provide more"
+" choice to users, Dropbox is shipped as a part of the <em>Multiverse</em> "
+"repository. <span name=\"distro-name\"></span> provides you the option to "
+"enable the <em>Multiverse</em> repository and to install Dropbox with a "
+"single mouse click."
+msgstr ""
+"Sendo software proprietário, o Dropbox não está incluído nos repositórios "
+"primários do <span name=\"distro-name\"></span>. No entanto, para fornecer "
+"mais opções aos utilizadores, o Dropbox é enviado como parte do repositório "
+"<em>Multiverse</em>. <span name=\"distro-name\"></span> fornece a opção para"
+" ativar o repositório <em>Multiverse</em> e instalar o Dropbox com um "
+"simples clique do rato."
+
+#: recommendations.html131, 138
+msgid ""
+"After installing, logout and login and follow the dropbox instructions that "
+"are then displayed."
+msgstr ""
+"Após a instalação, reinicie a sessão e siga as instruções do dropbox que são"
+" exibidas."
+
+#: recommendations.html134, 141
+msgid "Dropbox is installed"
+msgstr "O Dropbox está instalado"
+
+#: recommendations.html134, 141
+msgid "Install & Configure Dropbox"
+msgstr "Instalar & Configurar o Dropbox"
+
+#: recommendations.html:149
+msgid ""
+"Nemo Share allows you to quickly share a folder from the Nemo file manager "
+"without requiring root access."
+msgstr ""
+"O Nemo Share permite que você compartilhe rapidamente uma pasta do gestor de"
+" ficheiros do Nemo sem exigir acesso root."
+
+#: recommendations.html:152
+msgid "Nemo Share is installed"
+msgstr "O Nemo Share está instalado"
+
+#: recommendations.html:152
+msgid "Install Nemo Share"
+msgstr "Instalar o Nemo Share"
