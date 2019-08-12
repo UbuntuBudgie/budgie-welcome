@@ -28,6 +28,8 @@ import apt
 from notify2 import Notification, init as NotifyInit
 from queue import Queue, Empty
 from threading import Thread
+import gi
+gi.require_version('WebKit2', '4.0')
 from gi.repository import WebKit2, Gtk, Gio, Gdk, GLib
 import getpass
 import gettext
