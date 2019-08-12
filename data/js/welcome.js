@@ -479,6 +479,14 @@ function sortAppletList() {
     }));
 }
 
+function sortThemeList() {
+    $('#theme-list').append($('#theme-list > div').sort(function (itemOne, itemTwo) {
+        var titleOne = $(itemOne).find('h3').text();
+        var titleTwo = $(itemTwo).find('h3').text();
+        return titleOne.localeCompare(titleTwo);
+    }));
+}
+
 function injectTitle() {
     var title = $("#title-inject").text();
     document.title = "title?" + title;

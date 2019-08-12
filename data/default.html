@@ -9,7 +9,7 @@
       <link href="css/welcome.css" rel="stylesheet" media="screen">
       <link href="css/baguetteBox.min.css" rel="stylesheet" media="screen">
    </head>
-   <body class="backdrop-simple fade fade-1s">
+   <body class="backdrop-simple fade fade-1s" onload="sortThemeList();">
       <div id="wrapper">
          <div id="title-inject">&zwnj;Default Settings&zwnj;</div>
          <div id="content" class="container entire-page-fade">
@@ -35,7 +35,7 @@
                         </p>
                      </div>
                   </div>
-                  <div class="row text-md-center">
+                  <div class="row text-md-center" id="theme-list">
                      <div class="col-md-6 pocillo-theme hidden">
                         <br>
                         <h3>Pocillo</h3>
