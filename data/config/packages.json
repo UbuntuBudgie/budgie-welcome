@@ -108,7 +108,12 @@
         "xenial": ["ppa:budgie-remix/ppa"],
         "bionic": ["universe"],
         "cosmic": ["universe"],
-        "disco": ["universe"],
+        "disco": ["universe"]
+      }
+    },
+    "previewsapp-applet": {
+      "packages": ["budgie-previews-applet"],
+      "repos": {
         "eoan": ["universe"]
       }
     },

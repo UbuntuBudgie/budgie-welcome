@@ -309,7 +309,7 @@
                </div>
                <div class="col-md-6 previews-applet">
                   <br>
-                  <h2><a onclick="cmd('link?https://github.com/UbuntuBudgie/budgie-extras')"><span class="material-icons">help</span></a>&zwnj;Previews Applet&zwnj;</h2>
+                  <h2><a onclick="cmd('link?https://github.com/UbuntuBudgie/budgie-extras')"><span class="material-icons">help</span></a>&zwnj;Previews&zwnj;</h2>
                   <div class="card card-block">
                      <div class="card-image text-md-center">
                         <a href="img/screenshots/previews-applet.jpg" data-toggle="lightbox"><img src="img/screenshots/previews-applet.jpg" style="width: auto; max-height: 128px" /></a>
@@ -324,6 +324,29 @@
                      <span class="material-icons">&#xE2C0;</span>&zwnj;Install Applet&zwnj;&nbsp;
                      </a>
                      <span id="previews-status" class="hidden">
+                     <img src="img/welcome/processing.gif" width="24px" height="24px" /> &zwnj;Applying Changes...&zwnj;
+                     </span>
+                  </div>
+                  <hr/>
+               </div>
+               <div class="col-md-6 previewsapp-applet">
+                  <br>
+                  <h2><a onclick="cmd('link?https://github.com/UbuntuBudgie/budgie-extras')"><span class="material-icons">help</span></a>&zwnj;Previews&zwnj;</h2>
+                  <div class="card card-block">
+                     <div class="card-image text-md-center">
+                        <a href="img/screenshots/previews-applet.jpg" data-toggle="lightbox"><img src="img/screenshots/previews-applet.jpg" style="width: auto; max-height: 128px" /></a>
+                     </div>
+                     <p class="card-text">&zwnj;Show an overview of windows in an exposé like way.&zwnj;</p>
+                     <p class="card-text">&zwnj;This is a mini-app and is launched via the budgie menu.&zwnj;</p>
+                  </div>
+                  <div class="text-md-right">
+                     <a id="previewsapp-applet-remove" class="btn btn-danger" onclick="cmd('remove?previews-applet');cmd('')">
+                     <span class="material-icons">&#xE872;</span><span class="button-text">&zwnj;Remove&zwnj;</span>
+                     </a>
+                     <a id="previewsapp-applet-install" class="btn btn-success hvr-shadow" onclick="cmd('install?previewsapp-applet');cmd('')"> &nbsp;
+                     <span class="material-icons">&#xE2C0;</span>&zwnj;Install mini-app&zwnj;&nbsp;
+                     </a>
+                     <span id="previewsapp-status" class="hidden">
                      <img src="img/welcome/processing.gif" width="24px" height="24px" /> &zwnj;Applying Changes...&zwnj;
                      </span>
                   </div>
