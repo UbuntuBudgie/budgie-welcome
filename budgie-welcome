@@ -227,7 +227,7 @@ class AppView(WebKit2.WebView):
                 app.update_page('.before1904', 'hide')
                 app.update_page('.after1904', 'show')
 
-        if current_page == 'budgie-applets':
+        if current_page in ['budgie-applets', 'development']:
             # applets are distro specific so need to hide/show as appropriate
             package = app._data_path + "/config/packages.json"
 
@@ -246,7 +246,7 @@ class AppView(WebKit2.WebView):
                 app.update_page(".showhide", 'hide')
 
         ### All pages with install/removal ###
-        if current_page in ['gettingstarted', 'default', 'recommendations', 'budgie-applets']:
+        if current_page in ['gettingstarted', 'default', 'recommendations', 'budgie-applets', 'development']:
             app.update_page('[id$=install]', 'hide')
             app.update_page('[id$=remove]', 'hide')
 
