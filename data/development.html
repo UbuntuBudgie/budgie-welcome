@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/material-icons.css" rel="stylesheet" media="screen">
+    <link href="css/animate.css" rel="stylesheet" media="screen">
+    <link href="css/welcome.css" rel="stylesheet" media="screen">
+    <link href="css/baguetteBox.min.css" rel="stylesheet" media="screen">
+</head>
+
+<body class="backdrop-simple fade fade-1s" onload="sortAppletList();">
+    <div id="wrapper">
+        <div id="title-inject">&zwnj;Ubuntu Budgie Development Tools&zwnj;</div>
+        <div id="content" class="container entire-page-fade">
+            <b>&zwnj;This is a quick and handy way to install some development tools for Ubuntu Budgie.&zwnj;</b>
+            </div>
+            <br>
+            <div class="row text-md-center" id="applet-list">
+                <div class="col-md-6 haste-applet">
+                    <br>
+                    <h2><a onclick="cmd('link?https://github.com/zsh-users/zsh')"><span
+                                class="material-icons">help</span></a>&zwnj;Zsh Shell (Command Line)&zwnj;</h2>
+                    <div class="card card-block">
+                        <p class="card-text">&zwnj;Zsh, an amazing shell for both power users and beginners which provides simplicity yet perfection. Used for terminal commands, don't play around with this if you don't know what it does.&zwnj;</p>
+                    </div>
+                    <div class="text-md-right">
+                        <a id="zsh-remove" class="btn btn-danger" onclick="cmd('remove?zsh');cmd('')">
+                            <span class="material-icons">&#xE872;</span><span
+                                class="button-text">&zwnj;Remove&zwnj;</span>
+                        </a>
+                        <a id="zsh-install" class="btn btn-success hvr-shadow"
+                            onclick="cmd('install?zsh');cmd('')"> &nbsp;
+                            <span class="material-icons">&#xE2C0;</span>&zwnj;Install Applet&zwnj;&nbsp;
+                        </a>
+                        <span id="haste-status" class="hidden">
+                            <img src="img/welcome/processing.gif" width="24px" height="24px" /> &zwnj;Applying
+                            Changes...&zwnj;
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-2.1.4.js"></script>
+    <script src="js/tether.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/janimate.js"></script>
+    <script src="js/confetti.js"></script> <!-- Confetti only appears on special events -->
+    <script src="js/welcome.js"></script>
+    <script src="js/baguetteBox.min.js"></script>
+    <script type="text/javascript">
+        baguetteBox.run('[data-toggle="lightbox"]', {
+            // Custom options
+        });
+    </script>
+</body>
+
+</html>
