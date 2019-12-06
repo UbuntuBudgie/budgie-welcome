@@ -1,4 +1,10 @@
 {
+  "development": {
+    "zsh": {
+      "packages": ["zsh"],
+      "repos": {"all": ["main"]}
+    }
+  },
   "budgie-applets": {
     "haste-applet": {
       "packages": ["budgie-haste-applet"],
@@ -562,16 +568,7 @@
         "cosmic": ["universe", "ppa:tista/plata-theme"],
         "disco": ["universe", "ppa:tista/plata-theme"],
         "eoan": ["universe", "ppa:tista/plata-theme"]
-      },
-    "zsh": {
-      "packages": ["zsh"],
-      "repos": {
-        "bionic": ["universe", "zsh"],
-        "cosmic": ["universe", "zsh"],
-        "disco": ["universe", "zsh"],
-        "eoan": ["universe", "zsh"]
       }
     }
     }
   }
-}
