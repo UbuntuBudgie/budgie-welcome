@@ -228,17 +228,17 @@ class AppView(WebKit2.WebView):
                 app.update_page('.after1904', 'show')
 
         if current_page in ['budgie-applets', 'development']:
-            # applets are distro specific so need to hide/show as appropriate
+            # packages can be distro specific, so need to hide/show as appropriate
             package = app._data_path + "/config/packages.json"
 
             with open(package) as file:
                 config = json.load(file)
 
-            for applet in config['budgie-applets', 'development']:
-                if systemstate.codename in config['budgie-applets', 'development'][applet]['repos']:
-                    app.update_page("." + applet, 'show')
+            for package_name in config[current_page]:
+                if any(elem in [systemstate.codename, 'all'] for elem in config[current_page][package_name]['repos']):
+                    app.update_page("." + package_name, 'show')
                 else:
-                    app.update_page("." + applet, 'hide')
+                    app.update_page("." + pacage_name, 'hide')
 
             if systemstate.bde_version == 'NA':
                 app.update_page(".showhide", 'show')
