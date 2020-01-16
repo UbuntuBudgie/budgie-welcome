@@ -199,6 +199,13 @@ class AppView(WebKit2.WebView):
                 for theme in config[systemstate.codename]:
                     app.update_page("." + theme, 'show')
 
+            if systemstate.codename in ['xenial', 'bionic', 'cosmic', 'disco', 'eoan']:
+                app.update_page('.before2004', 'show')
+                app.update_page('.after1910', 'hide')
+            else:
+                app.update_page('.before2004', 'hide')
+                app.update_page('.after1910', 'show')
+
         if current_page in ['introduction', 'features', 'community', 'recommendations', 'gettingstarted']:
             if systemstate.official:
                 app.update_page('.official-only', 'show')
@@ -547,40 +554,40 @@ class AppView(WebKit2.WebView):
             print('Unknown command: {}'.format(uri))
 
     def _apply_layout(self, layout):
-        def running_process(process):
-            "check if process is running. < process > is the name of the process."
+        import dbus
 
-            proc = subprocess.Popen(
-                ["if pgrep " + process + \
-                    " >/dev/null 2>&1; then echo 'True'; else echo 'False'; fi"],
-                stdout=subprocess.PIPE, shell=True)
+        # well-known name for our program
+        ECHO_BUS_NAME = 'org.UbuntuBudgie.ExtrasDaemon'
 
-            (Process_Existance, err) = proc.communicate()
-            return str(Process_Existance, 'utf-8') == 'True\n'
+        # interfaces implemented by some objects in our program
+        ECHO_INTERFACE = 'org.UbuntuBudgie.ExtrasDaemon'
 
-        dtop = os.path.expanduser('~') + '/.config/autostart/plank.desktop'
-        global start_location
+        # paths to some objects in our program
+        ECHO_OBJECT_PATH = '/org/ubuntubudgie/extrasdaemon'
 
-        if layout == 'classicbudgie':
-            if running_process('plank'):
-                subprocess.Popen(['killall', 'plank'])
-                subprocess.Popen(['rm', dtop])
-                p = subprocess.Popen(['pkexec',
-                                      start_location + 'budgie-welcome-privileged-actions',
-                                      'panelini', 'classic'])
-                retval = p.wait()
-            return
+        bus = dbus.SessionBus()
 
-        if layout == 'ubuntubudgie':
-            if not running_process('plank'):
-                subprocess.Popen(['nohup', 'plank', '&'])
-                subprocess.Popen(
-                    ['cp', '/usr/share/budgie-desktop/plank.desktop', dtop])
-                p = subprocess.Popen(['pkexec',
-                                      start_location + 'budgie-welcome-privileged-actions',
-                                      'panelini', 'ub'])
-                retval = p.wait()
-            return
+        try:
+            proxy = bus.get_object(ECHO_BUS_NAME, ECHO_OBJECT_PATH)
+        except dbus.DBusException as e:
+            # There are actually two exceptions thrown:
+            # 1: org.freedesktop.DBus.Error.NameHasNoOwner
+            #   (when the name is not registered by any running process)
+            # 2: org.freedesktop.DBus.Error.ServiceUnknown
+            #   (during auto-activation since there is no .service file)
+            # TODO figure out how to suppress the activation attempt
+            # also, there *has* to be a better way of managing exceptions
+            if e._dbus_error_name != \
+                    'org.freedesktop.DBus.Error.ServiceUnknown':
+                raise
+            if e.__context__._dbus_error_name != \
+                    'org.freedesktop.DBus.Error.NameHasNoOwner':
+                raise
+            print('client: No one can hear me!!')
+        else:
+            iface = dbus.Interface(proxy, ECHO_INTERFACE)
+
+            iface.ResetLayout(layout)
 
     def _set_panel_key(self, key, value):
         # panel keys are relocatable - so need to loop through all panels
