@@ -519,6 +519,62 @@
     }
   },
   "default": {
+    "ubuntubudgie-layout": {
+      "packages": ["budgie-applications-menu-applet",
+                   "budgie-indicator-applet",
+                   "budgie-dropby-applet",
+                   "budgie-network-manager-applet",
+                   "budgie-showtime-applet",
+                   "budgie-visualspace-applet",
+                   "budgie-quicknote-applet"
+                  ],
+      "repos": {
+        "all": ["universe"]
+      }
+    },
+    "redmond-layout": {
+      "packages": ["budgie-applications-menu-applet",
+                   "budgie-indicator-applet",
+                   "budgie-dropby-applet",
+                   "budgie-network-manager-applet"
+                  ],
+      "repos": {
+        "all": ["universe"]
+      }
+    },
+    "cupertino-layout": {
+      "packages": ["budgie-applications-menu-applet",
+                   "budgie-appmenu-applet",
+                   "budgie-indicator-applet",
+                   "budgie-dropby-applet",
+                   "budgie-network-manager-applet"
+                  ],
+      "repos": {
+        "all": ["universe"]
+      }
+    },
+    "theone-layout": {
+      "packages": ["budgie-applications-menu-applet",
+                  "budgie-appmenu-applet",
+                  "budgie-indicator-applet",
+                  "budgie-dropby-applet",
+                  "budgie-network-manager-applet",
+                  "budgie-trash-applet",
+                  "budgie-recentlyused-applet"
+                  ],
+      "repos": {
+        "all": ["universe"]
+      }
+    },
+    "traditional-layout": {
+      "packages": ["budgie-indicator-applet",
+                   "budgie-dropby-applet",
+                   "budgie-network-manager-applet"
+                  ],
+      "repos": {
+        "all": ["universe"]
+      }
+    },
     "pocillo-theme": {
       "packages": ["ubuntu-budgie-themes", "pocillo-icon-theme"],
       "size": 60
