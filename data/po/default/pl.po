@@ -16,9 +16,9 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && (n%100<12 || n%100>14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && n%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);\n"
 "Report-Msgid-Bugs-To : you@example.com\n"
 
-#: default.html14, 24
-msgid "Default Settings"
-msgstr "Ustawienia domyślne"
+#: default.html:14
+msgid "Budgie Themes & Layouts"
+msgstr ""
 
 #: default.html18, 32
 msgid "Switch Appearance"
@@ -27,6 +27,10 @@ msgstr "Zmień wygląd"
 #: default.html21, 300
 msgid "Desktop Layout"
 msgstr "Układ pulpitu"
+
+#: default.html:24
+msgid "Desktop Layouts"
+msgstr ""
 
 #: default.html:33
 msgid ""
@@ -46,7 +50,8 @@ msgstr "Zainstaluj motyw"
 msgid "Apply theme"
 msgstr "Zastosuj motyw"
 
-#: default.html61, 81, 106, 126, 146, 166, 186, 206, 226, 246, 271, 291, 337
+#: default.html61, 81, 106, 126, 146, 166, 186, 206, 226, 246, 271, 291, 324,
+#: 344, 364, 384, 404, 422
 msgid "Applying Changes..."
 msgstr "Zatwierdzanie zmian..."
 
@@ -79,23 +84,19 @@ msgid "Switch the layout of your desktop to suit your workflow."
 msgstr ""
 "Zmień układ pulpitu na tek, który najbardziej odpowiada twoim oczekiwaniom."
 
-#: default.html:305
-msgid "Default"
-msgstr "Domyślny"
+#: default.html315, 335, 355, 375, 395
+msgid "Install layout"
+msgstr ""
 
-#: default.html:309
-msgid "Classic Budgie"
-msgstr "Klasyczny Budgie"
+#: default.html319, 339, 359, 379, 399
+msgid "Apply layout"
+msgstr ""
 
-#: default.html:321
-msgid "Classic GNOME"
-msgstr "Klasyczny GNOME"
-
-#: default.html:330
+#: default.html:415
 msgid "Restore panels"
 msgstr "Przywróć panele"
 
-#: default.html:331
+#: default.html:416
 msgid ""
 "Lost your panels while playing with <span name=\"distro-name\"></span>? "
 "Unhappy with your changes to the panel layout? Don't worry. We can help you "
@@ -105,7 +106,7 @@ msgstr ""
 "name\"></span>? A może nie jesteś zadowolony z dokonanych zmian w układzie "
 "paneli? Nie martw się. Jednym kliknięciem pomożemy ci w przywróceniu paneli."
 
-#: default.html:334
+#: default.html:419
 msgid ""
 "This will undo all changes that you have made on any panel and will reset "
 "back to the initial default panel layout configuration."
@@ -113,6 +114,6 @@ msgstr ""
 "Ta operacja cofnie wszelkie zmiany, jakich dokonałeś dla każdego panelu i "
 "przywróci domyślną konfigurację ich układu."
 
-#: default.html:338
+#: default.html:423
 msgid "Reset Budgie Panel"
 msgstr "Resetuj panel Budgie"

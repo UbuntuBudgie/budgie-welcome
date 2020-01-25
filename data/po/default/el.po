@@ -16,9 +16,9 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Report-Msgid-Bugs-To : you@example.com\n"
 
-#: default.html14, 24
-msgid "Default Settings"
-msgstr "Προεπιλεγμένες Ρυθμίσεις"
+#: default.html:14
+msgid "Budgie Themes & Layouts"
+msgstr ""
 
 #: default.html18, 32
 msgid "Switch Appearance"
@@ -27,6 +27,10 @@ msgstr "Αλλαγή εμφάνισης"
 #: default.html21, 300
 msgid "Desktop Layout"
 msgstr "Διάταξη της επιφάνειας εργασίας"
+
+#: default.html:24
+msgid "Desktop Layouts"
+msgstr ""
 
 #: default.html:33
 msgid ""
@@ -43,7 +47,8 @@ msgstr "Εγκατάσταση θεμάτων"
 msgid "Apply theme"
 msgstr "Εφαρμογή θέματος"
 
-#: default.html61, 81, 106, 126, 146, 166, 186, 206, 226, 246, 271, 291, 337
+#: default.html61, 81, 106, 126, 146, 166, 186, 206, 226, 246, 271, 291, 324,
+#: 344, 364, 384, 404, 422
 msgid "Applying Changes..."
 msgstr "Εφαρμόζονται οι αλλαγές..."
 
@@ -77,23 +82,19 @@ msgstr ""
 "Αλλάξτε την διάταξη της επιφάνειας εργασίας ώστε να ταιριάζει με την ροή "
 "εργασίας σας."
 
-#: default.html:305
-msgid "Default"
-msgstr "Προεπιλεγή"
+#: default.html315, 335, 355, 375, 395
+msgid "Install layout"
+msgstr ""
 
-#: default.html:309
-msgid "Classic Budgie"
-msgstr "Classic Budgie"
+#: default.html319, 339, 359, 379, 399
+msgid "Apply layout"
+msgstr ""
 
-#: default.html:321
-msgid "Classic GNOME"
-msgstr "Classic GNOME"
-
-#: default.html:330
+#: default.html:415
 msgid "Restore panels"
 msgstr "Επαναφορά των πλαισίων"
 
-#: default.html:331
+#: default.html:416
 msgid ""
 "Lost your panels while playing with <span name=\"distro-name\"></span>? "
 "Unhappy with your changes to the panel layout? Don't worry. We can help you "
@@ -104,7 +105,7 @@ msgstr ""
 "ανυσηχείτε. Μπορούμε να σας βοηθήσουμε να επαναφέρετε τα πλαίσιά σας στην "
 "αρχική τους κατάσταση με το πάτημα ενός κουμπιού!"
 
-#: default.html:334
+#: default.html:419
 msgid ""
 "This will undo all changes that you have made on any panel and will reset "
 "back to the initial default panel layout configuration."
@@ -113,6 +114,6 @@ msgstr ""
 "και θα επαναφέρει την αρχική προεπιλεγμένη διαμόρφωση της διάταξης των "
 "πλαισίων. "
 
-#: default.html:338
+#: default.html:423
 msgid "Reset Budgie Panel"
 msgstr "Επαναφορά των πλαισίων Budgie"

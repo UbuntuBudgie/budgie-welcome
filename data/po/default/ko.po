@@ -15,9 +15,9 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "Report-Msgid-Bugs-To : you@example.com\n"
 
-#: default.html14, 24
-msgid "Default Settings"
-msgstr "기본 설정"
+#: default.html:14
+msgid "Budgie Themes & Layouts"
+msgstr ""
 
 #: default.html18, 32
 msgid "Switch Appearance"
@@ -26,6 +26,10 @@ msgstr "모양 변경"
 #: default.html21, 300
 msgid "Desktop Layout"
 msgstr "데스크톱 레이아웃"
+
+#: default.html:24
+msgid "Desktop Layouts"
+msgstr ""
 
 #: default.html:33
 msgid ""
@@ -42,7 +46,8 @@ msgstr "테마 설치"
 msgid "Apply theme"
 msgstr "테마 적용"
 
-#: default.html61, 81, 106, 126, 146, 166, 186, 206, 226, 246, 271, 291, 337
+#: default.html61, 81, 106, 126, 146, 166, 186, 206, 226, 246, 271, 291, 324,
+#: 344, 364, 384, 404, 422
 msgid "Applying Changes..."
 msgstr "변경 사항 적용 중..."
 
@@ -74,23 +79,19 @@ msgstr "머티리얼 디자인 (Materia)"
 msgid "Switch the layout of your desktop to suit your workflow."
 msgstr "사용자의 워크플로우에 맞게 데스크톱의 레이아웃을 전환합니다."
 
-#: default.html:305
-msgid "Default"
-msgstr "기본"
+#: default.html315, 335, 355, 375, 395
+msgid "Install layout"
+msgstr ""
 
-#: default.html:309
-msgid "Classic Budgie"
-msgstr "클래식 Budgie"
+#: default.html319, 339, 359, 379, 399
+msgid "Apply layout"
+msgstr ""
 
-#: default.html:321
-msgid "Classic GNOME"
-msgstr "클래식 GNOME"
-
-#: default.html:330
+#: default.html:415
 msgid "Restore panels"
 msgstr "패널 복구"
 
-#: default.html:331
+#: default.html:416
 msgid ""
 "Lost your panels while playing with <span name=\"distro-name\"></span>? "
 "Unhappy with your changes to the panel layout? Don't worry. We can help you "
@@ -99,12 +100,12 @@ msgstr ""
 "<span name=\"distro-name\"></span>를 사용하는 중에 패널이 어디론가 가버렸나요? 패널 레이아웃을 바꿨는데 "
 "만족스럽지 않으시다구요? 걱정하지 마세요! 한 번의 클릭으로 패널을 복구해 드릴 수 있습니다."
 
-#: default.html:334
+#: default.html:419
 msgid ""
 "This will undo all changes that you have made on any panel and will reset "
 "back to the initial default panel layout configuration."
 msgstr "이 작업은 모든 패널에 적용된 모든 변경 사항을 기본값으로 초기화합니다."
 
-#: default.html:338
+#: default.html:423
 msgid "Reset Budgie Panel"
 msgstr "Budgie 패널 복구"

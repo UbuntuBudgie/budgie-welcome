@@ -15,9 +15,9 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n==1?0:(((n%100>19)||((n%100==0)&&(n!=0)))?2:1));\n"
 "Report-Msgid-Bugs-To : you@example.com\n"
 
-#: default.html14, 24
-msgid "Default Settings"
-msgstr "Setari implicite"
+#: default.html:14
+msgid "Budgie Themes & Layouts"
+msgstr ""
 
 #: default.html18, 32
 msgid "Switch Appearance"
@@ -26,6 +26,10 @@ msgstr "Modifica modul de afisare"
 #: default.html21, 300
 msgid "Desktop Layout"
 msgstr "Afisare Desktop"
+
+#: default.html:24
+msgid "Desktop Layouts"
+msgstr ""
 
 #: default.html:33
 msgid ""
@@ -45,7 +49,8 @@ msgstr "Instaleaza tema"
 msgid "Apply theme"
 msgstr "Aplica tema"
 
-#: default.html61, 81, 106, 126, 146, 166, 186, 206, 226, 246, 271, 291, 337
+#: default.html61, 81, 106, 126, 146, 166, 186, 206, 226, 246, 271, 291, 324,
+#: 344, 364, 384, 404, 422
 msgid "Applying Changes..."
 msgstr "Aplica modificari..."
 
@@ -79,23 +84,19 @@ msgstr ""
 "Schimba modul de afisare al Desktop-ului in concordanta cu modul tau de "
 "lucru"
 
-#: default.html:305
-msgid "Default"
-msgstr "Implicit"
+#: default.html315, 335, 355, 375, 395
+msgid "Install layout"
+msgstr ""
 
-#: default.html:309
-msgid "Classic Budgie"
-msgstr "Clasic Budgie"
+#: default.html319, 339, 359, 379, 399
+msgid "Apply layout"
+msgstr ""
 
-#: default.html:321
-msgid "Classic GNOME"
-msgstr "Clasic GNOME"
-
-#: default.html:330
+#: default.html:415
 msgid "Restore panels"
 msgstr "Restaurare panouri"
 
-#: default.html:331
+#: default.html:416
 msgid ""
 "Lost your panels while playing with <span name=\"distro-name\"></span>? "
 "Unhappy with your changes to the panel layout? Don't worry. We can help you "
@@ -106,7 +107,7 @@ msgstr ""
 "panourilor? Nu va ingrijorati. Va putem ajuta sa refaceti panourile "
 "originale cu un singur click!"
 
-#: default.html:334
+#: default.html:419
 msgid ""
 "This will undo all changes that you have made on any panel and will reset "
 "back to the initial default panel layout configuration."
@@ -114,6 +115,6 @@ msgstr ""
 "Aceasta operatie va anula toate modificarile pe care le-ati facut la orice "
 "panou si va reseta la modul de afisare initial. "
 
-#: default.html:338
+#: default.html:423
 msgid "Reset Budgie Panel"
 msgstr "resetare Panou Budgie"

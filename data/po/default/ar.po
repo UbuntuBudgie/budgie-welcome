@@ -16,9 +16,9 @@ msgstr ""
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
 "Report-Msgid-Bugs-To : you@example.com\n"
 
-#: default.html14, 24
-msgid "Default Settings"
-msgstr "الإعدادات الافتراضية"
+#: default.html:14
+msgid "Budgie Themes & Layouts"
+msgstr ""
 
 #: default.html18, 32
 msgid "Switch Appearance"
@@ -27,6 +27,10 @@ msgstr "تبديل المظهر"
 #: default.html21, 300
 msgid "Desktop Layout"
 msgstr "تخطيط سطح المكتب"
+
+#: default.html:24
+msgid "Desktop Layouts"
+msgstr ""
 
 #: default.html:33
 msgid ""
@@ -45,7 +49,8 @@ msgstr "تثبيت المظهر"
 msgid "Apply theme"
 msgstr "تطبيق المظهر"
 
-#: default.html61, 81, 106, 126, 146, 166, 186, 206, 226, 246, 271, 291, 337
+#: default.html61, 81, 106, 126, 146, 166, 186, 206, 226, 246, 271, 291, 324,
+#: 344, 364, 384, 404, 422
 msgid "Applying Changes..."
 msgstr "تطبيق التغييرات"
 
@@ -77,23 +82,19 @@ msgstr "Material Design (Materia)"
 msgid "Switch the layout of your desktop to suit your workflow."
 msgstr "تبديل تخطيط سطح المكتب ليتناسب مع سير عملك."
 
-#: default.html:305
-msgid "Default"
-msgstr "الافتراضي"
+#: default.html315, 335, 355, 375, 395
+msgid "Install layout"
+msgstr ""
 
-#: default.html:309
-msgid "Classic Budgie"
-msgstr "Budgie التقليدي"
+#: default.html319, 339, 359, 379, 399
+msgid "Apply layout"
+msgstr ""
 
-#: default.html:321
-msgid "Classic GNOME"
-msgstr "GNOME التقليدي"
-
-#: default.html:330
+#: default.html:415
 msgid "Restore panels"
 msgstr "استعادة اللوحات"
 
-#: default.html:331
+#: default.html:416
 msgid ""
 "Lost your panels while playing with <span name=\"distro-name\"></span>? "
 "Unhappy with your changes to the panel layout? Don't worry. We can help you "
@@ -103,7 +104,7 @@ msgstr ""
 "راض عن تغييراتك في تخطيط اللوحة؟ لا تقلق. يمكننا مساعدتك لاستعادة لوحاتك "
 "بنقرة واحدة!"
 
-#: default.html:334
+#: default.html:419
 msgid ""
 "This will undo all changes that you have made on any panel and will reset "
 "back to the initial default panel layout configuration."
@@ -111,6 +112,6 @@ msgstr ""
 "سيؤدي هذا إلى التراجع عن جميع التغييرات التي أجريتها على أي لوحة، وسيعاد "
 "تعين اللوحات إلى هيئتها الافتراضية."
 
-#: default.html:338
+#: default.html:423
 msgid "Reset Budgie Panel"
 msgstr "استعادة لوحة Budgie"

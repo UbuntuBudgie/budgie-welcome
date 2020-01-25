@@ -2,13 +2,14 @@
 # Yetkin Degirmenci <yetkind@gmail.com>, 2017
 # Muhammed Yasin Özsaraç (Harnapazade) <myasinozsarac@gmail.com>, 2017
 # Emre JILTA <jilta.e@gmail.com>, 2018
+# Yasin ÇUKUR <yasincukur@gmail.com>, 2020
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: Budgie Welcome\n"
 "POT-Creation-Date: 2016-02-27 12:48+0100\n"
 "PO-Revision-Date: 2017-03-22 21:33+0000\n"
-"Last-Translator: Emre JILTA <jilta.e@gmail.com>, 2018\n"
+"Last-Translator: Yasin ÇUKUR <yasincukur@gmail.com>, 2020\n"
 "Language-Team: Turkish (https://www.transifex.com/ubuntu-budgie/teams/72251/tr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -17,9 +18,9 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "Report-Msgid-Bugs-To : you@example.com\n"
 
-#: default.html14, 24
-msgid "Default Settings"
-msgstr "Varsayılan Ayarlar"
+#: default.html:14
+msgid "Budgie Themes & Layouts"
+msgstr "Budgie Temaları & Yerleşimleri"
 
 #: default.html18, 32
 msgid "Switch Appearance"
@@ -28,6 +29,10 @@ msgstr "Görünümü Değiştir"
 #: default.html21, 300
 msgid "Desktop Layout"
 msgstr "Masaüstü Düzeni"
+
+#: default.html:24
+msgid "Desktop Layouts"
+msgstr "Masaüstü Yerleşimleri"
 
 #: default.html:33
 msgid ""
@@ -47,7 +52,8 @@ msgstr "Temayı Yükle"
 msgid "Apply theme"
 msgstr "Temayı Uygula"
 
-#: default.html61, 81, 106, 126, 146, 166, 186, 206, 226, 246, 271, 291, 337
+#: default.html61, 81, 106, 126, 146, 166, 186, 206, 226, 246, 271, 291, 324,
+#: 344, 364, 384, 404, 422
 msgid "Applying Changes..."
 msgstr "Değişiklikler Uygulanıyor..."
 
@@ -79,23 +85,19 @@ msgstr "Malzeme Tasarımı (Materia)"
 msgid "Switch the layout of your desktop to suit your workflow."
 msgstr "Masaüstünüzün düzenini iş akışınıza uyacak şekilde değiştirin."
 
-#: default.html:305
-msgid "Default"
-msgstr "Varsayılan"
+#: default.html315, 335, 355, 375, 395
+msgid "Install layout"
+msgstr "Yerleşim yükle"
 
-#: default.html:309
-msgid "Classic Budgie"
-msgstr "Klasik Budgie"
+#: default.html319, 339, 359, 379, 399
+msgid "Apply layout"
+msgstr "Yerleşimi uygula"
 
-#: default.html:321
-msgid "Classic GNOME"
-msgstr "Klasik GNOME"
-
-#: default.html:330
+#: default.html:415
 msgid "Restore panels"
 msgstr "Panelleri geri yükle"
 
-#: default.html:331
+#: default.html:416
 msgid ""
 "Lost your panels while playing with <span name=\"distro-name\"></span>? "
 "Unhappy with your changes to the panel layout? Don't worry. We can help you "
@@ -106,7 +108,7 @@ msgstr ""
 "Endişelenmeyin. Tek bir tıklamayla panellerinizi geri yüklemenize yardımcı "
 "olabiliriz!"
 
-#: default.html:334
+#: default.html:419
 msgid ""
 "This will undo all changes that you have made on any panel and will reset "
 "back to the initial default panel layout configuration."
@@ -114,6 +116,6 @@ msgstr ""
 "Bu, herhangi bir panelde yaptığınız tüm değişiklikleri geri alır ve "
 "başlangıçtaki varsayılan panel düzen yapılandırmasına geri döner."
 
-#: default.html:338
+#: default.html:423
 msgid "Reset Budgie Panel"
 msgstr "Budgie Panelini Sıfırla"

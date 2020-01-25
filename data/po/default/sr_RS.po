@@ -15,9 +15,9 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "Report-Msgid-Bugs-To : you@example.com\n"
 
-#: default.html14, 24
-msgid "Default Settings"
-msgstr "Podešavanja"
+#: default.html:14
+msgid "Budgie Themes & Layouts"
+msgstr ""
 
 #: default.html18, 32
 msgid "Switch Appearance"
@@ -26,6 +26,10 @@ msgstr "Promeni Izgled"
 #: default.html21, 300
 msgid "Desktop Layout"
 msgstr "Izgled i oblik radne površine"
+
+#: default.html:24
+msgid "Desktop Layouts"
+msgstr ""
 
 #: default.html:33
 msgid ""
@@ -45,7 +49,8 @@ msgstr "Instaliraj temu"
 msgid "Apply theme"
 msgstr "Upotrebi temu"
 
-#: default.html61, 81, 106, 126, 146, 166, 186, 206, 226, 246, 271, 291, 337
+#: default.html61, 81, 106, 126, 146, 166, 186, 206, 226, 246, 271, 291, 324,
+#: 344, 364, 384, 404, 422
 msgid "Applying Changes..."
 msgstr "Primena Izmena..."
 
@@ -77,23 +82,19 @@ msgstr "Materijalni Dizajn (Materia)"
 msgid "Switch the layout of your desktop to suit your workflow."
 msgstr "Promenite izgled vašeg dekstopa da odgovara vašeg radnom procesu. "
 
-#: default.html:305
-msgid "Default"
-msgstr "Uobičajno"
+#: default.html315, 335, 355, 375, 395
+msgid "Install layout"
+msgstr ""
 
-#: default.html:309
-msgid "Classic Budgie"
-msgstr "Klasični Budgie"
+#: default.html319, 339, 359, 379, 399
+msgid "Apply layout"
+msgstr ""
 
-#: default.html:321
-msgid "Classic GNOME"
-msgstr "Klasični GNOME"
-
-#: default.html:330
+#: default.html:415
 msgid "Restore panels"
 msgstr "Vrati panele"
 
-#: default.html:331
+#: default.html:416
 msgid ""
 "Lost your panels while playing with <span name=\"distro-name\"></span>? "
 "Unhappy with your changes to the panel layout? Don't worry. We can help you "
@@ -103,7 +104,7 @@ msgstr ""
 "Nezadovoljni promenama panela i izgledom? Ne brinite se. Uz samo jedan klik "
 "izgled vašeg panela će se vratiti na fabričku postavku."
 
-#: default.html:334
+#: default.html:419
 msgid ""
 "This will undo all changes that you have made on any panel and will reset "
 "back to the initial default panel layout configuration."
@@ -111,6 +112,6 @@ msgstr ""
 "Ovo će poništiti sve izmene koje ste napravili na bilo kom panelu i "
 "resetovaće panele i izgled na fabričku konfiguraciju."
 
-#: default.html:338
+#: default.html:423
 msgid "Reset Budgie Panel"
 msgstr "Resetuj Budgie Panel"
