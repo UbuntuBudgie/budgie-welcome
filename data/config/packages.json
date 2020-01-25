@@ -532,6 +532,16 @@
         "all": ["universe"]
       }
     },
+    "classicubuntubudgie-layout": {
+      "packages": ["budgie-indicator-applet",
+                   "budgie-dropby-applet",
+                   "budgie-showtime-applet",
+                   "budgie-quicknote-applet"
+                  ],
+      "repos": {
+        "all": ["universe"]
+      }
+    },
     "redmond-layout": {
       "packages": ["budgie-applications-menu-applet",
                    "budgie-indicator-applet",
