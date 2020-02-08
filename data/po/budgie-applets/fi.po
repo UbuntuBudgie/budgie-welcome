@@ -1,345 +1,360 @@
 # Translators:
-# Ryo Nakano, 2019
-# FuRuYa7 <goo.sirocat47@gmail.com>, 2019
+# Oi Suomi On! <oisuomion@protonmail.com>, 2020
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: Budgie Welcome\n"
 "POT-Creation-Date: 2016-02-27 12:48+0100\n"
 "PO-Revision-Date: 2017-06-16 22:07+0000\n"
-"Last-Translator: FuRuYa7 <goo.sirocat47@gmail.com>, 2019\n"
-"Language-Team: Japanese (https://www.transifex.com/ubuntu-budgie/teams/72251/ja/)\n"
+"Last-Translator: Oi Suomi On! <oisuomion@protonmail.com>, 2020\n"
+"Language-Team: Finnish (https://www.transifex.com/ubuntu-budgie/teams/72251/fi/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ja\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Language: fi\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Report-Msgid-Bugs-To : you@example.com\n"
 
 #: budgie-applets.html:14
 msgid "Budgie Desktop Applets"
-msgstr "Budgie デスクトップアプレット"
+msgstr "Budgie-työpöydän sovellukset"
 
 #: budgie-applets.html:16
 msgid ""
 "Logout and login after installing applets. From the menu - choose Budgie "
 "Desktop Settings and choose the Panel to add and configure applets."
 msgstr ""
-"アプレットをインストールした後、ログアウトしてログインします。メニューから「Budgie "
-"デスクトップの設定」を選択し、パネルを選択してアプレットを追加および設定します。"
+"Uloskirjaudu ja sisäänkirjaudu takaisin sovellusten asennuksen jälkeen. "
+"Valikosta - valitse Budgie-työpöydän asetukset ja valitse sen jälkeen "
+"Paneeli lisätäksesi ja säätääksesi sovelluksia."
 
 #: budgie-applets.html:19
 msgid "Budgie Desktop Settings"
-msgstr "Budgie デスクトップの設定"
+msgstr "Budgie-työpöydän Asetukset"
 
 #: budgie-applets.html:26
 msgid "Haste Applet"
-msgstr "Haste アプレット"
+msgstr "Haste-sovellus"
 
 #: budgie-applets.html:31
 msgid ""
 "Post any text – be it code or prose – to various services directly from your"
 " desktop."
-msgstr "テキストを投稿する – コードでも散文でも – デスクトップから直接さまざまなサービスに。"
+msgstr ""
+"Julkaise mikä teksti vain - oli se sitten koodia tai proosaa - lukuisiin "
+"palveluihin suoraan työpöydältäsi."
 
 #: budgie-applets.html35, 57, 79, 101, 123, 145, 167, 189, 211, 233, 255, 277,
 #: 299, 322, 344, 366, 388, 410, 432, 454, 476, 498, 520, 542, 564, 586, 608,
 #: 630, 652, 674, 696, 718, 740, 762, 784, 807, 829
 msgid "Remove"
-msgstr "削除"
+msgstr "Poista"
 
 #: budgie-applets.html38, 60, 82, 104, 126, 148, 170, 192, 214, 236, 258, 280,
 #: 302, 347, 369, 391, 413, 435, 457, 479, 501, 523, 545, 567, 589, 611, 633,
 #: 655, 677, 699, 721, 743, 765, 787, 832
 msgid "Install Applet"
-msgstr "アプレットをインストール"
+msgstr "Asenna sovellus"
 
 #: budgie-applets.html41, 63, 85, 107, 129, 151, 173, 195, 217, 239, 261, 283,
 #: 305, 328, 350, 372, 394, 416, 438, 460, 482, 504, 526, 548, 570, 592, 614,
 #: 636, 658, 680, 702, 724, 746, 768, 790, 813, 835
 msgid "Applying Changes..."
-msgstr "変更を適用しています…"
+msgstr "Muutoksia toteutetaan..."
 
 #: budgie-applets.html:48
 msgid "Screenshot Applet"
-msgstr "スクリーンショット アプレット"
+msgstr "Kuvakaappaus-sovellus"
 
 #: budgie-applets.html:53
 msgid ""
 "An advanced screenshot utility for capturing and organizing screenshots."
-msgstr "スクリーンショットを取得して整理するための、高度なスクリーンショットユーティリティーです。"
+msgstr "Edistynyt kuvankaappaustyökalu napata ja järjestellä kuvakaappauksia."
 
 #: budgie-applets.html:70
 msgid "Calendar Applet"
-msgstr "カレンダーア プレット"
+msgstr "Kalenterisovellus"
 
 #: budgie-applets.html:75
 msgid "Show date and time and when clicked show a calendar in a popover."
-msgstr "日付と時刻を表示し、クリック時にはポップオーバーにカレンダーを表示します。"
+msgstr ""
+"Näytä päiväys ja aika sekä klikattaessa näytä kalenteri "
+"ponnahduskehoitteessa."
 
 #: budgie-applets.html:92
 msgid "Network Applet"
-msgstr "ネットワーク アプレット"
+msgstr "Verkonhallintasovellus"
 
 #: budgie-applets.html:97
 msgid "Network connectivity applet."
-msgstr "ネットワーク接続を管理するアプレットです。"
+msgstr "Verkonhallintasovellus yhteyksienhallintaan."
 
 #: budgie-applets.html:114
 msgid "CPU Frequency Applet"
-msgstr "CPU Frequency アプレット"
+msgstr "Suoritintaajuussovellus"
 
 #: budgie-applets.html:119
 msgid "Control the frequency of the processor (Sandy Bridge and newer)."
-msgstr "プロセッサの周波数を制御します（Sandy Bridge以降）。"
+msgstr "Hallitse suorittimen taajuutta (Sandy Bridge ja uudemmat)."
 
 #: budgie-applets.html136, 224
 msgid "System Monitor Applet"
-msgstr "システムモニター アプレット"
+msgstr "Järjestelmänvalvontasovellus"
 
 #: budgie-applets.html:141
 msgid "Show frequency, ram, swap & network values."
-msgstr "周波数、RAM、スワップ、ネットワークの値を表示します。"
+msgstr "Näytä taajuus, keskusmuisti, heittovaihtotiedosto & verkkoarvot."
 
 #: budgie-applets.html:158
 msgid "Pixel-Saver Applet"
-msgstr "Pixel-Saver アプレット"
+msgstr "Pixel-Saver-sovellus"
 
 #: budgie-applets.html:163
 msgid ""
 "Hides the title bar from maximized windows and creates a new one inside the "
 "panel."
-msgstr "最大化されたウィンドウからタイトルバーを非表示にし、パネル内に新しいタイトルバーを作成します。"
+msgstr ""
+"Piilottaa otsikkopalkin suurennetuista ikkunoista ja luo uuden paneelin "
+"sisälle."
 
 #: budgie-applets.html:180
 msgid "Global Menu Applet"
-msgstr "グローバルメニュー アプレット"
+msgstr "Yleismaailmallinenvalikko"
 
 #: budgie-applets.html:185
 msgid "Moves the menu from applications into the panel."
-msgstr "アプリケーションからパネルにメニューを移動します。"
+msgstr "Siirtää valikon sovelluksista paneeliin."
 
 #: budgie-applets.html:202
 msgid "Weather Applet"
-msgstr "天気アプレット"
+msgstr "Sääsovellus"
 
 #: budgie-applets.html:207
 msgid "Displays the weather on your panel."
-msgstr "パネルに天気を表示します。"
+msgstr "Näyttää säätiedot paneelissa."
 
 #: budgie-applets.html:229
 msgid "Customize and display system information on the panel."
-msgstr "システム情報をカスタマイズして、パネルに表示します。"
+msgstr "Muokkaa ja näytä järjestelmätiedot paneelissa."
 
 #: budgie-applets.html:246
 msgid "Hotcorners Applet"
-msgstr "ホットコーナー アプレット"
+msgstr "Hotcorners-kuumatkulmaukset"
 
 #: budgie-applets.html:251
 msgid ""
 "Allow user defined commands to be executed when the mouse cursor is pushed "
 "into a corner of the main desktop."
-msgstr "マウスカーソルをデスクトップの隅に押し込んだときに、ユーザー定義のコマンドを実行できるようにします。"
+msgstr ""
+"Salli käyttäjän asettamien käskyjen ajaminen kun hiiren osoitin työnnetään "
+"päätyöpöydän kulmaukseen."
 
 #: budgie-applets.html:268
 msgid "Quicknote Applet"
-msgstr "クイックノート アプレット"
+msgstr "Quicknote-pikamuistiinpanot"
 
 #: budgie-applets.html:273
 msgid "Quickly record a text based note."
-msgstr "テキストベースのノートを素早く記録します。"
+msgstr "Tallenna tekstipohjainen muistiinpano nopeasti."
 
 #: budgie-applets.html290, 312
 msgid "Previews"
-msgstr "プレビュー"
+msgstr "Esikatselut"
 
 #: budgie-applets.html295, 317
 msgid "Show an overview of windows in an exposé like way."
-msgstr "Exposé 風にウィンドウのオーバービューを表示します。"
+msgstr "Näytä ikkunoiden yleiskatselma exposé tyyliin."
 
 #: budgie-applets.html318, 803
 msgid "This is a mini-app and is launched via the budgie menu."
-msgstr "これはミニアプリで、budgie menuから起動します。"
+msgstr "Tämä on pienoissovellus ja käynnistetään budgievalikosta."
 
 #: budgie-applets.html325, 810
 msgid "Install mini-app"
-msgstr "ミニアプリをインストール"
+msgstr "Asenna pienoissovellus"
 
 #: budgie-applets.html:335
 msgid "Workspace Overview Applet"
-msgstr "ワークスペースオーバービュー アプレット"
+msgstr "Työtilan yleiskatselmasovellus"
 
 #: budgie-applets.html:340
 msgid "Quickly navigate workspaces using the applet's menu."
-msgstr "アプレットのメニューを使用して、ワークスペースをすばやくナビゲートします。"
+msgstr "Liiku työtiloissa nopeasti sovelluksen käyttäen sovelluksen valikkoa."
 
 #: budgie-applets.html:357
 msgid "Workspace Wallpaper Applet"
-msgstr "ワークスペースの壁紙 アプレット"
+msgstr "Työtilojen taustakuvasovellus"
 
 #: budgie-applets.html:362
 msgid "Show a different wallpaper on each workspace."
-msgstr "各ワークスペースに異なる壁紙を表示します。"
+msgstr "Näytä eri taustakuva jokaisessa työtilassa."
 
 #: budgie-applets.html:379
 msgid "Window Mover Applet"
-msgstr "ウィンドウの移動アプレット"
+msgstr "Ikkunansiirtosovellus"
 
 #: budgie-applets.html:384
 msgid "Quickly move windows between workspaces."
-msgstr "ワークスペース間でウィンドウを素早く移動します。"
+msgstr "Liikuta ikkunoita nopeasti työtilojen välillä."
 
 #: budgie-applets.html:401
 msgid "Desktop Showtime Applet"
-msgstr "Desktop Showtime アプレット"
+msgstr "Työpöydän Showtime-sovellus"
 
 #: budgie-applets.html:406
 msgid "Display the date and time on the Desktop."
-msgstr "デスクトップに日付と時刻を表示します。"
+msgstr "Näytä päiväys ja kellonaika työpöydällä."
 
 #: budgie-applets.html:423
 msgid "CountDown Applet"
-msgstr "カウントダウン アプレット"
+msgstr "Ajastinsovellus"
 
 #: budgie-applets.html:428
 msgid "Set a timed countdown and run an action when the countdown completes."
-msgstr "時限カウントダウンを設定し、カウントダウンが完了したらアクションを実行します。"
+msgstr "Aseta ajastettu lähtölaskenta ja aja toimenpide kun laskenta päättyy."
 
 #: budgie-applets.html:445
 msgid "Auto-Keyboard Switcher Applet"
-msgstr "Auto-Keyboard Switcher アプレット"
+msgstr "Automaattinäppäimistön vaihtosovellus"
 
 #: budgie-applets.html:450
 msgid "Change the keyboard language automatically on a per application basis."
-msgstr "アプリケーションごとにキーボードの言語を自動的に変更します。"
+msgstr ""
+"Vaihda näppäimistön kieli automaattisesti tietyn sovelluksen mukaisesti."
 
 #: budgie-applets.html:467
 msgid "Screen Rotation Lock Applet"
-msgstr "スクリーンの回転ロック アプレット"
+msgstr "Näytönkierronlukitus"
 
 #: budgie-applets.html:472
 msgid "Add the ability to unlock or lock the screen from rotating."
-msgstr "スクリーンの回転を解除したりロックしたりできるようにします。"
+msgstr "Lisää mahdollisuus estää tai myöntää näytönkierto. "
 
 #: budgie-applets.html:489
 msgid "Clockworks Applet"
-msgstr "Clockworks アプレット"
+msgstr "Kellopelisovellus"
 
 #: budgie-applets.html:494
 msgid "Display the time across multiple time zones."
-msgstr "複数のタイムゾーンの時刻を表示します。"
+msgstr "Näytä kellonaika useammat aikavyöhykkeet suhteutettuna."
 
 #: budgie-applets.html511, 533
 msgid "DropBy Applet"
-msgstr "DropBy アプレット"
+msgstr "DropBy-sovellus"
 
 #: budgie-applets.html:516
 msgid "Display a pop-up in the panel when a USB device is connected."
-msgstr "USBデバイスが接続されているときに、パネルにポップアップを表示します。"
+msgstr "Näytä ponnahduskehote paneelissa kun USB-laite liitetään. "
 
 #: budgie-applets.html:538
 msgid "Display a pop-up window when a USB device is connected."
-msgstr "USBデバイスが接続されているときにポップアップウィンドウを表示します。"
+msgstr "Näytä ponnahdusikkuna kun USB-laite liitetään."
 
 #: budgie-applets.html555, 577
 msgid "Brightness Controller Applet"
-msgstr "Brightness Controller アプレット"
+msgstr "Kirkkaudenhallinta"
 
 #: budgie-applets.html560, 582
 msgid ""
 "Control the backlight via your graphics driver controller or GNOME's "
 "brightness controller."
-msgstr "グラフィックスドライバーコントローラーまたはGNOMEの輝度コントローラーを介してバックライトを制御します。"
+msgstr ""
+"Näytön takavalon hallinta grafiikka-ajurin hallinnoitsijan kautta tai "
+"GNOME'n kirkkaushallinnoitsijan kautta."
 
 #: budgie-applets.html:599
 msgid "Browser Profile Launcher Applet"
-msgstr "ブラウザープロファイルランチャー アプレット"
+msgstr "Selaimen profiilikäynnistinsovellus"
 
 #: budgie-applets.html:604
 msgid "Launch and create multiple Chromium/Chrome profiles."
-msgstr "複数の Chromium/Chrome プロファイルを起動・作成します。"
+msgstr "Käynnistä ja luo useita Chromium / Chrome profiileja."
 
 #: budgie-applets.html:621
 msgid "Find Fast 'Kangaroo' Applet"
-msgstr "高速な「Kangaroo」アプレットを見つける"
+msgstr "Find Fast nopeanhaun 'Kangaroo' sovellus"
 
 #: budgie-applets.html:626
 msgid ""
 "Quick and easy browsing, across (possibly) many folder layers, without "
 "having to-do a single mouse click."
-msgstr "（おそらく）多くのフォルダにて、マウスを1回クリックするだけですばやく簡単に閲覧できます。"
+msgstr ""
+"Nopea ja helppo selaaminen, (mahdollisesti) monien kansiotasojen kesken, "
+"ilman hiiren yksittäisklikkauksen tarvetta."
 
 #: budgie-applets.html:643
 msgid "Weather and Forecast Applet"
-msgstr "天気予報アプレット"
+msgstr "Sään ja sääennusteen sovellus"
 
 #: budgie-applets.html:648
 msgid "Weather forecast every three hours and over five days."
-msgstr "次の 5 日間の 3 時間ごとの天気予報です。"
+msgstr "Sääennuste joka kolmas tunti viiden päivän ajan."
 
 #: budgie-applets.html:665
 msgid "Recently Used Applet"
-msgstr "最近使用した項目アプレット"
+msgstr "Äskettäin käytetyt sovellukset"
 
 #: budgie-applets.html:670
 msgid "Show recently used items in a menu."
-msgstr "メニューに最近使用した項目を表示します。"
+msgstr "Näytä äskettäin käytetyt kohteet valikossa."
 
 #: budgie-applets.html:687
 msgid "Trash Applet"
-msgstr "ゴミ箱アプレット"
+msgstr "Roskakori"
 
 #: budgie-applets.html:692
 msgid "Show, hide and restore trash items."
-msgstr "ゴミ箱の項目を表示・非表示にしたり、元に戻したりします。"
+msgstr "Näytä, piilota ja palauta roskakorin kohteet."
 
 #: budgie-applets.html:709
 msgid "Application Launcher Applet"
-msgstr "アプリケーションランチャー アプレット"
+msgstr "Sovelluskäynnistin"
 
 #: budgie-applets.html:714
 msgid "Display your favorite applications in a menu and on the panel."
-msgstr "メニューとパネルにお気に入りのアプリケーションを表示します。"
+msgstr "Näytä lempisovelluksesi valikossa ja paneelissa."
 
 #: budgie-applets.html:731
 msgid "Take-A-Break Applet"
-msgstr "Take-A-Break アプレット"
+msgstr "Take-A-Break - pidä tauko - sovellus"
 
 #: budgie-applets.html:736
 msgid ""
 "A pomodoro-like applet, to make sure you take regular breaks from working."
-msgstr "定期的に休憩を取るようにするためのポモドーロ・テクニックのようなアプレット。"
+msgstr ""
+"Pomodoro:n kaltainen sovellus varmistaaksesi että pidät säännöllisiä taukoja"
+" työnteosta."
 
 #: budgie-applets.html:753
 msgid "Fuzzy-Clock Applet"
-msgstr "Fuzzy-Clock アプレット"
+msgstr "Fuzzy-Clock  - \"härökello\" - sovellus"
 
 #: budgie-applets.html:758
 msgid "Shows the time in a fuzzy way."
-msgstr "時間をあいまいに表示します。"
+msgstr "Näyttää kellonajan sameannäköisesti."
 
 #: budgie-applets.html:775
 msgid "Workspace Stopwatch"
-msgstr "Workspace Stopwatch"
+msgstr "Työtila-Stopwatch"
 
 #: budgie-applets.html:780
 msgid "Keep track of usage per workspace."
-msgstr "ワークスペースごとの使用状況を追跡します。"
+msgstr "Pitää kirjaa eri työtilojen käytöstä."
 
 #: budgie-applets.html:797
 msgid "Quick Character"
-msgstr "Quick Character"
+msgstr "Quick Character - pikamerkistö"
 
 #: budgie-applets.html:802
 msgid ""
 "Quickly find and choose the equivalent locale character for an ascii "
 "character."
-msgstr "ASCII文字と同等のロケール文字をすばやく見つけて選択します。"
+msgstr "Löydä ja valitse nopeasti paikallismerkkivertainen ascii-merkille."
 
 #: budgie-applets.html:820
 msgid "Status Notifier Tray Applet"
-msgstr "Status Notifier Tray アプレット"
+msgstr "Tilanneilmoitinsovellus palkkilokeroon"
 
 #: budgie-applets.html:825
 msgid "System Tray in KDE StatusNotifierItem format."
-msgstr "KDE StatusNotifierItem 形式のシステムトレイ。"
+msgstr "Järjestelmälokero KDE StatusNotifierItem-muodossa."
