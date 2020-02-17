@@ -1,44 +1,42 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR ORGANIZATION
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 # Translators:
 # Денис Алексеёнок <d.alexeenok@gmail.com>, 2017
 # Keeper Holderson <falex7835@gmail.com>, 2018
 # Kirill Lipskii <Likivik@gmail.com>, 2018
 # Max Frei <schtaufenberg@yandex.ru>, 2018
 # david mohammed <foss.freedom@gmail.com>, 2019
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2020-01-18 11:27+GMT\n"
+"POT-Creation-Date: 2020-02-08 18:14+GMT\n"
 "PO-Revision-Date: 2017-03-11 16:44+0000\n"
 "Last-Translator: david mohammed <foss.freedom@gmail.com>, 2019\n"
-"Language-Team: Russian (https://www.transifex.com/ubuntu-budgie/teams/72251/"
-"ru/)\n"
-"Language: ru\n"
+"Language-Team: Russian (https://www.transifex.com/ubuntu-budgie/teams/72251/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: ENCODING\n"
 "Generated-By: pygettext.py 1.5\n"
-"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
-"%100>=11 && n%100<=14)? 2 : 3);\n"
+"Language: ru\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
 
-#: budgie-welcome:359
+#: budgie-welcome:366
 msgid ""
 "Steam is a third party package that requires user approval of EULA(End User "
-"License Agreement). So we rely on GNOME Software for installing steam and it "
-"is not available in your system. Please install GNOME Software and try this "
-"option again"
+"License Agreement). So we rely on GNOME Software for installing steam and it"
+" is not available in your system. Please install GNOME Software and try this"
+" option again"
 msgstr ""
 "Steam это сторонний пакет, который требует принятия Вами соглашения "
 "конечного  пользователя (EULA). Мы основываемся на GNOME Software - "
 "программе для установки Steam, отсутствующей у Вас в данный момент. "
-"Попробуйте повторить данное действия после установки программы GNOME Software"
+"Попробуйте повторить данное действия после установки программы GNOME "
+"Software"
 
-#: budgie-welcome:453
+#: budgie-welcome:460
 msgid ""
 "Seems that GNOME Software is not installed. If this problem persists even "
 "after installing GNOME Software, please contact us with following error "
@@ -48,26 +46,26 @@ msgstr ""
 "установки GNOME Software, пожалуйста, отправьте нам следующее сообщение об "
 "ошибке."
 
-#: budgie-welcome:527
+#: budgie-welcome:534
 msgid "Following tasks are in progress"
 msgstr "Выполняются следующие операции"
 
-#: budgie-welcome:534 budgie-welcome:1618 budgie-welcome:1626
-#: budgie-welcome:2082
+#: budgie-welcome:541 budgie-welcome:1625 budgie-welcome:1633
+#: budgie-welcome:2089
 msgid "Budgie Welcome"
 msgstr "Приветствие Budgie"
 
-#: budgie-welcome:538
+#: budgie-welcome:545
 msgid "Budgie Desktop"
 msgstr "Рабочий стол Budgie"
 
-#: budgie-welcome:621
+#: budgie-welcome:628
 msgid ""
 "The following third-party repositories need to be added to complete the "
 "installation:"
 msgstr "Следующие сторонние пакеты требуются для завершенияшения установки:"
 
-#: budgie-welcome:649
+#: budgie-welcome:656
 msgid ""
 "Third-Party repositories are not supported by Ubuntu. You should only "
 "continue if you trust the maintainers of the proposed repositories."
@@ -76,73 +74,73 @@ msgstr ""
 "дать разрешение на использование хранящихся там программ только если Вы "
 "доверяете людям поддерживающим данные сторонние репозитории."
 
-#: budgie-welcome:652
+#: budgie-welcome:659
 msgid "Continue with the installation?"
 msgstr "Продолжить с инсталляции?"
 
-#: budgie-welcome:658
+#: budgie-welcome:665
 msgid "Third-Party Repositories"
 msgstr "Сторонние репозитории"
 
-#: budgie-welcome:954
+#: budgie-welcome:961
 msgid "Welcome App"
 msgstr "Программа приветствия"
 
-#: budgie-welcome:1298
+#: budgie-welcome:1305
 msgid "Could not gather data."
 msgstr "Не получилось собрать информацию"
 
-#: budgie-welcome:1378
+#: budgie-welcome:1385
 msgid "GB"
 msgstr "Гб"
 
-#: budgie-welcome:1379
+#: budgie-welcome:1386
 msgid "GiB"
 msgstr "ГиБ"
 
-#: budgie-welcome:1380
+#: budgie-welcome:1387
 msgid "MB"
 msgstr "МБ"
 
-#: budgie-welcome:1381
+#: budgie-welcome:1388
 msgid "MiB"
 msgstr "МиБ"
 
-#: budgie-welcome:1641
+#: budgie-welcome:1648
 msgid "Status"
 msgstr "Статус"
 
-#: budgie-welcome:1728
+#: budgie-welcome:1735
 msgid " is in progress. Please wait for it to complete"
 msgstr "в процессе. Пожалуйста дождитесь завершения."
 
-#: budgie-welcome:2083
+#: budgie-welcome:2090
 msgid "Find out about your operating system"
 msgstr "Познакомьтесь со своей операционной системой"
 
-#: budgie-welcome:2085
-msgid "Budgie Themes"
-msgstr "Темы Budgie"
+#: budgie-welcome:2092
+msgid "Budgie Themes & Layouts"
+msgstr ""
 
-#: budgie-welcome:2086
-msgid "Give the desktop a makeover with new themes, icons and fonts"
-msgstr "Кардинально измените рабочий стол с новыми темами, иконками и шрифтами"
+#: budgie-welcome:2093
+msgid "Give the desktop a makeover with new themes, icons, fonts & layouts"
+msgstr ""
 
-#: budgie-welcome:2088
+#: budgie-welcome:2095
 msgid "Budgie Applets"
 msgstr "Апплеты Budgie"
 
-#: budgie-welcome:2089
+#: budgie-welcome:2096
 msgid ""
 "Customize the desktop panel with applets that provide extra capabilities"
 msgstr ""
 "Настройте панель рабочего стола с помощью апплетов, которые предоставляют "
 "дополнительные возможности"
 
-#: budgie-welcome:2092
+#: budgie-welcome:2099
 msgid "Budgie Discourse"
 msgstr ""
 
-#: budgie-welcome:2093
+#: budgie-welcome:2100
 msgid "Be part of the Ubuntu Budgie Community"
 msgstr ""
