@@ -23,7 +23,10 @@ import json
 from softwareproperties.SoftwareProperties \
   import SoftwareProperties, shortcut_handler
 import aptsources
-import platform
+try:
+    import distro
+except:
+    import platform
 import glob
 
 '''
@@ -77,11 +80,24 @@ def check_if_installed_ppa(release_code, ppa_name):
 
     return found
 
+def get_release_code():
+    release_code = ""
+    try:
+        release_code = distro.codename().split(' ')[0].lower()
+    except:
+        release_code = platform.dist()[2]  # → trusty, wily, xenial
+
+    return release_code
+
 def add_repos(repos, key_commands):
 
     if not repos: return 0
 
-    release_code = platform.dist()[2]    # → xenial, yakkety, zesty
+    release_code = get_release_code()
+    try:
+        release_code = distro.codename().split(' ')[0].lower()
+    except:
+        release_code = platform.dist()[2]  # → trusty, wily, xenial
 
     if "all" in repos : repos = repos["all"]
     else : repos = repos.get(release_code)
@@ -190,7 +206,7 @@ class PackageData(object):
             self.data = json.load(file)
 
     def getPackageInfo(self, filename, code):
-        release_code = platform.dist()[2]    # → xenial, yakkety, zesty
+        release_code = get_release_code()
         full_code = code + "#" + release_code
         try:
             if full_code in self.data[filename]:
