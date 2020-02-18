@@ -109,7 +109,7 @@ def add_repos(repos, key_commands):
         # check if its a component that should be added/removed
         aptdistro = aptsources.distro.get_distro()
         aptdistro.get_sources(sp.sourceslist)
-        components = [comp.name for comp in distro.source_template.components]
+        components = [comp.name for comp in aptdistro.source_template.components]
 
         if repo in components:
             if repo not in aptdistro.enabled_comps:
