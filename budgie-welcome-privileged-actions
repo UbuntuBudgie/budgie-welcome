@@ -2,7 +2,7 @@
 # -*- coding:utf-8 -*-
 #
 # Copyright 2016 Ubuntu Mate
-# Copyright 2016-2018 Ubuntu Budgie Developers
+# Copyright 2016-2020 Ubuntu Budgie Developers
 #
 # budgie-welcome is free software: you can redistribute it and/or modify
 # it under the temms of the GNU General Public License as published by
@@ -94,10 +94,6 @@ def add_repos(repos, key_commands):
     if not repos: return 0
 
     release_code = get_release_code()
-    try:
-        release_code = distro.codename().split(' ')[0].lower()
-    except:
-        release_code = platform.dist()[2]  # → trusty, wily, xenial
 
     if "all" in repos : repos = repos["all"]
     else : repos = repos.get(release_code)
@@ -111,14 +107,14 @@ def add_repos(repos, key_commands):
 
     for repo in repos:
         # check if its a component that should be added/removed
-        distro = aptsources.distro.get_distro()
-        distro.get_sources(sp.sourceslist)
-        components = [comp.name for comp in distro.source_template.components]
+        aptdistro = aptsources.distro.get_distro()
+        aptdistro.get_sources(sp.sourceslist)
+        components = [comp.name for comp in aptdistro.source_template.components]
 
         if repo in components:
-            if repo not in distro.enabled_comps:
+            if repo not in aptdistro.enabled_comps:
                 force_update = True
-                distro.enable_component(repo)
+                aptdistro.enable_component(repo)
         else:
             if check_if_installed_ppa( release_code, repo ) == False:
                 sp.add_source_from_shortcut(shortcut_handler(repo))
@@ -147,12 +143,9 @@ def install(fname, code):
 
     if snaps and len(snaps) > 0:
         # we are dealing with snap installs
-        print (snaps)
         for snap in snaps:
-            print (snap)
             process = subprocess.Popen(['snap', 'install', snap])
             retval += process.wait()
-        print ("exiting")
         return retval
 
     # we are dealing with repo and package installs
