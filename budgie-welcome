@@ -212,7 +212,7 @@ class AppView(WebKit2.WebView):
             else:
                 app.update_page('.unofficial-only', 'show')
 
-        if current_page in ['introduction', 'features']:
+        if current_page in ['introduction', 'features', 'gettingstarted']:
             if systemstate.codename in ['bionic']:
                 app.update_page('.1804-only', 'show')
                 app.update_page('.after1810', 'hide')
