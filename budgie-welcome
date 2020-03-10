@@ -464,9 +464,9 @@ class AppView(WebKit2.WebView):
 
                 popup.showMessage()
 
-        elif uri.startswith("theme?"):
+        elif uri.startswith("makeover?"):
 
-            code = uri[6:]
+            code = uri[9:]
             panelstyle = os.path.expanduser('~') + "/.config/gtk-3.0/gtk.css"
 
             theme = app._data_path + "/config/" + code + "-style.json"
@@ -496,6 +496,160 @@ class AppView(WebKit2.WebView):
                             gsettings.set_boolean(key, value)
                         else:
                             gsettings.set_string(key, value)
+
+                if attrib:
+                    self._set_panel_key(
+                        'enable-shadow', attrib['enable-shadow'])
+                    self._set_panel_key('size', attrib['size'])
+                    self._set_panel_key('transparency', attrib['transparency'])
+                else:
+                    # sane defaults
+                    self._set_panel_key('enable-shadow', True)
+                    self._set_panel_key('size', 37)
+                    self._set_panel_key('transparency', None)
+
+                subprocess.Popen(['budgie-panel', '--replace', '&'])
+
+                self._push_config()
+
+            Thread(target=applyStyle).start()
+
+        elif uri.startswith("theme?"):
+
+            code = uri[6:]
+            panelstyle = os.path.expanduser('~') + "/.config/gtk-3.0/gtk.css"
+
+            theme = app._data_path + "/config/" + code + "-style.json"
+
+            def applyStyle():
+                with open(theme) as file:
+                    whole_config = json.load(file)
+
+                if systemstate.codename in whole_config:
+                    config = whole_config[systemstate.codename]
+                else:
+                    config = whole_config["default"]
+
+                for item in config:
+                    if "panel-attrib" in item:
+                        continue
+
+                    schema = item["SCHEMA"]
+                    values = item["VALUES"]
+
+                    gsettings = Gio.Settings.new(schema)
+
+                    for key, value in values.items():
+                         if key == "gtk-theme" or key == "theme":
+                             gsettings.set_string(key, value)
+
+                self._push_config()
+
+            Thread(target=applyStyle).start()
+
+        elif uri.startswith("font?"):
+            code = uri[5:]
+            panelstyle = os.path.expanduser('~') + "/.config/gtk-3.0/gtk.css"
+
+            theme = app._data_path + "/config/" + code + "-style.json"
+
+            def applyStyle():
+                with open(theme) as file:
+                    whole_config = json.load(file)
+
+                if systemstate.codename in whole_config:
+                    config = whole_config[systemstate.codename]
+                else:
+                    config = whole_config["default"]
+
+                for item in config:
+                    if "panel-attrib" in item:
+                        continue
+
+                    schema = item["SCHEMA"]
+                    values = item["VALUES"]
+
+                    gsettings = Gio.Settings.new(schema)
+
+                    for key, value in values.items():
+                        if "font" in key:
+                            gsettings.set_string(key, value)
+
+                self._push_config()
+
+            Thread(target=applyStyle).start()
+
+        elif uri.startswith("icon?"):
+
+            code = uri[5:]
+            panelstyle = os.path.expanduser('~') + "/.config/gtk-3.0/gtk.css"
+
+            theme = app._data_path + "/config/" + code + "-style.json"
+
+            def applyStyle():
+                with open(theme) as file:
+                    whole_config = json.load(file)
+
+                if systemstate.codename in whole_config:
+                    config = whole_config[systemstate.codename]
+                else:
+                    config = whole_config["default"]
+
+                for item in config:
+                    if "panel-attrib" in item:
+                        continue
+
+                    schema = item["SCHEMA"]
+                    values = item["VALUES"]
+
+                    gsettings = Gio.Settings.new(schema)
+
+                    for key, value in values.items():
+                        if key == "icon-theme":
+                            gsettings.set_string(key, value)
+
+                self._push_config()
+
+            Thread(target=applyStyle).start()
+
+        elif uri.startswith("desktop?"):
+
+            code = uri[8:]
+            panelstyle = os.path.expanduser('~') + "/.config/gtk-3.0/gtk.css"
+
+            theme = app._data_path + "/config/" + code + "-style.json"
+
+            def applyStyle():
+                with open(theme) as file:
+                    whole_config = json.load(file)
+
+                attrib = None
+                if systemstate.codename in whole_config:
+                    config = whole_config[systemstate.codename]
+                else:
+                    config = whole_config["default"]
+
+                for item in config:
+                    if "panel-attrib" in item:
+                        attrib = item["panel-attrib"]
+                        continue
+
+                    schema = item["SCHEMA"]
+                    values = item["VALUES"]
+
+                    gsettings = Gio.Settings.new(schema)
+
+                    schema_apply = False
+
+                    if schema in ["com.solus-project.budgie-panel", "org.gnome.desktop.background"]:
+                        schema_apply = True
+
+                    for key, value in values.items():
+                        if schema_apply or key == "cursor-theme":
+                            if type(value) == bool:
+                                gsettings.set_boolean(key, value)
+                            else:
+                                gsettings.set_string(key, value)
 
                 if attrib:
                     self._set_panel_key(
