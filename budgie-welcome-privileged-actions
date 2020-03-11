@@ -159,6 +159,12 @@ def install(fname, code):
         process = subprocess.Popen(['apt', 'install', '--allow-unauthenticated', '-y'] + packages)
         retval += process.wait()
 
+        if retval != 0:
+            process = subprocess.Popen(['apt', 'update'])
+            retval = process.wait()
+            process = subprocess.Popen(['apt', 'install', '--allow-unauthenticated', '-y'] + packages)
+            retval += process.wait()
+
     return retval
 
 def remove(fname, code):
