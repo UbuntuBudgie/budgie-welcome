@@ -508,7 +508,11 @@ class AppView(WebKit2.WebView):
                     self._set_panel_key('size', 37)
                     self._set_panel_key('transparency', None)
 
-                subprocess.Popen(['budgie-panel', '--replace', '&'])
+                p = subprocess.Popen(['killall', 'showtime_desktop'])
+                p.wait()
+
+                p = subprocess.Popen(['budgie-panel', '--replace', '&'])
+                p.wait()
 
                 self._push_config()
 
@@ -662,7 +666,11 @@ class AppView(WebKit2.WebView):
                     self._set_panel_key('size', 37)
                     self._set_panel_key('transparency', None)
 
-                subprocess.Popen(['budgie-panel', '--replace', '&'])
+                p = subprocess.Popen(['killall', 'showtime_desktop'])
+                p.wait()
+
+                p = subprocess.Popen(['budgie-panel', '--replace', '&'])
+                p.wait()
 
                 self._push_config()
 
