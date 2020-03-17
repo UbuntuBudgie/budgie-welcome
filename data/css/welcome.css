@@ -101,6 +101,22 @@ body, button {
 /************************
  * Content
 *************************/
+.main{
+  display: flex;
+  flex-direction: column;
+}
+
+.content{
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-bottom: 5%;
+}
+
+@media screen and (max-height: 600px){
+  .content{
+    margin-top: 0;
+  }
+}
 
 #content {
   padding-top: 32px;
