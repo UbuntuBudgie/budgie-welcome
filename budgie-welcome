@@ -241,18 +241,18 @@ class AppView(WebKit2.WebView):
                 app.update_page('.before1904', 'hide')
                 app.update_page('.after1904', 'show')
 
-        if current_page == 'budgie-applets':
-            # applets are distro specific so need to hide/show as appropriate
+        if current_page in ['budgie-applets', 'development']:
+            # packages can be distro specific, so need to hide/show as appropriate
             package = app._data_path + "/config/packages.json"
 
             with open(package) as file:
                 config = json.load(file)
 
-            for applet in config['budgie-applets']:
-                if systemstate.codename in config['budgie-applets'][applet]['repos']:
-                    app.update_page("." + applet, 'show')
+            for package_name in config[current_page]:
+                if any(elem in [systemstate.codename, 'all'] for elem in config[current_page][package_name]['repos']):
+                    app.update_page("." + package_name, 'show')
                 else:
-                    app.update_page("." + applet, 'hide')
+                    app.update_page("." + pacage_name, 'hide')
 
             if systemstate.bde_version == 'NA':
                 app.update_page(".showhide", 'show')
@@ -260,7 +260,7 @@ class AppView(WebKit2.WebView):
                 app.update_page(".showhide", 'hide')
 
         ### All pages with install/removal ###
-        if current_page in ['gettingstarted', 'default', 'recommendations', 'budgie-applets']:
+        if current_page in ['gettingstarted', 'default', 'recommendations', 'budgie-applets', 'development']:
             app.update_page('[id$=install]', 'hide')
             app.update_page('[id$=remove]', 'hide')
 
