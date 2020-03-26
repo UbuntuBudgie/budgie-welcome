@@ -303,8 +303,13 @@
         "bionic": ["ppa:ubuntubudgie/backports"],
         "cosmic": ["ppa:ubuntubudgie/backports"],
         "disco": ["ppa:ubuntubudgie/backports"],
-        "eoan": ["ppa:ubuntubudgie/backports"],
-        "focal": ["ppa:ubuntubudgie/backports"]
+        "eoan": ["ppa:ubuntubudgie/backports"]
+      }
+    },
+    "network-manager-applet": {
+      "packages": ["budgie-network-manager-applet"],
+      "repos": {
+        "focal": ["universe"]
       }
     },
     "cpufreq-applet": {

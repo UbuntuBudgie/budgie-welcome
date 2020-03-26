@@ -109,6 +109,28 @@
                   </div>
                   <hr/>
                </div>
+               <div class="col-md-6 network-manager-applet">
+                  <br>
+                  <h2><a onclick="cmd('link?https://github.com/ubuntubudgie/budgie-extras')"><span class="material-icons">help</span></a>&zwnj;Network Applet&zwnj;</h2>
+                  <div class="card card-block">
+                     <div class="card-image text-md-center">
+                        <a href="img/screenshots/network-applet.jpg" data-toggle="lightbox"><img src="img/screenshots/network-applet.jpg" style="width: auto; max-height: 128px" /></a>
+                     </div>
+                     <p class="card-text">&zwnj;Network connectivity applet.&zwnj;</p>
+                  </div>
+                  <div class="text-md-right">
+                     <a id="network-manager-applet-remove" class="btn btn-danger" onclick="cmd('remove?network-manager-applet');cmd('')">
+                     <span class="material-icons">&#xE872;</span><span class="button-text">&zwnj;Remove&zwnj;</span>
+                     </a>
+                     <a id="network-manager-applet-install" class="btn btn-success hvr-shadow" onclick="cmd('install?network-manager-applet');cmd('')"> &nbsp;
+                     <span class="material-icons">&#xE2C0;</span>&zwnj;Install Applet&zwnj;&nbsp;
+                     </a>
+                     <span id="network-manager-applet-status" class="hidden">
+                     <img src="img/welcome/processing.gif" width="24px" height="24px" /> &zwnj;Applying Changes...&zwnj;
+                     </span>
+                  </div>
+                  <hr/>
+               </div>
                <div class="col-md-6 applications-menu-applet">
                   <br>
                   <h2><a onclick="cmd('link?https://github.com/ubuntubudgie/budgie-extras')"><span class="material-icons">help</span></a>&zwnj;Applications Menu applet&zwnj;</h2>
