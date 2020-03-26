@@ -1,1 +1,0 @@
-https://github.com/UbuntuBudgie/budgie-welcome/commit/4a7d217b4c80828d8df3bcc82876671294a00798#diff-92b287b008d04a7ee9a07ed282b4d7d7
