@@ -29,7 +29,7 @@ msgstr "Requisitos do sistema"
 
 #: gettingstarted.html:29
 msgid "Installation Preparation"
-msgstr "Preparação da Instalação"
+msgstr "Preparação da instalação"
 
 #: gettingstarted.html32, 197, 207
 msgid "Dual Booting"
@@ -419,17 +419,17 @@ msgstr "Use GParted ou a opção \"Personalizada\" do instalador."
 #: gettingstarted.html:275
 msgid ""
 "<b>GParted</b> is available during the live session only. It is located "
-"under the <b>System <i class=\"material-icons\">&#xE315;</i> "
-"Administration</b> menu. GParted provides complete flexibility over your "
-"partitions, primarily for power users who know how they'd like to layout "
-"their disks. This method makes changes to partitions prior to installation."
+"under the <b>System Tools <i class=\"material-icons\">&#xE315;</i></b>menu. "
+"GParted provides complete flexibility over your partitions, primarily for "
+"power users who know how they'd like to layout their disks. This method "
+"makes changes to partitions prior to installation."
 msgstr ""
-"<b>GParted</b> está disponível apenas durante a sessão live. Está localizado"
-" sob o <b> Sistema<i class=\"material-icons\">&#xE315;</i> Administração</b>"
-" menu. O GParted fornece flexibilidade completa sobre as suas partições, "
-"principalmente para utilizadores avançados que sabem como gostariam de "
-"dispor seus discos. Esse método faz alterações nas partições antes da "
-"instalação."
+"O <b>GParted</b> está disponível apenas durante a sessão live. Está "
+"localizado sob o menu <b>Ferramentas do sistema <i class=\"material-"
+"icons\">&#xE315;</i></b>. O GParted oferece total flexibilidade sobre as "
+"suas partições, principalmente para utilizadores avançados que sabem como "
+"gostariam de dispor os seus discos. Este método faz alterações nas partições"
+" antes da instalação."
 
 #: gettingstarted.html:283
 msgid "Open GParted"
@@ -641,7 +641,7 @@ msgstr "Abrir o Boot-Repair"
 
 #: gettingstarted.html:392
 msgid "Install Preparations"
-msgstr "Preparações de Instalação"
+msgstr "Preparações de instalação"
 
 #: gettingstarted.html:406
 msgid "An Internet connection is required to download and install updates."
@@ -666,15 +666,15 @@ msgstr ""
 
 #: gettingstarted.html:422
 msgid ""
-"<b>Software Updater</b> can be found later in <strong>Application "
-"Menu</strong>"
+"<b>Software Updater</b> can be found later in the menu "
+"<strong>Administration</strong>"
 msgstr ""
-"<b>O Atualizador de Software</b> pode ser encontrado no <strong>Menu de "
-"aplicações</strong>"
+"O <b>Atualizações</b>pode ser encontrado mais tarde no "
+"menu<strong>Administração</strong>"
 
 #: gettingstarted.html:429
 msgid "Check for Updates"
-msgstr "Procure Atualizações"
+msgstr "Procurar por atualizações"
 
 #: gettingstarted.html:442
 msgid "Restricted Extras"
@@ -766,7 +766,8 @@ msgstr ""
 #: gettingstarted.html:500
 msgid "An Internet connection is required to download and install drivers."
 msgstr ""
-"É necessária uma à ligação à Internet para transferir e instalar os drivers."
+"É necessária uma à ligação à Internet para transferir e instalar os "
+"controladores."
 
 #: gettingstarted.html:505
 msgid "Additional Drivers"
@@ -1125,11 +1126,12 @@ msgstr "Configure o Backup"
 
 #: gettingstarted.html:794
 msgid ""
-"<b>Backups</b> can be found later in <b>Application Menu <i class"
-"=\"material-icons\">&#xE315;</i> Backup</b>."
+"<b>Backups</b> can be found later in the menu <b>Utilities <i class"
+"=\"material-icons\">&#xE315;</i> Backups</b>."
 msgstr ""
-"<b>Backups</b> podem ser encontrado em <b>Menu de aplicações<i class"
-"=\"material-icons\">&#xE315;</i> Backup</b>."
+"O <b>Cópias de segurança</b> pode ser encontrado mais tarde no menu "
+"<b>Utilidades <i class=\"material-icons\">&#xE315;</i> Cópias de "
+"segurança</b>."
 
 #: gettingstarted.html:807
 msgid "Firewall"
@@ -1142,8 +1144,8 @@ msgid ""
 "onclick=\"cmd('link?https://help.ubuntu.com/community/DoINeedAFirewall')\">learn"
 " more about firewalls</a>."
 msgstr ""
-"Firewalls previne conexões maliciosas de entrarem ou saírem de seu "
-"computador. Por padrão, o firewall vêm desabilitado,<a "
+"Firewalls previnem ligações maliciosas de entrarem ou saírem de seu "
+"computador. Por padrão, a firewall vêm desativada,<a "
 "onclick=\"cmd('link?https://help.ubuntu.com/community/DoINeedAFirewall')\">Aprenda"
 " mais sobre firewalls</a>."
 
@@ -1843,11 +1845,11 @@ msgstr "Acesso à Internet:"
 
 #: gettingstarted.html:1795
 msgid "Connected"
-msgstr "Conectado"
+msgstr "Ligado"
 
 #: gettingstarted.html:1796
 msgid "Not Connected"
-msgstr "Não Conectado"
+msgstr "Desligado"
 
 #: gettingstarted.html:1804
 msgid "Storage"

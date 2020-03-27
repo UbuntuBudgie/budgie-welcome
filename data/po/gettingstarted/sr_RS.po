@@ -1,12 +1,12 @@
 # Translators:
-# Nikola Stojic <nikolas@grindam.com>, 2019
+# Nikola Stojic <nikolas@grindam.com>, 2020
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: Budgie Welcome\n"
 "POT-Creation-Date: 2016-02-27 12:48+0100\n"
 "PO-Revision-Date: 2017-03-15 13:49+0000\n"
-"Last-Translator: Nikola Stojic <nikolas@grindam.com>, 2019\n"
+"Last-Translator: Nikola Stojic <nikolas@grindam.com>, 2020\n"
 "Language-Team: Serbian (Serbia) (https://www.transifex.com/ubuntu-budgie/teams/72251/sr_RS/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -411,16 +411,16 @@ msgstr "Koristite GParted ili instalersku \"Custom\" opciju."
 #: gettingstarted.html:275
 msgid ""
 "<b>GParted</b> is available during the live session only. It is located "
-"under the <b>System <i class=\"material-icons\">&#xE315;</i> "
-"Administration</b> menu. GParted provides complete flexibility over your "
-"partitions, primarily for power users who know how they'd like to layout "
-"their disks. This method makes changes to partitions prior to installation."
+"under the <b>System Tools <i class=\"material-icons\">&#xE315;</i></b>menu. "
+"GParted provides complete flexibility over your partitions, primarily for "
+"power users who know how they'd like to layout their disks. This method "
+"makes changes to partitions prior to installation."
 msgstr ""
-"<b>Gparted</b> je dostupan samo tokom live sesije. Lociran je kod "
-"<b>System<i class=\"material-icons\">&#xE315;</i>Administration</b> menija. "
-"Gparted pruža kompletnu fleksibilnost za vaše particije, primarno za "
-"napredne korisnike koji znaju kako bi podesili podešavanja njihovih diskova."
-" Ovaj metod čini promene na particijama pre instalacije."
+"<b>GParted</b> je dostupan samo tokom live sesije. Lociran je kod <b>System "
+"Tools<i class=\"material-icons\">&#xE315</i></b>menu. GParted pruža "
+"kompletnu fleksibilnost u upravljanju particijama, prevashodno za napredne "
+"korisnike koji znaju kako žele da njihov disk izgleda. Ovaj metod pravi "
+"promene na pariticijama pre same instalacije."
 
 #: gettingstarted.html:283
 msgid "Open GParted"
@@ -655,10 +655,11 @@ msgstr ""
 
 #: gettingstarted.html:422
 msgid ""
-"<b>Software Updater</b> can be found later in <strong>Application "
-"Menu</strong>"
+"<b>Software Updater</b> can be found later in the menu "
+"<strong>Administration</strong>"
 msgstr ""
-"<b>Software Updater</b> se može nači u <strong>Application Menu</strong>"
+"<b>Software Updater</b>može biti pronađjen u meniju <strong> "
+"Administration</strong>"
 
 #: gettingstarted.html:429
 msgid "Check for Updates"
@@ -1102,11 +1103,11 @@ msgstr "Konfiguriši Backup"
 
 #: gettingstarted.html:794
 msgid ""
-"<b>Backups</b> can be found later in <b>Application Menu <i class"
-"=\"material-icons\">&#xE315;</i> Backup</b>."
+"<b>Backups</b> can be found later in the menu <b>Utilities <i class"
+"=\"material-icons\">&#xE315;</i> Backups</b>."
 msgstr ""
-"<b>Backups</b> mogu se naći kasnije u <b>Application Menu<i class"
-"=\"material-icons\">&#xE315;</i> Backup</b>."
+"<b>Backups</b> mogu biti pronadjene u meniju <b>2Utilities <i class"
+"=\"material-icons\">&#xE315;</i>Backups</b>."
 
 #: gettingstarted.html:807
 msgid "Firewall"
@@ -1285,6 +1286,10 @@ msgid ""
 "avoiding persistent cookies or web trackers. Close the window and all traces"
 " of your browsing are removed from your device."
 msgstr ""
+"Pretražujte Internet u privatnosti bez ostavljanja traga vaše istorije "
+"pretrage na računaru. Ephemeral je minimalni privatni browser koji je "
+"savršen za izbegavanje dugotrajnih kolačića i web pratača. Zatvorite i "
+"prozor i tragovi vaše pretrage su uklonjeni sa vašeg računara."
 
 #: gettingstarted.html:1062
 msgid "User Interface"
