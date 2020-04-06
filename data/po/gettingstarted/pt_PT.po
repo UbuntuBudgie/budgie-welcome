@@ -45,7 +45,7 @@ msgstr "Conhecimentos"
 
 #: gettingstarted.html41, 42
 msgid "Browser Ballot"
-msgstr "Escolha um Navegador diferente"
+msgstr "Escolha de navegador"
 
 #: gettingstarted.html45, 46, 867, 1681
 msgid "Customization"
@@ -53,27 +53,27 @@ msgstr "Personalização"
 
 #: gettingstarted.html48, 49, 1103
 msgid "Keyboard Shortcuts"
-msgstr "Atalhos de Teclado"
+msgstr "Atalhos do teclado"
 
 #: gettingstarted.html:53
 msgid "Post-Installation"
-msgstr "Pós-Instalação"
+msgstr "Pós-instalação"
 
 #: gettingstarted.html54, 55, 403, 650
 msgid "Updates & Extras"
-msgstr "Atualizações & Extras"
+msgstr "Atualizações e Extras"
 
 #: gettingstarted.html57, 58, 483, 493, 753
 msgid "Drivers"
-msgstr "Drivers"
+msgstr "Controladores"
 
 #: gettingstarted.html60, 61
 msgid "Language & Input"
-msgstr "Idioma & Entrada"
+msgstr "Idioma e Entrada"
 
 #: gettingstarted.html63, 64, 755
 msgid "Optional Tasks"
-msgstr "Tarefas Opcionais"
+msgstr "Tarefas opcionais"
 
 #: gettingstarted.html:68
 msgid "Troubleshooting"
@@ -81,23 +81,23 @@ msgstr "Solução de problemas"
 
 #: gettingstarted.html70, 71
 msgid "System Specifications"
-msgstr "Especificações do Sistema"
+msgstr "Especificações do sistema"
 
 #: gettingstarted.html:80
 msgid "Please choose a topic to get started."
-msgstr "Por favor escolha um tópico para começar."
+msgstr "Escolha um tópico para começar."
 
 #: gettingstarted.html:88
 msgid "Modest System Requirements"
-msgstr "Requisitos de Sistema Modesto"
+msgstr "Requisitos de sistema modesto"
 
 #: gettingstarted.html:89
 msgid ""
 "<span name=\"distro-name\"></span> works well on both high-end to older "
 "computers, optimized to be functional, while light on system resources."
 msgstr ""
-"<span name=\"distro-name\"></span> funciona bem tanto em computadores topo "
-"de gama como em computadores mais antigos, optimizado para ser funcional, "
+"O <span name=\"distro-name\"></span> funciona bem tanto em computadores topo"
+" de gama como em computadores mais antigos, optimizado para ser funcional, "
 "sem consumir muitos recursos do sistema."
 
 #: gettingstarted.html:92
@@ -137,8 +137,8 @@ msgid ""
 "The operating system will run much more efficiently if your computer meets "
 "or surpasses the recommended requirements."
 msgstr ""
-"O sistema operativo funcionará muito mais eficientemente se o seu computador"
-" atende ou ultrapassa os requisitos recomendados."
+"O sistema operativo irá funcionar de uma maneira mais eficiente se o seu "
+"computador cumpre ou ultrapassa os requisitos recomendados."
 
 #: gettingstarted.html111, 1691
 msgid "What's inside my computer?"
@@ -220,15 +220,15 @@ msgid ""
 "Bootloader</b> option) prior to installation, particularly if an operating "
 "system was pre-installed."
 msgstr ""
-"Se você possui um PC moderno que usa a Interface Unificada de Firmware "
-"Extensível (UEFI), talvez seja necessário desabilitar <b>Secure Boot</b> (ou"
-" ativar a opção <b>Unlock Bootloader</b> ) antes da instalação, "
-"especialmente se um sistema operativo estiver pré-instalado."
+"Se possui um PC moderno que usa a Interface Unificada de Firmware Extensível"
+" (UEFI), talvez seja necessário desativar o <b>Arranque seguro</b> (ou "
+"ativar a opção <b>Desbloquear o carregador de arranque</b>) antes da "
+"instalação, especialmente se um sistema operativo estiver pré-instalado."
 
 #: gettingstarted.html:157
 msgid "If you are using a legacy BIOS machine, you do not need to do this."
 msgstr ""
-"Se você estiver a usar uma máquina BIOS legacy, não precisa de fazer isto."
+"Se está a utilizar um computador de BIOS antiga, não precisa de o fazer."
 
 #: gettingstarted.html:160
 msgid ""
@@ -237,10 +237,10 @@ msgid ""
 "operating system installed in BIOS mode after installing a UEFI-enabled "
 "operating system or vice versa."
 msgstr ""
-"Especialmente quando em dual boot, é importante que você inicie o seu "
-"sistema no modo correto e use a <b> imagem de 64-bit</b>, pois não é "
-"possível inicializar um sistema operativo instalado no modo BIOS depois de "
-"instalar um funcionamento ativado para sistema operativo UEFI ou vice-versa."
+"Especialmente quando em dual boot, é importante que arranque o seu sistema "
+"no modo correto e utilize a <b> imagem de 64-bits</b>, pois não é possível "
+"arrancar um sistema operativo instalado em modo BIOS depois de instalar um "
+"sistema operativo ativado por UEFI ou vice-versa."
 
 #: gettingstarted.html:166
 msgid ""
@@ -249,16 +249,16 @@ msgid ""
 "corrupt!"
 msgstr ""
 "O arranque no modo BIOS num sistema UEFI com um disco com formato GPT também"
-" mostrará uma \"camada de proteção\". <b>Não se preocupe,</b> os seus dados "
-"não estão perdidos ou corrompidos!"
+" irá mostrar uma \"camada de proteção\". <b>Não se preocupe,</b> os seus "
+"dados não estão perdidos ou corrompidos!"
 
 #: gettingstarted.html:171
 msgid ""
 "Your system is currently running in <b><span id=\"boot-mode\"></span> "
 "mode</b>."
 msgstr ""
-"O seu sistema está a rodar atualmente no <b><span id=\"boot-mode\"></span> "
-"modo</b>."
+"O seu sistema está a funcionar atualmente em <b>modo <span id=\"boot-"
+"mode\"></span></b>."
 
 #: gettingstarted.html:176
 msgid "Swap"
@@ -271,10 +271,10 @@ msgid ""
 "Performance will decrease when running low on memory and could possibly "
 "freeze if you completely run out of memory without anywhere to swap."
 msgstr ""
-"Em computadores com pouca memória (RAM), o sistema iniciará a memória swap, "
-"conhecida como \"Ficheiro de paginação\" no Windows. O desempenho diminuirá "
-"quando estiver com pouca memória e poderá bloquear se ficar completamente "
-"sem memória, sem precisar de swap para nada."
+"Em computadores que começam a funcionar com pouca memória (RAM), o sistema "
+"irá iniciar a memória swap, conhecida como \"ficheiro de paginação\" no "
+"Windows. O desempenho irá diminuir quando estiver com pouca memória e poderá"
+" bloquear se ficar completamente sem memória, sem nenhum lugar para a swap."
 
 #: gettingstarted.html:181
 msgid ""
@@ -283,8 +283,8 @@ msgid ""
 "reserved for swap at the end of the drive."
 msgstr ""
 "Por padrão, a partição swap é criada de acordo com o tamanho da memória RAM."
-" Por exemplo, se você tem 2GiB de RAM, então serão reservados 2GiB de espaço"
-" no final da unidade para a swap."
+" Por exemplo, se tem 2GiB de RAM, então serão reservados 2GiB de espaço no "
+"final da unidade para a swap."
 
 #: gettingstarted.html:186
 msgid ""
@@ -759,9 +759,9 @@ msgid ""
 msgstr ""
 "Embora uma ampla gama de hardware seja compatível com o <span name=\"distro-"
 "name\"></span>, existem alguns componentes e periféricos que exigem que os "
-"drivers proprietários funcionem devidamente. A instalação do pacote de "
-"firmware é muitas vezes necessária para que alguns dispositivos, normalmente"
-" Bluetooth e Wi-Fi, funcionem corretamente."
+"controladores proprietários funcionem devidamente. A instalação do pacote de"
+" firmware é muitas vezes necessária para que alguns dispositivos, "
+"normalmente Bluetooth e Wi-Fi, funcionem corretamente."
 
 #: gettingstarted.html:500
 msgid "An Internet connection is required to download and install drivers."
@@ -771,14 +771,14 @@ msgstr ""
 
 #: gettingstarted.html:505
 msgid "Additional Drivers"
-msgstr "Drivers Adicionais"
+msgstr "Controladores adicionais"
 
 #: gettingstarted.html:510
 msgid ""
 "<b>Additional Drivers</b> can be found later in <b>Software & Updates</b>"
 msgstr ""
-"<b>Drivers Adicionais</b> pode ser encontrado mais tarde em <b>Atualizações "
-"de Software</b>"
+"<b>Controladores adicionais</b> podem ser encontrados mais tarde em "
+"<b>Atualizações de Software</b>"
 
 #: gettingstarted.html:517
 msgid "Graphics"
@@ -809,9 +809,9 @@ msgid ""
 "NVIDIA may have drivers for your card that can boost performance for 3D "
 "applications and games as well as deliver improvements to power management."
 msgstr ""
-"A NVIDIA pode ter drivers para a sua placa de vídeo, que podem aumentar o "
-"desempenho para aplicações 3D e jogos, além de oferecer melhorias na gestão "
-"de energia."
+"A NVIDIA pode ter controladores para a sua placa gráfica, que podem aumentar"
+" o desempenho para aplicações 3D e jogos, além de oferecer melhorias na "
+"gestão de energia."
 
 #: gettingstarted.html:538
 msgid "AMD Graphics Card Detected."
@@ -823,9 +823,9 @@ msgid ""
 " are currently using will deliver the most stable performance out of your "
 "card."
 msgstr ""
-"Drivers da AMD não são mais suportados no Ubuntu. Os drivers de código "
-"aberto que você está usando atualmente fornecerão o desempenho mais estável "
-"para a sua placa de vídeo."
+"Controladores da AMD não são mais suportados no Ubuntu. Os controladores de "
+"código aberto que está a usar atualmente fornecerão o desempenho mais "
+"estável para a sua placa de vídeo."
 
 #: gettingstarted.html:546
 msgid "You're already good to go."
@@ -834,7 +834,9 @@ msgstr "Você já está pronto para ir."
 #: gettingstarted.html:547
 msgid ""
 "Intel's drivers are open source and are maintained/updated in the kernel."
-msgstr "Drivers Intel são open source e são otimizados/atualizados no kernel."
+msgstr ""
+"Os controladores Intel são de código aberto e são otimizados/atualizados no "
+"kernel."
 
 #: gettingstarted.html:552
 msgid "VirtualBox Guest Additions"
@@ -850,7 +852,7 @@ msgstr ""
 
 #: gettingstarted.html:558
 msgid "Proprietary or Open Source Drivers?"
-msgstr "Drivers Proprietários ou Open Source?"
+msgstr "Controladores proprietários ou de código aberto?"
 
 #: gettingstarted.html:559
 msgid ""
@@ -858,10 +860,10 @@ msgid ""
 "open source, Ubuntu developers are <b>unable to review and improve driver "
 "code</b> meaning you'll have to rely on the manufacturer for support."
 msgstr ""
-"Drivers Proprietários vem direto da fabricante. Como não são open source, "
-"priogramadores Ubuntu estão <b>impossibilitados de rever e implementar o "
-"código do driver</b>, o que significa que você terá que contar com a "
-"fabricante para suporte."
+"Os controladores proprietários provêm diretamente do fabricante. Como não "
+"são de código aberto, os programadores do Ubuntu estão <b>impossibilitados "
+"de rever e implementar o código do controlador</b>, o que significa que terá"
+" que contar com a fabricante para suporte."
 
 #: gettingstarted.html:564
 msgid ""
@@ -869,9 +871,9 @@ msgid ""
 "performance</b> and as a result, the entire system. Users may wish to "
 "install these drivers to:"
 msgstr ""
-"Além disso, os drivers proprietários podem <b>melhorar significativamente o "
-"desempenho dos gráficos</b> e como resultado de todo o sistema. Os "
-"utilizadores podem querer instalar esses drivers para:"
+"Além disso, os controladores proprietários podem <b>melhorar "
+"significativamente o desempenho dos gráficos</b> e como resultado de todo o "
+"sistema. Os utilizadores podem querer instalar esses controladores para:"
 
 #: gettingstarted.html:569
 msgid "Run 3D applications and games."
@@ -883,7 +885,7 @@ msgid ""
 " problems under open source drivers."
 msgstr ""
 "Melhora a gestão de energia, especialmente se o dispositivo tiver problemas "
-"de sobreaquecimento em drivers de código aberto."
+"de sobreaquecimento em controladores de código aberto."
 
 #: gettingstarted.html:573
 msgid "Improve support for high resolutions and multiple monitors."
@@ -901,9 +903,9 @@ msgid ""
 "experience adverse behavior, causing more issues than the open source "
 "drivers, such as:"
 msgstr ""
-"Drivers proprietários são conhecidos como \"blobs binários\". Certo hardware"
-" pode sofrer comportamentos adversos, causando mais problemas do que os "
-"drivers de código aberto, como:"
+"Controladores proprietários são conhecidos como \"blobs binários\". Certo "
+"hardware pode sofrer comportamentos adversos, causando mais problemas do que"
+" os controladores de código aberto, tais como:"
 
 #: gettingstarted.html:581
 msgid "Failing to boot to the graphical desktop."
@@ -911,7 +913,7 @@ msgstr "Falha a iniciar para o ambiente de trabalho gráfico."
 
 #: gettingstarted.html:582
 msgid "Broken drivers after an upgrade."
-msgstr "Drivers danificados após uma atualização."
+msgstr "Controladores danificados após uma atualização."
 
 #: gettingstarted.html:583
 msgid "Severe graphical glitches."
@@ -927,12 +929,12 @@ msgid ""
 "<code id=\"graphics-open-driver-name\"></code> is the open source driver for"
 " your card."
 msgstr ""
-"<code id=\"graphics-open-driver-name\"></code> é o driver de código aberto "
-"para a sua placa de vídeo."
+"<code id=\"graphics-open-driver-name\"></code> é o controlador de código "
+"aberto para a sua placa gráfica."
 
 #: gettingstarted.html:593
 msgid "What about the latest NVIDIA drivers?"
-msgstr "E os últimos drivers da NVIDIA?"
+msgstr "E os últimos controladores da NVIDIA?"
 
 #: gettingstarted.html:594
 msgid ""
@@ -943,21 +945,21 @@ msgid ""
 "which packages up the latest NVIDIA drivers for Ubuntu. These packages are "
 "not as thoroughly tested."
 msgstr ""
-"<b>Drivers Adicionais</b> obtém o driver testado mais recente dos "
-"repositórios do Ubuntu. Os utilizadores avançados e os jogadores que "
+"<b>Controladores adicionais</b> obtém o controlador testado mais recente dos"
+" repositórios do Ubuntu. Os utilizadores avançados e os jogadores que "
 "gostariam de versões mais recentes podem querer considerar adicionar o <a "
 "onclick=\"cmd('link?https://launchpad.net/~graphics-"
-"drivers/+archive/ubuntu/ppa')\">Driver de Gráficos do Ubuntu PPA</a>, que "
-"oferece os mais recentes drivers da NVIDIA para o Ubuntu. Esses pacotes não "
-"são tão bem testados."
+"drivers/+archive/ubuntu/ppa')\">Controlador Gráfico do Ubuntu PPA</a>, que "
+"oferece os mais recentes controladores da NVIDIA para o Ubuntu. Esses "
+"pacotes não são tão bem testados."
 
 #: gettingstarted.html:602
 msgid ""
 "This only applies for actively supported cards, and not older cards using "
 "the legacy driver."
 msgstr ""
-"Isso aplica-se apenas as placas gráficas ativamente suportadas, e não as "
-"placas mais antigas usando o driver antigo."
+"Isto aplica-se apenas as placas gráficas ativamente suportadas, e não as "
+"placas mais antigas usando o controlador antigo."
 
 #: gettingstarted.html:606
 msgid "Add Repository"
@@ -968,8 +970,8 @@ msgid ""
 "After the PPA is added, newer versions are presented to install in <a "
 "onclick=\"cmd('drivers')\">Additional Drivers:</a>"
 msgstr ""
-"Depois que a PPA for adicionada, novas versões estarão disponíveis para a "
-"instalação em: <a onclick=\"cmd('drivers')\">Drivers Adicionais</a>"
+"Depois que a PPA for adicionado, novas versões estarão disponíveis para a "
+"instalação em: <a onclick=\"cmd('drivers')\">Controladores adicionais</a>"
 
 #: gettingstarted.html:624
 msgid "Wireless, Bluetooth and Other Devices"
@@ -981,9 +983,9 @@ msgid ""
 "after installing the firmware packages, you may need to research your device"
 " to find the appropriate driver."
 msgstr ""
-"Se não houve drivers adicionais para o seu hardware e nem funcionem depois "
-"de instalar os pacotes de firmware, talvez seja necessário pesquisar por seu"
-" dispositivo para encontrar o driver apropriado."
+"Se não houve conroladores adicionais para o seu hardware e nem funcionem "
+"depois de instalar os pacotes de firmware, talvez seja necessário pesquisar "
+"por seu dispositivo para encontrar o controlador apropriado."
 
 #: gettingstarted.html:631
 msgid ""
@@ -992,9 +994,9 @@ msgid ""
 "insufficient documentation to create drivers for your particular brand and "
 "model."
 msgstr ""
-"Infelizmente, isso se deve ao fato de o fabricante não ter fornecido algum "
-"código fonte para que os programadores usem livremente ou não há "
-"documentação suficiente para criar drivers para sua marca e modelo "
+"Infelizmente, isso deve-se ao facto de o fabricante não ter fornecido nenhum"
+" código fonte para que os programadores usem livremente ou não há "
+"documentação suficiente para criar controladores para sua marca e modelo "
 "específicos."
 
 #: gettingstarted.html:637
@@ -1003,9 +1005,9 @@ msgid ""
 "directly. If you require assistance, feel free to <a "
 "onclick=\"smoothPageFade('community.html')\">ask the community</a>."
 msgstr ""
-"Alguns fabricantes podem fornecer drivers de fonte fechada, fornecidos por "
-"eles diretamente. Se você precisar de assistência, sinta-se à vontade para "
-"<a onclick=\"smoothPageFade('community.html')\">pergunte à comunidade</a>."
+"Alguns fabricantes podem fornecer controladores de fonte fechada, fornecidos"
+" por eles diretamente. Se precisar de assistência, sinta-se à vontade de <a "
+"onclick=\"smoothPageFade('community.html')\">perguntar à comunidade</a>."
 
 #: gettingstarted.html:643
 msgid "Read more on troubleshooting wireless hardware."
@@ -1062,9 +1064,8 @@ msgid ""
 "<b>Language Support</b> can be found later in <b><i>Settings <i class"
 "=\"material-icons\">&#xE315;</i> Region & Language</i></b>"
 msgstr ""
-"<b>Suporte a Idiomas</b> pode ser encontrado mais tarde em "
-"<b><i>Configurações <i class=\"material-icons\">&#xE315;</i> Região e "
-"Idioma</i></b>"
+"<b>Suporte a idiomas</b> pode ser encontrado mais tarde em <b><i>Definições "
+"<i class=\"material-icons\">&#xE315;</i> Região e Idioma</i></b>"
 
 #: gettingstarted.html:711
 msgid "Complex Input"
@@ -1216,16 +1217,16 @@ msgid ""
 "To improve the amount of customizability, <span name=\"distro-name\"></span>"
 " allows you to install/remove popular web browsers with a single click."
 msgstr ""
-"Para melhorar a quantidade de customização, o <span name=\"distro-"
-"name\"></span> permite que você instale/remova navegadores populares da Web "
-"com um único clique."
+"Para melhorar a quantidade de personalização, o <span name=\"distro-"
+"name\"></span> permite-lhe instalar/remover navegadores web populares com um"
+" simples clique."
 
 #: gettingstarted.html880, 905
 msgid ""
 "Chromium is an open-source browser project that aims to build a safer, "
 "faster, and more stable way for all Internet users to experience the web."
 msgstr ""
-"Chromium é um projeto de navegador de código aberto que visa criar uma "
+"O Chromium é um projeto de navegador de código aberto que visa criar uma "
 "maneira mais segura, rápida e estável para todos os utilizadores da Internet"
 " experimentarem a web."
 
@@ -1247,8 +1248,8 @@ msgid ""
 "Mozilla Foundation - a not for profit organisation. It is highly popular "
 "targeting multiple platforms."
 msgstr ""
-"Mozilla Firefox é um navegador gratuito e de código aberto, desenvolvido "
-"pela Mozilla Foundation - uma organização sem fins lucrativos. É altamente "
+"O Mozilla Firefox é um navegador gratuito e de código aberto, desenvolvido "
+"pela Fundação Mozilla - uma organização sem fins lucrativos. É altamente "
 "popular como segmento em múltiplas plataformas."
 
 #: gettingstarted.html:950
@@ -1257,26 +1258,25 @@ msgid ""
 "offers a smooth browsing experience plus integration with Google's "
 "proprietary services."
 msgstr ""
-"Google Chrome é um navegador web moderno apoiado pela gigante da Internet "
+"O Google Chrome é um navegador web moderno apoiado pela gigante da Internet "
 "Google. Oferece uma experiência de navegação suave e integração com os "
-"serviços proprietários do Google."
+"serviços proprietários da Google."
 
 #: gettingstarted.html:965
 msgid ""
 "Vivaldi Web Browser is a free, fully customizable web browser. Feature rich,"
 " powerful, secure and fun! Browse the Web your way"
 msgstr ""
-"O Vivaldi Web Browser é um navegador gratuito e totalmente personalizável. "
-"Recursos ricos, poderosos, seguros e divertidos! Navegue na Web à sua "
-"maneira"
+"O Vivaldi é um navegador gratuito e totalmente personalizável. Repleto de "
+"funcionalidades, poderoso, seguro e divertido! Navegue na Web à sua maneira"
 
 #: gettingstarted.html:983
 msgid ""
 "Opera is a fast and secure browser. Developed in Europe, used by millions "
 "around the world. Now with a built-in ad blocker and free VPN."
 msgstr ""
-"Opera é um navegador rápido e seguro. Desenvolvido na Europa, usado por "
-"milhões ao redor do mundo. Agora com bloqueado de anúncios e VPN grátis."
+"O Opera é um navegador rápido e seguro. Desenvolvido na Europa, usado por "
+"milhões ao redor do mundo. Agora com bloqueador de anúncios e VPN grátis."
 
 #: gettingstarted.html:998
 msgid ""
@@ -1484,8 +1484,8 @@ msgid ""
 "This section lists common keyboard shortcuts which you can use to operate "
 "parts of the desktop."
 msgstr ""
-"Esta secção lista os atalhos de teclado comuns que você pode usar para "
-"operar partes do ambiente de trabalho."
+"Esta secção lista os atalhos do teclado comuns que pode usar para operar "
+"partes do ambiente de trabalho."
 
 #: gettingstarted.html:1288
 msgid "Open Applications menu"

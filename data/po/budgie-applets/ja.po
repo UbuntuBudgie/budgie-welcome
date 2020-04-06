@@ -43,20 +43,20 @@ msgid ""
 msgstr "テキストを投稿する – コードでも散文でも – デスクトップから直接さまざまなサービスに。"
 
 #: budgie-applets.html35, 57, 79, 101, 123, 145, 167, 189, 211, 233, 255, 277,
-#: 299, 322, 344, 366, 388, 410, 432, 454, 476, 498, 520, 542, 564, 586, 608,
-#: 630, 652, 674, 696, 718, 740, 762, 784, 807, 829
+#: 299, 321, 343, 365, 387, 410, 432, 454, 476, 498, 520, 542, 564, 586, 608,
+#: 630, 652, 674, 696, 718, 740, 762, 784, 806, 828, 850, 872, 894, 917, 939
 msgid "Remove"
 msgstr "削除"
 
 #: budgie-applets.html38, 60, 82, 104, 126, 148, 170, 192, 214, 236, 258, 280,
-#: 302, 347, 369, 391, 413, 435, 457, 479, 501, 523, 545, 567, 589, 611, 633,
-#: 655, 677, 699, 721, 743, 765, 787, 832
+#: 302, 324, 346, 368, 390, 435, 457, 479, 501, 523, 545, 567, 589, 611, 633,
+#: 655, 677, 699, 721, 743, 765, 787, 809, 831, 853, 875, 897, 942
 msgid "Install Applet"
 msgstr "アプレットをインストール"
 
 #: budgie-applets.html41, 63, 85, 107, 129, 151, 173, 195, 217, 239, 261, 283,
-#: 305, 328, 350, 372, 394, 416, 438, 460, 482, 504, 526, 548, 570, 592, 614,
-#: 636, 658, 680, 702, 724, 746, 768, 790, 813, 835
+#: 305, 327, 349, 371, 393, 416, 438, 460, 482, 504, 526, 548, 570, 592, 614,
+#: 636, 658, 680, 702, 724, 746, 768, 790, 812, 834, 856, 878, 900, 923, 945
 msgid "Applying Changes..."
 msgstr "変更を適用しています…"
 
@@ -77,269 +77,301 @@ msgstr "カレンダーア プレット"
 msgid "Show date and time and when clicked show a calendar in a popover."
 msgstr "日付と時刻を表示し、クリック時にはポップオーバーにカレンダーを表示します。"
 
-#: budgie-applets.html:92
+#: budgie-applets.html92, 114
 msgid "Network Applet"
 msgstr "ネットワーク アプレット"
 
-#: budgie-applets.html:97
+#: budgie-applets.html97, 119
 msgid "Network connectivity applet."
 msgstr "ネットワーク接続を管理するアプレットです。"
 
-#: budgie-applets.html:114
+#: budgie-applets.html:136
+msgid "VisualSpace Applet"
+msgstr ""
+
+#: budgie-applets.html:141
+msgid "Display application windows across multiple workspaces."
+msgstr ""
+
+#: budgie-applets.html:158
+msgid "Window Shuffler"
+msgstr ""
+
+#: budgie-applets.html:163
+msgid "Graphical and keyboard friendly window arranger."
+msgstr ""
+
+#: budgie-applets.html:180
+msgid "Applications Menu applet"
+msgstr ""
+
+#: budgie-applets.html:185
+msgid "Stylish applications menu applet."
+msgstr ""
+
+#: budgie-applets.html:202
 msgid "CPU Frequency Applet"
 msgstr "CPU Frequency アプレット"
 
-#: budgie-applets.html:119
+#: budgie-applets.html:207
 msgid "Control the frequency of the processor (Sandy Bridge and newer)."
 msgstr "プロセッサの周波数を制御します（Sandy Bridge以降）。"
 
-#: budgie-applets.html136, 224
+#: budgie-applets.html224, 312
 msgid "System Monitor Applet"
 msgstr "システムモニター アプレット"
 
-#: budgie-applets.html:141
+#: budgie-applets.html:229
 msgid "Show frequency, ram, swap & network values."
 msgstr "周波数、RAM、スワップ、ネットワークの値を表示します。"
 
-#: budgie-applets.html:158
+#: budgie-applets.html:246
 msgid "Pixel-Saver Applet"
 msgstr "Pixel-Saver アプレット"
 
-#: budgie-applets.html:163
+#: budgie-applets.html:251
 msgid ""
 "Hides the title bar from maximized windows and creates a new one inside the "
 "panel."
 msgstr "最大化されたウィンドウからタイトルバーを非表示にし、パネル内に新しいタイトルバーを作成します。"
 
-#: budgie-applets.html:180
+#: budgie-applets.html:268
 msgid "Global Menu Applet"
 msgstr "グローバルメニュー アプレット"
 
-#: budgie-applets.html:185
+#: budgie-applets.html:273
 msgid "Moves the menu from applications into the panel."
 msgstr "アプリケーションからパネルにメニューを移動します。"
 
-#: budgie-applets.html:202
+#: budgie-applets.html:290
 msgid "Weather Applet"
 msgstr "天気アプレット"
 
-#: budgie-applets.html:207
+#: budgie-applets.html:295
 msgid "Displays the weather on your panel."
 msgstr "パネルに天気を表示します。"
 
-#: budgie-applets.html:229
+#: budgie-applets.html:317
 msgid "Customize and display system information on the panel."
 msgstr "システム情報をカスタマイズして、パネルに表示します。"
 
-#: budgie-applets.html:246
+#: budgie-applets.html:334
 msgid "Hotcorners Applet"
 msgstr "ホットコーナー アプレット"
 
-#: budgie-applets.html:251
+#: budgie-applets.html:339
 msgid ""
 "Allow user defined commands to be executed when the mouse cursor is pushed "
 "into a corner of the main desktop."
 msgstr "マウスカーソルをデスクトップの隅に押し込んだときに、ユーザー定義のコマンドを実行できるようにします。"
 
-#: budgie-applets.html:268
+#: budgie-applets.html:356
 msgid "Quicknote Applet"
 msgstr "クイックノート アプレット"
 
-#: budgie-applets.html:273
+#: budgie-applets.html:361
 msgid "Quickly record a text based note."
 msgstr "テキストベースのノートを素早く記録します。"
 
-#: budgie-applets.html290, 312
+#: budgie-applets.html378, 400
 msgid "Previews"
 msgstr "プレビュー"
 
-#: budgie-applets.html295, 317
+#: budgie-applets.html383, 405
 msgid "Show an overview of windows in an exposé like way."
 msgstr "Exposé 風にウィンドウのオーバービューを表示します。"
 
-#: budgie-applets.html318, 803
+#: budgie-applets.html406, 913
 msgid "This is a mini-app and is launched via the budgie menu."
 msgstr "これはミニアプリで、budgie menuから起動します。"
 
-#: budgie-applets.html325, 810
+#: budgie-applets.html413, 920
 msgid "Install mini-app"
 msgstr "ミニアプリをインストール"
 
-#: budgie-applets.html:335
+#: budgie-applets.html:423
 msgid "Workspace Overview Applet"
 msgstr "ワークスペースオーバービュー アプレット"
 
-#: budgie-applets.html:340
+#: budgie-applets.html:428
 msgid "Quickly navigate workspaces using the applet's menu."
 msgstr "アプレットのメニューを使用して、ワークスペースをすばやくナビゲートします。"
 
-#: budgie-applets.html:357
+#: budgie-applets.html:445
 msgid "Workspace Wallpaper Applet"
 msgstr "ワークスペースの壁紙 アプレット"
 
-#: budgie-applets.html:362
+#: budgie-applets.html:450
 msgid "Show a different wallpaper on each workspace."
 msgstr "各ワークスペースに異なる壁紙を表示します。"
 
-#: budgie-applets.html:379
+#: budgie-applets.html:467
 msgid "Window Mover Applet"
 msgstr "ウィンドウの移動アプレット"
 
-#: budgie-applets.html:384
+#: budgie-applets.html:472
 msgid "Quickly move windows between workspaces."
 msgstr "ワークスペース間でウィンドウを素早く移動します。"
 
-#: budgie-applets.html:401
+#: budgie-applets.html:489
 msgid "Desktop Showtime Applet"
 msgstr "Desktop Showtime アプレット"
 
-#: budgie-applets.html:406
+#: budgie-applets.html:494
 msgid "Display the date and time on the Desktop."
 msgstr "デスクトップに日付と時刻を表示します。"
 
-#: budgie-applets.html:423
+#: budgie-applets.html:511
 msgid "CountDown Applet"
 msgstr "カウントダウン アプレット"
 
-#: budgie-applets.html:428
+#: budgie-applets.html:516
 msgid "Set a timed countdown and run an action when the countdown completes."
 msgstr "時限カウントダウンを設定し、カウントダウンが完了したらアクションを実行します。"
 
-#: budgie-applets.html:445
+#: budgie-applets.html:533
 msgid "Auto-Keyboard Switcher Applet"
 msgstr "Auto-Keyboard Switcher アプレット"
 
-#: budgie-applets.html:450
+#: budgie-applets.html:538
 msgid "Change the keyboard language automatically on a per application basis."
 msgstr "アプリケーションごとにキーボードの言語を自動的に変更します。"
 
-#: budgie-applets.html:467
+#: budgie-applets.html:555
 msgid "Screen Rotation Lock Applet"
 msgstr "スクリーンの回転ロック アプレット"
 
-#: budgie-applets.html:472
+#: budgie-applets.html:560
 msgid "Add the ability to unlock or lock the screen from rotating."
 msgstr "スクリーンの回転を解除したりロックしたりできるようにします。"
 
-#: budgie-applets.html:489
+#: budgie-applets.html:577
 msgid "Clockworks Applet"
 msgstr "Clockworks アプレット"
 
-#: budgie-applets.html:494
+#: budgie-applets.html:582
 msgid "Display the time across multiple time zones."
 msgstr "複数のタイムゾーンの時刻を表示します。"
 
-#: budgie-applets.html511, 533
+#: budgie-applets.html599, 621
 msgid "DropBy Applet"
 msgstr "DropBy アプレット"
 
-#: budgie-applets.html:516
+#: budgie-applets.html:604
 msgid "Display a pop-up in the panel when a USB device is connected."
 msgstr "USBデバイスが接続されているときに、パネルにポップアップを表示します。"
 
-#: budgie-applets.html:538
+#: budgie-applets.html:626
 msgid "Display a pop-up window when a USB device is connected."
 msgstr "USBデバイスが接続されているときにポップアップウィンドウを表示します。"
 
-#: budgie-applets.html555, 577
+#: budgie-applets.html643, 665
 msgid "Brightness Controller Applet"
 msgstr "Brightness Controller アプレット"
 
-#: budgie-applets.html560, 582
+#: budgie-applets.html648, 670
 msgid ""
 "Control the backlight via your graphics driver controller or GNOME's "
 "brightness controller."
 msgstr "グラフィックスドライバーコントローラーまたはGNOMEの輝度コントローラーを介してバックライトを制御します。"
 
-#: budgie-applets.html:599
+#: budgie-applets.html:687
 msgid "Browser Profile Launcher Applet"
 msgstr "ブラウザープロファイルランチャー アプレット"
 
-#: budgie-applets.html:604
+#: budgie-applets.html:692
 msgid "Launch and create multiple Chromium/Chrome profiles."
 msgstr "複数の Chromium/Chrome プロファイルを起動・作成します。"
 
-#: budgie-applets.html:621
+#: budgie-applets.html:709
 msgid "Find Fast 'Kangaroo' Applet"
 msgstr "高速な「Kangaroo」アプレットを見つける"
 
-#: budgie-applets.html:626
+#: budgie-applets.html:714
 msgid ""
 "Quick and easy browsing, across (possibly) many folder layers, without "
 "having to-do a single mouse click."
 msgstr "（おそらく）多くのフォルダにて、マウスを1回クリックするだけですばやく簡単に閲覧できます。"
 
-#: budgie-applets.html:643
+#: budgie-applets.html:731
 msgid "Weather and Forecast Applet"
 msgstr "天気予報アプレット"
 
-#: budgie-applets.html:648
+#: budgie-applets.html:736
 msgid "Weather forecast every three hours and over five days."
 msgstr "次の 5 日間の 3 時間ごとの天気予報です。"
 
-#: budgie-applets.html:665
+#: budgie-applets.html:753
 msgid "Recently Used Applet"
 msgstr "最近使用した項目アプレット"
 
-#: budgie-applets.html:670
+#: budgie-applets.html:758
 msgid "Show recently used items in a menu."
 msgstr "メニューに最近使用した項目を表示します。"
 
-#: budgie-applets.html:687
+#: budgie-applets.html:775
 msgid "Trash Applet"
 msgstr "ゴミ箱アプレット"
 
-#: budgie-applets.html:692
+#: budgie-applets.html:780
 msgid "Show, hide and restore trash items."
 msgstr "ゴミ箱の項目を表示・非表示にしたり、元に戻したりします。"
 
-#: budgie-applets.html:709
+#: budgie-applets.html:797
 msgid "Application Launcher Applet"
 msgstr "アプリケーションランチャー アプレット"
 
-#: budgie-applets.html:714
+#: budgie-applets.html:802
 msgid "Display your favorite applications in a menu and on the panel."
 msgstr "メニューとパネルにお気に入りのアプリケーションを表示します。"
 
-#: budgie-applets.html:731
+#: budgie-applets.html:819
 msgid "Take-A-Break Applet"
 msgstr "Take-A-Break アプレット"
 
-#: budgie-applets.html:736
+#: budgie-applets.html:824
 msgid ""
 "A pomodoro-like applet, to make sure you take regular breaks from working."
 msgstr "定期的に休憩を取るようにするためのポモドーロ・テクニックのようなアプレット。"
 
-#: budgie-applets.html:753
+#: budgie-applets.html:841
+msgid "Wallstreet"
+msgstr ""
+
+#: budgie-applets.html:846
+msgid "WallStreet is a mini-app to switch wallpapers at a regular interval."
+msgstr ""
+
+#: budgie-applets.html:863
 msgid "Fuzzy-Clock Applet"
 msgstr "Fuzzy-Clock アプレット"
 
-#: budgie-applets.html:758
+#: budgie-applets.html:868
 msgid "Shows the time in a fuzzy way."
 msgstr "時間をあいまいに表示します。"
 
-#: budgie-applets.html:775
+#: budgie-applets.html:885
 msgid "Workspace Stopwatch"
 msgstr "Workspace Stopwatch"
 
-#: budgie-applets.html:780
+#: budgie-applets.html:890
 msgid "Keep track of usage per workspace."
 msgstr "ワークスペースごとの使用状況を追跡します。"
 
-#: budgie-applets.html:797
+#: budgie-applets.html:907
 msgid "Quick Character"
 msgstr "Quick Character"
 
-#: budgie-applets.html:802
+#: budgie-applets.html:912
 msgid ""
 "Quickly find and choose the equivalent locale character for an ascii "
 "character."
 msgstr "ASCII文字と同等のロケール文字をすばやく見つけて選択します。"
 
-#: budgie-applets.html:820
+#: budgie-applets.html:930
 msgid "Status Notifier Tray Applet"
 msgstr "Status Notifier Tray アプレット"
 
-#: budgie-applets.html:825
+#: budgie-applets.html:935
 msgid "System Tray in KDE StatusNotifierItem format."
 msgstr "KDE StatusNotifierItem 形式のシステムトレイ。"
