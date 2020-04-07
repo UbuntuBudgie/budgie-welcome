@@ -59,7 +59,9 @@
   a:not([href]):not([tabindex]).btn,
   a:focus:not([href]):not([tabindex]).btn,
   a:hover:not([href]):not([tabindex]).btn {
-    color: white
+    color: white;
+    font-size: small;
+    overflow: hidden;
   }
   
   .text-md-justify {
