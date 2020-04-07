@@ -8,7 +8,7 @@ description: |
   of the available budgie applets (to personalize your desktop), and ease the
   installation effort around a few common applications.
 
-grade: stable
+grade: devel
 confinement: classic
 base: core18
 
@@ -38,12 +38,14 @@ parts:
       - gettext
       - node-uglify
       - xdg-utils
+      - sassc
     stage-packages:
       - python3-apt
       - xdg-utils
     override-build: |
       snapcraftctl build
       cd $SNAPCRAFT_PROJECT_DIR
+      sh ./sassc-compile.sh
       cd scripts && ./rebuild-translations.sh
       cd ../ && uglifyjs -o data/js/bootstrap.min.js data/js/bootstrap.js && uglifyjs -o data/js/baguetteBox.min.js data/js/baguetteBox.js  && uglifyjs -o data/js/popper.min.js data/js/popper.js
       mkdir -p $SNAPCRAFT_PART_INSTALL/usr/share/budgie-welcome/
