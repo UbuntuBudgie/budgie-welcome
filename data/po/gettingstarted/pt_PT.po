@@ -219,10 +219,11 @@ msgid ""
 "Bootloader</b> option) prior to installation, particularly if an operating "
 "system was pre-installed."
 msgstr ""
-"Se possui um PC moderno que usa a Interface Unificada de Firmware Extensível"
-" (UEFI), talvez seja necessário desativar o <b>Arranque seguro</b> (ou "
-"ativar a opção <b>Desbloquear o carregador de arranque</b>) antes da "
-"instalação, especialmente se um sistema operativo estiver pré-instalado."
+"Se possui um computador moderno que utiliza a Interface Unificada de "
+"Firmware Extensível (UEFI), talvez seja necessário desativar o <b>Arranque "
+"seguro</b> (ou ativar a opção <b>Desbloquear o carregador de arranque</b>) "
+"antes da instalação, especialmente se um sistema operativo estiver pré-"
+"instalado."
 
 #: gettingstarted.html:157
 msgid "If you are using a legacy BIOS machine, you do not need to do this."
@@ -293,9 +294,9 @@ msgid ""
 "to be created."
 msgstr ""
 "Por padrão, um ficheiro swap é criado com base no tamanho da RAM. Por "
-"exemplo, se você tiver 2 GiB de RAM, então 2 GiB de espaço no disco rígido "
-"serão reservados para o ficheiro swap. Uma partição swap separada não é mais"
-" necessária para ser criada."
+"exemplo, se tem 2 GiB de RAM, então 2 GiB de espaço no disco rígido serão "
+"reservados para o ficheiro swap. Uma partição swap separada não é mais "
+"necessária para ser criada."
 
 #: gettingstarted.html194, 392, 753, 1680
 msgid "Previous:"
@@ -315,7 +316,7 @@ msgstr ""
 
 #: gettingstarted.html:214
 msgid "I'm dual booting with"
-msgstr "Estou em dual boot com"
+msgstr "Estou em arranque duplo com o"
 
 #: gettingstarted.html:217
 msgid "To minimize the risk of data loss or failure, ensure that:"
@@ -423,7 +424,7 @@ msgid ""
 "power users who know how they'd like to layout their disks. This method "
 "makes changes to partitions prior to installation."
 msgstr ""
-"O <b>GParted</b> está disponível apenas durante a sessão live. Está "
+"O <b>GParted</b> está disponível apenas durante a sessão 'live'. Está "
 "localizado sob o menu <b>Ferramentas do sistema <i class=\"material-"
 "icons\">&#xE315;</i></b>. O GParted oferece total flexibilidade sobre as "
 "suas partições, principalmente para utilizadores avançados que sabem como "
@@ -446,7 +447,7 @@ msgstr ""
 
 #: gettingstarted.html:290
 msgid "Using the Installer's \"Custom\" option."
-msgstr "Usando a opção \"Personalizada\" do instalador."
+msgstr "Ao utilizar a opção \"Personalizada\" do instalador."
 
 #: gettingstarted.html:291
 msgid ""
@@ -463,7 +464,7 @@ msgstr ""
 
 #: gettingstarted.html:296
 msgid "You can specify these mount points:"
-msgstr "Você pode especificar esses pontos de montagem:"
+msgstr "Pode especificar estes pontos de montagem:"
 
 #: gettingstarted.html:298
 msgid "The base for <span name=\"distro-name\"></span>"
@@ -471,7 +472,7 @@ msgstr "A base para o <span name=\"distro-name\"></span>"
 
 #: gettingstarted.html:299
 msgid "Bootloader and kernels"
-msgstr "Bootloader e kernels"
+msgstr "Carregador do arranque e kernels"
 
 #: gettingstarted.html:300
 msgid "Your personal files and folders"
@@ -486,7 +487,7 @@ msgid ""
 "Contains most of the applications <i> (binaries, documentation, libraries, "
 "etc)</i>"
 msgstr ""
-"Contém a maioria dos programas <i> (binários, documentação, bibliotecas, "
+"Contém a maioria das aplicações <i> (binários, documentação, bibliotecas, "
 "etc)</i>"
 
 #: gettingstarted.html:304
@@ -506,7 +507,7 @@ msgstr "Software adicional não gerido pelo gestor de pacotes"
 
 #: gettingstarted.html:308
 msgid "such as"
-msgstr "tal como"
+msgstr "tais como"
 
 #: gettingstarted.html:311
 msgid ""
@@ -526,7 +527,7 @@ msgstr ""
 
 #: gettingstarted.html:319
 msgid "Shrink your system disk within Windows."
-msgstr "Reduzir o seu disco do sistema no Windows."
+msgstr "Encolha o disco do seu sistema dentro do Windows."
 
 #: gettingstarted.html:321
 msgid "Applies to Windows Vista and later."
@@ -554,19 +555,19 @@ msgstr ""
 
 #: gettingstarted.html:331
 msgid "Open <b>Disk Management</b> from the start menu."
-msgstr "Abrar o <b>Gerenciamento de Disco</b> no menu de início."
+msgstr "Abrir o <b>Gestão de Discos</b> no menu de iniciar."
 
 #: gettingstarted.html:336
 msgid ""
 "Right click your desired drive and choose <b>Shrink Partition</b> from the "
 "context menu."
 msgstr ""
-"Clique com o botão direito do mouse na unidade desejada e escolha "
-"<b>Encolher Partição</b> no menu de contexto."
+"Clique com o botão direito do rato na unidade desejada e escolha <b>Encolher"
+" Partição</b> no menu de contexto."
 
 #: gettingstarted.html:342
 msgid "Enter the amount to shrink your system partition by."
-msgstr "Digite o valor para diminuir a partição do sistema."
+msgstr "Introduza o valor para diminuir a partição do sistema."
 
 #: gettingstarted.html:348
 msgid ""
@@ -594,7 +595,7 @@ msgstr ""
 
 #: gettingstarted.html:361
 msgid "Repairing Boot Problems"
-msgstr "A reparar problemas de arranque"
+msgstr "A reparar problemas do arranque"
 
 #: gettingstarted.html:363
 msgid ""
@@ -668,8 +669,8 @@ msgid ""
 "<b>Software Updater</b> can be found later in the menu "
 "<strong>Administration</strong>"
 msgstr ""
-"O <b>Atualizações</b>pode ser encontrado mais tarde no "
-"menu<strong>Administração</strong>"
+"O <b>Atualizações</b> pode ser encontrado mais tarde no menu de "
+"<strong>Administração</strong>"
 
 #: gettingstarted.html:429
 msgid "Check for Updates"
@@ -700,7 +701,7 @@ msgid ""
 " including DVD, MP3, Quicktime, and Windows Media formats, by following the "
 "instructions below."
 msgstr ""
-"No entanto, você pode instalar a capacidade de reproduzir formatos de mídia "
+"No entanto, pode instalar a capacidade de reproduzir formatos de multimédia "
 "populares não-livres, incluindo formatos de DVD, MP3, Quicktime e Windows "
 "Media, seguindo as instruções abaixo."
 
@@ -712,10 +713,10 @@ msgid ""
 "comprehensive discussion of these issues."
 msgstr ""
 "O compromisso do Ubuntu de incluir apenas software completamente livre por "
-"padrão significa que os formatos de mídia proprietários não estão "
-"configurados \"fora da caixa\". Veja a Filosofia de Software Livre do Ubuntu"
-" e a página Formatos Livres para uma discussão mais abrangente sobre essas "
-"questões."
+"defeito significa que os formatos de média proprietários não estão "
+"configurados \"prontos a usar\". Veja a Filosofia de Software Livre do "
+"Ubuntu e a página Formatos Livres para uma discussão mais abrangente sobre "
+"essas questões."
 
 #: gettingstarted.html:460
 msgid ""
@@ -724,11 +725,11 @@ msgid ""
 " unsure whether a particular patent or restriction applies to a media format"
 " you wish to use in your country."
 msgstr ""
-"<strong>Aviso Legal</strong> As leis de patentes e direitos autorais operam "
-"de forma diferente, de acordo com o país em que se encontra. Obtenha "
+"<strong>Aviso Legal</strong>, as leis de patentes e direitos de autor operam"
+" de forma diferente, de acordo com o país em que se encontra. Obtenha "
 "aconselhamento jurídico se não tiver certeza de se uma determinada patente "
-"ou restrição se aplica a um formato de mídia que você deseja usar em seu "
-"país."
+"ou restrição se aplica a um formato de multimédia que você deseja usar no "
+"seu país."
 
 #: gettingstarted.html469, 610, 676, 685, 725, 736, 747, 785, 818, 889, 899,
 #: 915, 931, 941, 959, 974, 992, 1011, 1033, 1051
@@ -888,9 +889,7 @@ msgstr ""
 
 #: gettingstarted.html:573
 msgid "Improve support for high resolutions and multiple monitors."
-msgstr ""
-"Melhora o suporte para monitores de alta-resolução tal como o uso de "
-"múltiplos monitores."
+msgstr "Melhora o suporte a altas resoluções e a vários monitores."
 
 #: gettingstarted.html:574
 msgid "Fix blank screen issues."
@@ -974,7 +973,7 @@ msgstr ""
 
 #: gettingstarted.html:624
 msgid "Wireless, Bluetooth and Other Devices"
-msgstr "Rede sem fio, Bluetooth e outros dispositivos"
+msgstr "Rede sem fios, Bluetooth e outros dispositivos"
 
 #: gettingstarted.html:627
 msgid ""
@@ -982,9 +981,9 @@ msgid ""
 "after installing the firmware packages, you may need to research your device"
 " to find the appropriate driver."
 msgstr ""
-"Se não houve conroladores adicionais para o seu hardware e nem funcionem "
-"depois de instalar os pacotes de firmware, talvez seja necessário pesquisar "
-"por seu dispositivo para encontrar o controlador apropriado."
+"Se não foram encontrados controladores adicionais para o hardware nem "
+"funcionou após a instalação dos pacotes de firmware, poderá ter de pesquisar"
+" o seu dispositivo para encontrar o controlador apropriado."
 
 #: gettingstarted.html:631
 msgid ""
@@ -1010,7 +1009,7 @@ msgstr ""
 
 #: gettingstarted.html:643
 msgid "Read more on troubleshooting wireless hardware."
-msgstr "Leia mais sobre como solucionar problemas de hardware sem fio."
+msgstr "Leia mais sobre como solucionar problemas de hardware sem fios."
 
 #: gettingstarted.html652, 865
 msgid "Language Input"
@@ -1088,15 +1087,16 @@ msgstr "Coreano"
 
 #: gettingstarted.html:763
 msgid "Backup, Firewall and User Management"
-msgstr "Backup, Firewall e Gestão de Utilizadores"
+msgstr "Cópias de segurança, Firewall e Gestão de Utilizadores"
 
 #: gettingstarted.html:764
 msgid ""
 "<span name=\"distro-name\"></span> provides option to install a backup "
 "utility or firewall and supports multiple user accounts."
 msgstr ""
-"<span name=\"distro-name\"></span> fornece opção para instalar um utilitário"
-" de backup ou firewall e oferece suporte a várias contas de utilizadores."
+"O <span name=\"distro-name\"></span> fornece a opção para instalar um "
+"utilitário de cópias de segurança ou firewall e oferece suporte a várias "
+"contas de utilizadores."
 
 #: gettingstarted.html:775
 msgid "Backups"
@@ -1107,8 +1107,8 @@ msgid ""
 "Nothing is more important than having a backup of your personal files, just "
 "in case something disastrous happens to your computer."
 msgstr ""
-"Nada é mais importante que fazer uma cópia de segurança dos seus ficheiros "
-"pessoais, caso algum desastre aconteça com o seu computador."
+"Nada é mais importante do que fazer uma cópia de segurança dos seus "
+"ficheiros pessoais, caso algum desastre aconteça com o seu computador."
 
 #: gettingstarted.html:780
 msgid ""
@@ -1116,13 +1116,14 @@ msgid ""
 "name=\"distro-name\"></span> and supports backups to local devices as well "
 "as online cloud-based services."
 msgstr ""
-"<b>Deja-Dup</b> é um poderoso utilitário de backup que pode ser instalado no"
-" <span name=\"distro-name\"></span> e suporta backups para dispositivos "
-"locais, bem como serviços online baseados em nuvem."
+"O <b>Deja-Dup</b> é um poderoso utilitário de cópias de segurança que pode "
+"ser instalado no <span name=\"distro-name\"></span> e suporta cópias de "
+"segurança para dispositivos locais, bem como serviços online baseados em "
+"nuvem."
 
 #: gettingstarted.html:791
 msgid "Configure Backup"
-msgstr "Configure o Backup"
+msgstr "Configurar cópia de segurança"
 
 #: gettingstarted.html:794
 msgid ""
@@ -1130,7 +1131,7 @@ msgid ""
 "=\"material-icons\">&#xE315;</i> Backups</b>."
 msgstr ""
 "O <b>Cópias de segurança</b> pode ser encontrado mais tarde no menu "
-"<b>Utilidades <i class=\"material-icons\">&#xE315;</i> Cópias de "
+"<b>Utilitários <i class=\"material-icons\">&#xE315;</i> Cópias de "
 "segurança</b>."
 
 #: gettingstarted.html:807
@@ -1145,8 +1146,8 @@ msgid ""
 " more about firewalls</a>."
 msgstr ""
 "As firewalls previnem ligações maliciosas de entrarem ou saírem de seu "
-"computador. Por padrão, a firewall vêm desativada,<a "
-"onclick=\"cmd('link?https://help.ubuntu.com/community/DoINeedAFirewall')\">Aprenda"
+"computador. Por padrão, a firewall vêm desativada, <a "
+"onclick=\"cmd('link?https://help.ubuntu.com/community/DoINeedAFirewall')\">aprenda"
 " mais sobre firewalls</a>."
 
 #: gettingstarted.html:813
@@ -1156,9 +1157,9 @@ msgid ""
 "onclick=\"cmd('link?https://wiki.ubuntu.com/BasicSecurity')\">more ways to "
 "stay secure too</a>."
 msgstr ""
-"<b>Gufw</b> fornece um ambiente gráfico para o <code>ufw</code> "
-"(Uncomplicated Firewall - Firewall descomplicado em português).  Se "
-"segurança for importante para você, existem <a "
+"O <b>Gufw</b> fornece um ambiente gráfico para o <code>ufw</code> "
+"(Uncomplicated Firewall - Firewall descomplicado em português).  Se a "
+"segurança for importante para si, existem <a "
 "onclick=\"cmd('link?https://wiki.ubuntu.com/BasicSecurity')\"> outras formas"
 " de se manter seguro</a>."
 
@@ -1186,17 +1187,17 @@ msgid ""
 "user to protect the individual privacy of each user sharing the same "
 "computer."
 msgstr ""
-"Compartilha o seu computador com outros? Configure uma conta de utilizador "
+"Partilhe o seu computador com outros? Configure uma conta de utilizador "
 "separada para cada utilizador para proteger a privacidade individual de cada"
-" utilizador que compartilha o mesmo computador."
+" utilizador que partilha o mesmo computador."
 
 #: gettingstarted.html:846
 msgid ""
 "You can also log in to a <b>Guest Session</b> if someone is using your "
 "computer as a one-off."
 msgstr ""
-"Você também pode iniciar sessão em <b>Sessão de convidado</b> se alguém "
-"estiver a usar seu computador uma única vez."
+"Também pode iniciar sessão numa <b>sessão de convidado</b> se alguém estiver"
+" a usar o seu computador uma única vez."
 
 #: gettingstarted.html:851
 msgid "Configure Users"
@@ -1207,8 +1208,8 @@ msgid ""
 "<b>Users</b> can be found later in the menu <b><i>Administration <i class"
 "=\"material-icons\">&#xE315;</i> Users</i></b>."
 msgstr ""
-"<b>Utilizadores</b> pode ser encontrado mais tarde no "
-"menu<b><i>Administração<i class=\"material-"
+"O <b>Utilizadores</b> pode ser encontrado mais tarde no menu "
+"<b><i>Administração<i class=\"material-"
 "icons\">&#xE315;</i>Utilizadores</i></b>."
 
 #: gettingstarted.html:873
@@ -1326,22 +1327,22 @@ msgid ""
 "user interface. It can be used to quickly setup the user interface to "
 "broadly reflect how other popular operating systems look and feel."
 msgstr ""
-"<span name=\"distro-name\"></span> fornece uma ferramenta exclusiva para "
-"transformar a interface do utilizador. Ele pode ser usado para configurar "
-"rapidamente a interface do utilizador para refletir amplamente como outros "
-"sistemas operativos populares se parecem e se sentem."
+"O <span name=\"distro-name\"></span> fornece uma ferramenta exclusiva para "
+"transformar a interface do utilizador. Pode ser utilizada para configurar "
+"rapidamente a interface do utilizador de modo a refletir amplamente o aspeto"
+" e a sensação de outros sistemas operativos populares."
 
 #: gettingstarted.html:1070
 msgid "Budgie Desktop Settings"
-msgstr "Definições Budgie Desktop"
+msgstr "Definições do Budgie"
 
 #: gettingstarted.html:1073
 msgid ""
 "<b>Budgie Desktop Settings</b> can be found later in the menu <b>System "
 "Tools</b>."
 msgstr ""
-"As <b>Definições do Budgie Desktop</b> podem ser encontradas mais tarde no "
-"menu <b>Ferramentas do Sistema</b>."
+"As <b>Definições do Budgie</b> podem ser encontradas mais tarde no menu "
+"<b>Ferramentas do Sistema</b>."
 
 #: gettingstarted.html1079, 1085
 msgid "Settings"
@@ -1355,7 +1356,7 @@ msgid ""
 msgstr ""
 "Os utilitários mencionados acima fazem parte do extenso centro de controlo "
 "de definições que o <span name=\"distro-name\"></span> fornece. Pode "
-"configurar praticamente todos os aspectos do seu computador a partir das "
+"configurar praticamente todos os aspetos do seu computador a partir das "
 "Definições."
 
 #: gettingstarted.html:1104
@@ -1363,24 +1364,24 @@ msgid ""
 "<span name=\"distro-name\"></span> has many keyboard shortcuts that help "
 "make using your computer more efficient."
 msgstr ""
-"<span name=\"distro-name\"></span> tem muitos atalhos de teclado que ajudam "
-"a tornar o computador mais eficiente."
+"O <span name=\"distro-name\"></span> tem muitos atalhos de teclado que "
+"ajudam a tornar o computador mais eficiente."
 
 #: gettingstarted.html:1108
 msgid ""
 "The <b><img src=\"img/welcome/super-key.svg\" /> Super</b> key is your "
 "Windows key. For Mac keyboards, this is the ⌘ Command key."
 msgstr ""
-"A tecla<b><img src=\"img/welcome/super-key.svg\" /> Super</b> é a sua tecla "
-"do Windows. Para teclados Mac, esta é a tecla de Comnado ⌘."
+"A tecla <b><img src=\"img/welcome/super-key.svg\" /> Super</b> é a tecla do "
+"Windows. Para teclados Mac, esta é a tecla de Comnado ⌘."
 
 #: gettingstarted.html:1111
 msgid "Budgie Desktop shortcuts"
-msgstr "Atalhos do Budgie Desktop"
+msgstr "Atalhos do Budgie"
 
 #: gettingstarted.html:1112
 msgid "Some common shortcuts used in Budgie Desktop"
-msgstr "Alguns atalhos comuns usados no Budgie Desktop"
+msgstr "Alguns atalhos comuns usados no ambiente de trabalho Budgie"
 
 #: gettingstarted.html:1122
 msgid "Open notifications in Raven"
@@ -1400,7 +1401,7 @@ msgstr "Estes atalhos aplicam-se na maioria das aplicações."
 
 #: gettingstarted.html:1146
 msgid "Toggle Tilix Quake Mode"
-msgstr "Toggle Tilix Quake Mode"
+msgstr "Alternar entre modo deslizante do Tilix"
 
 #: gettingstarted.html1150, 1158, 1166, 1174, 1182, 1190, 1198, 1206, 1214,
 #: 1222, 1230, 1238, 1246, 1254, 1262, 1294, 1310, 1340, 1359, 1404, 1414,
@@ -1462,7 +1463,7 @@ msgstr "Imprimir o documento atual"
 
 #: gettingstarted.html:1258
 msgid "Undo the last change you made"
-msgstr "Desfazer a última alteração que você fez"
+msgstr "Anula a última alteração efetuada"
 
 #: gettingstarted.html1264, 1292, 1302, 1428, 1439
 msgid "Shift"
@@ -1470,11 +1471,11 @@ msgstr "Shift"
 
 #: gettingstarted.html:1268
 msgid "Redo a change that you just undid"
-msgstr "Refazer uma alteração que você acabou de desfazer"
+msgstr "Refazer uma mudança que você acabou de anular"
 
 #: gettingstarted.html:1274
 msgid "Toggle the current application between full-screen and windowed"
-msgstr "Alternar a aplicaçaõ atual entre ecrã completo e janelas"
+msgstr "Alternar a aplicação atual entre ecrã inteiro e janelas"
 
 #: gettingstarted.html:1278
 msgid "Desktop shortcuts"
@@ -1544,7 +1545,7 @@ msgstr "Atalhos de janela - geral"
 
 #: gettingstarted.html:1378
 msgid "Call Window Shuffler gui (window tiling grid)."
-msgstr "Call Window Shuffler gui (grade de colocação de janelas)."
+msgstr "Solicita a janela do organizador (grelha de janela)."
 
 #: gettingstarted.html:1383
 msgid "Video Demonstration"
@@ -1560,7 +1561,7 @@ msgstr "Alternar entre janelas atualmente abertas."
 
 #: gettingstarted.html:1396
 msgid "Press Alt + Tab and then release Tab (but continue to hold Alt)."
-msgstr "Pressione Alt + tab e então solte o Tab (mas continue segurando Alt)."
+msgstr "Pressione Alt + Tab e depois solte Tab (mas continue a segurar Alt)."
 
 #: gettingstarted.html:1397
 msgid ""
@@ -1604,7 +1605,7 @@ msgstr "Retorna a janela para o tamanho \"normal\" ou anterior."
 
 #: gettingstarted.html:1467
 msgid "Moves the current window (can be moved with mouse or keyboard)."
-msgstr "Move a janela atual (pode ser movida com mouse ou teclado)."
+msgstr "Move a janela atual (pode ser movida com o rato ou teclado)."
 
 #: gettingstarted.html:1475
 msgid "Resizes current window (again, can be moved with mouse or keyboard)."
@@ -1629,7 +1630,7 @@ msgstr "Baixa"
 
 #: gettingstarted.html:1502
 msgid "Unmaximizes current window."
-msgstr "Unmaximiza a janela atual."
+msgstr "Repõe a janela actual."
 
 #: gettingstarted.html:1508
 msgid "Space"
@@ -1640,8 +1641,8 @@ msgid ""
 "Displays the window menu with options such as 'Always on Top' and 'Minimize'"
 " and 'Maximize' and above commands."
 msgstr ""
-"Exibe o menu da janela com opções como 'Sempre na parte superior' e "
-"'Minimizar' e 'Maximizar' e comandos acima."
+"Apresenta o menu da janela com opções como \"Sempre em cima\" e "
+"\"Minimizar\" e \"Maximizar\" e comandos acima."
 
 #: gettingstarted.html:1520
 msgid "Place window on left side of screen."
@@ -1657,7 +1658,7 @@ msgstr "1"
 
 #: gettingstarted.html:1538
 msgid "Quarter tiling: top left."
-msgstr "Quarter tiling: superior esquerdo."
+msgstr "Lado a lado: canto superior esquerdo."
 
 #: gettingstarted.html1545, 1639
 msgid "2"
@@ -1665,7 +1666,7 @@ msgstr "2"
 
 #: gettingstarted.html:1547
 msgid "Quarter tiling: top right."
-msgstr "Quarter tiling: superior direito."
+msgstr "Lado a lado: canto superior direito."
 
 #: gettingstarted.html1554, 1599
 msgid "3"
@@ -1673,7 +1674,7 @@ msgstr "3"
 
 #: gettingstarted.html:1556
 msgid "Quarter tiling: bottom left."
-msgstr "Quarter tiling: botão esquerdo."
+msgstr "Lado a lado: canto inferior esquerdo."
 
 #: gettingstarted.html1563, 1649
 msgid "4"
@@ -1681,7 +1682,7 @@ msgstr "4"
 
 #: gettingstarted.html:1565
 msgid "Quarter tiling: bottom right."
-msgstr "Quarter tiling: botão direito."
+msgstr "Lado a lado: canto inferior direito."
 
 #: gettingstarted.html:1570
 msgid "Window shortcuts - numeric keypad"
@@ -1689,7 +1690,7 @@ msgstr "Atalhos da janela - teclado numérico"
 
 #: gettingstarted.html:1571
 msgid "Tiling shortcuts on the numeric keypad."
-msgstr "Atalhos de lado a lado no teclado numérico."
+msgstr "Atalhos no teclado numérico."
 
 #: gettingstarted.html:1579
 msgid "7"
@@ -1697,7 +1698,7 @@ msgstr "7"
 
 #: gettingstarted.html:1581
 msgid "Quarter top left."
-msgstr "Quarter superior esquerdo."
+msgstr "Quarto superior esquerdo."
 
 #: gettingstarted.html:1589
 msgid "9"
@@ -1705,15 +1706,15 @@ msgstr "9"
 
 #: gettingstarted.html:1591
 msgid "Quarter top right."
-msgstr "Quarter superior direito."
+msgstr "Quarto superior direito."
 
 #: gettingstarted.html:1601
 msgid "Quarter bottom right."
-msgstr "Quarter botão direito."
+msgstr "Quarto inferior direito."
 
 #: gettingstarted.html:1611
 msgid "Quarter bottom left."
-msgstr "Quarter botão esquerdo."
+msgstr "Quarto inferior esquerdo."
 
 #: gettingstarted.html:1619
 msgid "8"
@@ -1729,15 +1730,15 @@ msgstr "6"
 
 #: gettingstarted.html:1631
 msgid "Half right."
-msgstr "Metade direito."
+msgstr "Metade direita."
 
 #: gettingstarted.html:1641
 msgid "Half bottom."
-msgstr "Botão do meio."
+msgstr "Metade inferior."
 
 #: gettingstarted.html:1651
 msgid "Half left."
-msgstr "Metade esquedo."
+msgstr "Metade esquerda."
 
 #: gettingstarted.html:1659
 msgid "5"
@@ -1757,13 +1758,13 @@ msgid ""
 "another. This information is useful when providing support to ensure "
 "hardware and software works on your machine."
 msgstr ""
-"A sua máquina é composta de vários componentes que interagem uns com os "
-"outros. Essas informações são úteis ao fornecer suporte para garantir que o "
+"A sua máquina é composta por vários componentes que interagem uns com os "
+"outros. Estas informações são úteis ao fornecer suporte para garantir que o "
 "hardware e o software funcionem na sua máquina."
 
 #: gettingstarted.html:1700
 msgid "Gathering Information.."
-msgstr "Juntando informações.."
+msgstr "A recolher informação..."
 
 #: gettingstarted.html:1709
 msgid "System"
@@ -1791,7 +1792,7 @@ msgstr "Modo de arranque:"
 
 #: gettingstarted.html:1734
 msgid "Displays the mode that OS is communicating with the firmware."
-msgstr "Exibe o modo em que o SO está a se comunicar com o firmware."
+msgstr "Mostra o modo em que o SO está a comunicar com o firmware."
 
 #: gettingstarted.html:1742
 msgid "Processor"
@@ -1807,13 +1808,14 @@ msgstr "Velocidade:"
 
 #: gettingstarted.html:1753
 msgid "Architecture in use:"
-msgstr "Arquitetura em uso:"
+msgstr "Arquitetura em utilização:"
 
 #: gettingstarted.html:1757
 msgid ""
 "The operating system's architecture in use. For instance, i386 = 32-bit."
 msgstr ""
-"A arquitetura do sistema operativo em uso. Por exemplo, i386 = 32-bit."
+"A arquitetura do sistema operativo em utilização. Por exemplo, i386 = "
+"32-bit."
 
 #: gettingstarted.html:1763
 msgid "Architecture(s) supported:"
@@ -1834,7 +1836,7 @@ msgstr "Memória (RAM):"
 #: gettingstarted.html:1782
 msgid "More RAM allows more applications to run simultaneously."
 msgstr ""
-"Mais RAM permite que mais aplicativos sejam executados simultaneamente."
+"Mais RAM permite que mais aplicações sejam executadas simultaneamente."
 
 #: gettingstarted.html:1788
 msgid "Graphics:"
@@ -1858,7 +1860,7 @@ msgstr "Armazenamento"
 
 #: gettingstarted.html:1808
 msgid "Root File System:"
-msgstr "Sistema de Ficheiros Raiz:"
+msgstr "Sistema de ficheiros root:"
 
 #: gettingstarted.html:1812
 msgid "The file system where OS is installed."
@@ -1866,19 +1868,19 @@ msgstr "O sistema de ficheiros onde o SO está instalado."
 
 #: gettingstarted.html:1818
 msgid "Entire Disk Capacity:"
-msgstr "Capacidade Total do Disco:"
+msgstr "Capacidade total do disco:"
 
 #: gettingstarted.html:1824
 msgid "OS Usage"
-msgstr "Uso do SO"
+msgstr "Utilização do SO"
 
 #: gettingstarted.html:1829
 msgid "Other Usage"
-msgstr "Outro Uso"
+msgstr "Outras utilizações"
 
 #: gettingstarted.html:1834
 msgid "Allocated for <span name=\"distro-name\"></span>:"
-msgstr "Alocado para o <span name=\"distro-name\"></span>:"
+msgstr "Atribuído a <span name=\"distro-name\"></span>:"
 
 #: gettingstarted.html:1838
 msgid "The size of your operating system partition."
@@ -1886,15 +1888,15 @@ msgstr "O tamanho da partição do sistema operativo."
 
 #: gettingstarted.html:1845
 msgid "Used Space:"
-msgstr "Espaço Usado:"
+msgstr "Espaço utilizado:"
 
 #: gettingstarted.html:1853
 msgid "Free Space:"
-msgstr "Espaço Livre:"
+msgstr "Espaço livre:"
 
 #: gettingstarted.html:1861
 msgid "Other Usage:"
-msgstr "Outro Uso:"
+msgstr "Outras utilizações:"
 
 #: gettingstarted.html:1866
 msgid "Reserved by system, other partitions, unallocated or swap."
