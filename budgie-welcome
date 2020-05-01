@@ -838,7 +838,9 @@ class AppView(WebKit2.WebView):
         actions = [
             ['#' + code + ('-install' if operation ==
                            PMEntry.INSTALL else '-remove'), 'addClass', 'disabled', None],
-            ['#' + code + '-status', 'fadeIn', None, None]
+            ['#' + code + '-status', 'fadeIn', None, None],
+            ['#' + code + ('-instruction' if operation ==
+                           PMEntry.INSTALL else '-ignore'), 'fadeIn', None, None]
         ]
 
         for action in actions:
@@ -1055,9 +1057,13 @@ class PackageManager(Thread):
             if entry.task == PMEntry.INSTALL:
                 app.update_page('#' + code + '-install',
                                 'removeClass', 'disabled')
+                app.update_page('#' + code + '-instruction',
+                                'show')
             else:
                 app.update_page('#' + code + '-remove',
                                 'removeClass', 'disabled')
+                app.update_page('#' + code + '-instruction',
+                                'hide')
 
             app.update_page('#' + code + '-status', 'fadeOut')
 
@@ -2254,9 +2260,9 @@ def desktop_files():
     Name = _("Budgie Themes & Layouts")
     Comment = _("Give the desktop a makeover with new themes, icons, fonts & layouts")
 
-    Name = _("Budgie Applets")
+    Name = _("Budgie Extras")
     Comment = _(
-        "Customize the desktop panel with applets that provide extra capabilities")
+        "Customize the desktop with applets and mini-applications to provide extra capabilities")
 
     Name = _("Budgie Discourse")
     Comment = _("Be part of the Ubuntu Budgie Community")

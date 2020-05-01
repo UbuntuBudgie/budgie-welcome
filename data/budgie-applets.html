@@ -11,9 +11,8 @@
    </head>
    <body class="backdrop-simple fade fade-1s" onload="sortAppletList();">
       <div id="wrapper">
-         <div id="title-inject">&zwnj;Budgie Desktop Applets&zwnj;</div>
+         <div id="title-inject">&zwnj;Budgie Desktop Extras&zwnj;</div>
          <div id="content" class="container entire-page-fade">
-            <b>&zwnj;Logout and login after installing applets. From the menu - choose Budgie Desktop Settings and choose the Panel to add and configure applets.&zwnj;</b>
             <div align="center">
                <a class="btn btn-inverse" onclick="cmd('budgie-desktop-settings');cmd('')" onclick="smoothFade('','#drivers-hint')">
                    <span class="button-text">&zwnj;Budgie Desktop Settings&zwnj;</span>&nbsp;
@@ -40,6 +39,7 @@
                      <span id="haste-status" class="hidden">
                      <img src="img/welcome/processing.gif" width="24px" height="24px" /> &zwnj;Applying Changes...&zwnj;
                      </span>
+                     <p id="haste-applet-instruction" class="hidden"><small>&zwnj;Logout and login after installing applets. From the menu - choose Budgie Desktop Settings and choose the Panel to add and configure applets.&zwnj;</small></p>
                   </div>
                   <hr/>
                </div>
@@ -62,6 +62,7 @@
                      <span id="screenshot-applet-status" class="hidden">
                      <img src="img/welcome/processing.gif" width="24px" height="24px" /> &zwnj;Applying Changes...&zwnj;
                      </span>
+                     <p id="screenshot-applet-instruction" class="hidden"><small>&zwnj;Logout and login after installing applets. From the menu - choose Budgie Desktop Settings and choose the Panel to add and configure applets.&zwnj;</small></p>
                   </div>
                   <hr/>
                </div>
@@ -84,6 +85,7 @@
                      <span id="calendar-applet-status" class="hidden">
                      <img src="img/welcome/processing.gif" width="24px" height="24px" /> &zwnj;Applying Changes...&zwnj;
                      </span>
+                     <p id="calendar-applet-instruction" class="hidden"><small>&zwnj;Logout and login after installing applets. From the menu - choose Budgie Desktop Settings and choose the Panel to add and configure applets.&zwnj;</small></p>
                   </div>
                   <hr/>
                </div>
@@ -106,6 +108,7 @@
                      <span id="network-applet-status" class="hidden">
                      <img src="img/welcome/processing.gif" width="24px" height="24px" /> &zwnj;Applying Changes...&zwnj;
                      </span>
+                     <p id="network-applet-instruction" class="hidden"><small>&zwnj;Logout and login after installing applets. From the menu - choose Budgie Desktop Settings and choose the Panel to add and configure applets.&zwnj;</small></p>
                   </div>
                   <hr/>
                </div>
@@ -128,6 +131,7 @@
                      <span id="network-manager-applet-status" class="hidden">
                      <img src="img/welcome/processing.gif" width="24px" height="24px" /> &zwnj;Applying Changes...&zwnj;
                      </span>
+                     <p id="network-manager-applet-instruction" class="hidden"><small>&zwnj;Logout and login after installing applets. From the menu - choose Budgie Desktop Settings and choose the Panel to add and configure applets.&zwnj;</small></p>
                   </div>
                   <hr/>
                </div>
@@ -150,6 +154,7 @@
                      <span id="visualspace-applet-status" class="hidden">
                      <img src="img/welcome/processing.gif" width="24px" height="24px" /> &zwnj;Applying Changes...&zwnj;
                      </span>
+                     <p id="visualspace-applet-instruction" class="hidden"><small>&zwnj;Logout and login after installing applets. From the menu - choose Budgie Desktop Settings and choose the Panel to add and configure applets.&zwnj;</small></p>
                   </div>
                   <hr/>
                </div>
@@ -167,11 +172,12 @@
                      <span class="material-icons">&#xE872;</span><span class="button-text">&zwnj;Remove&zwnj;</span>
                      </a>
                      <a id="window-shuffler-install" class="btn btn-success hvr-shadow" onclick="cmd('install?window-shuffler');cmd('')"> &nbsp;
-                     <span class="material-icons">&#xE2C0;</span>&zwnj;Install Applet&zwnj;&nbsp;
+                     <span class="material-icons">&#xE2C0;</span>&zwnj;Install Application&zwnj;&nbsp;
                      </a>
                      <span id="window-shuffler-status" class="hidden">
                      <img src="img/welcome/processing.gif" width="24px" height="24px" /> &zwnj;Applying Changes...&zwnj;
                      </span>
+                     <p id="window-shuffler-instruction" class="hidden"><small>&zwnj;Logout and login after installing. Choose from the menu to configure this application.&zwnj;</small></p>
                   </div>
                   <hr/>
                </div>
@@ -194,6 +200,7 @@
                      <span id="applications-menu-applet-status" class="hidden">
                      <img src="img/welcome/processing.gif" width="24px" height="24px" /> &zwnj;Applying Changes...&zwnj;
                      </span>
+                     <p id="applications-menu-applet-instruction" class="hidden"><small>&zwnj;Logout and login after installing applets. From the menu - choose Budgie Desktop Settings and choose the Panel to add and configure applets.&zwnj;</small></p>
                   </div>
                   <hr/>
                </div>
@@ -216,6 +223,7 @@
                      <span id="cpufreq-applet-status" class="hidden">
                      <img src="img/welcome/processing.gif" width="24px" height="24px" /> &zwnj;Applying Changes...&zwnj;
                      </span>
+                     <p id="cpufreq-applet-instruction" class="hidden"><small>&zwnj;Logout and login after installing applets. From the menu - choose Budgie Desktop Settings and choose the Panel to add and configure applets.&zwnj;</small></p>
                   </div>
                   <hr/>
                </div>
@@ -238,6 +246,7 @@
                      <span id="sys-monitor-applet-status" class="hidden">
                      <img src="img/welcome/processing.gif" width="24px" height="24px" /> &zwnj;Applying Changes...&zwnj;
                      </span>
+                     <p id="sys-monitor-applet-instruction" class="hidden"><small>&zwnj;Logout and login after installing applets. From the menu - choose Budgie Desktop Settings and choose the Panel to add and configure applets.&zwnj;</small></p>
                   </div>
                   <hr/>
                </div>
@@ -260,6 +269,7 @@
                      <span id="pixel-applet-status" class="hidden">
                      <img src="img/welcome/processing.gif" width="24px" height="24px" /> &zwnj;Applying Changes...&zwnj;
                      </span>
+                     <p id="pixel-applet-instruction" class="hidden"><small>&zwnj;Logout and login after installing applets. From the menu - choose Budgie Desktop Settings and choose the Panel to add and configure applets.&zwnj;</small></p>
                   </div>
                   <hr/>
                </div>
@@ -282,6 +292,7 @@
                      <span id="appmenu-applet-status" class="hidden">
                      <img src="img/welcome/processing.gif" width="24px" height="24px" /> &zwnj;Applying Changes...&zwnj;
                      </span>
+                     <p id="apmenu-applet-instruction" class="hidden"><small>&zwnj;Logout and login after installing applets. From the menu - choose Budgie Desktop Settings and choose the Panel to add and configure applets.&zwnj;</small></p>
                   </div>
                   <hr/>
                </div>
@@ -304,6 +315,7 @@
                      <span id="weather-applet-status" class="hidden">
                      <img src="img/welcome/processing.gif" width="24px" height="24px" /> &zwnj;Applying Changes...&zwnj;
                      </span>
+                     <p id="weather-applet-instruction" class="hidden"><small>&zwnj;Logout and login after installing applets. From the menu - choose Budgie Desktop Settings and choose the Panel to add and configure applets.&zwnj;</small></p>
                   </div>
                   <hr/>
                </div>
@@ -326,6 +338,7 @@
                      <span id="sysmonitor-applet-status" class="hidden">
                      <img src="img/welcome/processing.gif" width="24px" height="24px" /> &zwnj;Applying Changes...&zwnj;
                      </span>
+                     <p id="sysmonitor-applet-instruction" class="hidden"><small>&zwnj;Logout and login after installing applets. From the menu - choose Budgie Desktop Settings and choose the Panel to add and configure applets.&zwnj;</small></p>
                   </div>
                   <hr/>
                </div>
@@ -348,6 +361,7 @@
                      <span id="hotcorners-applet-status" class="hidden">
                      <img src="img/welcome/processing.gif" width="24px" height="24px" /> &zwnj;Applying Changes...&zwnj;
                      </span>
+                     <p id="hotcorners-applet-instruction" class="hidden"><small>&zwnj;Logout and login after installing applets. From the menu - choose Budgie Desktop Settings and choose the Panel to add and configure applets.&zwnj;</small></p>
                   </div>
                   <hr/>
                </div>
@@ -370,6 +384,7 @@
                      <span id="quicknote-status" class="hidden">
                      <img src="img/welcome/processing.gif" width="24px" height="24px" /> &zwnj;Applying Changes...&zwnj;
                      </span>
+                     <p id="quicknote-applet-instruction" class="hidden"><small>&zwnj;Logout and login after installing applets. From the menu - choose Budgie Desktop Settings and choose the Panel to add and configure applets.&zwnj;</small></p>
                   </div>
                   <hr/>
                </div>
@@ -392,6 +407,7 @@
                      <span id="previews-status" class="hidden">
                      <img src="img/welcome/processing.gif" width="24px" height="24px" /> &zwnj;Applying Changes...&zwnj;
                      </span>
+                     <p id="previews-instruction" class="hidden"><small>&zwnj;Logout and login after installing applets. From the menu - choose Budgie Desktop Settings and choose the Panel to add and configure applets.&zwnj;</small></p>
                   </div>
                   <hr/>
                </div>
@@ -403,18 +419,18 @@
                         <a href="img/screenshots/previews-applet.jpg" data-toggle="lightbox"><img src="img/screenshots/previews-applet.jpg" style="width: auto; max-height: 128px" /></a>
                      </div>
                      <p class="card-text">&zwnj;Show an overview of windows in an exposé like way.&zwnj;</p>
-                     <p class="card-text">&zwnj;This is a mini-app and is launched via the budgie menu.&zwnj;</p>
                   </div>
                   <div class="text-md-right">
                      <a id="previewsapp-applet-remove" class="btn btn-danger" onclick="cmd('remove?previewsapp-applet');cmd('')">
                      <span class="material-icons">&#xE872;</span><span class="button-text">&zwnj;Remove&zwnj;</span>
                      </a>
                      <a id="previewsapp-applet-install" class="btn btn-success hvr-shadow" onclick="cmd('install?previewsapp-applet');cmd('')"> &nbsp;
-                     <span class="material-icons">&#xE2C0;</span>&zwnj;Install mini-app&zwnj;&nbsp;
+                     <span class="material-icons">&#xE2C0;</span>&zwnj;Install Application&zwnj;&nbsp;
                      </a>
                      <span id="previewsapp-status" class="hidden">
                      <img src="img/welcome/processing.gif" width="24px" height="24px" /> &zwnj;Applying Changes...&zwnj;
                      </span>
+                     <p id="previewsapp-instruction" class="hidden"><small>&zwnj;Logout and login after installing. Choose from the menu to configure this application.&zwnj;</small></p>
                   </div>
                   <hr/>
                </div>
@@ -437,6 +453,7 @@
                      <span id="workspace-overview-status" class="hidden">
                      <img src="img/welcome/processing.gif" width="24px" height="24px" /> &zwnj;Applying Changes...&zwnj;
                      </span>
+                     <p id="workspace-overview-instruction" class="hidden"><small>&zwnj;Logout and login after installing applets. From the menu - choose Budgie Desktop Settings and choose the Panel to add and configure applets.&zwnj;</small></p>
                   </div>
                   <hr/>
                </div>
@@ -459,6 +476,7 @@
                      <span id="workspace-wallpaper-status" class="hidden">
                      <img src="img/welcome/processing.gif" width="24px" height="24px" /> &zwnj;Applying Changes...&zwnj;
                      </span>
+                     <p id="workspace-wallpaper-instruction" class="hidden"><small>&zwnj;Logout and login after installing applets. From the menu - choose Budgie Desktop Settings and choose the Panel to add and configure applets.&zwnj;</small></p>
                   </div>
                   <hr/>
                </div>
@@ -481,6 +499,7 @@
                      <span id="window-mover-status" class="hidden">
                      <img src="img/welcome/processing.gif" width="24px" height="24px" /> &zwnj;Applying Changes...&zwnj;
                      </span>
+                     <p id="window-mover-instruction" class="hidden"><small>&zwnj;Logout and login after installing applets. From the menu - choose Budgie Desktop Settings and choose the Panel to add and configure applets.&zwnj;</small></p>
                   </div>
                   <hr/>
                </div>
@@ -503,6 +522,7 @@
                      <span id="showtime-status" class="hidden">
                      <img src="img/welcome/processing.gif" width="24px" height="24px" /> &zwnj;Applying Changes...&zwnj;
                      </span>
+                     <p id="showtime-instruction" class="hidden"><small>&zwnj;Logout and login after installing applets. From the menu - choose Budgie Desktop Settings and choose the Panel to add and configure applets.&zwnj;</small></p>
                   </div>
                   <hr/>
                </div>
@@ -525,6 +545,7 @@
                      <span id="countdown-status" class="hidden">
                      <img src="img/welcome/processing.gif" width="24px" height="24px" /> &zwnj;Applying Changes...&zwnj;
                      </span>
+                     <p id="countdown-instruction" class="hidden"><small>&zwnj;Logout and login after installing applets. From the menu - choose Budgie Desktop Settings and choose the Panel to add and configure applets.&zwnj;</small></p>
                   </div>
                   <hr/>
                </div>
@@ -547,6 +568,7 @@
                      <span id="keyboard-language-applet-status" class="hidden">
                      <img src="img/welcome/processing.gif" width="24px" height="24px" /> &zwnj;Applying Changes...&zwnj;
                      </span>
+                     <p id="keyboard-language-applet-instruction" class="hidden"><small>&zwnj;Logout and login after installing applets. From the menu - choose Budgie Desktop Settings and choose the Panel to add and configure applets.&zwnj;</small></p>
                   </div>
                   <hr/>
                </div>
@@ -569,6 +591,7 @@
                      <span id="rotation-lock-applet-status" class="hidden">
                      <img src="img/welcome/processing.gif" width="24px" height="24px" /> &zwnj;Applying Changes...&zwnj;
                      </span>
+                     <p id="rotation-lock-applet-instruction" class="hidden"><small>&zwnj;Logout and login after installing applets. From the menu - choose Budgie Desktop Settings and choose the Panel to add and configure applets.&zwnj;</small></p>
                   </div>
                   <hr/>
                </div>
@@ -591,6 +614,7 @@
                      <span id="clockworks-applet-status" class="hidden">
                      <img src="img/welcome/processing.gif" width="24px" height="24px" /> &zwnj;Applying Changes...&zwnj;
                      </span>
+                     <p id="clockworks-applet-instruction" class="hidden"><small>&zwnj;Logout and login after installing applets. From the menu - choose Budgie Desktop Settings and choose the Panel to add and configure applets.&zwnj;</small></p>
                   </div>
                   <hr/>
                </div>
@@ -613,6 +637,7 @@
                      <span id="dropby-applet-status" class="hidden">
                      <img src="img/welcome/processing.gif" width="24px" height="24px" /> &zwnj;Applying Changes...&zwnj;
                      </span>
+                     <p id="dropby-applet-instruction" class="hidden"><small>&zwnj;Logout and login after installing applets. From the menu - choose Budgie Desktop Settings and choose the Panel to add and configure applets.&zwnj;</small></p>
                   </div>
                   <hr/>
                </div>
@@ -635,6 +660,7 @@
                      <span id="dropby-window-applet-status" class="hidden">
                      <img src="img/welcome/processing.gif" width="24px" height="24px" /> &zwnj;Applying Changes...&zwnj;
                      </span>
+                     <p id="dropby-window-applet-instruction" class="hidden"><small>&zwnj;Logout and login after installing applets. From the menu - choose Budgie Desktop Settings and choose the Panel to add and configure applets.&zwnj;</small></p>
                   </div>
                   <hr/>
                </div>
@@ -657,6 +683,7 @@
                      <span id="advanced-brightness-controller-applet-status" class="hidden">
                      <img src="img/welcome/processing.gif" width="24px" height="24px" /> &zwnj;Applying Changes...&zwnj;
                      </span>
+                     <p id="advanced-brighness-controller-applet-instruction" class="hidden"><small>&zwnj;Logout and login after installing applets. From the menu - choose Budgie Desktop Settings and choose the Panel to add and configure applets.&zwnj;</small></p>
                   </div>
                   <hr/>
                </div>
@@ -679,6 +706,7 @@
                      <span id="brightness-controller-applet-status" class="hidden">
                      <img src="img/welcome/processing.gif" width="24px" height="24px" /> &zwnj;Applying Changes...&zwnj;
                      </span>
+                     <p id="brightness-controller-applet-instruction" class="hidden"><small>&zwnj;Logout and login after installing applets. From the menu - choose Budgie Desktop Settings and choose the Panel to add and configure applets.&zwnj;</small></p>
                   </div>
                   <hr/>
                </div>
@@ -701,6 +729,7 @@
                      <span id="browser-profile-launcher-applet-status" class="hidden">
                      <img src="img/welcome/processing.gif" width="24px" height="24px" /> &zwnj;Applying Changes...&zwnj;
                      </span>
+                     <p id="browser-profile-launcher-applet-instruction" class="hidden"><small>&zwnj;Logout and login after installing applets. From the menu - choose Budgie Desktop Settings and choose the Panel to add and configure applets.&zwnj;</small></p>
                   </div>
                   <hr/>
                </div>
@@ -723,6 +752,7 @@
                      <span id="kangaroo-applet-status" class="hidden">
                      <img src="img/welcome/processing.gif" width="24px" height="24px" /> &zwnj;Applying Changes...&zwnj;
                      </span>
+                     <p id="kangaroo-applet-instruction" class="hidden"><small>&zwnj;Logout and login after installing applets. From the menu - choose Budgie Desktop Settings and choose the Panel to add and configure applets.&zwnj;</small></p>
                   </div>
                   <hr/>
                </div>
@@ -745,6 +775,7 @@
                      <span id="weathershow-applet-status" class="hidden">
                      <img src="img/welcome/processing.gif" width="24px" height="24px" /> &zwnj;Applying Changes...&zwnj;
                      </span>
+                     <p id="weahershow-applet-instruction" class="hidden"><small>&zwnj;Logout and login after installing applets. From the menu - choose Budgie Desktop Settings and choose the Panel to add and configure applets.&zwnj;</small></p>
                   </div>
                   <hr/>
                </div>
@@ -767,6 +798,7 @@
                      <span id="recentlyused-applet-status" class="hidden">
                      <img src="img/welcome/processing.gif" width="24px" height="24px" /> &zwnj;Applying Changes...&zwnj;
                      </span>
+                     <p id="recentlyused-applet-instruction" class="hidden"><small>&zwnj;Logout and login after installing applets. From the menu - choose Budgie Desktop Settings and choose the Panel to add and configure applets.&zwnj;</small></p>
                   </div>
                   <hr/>
                </div>
@@ -789,6 +821,7 @@
                      <span id="trash-applet-status" class="hidden">
                      <img src="img/welcome/processing.gif" width="24px" height="24px" /> &zwnj;Applying Changes...&zwnj;
                      </span>
+                     <p id="trash-applet-instruction" class="hidden"><small>&zwnj;Logout and login after installing applets. From the menu - choose Budgie Desktop Settings and choose the Panel to add and configure applets.&zwnj;</small></p>
                   </div>
                   <hr/>
                </div>
@@ -811,6 +844,7 @@
                      <span id="applauncher-applet-status" class="hidden">
                      <img src="img/welcome/processing.gif" width="24px" height="24px" /> &zwnj;Applying Changes...&zwnj;
                      </span>
+                     <p id="applauncher-applet-instruction" class="hidden"><small>&zwnj;Logout and login after installing applets. From the menu - choose Budgie Desktop Settings and choose the Panel to add and configure applets.&zwnj;</small></p>
                   </div>
                   <hr/>
                </div>
@@ -833,6 +867,7 @@
                      <span id="takeabreak-applet-status" class="hidden">
                      <img src="img/welcome/processing.gif" width="24px" height="24px" /> &zwnj;Applying Changes...&zwnj;
                      </span>
+                     <p id="takeabreak-applet-instruction" class="hidden"><small>&zwnj;Logout and login after installing applets. From the menu - choose Budgie Desktop Settings and choose the Panel to add and configure applets.&zwnj;</small></p>
                   </div>
                   <hr/>
                </div>
@@ -850,11 +885,12 @@
                      <span class="material-icons">&#xE872;</span><span class="button-text">&zwnj;Remove&zwnj;</span>
                      </a>
                      <a id="wallstreet-install" class="btn btn-success hvr-shadow" onclick="cmd('install?wallstreet');cmd('')"> &nbsp;
-                     <span class="material-icons">&#xE2C0;</span>&zwnj;Install Applet&zwnj;&nbsp;
+                     <span class="material-icons">&#xE2C0;</span>&zwnj;Install Application&zwnj;&nbsp;
                      </a>
                      <span id="wallstreet-status" class="hidden">
                      <img src="img/welcome/processing.gif" width="24px" height="24px" /> &zwnj;Applying Changes...&zwnj;
                      </span>
+                     <p id="wallstreet-instruction" class="hidden"><small>&zwnj;Logout and login after installing. Choose from the menu to configure this application.&zwnj;</small></p>
                   </div>
                   <hr/>
                </div>
@@ -877,6 +913,7 @@
                      <span id="fuzzyclock-applet-status" class="hidden">
                      <img src="img/welcome/processing.gif" width="24px" height="24px" /> &zwnj;Applying Changes...&zwnj;
                      </span>
+                     <p id="fuzzyclock-applet-instruction" class="hidden"><small>&zwnj;Logout and login after installing applets. From the menu - choose Budgie Desktop Settings and choose the Panel to add and configure applets.&zwnj;</small></p>
                   </div>
                   <hr/>
                </div>
@@ -899,6 +936,7 @@
                      <span id="workspace-stopwatch-applet-status" class="hidden">
                      <img src="img/welcome/processing.gif" width="24px" height="24px" /> &zwnj;Applying Changes...&zwnj;
                      </span>
+                     <p id="workspace-stopwatch-applet-instruction" class="hidden"><small>&zwnj;Logout and login after installing applets. From the menu - choose Budgie Desktop Settings and choose the Panel to add and configure applets.&zwnj;</small></p>
                   </div>
                   <hr/>
                </div>
@@ -910,18 +948,18 @@
                         <a href="img/screenshots/quickchar.jpg" data-toggle="lightbox"><img src="img/screenshots/quickchar.jpg" style="width: auto; max-height: 128px" /></a>
                      </div>
                      <p class="card-text">&zwnj;Quickly find and choose the equivalent locale character for an ascii character.&zwnj;</p>
-                     <p class="card-text">&zwnj;This is a mini-app and is launched via the budgie menu.&zwnj;</p>
                   </div>
                   <div class="text-md-right">
                      <a id="quickchar-remove" class="btn btn-danger" onclick="cmd('remove?quickchar');cmd('')">
                      <span class="material-icons">&#xE872;</span><span class="button-text">&zwnj;Remove&zwnj;</span>
                      </a>
                      <a id="quickchar-install" class="btn btn-success hvr-shadow" onclick="cmd('install?quickchar');cmd('')"> &nbsp;
-                     <span class="material-icons">&#xE2C0;</span>&zwnj;Install mini-app&zwnj;&nbsp;
+                     <span class="material-icons">&#xE2C0;</span>&zwnj;Install Application&zwnj;&nbsp;
                      </a>
                      <span id="quickchar-status" class="hidden">
                      <img src="img/welcome/processing.gif" width="24px" height="24px" /> &zwnj;Applying Changes...&zwnj;
                      </span>
+                     <p id="quickchar-instruction" class="hidden"><small>&zwnj;Logout and login after installing. Choose from the menu to configure this application.&zwnj;</small></p>
                   </div>
                   <hr/>
                </div>
@@ -944,6 +982,7 @@
                      <span id="sntray-applet-status" class="hidden">
                      <img src="img/welcome/processing.gif" width="24px" height="24px" /> &zwnj;Applying Changes...&zwnj;
                      </span>
+                     <p id="sntray-applet-instruction" class="hidden"><small>&zwnj;Logout and login after installing applets. From the menu - choose Budgie Desktop Settings and choose the Panel to add and configure applets.&zwnj;</small></p>
                   </div>
                   <hr/>
                </div>

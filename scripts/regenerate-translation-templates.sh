@@ -24,7 +24,7 @@ for page in $(ls $html_po_folder); do
 done
 
 rm "$welcome_po_folder/budgie-welcome.pot"
-pygettext -d ./po/budgie-welcome budgie-welcome
+pygettext3 -d ./po/budgie-welcome budgie-welcome
 
 cd scripts/ || exit
 ./translation-support.py create-all-pots
