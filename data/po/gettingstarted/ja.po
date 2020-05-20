@@ -49,7 +49,7 @@ msgstr "親しみやすさ"
 msgid "Browser Ballot"
 msgstr "ブラウザの選択"
 
-#: gettingstarted.html45, 46, 867, 1681
+#: gettingstarted.html45, 46, 867, 1698
 msgid "Customization"
 msgstr "カスタマイズ"
 
@@ -139,7 +139,7 @@ msgid ""
 "or surpasses the recommended requirements."
 msgstr "お使いのコンピュータが推奨要件を満たしているか、それを超える場合、オペレーティングシステムははるかに効率的に実行できます。"
 
-#: gettingstarted.html111, 1691
+#: gettingstarted.html111, 1708
 msgid "What's inside my computer?"
 msgstr "コンピュータの中身は何ですか？"
 
@@ -275,7 +275,7 @@ msgstr ""
 "デフォルトでは、RAMのサイズに基づいてスワップファイルが作成されます。例えば、2 GiB のRAM がある場合、2 GiB "
 "のハードディスク容量がスワップファイル用に予約されます。別のスワップパーティションを作成する必要はなくなりました。"
 
-#: gettingstarted.html194, 392, 753, 1680
+#: gettingstarted.html194, 392, 753, 1697
 msgid "Previous:"
 msgstr "前へ:"
 
@@ -1247,8 +1247,8 @@ msgid "Toggle Tilix Quake Mode"
 msgstr "Tilix のQuakeモードの切り替え"
 
 #: gettingstarted.html1150, 1158, 1166, 1174, 1182, 1190, 1198, 1206, 1214,
-#: 1222, 1230, 1238, 1246, 1254, 1262, 1294, 1310, 1340, 1359, 1404, 1414,
-#: 1424, 1436, 1575, 1585, 1595, 1605, 1615, 1625, 1635, 1645, 1655
+#: 1222, 1230, 1238, 1246, 1254, 1262, 1294, 1310, 1340, 1359, 1373, 1421,
+#: 1431, 1441, 1453, 1592, 1602, 1612, 1622, 1632, 1642, 1652, 1662, 1672
 msgid "Ctrl"
 msgstr "Ctrl"
 
@@ -1308,7 +1308,7 @@ msgstr "現在のドキュメントを印刷"
 msgid "Undo the last change you made"
 msgstr "最後に行った変更を元に戻す"
 
-#: gettingstarted.html1264, 1292, 1302, 1428, 1439
+#: gettingstarted.html1264, 1292, 1302, 1445, 1456
 msgid "Shift"
 msgstr "Shift"
 
@@ -1346,9 +1346,9 @@ msgstr "領域のスクリーンショットを「ピクチャ」フォルダに
 msgid "Copy a screenshot of a window to clipboard"
 msgstr "ウィンドウのスクリーンショットをクリップボードにコピー"
 
-#: gettingstarted.html1318, 1332, 1342, 1361, 1389, 1406, 1416, 1426, 1438,
-#: 1447, 1455, 1463, 1471, 1506, 1577, 1587, 1597, 1607, 1617, 1627, 1637,
-#: 1647, 1657
+#: gettingstarted.html1318, 1332, 1342, 1361, 1375, 1406, 1423, 1433, 1443,
+#: 1455, 1464, 1472, 1480, 1488, 1523, 1594, 1604, 1614, 1624, 1634, 1644,
+#: 1654, 1664, 1674
 msgid "Alt"
 msgstr "Alt"
 
@@ -1384,211 +1384,211 @@ msgstr "端末を開く。"
 msgid "Window shortcuts - general"
 msgstr "ウィンドウのショートカット - 一般"
 
-#: gettingstarted.html:1378
+#: gettingstarted.html1379, 1395
 msgid "Call Window Shuffler gui (window tiling grid)."
 msgstr "ウィンドウ シャッフル gui（ウィンドウタイルグリッド）を呼び出し。"
 
-#: gettingstarted.html:1383
+#: gettingstarted.html1384, 1400
 msgid "Video Demonstration"
 msgstr "ビデオ デモンストレーション"
 
-#: gettingstarted.html:1391
+#: gettingstarted.html:1408
 msgid "Tab"
 msgstr "Tab"
 
-#: gettingstarted.html:1394
+#: gettingstarted.html:1411
 msgid "Switch between currently-open windows."
 msgstr "現在開いているウィンドウを切り替え。"
 
-#: gettingstarted.html:1396
+#: gettingstarted.html:1413
 msgid "Press Alt + Tab and then release Tab (but continue to hold Alt)."
 msgstr "Alt + Tab を押してからTab を放します（ただし、Altを押し続けます）。"
 
-#: gettingstarted.html:1397
+#: gettingstarted.html:1414
 msgid ""
 "Press Tab repeatedly to cycle through the list of available windows which "
 "appears on the screen."
 msgstr "Tab キーを繰り返し押して、画面に表示される使用可能なウィンドウのリストを切り替えます。"
 
-#: gettingstarted.html1408, 1430, 1518
+#: gettingstarted.html1425, 1447, 1535
 msgid "Left"
 msgstr "左"
 
-#: gettingstarted.html:1410
+#: gettingstarted.html:1427
 msgid "Switch to the previous workspace."
 msgstr "前のワークスペースに切り替え。"
 
-#: gettingstarted.html1418, 1441, 1527
+#: gettingstarted.html1435, 1458, 1544
 msgid "Right"
 msgstr "右"
 
-#: gettingstarted.html:1420
+#: gettingstarted.html:1437
 msgid "Switch to the next workspace."
 msgstr "次のワークスペースに切り替え。"
 
-#: gettingstarted.html:1432
+#: gettingstarted.html:1449
 msgid "Move the current window to the previous workspace."
 msgstr "現在のウィンドウを前のワークスペースに移動。"
 
-#: gettingstarted.html:1443
+#: gettingstarted.html:1460
 msgid "Move the current window to the next workspace."
 msgstr "現在のウィンドウを次のワークスペースに移動。"
 
-#: gettingstarted.html:1451
+#: gettingstarted.html:1468
 msgid "Closes window."
 msgstr "ウィンドウを閉じる。"
 
-#: gettingstarted.html:1459
+#: gettingstarted.html:1476
 msgid "Returns window to 'normal' or previous size."
 msgstr "ウィンドウを「通常」または「以前のサイズ」に戻す。"
 
-#: gettingstarted.html:1467
+#: gettingstarted.html:1484
 msgid "Moves the current window (can be moved with mouse or keyboard)."
 msgstr "現在のウィンドウを移動（マウスまたはキーボードで移動）。"
 
-#: gettingstarted.html:1475
+#: gettingstarted.html:1492
 msgid "Resizes current window (again, can be moved with mouse or keyboard)."
 msgstr "現在のウィンドウのサイズを変更（再び、マウスまたはキーボードで移動）。"
 
-#: gettingstarted.html:1484
+#: gettingstarted.html:1501
 msgid "Minimizes current window."
 msgstr "現在のウィンドウを最小化。"
 
-#: gettingstarted.html:1491
+#: gettingstarted.html:1508
 msgid "Up"
 msgstr "上"
 
-#: gettingstarted.html:1493
+#: gettingstarted.html:1510
 msgid "Maximizes current window."
 msgstr "現在のウィンドウを最大化。"
 
-#: gettingstarted.html:1500
+#: gettingstarted.html:1517
 msgid "Down"
 msgstr "下"
 
-#: gettingstarted.html:1502
+#: gettingstarted.html:1519
 msgid "Unmaximizes current window."
 msgstr "現在のウィンドウを最大化しません。"
 
-#: gettingstarted.html:1508
+#: gettingstarted.html:1525
 msgid "Space"
 msgstr "スペース"
 
-#: gettingstarted.html:1510
+#: gettingstarted.html:1527
 msgid ""
 "Displays the window menu with options such as 'Always on Top' and 'Minimize'"
 " and 'Maximize' and above commands."
 msgstr "「常に手前に表示」、「最小化」、「最大化」などのコマンドを含むウィンドウメニューを表示。"
 
-#: gettingstarted.html:1520
+#: gettingstarted.html:1537
 msgid "Place window on left side of screen."
 msgstr "画面の左側にウィンドウを配置。"
 
-#: gettingstarted.html:1529
+#: gettingstarted.html:1546
 msgid "Place window on right side of screen."
 msgstr "画面の右側にウィンドウを配置。"
 
-#: gettingstarted.html1536, 1609
+#: gettingstarted.html1553, 1626
 msgid "1"
 msgstr "1"
 
-#: gettingstarted.html:1538
+#: gettingstarted.html:1555
 msgid "Quarter tiling: top left."
 msgstr "1/4 画面でタイル表示: 左上"
 
-#: gettingstarted.html1545, 1639
+#: gettingstarted.html1562, 1656
 msgid "2"
 msgstr "2"
 
-#: gettingstarted.html:1547
+#: gettingstarted.html:1564
 msgid "Quarter tiling: top right."
 msgstr "1/4 画面でタイル表示: 右上"
 
-#: gettingstarted.html1554, 1599
+#: gettingstarted.html1571, 1616
 msgid "3"
 msgstr "3"
 
-#: gettingstarted.html:1556
+#: gettingstarted.html:1573
 msgid "Quarter tiling: bottom left."
 msgstr "1/4 画面でタイル表示: 左下"
 
-#: gettingstarted.html1563, 1649
+#: gettingstarted.html1580, 1666
 msgid "4"
 msgstr "4"
 
-#: gettingstarted.html:1565
+#: gettingstarted.html:1582
 msgid "Quarter tiling: bottom right."
 msgstr "1/4 画面でタイル表示: 右下"
 
-#: gettingstarted.html:1570
+#: gettingstarted.html:1587
 msgid "Window shortcuts - numeric keypad"
 msgstr "ウィンドウのショートカット - テンキー"
 
-#: gettingstarted.html:1571
+#: gettingstarted.html:1588
 msgid "Tiling shortcuts on the numeric keypad."
 msgstr "テンキーでのタイル表示のショートカット。"
 
-#: gettingstarted.html:1579
+#: gettingstarted.html:1596
 msgid "7"
 msgstr "7"
 
-#: gettingstarted.html:1581
+#: gettingstarted.html:1598
 msgid "Quarter top left."
 msgstr "1/4 画面でタイル表示: 左上"
 
-#: gettingstarted.html:1589
+#: gettingstarted.html:1606
 msgid "9"
 msgstr "9"
 
-#: gettingstarted.html:1591
+#: gettingstarted.html:1608
 msgid "Quarter top right."
 msgstr "1/4 画面でタイル表示: 右上"
 
-#: gettingstarted.html:1601
+#: gettingstarted.html:1618
 msgid "Quarter bottom right."
 msgstr "1/4 画面でタイル表示: 右下"
 
-#: gettingstarted.html:1611
+#: gettingstarted.html:1628
 msgid "Quarter bottom left."
 msgstr "1/4 画面でタイル表示: 左下"
 
-#: gettingstarted.html:1619
+#: gettingstarted.html:1636
 msgid "8"
 msgstr "8"
 
-#: gettingstarted.html:1621
+#: gettingstarted.html:1638
 msgid "Half top."
 msgstr "1/2 画面でタイル表示: 上"
 
-#: gettingstarted.html:1629
+#: gettingstarted.html:1646
 msgid "6"
 msgstr "6"
 
-#: gettingstarted.html:1631
+#: gettingstarted.html:1648
 msgid "Half right."
 msgstr "1/2 画面でタイル表示: 右"
 
-#: gettingstarted.html:1641
+#: gettingstarted.html:1658
 msgid "Half bottom."
 msgstr "1/2 画面でタイル表示: 下"
 
-#: gettingstarted.html:1651
+#: gettingstarted.html:1668
 msgid "Half left."
 msgstr "1/2 画面でタイル表示: 左"
 
-#: gettingstarted.html:1659
+#: gettingstarted.html:1676
 msgid "5"
 msgstr "5"
 
-#: gettingstarted.html:1661
+#: gettingstarted.html:1678
 msgid "Toggle maximize."
 msgstr "最大化の切り替え"
 
-#: gettingstarted.html:1670
+#: gettingstarted.html:1687
 msgid "Update shortcuts in the Settings App"
 msgstr "設定アプリのショートカットを更新"
 
-#: gettingstarted.html:1692
+#: gettingstarted.html:1709
 msgid ""
 "Your machine is made up of various components that interact with one "
 "another. This information is useful when providing support to ensure "
@@ -1596,139 +1596,139 @@ msgid ""
 msgstr ""
 "マシンは、相互に作用するさまざまな部品で構成されています。この情報は、ハードウェアとソフトウェアがマシンで機能することを保証するサポートを提供するときに役立ちます。"
 
-#: gettingstarted.html:1700
+#: gettingstarted.html:1717
 msgid "Gathering Information.."
 msgstr "情報の収集.."
 
-#: gettingstarted.html:1709
+#: gettingstarted.html:1726
 msgid "System"
 msgstr "システム"
 
-#: gettingstarted.html:1712
+#: gettingstarted.html:1729
 msgid "Distribution:"
 msgstr "ディストリビューション:"
 
-#: gettingstarted.html:1716
+#: gettingstarted.html:1733
 msgid "Kernel:"
 msgstr "カーネル:"
 
-#: gettingstarted.html:1720
+#: gettingstarted.html:1737
 msgid "The Linux kernel is the heart of Ubuntu."
 msgstr "LinuxカーネルはUbuntuの中核です。"
 
-#: gettingstarted.html:1726
+#: gettingstarted.html:1743
 msgid "Motherboard:"
 msgstr "マザーボード:"
 
-#: gettingstarted.html:1730
+#: gettingstarted.html:1747
 msgid "Boot Mode:"
 msgstr "起動モード:"
 
-#: gettingstarted.html:1734
+#: gettingstarted.html:1751
 msgid "Displays the mode that OS is communicating with the firmware."
 msgstr "OSがファームウェアと通信しているモードを表示します。"
 
-#: gettingstarted.html:1742
+#: gettingstarted.html:1759
 msgid "Processor"
 msgstr "プロセッサ"
 
-#: gettingstarted.html:1745
+#: gettingstarted.html:1762
 msgid "Model:"
 msgstr "モデル:"
 
-#: gettingstarted.html:1749
+#: gettingstarted.html:1766
 msgid "Speed:"
 msgstr "速度:"
 
-#: gettingstarted.html:1753
+#: gettingstarted.html:1770
 msgid "Architecture in use:"
 msgstr "使用中のアーキテクチャ:"
 
-#: gettingstarted.html:1757
+#: gettingstarted.html:1774
 msgid ""
 "The operating system's architecture in use. For instance, i386 = 32-bit."
 msgstr "使用中のオペレーティングシステムのアーキテクチャ。 例えば、i386 = 32ビット。"
 
-#: gettingstarted.html:1763
+#: gettingstarted.html:1780
 msgid "Architecture(s) supported:"
 msgstr "サポートされるアーキテクチャ:"
 
-#: gettingstarted.html:1767
+#: gettingstarted.html:1784
 msgid "Architectures that are supported by this processor."
 msgstr "使用中のオペレーティングシステムのアーキテクチャ。 例えば、i386 = 32ビット。"
 
-#: gettingstarted.html:1775
+#: gettingstarted.html:1792
 msgid "Components"
 msgstr "使用部品"
 
-#: gettingstarted.html:1778
+#: gettingstarted.html:1795
 msgid "Memory (RAM):"
 msgstr "メモリ (RAM):"
 
-#: gettingstarted.html:1782
+#: gettingstarted.html:1799
 msgid "More RAM allows more applications to run simultaneously."
 msgstr "RAMを増やすと、より多くのアプリケーションを同時に実行できます。"
 
-#: gettingstarted.html:1788
+#: gettingstarted.html:1805
 msgid "Graphics:"
 msgstr "グラフィックス:"
 
-#: gettingstarted.html:1792
+#: gettingstarted.html:1809
 msgid "Internet Access:"
 msgstr "インターネット接続:"
 
-#: gettingstarted.html:1795
+#: gettingstarted.html:1812
 msgid "Connected"
 msgstr "接続済み"
 
-#: gettingstarted.html:1796
+#: gettingstarted.html:1813
 msgid "Not Connected"
 msgstr "接続されていません"
 
-#: gettingstarted.html:1804
+#: gettingstarted.html:1821
 msgid "Storage"
 msgstr "ストレージ"
 
-#: gettingstarted.html:1808
+#: gettingstarted.html:1825
 msgid "Root File System:"
 msgstr "ルートファイルシステム:"
 
-#: gettingstarted.html:1812
+#: gettingstarted.html:1829
 msgid "The file system where OS is installed."
 msgstr "OSがインストールされているファイルシステム。"
 
-#: gettingstarted.html:1818
+#: gettingstarted.html:1835
 msgid "Entire Disk Capacity:"
 msgstr "全ディスク容量"
 
-#: gettingstarted.html:1824
+#: gettingstarted.html:1841
 msgid "OS Usage"
 msgstr "OSの使用"
 
-#: gettingstarted.html:1829
+#: gettingstarted.html:1846
 msgid "Other Usage"
 msgstr "その他の使用"
 
-#: gettingstarted.html:1834
+#: gettingstarted.html:1851
 msgid "Allocated for <span name=\"distro-name\"></span>:"
 msgstr "<span name=\"distro-name\"></span>に割り当てられます:"
 
-#: gettingstarted.html:1838
+#: gettingstarted.html:1855
 msgid "The size of your operating system partition."
 msgstr "オペレーティングシステムのパーティションのサイズ。"
 
-#: gettingstarted.html:1845
+#: gettingstarted.html:1862
 msgid "Used Space:"
 msgstr "使用済み容量:"
 
-#: gettingstarted.html:1853
+#: gettingstarted.html:1870
 msgid "Free Space:"
 msgstr "空き容量:"
 
-#: gettingstarted.html:1861
+#: gettingstarted.html:1878
 msgid "Other Usage:"
 msgstr "その他の使用:"
 
-#: gettingstarted.html:1866
+#: gettingstarted.html:1883
 msgid "Reserved by system, other partitions, unallocated or swap."
 msgstr "システム、他のパーティション、未割り当て、またはスワップによって予約されています。"
