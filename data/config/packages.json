@@ -24,6 +24,14 @@
         "groovy": ["ppa:ubuntubudgie/backports"]
       }
     },
+    "lightpad-applet": {
+      "packages": ["budgie-lightpad-applet"],
+      "repos": {
+        "bionic": ["ppa:ubuntubudgie/backports"],
+        "focal": ["ppa:ubuntubudgie/backports"],
+        "groovy": ["ppa:ubuntubudgie/backports"]
+      }
+    },
     "calendar-applet": {
       "packages": ["budgie-calendar-applet"],
       "repos": {
