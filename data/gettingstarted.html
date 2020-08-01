@@ -22,13 +22,13 @@
           <span>
             <h5>&zwnj;Prerequisites&zwnj;</h5>
           </span>
-          <a class="btn btn-inverse index-btn" onclick='changePage("sysreq","System Requirements")'>
+          <a class="btn btn-inverse index-btn" onclick='changePage("sysreq")'>
             <i class="material-icons">&#xE31E;</i>&zwnj;System Requirements&zwnj;
           </a>
-          <a class="btn btn-inverse index-btn" onclick='changePage("prepare","Installation Preparations")'>
+          <a class="btn btn-inverse index-btn" onclick='changePage("prepare")'>
             <i class="material-icons">&#xE322;</i>&zwnj;Installation Preparation&zwnj;
           </a>
-          <a class="btn btn-inverse index-btn" onclick='changePage("dualboot","Dual Booting")'>
+          <a class="btn btn-inverse index-btn" onclick='changePage("dualboot")'>
             <i class="material-icons">&#xE401;</i>&zwnj;Dual Booting&zwnj;
           </a>
           <a class="btn btn-primary index-btn" onclick="cmd('install-os')">
@@ -38,36 +38,36 @@
         <br>
         <h5>&zwnj;Familiarity&zwnj;</h5>
         <div class="normal-session-only">
-          <a class="btn btn-inverse index-btn" onclick='changePage("browsers", "&zwnj;Browser Ballot&zwnj;")'>
+          <a class="btn btn-inverse index-btn" onclick='changePage("browsers")'>
             <i class="material-icons">&#xE8D9;</i> &zwnj;Browser Ballot&zwnj;
           </a>
         </div>
-        <a class="btn btn-inverse index-btn" onclick='changePage("customize","&zwnj;Customization&zwnj;")'>
+        <a class="btn btn-inverse index-btn" onclick='changePage("customize")'>
           <i class="material-icons">&#xE8A4;</i> &zwnj;Customization&zwnj;
         </a>
-        <a class="btn btn-inverse index-btn" onclick='changePage("shortcuts","&zwnj;Keyboard Shortcuts&zwnj;")'>
+        <a class="btn btn-inverse index-btn" onclick='changePage("shortcuts")'>
           <i class="material-icons">&#xE312;</i> &zwnj;Keyboard Shortcuts&zwnj;
         </a>
         <!-- Shown when installed -->
         <div class="normal-session-only">
           <h5>&zwnj;Post-Installation&zwnj;</h5>
-          <a class="btn btn-inverse index-btn" onclick='changePage("updates","&zwnj;Updates & Extras&zwnj;")'>
+          <a class="btn btn-inverse index-btn" onclick='changePage("updates")'>
             <i class="material-icons">&#xE5D5;</i>&zwnj;Updates & Extras&zwnj;
           </a>
-          <a class="btn btn-inverse index-btn" onclick='changePage("drivers","&zwnj;Drivers&zwnj;")'>
+          <a class="btn btn-inverse index-btn" onclick='changePage("drivers")'>
             <i class="material-icons">&#xE8B9;</i>&zwnj;Drivers&zwnj;
           </a>
-          <a class="btn btn-inverse index-btn" onclick='changePage("languageInput","&zwnj;Language & Input&zwnj;")'>
+          <a class="btn btn-inverse index-btn" onclick='changePage("languageInput")'>
             <i class="material-icons">&#xE894;</i>&zwnj;Language & Input&zwnj;
           </a>
-          <a class="btn btn-inverse index-btn" onclick='changePage("tasks","&zwnj;Optional Tasks&zwnj;")'>
+          <a class="btn btn-inverse index-btn" onclick='changePage("tasks")'>
             <i class="material-icons">&#xE834;</i></span> &zwnj;Optional Tasks&zwnj;
           </a>
         </div>
         <!-- Shown in either session -->
         <h5>&zwnj;Troubleshooting&zwnj;</h5>
         <a class="btn btn-inverse index-btn"
-          onclick='changePage("specs","&zwnj;System Specifications&zwnj;"); InitSystemInfo()'>
+          onclick='changePage("specs"); InitSystemInfo()'>
           <i class="material-icons">&#xE31E;</i> &zwnj;System Specifications&zwnj;
         </a>
 
@@ -107,13 +107,13 @@
                 computer meets or surpasses the recommended requirements.&zwnj;</p>
 
               <div class="center">
-                <a onclick='changePage("specs","System Specifications"); InitSystemInfo()' class="btn btn-inverse">
+                <a onclick='changePage("specs"); InitSystemInfo()' class="btn btn-inverse">
                   <i class="material-icons">&#xE887;</i>&zwnj;What's inside my computer?&zwnj;</a>
               </div>
 
               <div class="center">
                 <hr class="soften-light">
-                <a class="btn" onclick='changePage("prepare","Installation Preparations")'>
+                <a class="btn" onclick='changePage("prepare")'>
                   <b>Next:</b>&nbsp; &zwnj;Installation Preparations&zwnj; <i class="material-icons">&#xE315;</i></a>
               </div>
             </div>
@@ -190,10 +190,10 @@
                   longer required to be created.&zwnj;</span></p>
               <div class="center">
                 <hr class="soften-light">
-                <a class="btn" onclick='changePage("sysreq","System Requirements")'>
+                <a class="btn" onclick='changePage("sysreq")'>
                   <i class="material-icons">&#xE314;</i> <b>&zwnj;Previous:&zwnj;</b>&nbsp; &zwnj;System
                   Requirements&zwnj;</a>
-                <a class="btn" onclick='changePage("dualboot","Dual Booting")'>
+                <a class="btn" onclick='changePage("dualboot")'>
                   <b>Next:</b>&nbsp; &zwnj;Dual Booting&zwnj; <i class="material-icons">&#xE315;</i></a>
               </div>
             </div>
@@ -388,7 +388,7 @@
 
               <div class="center">
                 <hr class="soften-light">
-                <a class="btn" onclick='changePage("prepare","Installation Preparations")'>
+                <a class="btn" onclick='changePage("prepare")'>
                   <i class="material-icons">&#xE314;</i> <b>&zwnj;Previous:&zwnj;</b>&nbsp; &zwnj;Install
                   Preparations&zwnj;</a>
               </div>
@@ -479,7 +479,7 @@
 
               <div class="center">
                 <hr class="soften-light">
-                <a class="btn" onclick='changePage("drivers","Drivers")'>
+                <a class="btn" onclick='changePage("drivers")'>
                   <b>&zwnj;Next:&zwnj;</b>&nbsp; &zwnj;Drivers&zwnj; <i class="material-icons">&#xE315;</i></a>
               </div>
             </div>
@@ -646,9 +646,9 @@
 
               <div class="center">
                 <hr class="soften-light">
-                <a class="btn" onclick='changePage("updates","Updates & Extras")'>
+                <a class="btn" onclick='changePage("updates")'>
                   <i class="material-icons">&#xE314;</i> <b>Previous:</b>&nbsp; &zwnj;Updates & Extras&zwnj;</a>
-                <a class="btn" onclick='changePage("languageInput","Language Input")'>
+                <a class="btn" onclick='changePage("languageInput")'>
                   <b>Next:</b>&nbsp; &zwnj;Language Input&zwnj; <i class="material-icons">&#xE315;</i></a>
               </div>
             </div>
@@ -749,9 +749,9 @@
           </div>
           <div class="center">
             <hr class="soften-light">
-            <a class="btn" onclick='changePage("drivers","Drivers")'>
+            <a class="btn" onclick='changePage("drivers")'>
               <i class="material-icons">&#xE314;</i> <b>&zwnj;Previous:&zwnj;</b>&nbsp; &zwnj;Drivers&zwnj;</a>
-            <a class="btn" onclick='changePage("tasks","Optional Tasks")'>
+            <a class="btn" onclick='changePage("tasks")'>
               <b>&zwnj;Next:&zwnj;</b>&nbsp; &zwnj;Optional Tasks&zwnj; <i class="material-icons">&#xE315;</i></a>
           </div>
         </div>
@@ -861,9 +861,9 @@
 
           <div class="center">
             <hr class="soften-light">
-            <a class="btn" onclick='changePage("languageInput","Language Input")'>
+            <a class="btn" onclick='changePage("languageInput")'>
               <i class="material-icons">&#xE314;</i> <b>Previous:</b>&nbsp; &zwnj;Language Input&zwnj;</a>
-            <a class="btn" onclick='changePage("customize","Customization")'>
+            <a class="btn" onclick='changePage("customize")'>
               <b>&zwnj;Next:&zwnj;</b>&nbsp; &zwnj;Customization&zwnj; <i class="material-icons">&#xE315;</i></a>
           </div>
         </div>
@@ -1087,9 +1087,9 @@
 
               <div class="center">
                 <hr class="soften-light">
-                <a class="btn" onclick='changePage("tasks","Optional Tasks")'>
+                <a class="btn" onclick='changePage("tasks")'>
                   <i class="material-icons">&#xE314;</i> <b>Previous:</b>&nbsp; Optional Tasks</a>
-                <a class="btn" onclick='changePage("shortcuts","Keyboard Shortcuts")'>
+                <a class="btn" onclick='changePage("shortcuts")'>
                   <b>Next:</b>&nbsp; Keyboard Shortcuts <i class="material-icons">&#xE315;</i></a>
               </div>
             </div>
@@ -1693,7 +1693,7 @@
               </div>
               <div class="center">
                 <hr class="soften-light">
-                <a class="btn" onclick='changePage("customize","Customization")'>
+                <a class="btn" onclick='changePage("customize")'>
                   <i class="material-icons">&#xE314;</i> <b>&zwnj;Previous:&zwnj;</b>&nbsp;
                   &zwnj;Customization&zwnj;</a>
               </div>
