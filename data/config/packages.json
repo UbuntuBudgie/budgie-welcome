@@ -765,6 +765,13 @@
         "focal": ["universe", "ppa:tista/plata-theme"],
         "groovy": ["universe", "ppa:tista/plata-theme"]
       }
+    },
+    "mojave-theme": {
+      "packages": ["mojave-gtk-theme", "mcmojave-circle", "fonts-roboto"],
+      "repos": {
+        "focal": ["universe","ppa:ubuntubudgie/backports"],
+        "groovy": ["universe","ppa:ubuntubudgie/backports"]
+      }
     }
   }
 }
