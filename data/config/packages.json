@@ -439,6 +439,13 @@
         "focal": ["universe"],
         "groovy": ["universe"]
       }
+    },
+    "analogue-clock-applet": {
+      "packages": ["budgie-analogue-clock-applet"],
+      "repos": {
+        "focal": ["ppa:ubuntubudgie/backports"],
+        "groovy": ["ppa:ubuntubudgie/backports"]
+      }
     }
   },
   "recommendations": {
