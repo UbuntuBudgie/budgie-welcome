@@ -1,0 +1,358 @@
+# 
+# Translators:
+# Ryo Nakano, 2019
+# FuRuYa7 <goo.sirocat47@gmail.com>, 2019
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Budgie Welcome\n"
+"POT-Creation-Date: 2016-02-27 12:48+0100\n"
+"PO-Revision-Date: 2017-03-22 21:33+0000\n"
+"Last-Translator: FuRuYa7 <goo.sirocat47@gmail.com>, 2019\n"
+"Language-Team: Japanese (https://www.transifex.com/ubuntu-budgie/teams/72251/ja/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Report-Msgid-Bugs-To : you@example.com\n"
+
+#: recommendations.html:15
+msgid "Recommendations"
+msgstr "推奨事項"
+
+#: recommendations.html:20
+msgid "Backports repository"
+msgstr "Backports リポジトリ"
+
+#: recommendations.html:22
+msgid ""
+"To provide the most up-to-date versions of budgie-desktop and other "
+"associated packages, we recommend to enable the <span name=\"distro-"
+"name\"></span> backports repository."
+msgstr ""
+"budgie-desktop およびその他の関連パッケージの最新バージョンを提供するには、<span name=\"distro-"
+"name\"></span> バックポートリポジトリを有効にすることをお勧めします。"
+
+#: recommendations.html:24
+msgid "Repository is installed"
+msgstr "リポジトリはインストールされています"
+
+#: recommendations.html:24
+msgid "Enable <span name=\"distro-name\"></span> backports repository"
+msgstr "<span name=\"distro-name\"></span> backports リポジトリを有効にする"
+
+#: recommendations.html25, 70, 87, 100, 117, 135, 142, 153
+msgid "Applying Changes..."
+msgstr "変更を適用しています…"
+
+#: recommendations.html:29
+msgid "Snap Applications"
+msgstr "Snap アプリケーション"
+
+#: recommendations.html:34
+msgid ""
+"<strong>Snap</strong> is a new generation application packaging format "
+"developed by <em>Canonical</em>. Even though it was initially developed just"
+" for different Ubuntu platforms, currently it works in many other GNU/Linux "
+"distributions. It will help application developers to provide a unified "
+"package that can work on different platforms. By using snap package format, "
+"applications can have their own version of libraries and there is no need to"
+" worry about libraries installed in underlying operating system. Snap "
+"packages enable developers to bring much newer versions of apps to <span "
+"name=\"distro-name\"></span>. Newer versions of KDE, GNOME, browsers or "
+"other desktop environment apps will usually build easily on older LTS "
+"releases but the complexities of packaging and providing updates have "
+"prevented us from delivering them in the past."
+msgstr ""
+"<strong>Snap</strong> "
+"は、<em>Canonical</em>が開発した新世代のアプリケーションパッケージ形式です。当初はさまざまなUbuntuプラットフォーム用に開発されましたが、現在は他の多くのGNU/Linux"
+" "
+"ディストリビューションで動作します。これは、アプリケーション開発者がさまざまなプラットフォームで動作できる統合パッケージを提供するのに役立ちます。スナップパッケージ形式を使用することにより、アプリケーションは独自のバージョンのライブラリを持つことができ、基盤となるオペレーティングシステムにインストールされたライブラリを心配する必要はありません。スナップパッケージを使用すると、開発者はより新しいバージョンのアプリを"
+" <span name=\"distro-"
+"name\"></span>に取り込むことができます。KDE、GNOME、ブラウザ、またはその他のデスクトップ環境アプリの新しいバージョンは通常、古いLTSリリースで簡単にビルドできますが、パッケージ化と更新の複雑さにより、過去にそれらを配信できませんでした。"
+
+#: recommendations.html38, 81
+msgid "Learn more"
+msgstr "詳細"
+
+#: recommendations.html:40
+msgid "Snap user guide"
+msgstr "Snap ユーザーガイド"
+
+#: recommendations.html:42
+msgid "Search Snap Apps"
+msgstr "Snap アプリを検索"
+
+#: recommendations.html:43
+msgid ""
+"If there’s a barrier to Snap app adoption (aside from few apps being made "
+"available in the format) it’s knowing which packages are available in the "
+"Snap app store. Well, wonder not. Simply pop open a terminal and run the "
+"following command:"
+msgstr ""
+"Snapアプリの採用に障壁がある場合（この形式で利用できるアプリはほとんどありません）、Snapアプリストアで利用できるパッケージがわかっています。まあ、そうは思いません。ターミナルをポップして開き、次のコマンドを実行します:"
+
+#: recommendations.html:47
+msgid ""
+"The find command lets you quickly search for and discover snaps available to"
+" install from the command line. It can be run with a query after it (e.g., "
+"‘snap find email‘, ‘snap find media’, ‘snap find messaging‘) or without."
+msgstr ""
+"find "
+"コマンドを使用すると、コマンドラインからインストール可能なスナップをすばやく検索して検出できます。クエリの後に実行することができます（例えば、「snap"
+" find email」、「snap find media」、「snap find messaging」）または、なしで実行できます。"
+
+#: recommendations.html:48
+msgid "When run without a query you’ll instead see a list of featured snaps."
+msgstr "クエリなしで実行すると、代わりにsnapの機能リストが表示されます。"
+
+#: recommendations.html:49
+msgid "See installed apps"
+msgstr "インストール済みのアプリを見る"
+
+#: recommendations.html:50
+msgid ""
+"Installed some Snaps but can’t remember what? Don’t panic. Use the list "
+"command to see an up-to-date list of all Snap apps installed on your system:"
+msgstr ""
+"いくつかのSnapをインストールしましたが、何をインストールしたか思い出せませんか？パニックにならないでください。 "
+"listコマンドを使用して、システムにインストールされているすべてのSnapアプリの最新リストを表示します。"
+
+#: recommendations.html:52
+msgid ""
+"This list also shows you their version number, revision number and the name "
+"of the developer who uploaded it (handy when there are multiple versions of "
+"the same app in the store, e.g., Telegram)."
+msgstr ""
+"このリストには、バージョン番号、リビジョン番号、それをアップロードした開発者の名前も表示されます（ストアに同じアプリの複数のバージョン、例えばTelegramなどがある場合に便利です）。"
+
+#: recommendations.html:53
+msgid "Install & Remove Snap Apps"
+msgstr "Snap アプリのインストールと削除"
+
+#: recommendations.html:54
+msgid ""
+"If you’re used to managing software using apt you’ll instantly find the "
+"analogous snap commands easy to remember. You install snap apps with the "
+"‘install’ command, and remove them using the ‘remove’ command."
+msgstr ""
+"apt を使用してソフトウェアを管理することに慣れている場合は、覚えやすい類似のsnap コマンドがすぐに見つかります。 "
+"「install」コマンドでsnap アプリをインストールし、「remove」コマンドを使用してsnap アプリを削除します。"
+
+#: recommendations.html:57
+msgid "See details of an App"
+msgstr "アプリの詳細を見る"
+
+#: recommendations.html:58
+msgid ""
+"You can use this to see detailed information about any snap application, "
+"whether it is installed or not. This info includes the application’s release"
+" channel, confinement status, size, number of revisions, and more. The snap "
+"info --verbose offers a greater overview."
+msgstr ""
+"これを使用して、snap アプリケーションがインストールされているかどうかに関係なく、snap "
+"アプリケーションに関する詳細情報を表示できます。この情報には、アプリケーションのリリースチャンネル、制限ステータス、サイズ、改訂数などが含まれます。snap"
+" 情報 --verbose を使用すると、概要がわかりやすくなります。"
+
+#: recommendations.html:62
+msgid "Update a Snap App"
+msgstr "Snap アプリを更新する"
+
+#: recommendations.html:64
+msgid ""
+"Rather helpfully you probably won’t ever need to remember to install an "
+"update to a Snap app. This is because Snapd runs in the background and "
+"handles updates automatically (you can, ofc, revert a Snap update or install"
+" a specific revision)."
+msgstr ""
+"むしろ便利なことに、おそらくSnap アプリの更新プログラムをインストールすることを覚えておく必要はないでしょう。これは、Snapd "
+"がバックグラウンドで実行され、更新を自動的に処理するためです（スナップ更新を元に戻す、または特定のリビジョンをインストールすることができます）。"
+
+#: recommendations.html:67
+msgid "Reference"
+msgstr "レファレンス"
+
+#: recommendations.html:69
+msgid "Snap is already installed"
+msgstr "Snap は既にインストールされています"
+
+#: recommendations.html:69
+msgid "Install Snap"
+msgstr "Snap をインストールする"
+
+#: recommendations.html:75
+msgid "Flatpak"
+msgstr "Flatpak"
+
+#: recommendations.html:79
+msgid ""
+"<strong>Flatpak</strong> is a new generation application distribution "
+"framework for GNU/Linux platforms. It introduces a unified packaging format "
+"across all GNU/Linux distributions. That means a single package can work on "
+"any platform. Flatpak helps application developers to ship their application"
+" in a single format which can be installed in any GNU/Linux distribution "
+"without worrying about the underlying operating system and its built-in "
+"libraries."
+msgstr ""
+"<strong>Flatpak</strong>は、GNU/Linux "
+"プラットフォーム向けの新世代のアプリケーション配布フレームワークです。すべてのGNU / "
+"Linuxディストリビューションで統一されたパッケージ形式を導入します。つまり、単一のパッケージが任意のプラットフォームで動作できることを意味します。Flatpakは、アプリケーション開発者が、基礎となるオペレーティングシステムとその組み込みライブラリを気にすることなく、GNU/Linux"
+" ディストリビューションにインストールできる単一の形式でアプリケーションを出荷するのに役立ちます。"
+
+#: recommendations.html:83
+msgid ""
+"<span name=\"distro-name\"></span> recommends installing "
+"<strong>Flatpak</strong> as it will open a new world of possibilities for "
+"you. With Flatpak, you can enjoy the latest release of different software "
+"packages as soon as it is packaged by the upstream project and you don't "
+"have to wait for your distribution to package it for you."
+msgstr ""
+"<span name=\"distro-"
+"name\"></span>は、<strong>Flatpak</strong>をインストールすることをお勧めします。これにより、新しい可能性の世界が開かれます。Flatpakを使用すると、アップストリームプロジェクトによってパッケージ化されるとすぐにさまざまなソフトウェアパッケージの最新リリースを楽しむことができ、ディストリビューションがパッケージ化するのを待つ必要はありません。"
+
+#: recommendations.html:85
+msgid ""
+"Being a user friendly GNU/Linux distribution, <span name='distro-"
+"name'></span> allows you to install Flatpak with a single click. After first"
+" time configuration, you can use GNOME Software to install Flatpak packages."
+msgstr ""
+"ユーザーフレンドリーなGNU/Linux ディストリビューションであるため、<span name='distro-"
+"name'></span>を押すと、ワンクリックでFlatpakをインストールできます。初めて構成した後、GNOMEソフトウェアを使用してFlatpakパッケージをインストールできます。"
+
+#: recommendations.html:86
+msgid "Flatpak is installed. Please reboot for the service to start"
+msgstr "Flatpakがインストールされます。サービスを開始するには再起動してください"
+
+#: recommendations.html:87
+msgid "Install & Configure Flatpak"
+msgstr "Flatpakのインストールと設定"
+
+#: recommendations.html:91
+msgid "skippy-xd"
+msgstr "skippy-xd"
+
+#: recommendations.html:95
+msgid ""
+"<strong>skippy-xd</strong> adds a window expose type capability through a "
+"keyboard shortcut. For most desktops skippy-xd works well. Note: For some "
+"multi-monitor setups, graphics drivers and within virtual machines such as "
+"VirtualBox it may not work correctly."
+msgstr ""
+"<strong>skippy-xd</strong>は、キーボードショートカットを介してウィンドウの公開機能を追加します。ほとんどのデスクトップでは"
+"、skippy-xdはうまく機能します。注：一部のマルチモニタ セットアップ、グラフィックス "
+"ドライバー、およびVirtualBoxなどの仮想マシン内では、正しく動作しない場合があります。"
+
+#: recommendations.html:98
+msgid ""
+"By default the installer will create a custom keyboard shortcut CTRL+grave "
+"('the key above the tab'). You can define or change the keyboard shortcut "
+"through the Settings - Keyboard - Custom Shortcuts option. Use the command "
+"<strong>skippy-xd-toggle</strong> when defining your own custom keyboard "
+"shortcut."
+msgstr ""
+"デフォルトでは、インストーラーはカスタムキーボードショートカットCTRL + grave（US "
+"キーボードなら「タブの上のキー」）を作成します。メニューの「Preferences」-「Keyboard」を使用して、キーボードショートカットを定義または変更できます。"
+
+#: recommendations.html:99
+msgid "skippy-xd is installed"
+msgstr "skippy-xd はインストールされています"
+
+#: recommendations.html:99
+msgid "Install & Configure skippy-xd"
+msgstr "skippy-xd のインストールと設定"
+
+#: recommendations.html:105
+msgid "Steam"
+msgstr "Steam"
+
+#: recommendations.html:109
+msgid ""
+"<strong>Steam</strong> is a digital distribution platform developed by Valve"
+" Corporation offering digital rights management (DRM), multiplayer gaming "
+"and social networking services. Steam provides the user with installation "
+"and automatic updating of games on multiple computers, and community "
+"features such as friends lists and groups, cloud saving, and in-game voice "
+"and chat functionality. The software provides a freely available application"
+" programming interface (API) called Steamworks, which developers can use to "
+"integrate many of Steam's functions into their products, including "
+"networking, matchmaking, in-game achievements, micro-transactions, and "
+"support for user-created content through Steam Workshop."
+msgstr ""
+"<strong>Steam</strong> は、Valve "
+"Corporationが開発したデジタル配信プラットフォームで、デジタル著作権管理（DRM）、マルチプレイヤーゲーム、ソーシャルネットワーキングサービスを提供します。Steam"
+" "
+"は、複数のコンピューターでのゲームのインストールと自動更新、およびフレンドリストやグループ、クラウドの保存、ゲーム内の音声やチャット機能などのコミュニティ機能をユーザーに提供します。このソフトウェアは、Steamworks"
+" "
+"と呼ばれる無料のアプリケーションプログラミングインターフェース（API）を提供します。開発者はこれを使用して、ネットワーク、マッチメイキング、ゲーム内の成果、マイクロトランザクション、ユーザー作成コンテンツのサポートなど、Steamワークショップを通じてSteam"
+" の機能の多くを自社製品に統合できます。"
+
+#: recommendations.html:114
+msgid ""
+"Being proprietary software, Steam is not included in the primary "
+"repositories of <span name=\"distro-name\"></span>. However, to provide more"
+" choice to users, Steam is shipped as a part of the <em>Multiverse</em> "
+"repository. <span name=\"distro-name\"></span> provides you the option to "
+"enable the <em>Multiverse</em> repository and to install Steam with a single"
+" mouse click."
+msgstr ""
+"独自のソフトウェアであるため、Steamは<span name=\"distro-"
+"name\"></span>のプライマリリポジトリに含まれていません。ただし、ユーザーにより多くの選択肢を提供するために、Steamは<em>Multiverse</em>リポジトリの一部として出荷されます。<span"
+" name=\"distro-"
+"name\"></span>は、<em>Multiverse</em>リポジトリを有効にし、マウスを1回クリックするだけでSteamをインストールするオプションを提供します。"
+
+#: recommendations.html:116
+msgid "Steam is installed"
+msgstr "Steam はインストールされています"
+
+#: recommendations.html:116
+msgid "Install & Configure Steam"
+msgstr "Steam のインストールと設定"
+
+#: recommendations.html:126
+msgid ""
+"<strong>Dropbox</strong> is a popular proprietary file sharing and storage "
+"solution."
+msgstr "<strong>Dropbox</strong>は、人気のある独自のファイル共有およびストレージソリューションです。"
+
+#: recommendations.html:129
+msgid ""
+"Being proprietary software, Dropbox is not included in the primary "
+"repositories of <span name=\"distro-name\"></span>. However, to provide more"
+" choice to users, Dropbox is shipped as a part of the <em>Multiverse</em> "
+"repository. <span name=\"distro-name\"></span> provides you the option to "
+"enable the <em>Multiverse</em> repository and to install Dropbox with a "
+"single mouse click."
+msgstr ""
+"独自のソフトウェアであるため、Dropboxは<span name=\"distro-"
+"name\"></span>のプライマリリポジトリに含まれていません。ただし、ユーザーにより多くの選択肢を提供するために、Dropboxは<em>Multiverse</em>リポジトリの一部として出荷されます。<span"
+" name=\"distro-"
+"name\"></span>は、<em>Multiverse</em>リポジトリを有効にし、マウスを1回クリックするだけでDropboxをインストールするオプションを提供します。"
+
+#: recommendations.html131, 138
+msgid ""
+"After installing, logout and login and follow the dropbox instructions that "
+"are then displayed."
+msgstr "インストール後、ログアウトしてログインし、表示されるドロップボックスの指示に従います。"
+
+#: recommendations.html134, 141
+msgid "Dropbox is installed"
+msgstr "Dropbox はインストールされています"
+
+#: recommendations.html134, 141
+msgid "Install & Configure Dropbox"
+msgstr "Dropbox のインストールと設定"
+
+#: recommendations.html:149
+msgid ""
+"Nemo Share allows you to quickly share a folder from the Nemo file manager "
+"without requiring root access."
+msgstr "Nemo Shareを使用すると、ルートアクセスを必要とせずに、Nemoファイルマネージャからフォルダをすばやく共有できます。"
+
+#: recommendations.html:152
+msgid "Nemo Share is installed"
+msgstr "Nemo Share はインストールされています"
+
+#: recommendations.html:152
+msgid "Install Nemo Share"
+msgstr "Nemo Share をインストール"

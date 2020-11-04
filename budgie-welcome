@@ -28,6 +28,8 @@ import apt
 from notify2 import Notification, init as NotifyInit
 from queue import Queue, Empty
 from threading import Thread
+import gi
+gi.require_version('WebKit2', '4.0')
 from gi.repository import WebKit2, Gtk, Gio, Gdk, GLib
 import getpass
 import gettext
@@ -197,19 +199,33 @@ class AppView(WebKit2.WebView):
                 for theme in config[systemstate.codename]:
                     app.update_page("." + theme, 'show')
 
+            if systemstate.codename in ['xenial', 'bionic', 'cosmic', 'disco', 'eoan']:
+                app.update_page('.before2004', 'show')
+                app.update_page('.after1910', 'hide')
+            else:
+                app.update_page('.before2004', 'hide')
+                app.update_page('.after1910', 'show')
+
         if current_page in ['introduction', 'features', 'community', 'recommendations', 'gettingstarted']:
             if systemstate.official:
                 app.update_page('.official-only', 'show')
             else:
                 app.update_page('.unofficial-only', 'show')
 
-        if current_page in ['introduction', 'features']:
+        if current_page in ['introduction', 'features', 'gettingstarted']:
             if systemstate.codename in ['bionic']:
                 app.update_page('.1804-only', 'show')
                 app.update_page('.after1810', 'hide')
             else:
                 app.update_page('.1804-only', 'hide')
                 app.update_page('.after1810', 'show')
+
+            if systemstate.codename in ['bionic', 'eoan']:
+                app.update_page('.before2004', 'show')
+                app.update_page('.after1910', 'hide')
+            else:
+                app.update_page('.before2004', 'hide')
+                app.update_page('.after1910', 'show')
 
         if current_page == 'recommendations':
             if systemstate.codename in ['xenial']:
@@ -448,9 +464,9 @@ class AppView(WebKit2.WebView):
 
                 popup.showMessage()
 
-        elif uri.startswith("theme?"):
+        elif uri.startswith("makeover?"):
 
-            code = uri[6:]
+            code = uri[9:]
             panelstyle = os.path.expanduser('~') + "/.config/gtk-3.0/gtk.css"
 
             theme = app._data_path + "/config/" + code + "-style.json"
@@ -492,7 +508,169 @@ class AppView(WebKit2.WebView):
                     self._set_panel_key('size', 37)
                     self._set_panel_key('transparency', None)
 
-                subprocess.Popen(['budgie-panel', '--replace', '&'])
+                p = subprocess.Popen(['killall', 'showtime_desktop'])
+                p.wait()
+
+                p = subprocess.Popen(['budgie-panel', '--replace', '&'])
+                p.wait()
+
+                self._push_config()
+
+            Thread(target=applyStyle).start()
+
+        elif uri.startswith("theme?"):
+
+            code = uri[6:]
+            panelstyle = os.path.expanduser('~') + "/.config/gtk-3.0/gtk.css"
+
+            theme = app._data_path + "/config/" + code + "-style.json"
+
+            def applyStyle():
+                with open(theme) as file:
+                    whole_config = json.load(file)
+
+                if systemstate.codename in whole_config:
+                    config = whole_config[systemstate.codename]
+                else:
+                    config = whole_config["default"]
+
+                for item in config:
+                    if "panel-attrib" in item:
+                        continue
+
+                    schema = item["SCHEMA"]
+                    values = item["VALUES"]
+
+                    gsettings = Gio.Settings.new(schema)
+
+                    for key, value in values.items():
+                         if key == "gtk-theme" or key == "theme":
+                             gsettings.set_string(key, value)
+
+                self._push_config()
+
+            Thread(target=applyStyle).start()
+
+        elif uri.startswith("font?"):
+            code = uri[5:]
+            panelstyle = os.path.expanduser('~') + "/.config/gtk-3.0/gtk.css"
+
+            theme = app._data_path + "/config/" + code + "-style.json"
+
+            def applyStyle():
+                with open(theme) as file:
+                    whole_config = json.load(file)
+
+                if systemstate.codename in whole_config:
+                    config = whole_config[systemstate.codename]
+                else:
+                    config = whole_config["default"]
+
+                for item in config:
+                    if "panel-attrib" in item:
+                        continue
+
+                    schema = item["SCHEMA"]
+                    values = item["VALUES"]
+
+                    gsettings = Gio.Settings.new(schema)
+
+                    for key, value in values.items():
+                        if "font" in key:
+                            gsettings.set_string(key, value)
+
+                self._push_config()
+
+            Thread(target=applyStyle).start()
+
+        elif uri.startswith("icon?"):
+
+            code = uri[5:]
+            panelstyle = os.path.expanduser('~') + "/.config/gtk-3.0/gtk.css"
+
+            theme = app._data_path + "/config/" + code + "-style.json"
+
+            def applyStyle():
+                with open(theme) as file:
+                    whole_config = json.load(file)
+
+                if systemstate.codename in whole_config:
+                    config = whole_config[systemstate.codename]
+                else:
+                    config = whole_config["default"]
+
+                for item in config:
+                    if "panel-attrib" in item:
+                        continue
+
+                    schema = item["SCHEMA"]
+                    values = item["VALUES"]
+
+                    gsettings = Gio.Settings.new(schema)
+
+                    for key, value in values.items():
+                        if key == "icon-theme":
+                            gsettings.set_string(key, value)
+
+                self._push_config()
+
+            Thread(target=applyStyle).start()
+
+        elif uri.startswith("desktop?"):
+
+            code = uri[8:]
+            panelstyle = os.path.expanduser('~') + "/.config/gtk-3.0/gtk.css"
+
+            theme = app._data_path + "/config/" + code + "-style.json"
+
+            def applyStyle():
+                with open(theme) as file:
+                    whole_config = json.load(file)
+
+                attrib = None
+                if systemstate.codename in whole_config:
+                    config = whole_config[systemstate.codename]
+                else:
+                    config = whole_config["default"]
+
+                for item in config:
+                    if "panel-attrib" in item:
+                        attrib = item["panel-attrib"]
+                        continue
+
+                    schema = item["SCHEMA"]
+                    values = item["VALUES"]
+
+                    gsettings = Gio.Settings.new(schema)
+
+                    schema_apply = False
+
+                    if schema in ["com.solus-project.budgie-panel", "org.gnome.desktop.background"]:
+                        schema_apply = True
+
+                    for key, value in values.items():
+                        if schema_apply or key == "cursor-theme":
+                            if type(value) == bool:
+                                gsettings.set_boolean(key, value)
+                            else:
+                                gsettings.set_string(key, value)
+
+                if attrib:
+                    self._set_panel_key(
+                        'enable-shadow', attrib['enable-shadow'])
+                    self._set_panel_key('size', attrib['size'])
+                    self._set_panel_key('transparency', attrib['transparency'])
+                else:
+                    # sane defaults
+                    self._set_panel_key('enable-shadow', True)
+                    self._set_panel_key('size', 37)
+                    self._set_panel_key('transparency', None)
+
+                p = subprocess.Popen(['killall', 'showtime_desktop'])
+                p.wait()
+
+                p = subprocess.Popen(['budgie-panel', '--replace', '&'])
+                p.wait()
 
                 self._push_config()
 
@@ -545,40 +723,40 @@ class AppView(WebKit2.WebView):
             print('Unknown command: {}'.format(uri))
 
     def _apply_layout(self, layout):
-        def running_process(process):
-            "check if process is running. < process > is the name of the process."
+        import dbus
 
-            proc = subprocess.Popen(
-                ["if pgrep " + process + \
-                    " >/dev/null 2>&1; then echo 'True'; else echo 'False'; fi"],
-                stdout=subprocess.PIPE, shell=True)
+        # well-known name for our program
+        ECHO_BUS_NAME = 'org.UbuntuBudgie.ExtrasDaemon'
 
-            (Process_Existance, err) = proc.communicate()
-            return str(Process_Existance, 'utf-8') == 'True\n'
+        # interfaces implemented by some objects in our program
+        ECHO_INTERFACE = 'org.UbuntuBudgie.ExtrasDaemon'
 
-        dtop = os.path.expanduser('~') + '/.config/autostart/plank.desktop'
-        global start_location
+        # paths to some objects in our program
+        ECHO_OBJECT_PATH = '/org/ubuntubudgie/extrasdaemon'
 
-        if layout == 'classicbudgie':
-            if running_process('plank'):
-                subprocess.Popen(['killall', 'plank'])
-                subprocess.Popen(['rm', dtop])
-                p = subprocess.Popen(['pkexec',
-                                      start_location + 'budgie-welcome-privileged-actions',
-                                      'panelini', 'classic'])
-                retval = p.wait()
-            return
+        bus = dbus.SessionBus()
 
-        if layout == 'ubuntubudgie':
-            if not running_process('plank'):
-                subprocess.Popen(['nohup', 'plank', '&'])
-                subprocess.Popen(
-                    ['cp', '/usr/share/budgie-desktop/plank.desktop', dtop])
-                p = subprocess.Popen(['pkexec',
-                                      start_location + 'budgie-welcome-privileged-actions',
-                                      'panelini', 'ub'])
-                retval = p.wait()
-            return
+        try:
+            proxy = bus.get_object(ECHO_BUS_NAME, ECHO_OBJECT_PATH)
+        except dbus.DBusException as e:
+            # There are actually two exceptions thrown:
+            # 1: org.freedesktop.DBus.Error.NameHasNoOwner
+            #   (when the name is not registered by any running process)
+            # 2: org.freedesktop.DBus.Error.ServiceUnknown
+            #   (during auto-activation since there is no .service file)
+            # TODO figure out how to suppress the activation attempt
+            # also, there *has* to be a better way of managing exceptions
+            if e._dbus_error_name != \
+                    'org.freedesktop.DBus.Error.ServiceUnknown':
+                raise
+            if e.__context__._dbus_error_name != \
+                    'org.freedesktop.DBus.Error.NameHasNoOwner':
+                raise
+            print('client: No one can hear me!!')
+        else:
+            iface = dbus.Interface(proxy, ECHO_INTERFACE)
+
+            iface.ResetLayout(layout)
 
     def _set_panel_key(self, key, value):
         # panel keys are relocatable - so need to loop through all panels
@@ -660,7 +838,9 @@ class AppView(WebKit2.WebView):
         actions = [
             ['#' + code + ('-install' if operation ==
                            PMEntry.INSTALL else '-remove'), 'addClass', 'disabled', None],
-            ['#' + code + '-status', 'fadeIn', None, None]
+            ['#' + code + '-status', 'fadeIn', None, None],
+            ['#' + code + ('-instruction' if operation ==
+                           PMEntry.INSTALL else '-ignore'), 'fadeIn', None, None]
         ]
 
         for action in actions:
@@ -877,9 +1057,13 @@ class PackageManager(Thread):
             if entry.task == PMEntry.INSTALL:
                 app.update_page('#' + code + '-install',
                                 'removeClass', 'disabled')
+                app.update_page('#' + code + '-instruction',
+                                'show')
             else:
                 app.update_page('#' + code + '-remove',
                                 'removeClass', 'disabled')
+                app.update_page('#' + code + '-instruction',
+                                'hide')
 
             app.update_page('#' + code + '-status', 'fadeOut')
 
@@ -2073,12 +2257,12 @@ def desktop_files():
     Name = _("Budgie Welcome")
     Comment = _("Find out about your operating system")
 
-    Name = _("Budgie Themes")
-    Comment = _("Give the desktop a makeover with new themes, icons and fonts")
+    Name = _("Budgie Themes & Layouts")
+    Comment = _("Give the desktop a makeover with new themes, icons, fonts & layouts")
 
-    Name = _("Budgie Applets")
+    Name = _("Budgie Extras")
     Comment = _(
-        "Customize the desktop panel with applets that provide extra capabilities")
+        "Customize the desktop with applets and mini-applications to provide extra capabilities")
 
     Name = _("Budgie Discourse")
     Comment = _("Be part of the Ubuntu Budgie Community")

@@ -1,16 +1,17 @@
+# 
 # Translators:
 # Jose Luis Tirado <joseluis.tirado@gmail.com>, 2017
-# Fito JB, 2017
-# rctorr . <rictor@cuhrt.com>, 2017
 # Javier Limpias <javicolb@gmail.com>, 2017
 # Byron Yepez, 2018
+# Borja Piñero, 2020
+# Adolfo Jayme-Barrientos, 2020
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: Budgie Welcome\n"
 "POT-Creation-Date: 2016-02-27 12:48+0100\n"
 "PO-Revision-Date: 2017-03-22 21:33+0000\n"
-"Last-Translator: Byron Yepez, 2018\n"
+"Last-Translator: Adolfo Jayme-Barrientos, 2020\n"
 "Language-Team: Spanish (https://www.transifex.com/ubuntu-budgie/teams/72251/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -19,17 +20,21 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Report-Msgid-Bugs-To : you@example.com\n"
 
-#: default.html14, 24
-msgid "Default Settings"
-msgstr "Configuración predeterminada"
+#: default.html:14
+msgid "Budgie Themes & Layouts"
+msgstr "Diseño y Temas de Budgie"
 
 #: default.html18, 32
 msgid "Switch Appearance"
 msgstr "Cambiar de apariencia"
 
-#: default.html21, 300
+#: default.html21, 413
 msgid "Desktop Layout"
 msgstr "Disposición de Escritorio"
+
+#: default.html:24
+msgid "Desktop Layouts"
+msgstr "Diseños del Escritorio"
 
 #: default.html:33
 msgid ""
@@ -41,64 +46,70 @@ msgstr ""
 "Budgie. Budgie Welcome provee un método simple de cambiar la apariencia de "
 "su escritorio (temas, fuentes, íconos, fondos de pantalla) "
 
-#: default.html52, 72, 97, 117, 137, 157, 177, 197, 217, 237, 262, 282
-msgid "Install theme"
-msgstr "Instalar tema"
+#: default.html52, 87, 121, 161, 195, 231, 266, 302, 343, 379
+msgid "Install"
+msgstr "Instalar"
 
-#: default.html56, 76, 101, 121, 141, 161, 181, 201, 221, 241, 266, 286
+#: default.html58, 65, 92, 99, 126, 133, 166, 173, 201, 208, 236, 243, 272,
+#: 279, 308, 315, 349, 356, 385, 392
+msgid "Apply makeover"
+msgstr ""
+
+#: default.html67, 101, 135, 175, 210, 245, 281, 317, 358, 394
 msgid "Apply theme"
 msgstr "Aplicar tema"
 
-#: default.html61, 81, 106, 126, 146, 166, 186, 206, 226, 246, 271, 291, 337
+#: default.html68, 102, 136, 176, 211, 246, 282, 318, 359, 395
+msgid "Apply fonts"
+msgstr ""
+
+#: default.html69, 103, 137, 177, 212, 247, 283, 319, 360, 396
+msgid "Apply icons"
+msgstr ""
+
+#: default.html70, 104, 138, 178, 213, 248, 284, 320, 361, 397
+msgid "Make desktop changes"
+msgstr ""
+
+#: default.html76, 110, 144, 184, 220, 255, 291, 327, 368, 404, 437, 457, 477,
+#: 497, 517, 537, 555
 msgid "Applying Changes..."
 msgstr "Aplicando los cambios…"
 
-#: default.html:86
+#: default.html:150
 msgid "Arc Design"
 msgstr "Diseño Arc"
 
-#: default.html:111
+#: default.html:189
 msgid "Material Design (Adapta)"
 msgstr "Material Design (Adapta)"
 
-#: default.html:131
+#: default.html:225
 msgid "Material Design (Vimix)"
 msgstr "Material Design (Vimix)"
 
-#: default.html:151
-msgid "Vertex Design"
-msgstr "Diseño Vertex"
-
-#: default.html:171
-msgid "Ceti-2 Design"
-msgstr "Diseño Ceti-2"
-
-#: default.html191, 211
+#: default.html:260
 msgid "Material Design (Materia)"
 msgstr "Diseño de material (materia)"
 
-#: default.html:301
+#: default.html:414
 msgid "Switch the layout of your desktop to suit your workflow."
 msgstr ""
 "Intercale la disposición de su escritorio para adecuar su flujo de trabajo."
 
-#: default.html:305
-msgid "Default"
-msgstr "Predeterminado"
+#: default.html428, 448, 468, 488, 508, 528
+msgid "Install layout"
+msgstr "Instalar diseño"
 
-#: default.html:309
-msgid "Classic Budgie"
-msgstr "Bugdie Clásico"
+#: default.html432, 452, 472, 492, 512, 532
+msgid "Apply layout"
+msgstr "Aplicar diseño"
 
-#: default.html:321
-msgid "Classic GNOME"
-msgstr "GNOME Clásico"
-
-#: default.html:330
+#: default.html:548
 msgid "Restore panels"
 msgstr "Restaurar paneles"
 
-#: default.html:331
+#: default.html:549
 msgid ""
 "Lost your panels while playing with <span name=\"distro-name\"></span>? "
 "Unhappy with your changes to the panel layout? Don't worry. We can help you "
@@ -109,7 +120,7 @@ msgstr ""
 "paneles? No se preocupe. ¡Podemos ayudarle a restaurar sus paneles son un "
 "simple clic!"
 
-#: default.html:334
+#: default.html:552
 msgid ""
 "This will undo all changes that you have made on any panel and will reset "
 "back to the initial default panel layout configuration."
@@ -118,6 +129,6 @@ msgstr ""
 "restaurará la disposición de paneles a la configuración inicial "
 "predeterminada."
 
-#: default.html:338
+#: default.html:556
 msgid "Reset Budgie Panel"
 msgstr "Restablecer panel de Budgie"

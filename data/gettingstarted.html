@@ -22,13 +22,13 @@
         <span>
           <h5>&zwnj;Prerequisites&zwnj;</h5>
         </span>
-        <a class="btn btn-inverse index-btn" onclick='changePage("sysreq","System Requirements")'>
+        <a class="btn btn-inverse index-btn" onclick='changePage("sysreq")'>
           <i class="material-icons">&#xE31E;</i>&zwnj;System Requirements&zwnj;
         </a>
-        <a class="btn btn-inverse index-btn" onclick='changePage("prepare","Installation Preparations")'>
+        <a class="btn btn-inverse index-btn" onclick='changePage("prepare")'>
           <i class="material-icons">&#xE322;</i>&zwnj;Installation Preparation&zwnj;
         </a>
-        <a class="btn btn-inverse index-btn" onclick='changePage("dualboot","Dual Booting")'>
+        <a class="btn btn-inverse index-btn" onclick='changePage("dualboot")'>
           <i class="material-icons">&#xE401;</i>&zwnj;Dual Booting&zwnj;
         </a>
         <a class="btn btn-primary index-btn" onclick="cmd('install-os')">
@@ -38,36 +38,35 @@
       <br>
       <h5>&zwnj;Familiarity&zwnj;</h5>
       <div class="normal-session-only">
-        <a class="btn btn-inverse index-btn" onclick='changePage("browsers", "&zwnj;Browser Ballot&zwnj;")'>
+        <a class="btn btn-inverse index-btn" onclick='changePage("browsers")'>
           <i class="material-icons">&#xE8D9;</i> &zwnj;Browser Ballot&zwnj;
         </a>
       </div>
-      <a class="btn btn-inverse index-btn" onclick='changePage("customize","&zwnj;Customization&zwnj;")'>
+      <a class="btn btn-inverse index-btn" onclick='changePage("customize")'>
         <i class="material-icons">&#xE8A4;</i> &zwnj;Customization&zwnj;
       </a>
-      <a class="btn btn-inverse index-btn" onclick='changePage("shortcuts","&zwnj;Keyboard Shortcuts&zwnj;")'>
+      <a class="btn btn-inverse index-btn" onclick='changePage("shortcuts")'>
         <i class="material-icons">&#xE312;</i> &zwnj;Keyboard Shortcuts&zwnj;
       </a>
       <!-- Shown when installed -->
       <div class="normal-session-only">
         <h5>&zwnj;Post-Installation&zwnj;</h5>
-        <a class="btn btn-inverse index-btn" onclick='changePage("updates","&zwnj;Updates & Extras&zwnj;")'>
+        <a class="btn btn-inverse index-btn" onclick='changePage("updates")'>
           <i class="material-icons">&#xE5D5;</i>&zwnj;Updates & Extras&zwnj;
         </a>
-        <a class="btn btn-inverse index-btn" onclick='changePage("drivers","&zwnj;Drivers&zwnj;")'>
+        <a class="btn btn-inverse index-btn" onclick='changePage("drivers")'>
           <i class="material-icons">&#xE8B9;</i>&zwnj;Drivers&zwnj;
         </a>
-        <a class="btn btn-inverse index-btn" onclick='changePage("languageInput","&zwnj;Language & Input&zwnj;")'>
+        <a class="btn btn-inverse index-btn" onclick='changePage("languageInput")'>
           <i class="material-icons">&#xE894;</i>&zwnj;Language & Input&zwnj;
         </a>
-        <a class="btn btn-inverse index-btn" onclick='changePage("tasks","&zwnj;Optional Tasks&zwnj;")'>
+        <a class="btn btn-inverse index-btn" onclick='changePage("tasks")'>
           <i class="material-icons">&#xE834;</i></span> &zwnj;Optional Tasks&zwnj;
         </a>
       </div>
       <!-- Shown in either session -->
       <h5>&zwnj;Troubleshooting&zwnj;</h5>
-      <a class="btn btn-inverse index-btn"
-        onclick='changePage("specs","&zwnj;System Specifications&zwnj;"); InitSystemInfo()'>
+      <a class="btn btn-inverse index-btn" onclick='changePage("specs"); InitSystemInfo()'>
         <i class="material-icons">&#xE31E;</i> &zwnj;System Specifications&zwnj;
       </a>
 
@@ -76,8 +75,8 @@
 
       <!-- Topics -->
       <div id="initial" class="row topicContents">
-        <div class="col-md-12">
-          <h4 class="center">&zwnj;Please choose a topic to get started.&zwnj;</h4>
+        <div class="col-md-10">
+          <h4 class="float-right">&zwnj;Please choose a topic to get started.&zwnj;</h4>
         </div>
       </div>
 
@@ -107,13 +106,13 @@
               computer meets or surpasses the recommended requirements.&zwnj;</p>
 
             <div class="center">
-              <a onclick='changePage("specs","System Specifications"); InitSystemInfo()' class="btn btn-inverse">
+              <a onclick='changePage("specs"); InitSystemInfo()' class="btn btn-inverse">
                 <i class="material-icons">&#xE887;</i>&zwnj;What's inside my computer?&zwnj;</a>
             </div>
 
             <div class="center">
               <hr class="soften-light">
-              <a class="btn" onclick='changePage("prepare","Installation Preparations")'>
+              <a class="btn" onclick='changePage("prepare")'>
                 <b>Next:</b>&nbsp; &zwnj;Installation Preparations&zwnj; <i class="material-icons">&#xE315;</i></a>
             </div>
           </div>
@@ -190,10 +189,10 @@
                 longer required to be created.&zwnj;</span></p>
             <div class="center">
               <hr class="soften-light">
-              <a class="btn" onclick='changePage("sysreq","System Requirements")'>
+              <a class="btn" onclick='changePage("sysreq")'>
                 <i class="material-icons">&#xE314;</i> <b>&zwnj;Previous:&zwnj;</b>&nbsp; &zwnj;System
                 Requirements&zwnj;</a>
-              <a class="btn" onclick='changePage("dualboot","Dual Booting")'>
+              <a class="btn" onclick='changePage("dualboot")'>
                 <b>Next:</b>&nbsp; &zwnj;Dual Booting&zwnj; <i class="material-icons">&#xE315;</i></a>
             </div>
           </div>
@@ -242,15 +241,15 @@
                 <p>
                   &zwnj;The installer scans your disks for existing operating systems and provides
                   a choice on what you'd like to do.&zwnj;
-                  <blockquote>
-                    <b>&zwnj;You will see an option similar to this:&zwnj;</b>
-                    <br>
-                    <img src="img/screenshots/install-split-choice.png" />
-                    <br>
-                    <b>&zwnj;Followed by:&zwnj;</b>
-                    <br>
-                    <img src="img/screenshots/install-split-partitions.png" />
-                  </blockquote>
+                <blockquote>
+                  <b>&zwnj;You will see an option similar to this:&zwnj;</b>
+                  <br>
+                  <img src="img/screenshots/install-split-choice.png" />
+                  <br>
+                  <b>&zwnj;Followed by:&zwnj;</b>
+                  <br>
+                  <img src="img/screenshots/install-split-partitions.png" />
+                </blockquote>
                 </p>
                 <div class="alert alert-danger">
                   <h5><span class="fa fa-warning"></span> &zwnj;Do not interrupt or power
@@ -273,8 +272,8 @@
                 <p>
                   <img class="left" src="img/applications/gparted.png" />
                   &zwnj;<b>GParted</b> is available during the live session only.
-                  It is located under the <b>System <i class="material-icons">&#xE315;</i>
-                    Administration</b> menu. GParted provides complete flexibility over your partitions,
+                  It is located under the <b>System Tools <i class="material-icons">&#xE315;</i></b>menu.
+                  GParted provides complete flexibility over your partitions,
                   primarily for power users who know how they'd like to layout their disks.
                   This method makes changes to partitions prior to installation.&zwnj;
                 </p>
@@ -374,7 +373,8 @@
               <h5>&zwnj;Requires downloading a package.&zwnj;</h5>
               <p>&zwnj;Please connect to the Internet to download and use this utility.&zwnj;</p>
               <div id="reconnectFailed">
-                <p><span class="fa fa-warning"></span> &zwnj;Sorry, Welcome was unable to establish a connection.&zwnj;
+                <p><span class="fa fa-warning"></span> &zwnj;Sorry, Welcome was unable to establish a
+                  connection.&zwnj;
                 </p>
               </div>
               <a onclick="reconnectRetry();" class="btn btn-warning"> <span class="fa fa-refresh"></span> Retry</a>
@@ -387,7 +387,7 @@
 
             <div class="center">
               <hr class="soften-light">
-              <a class="btn" onclick='changePage("prepare","Installation Preparations")'>
+              <a class="btn" onclick='changePage("prepare")'>
                 <i class="material-icons">&#xE314;</i> <b>&zwnj;Previous:&zwnj;</b>&nbsp; &zwnj;Install
                 Preparations&zwnj;</a>
             </div>
@@ -418,8 +418,8 @@
                 <span id="updates-hint" class="center">
                   <small>
                     <p>
-                      &zwnj;<b>Software Updater</b> can be found later in
-                      <strong>Application Menu</strong>&zwnj;
+                      &zwnj;<b>Software Updater</b> can be found later in the menu
+                      <strong>Administration</strong>&zwnj;
                     </p>
                   </small>
                 </span>
@@ -439,7 +439,7 @@
               </div>
               <div class="col-md-10">
                 <h4>&zwnj;Restricted Extras&zwnj;</h4>
-                <p>&zwnj;<strong>Ubuntu</strong>(the base distribution of <span name="distro-name"></span>) strives to
+                <p>&zwnj;<strong>Ubuntu</strong> (the base distribution of <span name="distro-name"></span>) strives to
                   make all
                   of the most important software available to its users automatically. However patent and copyright
                   restrictions (see Ubuntu License Policy) complicate distribution of software to support non-free
@@ -449,13 +449,15 @@
                   MP3,
                   Quicktime, and Windows Media formats, by following the instructions below.&zwnj;</p>
 
-                <p>&zwnj;Ubuntu’s commitment to only include completely free software by default means that proprietary
+                <p>&zwnj;Ubuntu’s commitment to only include completely free software by default means that
+                  proprietary
                   media
                   formats are not configured “out of the box”. See Ubuntu’s Free Software Philosophy and the Free
                   Formats
                   page for a more comprehensive discussion of these issues.&zwnj;</p>
 
-                <p>&zwnj;<strong>Legal Notice</strong> Patent and copyright laws operate differently depending on which
+                <p>&zwnj;<strong>Legal Notice</strong> Patent and copyright laws operate differently depending on
+                  which
                   country
                   you are in. Please obtain legal advice if you are unsure whether a particular patent or restriction
                   applies
@@ -476,7 +478,7 @@
 
             <div class="center">
               <hr class="soften-light">
-              <a class="btn" onclick='changePage("drivers","Drivers")'>
+              <a class="btn" onclick='changePage("drivers")'>
                 <b>&zwnj;Next:&zwnj;</b>&nbsp; &zwnj;Drivers&zwnj; <i class="material-icons">&#xE315;</i></a>
             </div>
           </div>
@@ -510,20 +512,23 @@
 
             <!-- Advice about graphics -->
             <a onclick="toggleSub('graphics-section','graphics-arrow');">
-              <h3 class="sub-collapse"><span class="fa fa-chevron-down" id="graphics-arrow"></span> &zwnj;Graphics&zwnj;
+              <h3 class="sub-collapse"><span class="fa fa-chevron-down" id="graphics-arrow"></span>
+                &zwnj;Graphics&zwnj;
               </h3>
             </a>
             <div id="graphics-section">
 
               <div class="graphics-unknown alert alert-danger hidden">
-                <h5>&zwnj;Sorry, Welcome was unable to automatically identify the graphics vendor on this system.&zwnj;
+                <h5>&zwnj;Sorry, Welcome was unable to automatically identify the graphics vendor on this
+                  system.&zwnj;
                 </h5>
                 <p><b> &zwnj;Card/Chipset:&zwnj; </b><i class="graphics-pci">&zwnj;Unknown&zwnj;</i></p>
               </div>
 
               <div class="graphics-nvidia alert alert-info hidden">
                 <h5>&zwnj;NVIDIA Graphics Card Detected.&zwnj;</h5>
-                <p>&zwnj;NVIDIA may have drivers for your card that can boost performance for 3D applications and games
+                <p>&zwnj;NVIDIA may have drivers for your card that can boost performance for 3D applications and
+                  games
                   as well as deliver improvements to power management.&zwnj;</p>
                 <p><b> &zwnj;Card/Chipset:&zwnj; </b><i class="graphics-pci">&zwnj;Unknown&zwnj;</i></p>
               </div>
@@ -555,12 +560,14 @@
                   meaning you'll have to
                   rely on the manufacturer for support.&zwnj;</p>
 
-                <p>&zwnj;In addition, proprietary drivers can <b>significantly improve graphics performance</b> and as a
+                <p>&zwnj;In addition, proprietary drivers can <b>significantly improve graphics performance</b> and as
+                  a
                   result,
                   the entire system. Users may wish to install these drivers to:&zwnj;</p>
                 <ul>
                   <li>&zwnj;Run 3D applications and games.&zwnj;</li>
-                  <li>&zwnj;Improve power management, particularly if the device experiences overheating problems under
+                  <li>&zwnj;Improve power management, particularly if the device experiences overheating problems
+                    under
                     open source drivers.&zwnj;</li>
                   <li>&zwnj;Improve support for high resolutions and multiple monitors.&zwnj;</li>
                   <li>&zwnj;Fix blank screen issues.&zwnj;</li>
@@ -585,7 +592,8 @@
                   <h4>&zwnj;What about the latest NVIDIA drivers?&zwnj;</h4>
                   <p>&zwnj;<b>Additional Drivers</b> fetches the latest tested driver from the Ubuntu repositories.
                     Advanced users and gamers who would like newer versions may wish to consider adding the
-                    <a onclick="cmd('link?https://launchpad.net/~graphics-drivers/+archive/ubuntu/ppa')">Ubuntu Graphics
+                    <a onclick="cmd('link?https://launchpad.net/~graphics-drivers/+archive/ubuntu/ppa')">Ubuntu
+                      Graphics
                       Driver PPA</a>,
                     which packages up the latest NVIDIA drivers for Ubuntu. These packages are not as thoroughly
                     tested.&zwnj;</p>
@@ -631,14 +639,15 @@
 
               <p><a
                   onclick="cmd('link?https://help.ubuntu.com/community/WifiDocs/WirelessTroubleShootingGuide/Drivers')">
-                  <span class="fa fa-globe"></span> &zwnj;Read more on troubleshooting wireless hardware.&zwnj;</a></p>
+                  <span class="fa fa-globe"></span> &zwnj;Read more on troubleshooting wireless hardware.&zwnj;</a>
+              </p>
             </div>
 
             <div class="center">
               <hr class="soften-light">
-              <a class="btn" onclick='changePage("updates","Updates & Extras")'>
+              <a class="btn" onclick='changePage("updates")'>
                 <i class="material-icons">&#xE314;</i> <b>Previous:</b>&nbsp; &zwnj;Updates & Extras&zwnj;</a>
-              <a class="btn" onclick='changePage("languageInput","Language Input")'>
+              <a class="btn" onclick='changePage("languageInput")'>
                 <b>Next:</b>&nbsp; &zwnj;Language Input&zwnj; <i class="material-icons">&#xE315;</i></a>
             </div>
           </div>
@@ -739,9 +748,9 @@
         </div>
         <div class="center">
           <hr class="soften-light">
-          <a class="btn" onclick='changePage("drivers","Drivers")'>
+          <a class="btn" onclick='changePage("drivers")'>
             <i class="material-icons">&#xE314;</i> <b>&zwnj;Previous:&zwnj;</b>&nbsp; &zwnj;Drivers&zwnj;</a>
-          <a class="btn" onclick='changePage("tasks","Optional Tasks")'>
+          <a class="btn" onclick='changePage("tasks")'>
             <b>&zwnj;Next:&zwnj;</b>&nbsp; &zwnj;Optional Tasks&zwnj; <i class="material-icons">&#xE315;</i></a>
         </div>
       </div>
@@ -780,8 +789,8 @@
                   class="button-text">&zwnj;Configure Backup&zwnj;</span>&nbsp;
               </a>
               <span id="backup-hint" class="center"><small>
-                  <p><i class="material-icons">&#xE88F;</i> &zwnj;<b>Backups</b> can be found later in
-                    <b>Application Menu <i class="material-icons">&#xE315;</i> Backup</b>.&zwnj;</p>
+                  <p><i class="material-icons">&#xE88F;</i> &zwnj;<b>Backups</b> can be found later in the menu
+                    <b>Utilities <i class="material-icons">&#xE315;</i> Backups</b>.&zwnj;</p>
                 </small></span>
             </div>
           </div>
@@ -850,9 +859,9 @@
 
         <div class="center">
           <hr class="soften-light">
-          <a class="btn" onclick='changePage("languageInput","Language Input")'>
+          <a class="btn" onclick='changePage("languageInput")'>
             <i class="material-icons">&#xE314;</i> <b>Previous:</b>&nbsp; &zwnj;Language Input&zwnj;</a>
-          <a class="btn" onclick='changePage("customize","Customization")'>
+          <a class="btn" onclick='changePage("customize")'>
             <b>&zwnj;Next:&zwnj;</b>&nbsp; &zwnj;Customization&zwnj; <i class="material-icons">&#xE315;</i></a>
         </div>
       </div>
@@ -863,7 +872,7 @@
         popular
         web browsers with a single click.&zwnj;
         <div class="row text-md-center">
-          <div class="col-md-6 application border rounded">
+          <div class="col-md-6 application border rounded 1804-only hide">
             <h4>Chromium</h4>
             <img src="img/applications/chromium.svg" />
             <p class="text-md-justify">&zwnj;Chromium is an open-source browser project that aims to build a safer,
@@ -885,6 +894,22 @@
               <span class="material-icons">&#xE872;</span><span class="button-text">&zwnj;Snap Remove&zwnj;</span>
             </a>
             <span id="chromium-snap-status" class="hidden">
+              <img src="img/welcome/processing.gif" style="width:24px" /> &zwnj;Applying Changes...&zwnj;
+            </span>
+          </div>
+          <div class="col-md-6 application border rounded after1810 hide">
+            <h4>Chromium</h4>
+            <img src="img/applications/chromium.svg" />
+            <p class="text-md-justify">&zwnj;Chromium is an open-source browser project that aims to build a safer,
+              faster, and more stable way for all Internet users to experience the web.&zwnj;</p>
+            <a id="chromiumeoan-snap-install" class="btn btn-success"
+              onclick="cmd('install?chromiumeoan-snap');cmd('')">
+              <span class="material-icons">&#xE2C0;</span><span class="button-text">&zwnj;Snap Install&zwnj;</span>
+            </a>
+            <a id="chromiumeoan-snap-remove" class="btn btn-danger" onclick="cmd('remove?chromiumeoan-snap');cmd('')">
+              <span class="material-icons">&#xE872;</span><span class="button-text">&zwnj;Snap Remove&zwnj;</span>
+            </a>
+            <span id="chromiumeoan-snap-status" class="hidden">
               <img src="img/welcome/processing.gif" style="width:24px" /> &zwnj;Applying Changes...&zwnj;
             </span>
           </div>
@@ -968,9 +993,11 @@
           <div class="col-md-6 application push-md-3 border rounded">
             <h4>Midori</h4>
             <img src="img/applications/midori.png" />
-            <p class="text-md-justify">&zwnj;Midori is a lightweight yet powerful web browser which runs just as well on
+            <p class="text-md-justify">&zwnj;Midori is a lightweight yet powerful web browser which runs just as well
+              on
               little embedded computers named for delicious pastries as it does on beefy machines with a core
-              temperature exceeding that of planet earth. And it looks good doing that, too. Oh, and of course it's free
+              temperature exceeding that of planet earth. And it looks good doing that, too. Oh, and of course it's
+              free
               software.&zwnj;</p>
             <a id="midori-install" class="btn btn-success" onclick="cmd('install?midori');cmd('')">
               <span class="material-icons">&#xE2C0;</span><span class="button-text">&zwnj;Snap Install&zwnj;</span>
@@ -988,8 +1015,10 @@
           <div class="col-md-6 application push-md-3 border rounded">
             <h4>GNOME Web</h4>
             <img src="img/applications/gnomeweb.png" />
-            <p class="text-md-justify">&zwnj;The web browser for GNOME, featuring tight integration with the desktop and
-              a simple and intuitive user interface that allows you to focus on your web pages. If you’re looking for a
+            <p class="text-md-justify">&zwnj;The web browser for GNOME, featuring tight integration with the desktop
+              and
+              a simple and intuitive user interface that allows you to focus on your web pages. If you’re looking for
+              a
               simple, clean, beautiful view of the web, this is the browser for you.
               GNOME Web is often referred to by its code name, Epiphany.&zwnj;</p>
             <a id="gnomeweb-install" class="btn btn-success" onclick="cmd('install?gnomeweb');cmd('')">
@@ -1002,6 +1031,26 @@
               <img src="img/welcome/processing.gif" style="width:24px" /> &zwnj;Applying Changes...&zwnj;
             </span>
           </div>
+
+
+          <div class="col-md-6 application push-md-3 border rounded">
+            <h4>Ephemeral</h4>
+            <img src="img/applications/ephemeral.png" />
+            <p class="text-md-justify">&zwnj;Browse the Internet in private without leaving a trace of history on your
+              computer. Ephemeral is a stripped down private browser that's perfect for avoiding persistent cookies or
+              web trackers. Close the window and all traces of your browsing are removed from your device.&zwnj;</p>
+            <a id="ephemeral-snap-install" class="btn btn-success" onclick="cmd('install?ephemeral-snap');cmd('')">
+              <span class="material-icons">&#xE2C0;</span><span class="button-text">&zwnj;Snap Install&zwnj;</span>
+            </a>
+            <a id="ephemeral-snap-remove" class="btn btn-danger" onclick="cmd('remove?ephemeral-snap');cmd('')">
+              <span class="material-icons">&#xE872;</span><span class="button-text">&zwnj;Remove&zwnj;</span>
+            </a>
+            <span id="ephemeral-snap-status" class="hidden">
+              <img src="img/welcome/processing.gif" style="width:24px" /> &zwnj;Applying Changes...&zwnj;
+            </span>
+          </div>
+
+
         </div>
       </div>
       <!-- Customizing the Experience -->
@@ -1019,7 +1068,8 @@
                   class="button-text">&zwnj;Budgie Desktop Settings&zwnj;</span>&nbsp;
               </a></div>
             <span id="tweak-hint" class="center"><small>
-                <p><i class="material-icons">&#xE88F;</i> &zwnj;<b>Budgie Desktop Settings</b> can be found later in the
+                <p><i class="material-icons">&#xE88F;</i> &zwnj;<b>Budgie Desktop Settings</b> can be found later in
+                  the
                   menu
                   <b>System Tools</b>.&zwnj;</p>
               </small></span>
@@ -1035,9 +1085,9 @@
 
             <div class="center">
               <hr class="soften-light">
-              <a class="btn" onclick='changePage("tasks","Optional Tasks")'>
+              <a class="btn" onclick='changePage("tasks")'>
                 <i class="material-icons">&#xE314;</i> <b>Previous:</b>&nbsp; Optional Tasks</a>
-              <a class="btn" onclick='changePage("shortcuts","Keyboard Shortcuts")'>
+              <a class="btn" onclick='changePage("shortcuts")'>
                 <b>Next:</b>&nbsp; Keyboard Shortcuts <i class="material-icons">&#xE315;</i></a>
             </div>
           </div>
@@ -1316,7 +1366,23 @@
             <hr>
             <h3>&zwnj;Window shortcuts - general&zwnj;</h3>
             <table class="shortcuts">
-              <tr>
+              <tr class="after1910">
+                <td>
+                  <b class="btn btn-xs disabled">&zwnj;Ctrl&zwnj;</b>
+                  <i class="material-icons">&#xE145;</i>
+                  <b class="btn btn-xs disabled">&zwnj;Alt&zwnj;&nbsp;</b>
+                  <i class="material-icons">&#xE145;</i>
+                  <b class="btn btn-xs disabled">S</b>
+                </td>
+                <td>&zwnj;Call Window Shuffler gui (window tiling grid).&zwnj;
+                  <p class="text-right"></p>
+                  <a class="btn btn-inverse" onclick="cmd('link?https://www.youtube.com/watch?v=YfqJ8xrLwP8');cmd('')">
+                    <img class="button-icon" src="img/distro-icon-inverted.svg">&nbsp;<span class="button-text">
+                      &zwnj; Video Demonstration&zwnj;</span>&nbsp;
+
+                </td>
+              </tr>
+              <tr class="before2004">
                 <td>
                   <b class="btn btn-xs disabled" data-toggle="tooltip" data-placement="top" title="Super Key"><img
                       src="img/welcome/super-key.svg"></b>&nbsp;
@@ -1395,6 +1461,50 @@
                   <b class="btn btn-xs disabled">&zwnj;Alt&zwnj;&nbsp;</b>
                   <i class="material-icons">&#xE145;</i>
                   <b class="btn btn-xs disabled">F4</b>
+                </td>
+                <td>&zwnj;Move the current window to the monitor above.&zwnj;</td>
+              </tr>
+              <tr>
+                <td>
+                  <b class="btn btn-xs disabled">&zwnj;Shift&zwnj;&nbsp;</b>
+                  <i class="material-icons">&#xE145;</i>
+                  <b class="btn btn-xs disabled" data-toggle="tooltip" data-placement="top" title="Super Key"><img
+                      src="img/welcome/super-key.svg"></b>&nbsp;
+                  <i class="material-icons">&#xE145;</i>
+                  <b class="btn btn-xs disabled">Up</b>
+                </td>
+                <td>&zwnj;Move the current window to the monitor below.&zwnj;</td>
+              </tr>
+              <tr>
+                <td>
+                  <b class="btn btn-xs disabled">&zwnj;Shift&zwnj;&nbsp;</b>
+                  <i class="material-icons">&#xE145;</i>
+                  <b class="btn btn-xs disabled" data-toggle="tooltip" data-placement="top" title="Super Key"><img
+                      src="img/welcome/super-key.svg"></b>&nbsp;
+                  <i class="material-icons">&#xE145;</i>
+                  <b class="btn btn-xs disabled">Down</b>
+                </td>
+                <td>&zwnj;Move the current window to the monitor to the left.&zwnj;</td>
+              </tr>
+              <tr>
+                <td>
+                  <b class="btn btn-xs disabled">&zwnj;Shift&zwnj;&nbsp;</b>
+                  <i class="material-icons">&#xE145;</i>
+                  <b class="btn btn-xs disabled" data-toggle="tooltip" data-placement="top" title="Super Key"><img
+                      src="img/welcome/super-key.svg"></b>&nbsp;
+                  <i class="material-icons">&#xE145;</i>
+                  <b class="btn btn-xs disabled">Left</b>
+                </td>
+                <td>&zwnj;Move the current window to the monitor to the right.&zwnj;</td>
+              </tr>
+              <tr>
+                <td>
+                  <b class="btn btn-xs disabled">&zwnj;Shift&zwnj;&nbsp;</b>
+                  <i class="material-icons">&#xE145;</i>
+                  <b class="btn btn-xs disabled" data-toggle="tooltip" data-placement="top" title="Super Key"><img
+                      src="img/welcome/super-key.svg"></b>&nbsp;
+                  <i class="material-icons">&#xE145;</i>
+                  <b class="btn btn-xs disabled">Right</b>
                 </td>
                 <td>&zwnj;Closes window.&zwnj;</td>
               </tr>
@@ -1612,7 +1722,7 @@
                 <div class="1904 hidden">
                   <tr>
                     <td>
-                        <div align="center"><a class="btn btn-inverse" onclick="cmd('keyboard');cmd('')"
+                      <div align="center"><a class="btn btn-inverse" onclick="cmd('keyboard');cmd('')"
                           onclick="smoothFade('','#tweak-hint')">
                           &nbsp;<img class="button-icon" src="img/applications/raven-settings.png" />&nbsp;<span
                             class="button-text">&zwnj;Update shortcuts in the Settings App&zwnj;</span>&nbsp;
@@ -1624,8 +1734,9 @@
             </div>
             <div class="center">
               <hr class="soften-light">
-              <a class="btn" onclick='changePage("customize","Customization")'>
-                <i class="material-icons">&#xE314;</i> <b>&zwnj;Previous:&zwnj;</b>&nbsp; &zwnj;Customization&zwnj;</a>
+              <a class="btn" onclick='changePage("customize")'>
+                <i class="material-icons">&#xE314;</i> <b>&zwnj;Previous:&zwnj;</b>&nbsp;
+                &zwnj;Customization&zwnj;</a>
             </div>
           </div>
         </div>
@@ -1757,7 +1868,7 @@
                     <span id="spec-filesystem"></span>
                     <a data-toggle="tooltip" data-placement="top"
                       title="&zwnj;The file system where OS is installed.&zwnj;" </a> <i
-                      class="material-icons">&#xE88F;</i>
+                        class="material-icons">&#xE88F;</i>
                     </a>
                   </td>
                 </tr>

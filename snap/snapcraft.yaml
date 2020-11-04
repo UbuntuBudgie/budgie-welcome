@@ -1,5 +1,5 @@
 name: ubuntu-budgie-welcome
-version: '0.9.0'
+version: '0.13.0'
 summary: Welcome screen to greet new Ubuntu Budgie users on their first login.
 description: |
   The ubuntu-budgie-welcome application was designed to greet a new user at the
@@ -10,6 +10,7 @@ description: |
 
 grade: stable
 confinement: classic
+base: core18
 
 apps:
   budgie-welcome:
@@ -31,158 +32,69 @@ apps:
 parts:
   budgie-welcome:
     plugin: nil
-    #source: https://github.com/UbuntuBudgie/budgie-welcome/archive/v$SNAPCRAFT_PROJECT_VERSION.tar.gz
-    source: .
     build-packages:
       - python3
       - python3-polib
       - gettext
       - node-uglify
       - xdg-utils
+      - sassc
     stage-packages:
       - python3-apt
+      - xdg-utils
     override-build: |
+      snapcraftctl build
+      cd $SNAPCRAFT_PROJECT_DIR
+      sh ./sassc-compile.sh
       cd scripts && ./rebuild-translations.sh
       cd ../ && uglifyjs -o data/js/bootstrap.min.js data/js/bootstrap.js && uglifyjs -o data/js/baguetteBox.min.js data/js/baguetteBox.js  && uglifyjs -o data/js/popper.min.js data/js/popper.js
       mkdir -p $SNAPCRAFT_PART_INSTALL/usr/share/budgie-welcome/
       cp -r data/* $SNAPCRAFT_PART_INSTALL/usr/share/budgie-welcome/
       mkdir -p $SNAPCRAFT_PART_INSTALL/usr/share/locale/
       cp -r locale/* $SNAPCRAFT_PART_INSTALL/usr/share/locale/
-      mkdir -p $SNAPCRAFT_PART_INSTALL/usr/share/polkit-1/actions/
-      cp org.budgie.welcome.policy $SNAPCRAFT_PART_INSTALL/usr/share/polkit-1/actions/
       cp budgie-welcome $SNAPCRAFT_PART_INSTALL/usr/bin/
       mkdir -p $SNAPCRAFT_PART_INSTALL/usr/lib/budgie-welcome
       cp budgie-welcome-privileged-actions $SNAPCRAFT_PART_INSTALL/usr/lib/budgie-welcome
       cp budgie-welcome.1 $SNAPCRAFT_PART_INSTALL/usr/share/man/man1
-      cp desktop/*.desktop $SNAPCRAFT_PART_INSTALL/usr/share/applications/
-    # The cruft_ filesets define files/directories that can be safely
-    # removed to reduce the size of the snap.
-    # They have been grouped to assist others seeking to shrink the size
-    # of Python snaps.
-    filesets:
-      cruft_apport:
-        - -usr/share/apport
-      cruft_aspell:
-        - -etc/dictionaries-common
-        - -usr/bin/*spell*
-        - -usr/lib/aspell
-        - -usr/lib/ispell
-        - -usr/sbin/*aspell*
-        - -usr/sbin/*ispell*
-        - -usr/share/aspell
-        - -usr/share/dict
-        - -var/cache/dictionaries-common
-        - -var/lib/aspell
-        - -var/lib/ispell
-        - -var/lib/dictionaries-common
-      cruft_binaries:
-        - -bin/*.py
-        - -bin/html2text
-        - -bin/markdown_py
-        - -bin/mid3*
-        - -bin/moggsplit
-        - -bin/mutagen*
-        - -bin/pyrsa*
-        - -usr/bin/pydoc3*
-        - -usr/bin/ucf*
-        - -usr/share/apps
-      cruft_compilers_and_debuggers:
-        - -usr/bin/pdb3*
-        - -usr/lib/gcc
-        - -usr/lib/valgrind
-        - -usr/share/bug
-      cruft_debhelper:
-        - -usr/bin/dh_*
-        - -usr/share/debhelper
-        - -usr/share/dh-python
-        - -usr/share/perl5/Debian
-      cruft_docs:
-        - -usr/share/doc
-        - -usr/share/doc-base
-      cruft_emacs:
-        - -etc/emacs
-        - -usr/lib/emacsen-common
-        - -usr/share/emacs
-        - -var/lib/emacsen-common
-      cruft_fonts:
-        - -etc/fonts
-        - -usr/bin/fc-*
-        - -usr/share/fonts
-      cruft_gnome:
-        - -usr/share/glib-2.0/schemas
-        - -usr/share/GConf
-      cruft_headers:
-        - -usr/include
-        - -usr/share/include
-      cruft_icons:
-        - -usr/share/icons/Adwaita
-        - -usr/share/icons/Humanity*
-        - -usr/share/icons/LoginIcons
-        - -usr/share/icons/ubuntu-mono-*
-      cruft_init:
-        - -etc/init*
-        - -lib/systemd
-        - -sbin/cg*
-        - -usr/lib/systemd
-        - -usr/share/upstart
-        - -var/lib/systemd
-      cruft_lintian:
-        - -usr/share/lintian/overrides
-      cruft_man_pages:
-        - -usr/share/man
-      cruft_meta:
-        - -usr/share/pixmaps
-        - -usr/share/pkgconfig
-      cruft_python_2to3:
-        - -usr/bin/2to3*
-        - -usr/lib/python*/lib2to3
-      cruft_python_distutils:
-        - -usr/lib/python*/distutils
-      cruft_python_idle:
-        - -usr/lib/python*/idlelib
-        - -usr/lib/python*/tkinter
-        - -usr/share/applications/python3.5.desktop
-      cruft_python_pip:
-        - -lib/python*/site-packages/pip
-      cruft_python_tests:
-        - -lib/python*/site-packages/tests
-      cruft_python_venv:
-        - -usr/lib/python*/venv
-      cruft_python_wheel:
-        - -lib/python*/site-packages/wheel*
-      cruft_x11:
-        - -etc/X11
-        - -usr/lib/*/dri
-        - -usr/share/libdrm
-        - -usr/share/X11
-    prime:
-      - $cruft_apport
-      - $cruft_aspell
-      - $cruft_binaries
-      - $cruft_compilers_and_debuggers
-      - $cruft_debhelper
-      - $cruft_docs
-      - $cruft_emacs
-      - $cruft_gnome
-#      - $cruft_fonts
-      - $cruft_headers
-      - $cruft_icons
-      - $cruft_init
-      - $cruft_lintian
-      - $cruft_man_pages
-      - $cruft_meta
-      - $cruft_python_2to3
-      - $cruft_python_distutils
-      - $cruft_python_idle
-      - $cruft_python_pip
-      - $cruft_python_tests
-      - $cruft_python_venv
-      - $cruft_python_wheel
-#      - $cruft_x11
 
-#  create-desktop-files:
-#    plugin: dump
-#    source: snap/scripts
-#    organize:
-#      launcher: bin/launcher
-#    after: [budgie-welcome]
+      mkdir -p $SNAPCRAFT_PART_INSTALL/usr/share/icons/hicolor/
+      cp -a hicolor/* $SNAPCRAFT_PART_INSTALL/usr/share/icons/hicolor/
+      # Modify the icon paths for the snap.
+      mkdir -p $SNAPCRAFT_PART_INSTALL/usr/share/applications/
+      # sed 's|Icon=distributor-logo-ubuntu-budgie|Icon=${SNAP}/usr/share/icons/hicolor/scalable/apps/distributor-logo-ubuntu-budgie\.svg|' desktop/budgie-welcome.desktop > $SNAPCRAFT_PART_INSTALL/usr/share/applications/budgie-welcome.desktop
+      # sed 's|Icon=distributor-logo-ubuntu-budgie|Icon=${SNAP}/usr/share/icons/hicolor/scalable/apps/distributor-logo-ubuntu-budgie\.svg|' desktop/budgie-applets.desktop > $SNAPCRAFT_PART_INSTALL/usr/share/applications/budgie-applets.desktop
+      # sed 's|Icon=distributor-logo-ubuntu-budgie|Icon=${SNAP}/usr/share/icons/hicolor/scalable/apps/distributor-logo-ubuntu-budgie\.svg|' desktop/budgie-themes.desktop > $SNAPCRAFT_PART_INSTALL/usr/share/applications/budgie-themes.desktop
+      # sed 's|Icon=distributor-logo-ubuntu-budgie|Icon=${SNAP}/usr/share/icons/hicolor/scalable/apps/distributor-logo-ubuntu-budgie\.svg|' desktop/budgie-discourse.desktop > $SNAPCRAFT_PART_INSTALL/usr/share/applications/budgie-discourse.desktop
+
+      cp desktop/*.desktop $SNAPCRAFT_PART_INSTALL/usr/share/applications/
+    prime:
+      - usr/bin/
+      - usr/share/budgie-welcome/
+      - usr/share/icons/hicolor/*/apps/distributor-logo-ubuntu-budgie.svg
+      - usr/share/locale/
+      - usr/share/applications/
+      - usr/lib/budgie-welcome/
+      - usr/share/man/man1/budgie-welcome.1
+
+  wrapper:
+    after:
+      - budgie-welcome
+    plugin: dump
+    source: files/
+
+apps:
+  budgie-welcome:
+    command: bin/wrapper $SNAP/usr/bin/budgie-welcome
+    desktop: usr/share/applications/budgie-welcome.desktop
+
+  budgie-applets:
+    command: bin/wrapper $SNAP/usr/bin/budgie-welcome
+    desktop: usr/share/applications/budgie-applets.desktop
+
+  budgie-themes:
+    command: bin/wrapper $SNAP/usr/bin/budgie-welcome
+    desktop: usr/share/applications/budgie-themes.desktop
+
+  budgie-discourse:
+    command: bin/wrapper $SNAP/usr/bin/xdg-open
+    desktop: usr/share/applications/budgie-discourse.desktop

@@ -1,3 +1,4 @@
+# 
 # Translators:
 # George Bungarzescu <george.bungarzescu@gmail.com>, 2019
 # 
@@ -15,17 +16,21 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n==1?0:(((n%100>19)||((n%100==0)&&(n!=0)))?2:1));\n"
 "Report-Msgid-Bugs-To : you@example.com\n"
 
-#: default.html14, 24
-msgid "Default Settings"
-msgstr "Setari implicite"
+#: default.html:14
+msgid "Budgie Themes & Layouts"
+msgstr ""
 
 #: default.html18, 32
 msgid "Switch Appearance"
 msgstr "Modifica modul de afisare"
 
-#: default.html21, 300
+#: default.html21, 413
 msgid "Desktop Layout"
 msgstr "Afisare Desktop"
+
+#: default.html:24
+msgid "Desktop Layouts"
+msgstr ""
 
 #: default.html:33
 msgid ""
@@ -37,65 +42,71 @@ msgstr ""
 "metoda simpla de a schimba felul in care este afisat Desktop-ul (teme, "
 "fonturi, iconite,  fundal)"
 
-#: default.html52, 72, 97, 117, 137, 157, 177, 197, 217, 237, 262, 282
-msgid "Install theme"
-msgstr "Instaleaza tema"
+#: default.html52, 87, 121, 161, 195, 231, 266, 302, 343, 379
+msgid "Install"
+msgstr ""
 
-#: default.html56, 76, 101, 121, 141, 161, 181, 201, 221, 241, 266, 286
+#: default.html58, 65, 92, 99, 126, 133, 166, 173, 201, 208, 236, 243, 272,
+#: 279, 308, 315, 349, 356, 385, 392
+msgid "Apply makeover"
+msgstr ""
+
+#: default.html67, 101, 135, 175, 210, 245, 281, 317, 358, 394
 msgid "Apply theme"
 msgstr "Aplica tema"
 
-#: default.html61, 81, 106, 126, 146, 166, 186, 206, 226, 246, 271, 291, 337
+#: default.html68, 102, 136, 176, 211, 246, 282, 318, 359, 395
+msgid "Apply fonts"
+msgstr ""
+
+#: default.html69, 103, 137, 177, 212, 247, 283, 319, 360, 396
+msgid "Apply icons"
+msgstr ""
+
+#: default.html70, 104, 138, 178, 213, 248, 284, 320, 361, 397
+msgid "Make desktop changes"
+msgstr ""
+
+#: default.html76, 110, 144, 184, 220, 255, 291, 327, 368, 404, 437, 457, 477,
+#: 497, 517, 537, 555
 msgid "Applying Changes..."
 msgstr "Aplica modificari..."
 
-#: default.html:86
+#: default.html:150
 msgid "Arc Design"
 msgstr "Arc Design"
 
-#: default.html:111
+#: default.html:189
 msgid "Material Design (Adapta)"
 msgstr "Material Design (Adapta) "
 
-#: default.html:131
+#: default.html:225
 msgid "Material Design (Vimix)"
 msgstr "Material Design (Vimix) "
 
-#: default.html:151
-msgid "Vertex Design"
-msgstr "Vertex Design "
-
-#: default.html:171
-msgid "Ceti-2 Design"
-msgstr "Ceti-2 Design"
-
-#: default.html191, 211
+#: default.html:260
 msgid "Material Design (Materia)"
 msgstr "Material Design (Materia) "
 
-#: default.html:301
+#: default.html:414
 msgid "Switch the layout of your desktop to suit your workflow."
 msgstr ""
 "Schimba modul de afisare al Desktop-ului in concordanta cu modul tau de "
 "lucru"
 
-#: default.html:305
-msgid "Default"
-msgstr "Implicit"
+#: default.html428, 448, 468, 488, 508, 528
+msgid "Install layout"
+msgstr ""
 
-#: default.html:309
-msgid "Classic Budgie"
-msgstr "Clasic Budgie"
+#: default.html432, 452, 472, 492, 512, 532
+msgid "Apply layout"
+msgstr ""
 
-#: default.html:321
-msgid "Classic GNOME"
-msgstr "Clasic GNOME"
-
-#: default.html:330
+#: default.html:548
 msgid "Restore panels"
 msgstr "Restaurare panouri"
 
-#: default.html:331
+#: default.html:549
 msgid ""
 "Lost your panels while playing with <span name=\"distro-name\"></span>? "
 "Unhappy with your changes to the panel layout? Don't worry. We can help you "
@@ -106,7 +117,7 @@ msgstr ""
 "panourilor? Nu va ingrijorati. Va putem ajuta sa refaceti panourile "
 "originale cu un singur click!"
 
-#: default.html:334
+#: default.html:552
 msgid ""
 "This will undo all changes that you have made on any panel and will reset "
 "back to the initial default panel layout configuration."
@@ -114,6 +125,6 @@ msgstr ""
 "Aceasta operatie va anula toate modificarile pe care le-ati facut la orice "
 "panou si va reseta la modul de afisare initial. "
 
-#: default.html:338
+#: default.html:556
 msgid "Reset Budgie Panel"
 msgstr "resetare Panou Budgie"

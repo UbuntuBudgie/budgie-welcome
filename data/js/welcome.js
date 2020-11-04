@@ -336,25 +336,21 @@ if (current_page == 'gettingstarted.html') {
         }
     }
 
-    function changePage(id, humanText) {
+    function changePage(id) {
         // 'id' is one used for <div>.
-        // 'humanText' is displayed on navigation's sub title.
 
         indexClose();
 
         $('.topicContents').fadeOut();
-        $('#navigation-sub-title').fadeOut();
 
         // Smoothly fade between topics
         setTimeout(function () {
-            $('#navigation-sub-title').html(humanText);
-            $('#navigation-sub-title').fadeIn();
             $('#' + id).fadeIn();
         }, 500);
     }
 
     // Show initial page and index pane on page load
-    changePage('initial', 'Choose a Topic');
+    changePage('initial');
     setTimeout(function () {
         indexOpen();
     }, 500);

@@ -7,61 +7,62 @@
     margin: 2px;
     transition: background 0.2s ease;
   }
-  
+
   .btn-inverse:hover {
     color: white;
     background-color: #5c616c;
   }
-  
+
   .btn-inverse:active {
     background-color: #5294e2;
   }
-  
+
   .text-right {
     text-align: right;
   }
-  
+
   .hidden {
     display: none;
   }
-  
+
   .btn {
     border: 0;
     padding: 0.1rem 0.5rem 0.2rem;
   }
-  
+
   .btn-primary {
     background: #4c8ac9;
     transition: background 0.2s ease;
   }
-  
+
   a.btn-primary.disabled {
     background: lightblue;
   }
-  
+
   .btn-lg {
     line-height: 1.8em;
   }
-  
+
   .code {
       width: 100%;
       padding: 5px;
       background: #eee;
       font-weight: bold;
   }
-  
+
   a:not([href]):not([tabindex]),
   a:focus:not([href]):not([tabindex]),
   a:hover:not([href]):not([tabindex]) {
     color: #337ab7
   }
-  
+
   a:not([href]):not([tabindex]).btn,
   a:focus:not([href]):not([tabindex]).btn,
   a:hover:not([href]):not([tabindex]).btn {
-    color: white
+    color: white;
+    overflow: hidden;
   }
-  
+
   .text-md-justify {
     text-align: justify
   }
@@ -85,4 +86,3 @@
   .hvr-shadow:hover, .hvr-shadow:focus, .hvr-shadow:active {
     box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
   }
-  

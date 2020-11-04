@@ -1,0 +1,268 @@
+# 
+# Translators:
+# Ryo Nakano, 2019
+# FuRuYa7 <goo.sirocat47@gmail.com>, 2019
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Budgie Welcome\n"
+"POT-Creation-Date: 2016-02-27 12:48+0100\n"
+"PO-Revision-Date: 2017-03-15 13:49+0000\n"
+"Last-Translator: FuRuYa7 <goo.sirocat47@gmail.com>, 2019\n"
+"Language-Team: Japanese (https://www.transifex.com/ubuntu-budgie/teams/72251/ja/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Report-Msgid-Bugs-To : you@example.com\n"
+
+#: features.html:13
+msgid "Features"
+msgstr "機能"
+
+#: features.html:18
+msgid "Modern and Full-Featured"
+msgstr "モダンでフル機能"
+
+#: features.html:19
+msgid ""
+"<span name=\"distro-name\"></span> is a modern computer operating system, "
+"with an attractive and easy to understand user interface. Its update manager"
+" keeps not only the operating system itself, but all of its installed "
+"applications updated to the current release. The operating system is more "
+"secure, and better supported than operating systems that come pre-installed "
+"on most home computer hardware today."
+msgstr ""
+"<span name=\"distro-"
+"name\"></span>は、魅力的でわかりやすいユーザーインターフェイスを備えた最新のコンピュータのオペレーティングシステムです。 "
+"アップデートマネージャは、オペレーティングシステム自体だけでなく、インストールされているすべてのアプリケーションを現在のリリースに更新します。 "
+"オペレーティングシステムは、今日のほとんどの家庭で使われるコンピュータハードウェアに事前にインストールされているオペレーティングシステムよりも安全であり、サポートも優れています。"
+
+#: features.html:29
+msgid "Pre-Configured Yet Flexible"
+msgstr "事前設定済みで柔軟"
+
+#: features.html:35
+msgid ""
+"Using <span name=\"distro-name\"></span> provides you with the freedom to "
+"run a complete, full-featured operating system, pre-configured with most, if"
+" not all, of the applications you will need for your daily computing - or to"
+" change anything about the way it looks, the way it works, or the "
+"applications it runs to suit your taste."
+msgstr ""
+"<span name=\"distro-"
+"name\"></span>を使用すると、毎日のコンピューティングに必要なほとんどのアプリケーションで事前に設定された完全なフル機能のオペレーティングシステムを実行したり、見た目、動作、または実行するアプリケーションを好みに合わせて変更したりできます。"
+
+#: features.html:43
+msgid "Built-In Security"
+msgstr "組み込みのセキュリティ"
+
+#: features.html:49
+msgid ""
+"<span name=\"distro-name\"></span> is designed with security in mind. Unlike"
+" operating systems that update only once a month, <span name=\"distro-"
+"name\"></span> receives updates continuously. The updates include security "
+"patches for <span name=\"distro-name\"></span> and all of its components. "
+"Security updates for all of its installed applications are also provided on "
+"the same schedule. This ensures that you have the latest protection for all "
+"of your computer's software -- as soon as it's available!"
+msgstr ""
+"<span name=\"distro-"
+"name\"></span>はセキュリティを考慮して設計されています。月に1回だけ更新するオペレーティングシステムとは異なり、<span name"
+"=\"distro-name\"></span>は更新を継続的に受け取ります。更新には、<span name=\"distro-"
+"name\"></span> "
+"およびそのすべてのコンポーネントのセキュリティパッチが含まれます。インストールされているすべてのアプリケーションのセキュリティ更新プログラムも同じスケジュールで提供されます。これにより、コンピューターのすべてのソフトウェアが利用可能になり次第、最新の保護が確保されます。"
+
+#: features.html:65
+msgid ""
+"<span name=\"distro-name\"></span> can get viruses and other infections... "
+"but it is rare. Rapid and timely updates make it difficult for viruses, root"
+" kits and other malware to be installed and run without conscious "
+"intervention by you, the user. Even if you do accidentally invite in an "
+"infection, chances are it's designed to attack Windows and won't do much, if"
+" any damage to <span name=\"distro-name\"></span>."
+msgstr ""
+"<span name=\"distro-name\"></span>はウイルスやその他の感染にかかる可能性がありますが、まれです。 "
+"迅速でタイムリーな更新は、ユーザーや、ユーザーの意識的な介入なしに、ウイルス、ルートキット、その他のマルウェアをインストールして実行することを困難にします。誤って感染したとしても、おそらく、Windowsを攻撃するように設計されており、<span"
+" name=\"distro-name\"></span>にダメージがあったとしても、それほど多くのことをしません。"
+
+#: features.html:80
+msgid ""
+"Another significant security feature of <span name=\"distro-name\"></span> "
+"is that its users are not superusers by default. Superusers (also known as "
+"\"root\" users or administrators) on any computer system have permission to "
+"do anything they want, including the ability to damage the system."
+msgstr ""
+"<span name=\"distro-"
+"name\"></span>のもう1つの重要なセキュリティ機能は、そのユーザーがデフォルトでスーパーユーザーではないことです。 "
+"任意のコンピュータシステムのスーパーユーザー（「ルート」ユーザーまたは管理者とも呼ばれます）には、システムを損傷するような機能など、必要なすべての操作を行う権限があります。"
+
+#: features.html:84
+msgid ""
+"For example, other operating systems look at the name of a file to determine"
+" which program should open it, then immediately attempt to open it. That "
+"design makes it easy for an intruder to attack a computer. <span name"
+"=\"distro-name\"></span> opens a file based on what the file is, not based "
+"on its name. So even if a malicious program disguises its identity by using "
+"the name \"Last Will and Testament.txt\" <span name=\"distro-name\"></span> "
+"will recognize the file as a program. The system provides a warning that the"
+" file is not a text file, but that it is a program that will be run if you "
+"give it permission to continue. To be extra secure, <span name=\"distro-"
+"name\"></span> requires you to provide your administrator password before "
+"that permission is granted. Every single time."
+msgstr ""
+"例えば、他のオペレーティングシステムは、ファイルの名前を見て、どのプログラムを開く必要があるかを判断し、すぐにそれを開こうとします。この設計により、侵入者はコンピューターを簡単に攻撃できます。<span"
+" name=\"distro-"
+"name\"></span>は、名前ではなくファイルの内容に基づいてファイルを開きます。そのため、悪意のあるプログラムが「Last Will and "
+"Testament.txt」という名前を使用してその身元を偽装しても、<span name=\"distro-"
+"name\"></span>はファイルをプログラムとして認識します。システムは、ファイルがテキストファイルではなく、続行する許可を与えた場合に実行されるプログラムであることを警告します。セキュリティを強化するために、<span"
+" name=\"distro-name\"></span>では、許可が付与される前に管理者パスワードを入力する必要があります。毎回です。"
+
+#: features.html:101
+msgid "Powerful Applications"
+msgstr "強力なアプリケーション"
+
+#: features.html:102
+msgid ""
+"While budgie-desktop provides the essential user interface to control and "
+"use a computer, <span name=\"distro-name\"></span> adds a collection of "
+"additional applications to turn your computer into a truly powerful "
+"workstation."
+msgstr ""
+"budgie-desktopはコンピュータを制御および使用するための重要なユーザーインターフェースを提供しますが、<span name"
+"=\"distro-"
+"name\"></span>は、追加のアプリケーションのコレクションを追加して、コンピュータを真に強力なワークステーションに変えます。"
+
+#: features.html:107
+msgid "Productivity"
+msgstr "生産性"
+
+#: features.html:117
+msgid ""
+"<span class=\"1804-only\">Chromium</span> <span "
+"class=\"after1810\">Firefox</span> delivers safe, easy web browsing. A "
+"familiar user interface, enhanced security features including protection "
+"from online identity theft, and an integrated search to let you get the most"
+" out of the web."
+msgstr ""
+"<span class=\"1804-only\">Chromium</span> <span "
+"class=\"after1810\">Firefox</span> は、安全で簡単なWebブラウジングを実現します。 "
+"使い慣れたユーザーインターフェイス、オンラインの個人情報の盗難からの保護などの強化されたセキュリティ機能、およびWebを最大限に活用できる統合検索など。"
+
+#: features.html:132
+msgid ""
+"LibreOffice is a full-featured office productivity suite that provides a "
+"near drop-in replacement for Microsoft(R) Office; its clean interface and "
+"powerful tools let you unleash your creativity and grow your productivity. "
+"LibreOffice embeds several applications that make it the most powerful Free "
+"and Open Source Office suite on the market:"
+msgstr ""
+"LibreOffice はフル機能のオフィススイートであり、Microsoft(R) Office に近い代替となるアプリです。 "
+"そのクリーンなインターフェイスと強力なツールにより、創造性を解き放ち、生産性を向上させることができます。 LibreOffice "
+"には、市場で最も強力な無料およびオープンソースのオフィススイートとなるいくつかのアプリケーションが組み込まれています。"
+
+#: features.html:139
+msgid "Writer, the word processor."
+msgstr "Writer、ワープロ。"
+
+#: features.html:140
+msgid "Calc, the spreadsheet application."
+msgstr "Calc、スプレッドシートアプリケーション。"
+
+#: features.html:141
+msgid "Impress, the presentation engine."
+msgstr "Impress、プレゼンテーションエンジン。"
+
+#: features.html:142
+msgid "Draw, the drawing and flowcharting application"
+msgstr "Draw、描画およびフローチャート作成アプリケーション"
+
+#: features.html:143
+msgid "Math, for editing mathematics."
+msgstr "Math、数学の編集用。"
+
+#: features.html:150
+msgid "Entertainment"
+msgstr "エンターテインメント"
+
+#: features.html:156
+msgid ""
+"Rhythmbox is a very easy to use music playing and management program which "
+"supports a wide range of audio formats (including mp3 and ogg). Originally "
+"inspired by Apple's iTunes, the current version also supports Internet "
+"Radio, iPod integration and generic portable audio player support, Audio CD "
+"burning, Audio CD playback, music sharing, and Podcasts."
+msgstr ""
+"Rhythmbox は非常に使いやすい音楽再生および管理ソフトで、さまざまなオーディオ形式（mp3やoggを含む）をサポートしています。 "
+"もともとAppleのiTunesに触発された現在のバージョンは、インターネットラジオ、iPodの統合、汎用ポータブルオーディオプレーヤーのサポート、オーディオCDの書き込み、オーディオCDの再生、音楽の共有、ポッドキャストもサポートしています。"
+
+#: features.html:170
+msgid ""
+"<span class=\"before1710\">GNOME Photos</span> <span "
+"class=\"1710\">gThumb</span> is a digital photo organizer. It allows you to "
+"import photos from disk or camera, organize them in various ways, view them "
+"in full-window or fullscreen mode, and export them to share with others. It "
+"is able to manage a lot of different image formats."
+msgstr ""
+"<span class=\"before1710\">GNOME Photos</span> <span "
+"class=\"1710\">gThumb</span> はデジタル写真のオーガナイザーです。 "
+"ディスクまたはカメラから写真をインポートし、さまざまな方法で整理し、フルウィンドウまたはフルスクリーンモードで表示し、エクスポートして他のユーザーと共有できます。"
+" さまざまな画像形式を管理できます。"
+
+#: features.html:184
+msgid ""
+"<span class=\"before2004\">GNOME MPV</span> <span "
+"class=\"after1910\">Celluloid</span> is a media player. It plays MPEG, "
+"MPEG-2, MPEG-4, DivX, MOV, WMV, QuickTime, WebM, FLAC, MP3, Ogg/Vorbis "
+"files, DVDs, VCDs, podcasts, and multimedia streams from various network "
+"sources."
+msgstr ""
+
+#: features.html:196
+msgid "... And a whole lot more!"
+msgstr "...そして、さらにたくさん！"
+
+#: features.html:198
+msgid ""
+"Naturally you'll also find a document/photo scanner and printer management "
+"all included in <span name=\"distro-name\"></span>. And this is just the "
+"start. The <a onclick=\"cmd('software-center');cmd('')\">GNOME Software</a> "
+"includes best-in-class applications for most tasks and a single click will "
+"give you access to thousands of applications suitable for just about any "
+"professional or recreational pursuit."
+msgstr ""
+"当然、ドキュメント/フォトスキャナとプリンタ管理もすべて<span name=\"distro-"
+"name\"></span>に含まれています。そして、これはほんの始まりです。<a onclick=\"cmd('software-"
+"center');cmd('')\">GNOMEソフトウェア</a> "
+"には、ほとんどのタスクに対応するクラス最高のアプリケーションが含まれており、1回クリックするだけで、ほぼすべての専門的または娯楽的な目的に適した数千のアプリケーションにアクセスできます。"
+
+#: features.html:208
+msgid "Games"
+msgstr "ゲーム"
+
+#: features.html:214
+msgid ""
+"In the last couple of years Linux has become a first class gaming platform "
+"thanks to <a onclick=\"cmd('link?https://www.valvesoftware.com')\">Valve</a>"
+" bringing their <a "
+"onclick=\"cmd('link?https://store.steampowered.com')\">Steam</a> platform to"
+" Linux. At the time of writing Steam has more than 2000 high quality indie "
+"and AAA titles available for Linux. <span name=\"distro-name\"></span> is "
+"fully compatible with Steam for Linux."
+msgstr ""
+"過去数年で、<a onclick=\"cmd('link?https://www.valvesoftware.com')\">Valve</a> が<a"
+" onclick=\"cmd('link?https://store.steampowered.com')\">Steam</a> "
+"プラットフォームをLinuxに導入したおかげで、Linuxはファーストクラスのゲームプラットフォームになりました。執筆時点で、SteamにはLinuxで利用可能な2000以上の高品質のインディおよびAAAタイトルがあります。<span"
+" name=\"distro-name\"></span> はSteam for Linuxと完全に互換性があります。"
+
+#: features.html:224
+msgid ""
+"While Steam is a major step forward for gaming on Linux, there are also many"
+" high quality and enjoyable Open Source games titles available for <span "
+"name=\"distro-name\"></span>. It doesn't matter if you like flight "
+"simulators, motor racing, first person shooters, jump and run or card games,"
+" you'll find something to keep you entertained."
+msgstr ""
+"SteamはLinuxでのゲームの大きな前進ですが、<span name=\"distro-"
+"name\"></span>で利用できる高品質で楽しいオープンソースゲームタイトルも数多くあります。フライトシミュレーター、モーターレース、一人称シューティングゲーム、ジャンプアンドラン、またはカードゲーム、あなたを楽しませ続ける何かを見つけるでしょう。"

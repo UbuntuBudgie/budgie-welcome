@@ -1,15 +1,25 @@
 #!/bin/sh
-set -e
 
-# Run any commands needed to setup the snap.
-# This could be downloading a list of dynamic configuration options or creating a database.
+cat << POLICY > /usr/share/polkit-1/actions/org.budgie.welcome.policy
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE policyconfig PUBLIC
+ "-//freedesktop//DTD PolicyKit Policy Configuration 1.0//EN"
+ "http://www.freedesktop.org/standards/PolicyKit/1/policyconfig.dtd">
+<policyconfig>
+  <vendor>ubuntu-budgie</vendor>
+  <vendor_url>http://hal.freedesktop.org/docs/PolicyKit/</vendor_url>
 
-# Enable autostart by default. Requires classic confinement.
-mkdir -p /etc/skel/.config/autostart/
-cp $SNAP/usr/share/applications/budgie-welcome.desktop /etc/skel/.config/autostart/
-sed -i 's#budgie-welcome#ubuntu-budgie-welcome.budgie-welcome#' /etc/skel/.config/autostart/budgie-welcome.desktop
-# Get polkit into the real file system
+  <action id="org.budgie.welcome">
+    <description>Ubuntu Budgie privileged actions utility</description>
+    <message>Helper utility that will allow budgie-welcome to perform privileged actions</message>
+    <icon_name>system-run</icon_name>
+    <defaults>
+      <allow_any>no</allow_any>
+      <allow_inactive>no</allow_inactive>
+      <allow_active>yes</allow_active>
+    </defaults>
+    <annotate key="org.freedesktop.policykit.exec.path">$SNAP/usr/lib/budgie-welcome/budgie-welcome-privileged-actions</annotate>
+  </action>
+</policyconfig>
+POLICY
 
-cp -r $SNAP/usr/share/polkit-1/actions/* /usr/share/polkit-1/actions/
-sed -i 's#<annotate key="org.freedesktop.policykit.exec.path">/usr/lib/budgie-welcome/budgie-welcome-privileged-actions</annotate>#<annotate key="org.freedesktop.policykit.exec.path">'"$SNAP"'/usr/lib/budgie-welcome/budgie-welcome-privileged-actions</annotate>#' /usr/share/polkit-1/actions/org.budgie.welcome.policy
-exit 0

@@ -1,12 +1,13 @@
+# 
 # Translators:
-# Nikola Stojic <nikolas@grindam.com>, 2019
+# Nikola Stojic <nikolas@grindam.com>, 2020
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: Budgie Welcome\n"
 "POT-Creation-Date: 2016-02-27 12:48+0100\n"
 "PO-Revision-Date: 2017-03-15 13:49+0000\n"
-"Last-Translator: Nikola Stojic <nikolas@grindam.com>, 2019\n"
+"Last-Translator: Nikola Stojic <nikolas@grindam.com>, 2020\n"
 "Language-Team: Serbian (Serbia) (https://www.transifex.com/ubuntu-budgie/teams/72251/sr_RS/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -32,7 +33,7 @@ msgid ""
 "secure, and better supported than operating systems that come pre-installed "
 "on most home computer hardware today."
 msgstr ""
-"<span name=\"distro-name\"></span>je moderan operativni sistem, sa "
+"<span name=\"distro-name\"></span> je moderan operativni sistem, sa "
 "atraktivnim i prepoznatljivim interfejsom. Njegov menadžer za ažuriranje ne "
 "ažurira samo sistem već i sve instalirane aplikacije sa najnovijom dostupnom"
 " verzijom. Operativni sistem na taj način je bezbedniji i bolje podržan nego"
@@ -58,7 +59,7 @@ msgstr ""
 
 #: features.html:43
 msgid "Built-In Security"
-msgstr "Ugrađjena bezbednost"
+msgstr "Ugrađena bezbednost"
 
 #: features.html:49
 msgid ""
@@ -87,12 +88,12 @@ msgid ""
 "infection, chances are it's designed to attack Windows and won't do much, if"
 " any damage to <span name=\"distro-name\"></span>."
 msgstr ""
-"<span name=\"distro-name\"></span> Može biti meta virusa i drugih "
+"<span name=\"distro-name\"></span> može biti meta virusa i drugih "
 "infekcija.... što je retko. Rapidno ažuriranje čini situaciju otežanu za "
 "viruse, rootkitove, i durge oblike malware-a da budu instalirani i pokretuti"
 " bez interfencije korisnika. Čak i da aktivirate infekciju, šanse su da je "
-"dizajnirana da napadne Windows te neće naneti mnogo ili nikakvu štetu <span "
-"name=\"distro-name\"></span>."
+"dizajnirana da napadne Windows te neće naneti ogromnu ili bilo kakvu štetu "
+"<span name=\"distro-name\"></span>."
 
 #: features.html:80
 msgid ""
@@ -228,23 +229,25 @@ msgstr ""
 "pregledate ih preko celo ekrana, i eksportujete da biste delili  sa drugima."
 " "
 
-#: features.html:185
+#: features.html:184
 msgid ""
-"<span class=\"official-only\">GNOME MPV</span> <span class=\"unofficial-"
-"only\">GNOME Videos</span> is a media player. It plays MPEG, MPEG-2, MPEG-4,"
-" DivX, MOV, WMV, QuickTime, WebM, FLAC, MP3, Ogg/Vorbis files, DVDs, VCDs, "
-"podcasts, and multimedia streams from various network sources."
+"<span class=\"before2004\">GNOME MPV</span> <span "
+"class=\"after1910\">Celluloid</span> is a media player. It plays MPEG, "
+"MPEG-2, MPEG-4, DivX, MOV, WMV, QuickTime, WebM, FLAC, MP3, Ogg/Vorbis "
+"files, DVDs, VCDs, podcasts, and multimedia streams from various network "
+"sources."
 msgstr ""
-"<span class=\"official-only\">GNOME MPV</span><span class=\"unofficial-"
-"only\">Gnome Video</span> je media plejer. Pušta MPEG, MPEG-2, MPEG-4, DivX,"
-" MOV, WMV, QuickTime, WebM, FLAC, MP3, Ogg/Vorbis fajlove, DVDs, VCDs, "
-"podkastove, i multimeedijalne prenose sa različitih izvora na netu."
+"<span class=\"before2004\">GNOME MPV</span><span "
+"class=\"after1910\">Celluloid</span> je medijski player. Podržava MPEG, "
+"MPEG-2, MPEG-4, DivX, MOV, WMV, QuickTime, WebM, FLAC, MP3, Ogg/Vorbis "
+"fajlove, DVD, VCD, puštanje podkastova i multimedijalnih prenosa sa "
+"različitih mrežnih lokacija."
 
-#: features.html:197
+#: features.html:196
 msgid "... And a whole lot more!"
 msgstr "... I mnogo više!"
 
-#: features.html:199
+#: features.html:198
 msgid ""
 "Naturally you'll also find a document/photo scanner and printer management "
 "all included in <span name=\"distro-name\"></span>. And this is just the "
@@ -253,18 +256,18 @@ msgid ""
 "give you access to thousands of applications suitable for just about any "
 "professional or recreational pursuit."
 msgstr ""
-"Takođje, naćićete dokument i skener i softver za menadžment štampača koji su"
-" uključeni u <span name=\"distro-name\"></span>. I to je samo početak. <a "
+"Takođe, naćićete dokument/skener, softver za menadžment štampača koji su "
+"uključeni u <span name=\"distro-name\"></span>. I to je samo početak. <a "
 "onclick=\"cmd('software-center');cmd('')\">Gnome Softver</a> uključuje "
 "najbolje aplikacije koje su napravljeni za svaki zadatak, i sa samo jednim "
 "klikom će vam dati pristup preko 1000 dostupnih aplikacije primerenih za "
 "bilo koji profesionalni ili kućni rad."
 
-#: features.html:209
+#: features.html:208
 msgid "Games"
 msgstr "Igre"
 
-#: features.html:215
+#: features.html:214
 msgid ""
 "In the last couple of years Linux has become a first class gaming platform "
 "thanks to <a onclick=\"cmd('link?https://www.valvesoftware.com')\">Valve</a>"
@@ -283,7 +286,7 @@ msgstr ""
 "AAA igara koje su dostupne za Linux. <span name=\"distro-name\"></span> je u"
 " celini kompatibilan sa Steamom za Linux."
 
-#: features.html:225
+#: features.html:224
 msgid ""
 "While Steam is a major step forward for gaming on Linux, there are also many"
 " high quality and enjoyable Open Source games titles available for <span "
