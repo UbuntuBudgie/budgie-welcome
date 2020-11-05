@@ -278,6 +278,10 @@ class AppView(WebKit2.WebView):
             else:
                 app.update_page(".showhide", 'hide')
 
+        if current_page == 'gaming':
+            # do something
+            print("the game page")
+
         ### All pages with install/removal ###
         if current_page in ['gettingstarted', 'default', 'recommendations', 'budgie-applets']:
             app.update_page('[id$=install]', 'hide')

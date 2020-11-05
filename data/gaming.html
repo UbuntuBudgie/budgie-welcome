@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/material-icons.css" rel="stylesheet" media="screen">
+    <link href="css/animate.css" rel="stylesheet" media="screen">
+    <link href="css/welcome.css" rel="stylesheet" media="screen">
+  </head>
+
+  <body class="backdrop-simple fade fade-1s">
+    <div id="wrapper">
+      <div id="title-inject">&zwnj;Gaming&zwnj;</div>
+      <div id="content" class="container entire-page-fade">
+        <div class="row">
+          <div class="col-md-12">
+            <!--Body content-->
+            <h2>&zwnj;Get prerequisites&zwnj;</h2>
+            <p>&zwnj;First, you'll need a gaming client. Click on "install Lutris", to get this gaming client. Read further
+              in the Lutris section to install game and Controller sub-section for configuring controllers.&zwnj;</p>
+            <div class="alert alert-warning offline">
+              <h5>&zwnj;It appears you are not connected to the Internet. Please check your connection to access this
+                content.&zwnj;</h5>
+              <div id="reconnectFailed">
+                <p><i class="material-icons">&#xE002;</i>&zwnj;Sorry, Welcome was unable to establish a
+                  connection.&zwnj;</p>
+              </div>
+              <a onclick="reconnectTimeout();" class="btn btn-warning"><i class="material-icons">&#xE5D5;</i>&zwnj;Retry&zwnj;</a>
+            </div>
+            <div align="center">
+              <a class="btn btn-inverse" onclick="cmd('link?https://discourse.ubuntubudgie.org/');cmd('')">
+                <img class="button-icon" src="img/distro-icon-inverted.svg">&nbsp;
+                <span class="button-text">Install Lutris</span>
+              </a>
+            </div>
+            <hr />
+            <p>&zwnj;You would want that your drivers (especially, graphics and audio) are up-to-date.&zwnj;</p>
+            <div align="center">
+
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="row">
+          <div class="col-md-12">
+            <h2>&zwnj;Lutris (Game Client)&zwnj;</h2>
+            <p>&zwnj;Here are the instructions to add a game in Lutris:&zwnj;</p>
+            <ul> 
+              <li><a>Step 1</a></li>
+              <li><a>Step 2</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <div class="row">
+          <div class="col-md-12">
+            <h2>&zwnj;Controllers&zwnj;</h2>
+            <p>&zwnj;If you have a controller, you might want "sc-controller" to configure your controller. Please understand
+              that a better alternative is being searched.&zwnj;</p>
+            <div class="alert alert-warning offline">
+              <h5>&zwnj;It appears you are not connected to the Internet. Please check your connection to access this
+                content.&zwnj;</h5>
+              <div id="reconnectFailed">
+                <p><i class="material-icons">&#xE002;</i>&zwnj;Sorry, Welcome was unable to establish a
+                  connection.&zwnj;</p>
+              </div>
+              <a onclick="reconnectTimeout();" class="btn btn-warning"><i class="material-icons">&#xE5D5;</i>&zwnj;Retry&zwnj;</a>
+            </div>
+            <div align="center">
+              <a class="btn btn-inverse" onclick="cmd('link?https://discourse.ubuntubudgie.org/');cmd('')">
+                <img class="button-icon" src="img/distro-icon-inverted.svg">&nbsp;
+                <span class="button-text">Install sc-controller</span>
+              </a>
+            </div>
+            <div> Add about sc-controller here </div>
+          </div>
+        </div> 
+      </div> <!-- End of Content -->
+    </div> <!-- End of Wrapper -->
+
+    <script src="js/jquery-2.1.4.js"></script>
+    <script src="js/tether.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/janimate.js"></script>
+    <script src="js/confetti.js"></script> <!-- Confetti only appears on special events -->
+    <script src="js/welcome.js"></script>
+  </body>
+</html>
