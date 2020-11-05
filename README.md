@@ -18,6 +18,8 @@ https://www.transifex.com/ubuntu-budgie/budgie-welcome/
 sudo apt install gir1.2-webkit2-4.0 python3-notify2 node-uglify sassc
 git clone https://github.com/UbuntuBudgie/budgie-welcome.git
 
+cd budgie-welcome
+
 uglifyjs -o data/js/bootstrap.min.js data/js/bootstrap.js
 uglifyjs -o data/js/baguetteBox.min.js data/js/baguetteBox.js
 uglifyjs -o data/js/popper.min.js data/js/popper.js
