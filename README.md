@@ -15,12 +15,14 @@ https://www.transifex.com/ubuntu-budgie/budgie-welcome/
 ### Installation
 
 ```sh
-sudo apt install gir1.2-webkit2-4.0 python3-notify2 node-uglify
+sudo apt install gir1.2-webkit2-4.0 python3-notify2 node-uglify sassc
 git clone https://github.com/UbuntuBudgie/budgie-welcome.git
 
 uglifyjs -o data/js/bootstrap.min.js data/js/bootstrap.js
 uglifyjs -o data/js/baguetteBox.min.js data/js/baguetteBox.js
 uglifyjs -o data/js/popper.min.js data/js/popper.js
+
+./sassc-compile.sh
 ```
 
 ### Testing
@@ -39,11 +41,6 @@ To test a language or locale
     ./budgie-welcome --locale=pl
     
 change "pl" to your language i18n shortcode
-
-### Compile scss files
-```sh
- ./sassc-compile.sh
-```
 
 ### Screenshot
 #### Live session
