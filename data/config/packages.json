@@ -7,7 +7,7 @@
       }
     },
     "steam": {
-      "packages": ["libgl1-mesa-dri:amd64", "libgl1-mesa-dri:i386", "libgl1-mesa-glx:amd64", "libgl1-mesa-glx:i386", "steam-launcher"],
+      "packages": ["steam-launcher"],
       "repos": {
         "all": ["deb [arch=amd64,i386] http://repo.steampowered.com/steam/ precise steam"]
       },
