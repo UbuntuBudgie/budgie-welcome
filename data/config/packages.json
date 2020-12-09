@@ -305,7 +305,7 @@
         "eoan": ["universe"],
         "focal": ["universe"],
         "groovy": ["universe"],
-        "hirsute": ["ppa:ubuntubudgie/backports"]
+        "hirsute": ["universe"]
       }
     },
     "weathershow-applet": {
@@ -754,7 +754,7 @@
         "eoan": ["universe", "ppa:ubuntubudgie/backports"],
         "focal": ["universe", "ppa:ubuntubudgie/backports"],
         "groovy": ["universe", "ppa:ubuntubudgie/backports"],
-        "hirsute": ["ppa:ubuntubudgie/backports"]
+        "hirsute": ["universe", "ppa:ubuntubudgie/backports"]
       }
     },
     "material-materia-theme": {
@@ -772,7 +772,7 @@
         "eoan": ["universe", "ppa:numix/ppa"],
         "focal": ["universe", "ppa:numix/ppa"],
         "groovy": ["universe", "ppa:numix/ppa"],
-        "hirsute": ["ppa:ubuntubudgie/backports"]
+        "hirsute": ["universe", "ppa:numix/ppa"]
       }
     },
     "vertex-theme": {
@@ -793,7 +793,7 @@
         "eoan": ["universe", "ppa:ubuntubudgie/backports"],
         "focal": ["universe", "ppa:ubuntubudgie/backports"],
         "groovy": ["universe", "ppa:ubuntubudgie/backports"],
-        "hirsute": ["ppa:ubuntubudgie/backports"]
+        "hirsute": ["universe", "ppa:ubuntubudgie/backports"]
       }
     },
     "ant-theme": {
@@ -805,7 +805,7 @@
         "eoan": ["universe", "ppa:ubuntubudgie/backports"],
         "focal": ["universe", "ppa:ubuntubudgie/backports"],
         "groovy": ["universe", "ppa:ubuntubudgie/backports"],
-        "hirsute": ["ppa:ubuntubudgie/backports"]
+        "hirsute": ["universe", "ppa:ubuntubudgie/backports"]
       }
     },
     "plata-theme": {
@@ -817,7 +817,7 @@
         "eoan": ["universe", "ppa:tista/plata-theme"],
         "focal": ["universe", "ppa:tista/plata-theme"],
         "groovy": ["universe", "ppa:tista/plata-theme"],
-        "hirsute": ["ppa:ubuntubudgie/backports"]
+        "hirsute": ["universe", "ppa:tista/plata-theme"]
       }
     },
     "mojave-theme": {
@@ -825,7 +825,7 @@
       "repos": {
         "focal": ["universe","ppa:ubuntubudgie/backports"],
         "groovy": ["universe","ppa:ubuntubudgie/backports"],
-        "hirsute": ["ppa:ubuntubudgie/backports"]
+        "hirsute": ["universe", "ppa:ubuntubudgie/backports"]
       }
     }
   }
