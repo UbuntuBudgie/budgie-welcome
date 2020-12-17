@@ -89,6 +89,29 @@
                   </div>
                   <hr/>
                </div>
+               <div class="col-md-6 clipboard-applet">
+                  <br>
+                  <h2><a onclick="cmd('link?https://github.com/prateekmedia/budgie-clipboard-applet')"><span class="material-icons">help</span></a>&zwnj;Clipboard Applet&zwnj;</h2>
+                  <div class="card card-block">
+                     <div class="card-image text-md-center">
+                        <a href="img/screenshots/clipboard-applet.jpg" data-toggle="lightbox"><img src="img/screenshots/clipboard-applet.jpg" style="width: auto; max-height: 128px" /></a>
+                     </div>
+                     <p class="card-text">&zwnj;A clipboard manager applet that can help you to store and manage clipboard content.&zwnj;</p>
+                  </div>
+                  <div class="text-md-right">
+                     <a id="clipboard-applet-remove" class="btn btn-danger" onclick="cmd('remove?clipboard-applet');cmd('')">
+                     <span class="material-icons">&#xE872;</span><span class="button-text">&zwnj;Remove&zwnj;</span>
+                     </a>
+                     <a id="clipboard-applet-install" class="btn btn-success hvr-shadow" onclick="cmd('install?clipboard-applet');cmd('')"> &nbsp;
+                     <span class="material-icons">&#xE2C0;</span>&zwnj;Install Applet&zwnj;&nbsp;
+                     </a>
+                     <span id="clipboard-applet-status" class="hidden">
+                     <img src="img/welcome/processing.gif" width="24px" height="24px" /> &zwnj;Applying Changes...&zwnj;
+                     </span>
+                     <p id="clipboard-applet-instruction" class="hidden"><small>&zwnj;Logout and login after installing applets. From the menu - choose Budgie Desktop Settings and choose the Panel to add and configure applets.&zwnj;</small></p>
+                  </div>
+                  <hr/>
+               </div>
                <div class="col-md-6 calendar-applet">
                   <br>
                   <h2><a onclick="cmd('link?https://github.com/danielpinto8zz6/budgie-calendar-applet')"><span class="material-icons">help</span></a>&zwnj;Calendar Applet&zwnj;</h2>

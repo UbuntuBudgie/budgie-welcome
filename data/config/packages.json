@@ -35,6 +35,14 @@
         "hirsute": ["ppa:ubuntubudgie/backports"]
       }
     },
+    "clipboard-applet": {
+      "packages": ["budgie-clipboard-applet"],
+      "repos": {
+        "focal": ["ppa:ubuntubudgie/backports"],
+        "groovy": ["ppa:ubuntubudgie/backports"],
+        "hirsute": ["ppa:ubuntubudgie/backports"]
+      }
+    },
     "calendar-applet": {
       "packages": ["budgie-calendar-applet"],
       "repos": {
