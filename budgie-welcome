@@ -1450,8 +1450,12 @@ class SystemState(object):
             self.graphics_vendor = arg.graphics_vendor
 
         self.graphics_grep = repr(output)
-        self.graphics_grep = self.graphics_grep.split("controller: ", 1)[1]
-        self.graphics_grep = self.graphics_grep.split("\\n", 1)[0]
+        self.graphics_grep = self.graphics_grep.split("controller: ", 1)
+        if len(self.graphics_grep) >= 2:
+            self.graphics_grep = self.graphics_grep[1]
+            self.graphics_grep = self.graphics_grep.split("\\n", 1)[0]
+        else:
+            self.graphics_grep = "Unknown"
         dbg.stdout('Specs', 'Detected: ' + str(self.graphics_grep), 1, 2)
 
     # Collect basic system information

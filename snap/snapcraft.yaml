@@ -1,5 +1,5 @@
 name: ubuntu-budgie-welcome
-version: '0.13.3'
+version: '0.13.4'
 summary: Welcome screen to greet new Ubuntu Budgie users on their first login.
 description: |
   The ubuntu-budgie-welcome application was designed to greet a new user at the
@@ -11,6 +11,9 @@ description: |
 grade: stable
 confinement: classic
 base: core18
+
+# this line enables LZO compression for the snap
+compression: lzo
 
 apps:
   budgie-welcome:
