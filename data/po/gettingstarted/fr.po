@@ -12,13 +12,14 @@
 # a270031086f2a0d3514bc0cb507b48f6, 2019
 # Jean-Elie ARGYRE <remy.argyre@gmail.com>, 2019
 # Luis Forman <lf@lfsqr.co>, 2020
+# wilmouths, 2021
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: Budgie Welcome\n"
 "POT-Creation-Date: 2016-02-27 12:48+0100\n"
 "PO-Revision-Date: 2017-03-15 13:49+0000\n"
-"Last-Translator: Luis Forman <lf@lfsqr.co>, 2020\n"
+"Last-Translator: wilmouths, 2021\n"
 "Language-Team: French (https://www.transifex.com/ubuntu-budgie/teams/72251/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -441,6 +442,12 @@ msgid ""
 "power users who know how they'd like to layout their disks. This method "
 "makes changes to partitions prior to installation."
 msgstr ""
+"<b>GParted</b> n'est disponible que pendant la session live. Il se trouve "
+"dans le menu <b>System Tools <i class=\"material-icons\">&#xE315;</i></b> "
+"menu. GParted offre une flexibilité totale sur vos partitions, "
+"principalement pour les utilisateurs expérimentés qui savent comment ils "
+"souhaitent disposer leurs disques. Cette méthode permet d'apporter des "
+"modifications aux partitions avant l'installation."
 
 #: gettingstarted.html:282
 msgid "Open GParted"
@@ -686,6 +693,8 @@ msgid ""
 "<b>Software Updater</b> can be found later in the menu "
 "<strong>Administration</strong>"
 msgstr ""
+"Le <b>Gestionnaire de mises à jour</b> peu se retrouver dans le menu "
+"<strong>Administration</strong>"
 
 #: gettingstarted.html:428
 msgid "Check for Updates"
@@ -703,6 +712,12 @@ msgid ""
 "Ubuntu License Policy) complicate distribution of software to support non-"
 "free formats."
 msgstr ""
+"<strong>Ubuntu</strong> (la distribution de base de <span name=\"distro-"
+"name\"></span>) s'efforce de mettre automatiquement à la disposition de ses "
+"utilisateurs tous les logiciels les plus importants. Toutefois, les "
+"restrictions en matière de brevets et de droits d'auteur (voir la politique "
+"de licence d'Ubuntu) compliquent la distribution de logiciels pour la prise "
+"en charge de formats non libres."
 
 #: gettingstarted.html:448
 msgid ""
@@ -1142,6 +1157,8 @@ msgid ""
 "<b>Backups</b> can be found later in the menu <b>Utilities <i class"
 "=\"material-icons\">&#xE315;</i> Backups</b>."
 msgstr ""
+"<b>Les sauvegardes</b> peuvent être retrouvées plus tard dans le menu "
+"<b>Utilitaires <i class=\"material-icons\">&#xE315;</i> Sauvegardes.</b>"
 
 #: gettingstarted.html:805
 msgid "Firewall"
@@ -1323,6 +1340,11 @@ msgid ""
 "avoiding persistent cookies or web trackers. Close the window and all traces"
 " of your browsing are removed from your device."
 msgstr ""
+"Naviguez sur Internet en privé sans laisser de trace de l'historique sur "
+"votre ordinateur. Ephemeral est un navigateur privé dépouillé qui est "
+"parfait pour éviter les cookies persistants ou les traqueurs web. Fermez la "
+"fenêtre et toutes les traces de votre navigation sont supprimées de votre "
+"appareil."
 
 #: gettingstarted.html:1060
 msgid "User Interface"
@@ -1606,19 +1628,19 @@ msgstr "Déplacer la fenêtre actuelle vers l'espace de travail suivant."
 
 #: gettingstarted.html:1465
 msgid "Move the current window to the monitor above."
-msgstr ""
+msgstr "Déplacez la fenêtre actuelle vers le moniteur ci-dessus."
 
 #: gettingstarted.html:1476
 msgid "Move the current window to the monitor below."
-msgstr ""
+msgstr "Déplacez la fenêtre actuelle vers le moniteur ci-dessous."
 
 #: gettingstarted.html:1487
 msgid "Move the current window to the monitor to the left."
-msgstr ""
+msgstr "Déplacez la fenêtre actuelle vers le moniteur de gauche."
 
 #: gettingstarted.html:1498
 msgid "Move the current window to the monitor to the right."
-msgstr ""
+msgstr "Déplacez la fenêtre actuelle vers le moniteur de droite."
 
 #: gettingstarted.html:1509
 msgid "Closes window."
