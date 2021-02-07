@@ -835,6 +835,14 @@
         "groovy": ["universe","ppa:ubuntubudgie/backports"],
         "hirsute": ["universe", "ppa:ubuntubudgie/backports"]
       }
+    },
+    "whitesur-theme": {
+      "packages": ["whitesur-gtk-theme", "whitesur-icon-theme", "fonts-roboto"],
+      "repos": {
+        "focal": ["universe","ppa:ubuntubudgie/backports"],
+        "groovy": ["universe","ppa:ubuntubudgie/backports"],
+        "hirsute": ["universe", "ppa:ubuntubudgie/backports"]
+      }
     }
   }
 }
