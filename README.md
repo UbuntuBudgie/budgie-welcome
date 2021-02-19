@@ -46,10 +46,10 @@ change "pl" to your language i18n shortcode
 
 ### Screenshot
 #### Live session
-![Screenshot of Budgie Remix Welcome App](https://raw.githubusercontent.com/budgie-remix/budgie-welcome/master/screenshot-live-session.png)
+![Screenshot of Budgie Remix Welcome App](https://raw.githubusercontent.com/UbuntuBudgie/budgie-welcome/master/screenshot-live-session.png)
 
 #### Normal session
-![Screenshot of Budgie Remix Welcome App](https://raw.githubusercontent.com/budgie-remix/budgie-welcome/master/screenshot-normal-session.png)
+![Screenshot of Budgie Remix Welcome App](https://raw.githubusercontent.com/UbuntuBudgie/budgie-welcome/master/screenshot-normal-session.png)
 
 ### LICENSES
   The project contains files with a variety of licenses.
