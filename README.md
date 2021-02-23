@@ -24,7 +24,7 @@ uglifyjs -o data/js/bootstrap.min.js data/js/bootstrap.js
 uglifyjs -o data/js/baguetteBox.min.js data/js/baguetteBox.js
 uglifyjs -o data/js/popper.min.js data/js/popper.js
 
-./sassc-compile.sh
+bash sassc-compile.sh
 ```
 
 ### Testing
