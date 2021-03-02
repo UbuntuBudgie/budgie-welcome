@@ -1785,6 +1785,15 @@ class WelcomeApp(object):
             # self._start_page = 'firstrun.html'
 
         self._build_app()
+    def _get_resolution(self):
+        dsp = Gdk.Display.get_default()
+        prim = dsp.get_primary_monitor()
+        geo = prim.get_geometry()
+        xoffset = geo.x
+        yoffset = geo.y
+        width = geo.width
+        height = geo.height
+        return (width, height, xoffset, yoffset)
 
     def _build_app(self):
         # Load custom css for App
@@ -1795,8 +1804,6 @@ class WelcomeApp(object):
         w.set_position(Gtk.WindowPosition.CENTER)
         #w.set_wmclass('budgie-welcome', _("Budgie Welcome"))
         w.set_title(_("Budgie Welcome"))
-        w.set_default_size(992, 500)
-        # w.set_resizable(False)
 
         icon_dir = os.path.join(self._data_path, 'img', 'distro-icon.svg')
         w.set_icon_from_file(icon_dir)
@@ -1833,11 +1840,17 @@ class WelcomeApp(object):
 
         # build webkit container
         mv = AppView()
-        if systemstate.codename == "xenial":
-            mv.set_zoom_level(0.90)
-            w.set_default_size(992, 550)
-        else:
+        width, height, xoffset, yoffset = self._get_resolution()
+
+        if width >= 1280:
+            w.set_default_size(992, 500)
             mv.set_zoom_level(0.98)
+        elif width <= 900:
+            w.set_default_size(680, 340)
+            mv.set_zoom_level(0.68)
+        else:
+            w.set_default_size(780, 380)
+            mv.set_zoom_level(0.75)
 
         mv.status_btn = status_btn
         mv.back_btn = back_btn
