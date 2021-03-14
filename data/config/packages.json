@@ -570,6 +570,12 @@
         "groovy": ["ppa:ubuntubudgie/backports"],
         "hirsute": ["ppa:ubuntubudgie/backports"]
       }
+    },
+    "gutenprint": {
+      "packages": ["printer-driver-gutenprint"],
+      "repos": {
+        "all": ["main"]
+      }
     }
   },
   "gettingstarted": {
