@@ -35,23 +35,23 @@ msgstr ""
 "pacchetti collegati, raccomandiamo di abilitare il repository dei backports "
 "di <span name=\"distro-name\"></span>"
 
-#: recommendations.html:24
+#: recommendations.html:27
 msgid "Repository is installed"
 msgstr "Il repository è installato"
 
-#: recommendations.html:24
+#: recommendations.html:30
 msgid "Enable <span name=\"distro-name\"></span> backports repository"
 msgstr "Abilita il repository dei backports"
 
-#: recommendations.html25, 70, 87, 100, 117, 135, 142, 153
+#: recommendations.html33, 106, 139, 173, 204, 218, 235, 252
 msgid "Applying Changes..."
 msgstr "Applicare le modifiche..."
 
-#: recommendations.html:29
+#: recommendations.html:37
 msgid "Snap Applications"
 msgstr "Applicazioni Snap"
 
-#: recommendations.html:34
+#: recommendations.html:42
 msgid ""
 "<strong>Snap</strong> is a new generation application packaging format "
 "developed by <em>Canonical</em>. Even though it was initially developed just"
@@ -81,19 +81,19 @@ msgstr ""
 "del packaging e fornire aggiornamenti ci hanno impedito di distribuire in "
 "passato."
 
-#: recommendations.html38, 81
+#: recommendations.html55, 122
 msgid "Learn more"
 msgstr "Per saperne di più"
 
-#: recommendations.html:40
+#: recommendations.html:57
 msgid "Snap user guide"
 msgstr "Guida utente Snap"
 
-#: recommendations.html:42
+#: recommendations.html:59
 msgid "Search Snap Apps"
 msgstr "Ricerca applicazioni Snap"
 
-#: recommendations.html:43
+#: recommendations.html:60
 msgid ""
 "If there’s a barrier to Snap app adoption (aside from few apps being made "
 "available in the format) it’s knowing which packages are available in the "
@@ -105,7 +105,7 @@ msgstr ""
 "disponibili nell'App Store. Beh, non mi meraviglio. Basta apri un terminale "
 "ed esegui il seguente comando:"
 
-#: recommendations.html:47
+#: recommendations.html:66
 msgid ""
 "The find command lets you quickly search for and discover snaps available to"
 " install from the command line. It can be run with a query after it (e.g., "
@@ -116,17 +116,17 @@ msgstr ""
 " query dopo di essa (ad esempio, \"snap find email\", \"snap find media\", "
 "\"snap find messaging\") o senza."
 
-#: recommendations.html:48
+#: recommendations.html:69
 msgid "When run without a query you’ll instead see a list of featured snaps."
 msgstr ""
 "Quando si esegue senza una query, verrà visualizzata una lista di snap "
 "disponibili."
 
-#: recommendations.html:49
+#: recommendations.html:70
 msgid "See installed apps"
 msgstr "Guarda applicazioni installate"
 
-#: recommendations.html:50
+#: recommendations.html:71
 msgid ""
 "Installed some Snaps but can’t remember what? Don’t panic. Use the list "
 "command to see an up-to-date list of all Snap apps installed on your system:"
@@ -135,7 +135,7 @@ msgstr ""
 "Utilizza l'elenco dei comandi per visualizzare un elenco aggiornato di tutte"
 " le applicazioni Snap installate nel sistema:"
 
-#: recommendations.html:52
+#: recommendations.html:74
 msgid ""
 "This list also shows you their version number, revision number and the name "
 "of the developer who uploaded it (handy when there are multiple versions of "
@@ -145,11 +145,11 @@ msgstr ""
 " nome dello sviluppatore che lo ha caricato (utile quando sono presenti più "
 "versioni della stessa applicazione nell'archivio, ad esempio Telegram)."
 
-#: recommendations.html:53
+#: recommendations.html:77
 msgid "Install & Remove Snap Apps"
 msgstr "Installa e Rimuovi Applicazioni Snap"
 
-#: recommendations.html:54
+#: recommendations.html:78
 msgid ""
 "If you’re used to managing software using apt you’ll instantly find the "
 "analogous snap commands easy to remember. You install snap apps with the "
@@ -160,11 +160,11 @@ msgstr ""
 " applicazioni snap con il comando 'install' e le rimuovi usando il comando "
 "'remove'."
 
-#: recommendations.html:57
+#: recommendations.html:83
 msgid "See details of an App"
 msgstr "Guarda i dettagli di un applicazione"
 
-#: recommendations.html:58
+#: recommendations.html:84
 msgid ""
 "You can use this to see detailed information about any snap application, "
 "whether it is installed or not. This info includes the application’s release"
@@ -177,11 +177,11 @@ msgstr ""
 "la dimensione, il numero di revisioni e altro ancora. Le informazioni di "
 "snap --verbose offrono una panoramica maggiore."
 
-#: recommendations.html:62
+#: recommendations.html:90
 msgid "Update a Snap App"
 msgstr "Aggiorna un'applicazione Snap"
 
-#: recommendations.html:64
+#: recommendations.html:92
 msgid ""
 "Rather helpfully you probably won’t ever need to remember to install an "
 "update to a Snap app. This is because Snapd runs in the background and "
@@ -194,23 +194,23 @@ msgstr ""
 " possibile, ofc, ripristinare un aggiornamento Snap o installare una "
 "revisione specifica)."
 
-#: recommendations.html:67
+#: recommendations.html:98
 msgid "Reference"
 msgstr "Riferimento"
 
-#: recommendations.html:69
+#: recommendations.html:101
 msgid "Snap is already installed"
 msgstr "Snap è già installato"
 
-#: recommendations.html:69
+#: recommendations.html:104
 msgid "Install Snap"
 msgstr "Installare Snap"
 
-#: recommendations.html:75
+#: recommendations.html:111
 msgid "Flatpak"
 msgstr "Flatpak"
 
-#: recommendations.html:79
+#: recommendations.html:116
 msgid ""
 "<strong>Flatpak</strong> is a new generation application distribution "
 "framework for GNU/Linux platforms. It introduces a unified packaging format "
@@ -229,7 +229,7 @@ msgstr ""
 "senza preoccuparsi del sistema operativo sottostante e delle sue librerie "
 "integrate."
 
-#: recommendations.html:83
+#: recommendations.html:125
 msgid ""
 "<span name=\"distro-name\"></span> recommends installing "
 "<strong>Flatpak</strong> as it will open a new world of possibilities for "
@@ -243,7 +243,7 @@ msgstr ""
 "non appena viene pacchettizzato dal progetto a monte e non dovrai aspettare "
 "che la distribuzione la pacchettizzi per te."
 
-#: recommendations.html:85
+#: recommendations.html:130
 msgid ""
 "Being a user friendly GNU/Linux distribution, <span name='distro-"
 "name'></span> allows you to install Flatpak with a single click. After first"
@@ -254,59 +254,19 @@ msgstr ""
 " configurazione, è possibile utilizzare GNOME Software per installare "
 "pacchetti Flatpak."
 
-#: recommendations.html:86
+#: recommendations.html:134
 msgid "Flatpak is installed. Please reboot for the service to start"
 msgstr "Flatpak è installato. Per favore riavvia per far partire il servizio"
 
-#: recommendations.html:87
+#: recommendations.html:137
 msgid "Install & Configure Flatpak"
 msgstr "Installa & Configura Flatpak"
 
-#: recommendations.html:91
-msgid "skippy-xd"
-msgstr "skippy-xd"
-
-#: recommendations.html:95
-msgid ""
-"<strong>skippy-xd</strong> adds a window expose type capability through a "
-"keyboard shortcut. For most desktops skippy-xd works well. Note: For some "
-"multi-monitor setups, graphics drivers and within virtual machines such as "
-"VirtualBox it may not work correctly."
-msgstr ""
-"<strong>skippy-xd</strong> aggiunge una finestra di espansione del tipo di "
-"carattere tramite una scorciatoia da tastiera. Per la maggior parte dei "
-"computer, skippy-xd funziona bene. Nota: per alcune configurazioni multi "
-"monitor, driver grafici e in macchine virtuali come VirtualBox potrebbe non "
-"funzionare correttamente."
-
-#: recommendations.html:98
-msgid ""
-"By default the installer will create a custom keyboard shortcut CTRL+grave "
-"('the key above the tab'). You can define or change the keyboard shortcut "
-"through the Settings - Keyboard - Custom Shortcuts option. Use the command "
-"<strong>skippy-xd-toggle</strong> when defining your own custom keyboard "
-"shortcut."
-msgstr ""
-"Per impostazione predefinita, il programma di installazione creerà una "
-"scorciatoia da tastiera personalizzata CTRL + grave (\"il tasto sopra il "
-"tab\"). È possibile definire o modificare la scorciatoia da tastiera tramite"
-" l'opzione Impostazioni - Tastiera - Scorciatoie Personalizzate. Utilizza il"
-" comando <strong>skippy-xd-toggle</strong> quando definisci il tuo "
-"collegamento personalizzato della tastiera."
-
-#: recommendations.html:99
-msgid "skippy-xd is installed"
-msgstr "skippy-xd è installato"
-
-#: recommendations.html:99
-msgid "Install & Configure skippy-xd"
-msgstr "Installa & Configura skippy-xd"
-
-#: recommendations.html:105
+#: recommendations.html:144
 msgid "Steam"
 msgstr "Steam"
 
-#: recommendations.html:109
+#: recommendations.html:149
 msgid ""
 "<strong>Steam</strong> is a digital distribution platform developed by Valve"
 " Corporation offering digital rights management (DRM), multiplayer gaming "
@@ -331,7 +291,7 @@ msgstr ""
 "inclusi networking, matchmaking, in-game achievements, micro-transazioni e "
 "supporto per i contenuti creati dall'utente Tramite Steam Workshop."
 
-#: recommendations.html:114
+#: recommendations.html:160
 msgid ""
 "Being proprietary software, Steam is not included in the primary "
 "repositories of <span name=\"distro-name\"></span>. However, to provide more"
@@ -347,15 +307,15 @@ msgstr ""
 "per abilitare il repository 4Multiverse4 e per installare Steam con un "
 "singolo clic del mouse. "
 
-#: recommendations.html:116
+#: recommendations.html:167
 msgid "Steam is installed"
 msgstr "Steam è installato"
 
-#: recommendations.html:116
+#: recommendations.html:170
 msgid "Install & Configure Steam"
 msgstr "Installa & Configura Steam"
 
-#: recommendations.html:126
+#: recommendations.html:183
 msgid ""
 "<strong>Dropbox</strong> is a popular proprietary file sharing and storage "
 "solution."
@@ -363,7 +323,7 @@ msgstr ""
 "<strong>Dropbox</strong> è una soluzione di condivisione e archiviazione di "
 "file proprietaria."
 
-#: recommendations.html:129
+#: recommendations.html:187
 msgid ""
 "Being proprietary software, Dropbox is not included in the primary "
 "repositories of <span name=\"distro-name\"></span>. However, to provide more"
@@ -379,7 +339,7 @@ msgstr ""
 " possibilità di abilitare il repository <em>Multiverse</em> e di installare "
 "Dropbox con un semplice clic del mouse."
 
-#: recommendations.html131, 138
+#: recommendations.html193, 207
 msgid ""
 "After installing, logout and login and follow the dropbox instructions that "
 "are then displayed."
@@ -387,15 +347,15 @@ msgstr ""
 "Dopo aver installato, disconnetiti e accedi e segui le istruzioni di dropbox"
 " che vengono visualizzate."
 
-#: recommendations.html134, 141
+#: recommendations.html198, 212
 msgid "Dropbox is installed"
 msgstr "Dropbox è installato"
 
-#: recommendations.html134, 141
+#: recommendations.html201, 215
 msgid "Install & Configure Dropbox"
 msgstr "Installa & Configura Dropbox"
 
-#: recommendations.html:149
+#: recommendations.html:225
 msgid ""
 "Nemo Share allows you to quickly share a folder from the Nemo file manager "
 "without requiring root access."
@@ -403,10 +363,26 @@ msgstr ""
 "Nemo Share ti consente di condividere rapidamente una cartella dal file "
 "manager Nemo senza richiedere l'accesso come root."
 
-#: recommendations.html:152
+#: recommendations.html:230
 msgid "Nemo Share is installed"
 msgstr "Nemo Share è installato"
 
-#: recommendations.html:152
+#: recommendations.html:233
 msgid "Install Nemo Share"
 msgstr "Installa Nemo Share"
+
+#: recommendations.html:242
+msgid ""
+"Gutenprint is a suite of <a onclick=\"cmd('link?http://gimp-"
+"print.sourceforge.net/p_Supported_Printers.php')\">thousands</a> of printer "
+"drivers which includes drivers for Epson and Canon printers. Gutenprint "
+"supports only the printer part of multi-function devices."
+msgstr ""
+
+#: recommendations.html:247
+msgid "Gutenprint is installed"
+msgstr ""
+
+#: recommendations.html:250
+msgid "Install Gutenprint"
+msgstr ""

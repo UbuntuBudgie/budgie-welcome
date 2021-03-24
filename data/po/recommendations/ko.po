@@ -31,23 +31,23 @@ msgid ""
 "name\"></span> backports repository."
 msgstr ""
 
-#: recommendations.html:24
+#: recommendations.html:27
 msgid "Repository is installed"
 msgstr ""
 
-#: recommendations.html:24
+#: recommendations.html:30
 msgid "Enable <span name=\"distro-name\"></span> backports repository"
 msgstr ""
 
-#: recommendations.html25, 70, 87, 100, 117, 135, 142, 153
+#: recommendations.html33, 106, 139, 173, 204, 218, 235, 252
 msgid "Applying Changes..."
 msgstr "변경 사항 적용 중..."
 
-#: recommendations.html:29
+#: recommendations.html:37
 msgid "Snap Applications"
 msgstr ""
 
-#: recommendations.html:34
+#: recommendations.html:42
 msgid ""
 "<strong>Snap</strong> is a new generation application packaging format "
 "developed by <em>Canonical</em>. Even though it was initially developed just"
@@ -65,19 +65,19 @@ msgstr ""
 "<strong>Snap</strong>은 <em>Canonical</em>에서 개발한 신세대 애플리케이션 패키징 포멧입니다. 처음에는 우분투 플랫폼을 위해서 개발되었지만, 현재는 다른 GNU/Linux 배포판에서도 작동합니다. 이 패키징 포맷은 애플리케이션 개발자들이 각기 다른 플랫폼에도 대응하는 통합 패키지를 만드는 데에 도움을 줍니다. Snap 패키지 포맷을 사용하면, 애플리케이션이 필요로 하는 라이브러리를 패키지에 통합하기 때문에 운영 체제에 무슨 라이브러리가 설치되어 있어야 하는지 신경 쓸 필요가 없게 됩니다. Snap 패키지들은 <span name=\"distro-name\"></span>에 최신 버전의 애플리케이션을 제공하는데에도 도움을 주고 있습니다.\n"
 "최신 버전의 KDE, GNOME, 웹 브라우저 및 기타 데스크톱 환경 애플리케이션들은 구버전의 LTS 릴리즈들을 사용하여 쉽게 빌드되어 왔지만 패키징과 업데이트 제공의 복잡함은 애플리케이션들을 제때 최신 버전으로 유지하는 것을 방해해 왔습니다."
 
-#: recommendations.html38, 81
+#: recommendations.html55, 122
 msgid "Learn more"
 msgstr "더 알아보기"
 
-#: recommendations.html:40
+#: recommendations.html:57
 msgid "Snap user guide"
 msgstr "Snap 사용자 가이드"
 
-#: recommendations.html:42
+#: recommendations.html:59
 msgid "Search Snap Apps"
 msgstr "Snap 앱 검색"
 
-#: recommendations.html:43
+#: recommendations.html:60
 msgid ""
 "If there’s a barrier to Snap app adoption (aside from few apps being made "
 "available in the format) it’s knowing which packages are available in the "
@@ -85,7 +85,7 @@ msgid ""
 "following command:"
 msgstr ""
 
-#: recommendations.html:47
+#: recommendations.html:66
 msgid ""
 "The find command lets you quickly search for and discover snaps available to"
 " install from the command line. It can be run with a query after it (e.g., "
@@ -95,15 +95,15 @@ msgstr ""
 "find email‘, ‘snap find media‘, ‘snap find messaging‘ 등) 입력하지 않고 실행시킬 수 "
 "있습니다."
 
-#: recommendations.html:48
+#: recommendations.html:69
 msgid "When run without a query you’ll instead see a list of featured snaps."
 msgstr "검색어를 입력하지 않은 채 명령어를 실행하면 추천 Snap 앱이 표시됩니다."
 
-#: recommendations.html:49
+#: recommendations.html:70
 msgid "See installed apps"
 msgstr "설치된 애플리케이션 보기"
 
-#: recommendations.html:50
+#: recommendations.html:71
 msgid ""
 "Installed some Snaps but can’t remember what? Don’t panic. Use the list "
 "command to see an up-to-date list of all Snap apps installed on your system:"
@@ -111,7 +111,7 @@ msgstr ""
 "Snap 앱을 설치해놓고 뭘 설치했는지 기억이 안난다구요? 걱정하지 마세요. list 명령어를 사용하여 시스템에 설치된 Snap 앱의 "
 "목록을 확인하실 수 있습니다. :"
 
-#: recommendations.html:52
+#: recommendations.html:74
 msgid ""
 "This list also shows you their version number, revision number and the name "
 "of the developer who uploaded it (handy when there are multiple versions of "
@@ -120,11 +120,11 @@ msgstr ""
 "목록에는 앱의 버전, 수정 버전 및 개발자의 이름 등이 보여집니다. (Telegram과 같이 스토어 상에 똑같은 앱에서 여러 버전이 "
 "제공되는 경우에 유용합니다.)"
 
-#: recommendations.html:53
+#: recommendations.html:77
 msgid "Install & Remove Snap Apps"
 msgstr "Snap 앱 설치 및 제거"
 
-#: recommendations.html:54
+#: recommendations.html:78
 msgid ""
 "If you’re used to managing software using apt you’ll instantly find the "
 "analogous snap commands easy to remember. You install snap apps with the "
@@ -133,11 +133,11 @@ msgstr ""
 "apt와 같은 소프트웨어 관리자를 사용해왔더라도 괜찮습니다. Snap은 그러한 소프트웨어 관리자들과 비슷한 명령어를 사용하기에 기억하기도"
 " 쉽죠. Snap 앱을 설치하려면 ‘install’ 명령어를, 삭제하려면 ‘remove’ 명령어를 사용하면 됩니다."
 
-#: recommendations.html:57
+#: recommendations.html:83
 msgid "See details of an App"
 msgstr "앱 정보 보기"
 
-#: recommendations.html:58
+#: recommendations.html:84
 msgid ""
 "You can use this to see detailed information about any snap application, "
 "whether it is installed or not. This info includes the application’s release"
@@ -145,11 +145,11 @@ msgid ""
 "info --verbose offers a greater overview."
 msgstr ""
 
-#: recommendations.html:62
+#: recommendations.html:90
 msgid "Update a Snap App"
 msgstr "Snap 앱 업데이트"
 
-#: recommendations.html:64
+#: recommendations.html:92
 msgid ""
 "Rather helpfully you probably won’t ever need to remember to install an "
 "update to a Snap app. This is because Snapd runs in the background and "
@@ -157,23 +157,23 @@ msgid ""
 " a specific revision)."
 msgstr ""
 
-#: recommendations.html:67
+#: recommendations.html:98
 msgid "Reference"
 msgstr "참고 사항"
 
-#: recommendations.html:69
+#: recommendations.html:101
 msgid "Snap is already installed"
 msgstr "Snap이 이미 설치되어 있습니다."
 
-#: recommendations.html:69
+#: recommendations.html:104
 msgid "Install Snap"
 msgstr "Snap 설치"
 
-#: recommendations.html:75
+#: recommendations.html:111
 msgid "Flatpak"
 msgstr "Flatpak"
 
-#: recommendations.html:79
+#: recommendations.html:116
 msgid ""
 "<strong>Flatpak</strong> is a new generation application distribution "
 "framework for GNU/Linux platforms. It introduces a unified packaging format "
@@ -184,7 +184,7 @@ msgid ""
 "libraries."
 msgstr ""
 
-#: recommendations.html:83
+#: recommendations.html:125
 msgid ""
 "<span name=\"distro-name\"></span> recommends installing "
 "<strong>Flatpak</strong> as it will open a new world of possibilities for "
@@ -193,58 +193,26 @@ msgid ""
 "have to wait for your distribution to package it for you."
 msgstr ""
 
-#: recommendations.html:85
+#: recommendations.html:130
 msgid ""
 "Being a user friendly GNU/Linux distribution, <span name='distro-"
 "name'></span> allows you to install Flatpak with a single click. After first"
 " time configuration, you can use GNOME Software to install Flatpak packages."
 msgstr ""
 
-#: recommendations.html:86
+#: recommendations.html:134
 msgid "Flatpak is installed. Please reboot for the service to start"
 msgstr "Flatpak이 설치되었습니다. 시스템을 재시작하여 서비스를 시작하세요."
 
-#: recommendations.html:87
+#: recommendations.html:137
 msgid "Install & Configure Flatpak"
 msgstr "Flatpak 설치 및 구성"
 
-#: recommendations.html:91
-msgid "skippy-xd"
-msgstr "skippy-xd"
-
-#: recommendations.html:95
-msgid ""
-"<strong>skippy-xd</strong> adds a window expose type capability through a "
-"keyboard shortcut. For most desktops skippy-xd works well. Note: For some "
-"multi-monitor setups, graphics drivers and within virtual machines such as "
-"VirtualBox it may not work correctly."
-msgstr ""
-
-#: recommendations.html:98
-msgid ""
-"By default the installer will create a custom keyboard shortcut CTRL+grave "
-"('the key above the tab'). You can define or change the keyboard shortcut "
-"through the Settings - Keyboard - Custom Shortcuts option. Use the command "
-"<strong>skippy-xd-toggle</strong> when defining your own custom keyboard "
-"shortcut."
-msgstr ""
-"기본적으로 설치기는 Ctrl+Grave(Tab 키 위에 있는 ` 키)로 키보드 바로 가기를 만듭니다. 나중에 설정 - 키보드 - 사용자 "
-"지정 바로 가기에서 키보드 바로 가기를 설정하거나 변경하실 수 있습니다. 직접 키보드 바로 가기를 지정했다면 <strong>skippy-"
-"xd-toggle</strong> 명령어를 실행해주세요."
-
-#: recommendations.html:99
-msgid "skippy-xd is installed"
-msgstr "skippy-xd가 설치되었습니다."
-
-#: recommendations.html:99
-msgid "Install & Configure skippy-xd"
-msgstr "skippy-xd 설치 및 구성"
-
-#: recommendations.html:105
+#: recommendations.html:144
 msgid "Steam"
 msgstr "Steam"
 
-#: recommendations.html:109
+#: recommendations.html:149
 msgid ""
 "<strong>Steam</strong> is a digital distribution platform developed by Valve"
 " Corporation offering digital rights management (DRM), multiplayer gaming "
@@ -263,7 +231,7 @@ msgstr ""
 " 매치메이킹, 게임 내 업적, 거래 및 Steam Workshop에서의 사용자 제작 컨텐츠 지원 등과 같은 여러 기능들을 자신의 게임이나"
 " 소프트웨어에 통합하게 해주기 위해 Steamworks라고 불리는 애플리케이션 프로그래밍 인터페이스(API)를 제공합니다."
 
-#: recommendations.html:114
+#: recommendations.html:160
 msgid ""
 "Being proprietary software, Steam is not included in the primary "
 "repositories of <span name=\"distro-name\"></span>. However, to provide more"
@@ -277,21 +245,21 @@ msgstr ""
 "name=\"distro-name\"></span>는 단 한 번의 클릭으로 <em>Multiverse</em> 저장소를 활성화하고 "
 "Steam을 설치할 수 있게 해줍니다."
 
-#: recommendations.html:116
+#: recommendations.html:167
 msgid "Steam is installed"
 msgstr "Steam이 설치되었습니다."
 
-#: recommendations.html:116
+#: recommendations.html:170
 msgid "Install & Configure Steam"
 msgstr "Steam 설치 및 구성"
 
-#: recommendations.html:126
+#: recommendations.html:183
 msgid ""
 "<strong>Dropbox</strong> is a popular proprietary file sharing and storage "
 "solution."
 msgstr ""
 
-#: recommendations.html:129
+#: recommendations.html:187
 msgid ""
 "Being proprietary software, Dropbox is not included in the primary "
 "repositories of <span name=\"distro-name\"></span>. However, to provide more"
@@ -305,30 +273,46 @@ msgstr ""
 "<span name=\"distro-name\"></span>는 단 한 번의 클릭으로 <em>Multiverse</em> 저장소를 "
 "활성화하고 Dropbox를 설치할 수 있게 해줍니다."
 
-#: recommendations.html131, 138
+#: recommendations.html193, 207
 msgid ""
 "After installing, logout and login and follow the dropbox instructions that "
 "are then displayed."
 msgstr "설치가 끝나면 로그아웃하고 로그인한 다음, 표시되는 Dropbox 설명에 따라 구성을 완료하세요."
 
-#: recommendations.html134, 141
+#: recommendations.html198, 212
 msgid "Dropbox is installed"
 msgstr "Dropbox가 설치되었습니다."
 
-#: recommendations.html134, 141
+#: recommendations.html201, 215
 msgid "Install & Configure Dropbox"
 msgstr "Dropbox 설치 및 구성"
 
-#: recommendations.html:149
+#: recommendations.html:225
 msgid ""
 "Nemo Share allows you to quickly share a folder from the Nemo file manager "
 "without requiring root access."
 msgstr ""
 
-#: recommendations.html:152
+#: recommendations.html:230
 msgid "Nemo Share is installed"
 msgstr ""
 
-#: recommendations.html:152
+#: recommendations.html:233
 msgid "Install Nemo Share"
+msgstr ""
+
+#: recommendations.html:242
+msgid ""
+"Gutenprint is a suite of <a onclick=\"cmd('link?http://gimp-"
+"print.sourceforge.net/p_Supported_Printers.php')\">thousands</a> of printer "
+"drivers which includes drivers for Epson and Canon printers. Gutenprint "
+"supports only the printer part of multi-function devices."
+msgstr ""
+
+#: recommendations.html:247
+msgid "Gutenprint is installed"
+msgstr ""
+
+#: recommendations.html:250
+msgid "Install Gutenprint"
 msgstr ""

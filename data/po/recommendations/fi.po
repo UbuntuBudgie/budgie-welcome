@@ -34,23 +34,23 @@ msgstr ""
 " olisivat saatavilla, suosittelemme ottamaan käyttöön <span name=\"distro-"
 "name\"></span>takaportit-ohjelmavaraston. "
 
-#: recommendations.html:24
+#: recommendations.html:27
 msgid "Repository is installed"
 msgstr "Ohjelmavarasto asennettu"
 
-#: recommendations.html:24
+#: recommendations.html:30
 msgid "Enable <span name=\"distro-name\"></span> backports repository"
 msgstr "Ota käyttöön <span name=\"distro-name\"></span>takaportit-ohjelmavarasto"
 
-#: recommendations.html25, 70, 87, 100, 117, 135, 142, 153
+#: recommendations.html33, 106, 139, 173, 204, 218, 235, 252
 msgid "Applying Changes..."
 msgstr "Muutoksia toteutetaan..."
 
-#: recommendations.html:29
+#: recommendations.html:37
 msgid "Snap Applications"
 msgstr "Snap-sovellukset"
 
-#: recommendations.html:34
+#: recommendations.html:42
 msgid ""
 "<strong>Snap</strong> is a new generation application packaging format "
 "developed by <em>Canonical</em>. Even though it was initially developed just"
@@ -78,19 +78,19 @@ msgstr ""
 "vanhoissa LTS-julkaisuissa, mutta paketoinnin monimutkaisuudet "
 "menneisyydessä estivät meitä toimittamasta niitä."
 
-#: recommendations.html38, 81
+#: recommendations.html55, 122
 msgid "Learn more"
 msgstr "Opi lisää"
 
-#: recommendations.html:40
+#: recommendations.html:57
 msgid "Snap user guide"
 msgstr "Snap:in käyttöopas"
 
-#: recommendations.html:42
+#: recommendations.html:59
 msgid "Search Snap Apps"
 msgstr "Etsi Snap-sovelluksia"
 
-#: recommendations.html:43
+#: recommendations.html:60
 msgid ""
 "If there’s a barrier to Snap app adoption (aside from few apps being made "
 "available in the format) it’s knowing which packages are available in the "
@@ -103,7 +103,7 @@ msgstr ""
 "sovelluskaupassa tarjolla. No, äläpä enää puntaroi. Pompsauta vain "
 "yksinkertaisesti pääte auki ja syötä seuraava käsky:"
 
-#: recommendations.html:47
+#: recommendations.html:66
 msgid ""
 "The find command lets you quickly search for and discover snaps available to"
 " install from the command line. It can be run with a query after it (e.g., "
@@ -114,17 +114,17 @@ msgstr ""
 "kyselyn kera (esim. ‘snap find email‘, ‘snap find media‘, ‘snap find "
 "messaging)‘ tai ilman."
 
-#: recommendations.html:48
+#: recommendations.html:69
 msgid "When run without a query you’ll instead see a list of featured snaps."
 msgstr ""
 "Ilman kyselyä tulet sen sijaan näkemään listan tällä hetkellä erikseen "
 "esille nostetuista snap:eista."
 
-#: recommendations.html:49
+#: recommendations.html:70
 msgid "See installed apps"
 msgstr "Katso asennetut sovellukset"
 
-#: recommendations.html:50
+#: recommendations.html:71
 msgid ""
 "Installed some Snaps but can’t remember what? Don’t panic. Use the list "
 "command to see an up-to-date list of all Snap apps installed on your system:"
@@ -133,7 +133,7 @@ msgstr ""
 "käskyä list nähdäksesi päivitetyn listauksen kaikista järjestelmääsi "
 "asennetuista Snap-sovelluksista:"
 
-#: recommendations.html:52
+#: recommendations.html:74
 msgid ""
 "This list also shows you their version number, revision number and the name "
 "of the developer who uploaded it (handy when there are multiple versions of "
@@ -143,11 +143,11 @@ msgstr ""
 "versionumeron sekä sen lataaman kehittäjän nimen (kätevää mikäli tarjolla on"
 " useita versioita samasta snap-sovelluksesta kaupassa, esim. Telegram). "
 
-#: recommendations.html:53
+#: recommendations.html:77
 msgid "Install & Remove Snap Apps"
 msgstr "Asenna & poista Snap-sovelluksia"
 
-#: recommendations.html:54
+#: recommendations.html:78
 msgid ""
 "If you’re used to managing software using apt you’ll instantly find the "
 "analogous snap commands easy to remember. You install snap apps with the "
@@ -158,11 +158,11 @@ msgstr ""
 "Snap-sovellukset asennetaan 'install' käskyllä, poistetaan käyttäen 'remove'"
 " käskyä."
 
-#: recommendations.html:57
+#: recommendations.html:83
 msgid "See details of an App"
 msgstr "Katso sovelluksen yksityskohdat"
 
-#: recommendations.html:58
+#: recommendations.html:84
 msgid ""
 "You can use this to see detailed information about any snap application, "
 "whether it is installed or not. This info includes the application’s release"
@@ -175,11 +175,11 @@ msgstr ""
 "uudelleenmääritysten määrän, ja enemmän. Laajempi katsaus käskyllä snap info"
 " --verbose tulee näkyville."
 
-#: recommendations.html:62
+#: recommendations.html:90
 msgid "Update a Snap App"
 msgstr "Päivitä Snap-sovellus"
 
-#: recommendations.html:64
+#: recommendations.html:92
 msgid ""
 "Rather helpfully you probably won’t ever need to remember to install an "
 "update to a Snap app. This is because Snapd runs in the background and "
@@ -192,23 +192,23 @@ msgstr ""
 "tietysti voit aina askeltaa Snap-päivityksen taaksepäin tai asentaa vaikkapa"
 " jonkun tietyn pakettiversion)."
 
-#: recommendations.html:67
+#: recommendations.html:98
 msgid "Reference"
 msgstr "Viite"
 
-#: recommendations.html:69
+#: recommendations.html:101
 msgid "Snap is already installed"
 msgstr "Snap on jo asennettu"
 
-#: recommendations.html:69
+#: recommendations.html:104
 msgid "Install Snap"
 msgstr "Asenna Snap"
 
-#: recommendations.html:75
+#: recommendations.html:111
 msgid "Flatpak"
 msgstr "Flatpak"
 
-#: recommendations.html:79
+#: recommendations.html:116
 msgid ""
 "<strong>Flatpak</strong> is a new generation application distribution "
 "framework for GNU/Linux platforms. It introduces a unified packaging format "
@@ -226,7 +226,7 @@ msgstr ""
 "huolimatta alustana olevasta käyttöjärjestelmästä ja sen sisäänrakennetuista"
 " kirjastoista."
 
-#: recommendations.html:83
+#: recommendations.html:125
 msgid ""
 "<span name=\"distro-name\"></span> recommends installing "
 "<strong>Flatpak</strong> as it will open a new world of possibilities for "
@@ -240,7 +240,7 @@ msgstr ""
 " heti kun paketointi on tehty sen hallitseman ryhmän toimesta ja sinun ei "
 "tarvitse odottaa jakelusi paketointia."
 
-#: recommendations.html:85
+#: recommendations.html:130
 msgid ""
 "Being a user friendly GNU/Linux distribution, <span name='distro-"
 "name'></span> allows you to install Flatpak with a single click. After first"
@@ -251,59 +251,20 @@ msgstr ""
 "Ensiasetusten jälkeen, voit käyttää kauppaa GNOME Software asentaaksesi "
 "Flatpak-paketteja."
 
-#: recommendations.html:86
+#: recommendations.html:134
 msgid "Flatpak is installed. Please reboot for the service to start"
 msgstr ""
 "Flatpak asennettu. Uudelleenkäynnistä tietokone jotta palvelu käynnistyy."
 
-#: recommendations.html:87
+#: recommendations.html:137
 msgid "Install & Configure Flatpak"
 msgstr "Asenna & määritä Flatpak"
 
-#: recommendations.html:91
-msgid "skippy-xd"
-msgstr "skippy-xd"
-
-#: recommendations.html:95
-msgid ""
-"<strong>skippy-xd</strong> adds a window expose type capability through a "
-"keyboard shortcut. For most desktops skippy-xd works well. Note: For some "
-"multi-monitor setups, graphics drivers and within virtual machines such as "
-"VirtualBox it may not work correctly."
-msgstr ""
-"<strong>skippy-xd</strong>lisää ikkunanäkymätyyppisen ominaisuuden "
-"näppäinoikopolun kautta. Useimmilla työpöydillä skippy-xd toimii hyvin. "
-"Merkillepantavaa: joillakin monen näytön järjestelmillä, grafiikka-ajureilla"
-" tai virtuaalikoneen sisällä kuten Virtualbox se ei välttämättä toimi "
-"oikein. "
-
-#: recommendations.html:98
-msgid ""
-"By default the installer will create a custom keyboard shortcut CTRL+grave "
-"('the key above the tab'). You can define or change the keyboard shortcut "
-"through the Settings - Keyboard - Custom Shortcuts option. Use the command "
-"<strong>skippy-xd-toggle</strong> when defining your own custom keyboard "
-"shortcut."
-msgstr ""
-"Vakiollisesti asennusohjelma luo muokatun näppäinoikopolun CTRL+gravis "
-"('näppäin askelpalauttimen vieressä vasemmalla puolella suomalaisessa "
-"näppäimistössä, ` ). Voit määritellä tai muuttaa näppäinoikopolun: Asetukset"
-" - Näppäimistö - Oikopolut kautta. Käytä käskyä <strong>skippy-xd-"
-"toggle</strong> kun määrität omia näppäinoikopolkujasi "
-
-#: recommendations.html:99
-msgid "skippy-xd is installed"
-msgstr "skippy-xd on asennettu"
-
-#: recommendations.html:99
-msgid "Install & Configure skippy-xd"
-msgstr "Asenna ja määritä skippy-xd"
-
-#: recommendations.html:105
+#: recommendations.html:144
 msgid "Steam"
 msgstr "Steam"
 
-#: recommendations.html:109
+#: recommendations.html:149
 msgid ""
 "<strong>Steam</strong> is a digital distribution platform developed by Valve"
 " Corporation offering digital rights management (DRM), multiplayer gaming "
@@ -328,7 +289,7 @@ msgstr ""
 "pelikilpailun luonnin, pelinsisäiset pelisaavutukset, mikro-rahansiirrot, ja"
 " tuen käyttäjien luomalle sisällölle Steam Workshop:in kautta."
 
-#: recommendations.html:114
+#: recommendations.html:160
 msgid ""
 "Being proprietary software, Steam is not included in the primary "
 "repositories of <span name=\"distro-name\"></span>. However, to provide more"
@@ -345,15 +306,15 @@ msgstr ""
 "ohjelmavaraston käyttöön ja asentaaksesi Steam:in yhdellä hiirennapin "
 "klikkauksella."
 
-#: recommendations.html:116
+#: recommendations.html:167
 msgid "Steam is installed"
 msgstr "Steam on asennettu"
 
-#: recommendations.html:116
+#: recommendations.html:170
 msgid "Install & Configure Steam"
 msgstr "Asenna ja määritä Steam"
 
-#: recommendations.html:126
+#: recommendations.html:183
 msgid ""
 "<strong>Dropbox</strong> is a popular proprietary file sharing and storage "
 "solution."
@@ -361,7 +322,7 @@ msgstr ""
 "<strong>Dropbox</strong>on suosittu omisteinen tiedostonjako ja "
 "varastointiratkaisu."
 
-#: recommendations.html:129
+#: recommendations.html:187
 msgid ""
 "Being proprietary software, Dropbox is not included in the primary "
 "repositories of <span name=\"distro-name\"></span>. However, to provide more"
@@ -377,7 +338,7 @@ msgstr ""
 "name\"></span>tarjoaa sinulle vaihtoehdon kytkeä <em>Multiverse</em>käyttöön"
 " asentaaksesi Dropbox:in yhdellä hiirennapin klikkauksella."
 
-#: recommendations.html131, 138
+#: recommendations.html193, 207
 msgid ""
 "After installing, logout and login and follow the dropbox instructions that "
 "are then displayed."
@@ -385,15 +346,15 @@ msgstr ""
 "Asennuksen jälkeen, kirjaudu ulos ja takaisin sisään sekä seuraa näkyville "
 "tulevia Dropbox:in ohjeita."
 
-#: recommendations.html134, 141
+#: recommendations.html198, 212
 msgid "Dropbox is installed"
 msgstr "Dropbox on asennettu"
 
-#: recommendations.html134, 141
+#: recommendations.html201, 215
 msgid "Install & Configure Dropbox"
 msgstr "Asenna ja määritä Dropbox"
 
-#: recommendations.html:149
+#: recommendations.html:225
 msgid ""
 "Nemo Share allows you to quickly share a folder from the Nemo file manager "
 "without requiring root access."
@@ -401,10 +362,26 @@ msgstr ""
 "Nemo Share mahdollistaa nopean kansionjaon Nemo-tiedostonhallinnasta ilman "
 "vaatimusta root-käyttäjän oikeuksille."
 
-#: recommendations.html:152
+#: recommendations.html:230
 msgid "Nemo Share is installed"
 msgstr "Nemo Share on asennettu"
 
-#: recommendations.html:152
+#: recommendations.html:233
 msgid "Install Nemo Share"
 msgstr "Asenna Nemo Share"
+
+#: recommendations.html:242
+msgid ""
+"Gutenprint is a suite of <a onclick=\"cmd('link?http://gimp-"
+"print.sourceforge.net/p_Supported_Printers.php')\">thousands</a> of printer "
+"drivers which includes drivers for Epson and Canon printers. Gutenprint "
+"supports only the printer part of multi-function devices."
+msgstr ""
+
+#: recommendations.html:247
+msgid "Gutenprint is installed"
+msgstr ""
+
+#: recommendations.html:250
+msgid "Install Gutenprint"
+msgstr ""

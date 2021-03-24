@@ -1,13 +1,13 @@
 # 
 # Translators:
-# Davidmp <medipas@gmail.com>, 2019
+# Davidmp <medipas@gmail.com>, 2021
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: Budgie Welcome\n"
 "POT-Creation-Date: 2016-02-27 12:48+0100\n"
 "PO-Revision-Date: 2017-03-22 21:33+0000\n"
-"Last-Translator: Davidmp <medipas@gmail.com>, 2019\n"
+"Last-Translator: Davidmp <medipas@gmail.com>, 2021\n"
 "Language-Team: Catalan (https://www.transifex.com/ubuntu-budgie/teams/72251/ca/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -34,23 +34,23 @@ msgstr ""
 "paquets associats, us recomanem que activeu el repositori Backports de <span"
 " name=\"distro-name\"></span>."
 
-#: recommendations.html:24
+#: recommendations.html:27
 msgid "Repository is installed"
 msgstr "El repositori està instal·lat."
 
-#: recommendations.html:24
+#: recommendations.html:30
 msgid "Enable <span name=\"distro-name\"></span> backports repository"
 msgstr "Habilita el repositori Backports de <span name=\"distro-name\"></span>."
 
-#: recommendations.html25, 70, 87, 100, 117, 135, 142, 153
+#: recommendations.html33, 106, 139, 173, 204, 218, 235, 252
 msgid "Applying Changes..."
 msgstr "S'apliquen els canvis..."
 
-#: recommendations.html:29
+#: recommendations.html:37
 msgid "Snap Applications"
 msgstr "Aplicacions Snap"
 
-#: recommendations.html:34
+#: recommendations.html:42
 msgid ""
 "<strong>Snap</strong> is a new generation application packaging format "
 "developed by <em>Canonical</em>. Even though it was initially developed just"
@@ -80,19 +80,19 @@ msgstr ""
 " però les complexitats d'empaquetament i subministrament d'actualitzacions "
 "ens han impedit lliurar-les en el passat."
 
-#: recommendations.html38, 81
+#: recommendations.html55, 122
 msgid "Learn more"
 msgstr "Apreneu-ne més"
 
-#: recommendations.html:40
+#: recommendations.html:57
 msgid "Snap user guide"
 msgstr "Guia d'ús d'Snap"
 
-#: recommendations.html:42
+#: recommendations.html:59
 msgid "Search Snap Apps"
 msgstr "Cerca d'aplicacions Snap"
 
-#: recommendations.html:43
+#: recommendations.html:60
 msgid ""
 "If there’s a barrier to Snap app adoption (aside from few apps being made "
 "available in the format) it’s knowing which packages are available in the "
@@ -104,7 +104,7 @@ msgstr ""
 "disponibles a la botiga d'aplicacions Snap. Bé, no us ho pregunteu. "
 "Simplement obriu un terminal i executeu l'ordre següent:"
 
-#: recommendations.html:47
+#: recommendations.html:66
 msgid ""
 "The find command lets you quickly search for and discover snaps available to"
 " install from the command line. It can be run with a query after it (e.g., "
@@ -115,16 +115,16 @@ msgstr ""
 " consulta a continuació (per exemple: snap find email, snap find media, snap"
 " find messaging) o sense."
 
-#: recommendations.html:48
+#: recommendations.html:69
 msgid "When run without a query you’ll instead see a list of featured snaps."
 msgstr ""
 "Quan s'executi sense una consulta, veureu una llista de snaps disponibles."
 
-#: recommendations.html:49
+#: recommendations.html:70
 msgid "See installed apps"
 msgstr "Vegeu les aplicacions instal·lades"
 
-#: recommendations.html:50
+#: recommendations.html:71
 msgid ""
 "Installed some Snaps but can’t remember what? Don’t panic. Use the list "
 "command to see an up-to-date list of all Snap apps installed on your system:"
@@ -132,7 +132,7 @@ msgstr ""
 "Heu instal·lat snaps però no podeu recordar quines? No patiu. Useu l'ordre "
 "\"list\" per veure una llista d'aplicacions d'Snap instal·lades al sistema:"
 
-#: recommendations.html:52
+#: recommendations.html:74
 msgid ""
 "This list also shows you their version number, revision number and the name "
 "of the developer who uploaded it (handy when there are multiple versions of "
@@ -142,11 +142,11 @@ msgstr ""
 "el nom del desenvolupador que l'ha penjat (pràctic quan hi ha diverses "
 "versions de la mateixa aplicació a la botiga, p. ex., Telegram)."
 
-#: recommendations.html:53
+#: recommendations.html:77
 msgid "Install & Remove Snap Apps"
 msgstr "Instal·la i suprimeix aplicacions Snap"
 
-#: recommendations.html:54
+#: recommendations.html:78
 msgid ""
 "If you’re used to managing software using apt you’ll instantly find the "
 "analogous snap commands easy to remember. You install snap apps with the "
@@ -157,11 +157,11 @@ msgstr ""
 "aplicacions amb l'ordre \"install\" i suprimir-les mitjançant l'ordre "
 "\"remove\"."
 
-#: recommendations.html:57
+#: recommendations.html:83
 msgid "See details of an App"
 msgstr "Vegeu els detalls d'una aplicació"
 
-#: recommendations.html:58
+#: recommendations.html:84
 msgid ""
 "You can use this to see detailed information about any snap application, "
 "whether it is installed or not. This info includes the application’s release"
@@ -174,11 +174,11 @@ msgstr ""
 "nombre de revisions i molt més. La informació de snap --verbose n'ofereix "
 "una visió més detallada."
 
-#: recommendations.html:62
+#: recommendations.html:90
 msgid "Update a Snap App"
 msgstr "Actualitzeu una aplicació Snap"
 
-#: recommendations.html:64
+#: recommendations.html:92
 msgid ""
 "Rather helpfully you probably won’t ever need to remember to install an "
 "update to a Snap app. This is because Snapd runs in the background and "
@@ -190,23 +190,23 @@ msgstr ""
 "gestiona les actualitzacions automàticament (podeu, per exemple, revertir "
 "una actualització de Snap o instal·lar-ne una revisió específica)."
 
-#: recommendations.html:67
+#: recommendations.html:98
 msgid "Reference"
 msgstr "Referència"
 
-#: recommendations.html:69
+#: recommendations.html:101
 msgid "Snap is already installed"
 msgstr "L'Snap ja està instal·lat."
 
-#: recommendations.html:69
+#: recommendations.html:104
 msgid "Install Snap"
 msgstr "Instal·la l'Snap"
 
-#: recommendations.html:75
+#: recommendations.html:111
 msgid "Flatpak"
 msgstr "Flatpak"
 
-#: recommendations.html:79
+#: recommendations.html:116
 msgid ""
 "<strong>Flatpak</strong> is a new generation application distribution "
 "framework for GNU/Linux platforms. It introduces a unified packaging format "
@@ -225,7 +225,7 @@ msgstr ""
 "preocupar-se del sistema operatiu subjacent i de les biblioteques "
 "incorporades."
 
-#: recommendations.html:83
+#: recommendations.html:125
 msgid ""
 "<span name=\"distro-name\"></span> recommends installing "
 "<strong>Flatpak</strong> as it will open a new world of possibilities for "
@@ -239,7 +239,7 @@ msgstr ""
 "empaquetada pel projecte d'origen i no haureu d'esperar que la vostra "
 "distribució us la inclogui."
 
-#: recommendations.html:85
+#: recommendations.html:130
 msgid ""
 "Being a user friendly GNU/Linux distribution, <span name='distro-"
 "name'></span> allows you to install Flatpak with a single click. After first"
@@ -250,58 +250,19 @@ msgstr ""
 "configuració de la primera vegada, podeu utilitzar el Programari del GNOME "
 "per instal·lar paquets de Flatpak."
 
-#: recommendations.html:86
+#: recommendations.html:134
 msgid "Flatpak is installed. Please reboot for the service to start"
 msgstr "Flatpak està instal·lat. Reinicieu per iniciar-ne el servei."
 
-#: recommendations.html:87
+#: recommendations.html:137
 msgid "Install & Configure Flatpak"
 msgstr "Instal·leu i configureu Flatpak"
 
-#: recommendations.html:91
-msgid "skippy-xd"
-msgstr "skippy-xd"
-
-#: recommendations.html:95
-msgid ""
-"<strong>skippy-xd</strong> adds a window expose type capability through a "
-"keyboard shortcut. For most desktops skippy-xd works well. Note: For some "
-"multi-monitor setups, graphics drivers and within virtual machines such as "
-"VirtualBox it may not work correctly."
-msgstr ""
-"<strong>skippy-xd</strong> afegeix una capacitat d'exposició de finestra a "
-"través d'una drecera de teclat. Per a la majoria d'escriptoris, skippy-xd "
-"funciona bé. Nota: per a algunes configuracions de monitors múltiples, "
-"controladors gràfics i dins de màquines virtuals com VirtualBox pot no "
-"funcionar correctament."
-
-#: recommendations.html:98
-msgid ""
-"By default the installer will create a custom keyboard shortcut CTRL+grave "
-"('the key above the tab'). You can define or change the keyboard shortcut "
-"through the Settings - Keyboard - Custom Shortcuts option. Use the command "
-"<strong>skippy-xd-toggle</strong> when defining your own custom keyboard "
-"shortcut."
-msgstr ""
-"Per defecte, l'instal·lador crearà una drecera CTRL + accent greu, "
-"personalitzada (la de sobre de la tecla de tabulació als teclats americans)."
-" Podeu definir o canviar la drecera del teclat a través de la configuració -"
-" Teclat - Drecera personalitzada. Utilitzeu l'ordre <strong>skippy-xd-"
-"switch</strong> quan definiu la vostra drecera de teclat personalitzada."
-
-#: recommendations.html:99
-msgid "skippy-xd is installed"
-msgstr "skippy-xd està instal·lat"
-
-#: recommendations.html:99
-msgid "Install & Configure skippy-xd"
-msgstr "Instal·leu i configureu skippy-xd"
-
-#: recommendations.html:105
+#: recommendations.html:144
 msgid "Steam"
 msgstr "Steam"
 
-#: recommendations.html:109
+#: recommendations.html:149
 msgid ""
 "<strong>Steam</strong> is a digital distribution platform developed by Valve"
 " Corporation offering digital rights management (DRM), multiplayer gaming "
@@ -326,7 +287,7 @@ msgstr ""
 "xarxes, concordances, assoliments en el joc, microtransaccions i suport per "
 "a continguts creats per l'usuari a través de Steam Workshop."
 
-#: recommendations.html:114
+#: recommendations.html:160
 msgid ""
 "Being proprietary software, Steam is not included in the primary "
 "repositories of <span name=\"distro-name\"></span>. However, to provide more"
@@ -342,15 +303,15 @@ msgstr ""
 "l'opció d'habilitar el repositori <em>Multiverse</em> i d'instal·lar el "
 "Dropbox amb un sol clic."
 
-#: recommendations.html:116
+#: recommendations.html:167
 msgid "Steam is installed"
 msgstr "L'Steam està instal·lat"
 
-#: recommendations.html:116
+#: recommendations.html:170
 msgid "Install & Configure Steam"
 msgstr "Instal·leu i configureu l'Steam"
 
-#: recommendations.html:126
+#: recommendations.html:183
 msgid ""
 "<strong>Dropbox</strong> is a popular proprietary file sharing and storage "
 "solution."
@@ -358,7 +319,7 @@ msgstr ""
 "<strong>Dropbox</strong> és una solució popular i privada d’emmagatzematge i"
 " compatició de fitxers."
 
-#: recommendations.html:129
+#: recommendations.html:187
 msgid ""
 "Being proprietary software, Dropbox is not included in the primary "
 "repositories of <span name=\"distro-name\"></span>. However, to provide more"
@@ -374,7 +335,7 @@ msgstr ""
 "l'opció d'habilitar el repositori <em>Multiverse</em> i d'instal·lar el "
 "Dropbox amb un sol clic."
 
-#: recommendations.html131, 138
+#: recommendations.html193, 207
 msgid ""
 "After installing, logout and login and follow the dropbox instructions that "
 "are then displayed."
@@ -382,15 +343,15 @@ msgstr ""
 "Després de la instal·lació, sortiu de la sessió i torneu-hi a entrar i "
 "seguiu les instruccions del Dropbox que es mostrin."
 
-#: recommendations.html134, 141
+#: recommendations.html198, 212
 msgid "Dropbox is installed"
 msgstr "El Dropbox està instal·lat"
 
-#: recommendations.html134, 141
+#: recommendations.html201, 215
 msgid "Install & Configure Dropbox"
 msgstr "Instal·leu i configureu el Dropbox"
 
-#: recommendations.html:149
+#: recommendations.html:225
 msgid ""
 "Nemo Share allows you to quickly share a folder from the Nemo file manager "
 "without requiring root access."
@@ -398,10 +359,31 @@ msgstr ""
 "La compartició de Nemo us permet compartir de forma ràpida una carpeta des "
 "del gestor de fitxers Nemo sense necessitat d’accés de root."
 
-#: recommendations.html:152
+#: recommendations.html:230
 msgid "Nemo Share is installed"
 msgstr "Nemo Share està instal·lat"
 
-#: recommendations.html:152
+#: recommendations.html:233
 msgid "Install Nemo Share"
 msgstr "Instal·la el Nemo Share"
+
+#: recommendations.html:242
+msgid ""
+"Gutenprint is a suite of <a onclick=\"cmd('link?http://gimp-"
+"print.sourceforge.net/p_Supported_Printers.php')\">thousands</a> of printer "
+"drivers which includes drivers for Epson and Canon printers. Gutenprint "
+"supports only the printer part of multi-function devices."
+msgstr ""
+"Gutenprint és un conjunt de <a onclick=\"cmd('link?http://gimp-"
+"print.sourceforge.net/p_Supported_Printers.php')\">milers</a> de "
+"controladors d’impressora que inclou controladors per a impressores Epson i "
+"Canon. Gutenprint només admet la part de la impressora dels dispositius "
+"multifunció."
+
+#: recommendations.html:247
+msgid "Gutenprint is installed"
+msgstr "Gutenprint està instal·lat"
+
+#: recommendations.html:250
+msgid "Install Gutenprint"
+msgstr "Instal·la Gutenprint"

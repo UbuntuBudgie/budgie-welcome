@@ -36,23 +36,23 @@ msgstr ""
 "javasoljuk a(z) <span name=\"distro-name\"></span> backports tároló "
 "engedélyezését."
 
-#: recommendations.html:24
+#: recommendations.html:27
 msgid "Repository is installed"
 msgstr "Tároló telepítve"
 
-#: recommendations.html:24
+#: recommendations.html:30
 msgid "Enable <span name=\"distro-name\"></span> backports repository"
 msgstr "<span name=\"distro-name\"></span> backports tároló engedélyezése"
 
-#: recommendations.html25, 70, 87, 100, 117, 135, 142, 153
+#: recommendations.html33, 106, 139, 173, 204, 218, 235, 252
 msgid "Applying Changes..."
 msgstr "Változások alkalmazása..."
 
-#: recommendations.html:29
+#: recommendations.html:37
 msgid "Snap Applications"
 msgstr "Snap alkalmazások"
 
-#: recommendations.html:34
+#: recommendations.html:42
 msgid ""
 "<strong>Snap</strong> is a new generation application packaging format "
 "developed by <em>Canonical</em>. Even though it was initially developed just"
@@ -81,19 +81,19 @@ msgstr ""
 "LTS kiadásokon, ami régen a csomagolási nehézségek miatt nem volt "
 "lehetséges."
 
-#: recommendations.html38, 81
+#: recommendations.html55, 122
 msgid "Learn more"
 msgstr "Tudjon meg többet"
 
-#: recommendations.html:40
+#: recommendations.html:57
 msgid "Snap user guide"
 msgstr "Snap felhasználói kézikönyv"
 
-#: recommendations.html:42
+#: recommendations.html:59
 msgid "Search Snap Apps"
 msgstr "Snap alkalmazások keresése"
 
-#: recommendations.html:43
+#: recommendations.html:60
 msgid ""
 "If there’s a barrier to Snap app adoption (aside from few apps being made "
 "available in the format) it’s knowing which packages are available in the "
@@ -105,7 +105,7 @@ msgstr ""
 "áttekintésére. Egyszerűen nyissa meg a terminált és futtassa a következő "
 "parancsot:"
 
-#: recommendations.html:47
+#: recommendations.html:66
 msgid ""
 "The find command lets you quickly search for and discover snaps available to"
 " install from the command line. It can be run with a query after it (e.g., "
@@ -116,17 +116,17 @@ msgstr ""
 "(pl.: \"snap find email\", \"snap find media\", \"snap find messaging\") "
 "vagy anélkül."
 
-#: recommendations.html:48
+#: recommendations.html:69
 msgid "When run without a query you’ll instead see a list of featured snaps."
 msgstr ""
 "Ha keresőkifejezés nélkül futtatja a parancsot, akkor a kiemelt snapek "
 "listáját láthatja."
 
-#: recommendations.html:49
+#: recommendations.html:70
 msgid "See installed apps"
 msgstr "Telepített alkalmazások megtekintése"
 
-#: recommendations.html:50
+#: recommendations.html:71
 msgid ""
 "Installed some Snaps but can’t remember what? Don’t panic. Use the list "
 "command to see an up-to-date list of all Snap apps installed on your system:"
@@ -135,7 +135,7 @@ msgstr ""
 "Használja a \"list\" parancsot az összes telepített Snap alkalmazás "
 "megtekintéséhez a rendszeren."
 
-#: recommendations.html:52
+#: recommendations.html:74
 msgid ""
 "This list also shows you their version number, revision number and the name "
 "of the developer who uploaded it (handy when there are multiple versions of "
@@ -145,11 +145,11 @@ msgstr ""
 "fejlesztő nevét, aki készítette az alkalmazást (hasznos, ha több verziója "
 "van ugyanannak az alkalmazásnak az áruházban, pl.: Telegram)."
 
-#: recommendations.html:53
+#: recommendations.html:77
 msgid "Install & Remove Snap Apps"
 msgstr "Snap alkalmazások telepítése és törlése"
 
-#: recommendations.html:54
+#: recommendations.html:78
 msgid ""
 "If you’re used to managing software using apt you’ll instantly find the "
 "analogous snap commands easy to remember. You install snap apps with the "
@@ -160,11 +160,11 @@ msgstr ""
 "alkalmazásokat az 'install' paranccsal és eltávolíthatja azokat a 'remove' "
 "paranccsal."
 
-#: recommendations.html:57
+#: recommendations.html:83
 msgid "See details of an App"
 msgstr "Egy alkalmazás részleteinek megtekintése"
 
-#: recommendations.html:58
+#: recommendations.html:84
 msgid ""
 "You can use this to see detailed information about any snap application, "
 "whether it is installed or not. This info includes the application’s release"
@@ -176,11 +176,11 @@ msgstr ""
 "csatornáját, korlátozottsági állapotát, méretét, az ellenőrzések számát és "
 "még többet. A snap info --verbose bővebb részleteket mutat."
 
-#: recommendations.html:62
+#: recommendations.html:90
 msgid "Update a Snap App"
 msgstr "Egy Snap alkalmazás frissítése"
 
-#: recommendations.html:64
+#: recommendations.html:92
 msgid ""
 "Rather helpfully you probably won’t ever need to remember to install an "
 "update to a Snap app. This is because Snapd runs in the background and "
@@ -192,23 +192,23 @@ msgstr ""
 "frissítésekről (Természetesen meg van a lehetősége egy frissítés "
 "visszavonására vagy egyedi verzió telepítésére)."
 
-#: recommendations.html:67
+#: recommendations.html:98
 msgid "Reference"
 msgstr "Referencia"
 
-#: recommendations.html:69
+#: recommendations.html:101
 msgid "Snap is already installed"
 msgstr "Snap már telepítve"
 
-#: recommendations.html:69
+#: recommendations.html:104
 msgid "Install Snap"
 msgstr "Snap telepítése"
 
-#: recommendations.html:75
+#: recommendations.html:111
 msgid "Flatpak"
 msgstr "Flatpak"
 
-#: recommendations.html:79
+#: recommendations.html:116
 msgid ""
 "<strong>Flatpak</strong> is a new generation application distribution "
 "framework for GNU/Linux platforms. It introduces a unified packaging format "
@@ -227,7 +227,7 @@ msgstr ""
 "hogy aggódnia kellene az alatta lévő operációs rendszerért és a beépített "
 "könyvtárakért."
 
-#: recommendations.html:83
+#: recommendations.html:125
 msgid ""
 "<span name=\"distro-name\"></span> recommends installing "
 "<strong>Flatpak</strong> as it will open a new world of possibilities for "
@@ -241,7 +241,7 @@ msgstr ""
 "projektnek köszönhetően szinte azonnal, és nem kell arra várnia, hogy a "
 "disztribúció tegye ezt meg."
 
-#: recommendations.html:85
+#: recommendations.html:130
 msgid ""
 "Being a user friendly GNU/Linux distribution, <span name='distro-"
 "name'></span> allows you to install Flatpak with a single click. After first"
@@ -252,60 +252,21 @@ msgstr ""
 "konfiguráció után használhatja is a GNOME Szoftvert a Flatpak csomagok "
 "telepítéséhez."
 
-#: recommendations.html:86
+#: recommendations.html:134
 msgid "Flatpak is installed. Please reboot for the service to start"
 msgstr ""
 "Flatpak telepítve. Kérjük, indítsa újra a gépet, hogy a szolgáltatás "
 "elinduljon"
 
-#: recommendations.html:87
+#: recommendations.html:137
 msgid "Install & Configure Flatpak"
 msgstr "Flatpak telepítése és konfigurálása"
 
-#: recommendations.html:91
-msgid "skippy-xd"
-msgstr "skippy-xd"
-
-#: recommendations.html:95
-msgid ""
-"<strong>skippy-xd</strong> adds a window expose type capability through a "
-"keyboard shortcut. For most desktops skippy-xd works well. Note: For some "
-"multi-monitor setups, graphics drivers and within virtual machines such as "
-"VirtualBox it may not work correctly."
-msgstr ""
-"A <strong>skippy-xd</strong> egy billentyűparancs segítségével ablak "
-"megjelenítést tesz lehetővé. A legtöbb asztali számítógépen a skippy-xd jól "
-"működik. Megjegyzés: Előfordulhat, hogy néhány többmonitoros beállításon, "
-"grafikus illesztőprogrammal és virtuális gépeken, például a VirtualBox "
-"esetén nem működik megfelelően."
-
-#: recommendations.html:98
-msgid ""
-"By default the installer will create a custom keyboard shortcut CTRL+grave "
-"('the key above the tab'). You can define or change the keyboard shortcut "
-"through the Settings - Keyboard - Custom Shortcuts option. Use the command "
-"<strong>skippy-xd-toggle</strong> when defining your own custom keyboard "
-"shortcut."
-msgstr ""
-"Alapértelmezetten a telepítő egy egyedi billentyűparancsot állít be: (CTRL +"
-" ~). Magyar billentyűzet kiosztáson ez nehezen található meg, ezért a "
-"Beállítások - Billentűzet - Egyedi billentyűparancsok beállításnál ezt meg "
-"lehet változtatni. Használja a <strong>skippy-xd-toggle</strong> parancsot "
-"az egyedi billentyű kombináció megadásánál."
-
-#: recommendations.html:99
-msgid "skippy-xd is installed"
-msgstr "skippy-xd telepítve"
-
-#: recommendations.html:99
-msgid "Install & Configure skippy-xd"
-msgstr "skippy-xd telepítése és konfigurálása"
-
-#: recommendations.html:105
+#: recommendations.html:144
 msgid "Steam"
 msgstr "Steam"
 
-#: recommendations.html:109
+#: recommendations.html:149
 msgid ""
 "<strong>Steam</strong> is a digital distribution platform developed by Valve"
 " Corporation offering digital rights management (DRM), multiplayer gaming "
@@ -331,7 +292,7 @@ msgstr ""
 "tranzakciókat és a felhasználó által létrehozott tartalom támogatását a "
 "Steam Workshopon keresztül."
 
-#: recommendations.html:114
+#: recommendations.html:160
 msgid ""
 "Being proprietary software, Steam is not included in the primary "
 "repositories of <span name=\"distro-name\"></span>. However, to provide more"
@@ -347,15 +308,15 @@ msgstr ""
 "lehetőséget kínál a <em>Multiverse</em> tároló engedélyezésére, így a Steam "
 "pár kattintással telepíthető. "
 
-#: recommendations.html:116
+#: recommendations.html:167
 msgid "Steam is installed"
 msgstr "Steam telepítve"
 
-#: recommendations.html:116
+#: recommendations.html:170
 msgid "Install & Configure Steam"
 msgstr "Steam telepítése és konfigurálása"
 
-#: recommendations.html:126
+#: recommendations.html:183
 msgid ""
 "<strong>Dropbox</strong> is a popular proprietary file sharing and storage "
 "solution."
@@ -363,7 +324,7 @@ msgstr ""
 "A <strong>Dropbox</strong> egy kedvelt fájlmegosztó és fájltárolási "
 "szolgáltatás."
 
-#: recommendations.html:129
+#: recommendations.html:187
 msgid ""
 "Being proprietary software, Dropbox is not included in the primary "
 "repositories of <span name=\"distro-name\"></span>. However, to provide more"
@@ -379,7 +340,7 @@ msgstr ""
 "lehetőséget kínál a <em>Multiverse</em> tároló engedélyezésére, így a "
 "Dropbox pár kattintással telepíthető. "
 
-#: recommendations.html131, 138
+#: recommendations.html193, 207
 msgid ""
 "After installing, logout and login and follow the dropbox instructions that "
 "are then displayed."
@@ -387,15 +348,15 @@ msgstr ""
 "Telepítés után jelentkezzen ki majd be és kövesse a képernyőn látható "
 "dropbox utasításokat."
 
-#: recommendations.html134, 141
+#: recommendations.html198, 212
 msgid "Dropbox is installed"
 msgstr "Dropbox telepítve"
 
-#: recommendations.html134, 141
+#: recommendations.html201, 215
 msgid "Install & Configure Dropbox"
 msgstr "Dropbox telepítése és konfigurálása"
 
-#: recommendations.html:149
+#: recommendations.html:225
 msgid ""
 "Nemo Share allows you to quickly share a folder from the Nemo file manager "
 "without requiring root access."
@@ -403,10 +364,26 @@ msgstr ""
 "A Nemo megosztó lehetővé teszi egy mappa azonnali megosztását a Nemo "
 "fájlkezelőből root hozzáférés nélkül."
 
-#: recommendations.html:152
+#: recommendations.html:230
 msgid "Nemo Share is installed"
 msgstr "Nemo megosztó telepítve"
 
-#: recommendations.html:152
+#: recommendations.html:233
 msgid "Install Nemo Share"
 msgstr "Nemo megosztó telepítése"
+
+#: recommendations.html:242
+msgid ""
+"Gutenprint is a suite of <a onclick=\"cmd('link?http://gimp-"
+"print.sourceforge.net/p_Supported_Printers.php')\">thousands</a> of printer "
+"drivers which includes drivers for Epson and Canon printers. Gutenprint "
+"supports only the printer part of multi-function devices."
+msgstr ""
+
+#: recommendations.html:247
+msgid "Gutenprint is installed"
+msgstr ""
+
+#: recommendations.html:250
+msgid "Install Gutenprint"
+msgstr ""
