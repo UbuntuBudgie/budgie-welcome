@@ -499,7 +499,7 @@
               <h5>&zwnj;An Internet connection is required to download and install drivers.&zwnj;</h5>
             </div>
             <div align="center">
-              <a class="btn btn-inverse" onclick="cmd('drivers');cmd('')" onclick="smoothFade('','#drivers-hint')">
+              <a class="btn btn-inverse" onclick="cmd('drivers');" onclick="smoothFade('','#drivers-hint')">
                 &nbsp;<img class="button-icon" src="img/applications/additional-drivers.png" />&nbsp;<span
                   class="button-text">&zwnj;Additional Drivers&zwnj;</span>&nbsp;
               </a>
@@ -601,7 +601,7 @@
                     &zwnj;This only applies for actively supported cards,
                     and not older cards using the legacy driver.&zwnj;
                   </div>
-                  <a id="nvidia-install" class="btn btn-success" onclick="cmd('install?nvidia');cmd('')">
+                  <a id="nvidia-install" class="btn btn-success" onclick="cmd('install?nvidia');">
                     <span class="material-icons">&#xE2C0;</span><span class="button-text">&zwnj;Add
                       Repository&zwnj;</span>
                   </a>
@@ -665,7 +665,7 @@
         </div>
         <div class="row center">
           <div class="col-md-6">
-            <a id="ibus-install" class="btn btn-success" onclick="cmd('install?ibus');cmd('')">&nbsp;<span
+            <a id="ibus-install" class="btn btn-success" onclick="cmd('install?ibus');">&nbsp;<span
                 class="material-icons">&#xE2C0;</span><span class="button-text">&zwnj;Install & Configure
                 IBus&zwnj;</span>&nbsp;</a>
             <span id="ibus-remove">&nbsp;
@@ -675,7 +675,7 @@
                 width="24px" /> &zwnj;Applying Changes...&zwnj;</span>
           </div>
           <div class="col-md-6">
-            <a id="fcitx-install" class="btn btn-success" onclick="cmd('install?fcitx');cmd('')">&nbsp;<span
+            <a id="fcitx-install" class="btn btn-success" onclick="cmd('install?fcitx');">&nbsp;<span
                 class="material-icons">&#xE2C0;</span><span class="button-text">&zwnj;Install & Configure
                 Fcitx&zwnj;</span>&nbsp;</a>
             <span id="fcitx-remove">&nbsp;<span class="alert alert-info">&zwnj;Fcitx is active
@@ -692,7 +692,7 @@
               localization settings, or you may want to install additional
               language support.&zwnj;</p>
             <div align="center">
-              <a class="btn btn-inverse" onclick="cmd('language');cmd('')">
+              <a class="btn btn-inverse" onclick="cmd('language');">
                 &nbsp;<img class="button-icon" src="img/applications/preferences-desktop-locale.png" />
                 &nbsp;<span class="button-text">&zwnj;Language Support&zwnj;</span>&nbsp;
               </a>
@@ -715,10 +715,10 @@
           <div class="col-md-4 center">
             <h5>&zwnj;Chinese&zwnj;</h5>
             <a id="keyboard-chinese-install" class="btn btn-success btn-block"
-              onclick="cmd('install?keyboard-chinese');cmd('')">&nbsp;<span class="material-icons">&#xE2C0;</span><span
+              onclick="cmd('install?keyboard-chinese');">&nbsp;<span class="material-icons">&#xE2C0;</span><span
                 class="button-text">&zwnj;Install&zwnj;</span>&nbsp;</a>
             <a id="keyboard-chinese-remove" class="btn btn-danger btn-block"
-              onclick="cmd('remove?keyboard-chinese');cmd('')">&nbsp;<span class="material-icons">&#xE872;</span><span
+              onclick="cmd('remove?keyboard-chinese');">&nbsp;<span class="material-icons">&#xE872;</span><span
                 class="button-text">&zwnj;Remove&zwnj;</span>&nbsp;</a>
             <span id="keyboard-chinese-status" id="keyboard-status" class="hidden"><img src="img/welcome/processing.gif"
                 width="24px" /> &zwnj;Applying Changes...&zwnj;</span>
@@ -726,10 +726,10 @@
           <div class="col-md-4 center">
             <h5>&zwnj;Japanese&zwnj;</h5>
             <a id="keyboard-japanese-install" class="btn btn-success btn-block"
-              onclick="cmd('install?keyboard-japanese');cmd('')">&nbsp;<span class="material-icons">&#xE2C0;</span><span
+              onclick="cmd('install?keyboard-japanese');">&nbsp;<span class="material-icons">&#xE2C0;</span><span
                 class="button-text">&zwnj;Install&zwnj;</span>&nbsp;</a>
             <a id="keyboard-japanese-remove" class="btn btn-danger btn-block"
-              onclick="cmd('remove?keyboard-japanese');cmd('')">&nbsp;<span class="material-icons">&#xE872;</span><span
+              onclick="cmd('remove?keyboard-japanese');">&nbsp;<span class="material-icons">&#xE872;</span><span
                 class="button-text">&zwnj;Remove&zwnj;</span>&nbsp;</a>
             <span id="keyboard-japanese-status" class="hidden"><img src="img/welcome/processing.gif" width="24px" />
               &zwnj;Applying Changes...&zwnj;</span>
@@ -737,10 +737,10 @@
           <div class="col-md-4 center">
             <h5>&zwnj;Korean&zwnj;</h5>
             <a id="keyboard-korean-install" class="btn btn-success btn-block"
-              onclick="cmd('install?keyboard-korean');cmd('')">&nbsp;<span class="material-icons">&#xE2C0;</span><span
+              onclick="cmd('install?keyboard-korean');">&nbsp;<span class="material-icons">&#xE2C0;</span><span
                 class="button-text">&zwnj;Install&zwnj;</span>&nbsp;</a>
             <a id="keyboard-korean-remove" class="btn btn-danger btn-block"
-              onclick="cmd('remove?keyboard-korean');cmd('')">&nbsp;<span class="material-icons">&#xE872;</span><span
+              onclick="cmd('remove?keyboard-korean');">&nbsp;<span class="material-icons">&#xE872;</span><span
                 class="button-text">&zwnj;Remove&zwnj;</span>&nbsp;</a>
             <span id="keyboard-korean-status" class="hidden"><img src="img/welcome/processing.gif" width="24px" />
               &zwnj;Applying Changes...&zwnj;</span>
@@ -781,10 +781,10 @@
               local devices as well as online cloud-based services.&zwnj;</p>
             <span id="backup-status" class="hidden"><img src="img/welcome/processing.gif" width="24px" height="24px" />
               &zwnj;Applying Changes...&zwnj;</span>
-            <a id="backup-install" class="btn btn-success" onclick="cmd('install?backup');cmd('')">&nbsp;<span
+            <a id="backup-install" class="btn btn-success" onclick="cmd('install?backup');">&nbsp;<span
                 class="material-icons">&#xE2C0;</span><span class="button-text">&zwnj;Install&zwnj;</span>&nbsp;</a>
             <div id="backup-remove">
-              <a class="btn btn-inverse" onclick="cmd('backup');cmd('')">
+              <a class="btn btn-inverse" onclick="cmd('backup');">
                 &nbsp;<img class="button-icon" src="img/applications/deja-dup.png" />&nbsp;<span
                   class="button-text">&zwnj;Configure Backup&zwnj;</span>&nbsp;
               </a>
@@ -814,10 +814,10 @@
             </p>
             <span id="firewall-status" class="hidden"><img src="img/welcome/processing.gif" width="24px"
                 height="24px" /> &zwnj;Applying Changes...&zwnj;</span>
-            <a id="firewall-install" class="btn btn-success" onclick="cmd('install?firewall');cmd('')">&nbsp;<span
+            <a id="firewall-install" class="btn btn-success" onclick="cmd('install?firewall');">&nbsp;<span
                 class="material-icons">&#xE2C0;</span><span class="button-text">&zwnj;Install&zwnj;</span>&nbsp;</a>
             <div id="firewall-remove">
-              <a class="btn btn-inverse" onclick="cmd('firewall');cmd('')">
+              <a class="btn btn-inverse" onclick="cmd('firewall');">
                 &nbsp;<img class="button-icon" src="img/applications/gufw.png" />&nbsp;<span
                   class="button-text">&zwnj;Configure Firewall&zwnj;</span>&nbsp;
               </a>
@@ -844,7 +844,7 @@
             <p>&zwnj;You can also log in to a <b>Guest Session</b> if someone
               is using your computer as a one-off.&zwnj;</p>
             <div class="text-md-center">
-              <a class="btn btn-inverse" onclick="cmd('users');cmd('')">
+              <a class="btn btn-inverse" onclick="cmd('users');">
                 &nbsp;<img class="button-icon" src="img/applications/users.png" />&nbsp;<span
                   class="button-text">&zwnj;Configure Users&zwnj;</span>&nbsp;
               </a>
@@ -877,20 +877,20 @@
             <img src="img/applications/chromium.svg" />
             <p class="text-md-justify">&zwnj;Chromium is an open-source browser project that aims to build a safer,
               faster, and more stable way for all Internet users to experience the web.&zwnj;</p>
-            <a id="chromium-install" class="btn btn-success" onclick="cmd('install?chromium');cmd('')">
+            <a id="chromium-install" class="btn btn-success" onclick="cmd('install?chromium');">
               <span class="material-icons">&#xE2C0;</span><span class="button-text">&zwnj;Install&zwnj;</span>
             </a>
-            <a id="chromium-remove" class="btn btn-danger" onclick="cmd('remove?chromium');cmd('')">
+            <a id="chromium-remove" class="btn btn-danger" onclick="cmd('remove?chromium');">
               <span class="material-icons">&#xE872;</span><span class="button-text">&zwnj;Remove&zwnj;</span>
             </a>
             <span id="chromium-status" class="hidden">
               <img src="img/welcome/processing.gif" style="width:24px" /> &zwnj;Applying Changes...&zwnj;
             </span>
             <p></p>
-            <a id="chromium-snap-install" class="btn btn-success" onclick="cmd('install?chromium-snap');cmd('')">
+            <a id="chromium-snap-install" class="btn btn-success" onclick="cmd('install?chromium-snap');">
               <span class="material-icons">&#xE2C0;</span><span class="button-text">&zwnj;Snap Install&zwnj;</span>
             </a>
-            <a id="chromium-snap-remove" class="btn btn-danger" onclick="cmd('remove?chromium-snap');cmd('')">
+            <a id="chromium-snap-remove" class="btn btn-danger" onclick="cmd('remove?chromium-snap');">
               <span class="material-icons">&#xE872;</span><span class="button-text">&zwnj;Snap Remove&zwnj;</span>
             </a>
             <span id="chromium-snap-status" class="hidden">
@@ -903,10 +903,10 @@
             <p class="text-md-justify">&zwnj;Chromium is an open-source browser project that aims to build a safer,
               faster, and more stable way for all Internet users to experience the web.&zwnj;</p>
             <a id="chromiumeoan-snap-install" class="btn btn-success"
-              onclick="cmd('install?chromiumeoan-snap');cmd('')">
+              onclick="cmd('install?chromiumeoan-snap');">
               <span class="material-icons">&#xE2C0;</span><span class="button-text">&zwnj;Snap Install&zwnj;</span>
             </a>
-            <a id="chromiumeoan-snap-remove" class="btn btn-danger" onclick="cmd('remove?chromiumeoan-snap');cmd('')">
+            <a id="chromiumeoan-snap-remove" class="btn btn-danger" onclick="cmd('remove?chromiumeoan-snap');">
               <span class="material-icons">&#xE872;</span><span class="button-text">&zwnj;Snap Remove&zwnj;</span>
             </a>
             <span id="chromiumeoan-snap-status" class="hidden">
@@ -919,20 +919,20 @@
             <p class="text-md-justify">&zwnj;Mozilla Firefox is a free and open-source web browser, developed
               by the Mozilla Foundation - a not for profit organisation. It is highly popular targeting multiple
               platforms.&zwnj;</p>
-            <a id="firefox-install" class="btn btn-success" onclick="cmd('install?firefox');cmd('')">
+            <a id="firefox-install" class="btn btn-success" onclick="cmd('install?firefox');">
               <span class="material-icons">&#xE2C0;</span><span class="button-text">&zwnj;Install&zwnj;</span>
             </a>
-            <a id="firefox-remove" class="btn btn-danger" onclick="cmd('remove?firefox');cmd('')">
+            <a id="firefox-remove" class="btn btn-danger" onclick="cmd('remove?firefox');">
               <span class="material-icons">&#xE872;</span><span class="button-text">&zwnj;Remove&zwnj;</span>
             </a>
             <span id="firefox-status" class="hidden">
               <img src="img/welcome/processing.gif" style="width:24px" /> &zwnj;Applying Changes...&zwnj;
             </span>
             <p></p>
-            <a id="firefox-snap-install" class="btn btn-success" onclick="cmd('install?firefox-snap');cmd('')">
+            <a id="firefox-snap-install" class="btn btn-success" onclick="cmd('install?firefox-snap');">
               <span class="material-icons">&#xE2C0;</span><span class="button-text">&zwnj;Snap Install&zwnj;</span>
             </a>
-            <a id="firefox-snap-remove" class="btn btn-danger" onclick="cmd('remove?firefox-snap');cmd('')">
+            <a id="firefox-snap-remove" class="btn btn-danger" onclick="cmd('remove?firefox-snap');">
               <span class="material-icons">&#xE872;</span><span class="button-text">&zwnj;Snap Remove&zwnj;</span>
             </a>
             <span id="firefox-snap-status" class="hidden">
@@ -947,10 +947,10 @@
             <img src="img/applications/chrome.png" />
             <p class="text-md-justify">&zwnj;Google Chrome is a modern web browser backed by internet giant Google. It
               offers a smooth browsing experience plus integration with Google's proprietary services.&zwnj;</p>
-            <a id="chrome-install" class="btn btn-success" onclick="cmd('install?chrome');cmd('')">
+            <a id="chrome-install" class="btn btn-success" onclick="cmd('install?chrome');">
               <span class="material-icons">&#xE2C0;</span><span class="button-text">&zwnj;Install&zwnj;</span>
             </a>
-            <a id="chrome-remove" class="btn btn-danger" onclick="cmd('remove?chrome');cmd('')">
+            <a id="chrome-remove" class="btn btn-danger" onclick="cmd('remove?chrome');">
               <span class="material-icons">&#xE872;</span><span class="button-text">&zwnj;Remove&zwnj;</span>
             </a>
             <span id="chrome-status" class="hidden">
@@ -962,10 +962,10 @@
             <img src="img/applications/vivaldi.png" />
             <p class="text-md-justify">&zwnj;Vivaldi Web Browser is a free, fully customizable web browser.
               Feature rich, powerful, secure and fun! Browse the Web your way&zwnj;</p>
-            <a id="vivaldi-install" class="btn btn-success" onclick="cmd('install?vivaldi');cmd('')">
+            <a id="vivaldi-install" class="btn btn-success" onclick="cmd('install?vivaldi');">
               <span class="material-icons">&#xE2C0;</span><span class="button-text">&zwnj;Install&zwnj;</span>
             </a>
-            <a id="vivaldi-remove" class="btn btn-danger" onclick="cmd('remove?vivaldi');cmd('')">
+            <a id="vivaldi-remove" class="btn btn-danger" onclick="cmd('remove?vivaldi');">
               <span class="material-icons">&#xE872;</span><span class="button-text">&zwnj;Remove&zwnj;</span>
             </a>
             <span id="vivaldi-status" class="hidden">
@@ -980,10 +980,10 @@
             <img src="img/applications/opera.svg" />
             <p class="text-md-justify">&zwnj;Opera is a fast and secure browser. Developed in Europe,
               used by millions around the world. Now with a built-in ad blocker and free VPN.&zwnj;</p>
-            <a id="opera-install" class="btn btn-success" onclick="cmd('install?opera');cmd('')">
+            <a id="opera-install" class="btn btn-success" onclick="cmd('install?opera');">
               <span class="material-icons">&#xE2C0;</span><span class="button-text">&zwnj;Snap Install&zwnj;</span>
             </a>
-            <a id="opera-remove" class="btn btn-danger" onclick="cmd('remove?opera');cmd('')">
+            <a id="opera-remove" class="btn btn-danger" onclick="cmd('remove?opera');">
               <span class="material-icons">&#xE872;</span><span class="button-text">&zwnj;Remove&zwnj;</span>
             </a>
             <span id="opera-status" class="hidden">
@@ -999,10 +999,10 @@
               temperature exceeding that of planet earth. And it looks good doing that, too. Oh, and of course it's
               free
               software.&zwnj;</p>
-            <a id="midori-install" class="btn btn-success" onclick="cmd('install?midori');cmd('')">
+            <a id="midori-install" class="btn btn-success" onclick="cmd('install?midori');">
               <span class="material-icons">&#xE2C0;</span><span class="button-text">&zwnj;Snap Install&zwnj;</span>
             </a>
-            <a id="midori-remove" class="btn btn-danger" onclick="cmd('remove?midori');cmd('')">
+            <a id="midori-remove" class="btn btn-danger" onclick="cmd('remove?midori');">
               <span class="material-icons">&#xE872;</span><span class="button-text">&zwnj;Remove&zwnj;</span>
             </a>
             <span id="midori-status" class="hidden">
@@ -1021,10 +1021,10 @@
               a
               simple, clean, beautiful view of the web, this is the browser for you.
               GNOME Web is often referred to by its code name, Epiphany.&zwnj;</p>
-            <a id="gnomeweb-install" class="btn btn-success" onclick="cmd('install?gnomeweb');cmd('')">
+            <a id="gnomeweb-install" class="btn btn-success" onclick="cmd('install?gnomeweb');">
               <span class="material-icons">&#xE2C0;</span><span class="button-text">&zwnj;Snap Install&zwnj;</span>
             </a>
-            <a id="gnomeweb-remove" class="btn btn-danger" onclick="cmd('remove?gnomeweb');cmd('')">
+            <a id="gnomeweb-remove" class="btn btn-danger" onclick="cmd('remove?gnomeweb');">
               <span class="material-icons">&#xE872;</span><span class="button-text">&zwnj;Remove&zwnj;</span>
             </a>
             <span id="gnomeweb-status" class="hidden">
@@ -1039,10 +1039,10 @@
             <p class="text-md-justify">&zwnj;Browse the Internet in private without leaving a trace of history on your
               computer. Ephemeral is a stripped down private browser that's perfect for avoiding persistent cookies or
               web trackers. Close the window and all traces of your browsing are removed from your device.&zwnj;</p>
-            <a id="ephemeral-snap-install" class="btn btn-success" onclick="cmd('install?ephemeral-snap');cmd('')">
+            <a id="ephemeral-snap-install" class="btn btn-success" onclick="cmd('install?ephemeral-snap');">
               <span class="material-icons">&#xE2C0;</span><span class="button-text">&zwnj;Snap Install&zwnj;</span>
             </a>
-            <a id="ephemeral-snap-remove" class="btn btn-danger" onclick="cmd('remove?ephemeral-snap');cmd('')">
+            <a id="ephemeral-snap-remove" class="btn btn-danger" onclick="cmd('remove?ephemeral-snap');">
               <span class="material-icons">&#xE872;</span><span class="button-text">&zwnj;Remove&zwnj;</span>
             </a>
             <span id="ephemeral-snap-status" class="hidden">
@@ -1062,7 +1062,7 @@
               interface. It can be used to quickly setup the user interface
               to broadly reflect how other popular operating systems look
               and feel.&zwnj;</p>
-            <div align="center"><a class="btn btn-inverse" onclick="cmd('budgie-desktop-settings');cmd('')"
+            <div align="center"><a class="btn btn-inverse" onclick="cmd('budgie-desktop-settings');"
                 onclick="smoothFade('','#tweak-hint')">
                 &nbsp;<img class="button-icon" src="img/applications/raven-settings.png" />&nbsp;<span
                   class="button-text">&zwnj;Budgie Desktop Settings&zwnj;</span>&nbsp;
@@ -1078,7 +1078,7 @@
             <p>&zwnj;The utilities mentioned above are all part of the extensive
               Settings control center that <span name="distro-name"></span> provides. You can configure
               just about every aspect of your computer from Settings.&zwnj;</p>
-            <div align="center"><a class="btn btn-inverse" onclick="cmd('control');cmd('')">
+            <div align="center"><a class="btn btn-inverse" onclick="cmd('control');">
                 <img class="button-icon" src="img/applications/control-center.svg" />&nbsp;<span
                   class="button-text">&zwnj;Settings&zwnj;</span>&nbsp;
               </a></div>
@@ -1376,7 +1376,7 @@
                 </td>
                 <td>&zwnj;Call Window Shuffler gui (window tiling grid).&zwnj;
                   <p class="text-right"></p>
-                  <a class="btn btn-inverse" onclick="cmd('link?https://www.youtube.com/watch?v=YfqJ8xrLwP8');cmd('')">
+                  <a class="btn btn-inverse" onclick="cmd('link?https://www.youtube.com/watch?v=YfqJ8xrLwP8');">
                     <img class="button-icon" src="img/distro-icon-inverted.svg">&nbsp;<span class="button-text">
                       &zwnj; Video Demonstration&zwnj;</span>&nbsp;
 
@@ -1392,7 +1392,7 @@
                 <td>&zwnj;Call Window Shuffler gui (window tiling grid).&zwnj;
                   <p class="text-right"></p>
                   <a class="btn btn-inverse"
-                    onclick="cmd('link?https://www.youtube.com/watch?v=Ii4n8H4XEzc&feature=youtu.be');cmd('')">
+                    onclick="cmd('link?https://www.youtube.com/watch?v=Ii4n8H4XEzc&feature=youtu.be');">
                     <img class="button-icon" src="img/distro-icon-inverted.svg">&nbsp;<span class="button-text">
                       &zwnj; Video Demonstration&zwnj;</span>&nbsp;
 
@@ -1722,7 +1722,7 @@
                 <div class="1904 hidden">
                   <tr>
                     <td>
-                      <div align="center"><a class="btn btn-inverse" onclick="cmd('keyboard');cmd('')"
+                      <div align="center"><a class="btn btn-inverse" onclick="cmd('keyboard');"
                           onclick="smoothFade('','#tweak-hint')">
                           &nbsp;<img class="button-icon" src="img/applications/raven-settings.png" />&nbsp;<span
                             class="button-text">&zwnj;Update shortcuts in the Settings App&zwnj;</span>&nbsp;
