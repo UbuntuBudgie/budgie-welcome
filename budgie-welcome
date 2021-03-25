@@ -160,6 +160,7 @@ class AppView(WebKit2.WebView):
             if systemstate.arch == 'i386':
                 app.update_page('.64bitonly', 'hide')
 
+
         ### Index Page ###
         if current_page == 'index':
             if systemstate.autostart:
@@ -234,12 +235,21 @@ class AppView(WebKit2.WebView):
                 app.update_page('.before1804', 'hide')
 
         if current_page in ['recommendations', 'default', 'introduction']:
-            if systemstate.codename in ['xenial', 'bionic', 'cosmic']:
+            if systemstate.codename in ['xenial', 'bionic']:
                 app.update_page('.before1904', 'show')
                 app.update_page('.after1904', 'hide')
+                app.update_page('.focalplus', 'hide')
+                app.update_page('.hursuteplus', 'hide')
+            elif systemstate.codename in ['focal', 'groovy']:
+                app.update_page('.before1904', 'hide')
+                app.update_page('.after1904', 'show')
+                app.update_page('.hirsuteplus', 'hide')
+                app.update_page('.focalplus', 'show')
             else:
                 app.update_page('.before1904', 'hide')
                 app.update_page('.after1904', 'show')
+                app.update_page('.hirsuteplus', 'show')
+                app.update_page('.focalplus', 'hide')
 
         if current_page == 'budgie-applets':
             # applets are distro specific so need to hide/show as appropriate
@@ -1256,8 +1266,11 @@ class SystemState(object):
 
         # Get current architecture of system.
         # Outputs 'i386', 'amd64', etc - Based on packages instead of kernel (eg. i686, x86_64).
-        self.arch = str(
-            subprocess.Popen(['dpkg', '--print-architecture'], stdout=subprocess.PIPE).communicate()[0]).strip('\\nb\'')
+        if arg.simulate_arch:
+            self.arch = arg.simulate_arch
+        else:
+            self.arch = str(
+                subprocess.Popen(['dpkg', '--print-architecture'], stdout=subprocess.PIPE).communicate()[0]).strip('\\nb\'')
 
         # Collect distribution info
         self.gatherDistroInfo()
@@ -2075,7 +2088,7 @@ class Arguments(object):
             if arg.startswith('--force-arch'):
                 try:
                     self.simulate_arch = arg.split('--force-arch=')[1]
-                    if not self.simulate_arch == 'i386' and not self.simulate_arch == 'amd64' and not self.simulate_arch == 'armhf' and not self.simulate_arch == 'powerpc':
+                    if not self.simulate_arch == 'i386' and not self.simulate_arch == 'amd64' and not self.simulate_arch == 'armhf' and not self.simulate_arch == 'powerpc' and not self.simulate_arch == 'arm64':
                         dbg.stdout(
                             'Debug', 'Unrecognised architecture: ' + self.simulate_arch, 0, 1)
                         exit()
