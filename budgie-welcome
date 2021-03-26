@@ -157,10 +157,6 @@ class AppView(WebKit2.WebView):
             else:
                 app.update_page('.graphics-unknown', 'fadeIn')
 
-            if systemstate.arch == 'i386':
-                app.update_page('.64bitonly', 'hide')
-
-
         ### Index Page ###
         if current_page == 'index':
             if systemstate.autostart:
@@ -250,6 +246,22 @@ class AppView(WebKit2.WebView):
                 app.update_page('.after1904', 'show')
                 app.update_page('.hirsuteplus', 'show')
                 app.update_page('.focalplus', 'hide')
+
+        if current_page == 'gettingstarted':
+            # applets are distro specific so need to hide/show as appropriate
+            package = app._data_path + "/config/packages.json"
+
+            with open(package) as file:
+                config = json.load(file)
+
+            for package in config['gettingstarted']:
+                if 'arch' in config['gettingstarted'][package]:
+                    archlist = config['gettingstarted'][package]['arch']
+
+                    if systemstate.arch in archlist:
+                        app.update_page("." + package + "-arch", 'show')
+                    else:
+                        app.update_page("." + package + "-arch", 'hide')
 
         if current_page == 'budgie-applets':
             # applets are distro specific so need to hide/show as appropriate

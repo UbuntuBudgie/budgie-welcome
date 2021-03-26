@@ -625,13 +625,15 @@
     },
     "chrome": {
       "packages": ["google-chrome-stable"],
+      "arch" : ["amd64"],
       "repos": {
         "all": ["deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main"]
       },
       "key-commands": ["wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | apt-key add -"]
     },
     "opera": {
-      "snap": ["opera"]
+      "snap": ["opera"],
+      "arch": ["amd64"]
     },
     "midori": {
       "snap": ["midori"]
@@ -646,15 +648,15 @@
       "snap": ["chromium"]
     },
     "firefox-snap": {
-      "snap": ["firefox"]
+      "snap": ["firefox"],
+      "arch" : ["amd64"]
     },
     "ephemeral-snap": {
-      "snap": [
-        "ephemeral"
-      ]
+      "snap": ["ephemeral"]
     },
     "vivaldi": {
       "packages": ["vivaldi-stable"],
+      "arch" : ["amd64"],
       "repos": {
         "all": ["deb http://repo.vivaldi.com/stable/deb/ stable main"]
       },
