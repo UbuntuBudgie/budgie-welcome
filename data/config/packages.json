@@ -654,6 +654,10 @@
     "ephemeral-snap": {
       "snap": ["ephemeral"]
     },
+    "brave": {
+      "snap": ["brave"],
+      "arch" : ["amd64"]
+    },
     "vivaldi": {
       "packages": ["vivaldi-stable"],
       "arch" : ["amd64"],
