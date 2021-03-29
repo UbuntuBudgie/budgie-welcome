@@ -533,7 +533,7 @@ class AppView(WebKit2.WebView):
                 p = subprocess.Popen(['killall', 'showtime_desktop'])
                 p.wait()
 
-                p = subprocess.Popen(['budgie-panel', '--replace', '&'])
+                p = subprocess.Popen(['nohup', 'budgie-panel', '--replace', '&'])
                 p.wait()
 
                 self._push_config()
