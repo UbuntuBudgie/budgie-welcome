@@ -533,13 +533,14 @@ class AppView(WebKit2.WebView):
                 p = subprocess.Popen(['killall', 'showtime_desktop'])
                 p.wait()
 
-                if systemstate.codename in ['bionic', 'focal', 'groovy']:
-                    p = subprocess.Popen(['budgie-panel', '--replace', '&'])
-                    p.wait()
-                else:
+                #if systemstate.codename in ['bionic', 'focal', 'groovy']:
+                p = subprocess.Popen(['budgie-panel', '--replace'], shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, 
+                    preexec_fn=os.setpgrp)
+                #p.wait()
+                #else:
                     # we restart the panel via extras in hirsute and later due to
                     # webkit/snap now locking spawned processes preventing welcome closing
-                    self._restart_panel()
+                    #self._restart_panel()
 
                 self._push_config()
 
@@ -696,13 +697,14 @@ class AppView(WebKit2.WebView):
                 p = subprocess.Popen(['killall', 'showtime_desktop'])
                 p.wait()
 
-                if systemstate.codename in ['bionic', 'focal', 'groovy']:
-                    p = subprocess.Popen(['budgie-panel', '--replace', '&'])
-                    p.wait()
-                else:
+                #if systemstate.codename in ['bionic', 'focal', 'groovy']:
+                p = subprocess.Popen(['budgie-panel', '--replace'], shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, 
+                    preexec_fn=os.setpgrp)
+                #p.wait()
+                #else:
                     # we restart the panel via extras in hirsute and later due to
                     # webkit/snap now locking spawned processes preventing welcome closing
-                    self._restart_panel()
+                    #self._restart_panel()
 
                 self._push_config()
 
