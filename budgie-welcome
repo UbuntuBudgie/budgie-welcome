@@ -46,9 +46,8 @@ import signal
 import os
 import inspect
 import gi
-
 gi.require_version('WebKit2', '4.0')
-
+from datetime import datetime
 
 try:
     import distro
@@ -534,7 +533,7 @@ class AppView(WebKit2.WebView):
                 p.wait()
 
                 #if systemstate.codename in ['bionic', 'focal', 'groovy']:
-                p = subprocess.Popen(['budgie-panel', '--replace'], shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, 
+                p = subprocess.Popen(['budgie-panel', '--replace'], shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
                     preexec_fn=os.setpgrp)
                 #p.wait()
                 #else:
@@ -698,7 +697,7 @@ class AppView(WebKit2.WebView):
                 p.wait()
 
                 #if systemstate.codename in ['bionic', 'focal', 'groovy']:
-                p = subprocess.Popen(['budgie-panel', '--replace'], shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, 
+                p = subprocess.Popen(['budgie-panel', '--replace'], shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
                     preexec_fn=os.setpgrp)
                 #p.wait()
                 #else:
@@ -1859,6 +1858,46 @@ class WelcomeApp(object):
             # self._start_page = 'firstrun.html'
 
         self._build_app()
+
+
+    def end_of_support(self):
+        end_of_support = {  'xenial' : '2018-07-31',
+                            'bionic' : '2021-04-22',
+                            'focal'  : '2023-04-22'}
+
+        app_code_names = { 'xenial', 'bionic', 'focal', 'groovy', 'hirsute'}
+
+        if systemstate.codename not in app_code_names:
+            dialog = Gtk.MessageDialog( parent=self._window,
+                                        flags=0,
+                                        message_type=Gtk.MessageType.INFO,
+                                        buttons=Gtk.ButtonsType.OK,
+                                        text=_("Budgie Welcome"))
+            dialog.format_secondary_text(
+                _("This snap is running on a distro that is unrecognised or on a development " +
+                  "release of Ubuntu that has not yet received its snap configuration.  Full " +
+                  "snap capabilities are unlikely to work."))
+            dialog.run()
+            dialog.destroy()
+
+            return
+
+        if systemstate.codename in end_of_support:
+            if datetime.now() >= datetime.fromisoformat(end_of_support[systemstate.codename]):
+                dialog = Gtk.MessageDialog( parent=self._window,
+                                            flags=0,
+                                            message_type=Gtk.MessageType.WARNING,
+                                            buttons=Gtk.ButtonsType.OK,
+                                            text=_("Budgie Welcome"))
+                dialog.format_secondary_text(
+                    _("This snap is running on version of budgie desktop that is no longer " +
+                      "supported. Please upgrade to a supported version of the distro."))
+
+                dialog.run()
+                dialog.destroy()
+
+                return
+
     def _get_resolution(self):
         dsp = Gdk.Display.get_default()
         prim = dsp.get_primary_monitor()
@@ -2414,4 +2453,6 @@ if __name__ == "__main__":
     #    app.define_keyboard_shortcut('tilix-quake', '/usr/bin/tilix --quake', 'F12')
 
     if getpass.getuser() != 'oem':
+        app.end_of_support()
         app.run()
+
