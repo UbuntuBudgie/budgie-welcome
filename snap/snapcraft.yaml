@@ -10,7 +10,7 @@ description: |
 
 grade: stable
 confinement: classic
-base: core18
+base: core20
 
 # this line enables LZO compression for the snap
 compression: lzo
@@ -55,7 +55,7 @@ parts:
       cp -r data/* $SNAPCRAFT_PART_INSTALL/usr/share/budgie-welcome/
       mkdir -p $SNAPCRAFT_PART_INSTALL/usr/share/locale/
       cp -r locale/* $SNAPCRAFT_PART_INSTALL/usr/share/locale/
-      cp budgie-welcome $SNAPCRAFT_PART_INSTALL/usr/bin/
+      cp -p budgie-welcome $SNAPCRAFT_PART_INSTALL/usr/bin/
       mkdir -p $SNAPCRAFT_PART_INSTALL/usr/lib/budgie-welcome
       cp budgie-welcome-privileged-actions $SNAPCRAFT_PART_INSTALL/usr/lib/budgie-welcome
       cp budgie-welcome.1 $SNAPCRAFT_PART_INSTALL/usr/share/man/man1
@@ -83,7 +83,11 @@ parts:
     after:
       - budgie-welcome
     plugin: dump
+    override-build: |
+      chmod +x bin/wrapper
+      snapcraftctl build
     source: files/
+
 
 apps:
   budgie-welcome:
