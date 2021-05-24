@@ -234,7 +234,7 @@ class AppView(WebKit2.WebView):
                 app.update_page('.before1904', 'show')
                 app.update_page('.after1904', 'hide')
                 app.update_page('.focalplus', 'hide')
-                app.update_page('.hursuteplus', 'hide')
+                app.update_page('.hirsuteplus', 'hide')
             elif systemstate.codename in ['focal', 'groovy']:
                 app.update_page('.before1904', 'hide')
                 app.update_page('.after1904', 'show')
@@ -1883,7 +1883,8 @@ class WelcomeApp(object):
             return
 
         if systemstate.codename in end_of_support:
-            if datetime.now() >= datetime.fromisoformat(end_of_support[systemstate.codename]):
+            cdate = datetime.strptime(end_of_support[systemstate.codename], "%Y-%m-%d")
+            if datetime.now() >= cdate:
                 dialog = Gtk.MessageDialog( parent=self._window,
                                             flags=0,
                                             message_type=Gtk.MessageType.WARNING,
