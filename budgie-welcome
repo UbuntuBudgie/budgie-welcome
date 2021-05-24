@@ -1874,8 +1874,8 @@ class WelcomeApp(object):
                                         buttons=Gtk.ButtonsType.OK,
                                         text=_("Budgie Welcome"))
             dialog.format_secondary_text(
-                _("This snap is running on a distro that is unrecognised or on a development " +
-                  "release of Ubuntu that has not yet received its snap configuration.  Full " +
+                _("This snap is running on a distro that is unrecognised or on a development " 
+                  "release of Ubuntu that has not yet received its snap configuration.  Full " 
                   "snap capabilities are unlikely to work."))
             dialog.run()
             dialog.destroy()
@@ -1890,7 +1890,7 @@ class WelcomeApp(object):
                                             buttons=Gtk.ButtonsType.OK,
                                             text=_("Budgie Welcome"))
                 dialog.format_secondary_text(
-                    _("This snap is running on version of budgie desktop that is no longer " +
+                    _("This snap is running on version of budgie desktop that is no longer " 
                       "supported. Please upgrade to a supported version of the distro."))
 
                 dialog.run()
