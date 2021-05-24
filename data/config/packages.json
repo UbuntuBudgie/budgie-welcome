@@ -5,12 +5,10 @@
       "repos": {
         "xenial": ["ppa:budgie-remix/ppa"],
         "bionic": ["ppa:ubuntubudgie/backports"],
-        "cosmic": ["ppa:ubuntubudgie/backports"],
-        "disco": ["ppa:ubuntubudgie/backports"],
-        "eoan": ["ppa:ubuntubudgie/backports"],
         "focal": ["ppa:ubuntubudgie/backports"],
         "groovy": ["ppa:ubuntubudgie/backports"],
-        "hirsute": ["ppa:ubuntubudgie/backports"]
+        "hirsute": ["ppa:ubuntubudgie/backports"],
+        "impish": ["ppa:ubuntubudgie/backports"]
       }
     },
     "screenshot-applet": {
@@ -18,12 +16,10 @@
       "repos": {
         "xenial": ["ppa:budgie-remix/ppa"],
         "bionic": ["ppa:ubuntubudgie/backports"],
-        "cosmic": ["ppa:ubuntubudgie/backports"],
-        "disco": ["ppa:ubuntubudgie/backports"],
-        "eoan": ["ppa:ubuntubudgie/backports"],
         "focal": ["ppa:ubuntubudgie/backports"],
         "groovy": ["ppa:ubuntubudgie/backports"],
-        "hirsute": ["ppa:ubuntubudgie/backports"]
+        "hirsute": ["ppa:ubuntubudgie/backports"],
+        "impish": ["ppa:ubuntubudgie/backports"]
       }
     },
     "lightpad-applet": {
@@ -32,7 +28,8 @@
         "bionic": ["ppa:ubuntubudgie/backports"],
         "focal": ["ppa:ubuntubudgie/backports"],
         "groovy": ["ppa:ubuntubudgie/backports"],
-        "hirsute": ["ppa:ubuntubudgie/backports"]
+        "hirsute": ["ppa:ubuntubudgie/backports"],
+        "impish": ["ppa:ubuntubudgie/backports"]
       }
     },
     "clipboard-applet": {
@@ -40,7 +37,8 @@
       "repos": {
         "focal": ["ppa:ubuntubudgie/backports"],
         "groovy": ["ppa:ubuntubudgie/backports"],
-        "hirsute": ["ppa:ubuntubudgie/backports"]
+        "hirsute": ["ppa:ubuntubudgie/backports"],
+        "impish": ["ppa:ubuntubudgie/backports"]
       }
     },
     "calendar-applet": {
@@ -48,27 +46,22 @@
       "repos": {
         "xenial": ["ppa:budgie-remix/ppa"],
         "bionic": ["ppa:ubuntubudgie/backports"],
-        "cosmic": ["ppa:ubuntubudgie/backports"],
-        "disco": ["ppa:ubuntubudgie/backports"],
-        "eoan": ["ppa:ubuntubudgie/backports"],
         "focal": ["ppa:ubuntubudgie/backports"],
         "groovy": ["ppa:ubuntubudgie/backports"],
-        "hirsute": ["ppa:ubuntubudgie/backports"]
+        "hirsute": ["ppa:ubuntubudgie/backports"],
+        "impish": ["ppa:ubuntubudgie/backports"]
       }
     },
     "advanced-brightness-controller-applet": {
       "packages": ["budgie-advanced-brightness-controller-applet"],
       "repos": {
         "xenial": ["ppa:budgie-remix/ppa"],
-        "bionic": ["ppa:ubuntubudgie/backports"],
-        "cosmic": ["ppa:ubuntubudgie/backports"],
-        "disco": ["ppa:ubuntubudgie/backports"]
+        "bionic": ["ppa:ubuntubudgie/backports"]
       }
     },
     "brightness-controller-applet": {
       "packages": ["budgie-brightness-control-applet"],
       "repos": {
-        "eoan": ["ppa:ubuntubudgie/backports"],
         "focal": ["ppa:ubuntubudgie/backports"]
       }
     },
@@ -76,9 +69,6 @@
       "packages": ["budgie-pixel-saver-applet"],
       "repos": {
         "bionic": ["ppa:ubuntubudgie/backports"],
-        "cosmic": ["ppa:ubuntubudgie/backports"],
-        "disco": ["ppa:ubuntubudgie/backports"],
-        "eoan": ["ppa:ubuntubudgie/backports"],
         "focal": ["ppa:ubuntubudgie/backports"],
         "groovy": ["ppa:ubuntubudgie/backports"],
         "hirsute": ["ppa:ubuntubudgie/backports"]
@@ -88,20 +78,16 @@
       "packages": ["budgie-appmenu-applet"],
       "repos": {
         "bionic": ["universe"],
-        "cosmic": ["universe"],
-        "disco": ["universe"],
-        "eoan": ["universe"],
         "focal": ["universe"],
         "groovy": ["universe"],
-        "hirsute": ["universe"]
+        "hirsute": ["universe"],
+        "impish": ["universe"]
       }
     },
     "weather-applet": {
       "packages": ["budgie-weather-applet"],
       "repos": {
-        "bionic": ["ppa:ubuntubudgie/backports"],
-        "cosmic": ["ppa:ubuntubudgie/backports"],
-        "disco": ["ppa:ubuntubudgie/backports"]
+        "bionic": ["ppa:ubuntubudgie/backports"]
       }
     },
     "sysmonitor-applet": {
@@ -109,12 +95,10 @@
       "repos": {
         "xenial": ["ppa:budgie-remix/ppa"],
         "bionic": ["ppa:ubuntubudgie/backports"],
-        "cosmic": ["ppa:ubuntubudgie/backports"],
-        "disco": ["ppa:ubuntubudgie/backports"],
-        "eoan": ["ppa:ubuntubudgie/backports"],
         "focal": ["ppa:ubuntubudgie/backports"],
         "groovy": ["ppa:ubuntubudgie/backports"],
-        "hirsute": ["ppa:ubuntubudgie/backports"]
+        "hirsute": ["ppa:ubuntubudgie/backports"],
+        "impish": ["ppa:ubuntubudgie/backports"]
       }
     },
     "hotcorners-applet": {
@@ -122,12 +106,10 @@
       "repos": {
         "xenial": ["ppa:budgie-remix/ppa"],
         "bionic": ["universe"],
-        "cosmic": ["universe"],
-        "disco": ["universe"],
-        "eoan": ["universe"],
         "focal": ["universe"],
         "groovy": ["universe"],
-        "hirsute": ["universe"]
+        "hirsute": ["universe"],
+        "impish": ["universe"]
       }
     },
     "quicknote-applet": {
@@ -135,30 +117,26 @@
       "repos": {
         "xenial": ["ppa:budgie-remix/ppa"],
         "bionic": ["universe"],
-        "cosmic": ["universe"],
-        "disco": ["universe"],
-        "eoan": ["universe"],
         "focal": ["universe"],
         "groovy": ["universe"],
-        "hirsute": ["universe"]
+        "hirsute": ["universe"],
+        "impish": ["universe"]
       }
     },
     "previews-applet": {
       "packages": ["budgie-previews-applet"],
       "repos": {
         "xenial": ["ppa:budgie-remix/ppa"],
-        "bionic": ["universe"],
-        "cosmic": ["universe"],
-        "disco": ["universe"]
+        "bionic": ["universe"]
       }
     },
     "previewsapp-applet": {
       "packages": ["budgie-previews"],
       "repos": {
-        "eoan": ["universe"],
         "focal": ["universe"],
         "groovy": ["universe"],
-        "hirsute": ["universe"]
+        "hirsute": ["universe"],
+        "impish": ["universe"]
       }
     },
     "workspace-overview-applet": {
@@ -166,12 +144,10 @@
       "repos": {
         "xenial": ["ppa:budgie-remix/ppa"],
         "bionic": ["universe"],
-        "cosmic": ["universe"],
-        "disco": ["universe"],
-        "eoan": ["universe"],
         "focal": ["universe"],
         "groovy": ["universe"],
-        "hirsute": ["universe"]
+        "hirsute": ["universe"],
+        "impish": ["universe"]
       }
     },
     "workspace-wallpaper-applet": {
@@ -179,12 +155,10 @@
       "repos": {
         "xenial": ["ppa:budgie-remix/ppa"],
         "bionic": ["universe"],
-        "cosmic": ["universe"],
-        "disco": ["universe"],
-        "eoan": ["universe"],
         "focal": ["universe"],
         "groovy": ["universe"],
-        "hirsute": ["universe"]
+        "hirsute": ["universe"],
+        "impish": ["universe"]
       }
     },
     "window-mover-applet": {
@@ -192,12 +166,10 @@
       "repos": {
         "xenial": ["ppa:budgie-remix/ppa"],
         "bionic": ["universe"],
-        "cosmic": ["universe"],
-        "disco": ["universe"],
-        "eoan": ["universe"],
         "focal": ["universe"],
         "groovy": ["universe"],
-        "hirsute": ["universe"]
+        "hirsute": ["universe"],
+        "impish": ["universe"]
       }
     },
     "showtime-applet": {
@@ -205,12 +177,10 @@
       "repos": {
         "xenial": ["ppa:budgie-remix/ppa"],
         "bionic": ["universe"],
-        "cosmic": ["universe"],
-        "disco": ["universe"],
-        "eoan": ["universe"],
         "focal": ["universe"],
         "groovy": ["universe"],
-        "hirsute": ["universe"]
+        "hirsute": ["universe"],
+        "impish": ["universe"]
       }
     },
     "countdown-applet": {
@@ -218,12 +188,10 @@
       "repos": {
         "xenial": ["ppa:budgie-remix/ppa"],
         "bionic": ["universe"],
-        "cosmic": ["universe"],
-        "disco": ["universe"],
-        "eoan": ["universe"],
         "focal": ["universe"],
         "groovy": ["universe"],
-        "hirsute": ["universe"]
+        "hirsute": ["universe"],
+        "impish": ["universe"]
       }
     },
     "keyboard-language-applet": {
@@ -231,12 +199,10 @@
       "repos": {
         "xenial": ["ppa:budgie-remix/ppa"],
         "bionic": ["universe"],
-        "cosmic": ["universe"],
-        "disco": ["universe"],
-        "eoan": ["universe"],
         "focal": ["universe"],
         "groovy": ["universe"],
-        "hirsute": ["universe"]
+        "hirsute": ["universe"],
+        "impish": ["universe"]
       }
     },
     "rotation-lock-applet": {
@@ -244,12 +210,10 @@
       "repos": {
         "xenial": ["ppa:budgie-remix/ppa"],
         "bionic": ["universe"],
-        "cosmic": ["universe"],
-        "disco": ["universe"],
-        "eoan": ["universe"],
         "focal": ["universe"],
         "groovy": ["universe"],
-        "hirsute": ["universe"]
+        "hirsute": ["universe"],
+        "impish": ["universe"]
       }
     },
     "clockworks-applet": {
@@ -257,120 +221,101 @@
       "repos": {
         "xenial": ["ppa:budgie-remix/ppa"],
         "bionic": ["universe"],
-        "cosmic": ["universe"],
-        "disco": ["universe"],
-        "eoan": ["universe"],
         "focal": ["universe"],
         "groovy": ["universe"],
-        "hirsute": ["universe"]
+        "hirsute": ["universe"],
+        "impish": ["universe"]
       }
     },
     "dropby-applet": {
       "packages": ["budgie-dropby-applet"],
       "repos": {
         "xenial": ["ppa:budgie-remix/ppa"],
-        "bionic": ["universe"],
-        "cosmic": ["universe"],
-        "disco": ["universe"]
+        "bionic": ["universe"]
       }
     },
     "dropby-window-applet": {
       "packages": ["budgie-dropby-applet"],
       "repos": {
-        "eoan": ["universe"],
         "focal": ["universe"],
         "groovy": ["universe"],
-        "hirsute": ["universe"]
+        "hirsute": ["universe"],
+        "impish": ["universe"]
       }
     },
     "brightness-controller-applet": {
       "packages": ["budgie-brightness-controller-applet"],
       "repos": {
-        "eoan": ["universe"],
         "focal": ["universe"],
         "groovy": ["universe"],
-        "hirsute": ["universe"]
+        "hirsute": ["universe"],
+        "impish": ["universe"]
       }
     },
     "browser-profile-launcher-applet": {
       "packages": ["budgie-browser-profile-launcher"],
       "repos": {
         "bionic": ["ppa:ubuntubudgie/backports"],
-        "cosmic": ["ppa:ubuntubudgie/backports"],
-        "disco": ["ppa:ubuntubudgie/backports"],
-        "eoan": ["ppa:ubuntubudgie/backports"],
         "focal": ["ppa:ubuntubudgie/backports"],
         "groovy": ["ppa:ubuntubudgie/backports"],
-        "hirsute": ["ppa:ubuntubudgie/backports"]
+        "hirsute": ["ppa:ubuntubudgie/backports"],
+        "impish": ["ppa:ubuntubudgie/backports"]
       }
     },
     "kangaroo-applet": {
       "packages": ["budgie-kangaroo-applet"],
       "repos": {
         "bionic": ["ppa:ubuntubudgie/backports"],
-        "cosmic": ["universe"],
-        "disco": ["universe"],
-        "eoan": ["universe"],
         "focal": ["universe"],
         "groovy": ["universe"],
-        "hirsute": ["universe"]
+        "hirsute": ["universe"],
+        "impish": ["universe"]
       }
     },
     "weathershow-applet": {
       "packages": ["budgie-weathershow-applet"],
       "repos": {
         "bionic": ["ppa:ubuntubudgie/backports"],
-        "cosmic": ["universe"],
-        "disco": ["universe"],
-        "eoan": ["universe"],
         "focal": ["universe"],
         "groovy": ["universe"],
-        "hirsute": ["universe"]
+        "hirsute": ["universe"],
+        "impish": ["universe"]
       }
     },
     "recentlyused-applet": {
       "packages": ["budgie-recentlyused-applet"],
       "repos": {
         "bionic": ["ppa:ubuntubudgie/backports"],
-        "cosmic": ["universe"],
-        "disco": ["universe"],
-        "eoan": ["universe"],
         "focal": ["universe"],
         "groovy": ["universe"],
-        "hirsute": ["universe"]
+        "hirsute": ["universe"],
+        "impish": ["universe"]
       }
     },
     "trash-applet": {
       "packages": ["budgie-trash-applet"],
       "repos": {
         "bionic": ["ppa:ubuntubudgie/backports"],
-        "cosmic": ["universe"],
-        "disco": ["universe"],
-        "eoan": ["universe"],
         "focal": ["universe"],
         "groovy": ["universe"],
-        "hirsute": ["universe"]
+        "hirsute": ["universe"],
+        "impish": ["universe"]
       }
     },
     "applauncher-applet": {
       "packages": ["budgie-app-launcher-applet"],
       "repos": {
         "bionic": ["ppa:ubuntubudgie/backports"],
-        "cosmic": ["universe"],
-        "disco": ["universe"],
-        "eoan": ["universe"],
         "focal": ["universe"],
         "groovy": ["universe"],
-        "hirsute": ["universe"]
+        "hirsute": ["universe"],
+        "impish": ["universe"]
       }
     },
     "network-applet": {
       "packages": ["budgie-network-applet"],
       "repos": {
-        "bionic": ["ppa:ubuntubudgie/backports"],
-        "cosmic": ["ppa:ubuntubudgie/backports"],
-        "disco": ["ppa:ubuntubudgie/backports"],
-        "eoan": ["ppa:ubuntubudgie/backports"]
+        "bionic": ["ppa:ubuntubudgie/backports"]
       }
     },
     "network-manager-applet": {
@@ -378,79 +323,74 @@
       "repos": {
         "focal": ["universe"],
         "groovy": ["universe"],
-        "hirsute": ["universe"]
+        "hirsute": ["universe"],
+        "impish": ["universe"]
       }
     },
     "cpufreq-applet": {
       "packages": ["budgie-cpufreq-applet"],
       "repos": {
         "bionic": ["ppa:ubuntubudgie/backports"],
-        "cosmic": ["ppa:ubuntubudgie/backports"],
-        "disco": ["ppa:ubuntubudgie/backports"],
-        "eoan": ["ppa:ubuntubudgie/backports"],
         "focal": ["ppa:ubuntubudgie/backports"],
         "groovy": ["ppa:ubuntubudgie/backports"],
-        "hirsute": ["ppa:ubuntubudgie/backports"]
+        "hirsute": ["ppa:ubuntubudgie/backports"],
+        "impish": ["ppa:ubuntubudgie/backports"]
       }
     },
     "sys-monitor-applet": {
       "packages": ["budgie-sys-monitor-applet"],
       "repos": {
         "bionic": ["ppa:ubuntubudgie/backports"],
-        "cosmic": ["ppa:ubuntubudgie/backports"],
-        "disco": ["ppa:ubuntubudgie/backports"],
-        "eoan": ["ppa:ubuntubudgie/backports"],
         "focal": ["ppa:ubuntubudgie/backports"],
         "groovy": ["ppa:ubuntubudgie/backports"],
-        "hirsute": ["ppa:ubuntubudgie/backports"]
+        "hirsute": ["ppa:ubuntubudgie/backports"],
+        "impish": ["ppa:ubuntubudgie/backports"]
       }
     },
     "takeabreak-applet": {
       "packages": ["budgie-takeabreak-applet"],
       "repos": {
         "bionic": ["ppa:ubuntubudgie/backports"],
-        "cosmic": ["ppa:ubuntubudgie/backports"],
-        "disco": ["universe"],
-        "eoan": ["universe"],
         "focal": ["universe"],
         "groovy": ["universe"],
-        "hirsute": ["universe"]
+        "hirsute": ["universe"],
+        "impish": ["universe"]
       }
     },
     "fuzzyclock-applet": {
       "packages": ["budgie-fuzzyclock-applet"],
       "repos": {
-        "eoan": ["universe"],
         "focal": ["universe"],
         "groovy": ["universe"],
-        "hirsute": ["universe"]
+        "hirsute": ["universe"],
+        "impish": ["universe"]
       }
     },
     "workspace-stopwatch-applet": {
       "packages": ["budgie-workspace-stopwatch-applet"],
       "repos": {
-        "eoan": ["universe"],
         "focal": ["universe"],
         "groovy": ["universe"],
-        "hirsute": ["universe"]
+        "hirsute": ["universe"],
+        "impish": ["universe"]
       }
     },
     "quickchar": {
       "packages": ["budgie-quickchar"],
       "repos": {
-        "eoan": ["universe"],
         "focal": ["universe"],
         "groovy": ["universe"],
-        "hirsute": ["universe"]
+        "hirsute": ["universe"],
+        "impish": ["universe"]
       }
     },
     "sntray-applet": {
       "packages": ["budgie-sntray-plugin"],
       "repos": {
-        "eoan": ["universe"],
         "focal": ["universe"],
         "groovy": ["universe"],
-        "hirsute": ["universe"]
+        "hirsute": ["universe"],
+        "impish": ["universe"]
       }
     },
     "applications-menu-applet": {
@@ -458,7 +398,8 @@
       "repos": {
         "focal": ["universe"],
         "groovy": ["universe"],
-        "hirsute": ["universe"]
+        "hirsute": ["universe"],
+        "impish": ["universe"]
       }
     },
     "wallstreet": {
@@ -466,7 +407,8 @@
       "repos": {
         "focal": ["universe"],
         "groovy": ["universe"],
-        "hirsute": ["universe"]
+        "hirsute": ["universe"],
+        "impish": ["universe"]
       }
     },
     "window-shuffler": {
@@ -474,7 +416,8 @@
       "repos": {
         "focal": ["universe"],
         "groovy": ["universe"],
-        "hirsute": ["universe"]
+        "hirsute": ["universe"],
+        "impish": ["universe"]
       }
     },
     "visualspace-applet": {
@@ -482,7 +425,8 @@
       "repos": {
         "focal": ["universe"],
         "groovy": ["universe"],
-        "hirsute": ["universe"]
+        "hirsute": ["universe"],
+        "impish": ["universe"]
       }
     },
     "analogue-clock-applet": {
@@ -490,7 +434,8 @@
       "repos": {
         "focal": ["ppa:ubuntubudgie/backports"],
         "groovy": ["ppa:ubuntubudgie/backports"],
-        "hirsute": ["ppa:ubuntubudgie/backports"]
+        "hirsute": ["ppa:ubuntubudgie/backports"],
+        "impish": ["ppa:ubuntubudgie/backports"]
       }
     }
   },
@@ -503,12 +448,10 @@
       "repos": {
         "xenial": ["ppa:alexlarsson/flatpak"],
         "bionic": ["universe"],
-        "cosmic": ["universe"],
-        "disco": ["universe"],
-        "eoan": ["universe"],
         "focal": ["universe"],
         "groovy": ["universe"],
-        "hirsute": ["universe"]
+        "hirsute": ["universe"],
+        "impish": ["universe"]
       },
       "post-install": "flatpak-setup"
     },
@@ -537,12 +480,10 @@
       "repos": {
         "xenial": ["ppa:budgie-remix/ppa"],
         "bionic": ["ppa:ubuntubudgie/backports"],
-        "cosmic": ["ppa:ubuntubudgie/backports"],
-        "disco": ["ppa:ubuntubudgie/backports"],
-        "eoan": ["ppa:ubuntubudgie/backports"],
         "focal": ["ppa:ubuntubudgie/backports"],
         "groovy": ["ppa:ubuntubudgie/backports"],
-        "hirsute": ["ppa:ubuntubudgie/backports"]
+        "hirsute": ["ppa:ubuntubudgie/backports"],
+        "impish": ["ppa:ubuntubudgie/backports"]
       }
     },
     "dropbox": {
@@ -554,21 +495,28 @@
     "nemodropbox": {
       "packages": ["nemo-dropbox"],
       "repos": {
-        "disco": ["ppa:ubuntubudgie/backports"],
-        "eoan": ["ppa:ubuntubudgie/backports"],
         "focal": ["ppa:ubuntubudgie/backports"],
         "groovy": ["ppa:ubuntubudgie/backports"],
-        "hirsute": ["ppa:ubuntubudgie/backports"]
+        "hirsute": ["ppa:ubuntubudgie/backports"],
+        "impish": ["ppa:ubuntubudgie/backports"]
       }
     },
     "nemoshare": {
       "packages": ["nemo-share"],
       "repos": {
-        "disco": ["ppa:ubuntubudgie/backports"],
-        "eoan": ["ppa:ubuntubudgie/backports"],
         "focal": ["ppa:ubuntubudgie/backports"],
         "groovy": ["ppa:ubuntubudgie/backports"],
-        "hirsute": ["ppa:ubuntubudgie/backports"]
+        "hirsute": ["ppa:ubuntubudgie/backports"],
+        "impish": ["ppa:ubuntubudgie/backports"]
+      }
+    },
+    "nemopreview": {
+      "packages": ["nemo-preview"],
+      "repos": {
+        "focal": ["ppa:ubuntubudgie/backports"],
+        "groovy": ["ppa:ubuntubudgie/backports"],
+        "hirsute": ["ppa:ubuntubudgie/backports"],
+        "impish": ["ppa:ubuntubudgie/backports"]
       }
     },
     "gutenprint": {
@@ -758,9 +706,6 @@
       "repos": {
         "xenial": ["universe", "ppa:papirus/papirus", "ppa:tista/adapta"],
         "bionic": ["universe", "ppa:tista/adapta"],
-        "cosmic": ["universe", "ppa:tista/adapta"],
-        "disco": ["universe"],
-        "eoan": ["universe"],
         "focal": ["universe"]
       }
     },
@@ -769,12 +714,10 @@
       "repos": {
         "xenial": ["universe", "ppa:snwh/pulp", "ppa:noobslab/themes"],
         "bionic": ["universe", "ppa:ubuntubudgie/backports"],
-        "cosmic": ["universe", "ppa:ubuntubudgie/backports"],
-        "disco": ["universe", "ppa:ubuntubudgie/backports"],
-        "eoan": ["universe", "ppa:ubuntubudgie/backports"],
         "focal": ["universe", "ppa:ubuntubudgie/backports"],
         "groovy": ["universe", "ppa:ubuntubudgie/backports"],
-        "hirsute": ["universe", "ppa:ubuntubudgie/backports"]
+        "hirsute": ["universe", "ppa:ubuntubudgie/backports"],
+        "impish": ["universe", "ppa:ubuntubudgie/backports"]
       }
     },
     "material-materia-theme": {
@@ -787,12 +730,10 @@
       "packages": ["materia-gtk-theme", "numix-icon-theme-circle", "fonts-noto"],
       "repos": {
         "bionic": ["universe", "ppa:numix/ppa"],
-        "cosmic": ["universe", "ppa:numix/ppa"],
-        "disco": ["universe", "ppa:numix/ppa"],
-        "eoan": ["universe", "ppa:numix/ppa"],
         "focal": ["universe", "ppa:numix/ppa"],
         "groovy": ["universe", "ppa:numix/ppa"],
-        "hirsute": ["universe", "ppa:numix/ppa"]
+        "hirsute": ["universe", "ppa:numix/ppa"],
+        "impish": ["universe", "ppa:numix/ppa"]
       }
     },
     "vertex-theme": {
@@ -808,9 +749,6 @@
       "packages": ["evopop-gtk-theme", "paper-icon-theme", "fonts-noto"],
       "repos": {
         "bionic": ["universe", "ppa:ubuntubudgie/backports"],
-        "cosmic": ["universe", "ppa:ubuntubudgie/backports"],
-        "disco": ["universe", "ppa:ubuntubudgie/backports"],
-        "eoan": ["universe", "ppa:ubuntubudgie/backports"],
         "focal": ["universe", "ppa:ubuntubudgie/backports"],
         "groovy": ["universe", "ppa:ubuntubudgie/backports"],
         "hirsute": ["universe", "ppa:ubuntubudgie/backports"]
@@ -820,9 +758,6 @@
       "packages": ["ant-theme", "breeze-cursor-theme", "papirus-icon-theme"],
       "repos": {
         "bionic": ["universe", "ppa:ubuntubudgie/backports"],
-        "cosmic": ["universe", "ppa:ubuntubudgie/backports"],
-        "disco": ["universe", "ppa:ubuntubudgie/backports"],
-        "eoan": ["universe", "ppa:ubuntubudgie/backports"],
         "focal": ["universe", "ppa:ubuntubudgie/backports"],
         "groovy": ["universe", "ppa:ubuntubudgie/backports"],
         "hirsute": ["universe", "ppa:ubuntubudgie/backports"]
@@ -832,9 +767,6 @@
       "packages": ["plata-theme", "breeze-cursor-theme", "papirus-icon-theme"],
       "repos": {
         "bionic": ["universe", "ppa:tista/plata-theme"],
-        "cosmic": ["universe", "ppa:tista/plata-theme"],
-        "disco": ["universe", "ppa:tista/plata-theme"],
-        "eoan": ["universe", "ppa:tista/plata-theme"],
         "focal": ["universe", "ppa:tista/plata-theme"],
         "groovy": ["universe", "ppa:tista/plata-theme"],
         "hirsute": ["universe", "ppa:tista/plata-theme"]
@@ -845,7 +777,8 @@
       "repos": {
         "focal": ["universe","ppa:ubuntubudgie/backports"],
         "groovy": ["universe","ppa:ubuntubudgie/backports"],
-        "hirsute": ["universe", "ppa:ubuntubudgie/backports"]
+        "hirsute": ["universe", "ppa:ubuntubudgie/backports"],
+        "impish": ["universe", "ppa:ubuntubudgie/backports"]
       }
     },
     "whitesur-theme": {
@@ -853,7 +786,8 @@
       "repos": {
         "focal": ["universe","ppa:ubuntubudgie/backports"],
         "groovy": ["universe","ppa:ubuntubudgie/backports"],
-        "hirsute": ["universe", "ppa:ubuntubudgie/backports"]
+        "hirsute": ["universe", "ppa:ubuntubudgie/backports"],
+        "impish": ["universe", "ppa:ubuntubudgie/backports"]
       }
     }
   }
