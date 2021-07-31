@@ -195,12 +195,10 @@ class AppView(WebKit2.WebView):
                 for theme in config[systemstate.codename]:
                     app.update_page("." + theme, 'show')
 
-            if systemstate.codename in ['xenial', 'bionic', 'cosmic', 'disco', 'eoan']:
-                app.update_page('.before2004', 'show')
-                app.update_page('.after1910', 'hide')
+            if systemstate.codename in ['focal', 'hirsute']:
+                app.update_page('.after2110', 'hide')
             else:
-                app.update_page('.before2004', 'hide')
-                app.update_page('.after1910', 'show')
+                app.update_page('.after2110', 'show')
 
         if current_page in ['introduction', 'features', 'community', 'recommendations', 'gettingstarted']:
             if systemstate.official:
