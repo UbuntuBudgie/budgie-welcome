@@ -1,31 +1,28 @@
 # 
 # Translators:
-# Adolfo Jayme Barrientos, 2017
-# Daniel Hernandez, 2017
-# Miguel Morales <miguelmorales85@gmail.com>, 2017
-# Javier Limpias <javicolb@gmail.com>, 2017
+# Omer I.S. <omeritzicschwartz@gmail.com>, 2021
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: Budgie Welcome\n"
 "POT-Creation-Date: 2016-02-27 12:48+0100\n"
 "PO-Revision-Date: 2017-03-15 13:49+0000\n"
-"Last-Translator: Javier Limpias <javicolb@gmail.com>, 2017\n"
-"Language-Team: Spanish (https://www.transifex.com/ubuntu-budgie/teams/72251/es/)\n"
+"Last-Translator: Omer I.S. <omeritzicschwartz@gmail.com>, 2021\n"
+"Language-Team: Hebrew (https://www.transifex.com/ubuntu-budgie/teams/72251/he/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: es\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: he\n"
+"Plural-Forms: nplurals=4; plural=(n == 1 && n % 1 == 0) ? 0 : (n == 2 && n % 1 == 0) ? 1: (n % 10 == 0 && n % 1 == 0 && n > 10) ? 2 : 3;\n"
 "Report-Msgid-Bugs-To : you@example.com\n"
 
 #: getinvolved.html:13
 msgid "Get Involved"
-msgstr "Participe"
+msgstr "לקיחת חלק"
 
 #: getinvolved.html:17
 msgid "Thanks for Your Support"
-msgstr "Gracias por su apoyo"
+msgstr "תודה על תמיכתך"
 
 #: getinvolved.html:18
 msgid ""
@@ -34,10 +31,6 @@ msgid ""
 "for participating. We are growing at a steady pace and our distribution is "
 "getting better every day thanks to you."
 msgstr ""
-"<span name=\"distro-name\"></span> recibe una gran cantidad de apoyo de su "
-"comunidad, de usuarios, y quisieramos agradecer a cada uno de los "
-"contribuidores por participar. Estamos creciendo a un paso constante y "
-"nuestra distribución mejora cada día gracias a ustedes."
 
 #: getinvolved.html:19
 msgid ""
@@ -45,17 +38,14 @@ msgid ""
 "availability you can help <span name=\"distro-name\"></span> in one or more "
 "of the following ways:"
 msgstr ""
-"Es muy fácil hacer una diferencia. Dependiendo en sus habilidades, su "
-"disponibilidad, usted puede ayudar a <span name=\"distro-name\"></span> en "
-"una o más de las siguientes formas:"
 
 #: getinvolved.html:23
 msgid "Support &amp; Promotion"
-msgstr "Asistencia y promoción"
+msgstr "תמיכה וקידום"
 
 #: getinvolved.html:24
 msgid "Spreading the word"
-msgstr "Divulgación"
+msgstr "הפצת המילה"
 
 #: getinvolved.html:25
 msgid ""
@@ -63,13 +53,10 @@ msgid ""
 "comments in forums and talk about it with your friends and the people around"
 " you."
 msgstr ""
-"Si le gusta <span name=\"distro-name\"></span>, haga correr la voz. Bloguee,"
-" comente en foros y hable de ella con sus amigos y las personas que lo "
-"rodean."
 
 #: getinvolved.html:27
 msgid "Joining the Community"
-msgstr "Formar parte de la comunidad"
+msgstr "הצטרפות לקהילה"
 
 #: getinvolved.html:28
 msgid ""
@@ -80,17 +67,10 @@ msgid ""
 "name=\"distro-name\"></span> users, we recommend you join the community and "
 "participate in making <span name=\"distro-name\"></span> better."
 msgstr ""
-"<span name=\"distro-name\"></span> no es solamente un sistema operativo, es "
-"también una comunidad dinámica de personas que disfrutan, congenian e "
-"interactúan con un proyecto gratuito y abierto. Ya sea ayudando a otros a "
-"resolver cuestiones, al hacerlos sentir bienvenidos, o simplemente "
-"reuniéndose y hablando a otros <span name=\"distro-name\"></span> usuarios, "
-"recomendamos que se una a la comunidad y participe haciendo <span name"
-"=\"distro-name\"></span> mejor"
 
 #: getinvolved.html:30
 msgid "Helping others"
-msgstr "Ayudar a los demás"
+msgstr "עזרה לאחרים"
 
 #: getinvolved.html:31
 msgid ""
@@ -99,18 +79,14 @@ msgid ""
 "joining the community chat-room and helping other <span name=\"distro-"
 "name\"></span> users solve the problems you know how to fix."
 msgstr ""
-"Si tiene algo de tiempo libre y esta deseando ayudar a otros usuarios con "
-"problemas técnicos, debería considerar seriamente leer los foros y/o "
-"adjuntarse al chat-room de la comunidad y ayudar a otros usuarios <span name"
-"=\"distro-name\"></span> resolviendo los problemas que sabe solucionar.."
 
 #: getinvolved.html:35
 msgid "Project contributions"
-msgstr "Colaboradores del proyecto"
+msgstr "תרומות למיזם"
 
 #: getinvolved.html:36
 msgid "Bug reports"
-msgstr "Informes de Errores"
+msgstr "דיווחים על תקלות"
 
 #: getinvolved.html:37
 msgid ""
@@ -119,14 +95,10 @@ msgid ""
 "is likely to affect others as well; The sooner we know about it, the sooner "
 "we're able to fix it."
 msgstr ""
-"Si ha notado que algo no funciona bien al utilizar <span name=\"distro-"
-"name\"></span>, infórmenos al respecto. Puede que problema que haya "
-"descubierto también afecte a otras personas; cuanto antes sepamos de ello, "
-"más pronto podremos corregirlo."
 
 #: getinvolved.html:39
 msgid "New ideas"
-msgstr "Ideas nuevas"
+msgstr "רעיונות חדשים"
 
 #: getinvolved.html:40
 msgid ""
@@ -137,15 +109,10 @@ msgid ""
 "have any other ideas on how to make <span name=\"distro-name\"></span> "
 "better, we're always interested in hearing them."
 msgstr ""
-"La gran mayoria de los mejoramientos incluidos en cada versión vienen de la "
-"comunidad. Si hay algo que usted piensa que falta o que se podría mejorar, "
-"por favor díganos. Ya sea la inclusión de una aplicación que falte en la "
-"instalación inicial, o si tiene alguna otra idea sobre como mejorar <span "
-"name=\"distro-name\"></span> , siempre estamos interesados en escucharlas."
 
 #: getinvolved.html:42
 msgid "Artwork"
-msgstr "Ilustraciones y diseño visual"
+msgstr "עבודות אומנות"
 
 #: getinvolved.html:43
 msgid ""
@@ -154,15 +121,10 @@ msgid ""
 "wallpaper, an icon set, a splash screen, or even a new logo, we're always "
 "interested to hear from you about new artwork."
 msgstr ""
-"Si tienes talento en el diseño gráfico y estas dispuesto a contribuir al "
-"proyecto, por favor envíanos tus creaciones y obras. Ya sea un fondo de "
-"pantalla, un conjunto de íconos, una pantalla de bienvenida o inclusive un "
-"nuevo logo, siempre estamos interesados en recibir de tí nuevos trabajos "
-"artísticos."
 
 #: getinvolved.html:45
 msgid "Code"
-msgstr "Programación"
+msgstr "תכנות"
 
 #: getinvolved.html:46
 msgid ""
@@ -172,40 +134,30 @@ msgid ""
 " the code. If you think you can improve our applications or write new ones "
 "don't hesitate to suggest patches or to fork our git repositories."
 msgstr ""
-"La mayoría de nuestro desarrollo se realiza en GTK+3, C++, Vala, Python y "
-"HTML5/CSS. También usamos Git para control de versiones y .deb para "
-"empaquetado. Si esta cómodo con cualquiera de estas tecnologías, no dude en "
-"dar un vistazo al código. Si cree que puede mejorar nuestras aplicaciones o "
-"escribir algunas nuevas no dude en sugerir parches o diseminar nuestros "
-"repositorios git."
 
 #: getinvolved.html:47
 msgid ""
 "Upstream to us is budgie-desktop. Created by Solus, they are looking for C "
 "developers - so please help if you can."
 msgstr ""
-"Upstream para nosotros es budgie-desktop. Creado por Solus, se buscan "
-"programadores de C - por favor ayúdenos si usted puede."
 
 #: getinvolved.html:51
 msgid ""
 "It appears you are not connected to the Internet. Please check your "
 "connection to access this content."
 msgstr ""
-"Parece que no se ha conectado a Internet. Compruebe su conexión para acceder"
-" a este contenido."
 
 #: getinvolved.html:52
 msgid "Sorry, Welcome was unable to establish a connection."
-msgstr "Esta aplicación no pudo establecer una conexión."
+msgstr ""
 
 #: getinvolved.html:53
 msgid "Retry"
-msgstr "Intentar de nuevo"
+msgstr "ניסיון חוזר"
 
 #: getinvolved.html:76
 msgid "Budgie Desktop GitHub"
-msgstr "El escritorio Budgie en GitHub"
+msgstr "שולחן העבודה Budgie ב־GitHub"
 
 #: getinvolved.html:83
 msgid ""
@@ -213,10 +165,7 @@ msgid ""
 "website. Please feel free to visit our website and find out in which way you"
 " can contribute to our mission."
 msgstr ""
-"Además, hemos publicado una lista completa de oportunidades en nuestro sitio"
-" web. Por favor, no dudes en visitar nuestro sitio web y encontrar de qué "
-"manera puedes contribuir a nuestra misión."
 
 #: getinvolved.html:88
 msgid "Opportunities"
-msgstr "Oportunidades"
+msgstr ""
