@@ -66,6 +66,29 @@
                   </div>
                   <hr/>
                </div>
+               <div class="col-md-6 performance-gauge-applet">
+                  <br>
+                  <h2><a onclick="cmd('link?https://github.com/AkiraMiyakoda/budgie-performance-gauge-applet')"><span class="material-icons">help</span></a>&zwnj;Performance Gauge Applet&zwnj;</h2>
+                  <div class="card card-block">
+                     <div class="card-image text-md-center">
+                        <a href="img/screenshots/performance-gauge-applet.jpg" data-toggle="lightbox"><img src="img/screenshots/performance-gauge-applet.jpg" style="width: auto; max-height: 128px" /></a>
+                     </div>
+                     <p class="card-text">&zwnj;This applet shows a CPU, Memory or Storage gauge on your budgie panel.&zwnj;</p>
+                  </div>
+                  <div class="text-md-right">
+                     <a id="performance-gauge-applet-remove" class="btn btn-danger" onclick="cmd('remove?performance-gauge-applet');">
+                     <span class="material-icons">&#xE872;</span><span class="button-text">&zwnj;Remove&zwnj;</span>
+                     </a>
+                     <a id="performance-gauge-applet-install" class="btn btn-success hvr-shadow" onclick="cmd('install?performance-gauge-applet');"> &nbsp;
+                     <span class="material-icons">&#xE2C0;</span>&zwnj;Install&zwnj;&nbsp;
+                     </a>
+                     <span id="performance-gauge-status" class="hidden">
+                     <img src="img/welcome/processing.gif" width="24px" height="24px" /> &zwnj;Applying changes...&zwnj;
+                     </span>
+                     <p id="performance-gauge-applet-instruction" class="hidden"><small>&zwnj;Logout and login after installing applets. From the menu - choose Budgie Desktop Settings and choose the Panel to add and configure applets.&zwnj;</small></p>
+                  </div>
+                  <hr/>
+               </div>
                <div class="col-md-6 screenshot-applet">
                   <br>
                   <h2><a onclick="cmd('link?https://github.com/cybre/budgie-screenshot-applet')"><span class="material-icons">help</span></a>&zwnj;Screenshot Applet&zwnj;</h2>

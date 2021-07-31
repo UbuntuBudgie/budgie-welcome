@@ -349,6 +349,22 @@
 				]
 			}
 		},
+		"performance-gauge-applet": {
+			"packages": [
+				"budgie-performance-gauge-applet"
+			],
+			"repos": {
+				"focal": [
+					"ppa:ubuntubudgie/backports"
+				],
+				"hirsute": [
+					"ppa:ubuntubudgie/backports"
+				],
+				"impish": [
+					"ppa:ubuntubudgie/backports"
+				]
+			}
+		},
 		"kangaroo-applet": {
 			"packages": [
 				"budgie-kangaroo-applet"
