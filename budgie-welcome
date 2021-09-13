@@ -221,6 +221,14 @@ class AppView(WebKit2.WebView):
                 app.update_page('.before2004', 'hide')
                 app.update_page('.after1910', 'show')
 
+            if systemstate.codename in ['focal', 'hirsute']:
+                app.update_page('.after2110', 'hide')
+                app.update_page('.before2110', 'show')
+            else:
+                app.update_page('.after2110', 'show')
+                app.update_page('.before2110', 'hide')
+
+
         if current_page == 'recommendations':
             if systemstate.codename in ['xenial']:
                 app.update_page('.before1804', 'show')
