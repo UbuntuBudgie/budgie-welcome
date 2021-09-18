@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/material-icons.css" rel="stylesheet" media="screen">
+    <link href="css/animate.css" rel="stylesheet" media="screen">
+    <link href="css/welcome.css" rel="stylesheet" media="screen">
+  </head>
+  <body class="backdrop-simple fade fade-1s">
+    <div id="wrapper">
+        <div id="title-inject">&zwnj;Gaming&zwnj;</div>
+        <div id="content" class="container entire-page-fade">
+            <div class="row" id="gaming">
+                <div class="col-md-12">
+                    <h2>&zwnj;Gaming Client&zwnj;</h2>
+                    <p>&zwnj;A gaming client will help you download, install and manage your games. &zwnj;</p>
+                    <div class="row text-md-center">
+                        <div class="col-md-6">
+                            <br>
+                            <h2><a onclick="cmd('link?https://forums.lutris.net/t/very-brief-tutorial-on-manually-installing-a-game-in-lutris/2028')"><span class="material-icons">help</span></a>&zwnj;Lutris&zwnj;</h2>
+                            <div class="card card-block">
+                                <div class="card-image text-md-center">
+                                    <a href="img/logos/lutris.png" data-toggle="lightbox"><img src="img/logos/lutris.png" style="width: auto; max-height: 128px" /></a>
+                                </div>
+                                <p class="card-text">&zwnj;Lutris is a gaming client for Linux. It gives you access to
+                                    (almost) all your video games.&zwnj;</p>
+                            </div>
+                            <div class="text-md-right">
+                                <a id="lutris-remove" class="btn btn-danger" onclick="cmd('remove?lutris');">
+                                <span class="material-icons">&#xE872;</span><span class="button-text">&zwnj;Remove&zwnj;</span>
+                                </a>
+                                <a id="lutris-install" class="btn btn-success hvr-shadow" onclick="cmd('install?lutris');"> &nbsp;
+                                <span class="material-icons">&#xE2C0;</span>&zwnj;Install&zwnj;&nbsp;
+                                </a>
+                                <span id="lutris-status" class="hidden">
+                                <img src="img/welcome/processing.gif" width="24px" height="24px" /> &zwnj;Applying Changes...&zwnj;
+                                </span>
+                                <p id="lutris-instruction" class="hidden"><small>&zwnj;Click on the help icon to learn how to install your games&zwnj;</small></p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <br>
+                            <h2><a onclick="cmd('link?https://help.steampowered.com/en/')"><span class="material-icons">help</span></a>&zwnj;Steam&zwnj;</h2>
+                            <div class="card card-block">
+                                <div class="card-image text-md-center">
+                                    <a href="img/logos/steam.png" data-toggle="lightbox"><img src="img/logos/steam.png" style="width: auto; max-height: 128px" /></a>
+                                </div>
+                                <p class="card-text">&zwnj;Steam is the ultimate destination for playing, discussing, and creating games.&zwnj;</p>
+                            </div>
+                            <div class="text-md-right">
+                                <a id="steam-remove" class="btn btn-danger" onclick="cmd('remove?steam');">
+                                <span class="material-icons">&#xE872;</span><span class="button-text">&zwnj;Remove&zwnj;</span>
+                                </a>
+                                <a id="steam-install" class="btn btn-success hvr-shadow" onclick="cmd('install?steam');"> &nbsp;
+                                <span class="material-icons">&#xE2C0;</span>&zwnj;Install&zwnj;&nbsp;
+                                </a>
+                                <span id="steam-status" class="hidden">
+                                <img src="img/welcome/processing.gif" width="24px" height="24px" /> &zwnj;Applying Changes...&zwnj;
+                                </span>
+                                <p id="steam-instruction" class="hidden"><small>&zwnj;Please reboot to complete installation&zwnj;</small></p>
+                            </div>
+                        </div>
+                    </div>
+                    <hr />
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-2.1.4.js"></script>
+    <script src="js/tether.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/janimate.js"></script>
+    <script src="js/confetti.js"></script> <!-- Confetti only appears on special events -->
+    <script src="js/welcome.js"></script>
+  </body>
+</html>
