@@ -61,6 +61,12 @@ source_file = data/po/default/default.pot
 source_lang = en_US
 type = PO
 
+[budgie-welcome.gaming]
+file_filter = data/po/gaming/<lang>.po
+source_file = data/po/gaming/gaming.pot
+source_lang = en_US
+type = PO
+
 [budgie-welcome.ubuntubudgiewelcome]
 file_filter = po/<lang>.po
 source_file = po/budgie-welcome.pot
