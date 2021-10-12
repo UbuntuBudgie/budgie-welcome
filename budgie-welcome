@@ -864,6 +864,7 @@ class AppView(WebKit2.WebView):
             else:
                 checkrepos = repos[systemstate.codename]
             todo = False
+            thirdparty = False
             for val in checkrepos:
                 if val[:3] == 'ppa':
                     ppa = val[4:].split('/')
@@ -878,13 +879,38 @@ class AppView(WebKit2.WebView):
                     if retval != 0:
                         message += "\n" + val
                         todo = True
+                    thirdparty = True
+
                 elif val[:3] == 'deb':
                     message += "\n" + val
                     todo = True
+                    thirdparty = True
             if todo:
                 message += "\n\n"
                 message += _(
-                    "Third-Party repositories are not supported by Ubuntu. You should only continue if you trust the maintainers of the proposed repositories.")
+                    "Third-Party repositories and their packages are not supported by Ubuntu. You should only continue if you trust the maintainers of these repositories.")
+                message += "\n\n"
+                message += _("Continue with the installation?")
+
+                messagedialog = Gtk.MessageDialog(None,
+                                                  Gtk.DialogFlags.MODAL,
+                                                  Gtk.MessageType.WARNING,
+                                                  Gtk.ButtonsType.OK_CANCEL,
+                                                  _("Third-Party Repositories"))
+                messagedialog.format_secondary_text(message)
+                ret = messagedialog.run()
+                messagedialog.destroy()
+                if ret == Gtk.ResponseType.OK:
+                    return True
+
+                return False
+
+            if thirdparty:
+                # so now we should ask for permission since the package is from a third-party PPA
+                message = _("One or more packages need to be installed from a third-party repository that you have previously added.")
+                message += "\n\n"
+                message += _(
+                    "Third-Party repositories and their packages are not supported by Ubuntu. You should only continue if you trust the maintainers of these repositories.")
                 message += "\n\n"
                 message += _("Continue with the installation?")
 
