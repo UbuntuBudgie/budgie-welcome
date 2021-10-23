@@ -328,6 +328,7 @@ class AppView(WebKit2.WebView):
 
     def _load_changed_cb(self, view, frame):
         uri = str(self.get_uri())
+        dbg.stdout('Debug', 'uri: ' + uri, 0, 0)
         app.current_page = uri.rsplit('/', 1)[1]
         self._push_config()
 
