@@ -328,9 +328,13 @@ class AppView(WebKit2.WebView):
 
     def _load_changed_cb(self, view, frame):
         uri = str(self.get_uri())
-        dbg.stdout('Debug', 'uri: ' + uri, 0, 0)
-        app.current_page = uri.rsplit('/', 1)[1]
-        self._push_config()
+        dbg.stdout('_load_changed_cb', 'uri: ' + uri, 0, 0)
+
+        try:
+            app.current_page = uri.rsplit('/', 1)[1]
+            self._push_config()
+        except IndexError as e:
+            dbg.stdout("_load_changed_cb", "weird uri " + uri, 0, 1)
 
     def _title_changed_cb(self, view, frame):
         title = self.get_title()
