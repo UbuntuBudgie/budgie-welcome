@@ -43,7 +43,7 @@ msgstr "Il repository è installato"
 msgid "Enable <span name=\"distro-name\"></span> backports repository"
 msgstr "Abilita il repository dei backports"
 
-#: recommendations.html33, 106, 139, 173, 204, 218, 235, 251, 268
+#: recommendations.html33, 106, 139, 170, 184, 201, 217, 234
 msgid "Applying Changes..."
 msgstr "Applicare le modifiche..."
 
@@ -262,60 +262,7 @@ msgstr "Flatpak è installato. Per favore riavvia per far partire il servizio"
 msgid "Install & Configure Flatpak"
 msgstr "Installa & Configura Flatpak"
 
-#: recommendations.html:144
-msgid "Steam"
-msgstr "Steam"
-
 #: recommendations.html:149
-msgid ""
-"<strong>Steam</strong> is a digital distribution platform developed by Valve"
-" Corporation offering digital rights management (DRM), multiplayer gaming "
-"and social networking services. Steam provides the user with installation "
-"and automatic updating of games on multiple computers, and community "
-"features such as friends lists and groups, cloud saving, and in-game voice "
-"and chat functionality. The software provides a freely available application"
-" programming interface (API) called Steamworks, which developers can use to "
-"integrate many of Steam's functions into their products, including "
-"networking, matchmaking, in-game achievements, micro-transactions, and "
-"support for user-created content through Steam Workshop."
-msgstr ""
-"<strong>Steam</strong> è una piattaforma di distribuzione digitale "
-"sviluppata da Valve Corporation che offre servizi di gestione dei diritti "
-"digitali (DRM), servizi di gioco multiplayer e servizi di social networking."
-" Steam fornisce all'utente l'installazione e l'aggiornamento automatico di "
-"giochi su più computer, e funzioni di comunità come elenchi e gruppi di "
-"amici, il salvataggio su cloud e la funzionalità in-game di voce e chat. Il "
-"software fornisce un'interfaccia di programmazione applicativa (API) "
-"liberamente disponibile, chiamata Steamworks, che gli sviluppatori possono "
-"utilizzare per integrare molte delle funzioni di Steam nei loro prodotti, "
-"inclusi networking, matchmaking, in-game achievements, micro-transazioni e "
-"supporto per i contenuti creati dall'utente Tramite Steam Workshop."
-
-#: recommendations.html:160
-msgid ""
-"Being proprietary software, Steam is not included in the primary "
-"repositories of <span name=\"distro-name\"></span>. However, to provide more"
-" choice to users, Steam is shipped as a part of the <em>Multiverse</em> "
-"repository. <span name=\"distro-name\"></span> provides you the option to "
-"enable the <em>Multiverse</em> repository and to install Steam with a single"
-" mouse click."
-msgstr ""
-"Essendo un software proprietario, Steam non è incluso nei repository primari"
-" di <span name=\"distro-name\"></span>. Tuttavia, per fornire maggiore "
-"scelta agli utenti, Steam viene spedito come parte del repository "
-"<em>Multiverse</em>. <span name=\"distro-name\"></span>vi offre l'opzione "
-"per abilitare il repository 4Multiverse4 e per installare Steam con un "
-"singolo clic del mouse. "
-
-#: recommendations.html:167
-msgid "Steam is installed"
-msgstr "Steam è installato"
-
-#: recommendations.html:170
-msgid "Install & Configure Steam"
-msgstr "Installa & Configura Steam"
-
-#: recommendations.html:183
 msgid ""
 "<strong>Dropbox</strong> is a popular proprietary file sharing and storage "
 "solution."
@@ -323,7 +270,7 @@ msgstr ""
 "<strong>Dropbox</strong> è una soluzione di condivisione e archiviazione di "
 "file proprietaria."
 
-#: recommendations.html:187
+#: recommendations.html:153
 msgid ""
 "Being proprietary software, Dropbox is not included in the primary "
 "repositories of <span name=\"distro-name\"></span>. However, to provide more"
@@ -339,7 +286,7 @@ msgstr ""
 " possibilità di abilitare il repository <em>Multiverse</em> e di installare "
 "Dropbox con un semplice clic del mouse."
 
-#: recommendations.html193, 207
+#: recommendations.html159, 173
 msgid ""
 "After installing, logout and login and follow the dropbox instructions that "
 "are then displayed."
@@ -347,15 +294,15 @@ msgstr ""
 "Dopo aver installato, disconnetiti e accedi e segui le istruzioni di dropbox"
 " che vengono visualizzate."
 
-#: recommendations.html198, 212
+#: recommendations.html164, 178
 msgid "Dropbox is installed"
 msgstr "Dropbox è installato"
 
-#: recommendations.html201, 215
+#: recommendations.html167, 181
 msgid "Install & Configure Dropbox"
 msgstr "Installa & Configura Dropbox"
 
-#: recommendations.html:225
+#: recommendations.html:191
 msgid ""
 "Nemo Share allows you to quickly share a folder from the Nemo file manager "
 "without requiring root access."
@@ -363,15 +310,15 @@ msgstr ""
 "Nemo Share ti consente di condividere rapidamente una cartella dal file "
 "manager Nemo senza richiedere l'accesso come root."
 
-#: recommendations.html:230
+#: recommendations.html:196
 msgid "Nemo Share is installed"
 msgstr "Nemo Share è installato"
 
-#: recommendations.html:233
+#: recommendations.html:199
 msgid "Install Nemo Share"
 msgstr "Installa Nemo Share"
 
-#: recommendations.html:242
+#: recommendations.html:208
 msgid ""
 "Nemo Preview allows you to quickly view the contents of a highlighted file "
 "from the Nemo file manager. Just press space to toggle the preview on and "
@@ -381,15 +328,15 @@ msgstr ""
 " evidenziato dal file manager di Nemo. Basta premere lo spazio per attivare "
 "e disattivare l'anteprima. "
 
-#: recommendations.html:246
+#: recommendations.html:212
 msgid "Nemo Preview is installed"
 msgstr "Nemo Preview è installato"
 
-#: recommendations.html:249
+#: recommendations.html:215
 msgid "Install Nemo Preview"
 msgstr "Installa Nemo Preview"
 
-#: recommendations.html:258
+#: recommendations.html:224
 msgid ""
 "Gutenprint is a suite of <a onclick=\"cmd('link?http://gimp-"
 "print.sourceforge.net/p_Supported_Printers.php')\">thousands</a> of printer "
@@ -401,10 +348,10 @@ msgstr ""
 "per stampante che include i driver per stampanti Epson e Canon. Gutenprint "
 "supporta solo la parte della stampante dei dispositivi multifunzione. "
 
-#: recommendations.html:263
+#: recommendations.html:229
 msgid "Gutenprint is installed"
 msgstr "Gutenprint è installato"
 
-#: recommendations.html:266
+#: recommendations.html:232
 msgid "Install Gutenprint"
 msgstr "Installa Gutenprint"

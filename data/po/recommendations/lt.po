@@ -42,7 +42,7 @@ msgstr "Saugykla yra įdiegta"
 msgid "Enable <span name=\"distro-name\"></span> backports repository"
 msgstr "Įjungti <span name=\"distro-name\"></span> naujų versijų paketų saugyklą"
 
-#: recommendations.html33, 106, 139, 173, 204, 218, 235, 251, 268
+#: recommendations.html33, 106, 139, 170, 184, 201, 217, 234
 msgid "Applying Changes..."
 msgstr "Taikomi pakeitimai..."
 
@@ -259,59 +259,7 @@ msgstr ""
 msgid "Install & Configure Flatpak"
 msgstr "Įdiegti ir konfigūruoti Flatpak"
 
-#: recommendations.html:144
-msgid "Steam"
-msgstr "Steam"
-
 #: recommendations.html:149
-msgid ""
-"<strong>Steam</strong> is a digital distribution platform developed by Valve"
-" Corporation offering digital rights management (DRM), multiplayer gaming "
-"and social networking services. Steam provides the user with installation "
-"and automatic updating of games on multiple computers, and community "
-"features such as friends lists and groups, cloud saving, and in-game voice "
-"and chat functionality. The software provides a freely available application"
-" programming interface (API) called Steamworks, which developers can use to "
-"integrate many of Steam's functions into their products, including "
-"networking, matchmaking, in-game achievements, micro-transactions, and "
-"support for user-created content through Steam Workshop."
-msgstr ""
-"<strong>Steam</strong> yra skaitmeninio platinimo platforma, sukurta Valve "
-"Corporation ir siūlanti skaitmeninių teisių valdymą (angl. Digital rights "
-"management (DRM)), daugelio žaidėjų žaidimus ir socialinio tinklo paslaugas."
-" Steam teikia naudotojams automatinį žaidimų įdiegimą ir atnaujinimą "
-"keliuose kompiuteriuose ir bendruomenės ypatybes, tokias kaip draugų sąrašai"
-" ir grupės, įrašymas į debesiją, ir balso bei pokalbių funkcionalumas "
-"žaidime. Programinė įranga teikia laisvai prieinamą programų sąsają (API), "
-"pavadinimu Steamworks, kurią kūrėjai gali naudoti, norėdami į savo produktus"
-" integruoti daugelį Steam funkcijų, įskaitant darbą tinkle, sugretinimus, "
-"pasiekimus žaidime, mikro persiuntimus ir palaikymą naudotojų sukurtam "
-"turiniui per Steam Workshop."
-
-#: recommendations.html:160
-msgid ""
-"Being proprietary software, Steam is not included in the primary "
-"repositories of <span name=\"distro-name\"></span>. However, to provide more"
-" choice to users, Steam is shipped as a part of the <em>Multiverse</em> "
-"repository. <span name=\"distro-name\"></span> provides you the option to "
-"enable the <em>Multiverse</em> repository and to install Steam with a single"
-" mouse click."
-msgstr ""
-"Būdama nuosavybine programine įranga, Steam nėra įtraukta į pirmines <span "
-"name=\"distro-name\"></span> saugyklas. Kita vertus, norint suteikti "
-"naudotojams daugiau pasirinkimo, Steam yra teikiama kaip <em>Multiverse</em>"
-" saugyklos dalis. <span name=\"distro-name\"></span> suteikia jums galimybę "
-"įjungti <em>Multiverse</em> saugyklą ir vienu spustelėjimu įdiegti Steam."
-
-#: recommendations.html:167
-msgid "Steam is installed"
-msgstr "Steam yra įdiegta"
-
-#: recommendations.html:170
-msgid "Install & Configure Steam"
-msgstr "Įdiegti ir konfigūruoti Steam"
-
-#: recommendations.html:183
 msgid ""
 "<strong>Dropbox</strong> is a popular proprietary file sharing and storage "
 "solution."
@@ -319,7 +267,7 @@ msgstr ""
 "<strong>Dropbox</strong> yra populiarus nuosavybinis failų bendrinimo ir "
 "talpinimo sprendimas."
 
-#: recommendations.html:187
+#: recommendations.html:153
 msgid ""
 "Being proprietary software, Dropbox is not included in the primary "
 "repositories of <span name=\"distro-name\"></span>. However, to provide more"
@@ -335,7 +283,7 @@ msgstr ""
 "suteikia jums galimybę įjungti <em>Multiverse</em> saugyklą ir vienu "
 "spustelėjimu įdiegti Dropbox."
 
-#: recommendations.html193, 207
+#: recommendations.html159, 173
 msgid ""
 "After installing, logout and login and follow the dropbox instructions that "
 "are then displayed."
@@ -343,15 +291,15 @@ msgstr ""
 "Įdiegę, atsijukite ir vėl prisijunkite, o tuomet sekite rodomą dropbox "
 "instrukciją."
 
-#: recommendations.html198, 212
+#: recommendations.html164, 178
 msgid "Dropbox is installed"
 msgstr "Dropbox yra įdiegta"
 
-#: recommendations.html201, 215
+#: recommendations.html167, 181
 msgid "Install & Configure Dropbox"
 msgstr "Įdiegti ir konfigūruoti Dropbox"
 
-#: recommendations.html:225
+#: recommendations.html:191
 msgid ""
 "Nemo Share allows you to quickly share a folder from the Nemo file manager "
 "without requiring root access."
@@ -359,30 +307,30 @@ msgstr ""
 "Nemo Share leidžia jums be administratoriaus prieigos, greitai bendrinti "
 "aplanką iš Nemo failų tvarkytuvės."
 
-#: recommendations.html:230
+#: recommendations.html:196
 msgid "Nemo Share is installed"
 msgstr "Nemo Share yra įdiegta"
 
-#: recommendations.html:233
+#: recommendations.html:199
 msgid "Install Nemo Share"
 msgstr "Įdiegti Nemo Share"
 
-#: recommendations.html:242
+#: recommendations.html:208
 msgid ""
 "Nemo Preview allows you to quickly view the contents of a highlighted file "
 "from the Nemo file manager. Just press space to toggle the preview on and "
 "off."
 msgstr ""
 
-#: recommendations.html:246
+#: recommendations.html:212
 msgid "Nemo Preview is installed"
 msgstr ""
 
-#: recommendations.html:249
+#: recommendations.html:215
 msgid "Install Nemo Preview"
 msgstr ""
 
-#: recommendations.html:258
+#: recommendations.html:224
 msgid ""
 "Gutenprint is a suite of <a onclick=\"cmd('link?http://gimp-"
 "print.sourceforge.net/p_Supported_Printers.php')\">thousands</a> of printer "
@@ -390,10 +338,10 @@ msgid ""
 "supports only the printer part of multi-function devices."
 msgstr ""
 
-#: recommendations.html:263
+#: recommendations.html:229
 msgid "Gutenprint is installed"
 msgstr ""
 
-#: recommendations.html:266
+#: recommendations.html:232
 msgid "Install Gutenprint"
 msgstr ""

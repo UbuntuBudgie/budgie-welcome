@@ -44,7 +44,7 @@ msgstr "Tároló telepítve"
 msgid "Enable <span name=\"distro-name\"></span> backports repository"
 msgstr "<span name=\"distro-name\"></span> backports tároló engedélyezése"
 
-#: recommendations.html33, 106, 139, 173, 204, 218, 235, 251, 268
+#: recommendations.html33, 106, 139, 170, 184, 201, 217, 234
 msgid "Applying Changes..."
 msgstr "Változások alkalmazása..."
 
@@ -262,61 +262,7 @@ msgstr ""
 msgid "Install & Configure Flatpak"
 msgstr "Flatpak telepítése és konfigurálása"
 
-#: recommendations.html:144
-msgid "Steam"
-msgstr "Steam"
-
 #: recommendations.html:149
-msgid ""
-"<strong>Steam</strong> is a digital distribution platform developed by Valve"
-" Corporation offering digital rights management (DRM), multiplayer gaming "
-"and social networking services. Steam provides the user with installation "
-"and automatic updating of games on multiple computers, and community "
-"features such as friends lists and groups, cloud saving, and in-game voice "
-"and chat functionality. The software provides a freely available application"
-" programming interface (API) called Steamworks, which developers can use to "
-"integrate many of Steam's functions into their products, including "
-"networking, matchmaking, in-game achievements, micro-transactions, and "
-"support for user-created content through Steam Workshop."
-msgstr ""
-"A <strong>Steam</strong> egy digitális disztribúciós platform, amelyet a "
-"Valve Corporation fejlesztett. Digitális jogkezelést (DRM), többjátékos "
-"módot és közösség hálózati szolgáltatásokat kínál. A Steam játékok "
-"automatikus telepítését és frissítését kínálja több számítógépen a "
-"felhasználónak, valamint közösségi funkciókat, mint például a barátok "
-"listáit és csoportjait, a felhőmentést és a játékon belüli hang- és "
-"csevegési funkciókat. A szoftver az ingyenesen elérhető, Steamworks nevű "
-"alkalmazásprogramozási interfészt (API) is tartalmazza, amelyet a fejlesztők"
-" számos Steam funkció integrálására használhatnak termékeikbe, beleértve a "
-"hálózatépítést, a meccset, a játékban elért eredményeket, a mikro-"
-"tranzakciókat és a felhasználó által létrehozott tartalom támogatását a "
-"Steam Workshopon keresztül."
-
-#: recommendations.html:160
-msgid ""
-"Being proprietary software, Steam is not included in the primary "
-"repositories of <span name=\"distro-name\"></span>. However, to provide more"
-" choice to users, Steam is shipped as a part of the <em>Multiverse</em> "
-"repository. <span name=\"distro-name\"></span> provides you the option to "
-"enable the <em>Multiverse</em> repository and to install Steam with a single"
-" mouse click."
-msgstr ""
-"Mivel a Steam egy szabadalmaztatott szoftver, ezért az elsődleges <span name"
-"=\"distro-name\"></span> tárolokból nem érhető el. Annak érdekében, hogy a "
-"felhasználóknak több lehetőséget biztosítsunk, a Steam elérhető a "
-"<em>Multiverse</em> tárolóból. A(z) <span name=\"distro-name\"></span> "
-"lehetőséget kínál a <em>Multiverse</em> tároló engedélyezésére, így a Steam "
-"pár kattintással telepíthető. "
-
-#: recommendations.html:167
-msgid "Steam is installed"
-msgstr "Steam telepítve"
-
-#: recommendations.html:170
-msgid "Install & Configure Steam"
-msgstr "Steam telepítése és konfigurálása"
-
-#: recommendations.html:183
 msgid ""
 "<strong>Dropbox</strong> is a popular proprietary file sharing and storage "
 "solution."
@@ -324,7 +270,7 @@ msgstr ""
 "A <strong>Dropbox</strong> egy kedvelt fájlmegosztó és fájltárolási "
 "szolgáltatás."
 
-#: recommendations.html:187
+#: recommendations.html:153
 msgid ""
 "Being proprietary software, Dropbox is not included in the primary "
 "repositories of <span name=\"distro-name\"></span>. However, to provide more"
@@ -340,7 +286,7 @@ msgstr ""
 "lehetőséget kínál a <em>Multiverse</em> tároló engedélyezésére, így a "
 "Dropbox pár kattintással telepíthető. "
 
-#: recommendations.html193, 207
+#: recommendations.html159, 173
 msgid ""
 "After installing, logout and login and follow the dropbox instructions that "
 "are then displayed."
@@ -348,15 +294,15 @@ msgstr ""
 "Telepítés után jelentkezzen ki majd be és kövesse a képernyőn látható "
 "dropbox utasításokat."
 
-#: recommendations.html198, 212
+#: recommendations.html164, 178
 msgid "Dropbox is installed"
 msgstr "Dropbox telepítve"
 
-#: recommendations.html201, 215
+#: recommendations.html167, 181
 msgid "Install & Configure Dropbox"
 msgstr "Dropbox telepítése és konfigurálása"
 
-#: recommendations.html:225
+#: recommendations.html:191
 msgid ""
 "Nemo Share allows you to quickly share a folder from the Nemo file manager "
 "without requiring root access."
@@ -364,30 +310,30 @@ msgstr ""
 "A Nemo megosztó lehetővé teszi egy mappa azonnali megosztását a Nemo "
 "fájlkezelőből root hozzáférés nélkül."
 
-#: recommendations.html:230
+#: recommendations.html:196
 msgid "Nemo Share is installed"
 msgstr "Nemo megosztó telepítve"
 
-#: recommendations.html:233
+#: recommendations.html:199
 msgid "Install Nemo Share"
 msgstr "Nemo megosztó telepítése"
 
-#: recommendations.html:242
+#: recommendations.html:208
 msgid ""
 "Nemo Preview allows you to quickly view the contents of a highlighted file "
 "from the Nemo file manager. Just press space to toggle the preview on and "
 "off."
 msgstr ""
 
-#: recommendations.html:246
+#: recommendations.html:212
 msgid "Nemo Preview is installed"
 msgstr ""
 
-#: recommendations.html:249
+#: recommendations.html:215
 msgid "Install Nemo Preview"
 msgstr ""
 
-#: recommendations.html:258
+#: recommendations.html:224
 msgid ""
 "Gutenprint is a suite of <a onclick=\"cmd('link?http://gimp-"
 "print.sourceforge.net/p_Supported_Printers.php')\">thousands</a> of printer "
@@ -395,10 +341,10 @@ msgid ""
 "supports only the printer part of multi-function devices."
 msgstr ""
 
-#: recommendations.html:263
+#: recommendations.html:229
 msgid "Gutenprint is installed"
 msgstr ""
 
-#: recommendations.html:266
+#: recommendations.html:232
 msgid "Install Gutenprint"
 msgstr ""

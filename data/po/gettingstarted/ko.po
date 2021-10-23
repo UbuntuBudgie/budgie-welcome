@@ -1,13 +1,14 @@
 # 
 # Translators:
 # SDSK <sdsk@sdsk.one>, 2018
+# Kwon.Yongchan <ruvyn@naver.com>, 2021
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: Budgie Welcome\n"
 "POT-Creation-Date: 2016-02-27 12:48+0100\n"
 "PO-Revision-Date: 2017-03-15 13:49+0000\n"
-"Last-Translator: SDSK <sdsk@sdsk.one>, 2018\n"
+"Last-Translator: Kwon.Yongchan <ruvyn@naver.com>, 2021\n"
 "Language-Team: Korean (https://www.transifex.com/ubuntu-budgie/teams/72251/ko/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -48,11 +49,11 @@ msgstr "익숙함"
 msgid "Browser Ballot"
 msgstr "브라우저 선택"
 
-#: gettingstarted.html46, 876, 1759
+#: gettingstarted.html46, 876, 1741
 msgid "Customization"
 msgstr "사용자화"
 
-#: gettingstarted.html49, 1121
+#: gettingstarted.html49, 1103
 msgid "Keyboard Shortcuts"
 msgstr "키보드 단축키"
 
@@ -138,7 +139,7 @@ msgid ""
 "or surpasses the recommended requirements."
 msgstr "컴퓨터의 사양이 권장 사양에 충족하거나 더 높으면 운영 체제가 더욱 효율적으로 운용됩니다."
 
-#: gettingstarted.html110, 1769
+#: gettingstarted.html110, 1751
 msgid "What's inside my computer?"
 msgstr "내 컴퓨터 안에는 뭐가 있을까?"
 
@@ -159,12 +160,12 @@ msgid ""
 "class=\"fa fa-linux\"></span> GNU/Linux distribution."
 msgstr ""
 "<span name=\"distro-name\"></span>는 상대적으로 간단히 설정됩니다. 현재 설치되어 있는 운영 체제를 교체하거나"
-" 이미 설치되어 있는 <span class=\"fa fa-windows\"></span>Microsoft Windows나 다른 <span"
-" class=\"fa fa-linux\"></span>GNU/Linux 배포판과 함께 설치되어져도 만사 OK입니다."
+" 이미 설치되어 있는 <span class=\"fa fa-windows\"></span>마이크로소프트 윈도우나 다른 <span "
+"class=\"fa fa-linux\"></span>GNU/리눅스 배포판과 함께 설치되어져도 만사 OK입니다."
 
 #: gettingstarted.html:133
 msgid "For the best results:"
-msgstr ""
+msgstr "최선의 결과를 얻으려면:"
 
 #: gettingstarted.html:135
 msgid "<u><b>Back up</b></u> any important data to another storage device."
@@ -251,9 +252,9 @@ msgid ""
 "Performance will decrease when running low on memory and could possibly "
 "freeze if you completely run out of memory without anywhere to swap."
 msgstr ""
-"적은 양의 메모리(RAM)을 가진 컴퓨터에서, 운영 체제는 디스크에 스와핑을 시작할 것입니다. Windows에서의 \"페이징 파일\"과 "
-"비슷한 역할을 하죠. 적은 양의 메모리로 구동하게 되면 컴퓨터의 성능이 떨어질 것이고, 메모리 부족이 발생하면 컴퓨터 자체가 멈추는 "
-"현상이 일어날 수 있습니다."
+"적은 양의 메모리(RAM)을 가진 컴퓨터에서, 운영 체제는 디스크에 스와핑을 시작할 것입니다. 윈도우에서의 \"페이징 파일\"과 비슷한 "
+"역할을 하죠. 적은 양의 메모리로 구동하게 되면 컴퓨터의 성능이 떨어질 것이고, 메모리 부족이 발생하면 컴퓨터 자체가 멈추는 현상이 "
+"일어날 수 있습니다."
 
 #: gettingstarted.html:180
 msgid ""
@@ -274,7 +275,7 @@ msgstr ""
 "기본적으로, 스왑 파일은 시스템에 설치된 RAM 용량에 따라 그 크기가 정해집니다. 예를 들어, 시스템에 2 GiB만큼의 RAM이 "
 "설치되어 있다면, 2 GiB의 스왑 파일이 하드 디스크 공간에 생성됩니다. 이제는 별도의 스왑 파티션을 만들 필요가 없어졌습니다."
 
-#: gettingstarted.html193, 394, 758, 1758
+#: gettingstarted.html193, 394, 758, 1740
 msgid "Previous:"
 msgstr "이전 : "
 
@@ -310,7 +311,7 @@ msgstr "하드 디스크 조각 모음."
 
 #: gettingstarted.html:223
 msgid "Ensure Windows has been cleanly shut down (not hibernated)."
-msgstr "Windows의 완전 종료 여부 (최대 절전 모드가 아님)."
+msgstr "윈도우의 완전 종료 여부 (최대 절전 모드가 아님)."
 
 #: gettingstarted.html:228
 msgid "Which approach would you prefer?"
@@ -340,11 +341,11 @@ msgstr "설치기는 기존의 운영 체제를 찾기 위해 디스크를 스�
 
 #: gettingstarted.html:245
 msgid "You will see an option similar to this:"
-msgstr "다음과 비슷한 옵션을 보게 됩니다. :"
+msgstr "다음과 비슷한 옵션을 보게 됩니다:"
 
 #: gettingstarted.html:249
 msgid "Followed by:"
-msgstr ""
+msgstr "그 다음:"
 
 #: gettingstarted.html:255
 msgid "Do not interrupt or power off the computer during a resize operation."
@@ -370,8 +371,8 @@ msgid ""
 "command prompt to check the file system for errors. Windows may schedule "
 "this automatically. This ensures consistency for the NTFS file system."
 msgstr ""
-"<b>다음에 Windows로 부팅</b>하게 되면, NTFS 파일 시스템의 오류를 확인하기 위해 명령 프롬프트(cmd.exe)에서 "
-"<code>chkdsk /f</code>를 실행해주세요. Windows는 오류 확인 작업을 자동적으로 예약할 것입니다. "
+"<b>다음에 윈도우로 부팅</b>하게 되면, NTFS 파일 시스템의 오류를 확인하기 위해 명령 프롬프트(cmd.exe)에서 "
+"<code>chkdsk /f</code>를 실행해주세요. 윈도우는 오류 확인 작업을 자동적으로 예약할 것입니다. "
 
 #: gettingstarted.html:271
 msgid "Use GParted or the installer's \"Custom\" option."
@@ -385,6 +386,9 @@ msgid ""
 "power users who know how they'd like to layout their disks. This method "
 "makes changes to partitions prior to installation."
 msgstr ""
+"<b>GParted</b>는 <b>시스템 도구 <i class=\"material-icons\">&#xE315;</i></b> 메뉴에서 "
+"찾으실 수 있고, 라이브 세션 중에서만 사용하실 수 있습니다. GParted는 파티션을 완벽히 유연하게 관리할 수 있게 해주며, 고급 "
+"사용자에게는 더할 나위 없는 최고의 파티션 및 디스크 관리자입니다. 설치 전에 GParted에서 변경한 사항들이 디스크에 적용됩니다."
 
 #: gettingstarted.html:282
 msgid "Open GParted"
@@ -455,7 +459,7 @@ msgstr "패키지 매니저로 관리되지 않는 추가 소프트웨어"
 
 #: gettingstarted.html:307
 msgid "such as"
-msgstr ""
+msgstr "예시"
 
 #: gettingstarted.html:311
 msgid ""
@@ -471,19 +475,19 @@ msgstr ""
 
 #: gettingstarted.html:319
 msgid "Shrink your system disk within Windows."
-msgstr "Windows 시스템 디스크의 크기를 축소합니다."
+msgstr "윈도우 시스템 디스크의 크기를 축소합니다."
 
 #: gettingstarted.html:321
 msgid "Applies to Windows Vista and later."
-msgstr "Windows Vista 혹은 이후 버전에 적용됩니다."
+msgstr "윈도우 비스타 혹은 이후 버전에 적용됩니다."
 
 #: gettingstarted.html:323
 msgid ""
 "If you are using Windows XP or earlier, you will need to use the "
 "<b>Simple</b> or <b>Advanced</b> method to shrink your disk."
 msgstr ""
-"Windows XP 및 이전 Windows를 사용하고 있다면, 파티션을 축소하기 위해선 <b>간단</b> 혹은 <b>고급</b> 모드를 "
-"사용하여야 합니다."
+"윈도우 XP 및 이전 윈도우를 사용하고 있다면, 파티션을 축소하기 위해선 <b>간단</b> 혹은 <b>고급</b> 모드를 사용하여야 "
+"합니다."
 
 #: gettingstarted.html:328
 msgid ""
@@ -492,8 +496,8 @@ msgid ""
 "boots on your computer while experiencing <span name=\"distro-"
 "name\"></span>."
 msgstr ""
-"최근 버전의 Windows에서는 Windows 내에서 바로 NTFS 볼륨의 크기를 줄일 수 있는 도구를 제공합니다. <span name"
-"=\"distro-name\"></span>를 즐기면서도 Windows를 사용해야 한다면 이 도구를 사용하는 편이 더 안전한 방법입니다."
+"최근 버전의 윈도우에서는 윈도우 내에서 바로 NTFS 볼륨의 크기를 줄일 수 있는 도구를 제공합니다. <span name"
+"=\"distro-name\"></span>를 즐기면서도 윈도우를 사용해야 한다면 이 도구를 사용하는 편이 더 안전한 방법입니다."
 
 #: gettingstarted.html:332
 msgid "Open <b>Disk Management</b> from the start menu."
@@ -517,7 +521,7 @@ msgstr "기억하세요. <span name=\"distro-name\"></span>는 최소 16GB의 �
 
 #: gettingstarted.html:354
 msgid "Further Reading"
-msgstr "이 글을 읽고 나서..."
+msgstr "더 읽을 거리"
 
 #: gettingstarted.html:355
 msgid ""
@@ -526,8 +530,8 @@ msgid ""
 "onclick=\"cmd('link?https://help.ubuntu.com/community/HowtoResizeWindowsPartitions')\">"
 " help article</a> online."
 msgstr ""
-"Windows를 포함한 디스크에서 파티션을 수정하는 좋은 방법들은 <a "
-"onclick=\"cmd('link?https://help.ubuntu.com/community/HowtoResizeWindowsPartitions')\">도움말"
+"윈도우를 포함한 디스크에서 파티션을 수정하는 좋은 방법들은 <a "
+"onclick=\"cmd('link?https://help.ubuntu.com/community/HowtoResize윈도우Partitions')\">도움말"
 " 글 (온라인)</a>에서 읽어볼 수 있습니다."
 
 #: gettingstarted.html:363
@@ -543,8 +547,8 @@ msgid ""
 "=\"distro-name\"></span> temporally."
 msgstr ""
 "많은 리눅스 배포판들은 운영 체제를 부팅시키기 위해 <code>grub</code>라고 하는 부트로더를 사용합니다.  그러나 몇몇 운영 "
-"체제(Windows 등)는 기존에 설치되어 있는 부트로더를 무시하고 자신만의 부트로더를 덮어쓸 수도 있습니다. 이는 임시적으로 <span"
-" name=\"distro-name\"></span>로 부팅할 수 없게 만듭니다."
+"체제(윈도우 등)는 기존에 설치되어 있는 부트로더를 무시하고 자신만의 부트로더를 덮어쓸 수도 있습니다. 이는 임시적으로 <span "
+"name=\"distro-name\"></span>로 부팅할 수 없게 만듭니다."
 
 #: gettingstarted.html:371
 msgid ""
@@ -600,7 +604,7 @@ msgstr ""
 msgid ""
 "<b>Software Updater</b> can be found later in the menu "
 "<strong>Administration</strong>"
-msgstr ""
+msgstr "<b>소프트웨어 업데이트</b> 앱은 나중에 <strong>관리</strong> 메뉴에서 찾으실 수 있습니다."
 
 #: gettingstarted.html:431
 msgid "Check for Updates"
@@ -618,6 +622,9 @@ msgid ""
 "Ubuntu License Policy) complicate distribution of software to support non-"
 "free formats."
 msgstr ""
+"<strong>우분투</strong>(<span name=\"distro-name\"></span>의 기반 배포판)는 사용자들이 거의 "
+"모든 주요 소프트웨어를 사용할 수 있도록 노력합니다. 그러나 일부 특허를 받았거나 저작권 제한이 있는 소프트웨어(\"우분투 라이선스 "
+"정책\" 참고)와 같이 비자유(non-free) 소프트웨어는 무작정 배포하기엔 어려움이 있습니다."
 
 #: gettingstarted.html:451
 msgid ""
@@ -625,8 +632,8 @@ msgid ""
 " including DVD, MP3, Quicktime, and Windows Media formats, by following the "
 "instructions below."
 msgstr ""
-"하지만 아래 설명을 참고하시면 DVD, MP3, QuickTime, Windows 미디어 등과 같은 포맷을 재생할 수 있는 소프트웨어를 "
-"설치할 수 있습니다."
+"하지만 아래 설명을 참고하시면 DVD, MP3, QuickTime, 윈도우 미디어 등과 같은 포맷을 재생할 수 있는 소프트웨어를 설치할 "
+"수 있습니다."
 
 #: gettingstarted.html:455
 msgid ""
@@ -645,7 +652,7 @@ msgid ""
 msgstr ""
 
 #: gettingstarted.html471, 614, 680, 689, 730, 741, 752, 790, 825, 898, 908,
-#: 923, 939, 950, 966, 981, 997, 1012, 1032, 1052, 1069
+#: 923, 939, 950, 966, 981, 997, 1012, 1032, 1052
 msgid "Applying Changes..."
 msgstr "변경 사항 저장 중..."
 
@@ -654,7 +661,7 @@ msgid "Install"
 msgstr "설치"
 
 #: gettingstarted.html477, 728, 739, 750, 895, 936, 963, 978, 994, 1009, 1029,
-#: 1049, 1066
+#: 1049
 msgid "Remove"
 msgstr "제거"
 
@@ -1091,7 +1098,7 @@ msgid ""
 msgstr ""
 "크로미엄은 모든 사용자가 인터넷을 더 안전하고, 빠르고, 안정적으로 브라우징하는 것을 목표로 하는 오픈 소스 웹 브라우저 프로젝트입니다."
 
-#: gettingstarted.html902, 917, 944, 991, 1006, 1026, 1046, 1063
+#: gettingstarted.html902, 917, 944, 991, 1006, 1026, 1046
 msgid "Snap Install"
 msgstr ""
 
@@ -1158,19 +1165,11 @@ msgid ""
 "name, Epiphany."
 msgstr ""
 
-#: gettingstarted.html:1059
-msgid ""
-"Browse the Internet in private without leaving a trace of history on your "
-"computer. Ephemeral is a stripped down private browser that's perfect for "
-"avoiding persistent cookies or web trackers. Close the window and all traces"
-" of your browsing are removed from your device."
-msgstr ""
-
-#: gettingstarted.html:1079
+#: gettingstarted.html:1061
 msgid "User Interface"
 msgstr "사용자 인터페이스"
 
-#: gettingstarted.html:1080
+#: gettingstarted.html:1062
 msgid ""
 "<span name=\"distro-name\"></span> provides a unique tool to transform the "
 "user interface. It can be used to quickly setup the user interface to "
@@ -1179,28 +1178,28 @@ msgstr ""
 "<span name=\"distro-name\"></span>는 사용자 인터페이스를 자유롭게 바꿀 수 있는 특별한 도구를 제공합니다. 이"
 " 도구는 빠르게 다른 운영 체제들의 모습을 대략적으로 모방할 수 있습니다."
 
-#: gettingstarted.html:1087
+#: gettingstarted.html:1069
 msgid "Budgie Desktop Settings"
 msgstr "Budgie 데스크톱 설정"
 
-#: gettingstarted.html:1090
+#: gettingstarted.html:1072
 msgid ""
 "<b>Budgie Desktop Settings</b> can be found later in the menu <b>System "
 "Tools</b>."
 msgstr "<b>Budgie 데스크톱 설정</b>은 나중에 <b>시스템 도구</b>에서 찾을 수 있습니다."
 
-#: gettingstarted.html1097, 1103
+#: gettingstarted.html1079, 1085
 msgid "Settings"
 msgstr "설정"
 
-#: gettingstarted.html:1098
+#: gettingstarted.html:1080
 msgid ""
 "The utilities mentioned above are all part of the extensive Settings control"
 " center that <span name=\"distro-name\"></span> provides. You can configure "
 "just about every aspect of your computer from Settings."
 msgstr ""
 
-#: gettingstarted.html:1122
+#: gettingstarted.html:1104
 msgid ""
 "<span name=\"distro-name\"></span> has many keyboard shortcuts that help "
 "make using your computer more efficient."
@@ -1208,538 +1207,538 @@ msgstr ""
 "<span name=\"distro-name\"></span>는 컴퓨터를 더욱 효과적으로 사용하도록 돕기 위해 많은 키보드 바로 가기 "
 "키를 준비해 두었습니다."
 
-#: gettingstarted.html:1126
+#: gettingstarted.html:1108
 msgid ""
 "The <b><img src=\"img/welcome/super-key.svg\" /> Super</b> key is your "
 "Windows key. For Mac keyboards, this is the ⌘ Command key."
 msgstr ""
 
-#: gettingstarted.html:1129
+#: gettingstarted.html:1111
 msgid "Budgie Desktop shortcuts"
 msgstr "Budgie 데스크톱 단축키"
 
-#: gettingstarted.html:1130
+#: gettingstarted.html:1112
 msgid "Some common shortcuts used in Budgie Desktop"
 msgstr "Budgie 데스크톱에서 사용되는 유용한 단축키"
 
-#: gettingstarted.html:1140
+#: gettingstarted.html:1122
 msgid "Open notifications in Raven"
 msgstr "Raven에서 알림 열기"
 
-#: gettingstarted.html:1149
+#: gettingstarted.html:1131
 msgid "Open applet Settings in Raven"
 msgstr "Raven에서 애플릿 설정 열기"
 
-#: gettingstarted.html:1154
+#: gettingstarted.html:1136
 msgid "Common application shortcuts"
 msgstr "애플리케이션 공통 단축키"
 
-#: gettingstarted.html:1155
+#: gettingstarted.html:1137
 msgid "These shortcuts apply in most applications."
 msgstr "거의 모든 애플리케이션에 적용되는 단축키입니다."
 
-#: gettingstarted.html:1164
+#: gettingstarted.html:1146
 msgid "Toggle Tilix Quake Mode"
 msgstr "Tilix Quake 모드 토글"
 
-#: gettingstarted.html1168, 1176, 1184, 1192, 1200, 1208, 1216, 1224, 1232,
-#: 1240, 1248, 1256, 1264, 1272, 1280, 1312, 1328, 1358, 1377, 1391, 1438,
-#: 1448, 1458, 1470, 1653, 1663, 1673, 1683, 1693, 1703, 1713, 1723, 1733
+#: gettingstarted.html1150, 1158, 1166, 1174, 1182, 1190, 1198, 1206, 1214,
+#: 1222, 1230, 1238, 1246, 1254, 1262, 1294, 1310, 1340, 1359, 1373, 1420,
+#: 1430, 1440, 1452, 1635, 1645, 1655, 1665, 1675, 1685, 1695, 1705, 1715
 msgid "Ctrl"
 msgstr "Ctrl"
 
-#: gettingstarted.html:1172
+#: gettingstarted.html:1154
 msgid "Copy the selected text/object"
 msgstr "선택된 텍스트/오브젝트 복사"
 
-#: gettingstarted.html:1180
+#: gettingstarted.html:1162
 msgid "Cut the selected text/object"
 msgstr "선택된 텍스트/오브젝트 잘라내기"
 
-#: gettingstarted.html:1188
+#: gettingstarted.html:1170
 msgid "Paste/insert the selected text/object"
 msgstr "선택한 텍스트/오브젝트 붙여넣기/삽입하기"
 
-#: gettingstarted.html:1196
+#: gettingstarted.html:1178
 msgid "Select all text"
 msgstr "모든 텍스트 선택"
 
-#: gettingstarted.html:1204
+#: gettingstarted.html:1186
 msgid "Find words"
 msgstr "단어 찾기"
 
-#: gettingstarted.html:1212
+#: gettingstarted.html:1194
 msgid "Find and replace words"
 msgstr "단어 찾아 바꾸기"
 
-#: gettingstarted.html:1220
+#: gettingstarted.html:1202
 msgid "Make the selected text bold"
 msgstr "선택한 텍스트 굵게"
 
-#: gettingstarted.html:1228
+#: gettingstarted.html:1210
 msgid "Make the selected text italic"
 msgstr "선택한 텍스트 이탤릭체로"
 
-#: gettingstarted.html:1236
+#: gettingstarted.html:1218
 msgid "Underline the selected text"
 msgstr "선택한 텍스트 밑줄 표시"
 
-#: gettingstarted.html:1244
+#: gettingstarted.html:1226
 msgid "Open a new document or window"
 msgstr "새로운 문서나 창 열기"
 
-#: gettingstarted.html:1252
+#: gettingstarted.html:1234
 msgid "Save the current document"
 msgstr "현재 문서 저장"
 
-#: gettingstarted.html:1260
+#: gettingstarted.html:1242
 msgid "Open another document"
 msgstr "다른 문서 열기"
 
-#: gettingstarted.html:1268
+#: gettingstarted.html:1250
 msgid "Print the current document"
 msgstr "현재 문서 인쇄"
 
-#: gettingstarted.html:1276
+#: gettingstarted.html:1258
 msgid "Undo the last change you made"
 msgstr "마지막 변경 사항 취소"
 
-#: gettingstarted.html1282, 1310, 1320, 1462, 1473, 1489, 1500, 1511, 1522
+#: gettingstarted.html1264, 1292, 1302, 1444, 1455, 1471, 1482, 1493, 1504
 msgid "Shift"
 msgstr "Shift"
 
-#: gettingstarted.html:1286
+#: gettingstarted.html:1268
 msgid "Redo a change that you just undid"
 msgstr "변경 사항 취소 되돌리기"
 
-#: gettingstarted.html:1292
+#: gettingstarted.html:1274
 msgid "Toggle the current application between full-screen and windowed"
 msgstr "현재 애플리케이션을 전체 화면으로 전환/복구"
 
-#: gettingstarted.html:1296
+#: gettingstarted.html:1278
 msgid "Desktop shortcuts"
 msgstr "데스크톱 단축키"
 
-#: gettingstarted.html:1297
+#: gettingstarted.html:1279
 msgid ""
 "This section lists common keyboard shortcuts which you can use to operate "
 "parts of the desktop."
 msgstr "여기에는 데스크톱을 운영하는 데에 쓰일 수 있는 주요 키보드 바로 가기 키가 나열되어 있습니다."
 
-#: gettingstarted.html:1306
+#: gettingstarted.html:1288
 msgid "Open Applications menu"
 msgstr "애플리케이션 메뉴 열기"
 
-#: gettingstarted.html:1316
+#: gettingstarted.html:1298
 msgid "Copy a screenshot of an area to clipboard"
 msgstr ""
 
-#: gettingstarted.html:1324
+#: gettingstarted.html:1306
 msgid "Save a screenshot of an area to the Pictures directory"
 msgstr ""
 
-#: gettingstarted.html:1332
+#: gettingstarted.html:1314
 msgid "Copy a screenshot of a window to clipboard"
 msgstr ""
 
-#: gettingstarted.html1336, 1350, 1360, 1379, 1393, 1423, 1440, 1450, 1460,
-#: 1472, 1481, 1533, 1541, 1549, 1584, 1655, 1665, 1675, 1685, 1695, 1705,
-#: 1715, 1725, 1735
+#: gettingstarted.html1318, 1332, 1342, 1361, 1375, 1405, 1422, 1432, 1442,
+#: 1454, 1463, 1515, 1523, 1531, 1566, 1637, 1647, 1657, 1667, 1677, 1687,
+#: 1697, 1707, 1717
 msgid "Alt"
 msgstr "Alt"
 
-#: gettingstarted.html:1340
+#: gettingstarted.html:1322
 msgid "Save a screenshot of a window to the Pictures directory"
 msgstr ""
 
-#: gettingstarted.html:1346
+#: gettingstarted.html:1328
 msgid "Save a screenshot to the Pictures directory"
 msgstr ""
 
-#: gettingstarted.html:1354
+#: gettingstarted.html:1336
 msgid "Run an application by typing its name in the box which appears"
 msgstr "나타나는 상자에서 애플리케이션 이름을 입력하여 실행할 수 있습니다."
 
-#: gettingstarted.html:1362
+#: gettingstarted.html:1344
 msgid "Delete"
 msgstr "삭제"
 
-#: gettingstarted.html:1364
+#: gettingstarted.html:1346
 msgid "Logout"
 msgstr "로그아웃"
 
-#: gettingstarted.html:1373
+#: gettingstarted.html:1355
 msgid "Lock your screen."
 msgstr "화면 잠금"
 
-#: gettingstarted.html:1383
+#: gettingstarted.html:1365
 msgid "Open a terminal."
 msgstr "터미널 열기"
 
-#: gettingstarted.html:1387
+#: gettingstarted.html:1369
 msgid "Window shortcuts - general"
 msgstr ""
 
-#: gettingstarted.html1397, 1412
+#: gettingstarted.html1379, 1394
 msgid "Call Window Shuffler gui (window tiling grid)."
 msgstr ""
 
-#: gettingstarted.html1401, 1417
+#: gettingstarted.html1383, 1399
 msgid "Video Demonstration"
 msgstr ""
 
-#: gettingstarted.html:1425
+#: gettingstarted.html:1407
 msgid "Tab"
 msgstr "Tab"
 
-#: gettingstarted.html:1428
+#: gettingstarted.html:1410
 msgid "Switch between currently-open windows."
 msgstr "현재 열린 창 간 전환"
 
-#: gettingstarted.html:1430
+#: gettingstarted.html:1412
 msgid "Press Alt + Tab and then release Tab (but continue to hold Alt)."
 msgstr "Alt + Tab을 누른 후 Tab 키를 떼세요 (Alt 키는 누르고 있을 것)."
 
-#: gettingstarted.html:1431
+#: gettingstarted.html:1413
 msgid ""
 "Press Tab repeatedly to cycle through the list of available windows which "
 "appears on the screen."
 msgstr "Tab 키를 반복해서 눌러 화면에서 사용 가능한 창(애플리케이션) 간 전환합니다."
 
-#: gettingstarted.html1442, 1464, 1596
+#: gettingstarted.html1424, 1446, 1578
 msgid "Left"
 msgstr "왼쪽 키"
 
-#: gettingstarted.html:1444
+#: gettingstarted.html:1426
 msgid "Switch to the previous workspace."
 msgstr "이전 워크스페이스로 전환합니다."
 
-#: gettingstarted.html1452, 1475, 1605
+#: gettingstarted.html1434, 1457, 1587
 msgid "Right"
 msgstr "오른쪽 키"
 
-#: gettingstarted.html:1454
+#: gettingstarted.html:1436
 msgid "Switch to the next workspace."
 msgstr "다음 워크스페이스로 전환합니다."
 
-#: gettingstarted.html:1466
+#: gettingstarted.html:1448
 msgid "Move the current window to the previous workspace."
 msgstr "현재 창을 이전 워크스페이스로 이동합니다."
 
-#: gettingstarted.html:1477
+#: gettingstarted.html:1459
 msgid "Move the current window to the next workspace."
 msgstr "현재 창을 다음 워크스페이스로 이동합니다."
 
-#: gettingstarted.html:1485
+#: gettingstarted.html:1467
 msgid "Move the current window to the monitor above."
 msgstr ""
 
-#: gettingstarted.html:1496
+#: gettingstarted.html:1478
 msgid "Move the current window to the monitor below."
 msgstr ""
 
-#: gettingstarted.html:1507
+#: gettingstarted.html:1489
 msgid "Move the current window to the monitor to the left."
 msgstr ""
 
-#: gettingstarted.html:1518
+#: gettingstarted.html:1500
 msgid "Move the current window to the monitor to the right."
 msgstr ""
 
-#: gettingstarted.html:1529
+#: gettingstarted.html:1511
 msgid "Closes window."
 msgstr "창 닫기"
 
-#: gettingstarted.html:1537
+#: gettingstarted.html:1519
 msgid "Returns window to 'normal' or previous size."
 msgstr "창의 크기를 일반 크기 혹은 이전 크기로 되돌립니다."
 
-#: gettingstarted.html:1545
+#: gettingstarted.html:1527
 msgid "Moves the current window (can be moved with mouse or keyboard)."
 msgstr "현재 창을 이동합니다 (마우스나 키보드로도 이동 가능)."
 
-#: gettingstarted.html:1553
+#: gettingstarted.html:1535
 msgid "Resizes current window (again, can be moved with mouse or keyboard)."
 msgstr "현재 창의 크기를 조절합니다 (마우스나 키보드로도 크기 조절 가능)."
 
-#: gettingstarted.html:1562
+#: gettingstarted.html:1544
 msgid "Minimizes current window."
 msgstr "현재 창 최소화"
 
-#: gettingstarted.html:1569
+#: gettingstarted.html:1551
 msgid "Up"
 msgstr "위쪽 키"
 
-#: gettingstarted.html:1571
+#: gettingstarted.html:1553
 msgid "Maximizes current window."
 msgstr "현재 창 최대화"
 
-#: gettingstarted.html:1578
+#: gettingstarted.html:1560
 msgid "Down"
 msgstr ""
 
-#: gettingstarted.html:1580
+#: gettingstarted.html:1562
 msgid "Unmaximizes current window."
 msgstr ""
 
-#: gettingstarted.html:1586
+#: gettingstarted.html:1568
 msgid "Space"
 msgstr "스페이스 바"
 
-#: gettingstarted.html:1588
+#: gettingstarted.html:1570
 msgid ""
 "Displays the window menu with options such as 'Always on Top' and 'Minimize'"
 " and 'Maximize' and above commands."
 msgstr ""
 
-#: gettingstarted.html:1598
+#: gettingstarted.html:1580
 msgid "Place window on left side of screen."
 msgstr "창을 화면 왼쪽으로 배치"
 
-#: gettingstarted.html:1607
+#: gettingstarted.html:1589
 msgid "Place window on right side of screen."
 msgstr "창을 화면 오른쪽으로 배치"
 
-#: gettingstarted.html1614, 1687
+#: gettingstarted.html1596, 1669
 msgid "1"
 msgstr ""
 
-#: gettingstarted.html:1616
+#: gettingstarted.html:1598
 msgid "Quarter tiling: top left."
 msgstr ""
 
-#: gettingstarted.html1623, 1717
+#: gettingstarted.html1605, 1699
 msgid "2"
 msgstr ""
 
-#: gettingstarted.html:1625
+#: gettingstarted.html:1607
 msgid "Quarter tiling: top right."
 msgstr ""
 
-#: gettingstarted.html1632, 1677
+#: gettingstarted.html1614, 1659
 msgid "3"
 msgstr ""
 
-#: gettingstarted.html:1634
+#: gettingstarted.html:1616
 msgid "Quarter tiling: bottom left."
 msgstr ""
 
-#: gettingstarted.html1641, 1727
+#: gettingstarted.html1623, 1709
 msgid "4"
 msgstr ""
 
-#: gettingstarted.html:1643
+#: gettingstarted.html:1625
 msgid "Quarter tiling: bottom right."
 msgstr ""
 
-#: gettingstarted.html:1648
+#: gettingstarted.html:1630
 msgid "Window shortcuts - numeric keypad"
 msgstr ""
 
-#: gettingstarted.html:1649
+#: gettingstarted.html:1631
 msgid "Tiling shortcuts on the numeric keypad."
 msgstr ""
 
-#: gettingstarted.html:1657
+#: gettingstarted.html:1639
 msgid "7"
 msgstr ""
 
-#: gettingstarted.html:1659
+#: gettingstarted.html:1641
 msgid "Quarter top left."
 msgstr ""
 
-#: gettingstarted.html:1667
+#: gettingstarted.html:1649
 msgid "9"
 msgstr ""
 
-#: gettingstarted.html:1669
+#: gettingstarted.html:1651
 msgid "Quarter top right."
 msgstr ""
 
-#: gettingstarted.html:1679
+#: gettingstarted.html:1661
 msgid "Quarter bottom right."
 msgstr ""
 
-#: gettingstarted.html:1689
+#: gettingstarted.html:1671
 msgid "Quarter bottom left."
 msgstr ""
 
-#: gettingstarted.html:1697
+#: gettingstarted.html:1679
 msgid "8"
 msgstr ""
 
-#: gettingstarted.html:1699
+#: gettingstarted.html:1681
 msgid "Half top."
 msgstr ""
 
-#: gettingstarted.html:1707
+#: gettingstarted.html:1689
 msgid "6"
 msgstr ""
 
-#: gettingstarted.html:1709
+#: gettingstarted.html:1691
 msgid "Half right."
 msgstr ""
 
-#: gettingstarted.html:1719
+#: gettingstarted.html:1701
 msgid "Half bottom."
 msgstr ""
 
-#: gettingstarted.html:1729
+#: gettingstarted.html:1711
 msgid "Half left."
 msgstr ""
 
-#: gettingstarted.html:1737
+#: gettingstarted.html:1719
 msgid "5"
 msgstr ""
 
-#: gettingstarted.html:1739
+#: gettingstarted.html:1721
 msgid "Toggle maximize."
 msgstr ""
 
-#: gettingstarted.html:1748
+#: gettingstarted.html:1730
 msgid "Update shortcuts in the Settings App"
 msgstr ""
 
-#: gettingstarted.html:1770
+#: gettingstarted.html:1752
 msgid ""
 "Your machine is made up of various components that interact with one "
 "another. This information is useful when providing support to ensure "
 "hardware and software works on your machine."
 msgstr ""
 
-#: gettingstarted.html:1778
+#: gettingstarted.html:1760
 msgid "Gathering Information.."
 msgstr "정보 얻는 중..."
 
-#: gettingstarted.html:1787
+#: gettingstarted.html:1769
 msgid "System"
 msgstr "시스템"
 
-#: gettingstarted.html:1790
+#: gettingstarted.html:1772
 msgid "Distribution:"
 msgstr "배포판 : "
 
-#: gettingstarted.html:1794
+#: gettingstarted.html:1776
 msgid "Kernel:"
 msgstr "커널 : "
 
-#: gettingstarted.html:1798
+#: gettingstarted.html:1780
 msgid "The Linux kernel is the heart of Ubuntu."
 msgstr "리눅스 커널은 우분투의 심장과도 같아요."
 
-#: gettingstarted.html:1804
+#: gettingstarted.html:1786
 msgid "Motherboard:"
 msgstr "메인보드 : "
 
-#: gettingstarted.html:1808
+#: gettingstarted.html:1790
 msgid "Boot Mode:"
 msgstr "부팅 모드 : "
 
-#: gettingstarted.html:1812
+#: gettingstarted.html:1794
 msgid "Displays the mode that OS is communicating with the firmware."
 msgstr "OS와 펌웨어 간의 통신 모드를 표시합니다."
 
-#: gettingstarted.html:1820
+#: gettingstarted.html:1802
 msgid "Processor"
 msgstr "CPU 프로세서"
 
-#: gettingstarted.html:1823
+#: gettingstarted.html:1805
 msgid "Model:"
 msgstr "모델 : "
 
-#: gettingstarted.html:1827
+#: gettingstarted.html:1809
 msgid "Speed:"
 msgstr "속도 : "
 
-#: gettingstarted.html:1831
+#: gettingstarted.html:1813
 msgid "Architecture in use:"
 msgstr "사용 중인 아키텍처 : "
 
-#: gettingstarted.html:1835
+#: gettingstarted.html:1817
 msgid ""
 "The operating system's architecture in use. For instance, i386 = 32-bit."
 msgstr "운영 체제에서 사용 중인 아키텍처입니다. i386(= 32비트) 등."
 
-#: gettingstarted.html:1841
+#: gettingstarted.html:1823
 msgid "Architecture(s) supported:"
 msgstr "지원되는 아키텍처 : "
 
-#: gettingstarted.html:1845
+#: gettingstarted.html:1827
 msgid "Architectures that are supported by this processor."
 msgstr "CPU 프로세서에서 지원하는 아키텍처입니다."
 
-#: gettingstarted.html:1853
+#: gettingstarted.html:1835
 msgid "Components"
 msgstr "구성 요소"
 
-#: gettingstarted.html:1856
+#: gettingstarted.html:1838
 msgid "Memory (RAM):"
 msgstr "메모리 (RAM) : "
 
-#: gettingstarted.html:1860
+#: gettingstarted.html:1842
 msgid "More RAM allows more applications to run simultaneously."
 msgstr "RAM 용량이 많으면 많을수록 동시에 많은 애플리케이션을 실행할 수 있습니다."
 
-#: gettingstarted.html:1866
+#: gettingstarted.html:1848
 msgid "Graphics:"
 msgstr "그래픽 : "
 
-#: gettingstarted.html:1870
+#: gettingstarted.html:1852
 msgid "Internet Access:"
 msgstr "인터넷 접속 : "
 
-#: gettingstarted.html:1873
+#: gettingstarted.html:1855
 msgid "Connected"
 msgstr "연결됨"
 
-#: gettingstarted.html:1874
+#: gettingstarted.html:1856
 msgid "Not Connected"
 msgstr "연결되지 않음"
 
-#: gettingstarted.html:1882
+#: gettingstarted.html:1864
 msgid "Storage"
 msgstr "저장 공간"
 
-#: gettingstarted.html:1886
+#: gettingstarted.html:1868
 msgid "Root File System:"
 msgstr "루트 파일 시스템 : "
 
-#: gettingstarted.html:1890
+#: gettingstarted.html:1872
 msgid "The file system where OS is installed."
 msgstr "OS가 설치된 파일 시스템입니다."
 
-#: gettingstarted.html:1896
+#: gettingstarted.html:1878
 msgid "Entire Disk Capacity:"
 msgstr "디스크 전체 용량 : "
 
-#: gettingstarted.html:1902
+#: gettingstarted.html:1884
 msgid "OS Usage"
 msgstr "OS 사용량"
 
-#: gettingstarted.html:1907
+#: gettingstarted.html:1889
 msgid "Other Usage"
 msgstr "기타 사용량"
 
-#: gettingstarted.html:1912
+#: gettingstarted.html:1894
 msgid "Allocated for <span name=\"distro-name\"></span>:"
 msgstr "<span name=\"distro-name\"></span>로 할당됨 : "
 
-#: gettingstarted.html:1916
+#: gettingstarted.html:1898
 msgid "The size of your operating system partition."
 msgstr "운영 체제 파티션의 크기입니다."
 
-#: gettingstarted.html:1923
+#: gettingstarted.html:1905
 msgid "Used Space:"
 msgstr "사용된 공간 : "
 
-#: gettingstarted.html:1931
+#: gettingstarted.html:1913
 msgid "Free Space:"
 msgstr "여유 공간 : "
 
-#: gettingstarted.html:1939
+#: gettingstarted.html:1921
 msgid "Other Usage:"
 msgstr "기타 사용량 :"
 
-#: gettingstarted.html:1944
+#: gettingstarted.html:1926
 msgid "Reserved by system, other partitions, unallocated or swap."
 msgstr "시스템, 기타 파티션, 할당되지 않은 부분 혹은 스왑에 의해 예약된 공간"

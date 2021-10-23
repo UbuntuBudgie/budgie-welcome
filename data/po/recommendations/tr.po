@@ -43,7 +43,7 @@ msgstr "Depo yüklendi"
 msgid "Enable <span name=\"distro-name\"></span> backports repository"
 msgstr "<span name=\"distro-name\"></span> backports deposunu etkinleştirin"
 
-#: recommendations.html33, 106, 139, 173, 204, 218, 235, 251, 268
+#: recommendations.html33, 106, 139, 170, 184, 201, 217, 234
 msgid "Applying Changes..."
 msgstr "Değişiklikler Uygulanıyor..."
 
@@ -256,59 +256,7 @@ msgstr "Flatpak yüklendi. Hizmetin başlatılması için lütfen yeniden başla
 msgid "Install & Configure Flatpak"
 msgstr "Flatpak'i Yükle ve Yapılandır"
 
-#: recommendations.html:144
-msgid "Steam"
-msgstr "Steam"
-
 #: recommendations.html:149
-msgid ""
-"<strong>Steam</strong> is a digital distribution platform developed by Valve"
-" Corporation offering digital rights management (DRM), multiplayer gaming "
-"and social networking services. Steam provides the user with installation "
-"and automatic updating of games on multiple computers, and community "
-"features such as friends lists and groups, cloud saving, and in-game voice "
-"and chat functionality. The software provides a freely available application"
-" programming interface (API) called Steamworks, which developers can use to "
-"integrate many of Steam's functions into their products, including "
-"networking, matchmaking, in-game achievements, micro-transactions, and "
-"support for user-created content through Steam Workshop."
-msgstr ""
-"<strong>Steam</strong>, Valve Corporation tarafından dijital haklar yönetimi"
-" (DRM), çok oyunculu oyun ve sosyal ağ hizmetleri sunan bir dijital dağıtım "
-"platformudur. Steam, kullanıcıya çoklu bilgisayarlardaki oyunların otomatik "
-"olarak güncellenmesini ve arkadaş listeleri ve gruplar, bulut kaydetme ve "
-"oyun içi ses ve sohbet işlevi gibi topluluk özelliklerini sağlar. Yazılım, "
-"Steamworks adında ücretsiz bir uygulama programlama arabirimi (API) sunmakta"
-" olup, Steam Workshop aracılığıyla geliştiriciler ağ oluşturma, eşleştirme, "
-"oyun içi başarılar, mikro işlemler ve kullanıcı tarafından oluşturulan "
-"içerik desteği dâhil olmak üzere Steam'in birçok işlevini kendi ürünlerine "
-"tümleştirmek için kullanabilmektedir. "
-
-#: recommendations.html:160
-msgid ""
-"Being proprietary software, Steam is not included in the primary "
-"repositories of <span name=\"distro-name\"></span>. However, to provide more"
-" choice to users, Steam is shipped as a part of the <em>Multiverse</em> "
-"repository. <span name=\"distro-name\"></span> provides you the option to "
-"enable the <em>Multiverse</em> repository and to install Steam with a single"
-" mouse click."
-msgstr ""
-"Tescilli bir yazılım olan Steam, <span name=\"distro-name\"></span>'in "
-"birincil depolarında yer almamaktadır. Ancak, kullanıcılara daha fazla "
-"seçenek sunmak için, Steam, <em>Multiverse</em> veri havuzunun bir parçası "
-"olarak gönderilir. <span name=\"distro-name\"></span>, <em>Multiverse</em> "
-"veri havuzunu etkinleştirme ve Steam'i tek bir fare tıklamasıyla yükleme "
-"seçeneği sunar."
-
-#: recommendations.html:167
-msgid "Steam is installed"
-msgstr "Steam yüklü"
-
-#: recommendations.html:170
-msgid "Install & Configure Steam"
-msgstr "Steam'i Yükle ve Yapılandır"
-
-#: recommendations.html:183
 msgid ""
 "<strong>Dropbox</strong> is a popular proprietary file sharing and storage "
 "solution."
@@ -316,7 +264,7 @@ msgstr ""
 "<strong>Dropbox</strong> popüler bir tescilli dosya paylaşım ve depolama "
 "aracıdır."
 
-#: recommendations.html:187
+#: recommendations.html:153
 msgid ""
 "Being proprietary software, Dropbox is not included in the primary "
 "repositories of <span name=\"distro-name\"></span>. However, to provide more"
@@ -332,7 +280,7 @@ msgstr ""
 "veri havuzunu etkinleştirme ve Dropbox'u tek bir fare tıklamasıyla yükleme "
 "seçeneği sunar."
 
-#: recommendations.html193, 207
+#: recommendations.html159, 173
 msgid ""
 "After installing, logout and login and follow the dropbox instructions that "
 "are then displayed."
@@ -340,15 +288,15 @@ msgstr ""
 "Yükledikten sonra çıkış yapıp tekrar giriniz ve sonradan görüntülenen "
 "Dropbox eğitimlerini takip ediniz."
 
-#: recommendations.html198, 212
+#: recommendations.html164, 178
 msgid "Dropbox is installed"
 msgstr "Dropbox yüklendi."
 
-#: recommendations.html201, 215
+#: recommendations.html167, 181
 msgid "Install & Configure Dropbox"
 msgstr "Dropbox'u Yükle ve Ayarla"
 
-#: recommendations.html:225
+#: recommendations.html:191
 msgid ""
 "Nemo Share allows you to quickly share a folder from the Nemo file manager "
 "without requiring root access."
@@ -356,30 +304,30 @@ msgstr ""
 "Nemo Share, Nemo dosya yöneticisinden bir klasörü yetkili erişimi "
 "gerektirmeden hızlıca paylaşmanıza olanak tanır."
 
-#: recommendations.html:230
+#: recommendations.html:196
 msgid "Nemo Share is installed"
 msgstr "Nemo Share Yüklendi"
 
-#: recommendations.html:233
+#: recommendations.html:199
 msgid "Install Nemo Share"
 msgstr "Nemo Share'i Yükle"
 
-#: recommendations.html:242
+#: recommendations.html:208
 msgid ""
 "Nemo Preview allows you to quickly view the contents of a highlighted file "
 "from the Nemo file manager. Just press space to toggle the preview on and "
 "off."
 msgstr ""
 
-#: recommendations.html:246
+#: recommendations.html:212
 msgid "Nemo Preview is installed"
 msgstr ""
 
-#: recommendations.html:249
+#: recommendations.html:215
 msgid "Install Nemo Preview"
 msgstr ""
 
-#: recommendations.html:258
+#: recommendations.html:224
 msgid ""
 "Gutenprint is a suite of <a onclick=\"cmd('link?http://gimp-"
 "print.sourceforge.net/p_Supported_Printers.php')\">thousands</a> of printer "
@@ -387,10 +335,10 @@ msgid ""
 "supports only the printer part of multi-function devices."
 msgstr ""
 
-#: recommendations.html:263
+#: recommendations.html:229
 msgid "Gutenprint is installed"
 msgstr ""
 
-#: recommendations.html:266
+#: recommendations.html:232
 msgid "Install Gutenprint"
 msgstr ""

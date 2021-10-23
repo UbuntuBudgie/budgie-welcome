@@ -42,7 +42,7 @@ msgstr "El repositori està instal·lat."
 msgid "Enable <span name=\"distro-name\"></span> backports repository"
 msgstr "Habilita el repositori Backports de <span name=\"distro-name\"></span>."
 
-#: recommendations.html33, 106, 139, 173, 204, 218, 235, 251, 268
+#: recommendations.html33, 106, 139, 170, 184, 201, 217, 234
 msgid "Applying Changes..."
 msgstr "S'apliquen els canvis..."
 
@@ -258,60 +258,7 @@ msgstr "Flatpak està instal·lat. Reinicieu per iniciar-ne el servei."
 msgid "Install & Configure Flatpak"
 msgstr "Instal·leu i configureu Flatpak"
 
-#: recommendations.html:144
-msgid "Steam"
-msgstr "Steam"
-
 #: recommendations.html:149
-msgid ""
-"<strong>Steam</strong> is a digital distribution platform developed by Valve"
-" Corporation offering digital rights management (DRM), multiplayer gaming "
-"and social networking services. Steam provides the user with installation "
-"and automatic updating of games on multiple computers, and community "
-"features such as friends lists and groups, cloud saving, and in-game voice "
-"and chat functionality. The software provides a freely available application"
-" programming interface (API) called Steamworks, which developers can use to "
-"integrate many of Steam's functions into their products, including "
-"networking, matchmaking, in-game achievements, micro-transactions, and "
-"support for user-created content through Steam Workshop."
-msgstr ""
-"<strong>Steam</strong> és una plataforma de distribució digital "
-"desenvolupada per Valve Corporation que ofereix gestió de drets digitals "
-"(DRM), jocs multijugador i serveis de xarxes socials. Steam proporciona a "
-"l'usuari la instal·lació i l'actualització automàtica de jocs en diversos "
-"equips, i les funcions de la comunitat, com ara llistes d'amics i grups, "
-"estalvi en núvol i funcionalitat de veu i xat en el joc. El programari "
-"proporciona una interfície de programació d'aplicacions (API) lliurement "
-"disponible anomenada Steamworks, que els desenvolupadors poden utilitzar per"
-" integrar moltes de les funcions de Steam als seus productes, incloent "
-"xarxes, concordances, assoliments en el joc, microtransaccions i suport per "
-"a continguts creats per l'usuari a través de Steam Workshop."
-
-#: recommendations.html:160
-msgid ""
-"Being proprietary software, Steam is not included in the primary "
-"repositories of <span name=\"distro-name\"></span>. However, to provide more"
-" choice to users, Steam is shipped as a part of the <em>Multiverse</em> "
-"repository. <span name=\"distro-name\"></span> provides you the option to "
-"enable the <em>Multiverse</em> repository and to install Steam with a single"
-" mouse click."
-msgstr ""
-"Com que és programari de propietat, l'Stream no s'inclou als repositoris "
-"primaris de <span name=\"distro-name\"></span>. Ara bé, per proporcionar més"
-" possibilitats als usuaris, el Dropbox forma part del repositori "
-"<em>Multiverse</em>. <span name=\"distro-name\"></span> us proporciona "
-"l'opció d'habilitar el repositori <em>Multiverse</em> i d'instal·lar el "
-"Dropbox amb un sol clic."
-
-#: recommendations.html:167
-msgid "Steam is installed"
-msgstr "L'Steam està instal·lat"
-
-#: recommendations.html:170
-msgid "Install & Configure Steam"
-msgstr "Instal·leu i configureu l'Steam"
-
-#: recommendations.html:183
 msgid ""
 "<strong>Dropbox</strong> is a popular proprietary file sharing and storage "
 "solution."
@@ -319,7 +266,7 @@ msgstr ""
 "<strong>Dropbox</strong> és una solució popular i privada d’emmagatzematge i"
 " compatició de fitxers."
 
-#: recommendations.html:187
+#: recommendations.html:153
 msgid ""
 "Being proprietary software, Dropbox is not included in the primary "
 "repositories of <span name=\"distro-name\"></span>. However, to provide more"
@@ -335,7 +282,7 @@ msgstr ""
 "l'opció d'habilitar el repositori <em>Multiverse</em> i d'instal·lar el "
 "Dropbox amb un sol clic."
 
-#: recommendations.html193, 207
+#: recommendations.html159, 173
 msgid ""
 "After installing, logout and login and follow the dropbox instructions that "
 "are then displayed."
@@ -343,15 +290,15 @@ msgstr ""
 "Després de la instal·lació, sortiu de la sessió i torneu-hi a entrar i "
 "seguiu les instruccions del Dropbox que es mostrin."
 
-#: recommendations.html198, 212
+#: recommendations.html164, 178
 msgid "Dropbox is installed"
 msgstr "El Dropbox està instal·lat"
 
-#: recommendations.html201, 215
+#: recommendations.html167, 181
 msgid "Install & Configure Dropbox"
 msgstr "Instal·leu i configureu el Dropbox"
 
-#: recommendations.html:225
+#: recommendations.html:191
 msgid ""
 "Nemo Share allows you to quickly share a folder from the Nemo file manager "
 "without requiring root access."
@@ -359,15 +306,15 @@ msgstr ""
 "La compartició de Nemo us permet compartir de forma ràpida una carpeta des "
 "del gestor de fitxers Nemo sense necessitat d’accés de root."
 
-#: recommendations.html:230
+#: recommendations.html:196
 msgid "Nemo Share is installed"
 msgstr "Nemo Share està instal·lat"
 
-#: recommendations.html:233
+#: recommendations.html:199
 msgid "Install Nemo Share"
 msgstr "Instal·la el Nemo Share"
 
-#: recommendations.html:242
+#: recommendations.html:208
 msgid ""
 "Nemo Preview allows you to quickly view the contents of a highlighted file "
 "from the Nemo file manager. Just press space to toggle the preview on and "
@@ -377,15 +324,15 @@ msgstr ""
 "fitxer ressaltat des del gestor de fitxers Nemo. Només cal que premeu la "
 "barra d'espai per activar i desactivar la previsualització."
 
-#: recommendations.html:246
+#: recommendations.html:212
 msgid "Nemo Preview is installed"
 msgstr "El Nemo Preview està instal·lat."
 
-#: recommendations.html:249
+#: recommendations.html:215
 msgid "Install Nemo Preview"
 msgstr "Instal·la el Nemo Preview"
 
-#: recommendations.html:258
+#: recommendations.html:224
 msgid ""
 "Gutenprint is a suite of <a onclick=\"cmd('link?http://gimp-"
 "print.sourceforge.net/p_Supported_Printers.php')\">thousands</a> of printer "
@@ -398,10 +345,10 @@ msgstr ""
 "Canon. Gutenprint només admet la part de la impressora dels dispositius "
 "multifunció."
 
-#: recommendations.html:263
+#: recommendations.html:229
 msgid "Gutenprint is installed"
 msgstr "Gutenprint està instal·lat"
 
-#: recommendations.html:266
+#: recommendations.html:232
 msgid "Install Gutenprint"
 msgstr "Instal·la Gutenprint"

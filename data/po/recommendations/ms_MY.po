@@ -43,7 +43,7 @@ msgstr "Repositori telah dipasang"
 msgid "Enable <span name=\"distro-name\"></span> backports repository"
 msgstr "Benarkan <span name=\"distro-name\"></span> repositori port belakang"
 
-#: recommendations.html33, 106, 139, 173, 204, 218, 235, 251, 268
+#: recommendations.html33, 106, 139, 170, 184, 201, 217, 234
 msgid "Applying Changes..."
 msgstr "Menerapkan Perubahan..."
 
@@ -256,61 +256,7 @@ msgstr "Flatpak telah dipasang "
 msgid "Install & Configure Flatpak"
 msgstr "Pasang & Konfigur Flatpak"
 
-#: recommendations.html:144
-msgid "Steam"
-msgstr "Steam"
-
 #: recommendations.html:149
-msgid ""
-"<strong>Steam</strong> is a digital distribution platform developed by Valve"
-" Corporation offering digital rights management (DRM), multiplayer gaming "
-"and social networking services. Steam provides the user with installation "
-"and automatic updating of games on multiple computers, and community "
-"features such as friends lists and groups, cloud saving, and in-game voice "
-"and chat functionality. The software provides a freely available application"
-" programming interface (API) called Steamworks, which developers can use to "
-"integrate many of Steam's functions into their products, including "
-"networking, matchmaking, in-game achievements, micro-transactions, and "
-"support for user-created content through Steam Workshop."
-msgstr ""
-"<strong>Steam</strong> ialah sebuah platform agihan digital yang dibangunkan"
-" oleh Valve Corporation yang menawarkan pengurusan hak digital (DRM), "
-"permainan berbilang pemain dan perkhidmatan perangkaian sosial. Steam "
-"menyediakan pengguna dengan pemasangan dan pengemaskinian automatik "
-"permainan pada lebih daripada sebuah komputer, dan fitur komuniti seperti "
-"senarai rakan dan kumpulan, penyimpanan awan, dan suara dalam-permainan dan "
-"kefungsian sembang. Perisian menyediakan sebuah antara muka pengaturcaraan "
-"aplikasi yang tersedia secara percuma (API) iaitu Steamworks, yang mana "
-"pembangun boleh guna untuk sepadukan banyak fungsi Steam ke dalam produk "
-"mereka, termasuklah perangkaian, padanan permainan, pencapaian dalam-"
-"permainan, transaksi-mikro, dan sokongan untuk kandungan daripada pengguna "
-"melalui Steam Workshop."
-
-#: recommendations.html:160
-msgid ""
-"Being proprietary software, Steam is not included in the primary "
-"repositories of <span name=\"distro-name\"></span>. However, to provide more"
-" choice to users, Steam is shipped as a part of the <em>Multiverse</em> "
-"repository. <span name=\"distro-name\"></span> provides you the option to "
-"enable the <em>Multiverse</em> repository and to install Steam with a single"
-" mouse click."
-msgstr ""
-"Merupakan perisian prorietari, Steam tidak disertakan dalam repositori utama"
-" <span name=\"distro-name\"></span>. Oleh kerana, sebagai pilihan lanjutan "
-"untuk pengguna, Steam disertakan sebagai sebahagian daripada repositori "
-"<em>Multiverse</em>. <span name=\"distro-name\"></span> menyediakan pilihan "
-"untuk aktifkan repositori <em>Multiverse</em> dan pasang Steam dengan sekali"
-" klik."
-
-#: recommendations.html:167
-msgid "Steam is installed"
-msgstr "Steam telah dipasang"
-
-#: recommendations.html:170
-msgid "Install & Configure Steam"
-msgstr "Pasang & Konfigur Steam"
-
-#: recommendations.html:183
 msgid ""
 "<strong>Dropbox</strong> is a popular proprietary file sharing and storage "
 "solution."
@@ -318,7 +264,7 @@ msgstr ""
 "<strong>Dropbox</strong>ialah sebuah penyelesaian storan dan perkongsian "
 "fail proprietari yang terkenal."
 
-#: recommendations.html:187
+#: recommendations.html:153
 msgid ""
 "Being proprietary software, Dropbox is not included in the primary "
 "repositories of <span name=\"distro-name\"></span>. However, to provide more"
@@ -334,7 +280,7 @@ msgstr ""
 "menyediakan pilihan untuk aktifkan repositori <em>Multiverse</em> dan pasang"
 " Dropbox dengan sekali klik."
 
-#: recommendations.html193, 207
+#: recommendations.html159, 173
 msgid ""
 "After installing, logout and login and follow the dropbox instructions that "
 "are then displayed."
@@ -342,15 +288,15 @@ msgstr ""
 "Selepas memasang, daftar keluar dan daftar masuk seterusnya ikuti arahan "
 "dropbox yang kemudiannya dipaparkan."
 
-#: recommendations.html198, 212
+#: recommendations.html164, 178
 msgid "Dropbox is installed"
 msgstr "Dropbox telah dipasang"
 
-#: recommendations.html201, 215
+#: recommendations.html167, 181
 msgid "Install & Configure Dropbox"
 msgstr "Pasang dan konfigur Dropbox"
 
-#: recommendations.html:225
+#: recommendations.html:191
 msgid ""
 "Nemo Share allows you to quickly share a folder from the Nemo file manager "
 "without requiring root access."
@@ -358,15 +304,15 @@ msgstr ""
 "Nemo Share membolehkan anda berkongsi folder secara pantas melalui pengurus "
 "fail Nemo tanpa memerlukan capaian root."
 
-#: recommendations.html:230
+#: recommendations.html:196
 msgid "Nemo Share is installed"
 msgstr "Nemo Share telah dipasang"
 
-#: recommendations.html:233
+#: recommendations.html:199
 msgid "Install Nemo Share"
 msgstr "Pasang Nemo Share"
 
-#: recommendations.html:242
+#: recommendations.html:208
 msgid ""
 "Nemo Preview allows you to quickly view the contents of a highlighted file "
 "from the Nemo file manager. Just press space to toggle the preview on and "
@@ -376,15 +322,15 @@ msgstr ""
 "melalui pengurus fail Nemo. Hanya tekan kekunci space untuk menogol "
 "pratonton sama ada hidup atau mati."
 
-#: recommendations.html:246
+#: recommendations.html:212
 msgid "Nemo Preview is installed"
 msgstr "Pratonton Nemo telah dipasang"
 
-#: recommendations.html:249
+#: recommendations.html:215
 msgid "Install Nemo Preview"
 msgstr "Pasang Pratonton Nemo"
 
-#: recommendations.html:258
+#: recommendations.html:224
 msgid ""
 "Gutenprint is a suite of <a onclick=\"cmd('link?http://gimp-"
 "print.sourceforge.net/p_Supported_Printers.php')\">thousands</a> of printer "
@@ -396,10 +342,10 @@ msgstr ""
 "pencetak yang turut mengandungi pemacu bagi pencetak Epson dan Canon. "
 "Gutenprint hanya menyokong fungsi pencetak bagi peranti berbilang-fungsi."
 
-#: recommendations.html:263
+#: recommendations.html:229
 msgid "Gutenprint is installed"
 msgstr "Guternprint telah dipasang"
 
-#: recommendations.html:266
+#: recommendations.html:232
 msgid "Install Gutenprint"
 msgstr "Pasang Gutenprint"

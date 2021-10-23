@@ -48,7 +48,7 @@ msgstr "Repositório está instalado"
 msgid "Enable <span name=\"distro-name\"></span> backports repository"
 msgstr "Habilitar repositório backports do <span name=\"distro-name\"></span>."
 
-#: recommendations.html33, 106, 139, 173, 204, 218, 235, 251, 268
+#: recommendations.html33, 106, 139, 170, 184, 201, 217, 234
 msgid "Applying Changes..."
 msgstr "Aplicando Mudanças..."
 
@@ -265,60 +265,7 @@ msgstr ""
 msgid "Install & Configure Flatpak"
 msgstr "Instale & Configure Flatpak"
 
-#: recommendations.html:144
-msgid "Steam"
-msgstr "Steam"
-
 #: recommendations.html:149
-msgid ""
-"<strong>Steam</strong> is a digital distribution platform developed by Valve"
-" Corporation offering digital rights management (DRM), multiplayer gaming "
-"and social networking services. Steam provides the user with installation "
-"and automatic updating of games on multiple computers, and community "
-"features such as friends lists and groups, cloud saving, and in-game voice "
-"and chat functionality. The software provides a freely available application"
-" programming interface (API) called Steamworks, which developers can use to "
-"integrate many of Steam's functions into their products, including "
-"networking, matchmaking, in-game achievements, micro-transactions, and "
-"support for user-created content through Steam Workshop."
-msgstr ""
-"<strong>Steam</strong> é uma plataforma de distribuição digital desenvolvida"
-" pela Valve Corporation que oferece gerenciamento de direitos digitais "
-"(DRM), jogos multijogadores e serviços de redes sociais. O Steam fornece ao "
-"usuário a instalação e atualização automática de jogos em vários "
-"computadores e recursos da comunidade, como listas e grupos de amigos, "
-"salvamento em nuvem e funcionalidade de voz e bate-papo no jogo. O software "
-"fornece uma interface de programação de aplicativos (API) gratuita chamada "
-"Steamworks, que os desenvolvedores podem usar para integrar muitas das "
-"funções da Steam em seus produtos, incluindo redes, matchmaking, conquistas "
-"no jogo, micro-transações e suporte para conteúdo criado pelo usuário "
-"através do Steam Workshop."
-
-#: recommendations.html:160
-msgid ""
-"Being proprietary software, Steam is not included in the primary "
-"repositories of <span name=\"distro-name\"></span>. However, to provide more"
-" choice to users, Steam is shipped as a part of the <em>Multiverse</em> "
-"repository. <span name=\"distro-name\"></span> provides you the option to "
-"enable the <em>Multiverse</em> repository and to install Steam with a single"
-" mouse click."
-msgstr ""
-"Sendo software proprietário, o Steam não está incluído nos repositórios "
-"primários do <span name=\"distro-name\"></span>. No entanto, para fornecer "
-"mais opções aos usuários, o Steam é enviado como parte do repositório "
-"<em>Multiverse</em>. <span name=\"distro-name\"></span> fornece a opção para"
-" habilitar o repositório <em>Multiverse</em> e instalar o Steam com um único"
-" clique do mouse."
-
-#: recommendations.html:167
-msgid "Steam is installed"
-msgstr "Steam está instalado"
-
-#: recommendations.html:170
-msgid "Install & Configure Steam"
-msgstr "Instale & Configure o Steam"
-
-#: recommendations.html:183
 msgid ""
 "<strong>Dropbox</strong> is a popular proprietary file sharing and storage "
 "solution."
@@ -326,7 +273,7 @@ msgstr ""
 "<strong>Dropbox</strong> é uma solução proprietária popular de armazenamento"
 " e compartilhamento de arquivos"
 
-#: recommendations.html:187
+#: recommendations.html:153
 msgid ""
 "Being proprietary software, Dropbox is not included in the primary "
 "repositories of <span name=\"distro-name\"></span>. However, to provide more"
@@ -342,7 +289,7 @@ msgstr ""
 " habilitar o repositório <em>Multiverse</em> e instalar o Dropbox com um "
 "único clique do mouse."
 
-#: recommendations.html193, 207
+#: recommendations.html159, 173
 msgid ""
 "After installing, logout and login and follow the dropbox instructions that "
 "are then displayed."
@@ -350,15 +297,15 @@ msgstr ""
 "Após a instalação, reinicie a sessão e siga as instruções do dropbox que são"
 " exibidas."
 
-#: recommendations.html198, 212
+#: recommendations.html164, 178
 msgid "Dropbox is installed"
 msgstr "Dropbox está instalado"
 
-#: recommendations.html201, 215
+#: recommendations.html167, 181
 msgid "Install & Configure Dropbox"
 msgstr "Instalar & Configurar o Dropbox"
 
-#: recommendations.html:225
+#: recommendations.html:191
 msgid ""
 "Nemo Share allows you to quickly share a folder from the Nemo file manager "
 "without requiring root access."
@@ -366,30 +313,30 @@ msgstr ""
 "O Nemo Share permite que você compartilhe rapidamente uma pasta do "
 "gerenciador de arquivos do Nemo sem exigir acesso root."
 
-#: recommendations.html:230
+#: recommendations.html:196
 msgid "Nemo Share is installed"
 msgstr "O Nemo Share está instalado"
 
-#: recommendations.html:233
+#: recommendations.html:199
 msgid "Install Nemo Share"
 msgstr "Instalar o Nemo Share"
 
-#: recommendations.html:242
+#: recommendations.html:208
 msgid ""
 "Nemo Preview allows you to quickly view the contents of a highlighted file "
 "from the Nemo file manager. Just press space to toggle the preview on and "
 "off."
 msgstr ""
 
-#: recommendations.html:246
+#: recommendations.html:212
 msgid "Nemo Preview is installed"
 msgstr ""
 
-#: recommendations.html:249
+#: recommendations.html:215
 msgid "Install Nemo Preview"
 msgstr ""
 
-#: recommendations.html:258
+#: recommendations.html:224
 msgid ""
 "Gutenprint is a suite of <a onclick=\"cmd('link?http://gimp-"
 "print.sourceforge.net/p_Supported_Printers.php')\">thousands</a> of printer "
@@ -397,10 +344,10 @@ msgid ""
 "supports only the printer part of multi-function devices."
 msgstr ""
 
-#: recommendations.html:263
+#: recommendations.html:229
 msgid "Gutenprint is installed"
 msgstr "Gutenprint está instalado"
 
-#: recommendations.html:266
+#: recommendations.html:232
 msgid "Install Gutenprint"
 msgstr "Instalar Gutenprint"

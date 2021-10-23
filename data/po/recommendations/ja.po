@@ -42,7 +42,7 @@ msgstr "リポジトリはインストールされています"
 msgid "Enable <span name=\"distro-name\"></span> backports repository"
 msgstr "<span name=\"distro-name\"></span> backports リポジトリを有効にする"
 
-#: recommendations.html33, 106, 139, 173, 204, 218, 235, 251, 268
+#: recommendations.html33, 106, 139, 170, 184, 201, 217, 234
 msgid "Applying Changes..."
 msgstr "変更を適用しています…"
 
@@ -228,60 +228,13 @@ msgstr "Flatpakがインストールされます。サービスを開始する�
 msgid "Install & Configure Flatpak"
 msgstr "Flatpakのインストールと設定"
 
-#: recommendations.html:144
-msgid "Steam"
-msgstr "Steam"
-
 #: recommendations.html:149
-msgid ""
-"<strong>Steam</strong> is a digital distribution platform developed by Valve"
-" Corporation offering digital rights management (DRM), multiplayer gaming "
-"and social networking services. Steam provides the user with installation "
-"and automatic updating of games on multiple computers, and community "
-"features such as friends lists and groups, cloud saving, and in-game voice "
-"and chat functionality. The software provides a freely available application"
-" programming interface (API) called Steamworks, which developers can use to "
-"integrate many of Steam's functions into their products, including "
-"networking, matchmaking, in-game achievements, micro-transactions, and "
-"support for user-created content through Steam Workshop."
-msgstr ""
-"<strong>Steam</strong> は、Valve "
-"Corporationが開発したデジタル配信プラットフォームで、デジタル著作権管理（DRM）、マルチプレイヤーゲーム、ソーシャルネットワーキングサービスを提供します。Steam"
-" "
-"は、複数のコンピューターでのゲームのインストールと自動更新、およびフレンドリストやグループ、クラウドの保存、ゲーム内の音声やチャット機能などのコミュニティ機能をユーザーに提供します。このソフトウェアは、Steamworks"
-" "
-"と呼ばれる無料のアプリケーションプログラミングインターフェース（API）を提供します。開発者はこれを使用して、ネットワーク、マッチメイキング、ゲーム内の成果、マイクロトランザクション、ユーザー作成コンテンツのサポートなど、Steamワークショップを通じてSteam"
-" の機能の多くを自社製品に統合できます。"
-
-#: recommendations.html:160
-msgid ""
-"Being proprietary software, Steam is not included in the primary "
-"repositories of <span name=\"distro-name\"></span>. However, to provide more"
-" choice to users, Steam is shipped as a part of the <em>Multiverse</em> "
-"repository. <span name=\"distro-name\"></span> provides you the option to "
-"enable the <em>Multiverse</em> repository and to install Steam with a single"
-" mouse click."
-msgstr ""
-"独自のソフトウェアであるため、Steamは<span name=\"distro-"
-"name\"></span>のプライマリリポジトリに含まれていません。ただし、ユーザーにより多くの選択肢を提供するために、Steamは<em>Multiverse</em>リポジトリの一部として出荷されます。<span"
-" name=\"distro-"
-"name\"></span>は、<em>Multiverse</em>リポジトリを有効にし、マウスを1回クリックするだけでSteamをインストールするオプションを提供します。"
-
-#: recommendations.html:167
-msgid "Steam is installed"
-msgstr "Steam はインストールされています"
-
-#: recommendations.html:170
-msgid "Install & Configure Steam"
-msgstr "Steam のインストールと設定"
-
-#: recommendations.html:183
 msgid ""
 "<strong>Dropbox</strong> is a popular proprietary file sharing and storage "
 "solution."
 msgstr "<strong>Dropbox</strong>は、人気のある独自のファイル共有およびストレージソリューションです。"
 
-#: recommendations.html:187
+#: recommendations.html:153
 msgid ""
 "Being proprietary software, Dropbox is not included in the primary "
 "repositories of <span name=\"distro-name\"></span>. However, to provide more"
@@ -295,50 +248,50 @@ msgstr ""
 " name=\"distro-"
 "name\"></span>は、<em>Multiverse</em>リポジトリを有効にし、マウスを1回クリックするだけでDropboxをインストールするオプションを提供します。"
 
-#: recommendations.html193, 207
+#: recommendations.html159, 173
 msgid ""
 "After installing, logout and login and follow the dropbox instructions that "
 "are then displayed."
 msgstr "インストール後、ログアウトしてログインし、表示されるドロップボックスの指示に従います。"
 
-#: recommendations.html198, 212
+#: recommendations.html164, 178
 msgid "Dropbox is installed"
 msgstr "Dropbox はインストールされています"
 
-#: recommendations.html201, 215
+#: recommendations.html167, 181
 msgid "Install & Configure Dropbox"
 msgstr "Dropbox のインストールと設定"
 
-#: recommendations.html:225
+#: recommendations.html:191
 msgid ""
 "Nemo Share allows you to quickly share a folder from the Nemo file manager "
 "without requiring root access."
 msgstr "Nemo Shareを使用すると、ルートアクセスを必要とせずに、Nemoファイルマネージャからフォルダをすばやく共有できます。"
 
-#: recommendations.html:230
+#: recommendations.html:196
 msgid "Nemo Share is installed"
 msgstr "Nemo Share はインストールされています"
 
-#: recommendations.html:233
+#: recommendations.html:199
 msgid "Install Nemo Share"
 msgstr "Nemo Share をインストール"
 
-#: recommendations.html:242
+#: recommendations.html:208
 msgid ""
 "Nemo Preview allows you to quickly view the contents of a highlighted file "
 "from the Nemo file manager. Just press space to toggle the preview on and "
 "off."
 msgstr ""
 
-#: recommendations.html:246
+#: recommendations.html:212
 msgid "Nemo Preview is installed"
 msgstr ""
 
-#: recommendations.html:249
+#: recommendations.html:215
 msgid "Install Nemo Preview"
 msgstr ""
 
-#: recommendations.html:258
+#: recommendations.html:224
 msgid ""
 "Gutenprint is a suite of <a onclick=\"cmd('link?http://gimp-"
 "print.sourceforge.net/p_Supported_Printers.php')\">thousands</a> of printer "
@@ -346,10 +299,10 @@ msgid ""
 "supports only the printer part of multi-function devices."
 msgstr ""
 
-#: recommendations.html:263
+#: recommendations.html:229
 msgid "Gutenprint is installed"
 msgstr ""
 
-#: recommendations.html:266
+#: recommendations.html:232
 msgid "Install Gutenprint"
 msgstr ""

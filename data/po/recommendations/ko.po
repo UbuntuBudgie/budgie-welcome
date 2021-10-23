@@ -39,7 +39,7 @@ msgstr ""
 msgid "Enable <span name=\"distro-name\"></span> backports repository"
 msgstr ""
 
-#: recommendations.html33, 106, 139, 173, 204, 218, 235, 251, 268
+#: recommendations.html33, 106, 139, 170, 184, 201, 217, 234
 msgid "Applying Changes..."
 msgstr "변경 사항 적용 중..."
 
@@ -208,58 +208,13 @@ msgstr "Flatpak이 설치되었습니다. 시스템을 재시작하여 서비스
 msgid "Install & Configure Flatpak"
 msgstr "Flatpak 설치 및 구성"
 
-#: recommendations.html:144
-msgid "Steam"
-msgstr "Steam"
-
 #: recommendations.html:149
-msgid ""
-"<strong>Steam</strong> is a digital distribution platform developed by Valve"
-" Corporation offering digital rights management (DRM), multiplayer gaming "
-"and social networking services. Steam provides the user with installation "
-"and automatic updating of games on multiple computers, and community "
-"features such as friends lists and groups, cloud saving, and in-game voice "
-"and chat functionality. The software provides a freely available application"
-" programming interface (API) called Steamworks, which developers can use to "
-"integrate many of Steam's functions into their products, including "
-"networking, matchmaking, in-game achievements, micro-transactions, and "
-"support for user-created content through Steam Workshop."
-msgstr ""
-"<strong>Steam</strong>은 Valve Corporation에서 개발한 디지털 권리 관리(DRM), 멀티플레이 게이밍, "
-"소셜 네트워킹 서비스를 제공하는 디지털 배포 플랫폼입니다. Steam은 여러 컴퓨터에서 게임을 설치하고 자동으로 업데이트해주며, 친구 "
-"목록과 그룹, 클라우드 저장, 게임 내 음성 및 문자 채팅 기능과 같은 커뮤니티 기능도 제공합니다. Steam에는 개발자들에게 네트워킹,"
-" 매치메이킹, 게임 내 업적, 거래 및 Steam Workshop에서의 사용자 제작 컨텐츠 지원 등과 같은 여러 기능들을 자신의 게임이나"
-" 소프트웨어에 통합하게 해주기 위해 Steamworks라고 불리는 애플리케이션 프로그래밍 인터페이스(API)를 제공합니다."
-
-#: recommendations.html:160
-msgid ""
-"Being proprietary software, Steam is not included in the primary "
-"repositories of <span name=\"distro-name\"></span>. However, to provide more"
-" choice to users, Steam is shipped as a part of the <em>Multiverse</em> "
-"repository. <span name=\"distro-name\"></span> provides you the option to "
-"enable the <em>Multiverse</em> repository and to install Steam with a single"
-" mouse click."
-msgstr ""
-"Steam은 사유 소프트웨어이기에 <span name=\"distro-name\"></span>의 주 저장소에 포함되어 있지 않습니다. "
-"그러나 사용자들에게 더 많은 선택의 길을 제공하기 위해 <em>Multiverse</em> 저장소에서 배포하고 있습니다. <span "
-"name=\"distro-name\"></span>는 단 한 번의 클릭으로 <em>Multiverse</em> 저장소를 활성화하고 "
-"Steam을 설치할 수 있게 해줍니다."
-
-#: recommendations.html:167
-msgid "Steam is installed"
-msgstr "Steam이 설치되었습니다."
-
-#: recommendations.html:170
-msgid "Install & Configure Steam"
-msgstr "Steam 설치 및 구성"
-
-#: recommendations.html:183
 msgid ""
 "<strong>Dropbox</strong> is a popular proprietary file sharing and storage "
 "solution."
 msgstr ""
 
-#: recommendations.html:187
+#: recommendations.html:153
 msgid ""
 "Being proprietary software, Dropbox is not included in the primary "
 "repositories of <span name=\"distro-name\"></span>. However, to provide more"
@@ -273,50 +228,50 @@ msgstr ""
 "<span name=\"distro-name\"></span>는 단 한 번의 클릭으로 <em>Multiverse</em> 저장소를 "
 "활성화하고 Dropbox를 설치할 수 있게 해줍니다."
 
-#: recommendations.html193, 207
+#: recommendations.html159, 173
 msgid ""
 "After installing, logout and login and follow the dropbox instructions that "
 "are then displayed."
 msgstr "설치가 끝나면 로그아웃하고 로그인한 다음, 표시되는 Dropbox 설명에 따라 구성을 완료하세요."
 
-#: recommendations.html198, 212
+#: recommendations.html164, 178
 msgid "Dropbox is installed"
 msgstr "Dropbox가 설치되었습니다."
 
-#: recommendations.html201, 215
+#: recommendations.html167, 181
 msgid "Install & Configure Dropbox"
 msgstr "Dropbox 설치 및 구성"
 
-#: recommendations.html:225
+#: recommendations.html:191
 msgid ""
 "Nemo Share allows you to quickly share a folder from the Nemo file manager "
 "without requiring root access."
 msgstr ""
 
-#: recommendations.html:230
+#: recommendations.html:196
 msgid "Nemo Share is installed"
 msgstr ""
 
-#: recommendations.html:233
+#: recommendations.html:199
 msgid "Install Nemo Share"
 msgstr ""
 
-#: recommendations.html:242
+#: recommendations.html:208
 msgid ""
 "Nemo Preview allows you to quickly view the contents of a highlighted file "
 "from the Nemo file manager. Just press space to toggle the preview on and "
 "off."
 msgstr ""
 
-#: recommendations.html:246
+#: recommendations.html:212
 msgid "Nemo Preview is installed"
 msgstr ""
 
-#: recommendations.html:249
+#: recommendations.html:215
 msgid "Install Nemo Preview"
 msgstr ""
 
-#: recommendations.html:258
+#: recommendations.html:224
 msgid ""
 "Gutenprint is a suite of <a onclick=\"cmd('link?http://gimp-"
 "print.sourceforge.net/p_Supported_Printers.php')\">thousands</a> of printer "
@@ -324,10 +279,10 @@ msgid ""
 "supports only the printer part of multi-function devices."
 msgstr ""
 
-#: recommendations.html:263
+#: recommendations.html:229
 msgid "Gutenprint is installed"
 msgstr ""
 
-#: recommendations.html:266
+#: recommendations.html:232
 msgid "Install Gutenprint"
 msgstr ""
