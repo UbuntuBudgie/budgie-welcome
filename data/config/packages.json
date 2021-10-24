@@ -1232,33 +1232,23 @@
 				]
 			}
 		},
+		"openrazer": {
+			"packages": [
+				"openrazer-daemon"
+			],
+			"repos": {
+				"all": [
+					"ppa:openrazer/stable"
+				]
+			}
+		},
 		"polychromatic": {
 			"packages": [
-				"lutris"
+				"polychromatic"
 			],
 			"repos": {
 				"all": [
-					"ppa:lutris-team/lutris"
-				]
-			}
-		},
-		"openrazor": {
-			"packages": [
-				"openrgb"
-			],
-			"repos": {
-				"all": [
-					"ppa:thopiekar/openrgb"
-				]
-			}
-		},
-		"antimicrox": {
-			"packages": [
-				"lutris"
-			],
-			"repos": {
-				"all": [
-					"ppa:lutris-team/lutris"
+					"ppa:ppa:polychromatic/stable"
 				]
 			}
 		}

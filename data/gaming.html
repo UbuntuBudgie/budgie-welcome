@@ -10,17 +10,26 @@
     <link href="css/welcome.css" rel="stylesheet" media="screen">
 </head>
 
-<!-- Game Clients (Lutris, Steam)
-Gaming Tools (openrazer+polychromatic, openrgb, others?)
-Suggested Games (community voted short list of 5 or 10 games we can fetch from Ubuntu repos) -->
-
 <body class="backdrop-simple fade fade-1s">
     <div id="wrapper">
         <div id="title-inject">&zwnj;Gaming&zwnj;</div>
         <div id="content" class="container entire-page-fade">
-            <div class="row wow fadeIn">
-                <div class="col-md-12" id="gaming">
-                    <div class="row" id="game-clients">
+            <ul class="nav nav-tabs" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" role="tab" data-toggle="tab" href="#game-clients">&zwnj;Gaming
+                        Clients&zwnj;</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" role="tab" data-toggle="tab" href="#games">&zwnj;Games&zwnj;</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" role="tab" data-toggle="tab" href="#game-tools">&zwnj;Tools&zwnj;</a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane active" id="game-clients" role="tabpanel">
+                    <br>
+                    <div class="row">
                         <div class="col-md-12">
                             <h2>&zwnj;Gaming Client&zwnj;</h2>
                             <p>&zwnj;A gaming client will help you download, install and manage your games. &zwnj;</p>
@@ -94,72 +103,68 @@ Suggested Games (community voted short list of 5 or 10 games we can fetch from U
                             </div>
                         </div>
                     </div>
-                    <hr />
-                    <div class="row" id="games">
+                </div>
+                <div class="tab-pane" id="games" role="tabpanel">
+                    <br>
+                    <div class="row">
                         <div class="col-md-12">
                             <h2>&zwnj;Games&zwnj;</h2>
                             <p>&zwnj;A community curated list of game suggestions&zwnj;</p>
                             <div class="row text-md-center">
                                 <div class="col-md-6">
-                                    <h2><a
-                                            onclick="cmd('link?https://forums.lutris.net/t/very-brief-tutorial-on-manually-installing-a-game-in-lutris/2028')"><span
+                                    <h2><a onclick="cmd('link?https://deltarune.com/')"><span
                                                 class="material-icons">help</span></a>&zwnj;Delta Rune Chapter 2&zwnj;
                                     </h2>
                                     <div class="card card-block">
                                         <div class="card-image text-md-center">
-                                            <a href="img/games/DELTARUNE.jpg" data-toggle="lightbox"><img
-                                                    src="img/games/DELTARUNE.jpg"
+                                            <a href="img/screenshots/DELTARUNE.jpg" data-toggle="lightbox"><img
+                                                    src="img/screenshots/DELTARUNE.jpg"
                                                     style="width: auto; max-height: 128px" /></a>
                                         </div>
                                         <p class="card-text">&zwnj;Deltarune serves as a follow-up to Toby Fox's
                                             succesful game Undertale.&zwnj;</p>
                                     </div>
                                     <div class="text-md-right">
-                                        <a class="btn btn-success hvr-shadow"
-                                            onclick="cmd('link?https://youtu.be/AdY8c0XQCcM');"> &nbsp;
-                                            <span class="material-icons">&#xE037;</span>&zwnj;Watch release trailer on
-                                            YouTube&zwnj;&nbsp;
-                                        </a>
+                                        <a onclick="cmd('link?https://youtu.be/AdY8c0XQCcM');">&zwnj;Watch release
+                                            trailer on YouTube&zwnj;</a>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
-                                    <h2><a
-                                            onclick="cmd('link?https://forums.lutris.net/t/very-brief-tutorial-on-manually-installing-a-game-in-lutris/2028')"><span
+                                    <h2><a onclick="cmd('link?https://www.bethesda.net/en/game/deathloop')"><span
                                                 class="material-icons">help</span></a>&zwnj;Death Loop&zwnj;</h2>
                                     <div class="card card-block">
                                         <div class="card-image text-md-center">
-                                            <a href="img/games/DeathLoop.jpg" data-toggle="lightbox"><img
-                                                    src="img/games/DeathLoop.jpg"
+                                            <a href="img/screenshots/DeathLoop.jpg" data-toggle="lightbox"><img
+                                                    src="img/screenshots/DeathLoop.jpg"
                                                     style="width: auto; max-height: 128px" /></a>
                                         </div>
                                         <p class="card-text">&zwnj;DEATHLOOP is a next-gen FPS from Arkane Lyon, the
                                             award-winning studio behind Dishonored.&zwnj;</p>
                                     </div>
                                     <div class="text-md-right">
-                                        <a class="btn btn-success hvr-shadow"
-                                            onclick="cmd('link?https://www.youtube.com/watch?v=F8HmSaaISpA');">
-                                            &nbsp;
-                                            <span class="material-icons">&#xE2C0;</span>&zwnj;Watch release trailer on
-                                            YouTube&zwnj;&nbsp;
-                                        </a>
+                                        <a onclick="cmd('link?https://www.youtube.com/watch?v=F8HmSaaISpA');">&zwnj;Watch
+                                            release trailer on YouTube&zwnj;</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <hr />
-                    <div class="row" id="game-tools">
+                </div>
+                <div class="tab-pane" id="game-tools" role="tabpanel">
+                    <br>
+                    <div class="row">
                         <div class="col-md-12">
                             <h2>&zwnj;Gaming Tools&zwnj;</h2>
                             <p>&zwnj;Tools to have a more comfortable and feature-rich gaming experience&zwnj;</p>
                             <div class="row text-md-center">
                                 <div class="col-md-6">
                                     <br />
-                                    <h2><a class="material-icons">help</span></a>&zwnj;OpenRGB&zwnj;</h2>
+                                    <h2><a onclick="cmd('link?https://openrgb.org/')"><span
+                                                class="material-icons">help</span></a>&zwnj;OpenRGB&zwnj;</h2>
                                     <div class="card card-block">
                                         <div class="card-image text-md-center">
-                                            <a href="img/games/OpenRGB.png" data-toggle="lightbox"><img
-                                                    src="img/games/OpenRGB.png"
+                                            <a href="img/logos/OpenRGB.png" data-toggle="lightbox"><img
+                                                    src="img/logos/OpenRGB.png"
                                                     style="width: auto; max-height: 128px" /></a>
                                         </div>
                                         <p class="card-text">&zwnj;Generic RGB management tool for linux&zwnj;</p>
@@ -178,109 +183,8 @@ Suggested Games (community voted short list of 5 or 10 games we can fetch from U
                                             &zwnj;Applying
                                             Changes...&zwnj;
                                         </span>
-                                        <p id="openrbg-instruction" class="hidden"><small>&zwnj;Click on the help icon
-                                                to
-                                                learn
-                                                how to install your games&zwnj;</small></p>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <br />
-                                    <h2><a
-                                            onclick="cmd('link?https://forums.lutris.net/t/very-brief-tutorial-on-manually-installing-a-game-in-lutris/2028')"><span
-                                                class="material-icons">help</span></a>&zwnj;Polychromatic + OpenRazor&zwnj;</h2>
-                                    <div class="card card-block">
-                                        <div class="card-image text-md-center">
-                                            <a href="img/games/polychromatic.png" data-toggle="lightbox"><img
-                                                    src="img/games/polychromatic.png"
-                                                    style="width: auto; max-height: 128px" /></a>
-                                        </div>
-                                        <p class="card-text">&zwnj;Bring linux support to Razer devices. Please use with
-                                            OpenRazor&zwnj;</p>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <div class="text-md-right">
-                                                <a id="polychromatic-remove" class="btn btn-danger"
-                                                    onclick="cmd('remove?polychromatic');">
-                                                    <span class="material-icons">&#xE872;</span><span
-                                                        class="button-text">&zwnj;Remove Polychromatic&zwnj;</span>
-                                                </a>
-                                                <a id="polychromatic-install" class="btn btn-success hvr-shadow"
-                                                    onclick="cmd('install?polychromatic');"> &nbsp;
-                                                    <span class="material-icons">&#xE2C0;</span>&zwnj;Install Polychromatic&zwnj;&nbsp;
-                                                </a>
-                                                <span id="polychromatic-status" class="hidden">
-                                                    <img src="img/welcome/processing.gif" width="24px" height="24px" />
-                                                    &zwnj;Applying
-                                                    Changes...&zwnj;
-                                                </span>
-                                                <p id="polychromatic-instruction" class="hidden"><small>&zwnj;Click on the help
-                                                        icon to
-                                                        learn
-                                                        how to install your games&zwnj;</small></p>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="text-md-right">
-                                                <a id="openrazor-remove" class="btn btn-danger"
-                                                    onclick="cmd('remove?openrazor');">
-                                                    <span class="material-icons">&#xE872;</span><span
-                                                        class="button-text">&zwnj;Remove OpenRazor&zwnj;</span>
-                                                </a>
-                                                <a id="openrazor-install" class="btn btn-success hvr-shadow"
-                                                    onclick="cmd('install?x');"> &nbsp;
-                                                    <span class="material-icons">&#xE2C0;</span>&zwnj;Install OpenRazor&zwnj;&nbsp;
-                                                </a>
-                                                <span id="openrazor-status" class="hidden">
-                                                    <img src="img/welcome/processing.gif" width="24px" height="24px" />
-                                                    &zwnj;Applying
-                                                    Changes...&zwnj;
-                                                </span>
-                                                <p id="openrazor-instruction" class="hidden"><small>&zwnj;Click on the help
-                                                        icon to
-                                                        learn
-                                                        how to install your games&zwnj;</small></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <hr />
-                            <div class="row text-md-center">
-                                <div class="col-md-6">
-                                    <br />
-                                    <h2><a
-                                            onclick="cmd('link?https://forums.lutris.net/t/very-brief-tutorial-on-manually-installing-a-game-in-lutris/2028')"><span
-                                                class="material-icons">help</span></a>&zwnj;AntiMicroX&zwnj;</h2>
-                                    <div class="card card-block">
-                                        <div class="card-image text-md-center">
-                                            <a href="img/games/antimicrox.png" data-toggle="lightbox"><img
-                                                    src="img/games/antimicrox.png"
-                                                    style="width: auto; max-height: 128px" /></a>
-                                        </div>
-                                        <p class="card-text">&zwnj;Graphical program used to map gamepad keys to
-                                            keyboard, mouse, scripts and macros.&zwnj;</p>
-                                    </div>
-                                    <div class="text-md-right">
-                                        <a id="antimicrox-remove" class="btn btn-danger"
-                                            onclick="cmd('remove?antimicrox');">
-                                            <span class="material-icons">&#xE872;</span><span
-                                                class="button-text">&zwnj;Remove&zwnj;</span>
-                                        </a>
-                                        <a id="antimicrox-install" class="btn btn-success hvr-shadow"
-                                            onclick="cmd('install?antimicrox');"> &nbsp;
-                                            <span class="material-icons">&#xE2C0;</span>&zwnj;Install&zwnj;&nbsp;
-                                        </a>
-                                        <span id="antimicrox-status" class="hidden">
-                                            <img src="img/welcome/processing.gif" width="24px" height="24px" />
-                                            &zwnj;Applying
-                                            Changes...&zwnj;
-                                        </span>
-                                        <p id="antimicrox-instruction" class="hidden"><small>&zwnj;Click on the help
-                                                icon to
-                                                learn
-                                                how to install your games&zwnj;</small></p>
+                                        <p id="openrbg-instruction" class="hidden"><small>&zwnj;Check website by
+                                                clicking the help button&zwnj;</small></p>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
@@ -294,9 +198,7 @@ Suggested Games (community voted short list of 5 or 10 games we can fetch from U
                                                     src="img/screenshots/cpufreq-applet.jpg"
                                                     style="width: auto; max-height: 128px" /></a>
                                         </div>
-                                        <p class="card-text">&zwnj;Control the frequency of the processor (Sandy Bridge
-                                            and
-                                            newer).&zwnj;</p>
+                                        <p class="card-text">&zwnj;Control the frequency of the processor&zwnj;</p>
                                     </div>
                                     <div class="text-md-right">
                                         <a class="btn btn-success hvr-shadow" href="budgie-applets.html">
@@ -304,6 +206,76 @@ Suggested Games (community voted short list of 5 or 10 games we can fetch from U
                                             <span class="material-icons">&#xE2C0;</span>&zwnj;Check-out this applet from
                                             budgie-applets menu&zwnj;&nbsp;
                                         </a>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <hr />
+                            <div class="row text-md-center">
+                                <div class="col-md-6">
+                                    <br />
+                                    <h2><a onclick="cmd('link?https://openrazer.github.io/')"><span
+                                                class="material-icons">help</span></a>&zwnj;OpenRazer&zwnj;</h2>
+                                    <div class="card card-block">
+                                        <div class="card-image text-md-center">
+                                            <a href="img/logos/openrazer.jpg" data-toggle="lightbox"><img
+                                                    src="img/logos/openrazer.jpg"
+                                                    style="width: auto; max-height: 128px" /></a>
+                                        </div>
+                                        <p class="card-text">&zwnj;An entirely open source driver and user-space daemon
+                                            that allows you to manage your Razer peripherals on GNU/Linux. Install along
+                                            with Polychromatic&zwnj;</p>
+                                    </div>
+                                    <div class="text-md-right">
+                                        <a id="openrazer-remove" class="btn btn-danger"
+                                            onclick="cmd('remove?openrazer');">
+                                            <span class="material-icons">&#xE872;</span><span
+                                                class="button-text">&zwnj;Remove&zwnj;</span>
+                                        </a>
+                                        <a id="openrazer-install" class="btn btn-success hvr-shadow"
+                                            onclick="cmd('install?openrazer');"> &nbsp;
+                                            <span class="material-icons">&#xE2C0;</span>&zwnj;Install&zwnj;&nbsp;
+                                        </a>
+                                        <span id="openrazer-status" class="hidden">
+                                            <img src="img/welcome/processing.gif" width="24px" height="24px" />
+                                            &zwnj;Applying
+                                            Changes...&zwnj;
+                                        </span>
+                                        <p id="openrazer-instruction" class="hidden"><small>&zwnj;Please also install
+                                                Polychromatic&zwnj;</small></p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <br />
+                                    <h2><a onclick="cmd('link?https://polychromatic.app/')"><span
+                                                class="material-icons">help</span></a>&zwnj;Polychromatic&zwnj;</h2>
+                                    <div class="card card-block">
+                                        <div class="card-image text-md-center">
+                                            <a href="img/logos/polychromatic.png" data-toggle="lightbox"><img
+                                                    src="img/logos/polychromatic.png"
+                                                    style="width: auto; max-height: 128px" /></a>
+                                        </div>
+                                        <p class="card-text">&zwnj;Polychromatic is a frontend for OpenRazer that
+                                            enables Razer devices to control lighting effects and more on
+                                            GNU/Linux.&zwnj;</p>
+                                    </div>
+                                    <div class="text-md-right">
+                                        <a id="polychromatic-remove" class="btn btn-danger"
+                                            onclick="cmd('remove?polychromatic');">
+                                            <span class="material-icons">&#xE872;</span><span
+                                                class="button-text">&zwnj;Remove&zwnj;</span>
+                                        </a>
+                                        <a id="polychromatic-install" class="btn btn-success hvr-shadow"
+                                            onclick="cmd('install?polychromatic');"> &nbsp;
+                                            <span class="material-icons">&#xE2C0;</span>&zwnj;Install&zwnj;&nbsp;
+                                        </a>
+                                        <span id="polychromatic-status" class="hidden">
+                                            <img src="img/welcome/processing.gif" width="24px" height="24px" />
+                                            &zwnj;Applying
+                                            Changes...&zwnj;
+                                        </span>
+                                        <p id="polychromatic-instruction" class="hidden"><small>&zwnj;Please install with
+                                                OpenRazer&zwnj;</small></p>
                                     </div>
                                 </div>
                             </div>
