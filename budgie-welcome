@@ -1892,9 +1892,10 @@ class WelcomeApp(object):
     def end_of_support(self):
         end_of_support = {  'xenial' : '2018-07-31',
                             'bionic' : '2021-04-22',
-                            'focal'  : '2023-04-22'}
+                            'focal'  : '2023-04-22',
+                            'jammy'  : '2025-04-22'}
 
-        app_code_names = { 'xenial', 'bionic', 'focal', 'groovy', 'hirsute', 'impish'}
+        app_code_names = { 'xenial', 'bionic', 'focal', 'groovy', 'hirsute', 'impish', 'jammy'}
 
         if systemstate.codename not in app_code_names:
             dialog = Gtk.MessageDialog( parent=self._window,
