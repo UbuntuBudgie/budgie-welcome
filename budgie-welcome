@@ -331,7 +331,7 @@ class AppView(WebKit2.WebView):
         dbg.stdout('_load_changed_cb', 'uri: ' + uri, 0, 0)
 
         try:
-            app.current_page = uri.rsplit('/', 1)[1]
+            app.current_page = uri.rsplit('#')[0].rsplit('/', 1)[1]
             self._push_config()
         except IndexError as e:
             dbg.stdout("_load_changed_cb", "weird uri " + uri, 0, 1)
