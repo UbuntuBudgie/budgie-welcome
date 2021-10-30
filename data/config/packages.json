@@ -1153,6 +1153,22 @@
 				"wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | apt-key add -"
 			]
 		},
+		"edge": {
+			"packages": [
+				"microsoft-edge-stable"
+			],
+			"arch": [
+				"amd64"
+			],
+			"repos": {
+				"all": [
+					"deb [arch=amd64] https://packages.microsoft.com/repos/edge stable main"
+				]
+			},
+			"key-commands": [
+				"wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -"
+			]
+		},
 		"opera": {
 			"snap": [
 				"opera"
