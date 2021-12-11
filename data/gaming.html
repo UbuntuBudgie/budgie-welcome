@@ -97,6 +97,38 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="row text-md-center">
+                                <div class="col-md-6">
+                                    <br>
+                                    <h2><a onclick="cmd('link?https://www.retroarch.com/')"><span
+                                                class="material-icons">help</span></a>&zwnj;RetroArch&zwnj;</h2>
+                                    <div class="card card-block">
+                                        <div class="card-image text-md-center">
+                                            <img src="img/logos/retroarch.png" style="width: auto; max-height: 128px" />
+                                        </div>
+                                        <p class="card-text">&zwnj;RetroArch is a frontend for emulators, game engines
+                                            and media players.&zwnj;</p>
+                                    </div>
+                                    <div class="text-md-right">
+                                        <a id="retroarch-remove" class="btn btn-danger" onclick="cmd('remove?retroarch');">
+                                            <span class="material-icons">&#xE872;</span><span
+                                                class="button-text">&zwnj;Remove&zwnj;</span>
+                                        </a>
+                                        <a id="retroarch-install" class="btn btn-success hvr-shadow"
+                                            onclick="cmd('install?retroarch');"> &nbsp;
+                                            <span class="material-icons">&#xE2C0;</span>&zwnj;Install&zwnj;&nbsp;
+                                        </a>
+                                        <span id="retroarch-status" class="hidden">
+                                            <img src="img/welcome/processing.gif" width="24px" height="24px" />
+                                            &zwnj;Applying
+                                            Changes...&zwnj;
+                                        </span>
+                                        <p id="retroarch-instruction" class="hidden"><small>&zwnj;Just play. If you need
+                                                help reach out to the <a href="https://www.retroarch.com/?page=faq"> FAQ
+                                                    page </a>&zwnj;</small></p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -195,7 +227,8 @@
                                     </div>
                                     <div class="text-md-right">
                                         <a class="btn btn-inverse" href="budgie-applets.html#anchor1">
-                                            <img class="button-icon" src="img/distro-icon-inverted.svg">&nbsp;<span class="button-text">&zwnj;Install from Budgie Extras&zwnj;</span>
+                                            <img class="button-icon" src="img/distro-icon-inverted.svg">&nbsp;<span
+                                                class="button-text">&zwnj;Install from Budgie Extras&zwnj;</span>
                                         </a>
                                     </div>
                                 </div>

@@ -1407,6 +1407,16 @@
 				]
 			}
 		},
+		"retroarch": {
+			"snap": [
+				"retroarch"
+			]
+		},
+		"gamebuntu": {
+			"snap": [
+				"gamebuntu"
+			]
+		},
 		"openrbg": {
 			"packages": [
 				"openrgb"
@@ -1434,6 +1444,47 @@
 			"repos": {
 				"all": [
 					"ppa:polychromatic/stable"
+				]
+			}
+		},
+		"discord": {
+			"snap": [
+				"discord"
+			]
+		},
+		"obs-studio": {
+			"snap": [
+				"obs-studio"
+			]
+		},
+		"mango-hud": {
+			"packages": [
+				"mangohud"
+			],
+			"repos": {
+				"all": [
+					"ppa:flexiondotorg/mangohud"
+				]
+			}
+		},
+		"corectl": {
+			"packages": [
+				"corectrl"
+			],
+			"repos": {
+				"all": [
+					"ppa:ernstp/mesarc"
+				]
+			}
+		},
+		"piper": {
+			"packages": [
+				"ratbagd", 
+				"piper"
+			],
+			"repos": {
+				"all": [
+					"ppa:libratbag-piper/piper-libratbag-git"
 				]
 			}
 		}
