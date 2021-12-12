@@ -104,13 +104,14 @@
                                                 class="material-icons">help</span></a>&zwnj;RetroArch&zwnj;</h2>
                                     <div class="card card-block">
                                         <div class="card-image text-md-center">
-                                            <img src="img/logos/retroarch.png" style="width: auto; max-height: 128px" />
+                                            <img src="img/logos/retroarch.jpg" style="width: auto; max-height: 128px" />
                                         </div>
                                         <p class="card-text">&zwnj;RetroArch is a frontend for emulators, game engines
                                             and media players.&zwnj;</p>
                                     </div>
                                     <div class="text-md-right">
-                                        <a id="retroarch-remove" class="btn btn-danger" onclick="cmd('remove?retroarch');">
+                                        <a id="retroarch-remove" class="btn btn-danger"
+                                            onclick="cmd('remove?retroarch');">
                                             <span class="material-icons">&#xE872;</span><span
                                                 class="button-text">&zwnj;Remove&zwnj;</span>
                                         </a>
@@ -124,8 +125,12 @@
                                             Changes...&zwnj;
                                         </span>
                                         <p id="retroarch-instruction" class="hidden"><small>&zwnj;Just play. If you need
-                                                help reach out to the <a href="https://www.retroarch.com/?page=faq"> FAQ
-                                                    page </a>&zwnj;</small></p>
+                                                <p class="card-text">&zwnj;Steam is the ultimate destination for
+                                                    playing,
+                                                    help reach out to the <a
+                                                        onclick="cmd('link?https://www.retroarch.com/?page=faq')"> FAQ
+                                                        page </a>&zwnj;
+                                            </small></p>
                                     </div>
                                 </div>
                             </div>
@@ -187,29 +192,29 @@
                             <div class="row text-md-center">
                                 <div class="col-md-6">
                                     <br />
-                                    <h2><a onclick="cmd('link?https://openrgb.org/')"><span
-                                                class="material-icons">help</span></a>&zwnj;OpenRGB&zwnj;</h2>
+                                    <h2><a onclick="cmd('link?https://gitlab.com/rswat09/gamebuntu')"><span
+                                                class="material-icons">help</span></a>&zwnj;Gamebuntu&zwnj;</h2>
                                     <div class="card card-block">
                                         <div class="card-image text-md-center">
-                                            <img src="img/logos/OpenRGB.png" style="width: auto; max-height: 128px" />
+                                            <img src="img/logos/gamebuntu.jpeg" style="width: auto; max-height: 128px" />
                                         </div>
-                                        <p class="card-text">&zwnj;Generic RGB management tool for linux&zwnj;</p>
+                                        <p class="card-text">&zwnj;Transform an Ubuntu install into a complete game-ready (!) setup&zwnj;</p>
                                     </div>
                                     <div class="text-md-right">
-                                        <a id="openrbg-remove" class="btn btn-danger" onclick="cmd('remove?openrbg');">
+                                        <a id="gamebuntu-remove" class="btn btn-danger" onclick="cmd('remove?gamebuntu');">
                                             <span class="material-icons">&#xE872;</span><span
                                                 class="button-text">&zwnj;Remove&zwnj;</span>
                                         </a>
-                                        <a id="openrbg-install" class="btn btn-success hvr-shadow"
-                                            onclick="cmd('install?openrbg');"> &nbsp;
+                                        <a id="gamebuntu-install" class="btn btn-success hvr-shadow"
+                                            onclick="cmd('install?gamebuntu');"> &nbsp;
                                             <span class="material-icons">&#xE2C0;</span>&zwnj;Install&zwnj;&nbsp;
                                         </a>
-                                        <span id="openrbg-status" class="hidden">
+                                        <span id="gamebuntu-status" class="hidden">
                                             <img src="img/welcome/processing.gif" width="24px" height="24px" />
                                             &zwnj;Applying
                                             Changes...&zwnj;
                                         </span>
-                                        <p id="openrbg-instruction" class="hidden"><small>&zwnj;Check website by
+                                        <p id="gamebuntu-instruction" class="hidden"><small>&zwnj;Check project by
                                                 clicking the help button&zwnj;</small></p>
                                     </div>
                                 </div>
@@ -237,6 +242,34 @@
                             <hr />
                             <div class="row text-md-center">
                                 <div class="col-md-6">
+                                    <br />
+                                    <h2><a onclick="cmd('link?https://openrgb.org/')"><span
+                                                class="material-icons">help</span></a>&zwnj;OpenRGB&zwnj;</h2>
+                                    <div class="card card-block">
+                                        <div class="card-image text-md-center">
+                                            <img src="img/logos/OpenRGB.png" style="width: auto; max-height: 128px" />
+                                        </div>
+                                        <p class="card-text">&zwnj;Generic RGB management tool for linux&zwnj;</p>
+                                    </div>
+                                    <div class="text-md-right">
+                                        <a id="openrbg-remove" class="btn btn-danger" onclick="cmd('remove?openrbg');">
+                                            <span class="material-icons">&#xE872;</span><span
+                                                class="button-text">&zwnj;Remove&zwnj;</span>
+                                        </a>
+                                        <a id="openrbg-install" class="btn btn-success hvr-shadow"
+                                            onclick="cmd('install?openrbg');"> &nbsp;
+                                            <span class="material-icons">&#xE2C0;</span>&zwnj;Install&zwnj;&nbsp;
+                                        </a>
+                                        <span id="openrbg-status" class="hidden">
+                                            <img src="img/welcome/processing.gif" width="24px" height="24px" />
+                                            &zwnj;Applying
+                                            Changes...&zwnj;
+                                        </span>
+                                        <p id="openrbg-instruction" class="hidden"><small>&zwnj;Check website by
+                                                clicking the help button&zwnj;</small></p>
+                                    </div>
+                                </div>
+                                <!-- <div class="col-md-6">
                                     <br />
                                     <h2><a onclick="cmd('link?https://openrazer.github.io/')"><span
                                                 class="material-icons">help</span></a>&zwnj;OpenRazer&zwnj;</h2>
@@ -266,7 +299,7 @@
                                         <p id="openrazer-instruction" class="hidden"><small>&zwnj;Please also install
                                                 Polychromatic&zwnj;</small></p>
                                     </div>
-                                </div>
+                                </div> -->
                                 <div class="col-md-6">
                                     <br />
                                     <h2><a onclick="cmd('link?https://polychromatic.app/')"><span
