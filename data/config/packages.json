@@ -1427,26 +1427,24 @@
 				]
 			}
 		},
-		"openrazer": {
-			"packages": [
-				"openrazer-daemon"
-			],
-			"repos": {
-				"all": [
-					"ppa:openrazer/stable"
-				]
-			}
-		},
 		"polychromatic": {
 			"packages": [
-				"polychromatic"
+				"polychromatic", "openrazer-daemon"
 			],
 			"repos": {
 				"all": [
-					"ppa:polychromatic/stable"
+					"ppa:polychromatic/stable", "ppa:openrazer/stable"
 				]
-			}
+			},
+			"post-install": "openrazer-setup",
+			"post-remove": "openrazer-removal"
 		},
+		"openrazer-setup": {
+			"script": "openrazer-setup"
+		},
+		"openrazer-removal": {
+			"script": "openrazer-removal"
+		}
 		"discord": {
 			"snap": [
 				"discord"

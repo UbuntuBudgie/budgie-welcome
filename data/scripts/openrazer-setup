@@ -1,0 +1,3 @@
+#!/bin/bash
+sudo gpasswd -a $USER plugdev
+echo "post-install works"
