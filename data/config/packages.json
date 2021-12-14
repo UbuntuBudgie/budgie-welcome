@@ -1436,15 +1436,11 @@
 					"ppa:polychromatic/stable", "ppa:openrazer/stable"
 				]
 			},
-			"post-install": "openrazer-setup",
-			"post-remove": "openrazer-removal"
+			"post-install": "openrazer-setup"
 		},
 		"openrazer-setup": {
 			"script": "openrazer-setup"
 		},
-		"openrazer-removal": {
-			"script": "openrazer-removal"
-		}
 		"discord": {
 			"snap": [
 				"discord"
