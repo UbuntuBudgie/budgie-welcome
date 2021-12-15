@@ -1,7 +1,8 @@
 #!/bin/bash
-is_installed=${which openrazer-daemon}
-if [ $is_installed -eq 0 ]; then
-    gpasswd -a $USER plugdev
+which openrazer-daemon
+if [ $? -eq 0 ]
+then
+    sudo gpasswd -a $USER plugdev
 else
-    gpasswd -d $USER plugdev
+    sudo gpasswd -d $USER plugdev
 fi
