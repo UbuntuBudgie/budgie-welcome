@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 is_installed=$(dpkg-query -W -f='${Status}' openrazer-daemon 2>/dev/null | grep -c "ok installed")
 
 if [ $is_installed -eq 0 ]
