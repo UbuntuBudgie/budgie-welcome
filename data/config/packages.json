@@ -844,8 +844,9 @@
 				"budgie-network-manager-applet"
 			],
 			"repos": {
-				"all": [
-					"universe"
+				"jammy": [
+					"universe",
+					"ppa:ubuntubudgie/backports"
 				]
 			}
 		},
