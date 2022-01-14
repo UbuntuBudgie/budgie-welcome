@@ -1412,11 +1412,6 @@
 				"retroarch"
 			]
 		},
-		"gamebuntu": {
-			"snap": [
-				"gamebuntu"
-			]
-		},
 		"openrbg": {
 			"packages": [
 				"openrgb"
@@ -1456,8 +1451,14 @@
 				"mangohud"
 			],
 			"repos": {
-				"all": [
-					"ppa:flexiondotorg/mangohud"
+				"hirsute": [
+					"universe"
+				],
+				"impish": [
+					"universe"
+				],
+				"jammy": [
+					"universe"
 				]
 			}
 		},
@@ -1477,8 +1478,17 @@
 				"piper"
 			],
 			"repos": {
-				"all": [
-					"ppa:libratbag-piper/piper-libratbag-git"
+				"focal": [
+					"universe"
+				],
+				"hirsute": [
+					"universe"
+				],
+				"impish": [
+					"universe"
+				],
+				"jammy": [
+					"universe"
 				]
 			}
 		}
