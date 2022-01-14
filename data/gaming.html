@@ -97,6 +97,41 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="row text-md-center">
+                                <div class="col-md-6">
+                                    <br>
+                                    <h2><a onclick="cmd('link?https://www.retroarch.com/')"><span
+                                                class="material-icons">help</span></a>&zwnj;RetroArch&zwnj;</h2>
+                                    <div class="card card-block">
+                                        <div class="card-image text-md-center">
+                                            <img src="img/logos/retroarch.jpg" style="width: auto; max-height: 128px" />
+                                        </div>
+                                        <p class="card-text">&zwnj;RetroArch is a frontend for emulators, game engines
+                                            and media players.&zwnj;</p>
+                                    </div>
+                                    <div class="text-md-right">
+                                        <a id="retroarch-remove" class="btn btn-danger"
+                                            onclick="cmd('remove?retroarch');">
+                                            <span class="material-icons">&#xE872;</span><span
+                                                class="button-text">&zwnj;Remove&zwnj;</span>
+                                        </a>
+                                        <a id="retroarch-install" class="btn btn-success hvr-shadow"
+                                            onclick="cmd('install?retroarch');"> &nbsp;
+                                            <span class="material-icons">&#xE2C0;</span>&zwnj;Install&zwnj;&nbsp;
+                                        </a>
+                                        <span id="retroarch-status" class="hidden">
+                                            <img src="img/welcome/processing.gif" width="24px" height="24px" />
+                                            &zwnj;Applying
+                                            Changes...&zwnj;
+                                        </span>
+                                        <p id="retroarch-instruction" class="hidden"><small>&zwnj;Just play. If you need
+                                                help, please reach out to the <a
+                                                    onclick="cmd('link?https://www.retroarch.com/?page=faq')"> FAQ page
+                                                </a>&zwnj;
+                                            </small></p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -108,36 +143,107 @@
                             <p>&zwnj;A community curated list of game suggestions&zwnj;</p>
                             <div class="row text-md-center">
                                 <div class="col-md-6">
-                                    <h2><a onclick="cmd('link?https://deltarune.com/')"><span
-                                                class="material-icons">help</span></a>&zwnj;Delta Rune Chapter 2&zwnj;
+                                    <h2><a onclick="cmd('link?https://xonotic.org/')"><span class="material-icons">help</span></a>&zwnj;Xonotic&zwnj;
                                     </h2>
                                     <div class="card card-block">
                                         <div class="card-image text-md-center">
-                                            <img src="img/screenshots/DELTARUNE.jpg"
-                                                style="width: auto; max-height: 128px" />
+                                            <img src="img/logos/xonotic.png" style="width: auto; max-height: 128px" />
                                         </div>
-                                        <p class="card-text">&zwnj;Deltarune serves as a follow-up to Toby Fox's
-                                            succesful game Undertale.&zwnj;</p>
+                                        <p class="card-text">&zwnj;Xonotic - Free & Open Source Multiplayer FPS&zwnj;
+                                        </p>
                                     </div>
                                     <div class="text-md-right">
-                                        <a onclick="cmd('link?https://youtu.be/AdY8c0XQCcM');">
+                                        <a onclick="cmd('link?https://www.youtube.com/watch?v=jijLut9GqrY');">
                                             <img src="img/logos/yt_logo_rgb_light.png" width="128px" height="32px">
                                         </a>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
-                                    <h2><a onclick="cmd('link?https://www.bethesda.net/en/game/deathloop')"><span
-                                                class="material-icons">help</span></a>&zwnj;Death Loop&zwnj;</h2>
+                                    <h2><a onclick="cmd('link?https://store.steampowered.com/app/892970/Valheim/')"><span
+                                                class="material-icons">help</span></a>&zwnj;Valheim&zwnj;</h2>
                                     <div class="card card-block">
                                         <div class="card-image text-md-center">
-                                            <img src="img/screenshots/DeathLoop.jpg"
+                                            <img src="img/screenshots/valheim.jpg" style="width: auto; max-height: 128px" />
+                                            </div>
+                                            <p class="card-text">&zwnj;Valheim - Survival RPG&zwnj;</p>
+                                            </div>
+                                            <div class="text-md-right">
+                                                <a onclick="cmd('link?https://www.youtube.com/watch?v=liQLtCLq3tc');">
+                                                    <img src="img/logos/yt_logo_rgb_light.png" width="128px" height="32px">
+                                                </a>
+                                            </div>
+                                            </div>
+                                            </div>
+                                            <br />
+                                            <div class="row text-md-center">
+                                                <div class="col-md-6">
+                                                    <h2><a onclick="cmd('link?https://store.steampowered.com/app/1282730/Loop_Hero/')"><span
+                                                                class="material-icons">help</span></a>&zwnj;Loop Hero&zwnj;
+                                                    </h2>
+                                                    <div class="card card-block">
+                                                        <div class="card-image text-md-center">
+                                            <img src="img/screenshots/loop-hero.jpg" style="width: auto; max-height: 128px" />
+                                            </div>
+                                            <p class="card-text">&zwnj;Loop Hero - 8 bit retro-styled Deck building
+                                                game&zwnj;</p>
+                                            </div>
+                                            <div class="text-md-right">
+                                                <a onclick="cmd('link?https://www.youtube.com/watch?v=lt_T8LhmnT8');">
+                                                    <img src="img/logos/yt_logo_rgb_light.png" width="128px" height="32px">
+                                                </a>
+                                            </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                    <h2><a onclick="cmd('link?https://store.steampowered.com/app/651490/No_Longer_Home/')"><span
+                                                class="material-icons">help</span></a>&zwnj;No Longer Home&zwnj;</h2>
+                                    <div class="card card-block">
+                                        <div class="card-image text-md-center">
+                                            <img src="img/screenshots/no-longer-home.jpg" style="width: auto; max-height: 128px" />
+                                            </div>
+                                            <p class="card-text">&zwnj;No Longer Home - Point & Click,
+                                                semi-auto-biographical&zwnj;</p>
+                                            </div>
+                                            <div class="text-md-right">
+                                                <a onclick="cmd('link?https://www.youtube.com/watch?v=4_D2vUNj3vs');">
+                                                    <img src="img/logos/yt_logo_rgb_light.png" width="128px" height="32px">
+                                                </a>
+                                            </div>
+                                            </div>
+                                            </div>
+                                            <br />
+                                            <div class="row text-md-center">
+                                                <div class="col-md-6">
+                                    <h2><a onclick="cmd('link?https://store.steampowered.com/app/674930/Boyfriend_Dungeon/')"><span
+                                                class="material-icons">help</span></a>&zwnj;Boyfriend Dungeon&zwnj;
+                                    </h2>
+                                    <div class="card card-block">
+                                        <div class="card-image text-md-center">
+                                            <img src="img/screenshots/boyfriend-dungeon.jpg"
                                                 style="width: auto; max-height: 128px" />
                                         </div>
-                                        <p class="card-text">&zwnj;DEATHLOOP is a next-gen FPS from Arkane Lyon, the
-                                            award-winning studio behind Dishonored.&zwnj;</p>
+                                        <p class="card-text">&zwnj;Boyfriend Dungeon - Dating SIM, Hack & Slash&zwnj;
+                                        </p>
                                     </div>
                                     <div class="text-md-right">
-                                        <a onclick="cmd('link?https://www.youtube.com/watch?v=F8HmSaaISpA');">
+                                        <a onclick="cmd('link?https://www.youtube.com/watch?v=wOhVJuN_3Ao');">
+                                            <img src="img/logos/yt_logo_rgb_light.png" width="128px" height="32px">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <h2><a onclick="cmd('link?https://store.steampowered.com/app/250900/The_Binding_of_Isaac_Rebirth/')"><span
+                                                class="material-icons">help</span></a>&zwnj;Binding Of Isaac -
+                                        Rebirth&zwnj;</h2>
+                                    <div class="card card-block">
+                                        <div class="card-image text-md-center">
+                                            <img src="img/screenshots/binding-of-issac-rebirth.jpg"
+                                                style="width: auto; max-height: 128px" />
+                                        </div>
+                                        <p class="card-text">&zwnj;Binding of Isaac - Top Down Dungeon Crawler, high
+                                            difficulty&zwnj;</p>
+                                    </div>
+                                    <div class="text-md-right">
+                                        <a onclick="cmd('link?https://www.youtube.com/watch?v=oG1CC8x873M');">
                                             <img src="img/logos/yt_logo_rgb_light.png" width="128px" height="32px">
                                         </a>
                                     </div>
@@ -152,6 +258,59 @@
                         <div class="col-md-12">
                             <h2>&zwnj;Gaming Tools&zwnj;</h2>
                             <p>&zwnj;Tools to have a more comfortable and feature-rich gaming experience&zwnj;</p>
+                            <div class="row text-md-center">
+                                <div class="col-md-6">
+                                    <br />
+                                    <h2><a onclick="cmd('link?https://github.com/libratbag/piper')"><span
+                                                class="material-icons">help</span></a>&zwnj;Piper&zwnj;</h2>
+                                    <div class="card card-block">
+                                        <div class="card-image text-md-center">
+                                            <img src="img/screenshots/piper-resolutionpage.png" style="width: auto; max-height: 128px" />
+                                        </div>
+                                        <p class="card-text">&zwnj;Piper is a GTK+ application to configure gaming mice
+                                            using ratbagd&zwnj;</p>
+                                    </div>
+                                    <div class="text-md-right">
+                                        <a id="piper-remove" class="btn btn-danger" onclick="cmd('remove?piper');">
+                                            <span class="material-icons">&#xE872;</span><span
+                                                class="button-text">&zwnj;Remove&zwnj;</span>
+                                        </a>
+                                        <a id="piper-install" class="btn btn-success hvr-shadow"
+                                            onclick="cmd('install?piper');"> &nbsp;
+                                            <span class="material-icons">&#xE2C0;</span>&zwnj;Install&zwnj;&nbsp;
+                                        </a>
+                                        <span id="piper-status" class="hidden">
+                                            <img src="img/welcome/processing.gif" width="24px" height="24px" />
+                                            &zwnj;Applying
+                                            Changes...&zwnj;
+                                        </span>
+                                        <p id="piper-instruction" class="hidden"><small>&zwnj;Check project by
+                                                clicking the help button&zwnj;</small></p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <br />
+                                    <h2><a onclick="cmd('link?https://github.com/Dirli/budgie-cpufreq-applet')"><span
+                                                class="material-icons">help</span></a>&zwnj;CPU Frequency Applet&zwnj;
+                                    </h2>
+                                    <div class="card card-block">
+                                        <div class="card-image text-md-center">
+                                            <img src="img/screenshots/cpufreq-applet.jpg"
+                                                style="width: auto; max-height: 128px" />
+                                        </div>
+                                        <p class="card-text">&zwnj;Control the frequency of the processor (Sandy Bridge
+                                            and newer).&zwnj;</p>
+                                    </div>
+                                    <div class="text-md-right">
+                                        <a class="btn btn-inverse" href="budgie-applets.html#anchor1">
+                                            <img class="button-icon" src="img/distro-icon-inverted.svg">&nbsp;<span
+                                                class="button-text">&zwnj;Install from Budgie Extras&zwnj;</span>
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <hr />
                             <div class="row text-md-center">
                                 <div class="col-md-6">
                                     <br />
@@ -183,65 +342,12 @@
                                 </div>
                                 <div class="col-md-6">
                                     <br />
-                                    <h2><a onclick="cmd('link?https://github.com/Dirli/budgie-cpufreq-applet')"><span
-                                                class="material-icons">help</span></a>&zwnj;CPU Frequency Applet&zwnj;
-                                    </h2>
-                                    <div class="card card-block">
-                                        <div class="card-image text-md-center">
-                                            <img src="img/screenshots/cpufreq-applet.jpg"
-                                                style="width: auto; max-height: 128px" />
-                                        </div>
-                                        <p class="card-text">&zwnj;Control the frequency of the processor&zwnj;</p>
-                                    </div>
-                                    <div class="text-md-right">
-                                        <a class="btn btn-inverse" href="budgie-applets.html#anchor1">
-                                            <img class="button-icon" src="img/distro-icon-inverted.svg">&nbsp;<span class="button-text">&zwnj;Install from Budgie Extras&zwnj;</span>
-                                        </a>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <hr />
-                            <div class="row text-md-center">
-                                <div class="col-md-6">
-                                    <br />
-                                    <h2><a onclick="cmd('link?https://openrazer.github.io/')"><span
-                                                class="material-icons">help</span></a>&zwnj;OpenRazer&zwnj;</h2>
+                                    <h2><a onclick="cmd('link?https://polychromatic.app/')"><span
+                                                class="material-icons">help</span></a>&zwnj;Polychromatic &
+                                        OpenRazer&zwnj;</h2>
                                     <div class="card card-block">
                                         <div class="card-image text-md-center">
                                             <img src="img/logos/openrazer.jpg" style="width: auto; max-height: 128px" />
-                                        </div>
-                                        <p class="card-text">&zwnj;An entirely open source driver and user-space daemon
-                                            that allows you to manage your Razer peripherals on GNU/Linux. Install along
-                                            with Polychromatic&zwnj;</p>
-                                    </div>
-                                    <div class="text-md-right">
-                                        <a id="openrazer-remove" class="btn btn-danger"
-                                            onclick="cmd('remove?openrazer');">
-                                            <span class="material-icons">&#xE872;</span><span
-                                                class="button-text">&zwnj;Remove&zwnj;</span>
-                                        </a>
-                                        <a id="openrazer-install" class="btn btn-success hvr-shadow"
-                                            onclick="cmd('install?openrazer');"> &nbsp;
-                                            <span class="material-icons">&#xE2C0;</span>&zwnj;Install&zwnj;&nbsp;
-                                        </a>
-                                        <span id="openrazer-status" class="hidden">
-                                            <img src="img/welcome/processing.gif" width="24px" height="24px" />
-                                            &zwnj;Applying
-                                            Changes...&zwnj;
-                                        </span>
-                                        <p id="openrazer-instruction" class="hidden"><small>&zwnj;Please also install
-                                                Polychromatic&zwnj;</small></p>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <br />
-                                    <h2><a onclick="cmd('link?https://polychromatic.app/')"><span
-                                                class="material-icons">help</span></a>&zwnj;Polychromatic&zwnj;</h2>
-                                    <div class="card card-block">
-                                        <div class="card-image text-md-center">
-                                            <img src="img/logos/polychromatic.png"
-                                                style="width: auto; max-height: 128px" />
                                         </div>
                                         <p class="card-text">&zwnj;Polychromatic is a frontend for OpenRazer that
                                             enables Razer devices to control lighting effects and more on
@@ -262,9 +368,136 @@
                                             &zwnj;Applying
                                             Changes...&zwnj;
                                         </span>
-                                        <p id="polychromatic-instruction" class="hidden"><small>&zwnj;Please install
-                                                with
-                                                OpenRazer&zwnj;</small></p>
+                                        <p id="polychromatic-instruction" class="hidden"><small>&zwnj;This installs both
+                                                OpenRazer and Polychromatic. No more configuration needed (from the
+                                                install side)&zwnj;</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr />
+                            <div class="row text-md-center">
+                                <div class="col-md-6">
+                                    <br />
+                                    <h2><a onclick="cmd('link?https://discord.com/')"><span
+                                                class="material-icons">help</span></a>&zwnj;Discord&zwnj;</h2>
+                                    <div class="card card-block">
+                                        <div class="card-image text-md-center">
+                                            <img src="img/logos/discord.png" style="width: auto; max-height: 128px" />
+                                        </div>
+                                        <p class="card-text">&zwnj;Discord is a VoIP, instant messaging and digital
+                                            distribution platform.&zwnj;</p>
+                                    </div>
+                                    <div class="text-md-right">
+                                        <a id="discord-remove" class="btn btn-danger" onclick="cmd('remove?discord');">
+                                            <span class="material-icons">&#xE872;</span><span
+                                                class="button-text">&zwnj;Remove&zwnj;</span>
+                                        </a>
+                                        <a id="discord-install" class="btn btn-success hvr-shadow"
+                                            onclick="cmd('install?discord');"> &nbsp;
+                                            <span class="material-icons">&#xE2C0;</span>&zwnj;Install&zwnj;&nbsp;
+                                        </a>
+                                        <span id="discord-status" class="hidden">
+                                            <img src="img/welcome/processing.gif" width="24px" height="24px" />
+                                            &zwnj;Applying
+                                            Changes...&zwnj;
+                                        </span>
+                                        <p id="discord-instruction" class="hidden"><small>&zwnj;Check website by
+                                                clicking the help button&zwnj;</small></p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <br />
+                                    <h2><a onclick="cmd('link?https://obsproject.com/')"><span
+                                                class="material-icons">help</span></a>&zwnj;OBS Studio&zwnj;</h2>
+                                    <div class="card card-block">
+                                        <div class="card-image text-md-center">
+                                            <img src="img/logos/obs-studio.png"
+                                                style="width: auto; max-height: 128px" />
+                                        </div>
+                                        <p class="card-text">&zwnj;Free and open source software for video recording and
+                                            live streaming.&zwnj;</p>
+                                    </div>
+                                    <div class="text-md-right">
+                                        <a id="obs-studio-remove" class="btn btn-danger"
+                                            onclick="cmd('remove?obs-studio');">
+                                            <span class="material-icons">&#xE872;</span><span
+                                                class="button-text">&zwnj;Remove&zwnj;</span>
+                                        </a>
+                                        <a id="obs-studio-install" class="btn btn-success hvr-shadow"
+                                            onclick="cmd('install?obs-studio');"> &nbsp;
+                                            <span class="material-icons">&#xE2C0;</span>&zwnj;Install&zwnj;&nbsp;
+                                        </a>
+                                        <span id="obs-studio-status" class="hidden">
+                                            <img src="img/welcome/processing.gif" width="24px" height="24px" />
+                                            &zwnj;Applying
+                                            Changes...&zwnj;
+                                        </span>
+                                        <p id="obs-studio-instruction" class="hidden"><small>&zwnj;Check website by
+                                                clicking the help button&zwnj;</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr />
+                            <div class="row text-md-center">
+                                <div class="col-md-6">
+                                    <br />
+                                    <h2><a onclick="cmd('link?https://github.com/flightlessmango/MangoHud#normal-usage')"><span
+                                                class="material-icons">help</span></a>&zwnj;Mango HUD&zwnj;</h2>
+                                    <div class="card card-block">
+                                        <div class="card-image text-md-center">
+                                            <img src="img/screenshots/MangoHUD.gif" style="width: auto; max-height: 128px" />
+                                        </div>
+                                        <p class="card-text">&zwnj;A Vulkan and OpenGL overlay for monitoring FPS,
+                                            temperatures, CPU/GPU load and more.&zwnj;</p>
+                                    </div>
+                                    <div class="text-md-right">
+                                        <a id="mangohud-remove" class="btn btn-danger" onclick="cmd('remove?mangohud');">
+                                            <span class="material-icons">&#xE872;</span><span
+                                                class="button-text">&zwnj;Remove&zwnj;</span>
+                                        </a>
+                                        <a id="mangohud-install" class="btn btn-success hvr-shadow"
+                                            onclick="cmd('install?mangohud');"> &nbsp;
+                                            <span class="material-icons">&#xE2C0;</span>&zwnj;Install&zwnj;&nbsp;
+                                        </a>
+                                        <span id="mangohud-status" class="hidden">
+                                            <img src="img/welcome/processing.gif" width="24px" height="24px" />
+                                            &zwnj;Applying
+                                            Changes...&zwnj;
+                                        </span>
+                                        <p id="mangohud-instruction" class="hidden"><small>&zwnj;Please check the help
+                                                section for the Usage information&zwnj;</small></p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <br />
+                                    <h2><a onclick="cmd('link?https://gitlab.com/corectrl/corectrl')"><span
+                                                class="material-icons">help</span></a>&zwnj;CoreCtrl&zwnj;</h2>
+                                    <div class="card card-block">
+                                        <div class="card-image text-md-center">
+                                            <img src="img/logos/corectrl.png" style="width: auto; max-height: 128px" />
+                                        </div>
+                                        <p class="card-text">&zwnj;CoreCtrl allows you to control with ease your
+                                            computer hardware using application profiles.These profiles contains
+                                            different configurations so that you can quicly swith to your needs.&zwnj;
+                                            </p>
+                                    </div>
+                                    <div class="text-md-right">
+                                        <a id="corectrl-remove" class="btn btn-danger"
+                                            onclick="cmd('remove?corectrl');">
+                                            <span class="material-icons">&#xE872;</span><span
+                                                class="button-text">&zwnj;Remove&zwnj;</span>
+                                        </a>
+                                        <a id="corectrl-install" class="btn btn-success hvr-shadow"
+                                            onclick="cmd('install?corectrl');"> &nbsp;
+                                            <span class="material-icons">&#xE2C0;</span>&zwnj;Install&zwnj;&nbsp;
+                                        </a>
+                                        <span id="corectrl-status" class="hidden">
+                                            <img src="img/welcome/processing.gif" width="24px" height="24px" />
+                                            &zwnj;Applying
+                                            Changes...&zwnj;
+                                        </span>
+                                        <p id="corectrl-instruction" class="hidden"><small>&zwnj;Check website by
+                                                clicking the help button&zwnj;</small></p>
                                     </div>
                                 </div>
                             </div>

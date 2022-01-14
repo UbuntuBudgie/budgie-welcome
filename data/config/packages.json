@@ -1447,6 +1447,11 @@
 				]
 			}
 		},
+		"retroarch": {
+			"snap": [
+				"retroarch"
+			]
+		},
 		"openrbg": {
 			"packages": [
 				"openrgb"
@@ -1457,23 +1462,76 @@
 				]
 			}
 		},
-		"openrazer": {
+		"polychromatic": {
 			"packages": [
-				"openrazer-daemon"
+				"polychromatic", "openrazer-daemon"
 			],
 			"repos": {
 				"all": [
-					"ppa:openrazer/stable"
+					"ppa:polychromatic/stable", "ppa:openrazer/stable"
+				]
+			},
+			"post-install": "openrazer-setup"
+		},
+		"openrazer-setup": {
+			"script": "openrazer-setup"
+		},
+		"discord": {
+			"snap": [
+				"discord"
+			]
+		},
+		"obs-studio": {
+			"snap": [
+				"obs-studio"
+			]
+		},
+		"mangohud": {
+			"packages": [
+				"mangohud"
+			],
+			"repos": {
+				"focal": [
+					"ppa:flexiondotorg/mangohud"
+				],
+				"hirsute": [
+					"universe"
+				],
+				"impish": [
+					"universe"
+				],
+				"jammy": [
+					"universe"
 				]
 			}
 		},
-		"polychromatic": {
+		"corectrl": {
 			"packages": [
-				"polychromatic"
+				"corectrl"
 			],
 			"repos": {
 				"all": [
-					"ppa:polychromatic/stable"
+					"ppa:ernstp/mesarc"
+				]
+			}
+		},
+		"piper": {
+			"packages": [
+				"ratbagd", 
+				"piper"
+			],
+			"repos": {
+				"focal": [
+					"universe"
+				],
+				"hirsute": [
+					"universe"
+				],
+				"impish": [
+					"universe"
+				],
+				"jammy": [
+					"universe"
 				]
 			}
 		}
