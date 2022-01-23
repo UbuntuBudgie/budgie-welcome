@@ -291,13 +291,13 @@ class AppView(WebKit2.WebView):
                 config = json.load(file)
             
             for game_package in config['gaming']:
-                if ('repos' in config['gaming'][game] and
-                        (systemstate.codename in config['gaming'][game]['repos'] or
-                        'all' in config['gaming'][game]['repos'])
-                    ) or 'snap' in config['gaming'][game]:
-                    app.update_page("." + game, 'show')
+                if ('repos' in config['gaming'][game_package] and
+                        (systemstate.codename in config['gaming'][game_package]['repos'] or
+                        'all' in config['gaming'][game_package]['repos'])
+                    ) or 'snap' in config['gaming'][game_package]:
+                    app.update_page("." + game_package, 'show')
                 else:
-                    app.update_page("." + game, 'hide')
+                    app.update_page("." + game_package, 'hide')
         
         ### All pages with install/removal ###
         if current_page in ['gettingstarted', 'default', 'recommendations', 'budgie-applets', 'gaming']:
