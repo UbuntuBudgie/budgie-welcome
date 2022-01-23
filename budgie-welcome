@@ -200,6 +200,11 @@ class AppView(WebKit2.WebView):
             else:
                 app.update_page('.after2110', 'show')
 
+            if systemstate.codename in ['focal', 'hirsute', 'impish']:
+                app.update_page('.after2204', 'hide')
+            else:
+                app.update_page('.after2204', 'show')
+
         if current_page in ['introduction', 'features', 'community', 'recommendations', 'gettingstarted']:
             if systemstate.official:
                 app.update_page('.official-only', 'show')

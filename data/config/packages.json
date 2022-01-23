@@ -836,6 +836,20 @@
 				]
 			}
 		},
+		"chrome-layout": {
+			"packages": [
+				"budgie-lightpad-applet",
+				"budgie-indicator-applet",
+				"budgie-dropby-applet",
+				"budgie-network-manager-applet"
+			],
+			"repos": {
+				"jammy": [
+					"universe",
+					"ppa:ubuntubudgie/backports"
+				]
+			}
+		},
 		"cupertino-layout": {
 			"packages": [
 				"budgie-applications-menu-applet",
@@ -1042,6 +1056,32 @@
 				"whitesur-gtk-theme",
 				"whitesur-icon-theme",
 				"fonts-roboto"
+			],
+			"repos": {
+				"focal": [
+					"universe",
+					"ppa:ubuntubudgie/backports"
+				],
+				"hirsute": [
+					"universe",
+					"ppa:ubuntubudgie/backports"
+				],
+				"impish": [
+					"universe",
+					"ppa:ubuntubudgie/backports"
+				],
+				"jammy": [
+					"universe",
+					"ppa:ubuntubudgie/backports"
+				]
+			}
+		},
+		"orchis-theme": {
+			"packages": [
+				"orchis-gtk-theme",
+				"tela-circle-icon-theme",
+				"fonts-roboto",
+				"vimix-cursors"
 			],
 			"repos": {
 				"focal": [
