@@ -6,4 +6,5 @@ then
     sudo gpasswd -a $USER plugdev
 else
     sudo gpasswd -d $USER plugdev
+    sudo apt autoremove
 fi
