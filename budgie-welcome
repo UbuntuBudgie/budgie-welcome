@@ -282,7 +282,23 @@ class AppView(WebKit2.WebView):
                 app.update_page(".showhide", 'show')
             else:
                 app.update_page(".showhide", 'hide')
-
+        
+        if current_page == 'gaming':
+            # some gaming packages are software specific, so need to hide/show them
+            package = app._data_path + "/config/packages.json"
+            
+            with open(package) as file:
+                config = json.load(file)
+            
+            for game_package in config['gaming']:
+                if ('repos' in config['gaming'][game_package] and
+                        (systemstate.codename in config['gaming'][game_package]['repos'] or
+                        'all' in config['gaming'][game_package]['repos'])
+                    ) or 'snap' in config['gaming'][game_package]:
+                    app.update_page("." + game_package, 'show')
+                else:
+                    app.update_page("." + game_package, 'hide')
+        
         ### All pages with install/removal ###
         if current_page in ['gettingstarted', 'default', 'recommendations', 'budgie-applets', 'gaming']:
             app.update_page('[id$=install]', 'hide')

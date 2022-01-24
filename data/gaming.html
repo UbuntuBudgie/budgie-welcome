@@ -20,10 +20,10 @@
                         Clients&zwnj;</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" role="tab" data-toggle="tab" href="#games">&zwnj;Games&zwnj;</a>
+                    <a class="nav-link" role="tab" data-toggle="tab" href="#game-tools">&zwnj;Gaming Tools&zwnj;</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" role="tab" data-toggle="tab" href="#game-tools">&zwnj;Tools&zwnj;</a>
+                    <a class="nav-link" role="tab" data-toggle="tab" href="#games">&zwnj;Games List&zwnj;</a>
                 </li>
             </ul>
             <div class="tab-content">
@@ -34,7 +34,7 @@
                             <h2>&zwnj;Gaming Client&zwnj;</h2>
                             <p>&zwnj;A gaming client will help you download, install and manage your games. &zwnj;</p>
                             <div class="row text-md-center">
-                                <div class="col-md-6">
+                                <div class="col-md-6 lutris">
                                     <br>
                                     <h2><a
                                             onclick="cmd('link?https://forums.lutris.net/t/very-brief-tutorial-on-manually-installing-a-game-in-lutris/2028')"><span
@@ -66,7 +66,7 @@
                                                 how to install your games&zwnj;</small></p>
                                     </div>
                                 </div>
-                                <div class="col-md-6">
+                                <div class="col-md-6 steam">
                                     <br>
                                     <h2><a onclick="cmd('link?https://help.steampowered.com/en/')"><span
                                                 class="material-icons">help</span></a>&zwnj;Steam&zwnj;</h2>
@@ -98,7 +98,7 @@
                                 </div>
                             </div>
                             <div class="row text-md-center">
-                                <div class="col-md-6">
+                                <div class="col-md-6 retroarch">
                                     <br>
                                     <h2><a onclick="cmd('link?https://www.retroarch.com/')"><span
                                                 class="material-icons">help</span></a>&zwnj;RetroArch&zwnj;</h2>
@@ -131,25 +131,17 @@
                                             </small></p>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="tab-pane" id="games" role="tabpanel">
-                    <br>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h2>&zwnj;Games&zwnj;</h2>
-                            <p>&zwnj;A community curated list of game suggestions&zwnj;</p>
-                            <div class="row text-md-center">
-                                <div class="col-md-6">
-                                    <h2><a onclick="cmd('link?https://xonotic.org/')"><span class="material-icons">help</span></a>&zwnj;Xonotic&zwnj;
+                                <div class="col-md-6 minigalaxy">
+                                    <br>
+                                    <h2><a onclick="cmd('link?https://www.gog.com/galaxy')"><span
+                                                class="material-icons">help</span></a>&zwnj;Mini Galaxy GOG client&zwnj;
                                     </h2>
                                     <div class="card card-block">
                                         <div class="card-image text-md-center">
                                             <img src="img/logos/xonotic.png" style="width: auto; max-height: 128px" />
                                         </div>
-                                        <p class="card-text">&zwnj;Xonotic - Free & Open Source Multiplayer FPS&zwnj;
+                                        <p class="card-text">&zwnj;Minigalaxy is a simple GOG client for Linux. Install
+                                            and update games (even Windows ones) plus thier DLCs.&zwnj;
                                         </p>
                                     </div>
                                     <div class="text-md-right">
@@ -320,7 +312,8 @@
                                         <div class="card-image text-md-center">
                                             <img src="img/logos/OpenRGB.png" style="width: auto; max-height: 128px" />
                                         </div>
-                                        <p class="card-text">&zwnj;Generic RGB management tool for linux&zwnj;</p>
+                                        <p class="card-text">&zwnj;Generic RGB management tool for linux. Fully open
+                                            source and aims to remove hardware specific vendor apps&zwnj;</p>
                                     </div>
                                     <div class="text-md-right">
                                         <a id="openrbg-remove" class="btn btn-danger" onclick="cmd('remove?openrbg');">
@@ -351,7 +344,7 @@
                                         </div>
                                         <p class="card-text">&zwnj;Polychromatic is a frontend for OpenRazer that
                                             enables Razer devices to control lighting effects and more on
-                                            GNU/Linux.&zwnj;</p>
+                                            GNU/Linux. All configurations done out of the box.&zwnj;</p>
                                     </div>
                                     <div class="text-md-right">
                                         <a id="polychromatic-remove" class="btn btn-danger"
@@ -368,9 +361,8 @@
                                             &zwnj;Applying
                                             Changes...&zwnj;
                                         </span>
-                                        <p id="polychromatic-instruction" class="hidden"><small>&zwnj;This installs both
-                                                OpenRazer and Polychromatic. No more configuration needed (from the
-                                                install side)&zwnj;</small></p>
+                                        <p id="polychromatic-instruction" class="hidden"><small>&zwnj;Please reboot
+                                                after install as well as removal&zwnj;</small></p>
                                     </div>
                                 </div>
                             </div>
@@ -464,8 +456,9 @@
                                             &zwnj;Applying
                                             Changes...&zwnj;
                                         </span>
-                                        <p id="mangohud-instruction" class="hidden"><small>&zwnj;Please check the help
-                                                section for the Usage information&zwnj;</small></p>
+                                        <p id="mangohud-instruction" class="hidden"><small>&zwnj;Please check help
+                                                section for usage information. Example config at:
+                                                /usr/share/doc/mangohud.&zwnj;</small></p>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
@@ -476,10 +469,11 @@
                                         <div class="card-image text-md-center">
                                             <img src="img/logos/corectrl.png" style="width: auto; max-height: 128px" />
                                         </div>
-                                        <p class="card-text">&zwnj;CoreCtrl allows you to control with ease your
-                                            computer hardware using application profiles.These profiles contains
-                                            different configurations so that you can quicly swith to your needs.&zwnj;
-                                            </p>
+                                        <p class="card-text">&zwnj;CoreCTRL allows you to control hardware performance
+                                            using application profiles.
+                                            NOTE: This repository includes updated mesa and drivers stack for Intel and
+                                            AMD GPUs.&zwnj;
+                                        </p>
                                     </div>
                                     <div class="text-md-right">
                                         <a id="corectrl-remove" class="btn btn-danger"
@@ -497,7 +491,132 @@
                                             Changes...&zwnj;
                                         </span>
                                         <p id="corectrl-instruction" class="hidden"><small>&zwnj;Check website by
-                                                clicking the help button&zwnj;</small></p>
+                                                clicking the help button. This updates CPU & GPU drivers to
+                                                thier latest.&zwnj;</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane" id="games" role="tabpanel">
+                    <br>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h2>&zwnj;Games List&zwnj;</h2>
+                            <p>&zwnj;A community curated list of game suggestions&zwnj;</p>
+                            <div class="row text-md-center">
+                                <div class="col-md-6">
+                                    <h2><a onclick="cmd('link?https://xonotic.org/')"><span
+                                                class="material-icons">help</span></a>&zwnj;Xonotic&zwnj;
+                                    </h2>
+                                    <div class="card card-block">
+                                        <div class="card-image text-md-center">
+                                            <img src="img/logos/xonotic.png" style="width: auto; max-height: 128px" />
+                                        </div>
+                                        <p class="card-text">&zwnj;Xonotic - Free & Open Source Multiplayer FPS&zwnj;
+                                        </p>
+                                    </div>
+                                    <div class="text-md-right">
+                                        <a onclick="cmd('link?https://www.youtube.com/watch?v=jijLut9GqrY');">
+                                            <img src="img/logos/yt_logo_rgb_light.png" width="128px" height="32px">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <h2><a onclick="cmd('link?https://store.steampowered.com/app/892970/Valheim/')"><span
+                                                class="material-icons">help</span></a>&zwnj;Valheim&zwnj;</h2>
+                                    <div class="card card-block">
+                                        <div class="card-image text-md-center">
+                                            <img src="img/screenshots/valheim.jpg"
+                                                style="width: auto; max-height: 128px" />
+                                        </div>
+                                        <p class="card-text">&zwnj;Valheim - Survival RPG&zwnj;</p>
+                                    </div>
+                                    <div class="text-md-right">
+                                        <a onclick="cmd('link?https://www.youtube.com/watch?v=liQLtCLq3tc');">
+                                            <img src="img/logos/yt_logo_rgb_light.png" width="128px" height="32px">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <br />
+                            <div class="row text-md-center">
+                                <div class="col-md-6">
+                                    <h2><a onclick="cmd('link?https://store.steampowered.com/app/1282730/Loop_Hero/')"><span
+                                                class="material-icons">help</span></a>&zwnj;Loop Hero&zwnj;
+                                    </h2>
+                                    <div class="card card-block">
+                                        <div class="card-image text-md-center">
+                                            <img src="img/screenshots/loop-hero.jpg"
+                                                style="width: auto; max-height: 128px" />
+                                        </div>
+                                        <p class="card-text">&zwnj;Loop Hero - 8 bit retro-styled Deck building
+                                            game&zwnj;</p>
+                                    </div>
+                                    <div class="text-md-right">
+                                        <a onclick="cmd('link?https://www.youtube.com/watch?v=lt_T8LhmnT8');">
+                                            <img src="img/logos/yt_logo_rgb_light.png" width="128px" height="32px">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <h2><a
+                                            onclick="cmd('link?https://store.steampowered.com/app/651490/No_Longer_Home/')"><span
+                                                class="material-icons">help</span></a>&zwnj;No Longer Home&zwnj;</h2>
+                                    <div class="card card-block">
+                                        <div class="card-image text-md-center">
+                                            <img src="img/screenshots/no-longer-home.jpg"
+                                                style="width: auto; max-height: 128px" />
+                                        </div>
+                                        <p class="card-text">&zwnj;No Longer Home - Point & Click,
+                                            semi-auto-biographical&zwnj;</p>
+                                    </div>
+                                    <div class="text-md-right">
+                                        <a onclick="cmd('link?https://www.youtube.com/watch?v=4_D2vUNj3vs');">
+                                            <img src="img/logos/yt_logo_rgb_light.png" width="128px" height="32px">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <br />
+                            <div class="row text-md-center">
+                                <div class="col-md-6">
+                                    <h2><a
+                                            onclick="cmd('link?https://store.steampowered.com/app/674930/Boyfriend_Dungeon/')"><span
+                                                class="material-icons">help</span></a>&zwnj;Boyfriend Dungeon&zwnj;
+                                    </h2>
+                                    <div class="card card-block">
+                                        <div class="card-image text-md-center">
+                                            <img src="img/screenshots/boyfriend-dungeon.jpg"
+                                                style="width: auto; max-height: 128px" />
+                                        </div>
+                                        <p class="card-text">&zwnj;Boyfriend Dungeon - Dating SIM, Hack & Slash&zwnj;
+                                        </p>
+                                    </div>
+                                    <div class="text-md-right">
+                                        <a onclick="cmd('link?https://www.youtube.com/watch?v=wOhVJuN_3Ao');">
+                                            <img src="img/logos/yt_logo_rgb_light.png" width="128px" height="32px">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <h2><a
+                                            onclick="cmd('link?https://store.steampowered.com/app/250900/The_Binding_of_Isaac_Rebirth/')"><span
+                                                class="material-icons">help</span></a>&zwnj;Binding Of Isaac -
+                                        Rebirth&zwnj;</h2>
+                                    <div class="card card-block">
+                                        <div class="card-image text-md-center">
+                                            <img src="img/screenshots/binding-of-issac-rebirth.jpg"
+                                                style="width: auto; max-height: 128px" />
+                                        </div>
+                                        <p class="card-text">&zwnj;Binding of Isaac - Top Down Dungeon Crawler, high
+                                            difficulty&zwnj;</p>
+                                    </div>
+                                    <div class="text-md-right">
+                                        <a onclick="cmd('link?https://www.youtube.com/watch?v=oG1CC8x873M');">
+                                            <img src="img/logos/yt_logo_rgb_light.png" width="128px" height="32px">
+                                        </a>
                                     </div>
                                 </div>
                             </div>

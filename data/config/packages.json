@@ -1432,8 +1432,17 @@
 				"lutris"
 			],
 			"repos": {
-				"all": [
+				"focal": [
 					"ppa:lutris-team/lutris"
+				],
+				"hirsute": [
+					"multiverse"
+				],
+				"impish": [
+					"multiverse"
+				],
+				"jammy": [
+					"multiverse"
 				]
 			}
 		},
@@ -1452,6 +1461,22 @@
 				"retroarch"
 			]
 		},
+		"minigalaxy": {
+			"packages": [
+				"minigalaxy"
+			],
+			"repos": {
+				"hirsute": [
+					"universe"
+				],
+				"impish": [
+					"universe"
+				],
+				"jammy": [
+					"universe"
+				]
+			}
+		},
 		"openrbg": {
 			"packages": [
 				"openrgb"
@@ -1464,7 +1489,7 @@
 		},
 		"polychromatic": {
 			"packages": [
-				"polychromatic", "openrazer-daemon"
+				"polychromatic", "openrazer-meta"
 			],
 			"repos": {
 				"all": [

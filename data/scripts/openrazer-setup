@@ -1,9 +1,9 @@
-#!/bin/sh
-is_installed=$(dpkg-query -W -f='${Status}' openrazer-daemon 2>/dev/null | grep -c "ok installed")
+#!/bin/bash
+is_installed=$(dpkg-query -W -f='${Status}' openrazer-meta 2>/dev/null | grep -c "ok installed")
 
 if [ $is_installed -eq 0 ]
 then
-    sudo gpasswd -a $USER plugdev
+	sudo gpasswd -d $USER plugdev && sudo apt autoremove -y
 else
-    sudo gpasswd -d $USER plugdev
+	sudo gpasswd -a $USER plugdev    
 fi
