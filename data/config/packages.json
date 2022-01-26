@@ -1499,7 +1499,8 @@
 			"post-install": "openrazer-setup"
 		},
 		"openrazer-setup": {
-			"script": "openrazer-setup"
+			"script": "openrazer-setup",
+			"root" : "ignored_parameter"
 		},
 		"discord": {
 			"snap": [

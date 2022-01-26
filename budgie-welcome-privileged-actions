@@ -235,13 +235,13 @@ if __name__ == "__main__":
     code = args[3]
     json_path = args[4]
 
-    pdata = PackageData(json_path)
-
     if action == 'INSTALL':
+        pdata = PackageData(json_path)
         retval = install(fname, code)
     elif action == 'REMOVE':
+        pdata = PackageData(json_path)
         retval = remove(fname, code)
     elif action == 'SCRIPT':
         # fname -> script name, code -> requires root privilege?
-        retval = run_script(fname, code)
+        retval = run_script(fname)
     sys.exit(retval)
