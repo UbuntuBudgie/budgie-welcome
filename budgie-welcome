@@ -443,7 +443,7 @@ class AppView(WebKit2.WebView):
 
                 if root:
                     process = subprocess.Popen(
-                        ['pkexec', start_location + 'budgie-welcome-privileged-actions', "SCRIPT", script, root, "dummycode"])
+                        ['pkexec', start_location + 'budgie-welcome-privileged-actions', "SCRIPT", script, GLib.get_user_name(), "dummycode"])
                 else:
                     process = subprocess.Popen(['sh', script])
 

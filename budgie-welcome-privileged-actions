@@ -189,9 +189,9 @@ def remove(fname, code):
 
     return retval
 
-def run_script(fname):
+def run_script(fname, code):
 
-    process = subprocess.Popen(['sh', fname])
+    process = subprocess.Popen(['sh', fname, code])
 
     retval = process.wait()
 
@@ -243,5 +243,5 @@ if __name__ == "__main__":
         retval = remove(fname, code)
     elif action == 'SCRIPT':
         # fname -> script name, code -> requires root privilege?
-        retval = run_script(fname)
+        retval = run_script(fname, code)
     sys.exit(retval)
