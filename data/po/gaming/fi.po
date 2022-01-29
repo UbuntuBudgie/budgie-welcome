@@ -1,13 +1,13 @@
 # 
 # Translators:
-# Oi Suomi On! <oisuomion@protonmail.com>, 2021
+# Oi Suomi On! <oisuomion@protonmail.com>, 2022
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: Budgie Welcome\n"
 "POT-Creation-Date: 2016-02-27 12:48+0100\n"
 "PO-Revision-Date: 2021-10-08 20:03+0000\n"
-"Last-Translator: Oi Suomi On! <oisuomion@protonmail.com>, 2021\n"
+"Last-Translator: Oi Suomi On! <oisuomion@protonmail.com>, 2022\n"
 "Language-Team: Finnish (https://www.transifex.com/ubuntu-budgie/teams/72251/fi/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -16,54 +16,186 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Report-Msgid-Bugs-To : you@example.com\n"
 
-#: gaming.html:13
+#: gaming.html:15
 msgid "Gaming"
 msgstr ""
 
-#: gaming.html:17
+#: gaming.html:19
+msgid "Gaming Clients"
+msgstr ""
+
+#: gaming.html23, 176
+msgid "Gaming Tools"
+msgstr ""
+
+#: gaming.html26, 436
+msgid "Games List"
+msgstr ""
+
+#: gaming.html:34
 msgid "Gaming Client"
 msgstr ""
 
-#: gaming.html:18
+#: gaming.html:35
 msgid "A gaming client will help you download, install and manage your games."
 msgstr ""
 
-#: gaming.html:22
-msgid "Lutris"
-msgstr ""
-
-#: gaming.html:27
+#: gaming.html:46
 msgid ""
 "Lutris is a gaming client for Linux. It gives you access to (almost) all "
 "your video games."
 msgstr ""
 
-#: gaming.html32, 54
+#: gaming.html53, 84, 116, 152, 194, 247, 279, 311, 342, 378, 412
 msgid "Remove"
 msgstr "Poista"
 
-#: gaming.html35, 57
+#: gaming.html57, 88, 120, 156, 198, 251, 283, 315, 346, 382, 416
 msgid "Install"
 msgstr "Asenna"
 
-#: gaming.html38, 60
+#: gaming.html61, 92, 124, 160, 202, 255, 287, 319, 350, 386, 420
 msgid "Applying Changes..."
 msgstr "Muutoksia toteutetaan..."
 
-#: gaming.html:40
+#: gaming.html:64
 msgid "Click on the help icon to learn how to install your games"
 msgstr ""
 
-#: gaming.html:45
-msgid "Steam"
-msgstr "Steam"
-
-#: gaming.html:50
+#: gaming.html:77
 msgid ""
 "Steam is the ultimate destination for playing, discussing, and creating "
 "games."
 msgstr ""
 
-#: gaming.html:62
+#: gaming.html95, 163
 msgid "Please reboot to complete installation"
+msgstr ""
+
+#: gaming.html:109
+msgid "RetroArch is a frontend for emulators, game engines and media players."
+msgstr ""
+
+#: gaming.html:127
+msgid ""
+"Just play. If you need help, please reach out to the <a "
+"onclick=\"cmd('link?https://www.retroarch.com/?page=faq')\"> FAQ page </a>"
+msgstr ""
+
+#: gaming.html:143
+msgid ""
+"Minigalaxy is a GOG client for Linux. It can install, manage, and update "
+"native and windows games, including their <i title=\"DLC: Downloadable "
+"Content\">DLCs.</i>"
+msgstr ""
+
+#: gaming.html:177
+msgid "Tools to have a more comfortable and feature-rich gaming experience"
+msgstr ""
+
+#: gaming.html:188
+msgid "Piper is a GTK+ application to configure gaming mice using ratbagd"
+msgstr ""
+
+#: gaming.html:205
+msgid "Check project by clicking the help button"
+msgstr ""
+
+#: gaming.html:212
+msgid "CPU Frequency Applet"
+msgstr "Suoritintaajuussovellus"
+
+#: gaming.html:219
+msgid "Control the frequency of the processor (Sandy Bridge and newer)."
+msgstr "Hallitse suorittimen taajuutta (Sandy Bridge ja uudemmat)."
+
+#: gaming.html:225
+msgid "Install from Budgie Extras"
+msgstr ""
+
+#: gaming.html:241
+msgid ""
+"Generic RGB management tool for linux. Fully open source and aims to remove "
+"hardware specific vendor apps"
+msgstr ""
+
+#: gaming.html258, 322, 353
+msgid "Check website by clicking the help button"
+msgstr ""
+
+#: gaming.html:271
+msgid ""
+"Polychromatic is a frontend for OpenRazer that enables Razer devices to "
+"control lighting effects and more on GNU/Linux. All configurations done out "
+"of the box."
+msgstr ""
+
+#: gaming.html:290
+msgid "Please reboot after install as well as removal"
+msgstr ""
+
+#: gaming.html:305
+msgid ""
+"Discord is a <i title=\"VoIP: Voice Over Internet Protocol\">VoIP</i>, "
+"instant messaging and digital distribution platform."
+msgstr ""
+
+#: gaming.html:335
+msgid "Free and open source software for video recording and live streaming."
+msgstr ""
+
+#: gaming.html:371
+msgid ""
+"A Vulkan and OpenGL overlay for monitoring <i title=\"FPS: Frames Per "
+"Second\">FPS</i>, temperatures, CPU/GPU load and more. Comes with GOverlay "
+"as GUI."
+msgstr ""
+
+#: gaming.html:389
+msgid ""
+"Please check help section for usage information. Example config at: "
+"/usr/share/doc/mangohud."
+msgstr ""
+
+#: gaming.html:402
+msgid ""
+"CoreCTRL allows you to control hardware performance using application "
+"profiles. NOTE: This repository includes updated mesa and drivers stack for "
+"Intel and AMD GPUs."
+msgstr ""
+
+#: gaming.html:423
+msgid ""
+"Check website by clicking the help button. This updates CPU & GPU drivers to"
+" their latest."
+msgstr ""
+
+#: gaming.html:437
+msgid "A community curated list of game suggestions"
+msgstr ""
+
+#: gaming.html:447
+msgid ""
+"Xonotic - Free & Open Source Multiplayer <i title=\"FPS: First Person "
+"Shooter\">FPS</i>"
+msgstr ""
+
+#: gaming.html:464
+msgid "Valheim - Survival <i title=\"Role Playing Game\">RPG</i>"
+msgstr ""
+
+#: gaming.html:484
+msgid "Loop Hero - 8 bit retro-styled Deck building game"
+msgstr ""
+
+#: gaming.html:502
+msgid "No Longer Home - Point & Click, semi-auto-biographical"
+msgstr ""
+
+#: gaming.html:524
+msgid "Boyfriend Dungeon - Dating SIM, Hack & Slash"
+msgstr ""
+
+#: gaming.html:543
+msgid "Binding of Isaac - Top Down Dungeon Crawler, high difficulty"
 msgstr ""
