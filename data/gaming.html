@@ -448,8 +448,26 @@
                                         </p>
                                     </div>
                                     <div class="text-md-right">
-                                        <a onclick="cmd('link?https://www.youtube.com/watch?v=jijLut9GqrY');">
-                                            <img src="img/logos/yt_logo_rgb_light.png" width="128px" height="32px">
+                                        <a id="xonotic-remove" class="btn btn-danger" onclick="cmd('remove?xonotic');">
+                                            <span class="material-icons">&#xE872;</span><span
+                                                class="button-text">&zwnj;Remove&zwnj;</span>
+                                        </a>
+                                        <a id="xonotic-install" class="btn btn-success hvr-shadow"
+                                            onclick="cmd('install?xonotic');"> &nbsp;
+                                            <span class="material-icons">&#xE2C0;</span>&zwnj;Install&zwnj;&nbsp;
+                                        </a>
+                                        <span id="xonotic-status" class="hidden">
+                                            <img src="img/welcome/processing.gif" width="24px" height="24px" />
+                                            &zwnj;Applying
+                                            Changes...&zwnj;
+                                        </span>
+                                        <p id="xonotic-instruction" class="hidden"><small>&zwnj;Visit website by
+                                                clicking the help icon&zwnj;</small></p>
+                                        <a id="xonotic-watch" class="btn btn-inverse hvr-shadow"
+                                            onclick="cmd('link?https://www.youtube.com/watch?v=jijLut9GqrY');">
+                                            <img class="button-icon" src="img/logos/youtube.png" width="auto" height="26px"
+                                                style="padding: 5px;">
+                                            <span class="button-text">&zwnj;Watch&zwnj;</span>
                                         </a>
                                     </div>
                                 </div>
