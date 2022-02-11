@@ -25,6 +25,7 @@
 
 import re
 import apt
+from notify2 import Notification, init as NotifyInit
 from queue import Queue, Empty
 from threading import Thread
 import gi
@@ -281,14 +282,14 @@ class AppView(WebKit2.WebView):
                 app.update_page(".showhide", 'show')
             else:
                 app.update_page(".showhide", 'hide')
-
+        
         if current_page == 'gaming':
             # some gaming packages are software specific, so need to hide/show them
             package = app._data_path + "/config/packages.json"
-
+            
             with open(package) as file:
                 config = json.load(file)
-
+            
             for game_package in config['gaming']:
                 if ('repos' in config['gaming'][game_package] and
                         (systemstate.codename in config['gaming'][game_package]['repos'] or
@@ -297,7 +298,7 @@ class AppView(WebKit2.WebView):
                     app.update_page("." + game_package, 'show')
                 else:
                     app.update_page("." + game_package, 'hide')
-
+        
         ### All pages with install/removal ###
         if current_page in ['gettingstarted', 'default', 'recommendations', 'budgie-applets', 'gaming']:
             app.update_page('[id$=install]', 'hide')
@@ -1223,23 +1224,19 @@ class Notifier(object):
     def __init__(self, type, message):
 
         if type == self.INFO:
-            self.icon = "dialog-information"
+            icon = "dialog-information"
         elif type == self.ERROR:
-            self.icon = "dialog-error"
+            icon = "dialog-error"
 
-        self.message = message
+        self.notification = Notification(_("Welcome App"), message, icon)
 
     def show(self):
         try:
-            subprocess.call("notify-send -i " +
-                self.icon + " '" +
-                _("Welcome App") +
-                "' '" +
-                self.message +
-                "'", shell=True)
+            self.notification.show()
         except:
             # Some error in showing notification
             dbg.stdout('Notification', 'Failed to show notification', 0, 0)
+
 
 class PackageData(object):
     '''
@@ -2475,6 +2472,11 @@ if __name__ == "__main__":
     pm_queue = Queue()
     pm = PackageManager(pm_queue)
     pm.start()
+    # Init notification
+    try:
+        NotifyInit("budgie-welcome")
+    except:
+        dbg.stdout("Notifier", "Failed to initialize notifier", 0, 0)
 
     systemstate = SystemState()
 
