@@ -768,7 +768,7 @@ class AppView(WebKit2.WebView):
             if pm.hasInstalled("gaming", "steam"):
                 subprocess.Popen(["steam", "steam://rungameid/{}".format(gameId)])
             else:
-                return
+                webbrowser.open_new_tab("https://store.steampowered.com/app/{}".format(gameId))
 
         else:
             print('Unknown command: {}'.format(uri))
