@@ -762,6 +762,13 @@ class AppView(WebKit2.WebView):
             popup = PopupMessage(message, PopupMessage.INFO)
 
             popup.showMessage()
+        
+        elif uri.startswith("steam?"):
+            gameId = uri[6:]
+            if pm.hasInstalled(None, "steam"):
+                subprocess.Popen(["steam", "steam://rungameid/{}".format(gameId)])
+            else:
+                return
 
         else:
             print('Unknown command: {}'.format(uri))
