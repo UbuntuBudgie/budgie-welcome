@@ -66,7 +66,7 @@
                                                 how to install your games&zwnj;</small></p>
                                     </div>
                                 </div>
-                                <div class="col-md-6 steam">
+                                <div class="col-md-6 steam" id="steamid">
                                     <br>
                                     <h2><a onclick="cmd('link?https://help.steampowered.com/en/')"><span
                                                 class="material-icons">help</span></a>Steam</h2>
@@ -492,7 +492,7 @@
                                     <div class="text-md-right">
                                         <a id="valheim-install" class="btn btn-inverse" onclick="client_tab()">
                                             <img class="button-icon" src="img/distro-icon-inverted.svg">&nbsp;
-                                            <span class="button-text">&zwnj;Install Steam from Game-clients&zwnj;</span>
+                                            <span class="button-text">&zwnj;Install Steam&zwnj;</span>
                                         </a>
                                         <a id="valheim-remove" class="btn btn-success hvr-shadow"
                                             onclick="cmd('steam?892970');">
@@ -526,7 +526,7 @@
                                     <div class="text-md-right">
                                         <a id="loop-hero-install" class="btn btn-inverse" onclick="client_tab()">
                                             <img class="button-icon" src="img/distro-icon-inverted.svg">&nbsp;
-                                            <span class="button-text">&zwnj;Install Steam from Game-clients&zwnj;</span>
+                                            <span class="button-text">&zwnj;Install Steam&zwnj;</span>
                                         </a>
                                         <a id="loop-hero-remove" class="btn btn-success hvr-shadow"
                                             onclick="cmd('steam?1282730');">
@@ -557,7 +557,7 @@
                                     <div class="text-md-right">
                                         <a id="no-longer-home-install" class="btn btn-inverse" onclick="client_tab()">
                                             <img class="button-icon" src="img/distro-icon-inverted.svg">&nbsp;
-                                            <span class="button-text">&zwnj;Install Steam from Game-clients&zwnj;</span>
+                                            <span class="button-text">&zwnj;Install Steam&zwnj;</span>
                                         </a>
                                         <a id="no-longer-home-remove" class="btn btn-success hvr-shadow"
                                             onclick="cmd('steam?651490');">
@@ -593,7 +593,7 @@
                                         <a id="boyfriend-dungeon-install" class="btn btn-inverse"
                                             onclick="client_tab()">
                                             <img class="button-icon" src="img/distro-icon-inverted.svg">&nbsp;
-                                            <span class="button-text">&zwnj;Install Steam from Game-clients&zwnj;</span>
+                                            <span class="button-text">&zwnj;Install Steam&zwnj;</span>
                                         </a>
                                         <a id="boyfriend-dungeon-remove" class="btn btn-success hvr-shadow"
                                             onclick="cmd('steam?674930');">
@@ -625,7 +625,7 @@
                                     <div class="text-md-right">
                                         <a id="binding-of-isaac-install" class="btn btn-inverse" onclick="client_tab()">
                                             <img class="button-icon" src="img/distro-icon-inverted.svg">&nbsp;
-                                            <span class="button-text">&zwnj;Install Steam from Game-clients&zwnj;</span>
+                                            <span class="button-text">&zwnj;Install Steam&zwnj;</span>
                                         </a>
                                         <a id="binding-of-isaac-remove" class="btn btn-success hvr-shadow"
                                             onclick="cmd('steam?250900');">
@@ -651,6 +651,7 @@
     <script>
         function client_tab() {
             $('[href="#game-clients"]').tab('show');
+            location.href="#";location.href="#steamid"
         }
     </script>
     <script src="js/jquery-2.1.4.js"></script>
