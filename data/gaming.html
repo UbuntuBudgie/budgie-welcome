@@ -72,7 +72,8 @@
                                                 class="material-icons">help</span></a>Steam</h2>
                                     <div class="card card-block">
                                         <div class="card-image text-md-center">
-                                            <img src="img/logos/steam_app_icon.png" style="width: auto; max-height: 128px" />
+                                            <img src="img/logos/steam_app_icon.png"
+                                                style="width: auto; max-height: 128px" />
                                         </div>
                                         <p class="card-text">&zwnj;Steam is the ultimate destination for playing,
                                             discussing,
@@ -302,7 +303,9 @@
                                         <div class="card-image text-md-center">
                                             <img src="img/logos/discord.png" style="width: auto; max-height: 128px" />
                                         </div>
-                                        <p class="card-text">&zwnj;Discord is a <i title="VoIP: Voice Over Internet Protocol">VoIP</i>, instant messaging and digital
+                                        <p class="card-text">&zwnj;Discord is a <i
+                                                title="VoIP: Voice Over Internet Protocol">VoIP</i>, instant messaging
+                                            and digital
                                             distribution platform.&zwnj;</p>
                                     </div>
                                     <div class="text-md-right">
@@ -368,8 +371,11 @@
                                             <img src="img/screenshots/MangoHUD.gif"
                                                 style="width: auto; max-height: 128px" />
                                         </div>
-                                        <p class="card-text">&zwnj;A Vulkan and OpenGL overlay for monitoring <i title="FPS: Frames Per Second">FPS</i>,
-                                            temperatures, CPU/GPU load and more. Comes with GOverlay as <i title="GUI: Graphical User Interface (things you can interact with a mouse)">GUI</i>.&zwnj;</p>
+                                        <p class="card-text">&zwnj;A Vulkan and OpenGL overlay for monitoring <i
+                                                title="FPS: Frames Per Second">FPS</i>,
+                                            temperatures, CPU/GPU load and more. Comes with GOverlay as <i
+                                                title="GUI: Graphical User Interface (things you can interact with a mouse)">GUI</i>.&zwnj;
+                                        </p>
                                     </div>
                                     <div class="text-md-right">
                                         <a id="mangohud-remove" class="btn btn-danger"
@@ -444,7 +450,8 @@
                                         <div class="card-image text-md-center">
                                             <img src="img/logos/xonotic.png" style="width: auto; max-height: 128px" />
                                         </div>
-                                        <p class="card-text">&zwnj;Xonotic - Free & Open Source Multiplayer <i title="FPS: First Person Shooter">FPS</i>&zwnj;
+                                        <p class="card-text">&zwnj;Xonotic - Free & Open Source Multiplayer <i
+                                                title="FPS: First Person Shooter">FPS</i>&zwnj;
                                         </p>
                                     </div>
                                     <div class="text-md-right">
@@ -465,8 +472,8 @@
                                                 clicking the help icon&zwnj;</small></p>
                                         <a id="xonotic-watch" class="btn btn-inverse hvr-shadow"
                                             onclick="cmd('link?https://www.youtube.com/watch?v=jijLut9GqrY');">
-                                            <img class="button-icon" src="img/logos/youtube.png" width="auto" height="26px"
-                                                style="padding: 5px;">
+                                            <img class="button-icon" src="img/logos/youtube.png" width="auto"
+                                                height="26px" style="padding: 5px;">
                                             <span class="button-text">&zwnj;Watch&zwnj;</span>
                                         </a>
                                     </div>
@@ -479,19 +486,24 @@
                                             <img src="img/screenshots/valheim.jpg"
                                                 style="width: auto; max-height: 128px" />
                                         </div>
-                                        <p class="card-text">&zwnj;Valheim - Survival <i title="RPG: Role Playing Game">RPG</i>&zwnj;</p>
+                                        <p class="card-text">&zwnj;Valheim - Survival <i
+                                                title="RPG: Role Playing Game">RPG</i>&zwnj;</p>
                                     </div>
                                     <div class="text-md-right">
-                                        <a class="btn btn-success hvr-shadow"
+                                        <a id="valheim-install" class="btn btn-inverse" onclick="client_tab()">
+                                            <img class="button-icon" src="img/distro-icon-inverted.svg">&nbsp;
+                                            <span class="button-text">&zwnj;Install Steam from Game-clients&zwnj;</span>
+                                        </a>
+                                        <a id="valheim-remove" class="btn btn-success hvr-shadow"
                                             onclick="cmd('steam?892970');">
-                                            <img class="button-icon" src="img/logos/steam.png" width="auto" height="28px"
-                                                style="padding: 2px;">
+                                            <img class="button-icon" src="img/logos/steam.png" width="auto"
+                                                height="28px" style="padding: 2px;">
                                             <span class="button-text">&zwnj;Launch&zwnj;</span>
                                         </a>
-                                        <a class="btn btn-inverse hvr-shadow"
-                                            onclick="cmd('link?https://www.youtube.com/watch?v=jijLut9GqrY');">
-                                            <img class="button-icon" src="img/logos/youtube.png" width="auto" height="26px"
-                                                style="padding: 5px;">
+                                        <a id="valheim-watch" class="btn btn-inverse hvr-shadow"
+                                            onclick="cmd('link?https://www.youtube.com/watch?v=5mHRJ1KFe20');">
+                                            <img class="button-icon" src="img/logos/youtube.png" width="auto"
+                                                height="26px" style="padding: 5px;">
                                             <span class="button-text">&zwnj;Watch&zwnj;</span>
                                         </a>
                                     </div>
@@ -512,16 +524,20 @@
                                             game&zwnj;</p>
                                     </div>
                                     <div class="text-md-right">
-                                        <a class="btn btn-success hvr-shadow"
+                                        <a id="loop-hero-install" class="btn btn-inverse" onclick="client_tab()">
+                                            <img class="button-icon" src="img/distro-icon-inverted.svg">&nbsp;
+                                            <span class="button-text">&zwnj;Install Steam from Game-clients&zwnj;</span>
+                                        </a>
+                                        <a id="loop-hero-remove" class="btn btn-success hvr-shadow"
                                             onclick="cmd('steam?1282730');">
-                                            <img class="button-icon" src="img/logos/steam.png" width="auto" height="28px"
-                                                style="padding: 2px;">
+                                            <img class="button-icon" src="img/logos/steam.png" width="auto"
+                                                height="28px" style="padding: 2px;">
                                             <span class="button-text">&zwnj;Launch&zwnj;</span>
                                         </a>
-                                        <a class="btn btn-inverse hvr-shadow"
+                                        <a id="loop-hero-watch" class="btn btn-inverse hvr-shadow"
                                             onclick="cmd('link?https://www.youtube.com/watch?v=lt_T8LhmnT8');">
-                                            <img class="button-icon" src="img/logos/youtube.png" width="auto" height="26px"
-                                                style="padding: 5px;">
+                                            <img class="button-icon" src="img/logos/youtube.png" width="auto"
+                                                height="26px" style="padding: 5px;">
                                             <span class="button-text">&zwnj;Watch&zwnj;</span>
                                         </a>
                                     </div>
@@ -539,16 +555,20 @@
                                             semi-auto-biographical&zwnj;</p>
                                     </div>
                                     <div class="text-md-right">
-                                        <a class="btn btn-success hvr-shadow"
+                                        <a id="no-longer-home-install" class="btn btn-inverse" onclick="client_tab()">
+                                            <img class="button-icon" src="img/distro-icon-inverted.svg">&nbsp;
+                                            <span class="button-text">&zwnj;Install Steam from Game-clients&zwnj;</span>
+                                        </a>
+                                        <a id="no-longer-home-remove" class="btn btn-success hvr-shadow"
                                             onclick="cmd('steam?651490');">
-                                            <img class="button-icon" src="img/logos/steam.png" width="auto" height="28px"
-                                                style="padding: 2px;">
+                                            <img class="button-icon" src="img/logos/steam.png" width="auto"
+                                                height="28px" style="padding: 2px;">
                                             <span class="button-text">&zwnj;Launch&zwnj;</span>
                                         </a>
-                                        <a class="btn btn-inverse hvr-shadow"
+                                        <a id="no-longer-home-watch" class="btn btn-inverse hvr-shadow"
                                             onclick="cmd('link?https://www.youtube.com/watch?v=4_D2vUNj3vs');">
-                                            <img class="button-icon" src="img/logos/youtube.png" width="auto" height="26px"
-                                                style="padding: 5px;">
+                                            <img class="button-icon" src="img/logos/youtube.png" width="auto"
+                                                height="26px" style="padding: 5px;">
                                             <span class="button-text">&zwnj;Watch&zwnj;</span>
                                         </a>
                                     </div>
@@ -570,16 +590,21 @@
                                         </p>
                                     </div>
                                     <div class="text-md-right">
-                                        <a class="btn btn-success hvr-shadow"
+                                        <a id="boyfriend-dungeon-install" class="btn btn-inverse"
+                                            onclick="client_tab()">
+                                            <img class="button-icon" src="img/distro-icon-inverted.svg">&nbsp;
+                                            <span class="button-text">&zwnj;Install Steam from Game-clients&zwnj;</span>
+                                        </a>
+                                        <a id="boyfriend-dungeon-remove" class="btn btn-success hvr-shadow"
                                             onclick="cmd('steam?674930');">
-                                            <img class="button-icon" src="img/logos/steam.png" width="auto" height="28px"
-                                                style="padding: 2px;">
+                                            <img class="button-icon" src="img/logos/steam.png" width="auto"
+                                                height="28px" style="padding: 2px;">
                                             <span class="button-text">&zwnj;Launch&zwnj;</span>
                                         </a>
-                                        <a class="btn btn-inverse hvr-shadow"
+                                        <a id="boyfriend-dungeon-watch" class="btn btn-inverse hvr-shadow"
                                             onclick="cmd('link?https://www.youtube.com/watch?v=wOhVJuN_3Ao');">
-                                            <img class="button-icon" src="img/logos/youtube.png" width="auto" height="26px"
-                                                style="padding: 5px;">
+                                            <img class="button-icon" src="img/logos/youtube.png" width="auto"
+                                                height="26px" style="padding: 5px;">
                                             <span class="button-text">&zwnj;Watch&zwnj;</span>
                                         </a>
                                     </div>
@@ -598,16 +623,20 @@
                                             difficulty&zwnj;</p>
                                     </div>
                                     <div class="text-md-right">
-                                        <a class="btn btn-success hvr-shadow"
+                                        <a id="binding-of-isaac-install" class="btn btn-inverse" onclick="client_tab()">
+                                            <img class="button-icon" src="img/distro-icon-inverted.svg">&nbsp;
+                                            <span class="button-text">&zwnj;Install Steam from Game-clients&zwnj;</span>
+                                        </a>
+                                        <a id="binding-of-isaac-remove" class="btn btn-success hvr-shadow"
                                             onclick="cmd('steam?250900');">
-                                            <img class="button-icon" src="img/logos/steam.png" width="auto" height="28px"
-                                                style="padding: 2px;">
+                                            <img class="button-icon" src="img/logos/steam.png" width="auto"
+                                                height="28px" style="padding: 2px;">
                                             <span class="button-text">&zwnj;Launch&zwnj;</span>
                                         </a>
-                                        <a class="btn btn-inverse hvr-shadow"
+                                        <a id="binding-of-isaac-watch" class="btn btn-inverse hvr-shadow"
                                             onclick="cmd('link?https://www.youtube.com/watch?v=oG1CC8x873M');">
-                                            <img class="button-icon" src="img/logos/youtube.png" width="auto" height="26px"
-                                                style="padding: 5px;">
+                                            <img class="button-icon" src="img/logos/youtube.png" width="auto"
+                                                height="26px" style="padding: 5px;">
                                             <span class="button-text">&zwnj;Watch&zwnj;</span>
                                         </a>
                                     </div>
@@ -619,6 +648,11 @@
             </div>
         </div>
     </div>
+    <script>
+        function client_tab() {
+            $('[href="#game-clients"]').tab('show');
+        }
+    </script>
     <script src="js/jquery-2.1.4.js"></script>
     <script src="js/tether.js"></script>
     <script src="js/bootstrap.min.js"></script>
