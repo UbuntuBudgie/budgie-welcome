@@ -233,6 +233,13 @@ class AppView(WebKit2.WebView):
                 app.update_page('.after2110', 'show')
                 app.update_page('.before2110', 'hide')
 
+            if systemstate.codename in ['focal', 'impish']:
+                app.update_page('.after2204', 'hide')
+                app.update_page('.before2204', 'show')
+            else:
+                app.update_page('.after2204', 'show')
+                app.update_page('.before2204', 'hide')
+
 
         if current_page == 'recommendations':
             if systemstate.codename in ['xenial']:
@@ -387,16 +394,21 @@ class AppView(WebKit2.WebView):
         return True
 
     def _do_command(self, uri):
+        if systemstate.codename in ['focal', 'impish']:
+            control_center = 'gnome-control-center'
+        else:
+            control_center = 'budgie-control-center'
+
         if uri == 'control':
-            subprocess.Popen(['gnome-control-center'])
+            subprocess.Popen([control_center])
         elif uri == 'update':
             subprocess.Popen(['update-manager'])
         elif uri == 'drivers':
             subprocess.Popen(['software-properties-gtk', '--open-tab=4'])
         elif uri == 'language':
-            subprocess.Popen(['gnome-control-center', 'region'])
+            subprocess.Popen([control_center, 'region'])
         elif uri == 'users':
-            subprocess.Popen(['gnome-control-center', 'user-accounts'])
+            subprocess.Popen([control_center, 'user-accounts'])
         elif uri == 'backup':
             subprocess.Popen(['deja-dup-preferences'])
         elif uri == 'firewall':
@@ -404,7 +416,7 @@ class AppView(WebKit2.WebView):
         elif uri == 'budgie-desktop-settings':
             subprocess.Popen(['budgie-desktop-settings'])
         elif uri == 'keyboard':
-            subprocess.Popen(['gnome-control-center', 'keyboard'])
+            subprocess.Popen([control_center, 'keyboard'])
         elif uri.startswith("title?"):
             title = uri[6:]
             self.page_title.set_label(title)
