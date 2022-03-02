@@ -1,6 +1,6 @@
 #!/bin/sh
-#tx pull -a -f --minimum-perc=46
-tx pull -a -f 
+tx pull -a -f --minimum-perc=46
+#tx pull -a -f 
 
 cd po
 rm LINGUAS
