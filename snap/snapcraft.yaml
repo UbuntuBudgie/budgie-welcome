@@ -19,6 +19,9 @@ apps:
   budgie-welcome:
     command: usr/bin/budgie-welcome
     desktop: usr/share/applications/budgie-welcome.desktop
+    environment:
+      # daemons execute as root so the python paths must be updated
+      PYTHONPATH: $SNAP/lib/python3.8/site-packages:$PYTHONPATH
 
   budgie-themes:
     command: usr/bin/budgie-welcome --jump-to=default
@@ -35,6 +38,8 @@ apps:
 parts:
   budgie-welcome:
     plugin: nil
+    build-environment:
+      - PYTHONPATH: $SNAPCRAFT_PART_INSTALL/usr/lib/python3/dist-packages:$PYTHONPATH
     build-packages:
       - python3
       - python3-polib
