@@ -1166,6 +1166,16 @@
 				"firefox"
 			]
 		},
+		"firefox-esr": {
+			"packages": [
+				"firefox-esr"
+			],
+			"repos": {
+				"all": [
+					"ppa:mozillateam/ppa"
+				]
+			}
+		},
 		"chromium": {
 			"packages": [
 				"chromium-browser"
