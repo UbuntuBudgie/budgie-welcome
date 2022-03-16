@@ -50,11 +50,11 @@ msgstr "Barátságosság"
 msgid "Browser Ballot"
 msgstr "Böngésző szavazás"
 
-#: gettingstarted.html46, 887, 1828
+#: gettingstarted.html46, 887, 1843
 msgid "Customization"
 msgstr "Testreszabás"
 
-#: gettingstarted.html49, 1190
+#: gettingstarted.html49, 1205
 msgid "Keyboard Shortcuts"
 msgstr "Gyorsbillentyűk"
 
@@ -143,7 +143,7 @@ msgstr ""
 "Az operációs rendszer sokkal hatékonyabban fut, ha a számítógépe eléri, vagy"
 " meghaladja az ajánlott követelményeket."
 
-#: gettingstarted.html110, 1838
+#: gettingstarted.html110, 1853
 msgid "What's inside my computer?"
 msgstr "Mi található a számítógépemben?"
 
@@ -297,7 +297,7 @@ msgstr ""
 "Például ha önnek 2 GB RAM-ja van, akkor 2 GB lesz a merevlemezen lefoglalva "
 "a cserehelynek. Egy külön cserehely partíció létrehozására nincs szükség."
 
-#: gettingstarted.html193, 394, 770, 1827
+#: gettingstarted.html193, 394, 770, 1842
 msgid "Previous:"
 msgstr "Előző:"
 
@@ -718,17 +718,17 @@ msgstr ""
 "korlátozás vonatkozik-e az országában használni kívánt médiaformátumra."
 
 #: gettingstarted.html471, 614, 680, 689, 742, 753, 764, 802, 837, 909, 919,
-#: 934, 952, 969, 980, 996, 1010, 1025, 1041, 1056, 1066, 1086, 1106
+#: 934, 952, 969, 980, 996, 1011, 1025, 1040, 1056, 1071, 1081, 1101, 1121
 msgid "Applying Changes..."
 msgstr "Változtatások alkalmazása..."
 
-#: gettingstarted.html474, 737, 748, 759, 804, 839, 903, 963, 990, 1004, 1019,
-#: 1050
+#: gettingstarted.html474, 737, 748, 759, 804, 839, 903, 963, 990, 1005, 1019,
+#: 1034, 1065
 msgid "Install"
 msgstr "Telepítés"
 
-#: gettingstarted.html477, 740, 751, 762, 906, 966, 993, 1007, 1022, 1038,
-#: 1053, 1063, 1083, 1103
+#: gettingstarted.html477, 740, 751, 762, 906, 966, 993, 1008, 1022, 1037,
+#: 1053, 1068, 1078, 1098, 1118
 msgid "Remove"
 msgstr "Eltávolítás"
 
@@ -1212,7 +1212,7 @@ msgstr ""
 "biztonságosabb, gyorsabb és stabilabb módot teremtsen az internethasználók "
 "számára, hogy felfedezzék az internetet."
 
-#: gettingstarted.html913, 928, 946, 974, 1035, 1060, 1080, 1100
+#: gettingstarted.html913, 928, 946, 974, 1050, 1075, 1095, 1115
 msgid "Snap Install"
 msgstr "Snap telepítése"
 
@@ -1227,14 +1227,22 @@ msgstr "Firefox"
 #: gettingstarted.html940, 959
 msgid ""
 "Mozilla Firefox is a free and open-source web browser, developed by the "
-"Mozilla Foundation - a not for profit organisation. It is highly popular "
+"Mozilla Foundation - a not for profit organization. It is highly popular "
 "targeting multiple platforms."
 msgstr ""
-"A Mozilla Firefox egy ingyenes és nyílt forráskódú webböngésző, amelyet a "
-"Mozilla Alapítvány fejlesztett - egy non-profit szervezet. Nagyon népszerű "
-"több platformon."
+
+#: gettingstarted.html:985
+msgid "Firefox ESR"
+msgstr ""
 
 #: gettingstarted.html:987
+msgid ""
+"Mozilla Firefox is a free and open-source web browser, developed by the "
+"Mozilla Foundation - a not for profit organization. This is the Extended "
+"Support Release browser for comprehensive data security and data protection."
+msgstr ""
+
+#: gettingstarted.html:1002
 msgid ""
 "Google Chrome is a modern web browser backed by internet giant Google. It "
 "offers a smooth browsing experience plus integration with Google's "
@@ -1244,13 +1252,13 @@ msgstr ""
 " böngészési élményt nyújt, plusz integrációs a Google tulajdonosi "
 "szolgáltatásaival."
 
-#: gettingstarted.html:1002
+#: gettingstarted.html:1017
 msgid ""
 "Microsoft Edge is a cross-platform web browser created and developed by "
 "Microsoft. It is a Chromium based browser."
 msgstr ""
 
-#: gettingstarted.html:1016
+#: gettingstarted.html:1031
 msgid ""
 "Vivaldi Web Browser is a free, fully customizable web browser. Feature rich,"
 " powerful, secure and fun! Browse the Web your way"
@@ -1259,7 +1267,7 @@ msgstr ""
 " Funkciógazdag, erőteljes, biztonságos és vicces! Böngéssze a webet ahogyan "
 "szeretné"
 
-#: gettingstarted.html:1032
+#: gettingstarted.html:1047
 msgid ""
 "Opera is a fast and secure browser. Developed in Europe, used by millions "
 "around the world. Now with a built-in ad blocker and free VPN."
@@ -1268,11 +1276,11 @@ msgstr ""
 " használják szerte a világon. Most beépített reklámblokkolóval és ingyenes "
 "VPN-nel."
 
-#: gettingstarted.html:1048
+#: gettingstarted.html:1063
 msgid "A browser that blocks tracking and intrusive ads by default."
 msgstr ""
 
-#: gettingstarted.html:1073
+#: gettingstarted.html:1088
 msgid ""
 "Midori is a lightweight yet powerful web browser which runs just as well on "
 "little embedded computers named for delicious pastries as it does on beefy "
@@ -1284,7 +1292,7 @@ msgstr ""
 "erőteljes izmos gépeken, amelyek hőmérséklete a föld magját is meghaladják. "
 "És jól néz is ki. Ó, és természetesen ez egy ingyenes szoftver."
 
-#: gettingstarted.html:1093
+#: gettingstarted.html:1108
 msgid ""
 "The web browser for GNOME, featuring tight integration with the desktop and "
 "a simple and intuitive user interface that allows you to focus on your web "
@@ -1298,11 +1306,11 @@ msgstr ""
 " tiszta web élményere vágyik, akkor ez az Ön böngészője. A GNOME Web gyakran"
 " Epiphany kódnéven is hivatkozik a böngészőre."
 
-#: gettingstarted.html:1115
+#: gettingstarted.html:1130
 msgid "User Interface"
 msgstr "Felhasználói felület"
 
-#: gettingstarted.html:1116
+#: gettingstarted.html:1131
 msgid ""
 "<span name=\"distro-name\"></span> provides a unique tool to transform the "
 "user interface. It can be used to quickly setup the user interface to "
@@ -1313,11 +1321,11 @@ msgstr ""
 "beállítását, hogy az operációs rendszer kinézetét más, többek által kedvelt "
 "kinézetre és érzetre állítsa. "
 
-#: gettingstarted.html:1123
+#: gettingstarted.html:1138
 msgid "Budgie Desktop Settings"
 msgstr "Budgie Asztalbeállítások"
 
-#: gettingstarted.html:1126
+#: gettingstarted.html:1141
 msgid ""
 "<b>Budgie Desktop Settings</b> can be found later in the menu <b>System "
 "Tools</b>."
@@ -1325,36 +1333,36 @@ msgstr ""
 "A <b>Budgie Asztalbeállítások</b> később a <b>Rendszereszközök</b> menüben "
 "található meg."
 
-#: gettingstarted.html1135, 1140
+#: gettingstarted.html1150, 1155
 msgid "Settings"
 msgstr "Beállítások"
 
-#: gettingstarted.html:1136
+#: gettingstarted.html:1151
 msgid ""
 "You can configure just about every aspect of your computer from Settings."
 msgstr ""
 
-#: gettingstarted.html:1145
+#: gettingstarted.html:1160
 msgid "<b>Settings</b> can be found later in the menu <b>System Tools</b>."
 msgstr ""
 
-#: gettingstarted.html1156, 1161
+#: gettingstarted.html1171, 1176
 msgid "Budgie Control Center"
 msgstr ""
 
-#: gettingstarted.html:1157
+#: gettingstarted.html:1172
 msgid ""
 "You can configure just about every aspect of your computer from Budgie "
 "Control Center."
 msgstr ""
 
-#: gettingstarted.html:1166
+#: gettingstarted.html:1181
 msgid ""
 "<b>Budgie Control Center</b> can be found later in the menu <b>System "
 "Tools</b>."
 msgstr ""
 
-#: gettingstarted.html:1191
+#: gettingstarted.html:1206
 msgid ""
 "<span name=\"distro-name\"></span> has many keyboard shortcuts that help "
 "make using your computer more efficient."
@@ -1362,7 +1370,7 @@ msgstr ""
 "Az <span name=\"distro-name\"></span> számos billentyűparancssal "
 "rendelkezik, amelyek segítenek a számítógépet hatékonyan használni."
 
-#: gettingstarted.html:1195
+#: gettingstarted.html:1210
 msgid ""
 "The <b><img src=\"img/welcome/super-key.svg\" /> Super</b> key is your "
 "Windows key. For Mac keyboards, this is the ⌘ Command key."
@@ -1370,114 +1378,114 @@ msgstr ""
 "A(z) <b><img src=\"img/welcome/super-key.svg\" />Super</b> billentyű a "
 "Windows billentyű. A Mac billentyűzeteken ez a ⌘ parancs billentyű."
 
-#: gettingstarted.html:1198
+#: gettingstarted.html:1213
 msgid "Budgie Desktop shortcuts"
 msgstr "Budgie Asztali parancsikonok"
 
-#: gettingstarted.html:1199
+#: gettingstarted.html:1214
 msgid "Some common shortcuts used in Budgie Desktop"
 msgstr "A Budgie Asztalon használt néhány gyakori parancsikon"
 
-#: gettingstarted.html:1209
+#: gettingstarted.html:1224
 msgid "Open notifications in Raven"
 msgstr "Értesítések megnyitása Ravenben"
 
-#: gettingstarted.html:1218
+#: gettingstarted.html:1233
 msgid "Open applet Settings in Raven"
 msgstr "Applet beállítások megnyitása Ravenben"
 
-#: gettingstarted.html:1223
+#: gettingstarted.html:1238
 msgid "Common application shortcuts"
 msgstr "Áltatlános alkalmazások parancsikonjai"
 
-#: gettingstarted.html:1224
+#: gettingstarted.html:1239
 msgid "These shortcuts apply in most applications."
 msgstr "Ezek a parancsikonok a legtöbb alkalmazásban érvényesek."
 
-#: gettingstarted.html:1233
+#: gettingstarted.html:1248
 msgid "Toggle Tilix Quake Mode"
 msgstr "Váltás Tilix Quake módra"
 
-#: gettingstarted.html1237, 1245, 1253, 1261, 1269, 1277, 1285, 1293, 1301,
-#: 1309, 1317, 1325, 1333, 1341, 1349, 1381, 1397, 1427, 1446, 1460, 1507,
-#: 1517, 1527, 1539, 1722, 1732, 1742, 1752, 1762, 1772, 1782, 1792, 1802
+#: gettingstarted.html1252, 1260, 1268, 1276, 1284, 1292, 1300, 1308, 1316,
+#: 1324, 1332, 1340, 1348, 1356, 1364, 1396, 1412, 1442, 1461, 1475, 1522,
+#: 1532, 1542, 1554, 1737, 1747, 1757, 1767, 1777, 1787, 1797, 1807, 1817
 msgid "Ctrl"
 msgstr "Ctrl"
 
-#: gettingstarted.html:1241
+#: gettingstarted.html:1256
 msgid "Copy the selected text/object"
 msgstr "Kijelölt szöveg/objektum másolása"
 
-#: gettingstarted.html:1249
+#: gettingstarted.html:1264
 msgid "Cut the selected text/object"
 msgstr "Kijelölt szöveg/objektum kivágása"
 
-#: gettingstarted.html:1257
+#: gettingstarted.html:1272
 msgid "Paste/insert the selected text/object"
 msgstr "Kijelölt szöveg/objektum beillesztése"
 
-#: gettingstarted.html:1265
+#: gettingstarted.html:1280
 msgid "Select all text"
 msgstr "Minden szöveg kijelölése"
 
-#: gettingstarted.html:1273
+#: gettingstarted.html:1288
 msgid "Find words"
 msgstr "Szavak keresése"
 
-#: gettingstarted.html:1281
+#: gettingstarted.html:1296
 msgid "Find and replace words"
 msgstr "Szavak keresése és törlése"
 
-#: gettingstarted.html:1289
+#: gettingstarted.html:1304
 msgid "Make the selected text bold"
 msgstr "Legyen a kiválasztott szöveg félkövér"
 
-#: gettingstarted.html:1297
+#: gettingstarted.html:1312
 msgid "Make the selected text italic"
 msgstr "Legyen a kiválasztott szöveg dőlt"
 
-#: gettingstarted.html:1305
+#: gettingstarted.html:1320
 msgid "Underline the selected text"
 msgstr "A kijelölt szöveg aláhúzása"
 
-#: gettingstarted.html:1313
+#: gettingstarted.html:1328
 msgid "Open a new document or window"
 msgstr "Új dokumentum vagy ablak megnyitása"
 
-#: gettingstarted.html:1321
+#: gettingstarted.html:1336
 msgid "Save the current document"
 msgstr "Aktuális dokumentum mentése"
 
-#: gettingstarted.html:1329
+#: gettingstarted.html:1344
 msgid "Open another document"
 msgstr "Másik dokumentum megnyitása"
 
-#: gettingstarted.html:1337
+#: gettingstarted.html:1352
 msgid "Print the current document"
 msgstr "Aktuális dokumentum nyomtatása"
 
-#: gettingstarted.html:1345
+#: gettingstarted.html:1360
 msgid "Undo the last change you made"
 msgstr "Utolsó változtatás visszavonása"
 
-#: gettingstarted.html1351, 1379, 1389, 1531, 1542, 1558, 1569, 1580, 1591
+#: gettingstarted.html1366, 1394, 1404, 1546, 1557, 1573, 1584, 1595, 1606
 msgid "Shift"
 msgstr "Shift"
 
-#: gettingstarted.html:1355
+#: gettingstarted.html:1370
 msgid "Redo a change that you just undid"
 msgstr "Visszavont változtatás újbóli alkalmazása"
 
-#: gettingstarted.html:1361
+#: gettingstarted.html:1376
 msgid "Toggle the current application between full-screen and windowed"
 msgstr ""
 "Aktuális alkalmazás váltása a teljes képernyős és az ablakos üzemmód között"
 
-#: gettingstarted.html:1365
+#: gettingstarted.html:1380
 msgid "Desktop shortcuts"
 msgstr "Asztali parancsikonok"
 
-#: gettingstarted.html:1366
+#: gettingstarted.html:1381
 msgid ""
 "This section lists common keyboard shortcuts which you can use to operate "
 "parts of the desktop."
@@ -1485,83 +1493,83 @@ msgstr ""
 "Ez a rész a leggyakoribb billentyűparancsokat sorolja fel, amelyeket az "
 "asztal részeinek működtetésére használhat."
 
-#: gettingstarted.html:1375
+#: gettingstarted.html:1390
 msgid "Open Applications menu"
 msgstr "Alkalmazások menü megnyitása"
 
-#: gettingstarted.html:1385
+#: gettingstarted.html:1400
 msgid "Copy a screenshot of an area to clipboard"
 msgstr "Egy terület képernyőfotójának másolása a vágólapra"
 
-#: gettingstarted.html:1393
+#: gettingstarted.html:1408
 msgid "Save a screenshot of an area to the Pictures directory"
 msgstr "Egy terület képernyőfotójának mentése a Képek mappába"
 
-#: gettingstarted.html:1401
+#: gettingstarted.html:1416
 msgid "Copy a screenshot of a window to clipboard"
 msgstr "Egy ablak képernyőfotójának másolása a vágólapra"
 
-#: gettingstarted.html1405, 1419, 1429, 1448, 1462, 1492, 1509, 1519, 1529,
-#: 1541, 1550, 1602, 1610, 1618, 1653, 1724, 1734, 1744, 1754, 1764, 1774,
-#: 1784, 1794, 1804
+#: gettingstarted.html1420, 1434, 1444, 1463, 1477, 1507, 1524, 1534, 1544,
+#: 1556, 1565, 1617, 1625, 1633, 1668, 1739, 1749, 1759, 1769, 1779, 1789,
+#: 1799, 1809, 1819
 msgid "Alt"
 msgstr "Alt"
 
-#: gettingstarted.html:1409
+#: gettingstarted.html:1424
 msgid "Save a screenshot of a window to the Pictures directory"
 msgstr "Egy ablak képernyőfotójának mentése a Képek mappába"
 
-#: gettingstarted.html:1415
+#: gettingstarted.html:1430
 msgid "Save a screenshot to the Pictures directory"
 msgstr "Képernyőfotó mentése a Képek mappába"
 
-#: gettingstarted.html:1423
+#: gettingstarted.html:1438
 msgid "Run an application by typing its name in the box which appears"
 msgstr "Futtasson egy alkalmazást a nevének beírásával a megjelenő mezőbe"
 
-#: gettingstarted.html:1431
+#: gettingstarted.html:1446
 msgid "Delete"
 msgstr "Törlés"
 
-#: gettingstarted.html:1433
+#: gettingstarted.html:1448
 msgid "Logout"
 msgstr "Kijelentkezés"
 
-#: gettingstarted.html:1442
+#: gettingstarted.html:1457
 msgid "Lock your screen."
 msgstr "Képernyő zárolása "
 
-#: gettingstarted.html:1452
+#: gettingstarted.html:1467
 msgid "Open a terminal."
 msgstr "Egy terminál megnyitása."
 
-#: gettingstarted.html:1456
+#: gettingstarted.html:1471
 msgid "Window shortcuts - general"
 msgstr "Ablak gyorsbillentyűk - általános"
 
-#: gettingstarted.html1466, 1481
+#: gettingstarted.html1481, 1496
 msgid "Call Window Shuffler gui (window tiling grid)."
 msgstr "Ablak keverő gui (csempés ablakrács) hívása."
 
-#: gettingstarted.html1470, 1486
+#: gettingstarted.html1485, 1501
 msgid "Video Demonstration"
 msgstr "Videó bemutató"
 
-#: gettingstarted.html:1494
+#: gettingstarted.html:1509
 msgid "Tab"
 msgstr "Tab"
 
-#: gettingstarted.html:1497
+#: gettingstarted.html:1512
 msgid "Switch between currently-open windows."
 msgstr "Váltás a jelenleg nyitott ablakok között."
 
-#: gettingstarted.html:1499
+#: gettingstarted.html:1514
 msgid "Press Alt + Tab and then release Tab (but continue to hold Alt)."
 msgstr ""
 "Nyomja le az Alt + Tab billentyűket, majd engedje fel a Tab billentyűt (de "
 "továbbra is tartsa az Alt billentyűt)."
 
-#: gettingstarted.html:1500
+#: gettingstarted.html:1515
 msgid ""
 "Press Tab repeatedly to cycle through the list of available windows which "
 "appears on the screen."
@@ -1569,90 +1577,90 @@ msgstr ""
 "Nyomja meg többször a Tab billentyűt a képernyőn megjelenő ablakok "
 "listájának megtekintéséhez."
 
-#: gettingstarted.html1511, 1533, 1665
+#: gettingstarted.html1526, 1548, 1680
 msgid "Left"
 msgstr "Bal"
 
-#: gettingstarted.html:1513
+#: gettingstarted.html:1528
 msgid "Switch to the previous workspace."
 msgstr "Váltás az előző munkaterületre."
 
-#: gettingstarted.html1521, 1544, 1674
+#: gettingstarted.html1536, 1559, 1689
 msgid "Right"
 msgstr "Jobb"
 
-#: gettingstarted.html:1523
+#: gettingstarted.html:1538
 msgid "Switch to the next workspace."
 msgstr "Váltás a következő munkaterületre."
 
-#: gettingstarted.html:1535
+#: gettingstarted.html:1550
 msgid "Move the current window to the previous workspace."
 msgstr "Mozgassa az aktuális ablakot az előző munkaterületre."
 
-#: gettingstarted.html:1546
+#: gettingstarted.html:1561
 msgid "Move the current window to the next workspace."
 msgstr "Mozgassa az aktuális ablakot a következő munkaterületre."
 
-#: gettingstarted.html:1554
+#: gettingstarted.html:1569
 msgid "Move the current window to the monitor above."
 msgstr ""
 
-#: gettingstarted.html:1565
+#: gettingstarted.html:1580
 msgid "Move the current window to the monitor below."
 msgstr ""
 
-#: gettingstarted.html:1576
+#: gettingstarted.html:1591
 msgid "Move the current window to the monitor to the left."
 msgstr ""
 
-#: gettingstarted.html:1587
+#: gettingstarted.html:1602
 msgid "Move the current window to the monitor to the right."
 msgstr ""
 
-#: gettingstarted.html:1598
+#: gettingstarted.html:1613
 msgid "Closes window."
 msgstr "Bezárja az ablakot."
 
-#: gettingstarted.html:1606
+#: gettingstarted.html:1621
 msgid "Returns window to 'normal' or previous size."
 msgstr "Visszatér az ablak \"normál\" vagy korábbi méretéhez."
 
-#: gettingstarted.html:1614
+#: gettingstarted.html:1629
 msgid "Moves the current window (can be moved with mouse or keyboard)."
 msgstr ""
 "Az aktuális ablak mozgatása (egérrel vagy billentyűzettel mozgatható)."
 
-#: gettingstarted.html:1622
+#: gettingstarted.html:1637
 msgid "Resizes current window (again, can be moved with mouse or keyboard)."
 msgstr ""
 "Az aktuális ablak átméretezése (ismét egérrel vagy billentyűzettel "
 "mozgatható)."
 
-#: gettingstarted.html:1631
+#: gettingstarted.html:1646
 msgid "Minimizes current window."
 msgstr "Minimalizálja az aktuális ablakot."
 
-#: gettingstarted.html:1638
+#: gettingstarted.html:1653
 msgid "Up"
 msgstr "Fel"
 
-#: gettingstarted.html:1640
+#: gettingstarted.html:1655
 msgid "Maximizes current window."
 msgstr "Maximalizálja az aktuális ablakot."
 
-#: gettingstarted.html:1647
+#: gettingstarted.html:1662
 msgid "Down"
 msgstr "Le"
 
-#: gettingstarted.html:1649
+#: gettingstarted.html:1664
 msgid "Unmaximizes current window."
 msgstr "Kicsinyíti az aktuális ablakot."
 
-#: gettingstarted.html:1655
+#: gettingstarted.html:1670
 msgid "Space"
 msgstr "Terület"
 
-#: gettingstarted.html:1657
+#: gettingstarted.html:1672
 msgid ""
 "Displays the window menu with options such as 'Always on Top' and 'Minimize'"
 " and 'Maximize' and above commands."
@@ -1660,115 +1668,115 @@ msgstr ""
 "Megjeleníti az ablakmenüt olyan opciókkal, mint a \"Mindig felül”, "
 "\"Minimizálás”, \"Maximizálás” és fenti parancsokkal."
 
-#: gettingstarted.html:1667
+#: gettingstarted.html:1682
 msgid "Place window on left side of screen."
 msgstr "Ablak elhelyezése a képernyő bal oldalán."
 
-#: gettingstarted.html:1676
+#: gettingstarted.html:1691
 msgid "Place window on right side of screen."
 msgstr "Ablak elhelyezése a képernyő jobb oldalán."
 
-#: gettingstarted.html1683, 1756
+#: gettingstarted.html1698, 1771
 msgid "1"
 msgstr "1"
 
-#: gettingstarted.html:1685
+#: gettingstarted.html:1700
 msgid "Quarter tiling: top left."
 msgstr "Csempés felosztás: fent balra."
 
-#: gettingstarted.html1692, 1786
+#: gettingstarted.html1707, 1801
 msgid "2"
 msgstr "2"
 
-#: gettingstarted.html:1694
+#: gettingstarted.html:1709
 msgid "Quarter tiling: top right."
 msgstr "Csempés felosztás: fent jobbra."
 
-#: gettingstarted.html1701, 1746
+#: gettingstarted.html1716, 1761
 msgid "3"
 msgstr "3"
 
-#: gettingstarted.html:1703
+#: gettingstarted.html:1718
 msgid "Quarter tiling: bottom left."
 msgstr "Csempés felosztás: lent balra."
 
-#: gettingstarted.html1710, 1796
+#: gettingstarted.html1725, 1811
 msgid "4"
 msgstr "4"
 
-#: gettingstarted.html:1712
+#: gettingstarted.html:1727
 msgid "Quarter tiling: bottom right."
 msgstr "Csempés felosztás: lent jobbra."
 
-#: gettingstarted.html:1717
+#: gettingstarted.html:1732
 msgid "Window shortcuts - numeric keypad"
 msgstr "Ablak gyorsbillentyűk - numerikus billentyűzet"
 
-#: gettingstarted.html:1718
+#: gettingstarted.html:1733
 msgid "Tiling shortcuts on the numeric keypad."
 msgstr "Csempe gyorsbillentyűk a numerikus billentyűzeten."
 
-#: gettingstarted.html:1726
+#: gettingstarted.html:1741
 msgid "7"
 msgstr "7"
 
-#: gettingstarted.html:1728
+#: gettingstarted.html:1743
 msgid "Quarter top left."
 msgstr "Negyed fent balra."
 
-#: gettingstarted.html:1736
+#: gettingstarted.html:1751
 msgid "9"
 msgstr "9"
 
-#: gettingstarted.html:1738
+#: gettingstarted.html:1753
 msgid "Quarter top right."
 msgstr "Negyed fent jobbra."
 
-#: gettingstarted.html:1748
+#: gettingstarted.html:1763
 msgid "Quarter bottom right."
 msgstr "Negyed lent jobbra."
 
-#: gettingstarted.html:1758
+#: gettingstarted.html:1773
 msgid "Quarter bottom left."
 msgstr "Negyed lent balra."
 
-#: gettingstarted.html:1766
+#: gettingstarted.html:1781
 msgid "8"
 msgstr "8"
 
-#: gettingstarted.html:1768
+#: gettingstarted.html:1783
 msgid "Half top."
 msgstr "Félig fent."
 
-#: gettingstarted.html:1776
+#: gettingstarted.html:1791
 msgid "6"
 msgstr "6"
 
-#: gettingstarted.html:1778
+#: gettingstarted.html:1793
 msgid "Half right."
 msgstr "Félig jobbra."
 
-#: gettingstarted.html:1788
+#: gettingstarted.html:1803
 msgid "Half bottom."
 msgstr "Félig lent."
 
-#: gettingstarted.html:1798
+#: gettingstarted.html:1813
 msgid "Half left."
 msgstr "Félig balra."
 
-#: gettingstarted.html:1806
+#: gettingstarted.html:1821
 msgid "5"
 msgstr "5"
 
-#: gettingstarted.html:1808
+#: gettingstarted.html:1823
 msgid "Toggle maximize."
 msgstr "Váltás maximalizálásra."
 
-#: gettingstarted.html:1817
+#: gettingstarted.html:1832
 msgid "Update shortcuts in the Settings App"
 msgstr "Parancsikonok frissítése a Beállítások alkalmazásban"
 
-#: gettingstarted.html:1839
+#: gettingstarted.html:1854
 msgid ""
 "Your machine is made up of various components that interact with one "
 "another. This information is useful when providing support to ensure "
@@ -1778,141 +1786,141 @@ msgstr ""
 "egymással. Ez az információ akkor hasznos, ha támogatást kap a hardver és a "
 "szoftver működésének biztosításához."
 
-#: gettingstarted.html:1847
+#: gettingstarted.html:1862
 msgid "Gathering Information.."
 msgstr "Információ megszerzése..."
 
-#: gettingstarted.html:1856
+#: gettingstarted.html:1871
 msgid "System"
 msgstr "Rendszer"
 
-#: gettingstarted.html:1859
+#: gettingstarted.html:1874
 msgid "Distribution:"
 msgstr "Disztribúció:"
 
-#: gettingstarted.html:1863
+#: gettingstarted.html:1878
 msgid "Kernel:"
 msgstr "Kernel:"
 
-#: gettingstarted.html:1867
+#: gettingstarted.html:1882
 msgid "The Linux kernel is the heart of Ubuntu."
 msgstr "A Linux-kernel az Ubuntu szíve."
 
-#: gettingstarted.html:1873
+#: gettingstarted.html:1888
 msgid "Motherboard:"
 msgstr "Alaplap:"
 
-#: gettingstarted.html:1877
+#: gettingstarted.html:1892
 msgid "Boot Mode:"
 msgstr "Indítási mód:"
 
-#: gettingstarted.html:1881
+#: gettingstarted.html:1896
 msgid "Displays the mode that OS is communicating with the firmware."
 msgstr "Megjeleníti a módot, amellyel az OS kommuniál a firmware-rel."
 
-#: gettingstarted.html:1889
+#: gettingstarted.html:1904
 msgid "Processor"
 msgstr "Processzor"
 
-#: gettingstarted.html:1892
+#: gettingstarted.html:1907
 msgid "Model:"
 msgstr "Modell:"
 
-#: gettingstarted.html:1896
+#: gettingstarted.html:1911
 msgid "Speed:"
 msgstr "Sebesség:"
 
-#: gettingstarted.html:1900
+#: gettingstarted.html:1915
 msgid "Architecture in use:"
 msgstr "Használt architektúra:"
 
-#: gettingstarted.html:1904
+#: gettingstarted.html:1919
 msgid ""
 "The operating system's architecture in use. For instance, i386 = 32-bit."
 msgstr ""
 "Az operációs rendszer által használt architektúrája. Például, i386 = 32-bit."
 
-#: gettingstarted.html:1910
+#: gettingstarted.html:1925
 msgid "Architecture(s) supported:"
 msgstr "Támogatott architektúrák:"
 
-#: gettingstarted.html:1914
+#: gettingstarted.html:1929
 msgid "Architectures that are supported by this processor."
 msgstr "A processzor által támogatott architektúrák."
 
-#: gettingstarted.html:1922
+#: gettingstarted.html:1937
 msgid "Components"
 msgstr "Komponensek"
 
-#: gettingstarted.html:1925
+#: gettingstarted.html:1940
 msgid "Memory (RAM):"
 msgstr "Memória (RAM):"
 
-#: gettingstarted.html:1929
+#: gettingstarted.html:1944
 msgid "More RAM allows more applications to run simultaneously."
 msgstr "Több RAM több alkalmazás egyidejű futtatását teszi lehetővé."
 
-#: gettingstarted.html:1935
+#: gettingstarted.html:1950
 msgid "Graphics:"
 msgstr "Grafika:"
 
-#: gettingstarted.html:1939
+#: gettingstarted.html:1954
 msgid "Internet Access:"
 msgstr "Internet-hozzáférés:"
 
-#: gettingstarted.html:1942
+#: gettingstarted.html:1957
 msgid "Connected"
 msgstr "Csatlakozva"
 
-#: gettingstarted.html:1943
+#: gettingstarted.html:1958
 msgid "Not Connected"
 msgstr "Nincs csatlakozva"
 
-#: gettingstarted.html:1951
+#: gettingstarted.html:1966
 msgid "Storage"
 msgstr "Tárterület"
 
-#: gettingstarted.html:1955
+#: gettingstarted.html:1970
 msgid "Root File System:"
 msgstr "Gyökérfájlrendszer:"
 
-#: gettingstarted.html:1959
+#: gettingstarted.html:1974
 msgid "The file system where OS is installed."
 msgstr "A fájlrendszer, ahová az OS telepítve van."
 
-#: gettingstarted.html:1965
+#: gettingstarted.html:1980
 msgid "Entire Disk Capacity:"
 msgstr "Teljes lemezkapacitás:"
 
-#: gettingstarted.html:1971
+#: gettingstarted.html:1986
 msgid "OS Usage"
 msgstr "OS Használat"
 
-#: gettingstarted.html:1976
+#: gettingstarted.html:1991
 msgid "Other Usage"
 msgstr "Egyéb használat"
 
-#: gettingstarted.html:1981
+#: gettingstarted.html:1996
 msgid "Allocated for <span name=\"distro-name\"></span>:"
 msgstr "Kiosztva a(z) <span name=\"distro-name\"></span> részére:"
 
-#: gettingstarted.html:1985
+#: gettingstarted.html:2000
 msgid "The size of your operating system partition."
 msgstr "Az operációs rendszer partició mérete."
 
-#: gettingstarted.html:1992
+#: gettingstarted.html:2007
 msgid "Used Space:"
 msgstr "Felhasznált terület:"
 
-#: gettingstarted.html:2000
+#: gettingstarted.html:2015
 msgid "Free Space:"
 msgstr "Szabad terület:"
 
-#: gettingstarted.html:2008
+#: gettingstarted.html:2023
 msgid "Other Usage:"
 msgstr "Egyéb használat:"
 
-#: gettingstarted.html:2013
+#: gettingstarted.html:2028
 msgid "Reserved by system, other partitions, unallocated or swap."
 msgstr ""
 "Fenntartva a rendszer, egyéb partíciók, allokálatlan és a cserehely számára."
