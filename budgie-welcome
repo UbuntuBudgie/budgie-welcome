@@ -2343,7 +2343,7 @@ class Translations(object):
         data_path = whereami()
 
         # Pages that do not want to be translated, including '.html' extension.
-        self.excluded_pages = ["gaming.html"]
+        self.excluded_pages = []
 
         # Use locale provided by argument, or get system's locale.
         if arg.locale:
