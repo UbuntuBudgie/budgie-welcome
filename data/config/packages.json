@@ -1194,7 +1194,7 @@
 				]
 			},
 			"key-commands": [
-				"wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | apt-key add -"
+				"wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | apt-key --keyring /etc/apt/trusted.gpg.d/chrome-browser.gpg add -"
 			]
 		},
 		"edge": {
@@ -1210,7 +1210,7 @@
 				]
 			},
 			"key-commands": [
-				"wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -"
+				"wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key --keyring /etc/apt/trusted.gpg.d/edge-browser.gpg add -"
 			]
 		},
 		"opera": {
@@ -1282,11 +1282,11 @@
 			],
 			"repos": {
 				"all": [
-					"deb http://repo.vivaldi.com/stable/deb/ stable main"
+					"deb [arch=amd64] http://repo.vivaldi.com/stable/deb/ stable main"
 				]
 			},
 			"key-commands": [
-				"curl http://repo.vivaldi.com/stable/linux_signing_key.pub | sudo apt-key add -",
+				"curl http://repo.vivaldi.com/stable/linux_signing_key.pub | sudo apt-key --keyring /etc/apt/trusted.gpg.d/vivaldi-browser.gpg add -",
 				"apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 1397BC53640DB551"
 			]
 		},
