@@ -297,14 +297,14 @@ class AppView(WebKit2.WebView):
                 app.update_page(".showhide", 'show')
             else:
                 app.update_page(".showhide", 'hide')
-        
+
         if current_page == 'gaming':
             # some gaming packages are software specific, so need to hide/show them
             package = app._data_path + "/config/packages.json"
-            
+
             with open(package) as file:
                 config = json.load(file)
-            
+
             for game_package in config['gaming']:
                 if ('repos' in config['gaming'][game_package] and
                         (systemstate.codename in config['gaming'][game_package]['repos'] or
@@ -313,7 +313,7 @@ class AppView(WebKit2.WebView):
                     app.update_page("." + game_package, 'show')
                 else:
                     app.update_page("." + game_package, 'hide')
-        
+
         ### All pages with install/removal ###
         if current_page in ['gettingstarted', 'default', 'recommendations', 'budgie-applets', 'gaming']:
             app.update_page('[id$=install]', 'hide')
@@ -782,7 +782,7 @@ class AppView(WebKit2.WebView):
             popup = PopupMessage(message, PopupMessage.INFO)
 
             popup.showMessage()
-        
+
         elif uri.startswith("steam?"):
             gameId = uri[6:]
             if pm.hasInstalled("gaming", "steam"):
@@ -1990,12 +1990,12 @@ class WelcomeApp(object):
         section_label = Gtk.Label()
         page_title = Gtk.Label()
 
-        about_img = Gtk.Image()
-        back_img = Gtk.Image()
-        about_img.set_from_file(os.path.join(
-            self._data_path, 'img', 'welcome', 'menu.svg'))
-        back_img.set_from_file(os.path.join(
-            self._data_path, 'img', 'welcome', 'ic_back.svg'))
+        theme = Gtk.IconTheme.get_default()
+        theme.append_search_path(os.path.join(self._data_path, 'img', 'welcome'))
+        iconfile =  Gio.ThemedIcon(name="menu-symbolic")
+        about_img = Gtk.Image.new_from_gicon(iconfile,Gtk.IconSize.DND)
+        iconfile =  Gio.ThemedIcon(name="go-left-symbolic")
+        back_img = Gtk.Image.new_from_gicon(iconfile,Gtk.IconSize.DND)
 
         about_btn = Gtk.Button(image=about_img)
         status_btn = Gtk.Button.new_with_label(_("Status"))
