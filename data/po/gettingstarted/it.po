@@ -1,19 +1,20 @@
 # 
 # Translators:
 # Nicola Gentile <nikkognt@gmail.com>, 2022
+# Eleitherio, 2022
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: Budgie Welcome\n"
 "POT-Creation-Date: 2016-02-27 12:48+0100\n"
 "PO-Revision-Date: 2017-03-15 13:49+0000\n"
-"Last-Translator: Nicola Gentile <nikkognt@gmail.com>, 2022\n"
+"Last-Translator: Eleitherio, 2022\n"
 "Language-Team: Italian (https://www.transifex.com/ubuntu-budgie/teams/72251/it/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: it\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 "Report-Msgid-Bugs-To : you@example.com\n"
 
 #: gettingstarted.html:16
@@ -1254,6 +1255,9 @@ msgid ""
 "Mozilla Foundation - a not for profit organization. It is highly popular "
 "targeting multiple platforms."
 msgstr ""
+"Mozilla Firefox è un web browser open-source, sviluppato da Mozilla "
+"Foundation - un’ organizzazione non-profit. È molto popolare e rivolto a più"
+" piattaforme."
 
 #: gettingstarted.html:985
 msgid "Firefox ESR"
