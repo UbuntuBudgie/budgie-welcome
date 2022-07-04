@@ -1,14 +1,14 @@
 # 
 # Translators:
-# Omer I.S. <omeritzicschwartz@gmail.com>, 2022
 # Yaron Shahrabani <sh.yaron@gmail.com>, 2022
+# Omer I.S. <omeritzicschwartz@gmail.com>, 2022
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: Budgie Welcome\n"
 "POT-Creation-Date: 2016-02-27 12:48+0100\n"
 "PO-Revision-Date: 2017-03-15 13:49+0000\n"
-"Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>, 2022\n"
+"Last-Translator: Omer I.S. <omeritzicschwartz@gmail.com>, 2022\n"
 "Language-Team: Hebrew (https://www.transifex.com/ubuntu-budgie/teams/72251/he/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -47,7 +47,7 @@ msgstr "היכרות עם המערכת"
 
 #: gettingstarted.html:42
 msgid "Browser Ballot"
-msgstr ""
+msgstr "דפדפנים להורדה"
 
 #: gettingstarted.html46, 887, 1843
 msgid "Customization"
@@ -98,6 +98,8 @@ msgid ""
 "<span name=\"distro-name\"></span> works well on both high-end to older "
 "computers, optimized to be functional, while light on system resources."
 msgstr ""
+"‏<span name=\"distro-name\"></span> עובדת היטב על מחשבים חדשים וישנים כאחד, "
+"המערכת מותאמת לפעולה, וחסכונית במשאבי המערכת."
 
 #: gettingstarted.html:91
 msgid "Minimum"
@@ -129,7 +131,7 @@ msgstr "זיכרון RAM בנפח 4 ג׳יגה בייט (GB)"
 
 #: gettingstarted.html:102
 msgid "80 gigabytes (GB) of disk space"
-msgstr "שטח כונן בנפח 80 ג׳יגה בייט (GB)"
+msgstr "שטח כונן בנפח 80 ג׳יגה בייט (ג״ב)"
 
 #: gettingstarted.html:105
 msgid ""
@@ -221,6 +223,8 @@ msgid ""
 "show a \"protection layer\". <b>Do not worry,</b> your data is not lost or "
 "corrupt!"
 msgstr ""
+"טעינה במצב BIOS על מערכת UEFI עם כונן GPT מאותחל תציג גם מעין \"שכבת הגנה\"."
+" <b>אל דאגה,</b> הנתונים שלך בטוחים!"
 
 #: gettingstarted.html:170
 msgid ""
@@ -266,6 +270,9 @@ msgid ""
 "in sections of your hard disk being split between multiple operating "
 "systems."
 msgstr ""
+"התקנת <span name=\"distro-name\"></span> לצד מערכת ההפעלה הנוכחית תכווץ את "
+"המחיצות הקיימות. כך, השטח שבכונן הקשיח שלך יחולק למספר קטעים בשביל מערכות "
+"ההפעלה השונות."
 
 #: gettingstarted.html:213
 msgid "I'm dual booting with"
@@ -289,7 +296,7 @@ msgstr "איחוי הכונן הקשיח."
 
 #: gettingstarted.html:223
 msgid "Ensure Windows has been cleanly shut down (not hibernated)."
-msgstr ""
+msgstr "יש לוודא שמערכת Windows כבויה לגמרי (ולא במצב שינה/תרדמת)."
 
 #: gettingstarted.html:228
 msgid "Which approach would you prefer?"
@@ -353,6 +360,10 @@ msgid ""
 "command prompt to check the file system for errors. Windows may schedule "
 "this automatically. This ensures consistency for the NTFS file system."
 msgstr ""
+"<b>בהפעלת Windows ההבאה, כדאי להריץ</b> <code>chkdsk /f</code> דרך שורת "
+"הפקודה כדי לוודא שאין שגיאות במערכת הקבצים. ייתכן שכבר מוגדר ב־Windows תזמון"
+" לביצוע הפעולה הזאת באופן אוטומטי. כך אפשר לוודא את העקביות של מערכת הקבצים "
+"NTFS."
 
 #: gettingstarted.html:271
 msgid "Use GParted or the installer's \"Custom\" option."
@@ -366,6 +377,10 @@ msgid ""
 "power users who know how they'd like to layout their disks. This method "
 "makes changes to partitions prior to installation."
 msgstr ""
+"‏<b>GParted</b> זמין רק במצב ההמחשה. הוא נמצא בתפריט <b>כלי מערכת <i "
+"class=\"material-icons\">&#xE315;</i></b>. GParted מאפשר שליטה מלאה על "
+"המחיצות שבמחשב, ומתאים בעיקר למשתמשים מתקדמים שיודעים כיצד לסדר את המחיצות. "
+"שיטה זו משנה את המחיצות שבמחשבך לצורך ההתקנה."
 
 #: gettingstarted.html:282
 msgid "Open GParted"
@@ -380,7 +395,7 @@ msgstr ""
 
 #: gettingstarted.html:289
 msgid "Using the Installer's \"Custom\" option."
-msgstr "שימוש באפשרות \"התאמה אישית\" של אשף ההתקנה."
+msgstr "שימוש באפשרות „התאמה אישית” של אשף ההתקנה."
 
 #: gettingstarted.html:290
 msgid ""
@@ -389,6 +404,9 @@ msgid ""
 " choose mount points. Dividing your disks can make it somewhat easier to re-"
 "install the operating system later if desired."
 msgstr ""
+"במקום או בנוסף ל־GParted, אפשר להגדיר ולשנות את גודלי המחיצות או לבחור "
+"נקודות עיגון גם דרך אפשרות <b>ההתאמה האישית</b>. חלוקת הכוננים יכולה להקל "
+"במידת מה על התקנת מערכת ההפעלה מאוחר יותר במידת הרצון."
 
 #: gettingstarted.html:295
 msgid "You can specify these mount points:"
@@ -456,6 +474,8 @@ msgid ""
 "If you are using Windows XP or earlier, you will need to use the "
 "<b>Simple</b> or <b>Advanced</b> method to shrink your disk."
 msgstr ""
+"אם על המחשב שלך יש Windows XP או גרסה מתקדמת יותר, עליך להשתמש בשיטה "
+"<b>הפשוטה</b> או <b>המתקדמת</b> לכיווץ הכונן."
 
 #: gettingstarted.html:328
 msgid ""
@@ -464,6 +484,9 @@ msgid ""
 "boots on your computer while experiencing <span name=\"distro-"
 "name\"></span>."
 msgstr ""
+"לגרסאות מתקדמות יותר של Windows מצורף כלי לכיווץ כונן ה־NTFS ישירות מתוך "
+"Windows. השיטה הזאת בטוחה יותר אם חשוב לך שמערכת Windows עדיין תישאר מותקנת "
+"במחשבך יחד עם <span name=\"distro-name\"></span>."
 
 #: gettingstarted.html:332
 msgid "Open <b>Disk Management</b> from the start menu."
@@ -477,7 +500,7 @@ msgstr ""
 
 #: gettingstarted.html:343
 msgid "Enter the amount to shrink your system partition by."
-msgstr ""
+msgstr "נא לציין בכמה ברצונך לכווץ את מחיצת המערכת."
 
 #: gettingstarted.html:349
 msgid ""
@@ -511,12 +534,18 @@ msgid ""
 "will overwrite them, with the potential to lose access to <span "
 "name=\"distro-name\"></span> temporally."
 msgstr ""
+"הפצות הלינוקס משתמשות במנהל אתחול בשם <code>grub</code>, שמאתר את מערכת "
+"ההפעלה וטוען אותה. עם זאת, חלק ממערכות ההפעלה (כמו Windows למשל) לא משתלבות "
+"היטב בתוך מנהלי אתחול שכבר מותקנים ויחליפו אותם במנהלי האתחול שלהן, כשהגישה "
+"אל <span name=\"distro-name\"></span> עלולה להיאבד באופן זמני."
 
 #: gettingstarted.html:371
 msgid ""
 "Fortunately, you can use the <b>Boot Repair</b> tool to repair common "
 "problems caused by other operating systems."
 msgstr ""
+"למרבה המזל, אפשר להשתמש בכלי <b>תיקון האתחול</b> כדי לתקן בעיות נפוצות "
+"שנגרמות על ידי מערכות הפעלה אחרות."
 
 #: gettingstarted.html:376
 msgid "Requires downloading a package."
@@ -548,7 +577,7 @@ msgstr "נדרש חיבור לאינטרנט כדי להוריד ולהתקין 
 
 #: gettingstarted.html:417
 msgid "Software Updater"
-msgstr "מעדכן התוכנה"
+msgstr "מעדכן התוכנות"
 
 #: gettingstarted.html:418
 msgid ""
@@ -657,6 +686,8 @@ msgid ""
 "Sorry, Welcome was unable to automatically identify the graphics vendor on "
 "this system."
 msgstr ""
+"תוכנית קבלת הפנים לא הצליחה לזהות באופן אוטומטי את יצרן כרטיס המסך של "
+"המערכת, עמך הסליחה."
 
 #: gettingstarted.html529, 537, 545, 551
 msgid "Card/Chipset:"
@@ -722,6 +753,9 @@ msgid ""
 "open source, Ubuntu developers are <b>unable to review and improve driver "
 "code</b> meaning you'll have to rely on the manufacturer for support."
 msgstr ""
+"מנהלי ההתקנים הקנייניים מגיעים ישירות מהיצרן. מכיוון שאינם בקוד פתוח, למפתחי"
+" אובונטו <b>אין אפשרות לבדוק ולשפר את הקוד של מנהל ההתקן</b>, מה שאומר שתהיה"
+" לך איזושהי תלות ביצרן."
 
 #: gettingstarted.html:567
 msgid ""
@@ -746,7 +780,7 @@ msgstr "שיפור התמיכה ברזולוציות גבוהות ובריבוי
 
 #: gettingstarted.html:577
 msgid "Fix blank screen issues."
-msgstr ""
+msgstr "תיקון בעיות אי־תצוגה."
 
 #: gettingstarted.html:580
 msgid ""
@@ -757,7 +791,7 @@ msgstr ""
 
 #: gettingstarted.html:584
 msgid "Failing to boot to the graphical desktop."
-msgstr ""
+msgstr "טעינת שולחן העבודה הגרפי נכשלת."
 
 #: gettingstarted.html:585
 msgid "Broken drivers after an upgrade."
@@ -769,7 +803,7 @@ msgstr ""
 
 #: gettingstarted.html:587
 msgid "Problems with applications/games requiring hardware acceleration."
-msgstr ""
+msgstr "בעיות עם יישומים/משחקים שדורשים האצת חומרה."
 
 #: gettingstarted.html:591
 msgid ""
@@ -793,6 +827,13 @@ msgid ""
 "packages up the latest NVIDIA drivers for Ubuntu. These packages are not as "
 "thoroughly tested."
 msgstr ""
+"הגרסאות החדשות ביותר של מנהלי ההתקנים שעברו בדיקת איכות ונמצאות במאגרי "
+"אובונטו מופיעות בתוך „<b>מנהלי התקנים</b>”. משתמשים חדשים וגיימרים "
+"שמעוניינים בגרסאות החדשות אולי ירצו להוסיף את <a "
+"onclick=\"cmd('link?https://launchpad.net/~graphics-"
+"drivers/+archive/ubuntu/ppa')\">מאגר ה־PPA למנהלי התקנים לכרטיסי המסך של "
+"אובונטו</a>, שכולל בתוכו את הגרסאות החדשות ביותר של מנהלי ההתקנים של NVIDIA "
+"לאובונטו. החבילות האלה לא נבדקו בהכרח."
 
 #: gettingstarted.html:606
 msgid ""
@@ -820,6 +861,8 @@ msgid ""
 "after installing the firmware packages, you may need to research your device"
 " to find the appropriate driver."
 msgstr ""
+"אם לא נמצאו מנהלי התקנים נוספים לחומרה או שהם לא עבדו לאחר התקנת חבילות "
+"הקושחה, עליך לעיין במידע על ההתקן כדי למצוא את מנהל ההתקן המתאים."
 
 #: gettingstarted.html:635
 msgid ""
@@ -828,6 +871,9 @@ msgid ""
 "insufficient documentation to create drivers for your particular brand and "
 "model."
 msgstr ""
+"למרבה הצער, הבעיות האלה נגרמות כתוצאה מכך שיצרן החומרה שלך לא סיפק למפתחים "
+"קוד מקור לשימוש חופשי, או מכך שאין תיעוד מספק ליצירת מנהלי ההתקנים עבור "
+"המותג והדגם הספציפיים שלך."
 
 #: gettingstarted.html:641
 msgid ""
@@ -838,7 +884,7 @@ msgstr ""
 
 #: gettingstarted.html:647
 msgid "Read more on troubleshooting wireless hardware."
-msgstr ""
+msgstr "למידע נוסף על פתרון בעיות בחומרת רשת אלחוטית."
 
 #: gettingstarted.html656, 885
 msgid "Language Input"
@@ -905,7 +951,7 @@ msgstr "קלט מורכב"
 
 #: gettingstarted.html:729
 msgid "Some regions of the world require complex inputs."
-msgstr ""
+msgstr "לחלק מהאזורים בעולם נחוצות שיטות קלט מורכבות."
 
 #: gettingstarted.html:734
 msgid "Chinese"
@@ -928,6 +974,8 @@ msgid ""
 "<span name=\"distro-name\"></span> provides option to install a backup "
 "utility or firewall and supports multiple user accounts."
 msgstr ""
+"‏<span name=\"distro-name\"></span> כוללת אפשרות להתקין כלי לגיבוי או חומת "
+"אש ותומכת בריבוי חשבונות משתמשים."
 
 #: gettingstarted.html:792
 msgid "Backups"
@@ -1033,6 +1081,8 @@ msgid ""
 "To improve the amount of customizability, <span name=\"distro-name\"></span>"
 " allows you to install/remove popular web browsers with a single click."
 msgstr ""
+"‏<span name=\"distro-name\"></span> אפילו הרחיקה לכת בנושא ההתאמה האישית "
+"ומאפשרת לך להתקין/להסיר דפדפני אינטרנט פופולריים בלחיצת כפתור."
 
 #: gettingstarted.html900, 925
 msgid ""
@@ -1073,6 +1123,9 @@ msgid ""
 "Mozilla Foundation - a not for profit organization. This is the Extended "
 "Support Release browser for comprehensive data security and data protection."
 msgstr ""
+"‏Firefox מבית Mozilla הוא דפדפן חופשי בקוד פתוח, שמפותח על ידי קרן Mozilla -"
+" ארגון ללא מטרות רווח. זוהי גרסת התמיכה המורחבת שנועדה לספק אבטחת מידע מקיפה"
+" והגנה על הנתונים."
 
 #: gettingstarted.html:1002
 msgid ""
@@ -1096,8 +1149,8 @@ msgid ""
 "Vivaldi Web Browser is a free, fully customizable web browser. Feature rich,"
 " powerful, secure and fun! Browse the Web your way"
 msgstr ""
-"דפדפן האינטרנט החינמי Vivaldi מאפשר להתאים ולשנות את החוויה שלך. הוא עשיר "
-"בתכונות, מאובטח ומהנה! הוא מאפשר לך לגלוש באינטרנט בדרך שלך"
+"דפדפן האינטרנט החינמי Vivaldi מאפשר לך להתאים ולשנות את החוויה שלך. הוא עשיר"
+" בתכונות, מאובטח וכיפי! הוא מאפשר לך לגלוש באינטרנט בדרך שלך"
 
 #: gettingstarted.html:1047
 msgid ""
@@ -1179,7 +1232,7 @@ msgstr "מרכז הבקרה של Budgie"
 msgid ""
 "You can configure just about every aspect of your computer from Budgie "
 "Control Center."
-msgstr ""
+msgstr "אפשר להגדיר כמעט כל דבר במחשב דרך מרכז הבקרה של Budgie."
 
 #: gettingstarted.html:1181
 msgid ""
@@ -1211,7 +1264,7 @@ msgstr "קיצורי הדרך בשולחן העבודה של Budgie"
 
 #: gettingstarted.html:1214
 msgid "Some common shortcuts used in Budgie Desktop"
-msgstr ""
+msgstr "קיצורי דרך נפוצים בשולחן העבודה Budgie."
 
 #: gettingstarted.html:1224
 msgid "Open notifications in Raven"
@@ -1257,7 +1310,7 @@ msgstr "בחירת כל הטקסט"
 
 #: gettingstarted.html:1288
 msgid "Find words"
-msgstr "סיכום"
+msgstr "איתור מילים"
 
 #: gettingstarted.html:1296
 msgid "Find and replace words"
@@ -1305,7 +1358,7 @@ msgstr "ביצוע השינוי שביטלת מחדש"
 
 #: gettingstarted.html:1376
 msgid "Toggle the current application between full-screen and windowed"
-msgstr ""
+msgstr "העברת היישום הנוכחי ממצב חלון למצב מסך מלא וההפך"
 
 #: gettingstarted.html:1380
 msgid "Desktop shortcuts"
@@ -1331,7 +1384,7 @@ msgstr ""
 
 #: gettingstarted.html:1416
 msgid "Copy a screenshot of a window to clipboard"
-msgstr ""
+msgstr "העתקת צילום מסך של חלון ללוח הגזירים"
 
 #: gettingstarted.html1420, 1434, 1444, 1463, 1477, 1507, 1524, 1534, 1544,
 #: 1556, 1565, 1617, 1625, 1633, 1668, 1739, 1749, 1759, 1769, 1779, 1789,
@@ -1341,15 +1394,15 @@ msgstr "Alt"
 
 #: gettingstarted.html:1424
 msgid "Save a screenshot of a window to the Pictures directory"
-msgstr ""
+msgstr "שמירת צילום מסך של חלון בתיקיית התמונות"
 
 #: gettingstarted.html:1430
 msgid "Save a screenshot to the Pictures directory"
-msgstr ""
+msgstr "שמירת צילום מסך לתיקיית התמונות"
 
 #: gettingstarted.html:1438
 msgid "Run an application by typing its name in the box which appears"
-msgstr ""
+msgstr "אפשר להפעיל יישום בעזרת הקלדת השם שלו בתיבה שמופיעה"
 
 #: gettingstarted.html:1446
 msgid "Delete"
@@ -1415,11 +1468,11 @@ msgstr "מעבר למרחב העבודה הבא."
 
 #: gettingstarted.html:1550
 msgid "Move the current window to the previous workspace."
-msgstr ""
+msgstr "העברת החלון הנוכחי למרחב העבודה הקודם."
 
 #: gettingstarted.html:1561
 msgid "Move the current window to the next workspace."
-msgstr ""
+msgstr "העברת החלון הנוכחי למרחב העבודה הבא."
 
 #: gettingstarted.html:1569
 msgid "Move the current window to the monitor above."
@@ -1443,7 +1496,7 @@ msgstr "לסגירת החלון."
 
 #: gettingstarted.html:1621
 msgid "Returns window to 'normal' or previous size."
-msgstr ""
+msgstr "להחזרת החלון לגודל „רגיל” או לגודל הקודם."
 
 #: gettingstarted.html:1629
 msgid "Moves the current window (can be moved with mouse or keyboard)."
@@ -1455,27 +1508,27 @@ msgstr ""
 
 #: gettingstarted.html:1646
 msgid "Minimizes current window."
-msgstr ""
+msgstr "למזעור החלון הנוכחי."
 
 #: gettingstarted.html:1653
 msgid "Up"
-msgstr ""
+msgstr "למעלה"
 
 #: gettingstarted.html:1655
 msgid "Maximizes current window."
-msgstr ""
+msgstr "להגדלת החלון הנוכחי."
 
 #: gettingstarted.html:1662
 msgid "Down"
-msgstr ""
+msgstr "למטה"
 
 #: gettingstarted.html:1664
 msgid "Unmaximizes current window."
-msgstr ""
+msgstr "להקטנת החלון הנוכחי."
 
 #: gettingstarted.html:1670
 msgid "Space"
-msgstr ""
+msgstr "רווח"
 
 #: gettingstarted.html:1672
 msgid ""
@@ -1489,7 +1542,7 @@ msgstr ""
 
 #: gettingstarted.html:1691
 msgid "Place window on right side of screen."
-msgstr ""
+msgstr "מיקום החלון בצד הימני של המסך."
 
 #: gettingstarted.html1698, 1771
 msgid "1"
@@ -1565,7 +1618,7 @@ msgstr ""
 
 #: gettingstarted.html:1791
 msgid "6"
-msgstr ""
+msgstr "6"
 
 #: gettingstarted.html:1793
 msgid "Half right."
@@ -1581,15 +1634,15 @@ msgstr ""
 
 #: gettingstarted.html:1821
 msgid "5"
-msgstr ""
+msgstr "5"
 
 #: gettingstarted.html:1823
 msgid "Toggle maximize."
-msgstr ""
+msgstr "הגדלה או הקטנה."
 
 #: gettingstarted.html:1832
 msgid "Update shortcuts in the Settings App"
-msgstr ""
+msgstr "עדכון קיצורי הדרך ביישום ההגדרות"
 
 #: gettingstarted.html:1854
 msgid ""
@@ -1649,7 +1702,7 @@ msgstr "ארכיטקטורה בשימוש:"
 #: gettingstarted.html:1919
 msgid ""
 "The operating system's architecture in use. For instance, i386 = 32-bit."
-msgstr ""
+msgstr "ארכיטקטורת מערכת ההפעלה שבשימוש. למשל, i386 =‏ 32 סיביות."
 
 #: gettingstarted.html:1925
 msgid "Architecture(s) supported:"
@@ -1669,7 +1722,7 @@ msgstr "זיכרון (RAM)‏:"
 
 #: gettingstarted.html:1944
 msgid "More RAM allows more applications to run simultaneously."
-msgstr ""
+msgstr "יותר זיכרון RAM מאפשר ליותר יישומים לפעול בו־זמנית."
 
 #: gettingstarted.html:1950
 msgid "Graphics:"
