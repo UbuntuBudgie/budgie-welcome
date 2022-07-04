@@ -195,22 +195,6 @@ class AppView(WebKit2.WebView):
                 for theme in config[systemstate.codename]:
                     app.update_page("." + theme, 'show')
 
-            if systemstate.codename in ['focal', 'hirsute']:
-                app.update_page('.after2110', 'hide')
-            else:
-                app.update_page('.after2110', 'show')
-
-            if systemstate.codename in ['focal', 'hirsute', 'impish']:
-                app.update_page('.after2204', 'hide')
-            else:
-                app.update_page('.after2204', 'show')
-
-        if current_page in ['introduction', 'features', 'community', 'recommendations', 'gettingstarted']:
-            if systemstate.official:
-                app.update_page('.official-only', 'show')
-            else:
-                app.update_page('.unofficial-only', 'show')
-
         if current_page in ['introduction', 'features', 'gettingstarted']:
             if systemstate.codename in ['jammy']:
                 app.update_page('.after2204', 'hide')
@@ -218,30 +202,6 @@ class AppView(WebKit2.WebView):
             else:
                 app.update_page('.after2204', 'show')
                 app.update_page('.2204-only', 'hide')
-
-
-        if current_page == 'recommendations':
-            if systemstate.codename in ['xenial']:
-                app.update_page('.before1804', 'show')
-            else:
-                app.update_page('.before1804', 'hide')
-
-        if current_page in ['recommendations', 'default', 'introduction']:
-            if systemstate.codename in ['xenial', 'bionic']:
-                app.update_page('.before1904', 'show')
-                app.update_page('.after1904', 'hide')
-                app.update_page('.focalplus', 'hide')
-                app.update_page('.hirsuteplus', 'hide')
-            elif systemstate.codename in ['focal', 'groovy']:
-                app.update_page('.before1904', 'hide')
-                app.update_page('.after1904', 'show')
-                app.update_page('.hirsuteplus', 'hide')
-                app.update_page('.focalplus', 'show')
-            else:
-                app.update_page('.before1904', 'hide')
-                app.update_page('.after1904', 'show')
-                app.update_page('.hirsuteplus', 'show')
-                app.update_page('.focalplus', 'hide')
 
         if current_page == 'gettingstarted':
             # applets are distro specific so need to hide/show as appropriate
