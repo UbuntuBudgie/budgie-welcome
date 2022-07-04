@@ -212,33 +212,12 @@ class AppView(WebKit2.WebView):
                 app.update_page('.unofficial-only', 'show')
 
         if current_page in ['introduction', 'features', 'gettingstarted']:
-            if systemstate.codename in ['bionic']:
-                app.update_page('.1804-only', 'show')
-                app.update_page('.after1810', 'hide')
-            else:
-                app.update_page('.1804-only', 'hide')
-                app.update_page('.after1810', 'show')
-
-            if systemstate.codename in ['bionic', 'eoan']:
-                app.update_page('.before2004', 'show')
-                app.update_page('.after1910', 'hide')
-            else:
-                app.update_page('.before2004', 'hide')
-                app.update_page('.after1910', 'show')
-
-            if systemstate.codename in ['focal', 'hirsute']:
-                app.update_page('.after2110', 'hide')
-                app.update_page('.before2110', 'show')
-            else:
-                app.update_page('.after2110', 'show')
-                app.update_page('.before2110', 'hide')
-
-            if systemstate.codename in ['focal', 'impish']:
+            if systemstate.codename in ['jammy']:
                 app.update_page('.after2204', 'hide')
-                app.update_page('.before2204', 'show')
+                app.update_page('.2204-only', 'show')
             else:
                 app.update_page('.after2204', 'show')
-                app.update_page('.before2204', 'hide')
+                app.update_page('.2204-only', 'hide')
 
 
         if current_page == 'recommendations':
@@ -1925,7 +1904,7 @@ class WelcomeApp(object):
                             'focal'  : '2023-04-22',
                             'jammy'  : '2025-04-22'}
 
-        app_code_names = { 'xenial', 'bionic', 'focal', 'groovy', 'hirsute', 'impish', 'jammy', 'kinetic'}
+        app_code_names = { 'xenial', 'bionic', 'focal', 'groovy', 'hirsute', 'impish', 'jammy'}
 
         if systemstate.codename not in app_code_names:
             dialog = Gtk.MessageDialog( parent=self._window,
