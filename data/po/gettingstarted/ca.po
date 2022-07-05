@@ -25,7 +25,7 @@ msgstr "Començar"
 msgid "Prerequisites"
 msgstr "Prerequisits"
 
-#: gettingstarted.html26, 193
+#: gettingstarted.html26, 196
 msgid "System Requirements"
 msgstr "Requisits del sistema"
 
@@ -33,7 +33,7 @@ msgstr "Requisits del sistema"
 msgid "Installation Preparation"
 msgstr "Preparació de la instal·lació"
 
-#: gettingstarted.html32, 196, 206
+#: gettingstarted.html32, 199, 209
 msgid "Dual Booting"
 msgstr "Arrencada dual"
 
@@ -49,11 +49,11 @@ msgstr "Familiaritat"
 msgid "Browser Ballot"
 msgstr "Butlletí del navegador"
 
-#: gettingstarted.html46, 887, 1843
+#: gettingstarted.html46, 879, 1729
 msgid "Customization"
 msgstr "Personalització"
 
-#: gettingstarted.html49, 1205
+#: gettingstarted.html49, 1107
 msgid "Keyboard Shortcuts"
 msgstr "Dreceres del teclat"
 
@@ -61,11 +61,11 @@ msgstr "Dreceres del teclat"
 msgid "Post-Installation"
 msgstr "Postinstal·lació"
 
-#: gettingstarted.html55, 405, 654
+#: gettingstarted.html55, 408, 657
 msgid "Updates & Extras"
 msgstr "Actualitzacions i extres"
 
-#: gettingstarted.html58, 485, 495, 770
+#: gettingstarted.html58, 488, 498, 764
 msgid "Drivers"
 msgstr "Controladors"
 
@@ -73,7 +73,7 @@ msgstr "Controladors"
 msgid "Language & Input"
 msgstr "Llengua i llengua d'entrada"
 
-#: gettingstarted.html64, 772
+#: gettingstarted.html64, 766
 msgid "Optional Tasks"
 msgstr "Tasques opcionals"
 
@@ -95,46 +95,55 @@ msgstr "Requeriments modestos de sistema"
 
 #: gettingstarted.html:88
 msgid ""
-"<span name=\"distro-name\"></span> works well on both high-end to older "
-"computers, optimized to be functional, while light on system resources."
+"Ubuntu Budgie works well on both high-end to older computers, optimized to "
+"be functional, while light on system resources."
 msgstr ""
-"<span name=\"distro-name\"></span> treballa bé en tots dos tipus "
-"d'ordinadors, els més actualitzats o els antics; està optimat per ser "
-"funcional, encara que consumeix pocs recursos del sistema."
 
 #: gettingstarted.html:91
 msgid "Minimum"
 msgstr "Mínim"
 
 #: gettingstarted.html:93
-msgid "Pentium Dual Core 1.6 GHz - approximately created in 2007"
-msgstr "Pentium Dual Core 1.6 GHz - creat pels volts de 2007"
+msgid "Pentium i3 - approximately created in 2013"
+msgstr "Pentium i3 - aparegut pels volts de 2013"
 
-#: gettingstarted.html:94
+#: gettingstarted.html94, 98
 msgid "2 gigabytes (GB) of RAM"
 msgstr "2 gigabits (GB) de memòria RAM"
 
 #: gettingstarted.html:95
-msgid "16 gigabytes (GB) of disk space"
-msgstr "16 gigabits (GB) d'espai de disc"
+msgid "32 gigabytes (GB) of disk space"
+msgstr ""
 
-#: gettingstarted.html:98
+#: gettingstarted.html97, 108
+msgid "Raspberry Pi4B"
+msgstr ""
+
+#: gettingstarted.html:99
+msgid "32 gigabytes (GB) SD Card"
+msgstr ""
+
+#: gettingstarted.html:102
 msgid "Recommended"
 msgstr "Recomanat"
 
-#: gettingstarted.html:100
-msgid "Pentium i3 - approximately created in 2013"
-msgstr "Pentium i3 - aparegut pels volts de 2013"
+#: gettingstarted.html:104
+msgid "Pentium i5 - approximately created in 2017"
+msgstr ""
 
-#: gettingstarted.html:101
+#: gettingstarted.html105, 109
 msgid "4 gigabytes (GB) of RAM"
 msgstr "4 gigabits (GB) de memòria RAM"
 
-#: gettingstarted.html:102
-msgid "80 gigabytes (GB) of disk space"
-msgstr "80 gigabits (GB) d'espai de disc"
+#: gettingstarted.html:106
+msgid "60 gigabytes (GB) of disk space"
+msgstr ""
 
-#: gettingstarted.html:105
+#: gettingstarted.html:110
+msgid "60 gigabytes (GB) SSD"
+msgstr ""
+
+#: gettingstarted.html:113
 msgid ""
 "The operating system will run much more efficiently if your computer meets "
 "or surpasses the recommended requirements."
@@ -142,43 +151,38 @@ msgstr ""
 "El sistema operatiu correrà molt més bé si el vostre ordinador s'ajusta o "
 "supera les característiques recomanades."
 
-#: gettingstarted.html110, 1853
+#: gettingstarted.html118, 1739
 msgid "What's inside my computer?"
 msgstr "Què hi a dins del meu ordinador?"
 
-#: gettingstarted.html:116
+#: gettingstarted.html:124
 msgid "Installation Preparations"
 msgstr "Preparacions de la instal·lació"
 
-#: gettingstarted.html:126
+#: gettingstarted.html:134
 msgid "Preparing to Install"
 msgstr "Prepareu-vos per instal·lar"
 
-#: gettingstarted.html:127
+#: gettingstarted.html:135
 msgid ""
-"<span name=\"distro-name\"></span> is relatively simple to set up, whether "
-"you're looking to replace your existing operating system or install <span "
-"name=\"distro-name\"></span> alongside an existing one - such as &nbsp;<span"
-" class=\"fa fa-windows\"></span> Microsoft Windows or another <span "
-"class=\"fa fa-linux\"></span> GNU/Linux distribution."
+"Ubuntu Budgie is relatively simple to set up, whether you're looking to "
+"replace your existing operating system or install Ubuntu Budgie alongside an"
+" existing one - such as &nbsp;<span class=\"fa fa-windows\"></span> "
+"Microsoft Windows or another <span class=\"fa fa-linux\"></span> GNU/Linux "
+"distribution."
 msgstr ""
-"<span name=\"distro-name\"></span> és relativament simple de preparar, tant "
-"si voleu substituir el sistema operatiu actual o instal·lar <span "
-"name=\"distro-name\"></span> al costat d'un altre ja instal·lat, com ara "
-"<span class=\"fa fa-windows\"></span> Microsoft Windows o una altra "
-"distribució de GNU/Linux <span class=\"fa fa-linux\"></span>."
 
-#: gettingstarted.html:133
+#: gettingstarted.html:141
 msgid "For the best results:"
 msgstr "A fi d'obtenir els millors resultats:"
 
-#: gettingstarted.html:135
+#: gettingstarted.html:143
 msgid "<u><b>Back up</b></u> any important data to another storage device."
 msgstr ""
 "<u><b>Feu còpia de seguretat</b></u> de qualsevol dada important en un altre"
 " dispositiu d'emmagatzematge."
 
-#: gettingstarted.html:136
+#: gettingstarted.html:144
 msgid ""
 "Connect to the Internet to install all available updates during "
 "installation."
@@ -186,37 +190,32 @@ msgstr ""
 "Connecteu a Internet per poder instal·lar actualitzacions recents durant el "
 "procés."
 
-#: gettingstarted.html:138
+#: gettingstarted.html:146
 msgid "Stay connected to the Internet to install all available updates."
 msgstr ""
 "Mantingueu-vos connectats a Internet per instal·lar les actualitzacions "
 "disponibles."
 
-#: gettingstarted.html:139
+#: gettingstarted.html:147
 msgid "Plug in your device to the mains if it is running on battery power."
 msgstr ""
 "Connecteu el vostre dispositiu al corrent elèctric si treballa normalment "
 "amb bateria."
 
-#: gettingstarted.html:144
+#: gettingstarted.html:152
 msgid ""
 "The live session you are currently in right now is a good opportunity to "
-"test <span name=\"distro-name\"></span> without modifying your computer, "
-"allowing you to test all of your peripherals are working as intended before "
-"committing to installing it on your machine. Once you are ready, double "
-"click the installation icon from the desktop."
+"test Ubuntu Budgie without modifying your computer, allowing you to test all"
+" of your peripherals are working as intended before committing to installing"
+" it on your machine. Once you are ready, double click the installation icon "
+"from the desktop."
 msgstr ""
-"La sessió de treball que inicieu és un bon moment per comprovar <span "
-"name=\"distro-name\"></span> sense modificar l'ordinador, podreu comprovar "
-"tots els perifèrics, que treballin com s'espera abans de tirar endavant la "
-"instal·lació a la vostra màquina. Quan ja estigueu a punt, feu doble clic a "
-"la icona d'instal·lació de l'escriptori."
 
-#: gettingstarted.html:151
+#: gettingstarted.html:159
 msgid "Modern UEFI-based computers"
 msgstr "Ordinadors moderns basats en arrencada UEFI. "
 
-#: gettingstarted.html:152
+#: gettingstarted.html:160
 msgid ""
 "If you have a modern PC that uses the Unified Extended Firmware Interface "
 "(UEFI), you may need to disable <b>Secure Boot</b> (or enable the <b>Unlock "
@@ -228,12 +227,12 @@ msgstr ""
 "activar el <b>Unlock Bootloader</b> abans de la instal·lació, especialment "
 "si hi ha un sistema operatiu preinstal·lat."
 
-#: gettingstarted.html:156
+#: gettingstarted.html:164
 msgid "If you are using a legacy BIOS machine, you do not need to do this."
 msgstr ""
 "No caldrà que feu això si teniu una màquina amb arrencada BIOS tradicional."
 
-#: gettingstarted.html:159
+#: gettingstarted.html:167
 msgid ""
 "Especially when dual booting, it is important that you boot your system in "
 "the correct mode and use the <b> 64-bit image</b> , as you cannot boot an "
@@ -245,7 +244,7 @@ msgstr ""
 "no podreu arrencar un sistema instal·lat en mode de BIOS tradicional al "
 "costat d'un preparat per arrencar en un sistema UEFI o viceversa."
 
-#: gettingstarted.html:165
+#: gettingstarted.html:173
 msgid ""
 "Booting in BIOS mode on a UEFI system with a GPT-formatted disk will also "
 "show a \"protection layer\". <b>Do not worry,</b> your data is not lost or "
@@ -255,17 +254,17 @@ msgstr ""
 "mostrarà una \"capa de protecció\". <b>No us amoïneu,</b> les dades no es "
 "perden ni es corrompen per això."
 
-#: gettingstarted.html:170
+#: gettingstarted.html:178
 msgid ""
 "Your system is currently running in <b><span id=\"boot-mode\"></span> "
 "mode</b>."
 msgstr "El vostre sistema corre en <b>mode <span id=\"boot-mode\"></span></b>."
 
-#: gettingstarted.html:175
+#: gettingstarted.html:183
 msgid "Swap"
 msgstr "Intercanvi"
 
-#: gettingstarted.html:176
+#: gettingstarted.html:184
 msgid ""
 "For computers that start to run low on memory (RAM), the operating system "
 "will start swapping to disk. Known as a \"paging file\" in Windows. "
@@ -278,18 +277,7 @@ msgstr ""
 " poca memòria i es podria aturar si satura l'espai de memòria sense poder "
 "passar a una àrea d'intercanvi."
 
-#: gettingstarted.html:180
-msgid ""
-"By default, a swap partition is created based on the size of your RAM. For "
-"example, if you have 2 GiB of RAM, then 2 GiB of hard disk space will be "
-"reserved for swap at the end of the drive."
-msgstr ""
-"Normalment, es crea una partició d'intercanvi basada en les dimensions de la"
-" RAM present al moment d'instal·lar. Per exemple, si teniu 2 GiB de RAM, es "
-"reserven 2 GiB d'espai d'intercanvi al disc dur a la part final del "
-"dispositiu."
-
-#: gettingstarted.html:185
+#: gettingstarted.html:188
 msgid ""
 "By default, a swap file is created based on the size of your RAM. For "
 "example, if you have 2 GiB of RAM, then 2 GiB of hard disk space will be "
@@ -301,72 +289,67 @@ msgstr ""
 "reserven 2 GiB  per al fitxer d'intercanvi. Ja no cal crear una partició "
 "d'intercanvi separada."
 
-#: gettingstarted.html193, 394, 770, 1842
+#: gettingstarted.html196, 397, 764, 1728
 msgid "Previous:"
 msgstr "Previ:"
 
-#: gettingstarted.html:207
+#: gettingstarted.html:210
 msgid ""
-"Should you wish to install <span name=\"distro-name\"></span> alongside your"
-" existing operating system, your partitions need to be shrunk. This results "
-"in sections of your hard disk being split between multiple operating "
-"systems."
+"Should you wish to install Ubuntu Budgie alongside your existing operating "
+"system, your partitions need to be shrunk. This results in sections of your "
+"hard disk being split between multiple operating systems."
 msgstr ""
-"En cas d'instal·lar <span name=\"distro-name\"></span> al costat d'un "
-"sistema operatiu existent, haureu de reduir les dimensions de les vostres "
-"particions. I podreu dividir el disc dur en seccions  preparades per als "
-"diversos sistemes operatius."
 
-#: gettingstarted.html:213
+#: gettingstarted.html:216
 msgid "I'm dual booting with"
 msgstr "Hi haurà una arrencada dual amb"
 
-#: gettingstarted.html:216
+#: gettingstarted.html:219
 msgid "To minimize the risk of data loss or failure, ensure that:"
 msgstr ""
 "Per minimitzar el risc de pèrdua de dades o qualsevol fracàs, assegureu-vos "
 "que:"
 
-#: gettingstarted.html:218
+#: gettingstarted.html:221
 msgid "There is enough free space. 10 GB minimum is recommended."
 msgstr "Hi hagi prou espai lliure. Es recomana un mínim de 10 GB."
 
-#: gettingstarted.html:220
+#: gettingstarted.html:223
 msgid "<b><u>Back up</u></b> important data to another drive."
 msgstr ""
 "<b><u>Feu còpia de seguretat</u></b> de les dades importants en un altre "
 "dispositiu."
 
-#: gettingstarted.html:222
+#: gettingstarted.html:225
 msgid "Defragment the hard drive."
 msgstr "Desfragmenteu el disc dur."
 
-#: gettingstarted.html:223
+#: gettingstarted.html:226
 msgid "Ensure Windows has been cleanly shut down (not hibernated)."
 msgstr ""
 "Assegureu-vos que el Windows s'hagi tancat correctament (no hibernat)."
 
-#: gettingstarted.html:228
+#: gettingstarted.html:231
 msgid "Which approach would you prefer?"
 msgstr "Quina disposició preferiu?"
 
-#: gettingstarted.html:231
+#: gettingstarted.html:234
 msgid "Simple"
 msgstr "Simple"
 
-#: gettingstarted.html:233
+#: gettingstarted.html:236
 msgid "Advanced"
 msgstr "Avançada"
 
-#: gettingstarted.html:235
+#: gettingstarted.html:238
 msgid "Safest"
 msgstr "Segura"
 
-#: gettingstarted.html:240
+#: gettingstarted.html:243
 msgid "The simplest method is to use the installer."
 msgstr "El mètode més simple és d'utilitzar l'instal·lador."
 
-#: gettingstarted.html:242
+#: gettingstarted.html:245
 msgid ""
 "The installer scans your disks for existing operating systems and provides a"
 " choice on what you'd like to do."
@@ -374,21 +357,21 @@ msgstr ""
 "L'instal·lador revisa els discos intentant trobar sistemes operatius i "
 "suggereix una alternativa pel que vulgueu fer."
 
-#: gettingstarted.html:245
+#: gettingstarted.html:248
 msgid "You will see an option similar to this:"
 msgstr "Veureu una opció semblant a aquesta:"
 
-#: gettingstarted.html:249
+#: gettingstarted.html:252
 msgid "Followed by:"
 msgstr "Seguit per:"
 
-#: gettingstarted.html:255
+#: gettingstarted.html:258
 msgid "Do not interrupt or power off the computer during a resize operation."
 msgstr ""
 "No atureu la càrrega de corrent durant una operació de redimensionament de "
 "disc."
 
-#: gettingstarted.html:257
+#: gettingstarted.html:260
 msgid ""
 "If you do, data loss or a partition table corruption could occur. Please "
 "double check your changes before proceeding."
@@ -397,7 +380,7 @@ msgstr ""
 "taula de particions. Si us plau, reviseu els canvis que heu indicat abans "
 "d'iniciar el procés."
 
-#: gettingstarted.html:259
+#: gettingstarted.html:262
 msgid ""
 "The installer may show a <span class=\"fa fa-spinner\"></span> spinner "
 "cursor for a long period of time, depending on the size of your disk."
@@ -406,7 +389,7 @@ msgstr ""
 "desplaçament durant un període llarg de temps, depenent de les dimensions "
 "del disc."
 
-#: gettingstarted.html:263
+#: gettingstarted.html:266
 msgid ""
 "<b>When you next boot Windows, run</b> <code>chkdsk /f</code> from the "
 "command prompt to check the file system for errors. Windows may schedule "
@@ -417,11 +400,11 @@ msgstr ""
 "pot programar aquesta tasca perquè s'executi automàticament. Això millora la"
 " consistència del sistema de fitxers NTFS."
 
-#: gettingstarted.html:271
+#: gettingstarted.html:274
 msgid "Use GParted or the installer's \"Custom\" option."
 msgstr "Utilitzeu el GParted o l’opció \"Personalitzada\" de l’instal·lador."
 
-#: gettingstarted.html:274
+#: gettingstarted.html:277
 msgid ""
 "<b>GParted</b> is available during the live session only. It is located "
 "under the <b>System Tools <i class=\"material-icons\">&#xE315;</i></b>menu. "
@@ -436,25 +419,22 @@ msgstr ""
 "els discs. Aquest mètode fa canvis a les particions abans de la "
 "instal·lació."
 
-#: gettingstarted.html:282
+#: gettingstarted.html:285
 msgid "Open GParted"
 msgstr "Obre el GParted"
 
-#: gettingstarted.html:285
+#: gettingstarted.html:288
 msgid ""
 "After completing operations to your disk, you can leave the remaining space "
 "unallocated, whereby the installer will detect this unused space to install "
-"<span name=\"distro-name\"></span> to."
+"Ubuntu Budgie to."
 msgstr ""
-"Després de completar les operacions al vostre disc, podeu deixar l’espai "
-"restant sense assignar-lo, de manera que l’instal·lador detectarà l’espai "
-"que no s’utilitza per instal·lar-hi<span name=\"distro-name\"></span>."
 
-#: gettingstarted.html:289
+#: gettingstarted.html:292
 msgid "Using the Installer's \"Custom\" option."
 msgstr "Ús de l’opció \"Personalitzada\" de l’instal·lador."
 
-#: gettingstarted.html:290
+#: gettingstarted.html:293
 msgid ""
 "Instead or in addition to GParted, the <b>Custom</b> option during the "
 "installation wizard can also configure and resize your partitions as well as"
@@ -467,27 +447,27 @@ msgstr ""
 "discs pot facilitar la instal·lació posterior del sistema operatiu si ho "
 "desitgeu."
 
-#: gettingstarted.html:295
+#: gettingstarted.html:298
 msgid "You can specify these mount points:"
 msgstr "Podeu especificar aquests punts de muntatge:"
 
-#: gettingstarted.html:297
-msgid "The base for <span name=\"distro-name\"></span>"
-msgstr "La base per a <span name=\"distro-name\"></span>"
+#: gettingstarted.html:300
+msgid "The base for Ubuntu Budgie"
+msgstr ""
 
-#: gettingstarted.html:298
+#: gettingstarted.html:301
 msgid "Bootloader and kernels"
 msgstr "Gestor d'arrencada i nuclis"
 
-#: gettingstarted.html:299
+#: gettingstarted.html:302
 msgid "Your personal files and folders"
 msgstr "Els fitxers i carpetes personals"
 
-#: gettingstarted.html:300
+#: gettingstarted.html:303
 msgid "Temporary files"
 msgstr "Fitxers temporals"
 
-#: gettingstarted.html:301
+#: gettingstarted.html:304
 msgid ""
 "Contains most of the applications <i> (binaries, documentation, libraries, "
 "etc)</i>"
@@ -495,26 +475,26 @@ msgstr ""
 "Conté la majoria de les aplicacions <i>(binaris, documentació, biblioteques,"
 " etc)</i>"
 
-#: gettingstarted.html:303
+#: gettingstarted.html:306
 msgid "Variable data <i>(such as system logs)</i>"
 msgstr "Dades variables <i>(com ara els registres del sistema)</i>"
 
-#: gettingstarted.html:304
+#: gettingstarted.html:307
 msgid ""
 "Data for System Services <i>(typically used for server configurations)</i>"
 msgstr ""
 "Dades per als serveis del sistema <i>(normalment s'utilitzen per a "
 "configuracions de servidor)</i>"
 
-#: gettingstarted.html:306
+#: gettingstarted.html:309
 msgid "Additional software unmanaged by the package manager"
 msgstr "Programari addicional no gestionat pel gestor de paquets"
 
-#: gettingstarted.html:307
+#: gettingstarted.html:310
 msgid "such as"
 msgstr "com ara"
 
-#: gettingstarted.html:311
+#: gettingstarted.html:314
 msgid ""
 "Creating separate partitions for all above mount points is not necessary. "
 "The commonly partitioned directories being <code>/</code>, "
@@ -530,15 +510,15 @@ msgstr ""
 "que el sistema operatiu <code>/</code> en un disc SSD, però els vostres "
 "fitxers personals de <code>/home</code> en un disc dur mecànic."
 
-#: gettingstarted.html:319
+#: gettingstarted.html:322
 msgid "Shrink your system disk within Windows."
 msgstr "Encongiu el disc del vostre sistema a Windows."
 
-#: gettingstarted.html:321
+#: gettingstarted.html:324
 msgid "Applies to Windows Vista and later."
 msgstr "S'aplica a Windows Vista i posterior."
 
-#: gettingstarted.html:323
+#: gettingstarted.html:326
 msgid ""
 "If you are using Windows XP or earlier, you will need to use the "
 "<b>Simple</b> or <b>Advanced</b> method to shrink your disk."
@@ -546,23 +526,18 @@ msgstr ""
 "Si utilitzeu Windows XP o una versió anterior, haureu d’utilitzar el mètode "
 "<b>Simple</b> o <b>Avançat</b> per encongir el disc."
 
-#: gettingstarted.html:328
+#: gettingstarted.html:331
 msgid ""
 "Newer versions of Windows provide a tool to shrink the NTFS volume from "
 "within Windows. This is a safer bet if it's essential that Windows still "
-"boots on your computer while experiencing <span name=\"distro-"
-"name\"></span>."
+"boots on your computer while experiencing Ubuntu Budgie."
 msgstr ""
-"Les versions més recents de Windows proporcionen una eina per reduir el "
-"volum NTFS des de Windows. Aquesta és una aposta més segura si és "
-"imprescindible que Windows arrenqui al vostre equip mentre experimenteu amb "
-"<span name=\"distro-name\"> </span>."
 
-#: gettingstarted.html:332
+#: gettingstarted.html:335
 msgid "Open <b>Disk Management</b> from the start menu."
 msgstr "Obriu la <b>gestió de disc</b> des del menú d'inici."
 
-#: gettingstarted.html:337
+#: gettingstarted.html:340
 msgid ""
 "Right click your desired drive and choose <b>Shrink Partition</b> from the "
 "context menu."
@@ -570,23 +545,19 @@ msgstr ""
 "Feu clic amb el botó dret del ratolí a la unitat que vulgueu i trieu <b> "
 "Encongeix la partició </b> al menú contextual."
 
-#: gettingstarted.html:343
+#: gettingstarted.html:346
 msgid "Enter the amount to shrink your system partition by."
 msgstr "Introduïu la quantitat per encongir la partició del sistema."
 
-#: gettingstarted.html:349
-msgid ""
-"Remember, <span name=\"distro-name\"></span> needs at minimum 16 GB of disk "
-"space."
+#: gettingstarted.html:352
+msgid "Remember, Ubuntu Budgie needs at minimum 32 GB of disk space."
 msgstr ""
-"Recordeu, <span name=\"distro-name\"> </span> necessita un mínim d'espai de "
-"disc de 16 GB."
 
-#: gettingstarted.html:354
+#: gettingstarted.html:357
 msgid "Further Reading"
 msgstr "Per llegir-ne més"
 
-#: gettingstarted.html:355
+#: gettingstarted.html:358
 msgid ""
 "For further information on the best practices to modify partitions "
 "containing Windows, see the following <a "
@@ -598,25 +569,20 @@ msgstr ""
 "onclick=\"cmd('link?https://help.ubuntu.com/community/HowtoResizeWindowsPartitions')\">article"
 " d’ajuda</a> en línia."
 
-#: gettingstarted.html:363
+#: gettingstarted.html:366
 msgid "Repairing Boot Problems"
 msgstr "Reparació de problemes d’arrencada"
 
-#: gettingstarted.html:365
+#: gettingstarted.html:368
 msgid ""
 "Linux distributions use a boot loader known as <code>grub</code>, which "
 "looks for and bootstraps the operating system. However, some operating "
 "systems (such as Windows) do not integrate with existing boot loaders and "
-"will overwrite them, with the potential to lose access to <span "
-"name=\"distro-name\"></span> temporally."
+"will overwrite them, with the potential to lose access to Ubuntu Budgie "
+"temporarily."
 msgstr ""
-"Les distribucions de Linux utilitzen un gestor d’arrencada conegut com a "
-"<code>grub</code>, que cerca i arrenca el sistema operatiu. No obstant això,"
-" alguns sistemes operatius (com ara Windows) no s'integren amb els gestors "
-"existents i els sobreescriuran, amb el potencial de perdre l'accés a <span "
-"name=\"distro-name\"></span> de manera temporal."
 
-#: gettingstarted.html:371
+#: gettingstarted.html:374
 msgid ""
 "Fortunately, you can use the <b>Boot Repair</b> tool to repair common "
 "problems caused by other operating systems."
@@ -624,83 +590,69 @@ msgstr ""
 "Afortunadament, podeu utilitzar l'eina <b>Boot Repair</b> per reparar "
 "problemes habituals causats per altres sistemes operatius."
 
-#: gettingstarted.html:376
+#: gettingstarted.html:379
 msgid "Requires downloading a package."
 msgstr "Requereix baixar un paquet."
 
-#: gettingstarted.html:377
+#: gettingstarted.html:380
 msgid "Please connect to the Internet to download and use this utility."
 msgstr "Connecteu-vos a Internet per baixar i utilitzar aquesta utilitat."
 
-#: gettingstarted.html:379
+#: gettingstarted.html:382
 msgid "Sorry, Welcome was unable to establish a connection."
 msgstr "Ho sento, Welcome no ha pogut establir una connexió."
 
-#: gettingstarted.html:387
+#: gettingstarted.html:390
 msgid "Download Boot Repair"
 msgstr "Baixa Boot Repair"
 
-#: gettingstarted.html:389
+#: gettingstarted.html:392
 msgid "Open Boot-Repair"
 msgstr "Obre Boot-Repair"
 
-#: gettingstarted.html:394
+#: gettingstarted.html:397
 msgid "Install Preparations"
 msgstr "Preparació per a la instal·lació"
 
-#: gettingstarted.html:408
+#: gettingstarted.html:411
 msgid "An Internet connection is required to download and install updates."
 msgstr ""
 "Cal una connexió a Internet per descarregar i instal·lar actualitzacions."
 
-#: gettingstarted.html:417
+#: gettingstarted.html:420
 msgid "Software Updater"
 msgstr "Actualitzador de programari"
 
-#: gettingstarted.html:418
+#: gettingstarted.html:421
 msgid ""
-"<span name=\"distro-name\"></span> periodically will check to see if new "
-"software and security updates are available for your computer. If you have "
-"just installed <span name=\"distro-name\"></span>, you might want to do this"
-" now."
+"Ubuntu Budgie periodically will check to see if new software and security "
+"updates are available for your computer. If you have just installed Ubuntu "
+"Budgie, you might want to do this now."
 msgstr ""
-"<span name=\"distro-name\"></span>comprovarà periòdicament si hi ha "
-"programari nou i actualitzacions de seguretat diponibles per a l’ordinador. "
-"Si acabeu d’instal·lar <span name=\"distro-name\"> </span>, potser voldríeu "
-"fer-ho ara."
 
-#: gettingstarted.html:424
+#: gettingstarted.html:427
 msgid ""
-"<b>Software Updater</b> can be found later in the menu "
-"<strong>Administration</strong>"
+"<b>Software Updater</b> can be found later in the menu <strong>System "
+"Tools</strong>"
 msgstr ""
-"L'<b>Actualitzador de programari</b> es pot trobar més endavant al menú "
-"d'<strong>administració</strong>."
 
-#: gettingstarted.html:431
+#: gettingstarted.html:434
 msgid "Check for Updates"
 msgstr "Comprova si hi ha actualitzacions"
 
-#: gettingstarted.html:444
+#: gettingstarted.html:447
 msgid "Restricted Extras"
 msgstr "Extres restringits"
 
-#: gettingstarted.html:445
+#: gettingstarted.html:448
 msgid ""
-"<strong>Ubuntu</strong> (the base distribution of <span name=\"distro-"
-"name\"></span>) strives to make all of the most important software available"
-" to its users automatically. However patent and copyright restrictions (see "
-"Ubuntu License Policy) complicate distribution of software to support non-"
-"free formats."
+"<strong>Ubuntu</strong> (the base distribution of Ubuntu Budgie) strives to "
+"make all of the most important software available to its users "
+"automatically. However patent and copyright restrictions (see Ubuntu License"
+" Policy) complicate distribution of software to support non-free formats."
 msgstr ""
-"<strong>Ubuntu</strong> (la distribució base per a <span name=\"distro-"
-"name\"></span>) s'esforça per fer que tots els programes més importants "
-"estiguin disponibles per als seus usuaris de manera automàtica. No obstant "
-"això, les restriccions de patents i de dret de reproducció (vegeu la "
-"política de llicències d'Ubuntu) compliquen la distribució del programari "
-"per admetre formats no lliures."
 
-#: gettingstarted.html:451
+#: gettingstarted.html:454
 msgid ""
 "However, you can install the ability to play popular non-free media formats,"
 " including DVD, MP3, Quicktime, and Windows Media formats, by following the "
@@ -710,7 +662,7 @@ msgstr ""
 "populars no lliures, inclosos els formats de DVD, MP3, Quicktime i Windows "
 "Media, seguint les instruccions següents:"
 
-#: gettingstarted.html:455
+#: gettingstarted.html:458
 msgid ""
 "Ubuntu’s commitment to only include completely free software by default "
 "means that proprietary media formats are not configured “out of the box”. "
@@ -723,7 +675,7 @@ msgstr ""
 "lliure d’Ubuntu i els formats lliures per a una comprensió més àmplia sobre "
 "aquests problemes."
 
-#: gettingstarted.html:462
+#: gettingstarted.html:465
 msgid ""
 "<strong>Legal Notice</strong> Patent and copyright laws operate differently "
 "depending on which country you are in. Please obtain legal advice if you are"
@@ -736,60 +688,50 @@ msgstr ""
 "restricció concreta s'aplica a un format multimèdia que voleu utilitzar al "
 "vostre país."
 
-#: gettingstarted.html471, 614, 680, 689, 742, 753, 764, 802, 837, 909, 919,
-#: 934, 952, 969, 980, 996, 1011, 1025, 1040, 1056, 1071, 1081, 1101, 1121
+#: gettingstarted.html474, 617, 683, 692, 736, 747, 758, 796, 831, 904, 920,
+#: 935, 949, 964, 980, 995, 1005, 1025, 1045
 msgid "Applying Changes..."
 msgstr "S'apliquen els canvis..."
 
-#: gettingstarted.html474, 737, 748, 759, 804, 839, 903, 963, 990, 1005, 1019,
-#: 1034, 1065
+#: gettingstarted.html477, 731, 742, 753, 798, 833, 914, 929, 943, 958, 989
 msgid "Install"
 msgstr "Instal·la"
 
-#: gettingstarted.html477, 740, 751, 762, 906, 966, 993, 1008, 1022, 1037,
-#: 1053, 1068, 1078, 1098, 1118
+#: gettingstarted.html480, 734, 745, 756, 917, 932, 946, 961, 977, 992, 1002,
+#: 1022, 1042
 msgid "Remove"
 msgstr "Elimina"
 
-#: gettingstarted.html485, 772, 887
+#: gettingstarted.html488, 766, 879
 msgid "Next:"
 msgstr "Següent:"
 
-#: gettingstarted.html:496
+#: gettingstarted.html:499
 msgid ""
-"While a wide range of hardware is compatible with <span name=\"distro-"
-"name\"></span> , there are some components and peripherals that require "
-"proprietary drivers to function properly. Installing the firmware package is"
-" often required to get some devices, typically Bluetooth and Wi-Fi, to work "
-"correctly."
+"While a wide range of hardware is compatible with Ubuntu Budgie , there are "
+"some components and peripherals that require proprietary drivers to function"
+" properly. Installing the firmware package is often required to get some "
+"devices, typically Bluetooth and Wi-Fi, to work correctly."
 msgstr ""
-"Tot i que una àmplia gamma de maquinari és compatible amb <span "
-"name=\"distro-name\"></span>, hi ha alguns components i perifèrics que "
-"requereixen que els controladors privats funcionin correctament. Sovint es "
-"requereix instal·lar el paquet de microprogramari perquè alguns dispositius,"
-" normalment de Bluetooth i Wi-Fi, funcionin correctament."
 
-#: gettingstarted.html:502
+#: gettingstarted.html:505
 msgid "An Internet connection is required to download and install drivers."
 msgstr ""
 "Cal una connexió a Internet per descarregar i instal·lar controladors."
 
-#: gettingstarted.html:507
+#: gettingstarted.html:510
 msgid "Additional Drivers"
 msgstr "Controladors addicionals"
 
-#: gettingstarted.html:512
-msgid ""
-"<b>Additional Drivers</b> can be found later in <b>Software & Updates</b>"
+#: gettingstarted.html:515
+msgid "<b>Additional Drivers</b> can be found later in <b>System Tools</b>"
 msgstr ""
-"Els <b>controladors addicionals</b> es poden trobar a <b>Programari i "
-"actualitzacions</b>"
 
-#: gettingstarted.html:520
+#: gettingstarted.html:523
 msgid "Graphics"
 msgstr "Gràfics"
 
-#: gettingstarted.html:526
+#: gettingstarted.html:529
 msgid ""
 "Sorry, Welcome was unable to automatically identify the graphics vendor on "
 "this system."
@@ -797,19 +739,19 @@ msgstr ""
 "Ho sentim, el programa de Benvinguda no ha pogut identificar automàticament "
 "el proveïdor de gràfics d'aquest sistema."
 
-#: gettingstarted.html529, 537, 545, 551
+#: gettingstarted.html532, 540, 548, 554
 msgid "Card/Chipset:"
 msgstr "Targeta / xip:"
 
-#: gettingstarted.html529, 537, 545, 551
+#: gettingstarted.html532, 540, 548, 554
 msgid "Unknown"
 msgstr "Desconegut"
 
-#: gettingstarted.html:533
+#: gettingstarted.html:536
 msgid "NVIDIA Graphics Card Detected."
 msgstr "Detectada una targeta gràfica NVIDIA."
 
-#: gettingstarted.html:534
+#: gettingstarted.html:537
 msgid ""
 "NVIDIA may have drivers for your card that can boost performance for 3D "
 "applications and games as well as deliver improvements to power management."
@@ -818,11 +760,11 @@ msgstr ""
 "el rendiment per a aplicacions i jocs en 3D, així com millorar la gestió de "
 "l’energia."
 
-#: gettingstarted.html:541
+#: gettingstarted.html:544
 msgid "AMD Graphics Card Detected."
 msgstr "Detectada una targeta gràfica d'AMD."
 
-#: gettingstarted.html:542
+#: gettingstarted.html:545
 msgid ""
 "AMD's drivers are no longer supported on Ubuntu. The open source drivers you"
 " are currently using will deliver the most stable performance out of your "
@@ -832,22 +774,22 @@ msgstr ""
 " codi obert que utilitzeu us proporcionaran el rendiment més estable de la "
 "vostra targeta."
 
-#: gettingstarted.html:549
+#: gettingstarted.html:552
 msgid "You're already good to go."
 msgstr "Ja esteu a punt."
 
-#: gettingstarted.html:550
+#: gettingstarted.html:553
 msgid ""
 "Intel's drivers are open source and are maintained/updated in the kernel."
 msgstr ""
 "Els controladors d'Intel són de codi obert i es mantenen / actualitzen al "
 "nucli."
 
-#: gettingstarted.html:555
+#: gettingstarted.html:558
 msgid "VirtualBox Guest Additions"
 msgstr "Addicions de clients de VirtualBox"
 
-#: gettingstarted.html:556
+#: gettingstarted.html:559
 msgid ""
 "To accelerate graphics performance inside the virtual machine, please "
 "install Guest Additions."
@@ -855,11 +797,11 @@ msgstr ""
 "Per accelerar el rendiment dels gràfics dins de la màquina virtual, "
 "instal·leu Guest Additions."
 
-#: gettingstarted.html:561
+#: gettingstarted.html:564
 msgid "Proprietary or Open Source Drivers?"
 msgstr "Controladors de propietat o de codi obert?"
 
-#: gettingstarted.html:562
+#: gettingstarted.html:565
 msgid ""
 "Proprietary drivers come directly from the manufacturer. As they are not "
 "open source, Ubuntu developers are <b>unable to review and improve driver "
@@ -870,7 +812,7 @@ msgstr ""
 "el codi del controlador</b>, cosa que significa que haureu de comptar amb el"
 " fabricant per obtenir-ne ajuda."
 
-#: gettingstarted.html:567
+#: gettingstarted.html:570
 msgid ""
 "In addition, proprietary drivers can <b>significantly improve graphics "
 "performance</b> and as a result, the entire system. Users may wish to "
@@ -880,11 +822,11 @@ msgstr ""
 " rendiment dels gràfics</b> i, per tant, tot el sistema. Els usuaris poden "
 "desitjar instal·lar aquests controladors:"
 
-#: gettingstarted.html:572
+#: gettingstarted.html:575
 msgid "Run 3D applications and games."
 msgstr "Executeu aplicacions i jocs en 3D."
 
-#: gettingstarted.html:573
+#: gettingstarted.html:576
 msgid ""
 "Improve power management, particularly if the device experiences overheating"
 " problems under open source drivers."
@@ -892,15 +834,15 @@ msgstr ""
 "Milloreu la gestió de l’energia, especialment si el dispositiu experimenta "
 "problemes de sobreescalfament amb els controladors de codi obert."
 
-#: gettingstarted.html:576
+#: gettingstarted.html:579
 msgid "Improve support for high resolutions and multiple monitors."
 msgstr "Millora el suport per a altes resolucions i monitors múltiples."
 
-#: gettingstarted.html:577
+#: gettingstarted.html:580
 msgid "Fix blank screen issues."
 msgstr "Corregeix els problemes de la pantalla en blanc."
 
-#: gettingstarted.html:580
+#: gettingstarted.html:583
 msgid ""
 "Proprietary drivers are known as \"binary blobs\". Certain hardware may "
 "experience adverse behavior, causing more issues than the open source "
@@ -910,24 +852,24 @@ msgstr ""
 "determinat maquinari pot experimentar un comportament advers, i causar més "
 "problemes que els controladors de codi obert, com ara:"
 
-#: gettingstarted.html:584
+#: gettingstarted.html:587
 msgid "Failing to boot to the graphical desktop."
 msgstr "No es pot iniciar a l'escriptori gràfic."
 
-#: gettingstarted.html:585
+#: gettingstarted.html:588
 msgid "Broken drivers after an upgrade."
 msgstr "Controladors trencats després d'una actualització."
 
-#: gettingstarted.html:586
+#: gettingstarted.html:589
 msgid "Severe graphical glitches."
 msgstr "Errors gràfics greus."
 
-#: gettingstarted.html:587
+#: gettingstarted.html:590
 msgid "Problems with applications/games requiring hardware acceleration."
 msgstr ""
 "Problemes amb aplicacions / jocs que requereixen acceleració de maquinari."
 
-#: gettingstarted.html:591
+#: gettingstarted.html:594
 msgid ""
 "<code id=\"graphics-open-driver-name\"></code> is the open source driver for"
 " your card."
@@ -935,11 +877,11 @@ msgstr ""
 "<code id=\"graphics-open-driver-name\"></code> és el controlador de codi "
 "obert per a la vostra targeta."
 
-#: gettingstarted.html:596
+#: gettingstarted.html:599
 msgid "What about the latest NVIDIA drivers?"
 msgstr "Què passa amb els últims controladors d'NVIDIA?"
 
-#: gettingstarted.html:597
+#: gettingstarted.html:600
 msgid ""
 "<b>Additional Drivers</b> fetches the latest tested driver from the Ubuntu "
 "repositories. Advanced users and gamers who would like newer versions may "
@@ -957,7 +899,7 @@ msgstr ""
 "controladors d'NVIDIA més recents per a Ubuntu. Aquests paquets no són "
 "provats tan exhaustivament."
 
-#: gettingstarted.html:606
+#: gettingstarted.html:609
 msgid ""
 "This only applies for actively supported cards, and not older cards using "
 "the legacy driver."
@@ -965,11 +907,11 @@ msgstr ""
 "Això només s'aplica a les targetes admeses activament i no a les més "
 "antigues que utilitzin el controlador de llegat."
 
-#: gettingstarted.html:610
+#: gettingstarted.html:613
 msgid "Add Repository"
 msgstr "Afegeix un repositori"
 
-#: gettingstarted.html:619
+#: gettingstarted.html:622
 msgid ""
 "After the PPA is added, newer versions are presented to install in <a "
 "onclick=\"cmd('drivers')\">Additional Drivers:</a>"
@@ -977,11 +919,11 @@ msgstr ""
 "Després d’afegir el PPA, es presenten versions més noves per instal·lar-les "
 "a <a onclick=\"cmd('drivers')\">controladors addicionals:</a>"
 
-#: gettingstarted.html:628
+#: gettingstarted.html:631
 msgid "Wireless, Bluetooth and Other Devices"
 msgstr "Sense fil, Bluetooth i altres dispositius"
 
-#: gettingstarted.html:631
+#: gettingstarted.html:634
 msgid ""
 "If there were no additional drivers found for the hardware nor did it work "
 "after installing the firmware packages, you may need to research your device"
@@ -991,7 +933,7 @@ msgstr ""
 "funcionat després d’instal·lar els paquets de microprogramari. És possible "
 "que necessiteu investigar el dispositiu per trobar el controlador adequat."
 
-#: gettingstarted.html:635
+#: gettingstarted.html:638
 msgid ""
 "Unfortunately, this is due to the fact the manufacturer for your hardware "
 "hasn't provided any source code for developers to freely use, or there is "
@@ -1003,7 +945,7 @@ msgstr ""
 "lo lliurement, o no hi ha prou documentació per crear controladors de la "
 "vostra marca i model concrets."
 
-#: gettingstarted.html:641
+#: gettingstarted.html:644
 msgid ""
 "Some manufacturers may provide closed source drivers provided by themselves "
 "directly. If you require assistance, feel free to <a "
@@ -1014,50 +956,47 @@ msgstr ""
 "dubteu a <a onclick=\"smoothPageFade('community.html')\">preguntar-ho a la "
 "comunitat</a>."
 
-#: gettingstarted.html:647
+#: gettingstarted.html:650
 msgid "Read more on troubleshooting wireless hardware."
 msgstr ""
 "Llegiu més informació sobre la solució de problemes de maquinari sense fil."
 
-#: gettingstarted.html656, 885
+#: gettingstarted.html659, 877
 msgid "Language Input"
 msgstr "Entrada de llengua"
 
-#: gettingstarted.html:666
+#: gettingstarted.html:669
 msgid "Input method"
 msgstr "Mètode d'entrada"
 
-#: gettingstarted.html:667
+#: gettingstarted.html:670
 msgid ""
-"In <span name=\"distro-name\"></span>, we provide an option to switch "
-"between two widely used keyboard entry layouts. IBus(Intelligent Input Bus) "
-"and Fcitx(Free Chinese Input Toy for X)."
+"In Ubuntu Budgie, we provide an option to switch between two widely used "
+"keyboard entry layouts. IBus(Intelligent Input Bus) and Fcitx(Free Chinese "
+"Input Toy for X)."
 msgstr ""
-"A <span name=\"distro-name\"> </span>, oferim una opció per canviar entre "
-"dues disposicions d’entrada de teclat àmpliament utilitzades. IBus "
-"(Intelligent Input Bus) i Fcitx (Joguina d’entrada gratuïta xinesa per a X)."
 
-#: gettingstarted.html:674
+#: gettingstarted.html:677
 msgid "Install & Configure IBus"
 msgstr "Instal·la i configura IBus"
 
-#: gettingstarted.html:677
+#: gettingstarted.html:680
 msgid "IBus is active now"
 msgstr "IBus ara és actiu"
 
-#: gettingstarted.html:684
+#: gettingstarted.html:687
 msgid "Install & Configure Fcitx"
 msgstr "Instal·la i configura Fcitx"
 
-#: gettingstarted.html:686
+#: gettingstarted.html:689
 msgid "Fcitx is active now"
 msgstr "Fcitx ara és actiu"
 
-#: gettingstarted.html695, 702
+#: gettingstarted.html698, 705
 msgid "Language Support"
 msgstr "Suport de llengua"
 
-#: gettingstarted.html:696
+#: gettingstarted.html:699
 msgid ""
 "Your computer may require updates to your language and localization "
 "settings, or you may want to install additional language support."
@@ -1066,61 +1005,46 @@ msgstr ""
 "vostra configuració de localització, o potser voleu instal·lar l’assistència"
 " lingüística addicional."
 
-#: gettingstarted.html:708
+#: gettingstarted.html:711
 msgid ""
-"<b>Language Support</b> can be found later in <b><i>Settings <i "
-"class=\"material-icons\">&#xE315;</i> Language & Region</i></b>"
+"<b>Language Support</b> can be found later in the menu <b>System Tools</b>"
 msgstr ""
-"<b>El suport per a llengües</b> es pot trobar més endavant a la "
-"</b></i>Configuració <i class=\"material-icons\">&#xE315;</i> Llengua i "
-"regió</i></b>"
 
-#: gettingstarted.html:716
-msgid ""
-"<b>Language Support</b> can be found later in <b><i>Budgie Control Center <i"
-" class=\"material-icons\">&#xE315;</i> Language & Region</i></b>"
-msgstr ""
-"<b>El suport per a llengües</b> es pot trobar més endavant al <b><i>Centre "
-"de control del Budgie <i class=\"material-icons\">&#xE315;</i> Llengua i "
-"regió</i></b>"
-
-#: gettingstarted.html:728
+#: gettingstarted.html:722
 msgid "Complex Input"
 msgstr "Entrada complexa"
 
-#: gettingstarted.html:729
+#: gettingstarted.html:723
 msgid "Some regions of the world require complex inputs."
 msgstr "Algunes regions del món necessiten entrades complexes."
 
-#: gettingstarted.html:734
+#: gettingstarted.html:728
 msgid "Chinese"
 msgstr "Xinès"
 
-#: gettingstarted.html:745
+#: gettingstarted.html:739
 msgid "Japanese"
 msgstr "Japonès"
 
-#: gettingstarted.html:756
+#: gettingstarted.html:750
 msgid "Korean"
 msgstr "Coreà"
 
-#: gettingstarted.html:780
+#: gettingstarted.html:774
 msgid "Backup, Firewall and User Management"
 msgstr "Còpia de seguretat, tallafoc i gestió d'usuaris"
 
-#: gettingstarted.html:781
+#: gettingstarted.html:775
 msgid ""
-"<span name=\"distro-name\"></span> provides option to install a backup "
-"utility or firewall and supports multiple user accounts."
+"Ubuntu Budgie provides option to install a backup utility or firewall and "
+"supports multiple user accounts."
 msgstr ""
-"<span name=\"distro-name\"></span> proporciona l'opció d’instal·lar una "
-"utilitat de còpia de seguretat o tallafoc i admet diversos comptes d’usuari."
 
-#: gettingstarted.html:792
+#: gettingstarted.html:786
 msgid "Backups"
 msgstr "Còpies de seguretat"
 
-#: gettingstarted.html:793
+#: gettingstarted.html:787
 msgid ""
 "Nothing is more important than having a backup of your personal files, just "
 "in case something disastrous happens to your computer."
@@ -1128,21 +1052,18 @@ msgstr ""
 "No hi ha res més important que tenir una còpia de seguretat dels vostres "
 "fitxers personals, per si passa alguna cosa desastrosa al vostre ordinador."
 
-#: gettingstarted.html:797
+#: gettingstarted.html:791
 msgid ""
-"<b>Deja-Dup</b> is a powerful backup utility that can be installed in <span "
-"name=\"distro-name\"></span> and supports backups to local devices as well "
-"as online cloud-based services."
+"<b>Deja-Dup</b> is a powerful backup utility that can be installed in Ubuntu"
+" Budgie and supports backups to local devices as well as online cloud-based "
+"services."
 msgstr ""
-"<b>Deja-Dup</b> és una eina potent de còpia de seguretat que es pot "
-"instal·lar a <span name=\"distro-name\"> </span> i admet còpies de seguretat"
-" de dispositius locals i serveis en línia basats en núvol."
 
-#: gettingstarted.html:808
+#: gettingstarted.html:802
 msgid "Configure Backup"
 msgstr "Configureu la còpia de seguretat"
 
-#: gettingstarted.html:811
+#: gettingstarted.html:805
 msgid ""
 "<b>Backups</b> can be found later in the menu <b>Utilities <i "
 "class=\"material-icons\">&#xE315;</i> Backups</b>."
@@ -1151,11 +1072,11 @@ msgstr ""
 "d'<b>utilitats<i class=\"material-icons\">&#xE315;</i> Còpies de "
 "seguretat</b>."
 
-#: gettingstarted.html:825
+#: gettingstarted.html:819
 msgid "Firewall"
 msgstr "Tallafoc"
 
-#: gettingstarted.html:826
+#: gettingstarted.html:820
 msgid ""
 "Firewalls prevent malicious connections entering and leaving your computer. "
 "By default, the firewall is disabled, <a "
@@ -1167,7 +1088,7 @@ msgstr ""
 "onclick=\"cmd('link?https://help.ubuntu.com/community/DoINeedAFirewall')\">obteniu"
 " més informació sobre els tallafocs</a>."
 
-#: gettingstarted.html:832
+#: gettingstarted.html:826
 msgid ""
 "<b>Gufw</b> provides a graphical frontend to <code>ufw</code> (Uncomplicated"
 " Firewall). If security is important to you, there are <a "
@@ -1179,11 +1100,11 @@ msgstr ""
 "onclick=\"cmd('link?https://wiki.ubuntu.com/BasicSecurity')\">més maneres de"
 " mantenir-vos segurs</a>."
 
-#: gettingstarted.html:843
+#: gettingstarted.html:837
 msgid "Configure Firewall"
 msgstr "Configureu el tallafoc"
 
-#: gettingstarted.html:846
+#: gettingstarted.html:840
 msgid ""
 "Firewall Configuration</b> can be found later in the menu <b>System Tools<i "
 "class=\"material-icons\">&#xE315;</i> Firewall Configuration</i></b>."
@@ -1192,11 +1113,11 @@ msgstr ""
 " del sistema <i class=\"material-icons\">&#xE315;</i> Configuració del "
 "tallafoc</i></b>."
 
-#: gettingstarted.html:860
+#: gettingstarted.html:854
 msgid "Users"
 msgstr "Usuaris"
 
-#: gettingstarted.html:862
+#: gettingstarted.html:856
 msgid ""
 "Share your computer with others? Set up a separate user account for each "
 "user to protect the individual privacy of each user sharing the same "
@@ -1205,7 +1126,7 @@ msgstr ""
 "Compartiu l'ordinador amb altres persones? Configureu un compte d'usuari "
 "separat per a cada usuari per protegir-ne la privadesa individual."
 
-#: gettingstarted.html:865
+#: gettingstarted.html:859
 msgid ""
 "You can also log in to a <b>Guest Session</b> if someone is using your "
 "computer as a one-off."
@@ -1213,48 +1134,26 @@ msgstr ""
 "També podeu iniciar sessió en una <b>sessió de convidat</b> si algú està "
 "utilitzant l’ordinador de manera puntual."
 
-#: gettingstarted.html:870
+#: gettingstarted.html:864
 msgid "Configure Users"
 msgstr "Configureu usuaris"
 
-#: gettingstarted.html:873
+#: gettingstarted.html:867
 msgid ""
-"<b>Users</b> can be found later in the menu <b><i>Administration <i "
-"class=\"material-icons\">&#xE315;</i> Users</i></b>."
+"<b>Users</b> can be found later in the menu by typing<i> Users</i></b>."
 msgstr ""
-"Els <b>usuaris</b> es poden trobar més endavant al menú <b><i>Administració "
-"<i class=\"material-icons\">&#xE315</i> Usuaris</i></b>."
 
-#: gettingstarted.html:893
+#: gettingstarted.html:885
 msgid ""
-"To improve the amount of customizability, <span name=\"distro-name\"></span>"
-" allows you to install/remove popular web browsers with a single click."
+"To improve the amount of customizability, Ubuntu Budgie allows you to "
+"install/remove popular web browsers with a single click."
 msgstr ""
-"Per millorar la personalització, <span name=\"distro-name\"> </span> us "
-"permet instal·lar / suprimir navegadors web populars amb un sol clic."
 
-#: gettingstarted.html900, 925
-msgid ""
-"Chromium is an open-source browser project that aims to build a safer, "
-"faster, and more stable way for all Internet users to experience the web."
-msgstr ""
-"Chromium és un projecte de navegador de codi obert que té com a objectiu "
-"construir una manera més segura, ràpida i més estable que tots els usuaris "
-"d'Internet puguin experimentar la xarxa."
-
-#: gettingstarted.html913, 928, 946, 974, 1050, 1075, 1095, 1115
-msgid "Snap Install"
-msgstr "Instal·la Snap"
-
-#: gettingstarted.html916, 931, 949, 977
-msgid "Snap Remove"
-msgstr "Suprimeix Snap"
-
-#: gettingstarted.html938, 957
+#: gettingstarted.html:890
 msgid "Firefox"
 msgstr "Firefox"
 
-#: gettingstarted.html940, 959
+#: gettingstarted.html:892
 msgid ""
 "Mozilla Firefox is a free and open-source web browser, developed by the "
 "Mozilla Foundation - a not for profit organization. It is highly popular "
@@ -1264,11 +1163,19 @@ msgstr ""
 " per la Fundació Mozilla, una organització no lucrativa. És molt popular ja "
 "que funciona en múltiples plataformes."
 
-#: gettingstarted.html:985
+#: gettingstarted.html898, 974, 999, 1019, 1039
+msgid "Snap Install"
+msgstr "Instal·la Snap"
+
+#: gettingstarted.html:901
+msgid "Snap Remove"
+msgstr "Suprimeix Snap"
+
+#: gettingstarted.html:909
 msgid "Firefox ESR"
 msgstr "Firefox ESR"
 
-#: gettingstarted.html:987
+#: gettingstarted.html:911
 msgid ""
 "Mozilla Firefox is a free and open-source web browser, developed by the "
 "Mozilla Foundation - a not for profit organization. This is the Extended "
@@ -1279,7 +1186,7 @@ msgstr ""
 " navegador Extended Support Release (Versió amb manteniment ampliat), per a "
 "una seguretat i protecció de dades integrals."
 
-#: gettingstarted.html:1002
+#: gettingstarted.html:926
 msgid ""
 "Google Chrome is a modern web browser backed by internet giant Google. It "
 "offers a smooth browsing experience plus integration with Google's "
@@ -1289,7 +1196,7 @@ msgstr ""
 "d'Internet Google. Ofereix una experiència de navegació planera i la "
 "integració amb els serveis privats de Google."
 
-#: gettingstarted.html:1017
+#: gettingstarted.html:941
 msgid ""
 "Microsoft Edge is a cross-platform web browser created and developed by "
 "Microsoft. It is a Chromium based browser."
@@ -1297,7 +1204,7 @@ msgstr ""
 "Microsoft Edge és un navegador web multiplataforma creat i desenvolupat per "
 "Microsoft. És un navegador basat en Chromium."
 
-#: gettingstarted.html:1031
+#: gettingstarted.html:955
 msgid ""
 "Vivaldi Web Browser is a free, fully customizable web browser. Feature rich,"
 " powerful, secure and fun! Browse the Web your way"
@@ -1306,7 +1213,7 @@ msgstr ""
 "gratuït. Ric de funcions, potent, segur i divertit! Navegueu per la xarxa a "
 "la vostra manera."
 
-#: gettingstarted.html:1047
+#: gettingstarted.html:971
 msgid ""
 "Opera is a fast and secure browser. Developed in Europe, used by millions "
 "around the world. Now with a built-in ad blocker and free VPN."
@@ -1315,12 +1222,12 @@ msgstr ""
 "milions de persones a tot el món. Ara, amb un bloquejador d'anuncis integrat"
 " i una XPV gratuïta."
 
-#: gettingstarted.html:1063
+#: gettingstarted.html:987
 msgid "A browser that blocks tracking and intrusive ads by default."
 msgstr ""
 "Un navegador que per defecte bloca el seguiment i els anuncis intrusius."
 
-#: gettingstarted.html:1088
+#: gettingstarted.html:1012
 msgid ""
 "Midori is a lightweight yet powerful web browser which runs just as well on "
 "little embedded computers named for delicious pastries as it does on beefy "
@@ -1332,7 +1239,7 @@ msgstr ""
 "màquines amb una temperatura central superior a la del planeta Terra. I "
 "també té bon aspecte a l'hora fer-ho. Ah, i és clar, és programari lliure."
 
-#: gettingstarted.html:1108
+#: gettingstarted.html:1032
 msgid ""
 "The web browser for GNOME, featuring tight integration with the desktop and "
 "a simple and intuitive user interface that allows you to focus on your web "
@@ -1346,26 +1253,22 @@ msgstr ""
 " xarxa, aquest és el vostre navegador. Sovint es fa referència al lloc web "
 "del GNOME mitjançant el seu nom de codi: Epiphany."
 
-#: gettingstarted.html:1130
+#: gettingstarted.html:1054
 msgid "User Interface"
 msgstr "Interfície d'usuari"
 
-#: gettingstarted.html:1131
+#: gettingstarted.html:1055
 msgid ""
-"<span name=\"distro-name\"></span> provides a unique tool to transform the "
-"user interface. It can be used to quickly setup the user interface to "
-"broadly reflect how other popular operating systems look and feel."
+"Ubuntu Budgie provides a unique tool to transform the user interface. It can"
+" be used to quickly setup the user interface to broadly reflect how other "
+"popular operating systems look and feel."
 msgstr ""
-"<span name=\"distro-name\"></span>proporciona una eina única per transformar"
-" la interfície d’usuari. Es pot utilitzar per configurar ràpidament la "
-"interfície d’usuari per reflectir àmpliament com es veuen els altres "
-"sistemes operatius populars."
 
-#: gettingstarted.html:1138
+#: gettingstarted.html:1062
 msgid "Budgie Desktop Settings"
 msgstr "Paràmetres de l'escriptori Budgie"
 
-#: gettingstarted.html:1141
+#: gettingstarted.html:1065
 msgid ""
 "<b>Budgie Desktop Settings</b> can be found later in the menu <b>System "
 "Tools</b>."
@@ -1373,28 +1276,11 @@ msgstr ""
 "Els <b>paràmetres de l'escriptori Budgie</b> es poden trobar més endavant al"
 " menú <b>Eines del sistema</b>."
 
-#: gettingstarted.html1150, 1155
-msgid "Settings"
-msgstr "les Preferències"
-
-#: gettingstarted.html:1151
-msgid ""
-"You can configure just about every aspect of your computer from Settings."
-msgstr ""
-"Podeu configurar gairebé tots els aspectes de l'ordinador des de la "
-"Configuració."
-
-#: gettingstarted.html:1160
-msgid "<b>Settings</b> can be found later in the menu <b>System Tools</b>."
-msgstr ""
-"La <b>configuració</b> es pot trobar més endavant al menú <b>Eines del "
-"sistema</b>."
-
-#: gettingstarted.html1171, 1176
+#: gettingstarted.html1073, 1078
 msgid "Budgie Control Center"
 msgstr "Centre de control del Budgie"
 
-#: gettingstarted.html:1172
+#: gettingstarted.html:1074
 msgid ""
 "You can configure just about every aspect of your computer from Budgie "
 "Control Center."
@@ -1402,7 +1288,7 @@ msgstr ""
 "Podeu configurar gairebé tots els aspectes de l'ordinador des del Centre de "
 "control del Budgie."
 
-#: gettingstarted.html:1181
+#: gettingstarted.html:1083
 msgid ""
 "<b>Budgie Control Center</b> can be found later in the menu <b>System "
 "Tools</b>."
@@ -1410,15 +1296,13 @@ msgstr ""
 "El <b>Centre de control del Budgie</b> es pot trobar més endavant al menú "
 "<b>Eines del sistema</b>."
 
-#: gettingstarted.html:1206
+#: gettingstarted.html:1108
 msgid ""
-"<span name=\"distro-name\"></span> has many keyboard shortcuts that help "
-"make using your computer more efficient."
+"Ubuntu Budgie has many keyboard shortcuts that help make using your computer"
+" more efficient."
 msgstr ""
-"<span name=\"distro-name\"></span> té moltes dreceres de teclat que us "
-"ajuden a fer que l’equip sigui més eficient."
 
-#: gettingstarted.html:1210
+#: gettingstarted.html:1112
 msgid ""
 "The <b><img src=\"img/welcome/super-key.svg\" /> Super</b> key is your "
 "Windows key. For Mac keyboards, this is the ⌘ Command key."
@@ -1426,113 +1310,113 @@ msgstr ""
 "La tecla <b><img src=\"img/welcome/super-key.svg\" /> Súper</b> és la tecla "
 "de Windows. Per als teclats de Mac, aquesta és la tecla Command ⌘."
 
-#: gettingstarted.html:1213
+#: gettingstarted.html:1115
 msgid "Budgie Desktop shortcuts"
 msgstr "Dreceres de l'escriptori Budgie"
 
-#: gettingstarted.html:1214
+#: gettingstarted.html:1116
 msgid "Some common shortcuts used in Budgie Desktop"
 msgstr "Algunes dreceres comunes utilitzades a l'escriptori Budgie"
 
-#: gettingstarted.html:1224
+#: gettingstarted.html:1126
 msgid "Open notifications in Raven"
 msgstr "Obre les notificacions al Raven"
 
-#: gettingstarted.html:1233
+#: gettingstarted.html:1135
 msgid "Open applet Settings in Raven"
 msgstr "Obre la configuració de les miniaplicacions al Raven"
 
-#: gettingstarted.html:1238
+#: gettingstarted.html:1140
 msgid "Common application shortcuts"
 msgstr "Dreceres d'aplicacions comunes"
 
-#: gettingstarted.html:1239
+#: gettingstarted.html:1141
 msgid "These shortcuts apply in most applications."
 msgstr "Aquestes dreceres s'apliquen a la majoria de les aplicacions."
 
-#: gettingstarted.html:1248
+#: gettingstarted.html:1150
 msgid "Toggle Tilix Quake Mode"
 msgstr "Commuta el mode Quake de Tilix"
 
-#: gettingstarted.html1252, 1260, 1268, 1276, 1284, 1292, 1300, 1308, 1316,
-#: 1324, 1332, 1340, 1348, 1356, 1364, 1396, 1412, 1442, 1461, 1475, 1522,
-#: 1532, 1542, 1554, 1737, 1747, 1757, 1767, 1777, 1787, 1797, 1807, 1817
+#: gettingstarted.html1154, 1162, 1170, 1178, 1186, 1194, 1202, 1210, 1218,
+#: 1226, 1234, 1242, 1250, 1258, 1266, 1298, 1314, 1344, 1363, 1377, 1408,
+#: 1418, 1428, 1440, 1623, 1633, 1643, 1653, 1663, 1673, 1683, 1693, 1703
 msgid "Ctrl"
 msgstr "Ctrl"
 
-#: gettingstarted.html:1256
+#: gettingstarted.html:1158
 msgid "Copy the selected text/object"
 msgstr "Copia el text / objecte seleccionat"
 
-#: gettingstarted.html:1264
+#: gettingstarted.html:1166
 msgid "Cut the selected text/object"
 msgstr "Retalla el text / objecte seleccionat"
 
-#: gettingstarted.html:1272
+#: gettingstarted.html:1174
 msgid "Paste/insert the selected text/object"
 msgstr "Enganxa / insereix el text / objecte seleccionat"
 
-#: gettingstarted.html:1280
+#: gettingstarted.html:1182
 msgid "Select all text"
 msgstr "Selecciona tot el text"
 
-#: gettingstarted.html:1288
+#: gettingstarted.html:1190
 msgid "Find words"
 msgstr "Troba paraules"
 
-#: gettingstarted.html:1296
+#: gettingstarted.html:1198
 msgid "Find and replace words"
 msgstr "Troba i reemplaça paraules"
 
-#: gettingstarted.html:1304
+#: gettingstarted.html:1206
 msgid "Make the selected text bold"
 msgstr "Marca el text seleccionat en negreta"
 
-#: gettingstarted.html:1312
+#: gettingstarted.html:1214
 msgid "Make the selected text italic"
 msgstr "Marca el text seleccionat en cursiva"
 
-#: gettingstarted.html:1320
+#: gettingstarted.html:1222
 msgid "Underline the selected text"
 msgstr "Subratlla el text seleccionat"
 
-#: gettingstarted.html:1328
+#: gettingstarted.html:1230
 msgid "Open a new document or window"
 msgstr "Obre un document o una finestra nova"
 
-#: gettingstarted.html:1336
+#: gettingstarted.html:1238
 msgid "Save the current document"
 msgstr "Desa el document actual"
 
-#: gettingstarted.html:1344
+#: gettingstarted.html:1246
 msgid "Open another document"
 msgstr "Obre un altre document"
 
-#: gettingstarted.html:1352
+#: gettingstarted.html:1254
 msgid "Print the current document"
 msgstr "Imprimeix la documentació actual"
 
-#: gettingstarted.html:1360
+#: gettingstarted.html:1262
 msgid "Undo the last change you made"
 msgstr "Desfeu el darrer canvi que heu fet"
 
-#: gettingstarted.html1366, 1394, 1404, 1546, 1557, 1573, 1584, 1595, 1606
+#: gettingstarted.html1268, 1296, 1306, 1432, 1443, 1459, 1470, 1481, 1492
 msgid "Shift"
 msgstr "Maj."
 
-#: gettingstarted.html:1370
+#: gettingstarted.html:1272
 msgid "Redo a change that you just undid"
 msgstr "Refeu un canvi que heu acabat de desfer"
 
-#: gettingstarted.html:1376
+#: gettingstarted.html:1278
 msgid "Toggle the current application between full-screen and windowed"
 msgstr "Commuteu l'aplicació actual entre pantalla completa i finestra"
 
-#: gettingstarted.html:1380
+#: gettingstarted.html:1282
 msgid "Desktop shortcuts"
 msgstr "Dreceres de l'escriptori"
 
-#: gettingstarted.html:1381
+#: gettingstarted.html:1283
 msgid ""
 "This section lists common keyboard shortcuts which you can use to operate "
 "parts of the desktop."
@@ -1540,85 +1424,85 @@ msgstr ""
 "Aquesta secció llista les dreceres de teclat comunes que podeu utilitzar per"
 " fer funcionar parts de l’escriptori."
 
-#: gettingstarted.html:1390
+#: gettingstarted.html:1292
 msgid "Open Applications menu"
 msgstr "Obriu el menú d'aplicacions"
 
-#: gettingstarted.html:1400
+#: gettingstarted.html:1302
 msgid "Copy a screenshot of an area to clipboard"
 msgstr "Copieu una captura de pantalla d’una àrea al porta-retalls"
 
-#: gettingstarted.html:1408
+#: gettingstarted.html:1310
 msgid "Save a screenshot of an area to the Pictures directory"
 msgstr "Deseu una captura de pantalla d’una àrea al directori d’imatges"
 
-#: gettingstarted.html:1416
+#: gettingstarted.html:1318
 msgid "Copy a screenshot of a window to clipboard"
 msgstr "Copieu una captura de pantalla d’una finestra al porta-retalls"
 
-#: gettingstarted.html1420, 1434, 1444, 1463, 1477, 1507, 1524, 1534, 1544,
-#: 1556, 1565, 1617, 1625, 1633, 1668, 1739, 1749, 1759, 1769, 1779, 1789,
-#: 1799, 1809, 1819
+#: gettingstarted.html1322, 1336, 1346, 1365, 1379, 1393, 1410, 1420, 1430,
+#: 1442, 1451, 1503, 1511, 1519, 1554, 1625, 1635, 1645, 1655, 1665, 1675,
+#: 1685, 1695, 1705
 msgid "Alt"
 msgstr "Alt"
 
-#: gettingstarted.html:1424
+#: gettingstarted.html:1326
 msgid "Save a screenshot of a window to the Pictures directory"
 msgstr "Deseu una captura de pantalla d’una finestra al directori d’imatges"
 
-#: gettingstarted.html:1430
+#: gettingstarted.html:1332
 msgid "Save a screenshot to the Pictures directory"
 msgstr "Deseu una captura de pantalla al directori d'imatges"
 
-#: gettingstarted.html:1438
+#: gettingstarted.html:1340
 msgid "Run an application by typing its name in the box which appears"
 msgstr "Executeu una aplicació escrivint-ne el nom al quadre que apareix"
 
-#: gettingstarted.html:1446
+#: gettingstarted.html:1348
 msgid "Delete"
 msgstr "Suprimeix"
 
-#: gettingstarted.html:1448
+#: gettingstarted.html:1350
 msgid "Logout"
 msgstr "Surt"
 
-#: gettingstarted.html:1457
+#: gettingstarted.html:1359
 msgid "Lock your screen."
 msgstr "Bloquegeu la pantalla."
 
-#: gettingstarted.html:1467
+#: gettingstarted.html:1369
 msgid "Open a terminal."
 msgstr "Obriu un terminal."
 
-#: gettingstarted.html:1471
+#: gettingstarted.html:1373
 msgid "Window shortcuts - general"
 msgstr "Dreceres de teclat: general"
 
-#: gettingstarted.html1481, 1496
+#: gettingstarted.html:1383
 msgid "Call Window Shuffler gui (window tiling grid)."
 msgstr ""
 "Crida la interfície de canvi de finestra (quadrícula de mosaic de "
 "finestres)."
 
-#: gettingstarted.html1485, 1501
+#: gettingstarted.html:1387
 msgid "Video Demonstration"
 msgstr "Demostració de vídeo"
 
-#: gettingstarted.html:1509
+#: gettingstarted.html:1395
 msgid "Tab"
 msgstr "Pestanya"
 
-#: gettingstarted.html:1512
+#: gettingstarted.html:1398
 msgid "Switch between currently-open windows."
 msgstr "Canvieu entre les finestres obertes actualment."
 
-#: gettingstarted.html:1514
+#: gettingstarted.html:1400
 msgid "Press Alt + Tab and then release Tab (but continue to hold Alt)."
 msgstr ""
 "Premeu Alt + Tab i, a continuació, deixeu anar Tab (però continueu mantenint"
 " premuda Alt)."
 
-#: gettingstarted.html:1515
+#: gettingstarted.html:1401
 msgid ""
 "Press Tab repeatedly to cycle through the list of available windows which "
 "appears on the screen."
@@ -1626,87 +1510,87 @@ msgstr ""
 "Premeu Tab repetidament per passar per la llista de finestres disponibles "
 "que apareix a la pantalla."
 
-#: gettingstarted.html1526, 1548, 1680
+#: gettingstarted.html1412, 1434, 1566
 msgid "Left"
 msgstr "Esquerra"
 
-#: gettingstarted.html:1528
+#: gettingstarted.html:1414
 msgid "Switch to the previous workspace."
 msgstr "Canvieu a l'espai de treball anterior."
 
-#: gettingstarted.html1536, 1559, 1689
+#: gettingstarted.html1422, 1445, 1575
 msgid "Right"
 msgstr "Dreta"
 
-#: gettingstarted.html:1538
+#: gettingstarted.html:1424
 msgid "Switch to the next workspace."
 msgstr "Canvieu a l'espai de treball següent"
 
-#: gettingstarted.html:1550
+#: gettingstarted.html:1436
 msgid "Move the current window to the previous workspace."
 msgstr "Moveu la finestra actual a l'espai de treball anterior."
 
-#: gettingstarted.html:1561
+#: gettingstarted.html:1447
 msgid "Move the current window to the next workspace."
 msgstr "Moveu la finestra actual a l'espai de treball següent."
 
-#: gettingstarted.html:1569
+#: gettingstarted.html:1455
 msgid "Move the current window to the monitor above."
 msgstr "Mou la finestra actual al monitor de dalt."
 
-#: gettingstarted.html:1580
+#: gettingstarted.html:1466
 msgid "Move the current window to the monitor below."
 msgstr "Mou la finestra actual al monitor de baix."
 
-#: gettingstarted.html:1591
+#: gettingstarted.html:1477
 msgid "Move the current window to the monitor to the left."
 msgstr "Mou la finestra actual al monitor de l'esquerra."
 
-#: gettingstarted.html:1602
+#: gettingstarted.html:1488
 msgid "Move the current window to the monitor to the right."
 msgstr "Mou la finestra actual al monitor de la dreta."
 
-#: gettingstarted.html:1613
+#: gettingstarted.html:1499
 msgid "Closes window."
 msgstr "Tanca la finestra."
 
-#: gettingstarted.html:1621
+#: gettingstarted.html:1507
 msgid "Returns window to 'normal' or previous size."
 msgstr "Torna la finestra a una mida normal o anterior."
 
-#: gettingstarted.html:1629
+#: gettingstarted.html:1515
 msgid "Moves the current window (can be moved with mouse or keyboard)."
 msgstr "Mou la finestra actual (es pot moure amb el ratolí o amb el teclat)."
 
-#: gettingstarted.html:1637
+#: gettingstarted.html:1523
 msgid "Resizes current window (again, can be moved with mouse or keyboard)."
 msgstr "Canvia la mida de la finestra actual (amb el ratolí o el teclat)."
 
-#: gettingstarted.html:1646
+#: gettingstarted.html:1532
 msgid "Minimizes current window."
 msgstr "Minimitza a finestra actual."
 
-#: gettingstarted.html:1653
+#: gettingstarted.html:1539
 msgid "Up"
 msgstr "A dalt"
 
-#: gettingstarted.html:1655
+#: gettingstarted.html:1541
 msgid "Maximizes current window."
 msgstr "Maximitza la finestra actual."
 
-#: gettingstarted.html:1662
+#: gettingstarted.html:1548
 msgid "Down"
 msgstr "A baix"
 
-#: gettingstarted.html:1664
+#: gettingstarted.html:1550
 msgid "Unmaximizes current window."
 msgstr "Desmaximitza la finestra actual."
 
-#: gettingstarted.html:1670
+#: gettingstarted.html:1556
 msgid "Space"
 msgstr "Espai"
 
-#: gettingstarted.html:1672
+#: gettingstarted.html:1558
 msgid ""
 "Displays the window menu with options such as 'Always on Top' and 'Minimize'"
 " and 'Maximize' and above commands."
@@ -1714,115 +1598,115 @@ msgstr ""
 "Mostra el menú de la finestra amb opcions com ara \"Sempre a dalt\" i "
 "\"Minimitza\" i \"Maximitza\" sobre les ordres."
 
-#: gettingstarted.html:1682
+#: gettingstarted.html:1568
 msgid "Place window on left side of screen."
 msgstr "Situa la finestra a l'esquerra de la pantalla."
 
-#: gettingstarted.html:1691
+#: gettingstarted.html:1577
 msgid "Place window on right side of screen."
 msgstr "Situa la finestra a la dreta de la pantalla."
 
-#: gettingstarted.html1698, 1771
+#: gettingstarted.html1584, 1657
 msgid "1"
 msgstr "1"
 
-#: gettingstarted.html:1700
+#: gettingstarted.html:1586
 msgid "Quarter tiling: top left."
 msgstr "Mosaic de quarts: a dalt a l'esquerra."
 
-#: gettingstarted.html1707, 1801
+#: gettingstarted.html1593, 1687
 msgid "2"
 msgstr "2"
 
-#: gettingstarted.html:1709
+#: gettingstarted.html:1595
 msgid "Quarter tiling: top right."
 msgstr "Mosaic de quarts: a dalt a la dreta."
 
-#: gettingstarted.html1716, 1761
+#: gettingstarted.html1602, 1647
 msgid "3"
 msgstr "3"
 
-#: gettingstarted.html:1718
+#: gettingstarted.html:1604
 msgid "Quarter tiling: bottom left."
 msgstr "Mosaic de quarts: a baix a l'esquerra."
 
-#: gettingstarted.html1725, 1811
+#: gettingstarted.html1611, 1697
 msgid "4"
 msgstr "4"
 
-#: gettingstarted.html:1727
+#: gettingstarted.html:1613
 msgid "Quarter tiling: bottom right."
 msgstr "Mosaic de quarts: a baix a la dreta."
 
-#: gettingstarted.html:1732
+#: gettingstarted.html:1618
 msgid "Window shortcuts - numeric keypad"
 msgstr "Dreceres de finestres: teclat numèric"
 
-#: gettingstarted.html:1733
+#: gettingstarted.html:1619
 msgid "Tiling shortcuts on the numeric keypad."
 msgstr "Dreceres en mosaic al teclat numèric."
 
-#: gettingstarted.html:1741
+#: gettingstarted.html:1627
 msgid "7"
 msgstr "7"
 
-#: gettingstarted.html:1743
+#: gettingstarted.html:1629
 msgid "Quarter top left."
 msgstr "Quart superior esquerre."
 
-#: gettingstarted.html:1751
+#: gettingstarted.html:1637
 msgid "9"
 msgstr "9"
 
-#: gettingstarted.html:1753
+#: gettingstarted.html:1639
 msgid "Quarter top right."
 msgstr "Quart superior dret."
 
-#: gettingstarted.html:1763
+#: gettingstarted.html:1649
 msgid "Quarter bottom right."
 msgstr "Quart inferior dret."
 
-#: gettingstarted.html:1773
+#: gettingstarted.html:1659
 msgid "Quarter bottom left."
 msgstr "Quart inferior esquerre."
 
-#: gettingstarted.html:1781
+#: gettingstarted.html:1667
 msgid "8"
 msgstr "8"
 
-#: gettingstarted.html:1783
+#: gettingstarted.html:1669
 msgid "Half top."
 msgstr "Meitat superior."
 
-#: gettingstarted.html:1791
+#: gettingstarted.html:1677
 msgid "6"
 msgstr "6"
 
-#: gettingstarted.html:1793
+#: gettingstarted.html:1679
 msgid "Half right."
 msgstr "Meitat dreta."
 
-#: gettingstarted.html:1803
+#: gettingstarted.html:1689
 msgid "Half bottom."
 msgstr "Meitat inferior."
 
-#: gettingstarted.html:1813
+#: gettingstarted.html:1699
 msgid "Half left."
 msgstr "Meitat esquerra."
 
-#: gettingstarted.html:1821
+#: gettingstarted.html:1707
 msgid "5"
 msgstr "5"
 
-#: gettingstarted.html:1823
+#: gettingstarted.html:1709
 msgid "Toggle maximize."
 msgstr "Commuta la maximització."
 
-#: gettingstarted.html:1832
+#: gettingstarted.html:1718
 msgid "Update shortcuts in the Settings App"
 msgstr "Actualitzeu les dreceres a l'aplicació de Configuració"
 
-#: gettingstarted.html:1854
+#: gettingstarted.html:1740
 msgid ""
 "Your machine is made up of various components that interact with one "
 "another. This information is useful when providing support to ensure "
@@ -1832,143 +1716,135 @@ msgstr ""
 " si. Aquesta informació és útil quan es proporciona suport per garantir que "
 "el maquinari i el programari funcionin a la vostra màquina."
 
-#: gettingstarted.html:1862
+#: gettingstarted.html:1748
 msgid "Gathering Information.."
 msgstr "Es recopila informació..."
 
-#: gettingstarted.html:1871
+#: gettingstarted.html:1757
 msgid "System"
 msgstr "Sistema"
 
-#: gettingstarted.html:1874
+#: gettingstarted.html:1760
 msgid "Distribution:"
 msgstr "Distribució:"
 
-#: gettingstarted.html:1878
+#: gettingstarted.html:1764
 msgid "Kernel:"
 msgstr "Nucli:"
 
-#: gettingstarted.html:1882
+#: gettingstarted.html:1768
 msgid "The Linux kernel is the heart of Ubuntu."
 msgstr "El nucli de Linux és el cor de l'Ubuntu."
 
-#: gettingstarted.html:1888
+#: gettingstarted.html:1774
 msgid "Motherboard:"
 msgstr "Placa base:"
 
-#: gettingstarted.html:1892
+#: gettingstarted.html:1778
 msgid "Boot Mode:"
 msgstr "Mode d'arrencada:"
 
-#: gettingstarted.html:1896
+#: gettingstarted.html:1782
 msgid "Displays the mode that OS is communicating with the firmware."
 msgstr ""
 "Mostra el mode en què el sistema operatiu es comunica amb el "
 "microprogramari."
 
-#: gettingstarted.html:1904
+#: gettingstarted.html:1790
 msgid "Processor"
 msgstr "Processador:"
 
-#: gettingstarted.html:1907
+#: gettingstarted.html:1793
 msgid "Model:"
 msgstr "Model:"
 
-#: gettingstarted.html:1911
+#: gettingstarted.html:1797
 msgid "Speed:"
 msgstr "Velocitat:"
 
-#: gettingstarted.html:1915
+#: gettingstarted.html:1801
 msgid "Architecture in use:"
 msgstr "Arquitectura en ús:"
 
-#: gettingstarted.html:1919
+#: gettingstarted.html:1805
 msgid ""
 "The operating system's architecture in use. For instance, i386 = 32-bit."
 msgstr ""
 "L'arquitectura del sistema operatiu en ús. Per exemple, i386 = 32 bits."
 
-#: gettingstarted.html:1925
-msgid "Architecture(s) supported:"
-msgstr "Arquitectures admeses:"
-
-#: gettingstarted.html:1929
-msgid "Architectures that are supported by this processor."
-msgstr "Arquitectures que admet aquest processador."
-
-#: gettingstarted.html:1937
+#: gettingstarted.html:1813
 msgid "Components"
 msgstr "Components"
 
-#: gettingstarted.html:1940
+#: gettingstarted.html:1816
 msgid "Memory (RAM):"
 msgstr "Memòria (RAM):"
 
-#: gettingstarted.html:1944
+#: gettingstarted.html:1820
 msgid "More RAM allows more applications to run simultaneously."
 msgstr "Més memòria RAM permet que funcionin més aplicacions simultàniament."
 
-#: gettingstarted.html:1950
+#: gettingstarted.html:1826
 msgid "Graphics:"
 msgstr "Gràfics:"
 
-#: gettingstarted.html:1954
+#: gettingstarted.html:1830
 msgid "Internet Access:"
 msgstr "Accés a Internet:"
 
-#: gettingstarted.html:1957
+#: gettingstarted.html:1833
 msgid "Connected"
 msgstr "Connectat"
 
-#: gettingstarted.html:1958
+#: gettingstarted.html:1834
 msgid "Not Connected"
 msgstr "No connectat"
 
-#: gettingstarted.html:1966
+#: gettingstarted.html:1842
 msgid "Storage"
 msgstr "Emmagatzematge"
 
-#: gettingstarted.html:1970
+#: gettingstarted.html:1846
 msgid "Root File System:"
 msgstr "Sistema de fitxers d'arrel:"
 
-#: gettingstarted.html:1974
+#: gettingstarted.html:1850
 msgid "The file system where OS is installed."
 msgstr "El sistema de fitxers on hi ha instal·lat el sistema operatiu."
 
-#: gettingstarted.html:1980
+#: gettingstarted.html:1856
 msgid "Entire Disk Capacity:"
 msgstr "Capacitat total del disc:"
 
-#: gettingstarted.html:1986
+#: gettingstarted.html:1862
 msgid "OS Usage"
 msgstr "Ús del sistema operatiu"
 
-#: gettingstarted.html:1991
+#: gettingstarted.html:1867
 msgid "Other Usage"
 msgstr "Altres usos"
 
-#: gettingstarted.html:1996
-msgid "Allocated for <span name=\"distro-name\"></span>:"
-msgstr "Assignat per a <span name=\"distro-name\"> </span>:"
+#: gettingstarted.html:1872
+msgid "Allocated for Ubuntu Budgie:"
+msgstr ""
 
-#: gettingstarted.html:2000
+#: gettingstarted.html:1876
 msgid "The size of your operating system partition."
 msgstr "La mida de la partició del sistema operatiu."
 
-#: gettingstarted.html:2007
+#: gettingstarted.html:1883
 msgid "Used Space:"
 msgstr "Espai usat:"
 
-#: gettingstarted.html:2015
+#: gettingstarted.html:1891
 msgid "Free Space:"
 msgstr "Espai lliure:"
 
-#: gettingstarted.html:2023
+#: gettingstarted.html:1899
 msgid "Other Usage:"
 msgstr "Altres usos:"
 
-#: gettingstarted.html:2028
+#: gettingstarted.html:1904
 msgid "Reserved by system, other partitions, unallocated or swap."
 msgstr ""
 "Reservat per al sistema, altres particions, sense assignar o l'intercanvi."

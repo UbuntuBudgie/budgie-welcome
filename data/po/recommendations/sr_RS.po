@@ -27,22 +27,19 @@ msgstr "Backport repozitorijumi"
 #: recommendations.html:22
 msgid ""
 "To provide the most up-to-date versions of budgie-desktop and other "
-"associated packages, we recommend to enable the <span name=\"distro-"
-"name\"></span> backports repository."
+"associated packages, we recommend to enable the Ubuntu Budgie backports "
+"repository."
 msgstr ""
-"Kako bi vam pružili najnovije verzije budgie-desktopa i drugih paketa, "
-"preporučujemo vam da omogućite <span name=\"distro-name\"></span> backport "
-"repozitorijume."
 
 #: recommendations.html:27
 msgid "Repository is installed"
 msgstr "Repozitorijum je instaliran"
 
 #: recommendations.html:30
-msgid "Enable <span name=\"distro-name\"></span> backports repository"
-msgstr "Omogući <span name=\"distro-name\"></span> backport repozitorijum"
+msgid "Enable Ubuntu Budgie backports repository"
+msgstr ""
 
-#: recommendations.html33, 106, 139, 170, 184, 201, 217, 234
+#: recommendations.html33, 106, 139, 164, 181, 197, 214
 msgid "Applying Changes..."
 msgstr "Primena Izmena..."
 
@@ -59,24 +56,12 @@ msgid ""
 "package that can work on different platforms. By using snap package format, "
 "applications can have their own version of libraries and there is no need to"
 " worry about libraries installed in underlying operating system. Snap "
-"packages enable developers to bring much newer versions of apps to <span "
-"name=\"distro-name\"></span>. Newer versions of KDE, GNOME, browsers or "
-"other desktop environment apps will usually build easily on older LTS "
-"releases but the complexities of packaging and providing updates have "
-"prevented us from delivering them in the past."
+"packages enable developers to bring much newer versions of apps to Ubuntu "
+"Budgie. Newer versions of KDE, GNOME, browsers or other desktop environment "
+"apps will usually build easily on older LTS releases but the complexities of"
+" packaging and providing updates have prevented us from delivering them in "
+"the past."
 msgstr ""
-"<strong>Snap</strong> je nova generacija formata za aplikacije razvijen od "
-"strane <em>Canonical-a</em>. Iako je na početku bio razvijan samo za Ubuntu,"
-" trenutno radi na mnogim drugim GNU/Linux distribucijama. Pomaže u "
-"uspostavljanju unifikovanog standarda koji radi na svim platformama kako bi "
-"olakšao razvoj aplikacija programerima. Korišćenjem snap formata, aplikacije"
-" mogu da imaju sopstvene verzije biblioteka i nema potreba da se brinete oko"
-" biblioteka koje su instalirane uokviru sistema. Snap paketi omogućuju "
-"programerima da pruže novije verzije aplikacija <span name=\"distro-"
-"name\"></span>-u. Novije verzije KDE i GNOME-a, brauzera i drugih desktop "
-"okruženja će uglavnom biti sastavljene lagano na starijim LTS verzijama ali "
-"kompleksnost paketiranja i pružanja ažuriranja je preventiralo nas da ih "
-"dostavimo u prošlosti."
 
 #: recommendations.html55, 122
 msgid "Learn more"
@@ -223,28 +208,19 @@ msgstr ""
 
 #: recommendations.html:125
 msgid ""
-"<span name=\"distro-name\"></span> recommends installing "
-"<strong>Flatpak</strong> as it will open a new world of possibilities for "
-"you. With Flatpak, you can enjoy the latest release of different software "
-"packages as soon as it is packaged by the upstream project and you don't "
-"have to wait for your distribution to package it for you."
+"Ubuntu Budgie recommends installing <strong>Flatpak</strong> as it will open"
+" a new world of possibilities for you. With Flatpak, you can enjoy the "
+"latest release of different software packages as soon as it is packaged by "
+"the upstream project and you don't have to wait for your distribution to "
+"package it for you."
 msgstr ""
-"<span name=\"distro-name\"></span> preporučuje da instalirate "
-"<strong>Flatpak</strong> jer će vam otvoriti mnoštvo mogućnosti. Sa "
-"Flatpakom, imate priliku da imate najnovije verzije različitih softverskih "
-"paketa omdah čim se učine dostupnim i ne morate da čekate da vam vaša "
-"distribucija pošalje paket. "
 
 #: recommendations.html:130
 msgid ""
-"Being a user friendly GNU/Linux distribution, <span name='distro-"
-"name'></span> allows you to install Flatpak with a single click. After first"
-" time configuration, you can use GNOME Software to install Flatpak packages."
+"Being a user friendly GNU/Linux distribution, Ubuntu Budgie allows you to "
+"install Flatpak with a single click. After first time configuration, you can"
+" use GNOME Software to install Flatpak packages."
 msgstr ""
-"Pošto smo korisnički nastrojena distribucija <span name='distro-"
-"name'></span> vam omogućuje da instalirate Flatpak sa jednim klikom. Posle "
-"prvog konfigurisanja, možete koristiti Gnome Software da instalirate Flatpak"
-" pakete."
 
 #: recommendations.html:134
 msgid "Flatpak is installed. Please reboot for the service to start"
@@ -266,36 +242,21 @@ msgstr ""
 
 #: recommendations.html:153
 msgid ""
-"Being proprietary software, Dropbox is not included in the primary "
-"repositories of <span name=\"distro-name\"></span>. However, to provide more"
-" choice to users, Dropbox is shipped as a part of the <em>Multiverse</em> "
-"repository. <span name=\"distro-name\"></span> provides you the option to "
-"enable the <em>Multiverse</em> repository and to install Dropbox with a "
-"single mouse click."
-msgstr ""
-"Pošto je vlasnički softver, Dropbox nije uključen u primarne repozitorijume "
-". Ipak kako bi pružili više mogućnosti korisnicima <span name=\"distro-"
-"name\"></span> Dropbox dolazi kao deo <em>Multiverse</em> repozitorijuma. "
-"<span name=\"distro-name\"></span> vam daje opciju da uključite <em> "
-"Multiverse</em> repozitorijum i da instalirate Dropbox sa jednim klikom."
-
-#: recommendations.html159, 173
-msgid ""
 "After installing, logout and login and follow the dropbox instructions that "
 "are then displayed."
 msgstr ""
 "Nakon instalacije izlogujte se i ulogujte se i pratite uputstva koja će vam "
 "biti prikazana. "
 
-#: recommendations.html164, 178
+#: recommendations.html:158
 msgid "Dropbox is installed"
 msgstr "Dropbox je instaliran"
 
-#: recommendations.html167, 181
+#: recommendations.html:161
 msgid "Install & Configure Dropbox"
 msgstr "Instaliraj i konfiguriši Dropbox"
 
-#: recommendations.html:191
+#: recommendations.html:171
 msgid ""
 "Nemo Share allows you to quickly share a folder from the Nemo file manager "
 "without requiring root access."
@@ -303,30 +264,30 @@ msgstr ""
 "Nemo deljivač omogućava da podelite folder iz Nemo fajl menadžera bez "
 "potrebe za root dozvolama."
 
-#: recommendations.html:196
+#: recommendations.html:176
 msgid "Nemo Share is installed"
 msgstr "Nemo deljivač je instaliran."
 
-#: recommendations.html:199
+#: recommendations.html:179
 msgid "Install Nemo Share"
 msgstr "Instaliraj Nemo deljivač."
 
-#: recommendations.html:208
+#: recommendations.html:188
 msgid ""
 "Nemo Preview allows you to quickly view the contents of a highlighted file "
 "from the Nemo file manager. Just press space to toggle the preview on and "
 "off."
 msgstr ""
 
-#: recommendations.html:212
+#: recommendations.html:192
 msgid "Nemo Preview is installed"
 msgstr ""
 
-#: recommendations.html:215
+#: recommendations.html:195
 msgid "Install Nemo Preview"
 msgstr ""
 
-#: recommendations.html:224
+#: recommendations.html:204
 msgid ""
 "Gutenprint is a suite of <a onclick=\"cmd('link?http://gimp-"
 "print.sourceforge.net/p_Supported_Printers.php')\">thousands</a> of printer "
@@ -334,10 +295,10 @@ msgid ""
 "supports only the printer part of multi-function devices."
 msgstr ""
 
-#: recommendations.html:229
+#: recommendations.html:209
 msgid "Gutenprint is installed"
 msgstr ""
 
-#: recommendations.html:232
+#: recommendations.html:212
 msgid "Install Gutenprint"
 msgstr ""

@@ -27,22 +27,19 @@ msgstr "Naujų versijų paketų saugykla"
 #: recommendations.html:22
 msgid ""
 "To provide the most up-to-date versions of budgie-desktop and other "
-"associated packages, we recommend to enable the <span name=\"distro-"
-"name\"></span> backports repository."
+"associated packages, we recommend to enable the Ubuntu Budgie backports "
+"repository."
 msgstr ""
-"Tam, kad būtų pateiktos naujausios Budgie darbalaukio ir kitų susijusių "
-"paketų versijos, siūlome įjungti <span name=\"distro-name\"></span> naujų "
-"versijų paketų saugyklą."
 
 #: recommendations.html:27
 msgid "Repository is installed"
 msgstr "Saugykla yra įdiegta"
 
 #: recommendations.html:30
-msgid "Enable <span name=\"distro-name\"></span> backports repository"
-msgstr "Įjungti <span name=\"distro-name\"></span> naujų versijų paketų saugyklą"
+msgid "Enable Ubuntu Budgie backports repository"
+msgstr ""
 
-#: recommendations.html33, 106, 139, 170, 184, 201, 217, 234
+#: recommendations.html33, 106, 139, 164, 181, 197, 214
 msgid "Applying Changes..."
 msgstr "Taikomi pakeitimai..."
 
@@ -59,24 +56,12 @@ msgid ""
 "package that can work on different platforms. By using snap package format, "
 "applications can have their own version of libraries and there is no need to"
 " worry about libraries installed in underlying operating system. Snap "
-"packages enable developers to bring much newer versions of apps to <span "
-"name=\"distro-name\"></span>. Newer versions of KDE, GNOME, browsers or "
-"other desktop environment apps will usually build easily on older LTS "
-"releases but the complexities of packaging and providing updates have "
-"prevented us from delivering them in the past."
+"packages enable developers to bring much newer versions of apps to Ubuntu "
+"Budgie. Newer versions of KDE, GNOME, browsers or other desktop environment "
+"apps will usually build easily on older LTS releases but the complexities of"
+" packaging and providing updates have prevented us from delivering them in "
+"the past."
 msgstr ""
-"<strong>Snap</strong> yra naujos kartos programų pakavimo formatas, kurį "
-"sukūrė <em>Canonical</em>. Nors iš pradžių, jis buvo sukurtas tik "
-"skirtingoms Ubuntu platformoms, tačiau šiuo metu veikia daugelyje kitų "
-"GNU/Linux distribucijų. Jis padės programų kūrėjams pateikti bendrą paketą, "
-"kuris gali veikti skirtingose platformose. Naudodamos snap paketų formatą, "
-"programos gali turėti savo bibliotekų versiją ir todėl nereikia rūpintis dėl"
-" bazinėje operacinėje sistemoje įdiegtų bibliotekų. Snap paketai įgalina "
-"kūrėjus į <span name=\"distro-name\"></span> pateikti žymiai naujesnes "
-"programų versijas. Naujesnės KDE, GNOME, naršyklių ar kitų darbalaukio "
-"aplinkų programų versijos, dažniausiai bus lengvai sukuriamos senesnėse "
-"ilgojo palaikymo (LTS) laidose, tačiau pakavimo sudėtingumas ir atnaujinimų "
-"teikimas neleido mums jų teikti praeityje."
 
 #: recommendations.html55, 122
 msgid "Learn more"
@@ -225,29 +210,19 @@ msgstr ""
 
 #: recommendations.html:125
 msgid ""
-"<span name=\"distro-name\"></span> recommends installing "
-"<strong>Flatpak</strong> as it will open a new world of possibilities for "
-"you. With Flatpak, you can enjoy the latest release of different software "
-"packages as soon as it is packaged by the upstream project and you don't "
-"have to wait for your distribution to package it for you."
+"Ubuntu Budgie recommends installing <strong>Flatpak</strong> as it will open"
+" a new world of possibilities for you. With Flatpak, you can enjoy the "
+"latest release of different software packages as soon as it is packaged by "
+"the upstream project and you don't have to wait for your distribution to "
+"package it for you."
 msgstr ""
-"<span name=\"distro-name\"></span> rekomenduoja įdiegti "
-"<strong>Flatpak</strong>, kadangi jis atvers jums naują galimybių pasaulį. "
-"Naudodami Flatpak, mėgausitės paskiausiomis įvairios programinės įrangos "
-"versijų laidomis iš karto, kai viršesnis (angl. upstream) projektas jas "
-"supakuos, todėl jums nereikės laukti, kol jūsų distribucija supakuos jums "
-"šias laidas."
 
 #: recommendations.html:130
 msgid ""
-"Being a user friendly GNU/Linux distribution, <span name='distro-"
-"name'></span> allows you to install Flatpak with a single click. After first"
-" time configuration, you can use GNOME Software to install Flatpak packages."
+"Being a user friendly GNU/Linux distribution, Ubuntu Budgie allows you to "
+"install Flatpak with a single click. After first time configuration, you can"
+" use GNOME Software to install Flatpak packages."
 msgstr ""
-"Būdama patogia GNU/Linux distribucija, <span name='distro-name'></span> "
-"leidžia jums vienu spustelėjimu įdiegti Flatpak. Po pirmosios "
-"konfigūracijos, Flatpak paketų įdiegimui galite naudoti GNOME programinę "
-"įrangą."
 
 #: recommendations.html:134
 msgid "Flatpak is installed. Please reboot for the service to start"
@@ -269,37 +244,21 @@ msgstr ""
 
 #: recommendations.html:153
 msgid ""
-"Being proprietary software, Dropbox is not included in the primary "
-"repositories of <span name=\"distro-name\"></span>. However, to provide more"
-" choice to users, Dropbox is shipped as a part of the <em>Multiverse</em> "
-"repository. <span name=\"distro-name\"></span> provides you the option to "
-"enable the <em>Multiverse</em> repository and to install Dropbox with a "
-"single mouse click."
-msgstr ""
-"Būdama nuosavybine programine įranga, Dropbox nėra įtraukta į pirmines <span"
-" name=\"distro-name\"></span> saugyklas. Kita vertus, norint suteikti "
-"naudotojams daugiau pasirinkimo, Dropbox yra teikiama kaip "
-"<em>Multiverse</em> saugyklos dalis. <span name=\"distro-name\"></span> "
-"suteikia jums galimybę įjungti <em>Multiverse</em> saugyklą ir vienu "
-"spustelėjimu įdiegti Dropbox."
-
-#: recommendations.html159, 173
-msgid ""
 "After installing, logout and login and follow the dropbox instructions that "
 "are then displayed."
 msgstr ""
 "Įdiegę, atsijukite ir vėl prisijunkite, o tuomet sekite rodomą dropbox "
 "instrukciją."
 
-#: recommendations.html164, 178
+#: recommendations.html:158
 msgid "Dropbox is installed"
 msgstr "Dropbox yra įdiegta"
 
-#: recommendations.html167, 181
+#: recommendations.html:161
 msgid "Install & Configure Dropbox"
 msgstr "Įdiegti ir konfigūruoti Dropbox"
 
-#: recommendations.html:191
+#: recommendations.html:171
 msgid ""
 "Nemo Share allows you to quickly share a folder from the Nemo file manager "
 "without requiring root access."
@@ -307,30 +266,30 @@ msgstr ""
 "Nemo Share leidžia jums be administratoriaus prieigos, greitai bendrinti "
 "aplanką iš Nemo failų tvarkytuvės."
 
-#: recommendations.html:196
+#: recommendations.html:176
 msgid "Nemo Share is installed"
 msgstr "Nemo Share yra įdiegta"
 
-#: recommendations.html:199
+#: recommendations.html:179
 msgid "Install Nemo Share"
 msgstr "Įdiegti Nemo Share"
 
-#: recommendations.html:208
+#: recommendations.html:188
 msgid ""
 "Nemo Preview allows you to quickly view the contents of a highlighted file "
 "from the Nemo file manager. Just press space to toggle the preview on and "
 "off."
 msgstr ""
 
-#: recommendations.html:212
+#: recommendations.html:192
 msgid "Nemo Preview is installed"
 msgstr ""
 
-#: recommendations.html:215
+#: recommendations.html:195
 msgid "Install Nemo Preview"
 msgstr ""
 
-#: recommendations.html:224
+#: recommendations.html:204
 msgid ""
 "Gutenprint is a suite of <a onclick=\"cmd('link?http://gimp-"
 "print.sourceforge.net/p_Supported_Printers.php')\">thousands</a> of printer "
@@ -338,10 +297,10 @@ msgid ""
 "supports only the printer part of multi-function devices."
 msgstr ""
 
-#: recommendations.html:229
+#: recommendations.html:209
 msgid "Gutenprint is installed"
 msgstr ""
 
-#: recommendations.html:232
+#: recommendations.html:212
 msgid "Install Gutenprint"
 msgstr ""

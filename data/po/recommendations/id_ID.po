@@ -29,22 +29,19 @@ msgstr "Repository Backport"
 #: recommendations.html:22
 msgid ""
 "To provide the most up-to-date versions of budgie-desktop and other "
-"associated packages, we recommend to enable the <span name=\"distro-"
-"name\"></span> backports repository."
+"associated packages, we recommend to enable the Ubuntu Budgie backports "
+"repository."
 msgstr ""
-"Untuk menyediakan versi paling baru dari budgie-desktop dan paket terkait "
-"lainnya, kami menyarankan untuk mengaktifkan<span name=\"distro-"
-"name\"></span> repository backport."
 
 #: recommendations.html:27
 msgid "Repository is installed"
 msgstr "Repository terinstall."
 
 #: recommendations.html:30
-msgid "Enable <span name=\"distro-name\"></span> backports repository"
-msgstr "Aktifkan <span name=\"distro-name\"></span> backports repository"
+msgid "Enable Ubuntu Budgie backports repository"
+msgstr ""
 
-#: recommendations.html33, 106, 139, 170, 184, 201, 217, 234
+#: recommendations.html33, 106, 139, 164, 181, 197, 214
 msgid "Applying Changes..."
 msgstr "Menerapkan Perubahan..."
 
@@ -61,25 +58,12 @@ msgid ""
 "package that can work on different platforms. By using snap package format, "
 "applications can have their own version of libraries and there is no need to"
 " worry about libraries installed in underlying operating system. Snap "
-"packages enable developers to bring much newer versions of apps to <span "
-"name=\"distro-name\"></span>. Newer versions of KDE, GNOME, browsers or "
-"other desktop environment apps will usually build easily on older LTS "
-"releases but the complexities of packaging and providing updates have "
-"prevented us from delivering them in the past."
+"packages enable developers to bring much newer versions of apps to Ubuntu "
+"Budgie. Newer versions of KDE, GNOME, browsers or other desktop environment "
+"apps will usually build easily on older LTS releases but the complexities of"
+" packaging and providing updates have prevented us from delivering them in "
+"the past."
 msgstr ""
-"<strong>Snap</strong> adalah format paket aplikasi generasi baru yang "
-"diciptakan oleh  <em>Canonical</em>. Meskipun awalnya dikembangkan hanya "
-"untuk platform Ubuntu yang berbeda, saat ini ia berfungsi di banyak "
-"distribusi GNU / Linux lainnya. Ini akan membantu pengembang aplikasi untuk "
-"menyediakan paket terpadu yang dapat berfungsi di berbagai platform. Dengan "
-"menggunakan format paket snap, aplikasi dapat memiliki versi pustaka mereka "
-"sendiri dan tidak perlu khawatir tentang pustaka yang dipasang di sistem "
-"operasi yang mendasarinya. Paket Snap memungkinkan pengembang untuk "
-"menghadirkan banyak versi aplikasi yang lebih baru untuk<span name=\"distro-"
-"name\"></span>. Versi KDE, GNOME, browser, atau aplikasi lingkungan desktop "
-"yang lebih baru biasanya akan dengan mudah dibuat pada rilis LTS yang lebih "
-"lama tetapi kerumitan penyediaan pengemasan dan pembaruan telah membuat kami"
-" tidak mampu mengupayakannya di masa lalu."
 
 #: recommendations.html55, 122
 msgid "Learn more"
@@ -227,29 +211,19 @@ msgstr ""
 
 #: recommendations.html:125
 msgid ""
-"<span name=\"distro-name\"></span> recommends installing "
-"<strong>Flatpak</strong> as it will open a new world of possibilities for "
-"you. With Flatpak, you can enjoy the latest release of different software "
-"packages as soon as it is packaged by the upstream project and you don't "
-"have to wait for your distribution to package it for you."
+"Ubuntu Budgie recommends installing <strong>Flatpak</strong> as it will open"
+" a new world of possibilities for you. With Flatpak, you can enjoy the "
+"latest release of different software packages as soon as it is packaged by "
+"the upstream project and you don't have to wait for your distribution to "
+"package it for you."
 msgstr ""
-"<span name=\"distro-name\"></span> merekomendasikan anda memasang "
-"<strong>Flatpak</strong> karena akan membuka kemungkinan dunia baru untuk "
-"Anda. Dengan Flatpak, Anda dapat menikmati rilis terbaru dari paket "
-"perangkat lunak yang berbeda segera setelah dikemas oleh proyek hulu dan "
-"Anda tidak perlu menunggu tim distribusi Ubuntu untuk mengemasnya untuk "
-"Anda."
 
 #: recommendations.html:130
 msgid ""
-"Being a user friendly GNU/Linux distribution, <span name='distro-"
-"name'></span> allows you to install Flatpak with a single click. After first"
-" time configuration, you can use GNOME Software to install Flatpak packages."
+"Being a user friendly GNU/Linux distribution, Ubuntu Budgie allows you to "
+"install Flatpak with a single click. After first time configuration, you can"
+" use GNOME Software to install Flatpak packages."
 msgstr ""
-"Menjadi distribusi GNU / Linux yang user friendly, <span name='distro-"
-"name'></span>  memungkinkan Anda untuk menginstal Flatpak dengan satu klik. "
-"Setelah konfigurasi pertama kali, Anda dapat menggunakan Perangkat Lunak "
-"GNOME untuk menginstal paket Flatpak."
 
 #: recommendations.html:134
 msgid "Flatpak is installed. Please reboot for the service to start"
@@ -270,66 +244,50 @@ msgstr ""
 
 #: recommendations.html:153
 msgid ""
-"Being proprietary software, Dropbox is not included in the primary "
-"repositories of <span name=\"distro-name\"></span>. However, to provide more"
-" choice to users, Dropbox is shipped as a part of the <em>Multiverse</em> "
-"repository. <span name=\"distro-name\"></span> provides you the option to "
-"enable the <em>Multiverse</em> repository and to install Dropbox with a "
-"single mouse click."
-msgstr ""
-"Menjadi perangkat lunak milik pihak ke-3, Steam tidak termasuk dalam "
-"repositori utama. Namun, untuk menyediakan lebih banyak pilihan bagi "
-"pengguna, Steam dikirim sebagai bagian dari repositori <em>Multiverse</em>. "
-"<span name=\"distro-name\"></span> memberi anda pilihan untuk mengaktifkan "
-"repositori <em>Multiverse</em> dan menginstall Dropbox dengan sekali klik "
-"mouse."
-
-#: recommendations.html159, 173
-msgid ""
 "After installing, logout and login and follow the dropbox instructions that "
 "are then displayed."
 msgstr ""
 "Setelah menginstal, login ulang dan ikuti instruksi dropbox yang kemudian "
 "ditampilkan."
 
-#: recommendations.html164, 178
+#: recommendations.html:158
 msgid "Dropbox is installed"
 msgstr "Dropbox terpasang"
 
-#: recommendations.html167, 181
+#: recommendations.html:161
 msgid "Install & Configure Dropbox"
 msgstr "Pasang dan Atur Dropbox"
 
-#: recommendations.html:191
+#: recommendations.html:171
 msgid ""
 "Nemo Share allows you to quickly share a folder from the Nemo file manager "
 "without requiring root access."
 msgstr ""
 
-#: recommendations.html:196
+#: recommendations.html:176
 msgid "Nemo Share is installed"
 msgstr "Nemo Share terpasang"
 
-#: recommendations.html:199
+#: recommendations.html:179
 msgid "Install Nemo Share"
 msgstr "Pasang Nemo Share"
 
-#: recommendations.html:208
+#: recommendations.html:188
 msgid ""
 "Nemo Preview allows you to quickly view the contents of a highlighted file "
 "from the Nemo file manager. Just press space to toggle the preview on and "
 "off."
 msgstr ""
 
-#: recommendations.html:212
+#: recommendations.html:192
 msgid "Nemo Preview is installed"
 msgstr ""
 
-#: recommendations.html:215
+#: recommendations.html:195
 msgid "Install Nemo Preview"
 msgstr ""
 
-#: recommendations.html:224
+#: recommendations.html:204
 msgid ""
 "Gutenprint is a suite of <a onclick=\"cmd('link?http://gimp-"
 "print.sourceforge.net/p_Supported_Printers.php')\">thousands</a> of printer "
@@ -337,10 +295,10 @@ msgid ""
 "supports only the printer part of multi-function devices."
 msgstr ""
 
-#: recommendations.html:229
+#: recommendations.html:209
 msgid "Gutenprint is installed"
 msgstr ""
 
-#: recommendations.html:232
+#: recommendations.html:212
 msgid "Install Gutenprint"
 msgstr ""

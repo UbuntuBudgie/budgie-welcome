@@ -36,22 +36,19 @@ msgstr "Backports-Paketquelle"
 #: recommendations.html:22
 msgid ""
 "To provide the most up-to-date versions of budgie-desktop and other "
-"associated packages, we recommend to enable the <span name=\"distro-"
-"name\"></span> backports repository."
+"associated packages, we recommend to enable the Ubuntu Budgie backports "
+"repository."
 msgstr ""
-"Um die aktuellste Version von dem Budgie-Deskop nutzen zu können, empfelen "
-"wir die<span name=\"distro-name\"></span> Backports-Paketquelle zu "
-"aktivieren."
 
 #: recommendations.html:27
 msgid "Repository is installed"
 msgstr "Paketquelle ist installiert."
 
 #: recommendations.html:30
-msgid "Enable <span name=\"distro-name\"></span> backports repository"
-msgstr "aktiviere die <span name=\"distro-name\"></span>Backports-Paketquelle "
+msgid "Enable Ubuntu Budgie backports repository"
+msgstr ""
 
-#: recommendations.html33, 106, 139, 170, 184, 201, 217, 234
+#: recommendations.html33, 106, 139, 164, 181, 197, 214
 msgid "Applying Changes..."
 msgstr "Änderungen werden übernommen..."
 
@@ -68,27 +65,12 @@ msgid ""
 "package that can work on different platforms. By using snap package format, "
 "applications can have their own version of libraries and there is no need to"
 " worry about libraries installed in underlying operating system. Snap "
-"packages enable developers to bring much newer versions of apps to <span "
-"name=\"distro-name\"></span>. Newer versions of KDE, GNOME, browsers or "
-"other desktop environment apps will usually build easily on older LTS "
-"releases but the complexities of packaging and providing updates have "
-"prevented us from delivering them in the past."
+"packages enable developers to bring much newer versions of apps to Ubuntu "
+"Budgie. Newer versions of KDE, GNOME, browsers or other desktop environment "
+"apps will usually build easily on older LTS releases but the complexities of"
+" packaging and providing updates have prevented us from delivering them in "
+"the past."
 msgstr ""
-"<strong>Snap</strong> ist ein von <em>Canonical</em> entwickeltes "
-"Anwendungsverpackungsformat der neuen Generation. Obwohl es ursprünglich nur"
-" für verschiedene Ubuntu-Plattformen entwickelt wurde, funktioniert es "
-"derzeit in vielen anderen GNU / Linux-Distributionen. Es wird "
-"Anwendungsentwicklern helfen, ein einheitliches Paket bereitzustellen, das "
-"auf verschiedenen Plattformen funktionieren kann. Durch die Verwendung des "
-"Snap-Package-Formats können Anwendungen eigene Versionen von Bibliotheken "
-"haben, und Sie müssen sich keine Gedanken über die im zugrunde liegenden "
-"Betriebssystem installierten Bibliotheken machen. Mit Snap-Paketen können "
-"Entwickler viel aktuellere Versionen von Apps erstellen <span name=\"distro-"
-"name\"></span>. Neuere Versionen von KDE, GNOME, Browsern oder anderen "
-"Desktop-Umgebung-Apps werden in der Regel problemlos auf älteren LTS-"
-"Releases erstellt, aber die Komplexität des Paketierens und die "
-"Bereitstellung von Updates haben uns davon abgehalten, sie in der "
-"Vergangenheit auszuliefern."
 
 #: recommendations.html55, 122
 msgid "Learn more"
@@ -238,28 +220,19 @@ msgstr ""
 
 #: recommendations.html:125
 msgid ""
-"<span name=\"distro-name\"></span> recommends installing "
-"<strong>Flatpak</strong> as it will open a new world of possibilities for "
-"you. With Flatpak, you can enjoy the latest release of different software "
-"packages as soon as it is packaged by the upstream project and you don't "
-"have to wait for your distribution to package it for you."
+"Ubuntu Budgie recommends installing <strong>Flatpak</strong> as it will open"
+" a new world of possibilities for you. With Flatpak, you can enjoy the "
+"latest release of different software packages as soon as it is packaged by "
+"the upstream project and you don't have to wait for your distribution to "
+"package it for you."
 msgstr ""
-"<span name=\"distro-name\"></span> empfiehlt <strong>Flatpak</strong> zu "
-"installieren, da es Ihnen neue Möglichkeiten eröffnet. Mit Flatpak können "
-"Sie die neueste Version von verschiedenen Softwarepaketen genießen, sobald "
-"diese im Upstream-Projekt gepackt sind. Sie müssen nicht warten, bis Ihre "
-"Distribution sie für Sie verpackt."
 
 #: recommendations.html:130
 msgid ""
-"Being a user friendly GNU/Linux distribution, <span name='distro-"
-"name'></span> allows you to install Flatpak with a single click. After first"
-" time configuration, you can use GNOME Software to install Flatpak packages."
+"Being a user friendly GNU/Linux distribution, Ubuntu Budgie allows you to "
+"install Flatpak with a single click. After first time configuration, you can"
+" use GNOME Software to install Flatpak packages."
 msgstr ""
-"Da es sich bei <span name='distro-name'></span> um eine benutzerfreundliche "
-"GNU / Linux-Distribution handelt, können Sie Flatpak mit einem einzigen "
-"Klick installieren. Nach der ersten Konfiguration können Sie mit der GNOME-"
-"Software Flatpak-Pakete installieren."
 
 #: recommendations.html:134
 msgid "Flatpak is installed. Please reboot for the service to start"
@@ -281,38 +254,21 @@ msgstr ""
 
 #: recommendations.html:153
 msgid ""
-"Being proprietary software, Dropbox is not included in the primary "
-"repositories of <span name=\"distro-name\"></span>. However, to provide more"
-" choice to users, Dropbox is shipped as a part of the <em>Multiverse</em> "
-"repository. <span name=\"distro-name\"></span> provides you the option to "
-"enable the <em>Multiverse</em> repository and to install Dropbox with a "
-"single mouse click."
-msgstr ""
-"Da es sich um proprietäre Software handelt, ist Dropbox nicht in den "
-"primären Paketquellen von <span name=\"distro-name\"></span> enthalten. Um "
-"den Benutzern mehr Auswahl zu bieten, wird Dropbox jedoch als Teil der "
-"<em>Multiverse</em> -Paketquelle ausgeliefert. <span name=\"distro-"
-"name\"></span> bietet Ihnen die Option, die <em>Multiverse</em> - "
-"Paketquelle zu aktivieren und Dropbox mit einem einzigen Mausklick zu "
-"installieren."
-
-#: recommendations.html159, 173
-msgid ""
 "After installing, logout and login and follow the dropbox instructions that "
 "are then displayed."
 msgstr ""
 "Nach der Installation logge dich neu ein und folge den anschließend "
 "angezeigten Dropbox Anweisungen."
 
-#: recommendations.html164, 178
+#: recommendations.html:158
 msgid "Dropbox is installed"
 msgstr "Dropbox ist installiert."
 
-#: recommendations.html167, 181
+#: recommendations.html:161
 msgid "Install & Configure Dropbox"
 msgstr "Dropbox installieren & einrichten"
 
-#: recommendations.html:191
+#: recommendations.html:171
 msgid ""
 "Nemo Share allows you to quickly share a folder from the Nemo file manager "
 "without requiring root access."
@@ -320,30 +276,30 @@ msgstr ""
 "Mit Nemo Share können Sie einen Ordner aus dem Nemo-Dateimanager schnell und"
 " einfach freigeben, ohne dass ein Root-Zugriff erforderlich ist."
 
-#: recommendations.html:196
+#: recommendations.html:176
 msgid "Nemo Share is installed"
 msgstr "Nemo Share ist installiert"
 
-#: recommendations.html:199
+#: recommendations.html:179
 msgid "Install Nemo Share"
 msgstr "Nemo Share installieren"
 
-#: recommendations.html:208
+#: recommendations.html:188
 msgid ""
 "Nemo Preview allows you to quickly view the contents of a highlighted file "
 "from the Nemo file manager. Just press space to toggle the preview on and "
 "off."
 msgstr ""
 
-#: recommendations.html:212
+#: recommendations.html:192
 msgid "Nemo Preview is installed"
 msgstr "Nemo-Vorschau ist installiert"
 
-#: recommendations.html:215
+#: recommendations.html:195
 msgid "Install Nemo Preview"
 msgstr "Nemo-Vorschau installieren"
 
-#: recommendations.html:224
+#: recommendations.html:204
 msgid ""
 "Gutenprint is a suite of <a onclick=\"cmd('link?http://gimp-"
 "print.sourceforge.net/p_Supported_Printers.php')\">thousands</a> of printer "
@@ -351,10 +307,10 @@ msgid ""
 "supports only the printer part of multi-function devices."
 msgstr ""
 
-#: recommendations.html:229
+#: recommendations.html:209
 msgid "Gutenprint is installed"
 msgstr "Gutenprint ist installiert"
 
-#: recommendations.html:232
+#: recommendations.html:212
 msgid "Install Gutenprint"
 msgstr "Gutenprint installieren"

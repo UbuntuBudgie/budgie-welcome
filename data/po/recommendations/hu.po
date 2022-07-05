@@ -29,22 +29,19 @@ msgstr "Backports tároló"
 #: recommendations.html:22
 msgid ""
 "To provide the most up-to-date versions of budgie-desktop and other "
-"associated packages, we recommend to enable the <span name=\"distro-"
-"name\"></span> backports repository."
+"associated packages, we recommend to enable the Ubuntu Budgie backports "
+"repository."
 msgstr ""
-"A budgie-asztal és egyéb kapcsolódó csomagok legújabb verzióinak eléréséhez "
-"javasoljuk a(z) <span name=\"distro-name\"></span> backports tároló "
-"engedélyezését."
 
 #: recommendations.html:27
 msgid "Repository is installed"
 msgstr "Tároló telepítve"
 
 #: recommendations.html:30
-msgid "Enable <span name=\"distro-name\"></span> backports repository"
-msgstr "<span name=\"distro-name\"></span> backports tároló engedélyezése"
+msgid "Enable Ubuntu Budgie backports repository"
+msgstr ""
 
-#: recommendations.html33, 106, 139, 170, 184, 201, 217, 234
+#: recommendations.html33, 106, 139, 164, 181, 197, 214
 msgid "Applying Changes..."
 msgstr "Változások alkalmazása..."
 
@@ -61,25 +58,12 @@ msgid ""
 "package that can work on different platforms. By using snap package format, "
 "applications can have their own version of libraries and there is no need to"
 " worry about libraries installed in underlying operating system. Snap "
-"packages enable developers to bring much newer versions of apps to <span "
-"name=\"distro-name\"></span>. Newer versions of KDE, GNOME, browsers or "
-"other desktop environment apps will usually build easily on older LTS "
-"releases but the complexities of packaging and providing updates have "
-"prevented us from delivering them in the past."
+"packages enable developers to bring much newer versions of apps to Ubuntu "
+"Budgie. Newer versions of KDE, GNOME, browsers or other desktop environment "
+"apps will usually build easily on older LTS releases but the complexities of"
+" packaging and providing updates have prevented us from delivering them in "
+"the past."
 msgstr ""
-"A <strong>Snap</strong> az alkalmazások csomagolási formátumának új "
-"generációja a <em>Canonical</em> által fejlesztve. Azon túl, hogy alapvetően"
-" csak a különböző Ubuntu platformok számára lett fejlesztve, sok más "
-"GNU/Linux-disztribúcióban is működik.  Ez segít az alkalmazásfejlesztőknek "
-"egy egységes csomag létrehozásában, ami működhet különböző platformokon. A "
-"snap csomagformátum használatával az alkalmazásoknak saját verziójuk lehet a"
-" könyvtárakban, és nem kell a mögöttes operációs rendszerre telepített "
-"könyvtárak miatt aggódnia. A snap csomagoknak köszönhetően, a fejlesztők "
-"több alkalmazás újabb verzióját teszik elérhetővé a(z) <span name=\"distro-"
-"name\"></span>-ban. A KDE vagy GNOME újabb verziói, a böngészők és egyéb "
-"asztali környezet alkalmazásai általában egyszerűen felépíthetők a régebbi "
-"LTS kiadásokon, ami régen a csomagolási nehézségek miatt nem volt "
-"lehetséges."
 
 #: recommendations.html55, 122
 msgid "Learn more"
@@ -229,28 +213,19 @@ msgstr ""
 
 #: recommendations.html:125
 msgid ""
-"<span name=\"distro-name\"></span> recommends installing "
-"<strong>Flatpak</strong> as it will open a new world of possibilities for "
-"you. With Flatpak, you can enjoy the latest release of different software "
-"packages as soon as it is packaged by the upstream project and you don't "
-"have to wait for your distribution to package it for you."
+"Ubuntu Budgie recommends installing <strong>Flatpak</strong> as it will open"
+" a new world of possibilities for you. With Flatpak, you can enjoy the "
+"latest release of different software packages as soon as it is packaged by "
+"the upstream project and you don't have to wait for your distribution to "
+"package it for you."
 msgstr ""
-"A(z) <span name=\"distro-name\"></span> a <strong>Flatpak</strong> "
-"telepítését ajánlja, amely egy új világ lehetőségeit tárja majd fel. A "
-"Flatpakkal különböző szoftvercsomagok legújabb kiadásait élvezheti, a "
-"projektnek köszönhetően szinte azonnal, és nem kell arra várnia, hogy a "
-"disztribúció tegye ezt meg."
 
 #: recommendations.html:130
 msgid ""
-"Being a user friendly GNU/Linux distribution, <span name='distro-"
-"name'></span> allows you to install Flatpak with a single click. After first"
-" time configuration, you can use GNOME Software to install Flatpak packages."
+"Being a user friendly GNU/Linux distribution, Ubuntu Budgie allows you to "
+"install Flatpak with a single click. After first time configuration, you can"
+" use GNOME Software to install Flatpak packages."
 msgstr ""
-"A felhasználóbarát <span name='distro-name'></span> GNU/Linux disztribúció "
-"lehetővé teszi, hogy egy kattintással telepítse a Flatpakot. Az egyszeri "
-"konfiguráció után használhatja is a GNOME Szoftvert a Flatpak csomagok "
-"telepítéséhez."
 
 #: recommendations.html:134
 msgid "Flatpak is installed. Please reboot for the service to start"
@@ -272,37 +247,21 @@ msgstr ""
 
 #: recommendations.html:153
 msgid ""
-"Being proprietary software, Dropbox is not included in the primary "
-"repositories of <span name=\"distro-name\"></span>. However, to provide more"
-" choice to users, Dropbox is shipped as a part of the <em>Multiverse</em> "
-"repository. <span name=\"distro-name\"></span> provides you the option to "
-"enable the <em>Multiverse</em> repository and to install Dropbox with a "
-"single mouse click."
-msgstr ""
-"Mivel a Dropbox egy szabadalmaztatott szoftver, ezért az elsődleges <span "
-"name=\"distro-name\"></span> tárolokból nem érhető el. Annak érdekében, hogy"
-" a felhasználóknak több lehetőséget biztosítsunk, a Dropbox elérhető a "
-"<em>Multiverse</em> tárolóból. A(z) <span name=\"distro-name\"></span> "
-"lehetőséget kínál a <em>Multiverse</em> tároló engedélyezésére, így a "
-"Dropbox pár kattintással telepíthető. "
-
-#: recommendations.html159, 173
-msgid ""
 "After installing, logout and login and follow the dropbox instructions that "
 "are then displayed."
 msgstr ""
 "Telepítés után jelentkezzen ki majd be és kövesse a képernyőn látható "
 "dropbox utasításokat."
 
-#: recommendations.html164, 178
+#: recommendations.html:158
 msgid "Dropbox is installed"
 msgstr "Dropbox telepítve"
 
-#: recommendations.html167, 181
+#: recommendations.html:161
 msgid "Install & Configure Dropbox"
 msgstr "Dropbox telepítése és konfigurálása"
 
-#: recommendations.html:191
+#: recommendations.html:171
 msgid ""
 "Nemo Share allows you to quickly share a folder from the Nemo file manager "
 "without requiring root access."
@@ -310,30 +269,30 @@ msgstr ""
 "A Nemo megosztó lehetővé teszi egy mappa azonnali megosztását a Nemo "
 "fájlkezelőből root hozzáférés nélkül."
 
-#: recommendations.html:196
+#: recommendations.html:176
 msgid "Nemo Share is installed"
 msgstr "Nemo megosztó telepítve"
 
-#: recommendations.html:199
+#: recommendations.html:179
 msgid "Install Nemo Share"
 msgstr "Nemo megosztó telepítése"
 
-#: recommendations.html:208
+#: recommendations.html:188
 msgid ""
 "Nemo Preview allows you to quickly view the contents of a highlighted file "
 "from the Nemo file manager. Just press space to toggle the preview on and "
 "off."
 msgstr ""
 
-#: recommendations.html:212
+#: recommendations.html:192
 msgid "Nemo Preview is installed"
 msgstr ""
 
-#: recommendations.html:215
+#: recommendations.html:195
 msgid "Install Nemo Preview"
 msgstr ""
 
-#: recommendations.html:224
+#: recommendations.html:204
 msgid ""
 "Gutenprint is a suite of <a onclick=\"cmd('link?http://gimp-"
 "print.sourceforge.net/p_Supported_Printers.php')\">thousands</a> of printer "
@@ -341,10 +300,10 @@ msgid ""
 "supports only the printer part of multi-function devices."
 msgstr ""
 
-#: recommendations.html:229
+#: recommendations.html:209
 msgid "Gutenprint is installed"
 msgstr ""
 
-#: recommendations.html:232
+#: recommendations.html:212
 msgid "Install Gutenprint"
 msgstr ""

@@ -27,8 +27,8 @@ msgstr ""
 #: recommendations.html:22
 msgid ""
 "To provide the most up-to-date versions of budgie-desktop and other "
-"associated packages, we recommend to enable the <span name=\"distro-"
-"name\"></span> backports repository."
+"associated packages, we recommend to enable the Ubuntu Budgie backports "
+"repository."
 msgstr ""
 
 #: recommendations.html:27
@@ -36,10 +36,10 @@ msgid "Repository is installed"
 msgstr ""
 
 #: recommendations.html:30
-msgid "Enable <span name=\"distro-name\"></span> backports repository"
+msgid "Enable Ubuntu Budgie backports repository"
 msgstr ""
 
-#: recommendations.html33, 106, 139, 170, 184, 201, 217, 234
+#: recommendations.html33, 106, 139, 164, 181, 197, 214
 msgid "Applying Changes..."
 msgstr "변경 사항 적용 중..."
 
@@ -56,14 +56,12 @@ msgid ""
 "package that can work on different platforms. By using snap package format, "
 "applications can have their own version of libraries and there is no need to"
 " worry about libraries installed in underlying operating system. Snap "
-"packages enable developers to bring much newer versions of apps to <span "
-"name=\"distro-name\"></span>. Newer versions of KDE, GNOME, browsers or "
-"other desktop environment apps will usually build easily on older LTS "
-"releases but the complexities of packaging and providing updates have "
-"prevented us from delivering them in the past."
+"packages enable developers to bring much newer versions of apps to Ubuntu "
+"Budgie. Newer versions of KDE, GNOME, browsers or other desktop environment "
+"apps will usually build easily on older LTS releases but the complexities of"
+" packaging and providing updates have prevented us from delivering them in "
+"the past."
 msgstr ""
-"<strong>Snap</strong>은 <em>Canonical</em>에서 개발한 신세대 애플리케이션 패키징 포멧입니다. 처음에는 우분투 플랫폼을 위해서 개발되었지만, 현재는 다른 GNU/Linux 배포판에서도 작동합니다. 이 패키징 포맷은 애플리케이션 개발자들이 각기 다른 플랫폼에도 대응하는 통합 패키지를 만드는 데에 도움을 줍니다. Snap 패키지 포맷을 사용하면, 애플리케이션이 필요로 하는 라이브러리를 패키지에 통합하기 때문에 운영 체제에 무슨 라이브러리가 설치되어 있어야 하는지 신경 쓸 필요가 없게 됩니다. Snap 패키지들은 <span name=\"distro-name\"></span>에 최신 버전의 애플리케이션을 제공하는데에도 도움을 주고 있습니다.\n"
-"최신 버전의 KDE, GNOME, 웹 브라우저 및 기타 데스크톱 환경 애플리케이션들은 구버전의 LTS 릴리즈들을 사용하여 쉽게 빌드되어 왔지만 패키징과 업데이트 제공의 복잡함은 애플리케이션들을 제때 최신 버전으로 유지하는 것을 방해해 왔습니다."
 
 #: recommendations.html55, 122
 msgid "Learn more"
@@ -186,18 +184,18 @@ msgstr ""
 
 #: recommendations.html:125
 msgid ""
-"<span name=\"distro-name\"></span> recommends installing "
-"<strong>Flatpak</strong> as it will open a new world of possibilities for "
-"you. With Flatpak, you can enjoy the latest release of different software "
-"packages as soon as it is packaged by the upstream project and you don't "
-"have to wait for your distribution to package it for you."
+"Ubuntu Budgie recommends installing <strong>Flatpak</strong> as it will open"
+" a new world of possibilities for you. With Flatpak, you can enjoy the "
+"latest release of different software packages as soon as it is packaged by "
+"the upstream project and you don't have to wait for your distribution to "
+"package it for you."
 msgstr ""
 
 #: recommendations.html:130
 msgid ""
-"Being a user friendly GNU/Linux distribution, <span name='distro-"
-"name'></span> allows you to install Flatpak with a single click. After first"
-" time configuration, you can use GNOME Software to install Flatpak packages."
+"Being a user friendly GNU/Linux distribution, Ubuntu Budgie allows you to "
+"install Flatpak with a single click. After first time configuration, you can"
+" use GNOME Software to install Flatpak packages."
 msgstr ""
 
 #: recommendations.html:134
@@ -216,62 +214,48 @@ msgstr ""
 
 #: recommendations.html:153
 msgid ""
-"Being proprietary software, Dropbox is not included in the primary "
-"repositories of <span name=\"distro-name\"></span>. However, to provide more"
-" choice to users, Dropbox is shipped as a part of the <em>Multiverse</em> "
-"repository. <span name=\"distro-name\"></span> provides you the option to "
-"enable the <em>Multiverse</em> repository and to install Dropbox with a "
-"single mouse click."
-msgstr ""
-"Dropbox는 사유 소프트웨어이기에 <span name=\"distro-name\"></span>의 주 저장소에 포함되어 있지 "
-"않습니다. 그러나 사용자들에게 더 많은 선택의 길을 제공하기 위해 <em>Multiverse</em> 저장소에서 배포하고 있습니다. "
-"<span name=\"distro-name\"></span>는 단 한 번의 클릭으로 <em>Multiverse</em> 저장소를 "
-"활성화하고 Dropbox를 설치할 수 있게 해줍니다."
-
-#: recommendations.html159, 173
-msgid ""
 "After installing, logout and login and follow the dropbox instructions that "
 "are then displayed."
 msgstr "설치가 끝나면 로그아웃하고 로그인한 다음, 표시되는 Dropbox 설명에 따라 구성을 완료하세요."
 
-#: recommendations.html164, 178
+#: recommendations.html:158
 msgid "Dropbox is installed"
 msgstr "Dropbox가 설치되었습니다."
 
-#: recommendations.html167, 181
+#: recommendations.html:161
 msgid "Install & Configure Dropbox"
 msgstr "Dropbox 설치 및 구성"
 
-#: recommendations.html:191
+#: recommendations.html:171
 msgid ""
 "Nemo Share allows you to quickly share a folder from the Nemo file manager "
 "without requiring root access."
 msgstr ""
 
-#: recommendations.html:196
+#: recommendations.html:176
 msgid "Nemo Share is installed"
 msgstr ""
 
-#: recommendations.html:199
+#: recommendations.html:179
 msgid "Install Nemo Share"
 msgstr ""
 
-#: recommendations.html:208
+#: recommendations.html:188
 msgid ""
 "Nemo Preview allows you to quickly view the contents of a highlighted file "
 "from the Nemo file manager. Just press space to toggle the preview on and "
 "off."
 msgstr ""
 
-#: recommendations.html:212
+#: recommendations.html:192
 msgid "Nemo Preview is installed"
 msgstr ""
 
-#: recommendations.html:215
+#: recommendations.html:195
 msgid "Install Nemo Preview"
 msgstr ""
 
-#: recommendations.html:224
+#: recommendations.html:204
 msgid ""
 "Gutenprint is a suite of <a onclick=\"cmd('link?http://gimp-"
 "print.sourceforge.net/p_Supported_Printers.php')\">thousands</a> of printer "
@@ -279,10 +263,10 @@ msgid ""
 "supports only the printer part of multi-function devices."
 msgstr ""
 
-#: recommendations.html:229
+#: recommendations.html:209
 msgid "Gutenprint is installed"
 msgstr ""
 
-#: recommendations.html:232
+#: recommendations.html:212
 msgid "Install Gutenprint"
 msgstr ""

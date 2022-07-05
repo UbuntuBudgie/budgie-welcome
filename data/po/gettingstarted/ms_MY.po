@@ -25,7 +25,7 @@ msgstr "Membiasakan Diri"
 msgid "Prerequisites"
 msgstr "Prasyarat"
 
-#: gettingstarted.html26, 193
+#: gettingstarted.html26, 196
 msgid "System Requirements"
 msgstr "Keperluan Sistem"
 
@@ -33,7 +33,7 @@ msgstr "Keperluan Sistem"
 msgid "Installation Preparation"
 msgstr "Persediaan Pemasangan"
 
-#: gettingstarted.html32, 196, 206
+#: gettingstarted.html32, 199, 209
 msgid "Dual Booting"
 msgstr "Dwi-But"
 
@@ -49,11 +49,11 @@ msgstr "Keserasian"
 msgid "Browser Ballot"
 msgstr "Undian Pelayar"
 
-#: gettingstarted.html46, 887, 1843
+#: gettingstarted.html46, 879, 1729
 msgid "Customization"
 msgstr "Penyuaian"
 
-#: gettingstarted.html49, 1205
+#: gettingstarted.html49, 1107
 msgid "Keyboard Shortcuts"
 msgstr "Pintasan Papan Kekunci"
 
@@ -61,11 +61,11 @@ msgstr "Pintasan Papan Kekunci"
 msgid "Post-Installation"
 msgstr "Pasca-Pemasangan"
 
-#: gettingstarted.html55, 405, 654
+#: gettingstarted.html55, 408, 657
 msgid "Updates & Extras"
 msgstr "Kemas Kini & Ekstra"
 
-#: gettingstarted.html58, 485, 495, 770
+#: gettingstarted.html58, 488, 498, 764
 msgid "Drivers"
 msgstr "Pemacu"
 
@@ -73,7 +73,7 @@ msgstr "Pemacu"
 msgid "Language & Input"
 msgstr "Bahasa & Input"
 
-#: gettingstarted.html64, 772
+#: gettingstarted.html64, 766
 msgid "Optional Tasks"
 msgstr "Tugas Pilihan"
 
@@ -95,46 +95,55 @@ msgstr "Keperluan Sistem Minimum"
 
 #: gettingstarted.html:88
 msgid ""
-"<span name=\"distro-name\"></span> works well on both high-end to older "
-"computers, optimized to be functional, while light on system resources."
+"Ubuntu Budgie works well on both high-end to older computers, optimized to "
+"be functional, while light on system resources."
 msgstr ""
-"<span name=\"distro-name\"></span> berfungsi baik daripada komputer "
-"berprestasi tinggi sehinggalah ke komputer lama, dioptimumkan untuk "
-"berfungsi, tetapi meringankan beban sumber sistem."
 
 #: gettingstarted.html:91
 msgid "Minimum"
 msgstr "Minimum"
 
 #: gettingstarted.html:93
-msgid "Pentium Dual Core 1.6 GHz - approximately created in 2007"
-msgstr "Pentium DwiTeras 1.6 GHz - dicipta pada tahun 2007"
+msgid "Pentium i3 - approximately created in 2013"
+msgstr "Pentium i3 - dicipta pada tahun 2013"
 
-#: gettingstarted.html:94
+#: gettingstarted.html94, 98
 msgid "2 gigabytes (GB) of RAM"
 msgstr "2 gigabait (GB) RAM"
 
 #: gettingstarted.html:95
-msgid "16 gigabytes (GB) of disk space"
-msgstr "16 gigabait (GB) ruang cakera"
+msgid "32 gigabytes (GB) of disk space"
+msgstr ""
 
-#: gettingstarted.html:98
+#: gettingstarted.html97, 108
+msgid "Raspberry Pi4B"
+msgstr ""
+
+#: gettingstarted.html:99
+msgid "32 gigabytes (GB) SD Card"
+msgstr ""
+
+#: gettingstarted.html:102
 msgid "Recommended"
 msgstr "Disarankan"
 
-#: gettingstarted.html:100
-msgid "Pentium i3 - approximately created in 2013"
-msgstr "Pentium i3 - dicipta pada tahun 2013"
+#: gettingstarted.html:104
+msgid "Pentium i5 - approximately created in 2017"
+msgstr ""
 
-#: gettingstarted.html:101
+#: gettingstarted.html105, 109
 msgid "4 gigabytes (GB) of RAM"
 msgstr "4 gigabait (GB) RAM"
 
-#: gettingstarted.html:102
-msgid "80 gigabytes (GB) of disk space"
-msgstr "80 gigabait (GB) ruang cakera"
+#: gettingstarted.html:106
+msgid "60 gigabytes (GB) of disk space"
+msgstr ""
 
-#: gettingstarted.html:105
+#: gettingstarted.html:110
+msgid "60 gigabytes (GB) SSD"
+msgstr ""
+
+#: gettingstarted.html:113
 msgid ""
 "The operating system will run much more efficiently if your computer meets "
 "or surpasses the recommended requirements."
@@ -142,42 +151,37 @@ msgstr ""
 "Sistem pengoperasian akan berjalan dengan lebih efisyen jika komputer anda "
 "memenuhi atau melepasi keperluan yang disarankan."
 
-#: gettingstarted.html110, 1853
+#: gettingstarted.html118, 1739
 msgid "What's inside my computer?"
 msgstr "Apakah spesifikasi komputer saya?"
 
-#: gettingstarted.html:116
+#: gettingstarted.html:124
 msgid "Installation Preparations"
 msgstr "Persediaan Pemasangan"
 
-#: gettingstarted.html:126
+#: gettingstarted.html:134
 msgid "Preparing to Install"
 msgstr "Bersedia untuk Memasang"
 
-#: gettingstarted.html:127
+#: gettingstarted.html:135
 msgid ""
-"<span name=\"distro-name\"></span> is relatively simple to set up, whether "
-"you're looking to replace your existing operating system or install <span "
-"name=\"distro-name\"></span> alongside an existing one - such as &nbsp;<span"
-" class=\"fa fa-windows\"></span> Microsoft Windows or another <span "
-"class=\"fa fa-linux\"></span> GNU/Linux distribution."
+"Ubuntu Budgie is relatively simple to set up, whether you're looking to "
+"replace your existing operating system or install Ubuntu Budgie alongside an"
+" existing one - such as &nbsp;<span class=\"fa fa-windows\"></span> "
+"Microsoft Windows or another <span class=\"fa fa-linux\"></span> GNU/Linux "
+"distribution."
 msgstr ""
-"<span name=\"distro-name\"></span> sebenarnya mudah dipasang, sama ada anda "
-"mahu jadikan sebagai pengganti sistem pengoperasian yang ada atau  pasang "
-"<span name=\"distro-name\"></span> bersama-sama dengan yang sedia ada - "
-"seperti &nbsp;<span class=\"fa fa-windows\"></span> Microsoft Windows atau "
-"lain-lain distribusi GNU/Linux <span class=\"fa fa-linux\"></span>."
 
-#: gettingstarted.html:133
+#: gettingstarted.html:141
 msgid "For the best results:"
 msgstr "Untuk hasil terbaik:"
 
-#: gettingstarted.html:135
+#: gettingstarted.html:143
 msgid "<u><b>Back up</b></u> any important data to another storage device."
 msgstr ""
 "<u><b>Sandar</b></u> mana-mana data penting ke dalam pemacu storan lain."
 
-#: gettingstarted.html:136
+#: gettingstarted.html:144
 msgid ""
 "Connect to the Internet to install all available updates during "
 "installation."
@@ -185,35 +189,30 @@ msgstr ""
 "Sambung ke Internet untuk memasang semua kemas kini yang tersedia ketika "
 "pemasangan."
 
-#: gettingstarted.html:138
+#: gettingstarted.html:146
 msgid "Stay connected to the Internet to install all available updates."
 msgstr ""
 "Kekal bersambung dengan Internet untuk memasang semua kemas kini yang "
 "tersedia."
 
-#: gettingstarted.html:139
+#: gettingstarted.html:147
 msgid "Plug in your device to the mains if it is running on battery power."
 msgstr "Palamkan soket kuasa jika ia masih berjalan dengan kuasa bateri."
 
-#: gettingstarted.html:144
+#: gettingstarted.html:152
 msgid ""
 "The live session you are currently in right now is a good opportunity to "
-"test <span name=\"distro-name\"></span> without modifying your computer, "
-"allowing you to test all of your peripherals are working as intended before "
-"committing to installing it on your machine. Once you are ready, double "
-"click the installation icon from the desktop."
+"test Ubuntu Budgie without modifying your computer, allowing you to test all"
+" of your peripherals are working as intended before committing to installing"
+" it on your machine. Once you are ready, double click the installation icon "
+"from the desktop."
 msgstr ""
-"Sesi langsung yang kini dijalankan merupakan peluang terbaik untuk menguji "
-"<span name=\"distro-name\"></span> tanpa perlu mengubah suai komputer anda, "
-"membolehkan anda uji semua persisian anda sama ada berfungsi baik sebelum "
-"memasangnya ke dalam komputer anda. Jika anda sudah bersedia, dwi-klik pada "
-"ikon pemasangan yang tertera di atas meja."
 
-#: gettingstarted.html:151
+#: gettingstarted.html:159
 msgid "Modern UEFI-based computers"
 msgstr "Komputer modern berasaskan-UEFI"
 
-#: gettingstarted.html:152
+#: gettingstarted.html:160
 msgid ""
 "If you have a modern PC that uses the Unified Extended Firmware Interface "
 "(UEFI), you may need to disable <b>Secure Boot</b> (or enable the <b>Unlock "
@@ -226,13 +225,13 @@ msgstr ""
 "But</b>) sebelum pemasangan, terutamanya jika sistem pengoperasian itu telah"
 " dipra-pasang."
 
-#: gettingstarted.html:156
+#: gettingstarted.html:164
 msgid "If you are using a legacy BIOS machine, you do not need to do this."
 msgstr ""
 "Jika anda masih guna komputer dengan BIOS legasi atau lama, anda tidak perlu"
 " membuat perkara tersebut."
 
-#: gettingstarted.html:159
+#: gettingstarted.html:167
 msgid ""
 "Especially when dual booting, it is important that you boot your system in "
 "the correct mode and use the <b> 64-bit image</b> , as you cannot boot an "
@@ -244,7 +243,7 @@ msgstr ""
 "tidak boleh but sistem pengoperasian yang terpasang dalam mod BIOS selepas "
 "memasang sistem pengoperasian terbenar-BIOS atau sebaliknya."
 
-#: gettingstarted.html:165
+#: gettingstarted.html:173
 msgid ""
 "Booting in BIOS mode on a UEFI system with a GPT-formatted disk will also "
 "show a \"protection layer\". <b>Do not worry,</b> your data is not lost or "
@@ -254,18 +253,18 @@ msgstr ""
 "menunjukkan \"lapisan perlindungan\". <b>Janganlah risau,</b> data anda "
 "tidak hilang atau menjadi rosak!"
 
-#: gettingstarted.html:170
+#: gettingstarted.html:178
 msgid ""
 "Your system is currently running in <b><span id=\"boot-mode\"></span> "
 "mode</b>."
 msgstr ""
 "Sistem anda kini berjalan dalam <b>mod <span id=\"boot-mode\"></span></b>."
 
-#: gettingstarted.html:175
+#: gettingstarted.html:183
 msgid "Swap"
 msgstr "Silih"
 
-#: gettingstarted.html:176
+#: gettingstarted.html:184
 msgid ""
 "For computers that start to run low on memory (RAM), the operating system "
 "will start swapping to disk. Known as a \"paging file\" in Windows. "
@@ -278,17 +277,7 @@ msgstr ""
 "rendah dan boleh mengakibatkan kejadian kaku jika anda sepenuhnya kehabisan "
 "ingatan tanpa penyilihan."
 
-#: gettingstarted.html:180
-msgid ""
-"By default, a swap partition is created based on the size of your RAM. For "
-"example, if you have 2 GiB of RAM, then 2 GiB of hard disk space will be "
-"reserved for swap at the end of the drive."
-msgstr ""
-"Secara lalai, sekatan silih diwujudkan berdasarkan saiz RAM anda. Sebagai "
-"contoh, jika anda mempunyai 2GiB RAM, maka 2GiB ruang cakera keras akan "
-"disimpan khusus untuk penyilihan dipenghujung cakera."
-
-#: gettingstarted.html:185
+#: gettingstarted.html:188
 msgid ""
 "By default, a swap file is created based on the size of your RAM. For "
 "example, if you have 2 GiB of RAM, then 2 GiB of hard disk space will be "
@@ -299,67 +288,62 @@ msgstr ""
 "jika anda mempunyai 2GiB RAM, maka 2GiB ruang cakera keras akan disimpan "
 "khusus untuk fail silih. Satu sekatan silih tidak perlu lagi diwujudkan."
 
-#: gettingstarted.html193, 394, 770, 1842
+#: gettingstarted.html196, 397, 764, 1728
 msgid "Previous:"
 msgstr "Terdahulu:"
 
-#: gettingstarted.html:207
+#: gettingstarted.html:210
 msgid ""
-"Should you wish to install <span name=\"distro-name\"></span> alongside your"
-" existing operating system, your partitions need to be shrunk. This results "
-"in sections of your hard disk being split between multiple operating "
-"systems."
+"Should you wish to install Ubuntu Budgie alongside your existing operating "
+"system, your partitions need to be shrunk. This results in sections of your "
+"hard disk being split between multiple operating systems."
 msgstr ""
-"Jika anda mahu memasang <span name=\"distro-name\"></span> bersama-sama "
-"dengan sistem pengoperasian sedia ada anda, sekatan anda perlu dikecilkan. "
-"Kesannya sebahagian cakera keras anda dipisahkan diantara berbilang sistem "
-"pengoperasian yang ada."
 
-#: gettingstarted.html:213
+#: gettingstarted.html:216
 msgid "I'm dual booting with"
 msgstr "Saya mendwi-but dengan"
 
-#: gettingstarted.html:216
+#: gettingstarted.html:219
 msgid "To minimize the risk of data loss or failure, ensure that:"
 msgstr "Untuk meminimumkan risiko kehilangan atau kegagalan data, pastikan:"
 
-#: gettingstarted.html:218
+#: gettingstarted.html:221
 msgid "There is enough free space. 10 GB minimum is recommended."
 msgstr "Ruang bebas yang mencukupi, Minimum 10 GB disarankan."
 
-#: gettingstarted.html:220
+#: gettingstarted.html:223
 msgid "<b><u>Back up</u></b> important data to another drive."
 msgstr "<b><u>Sandar</u></b> data penting ke dalam pemacu lain."
 
-#: gettingstarted.html:222
+#: gettingstarted.html:225
 msgid "Defragment the hard drive."
 msgstr "Penyahserpihan cakera keras."
 
-#: gettingstarted.html:223
+#: gettingstarted.html:226
 msgid "Ensure Windows has been cleanly shut down (not hibernated)."
 msgstr "Pastikan Windows telah ditutup dengan baik (bukan dihibernasikan)."
 
-#: gettingstarted.html:228
+#: gettingstarted.html:231
 msgid "Which approach would you prefer?"
 msgstr "Pendekatan manakah yang anda mahu?"
 
-#: gettingstarted.html:231
+#: gettingstarted.html:234
 msgid "Simple"
 msgstr "Ringkas"
 
-#: gettingstarted.html:233
+#: gettingstarted.html:236
 msgid "Advanced"
 msgstr "Lanjutan"
 
-#: gettingstarted.html:235
+#: gettingstarted.html:238
 msgid "Safest"
 msgstr "Paling Selamat"
 
-#: gettingstarted.html:240
+#: gettingstarted.html:243
 msgid "The simplest method is to use the installer."
 msgstr "Kaedah termudah ialah dengan penggunaan pemasang."
 
-#: gettingstarted.html:242
+#: gettingstarted.html:245
 msgid ""
 "The installer scans your disks for existing operating systems and provides a"
 " choice on what you'd like to do."
@@ -367,19 +351,19 @@ msgstr ""
 "Pemasang mengimbas cakera anda jika ada sistem pengoperasian dan menyediakan"
 " satu pilihan yang perlu anda pilih."
 
-#: gettingstarted.html:245
+#: gettingstarted.html:248
 msgid "You will see an option similar to this:"
 msgstr "Anda akan melihat pilihan seperti ini:"
 
-#: gettingstarted.html:249
+#: gettingstarted.html:252
 msgid "Followed by:"
 msgstr "Diikuti dengan:"
 
-#: gettingstarted.html:255
+#: gettingstarted.html:258
 msgid "Do not interrupt or power off the computer during a resize operation."
 msgstr "Jangan sampuk atau matikan komputer ketika operasi saiz semula."
 
-#: gettingstarted.html:257
+#: gettingstarted.html:260
 msgid ""
 "If you do, data loss or a partition table corruption could occur. Please "
 "double check your changes before proceeding."
@@ -387,7 +371,7 @@ msgstr ""
 "Jika berlaku, kehilangan data atau kerosakan jadual sekatan boleh berlaku. "
 "Sila periksa sekali lagi perubahan yang anda buat sebelum diteruskan."
 
-#: gettingstarted.html:259
+#: gettingstarted.html:262
 msgid ""
 "The installer may show a <span class=\"fa fa-spinner\"></span> spinner "
 "cursor for a long period of time, depending on the size of your disk."
@@ -396,7 +380,7 @@ msgstr ""
 "spinner\"></span> dalam tempoh yang lama, ia bergantung pada saiz cakera "
 "anda."
 
-#: gettingstarted.html:263
+#: gettingstarted.html:266
 msgid ""
 "<b>When you next boot Windows, run</b> <code>chkdsk /f</code> from the "
 "command prompt to check the file system for errors. Windows may schedule "
@@ -406,11 +390,11 @@ msgstr ""
 "prom perintah untuk memeriksa sistem fail jika ada ralat. Windows "
 "melakukannya secara automatik. Ia memastikan ketekalan sistem fail NTFS."
 
-#: gettingstarted.html:271
+#: gettingstarted.html:274
 msgid "Use GParted or the installer's \"Custom\" option."
 msgstr "Guna GParted atau pilihan \"Suai\" pemasang."
 
-#: gettingstarted.html:274
+#: gettingstarted.html:277
 msgid ""
 "<b>GParted</b> is available during the live session only. It is located "
 "under the <b>System Tools <i class=\"material-icons\">&#xE315;</i></b>menu. "
@@ -424,25 +408,22 @@ msgstr ""
 "buat para pengguna mahir yang tahu berkenaan bentangan cakera mereka. Kaedah"
 " ini membuat perubahan sebelum pemasangan dijalankan."
 
-#: gettingstarted.html:282
+#: gettingstarted.html:285
 msgid "Open GParted"
 msgstr "Buka GParted"
 
-#: gettingstarted.html:285
+#: gettingstarted.html:288
 msgid ""
 "After completing operations to your disk, you can leave the remaining space "
 "unallocated, whereby the installer will detect this unused space to install "
-"<span name=\"distro-name\"></span> to."
+"Ubuntu Budgie to."
 msgstr ""
-"Selepas operasi pada cakera anda selesai, anda boleh biarkan ruang berbaki "
-"tidak diperuntukkan. yang mana pemasang akan mengesan ruang ini untuk "
-"memasang <span name=\"distro-name\"></span>."
 
-#: gettingstarted.html:289
+#: gettingstarted.html:292
 msgid "Using the Installer's \"Custom\" option."
 msgstr "Menggunakan pilihan \"Suai\" Pemasang."
 
-#: gettingstarted.html:290
+#: gettingstarted.html:293
 msgid ""
 "Instead or in addition to GParted, the <b>Custom</b> option during the "
 "installation wizard can also configure and resize your partitions as well as"
@@ -454,53 +435,53 @@ msgstr ""
 "lekap yang dikehendaki. Pembahagian cakera anda lebih mudah dan dapat "
 "memasang-semula sistem pengoperasian kemudian jika mahu."
 
-#: gettingstarted.html:295
+#: gettingstarted.html:298
 msgid "You can specify these mount points:"
 msgstr "Anda boleh nyatakan titik lekap berikut:"
 
-#: gettingstarted.html:297
-msgid "The base for <span name=\"distro-name\"></span>"
-msgstr "Tapak untuk <span name=\"distro-name\"></span>"
+#: gettingstarted.html:300
+msgid "The base for Ubuntu Budgie"
+msgstr ""
 
-#: gettingstarted.html:298
+#: gettingstarted.html:301
 msgid "Bootloader and kernels"
 msgstr "Pemuat but dan kernel"
 
-#: gettingstarted.html:299
+#: gettingstarted.html:302
 msgid "Your personal files and folders"
 msgstr "Fail dan folder peribadi anda"
 
-#: gettingstarted.html:300
+#: gettingstarted.html:303
 msgid "Temporary files"
 msgstr "Fail sementara"
 
-#: gettingstarted.html:301
+#: gettingstarted.html:304
 msgid ""
 "Contains most of the applications <i> (binaries, documentation, libraries, "
 "etc)</i>"
 msgstr ""
 "Mengandungi kebanyakan aplikasi <i> (binari, dokumentasi, pustaka, dll)</i>"
 
-#: gettingstarted.html:303
+#: gettingstarted.html:306
 msgid "Variable data <i>(such as system logs)</i>"
 msgstr "Data pembolehubah <i>(seperti log sistem)</i>"
 
-#: gettingstarted.html:304
+#: gettingstarted.html:307
 msgid ""
 "Data for System Services <i>(typically used for server configurations)</i>"
 msgstr ""
 "Data untuk Servis Sistem <i>(biasanya digunakan untuk konfigurasi "
 "pelayan)</i>"
 
-#: gettingstarted.html:306
+#: gettingstarted.html:309
 msgid "Additional software unmanaged by the package manager"
 msgstr "Perisian tambahan yang tidak diurus oleh pengurus pakej"
 
-#: gettingstarted.html:307
+#: gettingstarted.html:310
 msgid "such as"
 msgstr "seperti"
 
-#: gettingstarted.html:311
+#: gettingstarted.html:314
 msgid ""
 "Creating separate partitions for all above mount points is not necessary. "
 "The commonly partitioned directories being <code>/</code>, "
@@ -515,15 +496,15 @@ msgstr ""
 "fizikal yang berbeza, contohnya, jika anda menyukai OS <code>/</code> dalam "
 "SSD, tetapi fail peribadi <code>/home</code> dalam cakera keras mekanikal."
 
-#: gettingstarted.html:319
+#: gettingstarted.html:322
 msgid "Shrink your system disk within Windows."
 msgstr "Kecilkan cakera sistem anda di dalam Windows."
 
-#: gettingstarted.html:321
+#: gettingstarted.html:324
 msgid "Applies to Windows Vista and later."
 msgstr "Diterap pada Windows Vista dan versi terkemudian."
 
-#: gettingstarted.html:323
+#: gettingstarted.html:326
 msgid ""
 "If you are using Windows XP or earlier, you will need to use the "
 "<b>Simple</b> or <b>Advanced</b> method to shrink your disk."
@@ -531,22 +512,18 @@ msgstr ""
 "Jika anda masih menggunakan Windows XP atau yang lebih lama, anda perlu "
 "ikuti kaedah <b>Mudah</b> atau <b>Lanjutan</b> untuk kecilkan cakera anda."
 
-#: gettingstarted.html:328
+#: gettingstarted.html:331
 msgid ""
 "Newer versions of Windows provide a tool to shrink the NTFS volume from "
 "within Windows. This is a safer bet if it's essential that Windows still "
-"boots on your computer while experiencing <span name=\"distro-"
-"name\"></span>."
+"boots on your computer while experiencing Ubuntu Budgie."
 msgstr ""
-"Versi Windows yang lebih baharu menyediakan satu alat untuk kecil volum NFTS"
-" dari dalam Windows. Langkah ini lebih selamat kerana Windows masih dibut "
-"dalam komputer anda ketika menikmati <span name=\"distro-name\"></span>."
 
-#: gettingstarted.html:332
+#: gettingstarted.html:335
 msgid "Open <b>Disk Management</b> from the start menu."
 msgstr "Buka <b>Pengurusan Cakera</b> melalui menu mula."
 
-#: gettingstarted.html:337
+#: gettingstarted.html:340
 msgid ""
 "Right click your desired drive and choose <b>Shrink Partition</b> from the "
 "context menu."
@@ -554,23 +531,19 @@ msgstr ""
 "Klik kanan pada pemacu yang dikehendaki kemudian pilih <b>Kecilkan "
 "Sekatan</b> daripada menu konteks."
 
-#: gettingstarted.html:343
+#: gettingstarted.html:346
 msgid "Enter the amount to shrink your system partition by."
 msgstr "Masukkan amaun untuk kecilkan sekatan sistem anda."
 
-#: gettingstarted.html:349
-msgid ""
-"Remember, <span name=\"distro-name\"></span> needs at minimum 16 GB of disk "
-"space."
+#: gettingstarted.html:352
+msgid "Remember, Ubuntu Budgie needs at minimum 32 GB of disk space."
 msgstr ""
-"Perlu diingat, <span name=\"distro-name\"></span> memerlukan sekurang-"
-"kurangnya 16 GB ruang cakera."
 
-#: gettingstarted.html:354
+#: gettingstarted.html:357
 msgid "Further Reading"
 msgstr "Pembacaan Lanjut"
 
-#: gettingstarted.html:355
+#: gettingstarted.html:358
 msgid ""
 "For further information on the best practices to modify partitions "
 "containing Windows, see the following <a "
@@ -582,25 +555,20 @@ msgstr ""
 "onclick=\"cmd('link?https://help.ubuntu.com/community/HowtoResizeWindowsPartitions')\">artikel"
 " bantuan</a> atas-talian."
 
-#: gettingstarted.html:363
+#: gettingstarted.html:366
 msgid "Repairing Boot Problems"
 msgstr "Membaiki Masalah But"
 
-#: gettingstarted.html:365
+#: gettingstarted.html:368
 msgid ""
 "Linux distributions use a boot loader known as <code>grub</code>, which "
 "looks for and bootstraps the operating system. However, some operating "
 "systems (such as Windows) do not integrate with existing boot loaders and "
-"will overwrite them, with the potential to lose access to <span "
-"name=\"distro-name\"></span> temporally."
+"will overwrite them, with the potential to lose access to Ubuntu Budgie "
+"temporarily."
 msgstr ""
-"Distribusi Linux menggunakan pemuat but yang dikenali sebagai "
-"<code>grub</code>, yang dapat mencari bootstrap sistem pengoperasian. Akan "
-"tetapi, sesetengah sistem pengoperasian (seperti Windows) tidak disepadukan "
-"dengan pemuat but sedia dan ditulis-ganti, berkemungkinan akan kehilangan "
-"capaian kepada <span name=\"distro-name\"></span> buat sementara."
 
-#: gettingstarted.html:371
+#: gettingstarted.html:374
 msgid ""
 "Fortunately, you can use the <b>Boot Repair</b> tool to repair common "
 "problems caused by other operating systems."
@@ -608,82 +576,70 @@ msgstr ""
 "Selain itu, anda boleh gunakan alat <b>Baiki But</b> untuk membaiki masalah "
 "umum yang disebabkan oleh lain-lain sistem pengoperasian."
 
-#: gettingstarted.html:376
+#: gettingstarted.html:379
 msgid "Requires downloading a package."
 msgstr "Memerlukan muat turun sebuah pakej."
 
-#: gettingstarted.html:377
+#: gettingstarted.html:380
 msgid "Please connect to the Internet to download and use this utility."
 msgstr "Sila sambung dengan Internet untuk memuat turun dan guna utiliti ini."
 
-#: gettingstarted.html:379
+#: gettingstarted.html:382
 msgid "Sorry, Welcome was unable to establish a connection."
 msgstr "Maaf, Aluan tidak berupaya menjalinkan sambungan."
 
-#: gettingstarted.html:387
+#: gettingstarted.html:390
 msgid "Download Boot Repair"
 msgstr "Muat Turun Boot Repair"
 
-#: gettingstarted.html:389
+#: gettingstarted.html:392
 msgid "Open Boot-Repair"
 msgstr "Buka Boot-Repair"
 
-#: gettingstarted.html:394
+#: gettingstarted.html:397
 msgid "Install Preparations"
 msgstr "Persediaan Pemasangan"
 
-#: gettingstarted.html:408
+#: gettingstarted.html:411
 msgid "An Internet connection is required to download and install updates."
 msgstr ""
 "Satu sambungan Internet diperlukan untuk memuat turun dan memasang beberapa "
 "kemas kini."
 
-#: gettingstarted.html:417
+#: gettingstarted.html:420
 msgid "Software Updater"
 msgstr "Pengemas Kini Perisian"
 
-#: gettingstarted.html:418
+#: gettingstarted.html:421
 msgid ""
-"<span name=\"distro-name\"></span> periodically will check to see if new "
-"software and security updates are available for your computer. If you have "
-"just installed <span name=\"distro-name\"></span>, you might want to do this"
-" now."
+"Ubuntu Budgie periodically will check to see if new software and security "
+"updates are available for your computer. If you have just installed Ubuntu "
+"Budgie, you might want to do this now."
 msgstr ""
-"<span name=\"distro-name\"></span> secara berkala akan memeriksa jika ada "
-"perisian dan kemas kini keselamatan baharu yang tersedia untuk komputer "
-"anda. Jika anda baru sahaja memasang <span name=\"distro-name\"></span>, "
-"eloklah anda lakukannya sekarang."
 
-#: gettingstarted.html:424
+#: gettingstarted.html:427
 msgid ""
-"<b>Software Updater</b> can be found later in the menu "
-"<strong>Administration</strong>"
+"<b>Software Updater</b> can be found later in the menu <strong>System "
+"Tools</strong>"
 msgstr ""
-"<b>Pengemas Kini Perisian</b> boleh ditemui kemudian melalui menu "
-"<strong>Pentadbiran</strong>"
 
-#: gettingstarted.html:431
+#: gettingstarted.html:434
 msgid "Check for Updates"
 msgstr "Periksa Kemas Kini"
 
-#: gettingstarted.html:444
+#: gettingstarted.html:447
 msgid "Restricted Extras"
 msgstr "Ekstra Terhad"
 
-#: gettingstarted.html:445
+#: gettingstarted.html:448
 msgid ""
-"<strong>Ubuntu</strong> (the base distribution of <span name=\"distro-"
-"name\"></span>) strives to make all of the most important software available"
-" to its users automatically. However patent and copyright restrictions (see "
-"Ubuntu License Policy) complicate distribution of software to support non-"
-"free formats."
+"<strong>Ubuntu</strong> (the base distribution of Ubuntu Budgie) strives to "
+"make all of the most important software available to its users "
+"automatically. However patent and copyright restrictions (see Ubuntu License"
+" Policy) complicate distribution of software to support non-free formats."
 msgstr ""
-"<strong>Ubuntu</strong>(distribusi asas <span name=\"distro-name\"></span>) "
-"memastikan semua perisian penting tersedia untuk penggunanya secara "
-"automatik. Walaubagaimanapun sekatan paten dan hak cipta (sila rujuk Dasar "
-"Lesen Ubuntu) menyukarkan pengedaran perisian bukan format-bebas."
 
-#: gettingstarted.html:451
+#: gettingstarted.html:454
 msgid ""
 "However, you can install the ability to play popular non-free media formats,"
 " including DVD, MP3, Quicktime, and Windows Media formats, by following the "
@@ -693,7 +649,7 @@ msgstr ""
 "bukan-percuma yang terkenal, termasuklah format DVD, MP3, Quicktime, dan "
 "Media Windows, dengan mengikuti arahan di bawah."
 
-#: gettingstarted.html:455
+#: gettingstarted.html:458
 msgid ""
 "Ubuntu’s commitment to only include completely free software by default "
 "means that proprietary media formats are not configured “out of the box”. "
@@ -705,7 +661,7 @@ msgstr ""
 "Perisian Bebas Ubuntu dan Format Bebas untuk perbincangan lanjutan berkenaan"
 " perkara ini."
 
-#: gettingstarted.html:462
+#: gettingstarted.html:465
 msgid ""
 "<strong>Legal Notice</strong> Patent and copyright laws operate differently "
 "depending on which country you are in. Please obtain legal advice if you are"
@@ -717,60 +673,50 @@ msgstr ""
 "penasihat undang-undang jika anda tidak pasti aten atau sekatan manakah "
 "tertakluk dengan format media yang anda mahu guna di negara anda."
 
-#: gettingstarted.html471, 614, 680, 689, 742, 753, 764, 802, 837, 909, 919,
-#: 934, 952, 969, 980, 996, 1011, 1025, 1040, 1056, 1071, 1081, 1101, 1121
+#: gettingstarted.html474, 617, 683, 692, 736, 747, 758, 796, 831, 904, 920,
+#: 935, 949, 964, 980, 995, 1005, 1025, 1045
 msgid "Applying Changes..."
 msgstr "Menerapkan Perubahan..."
 
-#: gettingstarted.html474, 737, 748, 759, 804, 839, 903, 963, 990, 1005, 1019,
-#: 1034, 1065
+#: gettingstarted.html477, 731, 742, 753, 798, 833, 914, 929, 943, 958, 989
 msgid "Install"
 msgstr "Pasang"
 
-#: gettingstarted.html477, 740, 751, 762, 906, 966, 993, 1008, 1022, 1037,
-#: 1053, 1068, 1078, 1098, 1118
+#: gettingstarted.html480, 734, 745, 756, 917, 932, 946, 961, 977, 992, 1002,
+#: 1022, 1042
 msgid "Remove"
 msgstr "Buang"
 
-#: gettingstarted.html485, 772, 887
+#: gettingstarted.html488, 766, 879
 msgid "Next:"
 msgstr "Berikutnya:"
 
-#: gettingstarted.html:496
+#: gettingstarted.html:499
 msgid ""
-"While a wide range of hardware is compatible with <span name=\"distro-"
-"name\"></span> , there are some components and peripherals that require "
-"proprietary drivers to function properly. Installing the firmware package is"
-" often required to get some devices, typically Bluetooth and Wi-Fi, to work "
-"correctly."
+"While a wide range of hardware is compatible with Ubuntu Budgie , there are "
+"some components and peripherals that require proprietary drivers to function"
+" properly. Installing the firmware package is often required to get some "
+"devices, typically Bluetooth and Wi-Fi, to work correctly."
 msgstr ""
-"Sejumlah besar perkakasan adalah serasi dengan <span name=\"distro-"
-"name\"></span>, namun ada beberapa komponen dan persisian yang memerlukan "
-"pemacu proprietari untuk dapat berfungsi dengan baik. Pemasangan pakej "
-"perisian tegar biasanya diperlukan supaya beberapa jenis peranti dapat "
-"berfungsi seperti Bluetooth dan Wi-Fi."
 
-#: gettingstarted.html:502
+#: gettingstarted.html:505
 msgid "An Internet connection is required to download and install drivers."
 msgstr ""
 "Satu sambungan Internet diperlukan untuk memuat turun dan memasang pemacu."
 
-#: gettingstarted.html:507
+#: gettingstarted.html:510
 msgid "Additional Drivers"
 msgstr "Pemacu Tambahan"
 
-#: gettingstarted.html:512
-msgid ""
-"<b>Additional Drivers</b> can be found later in <b>Software & Updates</b>"
+#: gettingstarted.html:515
+msgid "<b>Additional Drivers</b> can be found later in <b>System Tools</b>"
 msgstr ""
-"<b>Pemacu Tambahan</b> boleh ditemui kemudian dalam <b>Perisian & Kemas "
-"Kini</b>"
 
-#: gettingstarted.html:520
+#: gettingstarted.html:523
 msgid "Graphics"
 msgstr "Grafik"
 
-#: gettingstarted.html:526
+#: gettingstarted.html:529
 msgid ""
 "Sorry, Welcome was unable to automatically identify the graphics vendor on "
 "this system."
@@ -778,19 +724,19 @@ msgstr ""
 "Maaf, Aluan tidak berupaya mengenal pasti pembekal vendor secara automatik "
 "pada sistem ini."
 
-#: gettingstarted.html529, 537, 545, 551
+#: gettingstarted.html532, 540, 548, 554
 msgid "Card/Chipset:"
 msgstr "Kad/Cipset:"
 
-#: gettingstarted.html529, 537, 545, 551
+#: gettingstarted.html532, 540, 548, 554
 msgid "Unknown"
 msgstr "Tidak Diketahui"
 
-#: gettingstarted.html:533
+#: gettingstarted.html:536
 msgid "NVIDIA Graphics Card Detected."
 msgstr "Kad Grafik NVIDIA Dikesan."
 
-#: gettingstarted.html:534
+#: gettingstarted.html:537
 msgid ""
 "NVIDIA may have drivers for your card that can boost performance for 3D "
 "applications and games as well as deliver improvements to power management."
@@ -798,11 +744,11 @@ msgstr ""
 "NVIDIA mempunyai pemacu untuk kad anda yang dapat menggalak prestasi untuk "
 "aplikasi dan permainan 3D serta menambah baik pengurusan kuasa."
 
-#: gettingstarted.html:541
+#: gettingstarted.html:544
 msgid "AMD Graphics Card Detected."
 msgstr "Kad Grafik AMD Dikesan."
 
-#: gettingstarted.html:542
+#: gettingstarted.html:545
 msgid ""
 "AMD's drivers are no longer supported on Ubuntu. The open source drivers you"
 " are currently using will deliver the most stable performance out of your "
@@ -811,32 +757,32 @@ msgstr ""
 "Pemacu AMD tidak lagi disokong dalam Ubuntu. Pemacu sumber terbuka yang anda"
 " guna masa kini merupakan yang paling stabil untuk kad anda."
 
-#: gettingstarted.html:549
+#: gettingstarted.html:552
 msgid "You're already good to go."
 msgstr "Anda boleh teruskan."
 
-#: gettingstarted.html:550
+#: gettingstarted.html:553
 msgid ""
 "Intel's drivers are open source and are maintained/updated in the kernel."
 msgstr ""
 "Pemacu Intel bersumber terbuka dan diselenggara/dikemas kini dalam kernel."
 
-#: gettingstarted.html:555
+#: gettingstarted.html:558
 msgid "VirtualBox Guest Additions"
 msgstr "Tambahan Tetamu VirtualBox"
 
-#: gettingstarted.html:556
+#: gettingstarted.html:559
 msgid ""
 "To accelerate graphics performance inside the virtual machine, please "
 "install Guest Additions."
 msgstr ""
 "Untuk memecut prestasi grafik dalam mesin maya, sila pasang Tambahan Tetamu."
 
-#: gettingstarted.html:561
+#: gettingstarted.html:564
 msgid "Proprietary or Open Source Drivers?"
 msgstr "Pemacu Proprietari atau Sumber Terbuka?"
 
-#: gettingstarted.html:562
+#: gettingstarted.html:565
 msgid ""
 "Proprietary drivers come directly from the manufacturer. As they are not "
 "open source, Ubuntu developers are <b>unable to review and improve driver "
@@ -846,7 +792,7 @@ msgstr ""
 "bersumber terbuka, pembangun Ubuntu <b>tidak dapat melihat dan menambah baik"
 " kod</b> jadi anda hanya bergantung pada sokongan pengilang."
 
-#: gettingstarted.html:567
+#: gettingstarted.html:570
 msgid ""
 "In addition, proprietary drivers can <b>significantly improve graphics "
 "performance</b> and as a result, the entire system. Users may wish to "
@@ -856,11 +802,11 @@ msgstr ""
 " nyata</b> hasilnya, dipersembahkan pada keseluruhan sistem. Pengguna boleh "
 "memasang pemacu ini untuk:"
 
-#: gettingstarted.html:572
+#: gettingstarted.html:575
 msgid "Run 3D applications and games."
 msgstr "Jalankan aplikasi dan permainan 3D."
 
-#: gettingstarted.html:573
+#: gettingstarted.html:576
 msgid ""
 "Improve power management, particularly if the device experiences overheating"
 " problems under open source drivers."
@@ -868,15 +814,15 @@ msgstr ""
 "Tambah baik pengurusan kuasa, terutamanya jika peranti menghadapi masalah "
 "terlalu panas di bawah pemacu sumber terbuka."
 
-#: gettingstarted.html:576
+#: gettingstarted.html:579
 msgid "Improve support for high resolutions and multiple monitors."
 msgstr "Tambah baik sokongan untuk resolusi tinggi dan monitor berbilang."
 
-#: gettingstarted.html:577
+#: gettingstarted.html:580
 msgid "Fix blank screen issues."
 msgstr "Baiki masalah skrin gelap."
 
-#: gettingstarted.html:580
+#: gettingstarted.html:583
 msgid ""
 "Proprietary drivers are known as \"binary blobs\". Certain hardware may "
 "experience adverse behavior, causing more issues than the open source "
@@ -886,24 +832,24 @@ msgstr ""
 "mungkin mengalami kelakuan yang tidak diingini, menyebabkan beberapa masalah"
 " lain timbul berbanding pemacu sumber terbuka, seperti:"
 
-#: gettingstarted.html:584
+#: gettingstarted.html:587
 msgid "Failing to boot to the graphical desktop."
 msgstr "Kegagalan membut ke atas meja bergrafik."
 
-#: gettingstarted.html:585
+#: gettingstarted.html:588
 msgid "Broken drivers after an upgrade."
 msgstr "Pemacu rosak selepas penataran."
 
-#: gettingstarted.html:586
+#: gettingstarted.html:589
 msgid "Severe graphical glitches."
 msgstr "Glic grafik teruk."
 
-#: gettingstarted.html:587
+#: gettingstarted.html:590
 msgid "Problems with applications/games requiring hardware acceleration."
 msgstr ""
 "Masalah dengan aplikasi/permainan yang memerlukan pemecutan perkakasan."
 
-#: gettingstarted.html:591
+#: gettingstarted.html:594
 msgid ""
 "<code id=\"graphics-open-driver-name\"></code> is the open source driver for"
 " your card."
@@ -911,11 +857,11 @@ msgstr ""
 "<code id=\"graphics-open-driver-name\"></code> ialah pemacu sumber terbuka "
 "untuk kad anda."
 
-#: gettingstarted.html:596
+#: gettingstarted.html:599
 msgid "What about the latest NVIDIA drivers?"
 msgstr "Bagaimana dengan pemacu NVIDIA terkini?"
 
-#: gettingstarted.html:597
+#: gettingstarted.html:600
 msgid ""
 "<b>Additional Drivers</b> fetches the latest tested driver from the Ubuntu "
 "repositories. Advanced users and gamers who would like newer versions may "
@@ -933,7 +879,7 @@ msgstr ""
 "pemacu NVIDIA yang terkini untuk Ubuntu. Pakej-pakej ini tidak sepenuhnya "
 "diuji keberkesanannya."
 
-#: gettingstarted.html:606
+#: gettingstarted.html:609
 msgid ""
 "This only applies for actively supported cards, and not older cards using "
 "the legacy driver."
@@ -941,11 +887,11 @@ msgstr ""
 "Ini hanya diterap pada kad yang disokong secara aktif, dan bukan pada kad "
 "yang lebih berusia yang menggunakan pemacu legasi."
 
-#: gettingstarted.html:610
+#: gettingstarted.html:613
 msgid "Add Repository"
 msgstr "Tambah Repositori"
 
-#: gettingstarted.html:619
+#: gettingstarted.html:622
 msgid ""
 "After the PPA is added, newer versions are presented to install in <a "
 "onclick=\"cmd('drivers')\">Additional Drivers:</a>"
@@ -953,11 +899,11 @@ msgstr ""
 "Selepas PPA ditambah, versi lebih baharu dipersembahkan untuk dipasang dalam"
 " <a onclick=\"cmd('drivers')\">Pemacu Tambahan:</a>"
 
-#: gettingstarted.html:628
+#: gettingstarted.html:631
 msgid "Wireless, Bluetooth and Other Devices"
 msgstr "Peranti Tanpa Wayar, Bluetooth dan Lain-Lain"
 
-#: gettingstarted.html:631
+#: gettingstarted.html:634
 msgid ""
 "If there were no additional drivers found for the hardware nor did it work "
 "after installing the firmware packages, you may need to research your device"
@@ -967,7 +913,7 @@ msgstr ""
 "selepas memasang pakej perisian tegar, anda perlu mencari sendiri pemacu "
 "yang dikehendaki."
 
-#: gettingstarted.html:635
+#: gettingstarted.html:638
 msgid ""
 "Unfortunately, this is due to the fact the manufacturer for your hardware "
 "hasn't provided any source code for developers to freely use, or there is "
@@ -979,7 +925,7 @@ msgstr ""
 "dokumentasi tidak mencukupi untuk mencipta pemacu bagi jenama dan model yang"
 " anda gunakan."
 
-#: gettingstarted.html:641
+#: gettingstarted.html:644
 msgid ""
 "Some manufacturers may provide closed source drivers provided by themselves "
 "directly. If you require assistance, feel free to <a "
@@ -990,49 +936,46 @@ msgstr ""
 "onclick=\"smoothPageFade('community.html')\">dapatkan bantuan di "
 "komuniti</a>."
 
-#: gettingstarted.html:647
+#: gettingstarted.html:650
 msgid "Read more on troubleshooting wireless hardware."
 msgstr "Baca lagi berkenaan pencarisilapan perkakasan tanpa wayar."
 
-#: gettingstarted.html656, 885
+#: gettingstarted.html659, 877
 msgid "Language Input"
 msgstr "Input Bahasa"
 
-#: gettingstarted.html:666
+#: gettingstarted.html:669
 msgid "Input method"
 msgstr "Kaedah input"
 
-#: gettingstarted.html:667
+#: gettingstarted.html:670
 msgid ""
-"In <span name=\"distro-name\"></span>, we provide an option to switch "
-"between two widely used keyboard entry layouts. IBus(Intelligent Input Bus) "
-"and Fcitx(Free Chinese Input Toy for X)."
+"In Ubuntu Budgie, we provide an option to switch between two widely used "
+"keyboard entry layouts. IBus(Intelligent Input Bus) and Fcitx(Free Chinese "
+"Input Toy for X)."
 msgstr ""
-"Di <span name=\"distro-name\"></span>, kami menyediakan satu pilihan untuk "
-"bertukar diantara dua bentangan masukan papan kekunci yang popular. "
-"IBus(Intelligent Input Bus) dan Fcitx(Free Chinese Input Toy for X)."
 
-#: gettingstarted.html:674
+#: gettingstarted.html:677
 msgid "Install & Configure IBus"
 msgstr "Pasang & Konfigur IBus"
 
-#: gettingstarted.html:677
+#: gettingstarted.html:680
 msgid "IBus is active now"
 msgstr "IBus kini aktif"
 
-#: gettingstarted.html:684
+#: gettingstarted.html:687
 msgid "Install & Configure Fcitx"
 msgstr "Pasang & Konfigur Fcitx"
 
-#: gettingstarted.html:686
+#: gettingstarted.html:689
 msgid "Fcitx is active now"
 msgstr "Fcitx kini aktif"
 
-#: gettingstarted.html695, 702
+#: gettingstarted.html698, 705
 msgid "Language Support"
 msgstr "Sokongan Bahasa"
 
-#: gettingstarted.html:696
+#: gettingstarted.html:699
 msgid ""
 "Your computer may require updates to your language and localization "
 "settings, or you may want to install additional language support."
@@ -1041,55 +984,46 @@ msgstr ""
 "penyetempatan anda, atau anda mungkin mahu memasang sokongan bahasa "
 "tambahan."
 
-#: gettingstarted.html:708
+#: gettingstarted.html:711
 msgid ""
-"<b>Language Support</b> can be found later in <b><i>Settings <i "
-"class=\"material-icons\">&#xE315;</i> Language & Region</i></b>"
+"<b>Language Support</b> can be found later in the menu <b>System Tools</b>"
 msgstr ""
 
-#: gettingstarted.html:716
-msgid ""
-"<b>Language Support</b> can be found later in <b><i>Budgie Control Center <i"
-" class=\"material-icons\">&#xE315;</i> Language & Region</i></b>"
-msgstr ""
-
-#: gettingstarted.html:728
+#: gettingstarted.html:722
 msgid "Complex Input"
 msgstr "Input Kompleks"
 
-#: gettingstarted.html:729
+#: gettingstarted.html:723
 msgid "Some regions of the world require complex inputs."
 msgstr "Sesetengah wilayah di dunia memerlukan input kompleks."
 
-#: gettingstarted.html:734
+#: gettingstarted.html:728
 msgid "Chinese"
 msgstr "Bahasa Cina"
 
-#: gettingstarted.html:745
+#: gettingstarted.html:739
 msgid "Japanese"
 msgstr "Bahasa Jepun"
 
-#: gettingstarted.html:756
+#: gettingstarted.html:750
 msgid "Korean"
 msgstr "Bahasa Korea"
 
-#: gettingstarted.html:780
+#: gettingstarted.html:774
 msgid "Backup, Firewall and User Management"
 msgstr "Sandar, Dinding Api dan Pengurusan Pengguna"
 
-#: gettingstarted.html:781
+#: gettingstarted.html:775
 msgid ""
-"<span name=\"distro-name\"></span> provides option to install a backup "
-"utility or firewall and supports multiple user accounts."
+"Ubuntu Budgie provides option to install a backup utility or firewall and "
+"supports multiple user accounts."
 msgstr ""
-"<span name=\"distro-name\"></span> menyediakan pilihan untuk memasang "
-"utiliti sandar atau tembok api serta menyokong akaun pengguna berbilang."
 
-#: gettingstarted.html:792
+#: gettingstarted.html:786
 msgid "Backups"
 msgstr "Sandar"
 
-#: gettingstarted.html:793
+#: gettingstarted.html:787
 msgid ""
 "Nothing is more important than having a backup of your personal files, just "
 "in case something disastrous happens to your computer."
@@ -1097,21 +1031,18 @@ msgstr ""
 "Tiada yang lebih penting selain dari menyandar fail peribadi anda, jika "
 "berlaku apa-apa yang tidak diingin pada komputer anda."
 
-#: gettingstarted.html:797
+#: gettingstarted.html:791
 msgid ""
-"<b>Deja-Dup</b> is a powerful backup utility that can be installed in <span "
-"name=\"distro-name\"></span> and supports backups to local devices as well "
-"as online cloud-based services."
+"<b>Deja-Dup</b> is a powerful backup utility that can be installed in Ubuntu"
+" Budgie and supports backups to local devices as well as online cloud-based "
+"services."
 msgstr ""
-"<b>Deja-Dup</b> ialah utiliti sandar yang berkuasa boleh dipasang di dalam "
-"<span name=\"distro-name\"></span> dan menyokong sandar ke peranti setempat "
-"serta perkhidmatan berasaskan-awan."
 
-#: gettingstarted.html:808
+#: gettingstarted.html:802
 msgid "Configure Backup"
 msgstr "Konfigur Sandar"
 
-#: gettingstarted.html:811
+#: gettingstarted.html:805
 msgid ""
 "<b>Backups</b> can be found later in the menu <b>Utilities <i "
 "class=\"material-icons\">&#xE315;</i> Backups</b>."
@@ -1119,11 +1050,11 @@ msgstr ""
 "<b>Sandar</b> boleh ditemui kemudian melalui menu <b>Utiliti <i "
 "class=\"material-icons\">&#xE315;</i> Sandar</b>."
 
-#: gettingstarted.html:825
+#: gettingstarted.html:819
 msgid "Firewall"
 msgstr "Dinding Api"
 
-#: gettingstarted.html:826
+#: gettingstarted.html:820
 msgid ""
 "Firewalls prevent malicious connections entering and leaving your computer. "
 "By default, the firewall is disabled, <a "
@@ -1135,7 +1066,7 @@ msgstr ""
 "onclick=\"cmd('link?https://help.ubuntu.com/community/DoINeedAFirewall')\">ketahui"
 " lebih lanjut berkenaan dinding api</a>."
 
-#: gettingstarted.html:832
+#: gettingstarted.html:826
 msgid ""
 "<b>Gufw</b> provides a graphical frontend to <code>ufw</code> (Uncomplicated"
 " Firewall). If security is important to you, there are <a "
@@ -1148,21 +1079,21 @@ msgstr ""
 "onclick=\"cmd('link?https://wiki.ubuntu.com/BasicSecurity')\">banyak lagi "
 "cara untuk kekal selamat</a>."
 
-#: gettingstarted.html:843
+#: gettingstarted.html:837
 msgid "Configure Firewall"
 msgstr "Konfigur Dinding Api"
 
-#: gettingstarted.html:846
+#: gettingstarted.html:840
 msgid ""
 "Firewall Configuration</b> can be found later in the menu <b>System Tools<i "
 "class=\"material-icons\">&#xE315;</i> Firewall Configuration</i></b>."
 msgstr ""
 
-#: gettingstarted.html:860
+#: gettingstarted.html:854
 msgid "Users"
 msgstr "Pengguna"
 
-#: gettingstarted.html:862
+#: gettingstarted.html:856
 msgid ""
 "Share your computer with others? Set up a separate user account for each "
 "user to protect the individual privacy of each user sharing the same "
@@ -1172,7 +1103,7 @@ msgstr ""
 " lain untuk setiap pengguna bagi melindungi kerahsiaan peribadi setiap "
 "pengguna yang berkongsi komputer yang sama."
 
-#: gettingstarted.html:865
+#: gettingstarted.html:859
 msgid ""
 "You can also log in to a <b>Guest Session</b> if someone is using your "
 "computer as a one-off."
@@ -1180,67 +1111,52 @@ msgstr ""
 "Anda juga boleh mendaftar masuk ke <b>Sesi Tetamu</b> jika tiba-tiba ada "
 "seseorang yang mahu guna komputer anda."
 
-#: gettingstarted.html:870
+#: gettingstarted.html:864
 msgid "Configure Users"
 msgstr "Konfigur Pengguna"
 
-#: gettingstarted.html:873
+#: gettingstarted.html:867
 msgid ""
-"<b>Users</b> can be found later in the menu <b><i>Administration <i "
-"class=\"material-icons\">&#xE315;</i> Users</i></b>."
+"<b>Users</b> can be found later in the menu by typing<i> Users</i></b>."
 msgstr ""
-"<b>Pengguna</b> boleh dibuka semula kemudian dalam menu<b><i>Pentadbiran <i "
-"class=\"material-icons\">&#xE315;</i> Pengguna</i></b>."
 
-#: gettingstarted.html:893
+#: gettingstarted.html:885
 msgid ""
-"To improve the amount of customizability, <span name=\"distro-name\"></span>"
-" allows you to install/remove popular web browsers with a single click."
+"To improve the amount of customizability, Ubuntu Budgie allows you to "
+"install/remove popular web browsers with a single click."
 msgstr ""
-"Untuk menambahbaik kebolehsuaian, <span name=\"distro-name\"></span> "
-"membenarkan anda pasang/buang pelayar sesawang yang terkenal dengan sekali "
-"klik."
 
-#: gettingstarted.html900, 925
-msgid ""
-"Chromium is an open-source browser project that aims to build a safer, "
-"faster, and more stable way for all Internet users to experience the web."
-msgstr ""
-"Chromium ialah projek pelayar bersumber terbuka yang ditujukan untuk "
-"pelayaran yang lebih selamat, pantas dan lebih stabil kepada pengguna "
-"Internet ketika melayari sesawang."
-
-#: gettingstarted.html913, 928, 946, 974, 1050, 1075, 1095, 1115
-msgid "Snap Install"
-msgstr "Snap Dipasang"
-
-#: gettingstarted.html916, 931, 949, 977
-msgid "Snap Remove"
-msgstr "Snap Dibuang"
-
-#: gettingstarted.html938, 957
+#: gettingstarted.html:890
 msgid "Firefox"
 msgstr "Firefox"
 
-#: gettingstarted.html940, 959
+#: gettingstarted.html:892
 msgid ""
 "Mozilla Firefox is a free and open-source web browser, developed by the "
 "Mozilla Foundation - a not for profit organization. It is highly popular "
 "targeting multiple platforms."
 msgstr ""
 
-#: gettingstarted.html:985
+#: gettingstarted.html898, 974, 999, 1019, 1039
+msgid "Snap Install"
+msgstr "Snap Dipasang"
+
+#: gettingstarted.html:901
+msgid "Snap Remove"
+msgstr "Snap Dibuang"
+
+#: gettingstarted.html:909
 msgid "Firefox ESR"
 msgstr ""
 
-#: gettingstarted.html:987
+#: gettingstarted.html:911
 msgid ""
 "Mozilla Firefox is a free and open-source web browser, developed by the "
 "Mozilla Foundation - a not for profit organization. This is the Extended "
 "Support Release browser for comprehensive data security and data protection."
 msgstr ""
 
-#: gettingstarted.html:1002
+#: gettingstarted.html:926
 msgid ""
 "Google Chrome is a modern web browser backed by internet giant Google. It "
 "offers a smooth browsing experience plus integration with Google's "
@@ -1250,7 +1166,7 @@ msgstr ""
 "menyediakan pengalaman pelayaran yang lancar disamping integrasi dengan "
 "perkhidmatan proprietari Google."
 
-#: gettingstarted.html:1017
+#: gettingstarted.html:941
 msgid ""
 "Microsoft Edge is a cross-platform web browser created and developed by "
 "Microsoft. It is a Chromium based browser."
@@ -1258,7 +1174,7 @@ msgstr ""
 "Microsoft Edge ialah sebuah pelayar sesawang platform-silang yang dicipta "
 "dan dibangunkan oleh Microsoft. Ia merupakan pelayar berasaskan Chromium."
 
-#: gettingstarted.html:1031
+#: gettingstarted.html:955
 msgid ""
 "Vivaldi Web Browser is a free, fully customizable web browser. Feature rich,"
 " powerful, secure and fun! Browse the Web your way"
@@ -1267,7 +1183,7 @@ msgstr ""
 "boleh disuaikan. Banyak fitur, selamat dan menarik untuk digunakan! Layari "
 "Sesawang dengan citarasa anda"
 
-#: gettingstarted.html:1047
+#: gettingstarted.html:971
 msgid ""
 "Opera is a fast and secure browser. Developed in Europe, used by millions "
 "around the world. Now with a built-in ad blocker and free VPN."
@@ -1276,12 +1192,12 @@ msgstr ""
 " dan telah digunakan oleh berjuta-juta pengguna di seluruh dunia. Kini "
 "tambah baik dengan penyekat iklan dan VPN percuma."
 
-#: gettingstarted.html:1063
+#: gettingstarted.html:987
 msgid "A browser that blocks tracking and intrusive ads by default."
 msgstr ""
 "Pelayar yang menyekat iklan yang menjejak dan menceroboh secara lalai."
 
-#: gettingstarted.html:1088
+#: gettingstarted.html:1012
 msgid ""
 "Midori is a lightweight yet powerful web browser which runs just as well on "
 "little embedded computers named for delicious pastries as it does on beefy "
@@ -1292,7 +1208,7 @@ msgstr ""
 "beroperasi dengan baik dalam mana-mana komputer. Satu lagi Midori adalah "
 "perisian bebas atau percuma."
 
-#: gettingstarted.html:1108
+#: gettingstarted.html:1032
 msgid ""
 "The web browser for GNOME, featuring tight integration with the desktop and "
 "a simple and intuitive user interface that allows you to focus on your web "
@@ -1305,26 +1221,22 @@ msgstr ""
 "terhadap halaman sesawang, inilah pelayar sesuai untuk anda. GNOME Web "
 "biasanya dikenali dengan kod nama, Epiphany."
 
-#: gettingstarted.html:1130
+#: gettingstarted.html:1054
 msgid "User Interface"
 msgstr "Antara Muka Pengguna"
 
-#: gettingstarted.html:1131
+#: gettingstarted.html:1055
 msgid ""
-"<span name=\"distro-name\"></span> provides a unique tool to transform the "
-"user interface. It can be used to quickly setup the user interface to "
-"broadly reflect how other popular operating systems look and feel."
+"Ubuntu Budgie provides a unique tool to transform the user interface. It can"
+" be used to quickly setup the user interface to broadly reflect how other "
+"popular operating systems look and feel."
 msgstr ""
-"<span name=\"distro-name\"></span> menyediakan satu alat unik yang dapat "
-"merubah antara muka pengguna. Ia boleh digunakan untuk persediaan pantas "
-"antara muka pengguna yang menyerupai penampilan sistem pengoperasian popular"
-" yang lain."
 
-#: gettingstarted.html:1138
+#: gettingstarted.html:1062
 msgid "Budgie Desktop Settings"
 msgstr "Tetapan Atas Meja Budgie"
 
-#: gettingstarted.html:1141
+#: gettingstarted.html:1065
 msgid ""
 "<b>Budgie Desktop Settings</b> can be found later in the menu <b>System "
 "Tools</b>."
@@ -1332,44 +1244,29 @@ msgstr ""
 "<b>Tetapan Atas Meja Budgie</b> boleh ditemui kemudian dalam menu <b>Alatan "
 "Sistem</b>."
 
-#: gettingstarted.html1150, 1155
-msgid "Settings"
-msgstr "Tetapan"
-
-#: gettingstarted.html:1151
-msgid ""
-"You can configure just about every aspect of your computer from Settings."
-msgstr ""
-
-#: gettingstarted.html:1160
-msgid "<b>Settings</b> can be found later in the menu <b>System Tools</b>."
-msgstr ""
-
-#: gettingstarted.html1171, 1176
+#: gettingstarted.html1073, 1078
 msgid "Budgie Control Center"
 msgstr ""
 
-#: gettingstarted.html:1172
+#: gettingstarted.html:1074
 msgid ""
 "You can configure just about every aspect of your computer from Budgie "
 "Control Center."
 msgstr ""
 
-#: gettingstarted.html:1181
+#: gettingstarted.html:1083
 msgid ""
 "<b>Budgie Control Center</b> can be found later in the menu <b>System "
 "Tools</b>."
 msgstr ""
 
-#: gettingstarted.html:1206
+#: gettingstarted.html:1108
 msgid ""
-"<span name=\"distro-name\"></span> has many keyboard shortcuts that help "
-"make using your computer more efficient."
+"Ubuntu Budgie has many keyboard shortcuts that help make using your computer"
+" more efficient."
 msgstr ""
-"<span name=\"distro-name\"></span> mempunyai banyak pintasan papan kekunci "
-"yang dapat membantu penggunaan komputer anda menjadi lebih efisyen."
 
-#: gettingstarted.html:1210
+#: gettingstarted.html:1112
 msgid ""
 "The <b><img src=\"img/welcome/super-key.svg\" /> Super</b> key is your "
 "Windows key. For Mac keyboards, this is the ⌘ Command key."
@@ -1377,114 +1274,114 @@ msgstr ""
 "Kekunci <b><img src=\"img/welcome/super-key.svg\" />Super</b> ialah kekunci "
 "Windows. Bagi papan kekunci Mac, ia adalah kekunci  Perintah ⌘."
 
-#: gettingstarted.html:1213
+#: gettingstarted.html:1115
 msgid "Budgie Desktop shortcuts"
 msgstr "Pintasan Atas Meja Budgie"
 
-#: gettingstarted.html:1214
+#: gettingstarted.html:1116
 msgid "Some common shortcuts used in Budgie Desktop"
 msgstr "Beberapa pintasan umum yang digunapakai dalam Atas Meja Budgie"
 
-#: gettingstarted.html:1224
+#: gettingstarted.html:1126
 msgid "Open notifications in Raven"
 msgstr "Buka pemberitahuan dalam Raven"
 
-#: gettingstarted.html:1233
+#: gettingstarted.html:1135
 msgid "Open applet Settings in Raven"
 msgstr "Buka Tetapan aplet dalam Raven"
 
-#: gettingstarted.html:1238
+#: gettingstarted.html:1140
 msgid "Common application shortcuts"
 msgstr "Pintasan aplikasi umum"
 
-#: gettingstarted.html:1239
+#: gettingstarted.html:1141
 msgid "These shortcuts apply in most applications."
 msgstr "Pintasan ini digunapakai dalam kebanyakan aplikasi."
 
-#: gettingstarted.html:1248
+#: gettingstarted.html:1150
 msgid "Toggle Tilix Quake Mode"
 msgstr "Togol Mod Tilix Quake"
 
-#: gettingstarted.html1252, 1260, 1268, 1276, 1284, 1292, 1300, 1308, 1316,
-#: 1324, 1332, 1340, 1348, 1356, 1364, 1396, 1412, 1442, 1461, 1475, 1522,
-#: 1532, 1542, 1554, 1737, 1747, 1757, 1767, 1777, 1787, 1797, 1807, 1817
+#: gettingstarted.html1154, 1162, 1170, 1178, 1186, 1194, 1202, 1210, 1218,
+#: 1226, 1234, 1242, 1250, 1258, 1266, 1298, 1314, 1344, 1363, 1377, 1408,
+#: 1418, 1428, 1440, 1623, 1633, 1643, 1653, 1663, 1673, 1683, 1693, 1703
 msgid "Ctrl"
 msgstr "Ctrl"
 
-#: gettingstarted.html:1256
+#: gettingstarted.html:1158
 msgid "Copy the selected text/object"
 msgstr "Salin teks/objek terpilih"
 
-#: gettingstarted.html:1264
+#: gettingstarted.html:1166
 msgid "Cut the selected text/object"
 msgstr "Potong teks/objek terpilih"
 
-#: gettingstarted.html:1272
+#: gettingstarted.html:1174
 msgid "Paste/insert the selected text/object"
 msgstr "Tampal/sisip teks/objek terpilih"
 
-#: gettingstarted.html:1280
+#: gettingstarted.html:1182
 msgid "Select all text"
 msgstr "Pilih semua teks"
 
-#: gettingstarted.html:1288
+#: gettingstarted.html:1190
 msgid "Find words"
 msgstr "Cari perkataan"
 
-#: gettingstarted.html:1296
+#: gettingstarted.html:1198
 msgid "Find and replace words"
 msgstr "Cari dan ganti perkataan"
 
-#: gettingstarted.html:1304
+#: gettingstarted.html:1206
 msgid "Make the selected text bold"
 msgstr "Jadikan teks terpilih tebal"
 
-#: gettingstarted.html:1312
+#: gettingstarted.html:1214
 msgid "Make the selected text italic"
 msgstr "Jadikan teks terpilih condong"
 
-#: gettingstarted.html:1320
+#: gettingstarted.html:1222
 msgid "Underline the selected text"
 msgstr "Garis bawahkan teks terpilih"
 
-#: gettingstarted.html:1328
+#: gettingstarted.html:1230
 msgid "Open a new document or window"
 msgstr "Buka satu dokumen atau tetingkap baharu"
 
-#: gettingstarted.html:1336
+#: gettingstarted.html:1238
 msgid "Save the current document"
 msgstr "Simpan dokumen semasa"
 
-#: gettingstarted.html:1344
+#: gettingstarted.html:1246
 msgid "Open another document"
 msgstr "Buka dokumen lain"
 
-#: gettingstarted.html:1352
+#: gettingstarted.html:1254
 msgid "Print the current document"
 msgstr "Cetak dokumen semasa"
 
-#: gettingstarted.html:1360
+#: gettingstarted.html:1262
 msgid "Undo the last change you made"
 msgstr "Buat asal perubahan terakhir yang anda buat"
 
-#: gettingstarted.html1366, 1394, 1404, 1546, 1557, 1573, 1584, 1595, 1606
+#: gettingstarted.html1268, 1296, 1306, 1432, 1443, 1459, 1470, 1481, 1492
 msgid "Shift"
 msgstr "Shift"
 
-#: gettingstarted.html:1370
+#: gettingstarted.html:1272
 msgid "Redo a change that you just undid"
 msgstr "Buat semula perubahan yang anda baru sahaja undur"
 
-#: gettingstarted.html:1376
+#: gettingstarted.html:1278
 msgid "Toggle the current application between full-screen and windowed"
 msgstr ""
 "Togol antara aplikasi semasa sama ada berskrin-penuh atau bertetingkap"
 
-#: gettingstarted.html:1380
+#: gettingstarted.html:1282
 msgid "Desktop shortcuts"
 msgstr "Pintasan atas meja"
 
-#: gettingstarted.html:1381
+#: gettingstarted.html:1283
 msgid ""
 "This section lists common keyboard shortcuts which you can use to operate "
 "parts of the desktop."
@@ -1492,82 +1389,82 @@ msgstr ""
 "Seksyen ini menyenaraikan pintasan papan kekunci umum yang mana anda boleh "
 "digunakan untuk mengoperasi atas meja.."
 
-#: gettingstarted.html:1390
+#: gettingstarted.html:1292
 msgid "Open Applications menu"
 msgstr "Buka menu Aplikasi"
 
-#: gettingstarted.html:1400
+#: gettingstarted.html:1302
 msgid "Copy a screenshot of an area to clipboard"
 msgstr "Salin satu cekupan skrin kawasan ke dalam papan keratan"
 
-#: gettingstarted.html:1408
+#: gettingstarted.html:1310
 msgid "Save a screenshot of an area to the Pictures directory"
 msgstr "Simpan satu cekupan skrin kawasan ke dalam direktori Gambar"
 
-#: gettingstarted.html:1416
+#: gettingstarted.html:1318
 msgid "Copy a screenshot of a window to clipboard"
 msgstr "Salin satu cekupan skrin tetingkap ke dalam papan keratan"
 
-#: gettingstarted.html1420, 1434, 1444, 1463, 1477, 1507, 1524, 1534, 1544,
-#: 1556, 1565, 1617, 1625, 1633, 1668, 1739, 1749, 1759, 1769, 1779, 1789,
-#: 1799, 1809, 1819
+#: gettingstarted.html1322, 1336, 1346, 1365, 1379, 1393, 1410, 1420, 1430,
+#: 1442, 1451, 1503, 1511, 1519, 1554, 1625, 1635, 1645, 1655, 1665, 1675,
+#: 1685, 1695, 1705
 msgid "Alt"
 msgstr "Alt"
 
-#: gettingstarted.html:1424
+#: gettingstarted.html:1326
 msgid "Save a screenshot of a window to the Pictures directory"
 msgstr "Simpan satu cekupan skrin tetingkap ke dalam direktori Gambar"
 
-#: gettingstarted.html:1430
+#: gettingstarted.html:1332
 msgid "Save a screenshot to the Pictures directory"
 msgstr "Simpan satu cekupan skrin ke dalam direktori Gambar"
 
-#: gettingstarted.html:1438
+#: gettingstarted.html:1340
 msgid "Run an application by typing its name in the box which appears"
 msgstr ""
 "Jalankan aplikasi dengan menaip namanya di dalam kotak yang telah muncul"
 
-#: gettingstarted.html:1446
+#: gettingstarted.html:1348
 msgid "Delete"
 msgstr "Padam"
 
-#: gettingstarted.html:1448
+#: gettingstarted.html:1350
 msgid "Logout"
 msgstr "Daftar Keluar"
 
-#: gettingstarted.html:1457
+#: gettingstarted.html:1359
 msgid "Lock your screen."
 msgstr "Kunci skrin anda."
 
-#: gettingstarted.html:1467
+#: gettingstarted.html:1369
 msgid "Open a terminal."
 msgstr "Buka terminal."
 
-#: gettingstarted.html:1471
+#: gettingstarted.html:1373
 msgid "Window shortcuts - general"
 msgstr "Pintasan tetingkap - am"
 
-#: gettingstarted.html1481, 1496
+#: gettingstarted.html:1383
 msgid "Call Window Shuffler gui (window tiling grid)."
 msgstr "Panggil gui Pengocok Tetingkap (grid penjubinan tetingkap)."
 
-#: gettingstarted.html1485, 1501
+#: gettingstarted.html:1387
 msgid "Video Demonstration"
 msgstr "Demonstrasi Video"
 
-#: gettingstarted.html:1509
+#: gettingstarted.html:1395
 msgid "Tab"
 msgstr "Tab"
 
-#: gettingstarted.html:1512
+#: gettingstarted.html:1398
 msgid "Switch between currently-open windows."
 msgstr "Bertukar antara tetingkap yang masih terbuka."
 
-#: gettingstarted.html:1514
+#: gettingstarted.html:1400
 msgid "Press Alt + Tab and then release Tab (but continue to hold Alt)."
 msgstr "Tekan Alt + Tab kemudian lepaskan Tab (tetap masih menahan Alt)."
 
-#: gettingstarted.html:1515
+#: gettingstarted.html:1401
 msgid ""
 "Press Tab repeatedly to cycle through the list of available windows which "
 "appears on the screen."
@@ -1575,90 +1472,90 @@ msgstr ""
 "Tekan Tab secara berulang untuk mengitar senarai tetingkap tersedia yang "
 "muncul di atas skrin."
 
-#: gettingstarted.html1526, 1548, 1680
+#: gettingstarted.html1412, 1434, 1566
 msgid "Left"
 msgstr "Kiri"
 
-#: gettingstarted.html:1528
+#: gettingstarted.html:1414
 msgid "Switch to the previous workspace."
 msgstr "Tukar ke ruang kerja terdahulu."
 
-#: gettingstarted.html1536, 1559, 1689
+#: gettingstarted.html1422, 1445, 1575
 msgid "Right"
 msgstr "Kanan"
 
-#: gettingstarted.html:1538
+#: gettingstarted.html:1424
 msgid "Switch to the next workspace."
 msgstr "Tukar ke ruang kerja berikutnya."
 
-#: gettingstarted.html:1550
+#: gettingstarted.html:1436
 msgid "Move the current window to the previous workspace."
 msgstr "Alih tetingkap ini ke ruang kerja sebelum ini."
 
-#: gettingstarted.html:1561
+#: gettingstarted.html:1447
 msgid "Move the current window to the next workspace."
 msgstr "Alih tetingkap ini ke ruang kerja seterusnya."
 
-#: gettingstarted.html:1569
+#: gettingstarted.html:1455
 msgid "Move the current window to the monitor above."
 msgstr "Alih tetingkap semasa ke monitor di atas."
 
-#: gettingstarted.html:1580
+#: gettingstarted.html:1466
 msgid "Move the current window to the monitor below."
 msgstr "Alih tetingkap semasa ke monitor di bawah."
 
-#: gettingstarted.html:1591
+#: gettingstarted.html:1477
 msgid "Move the current window to the monitor to the left."
 msgstr "Alih tetingkap semasa ke monitor sebelah kiri."
 
-#: gettingstarted.html:1602
+#: gettingstarted.html:1488
 msgid "Move the current window to the monitor to the right."
 msgstr "Alih tetingkap semasa ke monitor sebelah kanan."
 
-#: gettingstarted.html:1613
+#: gettingstarted.html:1499
 msgid "Closes window."
 msgstr "Tutup tetingkap."
 
-#: gettingstarted.html:1621
+#: gettingstarted.html:1507
 msgid "Returns window to 'normal' or previous size."
 msgstr "Kembali tetingkap ke saiz 'biasa' atau terdahulu."
 
-#: gettingstarted.html:1629
+#: gettingstarted.html:1515
 msgid "Moves the current window (can be moved with mouse or keyboard)."
 msgstr ""
 "Alih tetingkap semasa (boleh dialih dengan tetiku atau papan kekunci)."
 
-#: gettingstarted.html:1637
+#: gettingstarted.html:1523
 msgid "Resizes current window (again, can be moved with mouse or keyboard)."
 msgstr ""
 "Saiz semula tetingkap semasa (lagi, boleh dialih dengan tetikus atau papan "
 "kekunci)."
 
-#: gettingstarted.html:1646
+#: gettingstarted.html:1532
 msgid "Minimizes current window."
 msgstr "Sorok tetingkap ini"
 
-#: gettingstarted.html:1653
+#: gettingstarted.html:1539
 msgid "Up"
 msgstr "Up"
 
-#: gettingstarted.html:1655
+#: gettingstarted.html:1541
 msgid "Maximizes current window."
 msgstr "Maksimumkan tetingkap semasa."
 
-#: gettingstarted.html:1662
+#: gettingstarted.html:1548
 msgid "Down"
 msgstr "Down"
 
-#: gettingstarted.html:1664
+#: gettingstarted.html:1550
 msgid "Unmaximizes current window."
 msgstr "Nyahmaksimum tetingkap semasa."
 
-#: gettingstarted.html:1670
+#: gettingstarted.html:1556
 msgid "Space"
 msgstr "Space"
 
-#: gettingstarted.html:1672
+#: gettingstarted.html:1558
 msgid ""
 "Displays the window menu with options such as 'Always on Top' and 'Minimize'"
 " and 'Maximize' and above commands."
@@ -1666,115 +1563,115 @@ msgstr ""
 "Papar menu tetingkap dengan pilihan seperti 'Sentiasa di Atas' dan "
 "'Minimumkan' dan 'Maksimumkan' dan perintah di atas."
 
-#: gettingstarted.html:1682
+#: gettingstarted.html:1568
 msgid "Place window on left side of screen."
 msgstr "Letak tetingkap di bahagian kiri skrin."
 
-#: gettingstarted.html:1691
+#: gettingstarted.html:1577
 msgid "Place window on right side of screen."
 msgstr "Letak tetingkap di bahagian kanan skrin."
 
-#: gettingstarted.html1698, 1771
+#: gettingstarted.html1584, 1657
 msgid "1"
 msgstr "1"
 
-#: gettingstarted.html:1700
+#: gettingstarted.html:1586
 msgid "Quarter tiling: top left."
 msgstr "Penjubinan suku: kiri atas."
 
-#: gettingstarted.html1707, 1801
+#: gettingstarted.html1593, 1687
 msgid "2"
 msgstr "2"
 
-#: gettingstarted.html:1709
+#: gettingstarted.html:1595
 msgid "Quarter tiling: top right."
 msgstr "Penjubinan suku: kanan atas."
 
-#: gettingstarted.html1716, 1761
+#: gettingstarted.html1602, 1647
 msgid "3"
 msgstr "3"
 
-#: gettingstarted.html:1718
+#: gettingstarted.html:1604
 msgid "Quarter tiling: bottom left."
 msgstr "Penjubinan suku: kiri bawah."
 
-#: gettingstarted.html1725, 1811
+#: gettingstarted.html1611, 1697
 msgid "4"
 msgstr "4"
 
-#: gettingstarted.html:1727
+#: gettingstarted.html:1613
 msgid "Quarter tiling: bottom right."
 msgstr "Penjubinan suku: kanan bawah."
 
-#: gettingstarted.html:1732
+#: gettingstarted.html:1618
 msgid "Window shortcuts - numeric keypad"
 msgstr "Pintasan tetingkap - pad kekunci numerik"
 
-#: gettingstarted.html:1733
+#: gettingstarted.html:1619
 msgid "Tiling shortcuts on the numeric keypad."
 msgstr "Pintasan penjubinan pada pad kekunci numerik."
 
-#: gettingstarted.html:1741
+#: gettingstarted.html:1627
 msgid "7"
 msgstr "7"
 
-#: gettingstarted.html:1743
+#: gettingstarted.html:1629
 msgid "Quarter top left."
 msgstr "Suku kiri atas."
 
-#: gettingstarted.html:1751
+#: gettingstarted.html:1637
 msgid "9"
 msgstr "9"
 
-#: gettingstarted.html:1753
+#: gettingstarted.html:1639
 msgid "Quarter top right."
 msgstr "Suku kanan atas."
 
-#: gettingstarted.html:1763
+#: gettingstarted.html:1649
 msgid "Quarter bottom right."
 msgstr "Suku kanan bawah."
 
-#: gettingstarted.html:1773
+#: gettingstarted.html:1659
 msgid "Quarter bottom left."
 msgstr "Suku kiri bawah."
 
-#: gettingstarted.html:1781
+#: gettingstarted.html:1667
 msgid "8"
 msgstr "8"
 
-#: gettingstarted.html:1783
+#: gettingstarted.html:1669
 msgid "Half top."
 msgstr "Separa atas."
 
-#: gettingstarted.html:1791
+#: gettingstarted.html:1677
 msgid "6"
 msgstr "6"
 
-#: gettingstarted.html:1793
+#: gettingstarted.html:1679
 msgid "Half right."
 msgstr "Separa kanan."
 
-#: gettingstarted.html:1803
+#: gettingstarted.html:1689
 msgid "Half bottom."
 msgstr "Separa bawah."
 
-#: gettingstarted.html:1813
+#: gettingstarted.html:1699
 msgid "Half left."
 msgstr "Separa kiri."
 
-#: gettingstarted.html:1821
+#: gettingstarted.html:1707
 msgid "5"
 msgstr "5"
 
-#: gettingstarted.html:1823
+#: gettingstarted.html:1709
 msgid "Toggle maximize."
 msgstr "Togol maksimum."
 
-#: gettingstarted.html:1832
+#: gettingstarted.html:1718
 msgid "Update shortcuts in the Settings App"
 msgstr "Kemas kini pintasan dalam Apl Tetapan"
 
-#: gettingstarted.html:1854
+#: gettingstarted.html:1740
 msgid ""
 "Your machine is made up of various components that interact with one "
 "another. This information is useful when providing support to ensure "
@@ -1784,141 +1681,133 @@ msgstr ""
 "antara satu sama yang lain. Maklumat ini berguna ketika memerlukan sokongan "
 "untuk memastikan perkakasan dan perisian anda berfungsi dengan baik."
 
-#: gettingstarted.html:1862
+#: gettingstarted.html:1748
 msgid "Gathering Information.."
 msgstr "Menghimpun Maklumat..."
 
-#: gettingstarted.html:1871
+#: gettingstarted.html:1757
 msgid "System"
 msgstr "Sistem"
 
-#: gettingstarted.html:1874
+#: gettingstarted.html:1760
 msgid "Distribution:"
 msgstr "Distribusi:"
 
-#: gettingstarted.html:1878
+#: gettingstarted.html:1764
 msgid "Kernel:"
 msgstr "Kernel:"
 
-#: gettingstarted.html:1882
+#: gettingstarted.html:1768
 msgid "The Linux kernel is the heart of Ubuntu."
 msgstr "Kernel Linux merupakan intipati Ubuntu."
 
-#: gettingstarted.html:1888
+#: gettingstarted.html:1774
 msgid "Motherboard:"
 msgstr "Papan Induk:"
 
-#: gettingstarted.html:1892
+#: gettingstarted.html:1778
 msgid "Boot Mode:"
 msgstr "Mod But:"
 
-#: gettingstarted.html:1896
+#: gettingstarted.html:1782
 msgid "Displays the mode that OS is communicating with the firmware."
 msgstr "Papar mod yang mana OS berkomunikasi dengan perisian tegar."
 
-#: gettingstarted.html:1904
+#: gettingstarted.html:1790
 msgid "Processor"
 msgstr "Pemproses"
 
-#: gettingstarted.html:1907
+#: gettingstarted.html:1793
 msgid "Model:"
 msgstr "Model:"
 
-#: gettingstarted.html:1911
+#: gettingstarted.html:1797
 msgid "Speed:"
 msgstr "Kelajuan:"
 
-#: gettingstarted.html:1915
+#: gettingstarted.html:1801
 msgid "Architecture in use:"
 msgstr "Seni bina yang digunakan:"
 
-#: gettingstarted.html:1919
+#: gettingstarted.html:1805
 msgid ""
 "The operating system's architecture in use. For instance, i386 = 32-bit."
 msgstr ""
 "Senibina sistem pengoperasian yang digunakan. Sebagai contoh, i386 = 32-bit."
 
-#: gettingstarted.html:1925
-msgid "Architecture(s) supported:"
-msgstr "Seni bina(s) disokong:"
-
-#: gettingstarted.html:1929
-msgid "Architectures that are supported by this processor."
-msgstr "Seni bina yang disokong oleh pemproses ini."
-
-#: gettingstarted.html:1937
+#: gettingstarted.html:1813
 msgid "Components"
 msgstr "Komponen"
 
-#: gettingstarted.html:1940
+#: gettingstarted.html:1816
 msgid "Memory (RAM):"
 msgstr "Ingatan (RAM):"
 
-#: gettingstarted.html:1944
+#: gettingstarted.html:1820
 msgid "More RAM allows more applications to run simultaneously."
 msgstr ""
 "Lebih banyak RAM lebih banyak aplikasi boleh dijalankan secara serentak."
 
-#: gettingstarted.html:1950
+#: gettingstarted.html:1826
 msgid "Graphics:"
 msgstr "Grafik:"
 
-#: gettingstarted.html:1954
+#: gettingstarted.html:1830
 msgid "Internet Access:"
 msgstr "Capaian Internet:"
 
-#: gettingstarted.html:1957
+#: gettingstarted.html:1833
 msgid "Connected"
 msgstr "Bersambung"
 
-#: gettingstarted.html:1958
+#: gettingstarted.html:1834
 msgid "Not Connected"
 msgstr "Tidak Bersambung"
 
-#: gettingstarted.html:1966
+#: gettingstarted.html:1842
 msgid "Storage"
 msgstr "Storan"
 
-#: gettingstarted.html:1970
+#: gettingstarted.html:1846
 msgid "Root File System:"
 msgstr "Sistem Fail Akar:"
 
-#: gettingstarted.html:1974
+#: gettingstarted.html:1850
 msgid "The file system where OS is installed."
 msgstr "Sistem fail yang mana OS dipasang."
 
-#: gettingstarted.html:1980
+#: gettingstarted.html:1856
 msgid "Entire Disk Capacity:"
 msgstr "Keseluruhan Kapasiti Cakera:"
 
-#: gettingstarted.html:1986
+#: gettingstarted.html:1862
 msgid "OS Usage"
 msgstr "Penggunaan OS"
 
-#: gettingstarted.html:1991
+#: gettingstarted.html:1867
 msgid "Other Usage"
 msgstr "Penggunaan Lain"
 
-#: gettingstarted.html:1996
-msgid "Allocated for <span name=\"distro-name\"></span>:"
-msgstr "Diperuntuk untuk <span name=\"distro-name\"></span>:"
+#: gettingstarted.html:1872
+msgid "Allocated for Ubuntu Budgie:"
+msgstr ""
 
-#: gettingstarted.html:2000
+#: gettingstarted.html:1876
 msgid "The size of your operating system partition."
 msgstr "Saiz sekatan sistem pengoperasian anda."
 
-#: gettingstarted.html:2007
+#: gettingstarted.html:1883
 msgid "Used Space:"
 msgstr "Ruang Digunakan:"
 
-#: gettingstarted.html:2015
+#: gettingstarted.html:1891
 msgid "Free Space:"
 msgstr "Ruang Bebas:"
 
-#: gettingstarted.html:2023
+#: gettingstarted.html:1899
 msgid "Other Usage:"
 msgstr "Penggunaan Lain:"
 
-#: gettingstarted.html:2028
+#: gettingstarted.html:1904
 msgid "Reserved by system, other partitions, unallocated or swap."
 msgstr "Disimpan oleh sistem, lain-lain sekatan, tidak diperuntuk atau silih."
