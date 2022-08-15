@@ -303,7 +303,6 @@ class AppView(WebKit2.WebView):
 
     def _load_changed_cb(self, view, frame):
         uri = str(self.get_uri())
-        dbg.stdout('_load_changed_cb', 'uri: ' + uri, 0, 0)
 
         try:
             app.current_page = uri.rsplit('#')[0].rsplit('/', 1)[1]
@@ -1864,7 +1863,7 @@ class WelcomeApp(object):
                             'focal'  : '2023-04-22',
                             'jammy'  : '2025-04-22'}
 
-        app_code_names = { 'xenial', 'bionic', 'focal', 'groovy', 'hirsute', 'impish', 'jammy'}
+        app_code_names = { 'xenial', 'bionic', 'focal', 'groovy', 'hirsute', 'impish', 'jammy', 'kinetic'}
 
         if systemstate.codename not in app_code_names:
             dialog = Gtk.MessageDialog( parent=self._window,
