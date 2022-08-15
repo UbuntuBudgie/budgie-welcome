@@ -195,13 +195,31 @@ class AppView(WebKit2.WebView):
                 for theme in config[systemstate.codename]:
                     app.update_page("." + theme, 'show')
 
+            # layouts are distro specific so need to hide/show as appropriate
+            layout = app._data_path + "/config/layouts.json"
+
+            with open(layout) as file:
+                config = json.load(file)
+
+            if systemstate.codename in config:
+                for layout in config[systemstate.codename]:
+                    app.update_page("." + layout, 'show')
+
         if current_page in ['introduction', 'features', 'gettingstarted']:
-            if systemstate.codename in ['jammy']:
+            if systemstate.codename in ['focal','jammy']:
                 app.update_page('.after2204', 'hide')
-                app.update_page('.2204-only', 'show')
+                app.update_page('.before2210', 'show')
             else:
                 app.update_page('.after2204', 'show')
-                app.update_page('.2204-only', 'hide')
+                app.update_page('.before2210', 'hide')
+
+        if current_page in ['introduction', 'features', 'gettingstarted']:
+            if systemstate.codename in ['focal']:
+                app.update_page('.after2110', 'hide')
+                app.update_page('.before2204', 'show')
+            else:
+                app.update_page('.after2110', 'show')
+                app.update_page('.before2204', 'hide')
 
         if current_page == 'gettingstarted':
             # applets are distro specific so need to hide/show as appropriate
@@ -332,7 +350,7 @@ class AppView(WebKit2.WebView):
         return True
 
     def _do_command(self, uri):
-        if systemstate.codename in ['focal', 'impish']:
+        if systemstate.codename in ['focal']:
             control_center = 'gnome-control-center'
         else:
             control_center = 'budgie-control-center'
