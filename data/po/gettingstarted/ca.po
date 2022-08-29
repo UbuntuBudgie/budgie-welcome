@@ -98,6 +98,9 @@ msgid ""
 "Ubuntu Budgie works well on both high-end to older computers, optimized to "
 "be functional, while light on system resources."
 msgstr ""
+"L'Ubuntu Budgie funciona bé tant en ordinadors de gamma alta com en "
+"ordinadors més antics, optimitzat per ser funcional, i els recursos del "
+"sistema són lleugers."
 
 #: gettingstarted.html:91
 msgid "Minimum"
@@ -113,15 +116,15 @@ msgstr "2 gigabits (GB) de memòria RAM"
 
 #: gettingstarted.html:95
 msgid "32 gigabytes (GB) of disk space"
-msgstr ""
+msgstr "32 gigabytes (GB) d'espai de disc"
 
 #: gettingstarted.html97, 108
 msgid "Raspberry Pi4B"
-msgstr ""
+msgstr "Raspberry Pi4 B"
 
 #: gettingstarted.html:99
 msgid "32 gigabytes (GB) SD Card"
-msgstr ""
+msgstr "Targeta SD de 32 gigabytes (GB)"
 
 #: gettingstarted.html:102
 msgid "Recommended"
@@ -129,7 +132,7 @@ msgstr "Recomanat"
 
 #: gettingstarted.html:104
 msgid "Pentium i5 - approximately created in 2017"
-msgstr ""
+msgstr "Pentium i5: aproximadament creat el 2017"
 
 #: gettingstarted.html105, 109
 msgid "4 gigabytes (GB) of RAM"
@@ -137,11 +140,11 @@ msgstr "4 gigabits (GB) de memòria RAM"
 
 #: gettingstarted.html:106
 msgid "60 gigabytes (GB) of disk space"
-msgstr ""
+msgstr "60 gigabytes (GB) d'espai de disc"
 
 #: gettingstarted.html:110
 msgid "60 gigabytes (GB) SSD"
-msgstr ""
+msgstr "60 gigabytes (GB) d'SSD"
 
 #: gettingstarted.html:113
 msgid ""
@@ -171,6 +174,11 @@ msgid ""
 "Microsoft Windows or another <span class=\"fa fa-linux\"></span> GNU/Linux "
 "distribution."
 msgstr ""
+"L'Ubuntu Budgie és relativament senzill de configurar, tant si voleu "
+"substituir el sistema operatiu existent com si voleu instal·lar l'Ubuntu "
+"Budgie al costat d'un d'existent, com ara &nbsp;<span class=\"fa fa-"
+"windows\"></span> Microsoft Windows o una altra distribució <span class=\"fa"
+" fa-linux\"></span> GNU/Linux."
 
 #: gettingstarted.html:141
 msgid "For the best results:"
@@ -210,6 +218,11 @@ msgid ""
 " it on your machine. Once you are ready, double click the installation icon "
 "from the desktop."
 msgstr ""
+"La sessió en directe en què us trobeu ara mateix és una bona oportunitat per"
+" provar l'Ubuntu Budgie sense modificar el vostre ordinador, la qual cosa us"
+" permet comprovar que tots els perifèrics funcionen segons el previst abans "
+"d'instal·lar-lo a la màquina. Quan estigueu preparats, feu doble clic a la "
+"icona d'instal·lació de l'escriptori."
 
 #: gettingstarted.html:159
 msgid "Modern UEFI-based computers"
@@ -299,6 +312,9 @@ msgid ""
 "system, your partitions need to be shrunk. This results in sections of your "
 "hard disk being split between multiple operating systems."
 msgstr ""
+"Si voleu instal·lar l'Ubuntu Budgie al costat del sistema operatiu existent,"
+" les vostres particions s'han de reduir. Això fa que les seccions del disc "
+"dur es divideixin entre diversos sistemes operatius."
 
 #: gettingstarted.html:216
 msgid "I'm dual booting with"
@@ -429,6 +445,9 @@ msgid ""
 "unallocated, whereby the installer will detect this unused space to install "
 "Ubuntu Budgie to."
 msgstr ""
+"Després de completar les operacions al disc, podeu deixar l'espai restant "
+"sense assignar, de manera que l'instal·lador detectarà aquest espai no usat "
+"per instal·lar-hi l'Ubuntu Budgie."
 
 #: gettingstarted.html:292
 msgid "Using the Installer's \"Custom\" option."
@@ -453,7 +472,7 @@ msgstr "Podeu especificar aquests punts de muntatge:"
 
 #: gettingstarted.html:300
 msgid "The base for Ubuntu Budgie"
-msgstr ""
+msgstr "La base per a l'Ubuntu Budgie"
 
 #: gettingstarted.html:301
 msgid "Bootloader and kernels"
@@ -532,6 +551,10 @@ msgid ""
 "within Windows. This is a safer bet if it's essential that Windows still "
 "boots on your computer while experiencing Ubuntu Budgie."
 msgstr ""
+"Les versions més noves de Windows proporcionen una eina per reduir el volum "
+"NTFS des del mateix Windows. Aquesta és una aposta més segura si és "
+"essencial que el Windows encara arrenqui al vostre ordinador mentre "
+"experimenteu l'Ubuntu Budgie."
 
 #: gettingstarted.html:335
 msgid "Open <b>Disk Management</b> from the start menu."
@@ -552,6 +575,7 @@ msgstr "Introduïu la quantitat per encongir la partició del sistema."
 #: gettingstarted.html:352
 msgid "Remember, Ubuntu Budgie needs at minimum 32 GB of disk space."
 msgstr ""
+"Recordeu, l'Ubuntu Budgie necessita com a mínim 32 GB d'espai de disc."
 
 #: gettingstarted.html:357
 msgid "Further Reading"
@@ -581,6 +605,11 @@ msgid ""
 "will overwrite them, with the potential to lose access to Ubuntu Budgie "
 "temporarily."
 msgstr ""
+"Les distribucions de Linux usen un carregador o gestor d'arrencada conegut "
+"com a <code>grub</code>, que cerca i arrenca el sistema operatiu. Tanmateix,"
+" alguns sistemes operatius (com ara Windows) no s'integren amb els "
+"carregadors d'arrencada existents i els sobreescriuran, amb la possibilitat "
+"de perdre l'accés a l'Ubuntu Budgie temporalment."
 
 #: gettingstarted.html:374
 msgid ""
@@ -629,12 +658,17 @@ msgid ""
 "updates are available for your computer. If you have just installed Ubuntu "
 "Budgie, you might want to do this now."
 msgstr ""
+"L'Ubuntu Budgie comprovarà periòdicament si hi ha actualitzacions de "
+"programari i seguretat noves disponibles per a l'ordinador. Si acabeu "
+"d'instal·lar l'Ubuntu Budgie, potser voleu fer-ho ara."
 
 #: gettingstarted.html:427
 msgid ""
 "<b>Software Updater</b> can be found later in the menu <strong>System "
 "Tools</strong>"
 msgstr ""
+"L'<b>Actualitzador de programari</b> es pot trobar més endavant al menú "
+"<strong>Eines del sistema</strong>."
 
 #: gettingstarted.html:434
 msgid "Check for Updates"
@@ -651,6 +685,11 @@ msgid ""
 "automatically. However patent and copyright restrictions (see Ubuntu License"
 " Policy) complicate distribution of software to support non-free formats."
 msgstr ""
+"L'<strong>Ubuntu</strong> (la distribució base de l'Ubuntu Budgie) s'esforça"
+" per posar a disposició dels usuaris tot el programari més important "
+"automàticament. Tanmateix, les restriccions de patents i drets d'autor "
+"(vegeu la Política de llicències d'Ubuntu) compliquen la distribució de "
+"programari per admetre formats no lliures."
 
 #: gettingstarted.html:454
 msgid ""
@@ -713,6 +752,11 @@ msgid ""
 " properly. Installing the firmware package is often required to get some "
 "devices, typically Bluetooth and Wi-Fi, to work correctly."
 msgstr ""
+"Tot i que una àmplia gamma de maquinari és compatible amb l'Ubuntu Budgie, "
+"hi ha alguns components i perifèrics que requereixen controladors de "
+"propietat per funcionar correctament. Sovint cal instal·lar el paquet de "
+"microprogramari perquè alguns dispositius, normalment Bluetooth i Wi-Fi, "
+"funcionin correctament."
 
 #: gettingstarted.html:505
 msgid "An Internet connection is required to download and install drivers."
@@ -726,6 +770,8 @@ msgstr "Controladors addicionals"
 #: gettingstarted.html:515
 msgid "<b>Additional Drivers</b> can be found later in <b>System Tools</b>"
 msgstr ""
+"<b>Els controladors addicionals</b> es poden trobar més endavant a <b>Eines "
+"del sistema</b>."
 
 #: gettingstarted.html:523
 msgid "Graphics"
@@ -975,6 +1021,9 @@ msgid ""
 "keyboard entry layouts. IBus(Intelligent Input Bus) and Fcitx(Free Chinese "
 "Input Toy for X)."
 msgstr ""
+"A l'Ubuntu Budgie, oferim una opció per canviar entre dos dissenys d'entrada"
+" de teclat molt usats. L'IBus (bus d'entrada intel·ligent) i Fcitx (joguina "
+"d'entrada xinesa gratuïta per a X)."
 
 #: gettingstarted.html:677
 msgid "Install & Configure IBus"
@@ -1009,6 +1058,8 @@ msgstr ""
 msgid ""
 "<b>Language Support</b> can be found later in the menu <b>System Tools</b>"
 msgstr ""
+"<b>El suport de llengües</b> es pot trobar més endavant al menú </b>Eines "
+"del sistema</b>."
 
 #: gettingstarted.html:722
 msgid "Complex Input"
@@ -1039,6 +1090,8 @@ msgid ""
 "Ubuntu Budgie provides option to install a backup utility or firewall and "
 "supports multiple user accounts."
 msgstr ""
+"L'Ubuntu Budgie ofereix l'opció d'instal·lar una utilitat de còpia de "
+"seguretat o un tallafoc i admet diversos comptes d'usuari."
 
 #: gettingstarted.html:786
 msgid "Backups"
@@ -1058,6 +1111,9 @@ msgid ""
 " Budgie and supports backups to local devices as well as online cloud-based "
 "services."
 msgstr ""
+"<b>Deja-Dup</b> és una utilitat potent de còpia de seguretat que es pot "
+"instal·lar a l'Ubuntu Budgie i admet còpies de seguretat a dispositius "
+"locals, així com serveis en línia basats en núvol."
 
 #: gettingstarted.html:802
 msgid "Configure Backup"
@@ -1142,12 +1198,16 @@ msgstr "Configureu usuaris"
 msgid ""
 "<b>Users</b> can be found later in the menu by typing<i> Users</i></b>."
 msgstr ""
+"<b>Usuaris</b> es pot trobar més endavant al menú escrivint "
+"<i>usuaris</i></b>."
 
 #: gettingstarted.html:885
 msgid ""
 "To improve the amount of customizability, Ubuntu Budgie allows you to "
 "install/remove popular web browsers with a single click."
 msgstr ""
+"Per millorar la personalització, l'Ubuntu Budgie us permet instal·lar / "
+"suprimir navegadors web populars amb un sol clic."
 
 #: gettingstarted.html:890
 msgid "Firefox"
@@ -1263,6 +1323,10 @@ msgid ""
 " be used to quickly setup the user interface to broadly reflect how other "
 "popular operating systems look and feel."
 msgstr ""
+"L'Ubuntu Budgie proporciona una eina única per transformar la interfície "
+"d'usuari. Es pot usar per configurar ràpidament la interfície d'usuari per "
+"reflectir a grans trets com es veuen i i quina sensació transmeten altres "
+"sistemes operatius populars."
 
 #: gettingstarted.html:1062
 msgid "Budgie Desktop Settings"
@@ -1301,6 +1365,8 @@ msgid ""
 "Ubuntu Budgie has many keyboard shortcuts that help make using your computer"
 " more efficient."
 msgstr ""
+"L'Ubuntu Budgie té moltes dreceres de teclat que ajuden a fer que l'ús de "
+"l'ordinador sigui més eficient."
 
 #: gettingstarted.html:1112
 msgid ""
@@ -1826,7 +1892,7 @@ msgstr "Altres usos"
 
 #: gettingstarted.html:1872
 msgid "Allocated for Ubuntu Budgie:"
-msgstr ""
+msgstr "Assignat per a Ubuntu Budgie:"
 
 #: gettingstarted.html:1876
 msgid "The size of your operating system partition."

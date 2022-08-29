@@ -1,13 +1,14 @@
 # 
 # Translators:
 # Abolfazl Amiri (aasmpro) <aa.smpro@gmail.com>, 2017
+# Ali Najafian, 2022
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: Budgie Welcome\n"
 "POT-Creation-Date: 2016-02-27 12:48+0100\n"
 "PO-Revision-Date: 2017-03-15 13:49+0000\n"
-"Last-Translator: Abolfazl Amiri (aasmpro) <aa.smpro@gmail.com>, 2017\n"
+"Last-Translator: Ali Najafian, 2022\n"
 "Language-Team: Persian (https://www.transifex.com/ubuntu-budgie/teams/72251/fa/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -46,7 +47,7 @@ msgstr "آشنایی"
 
 #: gettingstarted.html:42
 msgid "Browser Ballot"
-msgstr ""
+msgstr "مرورگر های وب"
 
 #: gettingstarted.html46, 879, 1729
 msgid "Customization"
@@ -112,7 +113,7 @@ msgstr "2 گیگابایت (GB) رَم"
 
 #: gettingstarted.html:95
 msgid "32 gigabytes (GB) of disk space"
-msgstr ""
+msgstr "32 گیگابایت (GB) فضای خالی از هارد دیسک"
 
 #: gettingstarted.html97, 108
 msgid "Raspberry Pi4B"
@@ -327,6 +328,9 @@ msgid ""
 "The installer scans your disks for existing operating systems and provides a"
 " choice on what you'd like to do."
 msgstr ""
+"برنامه ی نصاب درایو های شما را برای موجود بودن سیستم عامل های دیگر بررسی "
+"میکند و به شما گزینه هایی برای اینکه چه کاری میخواهید انجام بدهید را ارائه "
+"می نماید."
 
 #: gettingstarted.html:248
 msgid "You will see an option similar to this:"
@@ -401,7 +405,7 @@ msgstr ""
 
 #: gettingstarted.html:300
 msgid "The base for Ubuntu Budgie"
-msgstr ""
+msgstr "پایه ی Ubuntu Budgie"
 
 #: gettingstarted.html:301
 msgid "Bootloader and kernels"
@@ -432,7 +436,7 @@ msgstr ""
 
 #: gettingstarted.html:309
 msgid "Additional software unmanaged by the package manager"
-msgstr ""
+msgstr "نرم افزار های افزوده شده که توسط مدیر بسته، مدیریت نمی شوند."
 
 #: gettingstarted.html:310
 msgid "such as"
@@ -641,6 +645,8 @@ msgstr "درایورهای اضافی"
 #: gettingstarted.html:515
 msgid "<b>Additional Drivers</b> can be found later in <b>System Tools</b>"
 msgstr ""
+"<b>Additional </b> را میتوان بعدا در <b>نرم افزار و بروزرسانی ها</b> پیدا "
+"کرد."
 
 #: gettingstarted.html:523
 msgid "Graphics"
@@ -680,6 +686,9 @@ msgid ""
 " are currently using will deliver the most stable performance out of your "
 "card."
 msgstr ""
+"درایور های شرکت AMD دیگر توسط Ubuntu پشتیبانی نمی شوند. درایور های متن بازی "
+"که هم اکنون استفاده میکنید پایدار ترین عملکرد را از کارت گرفیک شما ارائه "
+"خواهند داد."
 
 #: gettingstarted.html:552
 msgid "You're already good to go."
@@ -689,6 +698,8 @@ msgstr "شما در حال حاضر برای رفتن خوب است."
 msgid ""
 "Intel's drivers are open source and are maintained/updated in the kernel."
 msgstr ""
+"درایور های شرکت اینتل متن بازند و در هسته ی لینوکس نگهداری و به روز رسانی می"
+" شوند."
 
 #: gettingstarted.html:558
 msgid "VirtualBox Guest Additions"
@@ -710,6 +721,9 @@ msgid ""
 "open source, Ubuntu developers are <b>unable to review and improve driver "
 "code</b> meaning you'll have to rely on the manufacturer for support."
 msgstr ""
+"درایور های اختصاصی مستقیما از طرف تولید کننده ی سخت افزار بدست می آیند. "
+"توسعه دهندگان اوبونتو نمیتوانند کد را بررسی یا بهبود دهند. این یعنی شما برای"
+" پشتیبانی باید متکی به تولید کننده باشید."
 
 #: gettingstarted.html:570
 msgid ""
@@ -946,6 +960,9 @@ msgid ""
 "onclick=\"cmd('link?https://help.ubuntu.com/community/DoINeedAFirewall')\">learn"
 " more about firewalls</a>."
 msgstr ""
+"دیوار های آتش از ورود و خروج داده های مخرب به رایانه ی شما جلوگیری می کنند. "
+"به طور پیشفرض، دیوار آتش غیر فعال است. (درباره ی دیوار های اتش بیشتر "
+"بدانید)."
 
 #: gettingstarted.html:826
 msgid ""
@@ -996,6 +1013,8 @@ msgid ""
 "To improve the amount of customizability, Ubuntu Budgie allows you to "
 "install/remove popular web browsers with a single click."
 msgstr ""
+"به منطور افزایش سطح سفارشی سازی، Ubuntu Budgie به شما اجازه می دهد تا با یک "
+"کلیک مرورگر های مشهور را نصب/حذف کنید."
 
 #: gettingstarted.html:890
 msgid "Firefox"
@@ -1033,18 +1052,25 @@ msgid ""
 "offers a smooth browsing experience plus integration with Google's "
 "proprietary services."
 msgstr ""
+"گوگل کروم یک مرورگر وب مدرن است که توسط غول بزرگ اینترنتی، گوگل پشتیبانی می "
+"شود. این مرورگر به شما یک تجربه روان از وبگردی را ارائه می کند. علاوه بر این"
+" دارای سرویس های  اختصاصی گوگل به طور پیشفرض نیز هست."
 
 #: gettingstarted.html:941
 msgid ""
 "Microsoft Edge is a cross-platform web browser created and developed by "
 "Microsoft. It is a Chromium based browser."
 msgstr ""
+"Microsoft Edge یک مرورگر چند سکویی است که توسط شرکت مایکروسافت ساخته و توسعه"
+" داده شده است. این مرورگر روی هسته ی کرومیوم بنا شده است."
 
 #: gettingstarted.html:955
 msgid ""
 "Vivaldi Web Browser is a free, fully customizable web browser. Feature rich,"
 " powerful, secure and fun! Browse the Web your way"
 msgstr ""
+"مرورگر وب Vivaldi یک مرورگر رایگان، قابل تنظیم و سفارشی سازی، دارای ویژگی "
+"های زیاد، توانمند، ایمن و جذاب است! ‌به شیوه ی خودتان وب گردی کنید."
 
 #: gettingstarted.html:971
 msgid ""
@@ -1052,12 +1078,12 @@ msgid ""
 "around the world. Now with a built-in ad blocker and free VPN."
 msgstr ""
 "اُپرا یک مرورگر سریع و امن است. که در اروپا توسعه داده شده، و توسط میلیون ها"
-" نفر در سرتاسر دنیا استفاد میشود. اکنون با بلاک کننده تبلیغات و VPN داخلی "
-"عرضه میشود."
+" نفر در سرتاسر دنیا استفاد میشود. اکنون با بلاک کننده تبلیغات و VPN رایگان "
+"داخلی عرضه میشود."
 
 #: gettingstarted.html:987
 msgid "A browser that blocks tracking and intrusive ads by default."
-msgstr ""
+msgstr "یک مرورگر که از رهگیری و تبلیغات سرزده به طور پیشفرض جلوگیری می کند."
 
 #: gettingstarted.html:1012
 msgid ""
@@ -1089,7 +1115,7 @@ msgstr ""
 
 #: gettingstarted.html:1062
 msgid "Budgie Desktop Settings"
-msgstr ""
+msgstr "تنظیمات میزکار بادجی"
 
 #: gettingstarted.html:1065
 msgid ""
@@ -1503,7 +1529,7 @@ msgstr ""
 
 #: gettingstarted.html:1699
 msgid "Half left."
-msgstr ""
+msgstr "نیمه ی چپ"
 
 #: gettingstarted.html:1707
 msgid "5"
