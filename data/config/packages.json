@@ -1701,7 +1701,11 @@
 				"all": [
 					"ppa:ernstp/mesarc"
 				]
-			}
+			},
+			"post-install": "pin-corectrl"
+		},
+		"pin-corectrl": {
+			"script": "pin_corectrl"
 		},
 		"piper": {
 			"packages": [
