@@ -1702,7 +1702,8 @@
 					"ppa:ernstp/mesarc"
 				]
 			},
-			"post-install": "pin-corectrl"
+			"post-install": "pin-corectrl",
+			"root" : "ignored_parameter"
 		},
 		"pin-corectrl": {
 			"script": "pin_corectrl"

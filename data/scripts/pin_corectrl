@@ -4,7 +4,7 @@ if [ -f "/etc/apt/preferences.d/corectrl" ]; then
 echo "Repository pinning file already exists, skipping"
 
 else
-sudo sh -c "cat > /etc/apt/preferences.d/corectrl << \"EOF\"
+sh -c "cat > /etc/apt/preferences.d/corectrl << \"EOF\"
 # Never prefer packages from the ernstp repository
 Package: *
 Pin: release o=LP-PPA-ernstp-mesarc
