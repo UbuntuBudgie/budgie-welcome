@@ -1,0 +1,321 @@
+# 
+# Translators:
+# Денис Алексеёнок <d.alexeenok@gmail.com>, 2017
+# Keeper Holderson <falex7835@gmail.com>, 2018
+# Виктор, 2022
+# ndvio, 2022
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Budgie Welcome\n"
+"POT-Creation-Date: 2016-02-27 12:48+0100\n"
+"PO-Revision-Date: 2017-03-15 13:49+0000\n"
+"Last-Translator: ndvio, 2022\n"
+"Language-Team: Russian (https://www.transifex.com/ubuntu-budgie/teams/72251/ru/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ru\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
+"Report-Msgid-Bugs-To : you@example.com\n"
+
+#: features.html:13
+msgid "Features"
+msgstr "Особенности"
+
+#: features.html:18
+msgid "Modern and Full-Featured"
+msgstr "Современная и продвинутая"
+
+#: features.html:19
+msgid ""
+"Ubuntu Budgie is a modern computer operating system, with an attractive and "
+"easy to understand user interface. Its update manager keeps not only the "
+"operating system itself, but all of its installed applications updated to "
+"the current release. The operating system is more secure, and better "
+"supported than operating systems that come pre-installed on most home "
+"computer hardware today."
+msgstr ""
+"Ubuntu Budgie — это современная компьютерная операционная система с "
+"привлекательным и простым для понимания пользовательским интерфейсом. "
+"Менеджер обновлений системы предоставляет обновления не только самой "
+"операционной системы, но и всех установленных приложений. Эта операционная "
+"система более безопасна и поддерживается лучше, чем операционные системы, "
+"которые сегодня предустановлены на большинстве домашних компьютеров."
+
+#: features.html:29
+msgid "Pre-Configured Yet Flexible"
+msgstr "Уже настроенная, но все еще гибкая"
+
+#: features.html:35
+msgid ""
+"Using Ubuntu Budgie provides you with the freedom to run a complete, full-"
+"featured operating system, pre-configured with most, if not all, of the "
+"applications you will need for your daily computing - or to change anything "
+"about the way it looks, the way it works, or the applications it runs to "
+"suit your taste."
+msgstr ""
+"Использование Ubuntu Budgie предоставляет вам свободу запуска полноценной, "
+"полнофункциональной операционной системы, предварительно сконфигурированной "
+"с большинством, если не со всеми, приложениями, которые вам понадобятся для "
+"ежедневных вычислений - или изменить что-либо в том, как она выглядит, как "
+"она работает, или приложения, которые она запускает, по своему вкусу."
+
+#: features.html:43
+msgid "Built-In Security"
+msgstr "Встроенная система защиты"
+
+#: features.html:49
+msgid ""
+"Ubuntu Budgie is designed with security in mind. Unlike operating systems "
+"that update only once a month, Ubuntu Budgie receives updates continuously. "
+"The updates include security patches for Ubuntu Budgie and all of its "
+"components. Security updates for all of its installed applications are also "
+"provided on the same schedule. This ensures that you have the latest "
+"protection for all of your computer's software -- as soon as it's available!"
+msgstr ""
+"Ubuntu Budgie разработан с учетом требований безопасности. В отличие от "
+"операционных систем, которые обновляются только раз в месяц, Ubuntu Budgie "
+"получает обновления постоянно. Обновления включают в себя исправления "
+"безопасности для Ubuntu Budgie и всех ее компонентов. Обновления "
+"безопасности для всех установленных приложений также предоставляются по тому"
+" же графику. Это гарантирует, что у вас будет новейшая защита для всех "
+"программ вашего компьютера - как только она появится!"
+
+#: features.html:65
+msgid ""
+"Ubuntu Budgie can get viruses and other infections... but it is rare. Rapid "
+"and timely updates make it difficult for viruses, root kits and other "
+"malware to be installed and run without conscious intervention by you, the "
+"user. Even if you do accidentally invite in an infection, chances are it's "
+"designed to attack Windows and won't do much, if any damage to Ubuntu "
+"Budgie."
+msgstr ""
+"Ubuntu Budgie может заразиться вирусами и другими инфекциями... но это "
+"бывает редко. Быстрые и своевременные обновления затрудняют установку и "
+"запуск вирусов, рут-комплектов и других вредоносных программ без "
+"сознательного вмешательства пользователя. Даже если вы случайно занесете "
+"инфекцию, есть шанс, что она предназначена для атаки Windows и не причинит "
+"большого вреда Ubuntu Budgie, если вообще причинит."
+
+#: features.html:80
+msgid ""
+"Another significant security feature of Ubuntu Budgie is that its users are "
+"not superusers by default. Superusers (also known as \"root\" users or "
+"administrators) on any computer system have permission to do anything they "
+"want, including the ability to damage the system."
+msgstr ""
+"Еще одной важной особенностью безопасности Ubuntu Budgie является то, что ее"
+" пользователи по умолчанию не являются суперпользователями. "
+"Суперпользователи (также известные как \"root\" пользователи или "
+"администраторы) в любой компьютерной системе имеют право делать все, что "
+"захотят, включая возможность нанести вред системе."
+
+#: features.html:84
+msgid ""
+"For example, other operating systems look at the name of a file to determine"
+" which program should open it, then immediately attempt to open it. That "
+"design makes it easy for an intruder to attack a computer. Ubuntu Budgie "
+"opens a file based on what the file is, not based on its name. So even if a "
+"malicious program disguises its identity by using the name \"Last Will and "
+"Testament.txt\" Ubuntu Budgie will recognize the file as a program. The "
+"system provides a warning that the file is not a text file, but that it is a"
+" program that will be run if you give it permission to continue. To be extra"
+" secure, Ubuntu Budgie requires you to provide your administrator password "
+"before that permission is granted. Every single time."
+msgstr ""
+"Например, другие операционные системы смотрят на имя файла, чтобы "
+"определить, какая программа должна его открыть, а затем сразу же пытаются "
+"его открыть. Такая конструкция позволяет злоумышленнику легко атаковать "
+"компьютер. Ubuntu Budgie открывает файл, основываясь на том, что это за "
+"файл, а не на его имени. Поэтому даже если вредоносная программа маскирует "
+"свою личность, используя имя \"Last Will and Testament.txt\", Ubuntu Budgie "
+"распознает файл как программу. Система выдает предупреждение о том, что это "
+"не текстовый файл, а программа, которая будет запущена, если вы дадите ей "
+"разрешение на продолжение. Для дополнительной безопасности Ubuntu Budgie "
+"требует ввести пароль администратора, прежде чем разрешение будет получено. "
+"Каждый раз."
+
+#: features.html:101
+msgid "Powerful Applications"
+msgstr "Мощные приложения"
+
+#: features.html:102
+msgid ""
+"While budgie-desktop provides the essential user interface to control and "
+"use a computer, Ubuntu Budgie adds a collection of additional applications "
+"to turn your computer into a truly powerful workstation."
+msgstr ""
+"В то время как budgie-desktop предоставляет основной пользовательский "
+"интерфейс для управления и использования компьютера, Ubuntu Budgie добавляет"
+" коллекцию дополнительных приложений для превращения вашего компьютера в "
+"действительно мощную рабочую станцию."
+
+#: features.html:107
+msgid "Productivity"
+msgstr "Производительность"
+
+#: features.html:116
+msgid ""
+"<span>Firefox</span> delivers safe, easy web browsing. A familiar user "
+"interface, enhanced security features including protection from online "
+"identity theft, and an integrated search to let you get the most out of the "
+"web."
+msgstr ""
+"<span>Firefox</span> обеспечивает безопасный и простой просмотр веб-страниц."
+" Знакомый пользовательский интерфейс, расширенные функции безопасности, в "
+"том числе защита от кражи личных данных в Интернете, и встроенный поиск "
+"позволяют вам максимально эффективно пользоваться сетью Интернет."
+
+#: features.html:129
+msgid ""
+"LibreOffice is a full-featured office productivity suite that provides a "
+"near drop-in replacement for Microsoft(R) Office; its clean interface and "
+"powerful tools let you unleash your creativity and grow your productivity. "
+"LibreOffice embeds several applications that make it the most powerful Free "
+"and Open Source Office suite on the market:"
+msgstr ""
+"LibreOffice — это полнофункциональный офисный редактор, предоставляющий "
+"практически полную замену Microsoft(R) Office. Его чистый интерфейс и мощный"
+" набор интсрументов позволяет вам высвободить свою креативность и "
+"преумножить свою производительность. LibreOffice имеет ряд встроенных "
+"приложений, делающих его наиболее мощным свободным и открытым офисным "
+"пакетом из всех, присутствующих на рынке."
+
+#: features.html:136
+msgid "Writer, the word processor."
+msgstr "Текстовый редактор."
+
+#: features.html:137
+msgid "Calc, the spreadsheet application."
+msgstr "Редактор таблиц."
+
+#: features.html:138
+msgid "Impress, the presentation engine."
+msgstr "Редактор презентаций."
+
+#: features.html:139
+msgid "Draw, the drawing and flowcharting application"
+msgstr "Редактор для рисования и построения блок-схем."
+
+#: features.html:140
+msgid "Math, for editing mathematics."
+msgstr "Математический редактор"
+
+#: features.html:147
+msgid "Entertainment"
+msgstr "Развлечения"
+
+#: features.html:153
+msgid ""
+"Rhythmbox is a very easy to use music playing and management program which "
+"supports a wide range of audio formats (including mp3 and ogg). Originally "
+"inspired by Apple's iTunes, the current version also supports Internet "
+"Radio, iPod integration and generic portable audio player support, Audio CD "
+"burning, Audio CD playback, music sharing, and Podcasts."
+msgstr ""
+"Rhythmbox - это очень простая в использовании программа для воспроизведения "
+"и управления музыкой, которая поддерживает широкий спектр аудиоформатов "
+"(включая mp3 и ogg). Первоначально созданная на основе iTunes от Apple, "
+"текущая версия также поддерживает интернет-радио, интеграцию с iPod и общую "
+"поддержку портативных аудиоплееров, запись Audio CD, воспроизведение Audio "
+"CD, обмен музыкой и подкасты."
+
+#: features.html:161
+msgid ""
+"Lollypop is a very easy to use music playing and management program which "
+"supports a wide range of audio formats (including mp3 and ogg)."
+msgstr ""
+"Lollypop — это очень простая в использовании программа для воспроизведения и"
+" управления музыкой, которая поддерживает широкий спектр аудиоформатов "
+"(включая mp3 и ogg)."
+
+#: features.html:164
+msgid "Goodvibes supports Internet Radio."
+msgstr "Goodvibes поддерживает интернет-радио."
+
+#: features.html:165
+msgid "gPodder supports Podcasts."
+msgstr "gPodder поддерживает подкасты."
+
+#: features.html:174
+msgid ""
+"<span>gThumb</span> is a digital photo organizer. It allows you to import "
+"photos from disk or camera, organize them in various ways, view them in "
+"full-window or fullscreen mode, and export them to share with others. It is "
+"able to manage a lot of different image formats."
+msgstr ""
+"<span>gThumb</span> - это органайзер цифровых фотографий. Он позволяет "
+"импортировать фотографии с диска или камеры, упорядочивать их различными "
+"способами, просматривать в полнооконном или полноэкранном режиме, а также "
+"экспортировать их, чтобы поделиться ими с другими. Программа может работать "
+"с большим количеством различных форматов изображений."
+
+#: features.html:187
+msgid ""
+"<span class=\"before2210\">Celluloid</span><span "
+"class=\"after2204\">Parole</span> is a media player. It plays MPEG, MPEG-2, "
+"MPEG-4, DivX, MOV, WMV, QuickTime, WebM, FLAC, MP3, Ogg/Vorbis files, DVDs, "
+"VCDs, podcasts, and multimedia streams from various network sources."
+msgstr ""
+"<span class=\"before2210\">Celluloid</span><span "
+"class=\"after2204\">Parole</span> - это медиаплееры. Данные плееры способны "
+"воспроизводить файлы таких форматов как MPEG, MPEG-2, MPEG-4, DivX, MOV, "
+"WMV, QuickTime, WebM, FLAC, MP3, Ogg/Vorbis, DVD, VCD, также подкасты и "
+"мультимедийные потоки из различных сетевых источников."
+
+#: features.html:197
+msgid "... And a whole lot more!"
+msgstr "...И многое другое!"
+
+#: features.html:199
+msgid ""
+"Naturally you'll also find a document/photo scanner and printer management "
+"all included in Ubuntu Budgie. And this is just the start. <a "
+"onclick=\"cmd('software-center');\">GNOME Software</a> includes best-in-"
+"class applications for most tasks and a single click will give you access to"
+" thousands of applications suitable for just about any professional or "
+"recreational pursuit."
+msgstr ""
+"Естественно, вы также найдете сканер документов/фотографий и управление "
+"принтерами - все это включено в Ubuntu Budgie. И это только начало. <a "
+"onclick=\"cmd('software-center');\">GNOME Software</a> включает в себя "
+"лучшие в своем классе приложения для большинства задач, а один щелчок мыши "
+"даст вам доступ к тысячам приложений, подходящих практически для любой "
+"профессиональной деятельности или отдыха."
+
+#: features.html:209
+msgid "Games"
+msgstr "Игры"
+
+#: features.html:215
+msgid ""
+"In the last couple of years Linux has become a first class gaming platform "
+"thanks to <a onclick=\"cmd('link?https://www.valvesoftware.com')\">Valve</a>"
+" bringing their <a "
+"onclick=\"cmd('link?https://store.steampowered.com')\">Steam</a> platform to"
+" Linux. At the time of writing Steam has more than 2000 high quality indie "
+"and AAA titles available for Linux. Ubuntu Budgie is fully compatible with "
+"Steam for Linux."
+msgstr ""
+"За последние пару лет Linux стал первоклассной игровой платформой благодаря "
+"тому, что компания <a "
+"onclick=\"cmd('link?https://www.valvesoftware.com')\">Valve</a> вывела свою "
+"платформу <a "
+"onclick=\"cmd('link?https://store.steampowered.com')\">Steam</a> на Linux. "
+"На момент написания статьи в Steam доступно более 2000 высококачественных "
+"инди- и AAA-игр для Linux. Ubuntu Budgie полностью совместим со Steam для "
+"Linux."
+
+#: features.html:225
+msgid ""
+"While Steam is a major step forward for gaming on Linux, there are also many"
+" high quality and enjoyable Open Source games titles available for Ubuntu "
+"Budgie. It doesn't matter if you like flight simulators, motor racing, first"
+" person shooters, jump and run or card games, you'll find something to keep "
+"you entertained."
+msgstr ""
+"Хотя Steam - это большой шаг вперед для игр на Linux, для Ubuntu Budgie "
+"также доступно множество высококачественных и приятных игр с открытым "
+"исходным кодом. Неважно, любите ли вы авиасимуляторы, автогонки, шутеры от "
+"первого лица, прыжки и бег или карточные игры - вы найдете, чем развлечься."
