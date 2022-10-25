@@ -70,7 +70,7 @@ msgstr "Controladores"
 
 #: gettingstarted.html:61
 msgid "Language & Input"
-msgstr "Idioma e Inserção"
+msgstr "Idioma e Entrada"
 
 #: gettingstarted.html64, 766
 msgid "Optional Tasks"
@@ -97,6 +97,9 @@ msgid ""
 "Ubuntu Budgie works well on both high-end to older computers, optimized to "
 "be functional, while light on system resources."
 msgstr ""
+"O Ubuntu Budgie funciona bem tanto em computadores topo de gama como em "
+"computadores mais antigos, otimizado para ser funcional, sem consumir muitos"
+" recursos do sistema."
 
 #: gettingstarted.html:91
 msgid "Minimum"
@@ -104,7 +107,7 @@ msgstr "Mínimo"
 
 #: gettingstarted.html:93
 msgid "Pentium i3 - approximately created in 2013"
-msgstr "Pentium i3 - aproximadamente criado em 2013"
+msgstr "Pentium i3 - criado aproximadamente em 2013"
 
 #: gettingstarted.html94, 98
 msgid "2 gigabytes (GB) of RAM"
@@ -112,15 +115,15 @@ msgstr "2 gigabytes (GB) de RAM"
 
 #: gettingstarted.html:95
 msgid "32 gigabytes (GB) of disk space"
-msgstr ""
+msgstr "32 gigabytes (GB) de espaço em disco"
 
 #: gettingstarted.html97, 108
 msgid "Raspberry Pi4B"
-msgstr ""
+msgstr "Raspberry Pi4B"
 
 #: gettingstarted.html:99
 msgid "32 gigabytes (GB) SD Card"
-msgstr ""
+msgstr "Cartão SD de 32 gigabytes (GB)"
 
 #: gettingstarted.html:102
 msgid "Recommended"
@@ -128,7 +131,7 @@ msgstr "Recomendado"
 
 #: gettingstarted.html:104
 msgid "Pentium i5 - approximately created in 2017"
-msgstr ""
+msgstr "Pentium i5 - criado aproximadamente em 2017"
 
 #: gettingstarted.html105, 109
 msgid "4 gigabytes (GB) of RAM"
@@ -136,11 +139,11 @@ msgstr "4 gigabytes (GB) de RAM"
 
 #: gettingstarted.html:106
 msgid "60 gigabytes (GB) of disk space"
-msgstr ""
+msgstr "60 gigabytes (GB) de espaço em disco"
 
 #: gettingstarted.html:110
 msgid "60 gigabytes (GB) SSD"
-msgstr ""
+msgstr "SSD de 60 gigabytes (GB)"
 
 #: gettingstarted.html:113
 msgid ""
@@ -170,6 +173,11 @@ msgid ""
 "Microsoft Windows or another <span class=\"fa fa-linux\"></span> GNU/Linux "
 "distribution."
 msgstr ""
+"O Ubuntu Budgie é relativamente simples de configurar, quer estejam à "
+"procura de substituir o sistema operativo ou instalar o Ubuntu Budgie em "
+"paralelo com outro sistema. Tal como o &nbsp;<span class=\"fa fa-"
+"windows\"></span> Microsoft Windows ou outra <span class=\"fa fa-"
+"linux\"></span> distribuição GNU/Linux."
 
 #: gettingstarted.html:141
 msgid "For the best results:"
@@ -206,6 +214,11 @@ msgid ""
 " it on your machine. Once you are ready, double click the installation icon "
 "from the desktop."
 msgstr ""
+"A sessão live em que está atualmente é uma boa oportunidade para testar o "
+"Ubuntu Budgie sem modificar o seu computador, permitindo-lhe testar se todos"
+" os seus periféricos estão a funcionar como pretendido antes de se "
+"comprometer a instalá-lo na sua máquina. Quando estiver pronto, clique duas "
+"vezes no ícone de instalação no ambiente de trabalho."
 
 #: gettingstarted.html:159
 msgid "Modern UEFI-based computers"
@@ -297,6 +310,9 @@ msgid ""
 "system, your partitions need to be shrunk. This results in sections of your "
 "hard disk being split between multiple operating systems."
 msgstr ""
+"Deseja instalar o Ubuntu Budgie ao lado do seu sistema operativo atual, as "
+"suas partições precisam de ser encolhidas. Isto resulta em secções do seu "
+"disco rígido sendo divididas entre vários sistemas operativos."
 
 #: gettingstarted.html:216
 msgid "I'm dual booting with"
@@ -410,7 +426,7 @@ msgid ""
 "makes changes to partitions prior to installation."
 msgstr ""
 "O <b>GParted</b> está disponível apenas durante a sessão 'live'. Está "
-"localizado sob o menu <b>Ferramentas do sistema <i class=\"material-"
+"localizado sob o menu <b>Ferramentas do Sistema <i class=\"material-"
 "icons\">&#xE315;</i></b>. O GParted oferece total flexibilidade sobre as "
 "suas partições, principalmente para utilizadores avançados que sabem como "
 "gostariam de dispor os seus discos. Este método faz alterações nas partições"
@@ -426,6 +442,9 @@ msgid ""
 "unallocated, whereby the installer will detect this unused space to install "
 "Ubuntu Budgie to."
 msgstr ""
+"Depois de concluir as operações no seu disco, pode deixar o espaço restante "
+"não atribuído, pelo que o instalador irá detetar esse espaço não utilizado "
+"para instalar o Ubuntu Budgie."
 
 #: gettingstarted.html:292
 msgid "Using the Installer's \"Custom\" option."
@@ -450,7 +469,7 @@ msgstr "Pode especificar estes pontos de montagem:"
 
 #: gettingstarted.html:300
 msgid "The base for Ubuntu Budgie"
-msgstr ""
+msgstr "A base para o Ubuntu Budgie"
 
 #: gettingstarted.html:301
 msgid "Bootloader and kernels"
@@ -529,6 +548,10 @@ msgid ""
 "within Windows. This is a safer bet if it's essential that Windows still "
 "boots on your computer while experiencing Ubuntu Budgie."
 msgstr ""
+"As versões mais recentes do Windows fornecem uma ferramenta para encolher o "
+"volume NTFS do Windows. Esta é uma aposta mais segura se é essencial que o "
+"Windows ainda arranque no seu computador enquanto experimenta o Ubuntu "
+"Budgie."
 
 #: gettingstarted.html:335
 msgid "Open <b>Disk Management</b> from the start menu."
@@ -549,6 +572,7 @@ msgstr "Introduza o valor para diminuir a partição do sistema."
 #: gettingstarted.html:352
 msgid "Remember, Ubuntu Budgie needs at minimum 32 GB of disk space."
 msgstr ""
+"Lembre-se, o Ubuntu Budgie precisa no mínimo de 32 GB de espaço em disco."
 
 #: gettingstarted.html:357
 msgid "Further Reading"
@@ -578,6 +602,11 @@ msgid ""
 "will overwrite them, with the potential to lose access to Ubuntu Budgie "
 "temporarily."
 msgstr ""
+"As distribuições Linux usam um carregador de arranque conhecido como "
+"<code>grub</code>, que procura e inicia o sistema operativo. No entanto, "
+"alguns sistemas operativos (como o Windows) não se integram aos carregadores"
+" de arranque existentes e os substituirá, com o potencial de perder o acesso"
+" temporalmente ao Ubuntu Budgie."
 
 #: gettingstarted.html:374
 msgid ""
@@ -626,12 +655,17 @@ msgid ""
 "updates are available for your computer. If you have just installed Ubuntu "
 "Budgie, you might want to do this now."
 msgstr ""
+"O Ubuntu Budgie verificará periodicamente se existem novos softwares e "
+"atualizações de segurança disponíveis para o seu computador. Se acabou de "
+"instalar o Ubuntu Budgie, talvez queira fazer isto agora."
 
 #: gettingstarted.html:427
 msgid ""
 "<b>Software Updater</b> can be found later in the menu <strong>System "
 "Tools</strong>"
 msgstr ""
+"O <b>Atualizações</b> pode ser encontrado mais tarde no menu de "
+"<strong>Ferramentas do Sistema</strong>"
 
 #: gettingstarted.html:434
 msgid "Check for Updates"
@@ -648,6 +682,11 @@ msgid ""
 "automatically. However patent and copyright restrictions (see Ubuntu License"
 " Policy) complicate distribution of software to support non-free formats."
 msgstr ""
+"O <strong>Ubuntu</strong> (a distribuição base do Ubuntu Budgie) esforça-se "
+"por disponibilizar automaticamente aos seus utilizadores todo o software "
+"mais importante. No entanto, as restrições de patentes e direitos de autor "
+"(ver Política de Licenças do Ubuntu) complicam a distribuição de software "
+"para suportar formatos não livres."
 
 #: gettingstarted.html:454
 msgid ""
@@ -682,8 +721,8 @@ msgstr ""
 "<strong>Aviso Legal</strong>, as leis de patentes e direitos de autor operam"
 " de forma diferente, de acordo com o país em que se encontra. Obtenha "
 "aconselhamento jurídico se não tiver certeza de se uma determinada patente "
-"ou restrição se aplica a um formato de multimédia que você deseja usar no "
-"seu país."
+"ou restrição se aplica a um formato de multimédia que deseja usar no seu "
+"país."
 
 #: gettingstarted.html474, 617, 683, 692, 736, 747, 758, 796, 831, 904, 920,
 #: 935, 949, 964, 980, 995, 1005, 1025, 1045
@@ -710,6 +749,11 @@ msgid ""
 " properly. Installing the firmware package is often required to get some "
 "devices, typically Bluetooth and Wi-Fi, to work correctly."
 msgstr ""
+"Embora uma ampla gama de hardware seja compatível com o Ubuntu Budgie, "
+"existem alguns componentes e periféricos que exigem que os controladores "
+"proprietários funcionem devidamente. A instalação do pacote de firmware é "
+"muitas vezes necessária para que alguns dispositivos, normalmente Bluetooth "
+"e Wi-Fi, funcionem corretamente."
 
 #: gettingstarted.html:505
 msgid "An Internet connection is required to download and install drivers."
@@ -724,6 +768,8 @@ msgstr "Controladores adicionais"
 #: gettingstarted.html:515
 msgid "<b>Additional Drivers</b> can be found later in <b>System Tools</b>"
 msgstr ""
+"O <b>Controladores adicionais</b> pode ser encontrado mais tarde em "
+"<b>Ferramentas do Sistema</b>"
 
 #: gettingstarted.html:523
 msgid "Graphics"
@@ -971,6 +1017,9 @@ msgid ""
 "keyboard entry layouts. IBus(Intelligent Input Bus) and Fcitx(Free Chinese "
 "Input Toy for X)."
 msgstr ""
+"No Ubuntu Budgie, fornecemos uma opção para alternar entre dois esquemas de "
+"entrada de teclado amplamente utilizados. IBus (Intelligent Input Bus) e "
+"Fcitx (Free Chinese Input Toy para X)."
 
 #: gettingstarted.html:677
 msgid "Install & Configure IBus"
@@ -1004,6 +1053,8 @@ msgstr ""
 msgid ""
 "<b>Language Support</b> can be found later in the menu <b>System Tools</b>"
 msgstr ""
+"O <b>Suporte do idioma</b> pode ser encontrado mais tarde no menu "
+"<b>Ferramentas do Sistema</b>."
 
 #: gettingstarted.html:722
 msgid "Complex Input"
@@ -1034,6 +1085,8 @@ msgid ""
 "Ubuntu Budgie provides option to install a backup utility or firewall and "
 "supports multiple user accounts."
 msgstr ""
+"O Ubuntu Budgie fornece a opção para instalar um utilitário de cópias de "
+"segurança ou firewall e oferece suporte a várias contas de utilizadores."
 
 #: gettingstarted.html:786
 msgid "Backups"
@@ -1053,6 +1106,9 @@ msgid ""
 " Budgie and supports backups to local devices as well as online cloud-based "
 "services."
 msgstr ""
+"O <b>Deja-Dup</b> é um poderoso utilitário de cópias de segurança que pode "
+"ser instalado no Ubuntu Budgie e suporta cópias de segurança para "
+"dispositivos locais, bem como serviços online baseados na nuvem."
 
 #: gettingstarted.html:802
 msgid "Configure Backup"
@@ -1139,12 +1195,16 @@ msgstr "Configurar Utilizadores"
 msgid ""
 "<b>Users</b> can be found later in the menu by typing<i> Users</i></b>."
 msgstr ""
+"Os <b>Utilizadores</b> podem ser encontrados mais tarde no menu ao "
+"escrever<i> Utilizadores</i></b>."
 
 #: gettingstarted.html:885
 msgid ""
 "To improve the amount of customizability, Ubuntu Budgie allows you to "
 "install/remove popular web browsers with a single click."
 msgstr ""
+"Para melhorar a quantidade de personalização, o Ubuntu Budgie permite-lhe "
+"instalar/remover navegadores web populares com um simples clique."
 
 #: gettingstarted.html:890
 msgid "Firefox"
@@ -1259,6 +1319,10 @@ msgid ""
 " be used to quickly setup the user interface to broadly reflect how other "
 "popular operating systems look and feel."
 msgstr ""
+"O Ubuntu Budgie fornece uma ferramenta única para transformar a interface do"
+" utilizador. Pode ser utilizada para configurar rapidamente a interface do "
+"utilizador de modo a refletir amplamente o aspeto e a sensação de outros "
+"sistemas operativos populares."
 
 #: gettingstarted.html:1062
 msgid "Budgie Desktop Settings"
@@ -1297,6 +1361,8 @@ msgid ""
 "Ubuntu Budgie has many keyboard shortcuts that help make using your computer"
 " more efficient."
 msgstr ""
+"O Ubuntu Budgie tem muitas teclas de atalho que ajudam a tornar o computador"
+" mais eficiente."
 
 #: gettingstarted.html:1112
 msgid ""
@@ -1820,7 +1886,7 @@ msgstr "Outras utilizações"
 
 #: gettingstarted.html:1872
 msgid "Allocated for Ubuntu Budgie:"
-msgstr ""
+msgstr "Atribuído ao Ubuntu Budgie:"
 
 #: gettingstarted.html:1876
 msgid "The size of your operating system partition."

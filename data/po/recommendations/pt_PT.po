@@ -1,13 +1,13 @@
 # 
 # Translators:
-# Hugo Carvalho <hugokarvalho@hotmail.com>, 2021
+# Hugo Carvalho <hugokarvalho@hotmail.com>, 2022
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: Budgie Welcome\n"
 "POT-Creation-Date: 2016-02-27 12:48+0100\n"
 "PO-Revision-Date: 2017-03-22 21:33+0000\n"
-"Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>, 2021\n"
+"Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>, 2022\n"
 "Language-Team: Portuguese (Portugal) (https://www.transifex.com/ubuntu-budgie/teams/72251/pt_PT/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -30,6 +30,9 @@ msgid ""
 "associated packages, we recommend to enable the Ubuntu Budgie backports "
 "repository."
 msgstr ""
+"Para fornecer as versões mais atualizadas do budgie-desktop e outros pacotes"
+" associados, recomendamos a ativação do repositório de backports do Ubuntu "
+"Budgie."
 
 #: recommendations.html:27
 msgid "Repository is installed"
@@ -37,7 +40,7 @@ msgstr "O repositório está instalado"
 
 #: recommendations.html:30
 msgid "Enable Ubuntu Budgie backports repository"
-msgstr ""
+msgstr "Ativar o repositório de backports do Ubuntu Budgie"
 
 #: recommendations.html33, 106, 139, 164, 181, 197, 214
 msgid "Applying Changes..."
@@ -62,6 +65,20 @@ msgid ""
 " packaging and providing updates have prevented us from delivering them in "
 "the past."
 msgstr ""
+"O <strong>Snap</strong> é um formato de empacotamento de aplicações de nova "
+"geração desenvolvido pela <em>Canonical</em>. Embora inicialmente tenha sido"
+" desenvolvido apenas para diferentes plataformas do Ubuntu, atualmente "
+"funciona em muitas outras distribuições GNU/Linux. Isso irá ajudar os "
+"programadores de aplicações a fornecer um pacote unificado que possa "
+"funcionar em diferentes plataformas. Ao usar o formato de pacote snap, as "
+"aplicações podem ter a sua própria versão de bibliotecas e não há "
+"necessidade de se preocupar com as bibliotecas instaladas no sistema "
+"operativo subjacente. Os pacotes snap permitem que os programadores ofereçam"
+" versões muito mais recentes de aplicações para o Ubuntu Budgie. As versões "
+"mais recentes do KDE, GNOME, navegadores ou outros programas de ambientes de"
+" trabalho geralmente serão construídos com facilidade em lançamentos LTS "
+"mais antigos, mas a complexidade dos pacotes e o fornecimento de "
+"atualizações impediram-nos de entregá-los no passado."
 
 #: recommendations.html55, 122
 msgid "Learn more"
@@ -215,6 +232,11 @@ msgid ""
 "the upstream project and you don't have to wait for your distribution to "
 "package it for you."
 msgstr ""
+"O Ubuntu Budgie recomenda a instalação do <strong>Flatpak</strong> pois irá "
+"abrir um novo mundo de possibilidades para si. Com o Flatpak, pode "
+"aproveitar o último lançamento de diferentes pacotes de software assim que "
+"for empacotado pelo projeto a montante e não precisa de esperar para que a "
+"sua distribuição o envie para si."
 
 #: recommendations.html:130
 msgid ""
@@ -222,6 +244,9 @@ msgid ""
 "install Flatpak with a single click. After first time configuration, you can"
 " use GNOME Software to install Flatpak packages."
 msgstr ""
+"Sendo uma distribuição GNU/Linux amigável, o Ubuntu Budgie permite-lhe "
+"instalar o Flatpak com um simples clique. Após a primeira configuração, pode"
+" usar o GNOME Software para instalar pacotes Flatpak."
 
 #: recommendations.html:134
 msgid "Flatpak is installed. Please reboot for the service to start"
