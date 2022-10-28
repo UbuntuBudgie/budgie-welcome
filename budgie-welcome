@@ -1881,7 +1881,7 @@ class WelcomeApp(object):
                             'focal'  : '2023-04-22',
                             'jammy'  : '2025-04-22'}
 
-        app_code_names = { 'xenial', 'bionic', 'focal', 'groovy', 'hirsute', 'impish', 'jammy', 'kinetic'}
+        app_code_names = { 'xenial', 'bionic', 'focal', 'groovy', 'hirsute', 'impish', 'jammy', 'kinetic', 'lunar'}
 
         if systemstate.codename not in app_code_names:
             dialog = Gtk.MessageDialog( parent=self._window,
