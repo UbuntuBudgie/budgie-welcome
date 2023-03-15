@@ -1,14 +1,14 @@
 # 
 # Translators:
-# Oi Suomi On! <oisuomion@protonmail.com>, 2020
 # heidi.wenger, 2022
+# Oi Suomi On! <oisuomion@protonmail.com>, 2023
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: Budgie Welcome\n"
 "POT-Creation-Date: 2016-02-27 12:48+0100\n"
 "PO-Revision-Date: 2017-03-22 21:33+0000\n"
-"Last-Translator: heidi.wenger, 2022\n"
+"Last-Translator: Oi Suomi On! <oisuomion@protonmail.com>, 2023\n"
 "Language-Team: Finnish (https://www.transifex.com/ubuntu-budgie/teams/72251/fi/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -18,8 +18,8 @@ msgstr ""
 "Report-Msgid-Bugs-To : you@example.com\n"
 
 #: recommendations.html:15
-msgid "Recommendations"
-msgstr "Suosittelut"
+msgid "Optional Tasks"
+msgstr "Vaihtoehtoiset tehtävät"
 
 #: recommendations.html:20
 msgid "Backports repository"
@@ -40,7 +40,7 @@ msgstr "Ohjelmavarasto asennettu"
 msgid "Enable Ubuntu Budgie backports repository"
 msgstr ""
 
-#: recommendations.html33, 106, 139, 164, 181, 197, 214
+#: recommendations.html33, 106, 130, 155, 176, 193, 209, 226
 msgid "Applying Changes..."
 msgstr "Muutoksia toteutetaan..."
 
@@ -64,7 +64,7 @@ msgid ""
 "the past."
 msgstr ""
 
-#: recommendations.html55, 122
+#: recommendations.html55, 119
 msgid "Learn more"
 msgstr "Opi lisää"
 
@@ -197,47 +197,28 @@ msgstr "Flatpak"
 #: recommendations.html:116
 msgid ""
 "<strong>Flatpak</strong> is a new generation application distribution "
-"framework for GNU/Linux platforms. It introduces a unified packaging format "
-"across all GNU/Linux distributions. That means a single package can work on "
-"any platform. Flatpak helps application developers to ship their application"
-" in a single format which can be installed in any GNU/Linux distribution "
-"without worrying about the underlying operating system and its built-in "
-"libraries."
+"framework. It introduces a unified packaging format across various GNU/Linux"
+" distributions. Please note that Flatpak applications are not part of the "
+"core Ubuntu experience."
 msgstr ""
-"<strong>Flatpak</strong>on uuden sukupolven sovellusjakelukehys GNU/Linux-"
-"alustoille. Se esittelee yhtenäisen paketointimuodon kaikkien GNU/Linux-"
-"jakeluiden välille. Tämä tarkoittaa saman paketin toimivuutta millä tahansa "
-"alustalla. Flatpak auttaa ohjelmistokehittäjiä toimittamaan sovelluksensa "
-"yhdessä muodossa joka voidaan asentaa mihin tahansa GNU/Linux-jakeluun "
-"huolimatta alustana olevasta käyttöjärjestelmästä ja sen sisäänrakennetuista"
-" kirjastoista."
+
+#: recommendations.html:121
+msgid ""
+"Being a user friendly distribution, Ubuntu Budgie allows you to install "
+"Flatpak with a single click. After setup, you can use "
+"<strong>Software</strong> to install Flatpak applications."
+msgstr ""
 
 #: recommendations.html:125
-msgid ""
-"Ubuntu Budgie recommends installing <strong>Flatpak</strong> as it will open"
-" a new world of possibilities for you. With Flatpak, you can enjoy the "
-"latest release of different software packages as soon as it is packaged by "
-"the upstream project and you don't have to wait for your distribution to "
-"package it for you."
-msgstr ""
-
-#: recommendations.html:130
-msgid ""
-"Being a user friendly GNU/Linux distribution, Ubuntu Budgie allows you to "
-"install Flatpak with a single click. After first time configuration, you can"
-" use GNOME Software to install Flatpak packages."
-msgstr ""
-
-#: recommendations.html:134
 msgid "Flatpak is installed. Please reboot for the service to start"
 msgstr ""
 "Flatpak asennettu. Uudelleenkäynnistä tietokone jotta palvelu käynnistyy."
 
-#: recommendations.html:137
+#: recommendations.html:128
 msgid "Install & Configure Flatpak"
 msgstr "Asenna & määritä Flatpak"
 
-#: recommendations.html:149
+#: recommendations.html:140
 msgid ""
 "<strong>Dropbox</strong> is a popular proprietary file sharing and storage "
 "solution."
@@ -245,7 +226,7 @@ msgstr ""
 "<strong>Dropbox</strong>on suosittu omisteinen tiedostonjako ja "
 "varastointiratkaisu."
 
-#: recommendations.html:153
+#: recommendations.html:144
 msgid ""
 "After installing, logout and login and follow the dropbox instructions that "
 "are then displayed."
@@ -253,15 +234,29 @@ msgstr ""
 "Asennuksen jälkeen, kirjaudu ulos ja takaisin sisään sekä seuraa näkyville "
 "tulevia Dropbox:in ohjeita."
 
-#: recommendations.html:158
+#: recommendations.html:149
 msgid "Dropbox is installed"
 msgstr "Dropbox on asennettu"
 
-#: recommendations.html:161
+#: recommendations.html:152
 msgid "Install & Configure Dropbox"
 msgstr "Asenna ja määritä Dropbox"
 
-#: recommendations.html:171
+#: recommendations.html:165
+msgid ""
+"ClamTk is a frontend for ClamAV (Clam Antivirus). It is intended to be an "
+"easy to use, light-weight, on-demand scanner for Linux systems."
+msgstr ""
+
+#: recommendations.html:170
+msgid "ClamAV is installed"
+msgstr ""
+
+#: recommendations.html:173
+msgid "Install & Configure ClamAV"
+msgstr ""
+
+#: recommendations.html:183
 msgid ""
 "Nemo Share allows you to quickly share a folder from the Nemo file manager "
 "without requiring root access."
@@ -269,15 +264,15 @@ msgstr ""
 "Nemo Share mahdollistaa nopean kansionjaon Nemo-tiedostonhallinnasta ilman "
 "vaatimusta root-käyttäjän oikeuksille."
 
-#: recommendations.html:176
+#: recommendations.html:188
 msgid "Nemo Share is installed"
 msgstr "Nemo Share on asennettu"
 
-#: recommendations.html:179
+#: recommendations.html:191
 msgid "Install Nemo Share"
 msgstr "Asenna Nemo Share"
 
-#: recommendations.html:188
+#: recommendations.html:200
 msgid ""
 "Nemo Preview allows you to quickly view the contents of a highlighted file "
 "from the Nemo file manager. Just press space to toggle the preview on and "
@@ -287,15 +282,15 @@ msgstr ""
 "katsahduksen Nemo-tiedostonhallinnassa. Paina vain välilyöntiä asettaaksesi "
 "esikatselun päälle ja pois. "
 
-#: recommendations.html:192
+#: recommendations.html:204
 msgid "Nemo Preview is installed"
 msgstr "Nemo Preview on asennettu"
 
-#: recommendations.html:195
+#: recommendations.html:207
 msgid "Install Nemo Preview"
 msgstr "Asenna Nemo Preview"
 
-#: recommendations.html:204
+#: recommendations.html:216
 msgid ""
 "Gutenprint is a suite of <a onclick=\"cmd('link?http://gimp-"
 "print.sourceforge.net/p_Supported_Printers.php')\">thousands</a> of printer "
@@ -307,10 +302,10 @@ msgstr ""
 "tulostinajureita sisältäen asjurit tulostimille kuten Epson ja Canon. "
 "Gutenprint tukee vain monitoimintolaitteiden tulostinosaa."
 
-#: recommendations.html:209
+#: recommendations.html:221
 msgid "Gutenprint is installed"
 msgstr "Gutenprint on asennettu"
 
-#: recommendations.html:212
+#: recommendations.html:224
 msgid "Install Gutenprint"
 msgstr "Asenna Gutenberg"
