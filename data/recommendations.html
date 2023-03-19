@@ -101,7 +101,102 @@
                         </div>
                         <hr>
                     </div>
-                    
+                    <div>
+                        <h2>Dropbox</h2>
+                        <div class="card card-block">
+                            <div class="card-image text-md-center">
+                                <img src="img/logos/dropbox.png" style="width: auto; max-height: 240px" />
+                            </div>
+                            <p class="card-text">&zwnj;<strong>Dropbox</strong> is a popular proprietary file sharing
+                                and storage solution.&zwnj;</p>
+                        </div>
+                        <div>
+                            <p>&zwnj;After installing, logout and login and follow the dropbox instructions that are
+                                then displayed.&zwnj;</p>
+                        </div>
+                        <div class="text-md-right">
+                            <span id="nemodropbox-remove" class="alert alert-success"> <i
+                                    class="material-icons">&#xE876;</i>&zwnj;Dropbox is installed&zwnj;</span><a
+                                id="nemodropbox-install" class="btn btn-success hvr-shadow"
+                                onclick="cmd('install?nemodropbox');"> &nbsp;<span
+                                    class="material-icons">&#xE2C0;</span>&zwnj;Install & Configure
+                                Dropbox&zwnj;&nbsp;</a>
+                            <span id="nemodropbox-status" class="hidden"><img src="img/welcome/processing.gif"
+                                    width="24px" height="24px" /> &zwnj;Applying Changes...&zwnj;</span>
+                        </div>
+                        <hr />
+                    </div>
+                    <div>
+                        <h2>ClamAV and ClamTK</h2>
+                        <div class="card card-block">
+                            <div class="card-image text-md-center">
+                                <img src="img/logos/clamtk_300x300.png" style="width: auto; max-height: 240px" />
+                            </div>
+                            <p class="card-text">&zwnj;ClamTk is a frontend for ClamAV (Clam Antivirus). It is intended to be an easy to use,
+                                light-weight, on-demand scanner for Linux systems.&zwnj;</p>
+                        </div>
+                        <div class="text-md-right">
+                            <span id="clamav-remove" class="alert alert-success"> <i
+                                    class="material-icons">&#xE876;</i>&zwnj;ClamAV is installed&zwnj;</span><a
+                                id="clamav-install" class="btn btn-success hvr-shadow"
+                                onclick="cmd('install?clamav');"> &nbsp;<span
+                                    class="material-icons">&#xE2C0;</span>&zwnj;Install & Configure
+                                ClamAV&zwnj;&nbsp;</a>
+                            <span id="clamav-status" class="hidden"><img src="img/welcome/processing.gif"
+                                    width="24px" height="24px" /> &zwnj;Applying Changes...&zwnj;</span>
+                        </div>
+                        <hr />
+                    </div>
+                    <div>
+                        <h2>Nemo Preview</h2>
+                        <div class="card card-block">
+                            <p>&zwnj;Nemo Preview allows you to quickly view the contents of a highlighted file from the Nemo file manager. Just press space to toggle the preview on and off.&zwnj;</p>
+                        </div>
+                        <div class="text-md-right">
+                            <span id="nemopreview-remove" class="alert alert-success"> <i
+                                    class="material-icons">&#xE876;</i>&zwnj;Nemo Preview is installed&zwnj;</span><a
+                                id="nemopreview-install" class="btn btn-success hvr-shadow"
+                                onclick="cmd('install?nemopreview');"> &nbsp;<span
+                                    class="material-icons">&#xE2C0;</span>&zwnj;Install Nemo Preview&zwnj;&nbsp;</a>
+                            <span id="nemopreview-status" class="hidden"><img src="img/welcome/processing.gif"
+                                    width="24px" height="24px" /> &zwnj;Applying Changes...&zwnj;</span>
+                        </div>
+                        <hr />
+                    </div>
+                    <div>
+                        <h2>Nemo Share</h2>
+                        <div class="card card-block">
+                            <p>&zwnj;Nemo Share allows you to quickly share a folder from the Nemo file manager without
+                                requiring root access.&zwnj;</p>
+                        </div>
+                        <div class="text-md-right">
+                            <span id="nemoshare-remove" class="alert alert-success"> <i
+                                    class="material-icons">&#xE876;</i>&zwnj;Nemo Share is installed&zwnj;</span><a
+                                id="nemoshare-install" class="btn btn-success hvr-shadow"
+                                onclick="cmd('install?nemoshare');"> &nbsp;<span
+                                    class="material-icons">&#xE2C0;</span>&zwnj;Install Nemo Share&zwnj;&nbsp;</a>
+                            <span id="nemoshare-status" class="hidden"><img src="img/welcome/processing.gif"
+                                    width="24px" height="24px" /> &zwnj;Applying Changes...&zwnj;</span>
+                        </div>
+                        <hr />
+                    </div>
+                    <div>
+                        <h2>Gutenprint</h2>
+                        <div class="card card-block">
+                            <p>&zwnj;Gutenprint is a suite of <a onclick="cmd('link?http://gimp-print.sourceforge.net/p_Supported_Printers.php')">thousands</a>
+                                of printer drivers which includes drivers for Epson and Canon printers. Gutenprint supports only the printer part of multi-function devices.&zwnj;</p>
+                        </div>
+                        <div class="text-md-right">
+                            <span id="gutenprint-remove" class="alert alert-success"> <i
+                                    class="material-icons">&#xE876;</i>&zwnj;Gutenprint is installed&zwnj;</span><a
+                                id="gutenprint-install" class="btn btn-success hvr-shadow"
+                                onclick="cmd('install?gutenprint');"> &nbsp;<span
+                                    class="material-icons">&#xE2C0;</span>&zwnj;Install Gutenprint&zwnj;&nbsp;</a>
+                            <span id="gutenprint-status" class="hidden"><img src="img/welcome/processing.gif"
+                                    width="24px" height="24px" /> &zwnj;Applying Changes...&zwnj;</span>
+                        </div>
+                        <hr />
+                    </div>
                     <div>
                         <h2>&zwnj;Snap Applications&zwnj;</h2>
                         <div class="card card-block">
@@ -173,102 +268,6 @@
                                     class="material-icons">&#xE2C0;</span>&zwnj;Install Snap&zwnj;&nbsp;</a>
                             <span id="snap-status" class="hidden"><img src="img/welcome/processing.gif" width="24px"
                                     height="24px" /> &zwnj;Applying Changes...&zwnj;</span>
-                        </div>
-                        <hr />
-                    </div>
-                    <div>
-                        <h2>Dropbox</h2>
-                        <div class="card card-block">
-                            <div class="card-image text-md-center">
-                                <img src="img/logos/dropbox.png" style="width: auto; max-height: 240px" />
-                            </div>
-                            <p class="card-text">&zwnj;<strong>Dropbox</strong> is a popular proprietary file sharing
-                                and storage solution.&zwnj;</p>
-                        </div>
-                        <div>
-                            <p>&zwnj;After installing, logout and login and follow the dropbox instructions that are
-                                then displayed.&zwnj;</p>
-                        </div>
-                        <div class="text-md-right">
-                            <span id="nemodropbox-remove" class="alert alert-success"> <i
-                                    class="material-icons">&#xE876;</i>&zwnj;Dropbox is installed&zwnj;</span><a
-                                id="nemodropbox-install" class="btn btn-success hvr-shadow"
-                                onclick="cmd('install?nemodropbox');"> &nbsp;<span
-                                    class="material-icons">&#xE2C0;</span>&zwnj;Install & Configure
-                                Dropbox&zwnj;&nbsp;</a>
-                            <span id="nemodropbox-status" class="hidden"><img src="img/welcome/processing.gif"
-                                    width="24px" height="24px" /> &zwnj;Applying Changes...&zwnj;</span>
-                        </div>
-                        <hr />
-                    </div>
-                    <div>
-                        <h2>ClamAV and ClamTK</h2>
-                        <div class="card card-block">
-                            <div class="card-image text-md-center">
-                                <img src="img/logos/clamtk_300x300.png" style="width: auto; max-height: 240px" />
-                            </div>
-                            <p class="card-text">&zwnj;ClamTk is a frontend for ClamAV (Clam Antivirus). It is intended to be an easy to use,
-                                light-weight, on-demand scanner for Linux systems.&zwnj;</p>
-                        </div>
-                        <div class="text-md-right">
-                            <span id="clamav-remove" class="alert alert-success"> <i
-                                    class="material-icons">&#xE876;</i>&zwnj;ClamAV is installed&zwnj;</span><a
-                                id="clamav-install" class="btn btn-success hvr-shadow"
-                                onclick="cmd('install?clamav');"> &nbsp;<span
-                                    class="material-icons">&#xE2C0;</span>&zwnj;Install & Configure
-                                ClamAV&zwnj;&nbsp;</a>
-                            <span id="clamav-status" class="hidden"><img src="img/welcome/processing.gif"
-                                    width="24px" height="24px" /> &zwnj;Applying Changes...&zwnj;</span>
-                        </div>
-                        <hr />
-                    </div>
-                    <div>
-                        <h2>Nemo Share</h2>
-                        <div class="card card-block">
-                            <p>&zwnj;Nemo Share allows you to quickly share a folder from the Nemo file manager without
-                                requiring root access.&zwnj;</p>
-                        </div>
-                        <div class="text-md-right">
-                            <span id="nemoshare-remove" class="alert alert-success"> <i
-                                    class="material-icons">&#xE876;</i>&zwnj;Nemo Share is installed&zwnj;</span><a
-                                id="nemoshare-install" class="btn btn-success hvr-shadow"
-                                onclick="cmd('install?nemoshare');"> &nbsp;<span
-                                    class="material-icons">&#xE2C0;</span>&zwnj;Install Nemo Share&zwnj;&nbsp;</a>
-                            <span id="nemoshare-status" class="hidden"><img src="img/welcome/processing.gif"
-                                    width="24px" height="24px" /> &zwnj;Applying Changes...&zwnj;</span>
-                        </div>
-                        <hr />
-                    </div>
-                    <div>
-                        <h2>Nemo Preview</h2>
-                        <div class="card card-block">
-                            <p>&zwnj;Nemo Preview allows you to quickly view the contents of a highlighted file from the Nemo file manager. Just press space to toggle the preview on and off.&zwnj;</p>
-                        </div>
-                        <div class="text-md-right">
-                            <span id="nemopreview-remove" class="alert alert-success"> <i
-                                    class="material-icons">&#xE876;</i>&zwnj;Nemo Preview is installed&zwnj;</span><a
-                                id="nemopreview-install" class="btn btn-success hvr-shadow"
-                                onclick="cmd('install?nemopreview');"> &nbsp;<span
-                                    class="material-icons">&#xE2C0;</span>&zwnj;Install Nemo Preview&zwnj;&nbsp;</a>
-                            <span id="nemopreview-status" class="hidden"><img src="img/welcome/processing.gif"
-                                    width="24px" height="24px" /> &zwnj;Applying Changes...&zwnj;</span>
-                        </div>
-                        <hr />
-                    </div>
-                    <div>
-                        <h2>Gutenprint</h2>
-                        <div class="card card-block">
-                            <p>&zwnj;Gutenprint is a suite of <a onclick="cmd('link?http://gimp-print.sourceforge.net/p_Supported_Printers.php')">thousands</a>
-                                of printer drivers which includes drivers for Epson and Canon printers. Gutenprint supports only the printer part of multi-function devices.&zwnj;</p>
-                        </div>
-                        <div class="text-md-right">
-                            <span id="gutenprint-remove" class="alert alert-success"> <i
-                                    class="material-icons">&#xE876;</i>&zwnj;Gutenprint is installed&zwnj;</span><a
-                                id="gutenprint-install" class="btn btn-success hvr-shadow"
-                                onclick="cmd('install?gutenprint');"> &nbsp;<span
-                                    class="material-icons">&#xE2C0;</span>&zwnj;Install Gutenprint&zwnj;&nbsp;</a>
-                            <span id="gutenprint-status" class="hidden"><img src="img/welcome/processing.gif"
-                                    width="24px" height="24px" /> &zwnj;Applying Changes...&zwnj;</span>
                         </div>
                         <hr />
                     </div>
