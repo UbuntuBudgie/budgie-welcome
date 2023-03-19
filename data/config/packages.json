@@ -1148,6 +1148,16 @@
 		"flatpak-setup": {
 			"script": "flatpak-remote"
 		},
+		"dropbox": {
+			"packages": [
+				"nautilus-dropbox"
+			],
+			"repos": {
+				"all": [
+					"multiverse"
+				]
+			}
+		},
 		"firefox": {
 			"packages": [
 				"firefox"
@@ -1325,16 +1335,6 @@
 				],
 				"lunar": [
 					"ppa:ubuntubudgie/backports"
-				]
-			}
-		},
-		"dropbox": {
-			"packages": [
-				"nautilus-dropbox"
-			],
-			"repos": {
-				"all": [
-					"multiverse"
 				]
 			}
 		},
