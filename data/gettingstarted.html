@@ -767,11 +767,11 @@
         </div>
       </div>
 
-      <!-- Additional Tasks - Backups / Firewall / Users -->
+      <!-- Additional Tasks - Flatpak / Dropbox / Users -->
       <div id="tasks" class="topicContents">
         <div class="row">
           <div class="col-md-12">
-            <h2>&zwnj;Flatpak and User Management&zwnj;</h2>
+            <h2>&zwnj;Flatpak, Dropbox and User Management&zwnj;</h2>
             <p>&zwnj;Ubuntu Budgie provides option to install third party software using Flatpak
               and supports multiple user accounts.&zwnj;</p>
           </div>
@@ -804,6 +804,30 @@
         </div>
         <hr class="soften-light">
         
+        <div class="row wow fadeIn">
+          <div class="col-md-6 center-inside">
+            <img src="img/logos/dropbox.png" style="width: 100%">
+          </div>
+          <div class="col-md-6">
+            <h3>&zwnj;Dropbox&zwnj;</h3>
+            <p>&zwnj;<strong>Dropbox</strong> is a popular proprietary file sharing
+              and storage solution.&zwnj;</p>
+            <span id="nemodropbox-status" class="hidden"><img src="img/welcome/processing.gif" width="24px" height="24px" /> 
+              &zwnj;Applying Changes...&zwnj;</span>
+            <a id="nemodropbox-install" class="btn btn-success hvr-shadow" onclick="cmd('install?nemodropbox');"> 
+              &nbsp;<span class="material-icons">&#xE2C0;</span>&zwnj;Install & Configure Dropbox&zwnj;&nbsp;
+            </a>
+            <div id="nemodropbox-remove" class="alert alert-success">
+              <i class="material-icons">&#xE876;</i>&zwnj;Dropbox is installed&zwnj;</span>
+              <span id="nemodropbox-hint" class="center"><small>
+                <p>&zwnj;After installing, logout and login and follow the dropbox instructions that are
+                  then displayed.&zwnj;</p>
+                </small></span>
+            </div>
+          </div>
+        </div>
+        <hr class="soften-light">
+
         <div class="row wow fadeIn">
           <div class="col-md-6 center-inside">
             <img src="img/screenshots/tasks-users.png" style="width: 100%">
