@@ -516,7 +516,7 @@ class AppView(WebKit2.WebView):
                     self._set_panel_key('size', 37)
                     self._set_panel_key('transparency', None)
 
-                p = subprocess.Popen(['killall', 'showtime_desktop'])
+                p = subprocess.Popen(['killall', '-q', 'showtime_desktop'])
                 p.wait()
 
                 #if systemstate.codename in ['bionic', 'focal', 'groovy']:
