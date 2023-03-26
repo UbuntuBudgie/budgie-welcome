@@ -4,19 +4,19 @@
 # da117c95c1d6125ee7d2e38d16e313dd_17e5349, 2017
 # Carsten, 2017
 # fd0badd786d230003e572856fa987370, 2017
-# Bernhard Keppner <bernhard.keppner@gmail.com>, 2018
 # Tim Fahrner <tim@fahrner.name>, 2018
 # Daniel Breuer <daniel3reuer@gmail.com>, 2018
 # Benjamin Piller <benpiller@gmail.com>, 2019
 # Vinzenz Vietzke <vinz@vinzv.de>, 2019
 # Ettore Atalan <atalanttore@googlemail.com>, 2021
+# Bernhard Keppner <bernhard.keppner@gmail.com>, 2023
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: Budgie Welcome\n"
 "POT-Creation-Date: 2016-02-27 12:48+0100\n"
 "PO-Revision-Date: 2017-03-22 21:33+0000\n"
-"Last-Translator: Ettore Atalan <atalanttore@googlemail.com>, 2021\n"
+"Last-Translator: Bernhard Keppner <bernhard.keppner@gmail.com>, 2023\n"
 "Language-Team: German (Germany) (https://www.transifex.com/ubuntu-budgie/teams/72251/de_DE/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -26,8 +26,8 @@ msgstr ""
 "Report-Msgid-Bugs-To : you@example.com\n"
 
 #: recommendations.html:15
-msgid "Recommendations"
-msgstr "Empfehlungen"
+msgid "Optional Tasks"
+msgstr "Optionale Aufgaben"
 
 #: recommendations.html:20
 msgid "Backports repository"
@@ -48,7 +48,7 @@ msgstr "Paketquelle ist installiert."
 msgid "Enable Ubuntu Budgie backports repository"
 msgstr ""
 
-#: recommendations.html33, 106, 139, 164, 181, 197, 214
+#: recommendations.html33, 106, 130, 155, 176, 193, 209, 226
 msgid "Applying Changes..."
 msgstr "Änderungen werden übernommen..."
 
@@ -72,7 +72,7 @@ msgid ""
 "the past."
 msgstr ""
 
-#: recommendations.html55, 122
+#: recommendations.html55, 119
 msgid "Learn more"
 msgstr "Mehr erfahren"
 
@@ -202,49 +202,29 @@ msgstr "Flatpak"
 #: recommendations.html:116
 msgid ""
 "<strong>Flatpak</strong> is a new generation application distribution "
-"framework for GNU/Linux platforms. It introduces a unified packaging format "
-"across all GNU/Linux distributions. That means a single package can work on "
-"any platform. Flatpak helps application developers to ship their application"
-" in a single format which can be installed in any GNU/Linux distribution "
-"without worrying about the underlying operating system and its built-in "
-"libraries."
+"framework. It introduces a unified packaging format across various GNU/Linux"
+" distributions. Please note that Flatpak applications are not part of the "
+"core Ubuntu experience."
 msgstr ""
-"<strong>Flatpak</strong> ist ein Application Distribution Framework der "
-"neuen Generation für GNU / Linux-Plattformen. Es führt ein einheitliches "
-"Paketformat für alle GNU / Linux-Distributionen ein. Das bedeutet, dass ein "
-"einzelnes Paket auf jeder Plattform funktionieren kann. Flatpak hilft "
-"Anwendungsentwicklern, ihre Anwendung in einem einzigen Format zu versenden,"
-" das in jeder GNU / Linux-Distribution installiert werden kann, ohne sich um"
-" das zugrunde liegende Betriebssystem und die darin integrierten "
-"Bibliotheken kümmern zu müssen."
+
+#: recommendations.html:121
+msgid ""
+"Being a user friendly distribution, Ubuntu Budgie allows you to install "
+"Flatpak with a single click. After setup, you can use "
+"<strong>Software</strong> to install Flatpak applications."
+msgstr ""
 
 #: recommendations.html:125
-msgid ""
-"Ubuntu Budgie recommends installing <strong>Flatpak</strong> as it will open"
-" a new world of possibilities for you. With Flatpak, you can enjoy the "
-"latest release of different software packages as soon as it is packaged by "
-"the upstream project and you don't have to wait for your distribution to "
-"package it for you."
-msgstr ""
-
-#: recommendations.html:130
-msgid ""
-"Being a user friendly GNU/Linux distribution, Ubuntu Budgie allows you to "
-"install Flatpak with a single click. After first time configuration, you can"
-" use GNOME Software to install Flatpak packages."
-msgstr ""
-
-#: recommendations.html:134
 msgid "Flatpak is installed. Please reboot for the service to start"
 msgstr ""
 "Flatpak wurde installiert. Bitte starten Sie den Rechner neu um den Service "
 "zu starten"
 
-#: recommendations.html:137
+#: recommendations.html:128
 msgid "Install & Configure Flatpak"
 msgstr "Flatpak installieren & einrichten"
 
-#: recommendations.html:149
+#: recommendations.html:140
 msgid ""
 "<strong>Dropbox</strong> is a popular proprietary file sharing and storage "
 "solution."
@@ -252,7 +232,7 @@ msgstr ""
 "<strong>Dropbox</strong> ist eine beliebte proprietäre Lösung für Austausch "
 "und  Speicherung von Dateien."
 
-#: recommendations.html:153
+#: recommendations.html:144
 msgid ""
 "After installing, logout and login and follow the dropbox instructions that "
 "are then displayed."
@@ -260,15 +240,29 @@ msgstr ""
 "Nach der Installation logge dich neu ein und folge den anschließend "
 "angezeigten Dropbox Anweisungen."
 
-#: recommendations.html:158
+#: recommendations.html:149
 msgid "Dropbox is installed"
 msgstr "Dropbox ist installiert."
 
-#: recommendations.html:161
+#: recommendations.html:152
 msgid "Install & Configure Dropbox"
 msgstr "Dropbox installieren & einrichten"
 
-#: recommendations.html:171
+#: recommendations.html:165
+msgid ""
+"ClamTk is a frontend for ClamAV (Clam Antivirus). It is intended to be an "
+"easy to use, light-weight, on-demand scanner for Linux systems."
+msgstr ""
+
+#: recommendations.html:170
+msgid "ClamAV is installed"
+msgstr ""
+
+#: recommendations.html:173
+msgid "Install & Configure ClamAV"
+msgstr ""
+
+#: recommendations.html:183
 msgid ""
 "Nemo Share allows you to quickly share a folder from the Nemo file manager "
 "without requiring root access."
@@ -276,30 +270,30 @@ msgstr ""
 "Mit Nemo Share können Sie einen Ordner aus dem Nemo-Dateimanager schnell und"
 " einfach freigeben, ohne dass ein Root-Zugriff erforderlich ist."
 
-#: recommendations.html:176
+#: recommendations.html:188
 msgid "Nemo Share is installed"
 msgstr "Nemo Share ist installiert"
 
-#: recommendations.html:179
+#: recommendations.html:191
 msgid "Install Nemo Share"
 msgstr "Nemo Share installieren"
 
-#: recommendations.html:188
+#: recommendations.html:200
 msgid ""
 "Nemo Preview allows you to quickly view the contents of a highlighted file "
 "from the Nemo file manager. Just press space to toggle the preview on and "
 "off."
 msgstr ""
 
-#: recommendations.html:192
+#: recommendations.html:204
 msgid "Nemo Preview is installed"
 msgstr "Nemo-Vorschau ist installiert"
 
-#: recommendations.html:195
+#: recommendations.html:207
 msgid "Install Nemo Preview"
 msgstr "Nemo-Vorschau installieren"
 
-#: recommendations.html:204
+#: recommendations.html:216
 msgid ""
 "Gutenprint is a suite of <a onclick=\"cmd('link?http://gimp-"
 "print.sourceforge.net/p_Supported_Printers.php')\">thousands</a> of printer "
@@ -307,10 +301,10 @@ msgid ""
 "supports only the printer part of multi-function devices."
 msgstr ""
 
-#: recommendations.html:209
+#: recommendations.html:221
 msgid "Gutenprint is installed"
 msgstr "Gutenprint ist installiert"
 
-#: recommendations.html:212
+#: recommendations.html:224
 msgid "Install Gutenprint"
 msgstr "Gutenprint installieren"

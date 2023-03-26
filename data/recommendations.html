@@ -33,6 +33,145 @@
                                     height="24px" /> &zwnj;Applying Changes...&zwnj;</span>
                         </div>
                     </div>
+                    
+                    <div class="col-md-6">
+                        <h2>&zwnj;Backups&zwnj;</h2>
+                        <div class="card card-block">
+                            <div class="card-image text-md-center">
+                                <img src="img/applications/deja-dup.png" style="width: auto; max-height: 240px" />
+                            </div>
+                            <p class="card-text">&zwnj;<strong>Deja-Dup</strong> is a powerful backup utility that can be installed in
+                            Ubuntu Budgie and supports backups to
+                            local devices as well as online cloud-based services.&zwnj;
+                            </p>
+                            <p class="card-text">&zwnj;Nothing is more important than having a backup
+                            of your personal files, just in case something
+                            disastrous happens to your computer.&zwnj;</p>
+                        </div>
+                        <div class="text-md-right">
+                            <div id="backup-remove">
+                            <a class="btn btn-inverse" onclick="cmd('backup');">
+                                &nbsp;<img class="button-icon" src="img/applications/deja-dup.png" />&nbsp;<span
+                                class="button-text">&zwnj;Configure Backup&zwnj;</span>&nbsp;
+                            </a>
+                            <span id="backup-hint" class="center"><small>
+                                <p><i class="material-icons">&#xE88F;</i> &zwnj;<b>Backups</b> can be found later in the menu
+                                    <b>Utilities <i class="material-icons">&#xE315;</i> Backups</b>.&zwnj;
+                                </p>
+                                </small></span>
+                            </div>
+                            <a id="backup-install" class="btn btn-success" onclick="cmd('install?backup');">&nbsp;<span
+                                class="material-icons">&#xE2C0;</span><span class="button-text">&zwnj;Install&zwnj;</span>&nbsp;</a>
+                            <span id="backup-status" class="hidden"><img src="img/welcome/processing.gif" width="24px" height="24px" />
+                            &zwnj;Applying Changes...&zwnj;</span>
+                        </div>
+                        <hr>
+                    </div>
+              
+                    <div class="col-md-6">
+                        <h2>&zwnj;Firewall&zwnj;</h2>
+                        <div class="card card-block">
+                            <div class="card-image text-md-center">
+                                <img src="img/applications/gufw.png" style="width: auto; max-height: 240px" />
+                            </div>
+                            <p class="card-text">&zwnj;<strong>Gufw</strong> provides a graphical frontend to <code>ufw</code>
+                                (Uncomplicated Firewall). If security is important to you, there are&zwnj;
+                                <a onclick="cmd('link?https://wiki.ubuntu.com/BasicSecurity')" class="btn btn-inverse">&zwnj;more ways to stay secure too&zwnj;</a>
+                            </p>
+                            <p>&zwnj;Firewalls prevent malicious connections entering and leaving your computer. By default, the firewall is disabled,
+                                <a onclick="cmd('link?https://help.ubuntu.com/community/DoINeedAFirewall')">learn more about firewalls</a>.&zwnj;
+                            </p>
+                        </div>
+                        <div class="text-md-right">
+                            <div id="firewall-remove">
+                            <a class="btn btn-inverse" onclick="cmd('firewall');">
+                                &nbsp;<img class="button-icon" src="img/applications/gufw.png" />&nbsp;<span
+                                class="button-text">&zwnj;Configure Firewall&zwnj;</span>&nbsp;
+                            </a>
+                            <span id="firewall-hint" class="center"><small>
+                                <p><i class="material-icons">&#xE88F;</i> <b>&zwnj;Firewall Configuration</b> can be found later in the menu
+                                    <b>System Tools<i class="material-icons">&#xE315;</i> Firewall Configuration</i></b>.&zwnj;
+                                  </p>
+                                </small></span>
+                            </div>
+                            <a id="firewall-install" class="btn btn-success" onclick="cmd('install?firewall');">&nbsp;<span
+                                class="material-icons">&#xE2C0;</span><span class="button-text">&zwnj;Install&zwnj;</span>&nbsp;</a>
+                            <span id="firewall-status" class="hidden"><img src="img/welcome/processing.gif" width="24px" height="24px" />
+                            &zwnj;Applying Changes...&zwnj;</span>
+                        </div>
+                        <hr>
+                    </div>
+                    <div>
+                        <h2>ClamAV and ClamTK</h2>
+                        <div class="card card-block">
+                            <div class="card-image text-md-center">
+                                <img src="img/logos/clamtk_300x300.png" style="width: auto; max-height: 240px" />
+                            </div>
+                            <p class="card-text">&zwnj;ClamTk is a frontend for ClamAV (Clam Antivirus). It is intended to be an easy to use,
+                                light-weight, on-demand scanner for Linux systems.&zwnj;</p>
+                        </div>
+                        <div class="text-md-right">
+                            <span id="clamav-remove" class="alert alert-success"> <i
+                                    class="material-icons">&#xE876;</i>&zwnj;ClamAV is installed&zwnj;</span><a
+                                id="clamav-install" class="btn btn-success hvr-shadow"
+                                onclick="cmd('install?clamav');"> &nbsp;<span
+                                    class="material-icons">&#xE2C0;</span>&zwnj;Install & Configure
+                                ClamAV&zwnj;&nbsp;</a>
+                            <span id="clamav-status" class="hidden"><img src="img/welcome/processing.gif"
+                                    width="24px" height="24px" /> &zwnj;Applying Changes...&zwnj;</span>
+                        </div>
+                        <hr />
+                    </div>
+                    <div>
+                        <h2>Nemo Preview</h2>
+                        <div class="card card-block">
+                            <p>&zwnj;Nemo Preview allows you to quickly view the contents of a highlighted file from the Nemo file manager. Just press space to toggle the preview on and off.&zwnj;</p>
+                        </div>
+                        <div class="text-md-right">
+                            <span id="nemopreview-remove" class="alert alert-success"> <i
+                                    class="material-icons">&#xE876;</i>&zwnj;Nemo Preview is installed&zwnj;</span><a
+                                id="nemopreview-install" class="btn btn-success hvr-shadow"
+                                onclick="cmd('install?nemopreview');"> &nbsp;<span
+                                    class="material-icons">&#xE2C0;</span>&zwnj;Install Nemo Preview&zwnj;&nbsp;</a>
+                            <span id="nemopreview-status" class="hidden"><img src="img/welcome/processing.gif"
+                                    width="24px" height="24px" /> &zwnj;Applying Changes...&zwnj;</span>
+                        </div>
+                        <hr />
+                    </div>
+                    <div>
+                        <h2>Nemo Share</h2>
+                        <div class="card card-block">
+                            <p>&zwnj;Nemo Share allows you to quickly share a folder from the Nemo file manager without
+                                requiring root access.&zwnj;</p>
+                        </div>
+                        <div class="text-md-right">
+                            <span id="nemoshare-remove" class="alert alert-success"> <i
+                                    class="material-icons">&#xE876;</i>&zwnj;Nemo Share is installed&zwnj;</span><a
+                                id="nemoshare-install" class="btn btn-success hvr-shadow"
+                                onclick="cmd('install?nemoshare');"> &nbsp;<span
+                                    class="material-icons">&#xE2C0;</span>&zwnj;Install Nemo Share&zwnj;&nbsp;</a>
+                            <span id="nemoshare-status" class="hidden"><img src="img/welcome/processing.gif"
+                                    width="24px" height="24px" /> &zwnj;Applying Changes...&zwnj;</span>
+                        </div>
+                        <hr />
+                    </div>
+                    <div>
+                        <h2>Gutenprint</h2>
+                        <div class="card card-block">
+                            <p>&zwnj;Gutenprint is a suite of <a onclick="cmd('link?http://gimp-print.sourceforge.net/p_Supported_Printers.php')">thousands</a>
+                                of printer drivers which includes drivers for Epson and Canon printers. Gutenprint supports only the printer part of multi-function devices.&zwnj;</p>
+                        </div>
+                        <div class="text-md-right">
+                            <span id="gutenprint-remove" class="alert alert-success"> <i
+                                    class="material-icons">&#xE876;</i>&zwnj;Gutenprint is installed&zwnj;</span><a
+                                id="gutenprint-install" class="btn btn-success hvr-shadow"
+                                onclick="cmd('install?gutenprint');"> &nbsp;<span
+                                    class="material-icons">&#xE2C0;</span>&zwnj;Install Gutenprint&zwnj;&nbsp;</a>
+                            <span id="gutenprint-status" class="hidden"><img src="img/welcome/processing.gif"
+                                    width="24px" height="24px" /> &zwnj;Applying Changes...&zwnj;</span>
+                        </div>
+                        <hr />
+                    </div>
                     <div>
                         <h2>&zwnj;Snap Applications&zwnj;</h2>
                         <div class="card card-block">
@@ -104,114 +243,6 @@
                                     class="material-icons">&#xE2C0;</span>&zwnj;Install Snap&zwnj;&nbsp;</a>
                             <span id="snap-status" class="hidden"><img src="img/welcome/processing.gif" width="24px"
                                     height="24px" /> &zwnj;Applying Changes...&zwnj;</span>
-                        </div>
-                        <hr />
-                    </div>
-                    <div>
-                        <h2>&zwnj;Flatpak&zwnj;</h2>
-                        <div class="card card-block">
-                            <div class="card-image text-md-center">
-                                <img src="img/logos/flatpak.svg" style="width: auto; max-height: 240px" />
-                            </div>
-                            <p class="card-text">&zwnj;<strong>Flatpak</strong> is a new generation application
-                                distribution framework for GNU/Linux platforms. It introduces a unified packaging format
-                                across all GNU/Linux distributions. That means a single package can work on any
-                                platform. Flatpak helps application developers to ship their application in a single
-                                format which can be installed in any GNU/Linux distribution without worrying about the
-                                underlying operating system and its built-in libraries.&zwnj;</p>
-                            <a onclick="cmd('link?https://flatpak.org/#about')" class="btn btn-inverse">&zwnj;Learn
-                                more&zwnj;</a>
-                        </div>
-                        <p>&zwnj;Ubuntu Budgie recommends installing <strong>Flatpak</strong> as it
-                            will open a new world of possibilities for you. With Flatpak, you can enjoy the latest
-                            release of different software packages as soon as it is
-                            packaged by the upstream project and you don't have to wait for your distribution to package
-                            it for you.&zwnj;</p>
-                        <p>&zwnj;Being a user friendly GNU/Linux distribution, Ubuntu Budgie allows
-                            you to install Flatpak with a single click. After first time configuration, you can use
-                            GNOME Software to install Flatpak packages.&zwnj;</p>
-                        <div class="text-md-right"><span id="flatpak-remove" class="alert alert-success"> <i
-                                    class="material-icons">&#xE876;</i>&zwnj;Flatpak is installed. Please reboot for the
-                                service to start&zwnj;</span><a id="flatpak-install" class="btn btn-success hvr-shadow"
-                                onclick="cmd('install?flatpak');"> &nbsp;<span
-                                    class="material-icons">&#xE2C0;</span>&zwnj;Install & Configure
-                                Flatpak&zwnj;&nbsp;</a><span id="flatpak-status" class="hidden"><img
-                                    src="img/welcome/processing.gif" width="24px" height="24px" /> &zwnj;Applying
-                                Changes...&zwnj;</span></div>
-                        <hr />
-                    </div>
-                    <div>
-                        <h2>Dropbox</h2>
-                        <div class="card card-block">
-                            <div class="card-image text-md-center">
-                                <img src="img/logos/dropbox.png" style="width: auto; max-height: 240px" />
-                            </div>
-                            <p class="card-text">&zwnj;<strong>Dropbox</strong> is a popular proprietary file sharing
-                                and storage solution.&zwnj;</p>
-                        </div>
-                        <div>
-                            <p>&zwnj;After installing, logout and login and follow the dropbox instructions that are
-                                then displayed.&zwnj;</p>
-                        </div>
-                        <div class="text-md-right">
-                            <span id="nemodropbox-remove" class="alert alert-success"> <i
-                                    class="material-icons">&#xE876;</i>&zwnj;Dropbox is installed&zwnj;</span><a
-                                id="nemodropbox-install" class="btn btn-success hvr-shadow"
-                                onclick="cmd('install?nemodropbox');"> &nbsp;<span
-                                    class="material-icons">&#xE2C0;</span>&zwnj;Install & Configure
-                                Dropbox&zwnj;&nbsp;</a>
-                            <span id="nemodropbox-status" class="hidden"><img src="img/welcome/processing.gif"
-                                    width="24px" height="24px" /> &zwnj;Applying Changes...&zwnj;</span>
-                        </div>
-                        <hr />
-                    </div>
-                    <div>
-                        <h2>Nemo Share</h2>
-                        <div class="card card-block">
-                            <p>&zwnj;Nemo Share allows you to quickly share a folder from the Nemo file manager without
-                                requiring root access.&zwnj;</p>
-                        </div>
-                        <div class="text-md-right">
-                            <span id="nemoshare-remove" class="alert alert-success"> <i
-                                    class="material-icons">&#xE876;</i>&zwnj;Nemo Share is installed&zwnj;</span><a
-                                id="nemoshare-install" class="btn btn-success hvr-shadow"
-                                onclick="cmd('install?nemoshare');"> &nbsp;<span
-                                    class="material-icons">&#xE2C0;</span>&zwnj;Install Nemo Share&zwnj;&nbsp;</a>
-                            <span id="nemoshare-status" class="hidden"><img src="img/welcome/processing.gif"
-                                    width="24px" height="24px" /> &zwnj;Applying Changes...&zwnj;</span>
-                        </div>
-                        <hr />
-                    </div>
-                    <div>
-                        <h2>Nemo Preview</h2>
-                        <div class="card card-block">
-                            <p>&zwnj;Nemo Preview allows you to quickly view the contents of a highlighted file from the Nemo file manager. Just press space to toggle the preview on and off.&zwnj;</p>
-                        </div>
-                        <div class="text-md-right">
-                            <span id="nemopreview-remove" class="alert alert-success"> <i
-                                    class="material-icons">&#xE876;</i>&zwnj;Nemo Preview is installed&zwnj;</span><a
-                                id="nemopreview-install" class="btn btn-success hvr-shadow"
-                                onclick="cmd('install?nemopreview');"> &nbsp;<span
-                                    class="material-icons">&#xE2C0;</span>&zwnj;Install Nemo Preview&zwnj;&nbsp;</a>
-                            <span id="nemopreview-status" class="hidden"><img src="img/welcome/processing.gif"
-                                    width="24px" height="24px" /> &zwnj;Applying Changes...&zwnj;</span>
-                        </div>
-                        <hr />
-                    </div>
-                    <div>
-                        <h2>Gutenprint</h2>
-                        <div class="card card-block">
-                            <p>&zwnj;Gutenprint is a suite of <a onclick="cmd('link?http://gimp-print.sourceforge.net/p_Supported_Printers.php')">thousands</a>
-                                of printer drivers which includes drivers for Epson and Canon printers. Gutenprint supports only the printer part of multi-function devices.&zwnj;</p>
-                        </div>
-                        <div class="text-md-right">
-                            <span id="gutenprint-remove" class="alert alert-success"> <i
-                                    class="material-icons">&#xE876;</i>&zwnj;Gutenprint is installed&zwnj;</span><a
-                                id="gutenprint-install" class="btn btn-success hvr-shadow"
-                                onclick="cmd('install?gutenprint');"> &nbsp;<span
-                                    class="material-icons">&#xE2C0;</span>&zwnj;Install Gutenprint&zwnj;&nbsp;</a>
-                            <span id="gutenprint-status" class="hidden"><img src="img/welcome/processing.gif"
-                                    width="24px" height="24px" /> &zwnj;Applying Changes...&zwnj;</span>
                         </div>
                         <hr />
                     </div>

@@ -1,15 +1,15 @@
 # 
 # Translators:
 # John Heart <teivospower@gmail.com>, 2017
-# Christopher, 2021
-# Yazi Tian, 2022
+# 9716087e73a5928160e656887fecc74f_916b18d, 2021
+# Yazi Tian, 2023
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: Budgie Welcome\n"
 "POT-Creation-Date: 2016-02-27 12:48+0100\n"
 "PO-Revision-Date: 2017-03-22 21:33+0000\n"
-"Last-Translator: Yazi Tian, 2022\n"
+"Last-Translator: Yazi Tian, 2023\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/ubuntu-budgie/teams/72251/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -19,8 +19,8 @@ msgstr ""
 "Report-Msgid-Bugs-To : you@example.com\n"
 
 #: recommendations.html:15
-msgid "Recommendations"
-msgstr "推荐"
+msgid "Optional Tasks"
+msgstr "任务选项"
 
 #: recommendations.html:20
 msgid "Backports repository"
@@ -41,7 +41,7 @@ msgstr "库已安装"
 msgid "Enable Ubuntu Budgie backports repository"
 msgstr "启用 Ubuntu Budgie 补丁存储库"
 
-#: recommendations.html33, 106, 139, 164, 181, 197, 214
+#: recommendations.html33, 106, 130, 155, 176, 193, 209, 226
 msgid "Applying Changes..."
 msgstr "应用改变中..."
 
@@ -70,7 +70,7 @@ msgstr ""
 " Budgie。更新版本的 KDE、GNOME、浏览器或其他桌面环境应用程序通常可以很容易地在旧的 LTS "
 "版本上构建，但打包和提供更新的复杂性阻碍了我们在过去交付它们."
 
-#: recommendations.html55, 122
+#: recommendations.html55, 119
 msgid "Learn more"
 msgstr "了解更多"
 
@@ -182,95 +182,90 @@ msgstr "Flatpak"
 #: recommendations.html:116
 msgid ""
 "<strong>Flatpak</strong> is a new generation application distribution "
-"framework for GNU/Linux platforms. It introduces a unified packaging format "
-"across all GNU/Linux distributions. That means a single package can work on "
-"any platform. Flatpak helps application developers to ship their application"
-" in a single format which can be installed in any GNU/Linux distribution "
-"without worrying about the underlying operating system and its built-in "
-"libraries."
+"framework. It introduces a unified packaging format across various GNU/Linux"
+" distributions. Please note that Flatpak applications are not part of the "
+"core Ubuntu experience."
 msgstr ""
-"<strong>Flatpak</strong> 是面向 GNU/Linux 平台的新一代应用程序分发框架。它在所有 GNU/Linux "
-"发行版中引入了统一的打包格式。这意味着单个包可以在任何平台上工作。Flatpak 帮助应用程序开发人员以单一的格式发布应用程序，该格式可以安装在任何 "
-"GNU/Linux 发行版中，而无需担心底层操作系统及其内置库."
+
+#: recommendations.html:121
+msgid ""
+"Being a user friendly distribution, Ubuntu Budgie allows you to install "
+"Flatpak with a single click. After setup, you can use "
+"<strong>Software</strong> to install Flatpak applications."
+msgstr ""
 
 #: recommendations.html:125
-msgid ""
-"Ubuntu Budgie recommends installing <strong>Flatpak</strong> as it will open"
-" a new world of possibilities for you. With Flatpak, you can enjoy the "
-"latest release of different software packages as soon as it is packaged by "
-"the upstream project and you don't have to wait for your distribution to "
-"package it for you."
-msgstr ""
-"Ubuntu Budgie 建议安装 <strong>Flatpak</strong> 因为它将为您打开一个新的可能性世界。有了 "
-"Flatpak，您可以在上游项目打包后立即享受不同软件包的最新版本，而不必等待您的发行版为您打包."
-
-#: recommendations.html:130
-msgid ""
-"Being a user friendly GNU/Linux distribution, Ubuntu Budgie allows you to "
-"install Flatpak with a single click. After first time configuration, you can"
-" use GNOME Software to install Flatpak packages."
-msgstr ""
-"作为一个用户友好的 GNU/Linux 发行版，Ubuntu Budgie 允许您只需单击就可以安装 Flatpak。在第一次配置后，您可以使用 "
-"GNOME 软件安装 Flatpak 包."
-
-#: recommendations.html:134
 msgid "Flatpak is installed. Please reboot for the service to start"
 msgstr "Flatpak 已安装。请重新启动以启动服务"
 
-#: recommendations.html:137
+#: recommendations.html:128
 msgid "Install & Configure Flatpak"
 msgstr "安装 & 配置 Flatpak"
 
-#: recommendations.html:149
+#: recommendations.html:140
 msgid ""
 "<strong>Dropbox</strong> is a popular proprietary file sharing and storage "
 "solution."
 msgstr "<strong>Dropbox</strong> 是一个流行的专有文件共享和存储解决方案."
 
-#: recommendations.html:153
+#: recommendations.html:144
 msgid ""
 "After installing, logout and login and follow the dropbox instructions that "
 "are then displayed."
 msgstr "安装后，注销和登录，并遵循 dropbox 的指示，然后显示."
 
-#: recommendations.html:158
+#: recommendations.html:149
 msgid "Dropbox is installed"
 msgstr "Dropbox 已安装"
 
-#: recommendations.html:161
+#: recommendations.html:152
 msgid "Install & Configure Dropbox"
 msgstr "安装 & 配置 Dropbox"
 
-#: recommendations.html:171
+#: recommendations.html:165
+msgid ""
+"ClamTk is a frontend for ClamAV (Clam Antivirus). It is intended to be an "
+"easy to use, light-weight, on-demand scanner for Linux systems."
+msgstr ""
+
+#: recommendations.html:170
+msgid "ClamAV is installed"
+msgstr ""
+
+#: recommendations.html:173
+msgid "Install & Configure ClamAV"
+msgstr ""
+
+#: recommendations.html:183
 msgid ""
 "Nemo Share allows you to quickly share a folder from the Nemo file manager "
 "without requiring root access."
 msgstr "Nemo Share 允许您在不需要 root 访问的情况下从 Nemo 文件管理器快速共享一个文件夹."
 
-#: recommendations.html:176
+#: recommendations.html:188
 msgid "Nemo Share is installed"
 msgstr "Nemo 共享 已安装"
 
-#: recommendations.html:179
+#: recommendations.html:191
 msgid "Install Nemo Share"
 msgstr "安装 Nemo 共享"
 
-#: recommendations.html:188
+#: recommendations.html:200
 msgid ""
 "Nemo Preview allows you to quickly view the contents of a highlighted file "
 "from the Nemo file manager. Just press space to toggle the preview on and "
 "off."
 msgstr "Nemo 预览允许您从 Nemo 文件管理器中快速查看高亮文件的内容。只需按空格键来切换预览的开关."
 
-#: recommendations.html:192
+#: recommendations.html:204
 msgid "Nemo Preview is installed"
 msgstr "Nemo 预览已安装"
 
-#: recommendations.html:195
+#: recommendations.html:207
 msgid "Install Nemo Preview"
 msgstr "安装 Nemo 预览"
 
-#: recommendations.html:204
+#: recommendations.html:216
 msgid ""
 "Gutenprint is a suite of <a onclick=\"cmd('link?http://gimp-"
 "print.sourceforge.net/p_Supported_Printers.php')\">thousands</a> of printer "
@@ -281,10 +276,10 @@ msgstr ""
 "print.sourceforge.net/p_Supported_Printers.php')\">千计</a> "
 "的打印机驱动程序，其中包括爱普生和佳能打印机的驱动程序。Gutenprint 只支持多功能设备的打印机部分."
 
-#: recommendations.html:209
+#: recommendations.html:221
 msgid "Gutenprint is installed"
 msgstr "Gutenprint 已安装"
 
-#: recommendations.html:212
+#: recommendations.html:224
 msgid "Install Gutenprint"
 msgstr "安装 Gutenprint"

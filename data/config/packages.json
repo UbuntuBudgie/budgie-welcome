@@ -16,6 +16,16 @@
 				]
 			}
 		},
+		"user-indicator-redux-applet": {
+			"packages": [
+				"budgie-user-indicator-redux-applet"
+			],
+			"repos": {
+				"lunar": [
+					"ppa:ubuntubudgie/backports"
+				]
+			}
+		},
 		"screenshot-applet": {
 			"packages": [
 				"budgie-screenshot-applet"
@@ -1132,16 +1142,31 @@
 				"ibus-hangul"
 			]
 		},
-		"backup": {
+		"flatpak": {
 			"packages": [
-				"deja-dup"
-			]
+				"flatpak",
+				"xdg-desktop-portal-gtk",
+				"gnome-software-plugin-flatpak"
+			],
+			"repos": {
+				"all": [
+					"universe"
+				]
+			},
+			"post-install": "flatpak-setup"
 		},
-		"firewall": {
+		"flatpak-setup": {
+			"script": "flatpak-remote"
+		},
+		"dropbox": {
 			"packages": [
-				"gufw",
-				"net-tools"
-			]
+				"nautilus-dropbox"
+			],
+			"repos": {
+				"all": [
+					"multiverse"
+				]
+			}
 		},
 		"firefox": {
 			"packages": [
@@ -1286,21 +1311,16 @@
 				"snapd"
 			]
 		},
-		"flatpak": {
+		"backup": {
 			"packages": [
-				"flatpak",
-				"xdg-desktop-portal-gtk",
-				"gnome-software-plugin-flatpak"
-			],
-			"repos": {
-				"all": [
-					"universe"
-				]
-			},
-			"post-install": "flatpak-setup"
+				"deja-dup"
+			]
 		},
-		"flatpak-setup": {
-			"script": "flatpak-remote"
+		"firewall": {
+			"packages": [
+				"gufw",
+				"net-tools"
+			]
 		},
 		"steam": {
 			"packages": [
@@ -1328,13 +1348,13 @@
 				]
 			}
 		},
-		"dropbox": {
+		"clamav": {
 			"packages": [
-				"nautilus-dropbox"
+				"clamtk"
 			],
 			"repos": {
 				"all": [
-					"multiverse"
+					"universe"
 				]
 			}
 		},
