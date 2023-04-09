@@ -54,15 +54,15 @@
                                 &nbsp;<img class="button-icon" src="img/applications/deja-dup.png" />&nbsp;<span
                                 class="button-text">&zwnj;Configure Backup&zwnj;</span>&nbsp;
                             </a>
+                            <a class="btn btn-danger" onclick="cmd('remove?backup');">
+                                <span class="material-icons">&#xE872;</span><span
+                                    class="button-text">&zwnj;Remove&zwnj;</span>
+                            </a>
                             <span id="backup-hint" class="center"><small>
                                 <p><i class="material-icons">&#xE88F;</i> &zwnj;<b>Backups</b> can be found later in the menu
                                     <b>Utilities <i class="material-icons">&#xE315;</i> Backups</b>.&zwnj;
                                 </p>
                                 </small></span>
-                            <a class="btn btn-danger" onclick="cmd('remove?backup');">
-                                <span class="material-icons">&#xE872;</span><span
-                                    class="button-text">&zwnj;Remove&zwnj;</span>
-                            </a>
                             </div>
                             <a id="backup-install" class="btn btn-success" onclick="cmd('install?backup');">&nbsp;<span
                                 class="material-icons">&#xE2C0;</span><span class="button-text">&zwnj;Install Deja-Dup&zwnj;</span>&nbsp;</a>
@@ -90,7 +90,11 @@
                             <div id="firewall-remove">
                             <a class="btn btn-inverse" onclick="cmd('firewall');">
                                 &nbsp;<img class="button-icon" src="img/applications/gufw.png" />&nbsp;<span
-                                class="button-text">&zwnj;Configure Firewall &zwnj;</span>&nbsp;
+                                class="button-text">&zwnj;Configure Firewall&zwnj;</span>&nbsp;
+                            </a>
+                            <a class="btn btn-danger" onclick="cmd('remove?firewall');">
+                                <span class="material-icons">&#xE872;</span><span
+                                    class="button-text">&zwnj;Remove&zwnj;</span>
                             </a>
                             <span id="firewall-hint" class="center"><small>
                                 <p><i class="material-icons">&#xE88F;</i> <b>&zwnj;Firewall Configuration</b> can be found later in the menu
@@ -115,12 +119,16 @@
                                 light-weight, on-demand scanner for Linux systems.&zwnj;</p>
                         </div>
                         <div class="text-md-right">
-                            <span id="clamav-remove" class="alert alert-success"> <i
-                                    class="material-icons">&#xE876;</i>&zwnj;ClamAV is installed&zwnj;</span><a
-                                id="clamav-install" class="btn btn-success hvr-shadow"
-                                onclick="cmd('install?clamav');"> &nbsp;<span
+                            <span id="clamav-remove" class="alert alert-success"> 
+                                <i class="material-icons">&#xE876;</i>&zwnj;ClamAV is installed&zwnj;</span>
+                                <a id="clamav-install" class="btn btn-success hvr-shadow" onclick="cmd('install?clamav');"> &nbsp;<span
                                     class="material-icons">&#xE2C0;</span>&zwnj;Install & Configure
-                                ClamAV&zwnj;&nbsp;</a>
+                                ClamAV&zwnj;&nbsp;
+                                </a>
+                                <a class="btn btn-danger" onclick="cmd('remove?clamav');">
+                                    <span class="material-icons">&#xE872;</span><span
+                                        class="button-text">&zwnj;Remove&zwnj;</span>
+                                </a>
                             <span id="clamav-status" class="hidden"><img src="img/welcome/processing.gif"
                                     width="24px" height="24px" /> &zwnj;Applying Changes...&zwnj;</span>
                         </div>
@@ -132,11 +140,14 @@
                             <p>&zwnj;Nemo Preview allows you to quickly view the contents of a highlighted file from the Nemo file manager. Just press space to toggle the preview on and off.&zwnj;</p>
                         </div>
                         <div class="text-md-right">
-                            <span id="nemopreview-remove" class="alert alert-success"> <i
-                                    class="material-icons">&#xE876;</i>&zwnj;Nemo Preview is installed&zwnj;</span><a
-                                id="nemopreview-install" class="btn btn-success hvr-shadow"
-                                onclick="cmd('install?nemopreview');"> &nbsp;<span
-                                    class="material-icons">&#xE2C0;</span>&zwnj;Install Nemo Preview&zwnj;&nbsp;</a>
+                            <span id="nemopreview-remove" class="alert alert-success"> <i class="material-icons">&#xE876;</i>&zwnj;Nemo Preview is installed&zwnj;</span>
+                            <a id="nemopreview-install" class="btn btn-success hvr-shadow" onclick="cmd('install?nemopreview');"> &nbsp;<span
+                                    class="material-icons">&#xE2C0;</span>&zwnj;Install Nemo Preview&zwnj;&nbsp;
+                            </a>
+                            <a class="btn btn-danger" onclick="cmd('remove?nemopreview');">
+                                <span class="material-icons">&#xE872;</span><span
+                                    class="button-text">&zwnj;Remove&zwnj;</span>
+                            </a>
                             <span id="nemopreview-status" class="hidden"><img src="img/welcome/processing.gif"
                                     width="24px" height="24px" /> &zwnj;Applying Changes...&zwnj;</span>
                         </div>
@@ -150,10 +161,14 @@
                         </div>
                         <div class="text-md-right">
                             <span id="nemoshare-remove" class="alert alert-success"> <i
-                                    class="material-icons">&#xE876;</i>&zwnj;Nemo Share is installed&zwnj;</span><a
-                                id="nemoshare-install" class="btn btn-success hvr-shadow"
-                                onclick="cmd('install?nemoshare');"> &nbsp;<span
-                                    class="material-icons">&#xE2C0;</span>&zwnj;Install Nemo Share&zwnj;&nbsp;</a>
+                                    class="material-icons">&#xE876;</i>&zwnj;Nemo Share is installed&zwnj;</span>\
+                                <a id="nemoshare-install" class="btn btn-success hvr-shadow" onclick="cmd('install?nemoshare');"> &nbsp;<span
+                                    class="material-icons">&#xE2C0;</span>&zwnj;Install Nemo Share&zwnj;&nbsp;
+                                </a>
+                                <a class="btn btn-danger" onclick="cmd('remove?nemoshare');">
+                                        <span class="material-icons">&#xE872;</span><span
+                                            class="button-text">&zwnj;Remove&zwnj;</span>
+                                </a>
                             <span id="nemoshare-status" class="hidden"><img src="img/welcome/processing.gif"
                                     width="24px" height="24px" /> &zwnj;Applying Changes...&zwnj;</span>
                         </div>
@@ -166,11 +181,15 @@
                                 of printer drivers which includes drivers for Epson and Canon printers. Gutenprint supports only the printer part of multi-function devices.&zwnj;</p>
                         </div>
                         <div class="text-md-right">
-                            <span id="gutenprint-remove" class="alert alert-success"> <i
-                                    class="material-icons">&#xE876;</i>&zwnj;Gutenprint is installed&zwnj;</span><a
-                                id="gutenprint-install" class="btn btn-success hvr-shadow"
+                            <span id="gutenprint-remove" class="alert alert-success"> <i class="material-icons">&#xE876;</i>&zwnj;Gutenprint is installed&zwnj;</span>
+                            <a id="gutenprint-install" class="btn btn-success hvr-shadow"
                                 onclick="cmd('install?gutenprint');"> &nbsp;<span
-                                    class="material-icons">&#xE2C0;</span>&zwnj;Install Gutenprint&zwnj;&nbsp;</a>
+                                    class="material-icons">&#xE2C0;</span>&zwnj;Install Gutenprint&zwnj;&nbsp;
+                            </a>
+                            <a class="btn btn-danger" onclick="cmd('remove?gutenprint');">
+                                <span class="material-icons">&#xE872;</span><span
+                                    class="button-text">&zwnj;Remove&zwnj;</span>
+                            </a>
                             <span id="gutenprint-status" class="hidden"><img src="img/welcome/processing.gif"
                                     width="24px" height="24px" /> &zwnj;Applying Changes...&zwnj;</span>
                         </div>
