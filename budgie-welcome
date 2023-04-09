@@ -366,7 +366,7 @@ class AppView(WebKit2.WebView):
         elif uri == 'users':
             subprocess.Popen([control_center, 'user-accounts'])
         elif uri == 'backup':
-            subprocess.Popen(['deja-dup-preferences'])
+            subprocess.Popen(['deja-dup'])
         elif uri == 'firewall':
             subprocess.Popen(['gufw'])
         elif uri == 'budgie-desktop-settings':
