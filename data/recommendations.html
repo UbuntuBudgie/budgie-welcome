@@ -88,19 +88,19 @@
                         </div>
                         <div class="text-md-right">
                             <div id="firewall-remove">
-                            <a class="btn btn-inverse" onclick="cmd('firewall');">
-                                &nbsp;<img class="button-icon" src="img/applications/gufw.png" />&nbsp;<span
-                                class="button-text">&zwnj;Configure Firewall&zwnj;</span>&nbsp;
-                            </a>
-                            <a class="btn btn-danger" onclick="cmd('remove?firewall');">
-                                <span class="material-icons">&#xE872;</span><span
-                                    class="button-text">&zwnj;Remove&zwnj;</span>
-                            </a>
-                            <span id="firewall-hint" class="center"><small>
-                                <p><i class="material-icons">&#xE88F;</i> <b>&zwnj;Firewall Configuration</b> can be found later in the menu
-                                    <b>System Tools<i class="material-icons">&#xE315;</i> Firewall Configuration</i></b>.&zwnj;
-                                  </p>
-                                </small></span>
+                                <a class="btn btn-inverse" onclick="cmd('firewall');">
+                                    &nbsp;<img class="button-icon" src="img/applications/gufw.png" />&nbsp;<span
+                                    class="button-text">&zwnj;Configure Firewall&zwnj;</span>&nbsp;
+                                </a>
+                                <a class="btn btn-danger" onclick="cmd('remove?firewall');">
+                                    <span class="material-icons">&#xE872;</span><span
+                                        class="button-text">&zwnj;Remove&zwnj;</span>
+                                </a>
+                                <span id="firewall-hint" class="center"><small>
+                                    <p><i class="material-icons">&#xE88F;</i> <b>&zwnj;Firewall Configuration</b> can be found later in the menu
+                                        <b>System Tools<i class="material-icons">&#xE315;</i> Firewall Configuration</i></b>.&zwnj;
+                                    </p>
+                                    </small></span>
                             </div>
                             <a id="firewall-install" class="btn btn-success" onclick="cmd('install?firewall');">&nbsp;<span
                                 class="material-icons">&#xE2C0;</span><span class="button-text">&zwnj;Install Firewall&zwnj;</span>&nbsp;</a>
@@ -119,18 +119,20 @@
                                 light-weight, on-demand scanner for Linux systems.&zwnj;</p>
                         </div>
                         <div class="text-md-right">
-                            <span id="clamav-remove" class="alert alert-success"> 
-                                <i class="material-icons">&#xE876;</i>&zwnj;ClamAV is installed&zwnj;</span>
-                                <a id="clamav-install" class="btn btn-success hvr-shadow" onclick="cmd('install?clamav');"> &nbsp;<span
-                                    class="material-icons">&#xE2C0;</span>&zwnj;Install & Configure
-                                ClamAV&zwnj;&nbsp;
-                                </a>
-                                <a class="btn btn-danger" onclick="cmd('remove?clamav');">
-                                    <span class="material-icons">&#xE872;</span><span
+                            <div id="clamav-remove">
+                                <span id="clamav-remove" class="alert alert-success"> 
+                                    <i class="material-icons">&#xE876;</i>&zwnj;ClamAV is installed&zwnj;</span>
+                                    <a class="btn btn-danger" onclick="cmd('remove?clamav');">
+                                        <span class="material-icons">&#xE872;</span><span
                                         class="button-text">&zwnj;Remove&zwnj;</span>
-                                </a>
-                            <span id="clamav-status" class="hidden"><img src="img/welcome/processing.gif"
-                                    width="24px" height="24px" /> &zwnj;Applying Changes...&zwnj;</span>
+                                    </a>
+                                    <span id="clamav-status" class="hidden"><img src="img/welcome/processing.gif"
+                                        width="24px" height="24px" /> &zwnj;Applying Changes...&zwnj;</span>
+                            </div>
+                            <a id="clamav-install" class="btn btn-success hvr-shadow" onclick="cmd('install?clamav');"> &nbsp;<span
+                                class="material-icons">&#xE2C0;</span>&zwnj;Install & Configure
+                            ClamAV&zwnj;&nbsp;
+                            </a>
                         </div>
                         <hr />
                     </div>
@@ -139,18 +141,18 @@
                         <div class="card card-block">
                             <p>&zwnj;Nemo Preview allows you to quickly view the contents of a highlighted file from the Nemo file manager. Just press space to toggle the preview on and off.&zwnj;</p>
                         </div>
-                        <div class="text-md-right">
+                        <div class="text-md-right nemopreview-remove">
                             <span id="nemopreview-remove" class="alert alert-success"> <i class="material-icons">&#xE876;</i>&zwnj;Nemo Preview is installed&zwnj;</span>
-                            <a id="nemopreview-install" class="btn btn-success hvr-shadow" onclick="cmd('install?nemopreview');"> &nbsp;<span
-                                    class="material-icons">&#xE2C0;</span>&zwnj;Install Nemo Preview&zwnj;&nbsp;
-                            </a>
                             <a class="btn btn-danger" onclick="cmd('remove?nemopreview');">
                                 <span class="material-icons">&#xE872;</span><span
-                                    class="button-text">&zwnj;Remove&zwnj;</span>
+                                class="button-text">&zwnj;Remove&zwnj;</span>
                             </a>
                             <span id="nemopreview-status" class="hidden"><img src="img/welcome/processing.gif"
-                                    width="24px" height="24px" /> &zwnj;Applying Changes...&zwnj;</span>
+                                width="24px" height="24px" /> &zwnj;Applying Changes...&zwnj;</span>
                         </div>
+                        <a id="nemopreview-install" class="btn btn-success hvr-shadow" onclick="cmd('install?nemopreview');"> &nbsp;<span
+                                class="material-icons">&#xE2C0;</span>&zwnj;Install Nemo Preview&zwnj;&nbsp;
+                        </a>
                         <hr />
                     </div>
                     <div>
@@ -159,12 +161,9 @@
                             <p>&zwnj;Nemo Share allows you to quickly share a folder from the Nemo file manager without
                                 requiring root access.&zwnj;</p>
                         </div>
-                        <div class="text-md-right">
+                        <div class="text-md-right nemoshare-remove">
                             <span id="nemoshare-remove" class="alert alert-success"> <i
                                     class="material-icons">&#xE876;</i>&zwnj;Nemo Share is installed&zwnj;</span>
-                                <a id="nemoshare-install" class="btn btn-success hvr-shadow" onclick="cmd('install?nemoshare');"> &nbsp;<span
-                                    class="material-icons">&#xE2C0;</span>&zwnj;Install Nemo Share&zwnj;&nbsp;
-                                </a>
                                 <a class="btn btn-danger" onclick="cmd('remove?nemoshare');">
                                         <span class="material-icons">&#xE872;</span><span
                                             class="button-text">&zwnj;Remove&zwnj;</span>
@@ -172,6 +171,9 @@
                             <span id="nemoshare-status" class="hidden"><img src="img/welcome/processing.gif"
                                     width="24px" height="24px" /> &zwnj;Applying Changes...&zwnj;</span>
                         </div>
+                        <a id="nemoshare-install" class="btn btn-success hvr-shadow" onclick="cmd('install?nemoshare');"> &nbsp;<span
+                            class="material-icons">&#xE2C0;</span>&zwnj;Install Nemo Share&zwnj;&nbsp;
+                        </a>
                         <hr />
                     </div>
                     <div>
