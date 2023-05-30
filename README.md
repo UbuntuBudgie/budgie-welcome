@@ -1,6 +1,8 @@
 Budgie Welcome
 ==============
 
+[![](https://opencollective.com/ubuntubudgie/tiers/backer.svg?avatarHeight=96)](https://opencollective.com/ubuntubudgie)
+
 Welcome screen application to greet new users on their first login.
 
 [![Get it from the Snap Store](https://snapcraft.io/static/images/badges/en/snap-store-white.svg)](https://snapcraft.io/ubuntu-budgie-welcome)
