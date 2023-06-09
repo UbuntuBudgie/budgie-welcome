@@ -10,7 +10,7 @@ description: |
 
 grade: stable
 confinement: classic
-base: core20
+base: core22
 
 # this line enables LZO compression for the snap
 compression: lzo
@@ -18,28 +18,55 @@ compression: lzo
 apps:
   budgie-welcome:
     command: usr/bin/budgie-welcome
+    command-chain: [bin/wrapper]
     desktop: usr/share/applications/budgie-welcome.desktop
     environment:
-      # daemons execute as root so the python paths must be updated
-      PYTHONPATH: $SNAP/lib/python3.8/site-packages:$PYTHONPATH
-
-  budgie-themes:
-    command: usr/bin/budgie-welcome --jump-to=default
-    desktop: usr/share/applications/budgie-themes.desktop
+      PATH: $SNAP/usr/bin:$SNAP/bin:$PATH
+      #LIBGL_DRIVERS_PATH: $SNAP/usr/lib/$CRAFT_ARCH_TRIPLET/dri
+      #GIO_MODULE_DIR: $SNAP/usr/lib/$CRAFT_ARCH_TRIPLET/gio/modules
+      LIVE_RUN: 1
+      LOG_LEVEL: debug
+      SNAP_PYTHON: python3
 
   budgie-applets:
-    command: usr/bin/budgie-welcome --jump-to=budgie-applets
+    command: usr/bin/budgie-welcome
+    command-chain: [bin/wrapper]
     desktop: usr/share/applications/budgie-applets.desktop
+    environment:
+      PATH: $SNAP/usr/bin:$SNAP/bin:$PATH
+      #LIBGL_DRIVERS_PATH: $SNAP/usr/lib/$CRAFT_ARCH_TRIPLET/dri
+      #GIO_MODULE_DIR: $SNAP/usr/lib/$CRAFT_ARCH_TRIPLET/gio/modules
+      LIVE_RUN: 1
+      LOG_LEVEL: debug
+      SNAP_PYTHON: python3
+
+  budgie-themes:
+    command: usr/bin/budgie-welcome
+    command-chain: [bin/wrapper]
+    desktop: usr/share/applications/budgie-themes.desktop
+    environment:
+      PATH: $SNAP/usr/bin:$SNAP/bin:$PATH
+      #LIBGL_DRIVERS_PATH: $SNAP/usr/lib/$CRAFT_ARCH_TRIPLET/dri
+      #GIO_MODULE_DIR: $SNAP/usr/lib/$CRAFT_ARCH_TRIPLET/gio/modules
+      LIVE_RUN: 1
+      LOG_LEVEL: debug
+      SNAP_PYTHON: python3
 
   budgie-discourse:
-    command: xdg-open "https://discourse.ubuntubudgie.org"
+    command: usr/bin/xdg-open
+    command-chain: [bin/wrapper]
     desktop: usr/share/applications/budgie-discourse.desktop
+    environment:
+      PATH: $SNAP/usr/bin:$SNAP/bin:$PATH
+      #LIBGL_DRIVERS_PATH: $SNAP/usr/lib/$CRAFT_ARCH_TRIPLET/dri
+      #GIO_MODULE_DIR: $SNAP/usr/lib/$CRAFT_ARCH_TRIPLET/gio/modules
+      LIVE_RUN: 1
+      LOG_LEVEL: debug
+      SNAP_PYTHON: python3
 
 parts:
   budgie-welcome:
     plugin: nil
-    build-environment:
-      - PYTHONPATH: $SNAPCRAFT_PART_INSTALL/usr/lib/python3/dist-packages:$PYTHONPATH
     build-packages:
       - python3
       - python3-polib
@@ -50,6 +77,8 @@ parts:
     stage-packages:
       - python3-apt
       - xdg-utils
+      - mesa-utils 
+      - libgl1-mesa-glx
     override-build: |
       snapcraftctl build
       cd $SNAPCRAFT_PROJECT_DIR
@@ -93,20 +122,3 @@ parts:
       snapcraftctl build
     source: files/
 
-
-apps:
-  budgie-welcome:
-    command: bin/wrapper $SNAP/usr/bin/budgie-welcome
-    desktop: usr/share/applications/budgie-welcome.desktop
-
-  budgie-applets:
-    command: bin/wrapper $SNAP/usr/bin/budgie-welcome
-    desktop: usr/share/applications/budgie-applets.desktop
-
-  budgie-themes:
-    command: bin/wrapper $SNAP/usr/bin/budgie-welcome
-    desktop: usr/share/applications/budgie-themes.desktop
-
-  budgie-discourse:
-    command: bin/wrapper $SNAP/usr/bin/xdg-open
-    desktop: usr/share/applications/budgie-discourse.desktop
