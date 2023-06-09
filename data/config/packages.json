@@ -1087,6 +1087,28 @@
 					"ppa:ubuntubudgie/backports"
 				]
 			}
+		},
+		"fluent-theme": {
+			"packages": [
+				"fluent-gtk-theme",
+				"fluent-icon-theme",
+				"fonts-roboto",
+				"vimix-cursors"
+			],
+			"repos": {
+				"jammy": [
+					"universe",
+					"ppa:ubuntubudgie/backports"
+				],
+				"kinetic": [
+					"universe",
+					"ppa:ubuntubudgie/backports"
+				],
+				"lunar": [
+					"universe",
+					"ppa:ubuntubudgie/backports"
+				]
+			}
 		}
 	},
 	"gettingstarted": {
