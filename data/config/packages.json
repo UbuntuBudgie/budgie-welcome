@@ -1318,13 +1318,25 @@
 		"flatpak-setup": {
 			"script": "flatpak-remote"
 		},
-		"dropbox": {
+		"nemodropbox": {
 			"packages": [
-				"nautilus-dropbox"
+				"nemo-dropbox"
 			],
 			"repos": {
-				"all": [
-					"multiverse"
+				"focal": [
+					"ppa:ubuntubudgie/backports"
+				],
+				"jammy": [
+					"ppa:ubuntubudgie/backports"
+				],
+				"kinetic": [
+					"ppa:ubuntubudgie/backports"
+				],
+				"lunar": [
+					"ppa:ubuntubudgie/backports"
+				],
+				"mantic": [
+					"ppa:ubuntubudgie/backports"
 				]
 			}
 		},
