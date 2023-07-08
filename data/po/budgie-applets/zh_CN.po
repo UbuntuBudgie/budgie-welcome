@@ -40,25 +40,25 @@ msgstr "将任何文本  - 代码或散文 - 直接从您的桌面发送到各�
 
 #: budgie-applets.html34, 57, 80, 103, 126, 149, 172, 195, 218, 241, 264, 287,
 #: 310, 333, 356, 379, 402, 425, 448, 471, 494, 517, 540, 563, 586, 609, 632,
-#: 655, 678, 701, 724, 747, 770, 793, 816, 839, 862, 885, 908, 931, 954
+#: 655, 678, 701, 724, 747, 770, 793, 816, 839, 862, 885, 908, 931, 954, 977
 msgid "Remove"
 msgstr "移除"
 
 #: budgie-applets.html37, 60, 83, 106, 129, 152, 175, 198, 221, 244, 267, 290,
 #: 313, 336, 359, 382, 405, 428, 451, 474, 497, 520, 543, 566, 589, 612, 635,
-#: 658, 681, 704, 727, 750, 773, 796, 819, 842, 865, 888, 911, 934, 957
+#: 658, 681, 704, 727, 750, 773, 796, 819, 842, 865, 888, 911, 934, 957, 980
 msgid "Install"
 msgstr "安装"
 
 #: budgie-applets.html40, 63, 86, 109, 132, 155, 178, 201, 224, 247, 270, 293,
 #: 316, 339, 362, 385, 408, 431, 454, 477, 500, 523, 546, 569, 592, 615, 638,
-#: 661, 684, 707, 730, 753, 776, 799, 822, 845, 868, 891, 914, 937, 960
+#: 661, 684, 707, 730, 753, 776, 799, 822, 845, 868, 891, 914, 937, 960, 983
 msgid "Applying changes..."
 msgstr "正在应用更改..."
 
-#: budgie-applets.html42, 65, 88, 111, 134, 157, 180, 203, 226, 272, 295, 318,
-#: 341, 364, 387, 410, 433, 479, 502, 525, 548, 571, 594, 617, 640, 663, 686,
-#: 709, 732, 755, 778, 801, 824, 847, 893, 916, 962
+#: budgie-applets.html42, 65, 88, 111, 134, 157, 180, 203, 226, 249, 295, 318,
+#: 341, 364, 387, 410, 433, 456, 502, 525, 548, 571, 594, 617, 640, 663, 686,
+#: 709, 732, 755, 778, 801, 824, 847, 870, 916, 939, 985
 msgid ""
 "Logout and login after installing applets. From the menu - choose Budgie "
 "Desktop Settings and choose the Panel to add and configure applets."
@@ -73,329 +73,337 @@ msgid "A full-screen application launcher."
 msgstr "一个全屏应用程序启动程序."
 
 #: budgie-applets.html:71
+msgid "User Indicator Redux Applet"
+msgstr ""
+
+#: budgie-applets.html:76
+msgid "Manage the user session from the Budgie panel."
+msgstr ""
+
+#: budgie-applets.html:94
 msgid "Performance Gauge Applet"
 msgstr "性能指标 小程序"
 
-#: budgie-applets.html:76
+#: budgie-applets.html:99
 msgid "This applet shows a CPU, Memory or Storage gauge on your budgie panel."
 msgstr "这个小程序显示 CPU，内存或存储仪表在您的 budgie 面板."
 
-#: budgie-applets.html:94
+#: budgie-applets.html:117
 msgid "Screenshot Applet"
 msgstr "截图小程序"
 
-#: budgie-applets.html:99
+#: budgie-applets.html:122
 msgid ""
 "An advanced screenshot utility for capturing and organizing screenshots."
 msgstr "一个高级的截图和管理截图的工具包。"
 
-#: budgie-applets.html:117
+#: budgie-applets.html:140
 msgid "Clipboard Applet"
 msgstr "剪贴板小程序"
 
-#: budgie-applets.html:122
+#: budgie-applets.html:145
 msgid ""
 "A clipboard manager applet that can help you to store and manage clipboard "
 "content."
 msgstr "剪贴板管理器小程序，可以帮助您存储和管理剪贴板内容."
 
-#: budgie-applets.html:140
+#: budgie-applets.html:163
 msgid "Calendar Applet"
 msgstr "日历小程序"
 
-#: budgie-applets.html:145
+#: budgie-applets.html:168
 msgid "Show date and time and when clicked show a calendar in a popover."
 msgstr "当你点击的时候再弹出框中显示日期和时间。"
 
-#: budgie-applets.html:163
+#: budgie-applets.html:186
 msgid "Network Applet"
 msgstr "网络小程序"
 
-#: budgie-applets.html:168
+#: budgie-applets.html:191
 msgid "Network connectivity applet."
 msgstr "网络连接小程序"
 
-#: budgie-applets.html:186
+#: budgie-applets.html:209
 msgid "VisualSpace Applet"
 msgstr "VisualSpace 小程序"
 
-#: budgie-applets.html:191
+#: budgie-applets.html:214
 msgid "Display application windows across multiple workspaces."
 msgstr "跨多个工作区显示应用程序窗口."
 
-#: budgie-applets.html:209
+#: budgie-applets.html:232
 msgid "Analog Clock Applet"
 msgstr "Analog 时钟小程序"
 
-#: budgie-applets.html:214
+#: budgie-applets.html:237
 msgid "Display the time using a traditional dial-face clock."
 msgstr "用传统的表盘时钟显示时间."
 
-#: budgie-applets.html:232
+#: budgie-applets.html:255
 msgid "Window Shuffler"
 msgstr "窗口平铺器"
 
-#: budgie-applets.html:237
+#: budgie-applets.html:260
 msgid "Graphical and keyboard friendly window arranger."
 msgstr "图形和键盘友好的窗口安排."
 
-#: budgie-applets.html249, 456, 870, 939
+#: budgie-applets.html272, 479, 893, 962
 msgid ""
 "Logout and login after installing. Choose from the menu to configure this "
 "application."
 msgstr "安装完成后注销并登录。从菜单中选择配置此应用程序."
 
-#: budgie-applets.html:255
+#: budgie-applets.html:278
 msgid "Applications Menu applet"
 msgstr "应用程序菜单小程序"
 
-#: budgie-applets.html:260
+#: budgie-applets.html:283
 msgid "Stylish applications menu applet."
 msgstr "Stylish 应用程序菜单小程序."
 
-#: budgie-applets.html:278
+#: budgie-applets.html:301
 msgid "CPU Frequency Applet"
 msgstr "CPU 频率小程序"
 
-#: budgie-applets.html:283
+#: budgie-applets.html:306
 msgid "Control the frequency of the processor (Sandy Bridge and newer)."
 msgstr "控制处理器频率（需要 Sandy Bridge 及以上可用）"
 
-#: budgie-applets.html301, 370
+#: budgie-applets.html324, 393
 msgid "System Monitor Applet"
 msgstr "系统监控小程序"
 
-#: budgie-applets.html:306
+#: budgie-applets.html:329
 msgid "Show frequency, ram, swap & network values."
 msgstr "显示频率，ram，交换 & 网络值."
 
-#: budgie-applets.html:324
+#: budgie-applets.html:347
 msgid "Pixel-Saver Applet"
 msgstr "Pixel-Saver 小程序"
 
-#: budgie-applets.html:329
+#: budgie-applets.html:352
 msgid ""
 "Hides the title bar from maximized windows and creates a new one inside the "
 "panel."
 msgstr "在最大化窗口中隐藏标题栏并创造一个新的放入面板之中。"
 
-#: budgie-applets.html:347
+#: budgie-applets.html:370
 msgid "Global Menu Applet"
 msgstr "全局菜单小程序"
 
-#: budgie-applets.html:352
+#: budgie-applets.html:375
 msgid "Moves the menu from applications into the panel."
 msgstr "从程序中移动菜单到面板上"
 
-#: budgie-applets.html:375
+#: budgie-applets.html:398
 msgid "Customize and display system information on the panel."
 msgstr "在面板上定制并显示系统信息."
 
-#: budgie-applets.html:393
+#: budgie-applets.html:416
 msgid "Hotcorners Applet"
 msgstr "Hotcorners 小程序"
 
-#: budgie-applets.html:398
+#: budgie-applets.html:421
 msgid ""
 "Allow user defined commands to be executed when the mouse cursor is pushed "
 "into a corner of the main desktop."
 msgstr "当鼠标光标被推到主桌面的某个角落时，允许执行用户定义的命令."
 
-#: budgie-applets.html:416
+#: budgie-applets.html:439
 msgid "Quicknote Applet"
 msgstr "速记本小程序"
 
-#: budgie-applets.html:421
+#: budgie-applets.html:444
 msgid "Quickly record a text based note."
 msgstr "快速记录一个基于文本的笔记."
 
-#: budgie-applets.html:439
+#: budgie-applets.html:462
 msgid "Previews"
 msgstr "预览"
 
-#: budgie-applets.html:444
+#: budgie-applets.html:467
 msgid "Show an overview of windows in an exposé like way."
 msgstr "以类似于暴露的方式显示窗口的概览."
 
-#: budgie-applets.html:462
+#: budgie-applets.html:485
 msgid "Workspace Overview Applet"
 msgstr "工作区小程序概述"
 
-#: budgie-applets.html:467
+#: budgie-applets.html:490
 msgid "Quickly navigate workspaces using the applet's menu."
 msgstr "使用小程序菜单快速导航工作区."
 
-#: budgie-applets.html:485
+#: budgie-applets.html:508
 msgid "Workspace Wallpaper Applet"
 msgstr "工作区壁纸小程序"
 
-#: budgie-applets.html:490
+#: budgie-applets.html:513
 msgid "Show a different wallpaper on each workspace."
 msgstr "在每个桌面显示不同壁纸"
 
-#: budgie-applets.html:508
+#: budgie-applets.html:531
 msgid "Window Mover Applet"
 msgstr "窗口移动小程序"
 
-#: budgie-applets.html:513
+#: budgie-applets.html:536
 msgid "Quickly move windows between workspaces."
 msgstr "在工作空间之间快速移动窗口."
 
-#: budgie-applets.html:531
+#: budgie-applets.html:554
 msgid "Desktop Showtime Applet"
 msgstr "桌面显示时间小程序"
 
-#: budgie-applets.html:536
+#: budgie-applets.html:559
 msgid "Display the date and time on the Desktop."
 msgstr "桌面显示日期和时间"
 
-#: budgie-applets.html:554
+#: budgie-applets.html:577
 msgid "CountDown Applet"
 msgstr "倒计时小程序"
 
-#: budgie-applets.html:559
+#: budgie-applets.html:582
 msgid "Set a timed countdown and run an action when the countdown completes."
 msgstr "设置秒数,当秒数为 0 时程序会自动运行"
 
-#: budgie-applets.html:577
+#: budgie-applets.html:600
 msgid "Auto-Keyboard Switcher Applet"
 msgstr "自动改变键盘输入法小程序"
 
-#: budgie-applets.html:582
+#: budgie-applets.html:605
 msgid "Change the keyboard language automatically on a per application basis."
 msgstr "根据每个应用程序自动更改键盘语言."
 
-#: budgie-applets.html:600
+#: budgie-applets.html:623
 msgid "Screen Rotation Lock Applet"
 msgstr "锁定屏幕"
 
-#: budgie-applets.html:605
+#: budgie-applets.html:628
 msgid "Add the ability to unlock or lock the screen from rotating."
 msgstr "增加解锁或锁定屏幕旋转的能力."
 
-#: budgie-applets.html:623
+#: budgie-applets.html:646
 msgid "Clockworks Applet"
 msgstr "计时装置小程序"
 
-#: budgie-applets.html:628
+#: budgie-applets.html:651
 msgid "Display the time across multiple time zones."
 msgstr "显示不同时区"
 
-#: budgie-applets.html:646
+#: budgie-applets.html:669
 msgid "DropBy Applet"
 msgstr "DropBy 小程序"
 
-#: budgie-applets.html:651
+#: budgie-applets.html:674
 msgid "Display a pop-up window when a USB device is connected."
 msgstr "当 USB 设备连接时会有弹框"
 
-#: budgie-applets.html:669
+#: budgie-applets.html:692
 msgid "Brightness Controller Applet"
 msgstr "屏幕亮度控制板小程序"
 
-#: budgie-applets.html:674
+#: budgie-applets.html:697
 msgid ""
 "Control the backlight via your graphics driver controller or GNOME's "
 "brightness controller."
 msgstr "通过图形驱动控制器或 GNOME 的亮度控制器控制背光."
 
-#: budgie-applets.html:692
+#: budgie-applets.html:715
 msgid "Browser Profile Launcher Applet"
 msgstr "浏览器配置文件启动程序小程序"
 
-#: budgie-applets.html:697
+#: budgie-applets.html:720
 msgid "Launch and create multiple Chromium/Chrome profiles."
 msgstr "启动和创建多个 Chromium/Chrome 配置文件."
 
-#: budgie-applets.html:715
+#: budgie-applets.html:738
 msgid "Find Fast 'Kangaroo' Applet"
 msgstr "找到快速 '袋鼠' 小程序"
 
-#: budgie-applets.html:720
+#: budgie-applets.html:743
 msgid ""
 "Quick and easy browsing, across (possibly) many folder layers, without "
 "having to-do a single mouse click."
 msgstr "快速和容易浏览，跨 (可能) 许多文件夹层，而不需要做一个单一的鼠标点击."
 
-#: budgie-applets.html:738
+#: budgie-applets.html:761
 msgid "Weather and Forecast Applet"
 msgstr "天气预报小程序"
 
-#: budgie-applets.html:743
+#: budgie-applets.html:766
 msgid "Weather forecast every three hours and over five days."
 msgstr "每三小时刷新未来五天的天气."
 
-#: budgie-applets.html:761
+#: budgie-applets.html:784
 msgid "Recently Used Applet"
 msgstr "最近使用的小程序"
 
-#: budgie-applets.html:766
+#: budgie-applets.html:789
 msgid "Show recently used items in a menu."
 msgstr "显示最近使用过的文件"
 
-#: budgie-applets.html:784
+#: budgie-applets.html:807
 msgid "Trash Applet"
 msgstr "回收站小程序"
 
-#: budgie-applets.html:789
+#: budgie-applets.html:812
 msgid "Show, hide and restore trash items."
 msgstr "显示,隐藏或者恢复垃圾文件"
 
-#: budgie-applets.html:807
+#: budgie-applets.html:830
 msgid "Application Launcher Applet"
 msgstr "应用程序启动器小程序"
 
-#: budgie-applets.html:812
+#: budgie-applets.html:835
 msgid "Display your favorite applications in a menu and on the panel."
 msgstr "在面板里显示你最喜欢的程序"
 
-#: budgie-applets.html:830
+#: budgie-applets.html:853
 msgid "Take-A-Break Applet"
 msgstr "休息一下小程序"
 
-#: budgie-applets.html:835
+#: budgie-applets.html:858
 msgid ""
 "A pomodoro-like applet, to make sure you take regular breaks from working."
 msgstr "一个番茄小程序，确保你在工作中有规律地休息."
 
-#: budgie-applets.html:853
+#: budgie-applets.html:876
 msgid "Wallstreet"
 msgstr "Wallstreet"
 
-#: budgie-applets.html:858
+#: budgie-applets.html:881
 msgid "WallStreet is a mini-app to switch wallpapers at a regular interval."
 msgstr "WallStreet 是一个小应用程序，可以定期切换壁纸."
 
-#: budgie-applets.html:876
+#: budgie-applets.html:899
 msgid "Fuzzy-Clock Applet"
 msgstr "Fuzzy-时钟 小程序."
 
-#: budgie-applets.html:881
+#: budgie-applets.html:904
 msgid "Shows the time in a fuzzy way."
 msgstr "用模糊的方式显示时间."
 
-#: budgie-applets.html:899
+#: budgie-applets.html:922
 msgid "Workspace Stopwatch"
 msgstr "工作区秒表"
 
-#: budgie-applets.html:904
+#: budgie-applets.html:927
 msgid "Keep track of usage per workspace."
 msgstr "跟踪每个工作空间的使用情况"
 
-#: budgie-applets.html:922
+#: budgie-applets.html:945
 msgid "Quick Character"
 msgstr "自动分配"
 
-#: budgie-applets.html:927
+#: budgie-applets.html:950
 msgid ""
 "Quickly find and choose the equivalent locale character for an ascii "
 "character."
 msgstr "快速查找和选择 ascii 字符的等效区域设置字符."
 
-#: budgie-applets.html:945
+#: budgie-applets.html:968
 msgid "Status Notifier Tray Applet"
 msgstr "状态通知托盘小程序"
 
-#: budgie-applets.html:950
+#: budgie-applets.html:973
 msgid "System Tray in KDE StatusNotifierItem format."
 msgstr "系统托盘在 KDE 状态通知项目格式."

@@ -1,6 +1,6 @@
 # 
 # Translators:
-# heidi.wenger, 2022
+# heidi.wenger, 2023
 # Oi Suomi On! <oisuomion@protonmail.com>, 2023
 # 
 msgid ""
@@ -18,8 +18,8 @@ msgstr ""
 "Report-Msgid-Bugs-To : you@example.com\n"
 
 #: recommendations.html:15
-msgid "Optional Tasks"
-msgstr "Vaihtoehtoiset tehtävät"
+msgid "Recommendations"
+msgstr "Suosittelut"
 
 #: recommendations.html:20
 msgid "Backports repository"
@@ -40,15 +40,178 @@ msgstr "Ohjelmavarasto asennettu"
 msgid "Enable Ubuntu Budgie backports repository"
 msgstr ""
 
-#: recommendations.html33, 106, 130, 155, 176, 193, 209, 226
+#: recommendations.html33, 70, 107, 129, 154, 169, 190, 211, 285
 msgid "Applying Changes..."
 msgstr "Muutoksia toteutetaan..."
 
-#: recommendations.html:37
+#: recommendations.html:38
+msgid "Backups"
+msgstr "Varmuuskopiot"
+
+#: recommendations.html:43
+msgid ""
+"<strong>Deja-Dup</strong> is a powerful backup utility that can be installed"
+" in Ubuntu Budgie and supports backups to local devices as well as online "
+"cloud-based services."
+msgstr ""
+
+#: recommendations.html:47
+msgid ""
+"Nothing is more important than having a backup of your personal files, just "
+"in case something disastrous happens to your computer."
+msgstr ""
+"Mikään ei ole tärkeämpää kuin että omaat varmuuskopiot henkilökohtaisista "
+"tiedostoistasi, siltä varalta että tietokoneellesi tapahtuu jokin "
+"onnettomuus. "
+
+#: recommendations.html:55
+msgid "Configure Backup"
+msgstr "Määrittele varmuuskopio"
+
+#: recommendations.html59, 96, 126, 151, 187, 208
+msgid "Remove"
+msgstr "Poista"
+
+#: recommendations.html:62
+msgid ""
+"<b>Backups</b> can be found later in the menu <b>Utilities <i "
+"class=\"material-icons\">&#xE315;</i> Backups</b>."
+msgstr ""
+"<b>Varmuuskopiot</b>löytyvät myöhemmin valikosta <b>Apuohjelmat<i "
+"class=\"material-icons\">&#xE315;</i>Varmuuskopiot</b>."
+
+#: recommendations.html:68
+msgid "Install Deja-Dup"
+msgstr ""
+
+#: recommendations.html:76
+msgid "Firewall"
+msgstr "Palomuuri"
+
+#: recommendations.html:81
+msgid ""
+"<strong>Gufw</strong> provides a graphical frontend to <code>ufw</code> "
+"(Uncomplicated Firewall). If security is important to you, there are more "
+"ways to stay secure."
+msgstr ""
+
+#: recommendations.html:84
+msgid "Click to learn more about security."
+msgstr ""
+
+#: recommendations.html:85
+msgid ""
+"Firewalls prevent malicious connections entering and leaving your computer. "
+"By default, the firewall is disabled."
+msgstr ""
+
+#: recommendations.html:86
+msgid "Click to learn more about firewalls."
+msgstr ""
+
+#: recommendations.html:92
+msgid "Configure Firewall"
+msgstr "Määrittele palomuuri"
+
+#: recommendations.html:99
+msgid ""
+"Firewall Configuration</b> can be found later in the menu <b>System Tools<i "
+"class=\"material-icons\">&#xE315;</i> Firewall Configuration</i></b>."
+msgstr ""
+"Palomuuriasetukset</b> löytyvät myöhemmin valikosta <b>Järjestelmätyökalut<i"
+" class=\"material-icons\">&#xE315;</i> Palomuuriasetukset</i></b>."
+
+#: recommendations.html:105
+msgid "Install Firewall"
+msgstr ""
+
+#: recommendations.html:117
+msgid ""
+"ClamTk is a frontend for ClamAV (Clam Antivirus). It is intended to be an "
+"easy to use, light-weight, on-demand scanner for Linux systems."
+msgstr ""
+
+#: recommendations.html:123
+msgid "ClamAV is installed"
+msgstr ""
+
+#: recommendations.html:132
+msgid "Install & Configure ClamAV"
+msgstr ""
+
+#: recommendations.html:141
+msgid ""
+"Nemo Preview allows you to quickly view the contents of a highlighted file "
+"from the Nemo file manager. Just press space to toggle the preview on and "
+"off."
+msgstr ""
+"Nemo Preview -työkalu mahdollistaa korostetun tiedoston sisällön nopean "
+"katsahduksen Nemo-tiedostonhallinnassa. Paina vain välilyöntiä asettaaksesi "
+"esikatselun päälle ja pois. "
+
+#: recommendations.html:144
+msgid "Nemo Preview is installed"
+msgstr "Nemo Preview on asennettu"
+
+#: recommendations.html:146
+msgid "Install Nemo Preview"
+msgstr "Asenna Nemo Preview"
+
+#: recommendations.html:161
+msgid ""
+"Nemo Terminal embeds a terminal within the nemo file-manager. Press F4 to "
+"toggle the visibility of the terminal."
+msgstr ""
+
+#: recommendations.html:164
+msgid "Nemo Terminal is installed"
+msgstr ""
+
+#: recommendations.html:166
+msgid "Install Nemo Terminal"
+msgstr ""
+
+#: recommendations.html:176
+msgid ""
+"Nemo Share allows you to quickly share a folder from the Nemo file manager "
+"without requiring root access."
+msgstr ""
+"Nemo Share mahdollistaa nopean kansionjaon Nemo-tiedostonhallinnasta ilman "
+"vaatimusta root-käyttäjän oikeuksille."
+
+#: recommendations.html:181
+msgid "Nemo Share is installed"
+msgstr "Nemo Share on asennettu"
+
+#: recommendations.html:183
+msgid "Install Nemo Share"
+msgstr "Asenna Nemo Share"
+
+#: recommendations.html:197
+msgid ""
+"Gutenprint is a suite of <a onclick=\"cmd('link?http://gimp-"
+"print.sourceforge.net/p_Supported_Printers.php')\">thousands</a> of printer "
+"drivers which includes drivers for Epson and Canon printers. Gutenprint "
+"supports only the printer part of multi-function devices."
+msgstr ""
+"Gutenprint on kokooma <a onclick=\"cmd('link?http://gimp-"
+"print.sourceforge.net/p_Supported_Printers.php')\">tuhansia</a> "
+"tulostinajureita sisältäen asjurit tulostimille kuten Epson ja Canon. "
+"Gutenprint tukee vain monitoimintolaitteiden tulostinosaa."
+
+#: recommendations.html:201
+msgid "Gutenprint is installed"
+msgstr "Gutenprint on asennettu"
+
+#: recommendations.html:204
+msgid "Install Gutenprint"
+msgstr "Asenna Gutenberg"
+
+#: recommendations.html:216
 msgid "Snap Applications"
 msgstr "Snap-sovellukset"
 
-#: recommendations.html:42
+#: recommendations.html:221
 msgid ""
 "<strong>Snap</strong> is a new generation application packaging format "
 "developed by <em>Canonical</em>. Even though it was initially developed just"
@@ -64,19 +227,19 @@ msgid ""
 "the past."
 msgstr ""
 
-#: recommendations.html55, 119
+#: recommendations.html:234
 msgid "Learn more"
 msgstr "Opi lisää"
 
-#: recommendations.html:57
+#: recommendations.html:236
 msgid "Snap user guide"
 msgstr "Snap:in käyttöopas"
 
-#: recommendations.html:59
+#: recommendations.html:238
 msgid "Search Snap Apps"
 msgstr "Etsi Snap-sovelluksia"
 
-#: recommendations.html:60
+#: recommendations.html:239
 msgid ""
 "If there’s a barrier to Snap app adoption (aside from few apps being made "
 "available in the format) it’s knowing which packages are available in the "
@@ -89,7 +252,7 @@ msgstr ""
 "sovelluskaupassa tarjolla. No, äläpä enää puntaroi. Pompsauta vain "
 "yksinkertaisesti pääte auki ja syötä seuraava käsky:"
 
-#: recommendations.html:66
+#: recommendations.html:245
 msgid ""
 "The find command lets you quickly search for and discover snaps available to"
 " install from the command line. It can be run with a query after it (e.g., "
@@ -100,17 +263,17 @@ msgstr ""
 "kyselyn kera (esim. ‘snap find email‘, ‘snap find media‘, ‘snap find "
 "messaging)‘ tai ilman."
 
-#: recommendations.html:69
+#: recommendations.html:248
 msgid "When run without a query you’ll instead see a list of featured snaps."
 msgstr ""
 "Ilman kyselyä tulet sen sijaan näkemään listan tällä hetkellä erikseen "
 "esille nostetuista snap:eista."
 
-#: recommendations.html:70
+#: recommendations.html:249
 msgid "See installed apps"
 msgstr "Katso asennetut sovellukset"
 
-#: recommendations.html:71
+#: recommendations.html:250
 msgid ""
 "Installed some Snaps but can’t remember what? Don’t panic. Use the list "
 "command to see an up-to-date list of all Snap apps installed on your system:"
@@ -119,7 +282,7 @@ msgstr ""
 "käskyä list nähdäksesi päivitetyn listauksen kaikista järjestelmääsi "
 "asennetuista Snap-sovelluksista:"
 
-#: recommendations.html:74
+#: recommendations.html:253
 msgid ""
 "This list also shows you their version number, revision number and the name "
 "of the developer who uploaded it (handy when there are multiple versions of "
@@ -129,11 +292,11 @@ msgstr ""
 "versionumeron sekä sen lataaman kehittäjän nimen (kätevää mikäli tarjolla on"
 " useita versioita samasta snap-sovelluksesta kaupassa, esim. Telegram). "
 
-#: recommendations.html:77
+#: recommendations.html:256
 msgid "Install & Remove Snap Apps"
 msgstr "Asenna & poista Snap-sovelluksia"
 
-#: recommendations.html:78
+#: recommendations.html:257
 msgid ""
 "If you’re used to managing software using apt you’ll instantly find the "
 "analogous snap commands easy to remember. You install snap apps with the "
@@ -144,11 +307,11 @@ msgstr ""
 "Snap-sovellukset asennetaan 'install' käskyllä, poistetaan käyttäen 'remove'"
 " käskyä."
 
-#: recommendations.html:83
+#: recommendations.html:262
 msgid "See details of an App"
 msgstr "Katso sovelluksen yksityskohdat"
 
-#: recommendations.html:84
+#: recommendations.html:263
 msgid ""
 "You can use this to see detailed information about any snap application, "
 "whether it is installed or not. This info includes the application’s release"
@@ -161,11 +324,11 @@ msgstr ""
 "uudelleenmääritysten määrän, ja enemmän. Laajempi katsaus käskyllä snap info"
 " --verbose tulee näkyville."
 
-#: recommendations.html:90
+#: recommendations.html:269
 msgid "Update a Snap App"
 msgstr "Päivitä Snap-sovellus"
 
-#: recommendations.html:92
+#: recommendations.html:271
 msgid ""
 "Rather helpfully you probably won’t ever need to remember to install an "
 "update to a Snap app. This is because Snapd runs in the background and "
@@ -178,134 +341,14 @@ msgstr ""
 "tietysti voit aina askeltaa Snap-päivityksen taaksepäin tai asentaa vaikkapa"
 " jonkun tietyn pakettiversion)."
 
-#: recommendations.html:98
+#: recommendations.html:277
 msgid "Reference"
 msgstr "Viite"
 
-#: recommendations.html:101
+#: recommendations.html:280
 msgid "Snap is already installed"
 msgstr "Snap on jo asennettu"
 
-#: recommendations.html:104
+#: recommendations.html:283
 msgid "Install Snap"
 msgstr "Asenna Snap"
-
-#: recommendations.html:111
-msgid "Flatpak"
-msgstr "Flatpak"
-
-#: recommendations.html:116
-msgid ""
-"<strong>Flatpak</strong> is a new generation application distribution "
-"framework. It introduces a unified packaging format across various GNU/Linux"
-" distributions. Please note that Flatpak applications are not part of the "
-"core Ubuntu experience."
-msgstr ""
-
-#: recommendations.html:121
-msgid ""
-"Being a user friendly distribution, Ubuntu Budgie allows you to install "
-"Flatpak with a single click. After setup, you can use "
-"<strong>Software</strong> to install Flatpak applications."
-msgstr ""
-
-#: recommendations.html:125
-msgid "Flatpak is installed. Please reboot for the service to start"
-msgstr ""
-"Flatpak asennettu. Uudelleenkäynnistä tietokone jotta palvelu käynnistyy."
-
-#: recommendations.html:128
-msgid "Install & Configure Flatpak"
-msgstr "Asenna & määritä Flatpak"
-
-#: recommendations.html:140
-msgid ""
-"<strong>Dropbox</strong> is a popular proprietary file sharing and storage "
-"solution."
-msgstr ""
-"<strong>Dropbox</strong>on suosittu omisteinen tiedostonjako ja "
-"varastointiratkaisu."
-
-#: recommendations.html:144
-msgid ""
-"After installing, logout and login and follow the dropbox instructions that "
-"are then displayed."
-msgstr ""
-"Asennuksen jälkeen, kirjaudu ulos ja takaisin sisään sekä seuraa näkyville "
-"tulevia Dropbox:in ohjeita."
-
-#: recommendations.html:149
-msgid "Dropbox is installed"
-msgstr "Dropbox on asennettu"
-
-#: recommendations.html:152
-msgid "Install & Configure Dropbox"
-msgstr "Asenna ja määritä Dropbox"
-
-#: recommendations.html:165
-msgid ""
-"ClamTk is a frontend for ClamAV (Clam Antivirus). It is intended to be an "
-"easy to use, light-weight, on-demand scanner for Linux systems."
-msgstr ""
-
-#: recommendations.html:170
-msgid "ClamAV is installed"
-msgstr ""
-
-#: recommendations.html:173
-msgid "Install & Configure ClamAV"
-msgstr ""
-
-#: recommendations.html:183
-msgid ""
-"Nemo Share allows you to quickly share a folder from the Nemo file manager "
-"without requiring root access."
-msgstr ""
-"Nemo Share mahdollistaa nopean kansionjaon Nemo-tiedostonhallinnasta ilman "
-"vaatimusta root-käyttäjän oikeuksille."
-
-#: recommendations.html:188
-msgid "Nemo Share is installed"
-msgstr "Nemo Share on asennettu"
-
-#: recommendations.html:191
-msgid "Install Nemo Share"
-msgstr "Asenna Nemo Share"
-
-#: recommendations.html:200
-msgid ""
-"Nemo Preview allows you to quickly view the contents of a highlighted file "
-"from the Nemo file manager. Just press space to toggle the preview on and "
-"off."
-msgstr ""
-"Nemo Preview -työkalu mahdollistaa korostetun tiedoston sisällön nopean "
-"katsahduksen Nemo-tiedostonhallinnassa. Paina vain välilyöntiä asettaaksesi "
-"esikatselun päälle ja pois. "
-
-#: recommendations.html:204
-msgid "Nemo Preview is installed"
-msgstr "Nemo Preview on asennettu"
-
-#: recommendations.html:207
-msgid "Install Nemo Preview"
-msgstr "Asenna Nemo Preview"
-
-#: recommendations.html:216
-msgid ""
-"Gutenprint is a suite of <a onclick=\"cmd('link?http://gimp-"
-"print.sourceforge.net/p_Supported_Printers.php')\">thousands</a> of printer "
-"drivers which includes drivers for Epson and Canon printers. Gutenprint "
-"supports only the printer part of multi-function devices."
-msgstr ""
-"Gutenprint on kokooma <a onclick=\"cmd('link?http://gimp-"
-"print.sourceforge.net/p_Supported_Printers.php')\">tuhansia</a> "
-"tulostinajureita sisältäen asjurit tulostimille kuten Epson ja Canon. "
-"Gutenprint tukee vain monitoimintolaitteiden tulostinosaa."
-
-#: recommendations.html:221
-msgid "Gutenprint is installed"
-msgstr "Gutenprint on asennettu"
-
-#: recommendations.html:224
-msgid "Install Gutenprint"
-msgstr "Asenna Gutenberg"

@@ -40,25 +40,25 @@ msgstr ""
 
 #: budgie-applets.html34, 57, 80, 103, 126, 149, 172, 195, 218, 241, 264, 287,
 #: 310, 333, 356, 379, 402, 425, 448, 471, 494, 517, 540, 563, 586, 609, 632,
-#: 655, 678, 701, 724, 747, 770, 793, 816, 839, 862, 885, 908, 931, 954
+#: 655, 678, 701, 724, 747, 770, 793, 816, 839, 862, 885, 908, 931, 954, 977
 msgid "Remove"
 msgstr "Sterge"
 
 #: budgie-applets.html37, 60, 83, 106, 129, 152, 175, 198, 221, 244, 267, 290,
 #: 313, 336, 359, 382, 405, 428, 451, 474, 497, 520, 543, 566, 589, 612, 635,
-#: 658, 681, 704, 727, 750, 773, 796, 819, 842, 865, 888, 911, 934, 957
+#: 658, 681, 704, 727, 750, 773, 796, 819, 842, 865, 888, 911, 934, 957, 980
 msgid "Install"
 msgstr ""
 
 #: budgie-applets.html40, 63, 86, 109, 132, 155, 178, 201, 224, 247, 270, 293,
 #: 316, 339, 362, 385, 408, 431, 454, 477, 500, 523, 546, 569, 592, 615, 638,
-#: 661, 684, 707, 730, 753, 776, 799, 822, 845, 868, 891, 914, 937, 960
+#: 661, 684, 707, 730, 753, 776, 799, 822, 845, 868, 891, 914, 937, 960, 983
 msgid "Applying changes..."
 msgstr ""
 
-#: budgie-applets.html42, 65, 88, 111, 134, 157, 180, 203, 226, 272, 295, 318,
-#: 341, 364, 387, 410, 433, 479, 502, 525, 548, 571, 594, 617, 640, 663, 686,
-#: 709, 732, 755, 778, 801, 824, 847, 893, 916, 962
+#: budgie-applets.html42, 65, 88, 111, 134, 157, 180, 203, 226, 249, 295, 318,
+#: 341, 364, 387, 410, 433, 456, 502, 525, 548, 571, 594, 617, 640, 663, 686,
+#: 709, 732, 755, 778, 801, 824, 847, 870, 916, 939, 985
 msgid ""
 "Logout and login after installing applets. From the menu - choose Budgie "
 "Desktop Settings and choose the Panel to add and configure applets."
@@ -76,74 +76,82 @@ msgid "A full-screen application launcher."
 msgstr "O aplicatie fullscreen pentru pornirea aplicatiilor."
 
 #: budgie-applets.html:71
-msgid "Performance Gauge Applet"
+msgid "User Indicator Redux Applet"
 msgstr ""
 
 #: budgie-applets.html:76
-msgid "This applet shows a CPU, Memory or Storage gauge on your budgie panel."
+msgid "Manage the user session from the Budgie panel."
 msgstr ""
 
 #: budgie-applets.html:94
+msgid "Performance Gauge Applet"
+msgstr ""
+
+#: budgie-applets.html:99
+msgid "This applet shows a CPU, Memory or Storage gauge on your budgie panel."
+msgstr ""
+
+#: budgie-applets.html:117
 msgid "Screenshot Applet"
 msgstr "Applet Capturi Ecran"
 
-#: budgie-applets.html:99
+#: budgie-applets.html:122
 msgid ""
 "An advanced screenshot utility for capturing and organizing screenshots."
 msgstr ""
 "Un utilitar avansat pentru creearea si organizarea capturilor de ecran"
 
-#: budgie-applets.html:117
+#: budgie-applets.html:140
 msgid "Clipboard Applet"
 msgstr ""
 
-#: budgie-applets.html:122
+#: budgie-applets.html:145
 msgid ""
 "A clipboard manager applet that can help you to store and manage clipboard "
 "content."
 msgstr ""
 
-#: budgie-applets.html:140
+#: budgie-applets.html:163
 msgid "Calendar Applet"
 msgstr "Applet Calendar"
 
-#: budgie-applets.html:145
+#: budgie-applets.html:168
 msgid "Show date and time and when clicked show a calendar in a popover."
 msgstr "Afiseaza data si ora iar la click afiseaza  popup cu un calendar"
 
-#: budgie-applets.html:163
+#: budgie-applets.html:186
 msgid "Network Applet"
 msgstr "Applet Retea"
 
-#: budgie-applets.html:168
+#: budgie-applets.html:191
 msgid "Network connectivity applet."
 msgstr "Applet conectivitate retea"
 
-#: budgie-applets.html:186
+#: budgie-applets.html:209
 msgid "VisualSpace Applet"
 msgstr "Applet SpatiuVirtual"
 
-#: budgie-applets.html:191
+#: budgie-applets.html:214
 msgid "Display application windows across multiple workspaces."
 msgstr ""
 
-#: budgie-applets.html:209
+#: budgie-applets.html:232
 msgid "Analog Clock Applet"
 msgstr ""
 
-#: budgie-applets.html:214
+#: budgie-applets.html:237
 msgid "Display the time using a traditional dial-face clock."
 msgstr ""
 
-#: budgie-applets.html:232
+#: budgie-applets.html:255
 msgid "Window Shuffler"
 msgstr ""
 
-#: budgie-applets.html:237
+#: budgie-applets.html:260
 msgid "Graphical and keyboard friendly window arranger."
 msgstr "Organizator de ferestre‮"
 
-#: budgie-applets.html249, 456, 870, 939
+#: budgie-applets.html272, 479, 893, 962
 msgid ""
 "Logout and login after installing. Choose from the menu to configure this "
 "application."
@@ -151,35 +159,35 @@ msgstr ""
 "Delogheaza-te si logheaza-te dupa instalare. Din meniu - alege sa "
 "configurezi aceasta aplicatie."
 
-#: budgie-applets.html:255
+#: budgie-applets.html:278
 msgid "Applications Menu applet"
 msgstr "Applet Meniu Aplicatii"
 
-#: budgie-applets.html:260
+#: budgie-applets.html:283
 msgid "Stylish applications menu applet."
 msgstr ""
 
-#: budgie-applets.html:278
+#: budgie-applets.html:301
 msgid "CPU Frequency Applet"
 msgstr "Applet pentru frecventa procesorului"
 
-#: budgie-applets.html:283
+#: budgie-applets.html:306
 msgid "Control the frequency of the processor (Sandy Bridge and newer)."
 msgstr "Controleaza frecventa procesorului (Sandy Bridge si mai noi)."
 
-#: budgie-applets.html301, 370
+#: budgie-applets.html324, 393
 msgid "System Monitor Applet"
 msgstr "Applet Monitorizare Sistem"
 
-#: budgie-applets.html:306
+#: budgie-applets.html:329
 msgid "Show frequency, ram, swap & network values."
 msgstr "Arata frecventa, ram, swap & valorile de retea."
 
-#: budgie-applets.html:324
+#: budgie-applets.html:347
 msgid "Pixel-Saver Applet"
 msgstr "Applet Salvare-Pixeli"
 
-#: budgie-applets.html:329
+#: budgie-applets.html:352
 msgid ""
 "Hides the title bar from maximized windows and creates a new one inside the "
 "panel."
@@ -187,23 +195,23 @@ msgstr ""
 "Ascunde bara de titlu din ferestrele maximizate si creeaza una noua in "
 "interiorul panoului"
 
-#: budgie-applets.html:347
+#: budgie-applets.html:370
 msgid "Global Menu Applet"
 msgstr "Applet Meniu General"
 
-#: budgie-applets.html:352
+#: budgie-applets.html:375
 msgid "Moves the menu from applications into the panel."
 msgstr "Muta meniul aplicatiilor in panou"
 
-#: budgie-applets.html:375
+#: budgie-applets.html:398
 msgid "Customize and display system information on the panel."
 msgstr "Personalizeza si afiseaza informatii despre system"
 
-#: budgie-applets.html:393
+#: budgie-applets.html:416
 msgid "Hotcorners Applet"
 msgstr "Applet ColturiActive"
 
-#: budgie-applets.html:398
+#: budgie-applets.html:421
 msgid ""
 "Allow user defined commands to be executed when the mouse cursor is pushed "
 "into a corner of the main desktop."
@@ -211,102 +219,102 @@ msgstr ""
 "Permite userului executarea unor comenzi predefinite atunci cand mouse-ul "
 "este pozitionat la colturile ecranului principal"
 
-#: budgie-applets.html:416
+#: budgie-applets.html:439
 msgid "Quicknote Applet"
 msgstr "Applet QuickNote"
 
-#: budgie-applets.html:421
+#: budgie-applets.html:444
 msgid "Quickly record a text based note."
 msgstr "Salvezi rapid note in format text"
 
-#: budgie-applets.html:439
+#: budgie-applets.html:462
 msgid "Previews"
 msgstr "Previzualizari"
 
-#: budgie-applets.html:444
+#: budgie-applets.html:467
 msgid "Show an overview of windows in an exposé like way."
 msgstr "Afiseaza  aranjarea  fereastrelor intr-un mod schematic"
 
-#: budgie-applets.html:462
+#: budgie-applets.html:485
 msgid "Workspace Overview Applet"
 msgstr "Applet Schema Workspace "
 
-#: budgie-applets.html:467
+#: budgie-applets.html:490
 msgid "Quickly navigate workspaces using the applet's menu."
 msgstr "Navigati rapid in spatiul de lucru folosind meniul inclus"
 
-#: budgie-applets.html:485
+#: budgie-applets.html:508
 msgid "Workspace Wallpaper Applet"
 msgstr "Applet Fundal Workspace"
 
-#: budgie-applets.html:490
+#: budgie-applets.html:513
 msgid "Show a different wallpaper on each workspace."
 msgstr "Afiseaza fundal diferit pentru fiecare spatiu de lucru"
 
-#: budgie-applets.html:508
+#: budgie-applets.html:531
 msgid "Window Mover Applet"
 msgstr "Applet Mutare Ferestre"
 
-#: budgie-applets.html:513
+#: budgie-applets.html:536
 msgid "Quickly move windows between workspaces."
 msgstr "Muta rapid ferestrele intre spatiile de lucru"
 
-#: budgie-applets.html:531
+#: budgie-applets.html:554
 msgid "Desktop Showtime Applet"
 msgstr "Applet Showtime Desktop"
 
-#: budgie-applets.html:536
+#: budgie-applets.html:559
 msgid "Display the date and time on the Desktop."
 msgstr "Afiseaza pe Desktop data si ora"
 
-#: budgie-applets.html:554
+#: budgie-applets.html:577
 msgid "CountDown Applet"
 msgstr "Applet Countdown"
 
-#: budgie-applets.html:559
+#: budgie-applets.html:582
 msgid "Set a timed countdown and run an action when the countdown completes."
 msgstr ""
 "Configureaza timpul pentru numaratoare inversa si executa o comanda cand  "
 "timpul expira."
 
-#: budgie-applets.html:577
+#: budgie-applets.html:600
 msgid "Auto-Keyboard Switcher Applet"
 msgstr "Applet Schimbare Automata Tastatura"
 
-#: budgie-applets.html:582
+#: budgie-applets.html:605
 msgid "Change the keyboard language automatically on a per application basis."
 msgstr ""
 "Modifica automat limba tastaturii in functie de aplicatia care ruleaza"
 
-#: budgie-applets.html:600
+#: budgie-applets.html:623
 msgid "Screen Rotation Lock Applet"
 msgstr "Applet Blocare Rotatie Ecran"
 
-#: budgie-applets.html:605
+#: budgie-applets.html:628
 msgid "Add the ability to unlock or lock the screen from rotating."
 msgstr "Permite blocarea/deblocarea rotirii ecranului"
 
-#: budgie-applets.html:623
+#: budgie-applets.html:646
 msgid "Clockworks Applet"
 msgstr "Applet Ceas Multiplu"
 
-#: budgie-applets.html:628
+#: budgie-applets.html:651
 msgid "Display the time across multiple time zones."
 msgstr "Afiseaza ora pentru mai multe zone geografice"
 
-#: budgie-applets.html:646
+#: budgie-applets.html:669
 msgid "DropBy Applet"
 msgstr "Applet DropBy"
 
-#: budgie-applets.html:651
+#: budgie-applets.html:674
 msgid "Display a pop-up window when a USB device is connected."
 msgstr "Afiseaza o notificare atunci cand este conectat un dispozitiv USB"
 
-#: budgie-applets.html:669
+#: budgie-applets.html:692
 msgid "Brightness Controller Applet"
 msgstr "Applet Control Luminozitate"
 
-#: budgie-applets.html:674
+#: budgie-applets.html:697
 msgid ""
 "Control the backlight via your graphics driver controller or GNOME's "
 "brightness controller."
@@ -314,19 +322,19 @@ msgstr ""
 "Controleaza iluminarea de fundal a ecranului prin controlerul grafic sau "
 "folosind controlul de stralucire din Gnome"
 
-#: budgie-applets.html:692
+#: budgie-applets.html:715
 msgid "Browser Profile Launcher Applet"
 msgstr "Applet Browser Profile Launcher"
 
-#: budgie-applets.html:697
+#: budgie-applets.html:720
 msgid "Launch and create multiple Chromium/Chrome profiles."
 msgstr "Executa si creeaza profile multiple Chromium/Chrome"
 
-#: budgie-applets.html:715
+#: budgie-applets.html:738
 msgid "Find Fast 'Kangaroo' Applet"
 msgstr "Applet \"Kangaroo\" Cautare Rapida "
 
-#: budgie-applets.html:720
+#: budgie-applets.html:743
 msgid ""
 "Quick and easy browsing, across (possibly) many folder layers, without "
 "having to-do a single mouse click."
@@ -334,88 +342,88 @@ msgstr ""
 "Rasfoire rapida si simpla, prin (posibil) directoare multiple, fara a fi "
 "nevoie sa faci click cu mouse-ul"
 
-#: budgie-applets.html:738
+#: budgie-applets.html:761
 msgid "Weather and Forecast Applet"
 msgstr "Applet Vreme si Predictii"
 
-#: budgie-applets.html:743
+#: budgie-applets.html:766
 msgid "Weather forecast every three hours and over five days."
 msgstr "Actualizari starea vremii la fiecare trei ore, timp de peste 5 zile"
 
-#: budgie-applets.html:761
+#: budgie-applets.html:784
 msgid "Recently Used Applet"
 msgstr "Applet Utilizate Recent"
 
-#: budgie-applets.html:766
+#: budgie-applets.html:789
 msgid "Show recently used items in a menu."
 msgstr "Afiseaza aplicatii utilizate recent intr-un meniu"
 
-#: budgie-applets.html:784
+#: budgie-applets.html:807
 msgid "Trash Applet"
 msgstr "Applet Trash"
 
-#: budgie-applets.html:789
+#: budgie-applets.html:812
 msgid "Show, hide and restore trash items."
 msgstr "Afiseaza, ascunde, restaureaza fisiere sterse"
 
-#: budgie-applets.html:807
+#: budgie-applets.html:830
 msgid "Application Launcher Applet"
 msgstr "Applet Pornire Aplicatii"
 
-#: budgie-applets.html:812
+#: budgie-applets.html:835
 msgid "Display your favorite applications in a menu and on the panel."
 msgstr "Afiseaza aplicatiile favorite intr-un meniu si pe panou"
 
-#: budgie-applets.html:830
+#: budgie-applets.html:853
 msgid "Take-A-Break Applet"
 msgstr "Appletul Ia -O-Pauza"
 
-#: budgie-applets.html:835
+#: budgie-applets.html:858
 msgid ""
 "A pomodoro-like applet, to make sure you take regular breaks from working."
 msgstr ""
 "Un applet ca-o-rosie, pentru a fii sigur ca iei pauze regulate de la lucru."
 
-#: budgie-applets.html:853
+#: budgie-applets.html:876
 msgid "Wallstreet"
 msgstr "Wallstreet"
 
-#: budgie-applets.html:858
+#: budgie-applets.html:881
 msgid "WallStreet is a mini-app to switch wallpapers at a regular interval."
 msgstr ""
 "WallStreet este o mini-aplicatie care schimba imaginea de fundal la un "
 "interval regulat de timp"
 
-#: budgie-applets.html:876
+#: budgie-applets.html:899
 msgid "Fuzzy-Clock Applet"
 msgstr ""
 
-#: budgie-applets.html:881
+#: budgie-applets.html:904
 msgid "Shows the time in a fuzzy way."
 msgstr ""
 
-#: budgie-applets.html:899
+#: budgie-applets.html:922
 msgid "Workspace Stopwatch"
 msgstr ""
 
-#: budgie-applets.html:904
+#: budgie-applets.html:927
 msgid "Keep track of usage per workspace."
 msgstr ""
 
-#: budgie-applets.html:922
+#: budgie-applets.html:945
 msgid "Quick Character"
 msgstr ""
 
-#: budgie-applets.html:927
+#: budgie-applets.html:950
 msgid ""
 "Quickly find and choose the equivalent locale character for an ascii "
 "character."
 msgstr ""
 
-#: budgie-applets.html:945
+#: budgie-applets.html:968
 msgid "Status Notifier Tray Applet"
 msgstr ""
 
-#: budgie-applets.html:950
+#: budgie-applets.html:973
 msgid "System Tray in KDE StatusNotifierItem format."
 msgstr ""

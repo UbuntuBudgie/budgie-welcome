@@ -38,25 +38,25 @@ msgstr ""
 
 #: budgie-applets.html34, 57, 80, 103, 126, 149, 172, 195, 218, 241, 264, 287,
 #: 310, 333, 356, 379, 402, 425, 448, 471, 494, 517, 540, 563, 586, 609, 632,
-#: 655, 678, 701, 724, 747, 770, 793, 816, 839, 862, 885, 908, 931, 954
+#: 655, 678, 701, 724, 747, 770, 793, 816, 839, 862, 885, 908, 931, 954, 977
 msgid "Remove"
 msgstr "Hiq"
 
 #: budgie-applets.html37, 60, 83, 106, 129, 152, 175, 198, 221, 244, 267, 290,
 #: 313, 336, 359, 382, 405, 428, 451, 474, 497, 520, 543, 566, 589, 612, 635,
-#: 658, 681, 704, 727, 750, 773, 796, 819, 842, 865, 888, 911, 934, 957
+#: 658, 681, 704, 727, 750, 773, 796, 819, 842, 865, 888, 911, 934, 957, 980
 msgid "Install"
 msgstr "Instalo"
 
 #: budgie-applets.html40, 63, 86, 109, 132, 155, 178, 201, 224, 247, 270, 293,
 #: 316, 339, 362, 385, 408, 431, 454, 477, 500, 523, 546, 569, 592, 615, 638,
-#: 661, 684, 707, 730, 753, 776, 799, 822, 845, 868, 891, 914, 937, 960
+#: 661, 684, 707, 730, 753, 776, 799, 822, 845, 868, 891, 914, 937, 960, 983
 msgid "Applying changes..."
 msgstr "Duke aplikuar ndryshimet ..."
 
-#: budgie-applets.html42, 65, 88, 111, 134, 157, 180, 203, 226, 272, 295, 318,
-#: 341, 364, 387, 410, 433, 479, 502, 525, 548, 571, 594, 617, 640, 663, 686,
-#: 709, 732, 755, 778, 801, 824, 847, 893, 916, 962
+#: budgie-applets.html42, 65, 88, 111, 134, 157, 180, 203, 226, 249, 295, 318,
+#: 341, 364, 387, 410, 433, 456, 502, 525, 548, 571, 594, 617, 640, 663, 686,
+#: 709, 732, 755, 778, 801, 824, 847, 870, 916, 939, 985
 msgid ""
 "Logout and login after installing applets. From the menu - choose Budgie "
 "Desktop Settings and choose the Panel to add and configure applets."
@@ -74,31 +74,39 @@ msgid "A full-screen application launcher."
 msgstr "Një lëshues i aplikacioneve në ekran të plotë."
 
 #: budgie-applets.html:71
+msgid "User Indicator Redux Applet"
+msgstr ""
+
+#: budgie-applets.html:76
+msgid "Manage the user session from the Budgie panel."
+msgstr ""
+
+#: budgie-applets.html:94
 msgid "Performance Gauge Applet"
 msgstr "Apleti Matësi i Performancës"
 
-#: budgie-applets.html:76
+#: budgie-applets.html:99
 msgid "This applet shows a CPU, Memory or Storage gauge on your budgie panel."
 msgstr ""
 "Ky aplet tregon një matës të CPU-së, kujtesës RAM ose Hapësirës ruajtese në "
 "panelin tuaj budgie."
 
-#: budgie-applets.html:94
+#: budgie-applets.html:117
 msgid "Screenshot Applet"
 msgstr "Apleti Fotoimazh"
 
-#: budgie-applets.html:99
+#: budgie-applets.html:122
 msgid ""
 "An advanced screenshot utility for capturing and organizing screenshots."
 msgstr ""
 "Një mjet i avancuar i pamjes së ekranit për kapjen dhe organizimin e pamjeve"
 " të ekranit."
 
-#: budgie-applets.html:117
+#: budgie-applets.html:140
 msgid "Clipboard Applet"
 msgstr "Apleti Fragmentet"
 
-#: budgie-applets.html:122
+#: budgie-applets.html:145
 msgid ""
 "A clipboard manager applet that can help you to store and manage clipboard "
 "content."
@@ -106,48 +114,48 @@ msgstr ""
 "Një aplet për menaxhimin e kujtesës së fragmenteve që mund t'ju ndihmojë të "
 "ruani dhe menaxhoni përmbajtjen e fragmenteve."
 
-#: budgie-applets.html:140
+#: budgie-applets.html:163
 msgid "Calendar Applet"
 msgstr "Apleti Kalendar"
 
-#: budgie-applets.html:145
+#: budgie-applets.html:168
 msgid "Show date and time and when clicked show a calendar in a popover."
 msgstr ""
 "Shfaq datën dhe orën dhe kur klikohet shfaq një kalendar në një dritare."
 
-#: budgie-applets.html:163
+#: budgie-applets.html:186
 msgid "Network Applet"
 msgstr "Apleti i Rrjetit"
 
-#: budgie-applets.html:168
+#: budgie-applets.html:191
 msgid "Network connectivity applet."
 msgstr "Apleti i lidhjes së rrjetit."
 
-#: budgie-applets.html:186
+#: budgie-applets.html:209
 msgid "VisualSpace Applet"
 msgstr "Apleti VisualSpace"
 
-#: budgie-applets.html:191
+#: budgie-applets.html:214
 msgid "Display application windows across multiple workspaces."
 msgstr "Shfaqni dritaret e aplikacionit në shumë hapësira pune."
 
-#: budgie-applets.html:209
+#: budgie-applets.html:232
 msgid "Analog Clock Applet"
 msgstr "Apleti Ora Analoge"
 
-#: budgie-applets.html:214
+#: budgie-applets.html:237
 msgid "Display the time using a traditional dial-face clock."
 msgstr "Shfaqni orën duke përdorur një orë tradicionale."
 
-#: budgie-applets.html:232
+#: budgie-applets.html:255
 msgid "Window Shuffler"
 msgstr "Përzierësi i Dritareve"
 
-#: budgie-applets.html:237
+#: budgie-applets.html:260
 msgid "Graphical and keyboard friendly window arranger."
 msgstr "Një rregullues grafik ose me tastierë i dritareve."
 
-#: budgie-applets.html249, 456, 870, 939
+#: budgie-applets.html272, 479, 893, 962
 msgid ""
 "Logout and login after installing. Choose from the menu to configure this "
 "application."
@@ -155,35 +163,35 @@ msgstr ""
 "Dilni dhe hyni nga seanca pas instalimit. Zgjidhni nga menuja për të "
 "konfiguruar këtë aplikacion."
 
-#: budgie-applets.html:255
+#: budgie-applets.html:278
 msgid "Applications Menu applet"
 msgstr "Apleti Menuja e Aplikacioneve"
 
-#: budgie-applets.html:260
+#: budgie-applets.html:283
 msgid "Stylish applications menu applet."
 msgstr "Një aplet elegant i menysë së aplikacioneve."
 
-#: budgie-applets.html:278
+#: budgie-applets.html:301
 msgid "CPU Frequency Applet"
 msgstr "Apleti Frekuenca e CPU"
 
-#: budgie-applets.html:283
+#: budgie-applets.html:306
 msgid "Control the frequency of the processor (Sandy Bridge and newer)."
 msgstr "Kontrolloni frekuencën e procesorit (Sandy Bridge ose më i ri)."
 
-#: budgie-applets.html301, 370
+#: budgie-applets.html324, 393
 msgid "System Monitor Applet"
 msgstr "Apleti Monitor Sistemi"
 
-#: budgie-applets.html:306
+#: budgie-applets.html:329
 msgid "Show frequency, ram, swap & network values."
 msgstr "Shfaq vlerat e frekuencës, ram, swap dhe rrjetit."
 
-#: budgie-applets.html:324
+#: budgie-applets.html:347
 msgid "Pixel-Saver Applet"
 msgstr "Apleti Piksel-Kursyesi"
 
-#: budgie-applets.html:329
+#: budgie-applets.html:352
 msgid ""
 "Hides the title bar from maximized windows and creates a new one inside the "
 "panel."
@@ -191,23 +199,23 @@ msgstr ""
 "Fsheh shiritin e titullit nga dritaret e maksimizuara dhe krijon një të re "
 "brenda panelit."
 
-#: budgie-applets.html:347
+#: budgie-applets.html:370
 msgid "Global Menu Applet"
 msgstr "Apleti Menuja Globale"
 
-#: budgie-applets.html:352
+#: budgie-applets.html:375
 msgid "Moves the menu from applications into the panel."
 msgstr "Zhvendos menunë nga aplikacionet në panel."
 
-#: budgie-applets.html:375
+#: budgie-applets.html:398
 msgid "Customize and display system information on the panel."
 msgstr "Personalizojeni dhe shfaqni informacionin e sistemit në panel."
 
-#: budgie-applets.html:393
+#: budgie-applets.html:416
 msgid "Hotcorners Applet"
 msgstr "Apleti Hotcorners"
 
-#: budgie-applets.html:398
+#: budgie-applets.html:421
 msgid ""
 "Allow user defined commands to be executed when the mouse cursor is pushed "
 "into a corner of the main desktop."
@@ -215,102 +223,102 @@ msgstr ""
 "Lejon që komandat e përcaktuara nga përdoruesi të ekzekutohen kur kursori i "
 "mausit shtyhet në një cep të desktopit kryesor."
 
-#: budgie-applets.html:416
+#: budgie-applets.html:439
 msgid "Quicknote Applet"
 msgstr "Apleti Shënim i Shpejtë"
 
-#: budgie-applets.html:421
+#: budgie-applets.html:444
 msgid "Quickly record a text based note."
 msgstr "Regjistroni shpejt një shënim të bazuar në tekst."
 
-#: budgie-applets.html:439
+#: budgie-applets.html:462
 msgid "Previews"
 msgstr "Pamje paraprake"
 
-#: budgie-applets.html:444
+#: budgie-applets.html:467
 msgid "Show an overview of windows in an exposé like way."
 msgstr "Shfaq një pasqyrë të dritareve në një mënyrë të ekspozuar."
 
-#: budgie-applets.html:462
+#: budgie-applets.html:485
 msgid "Workspace Overview Applet"
 msgstr "Apleti Pasqyra e Hapësirave të Punës"
 
-#: budgie-applets.html:467
+#: budgie-applets.html:490
 msgid "Quickly navigate workspaces using the applet's menu."
 msgstr ""
 "Navigoni shpejt nëpër hapësirat e punës duke përdorur menunë e aplikacionit."
 
-#: budgie-applets.html:485
+#: budgie-applets.html:508
 msgid "Workspace Wallpaper Applet"
 msgstr "Apleti Sfondi i Hapësirës së Punës"
 
-#: budgie-applets.html:490
+#: budgie-applets.html:513
 msgid "Show a different wallpaper on each workspace."
 msgstr "Shfaq një sfond të ndryshëm në çdo hapësirë pune."
 
-#: budgie-applets.html:508
+#: budgie-applets.html:531
 msgid "Window Mover Applet"
 msgstr "Apleti Lëvizës Dritaresh"
 
-#: budgie-applets.html:513
+#: budgie-applets.html:536
 msgid "Quickly move windows between workspaces."
 msgstr "Lëvizni shpejt dritaret ndërmjet hapësirave të punës."
 
-#: budgie-applets.html:531
+#: budgie-applets.html:554
 msgid "Desktop Showtime Applet"
 msgstr "Apleti Ora në Desktop"
 
-#: budgie-applets.html:536
+#: budgie-applets.html:559
 msgid "Display the date and time on the Desktop."
 msgstr "Shfaq datën dhe orën në Desktop."
 
-#: budgie-applets.html:554
+#: budgie-applets.html:577
 msgid "CountDown Applet"
 msgstr "Apleti Numërimi Mbrapsht"
 
-#: budgie-applets.html:559
+#: budgie-applets.html:582
 msgid "Set a timed countdown and run an action when the countdown completes."
 msgstr ""
 "Vendosni një kohë numërimi mbrapsht dhe kryeni një veprim kur numërimi të "
 "përfundojë."
 
-#: budgie-applets.html:577
+#: budgie-applets.html:600
 msgid "Auto-Keyboard Switcher Applet"
 msgstr "Apleti Ndërruesi Automatik i Tastierës"
 
-#: budgie-applets.html:582
+#: budgie-applets.html:605
 msgid "Change the keyboard language automatically on a per application basis."
 msgstr "Ndryshoni automatikisht gjuhën e tastierës në bazë të aplikacionit."
 
-#: budgie-applets.html:600
+#: budgie-applets.html:623
 msgid "Screen Rotation Lock Applet"
 msgstr "Apleti Kyçja e Rrotullimit të Ekranit"
 
-#: budgie-applets.html:605
+#: budgie-applets.html:628
 msgid "Add the ability to unlock or lock the screen from rotating."
 msgstr "Shtoni mundësinë për të zhbllokuar ose kyçur ekranin nga rrotullimi."
 
-#: budgie-applets.html:623
+#: budgie-applets.html:646
 msgid "Clockworks Applet"
 msgstr "Applet Orët"
 
-#: budgie-applets.html:628
+#: budgie-applets.html:651
 msgid "Display the time across multiple time zones."
 msgstr "Shfaqni orën për zona të shumta kohore."
 
-#: budgie-applets.html:646
+#: budgie-applets.html:669
 msgid "DropBy Applet"
 msgstr "Apleti DropBy"
 
-#: budgie-applets.html:651
+#: budgie-applets.html:674
 msgid "Display a pop-up window when a USB device is connected."
 msgstr "Shfaq një dritare kërcyese kur lidhet një pajisje USB."
 
-#: budgie-applets.html:669
+#: budgie-applets.html:692
 msgid "Brightness Controller Applet"
 msgstr "Apleti Kontrolluesi i ndriçimit"
 
-#: budgie-applets.html:674
+#: budgie-applets.html:697
 msgid ""
 "Control the backlight via your graphics driver controller or GNOME's "
 "brightness controller."
@@ -318,19 +326,19 @@ msgstr ""
 "Kontrolloni ndriçimin e ekranit nëpërmjet kontrolluesit të grafikës ose "
 "kontrolluesit të ndriçimit të GNOME."
 
-#: budgie-applets.html:692
+#: budgie-applets.html:715
 msgid "Browser Profile Launcher Applet"
 msgstr "Apleti Lëshuesi i Profilit të Shfletuesit"
 
-#: budgie-applets.html:697
+#: budgie-applets.html:720
 msgid "Launch and create multiple Chromium/Chrome profiles."
 msgstr "Lëshoni dhe krijoni profile të shumta Chromium/Chrome."
 
-#: budgie-applets.html:715
+#: budgie-applets.html:738
 msgid "Find Fast 'Kangaroo' Applet"
 msgstr "Apleti Gjej Shpejt 'Kanguri'"
 
-#: budgie-applets.html:720
+#: budgie-applets.html:743
 msgid ""
 "Quick and easy browsing, across (possibly) many folder layers, without "
 "having to-do a single mouse click."
@@ -338,80 +346,80 @@ msgstr ""
 "Shfletim i shpejtë dhe i lehtë, nëpër (ndoshta) shumë shtresa dosjesh, pa "
 "pasur nevojë të bëni një klikim të vetëm."
 
-#: budgie-applets.html:738
+#: budgie-applets.html:761
 msgid "Weather and Forecast Applet"
 msgstr "Apleti Moti dhe Parashikimi"
 
-#: budgie-applets.html:743
+#: budgie-applets.html:766
 msgid "Weather forecast every three hours and over five days."
 msgstr "Parashikimi i motit çdo tre orë dhe mbi pesë ditë."
 
-#: budgie-applets.html:761
+#: budgie-applets.html:784
 msgid "Recently Used Applet"
 msgstr "Apleti i Përdorur së Fundmi"
 
-#: budgie-applets.html:766
+#: budgie-applets.html:789
 msgid "Show recently used items in a menu."
 msgstr "Shfaq artikujt e përdorur së fundmi në një menu."
 
-#: budgie-applets.html:784
+#: budgie-applets.html:807
 msgid "Trash Applet"
 msgstr "Apleti i Koshit"
 
-#: budgie-applets.html:789
+#: budgie-applets.html:812
 msgid "Show, hide and restore trash items."
 msgstr "Tregoni, fshihni dhe rivendosni artikujt e plehrave."
 
-#: budgie-applets.html:807
+#: budgie-applets.html:830
 msgid "Application Launcher Applet"
 msgstr "Apleti Lëshues Aplikacionesh"
 
-#: budgie-applets.html:812
+#: budgie-applets.html:835
 msgid "Display your favorite applications in a menu and on the panel."
 msgstr "Shfaqni aplikacionet tuaja të preferuara në një menu dhe në panel. "
 
-#: budgie-applets.html:830
+#: budgie-applets.html:853
 msgid "Take-A-Break Applet"
 msgstr "Apleti Bëj Pushim"
 
-#: budgie-applets.html:835
+#: budgie-applets.html:858
 msgid ""
 "A pomodoro-like applet, to make sure you take regular breaks from working."
 msgstr ""
 "Një aplet i ngjashëm me pomodoro, për t'u siguruar që të bëni pushime të "
 "rregullta nga puna."
 
-#: budgie-applets.html:853
+#: budgie-applets.html:876
 msgid "Wallstreet"
 msgstr "Apleti Wallstreet"
 
-#: budgie-applets.html:858
+#: budgie-applets.html:881
 msgid "WallStreet is a mini-app to switch wallpapers at a regular interval."
 msgstr ""
 "WallStreet është një mini-aplikacion për ndërrimin e sfondeve në një "
 "interval të rregullt."
 
-#: budgie-applets.html:876
+#: budgie-applets.html:899
 msgid "Fuzzy-Clock Applet"
 msgstr "Apleti Ora-Fuzzy"
 
-#: budgie-applets.html:881
+#: budgie-applets.html:904
 msgid "Shows the time in a fuzzy way."
 msgstr "Shfaq kohën me fjalë."
 
-#: budgie-applets.html:899
+#: budgie-applets.html:922
 msgid "Workspace Stopwatch"
 msgstr "Kronometri i Hapësirës së Punës"
 
-#: budgie-applets.html:904
+#: budgie-applets.html:927
 msgid "Keep track of usage per workspace."
 msgstr "Mat kohën e përdorimit për çdo hapësirë pune."
 
-#: budgie-applets.html:922
+#: budgie-applets.html:945
 msgid "Quick Character"
 msgstr "Karakteri i Shpejtë"
 
-#: budgie-applets.html:927
+#: budgie-applets.html:950
 msgid ""
 "Quickly find and choose the equivalent locale character for an ascii "
 "character."
@@ -419,10 +427,10 @@ msgstr ""
 "Gjeni dhe zgjidhni shpejt karakterin ekuivalent lokal për një karakter "
 "ascii."
 
-#: budgie-applets.html:945
+#: budgie-applets.html:968
 msgid "Status Notifier Tray Applet"
 msgstr "Apleti Njoftuesi Statusi"
 
-#: budgie-applets.html:950
+#: budgie-applets.html:973
 msgid "System Tray in KDE StatusNotifierItem format."
 msgstr "Shiriti Sistemit në formatin KDE StatusNotifierItem."

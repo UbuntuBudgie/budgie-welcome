@@ -49,11 +49,11 @@ msgstr "親しみやすさ"
 msgid "Browser Ballot"
 msgstr "ブラウザの選択"
 
-#: gettingstarted.html46, 879, 1744
+#: gettingstarted.html46, 854, 1719
 msgid "Customization"
 msgstr "カスタマイズ"
 
-#: gettingstarted.html49, 1122
+#: gettingstarted.html49, 1097
 msgid "Keyboard Shortcuts"
 msgstr "キーボードショートカット"
 
@@ -149,7 +149,7 @@ msgid ""
 "or surpasses the recommended requirements."
 msgstr "お使いのコンピュータが推奨要件を満たしているか、それを超える場合、オペレーティングシステムははるかに効率的に実行できます。"
 
-#: gettingstarted.html118, 1754
+#: gettingstarted.html118, 1729
 msgid "What's inside my computer?"
 msgstr "コンピュータの中身は何ですか？"
 
@@ -269,7 +269,7 @@ msgstr ""
 "デフォルトでは、RAMのサイズに基づいてスワップファイルが作成されます。例えば、2 GiB のRAM がある場合、2 GiB "
 "のハードディスク容量がスワップファイル用に予約されます。別のスワップパーティションを作成する必要はなくなりました。"
 
-#: gettingstarted.html196, 397, 764, 1743
+#: gettingstarted.html196, 397, 764, 1718
 msgid "Previous:"
 msgstr "前へ:"
 
@@ -624,21 +624,21 @@ msgstr ""
 "<strong>法的通知</strong> "
 "特許法および著作権法は、お住まいの国によって異なります。特定の国で使用するメディア形式に特定の特許または制限が適用されるかどうか不明な場合は、法的助言を入手してください。"
 
-#: gettingstarted.html474, 617, 683, 692, 736, 747, 758, 796, 831, 904, 920,
-#: 935, 950, 964, 979, 995, 1010, 1020, 1040, 1060
+#: gettingstarted.html474, 617, 683, 692, 736, 747, 758, 791, 813, 879, 895,
+#: 910, 925, 939, 954, 970, 985, 995, 1015, 1035
 msgid "Applying Changes..."
 msgstr "変更を適用しています…"
 
-#: gettingstarted.html477, 731, 742, 753, 798, 833, 914, 944, 958, 973, 1004
+#: gettingstarted.html477, 731, 742, 753, 889, 919, 933, 948, 979
 msgid "Install"
 msgstr "インストール"
 
-#: gettingstarted.html480, 734, 745, 756, 917, 947, 961, 976, 992, 1007, 1017,
-#: 1037, 1057
+#: gettingstarted.html480, 734, 745, 756, 892, 922, 936, 951, 967, 982, 992,
+#: 1012, 1032
 msgid "Remove"
 msgstr "削除"
 
-#: gettingstarted.html488, 766, 879
+#: gettingstarted.html488, 766, 854
 msgid "Next:"
 msgstr "次へ:"
 
@@ -863,7 +863,7 @@ msgstr ""
 msgid "Read more on troubleshooting wireless hardware."
 msgstr "無線のハードウェアのトラブルシューティングの詳細をご覧ください。"
 
-#: gettingstarted.html659, 877
+#: gettingstarted.html659, 852
 msgid "Language Input"
 msgstr "言語入力"
 
@@ -931,82 +931,73 @@ msgid "Korean"
 msgstr "韓国語"
 
 #: gettingstarted.html:774
-msgid "Backup, Firewall and User Management"
-msgstr "バックアップ、ファイアウォール、およびユーザー管理"
-
-#: gettingstarted.html:775
-msgid ""
-"Ubuntu Budgie provides option to install a backup utility or firewall and "
-"supports multiple user accounts."
+msgid "Flatpak, Dropbox and User Management"
 msgstr ""
 
-#: gettingstarted.html:786
-msgid "Backups"
-msgstr "バックアップ"
+#: gettingstarted.html:784
+msgid "Flatpak"
+msgstr "Flatpak"
 
-#: gettingstarted.html:787
+#: gettingstarted.html:785
 msgid ""
-"Nothing is more important than having a backup of your personal files, just "
-"in case something disastrous happens to your computer."
-msgstr "あなたのコンピュータに何か悲惨なことが起こった場合に備えて、個人ファイルのバックアップを保存することほど、重要なことはありません。"
-
-#: gettingstarted.html:791
-msgid ""
-"<b>Deja-Dup</b> is a powerful backup utility that can be installed in Ubuntu"
-" Budgie and supports backups to local devices as well as online cloud-based "
-"services."
+"<strong>Flatpak</strong> is a new generation application distribution "
+"framework. It introduces a unified packaging format across various GNU/Linux"
+" distributions. Please note that Flatpak applications are not part of the "
+"core Ubuntu experience."
 msgstr ""
 
-#: gettingstarted.html:802
-msgid "Configure Backup"
-msgstr "バックアップの設定"
+#: gettingstarted.html:788
+msgid "Learn more"
+msgstr "詳細"
 
-#: gettingstarted.html:805
-msgid ""
-"<b>Backups</b> can be found later in the menu <b>Utilities <i "
-"class=\"material-icons\">&#xE315;</i> Backups</b>."
+#: gettingstarted.html:793
+msgid "Install & Configure Flatpak"
+msgstr "Flatpakのインストールと設定"
+
+#: gettingstarted.html:794
+msgid "Flatpak is installed."
 msgstr ""
 
-#: gettingstarted.html:819
-msgid "Firewall"
-msgstr "ファイアウォール"
-
-#: gettingstarted.html:820
-msgid ""
-"Firewalls prevent malicious connections entering and leaving your computer. "
-"By default, the firewall is disabled, <a "
-"onclick=\"cmd('link?https://help.ubuntu.com/community/DoINeedAFirewall')\">learn"
-" more about firewalls</a>."
-msgstr ""
-"ファイアウォールは、悪意のある接続がコンピュータに出入りするのを防ぎます。デフォルトでは、ファイアウォールは無効になっています。<a "
-"onclick=\"cmd('link?https://help.ubuntu.com/community/DoINeedAFirewall')\">ファイアウォールの詳細</a>"
-
-#: gettingstarted.html:826
-msgid ""
-"<b>Gufw</b> provides a graphical frontend to <code>ufw</code> (Uncomplicated"
-" Firewall). If security is important to you, there are <a "
-"onclick=\"cmd('link?https://wiki.ubuntu.com/BasicSecurity')\">more ways to "
-"stay secure too</a>."
-msgstr ""
-"<b>Gufw</b>は、<code>ufw</code> (Uncomplicated Firewall) "
-"のグラフィカルなフロントエンドを提供します。セキュリティが重要な場合は、<a "
-"onclick=\"cmd('link?https://wiki.ubuntu.com/BasicSecurity')\">安全性を保つためのより多くの方法</a>があります。"
-
-#: gettingstarted.html:837
-msgid "Configure Firewall"
-msgstr "ファイアウォールの設定"
-
-#: gettingstarted.html:840
-msgid ""
-"Firewall Configuration</b> can be found later in the menu <b>System Tools<i "
-"class=\"material-icons\">&#xE315;</i> Firewall Configuration</i></b>."
+#: gettingstarted.html:795
+msgid "Please reboot for the service to start."
 msgstr ""
 
-#: gettingstarted.html:854
+#: gettingstarted.html:797
+msgid ""
+"Being a user friendly distribution, Ubuntu Budgie allows you to install "
+"Flatpak with a single click. After setup, you can use "
+"<strong>Software</strong> to install Flatpak applications."
+msgstr ""
+
+#: gettingstarted.html:810
+msgid "Dropbox"
+msgstr ""
+
+#: gettingstarted.html:811
+msgid ""
+"<strong>Dropbox</strong> is a popular proprietary file sharing and storage "
+"solution."
+msgstr "<strong>Dropbox</strong>は、人気のある独自のファイル共有およびストレージソリューションです。"
+
+#: gettingstarted.html:815
+msgid "Install & Configure Dropbox"
+msgstr "Dropbox のインストールと設定"
+
+#: gettingstarted.html:816
+msgid "Dropbox is installed."
+msgstr ""
+
+#: gettingstarted.html:817
+msgid ""
+"After installing, logout and login and follow the dropbox instructions that "
+"are then displayed."
+msgstr "インストール後、ログアウトしてログインし、表示されるドロップボックスの指示に従います。"
+
+#: gettingstarted.html:829
 msgid "Users"
 msgstr "ユーザー"
 
-#: gettingstarted.html:856
+#: gettingstarted.html:831
 msgid ""
 "Share your computer with others? Set up a separate user account for each "
 "user to protect the individual privacy of each user sharing the same "
@@ -1015,58 +1006,58 @@ msgstr ""
 "コンピュータを他の人と共有しますか？ "
 "同じコンピュータを共有する各ユーザーの個々のプライバシーを保護するために、ユーザーごとに個別のユーザーアカウントを設定します。"
 
-#: gettingstarted.html:859
+#: gettingstarted.html:834
 msgid ""
 "You can also log in to a <b>Guest Session</b> if someone is using your "
 "computer as a one-off."
 msgstr "誰かがあなたのコンピュータを一時的に使用したい場合は、<b>ゲストセッション</b> にログインできます。"
 
-#: gettingstarted.html:864
+#: gettingstarted.html:839
 msgid "Configure Users"
 msgstr "ユーザーの設定"
 
-#: gettingstarted.html:867
+#: gettingstarted.html:842
 msgid ""
 "<b>Users</b> can be found later in the menu by typing<i> Users</i></b>."
 msgstr ""
 
-#: gettingstarted.html:885
+#: gettingstarted.html:860
 msgid ""
 "To improve the amount of customizability, Ubuntu Budgie allows you to "
 "install/remove popular web browsers with a single click."
 msgstr ""
 
-#: gettingstarted.html:890
+#: gettingstarted.html:865
 msgid "Firefox"
 msgstr "Firefox"
 
-#: gettingstarted.html:892
+#: gettingstarted.html:867
 msgid ""
 "Mozilla Firefox is a free and open-source web browser, developed by the "
 "Mozilla Foundation - a not for profit organization. It is highly popular "
 "targeting multiple platforms."
 msgstr ""
 
-#: gettingstarted.html898, 929, 989, 1014, 1034, 1054
+#: gettingstarted.html873, 904, 964, 989, 1009, 1029
 msgid "Snap Install"
 msgstr "Snap のインストール"
 
-#: gettingstarted.html901, 932
+#: gettingstarted.html876, 907
 msgid "Snap Remove"
 msgstr "Snap の削除"
 
-#: gettingstarted.html:909
+#: gettingstarted.html:884
 msgid "Firefox ESR"
 msgstr ""
 
-#: gettingstarted.html:911
+#: gettingstarted.html:886
 msgid ""
 "Mozilla Firefox is a free and open-source web browser, developed by the "
 "Mozilla Foundation - a not for profit organization. This is the Extended "
 "Support Release browser for comprehensive data security and data protection."
 msgstr ""
 
-#: gettingstarted.html:926
+#: gettingstarted.html:901
 msgid ""
 "Chromium is an open-source browser project that aims to build a safer, "
 "faster, and more stable way for all Internet users to experience the web."
@@ -1074,7 +1065,7 @@ msgstr ""
 "Chromium は、すべてのインターネットユーザーがWeb "
 "を体験できるように、より安全で、高速で、より安定した方法を構築することを目的としたオープンソースのブラウザプロジェクトです。"
 
-#: gettingstarted.html:941
+#: gettingstarted.html:916
 msgid ""
 "Google Chrome is a modern web browser backed by internet giant Google. It "
 "offers a smooth browsing experience plus integration with Google's "
@@ -1083,31 +1074,31 @@ msgstr ""
 "Google Chrome は、インターネット大手のGoogle が支援する最新のWeb ブラウザです。スムーズなブラウジングに加えて、Google "
 "独自のサービスとの統合を提供します。"
 
-#: gettingstarted.html:956
+#: gettingstarted.html:931
 msgid ""
 "Microsoft Edge is a cross-platform web browser created and developed by "
 "Microsoft. It is a Chromium based browser."
 msgstr ""
 
-#: gettingstarted.html:970
+#: gettingstarted.html:945
 msgid ""
 "Vivaldi Web Browser is a free, fully customizable web browser. Feature rich,"
 " powerful, secure and fun! Browse the Web your way"
 msgstr ""
 "Vivaldi Web ブラウザは、完全にカスタマイズ可能な無料のWebブラウザーです。豊富で、強力で、安全で楽しい機能！ Webを自由に閲覧"
 
-#: gettingstarted.html:986
+#: gettingstarted.html:961
 msgid ""
 "Opera is a fast and secure browser. Developed in Europe, used by millions "
 "around the world. Now with a built-in ad blocker and free VPN."
 msgstr ""
 "Opera は高速で安全なブラウザです。ヨーロッパで開発され、世界中の数百万人が使用しています。組み込みの広告ブロッカーと無料のVPN を搭載しました。"
 
-#: gettingstarted.html:1002
+#: gettingstarted.html:977
 msgid "A browser that blocks tracking and intrusive ads by default."
 msgstr ""
 
-#: gettingstarted.html:1027
+#: gettingstarted.html:1002
 msgid ""
 "Midori is a lightweight yet powerful web browser which runs just as well on "
 "little embedded computers named for delicious pastries as it does on beefy "
@@ -1117,7 +1108,7 @@ msgstr ""
 "Midori は軽量で強力なWeb "
 "ブラウザで、惑星の温度を超えるコア温度を持つ肉厚のマシンと同じように、おいしいお菓子にちなんで名付けられた小さな組み込みコンピュータでも同様に動作します。そして、それを行うことも良さそうです。もちろんフリーソフトウェアです。"
 
-#: gettingstarted.html:1047
+#: gettingstarted.html:1022
 msgid ""
 "The web browser for GNOME, featuring tight integration with the desktop and "
 "a simple and intuitive user interface that allows you to focus on your web "
@@ -1129,50 +1120,50 @@ msgstr ""
 "ページに集中できるシンプルで直感的なユーザーインターフェイスを備えています。ウェブのシンプルできれいな、美しい表示を探しているなら、これはあなたのためのブラウザです。GNOME"
 " Web は多くの場合、コード名「Epiphany」で呼ばれます。"
 
-#: gettingstarted.html:1069
+#: gettingstarted.html:1044
 msgid "User Interface"
 msgstr "ユーザーインターフェース"
 
-#: gettingstarted.html:1070
+#: gettingstarted.html:1045
 msgid ""
 "Ubuntu Budgie provides a unique tool to transform the user interface. It can"
 " be used to quickly setup the user interface to broadly reflect how other "
 "popular operating systems look and feel."
 msgstr ""
 
-#: gettingstarted.html:1077
+#: gettingstarted.html:1052
 msgid "Budgie Desktop Settings"
 msgstr "Budgie デスクトップの設定"
 
-#: gettingstarted.html:1080
+#: gettingstarted.html:1055
 msgid ""
 "<b>Budgie Desktop Settings</b> can be found later in the menu <b>System "
 "Tools</b>."
 msgstr "<b>Budgie デスクトップの設定</b> は、メニューの<b> システムツール</b> にあります。"
 
-#: gettingstarted.html1088, 1093
+#: gettingstarted.html1063, 1068
 msgid "Budgie Control Center"
 msgstr ""
 
-#: gettingstarted.html:1089
+#: gettingstarted.html:1064
 msgid ""
 "You can configure just about every aspect of your computer from Budgie "
 "Control Center."
 msgstr ""
 
-#: gettingstarted.html:1098
+#: gettingstarted.html:1073
 msgid ""
 "<b>Budgie Control Center</b> can be found later in the menu <b>System "
 "Tools</b>."
 msgstr ""
 
-#: gettingstarted.html:1123
+#: gettingstarted.html:1098
 msgid ""
 "Ubuntu Budgie has many keyboard shortcuts that help make using your computer"
 " more efficient."
 msgstr ""
 
-#: gettingstarted.html:1127
+#: gettingstarted.html:1102
 msgid ""
 "The <b><img src=\"img/welcome/super-key.svg\" /> Super</b> key is your "
 "Windows key. For Mac keyboards, this is the ⌘ Command key."
@@ -1180,393 +1171,393 @@ msgstr ""
 "<b><img src=\"img/welcome/super-key.svg\" /> Super</b> キーはWindows キーです。Mac "
 "キーボードの場合、これは ⌘ コマンドキーです。"
 
-#: gettingstarted.html:1130
+#: gettingstarted.html:1105
 msgid "Budgie Desktop shortcuts"
 msgstr "Budgie デスクトップのショートカット"
 
-#: gettingstarted.html:1131
+#: gettingstarted.html:1106
 msgid "Some common shortcuts used in Budgie Desktop"
 msgstr "Budgie デスクトップで使用されるいくつかの一般的なショートカット"
 
-#: gettingstarted.html:1141
+#: gettingstarted.html:1116
 msgid "Open notifications in Raven"
 msgstr "Raven で通知を開く"
 
-#: gettingstarted.html:1150
+#: gettingstarted.html:1125
 msgid "Open applet Settings in Raven"
 msgstr "Raven でアプレット設定を開く"
 
-#: gettingstarted.html:1155
+#: gettingstarted.html:1130
 msgid "Common application shortcuts"
 msgstr "一般的なアプリケーションのショートカット"
 
-#: gettingstarted.html:1156
+#: gettingstarted.html:1131
 msgid "These shortcuts apply in most applications."
 msgstr "これらのショートカットは、ほとんどのアプリケーションに適用されます。"
 
-#: gettingstarted.html:1165
+#: gettingstarted.html:1140
 msgid "Toggle Tilix Quake Mode"
 msgstr "Tilix のQuakeモードの切り替え"
 
-#: gettingstarted.html1169, 1177, 1185, 1193, 1201, 1209, 1217, 1225, 1233,
-#: 1241, 1249, 1257, 1265, 1273, 1281, 1313, 1329, 1359, 1378, 1392, 1423,
-#: 1433, 1443, 1455, 1638, 1648, 1658, 1668, 1678, 1688, 1698, 1708, 1718
+#: gettingstarted.html1144, 1152, 1160, 1168, 1176, 1184, 1192, 1200, 1208,
+#: 1216, 1224, 1232, 1240, 1248, 1256, 1288, 1304, 1334, 1353, 1367, 1398,
+#: 1408, 1418, 1430, 1613, 1623, 1633, 1643, 1653, 1663, 1673, 1683, 1693
 msgid "Ctrl"
 msgstr "Ctrl"
 
-#: gettingstarted.html:1173
+#: gettingstarted.html:1148
 msgid "Copy the selected text/object"
 msgstr "選択したテキスト/オブジェクトをコピー"
 
-#: gettingstarted.html:1181
+#: gettingstarted.html:1156
 msgid "Cut the selected text/object"
 msgstr "選択したテキスト/オブジェクトを切り取り"
 
-#: gettingstarted.html:1189
+#: gettingstarted.html:1164
 msgid "Paste/insert the selected text/object"
 msgstr "選択したテキスト/オブジェクトを貼り付け/挿入"
 
-#: gettingstarted.html:1197
+#: gettingstarted.html:1172
 msgid "Select all text"
 msgstr "すべてのテキストを選択"
 
-#: gettingstarted.html:1205
+#: gettingstarted.html:1180
 msgid "Find words"
 msgstr "単語の検索"
 
-#: gettingstarted.html:1213
+#: gettingstarted.html:1188
 msgid "Find and replace words"
 msgstr "単語の検索と置換"
 
-#: gettingstarted.html:1221
+#: gettingstarted.html:1196
 msgid "Make the selected text bold"
 msgstr "選択したテキストを太字にする"
 
-#: gettingstarted.html:1229
+#: gettingstarted.html:1204
 msgid "Make the selected text italic"
 msgstr "選択したテキストを斜体にする"
 
-#: gettingstarted.html:1237
+#: gettingstarted.html:1212
 msgid "Underline the selected text"
 msgstr "選択したテキストに下線を引く"
 
-#: gettingstarted.html:1245
+#: gettingstarted.html:1220
 msgid "Open a new document or window"
 msgstr "新しいドキュメントまたはウィンドウを開く"
 
-#: gettingstarted.html:1253
+#: gettingstarted.html:1228
 msgid "Save the current document"
 msgstr "現在のドキュメントを保存"
 
-#: gettingstarted.html:1261
+#: gettingstarted.html:1236
 msgid "Open another document"
 msgstr "別のドキュメントを開く"
 
-#: gettingstarted.html:1269
+#: gettingstarted.html:1244
 msgid "Print the current document"
 msgstr "現在のドキュメントを印刷"
 
-#: gettingstarted.html:1277
+#: gettingstarted.html:1252
 msgid "Undo the last change you made"
 msgstr "最後に行った変更を元に戻す"
 
-#: gettingstarted.html1283, 1311, 1321, 1447, 1458, 1474, 1485, 1496, 1507
+#: gettingstarted.html1258, 1286, 1296, 1422, 1433, 1449, 1460, 1471, 1482
 msgid "Shift"
 msgstr "Shift"
 
-#: gettingstarted.html:1287
+#: gettingstarted.html:1262
 msgid "Redo a change that you just undid"
 msgstr "元に戻した変更をやり直し"
 
-#: gettingstarted.html:1293
+#: gettingstarted.html:1268
 msgid "Toggle the current application between full-screen and windowed"
 msgstr "現在のアプリケーションを全画面表示とウィンドウ表示の間で切り替え"
 
-#: gettingstarted.html:1297
+#: gettingstarted.html:1272
 msgid "Desktop shortcuts"
 msgstr "デスクトップのショートカット"
 
-#: gettingstarted.html:1298
+#: gettingstarted.html:1273
 msgid ""
 "This section lists common keyboard shortcuts which you can use to operate "
 "parts of the desktop."
 msgstr "このセクションでは、デスクトップの一部を操作するために使用できる一般的なキーボードショートカットの一覧を表示します。"
 
-#: gettingstarted.html:1307
+#: gettingstarted.html:1282
 msgid "Open Applications menu"
 msgstr "アプリケーション メニューを開く"
 
-#: gettingstarted.html:1317
+#: gettingstarted.html:1292
 msgid "Copy a screenshot of an area to clipboard"
 msgstr "領域のスクリーンショットをクリップボードにコピー"
 
-#: gettingstarted.html:1325
+#: gettingstarted.html:1300
 msgid "Save a screenshot of an area to the Pictures directory"
 msgstr "領域のスクリーンショットを「ピクチャ」フォルダに保存"
 
-#: gettingstarted.html:1333
+#: gettingstarted.html:1308
 msgid "Copy a screenshot of a window to clipboard"
 msgstr "ウィンドウのスクリーンショットをクリップボードにコピー"
 
-#: gettingstarted.html1337, 1351, 1361, 1380, 1394, 1408, 1425, 1435, 1445,
-#: 1457, 1466, 1518, 1526, 1534, 1569, 1640, 1650, 1660, 1670, 1680, 1690,
-#: 1700, 1710, 1720
+#: gettingstarted.html1312, 1326, 1336, 1355, 1369, 1383, 1400, 1410, 1420,
+#: 1432, 1441, 1493, 1501, 1509, 1544, 1615, 1625, 1635, 1645, 1655, 1665,
+#: 1675, 1685, 1695
 msgid "Alt"
 msgstr "Alt"
 
-#: gettingstarted.html:1341
+#: gettingstarted.html:1316
 msgid "Save a screenshot of a window to the Pictures directory"
 msgstr "ウィンドウのスクリーンショットを「ピクチャ」フォルダに保存"
 
-#: gettingstarted.html:1347
+#: gettingstarted.html:1322
 msgid "Save a screenshot to the Pictures directory"
 msgstr "スクリーンショットを「ピクチャ」フォルダに保存"
 
-#: gettingstarted.html:1355
+#: gettingstarted.html:1330
 msgid "Run an application by typing its name in the box which appears"
 msgstr "表示されるボックスに名前を入力して、アプリケーションを実行"
 
-#: gettingstarted.html:1363
+#: gettingstarted.html:1338
 msgid "Delete"
 msgstr "削除"
 
-#: gettingstarted.html:1365
+#: gettingstarted.html:1340
 msgid "Logout"
 msgstr "ログアウト"
 
-#: gettingstarted.html:1374
+#: gettingstarted.html:1349
 msgid "Lock your screen."
 msgstr "画面をロック。"
 
-#: gettingstarted.html:1384
+#: gettingstarted.html:1359
 msgid "Open a terminal."
 msgstr "端末を開く。"
 
-#: gettingstarted.html:1388
+#: gettingstarted.html:1363
 msgid "Window shortcuts - general"
 msgstr "ウィンドウのショートカット - 一般"
 
-#: gettingstarted.html:1398
+#: gettingstarted.html:1373
 msgid "Call Window Shuffler gui (window tiling grid)."
 msgstr "ウィンドウ シャッフル gui（ウィンドウタイルグリッド）を呼び出し。"
 
-#: gettingstarted.html:1402
+#: gettingstarted.html:1377
 msgid "Video Demonstration"
 msgstr "ビデオ デモンストレーション"
 
-#: gettingstarted.html:1410
+#: gettingstarted.html:1385
 msgid "Tab"
 msgstr "Tab"
 
-#: gettingstarted.html:1413
+#: gettingstarted.html:1388
 msgid "Switch between currently-open windows."
 msgstr "現在開いているウィンドウを切り替え。"
 
-#: gettingstarted.html:1415
+#: gettingstarted.html:1390
 msgid "Press Alt + Tab and then release Tab (but continue to hold Alt)."
 msgstr "Alt + Tab を押してからTab を放します（ただし、Altを押し続けます）。"
 
-#: gettingstarted.html:1416
+#: gettingstarted.html:1391
 msgid ""
 "Press Tab repeatedly to cycle through the list of available windows which "
 "appears on the screen."
 msgstr "Tab キーを繰り返し押して、画面に表示される使用可能なウィンドウのリストを切り替えます。"
 
-#: gettingstarted.html1427, 1449, 1581
+#: gettingstarted.html1402, 1424, 1556
 msgid "Left"
 msgstr "左"
 
-#: gettingstarted.html:1429
+#: gettingstarted.html:1404
 msgid "Switch to the previous workspace."
 msgstr "前のワークスペースに切り替え。"
 
-#: gettingstarted.html1437, 1460, 1590
+#: gettingstarted.html1412, 1435, 1565
 msgid "Right"
 msgstr "右"
 
-#: gettingstarted.html:1439
+#: gettingstarted.html:1414
 msgid "Switch to the next workspace."
 msgstr "次のワークスペースに切り替え。"
 
-#: gettingstarted.html:1451
+#: gettingstarted.html:1426
 msgid "Move the current window to the previous workspace."
 msgstr "現在のウィンドウを前のワークスペースに移動。"
 
-#: gettingstarted.html:1462
+#: gettingstarted.html:1437
 msgid "Move the current window to the next workspace."
 msgstr "現在のウィンドウを次のワークスペースに移動。"
 
-#: gettingstarted.html:1470
+#: gettingstarted.html:1445
 msgid "Move the current window to the monitor above."
 msgstr ""
 
-#: gettingstarted.html:1481
+#: gettingstarted.html:1456
 msgid "Move the current window to the monitor below."
 msgstr ""
 
-#: gettingstarted.html:1492
+#: gettingstarted.html:1467
 msgid "Move the current window to the monitor to the left."
 msgstr ""
 
-#: gettingstarted.html:1503
+#: gettingstarted.html:1478
 msgid "Move the current window to the monitor to the right."
 msgstr ""
 
-#: gettingstarted.html:1514
+#: gettingstarted.html:1489
 msgid "Closes window."
 msgstr "ウィンドウを閉じる。"
 
-#: gettingstarted.html:1522
+#: gettingstarted.html:1497
 msgid "Returns window to 'normal' or previous size."
 msgstr "ウィンドウを「通常」または「以前のサイズ」に戻す。"
 
-#: gettingstarted.html:1530
+#: gettingstarted.html:1505
 msgid "Moves the current window (can be moved with mouse or keyboard)."
 msgstr "現在のウィンドウを移動（マウスまたはキーボードで移動）。"
 
-#: gettingstarted.html:1538
+#: gettingstarted.html:1513
 msgid "Resizes current window (again, can be moved with mouse or keyboard)."
 msgstr "現在のウィンドウのサイズを変更（再び、マウスまたはキーボードで移動）。"
 
-#: gettingstarted.html:1547
+#: gettingstarted.html:1522
 msgid "Minimizes current window."
 msgstr "現在のウィンドウを最小化。"
 
-#: gettingstarted.html:1554
+#: gettingstarted.html:1529
 msgid "Up"
 msgstr "上"
 
-#: gettingstarted.html:1556
+#: gettingstarted.html:1531
 msgid "Maximizes current window."
 msgstr "現在のウィンドウを最大化。"
 
-#: gettingstarted.html:1563
+#: gettingstarted.html:1538
 msgid "Down"
 msgstr "下"
 
-#: gettingstarted.html:1565
+#: gettingstarted.html:1540
 msgid "Unmaximizes current window."
 msgstr "現在のウィンドウを最大化しません。"
 
-#: gettingstarted.html:1571
+#: gettingstarted.html:1546
 msgid "Space"
 msgstr "スペース"
 
-#: gettingstarted.html:1573
+#: gettingstarted.html:1548
 msgid ""
 "Displays the window menu with options such as 'Always on Top' and 'Minimize'"
 " and 'Maximize' and above commands."
 msgstr "「常に手前に表示」、「最小化」、「最大化」などのコマンドを含むウィンドウメニューを表示。"
 
-#: gettingstarted.html:1583
+#: gettingstarted.html:1558
 msgid "Place window on left side of screen."
 msgstr "画面の左側にウィンドウを配置。"
 
-#: gettingstarted.html:1592
+#: gettingstarted.html:1567
 msgid "Place window on right side of screen."
 msgstr "画面の右側にウィンドウを配置。"
 
-#: gettingstarted.html1599, 1672
+#: gettingstarted.html1574, 1647
 msgid "1"
 msgstr "1"
 
-#: gettingstarted.html:1601
+#: gettingstarted.html:1576
 msgid "Quarter tiling: top left."
 msgstr "1/4 画面でタイル表示: 左上"
 
-#: gettingstarted.html1608, 1702
+#: gettingstarted.html1583, 1677
 msgid "2"
 msgstr "2"
 
-#: gettingstarted.html:1610
+#: gettingstarted.html:1585
 msgid "Quarter tiling: top right."
 msgstr "1/4 画面でタイル表示: 右上"
 
-#: gettingstarted.html1617, 1662
+#: gettingstarted.html1592, 1637
 msgid "3"
 msgstr "3"
 
-#: gettingstarted.html:1619
+#: gettingstarted.html:1594
 msgid "Quarter tiling: bottom left."
 msgstr "1/4 画面でタイル表示: 左下"
 
-#: gettingstarted.html1626, 1712
+#: gettingstarted.html1601, 1687
 msgid "4"
 msgstr "4"
 
-#: gettingstarted.html:1628
+#: gettingstarted.html:1603
 msgid "Quarter tiling: bottom right."
 msgstr "1/4 画面でタイル表示: 右下"
 
-#: gettingstarted.html:1633
+#: gettingstarted.html:1608
 msgid "Window shortcuts - numeric keypad"
 msgstr "ウィンドウのショートカット - テンキー"
 
-#: gettingstarted.html:1634
+#: gettingstarted.html:1609
 msgid "Tiling shortcuts on the numeric keypad."
 msgstr "テンキーでのタイル表示のショートカット。"
 
-#: gettingstarted.html:1642
+#: gettingstarted.html:1617
 msgid "7"
 msgstr "7"
 
-#: gettingstarted.html:1644
+#: gettingstarted.html:1619
 msgid "Quarter top left."
 msgstr "1/4 画面でタイル表示: 左上"
 
-#: gettingstarted.html:1652
+#: gettingstarted.html:1627
 msgid "9"
 msgstr "9"
 
-#: gettingstarted.html:1654
+#: gettingstarted.html:1629
 msgid "Quarter top right."
 msgstr "1/4 画面でタイル表示: 右上"
 
-#: gettingstarted.html:1664
+#: gettingstarted.html:1639
 msgid "Quarter bottom right."
 msgstr "1/4 画面でタイル表示: 右下"
 
-#: gettingstarted.html:1674
+#: gettingstarted.html:1649
 msgid "Quarter bottom left."
 msgstr "1/4 画面でタイル表示: 左下"
 
-#: gettingstarted.html:1682
+#: gettingstarted.html:1657
 msgid "8"
 msgstr "8"
 
-#: gettingstarted.html:1684
+#: gettingstarted.html:1659
 msgid "Half top."
 msgstr "1/2 画面でタイル表示: 上"
 
-#: gettingstarted.html:1692
+#: gettingstarted.html:1667
 msgid "6"
 msgstr "6"
 
-#: gettingstarted.html:1694
+#: gettingstarted.html:1669
 msgid "Half right."
 msgstr "1/2 画面でタイル表示: 右"
 
-#: gettingstarted.html:1704
+#: gettingstarted.html:1679
 msgid "Half bottom."
 msgstr "1/2 画面でタイル表示: 下"
 
-#: gettingstarted.html:1714
+#: gettingstarted.html:1689
 msgid "Half left."
 msgstr "1/2 画面でタイル表示: 左"
 
-#: gettingstarted.html:1722
+#: gettingstarted.html:1697
 msgid "5"
 msgstr "5"
 
-#: gettingstarted.html:1724
+#: gettingstarted.html:1699
 msgid "Toggle maximize."
 msgstr "最大化の切り替え"
 
-#: gettingstarted.html:1733
+#: gettingstarted.html:1708
 msgid "Update shortcuts in the Settings App"
 msgstr "設定アプリのショートカットを更新"
 
-#: gettingstarted.html:1755
+#: gettingstarted.html:1730
 msgid ""
 "Your machine is made up of various components that interact with one "
 "another. This information is useful when providing support to ensure "
@@ -1574,131 +1565,131 @@ msgid ""
 msgstr ""
 "マシンは、相互に作用するさまざまな部品で構成されています。この情報は、ハードウェアとソフトウェアがマシンで機能することを保証するサポートを提供するときに役立ちます。"
 
-#: gettingstarted.html:1763
+#: gettingstarted.html:1738
 msgid "Gathering Information.."
 msgstr "情報の収集.."
 
-#: gettingstarted.html:1772
+#: gettingstarted.html:1747
 msgid "System"
 msgstr "システム"
 
-#: gettingstarted.html:1775
+#: gettingstarted.html:1750
 msgid "Distribution:"
 msgstr "ディストリビューション:"
 
-#: gettingstarted.html:1779
+#: gettingstarted.html:1754
 msgid "Kernel:"
 msgstr "カーネル:"
 
-#: gettingstarted.html:1783
+#: gettingstarted.html:1758
 msgid "The Linux kernel is the heart of Ubuntu."
 msgstr "LinuxカーネルはUbuntuの中核です。"
 
-#: gettingstarted.html:1789
+#: gettingstarted.html:1764
 msgid "Motherboard:"
 msgstr "マザーボード:"
 
-#: gettingstarted.html:1793
+#: gettingstarted.html:1768
 msgid "Boot Mode:"
 msgstr "起動モード:"
 
-#: gettingstarted.html:1797
+#: gettingstarted.html:1772
 msgid "Displays the mode that OS is communicating with the firmware."
 msgstr "OSがファームウェアと通信しているモードを表示します。"
 
-#: gettingstarted.html:1805
+#: gettingstarted.html:1780
 msgid "Processor"
 msgstr "プロセッサ"
 
-#: gettingstarted.html:1808
+#: gettingstarted.html:1783
 msgid "Model:"
 msgstr "モデル:"
 
-#: gettingstarted.html:1812
+#: gettingstarted.html:1787
 msgid "Speed:"
 msgstr "速度:"
 
-#: gettingstarted.html:1816
+#: gettingstarted.html:1791
 msgid "Architecture in use:"
 msgstr "使用中のアーキテクチャ:"
 
-#: gettingstarted.html:1820
+#: gettingstarted.html:1795
 msgid ""
 "The operating system's architecture in use. For instance, i386 = 32-bit."
 msgstr "使用中のオペレーティングシステムのアーキテクチャ。 例えば、i386 = 32ビット。"
 
-#: gettingstarted.html:1828
+#: gettingstarted.html:1803
 msgid "Components"
 msgstr "使用部品"
 
-#: gettingstarted.html:1831
+#: gettingstarted.html:1806
 msgid "Memory (RAM):"
 msgstr "メモリ (RAM):"
 
-#: gettingstarted.html:1835
+#: gettingstarted.html:1810
 msgid "More RAM allows more applications to run simultaneously."
 msgstr "RAMを増やすと、より多くのアプリケーションを同時に実行できます。"
 
-#: gettingstarted.html:1841
+#: gettingstarted.html:1816
 msgid "Graphics:"
 msgstr "グラフィックス:"
 
-#: gettingstarted.html:1845
+#: gettingstarted.html:1820
 msgid "Internet Access:"
 msgstr "インターネット接続:"
 
-#: gettingstarted.html:1848
+#: gettingstarted.html:1823
 msgid "Connected"
 msgstr "接続済み"
 
-#: gettingstarted.html:1849
+#: gettingstarted.html:1824
 msgid "Not Connected"
 msgstr "接続されていません"
 
-#: gettingstarted.html:1857
+#: gettingstarted.html:1832
 msgid "Storage"
 msgstr "ストレージ"
 
-#: gettingstarted.html:1861
+#: gettingstarted.html:1836
 msgid "Root File System:"
 msgstr "ルートファイルシステム:"
 
-#: gettingstarted.html:1865
+#: gettingstarted.html:1840
 msgid "The file system where OS is installed."
 msgstr "OSがインストールされているファイルシステム。"
 
-#: gettingstarted.html:1871
+#: gettingstarted.html:1846
 msgid "Entire Disk Capacity:"
 msgstr "全ディスク容量"
 
-#: gettingstarted.html:1877
+#: gettingstarted.html:1852
 msgid "OS Usage"
 msgstr "OSの使用"
 
-#: gettingstarted.html:1882
+#: gettingstarted.html:1857
 msgid "Other Usage"
 msgstr "その他の使用"
 
-#: gettingstarted.html:1887
+#: gettingstarted.html:1862
 msgid "Allocated for Ubuntu Budgie:"
 msgstr ""
 
-#: gettingstarted.html:1891
+#: gettingstarted.html:1866
 msgid "The size of your operating system partition."
 msgstr "オペレーティングシステムのパーティションのサイズ。"
 
-#: gettingstarted.html:1898
+#: gettingstarted.html:1873
 msgid "Used Space:"
 msgstr "使用済み容量:"
 
-#: gettingstarted.html:1906
+#: gettingstarted.html:1881
 msgid "Free Space:"
 msgstr "空き容量:"
 
-#: gettingstarted.html:1914
+#: gettingstarted.html:1889
 msgid "Other Usage:"
 msgstr "その他の使用:"
 
-#: gettingstarted.html:1919
+#: gettingstarted.html:1894
 msgid "Reserved by system, other partitions, unallocated or swap."
 msgstr "システム、他のパーティション、未割り当て、またはスワップによって予約されています。"

@@ -40,25 +40,25 @@ msgstr ""
 
 #: budgie-applets.html34, 57, 80, 103, 126, 149, 172, 195, 218, 241, 264, 287,
 #: 310, 333, 356, 379, 402, 425, 448, 471, 494, 517, 540, 563, 586, 609, 632,
-#: 655, 678, 701, 724, 747, 770, 793, 816, 839, 862, 885, 908, 931, 954
+#: 655, 678, 701, 724, 747, 770, 793, 816, 839, 862, 885, 908, 931, 954, 977
 msgid "Remove"
 msgstr "حذف"
 
 #: budgie-applets.html37, 60, 83, 106, 129, 152, 175, 198, 221, 244, 267, 290,
 #: 313, 336, 359, 382, 405, 428, 451, 474, 497, 520, 543, 566, 589, 612, 635,
-#: 658, 681, 704, 727, 750, 773, 796, 819, 842, 865, 888, 911, 934, 957
+#: 658, 681, 704, 727, 750, 773, 796, 819, 842, 865, 888, 911, 934, 957, 980
 msgid "Install"
 msgstr ""
 
 #: budgie-applets.html40, 63, 86, 109, 132, 155, 178, 201, 224, 247, 270, 293,
 #: 316, 339, 362, 385, 408, 431, 454, 477, 500, 523, 546, 569, 592, 615, 638,
-#: 661, 684, 707, 730, 753, 776, 799, 822, 845, 868, 891, 914, 937, 960
+#: 661, 684, 707, 730, 753, 776, 799, 822, 845, 868, 891, 914, 937, 960, 983
 msgid "Applying changes..."
 msgstr ""
 
-#: budgie-applets.html42, 65, 88, 111, 134, 157, 180, 203, 226, 272, 295, 318,
-#: 341, 364, 387, 410, 433, 479, 502, 525, 548, 571, 594, 617, 640, 663, 686,
-#: 709, 732, 755, 778, 801, 824, 847, 893, 916, 962
+#: budgie-applets.html42, 65, 88, 111, 134, 157, 180, 203, 226, 249, 295, 318,
+#: 341, 364, 387, 410, 433, 456, 502, 525, 548, 571, 594, 617, 640, 663, 686,
+#: 709, 732, 755, 778, 801, 824, 847, 870, 916, 939, 985
 msgid ""
 "Logout and login after installing applets. From the menu - choose Budgie "
 "Desktop Settings and choose the Panel to add and configure applets."
@@ -75,129 +75,137 @@ msgid "A full-screen application launcher."
 msgstr ""
 
 #: budgie-applets.html:71
-msgid "Performance Gauge Applet"
+msgid "User Indicator Redux Applet"
 msgstr ""
 
 #: budgie-applets.html:76
-msgid "This applet shows a CPU, Memory or Storage gauge on your budgie panel."
+msgid "Manage the user session from the Budgie panel."
 msgstr ""
 
 #: budgie-applets.html:94
+msgid "Performance Gauge Applet"
+msgstr ""
+
+#: budgie-applets.html:99
+msgid "This applet shows a CPU, Memory or Storage gauge on your budgie panel."
+msgstr ""
+
+#: budgie-applets.html:117
 msgid "Screenshot Applet"
 msgstr "بريمج التقاط الشاشة"
 
-#: budgie-applets.html:99
+#: budgie-applets.html:122
 msgid ""
 "An advanced screenshot utility for capturing and organizing screenshots."
 msgstr "أداة التقاط متقدمة لالتقاط وتنظيم لقطات الشاشة"
 
-#: budgie-applets.html:117
+#: budgie-applets.html:140
 msgid "Clipboard Applet"
 msgstr ""
 
-#: budgie-applets.html:122
+#: budgie-applets.html:145
 msgid ""
 "A clipboard manager applet that can help you to store and manage clipboard "
 "content."
 msgstr ""
 
-#: budgie-applets.html:140
+#: budgie-applets.html:163
 msgid "Calendar Applet"
 msgstr "بريمج التقويم"
 
-#: budgie-applets.html:145
+#: budgie-applets.html:168
 msgid "Show date and time and when clicked show a calendar in a popover."
 msgstr "عرض التاريخ والوقت وعند النقر سيتم إظهار التقويم."
 
-#: budgie-applets.html:163
+#: budgie-applets.html:186
 msgid "Network Applet"
 msgstr "بريمج الشبكة"
 
-#: budgie-applets.html:168
+#: budgie-applets.html:191
 msgid "Network connectivity applet."
 msgstr "بريمج للاتصال بالشبكة."
 
-#: budgie-applets.html:186
+#: budgie-applets.html:209
 msgid "VisualSpace Applet"
 msgstr ""
 
-#: budgie-applets.html:191
+#: budgie-applets.html:214
 msgid "Display application windows across multiple workspaces."
 msgstr ""
 
-#: budgie-applets.html:209
+#: budgie-applets.html:232
 msgid "Analog Clock Applet"
 msgstr ""
 
-#: budgie-applets.html:214
+#: budgie-applets.html:237
 msgid "Display the time using a traditional dial-face clock."
 msgstr ""
 
-#: budgie-applets.html:232
+#: budgie-applets.html:255
 msgid "Window Shuffler"
 msgstr ""
 
-#: budgie-applets.html:237
+#: budgie-applets.html:260
 msgid "Graphical and keyboard friendly window arranger."
 msgstr ""
 
-#: budgie-applets.html249, 456, 870, 939
+#: budgie-applets.html272, 479, 893, 962
 msgid ""
 "Logout and login after installing. Choose from the menu to configure this "
 "application."
 msgstr ""
 
-#: budgie-applets.html:255
+#: budgie-applets.html:278
 msgid "Applications Menu applet"
 msgstr ""
 
-#: budgie-applets.html:260
+#: budgie-applets.html:283
 msgid "Stylish applications menu applet."
 msgstr ""
 
-#: budgie-applets.html:278
+#: budgie-applets.html:301
 msgid "CPU Frequency Applet"
 msgstr "بريمج تردد المعالج"
 
-#: budgie-applets.html:283
+#: budgie-applets.html:306
 msgid "Control the frequency of the processor (Sandy Bridge and newer)."
 msgstr "تحكم بتردد المعالج (معالج Sandy Bridge والأحدث)."
 
-#: budgie-applets.html301, 370
+#: budgie-applets.html324, 393
 msgid "System Monitor Applet"
 msgstr "بريمج مراقبة النظام"
 
-#: budgie-applets.html:306
+#: budgie-applets.html:329
 msgid "Show frequency, ram, swap & network values."
 msgstr "عرض التردد, الذاكرة العشوائية, الذاكرة البديلة و احصائيات الشبكة."
 
-#: budgie-applets.html:324
+#: budgie-applets.html:347
 msgid "Pixel-Saver Applet"
 msgstr "يريمج المحافظ للپيكسل"
 
-#: budgie-applets.html:329
+#: budgie-applets.html:352
 msgid ""
 "Hides the title bar from maximized windows and creates a new one inside the "
 "panel."
 msgstr "إخفاء شريط العنوان من النوافذ القصوى وإنشاء واحد جديد داخل اللوحة."
 
-#: budgie-applets.html:347
+#: budgie-applets.html:370
 msgid "Global Menu Applet"
 msgstr "بريمج القائمة الشاملة"
 
-#: budgie-applets.html:352
+#: budgie-applets.html:375
 msgid "Moves the menu from applications into the panel."
 msgstr "نقل القائمة من البرامج إلى اللوحة."
 
-#: budgie-applets.html:375
+#: budgie-applets.html:398
 msgid "Customize and display system information on the panel."
 msgstr "تخصيص وعرض معلومات النظام على اللوحة."
 
-#: budgie-applets.html:393
+#: budgie-applets.html:416
 msgid "Hotcorners Applet"
 msgstr "بريمج الزوايا الساخنة"
 
-#: budgie-applets.html:398
+#: budgie-applets.html:421
 msgid ""
 "Allow user defined commands to be executed when the mouse cursor is pushed "
 "into a corner of the main desktop."
@@ -205,118 +213,118 @@ msgstr ""
 "السماح بتنفيذ أوامر مثبتة من قبل المستخدم عند تحريك مؤشر الفأرة لأحد زوايا "
 "سطح المكتب."
 
-#: budgie-applets.html:416
+#: budgie-applets.html:439
 msgid "Quicknote Applet"
 msgstr "بريمج الملاحظات السريعة"
 
-#: budgie-applets.html:421
+#: budgie-applets.html:444
 msgid "Quickly record a text based note."
 msgstr "كتابة ملاحظة نصية بصورة سريعة."
 
-#: budgie-applets.html:439
+#: budgie-applets.html:462
 msgid "Previews"
 msgstr "معاينات"
 
-#: budgie-applets.html:444
+#: budgie-applets.html:467
 msgid "Show an overview of windows in an exposé like way."
 msgstr "مشاهدة ملخص لنوافذ بطريقة مكشوفة"
 
-#: budgie-applets.html:462
+#: budgie-applets.html:485
 msgid "Workspace Overview Applet"
 msgstr "بريمج ملخص مساحة العمل"
 
-#: budgie-applets.html:467
+#: budgie-applets.html:490
 msgid "Quickly navigate workspaces using the applet's menu."
 msgstr "التنقل بين مساحات العمل بصورة سريعة بأستخدام قائمة البريمجيات."
 
-#: budgie-applets.html:485
+#: budgie-applets.html:508
 msgid "Workspace Wallpaper Applet"
 msgstr "بريمج خلفية مساحة العمل"
 
-#: budgie-applets.html:490
+#: budgie-applets.html:513
 msgid "Show a different wallpaper on each workspace."
 msgstr "اظهار خلفية مختلف لكل مساحة عمل."
 
-#: budgie-applets.html:508
+#: budgie-applets.html:531
 msgid "Window Mover Applet"
 msgstr "بريمج محرك النافذة"
 
-#: budgie-applets.html:513
+#: budgie-applets.html:536
 msgid "Quickly move windows between workspaces."
 msgstr "تحريك النوافذ بين مساحات العمل بصورة سريعة."
 
-#: budgie-applets.html:531
+#: budgie-applets.html:554
 msgid "Desktop Showtime Applet"
 msgstr "بريمج Desktop Showtime"
 
-#: budgie-applets.html:536
+#: budgie-applets.html:559
 msgid "Display the date and time on the Desktop."
 msgstr "عرض التاريخ والوقت على سطح المكتب."
 
-#: budgie-applets.html:554
+#: budgie-applets.html:577
 msgid "CountDown Applet"
 msgstr "بريمج العد التنازلي"
 
-#: budgie-applets.html:559
+#: budgie-applets.html:582
 msgid "Set a timed countdown and run an action when the countdown completes."
 msgstr "ضبط عد تنازلي وتنفيذ نشاط عند اكتمال العد التنازلي."
 
-#: budgie-applets.html:577
+#: budgie-applets.html:600
 msgid "Auto-Keyboard Switcher Applet"
 msgstr "بريمج تحويل لوحة المفاتيح بصورة تلقائية"
 
-#: budgie-applets.html:582
+#: budgie-applets.html:605
 msgid "Change the keyboard language automatically on a per application basis."
 msgstr "تحويل لغة لوحة المفاتيح بصورة تلقائية وفقًا للبرنامج."
 
-#: budgie-applets.html:600
+#: budgie-applets.html:623
 msgid "Screen Rotation Lock Applet"
 msgstr "بريمج قفل تدوير الشاشة"
 
-#: budgie-applets.html:605
+#: budgie-applets.html:628
 msgid "Add the ability to unlock or lock the screen from rotating."
 msgstr "إضافة القدرة على قفل الشاشة عن الدوران وفك القفل."
 
-#: budgie-applets.html:623
+#: budgie-applets.html:646
 msgid "Clockworks Applet"
 msgstr "بريمج Clockworks"
 
-#: budgie-applets.html:628
+#: budgie-applets.html:651
 msgid "Display the time across multiple time zones."
 msgstr "عرض الوقت في مناطق زمنية مختلفة."
 
-#: budgie-applets.html:646
+#: budgie-applets.html:669
 msgid "DropBy Applet"
 msgstr "بريمج DropBy"
 
-#: budgie-applets.html:651
+#: budgie-applets.html:674
 msgid "Display a pop-up window when a USB device is connected."
 msgstr "عرض نافذة منبثقة في النافذة عند توصل جهاز USB."
 
-#: budgie-applets.html:669
+#: budgie-applets.html:692
 msgid "Brightness Controller Applet"
 msgstr "بريمج التحكم في سطوع الشاشة"
 
-#: budgie-applets.html:674
+#: budgie-applets.html:697
 msgid ""
 "Control the backlight via your graphics driver controller or GNOME's "
 "brightness controller."
 msgstr ""
 "التحكم في السطوع عن طريق مشغل الرسوميات أو عن طريق تحكم GNOME بالسطوع."
 
-#: budgie-applets.html:692
+#: budgie-applets.html:715
 msgid "Browser Profile Launcher Applet"
 msgstr "بريمج مشغل الملفات الشخصية للمتصفحات."
 
-#: budgie-applets.html:697
+#: budgie-applets.html:720
 msgid "Launch and create multiple Chromium/Chrome profiles."
 msgstr "تشغيل وصناعة عدة ملفات شخصية لمتصفح Chromium/Chrome."
 
-#: budgie-applets.html:715
+#: budgie-applets.html:738
 msgid "Find Fast 'Kangaroo' Applet"
 msgstr "بريمج البحث السريع 'Kangaroo'"
 
-#: budgie-applets.html:720
+#: budgie-applets.html:743
 msgid ""
 "Quick and easy browsing, across (possibly) many folder layers, without "
 "having to-do a single mouse click."
@@ -324,85 +332,85 @@ msgstr ""
 "تصفح سهل وسريع, على عدة (بالامكان) طبقات من المجلدات, بدون الحاجة لأي ضغطة "
 "من مؤشر الفأرة."
 
-#: budgie-applets.html:738
+#: budgie-applets.html:761
 msgid "Weather and Forecast Applet"
 msgstr "بريمج الطقس والنشرة الجوية"
 
-#: budgie-applets.html:743
+#: budgie-applets.html:766
 msgid "Weather forecast every three hours and over five days."
 msgstr "النشرة الجوية للطقس كل ثلاث ساعات على مدار خمس أيام."
 
-#: budgie-applets.html:761
+#: budgie-applets.html:784
 msgid "Recently Used Applet"
 msgstr "بريمج المستخدمة حديثًا"
 
-#: budgie-applets.html:766
+#: budgie-applets.html:789
 msgid "Show recently used items in a menu."
 msgstr "عرض العناصر المستخدمة حديثًا في القائمة."
 
-#: budgie-applets.html:784
+#: budgie-applets.html:807
 msgid "Trash Applet"
 msgstr "بريمج سلة المهملات"
 
-#: budgie-applets.html:789
+#: budgie-applets.html:812
 msgid "Show, hide and restore trash items."
 msgstr "اظهار, اخفاء و استعادة العناصر من سلة المهملات."
 
-#: budgie-applets.html:807
+#: budgie-applets.html:830
 msgid "Application Launcher Applet"
 msgstr "بريمج مشغل التطبيقات"
 
-#: budgie-applets.html:812
+#: budgie-applets.html:835
 msgid "Display your favorite applications in a menu and on the panel."
 msgstr "عرض تطبيقاتك المفضلة في قائمة على اللوحة."
 
-#: budgie-applets.html:830
+#: budgie-applets.html:853
 msgid "Take-A-Break Applet"
 msgstr "بريمج Take-A-Break"
 
-#: budgie-applets.html:835
+#: budgie-applets.html:858
 msgid ""
 "A pomodoro-like applet, to make sure you take regular breaks from working."
 msgstr "بريمج مشابة لبرنامج pomodoro, للحرص على أخذك قسطًا من الراحة من شغلك."
 
-#: budgie-applets.html:853
+#: budgie-applets.html:876
 msgid "Wallstreet"
 msgstr ""
 
-#: budgie-applets.html:858
+#: budgie-applets.html:881
 msgid "WallStreet is a mini-app to switch wallpapers at a regular interval."
 msgstr ""
 
-#: budgie-applets.html:876
+#: budgie-applets.html:899
 msgid "Fuzzy-Clock Applet"
 msgstr "بريمج Fuzzy-Clock"
 
-#: budgie-applets.html:881
+#: budgie-applets.html:904
 msgid "Shows the time in a fuzzy way."
 msgstr "عرض الوقت بطريقة نطقه."
 
-#: budgie-applets.html:899
+#: budgie-applets.html:922
 msgid "Workspace Stopwatch"
 msgstr "مؤقت مساحة العمل"
 
-#: budgie-applets.html:904
+#: budgie-applets.html:927
 msgid "Keep track of usage per workspace."
 msgstr "راقب استعمالك لمساحاة العمل."
 
-#: budgie-applets.html:922
+#: budgie-applets.html:945
 msgid "Quick Character"
 msgstr "تقويم سريع"
 
-#: budgie-applets.html:927
+#: budgie-applets.html:950
 msgid ""
 "Quickly find and choose the equivalent locale character for an ascii "
 "character."
 msgstr "جد واختار الطابق المحلي لأكواد ascii."
 
-#: budgie-applets.html:945
+#: budgie-applets.html:968
 msgid "Status Notifier Tray Applet"
 msgstr "بريمج Status Notifier Tray"
 
-#: budgie-applets.html:950
+#: budgie-applets.html:973
 msgid "System Tray in KDE StatusNotifierItem format."
 msgstr "عرض لوحة النظام على طريقة KDE."
