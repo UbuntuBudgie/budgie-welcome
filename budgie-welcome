@@ -255,6 +255,17 @@ class AppView(WebKit2.WebView):
             else:
                 app.update_page(".showhide", 'hide')
 
+        if current_page == 'recommendations':
+            package = app._data_path + "/config/packages.json"
+            with open(package) as file:
+                config = json.load(file)
+
+            if (systemstate.codename in config['recommendations']['backport']['repos']):
+                app.update_page(".backport-repo", 'show')
+            else:
+                app.update_page(".backport-repo", 'hide')
+
+
         if current_page == 'gaming':
             # some gaming packages are software specific, so need to hide/show them
             package = app._data_path + "/config/packages.json"
