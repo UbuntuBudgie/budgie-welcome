@@ -430,6 +430,7 @@ class AppView(WebKit2.WebView):
 
         elif uri.startswith('install-os'):
             if uri == 'install-os':
+                subprocess.Popen(['sh', '-c', "ubuntu-budgie-installer"])
                 subprocess.Popen(['sudo', 'sh', '-c', "ubiquity gtk_ui"])
                 app.close()
 
