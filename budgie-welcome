@@ -879,21 +879,42 @@ class AppView(WebKit2.WebView):
                 checkrepos = repos[systemstate.codename]
             todo = False
             thirdparty = False
+
             for val in checkrepos:
                 if val[:3] == 'ppa':
                     ppa = val[4:].split('/')
 
                     filename = ppa[0] + "-ubuntu-" + ppa[1] + "-" + \
-                    systemstate.codename + ".list"
+                        systemstate.codename + ".list"
                     filename = '/etc/apt/sources.list.d/' + filename
 
-                    p = subprocess.Popen(['grep', '^deb\ http', filename])
-                    retval = p.wait()
+                    if os.path.isfile(filename):
+                        p = subprocess.Popen(['grep', '^deb\ http', filename])
+                        retval = p.wait()
 
-                    if retval != 0:
-                        message += "\n" + val
-                        todo = True
-                    thirdparty = True
+                        if retval != 0:
+                            message += "\n" + val
+                            todo = True
+                        thirdparty = True
+
+                    filename = ppa[0] + "-ubuntu-" + ppa[1] + "-" + \
+                        systemstate.codename + ".sources"
+                    filename = '/etc/apt/sources.list.d/' + filename
+
+                    if os.path.isfile(filename):
+                        p = subprocess.Popen(['grep', 'Enabled: no', filename])
+
+                        retval = p.wait()
+
+                        if retval == 0:
+                            message += "\n" + val
+                            todo = True
+
+                        if os.stat(filename).st_size > 1:
+                            thirdparty = True
+                        else:
+                            message += "\n" + val
+                            todo = True
 
                 elif val[:3] == 'deb':
                     message += "\n" + val
@@ -906,11 +927,11 @@ class AppView(WebKit2.WebView):
                 message += "\n\n"
                 message += _("Continue with the installation?")
 
-                messagedialog = Gtk.MessageDialog(None,
-                                                  Gtk.DialogFlags.MODAL,
-                                                  Gtk.MessageType.WARNING,
-                                                  Gtk.ButtonsType.OK_CANCEL,
-                                                  _("Third-Party Repositories"))
+                messagedialog = Gtk.MessageDialog(parent=None,
+                                                  modal=True,
+                                                  message_type=Gtk.MessageType.WARNING,
+                                                  buttons=Gtk.ButtonsType.OK_CANCEL,
+                                                  text=_("Third-Party Repositories"))
                 messagedialog.format_secondary_text(message)
                 ret = messagedialog.run()
                 messagedialog.destroy()
@@ -928,11 +949,11 @@ class AppView(WebKit2.WebView):
                 message += "\n\n"
                 message += _("Continue with the installation?")
 
-                messagedialog = Gtk.MessageDialog(None,
-                                                  Gtk.DialogFlags.MODAL,
-                                                  Gtk.MessageType.WARNING,
-                                                  Gtk.ButtonsType.OK_CANCEL,
-                                                  _("Third-Party Repositories"))
+                messagedialog = Gtk.MessageDialog(parent=None,
+                                                  modal=True,
+                                                  message_type=Gtk.MessageType.WARNING,
+                                                  buttons=Gtk.ButtonsType.OK_CANCEL,
+                                                  text=_("Third-Party Repositories"))
                 messagedialog.format_secondary_text(message)
                 ret = messagedialog.run()
                 messagedialog.destroy()
@@ -1104,11 +1125,25 @@ class PackageManager(Thread):
                             systemstate.codename + ".list"
                     filename = '/etc/apt/sources.list.d/' + filename
 
-                    p = subprocess.Popen(['grep', '^deb\ http', filename])
-                    retval = p.wait()
+                    if os.path.isfile(filename):
+                        p = subprocess.Popen(['grep', '^deb\ http', filename])
+                        retval = p.wait()
 
-                    if retval == 0:
+                        if retval == 0:
+                            return True
+
+                    filename = ppa[0] + "-ubuntu-" + ppa[1] + "-" + \
+                        release_code + ".sources"
+                    filename = '/etc/apt/sources.list.d/' + filename
+
+                    if os.path.isfile(filename):
                         found = True
+                        p = subprocess.Popen(['grep', 'Enabled: no', filename])
+
+                        retval = p.wait()
+
+                        if retval == 0:
+                            found = False
             else:
                 # if there are no repos we must be dealing with snaps
                 snaps = pdata.getSnap(current_page, code)
@@ -1903,7 +1938,7 @@ class WelcomeApp(object):
 
         if systemstate.codename not in app_code_names:
             dialog = Gtk.MessageDialog( parent=self._window,
-                                        flags=0,
+                                        modal=True,
                                         message_type=Gtk.MessageType.INFO,
                                         buttons=Gtk.ButtonsType.OK,
                                         text=_("Budgie Welcome"))
@@ -1920,7 +1955,7 @@ class WelcomeApp(object):
             cdate = datetime.strptime(end_of_support[systemstate.codename], "%Y-%m-%d")
             if datetime.now() >= cdate:
                 dialog = Gtk.MessageDialog( parent=self._window,
-                                            flags=0,
+                                            modal=True,
                                             message_type=Gtk.MessageType.WARNING,
                                             buttons=Gtk.ButtonsType.OK,
                                             text=_("Budgie Welcome"))

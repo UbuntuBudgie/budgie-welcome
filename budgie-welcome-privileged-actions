@@ -20,6 +20,7 @@
 import subprocess
 import sys
 import json
+import os
 from softwareproperties.SoftwareProperties \
   import SoftwareProperties, shortcut_handler
 import aptsources
@@ -71,13 +72,29 @@ def check_if_installed_ppa(release_code, ppa_name):
         release_code + ".list"
     filename = '/etc/apt/sources.list.d/' + filename
 
-    p = subprocess.Popen(['grep', '^deb\ http', filename])
+    if os.path.isfile(filename):
+        p = subprocess.Popen(['grep', '^deb\ http', filename])
 
-    retval = p.wait()
+        retval = p.wait()
 
-    if retval == 0:
+        if retval == 0:
+            return True
+
+    filename = ppa[0] + "-ubuntu-" + ppa[1] + "-" + \
+        release_code + ".sources"
+    filename = '/etc/apt/sources.list.d/' + filename
+
+    if os.path.isfile(filename):
         found = True
+        p = subprocess.Popen(['grep', 'Enabled: no', filename])
 
+        retval = p.wait()
+
+        if retval == 0:
+            found = False
+
+        if os.stat(filename).st_size <= 1:
+            found = False
     return found
 
 def get_release_code():
@@ -90,17 +107,14 @@ def get_release_code():
     return release_code
 
 def add_repos(repos, key_commands):
-
     if not repos: return 0
 
     release_code = get_release_code()
 
     if "all" in repos : repos = repos["all"]
     else : repos = repos.get(release_code)
-
     # possibly repo is not required for this release
     if not repos: return 0
-
     sp = SoftwareProperties()
 
     force_update = False
@@ -117,7 +131,8 @@ def add_repos(repos, key_commands):
                 aptdistro.enable_component(repo)
         else:
             if check_if_installed_ppa( release_code, repo ) == False:
-                sp.add_source_from_shortcut(shortcut_handler(repo))
+                #sp.add_source_from_shortcut(shortcut_handler(repo))
+                subprocess.call(['add-apt-repository', '--yes', '--no-update', repo])
                 force_update = True
     sp.sourceslist.save()
 
