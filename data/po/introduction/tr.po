@@ -1,15 +1,15 @@
 # 
 # Translators:
 # Muhammed Yasin Özsaraç (Harnapazade) <myasinozsarac@gmail.com>, 2018
-# Emre JILTA <jilta.e@gmail.com>, 2018
 # Bengünur <bengunur2@gmail.com>, 2019
+# Emre JILTA <jilta.e@gmail.com>, 2023
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: Budgie Welcome\n"
 "POT-Creation-Date: 2016-02-27 12:48+0100\n"
 "PO-Revision-Date: 2017-03-15 13:49+0000\n"
-"Last-Translator: Bengünur <bengunur2@gmail.com>, 2019\n"
+"Last-Translator: Emre JILTA <jilta.e@gmail.com>, 2023\n"
 "Language-Team: Turkish (https://app.transifex.com/ubuntu-budgie/teams/72251/tr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -28,13 +28,15 @@ msgstr "Sadelik ve Zerafet."
 
 #: introduction.html24, 96
 msgid "What is Ubuntu Budgie?"
-msgstr ""
+msgstr "Ubuntu Budgie nedir?"
 
 #: introduction.html:39
 msgid ""
 "Ubuntu Budgie is an operating system -- the core software that runs your "
 "computer, similar to:"
 msgstr ""
+"Ubuntu Budgie bir işletim sistemidir - bilgisayarınızı çalıştıran çekirdek "
+"yazılım, benzerleri:"
 
 #: introduction.html:42
 msgid "Microsoft's Windows"
@@ -58,6 +60,9 @@ msgid ""
 "secure, capable, and modern computer system that rivals all others in "
 "popularity and actual use."
 msgstr ""
+"Ubuntu Budgie, GNU/Linux'un bir dağıtımıdır (çeşididir). Yaygınlığı ve "
+"gerçek kullanımı ile diğerlerine rakip olan güvenilir, güvenli, yetkin ve "
+"modern bir bilgisayar sistemidir."
 
 #: introduction.html:51
 msgid "Unlike other operating systems, Linux is a major one used:"
@@ -87,6 +92,11 @@ msgid ""
 "computers and prefer a traditional desktop metaphor. With modest hardware "
 "requirements, it is suitable for modern desktops and laptops alike."
 msgstr ""
+"Ubuntu Budgie, yapılandırılabilir bir masaüstü ortamına sahip kararlı, "
+"kullanımı kolay bir işletim sistemidir. Bilgisayarlarından en iyi şekilde "
+"yararlanmak isteyen ve geleneksel bir masaüstü metaforunu tercih edenler "
+"için idealdir. Uygun donanım gereksinimleri ile hem modern masaüstü hem de "
+"dizüstü bilgisayarlar için uygundur."
 
 #: introduction.html:69
 msgid ""
@@ -104,6 +114,11 @@ msgid ""
 "the way it looks, the way it works, or the applications it runs to suit your"
 " taste."
 msgstr ""
+"Ubuntu Budgie'yi kullanmak size, günlük bilgisayar kullanımınız için "
+"ihtiyacınız olan uygulamaların çoğu (hepsi olmasa da) ile önceden "
+"yapılandırılmış, eksiksiz, tam özellikli bir işletim sistemi çalıştırma "
+"özgürlüğü sağlar. Görünüşü, çalışma şekli veya çalıştırdığı uygulamalarla "
+"ilgili her şeyi zevkinize göre değiştirin."
 
 #: introduction.html:83
 msgid "Objectives"
@@ -111,7 +126,7 @@ msgstr "Hedefleri"
 
 #: introduction.html:84
 msgid "Ubuntu Budgie has a number of guiding objectives and goals:"
-msgstr ""
+msgstr "Ubuntu Budgie'nin birçok yol gösterici amacı ve hedefi vardır:"
 
 #: introduction.html:86
 msgid "Accessible to all, regardless of language and physical ability."
@@ -135,6 +150,8 @@ msgid ""
 "When possible contribute to Upstream projects such as BuddiesofBudgie and "
 "Debian so all Linux communities benefit."
 msgstr ""
+"Mümkün olduğunda BuddiesofBudgie ve Debian gibi Upstream projelerine katkıda"
+" bulunun, böylece tüm Linux toplulukları bundan yararlanır."
 
 #: introduction.html:90
 msgid ""
@@ -160,6 +177,15 @@ msgid ""
 "now in the hands of billions of people around the world and it's also "
 "powered by Linux."
 msgstr ""
+"<a onclick=\"cmd('link?https://www.ubuntu.com')\">Ubuntu</a>, dünyanın en "
+"büyük <a "
+"onclick=\"cmd('link?https://en.wikipedia.org/wiki/Linux')\">Linux</a> "
+"tabanlı masaüstü işletim sistemlerinden biridir. Ubuntu'nun kalbinde yer "
+"alan Linux, Ubuntu ve <a "
+"onclick=\"cmd('link?https://www.android.com/')\">Android</a> gibi güvenli, "
+"güçlü ve çok yönlü işletim sistemlerinin yaratılmasını mümkün kılmaktadır. "
+"Android şu anda dünya çapında milyarlarca insanın elinde ve o da Linux "
+"tarafından desteklenmektedir."
 
 #: introduction.html:117
 msgid ""
@@ -169,6 +195,11 @@ msgid ""
 "onclick=\"cmd('link?https://github.com/buddiesofbudgie/budgie-"
 "desktop/')\">Budgie desktop</a>."
 msgstr ""
+"Ubuntu, her biri kendi masaüstü ortamıyla birlikte gelen bir takım farklı "
+"<em>türde</em> mevcuttur. Ubuntu Budgie, Ubuntu temel işletim sistemini "
+"kullanmakta ve <a "
+"onclick=\"cmd('link?https://github.com/buddiesofbudgie/budgie-"
+"desktop/')\">Budgie masaüstünü</a> dâhil etmektedir."
 
 #: introduction.html:126
 msgid "Budgie Desktop"
@@ -236,7 +267,7 @@ msgstr "Ayarlar"
 
 #: introduction.html:178
 msgid "Budgie Control Center"
-msgstr ""
+msgstr "Budgie Denetim Merkezi"
 
 #: introduction.html:180
 msgid ""
@@ -265,6 +296,10 @@ msgid ""
 "or unmodified form) by anyone. In a nutshell Ubuntu Budgie is free, in the "
 "truest sense of the word."
 msgstr ""
+"Linux, Ubuntu ve Budgie masaüstünün ortak özelliği Açık Kaynak Kodlu "
+"olmalarıdır. Bu yazılım herkes tarafından özgürce kullanılabilir, "
+"değiştirilebilir ve paylaşılabilir (değiştirilmiş veya değiştirilmemiş "
+"biçimde). Kısacası Ubuntu Budgie kelimenin tam anlamıyla özgürdür."
 
 #: introduction.html:206
 msgid ""
@@ -280,6 +315,17 @@ msgid ""
 "if you have made it better, then your changes just might be included in the "
 "next release of Ubuntu Budgie."
 msgstr ""
+"Linux'un bazı dağıtımlarını (varyasyonlarını) satın almak için bulsanız da, "
+"Ubuntu Budgie gibi büyük çoğunluğu ücretsiz olarak sağlanmaktadır. Dağıtım, "
+"herhangi bir şarta bağlı olmaksızın herkesin ücretsiz olarak dağıtmasına "
+"izin verecek şekilde lisanslanmıştır. Örneğin, lisans kullanıcı topluluğunun"
+" herhangi bir üyesine Linux'u herhangi bir amaç için kullanma, işletim "
+"sistemini dağıtma, değiştirme, yeniden dağıtma ve hattâ satma özgürlüğü "
+"verir. Eğer Linux üzerinde değişiklik yapar ve yaptığınız değişikliklerle "
+"Linux'u yeniden dağıtırsanız, lisans gereği yaptığınız değişiklikleri "
+"gelecek sürümlere dâhil edilmek üzere sunmanız gerekmektedir. Bunun "
+"gerçekleşeceğinin garantisi yoktur, ancak daha iyi hâle getirdiyseniz, "
+"değişiklikleriniz Ubuntu Budgie'nin bir sonraki sürümüne dâhil edilebilir."
 
 #: introduction.html:221
 msgid ""
@@ -329,3 +375,12 @@ msgid ""
 " machines designed for Windows, and from the most powerful Internet servers "
 "to the smallest smart thermostat."
 msgstr ""
+"İster Ubuntu Budgie'nin ev kullanıcısı, ister Ubuntu Budgie yazılım veya "
+"uygulama geliştiricisi, ister bu işletim sistemini kullanan bir kuruluşun "
+"çalışanı olun, Linux ve Açık Kaynak topluluklarının bir üyesisiniz ve Ubuntu"
+" Budgie ve ilgili projelerine katkıda bulunan geliştiricilerin çabalarından "
+"yararlanıyorsunuz: Linux, Budgie masaüstü ve Ubuntu. Topluluk üyeleri, en "
+"güzel Macbook'tan en ucuz netbook'a, en yeni Chromebook'tan Windows için "
+"tasarlanmış bazı çok eski makinelere ve en güçlü İnternet sunucularından en "
+"küçük akıllı termostata kadar neredeyse her donanımda Linux "
+"çalıştırmaktadır."
