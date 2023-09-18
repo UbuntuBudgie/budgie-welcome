@@ -5,7 +5,7 @@
 # Copyright 2013 "Manjaro Linux" <support@manjaro.org>
 # Copyright 2014 Antergos
 # Copyright 2016 Ubuntu Mate
-# Copyright 2016-2019 Ubuntu Budgie Developers
+# Copyright 2016-2023 Ubuntu Budgie Developers
 #
 # budgie-welcome is free software: you can redistribute it and/or modify
 # it under the temms of the GNU General Public License as published by
@@ -48,6 +48,7 @@ import inspect
 import gi
 gi.require_version('WebKit2', '4.0')
 from datetime import datetime
+from packaging.version import Version
 
 try:
     import distro
@@ -245,7 +246,13 @@ class AppView(WebKit2.WebView):
                 config = json.load(file)
 
             for applet in config['budgie-applets']:
-                if systemstate.codename in config['budgie-applets'][applet]['repos']:
+                show_applet=True
+                if "budgie-version" in config['budgie-applets'][applet]:
+                    test_caveat = config['budgie-applets'][applet]['budgie-version']
+
+                    show_applet = eval(test_caveat)
+
+                if systemstate.codename in config['budgie-applets'][applet]['repos'] and show_applet:
                     app.update_page("." + applet, 'show')
                 else:
                     app.update_page("." + applet, 'hide')
@@ -1375,6 +1382,7 @@ class SystemState(object):
         self.updates_subscribed = False
         self.app_version = 'DEV'
         self.budgie_version = 'NA'
+        self.budgie_version_number = ''
         self.bde_version = 'NA'
         self.speed = None
         self.first_run = False
@@ -1882,6 +1890,7 @@ class SystemState(object):
         self.app_version = versions[0]
         self.budgie_version = versions[1]
         self.bde_version = versions[2]
+        self.budgie_desktop_version = versions[3]
 
 
 class WelcomeApp(object):
@@ -2248,7 +2257,10 @@ class Arguments(object):
             elif arg == '-V' or arg == '--version':
                 versions = find_app_version()
                 print("Budgie Welcome" + " " + \
-                      versions[0] + "\n" + "Budgie Desktop" + " " + versions[1])
+                      versions[0] + "\n" + "Budgie Desktop Package" + " " + versions[1] + \
+                      "\n" + "Budgie Desktop Environment Package" + " " + versions[2] + \
+                      "\n" + "Budgie Desktop" + " " + versions[3])
+
                 exit()
 
             if arg == '--verbose' or arg == '-v':
@@ -2343,6 +2355,11 @@ def find_app_version(cache=apt.Cache()):
             versions.append(os.environ['SNAP_VERSION'])
         else:
             versions.append('NA')
+
+    cmd = "budgie-desktop --version"
+    stream = os.popen(cmd)
+    output = stream.readlines()
+    versions.append(output[0].split(' ')[1])
 
     return versions
 

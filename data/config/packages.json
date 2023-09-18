@@ -16,6 +16,20 @@
 				]
 			}
 		},
+		"carbon-tray-applet": {
+			"packages": [
+				"budgie-carbon-tray-applet"
+			],
+			"repos": {
+				"jammy": [
+					"ppa:ubuntubudgie/backports"
+				],
+				"mantic": [
+					"ppa:ubuntubudgie/backports"
+				]
+			},
+			"budgie-version": "Version(systemstate.budgie_desktop_version) >= Version('10.8') and Version(systemstate.budgie_desktop_version) < Version('11.0')"
+		},
 		"user-indicator-redux-applet": {
 			"packages": [
 				"budgie-user-indicator-redux-applet"
