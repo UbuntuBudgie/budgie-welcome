@@ -22,7 +22,6 @@
 #
 
 """ Welcome App for Ubuntu Budgie and budgie-remix """
-
 import re
 import apt
 from notify2 import Notification, init as NotifyInit
@@ -45,10 +44,7 @@ import subprocess
 import signal
 import os
 import inspect
-import gi
-gi.require_version('WebKit2', '4.0')
 from datetime import datetime
-from packaging.version import Version
 
 try:
     import distro
@@ -61,6 +57,8 @@ start_location = "./"  # path defined on app startup
 
 win = None
 
+def versiontuple(v):
+    return tuple(map(int, (v.split("."))))
 
 class AppView(WebKit2.WebView):
 

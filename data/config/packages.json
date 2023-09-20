@@ -28,7 +28,7 @@
 					"ppa:ubuntubudgie/backports"
 				]
 			},
-			"budgie-version": "Version(systemstate.budgie_desktop_version) >= Version('10.8') and Version(systemstate.budgie_desktop_version) < Version('11.0')"
+			"budgie-version": "versiontuple(systemstate.budgie_desktop_version) >= versiontuple('10.8') and versiontuple(systemstate.budgie_desktop_version) < versiontuple('11.0')"
 		},
 		"user-indicator-redux-applet": {
 			"packages": [
