@@ -1261,6 +1261,27 @@
 					"ppa:ubuntubudgie/backports"
 				]
 			}
+		},
+		"colloid-theme": {
+			"packages": [
+				"colloid-gtk-theme",
+				"colloid-icon-theme",
+				"colloid-cursors"
+			],
+			"repos": {
+				"jammy": [
+					"universe",
+					"ppa:ubuntubudgie/backports"
+				],
+				"lunar": [
+					"universe",
+					"ppa:ubuntubudgie/backports"
+				],
+				"mantic": [
+					"universe",
+					"ppa:ubuntubudgie/backports"
+				]
+			}
 		}
 	},
 	"gettingstarted": {
