@@ -1,15 +1,15 @@
 # 
 # Translators:
 # Yaron Shahrabani <sh.yaron@gmail.com>, 2022
-# עומר א״ש <omeritzicschwartz@gmail.com>, 2023
+# 63f334ffc0709ba0fc2361b80bf3c0f0_00ffd1e <ab96c93ca0ac55ba7fa06385427e60dd_878890>, 2023
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: Budgie Welcome\n"
 "POT-Creation-Date: 2016-02-27 12:48+0100\n"
 "PO-Revision-Date: 2017-03-22 21:33+0000\n"
-"Last-Translator: עומר א״ש <omeritzicschwartz@gmail.com>, 2023\n"
-"Language-Team: Hebrew (https://www.transifex.com/ubuntu-budgie/teams/72251/he/)\n"
+"Last-Translator: 63f334ffc0709ba0fc2361b80bf3c0f0_00ffd1e <ab96c93ca0ac55ba7fa06385427e60dd_878890>, 2023\n"
+"Language-Team: Hebrew (https://app.transifex.com/ubuntu-budgie/teams/72251/he/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -18,8 +18,8 @@ msgstr ""
 "Report-Msgid-Bugs-To : you@example.com\n"
 
 #: recommendations.html:15
-msgid "Optional Tasks"
-msgstr "משימות רשות"
+msgid "Recommendations"
+msgstr "המלצות"
 
 #: recommendations.html:20
 msgid "Backports repository"
@@ -40,15 +40,173 @@ msgstr "המאגר מותקן"
 msgid "Enable Ubuntu Budgie backports repository"
 msgstr ""
 
-#: recommendations.html33, 106, 130, 155, 176, 193, 209, 226
+#: recommendations.html33, 70, 107, 129, 154, 169, 190, 211, 285
 msgid "Applying Changes..."
 msgstr "השינויים חלים..."
 
-#: recommendations.html:37
+#: recommendations.html:38
+msgid "Backups"
+msgstr "גיבויים"
+
+#: recommendations.html:43
+msgid ""
+"<strong>Deja-Dup</strong> is a powerful backup utility that can be installed"
+" in Ubuntu Budgie and supports backups to local devices as well as online "
+"cloud-based services."
+msgstr ""
+
+#: recommendations.html:47
+msgid ""
+"Nothing is more important than having a backup of your personal files, just "
+"in case something disastrous happens to your computer."
+msgstr ""
+"אין דבר שחשוב יותר משמירת גיבוי של הקבצים האישיים, למקרה שקורה משהו למחשב."
+
+#: recommendations.html:55
+msgid "Configure Backup"
+msgstr "הגדרת הגיבויים"
+
+#: recommendations.html59, 96, 126, 151, 187, 208
+msgid "Remove"
+msgstr "הסרה"
+
+#: recommendations.html:62
+msgid ""
+"<b>Backups</b> can be found later in the menu <b>Utilities <i "
+"class=\"material-icons\">&#xE315;</i> Backups</b>."
+msgstr ""
+"את ה<b>גיבויים</b> אפשר למצוא מאוחר יותר בתפריט <b>עזרים <i "
+"class=\"material-icons\">&#xE315;</i> גיבויים</b>."
+
+#: recommendations.html:68
+msgid "Install Deja-Dup"
+msgstr ""
+
+#: recommendations.html:76
+msgid "Firewall"
+msgstr "חומת אש"
+
+#: recommendations.html:81
+msgid ""
+"<strong>Gufw</strong> provides a graphical frontend to <code>ufw</code> "
+"(Uncomplicated Firewall). If security is important to you, there are more "
+"ways to stay secure."
+msgstr ""
+
+#: recommendations.html:84
+msgid "Click to learn more about security."
+msgstr ""
+
+#: recommendations.html:85
+msgid ""
+"Firewalls prevent malicious connections entering and leaving your computer. "
+"By default, the firewall is disabled."
+msgstr ""
+
+#: recommendations.html:86
+msgid "Click to learn more about firewalls."
+msgstr ""
+
+#: recommendations.html:92
+msgid "Configure Firewall"
+msgstr "הגדרת חומת האש"
+
+#: recommendations.html:99
+msgid ""
+"Firewall Configuration</b> can be found later in the menu <b>System Tools<i "
+"class=\"material-icons\">&#xE315;</i> Firewall Configuration</i></b>."
+msgstr ""
+
+#: recommendations.html:105
+msgid "Install Firewall"
+msgstr ""
+
+#: recommendations.html:117
+msgid ""
+"ClamTk is a frontend for ClamAV (Clam Antivirus). It is intended to be an "
+"easy to use, light-weight, on-demand scanner for Linux systems."
+msgstr ""
+
+#: recommendations.html:123
+msgid "ClamAV is installed"
+msgstr ""
+
+#: recommendations.html:132
+msgid "Install & Configure ClamAV"
+msgstr ""
+
+#: recommendations.html:141
+msgid ""
+"Nemo Preview allows you to quickly view the contents of a highlighted file "
+"from the Nemo file manager. Just press space to toggle the preview on and "
+"off."
+msgstr ""
+"Nemo Preview מאפשר לך לצפות בתוכן של קובץ שהודגש במנהל הקבצים Nemo במהירות. "
+"עליך פשוט ללחוץ על רווח כדי להפעיל ולכבות את התצוגה המקדימה."
+
+#: recommendations.html:144
+msgid "Nemo Preview is installed"
+msgstr "חבילת התצוגות המקדימות של Nemo מותקנת"
+
+#: recommendations.html:146
+msgid "Install Nemo Preview"
+msgstr "התקנת התצוגות המקדימות של Nemo"
+
+#: recommendations.html:161
+msgid ""
+"Nemo Terminal embeds a terminal within the nemo file-manager. Press F4 to "
+"toggle the visibility of the terminal."
+msgstr ""
+
+#: recommendations.html:164
+msgid "Nemo Terminal is installed"
+msgstr ""
+
+#: recommendations.html:166
+msgid "Install Nemo Terminal"
+msgstr ""
+
+#: recommendations.html:176
+msgid ""
+"Nemo Share allows you to quickly share a folder from the Nemo file manager "
+"without requiring root access."
+msgstr ""
+"חבילת שיתופי Nemo מאפשרת לך לשתף במהירות תיקייה מתוך מנהל הקבצים Nemo ללא "
+"צורך בגישת שורש (root)."
+
+#: recommendations.html:181
+msgid "Nemo Share is installed"
+msgstr "חבילת שיתופי Nemo מותקנת"
+
+#: recommendations.html:183
+msgid "Install Nemo Share"
+msgstr "התקנת שיתופי Nemo"
+
+#: recommendations.html:197
+msgid ""
+"Gutenprint is a suite of <a onclick=\"cmd('link?http://gimp-"
+"print.sourceforge.net/p_Supported_Printers.php')\">thousands</a> of printer "
+"drivers which includes drivers for Epson and Canon printers. Gutenprint "
+"supports only the printer part of multi-function devices."
+msgstr ""
+"Gutenprint הוא מארז של <a onclick=\"cmd('link?http://gimp-"
+"print.sourceforge.net/p_Supported_Printers.php')\">אלפי</a> מנהלי התקנים "
+"למדפסות לרבות Epson ו־Canon. ל־Gutenprint יש תמיכה רק במנגנון ההדפסה "
+"במכשירים משולבים."
+
+#: recommendations.html:201
+msgid "Gutenprint is installed"
+msgstr "‏Gutenprint מותקן"
+
+#: recommendations.html:204
+msgid "Install Gutenprint"
+msgstr "התקנת Gutenprint"
+
+#: recommendations.html:216
 msgid "Snap Applications"
 msgstr "יישומי Snap"
 
-#: recommendations.html:42
+#: recommendations.html:221
 msgid ""
 "<strong>Snap</strong> is a new generation application packaging format "
 "developed by <em>Canonical</em>. Even though it was initially developed just"
@@ -64,19 +222,19 @@ msgid ""
 "the past."
 msgstr ""
 
-#: recommendations.html55, 119
+#: recommendations.html:234
 msgid "Learn more"
 msgstr "למידע נוסף"
 
-#: recommendations.html:57
+#: recommendations.html:236
 msgid "Snap user guide"
 msgstr "המדריך למשתמש של Snap"
 
-#: recommendations.html:59
+#: recommendations.html:238
 msgid "Search Snap Apps"
 msgstr "חיפוש יישומי Snap"
 
-#: recommendations.html:60
+#: recommendations.html:239
 msgid ""
 "If there’s a barrier to Snap app adoption (aside from few apps being made "
 "available in the format) it’s knowing which packages are available in the "
@@ -87,7 +245,7 @@ msgstr ""
 " בפורמט) הוא שהם לא יודעים אילו חבילות זמינות. לצורך כך, אפשר פשוט לפתוח את "
 "המסוף ולהריץ את הפקודה הבאה:"
 
-#: recommendations.html:66
+#: recommendations.html:245
 msgid ""
 "The find command lets you quickly search for and discover snaps available to"
 " install from the command line. It can be run with a query after it (e.g., "
@@ -97,15 +255,15 @@ msgstr ""
 "משורת הפקודה. אפשר לצרף גם שאילתה לפקודה (למשל: „snap find email”,‏ „snap "
 "find media”,‏ „snap find messaging”), אבל לא חובה."
 
-#: recommendations.html:69
+#: recommendations.html:248
 msgid "When run without a query you’ll instead see a list of featured snaps."
 msgstr "הרצה ללא שאילתה תציג רשימה של חבילות snap מובילות."
 
-#: recommendations.html:70
+#: recommendations.html:249
 msgid "See installed apps"
 msgstr "צפייה ביישומים המותקנים"
 
-#: recommendations.html:71
+#: recommendations.html:250
 msgid ""
 "Installed some Snaps but can’t remember what? Don’t panic. Use the list "
 "command to see an up-to-date list of all Snap apps installed on your system:"
@@ -113,7 +271,7 @@ msgstr ""
 "הִתקנת יישומי Snap וקשה לך להיזכר אילו? לא להיבהל. אפשר להשתמש בפקודה „list”"
 " להצגת רשימה מעודכנת של כל יישומי ה־Snap שמותקנים במערכת:"
 
-#: recommendations.html:74
+#: recommendations.html:253
 msgid ""
 "This list also shows you their version number, revision number and the name "
 "of the developer who uploaded it (handy when there are multiple versions of "
@@ -122,22 +280,22 @@ msgstr ""
 "רשימה זו מציגה לך את מספר הגרסה, מספר המהדורה ואת שם המפתח או המפתחת שהעלו "
 "אותה (שימושי כשמופיעות מספר גרסאות של אותו היישום בחנות, למשל: טלגרם)."
 
-#: recommendations.html:77
+#: recommendations.html:256
 msgid "Install & Remove Snap Apps"
 msgstr "התקנה והסרה של יישומי Snap"
 
-#: recommendations.html:78
+#: recommendations.html:257
 msgid ""
 "If you’re used to managing software using apt you’ll instantly find the "
 "analogous snap commands easy to remember. You install snap apps with the "
 "‘install’ command, and remove them using the ‘remove’ command."
 msgstr ""
 
-#: recommendations.html:83
+#: recommendations.html:262
 msgid "See details of an App"
 msgstr "צפייה בפרטים של יישום"
 
-#: recommendations.html:84
+#: recommendations.html:263
 msgid ""
 "You can use this to see detailed information about any snap application, "
 "whether it is installed or not. This info includes the application’s release"
@@ -148,11 +306,11 @@ msgstr ""
 "פרטים אלו כוללים את ערוץ ההפצה של היישום, מצב הבידוד, הגודל, מספר המהדורות "
 "ועוד. הפקודה snap info --verbose מספקת סקירה נרחבת יותר."
 
-#: recommendations.html:90
+#: recommendations.html:269
 msgid "Update a Snap App"
 msgstr "עדכון של יישום Snap"
 
-#: recommendations.html:92
+#: recommendations.html:271
 msgid ""
 "Rather helpfully you probably won’t ever need to remember to install an "
 "update to a Snap app. This is because Snapd runs in the background and "
@@ -160,129 +318,14 @@ msgid ""
 " a specific revision)."
 msgstr ""
 
-#: recommendations.html:98
+#: recommendations.html:277
 msgid "Reference"
 msgstr "סימוכין"
 
-#: recommendations.html:101
+#: recommendations.html:280
 msgid "Snap is already installed"
 msgstr "‏Snap כבר מותקן"
 
-#: recommendations.html:104
+#: recommendations.html:283
 msgid "Install Snap"
 msgstr "התקנת Snap"
-
-#: recommendations.html:111
-msgid "Flatpak"
-msgstr "Flatpak"
-
-#: recommendations.html:116
-msgid ""
-"<strong>Flatpak</strong> is a new generation application distribution "
-"framework. It introduces a unified packaging format across various GNU/Linux"
-" distributions. Please note that Flatpak applications are not part of the "
-"core Ubuntu experience."
-msgstr ""
-
-#: recommendations.html:121
-msgid ""
-"Being a user friendly distribution, Ubuntu Budgie allows you to install "
-"Flatpak with a single click. After setup, you can use "
-"<strong>Software</strong> to install Flatpak applications."
-msgstr ""
-
-#: recommendations.html:125
-msgid "Flatpak is installed. Please reboot for the service to start"
-msgstr "‏Flatpak מותקן. נא לבצע אתחול כדי להפעיל את השירות."
-
-#: recommendations.html:128
-msgid "Install & Configure Flatpak"
-msgstr "התקנה והגדרת Flatpak"
-
-#: recommendations.html:140
-msgid ""
-"<strong>Dropbox</strong> is a popular proprietary file sharing and storage "
-"solution."
-msgstr ""
-"‏<strong>Dropbox</strong> הוא פתרון קנייני פופולרי לשיתוף ואחסון קבצים."
-
-#: recommendations.html:144
-msgid ""
-"After installing, logout and login and follow the dropbox instructions that "
-"are then displayed."
-msgstr "לאחר ההתקנה, יש לצאת ולהיכנס ולעקוב אחר ההנחיות של Dropbox כשיופיעו."
-
-#: recommendations.html:149
-msgid "Dropbox is installed"
-msgstr "‏Dropbox מותקן"
-
-#: recommendations.html:152
-msgid "Install & Configure Dropbox"
-msgstr "התקנה והגדרת Dropbox"
-
-#: recommendations.html:165
-msgid ""
-"ClamTk is a frontend for ClamAV (Clam Antivirus). It is intended to be an "
-"easy to use, light-weight, on-demand scanner for Linux systems."
-msgstr ""
-
-#: recommendations.html:170
-msgid "ClamAV is installed"
-msgstr ""
-
-#: recommendations.html:173
-msgid "Install & Configure ClamAV"
-msgstr ""
-
-#: recommendations.html:183
-msgid ""
-"Nemo Share allows you to quickly share a folder from the Nemo file manager "
-"without requiring root access."
-msgstr ""
-"חבילת שיתופי Nemo מאפשרת לך לשתף במהירות תיקייה מתוך מנהל הקבצים Nemo ללא "
-"צורך בגישת שורש (root)."
-
-#: recommendations.html:188
-msgid "Nemo Share is installed"
-msgstr "חבילת שיתופי Nemo מותקנת"
-
-#: recommendations.html:191
-msgid "Install Nemo Share"
-msgstr "התקנת שיתופי Nemo"
-
-#: recommendations.html:200
-msgid ""
-"Nemo Preview allows you to quickly view the contents of a highlighted file "
-"from the Nemo file manager. Just press space to toggle the preview on and "
-"off."
-msgstr ""
-"Nemo Preview מאפשר לך לצפות בתוכן של קובץ שהודגש במנהל הקבצים Nemo במהירות. "
-"עליך פשוט ללחוץ על רווח כדי להפעיל ולכבות את התצוגה המקדימה."
-
-#: recommendations.html:204
-msgid "Nemo Preview is installed"
-msgstr "חבילת התצוגות המקדימות של Nemo מותקנת"
-
-#: recommendations.html:207
-msgid "Install Nemo Preview"
-msgstr "התקנת התצוגות המקדימות של Nemo"
-
-#: recommendations.html:216
-msgid ""
-"Gutenprint is a suite of <a onclick=\"cmd('link?http://gimp-"
-"print.sourceforge.net/p_Supported_Printers.php')\">thousands</a> of printer "
-"drivers which includes drivers for Epson and Canon printers. Gutenprint "
-"supports only the printer part of multi-function devices."
-msgstr ""
-"Gutenprint הוא מארז של <a onclick=\"cmd('link?http://gimp-"
-"print.sourceforge.net/p_Supported_Printers.php')\">אלפי</a> מנהלי התקנים "
-"למדפסות לרבות Epson ו־Canon. ל־Gutenprint יש תמיכה רק במנגנון ההדפסה "
-"במכשירים משולבים."
-
-#: recommendations.html:221
-msgid "Gutenprint is installed"
-msgstr "‏Gutenprint מותקן"
-
-#: recommendations.html:224
-msgid "Install Gutenprint"
-msgstr "התקנת Gutenprint"

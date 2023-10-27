@@ -4,16 +4,16 @@
 # 
 # Translators:
 # Gyula Szabó <szabo.gyula.krisztian@gmail.com>, 2017
-# Bence László <laszlo.bence.27@gmail.com>, 2017
+# Bence László <bencelaszlo@protonmail.com>, 2017
 # Benjamin Piller <benpiller@gmail.com>, 2019
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2023-02-10 20:09+0000\n"
+"POT-Creation-Date: 2023-09-18 20:19+0100\n"
 "PO-Revision-Date: 2017-03-11 16:44+0000\n"
 "Last-Translator: Benjamin Piller <benpiller@gmail.com>, 2019\n"
-"Language-Team: Hungarian (https://www.transifex.com/ubuntu-budgie/teams/72251/hu/)\n"
+"Language-Team: Hungarian (https://app.transifex.com/ubuntu-budgie/teams/72251/hu/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -21,7 +21,11 @@ msgstr ""
 "Language: hu\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: budgie-welcome:468
+#: budgie-welcome:442
+msgid "Open the menu and search for 'Install RELEASE'"
+msgstr ""
+
+#: budgie-welcome:493
 msgid ""
 "Seems that GNOME Software is not installed. If this problem persists even "
 "after installing GNOME Software, please contact us with following error "
@@ -31,20 +35,20 @@ msgstr ""
 " Szoftver telepítése után is megjelenik, kérjük vegye fel velünk a "
 "kapcsolatot a következő hibaüzenet csatolásával"
 
-#: budgie-welcome:716
+#: budgie-welcome:741
 msgid "Following tasks are in progress"
 msgstr "A következő feladatok feldolgozás alatt állnak"
 
-#: budgie-welcome:723 budgie-welcome:1891 budgie-welcome:1908
-#: budgie-welcome:1936 budgie-welcome:1942 budgie-welcome:2404
+#: budgie-welcome:748 budgie-welcome:1953 budgie-welcome:1970
+#: budgie-welcome:1998 budgie-welcome:2004 budgie-welcome:2474
 msgid "Budgie Welcome"
 msgstr "Budgie Welcome"
 
-#: budgie-welcome:727
+#: budgie-welcome:752
 msgid "Budgie Desktop"
 msgstr "Budgie Asztal"
 
-#: budgie-welcome:854
+#: budgie-welcome:879
 msgid ""
 "The following third-party repositories need to be added to complete the "
 "installation:"
@@ -52,97 +56,97 @@ msgstr ""
 "A telepítés befejezéséhez a következő harmadik féltől származó tárolókat "
 "kell hozzáadni:"
 
-#: budgie-welcome:886 budgie-welcome:908
+#: budgie-welcome:932 budgie-welcome:954
 msgid ""
 "Third-Party repositories and their packages are not supported by Ubuntu. You"
 " should only continue if you trust the maintainers of these repositories."
 msgstr ""
 
-#: budgie-welcome:889 budgie-welcome:911
+#: budgie-welcome:935 budgie-welcome:957
 msgid "Continue with the installation?"
 msgstr "Folytassuk a telepítést?"
 
-#: budgie-welcome:895 budgie-welcome:917
+#: budgie-welcome:941 budgie-welcome:963
 msgid "Third-Party Repositories"
 msgstr "Harmadik fél tárolói"
 
-#: budgie-welcome:906
+#: budgie-welcome:952
 msgid ""
 "One or more packages need to be installed from a third-party repository that"
 " you have previously added."
 msgstr ""
 
-#: budgie-welcome:1214
+#: budgie-welcome:1274
 msgid "Welcome App"
 msgstr "Üdvözlő Alkalmazás"
 
-#: budgie-welcome:1565
+#: budgie-welcome:1626
 msgid "Could not gather data."
 msgstr "Nem sikerült adatokat gyűjteni."
 
-#: budgie-welcome:1645
+#: budgie-welcome:1706
 msgid "GB"
 msgstr "GB"
 
-#: budgie-welcome:1646
+#: budgie-welcome:1707
 msgid "GiB"
 msgstr "GiB"
 
-#: budgie-welcome:1647
+#: budgie-welcome:1708
 msgid "MB"
 msgstr "MB"
 
-#: budgie-welcome:1648
+#: budgie-welcome:1709
 msgid "MiB"
 msgstr "MiB"
 
-#: budgie-welcome:1893
+#: budgie-welcome:1955
 msgid ""
 "This snap is running on a distro that is unrecognized or on a development "
 "release of Ubuntu that has not yet received its snap configuration.  Full "
 "snap capabilities are unlikely to work."
 msgstr ""
 
-#: budgie-welcome:1910
+#: budgie-welcome:1972
 msgid ""
 "This snap is running on version of budgie desktop that is no longer "
 "supported. Please upgrade to a supported version of the distro."
 msgstr ""
 
-#: budgie-welcome:1957
+#: budgie-welcome:2019
 msgid "Status"
 msgstr "Állapot"
 
-#: budgie-welcome:2050
+#: budgie-welcome:2112
 msgid " is in progress. Please wait for it to complete"
 msgstr "folyamatban. Kérjük várja meg, amíg befejeződik."
 
-#: budgie-welcome:2405
+#: budgie-welcome:2475
 msgid "Find out about your operating system"
 msgstr "Ismerje meg az operációs rendszert"
 
-#: budgie-welcome:2407
+#: budgie-welcome:2477
 msgid "Budgie Makeovers & Layouts"
 msgstr ""
 
-#: budgie-welcome:2408
+#: budgie-welcome:2478
 msgid "Give the desktop a makeover with new themes, icons, fonts & layouts"
 msgstr ""
 
-#: budgie-welcome:2410
+#: budgie-welcome:2480
 msgid "Budgie Extras"
 msgstr ""
 
-#: budgie-welcome:2411
+#: budgie-welcome:2481
 msgid ""
 "Customize the desktop with applets and mini-applications to provide extra "
 "capabilities"
 msgstr ""
 
-#: budgie-welcome:2414
+#: budgie-welcome:2484
 msgid "Budgie Discourse"
 msgstr "Budgie Discourse"
 
-#: budgie-welcome:2415
+#: budgie-welcome:2485
 msgid "Be part of the Ubuntu Budgie Community"
 msgstr "Legyen tagja Ön is az Ubuntu Budgie közösségnek"

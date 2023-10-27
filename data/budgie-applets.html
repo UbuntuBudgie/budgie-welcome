@@ -204,6 +204,29 @@
                   </div>
                   <hr/>
                </div>
+               <div class="col-md-6 carbon-tray-applet">
+                  <br>
+                  <h2><a onclick="cmd('link?https://github.com/ubuntubudgie/budgie-carbon-tray-applet')"><span class="material-icons">help</span></a>&zwnj;Carbon Tray Applet&zwnj;</h2>
+                  <div class="card card-block">
+                     <div class="card-image text-md-center">
+                        <a href="img/screenshots/carbon-tray-applet.jpg" data-toggle="lightbox"><img src="img/screenshots/carbon-tray-applet.jpg" style="width: auto; max-height: 128px" /></a>
+                     </div>
+                     <p class="card-text">&zwnj;Display xembed icons from legacy applications.&zwnj;</p>
+                  </div>
+                  <div class="text-md-right">
+                     <a id="carbon-tray-applet-remove" class="btn btn-danger" onclick="cmd('remove?carbon-tray-applet');">
+                     <span class="material-icons">&#xE872;</span><span class="button-text">&zwnj;Remove&zwnj;</span>
+                     </a>
+                     <a id="carbon-tray-applet-install" class="btn btn-success hvr-shadow" onclick="cmd('install?carbon-tray-applet');"> &nbsp;
+                     <span class="material-icons">&#xE2C0;</span>&zwnj;Install&zwnj;&nbsp;
+                     </a>
+                     <span id="carbon-tray-applet-status" class="hidden">
+                     <img src="img/welcome/processing.gif" width="24px" height="24px" /> &zwnj;Applying changes...&zwnj;
+                     </span>
+                     <p id="carbon-tray-applet-instruction" class="hidden"><small>&zwnj;Logout and login after installing applets. From the menu - choose Budgie Desktop Settings and choose the Panel to add and configure applets.&zwnj;</small></p>
+                  </div>
+                  <hr/>
+               </div>
                <div class="col-md-6 visualspace-applet">
                   <br>
                   <h2><a onclick="cmd('link?https://github.com/ubuntubudgie/budgie-extras')"><span class="material-icons">help</span></a>&zwnj;VisualSpace Applet&zwnj;</h2>

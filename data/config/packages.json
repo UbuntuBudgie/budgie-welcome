@@ -16,12 +16,29 @@
 				]
 			}
 		},
+		"carbon-tray-applet": {
+			"packages": [
+				"budgie-carbon-tray-applet"
+			],
+			"repos": {
+				"jammy": [
+					"ppa:ubuntubudgie/backports"
+				],
+				"mantic": [
+					"ppa:ubuntubudgie/backports"
+				]
+			},
+			"budgie-version": "versiontuple(systemstate.budgie_desktop_version) >= versiontuple('10.8') and versiontuple(systemstate.budgie_desktop_version) < versiontuple('11.0')"
+		},
 		"user-indicator-redux-applet": {
 			"packages": [
 				"budgie-user-indicator-redux-applet"
 			],
 			"repos": {
 				"lunar": [
+					"ppa:ubuntubudgie/backports"
+				],
+				"mantic": [
 					"ppa:ubuntubudgie/backports"
 				]
 			}
@@ -58,6 +75,9 @@
 				],
 				"lunar": [
 					"ppa:ubuntubudgie/backports"
+				],
+				"mantic": [
+					"ppa:ubuntubudgie/backports"
 				]
 			}
 		},
@@ -76,6 +96,9 @@
 					"ppa:ubuntubudgie/backports"
 				],
 				"lunar": [
+					"ppa:ubuntubudgie/backports"
+				],
+				"mantic": [
 					"ppa:ubuntubudgie/backports"
 				]
 			}
@@ -96,6 +119,9 @@
 				],
 				"lunar": [
 					"ppa:ubuntubudgie/backports"
+				],
+				"mantic": [
+					"ppa:ubuntubudgie/backports"
 				]
 			}
 		},
@@ -114,6 +140,9 @@
 					"universe"
 				],
 				"lunar": [
+					"universe"
+				],
+				"mantic": [
 					"universe"
 				]
 			}
@@ -134,6 +163,9 @@
 				],
 				"lunar": [
 					"ppa:ubuntubudgie/backports"
+				],
+				"mantic": [
+					"ppa:ubuntubudgie/backports"
 				]
 			}
 		},
@@ -152,6 +184,9 @@
 					"universe"
 				],
 				"lunar": [
+					"universe"
+				],
+				"mantic": [
 					"universe"
 				]
 			}
@@ -172,6 +207,9 @@
 				],
 				"lunar": [
 					"ppa:ubuntubudgie/backports"
+				],
+				"mantic": [
+					"ppa:ubuntubudgie/backports"
 				]
 			}
 		},
@@ -190,6 +228,9 @@
 					"universe"
 				],
 				"lunar": [
+					"universe"
+				],
+				"mantic": [
 					"universe"
 				]
 			}
@@ -210,6 +251,9 @@
 				],
 				"lunar": [
 					"universe"
+				],
+				"mantic": [
+					"universe"
 				]
 			}
 		},
@@ -228,6 +272,9 @@
 					"universe"
 				],
 				"lunar": [
+					"universe"
+				],
+				"mantic": [
 					"universe"
 				]
 			}
@@ -258,6 +305,9 @@
 				],
 				"lunar": [
 					"universe"
+				],
+				"mantic": [
+					"universe"
 				]
 			}
 		},
@@ -287,6 +337,9 @@
 				],
 				"lunar": [
 					"universe"
+				],
+				"mantic": [
+					"universe"
 				]
 			}
 		},
@@ -305,6 +358,9 @@
 					"universe"
 				],
 				"lunar": [
+					"universe"
+				],
+				"mantic": [
 					"universe"
 				]
 			}
@@ -325,6 +381,9 @@
 				],
 				"lunar": [
 					"universe"
+				],
+				"mantic": [
+					"universe"
 				]
 			}
 		},
@@ -343,6 +402,9 @@
 					"universe"
 				],
 				"lunar": [
+					"universe"
+				],
+				"mantic": [
 					"universe"
 				]
 			}
@@ -363,6 +425,9 @@
 				],
 				"lunar": [
 					"universe"
+				],
+				"mantic": [
+					"universe"
 				]
 			}
 		},
@@ -381,6 +446,9 @@
 					"universe"
 				],
 				"lunar": [
+					"universe"
+				],
+				"mantic": [
 					"universe"
 				]
 			}
@@ -401,6 +469,9 @@
 				],
 				"lunar": [
 					"ppa:ubuntubudgie/backports"
+				],
+				"mantic": [
+					"ppa:ubuntubudgie/backports"
 				]
 			}
 		},
@@ -419,6 +490,9 @@
 					"ppa:ubuntubudgie/backports"
 				],
 				"lunar": [
+					"ppa:ubuntubudgie/backports"
+				],
+				"mantic": [
 					"ppa:ubuntubudgie/backports"
 				]
 			}
@@ -439,6 +513,9 @@
 				],
 				"lunar": [
 					"universe"
+				],
+				"mantic": [
+					"universe"
 				]
 			}
 		},
@@ -458,6 +535,9 @@
 				],
 				"lunar": [
 					"universe"
+				],
+				"mantic": [
+					"universe"
 				]
 			}
 		},
@@ -476,6 +556,9 @@
 					"universe"
 				],
 				"lunar": [
+					"universe"
+				],
+				"mantic": [
 					"universe"
 				]
 			}
@@ -515,6 +598,9 @@
 				],
 				"lunar": [
 					"universe"
+				],
+				"mantic": [
+					"universe"
 				]
 			}
 		},
@@ -533,6 +619,9 @@
 					"universe"
 				],
 				"lunar": [
+					"universe"
+				],
+				"mantic": [
 					"universe"
 				]
 			}
@@ -553,6 +642,9 @@
 				],
 				"lunar": [
 					"ppa:ubuntubudgie/backports"
+				],
+				"mantic": [
+					"ppa:ubuntubudgie/backports"
 				]
 			}
 		},
@@ -571,6 +663,9 @@
 					"ppa:ubuntubudgie/backports"
 				],
 				"lunar": [
+					"ppa:ubuntubudgie/backports"
+				],
+				"mantic": [
 					"ppa:ubuntubudgie/backports"
 				]
 			}
@@ -591,6 +686,9 @@
 				],
 				"lunar": [
 					"universe"
+				],
+				"mantic": [
+					"universe"
 				]
 			}
 		},
@@ -609,6 +707,9 @@
 					"universe"
 				],
 				"lunar": [
+					"universe"
+				],
+				"mantic": [
 					"universe"
 				]
 			}
@@ -629,6 +730,9 @@
 				],
 				"lunar": [
 					"universe"
+				],
+				"mantic": [
+					"universe"
 				]
 			}
 		},
@@ -647,6 +751,9 @@
 					"universe"
 				],
 				"lunar": [
+					"universe"
+				],
+				"mantic": [
 					"universe"
 				]
 			}
@@ -686,6 +793,9 @@
 				],
 				"lunar": [
 					"universe"
+				],
+				"mantic": [
+					"universe"
 				]
 			}
 		},
@@ -704,6 +814,9 @@
 					"universe"
 				],
 				"lunar": [
+					"universe"
+				],
+				"mantic": [
 					"universe"
 				]
 			}
@@ -724,6 +837,9 @@
 				],
 				"lunar": [
 					"universe"
+				],
+				"mantic": [
+					"universe"
 				]
 			}
 		},
@@ -743,6 +859,9 @@
 				],
 				"lunar": [
 					"universe"
+				],
+				"mantic": [
+					"universe"
 				]
 			}
 		},
@@ -761,6 +880,9 @@
 					"ppa:ubuntubudgie/backports"
 				],
 				"lunar": [
+					"ppa:ubuntubudgie/backports"
+				],
+				"mantic": [
 					"ppa:ubuntubudgie/backports"
 				]
 			}
@@ -825,6 +947,9 @@
 				],
 				"lunar": [
 					"universe"
+				],
+				"mantic": [
+					"universe"
 				]
 			}
 		},
@@ -845,6 +970,10 @@
 					"ppa:ubuntubudgie/backports"
 				],
 				"lunar": [
+					"universe",
+					"ppa:ubuntubudgie/backports"
+				],
+				"mantic": [
 					"universe",
 					"ppa:ubuntubudgie/backports"
 				]
@@ -945,6 +1074,9 @@
 				],
 				"lunar": [
 					"ppa:ubuntubudgie/backports"
+				],
+				"mantic": [
+					"ppa:ubuntubudgie/backports"
 				]
 			}
 		},
@@ -968,6 +1100,10 @@
 					"ppa:numix/ppa"
 				],
 				"lunar": [
+					"universe",
+					"ppa:numix/ppa"
+				],
+				"mantic": [
 					"universe",
 					"ppa:numix/ppa"
 				]
@@ -1034,6 +1170,10 @@
 				"lunar": [
 					"universe",
 					"ppa:ubuntubudgie/backports"
+				],
+				"mantic": [
+					"universe",
+					"ppa:ubuntubudgie/backports"
 				]
 			}
 		},
@@ -1057,6 +1197,10 @@
 					"ppa:ubuntubudgie/backports"
 				],
 				"lunar": [
+					"universe",
+					"ppa:ubuntubudgie/backports"
+				],
+				"mantic": [
 					"universe",
 					"ppa:ubuntubudgie/backports"
 				]
@@ -1083,6 +1227,57 @@
 					"ppa:ubuntubudgie/backports"
 				],
 				"lunar": [
+					"universe",
+					"ppa:ubuntubudgie/backports"
+				],
+				"mantic": [
+					"universe",
+					"ppa:ubuntubudgie/backports"
+				]
+			}
+		},
+		"fluent-theme": {
+			"packages": [
+				"fluent-gtk-theme",
+				"fluent-icon-theme",
+				"fonts-roboto",
+				"fluent-cursors"
+			],
+			"repos": {
+				"jammy": [
+					"universe",
+					"ppa:ubuntubudgie/backports"
+				],
+				"kinetic": [
+					"universe",
+					"ppa:ubuntubudgie/backports"
+				],
+				"lunar": [
+					"universe",
+					"ppa:ubuntubudgie/backports"
+				],
+				"mantic": [
+					"universe",
+					"ppa:ubuntubudgie/backports"
+				]
+			}
+		},
+		"colloid-theme": {
+			"packages": [
+				"colloid-gtk-theme",
+				"colloid-icon-theme",
+				"colloid-cursors"
+			],
+			"repos": {
+				"jammy": [
+					"universe",
+					"ppa:ubuntubudgie/backports"
+				],
+				"lunar": [
+					"universe",
+					"ppa:ubuntubudgie/backports"
+				],
+				"mantic": [
 					"universe",
 					"ppa:ubuntubudgie/backports"
 				]
@@ -1158,13 +1353,13 @@
 		"flatpak-setup": {
 			"script": "flatpak-remote"
 		},
-		"dropbox": {
+		"nemodropbox": {
 			"packages": [
-				"nautilus-dropbox"
+				"nemo-dropbox"
 			],
 			"repos": {
 				"all": [
-					"multiverse"
+					"ppa:ubuntubudgie/backports", "multiverse"
 				]
 			}
 		},
@@ -1334,17 +1529,8 @@
 		},
 		"backport": {
 			"repos": {
-				"focal": [
-					"ppa:ubuntubudgie/backports"
-				],
 				"jammy": [
-					"ppa:ubuntubudgie/backports"
-				],
-				"kinetic": [
-					"ppa:ubuntubudgie/backports"
-				],
-				"lunar": [
-					"ppa:ubuntubudgie/backports"
+					"ppa:ubuntubudgie/backports-budgie"
 				]
 			}
 		},
@@ -1355,25 +1541,6 @@
 			"repos": {
 				"all": [
 					"universe"
-				]
-			}
-		},
-		"nemodropbox": {
-			"packages": [
-				"nemo-dropbox"
-			],
-			"repos": {
-				"focal": [
-					"ppa:ubuntubudgie/backports"
-				],
-				"jammy": [
-					"ppa:ubuntubudgie/backports"
-				],
-				"kinetic": [
-					"ppa:ubuntubudgie/backports"
-				],
-				"lunar": [
-					"ppa:ubuntubudgie/backports"
 				]
 			}
 		},
@@ -1393,6 +1560,25 @@
 				],
 				"lunar": [
 					"ppa:ubuntubudgie/backports"
+				],
+				"mantic": [
+					"ppa:ubuntubudgie/backports"
+				]
+			}
+		},
+		"nemoterminal": {
+			"packages": [
+				"nemo-terminal"
+			],
+			"repos": {
+				"jammy": [
+					"ppa:ubuntubudgie/backports"
+				],
+				"lunar": [
+					"ppa:ubuntubudgie/backports"
+				],
+				"mantic": [
+					"ppa:ubuntubudgie/backports"
 				]
 			}
 		},
@@ -1411,6 +1597,9 @@
 					"ppa:ubuntubudgie/backports"
 				],
 				"lunar": [
+					"ppa:ubuntubudgie/backports"
+				],
+				"mantic": [
 					"ppa:ubuntubudgie/backports"
 				]
 			}
@@ -1443,6 +1632,9 @@
 				],
 				"lunar": [
 					"multiverse"
+				],
+				"mantic": [
+					"multiverse"
 				]
 			}
 		},
@@ -1473,6 +1665,9 @@
 					"universe"
 				],
 				"lunar": [
+					"universe"
+				],
+				"mantic": [
 					"universe"
 				]
 			}
@@ -1528,6 +1723,9 @@
 				],
 				"lunar": [
 					"universe"
+				],
+				"mantic": [
+					"universe"
 				]
 			}
 		},
@@ -1561,6 +1759,9 @@
 					"universe"
 				],
 				"lunar": [
+					"universe"
+				],
+				"mantic": [
 					"universe"
 				]
 			}

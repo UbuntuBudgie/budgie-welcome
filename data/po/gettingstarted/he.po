@@ -1,15 +1,15 @@
 # 
 # Translators:
 # Yaron Shahrabani <sh.yaron@gmail.com>, 2022
-# עומר א״ש <omeritzicschwartz@gmail.com>, 2023
+# 63f334ffc0709ba0fc2361b80bf3c0f0_00ffd1e <ab96c93ca0ac55ba7fa06385427e60dd_878890>, 2023
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: Budgie Welcome\n"
 "POT-Creation-Date: 2016-02-27 12:48+0100\n"
 "PO-Revision-Date: 2017-03-15 13:49+0000\n"
-"Last-Translator: עומר א״ש <omeritzicschwartz@gmail.com>, 2023\n"
-"Language-Team: Hebrew (https://www.transifex.com/ubuntu-budgie/teams/72251/he/)\n"
+"Last-Translator: 63f334ffc0709ba0fc2361b80bf3c0f0_00ffd1e <ab96c93ca0ac55ba7fa06385427e60dd_878890>, 2023\n"
+"Language-Team: Hebrew (https://app.transifex.com/ubuntu-budgie/teams/72251/he/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -49,11 +49,11 @@ msgstr "היכרות עם המערכת"
 msgid "Browser Ballot"
 msgstr "דפדפנים להורדה"
 
-#: gettingstarted.html46, 879, 1744
+#: gettingstarted.html46, 854, 1719
 msgid "Customization"
 msgstr "התאמה אישית"
 
-#: gettingstarted.html49, 1122
+#: gettingstarted.html49, 1097
 msgid "Keyboard Shortcuts"
 msgstr "קיצורי המקשים"
 
@@ -151,7 +151,7 @@ msgstr ""
 "מערכת ההפעלה תרוץ הרבה יותר חלק אם המחשב שלך יענה או יעלה על דרישות המערכת "
 "המומלצות."
 
-#: gettingstarted.html118, 1754
+#: gettingstarted.html118, 1729
 msgid "What's inside my computer?"
 msgstr "מה בתוך המחשב שלי?"
 
@@ -262,7 +262,7 @@ msgid ""
 "to be created."
 msgstr ""
 
-#: gettingstarted.html196, 397, 764, 1743
+#: gettingstarted.html196, 397, 764, 1718
 msgid "Previous:"
 msgstr "קודם:"
 
@@ -618,21 +618,21 @@ msgid ""
 " you wish to use in your country."
 msgstr ""
 
-#: gettingstarted.html474, 617, 683, 692, 736, 747, 758, 796, 831, 904, 920,
-#: 935, 950, 964, 979, 995, 1010, 1020, 1040, 1060
+#: gettingstarted.html474, 617, 683, 692, 736, 747, 758, 791, 813, 879, 895,
+#: 910, 925, 939, 954, 970, 985, 995, 1015, 1035
 msgid "Applying Changes..."
 msgstr "השינויים חלים..."
 
-#: gettingstarted.html477, 731, 742, 753, 798, 833, 914, 944, 958, 973, 1004
+#: gettingstarted.html477, 731, 742, 753, 889, 919, 933, 948, 979
 msgid "Install"
 msgstr "התקנה"
 
-#: gettingstarted.html480, 734, 745, 756, 917, 947, 961, 976, 992, 1007, 1017,
-#: 1037, 1057
+#: gettingstarted.html480, 734, 745, 756, 892, 922, 936, 951, 967, 982, 992,
+#: 1012, 1032
 msgid "Remove"
 msgstr "הסרה"
 
-#: gettingstarted.html488, 766, 879
+#: gettingstarted.html488, 766, 854
 msgid "Next:"
 msgstr "הבא:"
 
@@ -865,7 +865,7 @@ msgstr ""
 msgid "Read more on troubleshooting wireless hardware."
 msgstr "למידע נוסף על פתרון בעיות בחומרת רשת אלחוטית."
 
-#: gettingstarted.html659, 877
+#: gettingstarted.html659, 852
 msgid "Language Input"
 msgstr "קלט שפה"
 
@@ -934,84 +934,74 @@ msgid "Korean"
 msgstr "קוריאנית"
 
 #: gettingstarted.html:774
-msgid "Backup, Firewall and User Management"
-msgstr "גיבוי, חומת אש וניהול משתמשים"
-
-#: gettingstarted.html:775
-msgid ""
-"Ubuntu Budgie provides option to install a backup utility or firewall and "
-"supports multiple user accounts."
+msgid "Flatpak, Dropbox and User Management"
 msgstr ""
 
-#: gettingstarted.html:786
-msgid "Backups"
-msgstr "גיבויים"
+#: gettingstarted.html:784
+msgid "Flatpak"
+msgstr "Flatpak"
 
-#: gettingstarted.html:787
+#: gettingstarted.html:785
 msgid ""
-"Nothing is more important than having a backup of your personal files, just "
-"in case something disastrous happens to your computer."
-msgstr ""
-"אין דבר שחשוב יותר משמירת גיבוי של הקבצים האישיים, למקרה שקורה משהו למחשב."
-
-#: gettingstarted.html:791
-msgid ""
-"<b>Deja-Dup</b> is a powerful backup utility that can be installed in Ubuntu"
-" Budgie and supports backups to local devices as well as online cloud-based "
-"services."
+"<strong>Flatpak</strong> is a new generation application distribution "
+"framework. It introduces a unified packaging format across various GNU/Linux"
+" distributions. Please note that Flatpak applications are not part of the "
+"core Ubuntu experience."
 msgstr ""
 
-#: gettingstarted.html:802
-msgid "Configure Backup"
-msgstr "הגדרת הגיבויים"
+#: gettingstarted.html:788
+msgid "Learn more"
+msgstr "למידע נוסף"
 
-#: gettingstarted.html:805
-msgid ""
-"<b>Backups</b> can be found later in the menu <b>Utilities <i "
-"class=\"material-icons\">&#xE315;</i> Backups</b>."
-msgstr ""
-"את ה<b>גיבויים</b> אפשר למצוא מאוחר יותר בתפריט <b>עזרים <i "
-"class=\"material-icons\">&#xE315;</i> גיבויים</b>."
+#: gettingstarted.html:793
+msgid "Install & Configure Flatpak"
+msgstr "התקנה והגדרת Flatpak"
 
-#: gettingstarted.html:819
-msgid "Firewall"
-msgstr "חומת אש"
-
-#: gettingstarted.html:820
-msgid ""
-"Firewalls prevent malicious connections entering and leaving your computer. "
-"By default, the firewall is disabled, <a "
-"onclick=\"cmd('link?https://help.ubuntu.com/community/DoINeedAFirewall')\">learn"
-" more about firewalls</a>."
-msgstr ""
-"חומות אש מונעות מכניסה של חיבורים זדוניים למחשב שלך והחוצה. כברירת מחדל, "
-"חומת האש מושבתת, <a "
-"onclick=\"cmd('link?https://help.ubuntu.com/community/DoINeedAFirewall')\">למידע"
-" נוסף על חומות אש</a>."
-
-#: gettingstarted.html:826
-msgid ""
-"<b>Gufw</b> provides a graphical frontend to <code>ufw</code> (Uncomplicated"
-" Firewall). If security is important to you, there are <a "
-"onclick=\"cmd('link?https://wiki.ubuntu.com/BasicSecurity')\">more ways to "
-"stay secure too</a>."
+#: gettingstarted.html:794
+msgid "Flatpak is installed."
 msgstr ""
 
-#: gettingstarted.html:837
-msgid "Configure Firewall"
-msgstr "הגדרת חומת האש"
-
-#: gettingstarted.html:840
-msgid ""
-"Firewall Configuration</b> can be found later in the menu <b>System Tools<i "
-"class=\"material-icons\">&#xE315;</i> Firewall Configuration</i></b>."
+#: gettingstarted.html:795
+msgid "Please reboot for the service to start."
 msgstr ""
 
-#: gettingstarted.html:854
+#: gettingstarted.html:797
+msgid ""
+"Being a user friendly distribution, Ubuntu Budgie allows you to install "
+"Flatpak with a single click. After setup, you can use "
+"<strong>Software</strong> to install Flatpak applications."
+msgstr ""
+
+#: gettingstarted.html:810
+msgid "Dropbox"
+msgstr ""
+
+#: gettingstarted.html:811
+msgid ""
+"<strong>Dropbox</strong> is a popular proprietary file sharing and storage "
+"solution."
+msgstr ""
+"‏<strong>Dropbox</strong> הוא פתרון קנייני פופולרי לשיתוף ואחסון קבצים."
+
+#: gettingstarted.html:815
+msgid "Install & Configure Dropbox"
+msgstr "התקנה והגדרת Dropbox"
+
+#: gettingstarted.html:816
+msgid "Dropbox is installed."
+msgstr ""
+
+#: gettingstarted.html:817
+msgid ""
+"After installing, logout and login and follow the dropbox instructions that "
+"are then displayed."
+msgstr "לאחר ההתקנה, יש לצאת ולהיכנס ולעקוב אחר ההנחיות של Dropbox כשיופיעו."
+
+#: gettingstarted.html:829
 msgid "Users"
 msgstr "משתמשים"
 
-#: gettingstarted.html:856
+#: gettingstarted.html:831
 msgid ""
 "Share your computer with others? Set up a separate user account for each "
 "user to protect the individual privacy of each user sharing the same "
@@ -1020,7 +1010,7 @@ msgstr ""
 "חולקים את המחשב עם אחרים? אפשר ליצור חשבון משתמש נפרד לכל משתמש כדי להגן על "
 "הפרטיות של כל המשתמשים באותו המחשב."
 
-#: gettingstarted.html:859
+#: gettingstarted.html:834
 msgid ""
 "You can also log in to a <b>Guest Session</b> if someone is using your "
 "computer as a one-off."
@@ -1028,26 +1018,26 @@ msgstr ""
 "אפשר גם להתחבר ל<b>הפעלת אורח</b> אם יש מישהו שמשתמש במחשב שלך באופן "
 "חד־פעמי."
 
-#: gettingstarted.html:864
+#: gettingstarted.html:839
 msgid "Configure Users"
 msgstr "הגדרת המשתמשים"
 
-#: gettingstarted.html:867
+#: gettingstarted.html:842
 msgid ""
 "<b>Users</b> can be found later in the menu by typing<i> Users</i></b>."
 msgstr ""
 
-#: gettingstarted.html:885
+#: gettingstarted.html:860
 msgid ""
 "To improve the amount of customizability, Ubuntu Budgie allows you to "
 "install/remove popular web browsers with a single click."
 msgstr ""
 
-#: gettingstarted.html:890
+#: gettingstarted.html:865
 msgid "Firefox"
 msgstr "Firefox"
 
-#: gettingstarted.html:892
+#: gettingstarted.html:867
 msgid ""
 "Mozilla Firefox is a free and open-source web browser, developed by the "
 "Mozilla Foundation - a not for profit organization. It is highly popular "
@@ -1056,19 +1046,19 @@ msgstr ""
 "‏Firefox מבית Mozilla הוא דפדפן חופשי בקוד פתוח, שמפותח על ידי קרן Mozilla -"
 " ארגון ללא מטרות רווח. הוא פופולרי מאוד בפלטפורמות השונות."
 
-#: gettingstarted.html898, 929, 989, 1014, 1034, 1054
+#: gettingstarted.html873, 904, 964, 989, 1009, 1029
 msgid "Snap Install"
 msgstr "התקנת Snap"
 
-#: gettingstarted.html901, 932
+#: gettingstarted.html876, 907
 msgid "Snap Remove"
 msgstr "הסרת Snap"
 
-#: gettingstarted.html:909
+#: gettingstarted.html:884
 msgid "Firefox ESR"
 msgstr "Firefox ESR"
 
-#: gettingstarted.html:911
+#: gettingstarted.html:886
 msgid ""
 "Mozilla Firefox is a free and open-source web browser, developed by the "
 "Mozilla Foundation - a not for profit organization. This is the Extended "
@@ -1078,7 +1068,7 @@ msgstr ""
 " ארגון ללא מטרות רווח. זוהי גרסת התמיכה המורחבת שנועדה לספק אבטחת מידע מקיפה"
 " והגנה על הנתונים."
 
-#: gettingstarted.html:926
+#: gettingstarted.html:901
 msgid ""
 "Chromium is an open-source browser project that aims to build a safer, "
 "faster, and more stable way for all Internet users to experience the web."
@@ -1086,7 +1076,7 @@ msgstr ""
 "‏Chromium הוא מיזם דפדפן בקוד פתוח שמטרתו לסייע לחוויית אינטרנט מהירה ויציבה"
 " יותר לכל המשתמשים."
 
-#: gettingstarted.html:941
+#: gettingstarted.html:916
 msgid ""
 "Google Chrome is a modern web browser backed by internet giant Google. It "
 "offers a smooth browsing experience plus integration with Google's "
@@ -1095,7 +1085,7 @@ msgstr ""
 "‏Google Chrome הוא דפדפן אינטרנט מודרני שמגובה על ידי ענקית האינטרנט Google."
 " הוא מציע חוויית אינטרנט חלקה לצד חיבור לשירותים הקנייניים של Google."
 
-#: gettingstarted.html:956
+#: gettingstarted.html:931
 msgid ""
 "Microsoft Edge is a cross-platform web browser created and developed by "
 "Microsoft. It is a Chromium based browser."
@@ -1103,7 +1093,7 @@ msgstr ""
 "‏Microsoft Edge הוא דפדפן אינטרנט חוצה פלטפורמות שנוצר ומפותח על ידי "
 "Microsoft. הוא מבוסס על דפדפן Chromium."
 
-#: gettingstarted.html:970
+#: gettingstarted.html:945
 msgid ""
 "Vivaldi Web Browser is a free, fully customizable web browser. Feature rich,"
 " powerful, secure and fun! Browse the Web your way"
@@ -1111,7 +1101,7 @@ msgstr ""
 "דפדפן האינטרנט החינמי Vivaldi מאפשר לך להתאים ולשנות את החוויה שלך. הוא עשיר"
 " בתכונות, מאובטח וכיפי! הוא מאפשר לך לגלוש באינטרנט בדרך שלך"
 
-#: gettingstarted.html:986
+#: gettingstarted.html:961
 msgid ""
 "Opera is a fast and secure browser. Developed in Europe, used by millions "
 "around the world. Now with a built-in ad blocker and free VPN."
@@ -1119,11 +1109,11 @@ msgstr ""
 "‏Opera הוא דפדפן מהיר ומאובטח. הפיתוח שלו נעשה באירופה ומשתמשים בו מיליונים "
 "מרחבי העולם. וכעת גם עם חוסם פרסומות מובנה ו־VPN חינמי."
 
-#: gettingstarted.html:1002
+#: gettingstarted.html:977
 msgid "A browser that blocks tracking and intrusive ads by default."
 msgstr "דפדפן שחוסם מעקב ופרסומות פולשניות כברירת מחדל."
 
-#: gettingstarted.html:1027
+#: gettingstarted.html:1002
 msgid ""
 "Midori is a lightweight yet powerful web browser which runs just as well on "
 "little embedded computers named for delicious pastries as it does on beefy "
@@ -1131,7 +1121,7 @@ msgid ""
 "looks good doing that, too. Oh, and of course it's free software."
 msgstr ""
 
-#: gettingstarted.html:1047
+#: gettingstarted.html:1022
 msgid ""
 "The web browser for GNOME, featuring tight integration with the desktop and "
 "a simple and intuitive user interface that allows you to focus on your web "
@@ -1144,22 +1134,22 @@ msgstr ""
 "לך לחוות את האינטרנט בדרך פשוטה, נקייה ויפיפייה, זהו הדפדפן בשבילך. „רשת” "
 "מבית GNOME נקרא לעיתים קרובות בשם הקוד שלו, Epiphany."
 
-#: gettingstarted.html:1069
+#: gettingstarted.html:1044
 msgid "User Interface"
 msgstr "ממשק המשתמש"
 
-#: gettingstarted.html:1070
+#: gettingstarted.html:1045
 msgid ""
 "Ubuntu Budgie provides a unique tool to transform the user interface. It can"
 " be used to quickly setup the user interface to broadly reflect how other "
 "popular operating systems look and feel."
 msgstr ""
 
-#: gettingstarted.html:1077
+#: gettingstarted.html:1052
 msgid "Budgie Desktop Settings"
 msgstr "הגדרות שולחן העבודה Budgie"
 
-#: gettingstarted.html:1080
+#: gettingstarted.html:1055
 msgid ""
 "<b>Budgie Desktop Settings</b> can be found later in the menu <b>System "
 "Tools</b>."
@@ -1167,17 +1157,17 @@ msgstr ""
 "את <b>הגדרות שולחן העבודה של Budgie</b> אפשר למצוא מאוחר יותר בתפריט <b>כלי "
 "מערכת</b>."
 
-#: gettingstarted.html1088, 1093
+#: gettingstarted.html1063, 1068
 msgid "Budgie Control Center"
 msgstr "מרכז הבקרה של Budgie"
 
-#: gettingstarted.html:1089
+#: gettingstarted.html:1064
 msgid ""
 "You can configure just about every aspect of your computer from Budgie "
 "Control Center."
 msgstr "אפשר להגדיר כמעט כל דבר במחשב דרך מרכז הבקרה של Budgie."
 
-#: gettingstarted.html:1098
+#: gettingstarted.html:1073
 msgid ""
 "<b>Budgie Control Center</b> can be found later in the menu <b>System "
 "Tools</b>."
@@ -1185,13 +1175,13 @@ msgstr ""
 "את <b>מרכז הבקרה של Budgie</b> אפשר למצוא מאוחר יותר בתפריט <b>כלי "
 "מערכת</b>."
 
-#: gettingstarted.html:1123
+#: gettingstarted.html:1098
 msgid ""
 "Ubuntu Budgie has many keyboard shortcuts that help make using your computer"
 " more efficient."
 msgstr ""
 
-#: gettingstarted.html:1127
+#: gettingstarted.html:1102
 msgid ""
 "The <b><img src=\"img/welcome/super-key.svg\" /> Super</b> key is your "
 "Windows key. For Mac keyboards, this is the ⌘ Command key."
@@ -1199,524 +1189,524 @@ msgstr ""
 "מקש ה־<b><img src=\"img/welcome/super-key.svg\" />Super</b> הוא מקש "
 "ה־Windows שלך. במקלדות של מחשבי Mac, זהו ⌘ מקש הפקודה/Command."
 
-#: gettingstarted.html:1130
+#: gettingstarted.html:1105
 msgid "Budgie Desktop shortcuts"
 msgstr "קיצורי הדרך בשולחן העבודה של Budgie"
 
-#: gettingstarted.html:1131
+#: gettingstarted.html:1106
 msgid "Some common shortcuts used in Budgie Desktop"
 msgstr "קיצורי דרך נפוצים בשולחן העבודה Budgie."
 
-#: gettingstarted.html:1141
+#: gettingstarted.html:1116
 msgid "Open notifications in Raven"
 msgstr "פתיחת ההתראות ב־Raven"
 
-#: gettingstarted.html:1150
+#: gettingstarted.html:1125
 msgid "Open applet Settings in Raven"
 msgstr "פתיחת הגדרות היישומון ב־Raven"
 
-#: gettingstarted.html:1155
+#: gettingstarted.html:1130
 msgid "Common application shortcuts"
 msgstr "קיצורים נפוצים ליישומים"
 
-#: gettingstarted.html:1156
+#: gettingstarted.html:1131
 msgid "These shortcuts apply in most applications."
 msgstr "קיצורי הדרך האלה חלים על רוב היישומים."
 
-#: gettingstarted.html:1165
+#: gettingstarted.html:1140
 msgid "Toggle Tilix Quake Mode"
 msgstr ""
 
-#: gettingstarted.html1169, 1177, 1185, 1193, 1201, 1209, 1217, 1225, 1233,
-#: 1241, 1249, 1257, 1265, 1273, 1281, 1313, 1329, 1359, 1378, 1392, 1423,
-#: 1433, 1443, 1455, 1638, 1648, 1658, 1668, 1678, 1688, 1698, 1708, 1718
+#: gettingstarted.html1144, 1152, 1160, 1168, 1176, 1184, 1192, 1200, 1208,
+#: 1216, 1224, 1232, 1240, 1248, 1256, 1288, 1304, 1334, 1353, 1367, 1398,
+#: 1408, 1418, 1430, 1613, 1623, 1633, 1643, 1653, 1663, 1673, 1683, 1693
 msgid "Ctrl"
 msgstr "Ctrl"
 
-#: gettingstarted.html:1173
+#: gettingstarted.html:1148
 msgid "Copy the selected text/object"
 msgstr "העתקת הטקסט/הרכיב שנבחר"
 
-#: gettingstarted.html:1181
+#: gettingstarted.html:1156
 msgid "Cut the selected text/object"
 msgstr "גזירת הטקסט/רכיב שנבחר"
 
-#: gettingstarted.html:1189
+#: gettingstarted.html:1164
 msgid "Paste/insert the selected text/object"
 msgstr "הדבקת הטקסט/הרכיב שנבחר"
 
-#: gettingstarted.html:1197
+#: gettingstarted.html:1172
 msgid "Select all text"
 msgstr "בחירת כל הטקסט"
 
-#: gettingstarted.html:1205
+#: gettingstarted.html:1180
 msgid "Find words"
 msgstr "איתור מילים"
 
-#: gettingstarted.html:1213
+#: gettingstarted.html:1188
 msgid "Find and replace words"
 msgstr "אפשר לאתר ולהחליף מילים"
 
-#: gettingstarted.html:1221
+#: gettingstarted.html:1196
 msgid "Make the selected text bold"
 msgstr "הדגשת הטקסט שנבחר"
 
-#: gettingstarted.html:1229
+#: gettingstarted.html:1204
 msgid "Make the selected text italic"
 msgstr "הטיית הטקסט שנבחר"
 
-#: gettingstarted.html:1237
+#: gettingstarted.html:1212
 msgid "Underline the selected text"
 msgstr "הצגת קו תחתון מתחת לטקסט"
 
-#: gettingstarted.html:1245
+#: gettingstarted.html:1220
 msgid "Open a new document or window"
 msgstr "פתיחה במסמך או חלון חדש"
 
-#: gettingstarted.html:1253
+#: gettingstarted.html:1228
 msgid "Save the current document"
 msgstr "שמירת המסמך הנוכחי"
 
-#: gettingstarted.html:1261
+#: gettingstarted.html:1236
 msgid "Open another document"
 msgstr "פתיחת מסמך אחר"
 
-#: gettingstarted.html:1269
+#: gettingstarted.html:1244
 msgid "Print the current document"
 msgstr "הדפסת המסמך הנוכחי"
 
-#: gettingstarted.html:1277
+#: gettingstarted.html:1252
 msgid "Undo the last change you made"
 msgstr "ביטול השינוי האחרון שבוצע"
 
-#: gettingstarted.html1283, 1311, 1321, 1447, 1458, 1474, 1485, 1496, 1507
+#: gettingstarted.html1258, 1286, 1296, 1422, 1433, 1449, 1460, 1471, 1482
 msgid "Shift"
 msgstr "Shift"
 
-#: gettingstarted.html:1287
+#: gettingstarted.html:1262
 msgid "Redo a change that you just undid"
 msgstr "ביצוע השינוי שביטלת מחדש"
 
-#: gettingstarted.html:1293
+#: gettingstarted.html:1268
 msgid "Toggle the current application between full-screen and windowed"
 msgstr "העברת היישום הנוכחי ממצב חלון למצב מסך מלא וההפך"
 
-#: gettingstarted.html:1297
+#: gettingstarted.html:1272
 msgid "Desktop shortcuts"
 msgstr "קיצורי הדרך בשולחן העבודה"
 
-#: gettingstarted.html:1298
+#: gettingstarted.html:1273
 msgid ""
 "This section lists common keyboard shortcuts which you can use to operate "
 "parts of the desktop."
 msgstr ""
 
-#: gettingstarted.html:1307
+#: gettingstarted.html:1282
 msgid "Open Applications menu"
 msgstr "פתיחת תפריט היישומים"
 
-#: gettingstarted.html:1317
+#: gettingstarted.html:1292
 msgid "Copy a screenshot of an area to clipboard"
 msgstr ""
 
-#: gettingstarted.html:1325
+#: gettingstarted.html:1300
 msgid "Save a screenshot of an area to the Pictures directory"
 msgstr ""
 
-#: gettingstarted.html:1333
+#: gettingstarted.html:1308
 msgid "Copy a screenshot of a window to clipboard"
 msgstr "העתקת צילום מסך של חלון ללוח הגזירים"
 
-#: gettingstarted.html1337, 1351, 1361, 1380, 1394, 1408, 1425, 1435, 1445,
-#: 1457, 1466, 1518, 1526, 1534, 1569, 1640, 1650, 1660, 1670, 1680, 1690,
-#: 1700, 1710, 1720
+#: gettingstarted.html1312, 1326, 1336, 1355, 1369, 1383, 1400, 1410, 1420,
+#: 1432, 1441, 1493, 1501, 1509, 1544, 1615, 1625, 1635, 1645, 1655, 1665,
+#: 1675, 1685, 1695
 msgid "Alt"
 msgstr "Alt"
 
-#: gettingstarted.html:1341
+#: gettingstarted.html:1316
 msgid "Save a screenshot of a window to the Pictures directory"
 msgstr "שמירת צילום מסך של חלון בתיקיית התמונות"
 
-#: gettingstarted.html:1347
+#: gettingstarted.html:1322
 msgid "Save a screenshot to the Pictures directory"
 msgstr "שמירת צילום מסך לתיקיית התמונות"
 
-#: gettingstarted.html:1355
+#: gettingstarted.html:1330
 msgid "Run an application by typing its name in the box which appears"
 msgstr "אפשר להפעיל יישום בעזרת הקלדת השם שלו בתיבה שמופיעה"
 
-#: gettingstarted.html:1363
+#: gettingstarted.html:1338
 msgid "Delete"
 msgstr "מחיקה"
 
-#: gettingstarted.html:1365
+#: gettingstarted.html:1340
 msgid "Logout"
 msgstr "יציאה"
 
-#: gettingstarted.html:1374
+#: gettingstarted.html:1349
 msgid "Lock your screen."
 msgstr "נעילת המסך."
 
-#: gettingstarted.html:1384
+#: gettingstarted.html:1359
 msgid "Open a terminal."
 msgstr "פתיחת מסוף."
 
-#: gettingstarted.html:1388
+#: gettingstarted.html:1363
 msgid "Window shortcuts - general"
 msgstr ""
 
-#: gettingstarted.html:1398
+#: gettingstarted.html:1373
 msgid "Call Window Shuffler gui (window tiling grid)."
 msgstr ""
 
-#: gettingstarted.html:1402
+#: gettingstarted.html:1377
 msgid "Video Demonstration"
 msgstr ""
 
-#: gettingstarted.html:1410
+#: gettingstarted.html:1385
 msgid "Tab"
 msgstr "לשונית"
 
-#: gettingstarted.html:1413
+#: gettingstarted.html:1388
 msgid "Switch between currently-open windows."
 msgstr "החלפה בין החלונות שפתוחים כרגע."
 
-#: gettingstarted.html:1415
+#: gettingstarted.html:1390
 msgid "Press Alt + Tab and then release Tab (but continue to hold Alt)."
 msgstr ""
 
-#: gettingstarted.html:1416
+#: gettingstarted.html:1391
 msgid ""
 "Press Tab repeatedly to cycle through the list of available windows which "
 "appears on the screen."
 msgstr ""
 
-#: gettingstarted.html1427, 1449, 1581
+#: gettingstarted.html1402, 1424, 1556
 msgid "Left"
 msgstr "שמאל"
 
-#: gettingstarted.html:1429
+#: gettingstarted.html:1404
 msgid "Switch to the previous workspace."
 msgstr "מעבר למרחב העבודה הקודם."
 
-#: gettingstarted.html1437, 1460, 1590
+#: gettingstarted.html1412, 1435, 1565
 msgid "Right"
 msgstr "ימין"
 
-#: gettingstarted.html:1439
+#: gettingstarted.html:1414
 msgid "Switch to the next workspace."
 msgstr "מעבר למרחב העבודה הבא."
 
-#: gettingstarted.html:1451
+#: gettingstarted.html:1426
 msgid "Move the current window to the previous workspace."
 msgstr "העברת החלון הנוכחי למרחב העבודה הקודם."
 
-#: gettingstarted.html:1462
+#: gettingstarted.html:1437
 msgid "Move the current window to the next workspace."
 msgstr "העברת החלון הנוכחי למרחב העבודה הבא."
 
-#: gettingstarted.html:1470
+#: gettingstarted.html:1445
 msgid "Move the current window to the monitor above."
 msgstr ""
 
-#: gettingstarted.html:1481
+#: gettingstarted.html:1456
 msgid "Move the current window to the monitor below."
 msgstr ""
 
-#: gettingstarted.html:1492
+#: gettingstarted.html:1467
 msgid "Move the current window to the monitor to the left."
 msgstr ""
 
-#: gettingstarted.html:1503
+#: gettingstarted.html:1478
 msgid "Move the current window to the monitor to the right."
 msgstr ""
 
-#: gettingstarted.html:1514
+#: gettingstarted.html:1489
 msgid "Closes window."
 msgstr "לסגירת החלון."
 
-#: gettingstarted.html:1522
+#: gettingstarted.html:1497
 msgid "Returns window to 'normal' or previous size."
 msgstr "להחזרת החלון לגודל „רגיל” או לגודל הקודם."
 
-#: gettingstarted.html:1530
+#: gettingstarted.html:1505
 msgid "Moves the current window (can be moved with mouse or keyboard)."
 msgstr ""
 
-#: gettingstarted.html:1538
+#: gettingstarted.html:1513
 msgid "Resizes current window (again, can be moved with mouse or keyboard)."
 msgstr ""
 
-#: gettingstarted.html:1547
+#: gettingstarted.html:1522
 msgid "Minimizes current window."
 msgstr "למזעור החלון הנוכחי."
 
-#: gettingstarted.html:1554
+#: gettingstarted.html:1529
 msgid "Up"
 msgstr "למעלה"
 
-#: gettingstarted.html:1556
+#: gettingstarted.html:1531
 msgid "Maximizes current window."
 msgstr "להגדלת החלון הנוכחי."
 
-#: gettingstarted.html:1563
+#: gettingstarted.html:1538
 msgid "Down"
 msgstr "למטה"
 
-#: gettingstarted.html:1565
+#: gettingstarted.html:1540
 msgid "Unmaximizes current window."
 msgstr "להקטנת החלון הנוכחי."
 
-#: gettingstarted.html:1571
+#: gettingstarted.html:1546
 msgid "Space"
 msgstr "רווח"
 
-#: gettingstarted.html:1573
+#: gettingstarted.html:1548
 msgid ""
 "Displays the window menu with options such as 'Always on Top' and 'Minimize'"
 " and 'Maximize' and above commands."
 msgstr ""
 
-#: gettingstarted.html:1583
+#: gettingstarted.html:1558
 msgid "Place window on left side of screen."
 msgstr ""
 
-#: gettingstarted.html:1592
+#: gettingstarted.html:1567
 msgid "Place window on right side of screen."
 msgstr "מיקום החלון בצד הימני של המסך."
 
-#: gettingstarted.html1599, 1672
+#: gettingstarted.html1574, 1647
 msgid "1"
 msgstr "1"
 
-#: gettingstarted.html:1601
+#: gettingstarted.html:1576
 msgid "Quarter tiling: top left."
 msgstr ""
 
-#: gettingstarted.html1608, 1702
+#: gettingstarted.html1583, 1677
 msgid "2"
 msgstr "2"
 
-#: gettingstarted.html:1610
+#: gettingstarted.html:1585
 msgid "Quarter tiling: top right."
 msgstr ""
 
-#: gettingstarted.html1617, 1662
+#: gettingstarted.html1592, 1637
 msgid "3"
 msgstr "3"
 
-#: gettingstarted.html:1619
+#: gettingstarted.html:1594
 msgid "Quarter tiling: bottom left."
 msgstr ""
 
-#: gettingstarted.html1626, 1712
+#: gettingstarted.html1601, 1687
 msgid "4"
 msgstr "4"
 
-#: gettingstarted.html:1628
+#: gettingstarted.html:1603
 msgid "Quarter tiling: bottom right."
 msgstr ""
 
-#: gettingstarted.html:1633
+#: gettingstarted.html:1608
 msgid "Window shortcuts - numeric keypad"
 msgstr ""
 
-#: gettingstarted.html:1634
+#: gettingstarted.html:1609
 msgid "Tiling shortcuts on the numeric keypad."
 msgstr ""
 
-#: gettingstarted.html:1642
+#: gettingstarted.html:1617
 msgid "7"
 msgstr "7"
 
-#: gettingstarted.html:1644
+#: gettingstarted.html:1619
 msgid "Quarter top left."
 msgstr ""
 
-#: gettingstarted.html:1652
+#: gettingstarted.html:1627
 msgid "9"
 msgstr "9"
 
-#: gettingstarted.html:1654
+#: gettingstarted.html:1629
 msgid "Quarter top right."
 msgstr ""
 
-#: gettingstarted.html:1664
+#: gettingstarted.html:1639
 msgid "Quarter bottom right."
 msgstr ""
 
-#: gettingstarted.html:1674
+#: gettingstarted.html:1649
 msgid "Quarter bottom left."
 msgstr ""
 
-#: gettingstarted.html:1682
+#: gettingstarted.html:1657
 msgid "8"
 msgstr "8"
 
-#: gettingstarted.html:1684
+#: gettingstarted.html:1659
 msgid "Half top."
 msgstr ""
 
-#: gettingstarted.html:1692
+#: gettingstarted.html:1667
 msgid "6"
 msgstr "6"
 
-#: gettingstarted.html:1694
+#: gettingstarted.html:1669
 msgid "Half right."
 msgstr ""
 
-#: gettingstarted.html:1704
+#: gettingstarted.html:1679
 msgid "Half bottom."
 msgstr ""
 
-#: gettingstarted.html:1714
+#: gettingstarted.html:1689
 msgid "Half left."
 msgstr ""
 
-#: gettingstarted.html:1722
+#: gettingstarted.html:1697
 msgid "5"
 msgstr "5"
 
-#: gettingstarted.html:1724
+#: gettingstarted.html:1699
 msgid "Toggle maximize."
 msgstr "הגדלה או הקטנה."
 
-#: gettingstarted.html:1733
+#: gettingstarted.html:1708
 msgid "Update shortcuts in the Settings App"
 msgstr "עדכון קיצורי הדרך ביישום ההגדרות"
 
-#: gettingstarted.html:1755
+#: gettingstarted.html:1730
 msgid ""
 "Your machine is made up of various components that interact with one "
 "another. This information is useful when providing support to ensure "
 "hardware and software works on your machine."
 msgstr ""
 
-#: gettingstarted.html:1763
+#: gettingstarted.html:1738
 msgid "Gathering Information.."
 msgstr "המידע מתקבל..."
 
-#: gettingstarted.html:1772
+#: gettingstarted.html:1747
 msgid "System"
 msgstr "מערכת"
 
-#: gettingstarted.html:1775
+#: gettingstarted.html:1750
 msgid "Distribution:"
 msgstr "הפצה:"
 
-#: gettingstarted.html:1779
+#: gettingstarted.html:1754
 msgid "Kernel:"
 msgstr "ליבה:"
 
-#: gettingstarted.html:1783
+#: gettingstarted.html:1758
 msgid "The Linux kernel is the heart of Ubuntu."
 msgstr "ליבת לינוקס היא הלב של אובונטו."
 
-#: gettingstarted.html:1789
+#: gettingstarted.html:1764
 msgid "Motherboard:"
 msgstr "לוח אם:"
 
-#: gettingstarted.html:1793
+#: gettingstarted.html:1768
 msgid "Boot Mode:"
 msgstr "מצב הפעלה:"
 
-#: gettingstarted.html:1797
+#: gettingstarted.html:1772
 msgid "Displays the mode that OS is communicating with the firmware."
 msgstr ""
 
-#: gettingstarted.html:1805
+#: gettingstarted.html:1780
 msgid "Processor"
 msgstr "מעבד"
 
-#: gettingstarted.html:1808
+#: gettingstarted.html:1783
 msgid "Model:"
 msgstr "דגם:"
 
-#: gettingstarted.html:1812
+#: gettingstarted.html:1787
 msgid "Speed:"
 msgstr "מהירות:"
 
-#: gettingstarted.html:1816
+#: gettingstarted.html:1791
 msgid "Architecture in use:"
 msgstr "ארכיטקטורה בשימוש:"
 
-#: gettingstarted.html:1820
+#: gettingstarted.html:1795
 msgid ""
 "The operating system's architecture in use. For instance, i386 = 32-bit."
 msgstr "ארכיטקטורת מערכת ההפעלה שבשימוש. למשל, i386 =‏ 32 סיביות."
 
-#: gettingstarted.html:1828
+#: gettingstarted.html:1803
 msgid "Components"
 msgstr "רכיבים"
 
-#: gettingstarted.html:1831
+#: gettingstarted.html:1806
 msgid "Memory (RAM):"
 msgstr "זיכרון (RAM)‏:"
 
-#: gettingstarted.html:1835
+#: gettingstarted.html:1810
 msgid "More RAM allows more applications to run simultaneously."
 msgstr "יותר זיכרון RAM מאפשר ליותר יישומים לפעול בו־זמנית."
 
-#: gettingstarted.html:1841
+#: gettingstarted.html:1816
 msgid "Graphics:"
 msgstr "גרפיקה:"
 
-#: gettingstarted.html:1845
+#: gettingstarted.html:1820
 msgid "Internet Access:"
 msgstr "גישה לאינטרנט:"
 
-#: gettingstarted.html:1848
+#: gettingstarted.html:1823
 msgid "Connected"
 msgstr "מחובר"
 
-#: gettingstarted.html:1849
+#: gettingstarted.html:1824
 msgid "Not Connected"
 msgstr "לא מחובר"
 
-#: gettingstarted.html:1857
+#: gettingstarted.html:1832
 msgid "Storage"
 msgstr "אחסון"
 
-#: gettingstarted.html:1861
+#: gettingstarted.html:1836
 msgid "Root File System:"
 msgstr ""
 
-#: gettingstarted.html:1865
+#: gettingstarted.html:1840
 msgid "The file system where OS is installed."
 msgstr "מערכת הקבצים בה מותקנת מערכת ההפעלה."
 
-#: gettingstarted.html:1871
+#: gettingstarted.html:1846
 msgid "Entire Disk Capacity:"
 msgstr "נפח הכונן כולו:"
 
-#: gettingstarted.html:1877
+#: gettingstarted.html:1852
 msgid "OS Usage"
 msgstr "בשימוש מערכת ההפעלה"
 
-#: gettingstarted.html:1882
+#: gettingstarted.html:1857
 msgid "Other Usage"
 msgstr "בשימוש אחר"
 
-#: gettingstarted.html:1887
+#: gettingstarted.html:1862
 msgid "Allocated for Ubuntu Budgie:"
 msgstr ""
 
-#: gettingstarted.html:1891
+#: gettingstarted.html:1866
 msgid "The size of your operating system partition."
 msgstr "גודל מחיצת מערכת ההפעלה שלך."
 
-#: gettingstarted.html:1898
+#: gettingstarted.html:1873
 msgid "Used Space:"
 msgstr "שטח בשימוש:"
 
-#: gettingstarted.html:1906
+#: gettingstarted.html:1881
 msgid "Free Space:"
 msgstr "שטח פנוי:"
 
-#: gettingstarted.html:1914
+#: gettingstarted.html:1889
 msgid "Other Usage:"
 msgstr "בשימוש אחר:"
 
-#: gettingstarted.html:1919
+#: gettingstarted.html:1894
 msgid "Reserved by system, other partitions, unallocated or swap."
 msgstr "שמור לטובת המערכת, מחיצות אחרות, אין הקצאה או שטח החלפה."

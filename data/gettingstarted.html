@@ -772,8 +772,6 @@
         <div class="row">
           <div class="col-md-12">
             <h2>&zwnj;Flatpak, Dropbox and User Management&zwnj;</h2>
-            <p>&zwnj;Ubuntu Budgie provides option to install third party software using Flatpak
-              and supports multiple user accounts.&zwnj;</p>
           </div>
         </div>
         <hr class="soften-light">
@@ -793,8 +791,8 @@
               &zwnj;Applying Changes...&zwnj;</span>
             <a id="flatpak-install" class="btn btn-success" onclick="cmd('install?flatpak');">&nbsp;<span 
               class="material-icons">&#xE2C0;</span><span class="button-text">&zwnj;Install & Configure Flatpak&zwnj;</span>&nbsp;</a>
-            <span id="flatpak-remove" class="alert alert-success"> <i class="material-icons">&#xE876;</i>&zwnj;Flatpak is installed. 
-              Please reboot for the service to start&zwnj;</span>
+            <div id="flatpak-remove" class="alert alert-success"> <i class="material-icons">&#xE876;</i>&zwnj;Flatpak is installed.&zwnj;</div>
+            <p id="flatpak-instruction" class="hidden"><small>&zwnj;Please reboot for the service to start.&zwnj;</small></p>
             <span id="flatpak-hint" class="center"><small>
                 <p>&zwnj;Being a user friendly distribution, Ubuntu Budgie allows you to install Flatpak with a single click. 
                   After setup, you can use <strong>Software</strong> to install Flatpak applications.&zwnj;
@@ -806,26 +804,21 @@
         
         <div class="row wow fadeIn">
           <div class="col-md-6 center-inside">
-            <img src="img/logos/dropbox.png" style="width: 100%">
+            <img src="img/logos/dropbox.png">
           </div>
           <div class="col-md-6">
             <h3>&zwnj;Dropbox&zwnj;</h3>
-            <p>&zwnj;<strong>Dropbox</strong> is a popular proprietary file sharing
-              and storage solution.&zwnj;</p>
+            <p>&zwnj;<strong>Dropbox</strong> is a popular proprietary file sharing and storage solution.&zwnj;</p>
             <span id="nemodropbox-status" class="hidden"><img src="img/welcome/processing.gif" width="24px" height="24px" /> 
               &zwnj;Applying Changes...&zwnj;</span>
-            <a id="nemodropbox-install" class="btn btn-success hvr-shadow" onclick="cmd('install?nemodropbox');"> 
-              &nbsp;<span class="material-icons">&#xE2C0;</span>&zwnj;Install & Configure Dropbox&zwnj;&nbsp;
-            </a>
-            <div id="nemodropbox-remove" class="alert alert-success">
-              <i class="material-icons">&#xE876;</i>&zwnj;Dropbox is installed&zwnj;</span>
-              <span id="nemodropbox-hint" class="center"><small>
-                <p>&zwnj;After installing, logout and login and follow the dropbox instructions that are
-                  then displayed.&zwnj;</p>
-                </small></span>
-            </div>
+            <a id="nemodropbox-install" class="btn btn-success" onclick="cmd('install?nemodropbox');">&nbsp;<span 
+              class="material-icons">&#xE2C0;</span><span class="button-text">&zwnj;Install & Configure Dropbox&zwnj;</span>&nbsp;</a>
+            <div id="nemodropbox-remove" class="alert alert-success"> <i class="material-icons">&#xE876;</i>&zwnj;Dropbox is installed.&zwnj;</div>
+            <p id="nemodropbox-instruction" class="hidden"><small>&zwnj;After installing, logout and login and follow the dropbox instructions that are
+              then displayed.&zwnj;</small></p>
           </div>
         </div>
+
         <hr class="soften-light">
 
         <div class="row wow fadeIn">
