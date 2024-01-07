@@ -1725,8 +1725,11 @@ class SystemState(object):
                     root_dev = root_partition[:-1]
                 if root_partition[:-3] == "/dev/mmcblk":  # /dev/mmcblkXpY
                     root_dev = root_partition[:-2]
+                if root_partition.find("/dev/nvme") != -1: # dev/nvme type drives
+                    root_dev = root_partition[:-2]
                 else:
                     root_dev = root_partition[:-1]  # Generic
+                    dbg.stdout("generic partition", root_partition )
                 disk_dev_name = root_dev.split('/')[2]
                 dbg.stdout(
                     'Specs', 'Distribution is installed on disk: ' + root_dev, 1, 4)
