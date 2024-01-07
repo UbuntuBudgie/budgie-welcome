@@ -28,7 +28,11 @@ from notify2 import Notification, init as NotifyInit
 from queue import Queue, Empty
 from threading import Thread
 import gi
-gi.require_version('WebKit2', '4.0')
+try:
+    gi.require_version('WebKit2', '4.1')
+except:
+    gi.require_version('WebKit2', '4.0')
+
 from gi.repository import WebKit2, Gtk, Gio, Gdk, GLib
 import getpass
 import gettext
@@ -359,7 +363,7 @@ class AppView(WebKit2.WebView):
         # command is executed with another event, it won't be identified
         # as there is no effective title change. Consider links in applets
         # page. Multiple links refers to budgie-extras repository.
-        self.run_javascript("document.title = ''")
+        app.run_javascript("document.title = ''")
 
     def _context_menu_cb(self, webview, menu, event, htr, user_data=None):
         # Disable context menu.
@@ -1881,7 +1885,7 @@ class SystemState(object):
         app.update_page('#specs-tabs', 'fadeIn', 'fast')
         app.update_page('#specs-basic', 'fadeIn', 'medium')
         app.update_page('#specs-busy-basic', 'fadeOut', 'fast')
-        webkit.run_javascript('setCursorNormal()')
+        app.run_javascript('setCursorNormal()')
 
     def find_app_version(self):
         versions = find_app_version(cache)
@@ -2146,7 +2150,7 @@ class WelcomeApp(object):
         """
         Runs a JavaScript script on the page when invoked from run_javascript()
         """
-        self.webkit.run_javascript(script)
+        self.webkit.evaluate_javascript(script, -1, None, None, None, None)
         return GLib.SOURCE_REMOVE
 
     def _check_first_run(self):
