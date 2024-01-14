@@ -1712,20 +1712,36 @@
 				]
 			}
 		},
+		"corectrlppa": {
+			"packages": [
+				"corectrl"
+			],
+			"repos": {
+				"jammy": [
+					"ppa:ernstp/mesarc"
+				]
+			},
+			"post-install": "pin-corectrlppa"
+		},
+		"pin-corectrlppa": {
+			"script": "pin_corectrl",
+			"root" : "ignored_parameter"
+		},
 		"corectrl": {
 			"packages": [
 				"corectrl"
 			],
 			"repos": {
-				"all": [
-					"ppa:ernstp/mesarc"
+				"lunar": [
+					"universe"
+				],
+				"mantic": [
+					"universe"
+				],
+				"noble": [
+					"universe"
 				]
-			},
-			"post-install": "pin-corectrl"
-		},
-		"pin-corectrl": {
-			"script": "pin_corectrl",
-			"root" : "ignored_parameter"
+			}
 		},
 		"piper": {
 			"packages": [
