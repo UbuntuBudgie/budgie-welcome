@@ -77,7 +77,6 @@ class AppView(WebKit2.WebView):
         self.status_btn = None
         self.back_btn = None
         self.page_title = None
-        # self.set_zoom_level(0.90)
 
         self.back_signal_handler = None
 
@@ -1390,6 +1389,7 @@ class SystemState(object):
         self.first_run = False
         self.graphics_vendor = 'Unknown'
         self.graphics_grep = 'Unknown'
+        self.scale_factor = 0
 
         # Full path to binary
         self._welcome_bin_path = os.path.abspath(
@@ -1412,6 +1412,8 @@ class SystemState(object):
 
         # Collect distribution info
         self.gatherDistroInfo()
+
+        self.scale_factor = arg.scale_factor
 
         # Determine which type of session we are in.
         if arg.simulate_session:
@@ -2040,15 +2042,20 @@ class WelcomeApp(object):
         mv = AppView()
         width, height, xoffset, yoffset = self._get_resolution()
 
-        if width >= 1280:
-            w.set_default_size(992, 500)
-            mv.set_zoom_level(0.98)
-        elif width <= 900:
-            w.set_default_size(680, 340)
-            mv.set_zoom_level(0.68)
+        dbg.stdout('debug', "width " + str(width) + " height " + str(height) + " xoffset " + str(xoffset) + " yoffset "+str(yoffset), 0, 0)
+        if systemstate.scale_factor == 0:
+            if width >= 1280:
+                w.set_default_size(992, 500)
+                mv.set_zoom_level(0.98)
+            elif width <= 900:
+                w.set_default_size(680, 340)
+                mv.set_zoom_level(0.68)
+            else:
+                w.set_default_size(780, 380)
+                mv.set_zoom_level(0.75)
         else:
-            w.set_default_size(780, 380)
-            mv.set_zoom_level(0.75)
+            w.set_default_size(680, 340)
+            mv.set_zoom_level(systemstate.scale_factor)
 
         mv.status_btn = status_btn
         mv.back_btn = back_btn
@@ -2220,6 +2227,7 @@ class Arguments(object):
         self.graphics_vendor = ''
         self.locale = None
         self.jump_to = None
+        self.scale_factor= 0
 
         for arg in sys.argv:
             if arg == '--help' or arg == '-h':
@@ -2254,6 +2262,7 @@ class Arguments(object):
                 print(
                     '  --jump-to=PAGE               Open a specific page, excluding *.html')
                 print('  --locale=CODE                Locale to use. e.g. fr_FR.')
+                print('  --scale-factor=double      scale-factor to use. e.g. 1.0')
                 print(
                     '  -v, --verbose                Show more details to stdout (for diagnosis).')
                 print('  -V, --version                Version information')
@@ -2342,6 +2351,10 @@ class Arguments(object):
                 self.jump_to = arg.split('--jump-to=')[1]
                 dbg.stdout('Debug', 'Opening page: ' + \
                            self.jump_to + '.html', 0, 0)
+
+            if arg.startswith('--scale-factor='):
+                self.scale_factor = float(arg.split('--scale-factor=')[1])
+                dbg.stdout('Debug', 'Setting scale-factor to: ' + str(self.scale_factor), 0, 0)
 
 
 def find_app_version(cache=apt.Cache()):
