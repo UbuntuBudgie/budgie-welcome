@@ -40,7 +40,7 @@ msgstr "リポジトリはインストールされています"
 msgid "Enable Ubuntu Budgie backports repository"
 msgstr ""
 
-#: recommendations.html33, 70, 107, 129, 154, 169, 190, 211, 285
+#: recommendations.html33, 70, 107, 129, 154, 169, 186, 207, 281
 msgid "Applying Changes..."
 msgstr "変更を適用しています…"
 
@@ -65,7 +65,7 @@ msgstr "あなたのコンピュータに何か悲惨なことが起こった場
 msgid "Configure Backup"
 msgstr "バックアップの設定"
 
-#: recommendations.html59, 96, 126, 151, 187, 208
+#: recommendations.html59, 96, 126, 151, 204
 msgid "Remove"
 msgstr "削除"
 
@@ -175,7 +175,7 @@ msgstr "Nemo Share はインストールされています"
 msgid "Install Nemo Share"
 msgstr "Nemo Share をインストール"
 
-#: recommendations.html:197
+#: recommendations.html:193
 msgid ""
 "Gutenprint is a suite of <a onclick=\"cmd('link?http://gimp-"
 "print.sourceforge.net/p_Supported_Printers.php')\">thousands</a> of printer "
@@ -183,19 +183,19 @@ msgid ""
 "supports only the printer part of multi-function devices."
 msgstr ""
 
-#: recommendations.html:201
+#: recommendations.html:197
 msgid "Gutenprint is installed"
 msgstr ""
 
-#: recommendations.html:204
+#: recommendations.html:200
 msgid "Install Gutenprint"
 msgstr ""
 
-#: recommendations.html:216
+#: recommendations.html:212
 msgid "Snap Applications"
 msgstr "Snap アプリケーション"
 
-#: recommendations.html:221
+#: recommendations.html:217
 msgid ""
 "<strong>Snap</strong> is a new generation application packaging format "
 "developed by <em>Canonical</em>. Even though it was initially developed just"
@@ -211,19 +211,19 @@ msgid ""
 "the past."
 msgstr ""
 
-#: recommendations.html:234
+#: recommendations.html:230
 msgid "Learn more"
 msgstr "詳細"
 
-#: recommendations.html:236
+#: recommendations.html:232
 msgid "Snap user guide"
 msgstr "Snap ユーザーガイド"
 
-#: recommendations.html:238
+#: recommendations.html:234
 msgid "Search Snap Apps"
 msgstr "Snap アプリを検索"
 
-#: recommendations.html:239
+#: recommendations.html:235
 msgid ""
 "If there’s a barrier to Snap app adoption (aside from few apps being made "
 "available in the format) it’s knowing which packages are available in the "
@@ -232,7 +232,7 @@ msgid ""
 msgstr ""
 "Snapアプリの採用に障壁がある場合（この形式で利用できるアプリはほとんどありません）、Snapアプリストアで利用できるパッケージがわかっています。まあ、そうは思いません。ターミナルをポップして開き、次のコマンドを実行します:"
 
-#: recommendations.html:245
+#: recommendations.html:241
 msgid ""
 "The find command lets you quickly search for and discover snaps available to"
 " install from the command line. It can be run with a query after it (e.g., "
@@ -242,15 +242,15 @@ msgstr ""
 "コマンドを使用すると、コマンドラインからインストール可能なスナップをすばやく検索して検出できます。クエリの後に実行することができます（例えば、「snap"
 " find email」、「snap find media」、「snap find messaging」）または、なしで実行できます。"
 
-#: recommendations.html:248
+#: recommendations.html:244
 msgid "When run without a query you’ll instead see a list of featured snaps."
 msgstr "クエリなしで実行すると、代わりにsnapの機能リストが表示されます。"
 
-#: recommendations.html:249
+#: recommendations.html:245
 msgid "See installed apps"
 msgstr "インストール済みのアプリを見る"
 
-#: recommendations.html:250
+#: recommendations.html:246
 msgid ""
 "Installed some Snaps but can’t remember what? Don’t panic. Use the list "
 "command to see an up-to-date list of all Snap apps installed on your system:"
@@ -258,7 +258,7 @@ msgstr ""
 "いくつかのSnapをインストールしましたが、何をインストールしたか思い出せませんか？パニックにならないでください。 "
 "listコマンドを使用して、システムにインストールされているすべてのSnapアプリの最新リストを表示します。"
 
-#: recommendations.html:253
+#: recommendations.html:249
 msgid ""
 "This list also shows you their version number, revision number and the name "
 "of the developer who uploaded it (handy when there are multiple versions of "
@@ -266,11 +266,11 @@ msgid ""
 msgstr ""
 "このリストには、バージョン番号、リビジョン番号、それをアップロードした開発者の名前も表示されます（ストアに同じアプリの複数のバージョン、例えばTelegramなどがある場合に便利です）。"
 
-#: recommendations.html:256
+#: recommendations.html:252
 msgid "Install & Remove Snap Apps"
 msgstr "Snap アプリのインストールと削除"
 
-#: recommendations.html:257
+#: recommendations.html:253
 msgid ""
 "If you’re used to managing software using apt you’ll instantly find the "
 "analogous snap commands easy to remember. You install snap apps with the "
@@ -279,11 +279,11 @@ msgstr ""
 "apt を使用してソフトウェアを管理することに慣れている場合は、覚えやすい類似のsnap コマンドがすぐに見つかります。 "
 "「install」コマンドでsnap アプリをインストールし、「remove」コマンドを使用してsnap アプリを削除します。"
 
-#: recommendations.html:262
+#: recommendations.html:258
 msgid "See details of an App"
 msgstr "アプリの詳細を見る"
 
-#: recommendations.html:263
+#: recommendations.html:259
 msgid ""
 "You can use this to see detailed information about any snap application, "
 "whether it is installed or not. This info includes the application’s release"
@@ -294,11 +294,11 @@ msgstr ""
 "アプリケーションに関する詳細情報を表示できます。この情報には、アプリケーションのリリースチャンネル、制限ステータス、サイズ、改訂数などが含まれます。snap"
 " 情報 --verbose を使用すると、概要がわかりやすくなります。"
 
-#: recommendations.html:269
+#: recommendations.html:265
 msgid "Update a Snap App"
 msgstr "Snap アプリを更新する"
 
-#: recommendations.html:271
+#: recommendations.html:267
 msgid ""
 "Rather helpfully you probably won’t ever need to remember to install an "
 "update to a Snap app. This is because Snapd runs in the background and "
@@ -308,14 +308,14 @@ msgstr ""
 "むしろ便利なことに、おそらくSnap アプリの更新プログラムをインストールすることを覚えておく必要はないでしょう。これは、Snapd "
 "がバックグラウンドで実行され、更新を自動的に処理するためです（スナップ更新を元に戻す、または特定のリビジョンをインストールすることができます）。"
 
-#: recommendations.html:277
+#: recommendations.html:273
 msgid "Reference"
 msgstr "レファレンス"
 
-#: recommendations.html:280
+#: recommendations.html:276
 msgid "Snap is already installed"
 msgstr "Snap は既にインストールされています"
 
-#: recommendations.html:283
+#: recommendations.html:279
 msgid "Install Snap"
 msgstr "Snap をインストールする"

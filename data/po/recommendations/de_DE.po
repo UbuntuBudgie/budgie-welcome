@@ -50,7 +50,7 @@ msgstr "Paketquelle ist installiert."
 msgid "Enable Ubuntu Budgie backports repository"
 msgstr ""
 
-#: recommendations.html33, 70, 107, 129, 154, 169, 190, 211, 285
+#: recommendations.html33, 70, 107, 129, 154, 169, 186, 207, 281
 msgid "Applying Changes..."
 msgstr "Änderungen werden übernommen..."
 
@@ -77,7 +77,7 @@ msgstr ""
 msgid "Configure Backup"
 msgstr "Datensicherung einrichten"
 
-#: recommendations.html59, 96, 126, 151, 187, 208
+#: recommendations.html59, 96, 126, 151, 204
 msgid "Remove"
 msgstr "Entfernen"
 
@@ -189,7 +189,7 @@ msgstr "Nemo Share ist installiert"
 msgid "Install Nemo Share"
 msgstr "Nemo Share installieren"
 
-#: recommendations.html:197
+#: recommendations.html:193
 msgid ""
 "Gutenprint is a suite of <a onclick=\"cmd('link?http://gimp-"
 "print.sourceforge.net/p_Supported_Printers.php')\">thousands</a> of printer "
@@ -197,19 +197,19 @@ msgid ""
 "supports only the printer part of multi-function devices."
 msgstr ""
 
-#: recommendations.html:201
+#: recommendations.html:197
 msgid "Gutenprint is installed"
 msgstr "Gutenprint ist installiert"
 
-#: recommendations.html:204
+#: recommendations.html:200
 msgid "Install Gutenprint"
 msgstr "Gutenprint installieren"
 
-#: recommendations.html:216
+#: recommendations.html:212
 msgid "Snap Applications"
 msgstr "Snap Anwendungen"
 
-#: recommendations.html:221
+#: recommendations.html:217
 msgid ""
 "<strong>Snap</strong> is a new generation application packaging format "
 "developed by <em>Canonical</em>. Even though it was initially developed just"
@@ -225,19 +225,19 @@ msgid ""
 "the past."
 msgstr ""
 
-#: recommendations.html:234
+#: recommendations.html:230
 msgid "Learn more"
 msgstr "Mehr erfahren"
 
-#: recommendations.html:236
+#: recommendations.html:232
 msgid "Snap user guide"
 msgstr "Snap Benutzeranleitung"
 
-#: recommendations.html:238
+#: recommendations.html:234
 msgid "Search Snap Apps"
 msgstr "Snap Apps suchen"
 
-#: recommendations.html:239
+#: recommendations.html:235
 msgid ""
 "If there’s a barrier to Snap app adoption (aside from few apps being made "
 "available in the format) it’s knowing which packages are available in the "
@@ -249,7 +249,7 @@ msgstr ""
 "Pakete im Snap-App-Store verfügbar sind. Öffnen Sie einfach ein Terminal und"
 " führen Sie den folgenden Befehl aus:"
 
-#: recommendations.html:245
+#: recommendations.html:241
 msgid ""
 "The find command lets you quickly search for and discover snaps available to"
 " install from the command line. It can be run with a query after it (e.g., "
@@ -260,17 +260,17 @@ msgstr ""
 "Suchbegriff ergänzt werden (z.B. 'snap find email', 'snap find media', 'snap"
 " find messaging') oder ohne."
 
-#: recommendations.html:248
+#: recommendations.html:244
 msgid "When run without a query you’ll instead see a list of featured snaps."
 msgstr ""
 "Ohne Suchbegriff ausgeführt wird Ihnen eine Liste vorgestellter Snaps "
 "angezeigt."
 
-#: recommendations.html:249
+#: recommendations.html:245
 msgid "See installed apps"
 msgstr "Installierte Apps anzeigen"
 
-#: recommendations.html:250
+#: recommendations.html:246
 msgid ""
 "Installed some Snaps but can’t remember what? Don’t panic. Use the list "
 "command to see an up-to-date list of all Snap apps installed on your system:"
@@ -279,7 +279,7 @@ msgstr ""
 "Nutzen Sie den list Befehl um eine aktuelle Liste aller auf Ihrem System "
 "installierten Snaps Apps zu sehen:"
 
-#: recommendations.html:253
+#: recommendations.html:249
 msgid ""
 "This list also shows you their version number, revision number and the name "
 "of the developer who uploaded it (handy when there are multiple versions of "
@@ -289,11 +289,11 @@ msgstr ""
 "und den Namen des Entwicklers welcher es hochgeladen hat (hilfreich bei "
 "mehreren im Store vorhandenen Versionen der selben App, z.B. Telegram)."
 
-#: recommendations.html:256
+#: recommendations.html:252
 msgid "Install & Remove Snap Apps"
 msgstr "Snap Apps installieren & entfernen"
 
-#: recommendations.html:257
+#: recommendations.html:253
 msgid ""
 "If you’re used to managing software using apt you’ll instantly find the "
 "analogous snap commands easy to remember. You install snap apps with the "
@@ -303,11 +303,11 @@ msgstr ""
 "analogen Snap Befehle leicht merken können. Sie installieren Snap Apps mit "
 "dem Befehl 'install' und entfernen diese mit 'remove'."
 
-#: recommendations.html:262
+#: recommendations.html:258
 msgid "See details of an App"
 msgstr "Details einer App anzeigen"
 
-#: recommendations.html:263
+#: recommendations.html:259
 msgid ""
 "You can use this to see detailed information about any snap application, "
 "whether it is installed or not. This info includes the application’s release"
@@ -319,11 +319,11 @@ msgstr ""
 "den Release Channel, Beschränkungsstatus, Größe, Anzahl der Revisionen und "
 "mehr. Über snap info --verbose erhalten Sie eine größere Übersicht."
 
-#: recommendations.html:269
+#: recommendations.html:265
 msgid "Update a Snap App"
 msgstr "Eine Snap-App aktualisieren"
 
-#: recommendations.html:271
+#: recommendations.html:267
 msgid ""
 "Rather helpfully you probably won’t ever need to remember to install an "
 "update to a Snap app. This is because Snapd runs in the background and "
@@ -336,14 +336,14 @@ msgstr ""
 "(Sie können z. B. ein Snap-Update wiederherstellen oder eine bestimmte "
 "Revision installieren)."
 
-#: recommendations.html:277
+#: recommendations.html:273
 msgid "Reference"
 msgstr "Referenz"
 
-#: recommendations.html:280
+#: recommendations.html:276
 msgid "Snap is already installed"
 msgstr "Snap ist bereits installiert."
 
-#: recommendations.html:283
+#: recommendations.html:279
 msgid "Install Snap"
 msgstr "Installiere Snap"

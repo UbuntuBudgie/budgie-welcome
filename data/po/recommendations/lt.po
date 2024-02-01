@@ -39,7 +39,7 @@ msgstr "Saugykla yra įdiegta"
 msgid "Enable Ubuntu Budgie backports repository"
 msgstr ""
 
-#: recommendations.html33, 70, 107, 129, 154, 169, 190, 211, 285
+#: recommendations.html33, 70, 107, 129, 154, 169, 186, 207, 281
 msgid "Applying Changes..."
 msgstr "Taikomi pakeitimai..."
 
@@ -66,7 +66,7 @@ msgstr ""
 msgid "Configure Backup"
 msgstr "Konfigūruoti atsarginę kopiją"
 
-#: recommendations.html59, 96, 126, 151, 187, 208
+#: recommendations.html59, 96, 126, 151, 204
 msgid "Remove"
 msgstr "Šalinti"
 
@@ -178,7 +178,7 @@ msgstr "Nemo Share yra įdiegta"
 msgid "Install Nemo Share"
 msgstr "Įdiegti Nemo Share"
 
-#: recommendations.html:197
+#: recommendations.html:193
 msgid ""
 "Gutenprint is a suite of <a onclick=\"cmd('link?http://gimp-"
 "print.sourceforge.net/p_Supported_Printers.php')\">thousands</a> of printer "
@@ -186,19 +186,19 @@ msgid ""
 "supports only the printer part of multi-function devices."
 msgstr ""
 
-#: recommendations.html:201
+#: recommendations.html:197
 msgid "Gutenprint is installed"
 msgstr ""
 
-#: recommendations.html:204
+#: recommendations.html:200
 msgid "Install Gutenprint"
 msgstr ""
 
-#: recommendations.html:216
+#: recommendations.html:212
 msgid "Snap Applications"
 msgstr "Snap programos"
 
-#: recommendations.html:221
+#: recommendations.html:217
 msgid ""
 "<strong>Snap</strong> is a new generation application packaging format "
 "developed by <em>Canonical</em>. Even though it was initially developed just"
@@ -214,19 +214,19 @@ msgid ""
 "the past."
 msgstr ""
 
-#: recommendations.html:234
+#: recommendations.html:230
 msgid "Learn more"
 msgstr "Sužinokite daugiau"
 
-#: recommendations.html:236
+#: recommendations.html:232
 msgid "Snap user guide"
 msgstr "Snap naudotojo vadovas"
 
-#: recommendations.html:238
+#: recommendations.html:234
 msgid "Search Snap Apps"
 msgstr "Ieškoti Snap programų"
 
-#: recommendations.html:239
+#: recommendations.html:235
 msgid ""
 "If there’s a barrier to Snap app adoption (aside from few apps being made "
 "available in the format) it’s knowing which packages are available in the "
@@ -238,7 +238,7 @@ msgstr ""
 "paketai yra prieinami Snap programų parduotuvėje. Tačiau nesirūpinkite. "
 "Tiesiog, atverkite terminalą ir įvykdykite šią komandą:"
 
-#: recommendations.html:245
+#: recommendations.html:241
 msgid ""
 "The find command lets you quickly search for and discover snaps available to"
 " install from the command line. It can be run with a query after it (e.g., "
@@ -249,17 +249,17 @@ msgstr ""
 " žodžio \"find\" (pvz., \"snap find email\", \"snap find media\", \"snap "
 "find messaging\") arba be užklausos."
 
-#: recommendations.html:248
+#: recommendations.html:244
 msgid "When run without a query you’ll instead see a list of featured snaps."
 msgstr ""
 "Įvykdę šią komandą be užklausos, vietoj to, pamatysite sąrašą pasižymėjusių "
 "snap paketų."
 
-#: recommendations.html:249
+#: recommendations.html:245
 msgid "See installed apps"
 msgstr "Rodyti įdiegtas programas"
 
-#: recommendations.html:250
+#: recommendations.html:246
 msgid ""
 "Installed some Snaps but can’t remember what? Don’t panic. Use the list "
 "command to see an up-to-date list of all Snap apps installed on your system:"
@@ -268,7 +268,7 @@ msgstr ""
 "Nesijaudinkite. Norėdami pamatyti atnaujintą visų jūsų kompiuteryje įdiegtų "
 "Snap programų sąrašą, naudokite komandą \"list\":"
 
-#: recommendations.html:253
+#: recommendations.html:249
 msgid ""
 "This list also shows you their version number, revision number and the name "
 "of the developer who uploaded it (handy when there are multiple versions of "
@@ -278,11 +278,11 @@ msgstr ""
 "įkėlusio kūrėjo vardą (praverčia, kai parduotuvėje yra kelios tos pačios "
 "programos versijos, pvz., Telegram)."
 
-#: recommendations.html:256
+#: recommendations.html:252
 msgid "Install & Remove Snap Apps"
 msgstr "Įdiegti ir šalinti Snap programas"
 
-#: recommendations.html:257
+#: recommendations.html:253
 msgid ""
 "If you’re used to managing software using apt you’ll instantly find the "
 "analogous snap commands easy to remember. You install snap apps with the "
@@ -293,11 +293,11 @@ msgstr ""
 "įdiegiate, naudodami \"install\" komandą, o šalinate, naudodami \"remove\" "
 "komandą."
 
-#: recommendations.html:262
+#: recommendations.html:258
 msgid "See details of an App"
 msgstr "Rodyti išsamesnę programos informaciją"
 
-#: recommendations.html:263
+#: recommendations.html:259
 msgid ""
 "You can use this to see detailed information about any snap application, "
 "whether it is installed or not. This info includes the application’s release"
@@ -309,11 +309,11 @@ msgstr ""
 " programos laidos kanalas, apribojimų būsena, dydis, taisymų skaičius ir "
 "daugiau. Komanda \"snap info --verbose\" siūlo dar išsamesnę apžvalgą."
 
-#: recommendations.html:269
+#: recommendations.html:265
 msgid "Update a Snap App"
 msgstr "Atnaujinti Snap programą"
 
-#: recommendations.html:271
+#: recommendations.html:267
 msgid ""
 "Rather helpfully you probably won’t ever need to remember to install an "
 "update to a Snap app. This is because Snapd runs in the background and "
@@ -325,14 +325,14 @@ msgstr ""
 "automatiškai apdoroja visus atnaujinimus (jūs, žinoma, galite sugrąžinti "
 "Snap atnaujinimą ar įdiegti specifinę programos reviziją)."
 
-#: recommendations.html:277
+#: recommendations.html:273
 msgid "Reference"
 msgstr "Nuoroda"
 
-#: recommendations.html:280
+#: recommendations.html:276
 msgid "Snap is already installed"
 msgstr "Snap jau yra įdiegta"
 
-#: recommendations.html:283
+#: recommendations.html:279
 msgid "Install Snap"
 msgstr "Įdiegti Snap"

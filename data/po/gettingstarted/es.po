@@ -59,11 +59,11 @@ msgstr "Familiaridad"
 msgid "Browser Ballot"
 msgstr "Elección de navegador"
 
-#: gettingstarted.html46, 854, 1719
+#: gettingstarted.html46, 854, 1715
 msgid "Customization"
 msgstr "Personalización"
 
-#: gettingstarted.html49, 1097
+#: gettingstarted.html49, 1093
 msgid "Keyboard Shortcuts"
 msgstr "Atajos de teclado"
 
@@ -161,7 +161,7 @@ msgstr ""
 "El sistema operativo se ejecutará más eficientemente si el equipo satisface "
 "o supera los requisitos recomendados."
 
-#: gettingstarted.html118, 1729
+#: gettingstarted.html118, 1725
 msgid "What's inside my computer?"
 msgstr "¿Qué hay dentro de mi equipo?"
 
@@ -301,7 +301,7 @@ msgstr ""
 " duro serán reservados para el archivo de intercambio. Una partición de "
 "intercambio separada ya no será necesaria crear."
 
-#: gettingstarted.html196, 397, 764, 1718
+#: gettingstarted.html196, 397, 764, 1714
 msgid "Previous:"
 msgstr "Anterior:"
 
@@ -692,16 +692,15 @@ msgstr ""
 "se aplica al formato de medios que desea usar en su país."
 
 #: gettingstarted.html474, 617, 683, 692, 736, 747, 758, 791, 813, 879, 895,
-#: 910, 925, 939, 954, 970, 985, 995, 1015, 1035
+#: 910, 925, 966, 981, 991, 1011, 1031
 msgid "Applying Changes..."
 msgstr "Aplicando los cambios…"
 
-#: gettingstarted.html477, 731, 742, 753, 889, 919, 933, 948, 979
+#: gettingstarted.html477, 731, 742, 753, 889, 904, 975
 msgid "Install"
 msgstr "Instalar"
 
-#: gettingstarted.html480, 734, 745, 756, 892, 922, 936, 951, 967, 982, 992,
-#: 1012, 1032
+#: gettingstarted.html480, 734, 745, 756, 892, 907, 963, 978, 988, 1008, 1028
 msgid "Remove"
 msgstr "Desinstalar"
 
@@ -1133,7 +1132,7 @@ msgstr ""
 #: gettingstarted.html:860
 msgid ""
 "To improve the amount of customizability, Ubuntu Budgie allows you to "
-"install/remove popular web browsers with a single click."
+"install/remove popular web browsers."
 msgstr ""
 
 #: gettingstarted.html:865
@@ -1147,11 +1146,11 @@ msgid ""
 "targeting multiple platforms."
 msgstr ""
 
-#: gettingstarted.html873, 904, 964, 989, 1009, 1029
+#: gettingstarted.html873, 919, 960, 985, 1005, 1025
 msgid "Snap Install"
 msgstr "Instalar Snap"
 
-#: gettingstarted.html876, 907
+#: gettingstarted.html876, 922
 msgid "Snap Remove"
 msgstr "Remover Snap"
 
@@ -1168,6 +1167,14 @@ msgstr ""
 
 #: gettingstarted.html:901
 msgid ""
+"Mozilla Firefox is a free and open-source web browser, developed by the "
+"Mozilla Foundation - a not for profit organization. This is the stable "
+"release browser made available directly by Mozilla thru their own "
+"repository."
+msgstr ""
+
+#: gettingstarted.html:916
+msgid ""
 "Chromium is an open-source browser project that aims to build a safer, "
 "faster, and more stable way for all Internet users to experience the web."
 msgstr ""
@@ -1175,7 +1182,7 @@ msgstr ""
 "objetivo es ofrecer a los usuarios una manera más segura, rápida y estable "
 "de utilizar la Web."
 
-#: gettingstarted.html:916
+#: gettingstarted.html931, 940
 msgid ""
 "Google Chrome is a modern web browser backed by internet giant Google. It "
 "offers a smooth browsing experience plus integration with Google's "
@@ -1185,13 +1192,17 @@ msgstr ""
 "Google. Proporciona una experiencia de navegación fluida e integración con "
 "los servicios privativos de Google."
 
-#: gettingstarted.html:931
+#: gettingstarted.html934, 943, 951
+msgid "Downloads Page"
+msgstr ""
+
+#: gettingstarted.html:939
 msgid ""
 "Microsoft Edge is a cross-platform web browser created and developed by "
 "Microsoft. It is a Chromium based browser."
 msgstr ""
 
-#: gettingstarted.html:945
+#: gettingstarted.html:948
 msgid ""
 "Vivaldi Web Browser is a free, fully customizable web browser. Feature rich,"
 " powerful, secure and fun! Browse the Web your way"
@@ -1200,7 +1211,7 @@ msgstr ""
 "personalizable. Rico en características, poderoso, seguro y divertido! "
 "Navegue en la Web a su manera"
 
-#: gettingstarted.html:961
+#: gettingstarted.html:957
 msgid ""
 "Opera is a fast and secure browser. Developed in Europe, used by millions "
 "around the world. Now with a built-in ad blocker and free VPN."
@@ -1209,13 +1220,13 @@ msgstr ""
 "por millones de personas en todo el mundo. Ahora incluye un bloqueador de "
 "anuncios y una VPN gratuita."
 
-#: gettingstarted.html:977
+#: gettingstarted.html:973
 msgid "A browser that blocks tracking and intrusive ads by default."
 msgstr ""
 "Un navegador que bloquea los rastreadores y los anuncios intrusivos de forma"
 " predeterminada."
 
-#: gettingstarted.html:1002
+#: gettingstarted.html:998
 msgid ""
 "Midori is a lightweight yet powerful web browser which runs just as well on "
 "little embedded computers named for delicious pastries as it does on beefy "
@@ -1228,7 +1239,7 @@ msgstr ""
 "superior a la del planeta Tierra. Y se ve bien haciendo eso, también. Ah, y "
 "por supuesto que es software libre."
 
-#: gettingstarted.html:1022
+#: gettingstarted.html:1018
 msgid ""
 "The web browser for GNOME, featuring tight integration with the desktop and "
 "a simple and intuitive user interface that allows you to focus on your web "
@@ -1242,22 +1253,22 @@ msgstr ""
 "este es el navegador para ti. GNOME Web es a menudo referido por su nombre "
 "en clave, Epiphany."
 
-#: gettingstarted.html:1044
+#: gettingstarted.html:1040
 msgid "User Interface"
 msgstr "Interfaz de usuario"
 
-#: gettingstarted.html:1045
+#: gettingstarted.html:1041
 msgid ""
 "Ubuntu Budgie provides a unique tool to transform the user interface. It can"
 " be used to quickly setup the user interface to broadly reflect how other "
 "popular operating systems look and feel."
 msgstr ""
 
-#: gettingstarted.html:1052
+#: gettingstarted.html:1048
 msgid "Budgie Desktop Settings"
 msgstr "Ajustes al escritorio Budgie "
 
-#: gettingstarted.html:1055
+#: gettingstarted.html:1051
 msgid ""
 "<b>Budgie Desktop Settings</b> can be found later in the menu <b>System "
 "Tools</b>."
@@ -1265,29 +1276,29 @@ msgstr ""
 "La opción <b>Ajustes al escritorio Budgie</b> se puede encontrar luego en el"
 " menú <b>Herramientas del sistema</b>."
 
-#: gettingstarted.html1063, 1068
+#: gettingstarted.html1059, 1064
 msgid "Budgie Control Center"
 msgstr ""
 
-#: gettingstarted.html:1064
+#: gettingstarted.html:1060
 msgid ""
 "You can configure just about every aspect of your computer from Budgie "
 "Control Center."
 msgstr ""
 
-#: gettingstarted.html:1073
+#: gettingstarted.html:1069
 msgid ""
 "<b>Budgie Control Center</b> can be found later in the menu <b>System "
 "Tools</b>."
 msgstr ""
 
-#: gettingstarted.html:1098
+#: gettingstarted.html:1094
 msgid ""
 "Ubuntu Budgie has many keyboard shortcuts that help make using your computer"
 " more efficient."
 msgstr ""
 
-#: gettingstarted.html:1102
+#: gettingstarted.html:1098
 msgid ""
 "The <b><img src=\"img/welcome/super-key.svg\" /> Super</b> key is your "
 "Windows key. For Mac keyboards, this is the ⌘ Command key."
@@ -1295,114 +1306,114 @@ msgstr ""
 "La tecla <b><img src=\"img/welcome/super-key.svg\" /> Super</b> es tu tecla "
 "de Windows. Para teclados Mac, es la tecla Command ⌘."
 
-#: gettingstarted.html:1105
+#: gettingstarted.html:1101
 msgid "Budgie Desktop shortcuts"
 msgstr "Combinaciones de teclas del escritorio Budgie"
 
-#: gettingstarted.html:1106
+#: gettingstarted.html:1102
 msgid "Some common shortcuts used in Budgie Desktop"
 msgstr "Algunos de los atajos mas comunes usados en el Escritorio Budgie"
 
-#: gettingstarted.html:1116
+#: gettingstarted.html:1112
 msgid "Open notifications in Raven"
 msgstr "Abrir las notificaciones en Raven"
 
-#: gettingstarted.html:1125
+#: gettingstarted.html:1121
 msgid "Open applet Settings in Raven"
 msgstr "Abrir la configuración de miniaplicaciones en Raven"
 
-#: gettingstarted.html:1130
+#: gettingstarted.html:1126
 msgid "Common application shortcuts"
 msgstr "Combinaciones de teclas comunes para aplicaciones"
 
-#: gettingstarted.html:1131
+#: gettingstarted.html:1127
 msgid "These shortcuts apply in most applications."
 msgstr ""
 "Estas combinaciones de teclas funcionan en la mayoría de las aplicaciones."
 
-#: gettingstarted.html:1140
+#: gettingstarted.html:1136
 msgid "Toggle Tilix Quake Mode"
 msgstr "Alterna a modo Tilix Quake"
 
-#: gettingstarted.html1144, 1152, 1160, 1168, 1176, 1184, 1192, 1200, 1208,
-#: 1216, 1224, 1232, 1240, 1248, 1256, 1288, 1304, 1334, 1353, 1367, 1398,
-#: 1408, 1418, 1430, 1613, 1623, 1633, 1643, 1653, 1663, 1673, 1683, 1693
+#: gettingstarted.html1140, 1148, 1156, 1164, 1172, 1180, 1188, 1196, 1204,
+#: 1212, 1220, 1228, 1236, 1244, 1252, 1284, 1300, 1330, 1349, 1363, 1394,
+#: 1404, 1414, 1426, 1609, 1619, 1629, 1639, 1649, 1659, 1669, 1679, 1689
 msgid "Ctrl"
 msgstr "Ctrl"
 
-#: gettingstarted.html:1148
+#: gettingstarted.html:1144
 msgid "Copy the selected text/object"
 msgstr "Copiar el texto u objeto seleccionado"
 
-#: gettingstarted.html:1156
+#: gettingstarted.html:1152
 msgid "Cut the selected text/object"
 msgstr "Cortar el texto u objeto seleccionado"
 
-#: gettingstarted.html:1164
+#: gettingstarted.html:1160
 msgid "Paste/insert the selected text/object"
 msgstr "Pegar o insertar el texto u objeto seleccionado"
 
-#: gettingstarted.html:1172
+#: gettingstarted.html:1168
 msgid "Select all text"
 msgstr "Seleccionar todo el texto"
 
-#: gettingstarted.html:1180
+#: gettingstarted.html:1176
 msgid "Find words"
 msgstr "Encontrar palabras"
 
-#: gettingstarted.html:1188
+#: gettingstarted.html:1184
 msgid "Find and replace words"
 msgstr "Buscar y reemplazar palabras"
 
-#: gettingstarted.html:1196
+#: gettingstarted.html:1192
 msgid "Make the selected text bold"
 msgstr "Aplicar negritas en el texto seleccionado"
 
-#: gettingstarted.html:1204
+#: gettingstarted.html:1200
 msgid "Make the selected text italic"
 msgstr "Aplicar bastardillas en el texto seleccionado"
 
-#: gettingstarted.html:1212
+#: gettingstarted.html:1208
 msgid "Underline the selected text"
 msgstr "Subrayar el texto seleccionado"
 
-#: gettingstarted.html:1220
+#: gettingstarted.html:1216
 msgid "Open a new document or window"
 msgstr "Abrir un documento o ventana nuevos"
 
-#: gettingstarted.html:1228
+#: gettingstarted.html:1224
 msgid "Save the current document"
 msgstr "Guardar el documento actual"
 
-#: gettingstarted.html:1236
+#: gettingstarted.html:1232
 msgid "Open another document"
 msgstr "Abrir otro documento"
 
-#: gettingstarted.html:1244
+#: gettingstarted.html:1240
 msgid "Print the current document"
 msgstr "Imprimir el documento actual"
 
-#: gettingstarted.html:1252
+#: gettingstarted.html:1248
 msgid "Undo the last change you made"
 msgstr "Deshacer la última modificación que realizó"
 
-#: gettingstarted.html1258, 1286, 1296, 1422, 1433, 1449, 1460, 1471, 1482
+#: gettingstarted.html1254, 1282, 1292, 1418, 1429, 1445, 1456, 1467, 1478
 msgid "Shift"
 msgstr "Mayús"
 
-#: gettingstarted.html:1262
+#: gettingstarted.html:1258
 msgid "Redo a change that you just undid"
 msgstr "Rehacer una modificación que acaba de deshacer"
 
-#: gettingstarted.html:1268
+#: gettingstarted.html:1264
 msgid "Toggle the current application between full-screen and windowed"
 msgstr "Alternar la aplicación actual entre pantalla completa y ventana"
 
-#: gettingstarted.html:1272
+#: gettingstarted.html:1268
 msgid "Desktop shortcuts"
 msgstr "Combinaciones de teclas del escritorio"
 
-#: gettingstarted.html:1273
+#: gettingstarted.html:1269
 msgid ""
 "This section lists common keyboard shortcuts which you can use to operate "
 "parts of the desktop."
@@ -1410,81 +1421,81 @@ msgstr ""
 "Esta sección enumera combinaciones de teclas comunes que puede emplear para "
 "operar algunas partes del escritorio."
 
-#: gettingstarted.html:1282
+#: gettingstarted.html:1278
 msgid "Open Applications menu"
 msgstr "Abrir el menú de aplicaciones"
 
-#: gettingstarted.html:1292
+#: gettingstarted.html:1288
 msgid "Copy a screenshot of an area to clipboard"
 msgstr "Copiar la captura de pantalla de un área al portapapeles"
 
-#: gettingstarted.html:1300
+#: gettingstarted.html:1296
 msgid "Save a screenshot of an area to the Pictures directory"
 msgstr "Guardar una captura de pantalla de un área a la carpeta Imágenes"
 
-#: gettingstarted.html:1308
+#: gettingstarted.html:1304
 msgid "Copy a screenshot of a window to clipboard"
 msgstr "Copiar la captura de pantalla de una ventana al portapapeles"
 
-#: gettingstarted.html1312, 1326, 1336, 1355, 1369, 1383, 1400, 1410, 1420,
-#: 1432, 1441, 1493, 1501, 1509, 1544, 1615, 1625, 1635, 1645, 1655, 1665,
-#: 1675, 1685, 1695
+#: gettingstarted.html1308, 1322, 1332, 1351, 1365, 1379, 1396, 1406, 1416,
+#: 1428, 1437, 1489, 1497, 1505, 1540, 1611, 1621, 1631, 1641, 1651, 1661,
+#: 1671, 1681, 1691
 msgid "Alt"
 msgstr "Alt"
 
-#: gettingstarted.html:1316
+#: gettingstarted.html:1312
 msgid "Save a screenshot of a window to the Pictures directory"
 msgstr "Guardar la captura de pantalla de una ventana en la carpeta Imágenes"
 
-#: gettingstarted.html:1322
+#: gettingstarted.html:1318
 msgid "Save a screenshot to the Pictures directory"
 msgstr "Guardar una captura de pantalla en la carpeta Imágenes"
 
-#: gettingstarted.html:1330
+#: gettingstarted.html:1326
 msgid "Run an application by typing its name in the box which appears"
 msgstr "Ejecuta una aplicación teclando su nombre en la casilla que aparece"
 
-#: gettingstarted.html:1338
+#: gettingstarted.html:1334
 msgid "Delete"
 msgstr "Supr"
 
-#: gettingstarted.html:1340
+#: gettingstarted.html:1336
 msgid "Logout"
 msgstr "Cerrar sesión"
 
-#: gettingstarted.html:1349
+#: gettingstarted.html:1345
 msgid "Lock your screen."
 msgstr "Bloquear la pantalla."
 
-#: gettingstarted.html:1359
+#: gettingstarted.html:1355
 msgid "Open a terminal."
 msgstr "Abrir una consola."
 
-#: gettingstarted.html:1363
+#: gettingstarted.html:1359
 msgid "Window shortcuts - general"
 msgstr "Combinaciones de teclas de las ventanas"
 
-#: gettingstarted.html:1373
+#: gettingstarted.html:1369
 msgid "Call Window Shuffler gui (window tiling grid)."
 msgstr "Interfaz gráfica de Window Shuffler (cuadrícula de ventanas)."
 
-#: gettingstarted.html:1377
+#: gettingstarted.html:1373
 msgid "Video Demonstration"
 msgstr "Vídeo de demostración"
 
-#: gettingstarted.html:1385
+#: gettingstarted.html:1381
 msgid "Tab"
 msgstr "Tab"
 
-#: gettingstarted.html:1388
+#: gettingstarted.html:1384
 msgid "Switch between currently-open windows."
 msgstr "Conmutar entre las ventanas abiertas actualmente."
 
-#: gettingstarted.html:1390
+#: gettingstarted.html:1386
 msgid "Press Alt + Tab and then release Tab (but continue to hold Alt)."
 msgstr "Oprima Alt + Tab y suelte Tab (pero mantenga oprimida Alt)"
 
-#: gettingstarted.html:1391
+#: gettingstarted.html:1387
 msgid ""
 "Press Tab repeatedly to cycle through the list of available windows which "
 "appears on the screen."
@@ -1492,89 +1503,89 @@ msgstr ""
 "Oprima Tab repetidamente para cambiar entre las ventanas de la lista que "
 "aparece en pantalla."
 
-#: gettingstarted.html1402, 1424, 1556
+#: gettingstarted.html1398, 1420, 1552
 msgid "Left"
 msgstr "←"
 
-#: gettingstarted.html:1404
+#: gettingstarted.html:1400
 msgid "Switch to the previous workspace."
 msgstr "Cambiar al área de trabajo anterior."
 
-#: gettingstarted.html1412, 1435, 1565
+#: gettingstarted.html1408, 1431, 1561
 msgid "Right"
 msgstr "→"
 
-#: gettingstarted.html:1414
+#: gettingstarted.html:1410
 msgid "Switch to the next workspace."
 msgstr "Cambiar al área de trabajo siguiente."
 
-#: gettingstarted.html:1426
+#: gettingstarted.html:1422
 msgid "Move the current window to the previous workspace."
 msgstr "Desplazar la ventana actual al área de trabajo anterior."
 
-#: gettingstarted.html:1437
+#: gettingstarted.html:1433
 msgid "Move the current window to the next workspace."
 msgstr "Desplazar la ventana actual al área de trabajo siguiente."
 
-#: gettingstarted.html:1445
+#: gettingstarted.html:1441
 msgid "Move the current window to the monitor above."
 msgstr "Mover la ventana actual al monitor superior."
 
-#: gettingstarted.html:1456
+#: gettingstarted.html:1452
 msgid "Move the current window to the monitor below."
 msgstr "Mover la ventana actual al monitor inferior."
 
-#: gettingstarted.html:1467
+#: gettingstarted.html:1463
 msgid "Move the current window to the monitor to the left."
 msgstr "Mover la ventana actual al monitor de la izquierda."
 
-#: gettingstarted.html:1478
+#: gettingstarted.html:1474
 msgid "Move the current window to the monitor to the right."
 msgstr "Mover la ventana actual al monitor de la derecha."
 
-#: gettingstarted.html:1489
+#: gettingstarted.html:1485
 msgid "Closes window."
 msgstr "Cierra la ventana."
 
-#: gettingstarted.html:1497
+#: gettingstarted.html:1493
 msgid "Returns window to 'normal' or previous size."
 msgstr "Devuelve la ventana a su tamaño «normal» o anterior."
 
-#: gettingstarted.html:1505
+#: gettingstarted.html:1501
 msgid "Moves the current window (can be moved with mouse or keyboard)."
 msgstr "Desplaza la ventana actual (puede moverla con el ratón o el teclado)."
 
-#: gettingstarted.html:1513
+#: gettingstarted.html:1509
 msgid "Resizes current window (again, can be moved with mouse or keyboard)."
 msgstr ""
 "Redimensiona la ventana actual (de nuevo, puede moverla con el ratón o el "
 "teclado)."
 
-#: gettingstarted.html:1522
+#: gettingstarted.html:1518
 msgid "Minimizes current window."
 msgstr "Minimiza la ventana actual."
 
-#: gettingstarted.html:1529
+#: gettingstarted.html:1525
 msgid "Up"
 msgstr "↑"
 
-#: gettingstarted.html:1531
+#: gettingstarted.html:1527
 msgid "Maximizes current window."
 msgstr "Maximiza la ventana actual."
 
-#: gettingstarted.html:1538
+#: gettingstarted.html:1534
 msgid "Down"
 msgstr "Abajo"
 
-#: gettingstarted.html:1540
+#: gettingstarted.html:1536
 msgid "Unmaximizes current window."
 msgstr "Restaura la ventana actual."
 
-#: gettingstarted.html:1546
+#: gettingstarted.html:1542
 msgid "Space"
 msgstr "Espacio"
 
-#: gettingstarted.html:1548
+#: gettingstarted.html:1544
 msgid ""
 "Displays the window menu with options such as 'Always on Top' and 'Minimize'"
 " and 'Maximize' and above commands."
@@ -1582,115 +1593,115 @@ msgstr ""
 "Muestra el menú de la ventana, que incluye opciones como «Siempre encima», "
 "«Minimizar», «Maximizar» y las órdenes anteriores."
 
-#: gettingstarted.html:1558
+#: gettingstarted.html:1554
 msgid "Place window on left side of screen."
 msgstr "Mover ventana al lado izquierdo de la pantalla."
 
-#: gettingstarted.html:1567
+#: gettingstarted.html:1563
 msgid "Place window on right side of screen."
 msgstr "Mover ventana al lado derecho de la pantalla."
 
-#: gettingstarted.html1574, 1647
+#: gettingstarted.html1570, 1643
 msgid "1"
 msgstr "1"
 
-#: gettingstarted.html:1576
+#: gettingstarted.html:1572
 msgid "Quarter tiling: top left."
 msgstr "Cuarto de mosaico: arriba a la izquierda."
 
-#: gettingstarted.html1583, 1677
+#: gettingstarted.html1579, 1673
 msgid "2"
 msgstr "2"
 
-#: gettingstarted.html:1585
+#: gettingstarted.html:1581
 msgid "Quarter tiling: top right."
 msgstr "Cuarto de mosaico: arriba a la derecha."
 
-#: gettingstarted.html1592, 1637
+#: gettingstarted.html1588, 1633
 msgid "3"
 msgstr "3"
 
-#: gettingstarted.html:1594
+#: gettingstarted.html:1590
 msgid "Quarter tiling: bottom left."
 msgstr "Cuarto de mosaico: abajo a la izquierda."
 
-#: gettingstarted.html1601, 1687
+#: gettingstarted.html1597, 1683
 msgid "4"
 msgstr "4"
 
-#: gettingstarted.html:1603
+#: gettingstarted.html:1599
 msgid "Quarter tiling: bottom right."
 msgstr "Cuarto de mosaico: abajo a la derecha."
 
-#: gettingstarted.html:1608
+#: gettingstarted.html:1604
 msgid "Window shortcuts - numeric keypad"
 msgstr "Combinación de teclas de ventanas - teclado numérico."
 
-#: gettingstarted.html:1609
+#: gettingstarted.html:1605
 msgid "Tiling shortcuts on the numeric keypad."
 msgstr "Combinaciones del teclado numérico para la cuadrícula"
 
-#: gettingstarted.html:1617
+#: gettingstarted.html:1613
 msgid "7"
 msgstr "7"
 
-#: gettingstarted.html:1619
+#: gettingstarted.html:1615
 msgid "Quarter top left."
 msgstr "Cuarto superior izquierdo."
 
-#: gettingstarted.html:1627
+#: gettingstarted.html:1623
 msgid "9"
 msgstr "9"
 
-#: gettingstarted.html:1629
+#: gettingstarted.html:1625
 msgid "Quarter top right."
 msgstr "Cuarto superior derecho."
 
-#: gettingstarted.html:1639
+#: gettingstarted.html:1635
 msgid "Quarter bottom right."
 msgstr "Cuarto inferior derecho."
 
-#: gettingstarted.html:1649
+#: gettingstarted.html:1645
 msgid "Quarter bottom left."
 msgstr "Cuarto inferior izquierdo."
 
-#: gettingstarted.html:1657
+#: gettingstarted.html:1653
 msgid "8"
 msgstr "8"
 
-#: gettingstarted.html:1659
+#: gettingstarted.html:1655
 msgid "Half top."
 msgstr "Mitad superior."
 
-#: gettingstarted.html:1667
+#: gettingstarted.html:1663
 msgid "6"
 msgstr "6"
 
-#: gettingstarted.html:1669
+#: gettingstarted.html:1665
 msgid "Half right."
 msgstr "Mitad derecha."
 
-#: gettingstarted.html:1679
+#: gettingstarted.html:1675
 msgid "Half bottom."
 msgstr "Mitad inferior."
 
-#: gettingstarted.html:1689
+#: gettingstarted.html:1685
 msgid "Half left."
 msgstr "Mitad izquierda."
 
-#: gettingstarted.html:1697
+#: gettingstarted.html:1693
 msgid "5"
 msgstr "5"
 
-#: gettingstarted.html:1699
+#: gettingstarted.html:1695
 msgid "Toggle maximize."
 msgstr "Alternar maximizado."
 
-#: gettingstarted.html:1708
+#: gettingstarted.html:1704
 msgid "Update shortcuts in the Settings App"
 msgstr "Actualizar atajos en la aplicación Configuración"
 
-#: gettingstarted.html:1730
+#: gettingstarted.html:1726
 msgid ""
 "Your machine is made up of various components that interact with one "
 "another. This information is useful when providing support to ensure "
@@ -1700,134 +1711,134 @@ msgstr ""
 "Esta información es útil al ofrecer asistencia para asegurar que tanto el "
 "soporte físico como el lógico funcionen adecuadamente en su equipo."
 
-#: gettingstarted.html:1738
+#: gettingstarted.html:1734
 msgid "Gathering Information.."
 msgstr "Recabando información…"
 
-#: gettingstarted.html:1747
+#: gettingstarted.html:1743
 msgid "System"
 msgstr "Sistema"
 
-#: gettingstarted.html:1750
+#: gettingstarted.html:1746
 msgid "Distribution:"
 msgstr "Distribución:"
 
-#: gettingstarted.html:1754
+#: gettingstarted.html:1750
 msgid "Kernel:"
 msgstr "Núcleo:"
 
-#: gettingstarted.html:1758
+#: gettingstarted.html:1754
 msgid "The Linux kernel is the heart of Ubuntu."
 msgstr "El núcleo Linux es el corazón de Ubuntu."
 
-#: gettingstarted.html:1764
+#: gettingstarted.html:1760
 msgid "Motherboard:"
 msgstr "Tarjeta madre:"
 
-#: gettingstarted.html:1768
+#: gettingstarted.html:1764
 msgid "Boot Mode:"
 msgstr "Modo de arranque:"
 
-#: gettingstarted.html:1772
+#: gettingstarted.html:1768
 msgid "Displays the mode that OS is communicating with the firmware."
 msgstr ""
 "Muestra el modo en que el SO se comunica con el soporte lógico inalterable."
 
-#: gettingstarted.html:1780
+#: gettingstarted.html:1776
 msgid "Processor"
 msgstr "Procesador"
 
-#: gettingstarted.html:1783
+#: gettingstarted.html:1779
 msgid "Model:"
 msgstr "Modelo:"
 
-#: gettingstarted.html:1787
+#: gettingstarted.html:1783
 msgid "Speed:"
 msgstr "Velocidad:"
 
-#: gettingstarted.html:1791
+#: gettingstarted.html:1787
 msgid "Architecture in use:"
 msgstr "Arquitectura utilizada:"
 
-#: gettingstarted.html:1795
+#: gettingstarted.html:1791
 msgid ""
 "The operating system's architecture in use. For instance, i386 = 32-bit."
 msgstr ""
 "La arquitectura que emplea el sistema operativo. Por ejemplo, «i386» = 32 "
 "bits."
 
-#: gettingstarted.html:1803
+#: gettingstarted.html:1799
 msgid "Components"
 msgstr "Componentes"
 
-#: gettingstarted.html:1806
+#: gettingstarted.html:1802
 msgid "Memory (RAM):"
 msgstr "Memoria (RAM):"
 
-#: gettingstarted.html:1810
+#: gettingstarted.html:1806
 msgid "More RAM allows more applications to run simultaneously."
 msgstr "Entre más RAM, más aplicaciones podrán ejecutarse simultáneamente."
 
-#: gettingstarted.html:1816
+#: gettingstarted.html:1812
 msgid "Graphics:"
 msgstr "Gráficas:"
 
-#: gettingstarted.html:1820
+#: gettingstarted.html:1816
 msgid "Internet Access:"
 msgstr "Acceso a Internet:"
 
-#: gettingstarted.html:1823
+#: gettingstarted.html:1819
 msgid "Connected"
 msgstr "Conexión establecida"
 
-#: gettingstarted.html:1824
+#: gettingstarted.html:1820
 msgid "Not Connected"
 msgstr "Conexión no establecida"
 
-#: gettingstarted.html:1832
+#: gettingstarted.html:1828
 msgid "Storage"
 msgstr "Almacenamiento"
 
-#: gettingstarted.html:1836
+#: gettingstarted.html:1832
 msgid "Root File System:"
 msgstr "Sistema de Ficheros Raíz:"
 
-#: gettingstarted.html:1840
+#: gettingstarted.html:1836
 msgid "The file system where OS is installed."
 msgstr "El sistema de archivos en que el SO está instalado."
 
-#: gettingstarted.html:1846
+#: gettingstarted.html:1842
 msgid "Entire Disk Capacity:"
 msgstr "Capacidad total del disco:"
 
-#: gettingstarted.html:1852
+#: gettingstarted.html:1848
 msgid "OS Usage"
 msgstr "Uso del SO"
 
-#: gettingstarted.html:1857
+#: gettingstarted.html:1853
 msgid "Other Usage"
 msgstr "Otros usos"
 
-#: gettingstarted.html:1862
+#: gettingstarted.html:1858
 msgid "Allocated for Ubuntu Budgie:"
 msgstr ""
 
-#: gettingstarted.html:1866
+#: gettingstarted.html:1862
 msgid "The size of your operating system partition."
 msgstr "El tamaño de la partición del sistema operativo."
 
-#: gettingstarted.html:1873
+#: gettingstarted.html:1869
 msgid "Used Space:"
 msgstr "Espacio usado:"
 
-#: gettingstarted.html:1881
+#: gettingstarted.html:1877
 msgid "Free Space:"
 msgstr "Espacio disponible:"
 
-#: gettingstarted.html:1889
+#: gettingstarted.html:1885
 msgid "Other Usage:"
 msgstr "Otros usos:"
 
-#: gettingstarted.html:1894
+#: gettingstarted.html:1890
 msgid "Reserved by system, other partitions, unallocated or swap."
 msgstr "Reservado para sistema, otras particiones, sin asignar o swap."
