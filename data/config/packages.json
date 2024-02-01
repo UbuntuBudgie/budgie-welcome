@@ -1521,21 +1521,27 @@
 				"curl -s https://brave-browser-apt-release.s3.brave.com/brave-core.asc | sudo apt-key --keyring /etc/apt/trusted.gpg.d/brave-browser-release.gpg add -"
 			]
 		},
-		"vivaldi": {
+		"mozillafirefox": {
 			"packages": [
-				"vivaldi-stable"
+				"firefox"
 			],
 			"arch": [
 				"amd64"
 			],
 			"repos": {
 				"all": [
-					"deb [arch=amd64] http://repo.vivaldi.com/stable/deb/ stable main"
+					"deb [signed-by=/etc/apt/keyrings/packages.mozilla.org.asc] https://packages.mozilla.org/apt mozilla main"
 				]
 			},
 			"key-commands": [
-				"curl http://repo.vivaldi.com/stable/linux_signing_key.pub | sudo apt-key --keyring /etc/apt/trusted.gpg.d/vivaldi-browser.gpg add -",
-				"apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 1397BC53640DB551"
+				"wget -q https://packages.mozilla.org/apt/repo-signing-key.gpg -O- | sudo tee /etc/apt/keyrings/packages.mozilla.org.asc",
+				"echo \"deb [signed-by=/etc/apt/keyrings/packages.mozilla.org.asc] https://packages.mozilla.org/apt mozilla main\" | sudo tee -a /etc/apt/sources.list.d/mozilla.list",
+				"echo '\nPackage: *\nPin: origin packages.mozilla.org\nPin-Priority: 1000\n' | sudo tee /etc/apt/preferences.d/mozilla "
+			],
+			"removekey-commands": [
+				"rm -f /etc/apt/keyrings/packages.mozilla.org.asc",
+				"rm -f /etc/apt/sources.list.d/mozilla.list",
+				"rm -f /etc/apt/preferences.d/mozilla "
 			]
 		},
 		"nvidia": {

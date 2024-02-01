@@ -185,6 +185,7 @@ def install(fname, code):
 def remove(fname, code):
     info = pdata.getPackageInfo(fname, code)
     snaps = info.get("snap")
+    removekey_commands = info.get("removekey-commands")
     retval = 0
 
     if snaps and len(snaps) > 0:
@@ -199,8 +200,11 @@ def remove(fname, code):
     packages = info["packages"]
 
     process = subprocess.Popen(['apt', 'remove', '-y'] + packages)
-
     retval = process.wait()
+
+    if removekey_commands:
+        for removekey_command in removekey_commands:
+            subprocess.call(removekey_command, shell=True)
 
     return retval
 

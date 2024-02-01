@@ -859,7 +859,7 @@
       <div id="browsers" class="topicContents">
         &zwnj;To improve the amount of customizability, Ubuntu Budgie allows you to install/remove
         popular
-        web browsers with a single click.&zwnj;
+        web browsers.&zwnj;
         <div class="row text-md-center">
           <div class="col-md-6 application border rounded">
             <h4>&zwnj;Firefox&zwnj;</h4>
@@ -896,6 +896,21 @@
               </span>
           </div>
           <div class="col-md-6 application border rounded">
+            <h4>Mozilla Firefox</h4>
+            <img src="img/applications/firefox.svg" />
+            <p class="text-md-justify">&zwnj;Mozilla Firefox is a free and open-source web browser, developed
+              by the Mozilla Foundation - a not for profit organization. This is the stable release browser made available directly by Mozilla by their own repository.&zwnj;</p>
+              <a id="mozillafirefox-install" class="btn btn-success" onclick="cmd('install?mozillafirefox');">
+                <span class="material-icons">&#xE2C0;</span><span class="button-text">&zwnj;Install&zwnj;</span>
+              </a>
+              <a id="mozillafirefox-remove" class="btn btn-danger" onclick="cmd('remove?mozillafirefox');">
+                <span class="material-icons">&#xE872;</span><span class="button-text">&zwnj;Remove&zwnj;</span>
+              </a>
+              <span id="mozillafirefox-status" class="hidden">
+                <img src="img/welcome/processing.gif" style="width:24px" /> &zwnj;Applying Changes...&zwnj;
+              </span>
+          </div>
+          <div class="col-md-6 application border rounded">
             <h4>Chromium</h4>
             <img src="img/applications/chromium.svg" />
             <p class="text-md-justify">&zwnj;Chromium is an open-source browser project that aims to build a safer,
@@ -915,44 +930,25 @@
             <img src="img/applications/chrome.png" />
             <p class="text-md-justify">&zwnj;Google Chrome is a modern web browser backed by internet giant Google. It
               offers a smooth browsing experience plus integration with Google's proprietary services.&zwnj;</p>
-            <a id="chrome-install" class="btn btn-success" onclick="cmd('install?chrome');">
-              <span class="material-icons">&#xE2C0;</span><span class="button-text">&zwnj;Install&zwnj;</span>
-            </a>
-            <a id="chrome-remove" class="btn btn-danger" onclick="cmd('remove?chrome');">
-              <span class="material-icons">&#xE872;</span><span class="button-text">&zwnj;Remove&zwnj;</span>
-            </a>
-            <span id="chrome-status" class="hidden">
-              <img src="img/welcome/processing.gif" style="width:24px" /> &zwnj;Applying Changes...&zwnj;
-            </span>
+              <a onclick="cmd('link?https://www.google.com/intl/en_uk/chrome/')" class="btn btn-inverse">
+                &zwnj;Downloads Page&zwnj;</a>
           </div>
           <div class="col-md-6 application border rounded edge-arch">
             <h4>Microsoft Edge</h4>
             <img src="img/applications/edge.svg" />
             <p class="text-md-justify">&zwnj;Microsoft Edge is a cross-platform web browser created and developed by Microsoft. It is a Chromium based browser.&zwnj;</p>
-            <a id="edge-install" class="btn btn-success" onclick="cmd('install?edge');">
-              <span class="material-icons">&#xE2C0;</span><span class="button-text">&zwnj;Install&zwnj;</span>
-            </a>
-            <a id="edge-remove" class="btn btn-danger" onclick="cmd('remove?edge');">
-              <span class="material-icons">&#xE872;</span><span class="button-text">&zwnj;Remove&zwnj;</span>
-            </a>
-            <span id="edge-status" class="hidden">
-              <img src="img/welcome/processing.gif" style="width:24px" /> &zwnj;Applying Changes...&zwnj;
-            </span>
+            <p class="text-md-justify">&zwnj;Google Chrome is a modern web browser backed by internet giant Google. It
+              offers a smooth browsing experience plus integration with Google's proprietary services.&zwnj;</p>
+              <a onclick="cmd('link?https://www.microsoft.com/en-us/edge/business/download?form=MA13FJ')" class="btn btn-inverse">
+                &zwnj;Downloads Page&zwnj;</a>
           </div>
           <div class="col-md-6 application border rounded vivaldi-arch">
             <h4>Vivaldi</h4>
             <img src="img/applications/vivaldi.png" />
             <p class="text-md-justify">&zwnj;Vivaldi Web Browser is a free, fully customizable web browser.
               Feature rich, powerful, secure and fun! Browse the Web your way&zwnj;</p>
-            <a id="vivaldi-install" class="btn btn-success" onclick="cmd('install?vivaldi');">
-              <span class="material-icons">&#xE2C0;</span><span class="button-text">&zwnj;Install&zwnj;</span>
-            </a>
-            <a id="vivaldi-remove" class="btn btn-danger" onclick="cmd('remove?vivaldi');">
-              <span class="material-icons">&#xE872;</span><span class="button-text">&zwnj;Remove&zwnj;</span>
-            </a>
-            <span id="vivaldi-status" class="hidden">
-              <img src="img/welcome/processing.gif" style="width:24px" /> &zwnj;Applying Changes...&zwnj;
-            </span>
+              <a onclick="cmd('link?https://vivaldi.com/download/')" class="btn btn-inverse">
+                &zwnj;Downloads Page&zwnj;</a>
           </div>
 
           <div class="col-md-6 application push-md-3 border rounded opera-arch">
