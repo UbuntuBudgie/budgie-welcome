@@ -43,6 +43,29 @@
                   </div>
                   <hr/>
                </div>
+               <div class="col-md-6 mediaplayer-applet">
+                  <br>
+                  <h2><a onclick="cmd('link?https://github.com/zalesyc/budgie-media-player-applet')"><span class="material-icons">help</span></a>&zwnj;Media Player Applet&zwnj;</h2>
+                  <div class="card card-block">
+                     <div class="card-image text-md-center">
+                        <a href="img/screenshots/mediaplayer-applet.jpg" data-toggle="lightbox"><img src="img/screenshots/mediaplayer-applet.jpg" style="width: auto; max-height: 128px" /></a>
+                     </div>
+                     <p class="card-text">&zwnj;Applet for the budgie panel for controlling all of your playing media.&zwnj;</p>
+                  </div>
+                  <div class="text-md-right">
+                     <a id="mediaplayer-applet-remove" class="btn btn-danger" onclick="cmd('remove?mediaplayer-applet');">
+                     <span class="material-icons">&#xE872;</span><span class="button-text">&zwnj;Remove&zwnj;</span>
+                     </a>
+                     <a id="mediaplayer-applet-install" class="btn btn-success hvr-shadow" onclick="cmd('install?mediaplayer-applet');"> &nbsp;
+                     <span class="material-icons">&#xE2C0;</span>&zwnj;Install&zwnj;&nbsp;
+                     </a>
+                     <span id="mediaplayer-status" class="hidden">
+                     <img src="img/welcome/processing.gif" width="24px" height="24px" /> &zwnj;Applying changes...&zwnj;
+                     </span>
+                     <p id="mediaplayer-applet-instruction" class="hidden"><small>&zwnj;Logout and login after installing applets. From the menu - choose Budgie Desktop Settings and choose the Panel to add and configure applets.&zwnj;</small></p>
+                  </div>
+                  <hr/>
+               </div>
                <div class="col-md-6 lightpad-applet">
                   <br>
                   <h2><a onclick="cmd('link?https://github.com/libredeb/lightpad')"><span class="material-icons">help</span></a>&zwnj;Lightpad Applet&zwnj;</h2>

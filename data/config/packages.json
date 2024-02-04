@@ -16,6 +16,22 @@
 				]
 			}
 		},
+		"mediaplayer-applet": {
+			"packages": [
+				"budgie-media-player-applet"
+			],
+			"repos": {
+				"jammy": [
+					"ppa:ubuntubudgie/backports"
+				],
+				"mantic": [
+					"ppa:ubuntubudgie/backports"
+				],
+				"noble": [
+					"ppa:ubuntubudgie/backports"
+				]
+			}
+		},
 		"carbon-tray-applet": {
 			"packages": [
 				"budgie-carbon-tray-applet"
