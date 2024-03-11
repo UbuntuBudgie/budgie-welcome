@@ -4,8 +4,8 @@
 #
 
 repo_root=$(realpath "$(dirname $0)/../")
-html_po_folder="$repo_root/data/po/"
-welcome_po_folder="$repo_root/po/"
+html_po_folder="$repo_root/data/po"
+welcome_po_folder="$repo_root/po"
 
 cd "$repo_root" || exit
 
