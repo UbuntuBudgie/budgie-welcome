@@ -1574,6 +1574,14 @@
 				"snapd"
 			]
 		},
+		"firmware": {
+			"snap": [
+				"firmware-updater"
+			],
+			"arch": [
+				"amd64"
+			]
+		},
 		"backup": {
 			"packages": [
 				"deja-dup"
