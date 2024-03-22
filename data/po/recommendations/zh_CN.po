@@ -41,36 +41,56 @@ msgstr "库已安装"
 msgid "Enable Ubuntu Budgie backports repository"
 msgstr "启用 Ubuntu Budgie 补丁存储库"
 
-#: recommendations.html33, 70, 107, 129, 154, 169, 186, 207, 281
+#: recommendations.html33, 48, 84, 121, 143, 168, 183, 200, 221, 295
 msgid "Applying Changes..."
 msgstr "应用改变中..."
 
-#: recommendations.html:38
+#: recommendations.html:37
+msgid "Firmware Updater"
+msgstr ""
+
+#: recommendations.html:39
+msgid ""
+"Component manufacturers issue firmware updates to correct stability issues "
+"and improve component performance regarding their interaction with hardware "
+"and software. For example, BIOS updates are issued directly to the hardware,"
+" writing the new information onto their memory chip."
+msgstr ""
+
+#: recommendations.html:43
+msgid "Firmware Updater is installed"
+msgstr ""
+
+#: recommendations.html:46
+msgid "Install Firmware Updater"
+msgstr ""
+
+#: recommendations.html:52
 msgid "Backups"
 msgstr "备份"
 
-#: recommendations.html:43
+#: recommendations.html:57
 msgid ""
 "<strong>Deja-Dup</strong> is a powerful backup utility that can be installed"
 " in Ubuntu Budgie and supports backups to local devices as well as online "
 "cloud-based services."
 msgstr ""
 
-#: recommendations.html:47
+#: recommendations.html:61
 msgid ""
 "Nothing is more important than having a backup of your personal files, just "
 "in case something disastrous happens to your computer."
 msgstr "没有什么比备份你的个人文件更重要的了，只是为了防止一些灾难性的事情发生在你的计算机上."
 
-#: recommendations.html:55
+#: recommendations.html:69
 msgid "Configure Backup"
 msgstr "配置备份"
 
-#: recommendations.html59, 96, 126, 151, 204
+#: recommendations.html73, 110, 140, 165, 218
 msgid "Remove"
 msgstr "移除"
 
-#: recommendations.html:62
+#: recommendations.html:76
 msgid ""
 "<b>Backups</b> can be found later in the menu <b>Utilities <i "
 "class=\"material-icons\">&#xE315;</i> Backups</b>."
@@ -78,40 +98,40 @@ msgstr ""
 "<b>备份</b> 可以在稍后的菜单中找到 <b>实用程序 <i class=\"material-icons\">&#xE315;</i> "
 "备份</b>."
 
-#: recommendations.html:68
+#: recommendations.html:82
 msgid "Install Deja-Dup"
 msgstr ""
 
-#: recommendations.html:76
+#: recommendations.html:90
 msgid "Firewall"
 msgstr "防火墙"
 
-#: recommendations.html:81
+#: recommendations.html:95
 msgid ""
 "<strong>Gufw</strong> provides a graphical frontend to <code>ufw</code> "
 "(Uncomplicated Firewall). If security is important to you, there are more "
 "ways to stay secure."
 msgstr ""
 
-#: recommendations.html:84
+#: recommendations.html:98
 msgid "Click to learn more about security."
 msgstr ""
 
-#: recommendations.html:85
+#: recommendations.html:99
 msgid ""
 "Firewalls prevent malicious connections entering and leaving your computer. "
 "By default, the firewall is disabled."
 msgstr ""
 
-#: recommendations.html:86
+#: recommendations.html:100
 msgid "Click to learn more about firewalls."
 msgstr ""
 
-#: recommendations.html:92
+#: recommendations.html:106
 msgid "Configure Firewall"
 msgstr "配置防火墙"
 
-#: recommendations.html:99
+#: recommendations.html:113
 msgid ""
 "Firewall Configuration</b> can be found later in the menu <b>System Tools<i "
 "class=\"material-icons\">&#xE315;</i> Firewall Configuration</i></b>."
@@ -119,68 +139,68 @@ msgstr ""
 "防火墙配置</b> 在后面菜单找到 <b>系统工具<i class=\"material-icons\">&#xE315;</i> "
 "防火墙配置</i></b>."
 
-#: recommendations.html:105
+#: recommendations.html:119
 msgid "Install Firewall"
 msgstr ""
 
-#: recommendations.html:117
+#: recommendations.html:131
 msgid ""
 "ClamTk is a frontend for ClamAV (Clam Antivirus). It is intended to be an "
 "easy to use, light-weight, on-demand scanner for Linux systems."
 msgstr ""
 
-#: recommendations.html:123
+#: recommendations.html:137
 msgid "ClamAV is installed"
 msgstr ""
 
-#: recommendations.html:132
+#: recommendations.html:146
 msgid "Install & Configure ClamAV"
 msgstr ""
 
-#: recommendations.html:141
+#: recommendations.html:155
 msgid ""
 "Nemo Preview allows you to quickly view the contents of a highlighted file "
 "from the Nemo file manager. Just press space to toggle the preview on and "
 "off."
 msgstr "Nemo 预览允许您从 Nemo 文件管理器中快速查看高亮文件的内容。只需按空格键来切换预览的开关."
 
-#: recommendations.html:144
+#: recommendations.html:158
 msgid "Nemo Preview is installed"
 msgstr "Nemo 预览已安装"
 
-#: recommendations.html:146
+#: recommendations.html:160
 msgid "Install Nemo Preview"
 msgstr "安装 Nemo 预览"
 
-#: recommendations.html:161
+#: recommendations.html:175
 msgid ""
 "Nemo Terminal embeds a terminal within the nemo file-manager. Press F4 to "
 "toggle the visibility of the terminal."
 msgstr ""
 
-#: recommendations.html:164
+#: recommendations.html:178
 msgid "Nemo Terminal is installed"
 msgstr ""
 
-#: recommendations.html:166
+#: recommendations.html:180
 msgid "Install Nemo Terminal"
 msgstr ""
 
-#: recommendations.html:176
+#: recommendations.html:190
 msgid ""
 "Nemo Share allows you to quickly share a folder from the Nemo file manager "
 "without requiring root access."
 msgstr "Nemo Share 允许您在不需要 root 访问的情况下从 Nemo 文件管理器快速共享一个文件夹."
 
-#: recommendations.html:181
+#: recommendations.html:195
 msgid "Nemo Share is installed"
 msgstr "Nemo 共享 已安装"
 
-#: recommendations.html:183
+#: recommendations.html:197
 msgid "Install Nemo Share"
 msgstr "安装 Nemo 共享"
 
-#: recommendations.html:193
+#: recommendations.html:207
 msgid ""
 "Gutenprint is a suite of <a onclick=\"cmd('link?http://gimp-"
 "print.sourceforge.net/p_Supported_Printers.php')\">thousands</a> of printer "
@@ -191,19 +211,19 @@ msgstr ""
 "print.sourceforge.net/p_Supported_Printers.php')\">千计</a> "
 "的打印机驱动程序，其中包括爱普生和佳能打印机的驱动程序。Gutenprint 只支持多功能设备的打印机部分."
 
-#: recommendations.html:197
+#: recommendations.html:211
 msgid "Gutenprint is installed"
 msgstr "Gutenprint 已安装"
 
-#: recommendations.html:200
+#: recommendations.html:214
 msgid "Install Gutenprint"
 msgstr "安装 Gutenprint"
 
-#: recommendations.html:212
+#: recommendations.html:226
 msgid "Snap Applications"
 msgstr "Snap 应用"
 
-#: recommendations.html:217
+#: recommendations.html:231
 msgid ""
 "<strong>Snap</strong> is a new generation application packaging format "
 "developed by <em>Canonical</em>. Even though it was initially developed just"
@@ -224,19 +244,19 @@ msgstr ""
 " Budgie。更新版本的 KDE、GNOME、浏览器或其他桌面环境应用程序通常可以很容易地在旧的 LTS "
 "版本上构建，但打包和提供更新的复杂性阻碍了我们在过去交付它们."
 
-#: recommendations.html:230
+#: recommendations.html:244
 msgid "Learn more"
 msgstr "了解更多"
 
-#: recommendations.html:232
+#: recommendations.html:246
 msgid "Snap user guide"
 msgstr "Snap 用户指南"
 
-#: recommendations.html:234
+#: recommendations.html:248
 msgid "Search Snap Apps"
 msgstr "搜索 Snap 应用"
 
-#: recommendations.html:235
+#: recommendations.html:249
 msgid ""
 "If there’s a barrier to Snap app adoption (aside from few apps being made "
 "available in the format) it’s knowing which packages are available in the "
@@ -246,7 +266,7 @@ msgstr ""
 "如果 Snap 应用程序的采用存在障碍 (除了少数应用程序以这种格式提供外)，那就是知道 Snap 应用程序商店中有哪些包。嗯, "
 "知道不。只需弹出一个终端并运行以下命令:"
 
-#: recommendations.html:241
+#: recommendations.html:255
 msgid ""
 "The find command lets you quickly search for and discover snaps available to"
 " install from the command line. It can be run with a query after it (e.g., "
@@ -255,32 +275,32 @@ msgstr ""
 "find 命令允许您快速搜索和发现可以从命令行安装的快照。它可以运行与它之后的查询 (例如，' snap find email '， ' snap "
 "find media '， ' snap find messaging ') 或没有."
 
-#: recommendations.html:244
+#: recommendations.html:258
 msgid "When run without a query you’ll instead see a list of featured snaps."
 msgstr "在没有查询的情况下运行时，您将看到一个特色快照的列表."
 
-#: recommendations.html:245
+#: recommendations.html:259
 msgid "See installed apps"
 msgstr "查看安装程序"
 
-#: recommendations.html:246
+#: recommendations.html:260
 msgid ""
 "Installed some Snaps but can’t remember what? Don’t panic. Use the list "
 "command to see an up-to-date list of all Snap apps installed on your system:"
 msgstr "安装了一些快照，但不记得什么了?不要恐慌。使用 list 命令查看安装在系统上的所有 Snap 应用程序的最新列表:"
 
-#: recommendations.html:249
+#: recommendations.html:263
 msgid ""
 "This list also shows you their version number, revision number and the name "
 "of the developer who uploaded it (handy when there are multiple versions of "
 "the same app in the store, e.g., Telegram)."
 msgstr "这个列表还显示了它们的版本号、版本号和上传它的开发人员的名字 (当同一应用程序在商店中有多个版本时，这很方便，例如, Telegram)"
 
-#: recommendations.html:252
+#: recommendations.html:266
 msgid "Install & Remove Snap Apps"
 msgstr "安装 & 卸载 Snap 应用"
 
-#: recommendations.html:253
+#: recommendations.html:267
 msgid ""
 "If you’re used to managing software using apt you’ll instantly find the "
 "analogous snap commands easy to remember. You install snap apps with the "
@@ -289,11 +309,11 @@ msgstr ""
 "如果您习惯于使用 apt 管理软件，您会立即发现类似的 snap 命令很容易记住。您使用 'install' 命令安装 snap 应用程序，并使用 "
 "'remove' 命令删除它们."
 
-#: recommendations.html:258
+#: recommendations.html:272
 msgid "See details of an App"
 msgstr "查看应用程序的详细信息"
 
-#: recommendations.html:259
+#: recommendations.html:273
 msgid ""
 "You can use this to see detailed information about any snap application, "
 "whether it is installed or not. This info includes the application’s release"
@@ -303,11 +323,11 @@ msgstr ""
 "您可以使用它来查看任何 snap 应用程序的详细信息，无论它是否安装。这些信息包括应用程序的发布渠道、限制状态、大小、修订数量等。snap info "
 "--verbose 提供了一个更大的概述."
 
-#: recommendations.html:265
+#: recommendations.html:279
 msgid "Update a Snap App"
 msgstr "更新 Snap 应用程序"
 
-#: recommendations.html:267
+#: recommendations.html:281
 msgid ""
 "Rather helpfully you probably won’t ever need to remember to install an "
 "update to a Snap app. This is because Snapd runs in the background and "
@@ -317,14 +337,14 @@ msgstr ""
 "更有帮助的是，您可能永远不需要记住为 Snap 应用程序安装更新。这是因为Snapd 在后台运行，并自动处理更新 (您可以，ofc，恢复 Snap "
 "更新或安装特定的修订)."
 
-#: recommendations.html:273
+#: recommendations.html:287
 msgid "Reference"
 msgstr "首选项"
 
-#: recommendations.html:276
+#: recommendations.html:290
 msgid "Snap is already installed"
 msgstr "Snap 已经安装."
 
-#: recommendations.html:279
+#: recommendations.html:293
 msgid "Install Snap"
 msgstr "安装 Snap"
