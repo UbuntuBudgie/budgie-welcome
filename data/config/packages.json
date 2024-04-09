@@ -1680,7 +1680,10 @@
 				"all": [
 					"multiverse"
 				]
-			}
+			},
+			"key-commands": [
+				"sudo dpkg --add-architecture i386"
+			]
 		},
 		"retroarch": {
 			"snap": [
