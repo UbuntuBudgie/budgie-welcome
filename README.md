@@ -17,7 +17,7 @@ https://www.transifex.com/ubuntu-budgie/budgie-welcome/
 ### Installation
 
 ```sh
-sudo apt install gir1.2-webkit2-4.0 python3-notify2 node-uglify sassc
+sudo apt install gir1.2-webkit2-4.1 python3-notify2 node-uglify sassc
 git clone https://github.com/UbuntuBudgie/budgie-welcome.git
 
 cd budgie-welcome
