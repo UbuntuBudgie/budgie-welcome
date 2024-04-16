@@ -6,13 +6,14 @@
 # Benjamin Piller <benpiller@gmail.com>, 2019
 # Bence László <bencelaszlo@protonmail.com>, 2020
 # Walton Henry <waltonh@mail.com>, 2023
+# Kiss Zoltan <atari@freemail.hu>, 2024
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: Budgie Welcome\n"
 "POT-Creation-Date: 2016-02-27 12:48+0100\n"
 "PO-Revision-Date: 2017-06-16 22:07+0000\n"
-"Last-Translator: Walton Henry <waltonh@mail.com>, 2023\n"
+"Last-Translator: Kiss Zoltan <atari@freemail.hu>, 2024\n"
 "Language-Team: Hungarian (https://app.transifex.com/ubuntu-budgie/teams/72251/hu/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -60,7 +61,7 @@ msgstr "Telepítés"
 #: 661, 684, 707, 730, 753, 776, 799, 822, 845, 868, 891, 914, 937, 960, 983,
 #: 1006, 1029
 msgid "Applying changes..."
-msgstr ""
+msgstr "Módosítások végrehajtása..."
 
 #: budgie-applets.html42, 65, 88, 111, 134, 157, 180, 203, 226, 249, 272, 295,
 #: 341, 364, 387, 410, 433, 456, 479, 502, 548, 571, 594, 617, 640, 663, 686,
@@ -75,7 +76,7 @@ msgstr ""
 
 #: budgie-applets.html:48
 msgid "Media Player Applet"
-msgstr ""
+msgstr "Médialejátszó alkalmazás"
 
 #: budgie-applets.html:53
 msgid "Applet for the budgie panel for controlling all of your playing media."
@@ -87,7 +88,7 @@ msgstr ""
 
 #: budgie-applets.html:76
 msgid "A full-screen application launcher."
-msgstr ""
+msgstr "Teljes képernyős alkalmazásindító"
 
 #: budgie-applets.html:94
 msgid "User Indicator Redux Applet"
@@ -107,7 +108,7 @@ msgstr ""
 
 #: budgie-applets.html:140
 msgid "Screenshot Applet"
-msgstr "Képernyőfotó applet"
+msgstr "Képernyőfotó"
 
 #: budgie-applets.html:145
 msgid ""
@@ -118,17 +119,19 @@ msgstr ""
 
 #: budgie-applets.html:163
 msgid "Clipboard Applet"
-msgstr ""
+msgstr "Vágólap"
 
 #: budgie-applets.html:168
 msgid ""
 "A clipboard manager applet that can help you to store and manage clipboard "
 "content."
 msgstr ""
+"Vágólapkezelő alkalmazás, amely segít a vágólap tartalmának tárolásában és "
+"kezelésében."
 
 #: budgie-applets.html:186
 msgid "Calendar Applet"
-msgstr "Naptár applet"
+msgstr "Naptár"
 
 #: budgie-applets.html:191
 msgid "Show date and time and when clicked show a calendar in a popover."
@@ -138,11 +141,11 @@ msgstr ""
 
 #: budgie-applets.html:209
 msgid "Network Applet"
-msgstr "Hálózat applet"
+msgstr "Hálózat"
 
 #: budgie-applets.html:214
 msgid "Network connectivity applet."
-msgstr "Hálózati kapcsolat applet"
+msgstr "Hálózati kapcsolatok"
 
 #: budgie-applets.html:232
 msgid "Carbon Tray Applet"
@@ -158,15 +161,15 @@ msgstr ""
 
 #: budgie-applets.html:260
 msgid "Display application windows across multiple workspaces."
-msgstr ""
+msgstr "Az alkalmazás megjelenítése több munkaterületen"
 
 #: budgie-applets.html:278
 msgid "Analog Clock Applet"
-msgstr ""
+msgstr "Analóg óra"
 
 #: budgie-applets.html:283
 msgid "Display the time using a traditional dial-face clock."
-msgstr ""
+msgstr "Az idő megjelenítése hagyományos számlapos óraként"
 
 #: budgie-applets.html:301
 msgid "Window Shuffler"
@@ -192,7 +195,7 @@ msgstr ""
 
 #: budgie-applets.html:347
 msgid "CPU Frequency Applet"
-msgstr "Processzor frekvencia applet"
+msgstr "Processzor sebesség"
 
 #: budgie-applets.html:352
 msgid "Control the frequency of the processor (Sandy Bridge and newer)."
@@ -200,7 +203,7 @@ msgstr "A processzor frekvenciájának ellenőrzése (Sandy Bridge és újabbak)
 
 #: budgie-applets.html370, 439
 msgid "System Monitor Applet"
-msgstr "Rendszerfigyelő applet"
+msgstr "Rendszerfigyelő"
 
 #: budgie-applets.html:375
 msgid "Show frequency, ram, swap & network values."
@@ -219,7 +222,7 @@ msgstr ""
 
 #: budgie-applets.html:416
 msgid "Global Menu Applet"
-msgstr "Főmenü applet"
+msgstr "Főmenü"
 
 #: budgie-applets.html:421
 msgid "Moves the menu from applications into the panel."
@@ -231,7 +234,7 @@ msgstr "Rendszerinformáció megjelenítése és személyre szabása a panelen."
 
 #: budgie-applets.html:462
 msgid "Hotcorners Applet"
-msgstr "Forrósarkok applet"
+msgstr "Aktív képernyősarok"
 
 #: budgie-applets.html:467
 msgid ""
@@ -243,7 +246,7 @@ msgstr ""
 
 #: budgie-applets.html:485
 msgid "Quicknote Applet"
-msgstr "Gyorsjegyzet applet"
+msgstr "Gyorsjegyzet"
 
 #: budgie-applets.html:490
 msgid "Quickly record a text based note."
@@ -259,7 +262,7 @@ msgstr "Ablak áttekintés mutatása kiterjesztve."
 
 #: budgie-applets.html:531
 msgid "Workspace Overview Applet"
-msgstr "Munkaterület-áttekintő applet"
+msgstr "Munkaterület-áttekintő"
 
 #: budgie-applets.html:536
 msgid "Quickly navigate workspaces using the applet's menu."
@@ -268,7 +271,7 @@ msgstr ""
 
 #: budgie-applets.html:554
 msgid "Workspace Wallpaper Applet"
-msgstr "Munkaterület-háttérkép applet"
+msgstr "Munkaterület-háttérkép"
 
 #: budgie-applets.html:559
 msgid "Show a different wallpaper on each workspace."
@@ -292,7 +295,7 @@ msgstr "Dátum és idő megjelenítése az asztalon."
 
 #: budgie-applets.html:623
 msgid "CountDown Applet"
-msgstr "Visszaszámláló applet"
+msgstr "Visszaszámláló"
 
 #: budgie-applets.html:628
 msgid "Set a timed countdown and run an action when the countdown completes."
@@ -311,7 +314,7 @@ msgstr ""
 
 #: budgie-applets.html:669
 msgid "Screen Rotation Lock Applet"
-msgstr "Képernyőforgatás-zár applet"
+msgstr "Képernyőforgatás-zár"
 
 #: budgie-applets.html:674
 msgid "Add the ability to unlock or lock the screen from rotating."
@@ -319,7 +322,7 @@ msgstr "A képernyő forgatásának engedélyezése vagy letiltása ."
 
 #: budgie-applets.html:692
 msgid "Clockworks Applet"
-msgstr "Időzónák applet"
+msgstr "Időzónák"
 
 #: budgie-applets.html:697
 msgid "Display the time across multiple time zones."
