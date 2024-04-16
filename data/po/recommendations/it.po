@@ -44,7 +44,7 @@ msgstr "Il repository è installato"
 msgid "Enable Ubuntu Budgie backports repository"
 msgstr "Abilita il repository di backport di Ubuntu Budgie"
 
-#: recommendations.html33, 48, 84, 121, 143, 168, 183, 200, 221, 295
+#: recommendations.html33, 48, 84, 121, 143, 168, 183, 198, 215, 236, 310
 msgid "Applying Changes..."
 msgstr "Applicare le modifiche..."
 
@@ -94,7 +94,7 @@ msgstr ""
 msgid "Configure Backup"
 msgstr "Configurare il backup"
 
-#: recommendations.html73, 110, 140, 165, 218
+#: recommendations.html73, 110, 140, 165, 233
 msgid "Remove"
 msgstr "Rimuovi"
 
@@ -193,21 +193,36 @@ msgstr "Installa Nemo Preview"
 
 #: recommendations.html:175
 msgid ""
+"Nemo Compare allows you to show the differences between two closely related "
+"files from the Nemo file manager. Just right click, compare the first file, "
+"right click again and compare with the second file."
+msgstr ""
+
+#: recommendations.html:178
+msgid "Nemo Compare is installed"
+msgstr ""
+
+#: recommendations.html:180
+msgid "Install Nemo Compare"
+msgstr ""
+
+#: recommendations.html:190
+msgid ""
 "Nemo Terminal embeds a terminal within the nemo file-manager. Press F4 to "
 "toggle the visibility of the terminal."
 msgstr ""
 "Nemo Terminal incorpora un terminale all'interno del file-manager Nemo. "
 "Premere F4 per modificare la visibilità del terminale."
 
-#: recommendations.html:178
+#: recommendations.html:193
 msgid "Nemo Terminal is installed"
 msgstr "Nemo Terminal è installato"
 
-#: recommendations.html:180
+#: recommendations.html:195
 msgid "Install Nemo Terminal"
 msgstr "Installa Nemo Terminal"
 
-#: recommendations.html:190
+#: recommendations.html:205
 msgid ""
 "Nemo Share allows you to quickly share a folder from the Nemo file manager "
 "without requiring root access."
@@ -215,15 +230,15 @@ msgstr ""
 "Nemo Share ti consente di condividere rapidamente una cartella dal file "
 "manager Nemo senza richiedere l'accesso come root."
 
-#: recommendations.html:195
+#: recommendations.html:210
 msgid "Nemo Share is installed"
 msgstr "Nemo Share è installato"
 
-#: recommendations.html:197
+#: recommendations.html:212
 msgid "Install Nemo Share"
 msgstr "Installa Nemo Share"
 
-#: recommendations.html:207
+#: recommendations.html:222
 msgid ""
 "Gutenprint is a suite of <a onclick=\"cmd('link?http://gimp-"
 "print.sourceforge.net/p_Supported_Printers.php')\">thousands</a> of printer "
@@ -235,19 +250,19 @@ msgstr ""
 "per stampante che include i driver per stampanti Epson e Canon. Gutenprint "
 "supporta solo la parte della stampante dei dispositivi multifunzione. "
 
-#: recommendations.html:211
+#: recommendations.html:226
 msgid "Gutenprint is installed"
 msgstr "Gutenprint è installato"
 
-#: recommendations.html:214
+#: recommendations.html:229
 msgid "Install Gutenprint"
 msgstr "Installa Gutenprint"
 
-#: recommendations.html:226
+#: recommendations.html:241
 msgid "Snap Applications"
 msgstr "Applicazioni Snap"
 
-#: recommendations.html:231
+#: recommendations.html:246
 msgid ""
 "<strong>Snap</strong> is a new generation application packaging format "
 "developed by <em>Canonical</em>. Even though it was initially developed just"
@@ -277,19 +292,19 @@ msgstr ""
 "creazione di pacchetti e la fornitura di aggiornamenti ci hanno impedito di "
 "distribuirle in passato."
 
-#: recommendations.html:244
+#: recommendations.html:259
 msgid "Learn more"
 msgstr "Per saperne di più"
 
-#: recommendations.html:246
+#: recommendations.html:261
 msgid "Snap user guide"
 msgstr "Guida utente Snap"
 
-#: recommendations.html:248
+#: recommendations.html:263
 msgid "Search Snap Apps"
 msgstr "Ricerca applicazioni Snap"
 
-#: recommendations.html:249
+#: recommendations.html:264
 msgid ""
 "If there’s a barrier to Snap app adoption (aside from few apps being made "
 "available in the format) it’s knowing which packages are available in the "
@@ -301,7 +316,7 @@ msgstr ""
 "disponibili nell'App Store. Beh, non mi meraviglio. Basta apri un terminale "
 "ed esegui il seguente comando:"
 
-#: recommendations.html:255
+#: recommendations.html:270
 msgid ""
 "The find command lets you quickly search for and discover snaps available to"
 " install from the command line. It can be run with a query after it (e.g., "
@@ -312,17 +327,17 @@ msgstr ""
 " query dopo di essa (ad esempio, \"snap find email\", \"snap find media\", "
 "\"snap find messaging\") o senza."
 
-#: recommendations.html:258
+#: recommendations.html:273
 msgid "When run without a query you’ll instead see a list of featured snaps."
 msgstr ""
 "Quando si esegue senza una query, verrà visualizzata una lista di snap "
 "disponibili."
 
-#: recommendations.html:259
+#: recommendations.html:274
 msgid "See installed apps"
 msgstr "Guarda applicazioni installate"
 
-#: recommendations.html:260
+#: recommendations.html:275
 msgid ""
 "Installed some Snaps but can’t remember what? Don’t panic. Use the list "
 "command to see an up-to-date list of all Snap apps installed on your system:"
@@ -331,7 +346,7 @@ msgstr ""
 "Utilizza l'elenco dei comandi per visualizzare un elenco aggiornato di tutte"
 " le applicazioni Snap installate nel sistema:"
 
-#: recommendations.html:263
+#: recommendations.html:278
 msgid ""
 "This list also shows you their version number, revision number and the name "
 "of the developer who uploaded it (handy when there are multiple versions of "
@@ -341,11 +356,11 @@ msgstr ""
 " nome dello sviluppatore che lo ha caricato (utile quando sono presenti più "
 "versioni della stessa applicazione nell'archivio, ad esempio Telegram)."
 
-#: recommendations.html:266
+#: recommendations.html:281
 msgid "Install & Remove Snap Apps"
 msgstr "Installa e Rimuovi Applicazioni Snap"
 
-#: recommendations.html:267
+#: recommendations.html:282
 msgid ""
 "If you’re used to managing software using apt you’ll instantly find the "
 "analogous snap commands easy to remember. You install snap apps with the "
@@ -356,11 +371,11 @@ msgstr ""
 " applicazioni snap con il comando 'install' e le rimuovi usando il comando "
 "'remove'."
 
-#: recommendations.html:272
+#: recommendations.html:287
 msgid "See details of an App"
 msgstr "Guarda i dettagli di un applicazione"
 
-#: recommendations.html:273
+#: recommendations.html:288
 msgid ""
 "You can use this to see detailed information about any snap application, "
 "whether it is installed or not. This info includes the application’s release"
@@ -373,11 +388,11 @@ msgstr ""
 "la dimensione, il numero di revisioni e altro ancora. Le informazioni di "
 "snap --verbose offrono una panoramica maggiore."
 
-#: recommendations.html:279
+#: recommendations.html:294
 msgid "Update a Snap App"
 msgstr "Aggiorna un'applicazione Snap"
 
-#: recommendations.html:281
+#: recommendations.html:296
 msgid ""
 "Rather helpfully you probably won’t ever need to remember to install an "
 "update to a Snap app. This is because Snapd runs in the background and "
@@ -390,14 +405,14 @@ msgstr ""
 " possibile, ofc, ripristinare un aggiornamento Snap o installare una "
 "revisione specifica)."
 
-#: recommendations.html:287
+#: recommendations.html:302
 msgid "Reference"
 msgstr "Riferimento"
 
-#: recommendations.html:290
+#: recommendations.html:305
 msgid "Snap is already installed"
 msgstr "Snap è già installato"
 
-#: recommendations.html:293
+#: recommendations.html:308
 msgid "Install Snap"
 msgstr "Installare Snap"

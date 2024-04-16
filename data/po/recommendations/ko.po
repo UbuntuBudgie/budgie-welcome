@@ -17,8 +17,8 @@ msgstr ""
 "Report-Msgid-Bugs-To : you@example.com\n"
 
 #: recommendations.html:15
-msgid "Optional Tasks"
-msgstr "선택적 작업"
+msgid "Recommendations"
+msgstr "추천"
 
 #: recommendations.html:20
 msgid "Backports repository"
@@ -39,15 +39,197 @@ msgstr ""
 msgid "Enable Ubuntu Budgie backports repository"
 msgstr ""
 
-#: recommendations.html33, 106, 130, 155, 176, 193, 209, 226
+#: recommendations.html33, 48, 84, 121, 143, 168, 183, 198, 215, 236, 310
 msgid "Applying Changes..."
 msgstr "변경 사항 적용 중..."
 
 #: recommendations.html:37
+msgid "Firmware Updater"
+msgstr ""
+
+#: recommendations.html:39
+msgid ""
+"Component manufacturers issue firmware updates to correct stability issues "
+"and improve component performance regarding their interaction with hardware "
+"and software. For example, BIOS updates are issued directly to the hardware,"
+" writing the new information onto their memory chip."
+msgstr ""
+
+#: recommendations.html:43
+msgid "Firmware Updater is installed"
+msgstr ""
+
+#: recommendations.html:46
+msgid "Install Firmware Updater"
+msgstr ""
+
+#: recommendations.html:52
+msgid "Backups"
+msgstr "백업"
+
+#: recommendations.html:57
+msgid ""
+"<strong>Deja-Dup</strong> is a powerful backup utility that can be installed"
+" in Ubuntu Budgie and supports backups to local devices as well as online "
+"cloud-based services."
+msgstr ""
+
+#: recommendations.html:61
+msgid ""
+"Nothing is more important than having a backup of your personal files, just "
+"in case something disastrous happens to your computer."
+msgstr ""
+
+#: recommendations.html:69
+msgid "Configure Backup"
+msgstr "백업 구성"
+
+#: recommendations.html73, 110, 140, 165, 233
+msgid "Remove"
+msgstr "제거"
+
+#: recommendations.html:76
+msgid ""
+"<b>Backups</b> can be found later in the menu <b>Utilities <i "
+"class=\"material-icons\">&#xE315;</i> Backups</b>."
+msgstr ""
+
+#: recommendations.html:82
+msgid "Install Deja-Dup"
+msgstr ""
+
+#: recommendations.html:90
+msgid "Firewall"
+msgstr "방화벽"
+
+#: recommendations.html:95
+msgid ""
+"<strong>Gufw</strong> provides a graphical frontend to <code>ufw</code> "
+"(Uncomplicated Firewall). If security is important to you, there are more "
+"ways to stay secure."
+msgstr ""
+
+#: recommendations.html:98
+msgid "Click to learn more about security."
+msgstr ""
+
+#: recommendations.html:99
+msgid ""
+"Firewalls prevent malicious connections entering and leaving your computer. "
+"By default, the firewall is disabled."
+msgstr ""
+
+#: recommendations.html:100
+msgid "Click to learn more about firewalls."
+msgstr ""
+
+#: recommendations.html:106
+msgid "Configure Firewall"
+msgstr "방화벽 구성"
+
+#: recommendations.html:113
+msgid ""
+"Firewall Configuration</b> can be found later in the menu <b>System Tools<i "
+"class=\"material-icons\">&#xE315;</i> Firewall Configuration</i></b>."
+msgstr ""
+
+#: recommendations.html:119
+msgid "Install Firewall"
+msgstr ""
+
+#: recommendations.html:131
+msgid ""
+"ClamTk is a frontend for ClamAV (Clam Antivirus). It is intended to be an "
+"easy to use, light-weight, on-demand scanner for Linux systems."
+msgstr ""
+
+#: recommendations.html:137
+msgid "ClamAV is installed"
+msgstr ""
+
+#: recommendations.html:146
+msgid "Install & Configure ClamAV"
+msgstr ""
+
+#: recommendations.html:155
+msgid ""
+"Nemo Preview allows you to quickly view the contents of a highlighted file "
+"from the Nemo file manager. Just press space to toggle the preview on and "
+"off."
+msgstr ""
+
+#: recommendations.html:158
+msgid "Nemo Preview is installed"
+msgstr ""
+
+#: recommendations.html:160
+msgid "Install Nemo Preview"
+msgstr ""
+
+#: recommendations.html:175
+msgid ""
+"Nemo Compare allows you to show the differences between two closely related "
+"files from the Nemo file manager. Just right click, compare the first file, "
+"right click again and compare with the second file."
+msgstr ""
+
+#: recommendations.html:178
+msgid "Nemo Compare is installed"
+msgstr ""
+
+#: recommendations.html:180
+msgid "Install Nemo Compare"
+msgstr ""
+
+#: recommendations.html:190
+msgid ""
+"Nemo Terminal embeds a terminal within the nemo file-manager. Press F4 to "
+"toggle the visibility of the terminal."
+msgstr ""
+
+#: recommendations.html:193
+msgid "Nemo Terminal is installed"
+msgstr ""
+
+#: recommendations.html:195
+msgid "Install Nemo Terminal"
+msgstr ""
+
+#: recommendations.html:205
+msgid ""
+"Nemo Share allows you to quickly share a folder from the Nemo file manager "
+"without requiring root access."
+msgstr ""
+
+#: recommendations.html:210
+msgid "Nemo Share is installed"
+msgstr ""
+
+#: recommendations.html:212
+msgid "Install Nemo Share"
+msgstr ""
+
+#: recommendations.html:222
+msgid ""
+"Gutenprint is a suite of <a onclick=\"cmd('link?http://gimp-"
+"print.sourceforge.net/p_Supported_Printers.php')\">thousands</a> of printer "
+"drivers which includes drivers for Epson and Canon printers. Gutenprint "
+"supports only the printer part of multi-function devices."
+msgstr ""
+
+#: recommendations.html:226
+msgid "Gutenprint is installed"
+msgstr ""
+
+#: recommendations.html:229
+msgid "Install Gutenprint"
+msgstr ""
+
+#: recommendations.html:241
 msgid "Snap Applications"
 msgstr ""
 
-#: recommendations.html:42
+#: recommendations.html:246
 msgid ""
 "<strong>Snap</strong> is a new generation application packaging format "
 "developed by <em>Canonical</em>. Even though it was initially developed just"
@@ -63,19 +245,19 @@ msgid ""
 "the past."
 msgstr ""
 
-#: recommendations.html55, 119
+#: recommendations.html:259
 msgid "Learn more"
 msgstr "더 알아보기"
 
-#: recommendations.html:57
+#: recommendations.html:261
 msgid "Snap user guide"
 msgstr "Snap 사용자 가이드"
 
-#: recommendations.html:59
+#: recommendations.html:263
 msgid "Search Snap Apps"
 msgstr "Snap 앱 검색"
 
-#: recommendations.html:60
+#: recommendations.html:264
 msgid ""
 "If there’s a barrier to Snap app adoption (aside from few apps being made "
 "available in the format) it’s knowing which packages are available in the "
@@ -83,7 +265,7 @@ msgid ""
 "following command:"
 msgstr ""
 
-#: recommendations.html:66
+#: recommendations.html:270
 msgid ""
 "The find command lets you quickly search for and discover snaps available to"
 " install from the command line. It can be run with a query after it (e.g., "
@@ -93,15 +275,15 @@ msgstr ""
 "find email‘, ‘snap find media‘, ‘snap find messaging‘ 등) 입력하지 않고 실행시킬 수 "
 "있습니다."
 
-#: recommendations.html:69
+#: recommendations.html:273
 msgid "When run without a query you’ll instead see a list of featured snaps."
 msgstr "검색어를 입력하지 않은 채 명령어를 실행하면 추천 Snap 앱이 표시됩니다."
 
-#: recommendations.html:70
+#: recommendations.html:274
 msgid "See installed apps"
 msgstr "설치된 애플리케이션 보기"
 
-#: recommendations.html:71
+#: recommendations.html:275
 msgid ""
 "Installed some Snaps but can’t remember what? Don’t panic. Use the list "
 "command to see an up-to-date list of all Snap apps installed on your system:"
@@ -109,7 +291,7 @@ msgstr ""
 "Snap 앱을 설치해놓고 뭘 설치했는지 기억이 안난다구요? 걱정하지 마세요. list 명령어를 사용하여 시스템에 설치된 Snap 앱의 "
 "목록을 확인하실 수 있습니다. :"
 
-#: recommendations.html:74
+#: recommendations.html:278
 msgid ""
 "This list also shows you their version number, revision number and the name "
 "of the developer who uploaded it (handy when there are multiple versions of "
@@ -118,11 +300,11 @@ msgstr ""
 "목록에는 앱의 버전, 수정 버전 및 개발자의 이름 등이 보여집니다. (Telegram과 같이 스토어 상에 똑같은 앱에서 여러 버전이 "
 "제공되는 경우에 유용합니다.)"
 
-#: recommendations.html:77
+#: recommendations.html:281
 msgid "Install & Remove Snap Apps"
 msgstr "Snap 앱 설치 및 제거"
 
-#: recommendations.html:78
+#: recommendations.html:282
 msgid ""
 "If you’re used to managing software using apt you’ll instantly find the "
 "analogous snap commands easy to remember. You install snap apps with the "
@@ -131,11 +313,11 @@ msgstr ""
 "apt와 같은 소프트웨어 관리자를 사용해왔더라도 괜찮습니다. Snap은 그러한 소프트웨어 관리자들과 비슷한 명령어를 사용하기에 기억하기도"
 " 쉽죠. Snap 앱을 설치하려면 ‘install’ 명령어를, 삭제하려면 ‘remove’ 명령어를 사용하면 됩니다."
 
-#: recommendations.html:83
+#: recommendations.html:287
 msgid "See details of an App"
 msgstr "앱 정보 보기"
 
-#: recommendations.html:84
+#: recommendations.html:288
 msgid ""
 "You can use this to see detailed information about any snap application, "
 "whether it is installed or not. This info includes the application’s release"
@@ -143,11 +325,11 @@ msgid ""
 "info --verbose offers a greater overview."
 msgstr ""
 
-#: recommendations.html:90
+#: recommendations.html:294
 msgid "Update a Snap App"
 msgstr "Snap 앱 업데이트"
 
-#: recommendations.html:92
+#: recommendations.html:296
 msgid ""
 "Rather helpfully you probably won’t ever need to remember to install an "
 "update to a Snap app. This is because Snapd runs in the background and "
@@ -155,120 +337,14 @@ msgid ""
 " a specific revision)."
 msgstr ""
 
-#: recommendations.html:98
+#: recommendations.html:302
 msgid "Reference"
 msgstr "참고 사항"
 
-#: recommendations.html:101
+#: recommendations.html:305
 msgid "Snap is already installed"
 msgstr "Snap이 이미 설치되어 있습니다."
 
-#: recommendations.html:104
+#: recommendations.html:308
 msgid "Install Snap"
 msgstr "Snap 설치"
-
-#: recommendations.html:111
-msgid "Flatpak"
-msgstr "Flatpak"
-
-#: recommendations.html:116
-msgid ""
-"<strong>Flatpak</strong> is a new generation application distribution "
-"framework. It introduces a unified packaging format across various GNU/Linux"
-" distributions. Please note that Flatpak applications are not part of the "
-"core Ubuntu experience."
-msgstr ""
-
-#: recommendations.html:121
-msgid ""
-"Being a user friendly distribution, Ubuntu Budgie allows you to install "
-"Flatpak with a single click. After setup, you can use "
-"<strong>Software</strong> to install Flatpak applications."
-msgstr ""
-
-#: recommendations.html:125
-msgid "Flatpak is installed. Please reboot for the service to start"
-msgstr "Flatpak이 설치되었습니다. 시스템을 재시작하여 서비스를 시작하세요."
-
-#: recommendations.html:128
-msgid "Install & Configure Flatpak"
-msgstr "Flatpak 설치 및 구성"
-
-#: recommendations.html:140
-msgid ""
-"<strong>Dropbox</strong> is a popular proprietary file sharing and storage "
-"solution."
-msgstr ""
-
-#: recommendations.html:144
-msgid ""
-"After installing, logout and login and follow the dropbox instructions that "
-"are then displayed."
-msgstr "설치가 끝나면 로그아웃하고 로그인한 다음, 표시되는 Dropbox 설명에 따라 구성을 완료하세요."
-
-#: recommendations.html:149
-msgid "Dropbox is installed"
-msgstr "Dropbox가 설치되었습니다."
-
-#: recommendations.html:152
-msgid "Install & Configure Dropbox"
-msgstr "Dropbox 설치 및 구성"
-
-#: recommendations.html:165
-msgid ""
-"ClamTk is a frontend for ClamAV (Clam Antivirus). It is intended to be an "
-"easy to use, light-weight, on-demand scanner for Linux systems."
-msgstr ""
-
-#: recommendations.html:170
-msgid "ClamAV is installed"
-msgstr ""
-
-#: recommendations.html:173
-msgid "Install & Configure ClamAV"
-msgstr ""
-
-#: recommendations.html:183
-msgid ""
-"Nemo Share allows you to quickly share a folder from the Nemo file manager "
-"without requiring root access."
-msgstr ""
-
-#: recommendations.html:188
-msgid "Nemo Share is installed"
-msgstr ""
-
-#: recommendations.html:191
-msgid "Install Nemo Share"
-msgstr ""
-
-#: recommendations.html:200
-msgid ""
-"Nemo Preview allows you to quickly view the contents of a highlighted file "
-"from the Nemo file manager. Just press space to toggle the preview on and "
-"off."
-msgstr ""
-
-#: recommendations.html:204
-msgid "Nemo Preview is installed"
-msgstr ""
-
-#: recommendations.html:207
-msgid "Install Nemo Preview"
-msgstr ""
-
-#: recommendations.html:216
-msgid ""
-"Gutenprint is a suite of <a onclick=\"cmd('link?http://gimp-"
-"print.sourceforge.net/p_Supported_Printers.php')\">thousands</a> of printer "
-"drivers which includes drivers for Epson and Canon printers. Gutenprint "
-"supports only the printer part of multi-function devices."
-msgstr ""
-
-#: recommendations.html:221
-msgid "Gutenprint is installed"
-msgstr ""
-
-#: recommendations.html:224
-msgid "Install Gutenprint"
-msgstr ""
