@@ -2341,7 +2341,7 @@ class Arguments(object):
             if arg == '--dev' or arg == '--debug' or arg == '-d':
                 dbg.stdout('Debug', 'Running in debugging mode.', 0, 0)
                 dbg.verbose_level = 2
-                self.locale = 'null'
+                #self.locale = 'null'
 
             if arg.startswith('--locale='):
                 self.locale = arg.split('--locale=')[1]
@@ -2422,7 +2422,7 @@ class Translations(object):
         if page_was_lost:
             dbg.stdout(
                 "i18n", "One or more translation pages are missing! Falling back to 'en_US'", 0, 1)
-            self.pages_dir = data_path
+            self.pages_dir = os.path.join(data_path, "en_US")
             self.localized = False
             self.locale = "en"
         else:
@@ -2480,7 +2480,7 @@ class Translations(object):
             self.relative_i18n = False
             dbg.stdout("i18n", "Locale Not Available: " + \
                        self.locale + " (using en_US instead)", 1, 1)
-            return data_path
+            return os.path.join(data_path, "stripped", "en_US")
 
 
 def desktop_files():

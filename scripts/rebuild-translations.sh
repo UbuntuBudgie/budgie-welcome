@@ -11,3 +11,8 @@ sed -i -- 's/CHARSET/UTF-8/g' ../po/*
 ./welcome-po.py --install
 ./translation-support.py translate-all
 ./update-desktop-files.sh
+cp ../data/*.html ../data/stripped/en_US/
+sed -i -- 's/&zwnj;//g' ../data/stripped/en_US/*
+sed -i -- 's/css\//..\/..\/css\//g' ../data/stripped/en_US/*
+sed -i -- 's/js\//..\/..\/js\//g' ../data/stripped/en_US/*
+sed -i -- 's/img\//..\/..\/img\//g' ../data/stripped/en_US/*
