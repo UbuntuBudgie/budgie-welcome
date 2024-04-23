@@ -5,7 +5,7 @@
 # Copyright 2013 "Manjaro Linux" <support@manjaro.org>
 # Copyright 2014 Antergos
 # Copyright 2016 Ubuntu Mate
-# Copyright 2016-2023 Ubuntu Budgie Developers
+# Copyright 2016-2024 Ubuntu Budgie Developers
 #
 # budgie-welcome is free software: you can redistribute it and/or modify
 # it under the temms of the GNU General Public License as published by
@@ -332,6 +332,8 @@ class AppView(WebKit2.WebView):
 
         app.run_javascript(
             "$('span[name=\"distro-name\"]').html('{}')".format(systemstate.distroname))
+        app.run_javascript(
+            "$('span[name=\"software-center\"]').html('{}')".format(systemstate.software_center))
 
         # Apply intermediate actions, if any are present
         if current_page in systemstate.intermediate_actions:
@@ -488,15 +490,27 @@ class AppView(WebKit2.WebView):
             Thread(target=panelOperation).start()
 
         elif uri == 'software-center':
-            try:
-                subprocess.Popen(['gnome-software'])
-            except Exception as e:
-                message = _("Seems that GNOME Software is not installed. If this problem persists "
-                            "even after installing GNOME Software, please contact us with following "
-                            "error message")
-                popup = PopupMessage(message, PopupMessage.ERROR, str(e))
+            if systemstate.codename in ['jammy', 'mantic']:
+                try:
+                    subprocess.Popen(['gnome-software'])
+                except Exception as e:
+                    message = _("Seems that GNOME Software is not installed. If this problem persists "
+                                "even after installing GNOME Software, please contact us with following "
+                                "error message")
+                    popup = PopupMessage(message, PopupMessage.ERROR, str(e))
 
-                popup.showMessage()
+                    popup.showMessage()
+            else:
+                try:
+                    subprocess.Popen(['snap-store'])
+                except Exception as e:
+                    message = _("Seems that App Center is not installed. If this problem persists "
+                                "even after installing App Center, please contact us with following "
+                                "error message")
+                    popup = PopupMessage(message, PopupMessage.ERROR, str(e))
+
+                    popup.showMessage()
+
 
         elif uri.startswith("makeover?"):
 
@@ -1390,6 +1404,7 @@ class SystemState(object):
         self.graphics_vendor = 'Unknown'
         self.graphics_grep = 'Unknown'
         self.scale_factor = 0
+        self.software_center = ''
 
         # Full path to binary
         self._welcome_bin_path = os.path.abspath(
@@ -1497,6 +1512,11 @@ class SystemState(object):
         else:
             self.distroname = 'budgie-remix'
             self.distro_wordmark = 'budgie-remix-wordmark.svg'
+
+        if self.codename in ['jammy', 'mantic']:
+            self.software_center='GNOME Software'
+        else:
+            self.software_center="App Center"
 
     def autostart_check(self):
         # Ensure our autostart directories exist
