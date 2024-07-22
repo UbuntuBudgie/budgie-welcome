@@ -10,9 +10,6 @@
 				],
 				"jammy": [
 					"ppa:ubuntubudgie/backports"
-				],
-				"kinetic": [
-					"ppa:ubuntubudgie/backports"
 				]
 			}
 		},
@@ -24,10 +21,10 @@
 				"jammy": [
 					"ppa:ubuntubudgie/backports"
 				],
-				"mantic": [
+				"noble": [
 					"ppa:ubuntubudgie/backports"
 				],
-				"noble": [
+				"oracular": [
 					"ppa:ubuntubudgie/backports"
 				]
 			}
@@ -40,14 +37,14 @@
 				"jammy": [
 					"ppa:ubuntubudgie/backports"
 				],
-				"mantic": [
+				"noble": [
 					"ppa:ubuntubudgie/backports"
 				],
-				"noble": [
+				"oracular": [
 					"ppa:ubuntubudgie/backports"
 				]
 			},
-			"budgie-version": "versiontuple(systemstate.budgie_desktop_version) >= versiontuple('10.8') and versiontuple(systemstate.budgie_desktop_version) < versiontuple('11.0')"
+			"budgie-version": "versiontuple(systemstate.budgie_desktop_version) >= versiontuple('10.8') and versiontuple(systemstate.budgie_desktop_version) < versiontuple('10.10')"
 		},
 		"user-indicator-redux-applet": {
 			"packages": [
@@ -57,10 +54,10 @@
 				"lunar": [
 					"ppa:ubuntubudgie/backports"
 				],
-				"mantic": [
+				"noble": [
 					"ppa:ubuntubudgie/backports"
 				],
-				"noble": [
+				"oracular": [
 					"ppa:ubuntubudgie/backports"
 				]
 			}
@@ -74,9 +71,6 @@
 					"ppa:ubuntubudgie/backports"
 				],
 				"jammy": [
-					"ppa:ubuntubudgie/backports"
-				],
-				"kinetic": [
 					"ppa:ubuntubudgie/backports"
 				]
 			}
@@ -92,16 +86,10 @@
 				"jammy": [
 					"ppa:ubuntubudgie/backports"
 				],
-				"kinetic": [
-					"ppa:ubuntubudgie/backports"
-				],
-				"lunar": [
-					"ppa:ubuntubudgie/backports"
-				],
-				"mantic": [
-					"ppa:ubuntubudgie/backports"
-				],
 				"noble": [
+					"ppa:ubuntubudgie/backports"
+				],
+				"oracular": [
 					"ppa:ubuntubudgie/backports"
 				]
 			}
@@ -117,16 +105,10 @@
 				"jammy": [
 					"ppa:ubuntubudgie/backports"
 				],
-				"kinetic": [
-					"ppa:ubuntubudgie/backports"
-				],
-				"lunar": [
-					"ppa:ubuntubudgie/backports"
-				],
-				"mantic": [
-					"ppa:ubuntubudgie/backports"
-				],
 				"noble": [
+					"ppa:ubuntubudgie/backports"
+				],
+				"oracular": [
 					"ppa:ubuntubudgie/backports"
 				]
 			}
@@ -142,16 +124,10 @@
 				"jammy": [
 					"ppa:ubuntubudgie/backports"
 				],
-				"kinetic": [
-					"ppa:ubuntubudgie/backports"
-				],
-				"lunar": [
-					"ppa:ubuntubudgie/backports"
-				],
-				"mantic": [
-					"ppa:ubuntubudgie/backports"
-				],
 				"noble": [
+					"ppa:ubuntubudgie/backports"
+				],
+				"oracular": [
 					"ppa:ubuntubudgie/backports"
 				]
 			}
@@ -167,17 +143,11 @@
 				"jammy": [
 					"universe"
 				],
-				"kinetic": [
-					"universe"
-				],
-				"lunar": [
-					"universe"
-				],
-				"mantic": [
-					"universe"
-				],
 				"noble": [
 					"universe"
+				],
+				"oracular": [
+					"ppa:ubuntubudgie/backports"
 				]
 			}
 		},
@@ -192,16 +162,10 @@
 				"jammy": [
 					"ppa:ubuntubudgie/backports"
 				],
-				"kinetic": [
-					"ppa:ubuntubudgie/backports"
-				],
-				"lunar": [
-					"ppa:ubuntubudgie/backports"
-				],
-				"mantic": [
-					"ppa:ubuntubudgie/backports"
-				],
 				"noble": [
+					"ppa:ubuntubudgie/backports"
+				],
+				"oracular": [
 					"ppa:ubuntubudgie/backports"
 				]
 			}
@@ -217,17 +181,10 @@
 				"jammy": [
 					"universe"
 				],
-				"kinetic": [
-					"universe"
-				],
-				"lunar": [
-					"universe"
-				],
-				"mantic": [
-					"universe"
-				]
-				,
 				"noble": [
+					"universe"
+				],
+				"oracular": [
 					"universe"
 				]
 			}
@@ -243,16 +200,10 @@
 				"jammy": [
 					"ppa:ubuntubudgie/backports"
 				],
-				"kinetic": [
-					"ppa:ubuntubudgie/backports"
-				],
-				"lunar": [
-					"ppa:ubuntubudgie/backports"
-				],
-				"mantic": [
-					"ppa:ubuntubudgie/backports"
-				],
 				"noble": [
+					"ppa:ubuntubudgie/backports"
+				],
+				"oracular": [
 					"ppa:ubuntubudgie/backports"
 				]
 			}
@@ -268,16 +219,10 @@
 				"jammy": [
 					"universe"
 				],
-				"kinetic": [
-					"universe"
-				],
-				"lunar": [
-					"universe"
-				],
-				"mantic": [
-					"universe"
-				],
 				"noble": [
+					"universe"
+				],
+				"oracular": [
 					"universe"
 				]
 			}
@@ -293,16 +238,10 @@
 				"jammy": [
 					"universe"
 				],
-				"kinetic": [
-					"universe"
-				],
-				"lunar": [
-					"universe"
-				],
-				"mantic": [
-					"universe"
-				],
 				"noble": [
+					"universe"
+				],
+				"oracular": [
 					"universe"
 				]
 			}
@@ -318,16 +257,10 @@
 				"jammy": [
 					"universe"
 				],
-				"kinetic": [
-					"universe"
-				],
-				"lunar": [
-					"universe"
-				],
-				"mantic": [
-					"universe"
-				],
 				"noble": [
+					"universe"
+				],
+				"oracular": [
 					"universe"
 				]
 			}
@@ -353,16 +286,10 @@
 				"jammy": [
 					"universe"
 				],
-				"kinetic": [
-					"universe"
-				],
-				"lunar": [
-					"universe"
-				],
-				"mantic": [
-					"universe"
-				],
 				"noble": [
+					"universe"
+				],
+				"oracular": [
 					"universe"
 				]
 			}
@@ -388,16 +315,10 @@
 				"jammy": [
 					"universe"
 				],
-				"kinetic": [
-					"universe"
-				],
-				"lunar": [
-					"universe"
-				],
-				"mantic": [
-					"universe"
-				],
 				"noble": [
+					"universe"
+				],
+				"oracular": [
 					"universe"
 				]
 			}
@@ -413,16 +334,10 @@
 				"jammy": [
 					"universe"
 				],
-				"kinetic": [
-					"universe"
-				],
-				"lunar": [
-					"universe"
-				],
-				"mantic": [
-					"universe"
-				],
 				"noble": [
+					"universe"
+				],
+				"oracular": [
 					"universe"
 				]
 			}
@@ -438,16 +353,10 @@
 				"jammy": [
 					"universe"
 				],
-				"kinetic": [
-					"universe"
-				],
-				"lunar": [
-					"universe"
-				],
-				"mantic": [
-					"universe"
-				],
 				"noble": [
+					"universe"
+				],
+				"oracular": [
 					"universe"
 				]
 			}
@@ -463,16 +372,10 @@
 				"jammy": [
 					"universe"
 				],
-				"kinetic": [
-					"universe"
-				],
-				"lunar": [
-					"universe"
-				],
-				"mantic": [
-					"universe"
-				],
 				"noble": [
+					"universe"
+				],
+				"oracular": [
 					"universe"
 				]
 			}
@@ -488,16 +391,10 @@
 				"jammy": [
 					"universe"
 				],
-				"kinetic": [
-					"universe"
-				],
-				"lunar": [
-					"universe"
-				],
-				"mantic": [
-					"universe"
-				],
 				"noble": [
+					"universe"
+				],
+				"oracular": [
 					"universe"
 				]
 			}
@@ -513,16 +410,10 @@
 				"jammy": [
 					"universe"
 				],
-				"kinetic": [
-					"universe"
-				],
-				"lunar": [
-					"universe"
-				],
-				"mantic": [
-					"universe"
-				],
 				"noble": [
+					"universe"
+				],
+				"oracular": [
 					"universe"
 				]
 			}
@@ -538,17 +429,11 @@
 				"jammy": [
 					"ppa:ubuntubudgie/backports"
 				],
-				"kinetic": [
-					"ppa:ubuntubudgie/backports"
-				],
-				"lunar": [
-					"ppa:ubuntubudgie/backports"
-				],
-				"mantic": [
-					"ppa:ubuntubudgie/backports"
-				],
 				"noble": [
 					"ppa:ubuntubudgie/backports"
+				],
+				"oracular": [
+					"universe"
 				]
 			}
 		},
@@ -563,16 +448,10 @@
 				"jammy": [
 					"ppa:ubuntubudgie/backports"
 				],
-				"kinetic": [
-					"ppa:ubuntubudgie/backports"
-				],
-				"lunar": [
-					"ppa:ubuntubudgie/backports"
-				],
-				"mantic": [
-					"ppa:ubuntubudgie/backports"
-				],
 				"noble": [
+					"ppa:ubuntubudgie/backports"
+				],
+				"oracular": [
 					"ppa:ubuntubudgie/backports"
 				]
 			}
@@ -588,16 +467,10 @@
 				"jammy": [
 					"universe"
 				],
-				"kinetic": [
-					"universe"
-				],
-				"lunar": [
-					"universe"
-				],
-				"mantic": [
-					"universe"
-				],
 				"noble": [
+					"universe"
+				],
+				"oracular": [
 					"universe"
 				]
 			}
@@ -613,16 +486,10 @@
 				"jammy": [
 					"universe"
 				],
-				"kinetic": [
-					"universe"
-				],
-				"lunar": [
-					"universe"
-				],
-				"mantic": [
-					"universe"
-				],
 				"noble": [
+					"universe"
+				],
+				"oracular": [
 					"universe"
 				]
 			}
@@ -638,16 +505,10 @@
 				"jammy": [
 					"universe"
 				],
-				"kinetic": [
-					"universe"
-				],
-				"lunar": [
-					"universe"
-				],
-				"mantic": [
-					"universe"
-				],
 				"noble": [
+					"universe"
+				],
+				"oracular": [
 					"universe"
 				]
 			}
@@ -661,12 +522,6 @@
 					"universe"
 				],
 				"jammy": [
-					"universe"
-				],
-				"kinetic": [
-					"universe"
-				],
-				"lunar": [
 					"universe"
 				]
 			}
@@ -682,16 +537,10 @@
 				"jammy": [
 					"universe"
 				],
-				"kinetic": [
-					"universe"
-				],
-				"lunar": [
-					"universe"
-				],
-				"mantic": [
-					"universe"
-				],
 				"noble": [
+					"universe"
+				],
+				"oracular": [
 					"universe"
 				]
 			}
@@ -707,16 +556,10 @@
 				"jammy": [
 					"universe"
 				],
-				"kinetic": [
-					"universe"
-				],
-				"lunar": [
-					"universe"
-				],
-				"mantic": [
-					"universe"
-				],
 				"noble": [
+					"universe"
+				],
+				"oracular": [
 					"universe"
 				]
 			}
@@ -732,16 +575,10 @@
 				"jammy": [
 					"ppa:ubuntubudgie/backports"
 				],
-				"kinetic": [
-					"ppa:ubuntubudgie/backports"
-				],
-				"lunar": [
-					"ppa:ubuntubudgie/backports"
-				],
-				"mantic": [
-					"ppa:ubuntubudgie/backports"
-				],
 				"noble": [
+					"ppa:ubuntubudgie/backports"
+				],
+				"oracular": [
 					"ppa:ubuntubudgie/backports"
 				]
 			}
@@ -757,16 +594,10 @@
 				"jammy": [
 					"ppa:ubuntubudgie/backports"
 				],
-				"kinetic": [
-					"ppa:ubuntubudgie/backports"
-				],
-				"lunar": [
-					"ppa:ubuntubudgie/backports"
-				],
-				"mantic": [
-					"ppa:ubuntubudgie/backports"
-				],
 				"noble": [
+					"ppa:ubuntubudgie/backports"
+				],
+				"oracular": [
 					"ppa:ubuntubudgie/backports"
 				]
 			}
@@ -782,16 +613,10 @@
 				"jammy": [
 					"universe"
 				],
-				"kinetic": [
-					"universe"
-				],
-				"lunar": [
-					"universe"
-				],
-				"mantic": [
-					"universe"
-				],
 				"noble": [
+					"universe"
+				],
+				"oracular": [
 					"universe"
 				]
 			}
@@ -807,16 +632,10 @@
 				"jammy": [
 					"universe"
 				],
-				"kinetic": [
-					"universe"
-				],
-				"lunar": [
-					"universe"
-				],
-				"mantic": [
-					"universe"
-				],
 				"noble": [
+					"universe"
+				],
+				"oracular": [
 					"universe"
 				]
 			}
@@ -832,16 +651,10 @@
 				"jammy": [
 					"universe"
 				],
-				"kinetic": [
-					"universe"
-				],
-				"lunar": [
-					"universe"
-				],
-				"mantic": [
-					"universe"
-				],
 				"noble": [
+					"universe"
+				],
+				"oracular": [
 					"universe"
 				]
 			}
@@ -857,16 +670,10 @@
 				"jammy": [
 					"universe"
 				],
-				"kinetic": [
-					"universe"
-				],
-				"lunar": [
-					"universe"
-				],
-				"mantic": [
-					"universe"
-				],
 				"noble": [
+					"universe"
+				],
+				"oracular": [
 					"universe"
 				]
 			}
@@ -880,12 +687,6 @@
 					"universe"
 				],
 				"jammy": [
-					"universe"
-				],
-				"kinetic": [
-					"universe"
-				],
-				"lunar": [
 					"universe"
 				]
 			}
@@ -901,16 +702,10 @@
 				"jammy": [
 					"universe"
 				],
-				"kinetic": [
-					"universe"
-				],
-				"lunar": [
-					"universe"
-				],
-				"mantic": [
-					"universe"
-				],
 				"noble": [
+					"universe"
+				],
+				"oracular": [
 					"universe"
 				]
 			}
@@ -926,16 +721,10 @@
 				"jammy": [
 					"universe"
 				],
-				"kinetic": [
-					"universe"
-				],
-				"lunar": [
-					"universe"
-				],
-				"mantic": [
-					"universe"
-				],
 				"noble": [
+					"universe"
+				],
+				"oracular": [
 					"universe"
 				]
 			}
@@ -951,16 +740,10 @@
 				"jammy": [
 					"universe"
 				],
-				"kinetic": [
-					"universe"
-				],
-				"lunar": [
-					"universe"
-				],
-				"mantic": [
-					"universe"
-				],
 				"noble": [
+					"universe"
+				],
+				"oracular": [
 					"universe"
 				]
 			}
@@ -976,16 +759,10 @@
 				"jammy": [
 					"universe"
 				],
-				"kinetic": [
-					"universe"
-				],
-				"lunar": [
-					"universe"
-				],
-				"mantic": [
-					"universe"
-				],
 				"noble": [
+					"universe"
+				],
+				"oracular": [
 					"universe"
 				]
 			}
@@ -1001,16 +778,10 @@
 				"jammy": [
 					"ppa:ubuntubudgie/backports"
 				],
-				"kinetic": [
-					"ppa:ubuntubudgie/backports"
-				],
-				"lunar": [
-					"ppa:ubuntubudgie/backports"
-				],
-				"mantic": [
-					"ppa:ubuntubudgie/backports"
-				],
 				"noble": [
+					"ppa:ubuntubudgie/backports"
+				],
+				"oracular": [
 					"ppa:ubuntubudgie/backports"
 				]
 			}
@@ -1084,19 +855,11 @@
 					"universe",
 					"ppa:ubuntubudgie/backports"
 				],
-				"kinetic": [
-					"universe",
-					"ppa:ubuntubudgie/backports"
-				],
-				"lunar": [
-					"universe",
-					"ppa:ubuntubudgie/backports"
-				],
-				"mantic": [
-					"universe",
-					"ppa:ubuntubudgie/backports"
-				],
 				"noble": [
+					"universe",
+					"ppa:ubuntubudgie/backports"
+				],
+				"oracular": [
 					"universe",
 					"ppa:ubuntubudgie/backports"
 				]
@@ -1192,16 +955,10 @@
 				"jammy": [
 					"ppa:ubuntubudgie/backports"
 				],
-				"kinetic": [
-					"ppa:ubuntubudgie/backports"
-				],
-				"lunar": [
-					"ppa:ubuntubudgie/backports"
-				],
-				"mantic": [
-					"ppa:ubuntubudgie/backports"
-				],
 				"noble": [
+					"ppa:ubuntubudgie/backports"
+				],
+				"oracular": [
 					"ppa:ubuntubudgie/backports"
 				]
 			}
@@ -1221,19 +978,11 @@
 					"universe",
 					"ppa:numix/ppa"
 				],
-				"kinetic": [
-					"universe",
-					"ppa:numix/ppa"
-				],
-				"lunar": [
-					"universe",
-					"ppa:numix/ppa"
-				],
-				"mantic": [
-					"universe",
-					"ppa:numix/ppa"
-				],
 				"noble": [
+					"universe",
+					"ppa:numix/ppa"
+				],
+				"oracular": [
 					"universe",
 					"ppa:numix/ppa"
 				]
@@ -1775,13 +1524,10 @@
 				"corectrl"
 			],
 			"repos": {
-				"lunar": [
-					"universe"
-				],
-				"mantic": [
-					"universe"
-				],
 				"noble": [
+					"universe"
+				],
+				"oracular": [
 					"universe"
 				]
 			}

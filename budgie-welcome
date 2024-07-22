@@ -911,7 +911,7 @@ class AppView(WebKit2.WebView):
                     filename = '/etc/apt/sources.list.d/' + filename
 
                     if os.path.isfile(filename):
-                        p = subprocess.Popen(['grep', '^deb\ http', filename])
+                        p = subprocess.Popen(['grep', r'^deb\ http', filename])
                         retval = p.wait()
 
                         if retval != 0:
@@ -1148,7 +1148,7 @@ class PackageManager(Thread):
                     filename = '/etc/apt/sources.list.d/' + filename
 
                     if os.path.isfile(filename):
-                        p = subprocess.Popen(['grep', '^deb\ http', filename])
+                        p = subprocess.Popen(['grep', r'^deb\ http', filename])
                         retval = p.wait()
 
                         if retval == 0:
@@ -1971,7 +1971,7 @@ class WelcomeApp(object):
                             'jammy'  : '2025-04-22',
                             'noble'  : '2027-04-22'}
 
-        app_code_names = { 'xenial', 'bionic', 'focal', 'jammy', 'kinetic', 'lunar', 'mantic', 'noble'}
+        app_code_names = { 'xenial', 'bionic', 'focal', 'jammy', 'kinetic', 'lunar', 'mantic', 'noble', 'oracular'}
 
         if systemstate.codename not in app_code_names:
             dialog = Gtk.MessageDialog( parent=self._window,
