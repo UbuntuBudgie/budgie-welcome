@@ -253,6 +253,11 @@ class AppView(WebKit2.WebView):
 
                     show_applet = eval(test_caveat)
 
+                if 'session-type' in config['budgie-applets'][applet]:
+                    show_applet = systemstate.xdg_session == config['budgie-applets'][applet]['session-type']
+                else:
+                    show_applet = systemstate.xdg_session == 'x11'
+
                 if systemstate.codename in config['budgie-applets'][applet]['repos'] and show_applet:
                     app.update_page("." + applet, 'show')
                 else:
@@ -1405,6 +1410,8 @@ class SystemState(object):
         self.graphics_grep = 'Unknown'
         self.scale_factor = 0
         self.software_center = ''
+        self.session_type = ''
+        self.xdg_session = ''
 
         # Full path to binary
         self._welcome_bin_path = os.path.abspath(
@@ -1416,6 +1423,11 @@ class SystemState(object):
         self._autostart_path = os.path.expanduser(
             os.path.join(self._autostart_dir, 'budgie-welcome.desktop'))
         self.autostart = self.autostart_check()
+
+        if arg.simulate_xdg_session:
+            self.xdg_session = arg.simulate_xdg_session
+        else:
+            self.xdg_session = GLib.environ_getenv(GLib.get_environ(), 'XDG_SESSION_TYPE')
 
         # Get current architecture of system.
         # Outputs 'i386', 'amd64', etc - Based on packages instead of kernel (eg. i686, x86_64).
@@ -2242,6 +2254,7 @@ class Arguments(object):
         self.simulate_no_connection = False
         self.simulate_force_connection = False
         self.simulate_version = None
+        self.simulate_xdg_session = None
         self.jump_software_page = False
         self.simulate_software_changes = False
         self.graphics_vendor = ''
@@ -2280,6 +2293,8 @@ class Arguments(object):
                 print(
                     '                                -- Options: guest, live, pi, vbox')
                 print(
+                    '  --force-xdg-session=TYPE    Simulate a session type e.g. x11 or wayland')
+                print(
                     '  --jump-to=PAGE               Open a specific page, excluding *.html')
                 print('  --locale=CODE                Locale to use. e.g. fr_FR.')
                 print('  --scale-factor=double      scale-factor to use. e.g. 1.0')
@@ -2315,6 +2330,16 @@ class Arguments(object):
                 except:
                     dbg.stdout(
                         'Debug', 'Invalid arguments for "--force-arch"', 0, 1)
+                    exit()
+
+            if arg.startswith('--force-xdg-session'):
+                try:
+                    self.simulate_xdg_session = arg.split('--force-xdg-session=')[1]
+                    dbg.stdout('Debug', 'Simulating xdg-session-type: ' + \
+                                   self.simulate_xdg_session, 0, 0)
+                except:
+                    dbg.stdout(
+                        'Debug', 'Invalid arguments for "--force-xdg-session"', 0, 1)
                     exit()
 
             if arg.startswith('--force-session'):
