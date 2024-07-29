@@ -2072,22 +2072,26 @@ class WelcomeApp(object):
 
         # build webkit container
         mv = AppView()
-        width, height, xoffset, yoffset = self._get_resolution()
+        # this needs to be fixed - under wayland we cannot get the primary monitor resolution with this method
+        try:
+            width, height, xoffset, yoffset = self._get_resolution()
 
-        dbg.stdout('debug', "width " + str(width) + " height " + str(height) + " xoffset " + str(xoffset) + " yoffset "+str(yoffset), 0, 0)
-        if systemstate.scale_factor == 0:
-            if width >= 1280:
-                w.set_default_size(992, 500)
-                mv.set_zoom_level(0.98)
-            elif width <= 900:
-                w.set_default_size(680, 340)
-                mv.set_zoom_level(0.68)
+            dbg.stdout('debug', "width " + str(width) + " height " + str(height) + " xoffset " + str(xoffset) + " yoffset "+str(yoffset), 0, 0)
+            if systemstate.scale_factor == 0:
+                if width >= 1280:
+                    w.set_default_size(992, 500)
+                    mv.set_zoom_level(0.98)
+                elif width <= 900:
+                    w.set_default_size(680, 340)
+                    mv.set_zoom_level(0.68)
+                else:
+                    w.set_default_size(780, 380)
+                    mv.set_zoom_level(0.75)
             else:
-                w.set_default_size(780, 380)
-                mv.set_zoom_level(0.75)
-        else:
-            w.set_default_size(680, 340)
-            mv.set_zoom_level(systemstate.scale_factor)
+                w.set_default_size(680, 340)
+                mv.set_zoom_level(systemstate.scale_factor)
+        except:
+            w.set_default_size(992, 500)
 
         mv.status_btn = status_btn
         mv.back_btn = back_btn
