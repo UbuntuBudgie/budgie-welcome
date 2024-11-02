@@ -2457,17 +2457,29 @@ class Translations(object):
         else:
             self.localized = True
 
-        # Validate all the i18n pages so we have the same structure as the original.
-        page_was_lost = False
-        if not self.pages_dir == data_path:
-            for page in os.listdir(data_path):
-                if page[-5:] == ".html":
-                    if os.path.exists(os.path.join(self.pages_dir, page)):
-                        dbg.stdout("i18n", "Page Verified: " + page, 2, 2)
-                    else:
-                        if page not in self.excluded_pages:
-                            page_was_lost = True
-                            dbg.stdout("i18n", "Page Missing: " + page, 2, 1)
+        def check_pages():
+            # Validate all the i18n pages so we have the same structure as the original.
+            page_was_lost = False
+            if not self.pages_dir == data_path:
+                for page in os.listdir(data_path):
+                    if page[-5:] == ".html":
+                        if os.path.exists(os.path.join(self.pages_dir, page)):
+                            dbg.stdout("i18n", "Page Verified: " + page, 2, 2)
+                        else:
+                            if page not in self.excluded_pages:
+                                page_was_lost = True
+                                dbg.stdout("i18n", "Page Missing: " + page, 2, 1)
+            return page_was_lost
+
+        page_was_lost = check_pages()
+
+        if page_was_lost and "_" in self.locale:
+            dbg.stdout("i18n", "First check of locale contained missing pages, checking primary locale", 1, 1)
+            self.localized = False
+            self.locale = self.locale.split("_")[0]
+            self.pages_dir = self.get_pages_path()
+            page_was_lost = check_pages()
+
         if page_was_lost:
             dbg.stdout(
                 "i18n", "One or more translation pages are missing! Falling back to 'en_US'", 0, 1)
