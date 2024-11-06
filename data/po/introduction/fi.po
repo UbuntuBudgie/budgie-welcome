@@ -2,13 +2,14 @@
 # Translators:
 # Oi Suomi On! <oisuomion@protonmail.com>, 2020
 # Tinde (Joke), 2024
+# David Mohammed <fossfreedom@ubuntu.com>, 2024
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: Budgie Welcome\n"
 "POT-Creation-Date: 2016-02-27 12:48+0100\n"
 "PO-Revision-Date: 2017-03-15 13:49+0000\n"
-"Last-Translator: Tinde (Joke), 2024\n"
+"Last-Translator: David Mohammed <fossfreedom@ubuntu.com>, 2024\n"
 "Language-Team: Finnish (https://app.transifex.com/ubuntu-budgie/teams/72251/fi/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -27,13 +28,15 @@ msgstr "Helppous ja hienostuneisuus."
 
 #: introduction.html24, 96
 msgid "What is Ubuntu Budgie?"
-msgstr ""
+msgstr "Mikä on Ubuntu Budgie?"
 
 #: introduction.html:39
 msgid ""
 "Ubuntu Budgie is an operating system -- the core software that runs your "
 "computer, similar to:"
 msgstr ""
+"Ubuntu Budgie on käyttöjärjestelmä - tietokoneesi ylläpitävä ydinohjelmisto,"
+" samanlainen kuin:"
 
 #: introduction.html:42
 msgid "Microsoft's Windows"
@@ -57,6 +60,9 @@ msgid ""
 "secure, capable, and modern computer system that rivals all others in "
 "popularity and actual use."
 msgstr ""
+"Ubuntu Budgie on GNU/Linuxin jakauma (variaatio). Luotettava, turvallinen, "
+"kykenevä ja moderni tietokonejärjestelmä, joka kilpailee kaikkien muiden "
+"suosion ja todellisen käytön suhteen."
 
 #: introduction.html:51
 msgid "Unlike other operating systems, Linux is a major one used:"
@@ -88,6 +94,11 @@ msgid ""
 "computers and prefer a traditional desktop metaphor. With modest hardware "
 "requirements, it is suitable for modern desktops and laptops alike."
 msgstr ""
+"Ubuntu Budgie on vakaa, helppokäyttöinen käyttöjärjestelmä, jossa on "
+"konfiguroitava työpöytäympäristö. Se on ihanteellinen niille, jotka haluavat"
+" eniten pois tietokoneistaan ​​ja mieluummin perinteistä työpöydän "
+"metaforia. Laitteistovaatimuksilla se sopii nykyaikaiseen työasemiin ja "
+"kannettaviin tietokoneisiin."
 
 #: introduction.html:69
 msgid ""
@@ -105,6 +116,11 @@ msgid ""
 "the way it looks, the way it works, or the applications it runs to suit your"
 " taste."
 msgstr ""
+"Ubuntu Budgie -sovelluksen käyttäminen tarjoaa sinulle vapauden suorittaa "
+"täydellinen, täyden varustettu käyttöjärjestelmä, joka on ennalta määritelty"
+" useimpien (ellei kaikkien) sovellusten kanssa, joita tarvitset "
+"päivittäiseen tietojenkäsittelyyn. Muuta mitä tahansa se näyttää, tapa, "
+"jolla se toimii, tai sovelluksia, joita se toimii makuun."
 
 #: introduction.html:83
 msgid "Objectives"
@@ -112,7 +128,7 @@ msgstr "Tavoitteet"
 
 #: introduction.html:84
 msgid "Ubuntu Budgie has a number of guiding objectives and goals:"
-msgstr ""
+msgstr "Ubuntu Budgiella on useita ohjaavia tavoitteita ja tavoitteita:"
 
 #: introduction.html:86
 msgid "Accessible to all, regardless of language and physical ability."
@@ -137,6 +153,8 @@ msgid ""
 "When possible contribute to Upstream projects such as BuddiesofBudgie and "
 "Debian so all Linux communities benefit."
 msgstr ""
+"Kun mahdollista, myötävaikuttaa loppupään projektiin, kuten Buddiesofbudgie "
+"ja Debian, joten kaikki Linux -yhteisöt hyötyvät."
 
 #: introduction.html:90
 msgid ""
@@ -162,6 +180,14 @@ msgid ""
 "now in the hands of billions of people around the world and it's also "
 "powered by Linux."
 msgstr ""
+"<a onclick = \"cmd ('link? https: //www.ubuntu.com')\"> ubuntu </a> Onko "
+"yksi, ellei suurin, suurin käyttöönotto <a onclick = \"cmd ('link? https: "
+"//en.wikipedia.org/wiki/Linux')\">linux </a> Pohjaiset "
+"työpöytäkäyttöjärjestelmät maailmassa. Linux on Ubuntun ytimessä ja "
+"mahdollistaa turvallisen, tehokkaan ja monipuolisen käyttöjärjestelmän, "
+"kuten ubuntu ja <a onclick = \"cmd ('linkki? Https: //www.android.com/')\"> "
+"Android </a>. Android on nyt miljardejen ihmisten käsissä ympäri maailmaa, "
+"ja sen voimaa myös Linux."
 
 #: introduction.html:117
 msgid ""
@@ -171,6 +197,10 @@ msgid ""
 "onclick=\"cmd('link?https://github.com/buddiesofbudgie/budgie-"
 "desktop/')\">Budgie desktop</a>."
 msgstr ""
+"Ubuntu on saatavana useissa erilaisissa <em> makuissa </em>, jokaisessa on "
+"oma työpöytäympäristö. Ubuntu Budgie ottaa Ubuntu Base-käyttöjärjestelmän ja"
+" lisää <a onclick = \"cmd ('link? Https: "
+"//github.com/buddiesofbudgie/budgie-desktop/')\"> Budgie Desktop </a>."
 
 #: introduction.html:126
 msgid "Budgie Desktop"
@@ -204,7 +234,7 @@ msgstr ""
 
 #: introduction.html:147
 msgid "Ubuntu Budgie comes with a lot of useful applications like"
-msgstr ""
+msgstr "Ubuntu Budgie sisältää paljon hyödyllisiä sovelluksia, kuten"
 
 #: introduction.html:167
 msgid "File Manager"
@@ -267,6 +297,10 @@ msgid ""
 "or unmodified form) by anyone. In a nutshell Ubuntu Budgie is free, in the "
 "truest sense of the word."
 msgstr ""
+"Mitä Linuxilla, Ubuntulla ja Budgie -työpöydällä on yhteistä, ne ovat "
+"avoimen lähdekoodin. Kukaan voi käyttää tätä ohjelmistoa vapaasti, muuttaa "
+"ja jakaa (modifioimattomassa tai muokkaamattomassa muodossa). Lyhyesti "
+"sanottuna Ubuntu Budgie on vapaa sanan todellisessa merkityksessä."
 
 #: introduction.html:206
 msgid ""
@@ -282,6 +316,16 @@ msgid ""
 "if you have made it better, then your changes just might be included in the "
 "next release of Ubuntu Budgie."
 msgstr ""
+"Vaikka löydät joitain Linux -jakaumia (muunnelmia) ostoa varten, suurin osa "
+"on ilmainen, kuten Ubuntu Budgie. Jakelu on lisensoitu tavalla, jonka avulla"
+" kuka tahansa voi antaa sen ilmaiseksi, ilman jousia kiinnitetään. "
+"Esimerkiksi lisenssi antaa jokaiselle käyttäjäyhteisön jäsenelle vapauden "
+"käyttää Linuxia mihin tahansa tarkoitukseen, levittää, muokata, jakaa tai "
+"jopa myydä käyttöjärjestelmää. Jos muokkaat ja sitten jaa Linux muutosten "
+"kanssa, sinun on vaadittava lisenssi lähettämään muutokset mahdolliselle "
+"sisällyttämiselle tuleviin versioihin. Ei ole mitään takeita siitä, että "
+"tämä tapahtuu koskaan, mutta jos olet tehnyt siitä paremman, niin muutokset "
+"saattavat vain sisällyttää seuraavaan Ubuntu Budgie -julkaisuun."
 
 #: introduction.html:221
 msgid ""
@@ -305,6 +349,9 @@ msgid ""
 "we can continually improve and grow without having to charge our users "
 "money."
 msgstr ""
+"linux -yhteisölle ja Ubuntu Budgie paranee seurauksena. Näin voimme "
+"jatkuvasti parantaa ja kasvaa ilman, että meidän on veloitettava käyttäjämme"
+" rahaa."
 
 #: introduction.html:232
 msgid ""
@@ -330,3 +377,12 @@ msgid ""
 " machines designed for Windows, and from the most powerful Internet servers "
 "to the smallest smart thermostat."
 msgstr ""
+"Olitpa Ubuntu Budgien, Ubuntun budgie -ohjelmiston tai sovelluskehittäjän "
+"tai käyttöjärjestelmää käyttävän organisaation työntekijä, olet "
+"kodinkäyttäjä, olet Linuxin ja avoimen lähdekoodin yhteisöjen jäsen ja hyöty"
+" Osallistu Ubuntu Budgie ja siihen liittyvät projektit: Linux, Budgie "
+"Desktop ja Ubuntu. Yhteisön jäsenet johtavat Linuxia melkein millä tahansa "
+"laitteistolla, kauneimmasta MacBookista halvimpaan verkkokirjaan, uusimmasta"
+" Chromebookista joihinkin Windowsille suunniteltuihin hyvin vanhoihin "
+"koneisiin ja tehokkaimmista Internet -palvelimista pienimpiin älykkäisiin "
+"termostaattiin."

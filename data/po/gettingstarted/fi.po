@@ -1,15 +1,15 @@
 # 
 # Translators:
-# Tux <tuxpingviini@gmail.com>, 2020
-# heidi.wenger, 2022
 # Oi Suomi On! <oisuomion@protonmail.com>, 2023
+# Tinde (Joke), 2024
+# David Mohammed <fossfreedom@ubuntu.com>, 2024
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: Budgie Welcome\n"
 "POT-Creation-Date: 2016-02-27 12:48+0100\n"
 "PO-Revision-Date: 2017-03-15 13:49+0000\n"
-"Last-Translator: Oi Suomi On! <oisuomion@protonmail.com>, 2023\n"
+"Last-Translator: David Mohammed <fossfreedom@ubuntu.com>, 2024\n"
 "Language-Team: Finnish (https://app.transifex.com/ubuntu-budgie/teams/72251/fi/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -99,6 +99,9 @@ msgid ""
 "Ubuntu Budgie works well on both high-end to older computers, optimized to "
 "be functional, while light on system resources."
 msgstr ""
+"Ubuntu Budgie toimii hyvin molemmilla huippuluokan vanhemmilla "
+"tietokoneilla, jotka on optimoitu toiminnalliseksi, kun taas järjestelmän "
+"resurssit valaisevat."
 
 #: gettingstarted.html:91
 msgid "Minimum"
@@ -114,15 +117,15 @@ msgstr "2 gigatavua (Gt) keskusmuistia (RAM)"
 
 #: gettingstarted.html:95
 msgid "32 gigabytes (GB) of disk space"
-msgstr ""
+msgstr "32 Gigatavua (GB) levytilasta"
 
 #: gettingstarted.html97, 108
 msgid "Raspberry Pi4B"
-msgstr ""
+msgstr "Raspberry Pi4B"
 
 #: gettingstarted.html:99
 msgid "32 gigabytes (GB) SD Card"
-msgstr ""
+msgstr "32 Gigatavua (GB) SD -kortti"
 
 #: gettingstarted.html:102
 msgid "Recommended"
@@ -130,7 +133,7 @@ msgstr "Suositus"
 
 #: gettingstarted.html:104
 msgid "Pentium i5 - approximately created in 2017"
-msgstr ""
+msgstr "Pentium i5 - luotu suunnilleen vuonna 2017"
 
 #: gettingstarted.html105, 109
 msgid "4 gigabytes (GB) of RAM"
@@ -138,11 +141,11 @@ msgstr "4 gigatavua keskusmuistia"
 
 #: gettingstarted.html:106
 msgid "60 gigabytes (GB) of disk space"
-msgstr ""
+msgstr "60 gigatavua (GB) levytilasta"
 
 #: gettingstarted.html:110
 msgid "60 gigabytes (GB) SSD"
-msgstr ""
+msgstr "60 gigatavua (GB) SSD"
 
 #: gettingstarted.html:113
 msgid ""
@@ -172,6 +175,11 @@ msgid ""
 "Microsoft Windows or another <span class=\"fa fa-linux\"></span> GNU/Linux "
 "distribution."
 msgstr ""
+"Ubuntu Budgie on suhteellisen helppo asentaa, halusitpa sitten korvata "
+"nykyisen käyttöjärjestelmäsi tai asentaa Ubuntu Budgien olemassa olevan "
+"käyttöjärjestelmän rinnalle - kuten &nbsp;<span class=\"fa fa fa-"
+"windows\"></span> Microsoft Windowsin tai jonkin muun <span class=\"fa fa-"
+"linux\"></span> GNU/Linux-jakelun."
 
 #: gettingstarted.html:141
 msgid "For the best results:"
@@ -207,6 +215,10 @@ msgid ""
 " it on your machine. Once you are ready, double click the installation icon "
 "from the desktop."
 msgstr ""
+"Live-istunto, jossa olet juuri nyt, on hyvä tilaisuus testata Ubuntu Budgiea"
+" muuttamatta tietokonettasi, jolloin voit testata, että kaikki oheislaitteet"
+" toimivat tarkoitetulla tavalla, ennen kuin sitoudut asentamaan sen "
+"koneellesi. Kun olet valmis, kaksoisnapsauta asennuskuvaketta työpöydältä."
 
 #: gettingstarted.html:159
 msgid "Modern UEFI-based computers"
@@ -300,6 +312,9 @@ msgid ""
 "system, your partitions need to be shrunk. This results in sections of your "
 "hard disk being split between multiple operating systems."
 msgstr ""
+"Jos haluat asentaa Ubuntu Budgien nykyisen käyttöjärjestelmäsi rinnalle, "
+"osioita on pienennettävä. Tämä johtaa siihen, että kiintolevyn osia jaetaan "
+"useamman käyttöjärjestelmän kesken."
 
 #: gettingstarted.html:216
 msgid "I'm dual booting with"
@@ -422,6 +437,9 @@ msgid ""
 "unallocated, whereby the installer will detect this unused space to install "
 "Ubuntu Budgie to."
 msgstr ""
+"Kun olet suorittanut levylle tehtävät toimenpiteet, voit jättää jäljellä "
+"olevan tilan varaamatta, jolloin asennusohjelma havaitsee tämän "
+"käyttämättömän tilan ja asentaa Ubuntu Budgien sinne."
 
 #: gettingstarted.html:292
 msgid "Using the Installer's \"Custom\" option."
@@ -446,7 +464,7 @@ msgstr "Voit määrittää nämä liitoskohdat:"
 
 #: gettingstarted.html:300
 msgid "The base for Ubuntu Budgie"
-msgstr ""
+msgstr "Ubuntu -budgien tukikohta"
 
 #: gettingstarted.html:301
 msgid "Bootloader and kernels"
@@ -527,6 +545,10 @@ msgid ""
 "within Windows. This is a safer bet if it's essential that Windows still "
 "boots on your computer while experiencing Ubuntu Budgie."
 msgstr ""
+"Uudemmat Windows -versiot tarjoavat työkalun NTFS -äänenvoimakkuuden "
+"kutistamiseksi Windowsista. Tämä on turvallisempi veto, jos on "
+"välttämätöntä, että Windows käynnistyy edelleen tietokoneellesi kokeessasi "
+"Ubuntu -budgieta."
 
 #: gettingstarted.html:335
 msgid "Open <b>Disk Management</b> from the start menu."
@@ -546,7 +568,7 @@ msgstr "Syötä määre sille kuinka paljon järjestelmäosiota kutistetaan."
 
 #: gettingstarted.html:352
 msgid "Remember, Ubuntu Budgie needs at minimum 32 GB of disk space."
-msgstr ""
+msgstr "Muista, että Ubuntu Budgie tarvitsee vähintään 32 Gt levytilaa."
 
 #: gettingstarted.html:357
 msgid "Further Reading"
@@ -576,6 +598,11 @@ msgid ""
 "will overwrite them, with the potential to lose access to Ubuntu Budgie "
 "temporarily."
 msgstr ""
+"Linux -jakaumat käyttävät käynnistyslatainta, joka tunnetaan nimellä <code> "
+"grub </code>, joka etsii ja käynnistää käyttöjärjestelmän. Jotkut "
+"käyttöjärjestelmät (kuten Windows) eivät kuitenkaan integroitu olemassa "
+"oleviin käynnistyskuormaimiin ja korvaavat ne, ja potentiaalia menettää "
+"pääsy Ubuntu -budgieen väliaikaisesti."
 
 #: gettingstarted.html:374
 msgid ""
@@ -624,12 +651,17 @@ msgid ""
 "updates are available for your computer. If you have just installed Ubuntu "
 "Budgie, you might want to do this now."
 msgstr ""
+"Ubuntu Budgie tarkistaa säännöllisesti, onko tietokoneellesi saatavilla "
+"uusia ohjelmistoja ja tietoturvapäivityksiä. Jos olet juuri asentanut Ubuntu"
+" Budgie, kannattaa ehkä tehdä tämä nyt."
 
 #: gettingstarted.html:427
 msgid ""
 "<b>Software Updater</b> can be found later in the menu <strong>System "
 "Tools</strong>"
 msgstr ""
+"<b> ohjelmistopäivitys </b> löytyy myöhemmin valikosta <strong> "
+"järjestelmätyökalut </strong>"
 
 #: gettingstarted.html:434
 msgid "Check for Updates"
@@ -646,6 +678,10 @@ msgid ""
 "automatically. However patent and copyright restrictions (see Ubuntu License"
 " Policy) complicate distribution of software to support non-free formats."
 msgstr ""
+"<strong> ubuntu </strong> (Ubuntun budgien perusjakauma) pyrkii tekemään "
+"kaikki tärkeimmät ohjelmistot käyttäjiensä automaattisesti. Patentti- ja "
+"tekijänoikeusrajoitukset (ks. Ubuntu-lisenssipolitiikka) kuitenkin "
+"monimutkaistaa ohjelmistojen jakelua ei-vapaiden muotojen tukemiseksi."
 
 #: gettingstarted.html:454
 msgid ""
@@ -706,6 +742,11 @@ msgid ""
 " properly. Installing the firmware package is often required to get some "
 "devices, typically Bluetooth and Wi-Fi, to work correctly."
 msgstr ""
+"Vaikka laaja valikoima laitteistoa on yhteensopiva Ubuntu -budgien kanssa, "
+"on joitain komponentteja ja oheislaitteita, jotka edellyttävät "
+"omistusoikeuden kuljettajia toimimaan kunnolla. Laiteohjelmistopaketin "
+"asentaminen tarvitaan usein laitteiden, tyypillisesti Bluetoothin ja Wi-Fi: "
+"n, saamiseksi oikein."
 
 #: gettingstarted.html:505
 msgid "An Internet connection is required to download and install drivers."
@@ -718,6 +759,7 @@ msgstr "Lisäajurit"
 #: gettingstarted.html:515
 msgid "<b>Additional Drivers</b> can be found later in <b>System Tools</b>"
 msgstr ""
+"<b> Lisäohjaimia </b> löytyy myöhemmin <b> järjestelmätyökaluista </b>"
 
 #: gettingstarted.html:523
 msgid "Graphics"
@@ -968,6 +1010,9 @@ msgid ""
 "keyboard entry layouts. IBus(Intelligent Input Bus) and Fcitx(Free Chinese "
 "Input Toy for X)."
 msgstr ""
+"Ubuntu Budgie -palvelussa tarjoamme mahdollisuuden vaihtaa kahden laajasti "
+"käytetyn näppäimistön sisäänkäynnin asettelun välillä. IBUS (älykäs "
+"syöttöväylä) ja FCITX (ilmainen kiinalainen syöttölelu x: lle)."
 
 #: gettingstarted.html:677
 msgid "Install & Configure IBus"
@@ -1001,6 +1046,7 @@ msgstr ""
 msgid ""
 "<b>Language Support</b> can be found later in the menu <b>System Tools</b>"
 msgstr ""
+"<b> Kielituki </b> löytyy myöhemmin valikosta <b> järjestelmätyökalut </b>"
 
 #: gettingstarted.html:722
 msgid "Complex Input"
@@ -1024,7 +1070,7 @@ msgstr "Korea"
 
 #: gettingstarted.html:774
 msgid "Flatpak, Dropbox and User Management"
-msgstr ""
+msgstr "Flatpak, Dropbox ja käyttäjän hallinta"
 
 #: gettingstarted.html:784
 msgid "Flatpak"
@@ -1037,6 +1083,9 @@ msgid ""
 " distributions. Please note that Flatpak applications are not part of the "
 "core Ubuntu experience."
 msgstr ""
+"<strong> Flatpak </strong> on uuden sukupolven sovellusjakelukehys. Se "
+"esittelee yhtenäisen pakkausmuodon erilaisissa GNU/Linux -jakaumissa. "
+"Huomaa, että Flatpak -sovellukset eivät ole osa Ubuntu -ydinkokemusta."
 
 #: gettingstarted.html:788
 msgid "Learn more"
@@ -1048,11 +1097,11 @@ msgstr "Asenna & määritä Flatpak"
 
 #: gettingstarted.html:794
 msgid "Flatpak is installed."
-msgstr ""
+msgstr "Flatpak on asennettu."
 
 #: gettingstarted.html:795
 msgid "Please reboot for the service to start."
-msgstr ""
+msgstr "Käynnistä palvelu uudelleen."
 
 #: gettingstarted.html:797
 msgid ""
@@ -1060,10 +1109,13 @@ msgid ""
 "Flatpak with a single click. After setup, you can use "
 "<strong>Software</strong> to install Flatpak applications."
 msgstr ""
+"Ubuntu Budgie on käyttäjäystävällinen jakelu, jonka avulla voit asentaa "
+"Flatpakin yhdellä napsautuksella. Asennuksen jälkeen voit käyttää <strong> "
+"-ohjelmistoa </strong> FlatPak -sovellusten asentamiseen."
 
 #: gettingstarted.html:810
 msgid "Dropbox"
-msgstr ""
+msgstr "Dropbox"
 
 #: gettingstarted.html:811
 msgid ""
@@ -1079,7 +1131,7 @@ msgstr "Asenna ja määritä Dropbox"
 
 #: gettingstarted.html:816
 msgid "Dropbox is installed."
-msgstr ""
+msgstr "Dropbox on asennettu."
 
 #: gettingstarted.html:817
 msgid ""
@@ -1119,12 +1171,16 @@ msgstr "Määritä käyttäjät"
 msgid ""
 "<b>Users</b> can be found later in the menu by typing<i> Users</i></b>."
 msgstr ""
+"<b> käyttäjät </b> löytyy myöhemmin valikosta kirjoittamalla <i> käyttäjät "
+"</i> </b>."
 
 #: gettingstarted.html:860
 msgid ""
 "To improve the amount of customizability, Ubuntu Budgie allows you to "
 "install/remove popular web browsers."
 msgstr ""
+"Mukautettavuuden määrän parantamiseksi Ubuntu Budgie antaa sinun "
+"asentaa/poistaa suosittuja verkkoselaimia."
 
 #: gettingstarted.html:865
 msgid "Firefox"
@@ -1170,12 +1226,17 @@ msgid ""
 "release browser made available directly by Mozilla thru their own "
 "repository."
 msgstr ""
+"Mozilla Firefox on ilmainen ja avoimen lähdekoodin selain, jonka on "
+"kehittänyt Mozilla Foundation - ei voittoa tavoittelija. Tämä on vakaa "
+"julkaisuselain, jonka Mozilla on saatavana suoraan oman arkistonsa kautta."
 
 #: gettingstarted.html:909
 msgid ""
 "Click Remove first to uninstall the current firefox package, followed by "
 "Install to add the Mozilla repository and package."
 msgstr ""
+"Napsauta Irrota ensin poistaaksesi nykyisen Firefox -paketin, jonka jälkeen "
+"asenna lisää Mozilla -arkisto ja paketti."
 
 #: gettingstarted.html:917
 msgid ""
@@ -1198,7 +1259,7 @@ msgstr ""
 
 #: gettingstarted.html935, 942, 950
 msgid "Downloads Page"
-msgstr ""
+msgstr "Lataussivu"
 
 #: gettingstarted.html:940
 msgid ""
@@ -1266,6 +1327,9 @@ msgid ""
 " be used to quickly setup the user interface to broadly reflect how other "
 "popular operating systems look and feel."
 msgstr ""
+"Ubuntu Budgie tarjoaa ainutlaatuisen työkalun käyttöliittymän muuttamiseen. "
+"Sitä voidaan käyttää käyttöliittymän nopeasti asentamiseen heijastamaan "
+"laajasti sitä, kuinka muut suositut käyttöjärjestelmät näyttävät ja tunteet."
 
 #: gettingstarted.html:1047
 msgid "Budgie Desktop Settings"
@@ -1304,6 +1368,8 @@ msgid ""
 "Ubuntu Budgie has many keyboard shortcuts that help make using your computer"
 " more efficient."
 msgstr ""
+"Ubuntu Budgie on monia pikanäppäimiä, jotka auttavat tekemään tietokoneesi "
+"käytöstä tehokkaampaa."
 
 #: gettingstarted.html:1097
 msgid ""
@@ -1835,7 +1901,7 @@ msgstr "Muu käyttö"
 
 #: gettingstarted.html:1857
 msgid "Allocated for Ubuntu Budgie:"
-msgstr ""
+msgstr "Osoitettu Ubuntu Budgie:"
 
 #: gettingstarted.html:1861
 msgid "The size of your operating system partition."

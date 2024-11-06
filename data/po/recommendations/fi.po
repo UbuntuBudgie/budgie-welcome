@@ -2,13 +2,15 @@
 # Translators:
 # heidi.wenger, 2023
 # Oi Suomi On! <oisuomion@protonmail.com>, 2023
+# Tinde (Joke), 2024
+# David Mohammed <fossfreedom@ubuntu.com>, 2024
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: Budgie Welcome\n"
 "POT-Creation-Date: 2016-02-27 12:48+0100\n"
 "PO-Revision-Date: 2017-03-22 21:33+0000\n"
-"Last-Translator: Oi Suomi On! <oisuomion@protonmail.com>, 2023\n"
+"Last-Translator: David Mohammed <fossfreedom@ubuntu.com>, 2024\n"
 "Language-Team: Finnish (https://app.transifex.com/ubuntu-budgie/teams/72251/fi/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -31,6 +33,9 @@ msgid ""
 "associated packages, we recommend to enable the Ubuntu Budgie backports "
 "repository."
 msgstr ""
+"Jotta voimme tarjota Budgie-Desktopin ja muiden siihen liittyvien pakettien "
+"ajan tasalla olevia versioita, suosittelemme Ubuntu Budgie Backports "
+"-varaston käyttöön."
 
 #: recommendations.html:27
 msgid "Repository is installed"
@@ -38,7 +43,7 @@ msgstr "Ohjelmavarasto asennettu"
 
 #: recommendations.html:30
 msgid "Enable Ubuntu Budgie backports repository"
-msgstr ""
+msgstr "Ota Ubuntu Budgie Backports -varasto käyttöön"
 
 #: recommendations.html33, 48, 84, 121, 143, 168, 183, 198, 215, 236, 310
 msgid "Applying Changes..."
@@ -46,7 +51,7 @@ msgstr "Muutoksia toteutetaan..."
 
 #: recommendations.html:37
 msgid "Firmware Updater"
-msgstr ""
+msgstr "Laiteohjelmistopäivitys"
 
 #: recommendations.html:39
 msgid ""
@@ -55,14 +60,19 @@ msgid ""
 "and software. For example, BIOS updates are issued directly to the hardware,"
 " writing the new information onto their memory chip."
 msgstr ""
+"Komponenttien valmistajat julkaisevat laiteohjelmistopäivityksiä "
+"vakausongelmien korjaamiseksi ja komponenttien suorituskyvyn parantamiseksi "
+"niiden vuorovaikutuksen suhteen laitteistojen ja ohjelmistojen kanssa. "
+"Esimerkiksi BIOS -päivitykset annetaan suoraan laitteistolle, kirjoittaen "
+"uudet tiedot muistisirulle."
 
 #: recommendations.html:43
 msgid "Firmware Updater is installed"
-msgstr ""
+msgstr "Laiteohjelmistopäivitys on asennettu"
 
 #: recommendations.html:46
 msgid "Install Firmware Updater"
-msgstr ""
+msgstr "Asenna laiteohjelmistopäivitys"
 
 #: recommendations.html:52
 msgid "Backups"
@@ -74,6 +84,9 @@ msgid ""
 " in Ubuntu Budgie and supports backups to local devices as well as online "
 "cloud-based services."
 msgstr ""
+"<strong> deja-dup </strong> on tehokas varmuuskopiointi apuohjelma, joka "
+"voidaan asentaa Ubuntu Budgie -sovellukseen ja tukee varmuuskopioita "
+"paikallisiin laitteisiin sekä online-pilvipohjaisiin palveluihin."
 
 #: recommendations.html:61
 msgid ""
@@ -102,7 +115,7 @@ msgstr ""
 
 #: recommendations.html:82
 msgid "Install Deja-Dup"
-msgstr ""
+msgstr "Asenna DejaDup"
 
 #: recommendations.html:90
 msgid "Firewall"
@@ -114,20 +127,25 @@ msgid ""
 "(Uncomplicated Firewall). If security is important to you, there are more "
 "ways to stay secure."
 msgstr ""
+"<strong> gufw </strong> tarjoaa graafisen käyttöliittymän <code> ufw </code>"
+" (mutkitteinen palomuuri). Jos turvallisuus on sinulle tärkeää, on enemmän "
+"tapoja pysyä turvassa."
 
 #: recommendations.html:98
 msgid "Click to learn more about security."
-msgstr ""
+msgstr "Napsauta saadaksesi lisätietoja turvallisuudesta."
 
 #: recommendations.html:99
 msgid ""
 "Firewalls prevent malicious connections entering and leaving your computer. "
 "By default, the firewall is disabled."
 msgstr ""
+"Palomuurit estävät tietokoneesi tulevan haitallisten yhteydet. Oletuksena "
+"palomuuri on poistettu käytöstä."
 
 #: recommendations.html:100
 msgid "Click to learn more about firewalls."
-msgstr ""
+msgstr "Napsauta saadaksesi lisätietoja palomuurista."
 
 #: recommendations.html:106
 msgid "Configure Firewall"
@@ -143,21 +161,23 @@ msgstr ""
 
 #: recommendations.html:119
 msgid "Install Firewall"
-msgstr ""
+msgstr "Asenna palomuuri"
 
 #: recommendations.html:131
 msgid ""
 "ClamTk is a frontend for ClamAV (Clam Antivirus). It is intended to be an "
 "easy to use, light-weight, on-demand scanner for Linux systems."
 msgstr ""
+"Clamtk on Clamavin (simpukka virustorjunta) etusivu. Sen on tarkoitus olla "
+"helppokäyttöinen, kevyt paino, tilauskvanneri Linux-järjestelmille."
 
 #: recommendations.html:137
 msgid "ClamAV is installed"
-msgstr ""
+msgstr "ClamAV on asennettu"
 
 #: recommendations.html:146
 msgid "Install & Configure ClamAV"
-msgstr ""
+msgstr "Asenna ja säädä asetuksia ClamAV"
 
 #: recommendations.html:155
 msgid ""
@@ -183,28 +203,34 @@ msgid ""
 "files from the Nemo file manager. Just right click, compare the first file, "
 "right click again and compare with the second file."
 msgstr ""
+"NEMO -vertailu antaa sinun näyttää erot kahden läheisesti liittyvän "
+"tiedoston välillä NEMO -tiedostojen hallinnasta. Napsauta vain hiiren "
+"kakkospainikkeella, vertaa ensimmäistä tiedostoa, napsauta hiiren "
+"kakkospainikkeella uudelleen ja vertaa toiseen tiedostoon."
 
 #: recommendations.html:178
 msgid "Nemo Compare is installed"
-msgstr ""
+msgstr "Nemo Compare on asennettu"
 
 #: recommendations.html:180
 msgid "Install Nemo Compare"
-msgstr ""
+msgstr "Asenna Nemo Compare"
 
 #: recommendations.html:190
 msgid ""
 "Nemo Terminal embeds a terminal within the nemo file-manager. Press F4 to "
 "toggle the visibility of the terminal."
 msgstr ""
+"NEMO-pääte upottaa terminaalin NEMO-tiedostopäällikköön. Paina F4 "
+"vaihtaaksesi terminaalin näkyvyyden."
 
 #: recommendations.html:193
 msgid "Nemo Terminal is installed"
-msgstr ""
+msgstr "Nemo Terminal on asennettu"
 
 #: recommendations.html:195
 msgid "Install Nemo Terminal"
-msgstr ""
+msgstr "Asenna Nemo Terminal"
 
 #: recommendations.html:205
 msgid ""
@@ -261,6 +287,18 @@ msgid ""
 " packaging and providing updates have prevented us from delivering them in "
 "the past."
 msgstr ""
+"<strong> snap </strong> on uuden sukupolven sovelluspakkausmuoto, jonka on "
+"kehittänyt <em> Canonical </em>. Vaikka se oli alun perin kehitetty vain "
+"erilaisille Ubuntu -alustoille, se toimii tällä hetkellä monissa muissa "
+"GNU/Linux -jakaumissa. Se auttaa sovelluskehittäjiä tarjoamaan yhtenäisen "
+"paketin, joka voi toimia eri alustoilla. SNAP -paketin muotoa käyttämällä "
+"sovelluksilla voi olla oma kirjastojen versio, eikä ole tarpeen huolehtia "
+"taustalla olevaan käyttöjärjestelmään asennetuista kirjastoista. SNAP "
+"-paketit antavat kehittäjille mahdollisuuden tuoda paljon uudempia versioita"
+" sovelluksista Ubuntu Budgielle. KDE: n, GNOME: n, selainten tai muiden "
+"työpöytäympäristösovellusten uudemmat versiot rakennetaan yleensä helposti "
+"vanhemmille LTS -julkaisuille, mutta pakkaus- ja päivitysten "
+"monimutkaisuudet ovat estäneet meitä toimittamasta niitä aiemmin."
 
 #: recommendations.html:259
 msgid "Learn more"
