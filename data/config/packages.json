@@ -245,7 +245,7 @@
 					"universe"
 				]
 			},
-			"session-type": "wayland"
+			"session-type": ["wayland","x11"]
 		},
 		"previewsapp-applet": {
 			"packages": [
@@ -399,7 +399,7 @@
 					"universe"
 				]
 			},
-			"session-type": "wayland"
+			"session-type": ["wayland", "x11"]
 		},
 		"dropby-window-applet": {
 			"packages": [
@@ -476,7 +476,7 @@
 					"universe"
 				]
 			},
-			"session-type": "wayland"
+			"session-type": ["wayland", "x11"]
 		},
 		"weathershow-applet": {
 			"packages": [
@@ -515,7 +515,7 @@
 					"universe"
 				]
 			},
-			"session-type": "wayland"
+			"session-type": ["wayland","x11"]
 		},
 		"trash-applet": {
 			"packages": [
@@ -548,7 +548,7 @@
 					"universe"
 				]
 			},
-			"session-type": "wayland"
+			"session-type": ["wayland", "x11"]
 		},
 		"network-manager-applet": {
 			"packages": [
@@ -568,11 +568,30 @@
 					"universe"
 				]
 			},
-			"session-type": "wayland"
+			"session-type": ["wayland", "x11"]
 		},
 		"cpufreq-applet": {
 			"packages": [
 				"budgie-cpufreq-applet"
+			],
+			"repos": {
+				"focal": [
+					"ppa:ubuntubudgie/backports"
+				],
+				"jammy": [
+					"ppa:ubuntubudgie/backports"
+				],
+				"noble": [
+					"ppa:ubuntubudgie/backports"
+				],
+				"oracular": [
+					"ppa:ubuntubudgie/backports"
+				]
+			}
+		},
+		"cputemp-applet": {
+			"packages": [
+				"budgie-cputemp-applet"
 			],
 			"repos": {
 				"focal": [
@@ -645,7 +664,7 @@
 					"universe"
 				]
 			},
-			"session-type": "wayland"
+			"session-type": ["wayland", "x11"]
 		},
 		"workspace-stopwatch-applet": {
 			"packages": [
@@ -716,7 +735,7 @@
 					"universe"
 				]
 			},
-			"session-type": "wayland"
+			"session-type": ["wayland", "x11"]
 		},
 		"wallstreet": {
 			"packages": [
@@ -736,7 +755,7 @@
 					"universe"
 				]
 			},
-			"session-type": "wayland"
+			"session-type": ["wayland", "x11"]
 		},
 		"window-shuffler": {
 			"packages": [
@@ -794,7 +813,7 @@
 					"ppa:ubuntubudgie/backports"
 				]
 			},
-			"session-type": "wayland"
+			"session-type": ["wayland","x11"]
 		}
 	},
 	"default": {

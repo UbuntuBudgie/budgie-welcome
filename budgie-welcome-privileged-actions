@@ -73,7 +73,7 @@ def check_if_installed_ppa(release_code, ppa_name):
     filename = '/etc/apt/sources.list.d/' + filename
 
     if os.path.isfile(filename):
-        p = subprocess.Popen(['grep', '^deb\ http', filename])
+        p = subprocess.Popen(['grep', r'^deb\ http', filename])
 
         retval = p.wait()
 

@@ -1,42 +1,43 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR ORGANIZATION
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 # Translators:
 # Oi Suomi On! <oisuomion@protonmail.com>, 2020
 # heidi.wenger, 2022
 # Tinde (Joke), 2024
 # David Mohammed <fossfreedom@ubuntu.com>, 2024
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2024-04-30 21:40+0100\n"
+"POT-Creation-Date: 2024-11-02 11:07+0000\n"
 "PO-Revision-Date: 2017-03-11 16:44+0000\n"
 "Last-Translator: David Mohammed <fossfreedom@ubuntu.com>, 2024\n"
-"Language-Team: Finnish (https://app.transifex.com/ubuntu-budgie/teams/72251/fi/)\n"
+"Language-Team: Finnish (https://app.transifex.com/ubuntu-budgie/teams/72251/"
+"fi/)\n"
+"Language: fi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: pygettext.py 1.5\n"
-"Language: fi\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: budgie-welcome:445
+#: budgie-welcome:450
 msgid "Open the menu and search for 'Install RELEASE'"
 msgstr "Avaa valikko ja etsi 'asenna julkaisu'"
 
-#: budgie-welcome:497
+#: budgie-welcome:502
 msgid ""
 "Seems that GNOME Software is not installed. If this problem persists even "
 "after installing GNOME Software, please contact us with following error "
 "message"
 msgstr ""
 "Näyttää siltä että GNOME Software -ohjelmistokeskus ei ole asennettuna. "
-"Mikäli tämä ongelma säilyy jopa GNOME Software:n asentamisen jälkeenkin, ota"
-" meihin yhteyttä seuraavan virheilmoituksen kanssa"
+"Mikäli tämä ongelma säilyy jopa GNOME Software:n asentamisen jälkeenkin, ota "
+"meihin yhteyttä seuraavan virheilmoituksen kanssa"
 
-#: budgie-welcome:507
+#: budgie-welcome:512
 msgid ""
 "Seems that App Center is not installed. If this problem persists even after "
 "installing App Center, please contact us with following error message"
@@ -45,20 +46,20 @@ msgstr ""
 "jatkuu myös sovelluskeskuksen asentamisen jälkeen, ota meihin yhteyttä "
 "seuraavalla virheviestillä"
 
-#: budgie-welcome:756
+#: budgie-welcome:761
 msgid "Following tasks are in progress"
 msgstr "Seuraavat toimenpiteet ovat käynnissä"
 
-#: budgie-welcome:763 budgie-welcome:1981 budgie-welcome:1998
-#: budgie-welcome:2026 budgie-welcome:2032 budgie-welcome:2513
+#: budgie-welcome:768 budgie-welcome:1993 budgie-welcome:2010
+#: budgie-welcome:2038 budgie-welcome:2044 budgie-welcome:2554
 msgid "Budgie Welcome"
 msgstr "Budgie:n tervetuliaisikkuna"
 
-#: budgie-welcome:767
+#: budgie-welcome:772
 msgid "Budgie Desktop"
 msgstr "Budgie-työpöytä"
 
-#: budgie-welcome:894
+#: budgie-welcome:899
 msgid ""
 "The following third-party repositories need to be added to complete the "
 "installation:"
@@ -66,66 +67,66 @@ msgstr ""
 "Seuraavat kolmannen osapuolen ohjelmalähteet täytyy lisätä asennuksen "
 "viimeistelemiseksi:"
 
-#: budgie-welcome:947 budgie-welcome:969
+#: budgie-welcome:952 budgie-welcome:974
 msgid ""
-"Third-Party repositories and their packages are not supported by Ubuntu. You"
-" should only continue if you trust the maintainers of these repositories."
+"Third-Party repositories and their packages are not supported by Ubuntu. You "
+"should only continue if you trust the maintainers of these repositories."
 msgstr ""
 "Ubuntu ei tule kolmansien osapuolten ohjelmavarastoja ja niiden paketteja. "
 "Jatka ainoastaan mikäli sinulla on luotto näiden ohjelmavarastojen "
 "ylläpitäjiin."
 
-#: budgie-welcome:950 budgie-welcome:972
+#: budgie-welcome:955 budgie-welcome:977
 msgid "Continue with the installation?"
 msgstr "Jatketaanko asennuksen kanssa?"
 
-#: budgie-welcome:956 budgie-welcome:978
+#: budgie-welcome:961 budgie-welcome:983
 msgid "Third-Party Repositories"
 msgstr "Kolmansien osapuolten ohjelmistovarastot"
 
-#: budgie-welcome:967
+#: budgie-welcome:972
 msgid ""
-"One or more packages need to be installed from a third-party repository that"
-" you have previously added."
+"One or more packages need to be installed from a third-party repository that "
+"you have previously added."
 msgstr ""
 "Pakettaja tarvitsee asentaa yksi tai enemmän kolmannen osapuolen "
 "ohjelmavarastosta jonka olet aiemmin lisännyt. "
 
-#: budgie-welcome:1289
+#: budgie-welcome:1294
 msgid "Welcome App"
 msgstr "Tervetuloa-sovellus"
 
-#: budgie-welcome:1650
+#: budgie-welcome:1662
 msgid "Could not gather data."
 msgstr "Tietoja ei voitu kerätä."
 
-#: budgie-welcome:1730
+#: budgie-welcome:1742
 msgid "GB"
 msgstr "GT"
 
-#: budgie-welcome:1731
+#: budgie-welcome:1743
 msgid "GiB"
 msgstr "GiT"
 
-#: budgie-welcome:1732
+#: budgie-welcome:1744
 msgid "MB"
 msgstr "MT"
 
-#: budgie-welcome:1733
+#: budgie-welcome:1745
 msgid "MiB"
 msgstr "MiT"
 
-#: budgie-welcome:1983
+#: budgie-welcome:1995
 msgid ""
 "This snap is running on a distro that is unrecognized or on a development "
 "release of Ubuntu that has not yet received its snap configuration.  Full "
 "snap capabilities are unlikely to work."
 msgstr ""
-"Tämä snap-paketti on ajossa Linux-jakelussa joka on tunnistamaton Ubuntu tai"
-" sitten sen kehitysjulkaisu johon ei vielä ole lisätty snap-asetuksia. "
-"Snap:in täydelliset ominaisuudet tuskin tulevat toimimaan.  "
+"Tämä snap-paketti on ajossa Linux-jakelussa joka on tunnistamaton Ubuntu tai "
+"sitten sen kehitysjulkaisu johon ei vielä ole lisätty snap-asetuksia. Snap:"
+"in täydelliset ominaisuudet tuskin tulevat toimimaan.  "
 
-#: budgie-welcome:2000
+#: budgie-welcome:2012
 msgid ""
 "This snap is running on version of budgie desktop that is no longer "
 "supported. Please upgrade to a supported version of the distro."
@@ -133,33 +134,33 @@ msgstr ""
 "Tämä snap on ajossa Budgie-työpöydän julkaisussa joka ei enää ole tuettuna. "
 "Päivitäthän tuettuun jakelun versioon."
 
-#: budgie-welcome:2047
+#: budgie-welcome:2059
 msgid "Status"
 msgstr "Tila"
 
-#: budgie-welcome:2145
+#: budgie-welcome:2161
 msgid " is in progress. Please wait for it to complete"
 msgstr "on käynnissä. Odota sen valmistumista"
 
-#: budgie-welcome:2514
+#: budgie-welcome:2555
 msgid "Find out about your operating system"
 msgstr "Ota selvää käyttöjärjestelmästäsi"
 
-#: budgie-welcome:2516
+#: budgie-welcome:2557
 msgid "Budgie Makeovers & Layouts"
 msgstr "Budgie muotoilut & asettelut"
 
-#: budgie-welcome:2517
+#: budgie-welcome:2558
 msgid "Give the desktop a makeover with new themes, icons, fonts & layouts"
 msgstr ""
 "Tee työpöydälle kasvojenkohotus uusien teemojen, kuvakkeiden, kirjasimien & "
 "ulkoasujen kautta"
 
-#: budgie-welcome:2519
+#: budgie-welcome:2560
 msgid "Budgie Extras"
 msgstr "Budgie-työpöydän lisät"
 
-#: budgie-welcome:2520
+#: budgie-welcome:2561
 msgid ""
 "Customize the desktop with applets and mini-applications to provide extra "
 "capabilities"
@@ -167,10 +168,10 @@ msgstr ""
 "Muokkaa työpöytää sovellutuksilla- ja piensovelluksilla jotka tarjoavat "
 "lisäominaisuuksia"
 
-#: budgie-welcome:2523
+#: budgie-welcome:2564
 msgid "Budgie Discourse"
 msgstr "Budgie:n Discourse-keskustelufoorumi"
 
-#: budgie-welcome:2524
+#: budgie-welcome:2565
 msgid "Be part of the Ubuntu Budgie Community"
 msgstr "Tule osaksi Ubuntu Budgie:n yhteisöä"

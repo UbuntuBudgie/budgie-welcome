@@ -254,7 +254,7 @@ class AppView(WebKit2.WebView):
                     show_applet = eval(test_caveat)
 
                 if 'session-type' in config['budgie-applets'][applet]:
-                    show_applet = systemstate.xdg_session == config['budgie-applets'][applet]['session-type']
+                    show_applet = systemstate.xdg_session in config['budgie-applets'][applet]['session-type']
                 else:
                     show_applet = systemstate.xdg_session == 'x11'
 

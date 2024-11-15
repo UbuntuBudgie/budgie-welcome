@@ -388,6 +388,29 @@
                   </div>
                   <hr/>
                </div>
+               <div class="col-md-6 cputemp-applet">
+                  <br>
+                  <h2><a onclick="cmd('link?https://github.com/tarkah')"><span class="material-icons">help</span></a>&zwnj;CPU Temperature Applet&zwnj;</h2>
+                  <div class="card card-block">
+                     <div class="card-image text-md-center">
+                        <a href="img/screenshots/cputemp-applet.jpg" data-toggle="lightbox"><img src="img/screenshots/cputemp-applet.jpg" style="width: auto; max-height: 128px" /></a>
+                     </div>
+                     <p class="card-text">&zwnj;Show CPU and various sensor temperature values.&zwnj;</p>
+                  </div>
+                  <div class="text-md-right">
+                     <a id="cputemp-applet-remove" class="btn btn-danger" onclick="cmd('remove?cputemp-applet');">
+                     <span class="material-icons">&#xE872;</span><span class="button-text">&zwnj;Remove&zwnj;</span>
+                     </a>
+                     <a id="cputemp-applet-install" class="btn btn-success hvr-shadow" onclick="cmd('install?cputemp-applet');"> &nbsp;
+                     <span class="material-icons">&#xE2C0;</span>&zwnj;Install&zwnj;&nbsp;
+                     </a>
+                     <span id="cputemp-applet-status" class="hidden">
+                     <img src="img/welcome/processing.gif" width="24px" height="24px" /> &zwnj;Applying changes...&zwnj;
+                     </span>
+                     <p id="cputemp-applet-instruction" class="hidden"><small>&zwnj;Logout and login after installing applets. From the menu - choose Budgie Desktop Settings and choose the Panel to add and configure applets.&zwnj;</small></p>
+                  </div>
+                  <hr/>
+               </div>
                <div class="col-md-6 pixel-applet">
                   <br>
                   <h2><a onclick="cmd('link?https://github.com/ilgarmehmetali/budgie-pixel-saver-applet')"><span class="material-icons">help</span></a>&zwnj;Pixel-Saver Applet&zwnj;</h2>
