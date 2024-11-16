@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="128" height="128" version="1.0">
+  <defs>
+    <linearGradient id="b">
+      <stop offset="0" stop-color="#9a9996"/>
+      <stop offset="1" stop-color="#77767b"/>
+    </linearGradient>
+    <linearGradient id="c">
+      <stop offset="0" stop-color="#d5d3cf"/>
+      <stop offset="1" stop-color="#949390"/>
+    </linearGradient>
+    <linearGradient id="a">
+      <stop offset="0" stop-color="#d5d3cf"/>
+      <stop offset="1" stop-color="#f6f5f4"/>
+    </linearGradient>
+    <linearGradient xlink:href="#a" id="f" x1="32" x2="96" y1="236" y2="236" gradientTransform="translate(171.99999 -299.99999)" gradientUnits="userSpaceOnUse"/>
+    <linearGradient xlink:href="#b" id="d" x1="64" x2="64" y1="262.5" y2="232" gradientUnits="userSpaceOnUse"/>
+    <radialGradient xlink:href="#c" id="e" cx="-244" cy="-76" r="32" fx="-244" fy="-76" gradientTransform="translate(-27.533334 -7.4666741) scale(.88333)" gradientUnits="userSpaceOnUse"/>
+  </defs>
+  <g transform="translate(0 -172)">
+    <g fill="#77767b" transform="translate(140 2)">
+      <rect width="24" height="24" x="-88" y="176" rx="8" ry="8" style="marker:none"/>
+      <rect width="24" height="24" x="-88" y="272" rx="8" ry="8" style="marker:none"/>
+      <rect width="24" height="24" x="-232.61731" y="53.137085" rx="8" ry="8" style="marker:none" transform="rotate(-45)"/>
+      <rect width="24" height="24" x="-232.61731" y="149.13708" rx="8" ry="8" style="marker:none" transform="rotate(-45)"/>
+      <rect width="24" height="24" x="-248" y="-136" rx="8" ry="8" style="marker:none" transform="rotate(-90)"/>
+      <rect width="24" height="24" x="-248" y="-40" rx="8" ry="8" style="marker:none" transform="rotate(-90)"/>
+      <rect width="24" height="24" x="-125.13708" y="-280.61731" rx="8" ry="8" style="marker:none" transform="rotate(-135)"/>
+      <rect width="24" height="24" x="-125.13708" y="-184.61731" rx="8" ry="8" style="marker:none" transform="rotate(-135)"/>
+    </g>
+    <g fill="#f6f5f4" transform="translate(140)">
+      <rect width="24" height="24" x="-88" y="176" rx="8" ry="8" style="marker:none"/>
+      <rect width="24" height="24" x="-88" y="272" rx="8" ry="8" style="marker:none"/>
+      <rect width="24" height="24" x="-232.61731" y="53.137085" rx="8" ry="8" style="marker:none" transform="rotate(-45)"/>
+      <rect width="24" height="24" x="-232.61731" y="149.13708" rx="8" ry="8" style="marker:none" transform="rotate(-45)"/>
+      <rect width="24" height="24" x="-248" y="-136" rx="8" ry="8" style="marker:none" transform="rotate(-90)"/>
+      <rect width="24" height="24" x="-248" y="-40" rx="8" ry="8" style="marker:none" transform="rotate(-90)"/>
+      <rect width="24" height="24" x="-125.13708" y="-280.61731" rx="8" ry="8" style="marker:none" transform="rotate(-135)"/>
+      <rect width="24" height="24" x="-125.13708" y="-184.61731" rx="8" ry="8" style="marker:none" transform="rotate(-135)"/>
+    </g>
+    <ellipse cx="64" cy="238" fill="none" stroke="url(#d)" stroke-width="24" rx="36" ry="36.000008" style="marker:none"/>
+    <ellipse cx="64" cy="236.00002" fill="none" stroke="#f6f5f4" stroke-width="20.00000191" rx="38" ry="38.000011" style="marker:none"/>
+    <circle cx="-236" cy="-64" r="26.5" fill="none" stroke="url(#e)" stroke-linecap="square" stroke-linejoin="round" stroke-width="5" transform="matrix(0 -1 -1 0 0 0)"/>
+    <circle cx="236" cy="-64" r="32" fill="none" stroke="url(#f)" stroke-linecap="square" stroke-linejoin="round" stroke-width="7.99999905" transform="rotate(90)"/>
+  </g>
+</svg>

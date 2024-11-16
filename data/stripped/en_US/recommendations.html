@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../../css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="../../css/material-icons.css" rel="stylesheet" media="screen">
+    <link href="../../css/animate.css" rel="stylesheet" media="screen">
+    <link href="../../css/welcome.css" rel="stylesheet" media="screen">
+</head>
+
+<body class="backdrop-simple hidden">
+    <div id="wrapper">
+        <div id="title-inject">Recommendations</div>
+        <div id="content" class="container entire-page-fade">
+            <div class="row wow fadeIn">
+                <div class="col-md-12" id="recommendation-list">
+                    <div class="backport-repo">
+                        <h2>Backports repository</h2>
+                        <div class="card card-block">
+                            <p class="card-text">To provide the most up-to-date versions of budgie-desktop and
+                                other associated packages, we recommend to enable the Ubuntu Budgie
+                                backports repository.</p>
+                        </div>
+                        <div class="text-md-right"><span id="backport-remove" class="alert alert-success"> <i
+                                    class="material-icons">&#xE876;</i>Repository is installed</span><a
+                                id="backport-install" class="btn btn-success hvr-shadow"
+                                onclick="cmd('install?backport');"> &nbsp;<span
+                                    class="material-icons">&#xE2C0;</span>Enable Ubuntu Budgie
+                                backports repository&nbsp;</a>
+                            <span id="backport-status" class="hidden"><img src="../../img/welcome/processing.gif" width="24px"
+                                    height="24px" /> Applying Changes...</span>
+                        </div>
+                    </div>
+                    <div>
+                        <h2>Firmware Updater</h2>
+                        <div class="card card-block">
+                            <p class="card-text">Component manufacturers issue firmware updates to correct stability issues and improve component performance regarding their interaction with hardware and software.
+                                For example, BIOS updates are issued directly to the hardware, writing the new information onto their memory chip.</p>
+                        </div>
+                        <div class="text-md-right"><span id="firmware-remove" class="alert alert-success"> <i
+                                    class="material-icons">&#xE876;</i>Firmware Updater is installed</span><a
+                                id="firmware-install" class="btn btn-success hvr-shadow"
+                                onclick="cmd('install?firmware');"> &nbsp;<span
+                                    class="material-icons">&#xE2C0;</span>Install Firmware Updater&nbsp;</a>
+                            <span id="firmware-status" class="hidden"><img src="../../img/welcome/processing.gif" width="24px"
+                                    height="24px" /> Applying Changes...</span>
+                        </div>
+                    </div>
+                    <div>
+                        <h2>Backups</h2>
+                        <div class="card card-block">
+                            <div class="card-image text-md-center">
+                                <img src="../../img/applications/deja-dup.png" style="width: 64; max-height: 64px" />
+                            </div>
+                            <p class="card-text"><strong>Deja-Dup</strong> is a powerful backup utility that can be installed in
+                            Ubuntu Budgie and supports backups to
+                            local devices as well as online cloud-based services.
+                            </p>
+                            <p class="card-text">Nothing is more important than having a backup
+                            of your personal files, just in case something
+                            disastrous happens to your computer.</p>
+                        </div>
+                        <div class="text-md-right">
+                            <div id="backup-remove">
+                            <a class="btn btn-inverse" onclick="cmd('deja-dup');">
+                                &nbsp;<img class="button-icon" src="../../img/applications/deja-dup.png" />&nbsp;<span
+                                class="button-text">Configure Backup</span>&nbsp;
+                            </a>
+                            <a class="btn btn-danger" onclick="cmd('remove?backup');">
+                                <span class="material-icons">&#xE872;</span><span
+                                    class="button-text">Remove</span>
+                            </a>
+                            <span id="backup-hint" class="center"><small>
+                                <p><i class="material-icons">&#xE88F;</i> <b>Backups</b> can be found later in the menu
+                                    <b>Utilities <i class="material-icons">&#xE315;</i> Backups</b>.
+                                </p>
+                                </small></span>
+                            </div>
+                            <a id="backup-install" class="btn btn-success" onclick="cmd('install?backup');">&nbsp;<span
+                                class="material-icons">&#xE2C0;</span><span class="button-text">Install Deja-Dup</span>&nbsp;</a>
+                            <span id="backup-status" class="hidden"><img src="../../img/welcome/processing.gif" width="24px" height="24px" />
+                            Applying Changes...</span>
+                        </div>
+                        <hr>
+                    </div>
+              
+                    <div>
+                        <h2>Firewall</h2>
+                        <div class="card card-block">
+                            <div class="card-image text-md-center">
+                                <img src="../../img/applications/gufw.png" style="width: 64; max-height: 64px" />
+                            </div>
+                            <p class="card-text"><strong>Gufw</strong> provides a graphical frontend to <code>ufw</code>
+                                (Uncomplicated Firewall). If security is important to you, there are more ways to stay secure.
+                            </p>
+                            <a onclick="cmd('link?https://wiki.ubuntu.com/BasicSecurity')" class="btn btn-inverse">Click to learn more about security.</a>
+                            <p>Firewalls prevent malicious connections entering and leaving your computer. By default, the firewall is disabled.</p>
+                            <a onclick="cmd('link?https://help.ubuntu.com/community/DoINeedAFirewall')" class="btn btn-inverse">Click to learn more about firewalls.</a>
+                        </div>
+                        <div class="text-md-right">
+                            <div id="firewall-remove">
+                                <a class="btn btn-inverse" onclick="cmd('firewall');">
+                                    &nbsp;<img class="button-icon" src="../../img/applications/gufw.png" />&nbsp;<span
+                                    class="button-text">Configure Firewall</span>&nbsp;
+                                </a>
+                                <a class="btn btn-danger" onclick="cmd('remove?firewall');">
+                                    <span class="material-icons">&#xE872;</span><span
+                                        class="button-text">Remove</span>
+                                </a>
+                                <span id="firewall-hint" class="center"><small>
+                                    <p><i class="material-icons">&#xE88F;</i> <b>Firewall Configuration</b> can be found later in the menu
+                                        <b>System Tools<i class="material-icons">&#xE315;</i> Firewall Configuration</i></b>.
+                                    </p>
+                                    </small></span>
+                            </div>
+                            <a id="firewall-install" class="btn btn-success" onclick="cmd('install?firewall');">&nbsp;<span
+                                class="material-icons">&#xE2C0;</span><span class="button-text">Install Firewall</span>&nbsp;</a>
+                            <span id="firewall-status" class="hidden"><img src="../../img/welcome/processing.gif" width="24px" height="24px" />
+                            Applying Changes...</span>
+                        </div>
+                        <hr>
+                    </div>
+                    <div>
+                        <h2>ClamAV and ClamTK</h2>
+                        <div class="card card-block">
+                            <div class="card-image text-md-center">
+                                <img src="../../img/logos/clamtk_300x300.png" style="width: 64; max-height: 64px" />
+                            </div>
+                            <p class="card-text">ClamTk is a frontend for ClamAV (Clam Antivirus). It is intended to be an easy to use,
+                                light-weight, on-demand scanner for Linux systems.</p>
+                        </div>
+                        <div class="text-md-right">
+                            <div id="clamav-remove">
+                                <span id="clamav-remove" class="alert alert-success"> 
+                                    <i class="material-icons">&#xE876;</i>ClamAV is installed</span>
+                                    <a class="btn btn-danger" onclick="cmd('remove?clamav');">
+                                        <span class="material-icons">&#xE872;</span><span
+                                        class="button-text">Remove</span>
+                                    </a>
+                                    <span id="clamav-status" class="hidden"><img src="../../img/welcome/processing.gif"
+                                        width="24px" height="24px" /> Applying Changes...</span>
+                            </div>
+                            <a id="clamav-install" class="btn btn-success hvr-shadow" onclick="cmd('install?clamav');"> &nbsp;<span
+                                class="material-icons">&#xE2C0;</span>Install & Configure
+                            ClamAV&nbsp;
+                            </a>
+                        </div>
+                        <hr />
+                    </div>
+                    <div>
+                        <h2>Nemo Preview</h2>
+                        <div class="card card-block">
+                            <p>Nemo Preview allows you to quickly view the contents of a highlighted file from the Nemo file manager. Just press space to toggle the preview on and off.</p>
+                        </div>
+                        <div class="text-md-right">
+                            <span id="nemopreview-remove" class="alert alert-success"> <i class="material-icons">&#xE876;</i>Nemo Preview is installed</span>
+                            <a id="nemopreview-install" class="btn btn-success hvr-shadow" onclick="cmd('install?nemopreview');"> &nbsp;<span
+                                    class="material-icons">&#xE2C0;</span>Install Nemo Preview&nbsp;
+                            </a>
+                            <!-- FIXME: Causes css issues & doesn't hide itself when package is installed; functionality does working though
+                            <a class="btn btn-danger" onclick="cmd('remove?nemopreview');">
+                                <span class="material-icons">&#xE872;</span><span
+                                    class="button-text">Remove</span>
+                            </a> -->
+                            <span id="nemopreview-status" class="hidden"><img src="../../img/welcome/processing.gif"
+                                    width="24px" height="24px" /> Applying Changes...</span>
+                        </div>
+                        <hr />
+                    </div>
+                    <div>
+                        <h2>Nemo Compare</h2>
+                        <div class="card card-block">
+                            <p>Nemo Compare allows you to show the differences between two closely related files from the Nemo file manager. Just right click, compare the first file, right click again and compare with the second file.</p>
+                        </div>
+                        <div class="text-md-right">
+                            <span id="nemocompare-remove" class="alert alert-success"> <i class="material-icons">&#xE876;</i>Nemo Compare is installed</span>
+                            <a id="nemocompare-install" class="btn btn-success hvr-shadow" onclick="cmd('install?nemocompare');"> &nbsp;<span
+                                    class="material-icons">&#xE2C0;</span>Install Nemo Compare&nbsp;
+                            </a>
+                            <span id="nemopreview-status" class="hidden"><img src="../../img/welcome/processing.gif"
+                                    width="24px" height="24px" /> Applying Changes...</span>
+                        </div>
+                        <hr />
+                    </div>
+                    <div>
+                        <h2>Nemo Terminal</h2>
+                        <div class="card card-block">
+                            <p>Nemo Terminal embeds a terminal within the nemo file-manager.  Press F4 to toggle the visibility of the terminal.</p>
+                        </div>
+                        <div class="text-md-right">
+                            <span id="nemoterminal-remove" class="alert alert-success"> <i class="material-icons">&#xE876;</i>Nemo Terminal is installed</span>
+                                <a id="nemoterminal-install" class="btn btn-success hvr-shadow" onclick="cmd('install?nemoterminal');"> &nbsp;<span
+                                        class="material-icons">&#xE2C0;</span>Install Nemo Terminal&nbsp;
+                                </a>
+                            <span id="nemoterminal-status" class="hidden"><img src="../../img/welcome/processing.gif"
+                                    width="24px" height="24px" /> Applying Changes...</span>
+                        </div>
+                        <hr />
+                    </div>
+                    <div>
+                        <h2>Nemo Share</h2>
+                        <div class="card card-block">
+                            <p>Nemo Share allows you to quickly share a folder from the Nemo file manager without
+                                requiring root access.</p>
+                        </div>
+                        <div class="text-md-right">
+                            <span id="nemoshare-remove" class="alert alert-success"> <i
+                                    class="material-icons">&#xE876;</i>Nemo Share is installed</span>
+                                <a id="nemoshare-install" class="btn btn-success hvr-shadow" onclick="cmd('install?nemoshare');"> &nbsp;<span
+                                    class="material-icons">&#xE2C0;</span>Install Nemo Share&nbsp;
+                                </a>
+                            <span id="nemoshare-status" class="hidden"><img src="../../img/welcome/processing.gif"
+                                    width="24px" height="24px" /> Applying Changes...</span>
+                        </div>
+                        <hr />
+                    </div>
+                    <div>
+                        <h2>Gutenprint</h2>
+                        <div class="card card-block">
+                            <p>Gutenprint is a suite of <a onclick="cmd('link?http://gimp-print.sourceforge.net/p_Supported_Printers.php')">thousands</a>
+                                of printer drivers which includes drivers for Epson and Canon printers. Gutenprint supports only the printer part of multi-function devices.</p>
+                        </div>
+                        <div class="text-md-right">
+                            <span id="gutenprint-remove" class="alert alert-success"> <i class="material-icons">&#xE876;</i>Gutenprint is installed</span>
+                            <a id="gutenprint-install" class="btn btn-success hvr-shadow"
+                                onclick="cmd('install?gutenprint');"> &nbsp;<span
+                                    class="material-icons">&#xE2C0;</span>Install Gutenprint&nbsp;
+                            </a>
+                            <!-- <a class="btn btn-danger" onclick="cmd('remove?gutenprint');">
+                                <span class="material-icons">&#xE872;</span><span
+                                    class="button-text">Remove</span>
+                            </a> -->
+                            <span id="gutenprint-status" class="hidden"><img src="../../img/welcome/processing.gif"
+                                    width="24px" height="24px" /> Applying Changes...</span>
+                        </div>
+                        <hr />
+                    </div>
+                    <div>
+                        <h2>Snap Applications</h2>
+                        <div class="card card-block">
+                            <div class="card-image text-md-center">
+                                <img src="../../img/logos/snap.png" style="width: 64; max-height: 64px" />
+                            </div>
+                            <p class="card-text"><strong>Snap</strong> is a new generation application packaging
+                                format developed by <em>Canonical</em>. Even though it was initially developed just for
+                                different Ubuntu platforms, currently it works in many other GNU/Linux
+                                distributions. It will help application developers to provide a unified package that can
+                                work on different platforms. By using snap package format, applications can have their
+                                own version of libraries and there is no need
+                                to worry about libraries installed in underlying operating system. Snap packages enable
+                                developers to bring much newer versions of apps to Ubuntu Budgie.
+                                Newer versions of KDE, GNOME, browsers or other
+                                desktop environment apps will usually build easily on older LTS releases but the
+                                complexities of packaging and providing updates have prevented us from delivering them
+                                in the past.</p>
+                            <a onclick="cmd('link?https://insights.ubuntu.com/2016/04/13/snaps-for-classic-ubuntu')"
+                                class="btn btn-inverse">Learn more</a>
+                        </div>
+                        <a onclick="$('#snap-guide').fadeToggle()">Snap user guide</a>
+                        <blockquote id="snap-guide" class="hidden">
+                            <h3>Search Snap Apps</h3>
+                            <p>If there’s a barrier to Snap app adoption (aside from few apps being made available
+                                in the format) it’s knowing which packages are available in the Snap app store. Well,
+                                wonder not. Simply pop open a terminal and run the following
+                                command:
+                            </p>
+                            <div class="code">$ snap find query</div>
+                            <p>The find command lets you quickly search for and discover snaps available to
+                                install from the command line. It can be run with a query after it (e.g., ‘snap find
+                                email‘, ‘snap find media’, ‘snap find messaging‘) or without.</p>
+                            <p>When run without a query you’ll instead see a list of featured snaps.</p>
+                            <h3>See installed apps </h3>
+                            <p>Installed some Snaps but can’t remember what? Don’t panic. Use the list command to
+                                see an up-to-date list of all Snap apps installed on your system:</p>
+                            <div class="code">$ snap list</div>
+                            <p>This list also shows you their version number, revision number and the name of the
+                                developer who uploaded it (handy when there are multiple versions of the same app in the
+                                store, e.g., Telegram).</p>
+                            <h3>Install & Remove Snap Apps</h3>
+                            <p>If you’re used to managing software using apt you’ll instantly find the analogous
+                                snap commands easy to remember. You install snap apps with the ‘install’ command, and
+                                remove them using the ‘remove’ command.</p>
+                            <div class="code"> $ snap install appname </div><br />
+                            <div class="code"> $ snap remove appname </div>
+                            <h3>See details of an App</h3>
+                            <p>You can use this to see detailed information about any snap application, whether it
+                                is installed or not. This info includes the application’s release channel, confinement
+                                status, size, number of revisions, and more. The snap
+                                info --verbose offers a greater overview.
+                            <div class="code">$ snap info appname</div>
+                            </p>
+                            <h3>Update a Snap App</h3>
+                            <div class="code">$ snap refresh</div>
+                            <p>Rather helpfully you probably won’t ever need to remember to install an update to a
+                                Snap app. This is because Snapd runs in the background and handles updates automatically
+                                (you can, ofc, revert a Snap update or install a specific
+                                revision).
+                            </p>
+                            <a
+                                onclick="cmd('link?https://www.omgubuntu.co.uk/2016/12/simple-guide-snapd-commands');">Reference</a>
+                        </blockquote>
+                        <div class="text-md-right"><span id="snap-remove" class="alert alert-success"> <i
+                                    class="material-icons">&#xE876;</i>Snap is already installed</span><a
+                                id="snap-install" class="btn btn-success hvr-shadow"
+                                onclick="cmd('install?snap');"> &nbsp;<span
+                                    class="material-icons">&#xE2C0;</span>Install Snap&nbsp;</a>
+                            <span id="snap-status" class="hidden"><img src="../../img/welcome/processing.gif" width="24px"
+                                    height="24px" /> Applying Changes...</span>
+                        </div>
+                        <hr />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../../js/jquery-2.1.4.js"></script>
+    <script src="../../js/tether.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
+    <script src="../../js/janimate.js"></script>
+    <script src="../../js/confetti.js"></script>
+    <!-- Confetti only appears on special events -->
+    <script src="../../js/welcome.js"></script>
+</body>
+
+</html>

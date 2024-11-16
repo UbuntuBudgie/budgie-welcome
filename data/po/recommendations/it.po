@@ -1,0 +1,418 @@
+# 
+# Translators:
+# Lorthirk <claudio.mezzasalma@gmail.com>, 2018
+# Nicola Gentile <nikkognt@gmail.com>, 2023
+# Andrea Marietti, 2023
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Budgie Welcome\n"
+"POT-Creation-Date: 2016-02-27 12:48+0100\n"
+"PO-Revision-Date: 2017-03-22 21:33+0000\n"
+"Last-Translator: Andrea Marietti, 2023\n"
+"Language-Team: Italian (https://app.transifex.com/ubuntu-budgie/teams/72251/it/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: it\n"
+"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
+"Report-Msgid-Bugs-To : you@example.com\n"
+
+#: recommendations.html:15
+msgid "Recommendations"
+msgstr "Raccomandazioni"
+
+#: recommendations.html:20
+msgid "Backports repository"
+msgstr "Repository dei backports"
+
+#: recommendations.html:22
+msgid ""
+"To provide the most up-to-date versions of budgie-desktop and other "
+"associated packages, we recommend to enable the Ubuntu Budgie backports "
+"repository."
+msgstr ""
+"Per fornire le versioni più aggiornate di budgie-desktop e altri pacchetti "
+"associati, si consiglia di abilitare il repository dei backport di Ubuntu "
+"Budgie."
+
+#: recommendations.html:27
+msgid "Repository is installed"
+msgstr "Il repository è installato"
+
+#: recommendations.html:30
+msgid "Enable Ubuntu Budgie backports repository"
+msgstr "Abilita il repository di backport di Ubuntu Budgie"
+
+#: recommendations.html33, 48, 84, 121, 143, 168, 183, 198, 215, 236, 310
+msgid "Applying Changes..."
+msgstr "Applicare le modifiche..."
+
+#: recommendations.html:37
+msgid "Firmware Updater"
+msgstr ""
+
+#: recommendations.html:39
+msgid ""
+"Component manufacturers issue firmware updates to correct stability issues "
+"and improve component performance regarding their interaction with hardware "
+"and software. For example, BIOS updates are issued directly to the hardware,"
+" writing the new information onto their memory chip."
+msgstr ""
+
+#: recommendations.html:43
+msgid "Firmware Updater is installed"
+msgstr ""
+
+#: recommendations.html:46
+msgid "Install Firmware Updater"
+msgstr ""
+
+#: recommendations.html:52
+msgid "Backups"
+msgstr "Backup"
+
+#: recommendations.html:57
+msgid ""
+"<strong>Deja-Dup</strong> is a powerful backup utility that can be installed"
+" in Ubuntu Budgie and supports backups to local devices as well as online "
+"cloud-based services."
+msgstr ""
+"<strong>Deja-Dub</strong>è una potente utility per il backup che può essere "
+"installata in Ubuntu Budgie e supporta backup su dispositivi locali e su "
+"servizi cloud."
+
+#: recommendations.html:61
+msgid ""
+"Nothing is more important than having a backup of your personal files, just "
+"in case something disastrous happens to your computer."
+msgstr ""
+"Niente è più importante di avere un backup dei tuoi file personali, nel caso"
+" in cui qualcosa di disastroso succeda al tuo computer."
+
+#: recommendations.html:69
+msgid "Configure Backup"
+msgstr "Configurare il backup"
+
+#: recommendations.html73, 110, 140, 165, 233
+msgid "Remove"
+msgstr "Rimuovi"
+
+#: recommendations.html:76
+msgid ""
+"<b>Backups</b> can be found later in the menu <b>Utilities <i "
+"class=\"material-icons\">&#xE315;</i> Backups</b>."
+msgstr ""
+"<b>Backups</b> può essere trovato dopo nel <b>Menu Accessori<i "
+"class=\"material-icons\">&#xE315;</i> Backup</b>."
+
+#: recommendations.html:82
+msgid "Install Deja-Dup"
+msgstr "Installa Deja-Dup"
+
+#: recommendations.html:90
+msgid "Firewall"
+msgstr "Firewall"
+
+#: recommendations.html:95
+msgid ""
+"<strong>Gufw</strong> provides a graphical frontend to <code>ufw</code> "
+"(Uncomplicated Firewall). If security is important to you, there are more "
+"ways to stay secure."
+msgstr ""
+"<strong>Gufw</strong> fornisce un frontend grafico a "
+"<code>ufw</code>(Uncomplicated Firewall). Se la sicurezza è importante per "
+"te, sono possibili altri modi per restare al sicuro"
+
+#: recommendations.html:98
+msgid "Click to learn more about security."
+msgstr "Clicca per sapere di più riguardo alla sicurezza"
+
+#: recommendations.html:99
+msgid ""
+"Firewalls prevent malicious connections entering and leaving your computer. "
+"By default, the firewall is disabled."
+msgstr ""
+"Il firewall previene connessioni malevole in entrata e uscita dal tuo "
+"computer. Di default è disattivato"
+
+#: recommendations.html:100
+msgid "Click to learn more about firewalls."
+msgstr "Clicca per sapere di più riguardo al firewall"
+
+#: recommendations.html:106
+msgid "Configure Firewall"
+msgstr "Configurare il firewall"
+
+#: recommendations.html:113
+msgid ""
+"Firewall Configuration</b> can be found later in the menu <b>System Tools<i "
+"class=\"material-icons\">&#xE315;</i> Firewall Configuration</i></b>."
+msgstr ""
+"La configurazione del Firewall</b> può essere trovata più avanti nel menu "
+"<b> Strumenti di sistema <i class=\"material-icons\">&#xE315;</i> "
+"Configurazione Firewall</i></b>."
+
+#: recommendations.html:119
+msgid "Install Firewall"
+msgstr "Installa Firewall"
+
+#: recommendations.html:131
+msgid ""
+"ClamTk is a frontend for ClamAV (Clam Antivirus). It is intended to be an "
+"easy to use, light-weight, on-demand scanner for Linux systems."
+msgstr ""
+"ClamTk è un frontend per ClamAV (Clam Antivirus). È pensato per essere uno "
+"scanner facile da usare, leggero e su richiesta per sistemi Linux."
+
+#: recommendations.html:137
+msgid "ClamAV is installed"
+msgstr "ClamAV è installato"
+
+#: recommendations.html:146
+msgid "Install & Configure ClamAV"
+msgstr "Installa & Configura ClamAV"
+
+#: recommendations.html:155
+msgid ""
+"Nemo Preview allows you to quickly view the contents of a highlighted file "
+"from the Nemo file manager. Just press space to toggle the preview on and "
+"off."
+msgstr ""
+"Nemo Preview ti consente di visualizzare rapidamente il contenuto di un file"
+" evidenziato dal file manager di Nemo. Basta premere lo spazio per attivare "
+"e disattivare l'anteprima. "
+
+#: recommendations.html:158
+msgid "Nemo Preview is installed"
+msgstr "Nemo Preview è installato"
+
+#: recommendations.html:160
+msgid "Install Nemo Preview"
+msgstr "Installa Nemo Preview"
+
+#: recommendations.html:175
+msgid ""
+"Nemo Compare allows you to show the differences between two closely related "
+"files from the Nemo file manager. Just right click, compare the first file, "
+"right click again and compare with the second file."
+msgstr ""
+
+#: recommendations.html:178
+msgid "Nemo Compare is installed"
+msgstr ""
+
+#: recommendations.html:180
+msgid "Install Nemo Compare"
+msgstr ""
+
+#: recommendations.html:190
+msgid ""
+"Nemo Terminal embeds a terminal within the nemo file-manager. Press F4 to "
+"toggle the visibility of the terminal."
+msgstr ""
+"Nemo Terminal incorpora un terminale all'interno del file-manager Nemo. "
+"Premere F4 per modificare la visibilità del terminale."
+
+#: recommendations.html:193
+msgid "Nemo Terminal is installed"
+msgstr "Nemo Terminal è installato"
+
+#: recommendations.html:195
+msgid "Install Nemo Terminal"
+msgstr "Installa Nemo Terminal"
+
+#: recommendations.html:205
+msgid ""
+"Nemo Share allows you to quickly share a folder from the Nemo file manager "
+"without requiring root access."
+msgstr ""
+"Nemo Share ti consente di condividere rapidamente una cartella dal file "
+"manager Nemo senza richiedere l'accesso come root."
+
+#: recommendations.html:210
+msgid "Nemo Share is installed"
+msgstr "Nemo Share è installato"
+
+#: recommendations.html:212
+msgid "Install Nemo Share"
+msgstr "Installa Nemo Share"
+
+#: recommendations.html:222
+msgid ""
+"Gutenprint is a suite of <a onclick=\"cmd('link?http://gimp-"
+"print.sourceforge.net/p_Supported_Printers.php')\">thousands</a> of printer "
+"drivers which includes drivers for Epson and Canon printers. Gutenprint "
+"supports only the printer part of multi-function devices."
+msgstr ""
+"Gutenprint è una suite di <a onclick=\"cmd('link?http://gimp-"
+"print.sourceforge.net/p_Supported_Printers.php')\">migliaia</a> di driver "
+"per stampante che include i driver per stampanti Epson e Canon. Gutenprint "
+"supporta solo la parte della stampante dei dispositivi multifunzione. "
+
+#: recommendations.html:226
+msgid "Gutenprint is installed"
+msgstr "Gutenprint è installato"
+
+#: recommendations.html:229
+msgid "Install Gutenprint"
+msgstr "Installa Gutenprint"
+
+#: recommendations.html:241
+msgid "Snap Applications"
+msgstr "Applicazioni Snap"
+
+#: recommendations.html:246
+msgid ""
+"<strong>Snap</strong> is a new generation application packaging format "
+"developed by <em>Canonical</em>. Even though it was initially developed just"
+" for different Ubuntu platforms, currently it works in many other GNU/Linux "
+"distributions. It will help application developers to provide a unified "
+"package that can work on different platforms. By using snap package format, "
+"applications can have their own version of libraries and there is no need to"
+" worry about libraries installed in underlying operating system. Snap "
+"packages enable developers to bring much newer versions of apps to Ubuntu "
+"Budgie. Newer versions of KDE, GNOME, browsers or other desktop environment "
+"apps will usually build easily on older LTS releases but the complexities of"
+" packaging and providing updates have prevented us from delivering them in "
+"the past."
+msgstr ""
+"<strong>Snap</strong> è un formato di packaging per applicazioni di nuova "
+"generazione sviluppato da <em>Canonical</em>. Anche se inizialmente è stato "
+"sviluppato solo per diverse piattaforme Ubuntu, attualmente funziona in "
+"molte altre distribuzioni GNU/Linux. Aiuterà gli sviluppatori di "
+"applicazioni a fornire un pacchetto unificato che può funzionare su "
+"piattaforme diverse. Utilizzando il formato del pacchetto snap, le "
+"applicazioni possono avere la propria versione delle librerie e non è "
+"necessario preoccuparsi delle librerie installate nel sistema operativo "
+"sottostante.I pacchetti snap consentono agli sviluppatori di portare "
+"versioni molto più recenti delle app su Ubuntu Budgie. Le versioni più "
+"recenti di KDE, GNOME, browser o altre app dell'ambiente desktop di solito "
+"si basano facilmente su versioni LTS precedenti, ma le complessità della "
+"creazione di pacchetti e la fornitura di aggiornamenti ci hanno impedito di "
+"distribuirle in passato."
+
+#: recommendations.html:259
+msgid "Learn more"
+msgstr "Per saperne di più"
+
+#: recommendations.html:261
+msgid "Snap user guide"
+msgstr "Guida utente Snap"
+
+#: recommendations.html:263
+msgid "Search Snap Apps"
+msgstr "Ricerca applicazioni Snap"
+
+#: recommendations.html:264
+msgid ""
+"If there’s a barrier to Snap app adoption (aside from few apps being made "
+"available in the format) it’s knowing which packages are available in the "
+"Snap app store. Well, wonder not. Simply pop open a terminal and run the "
+"following command:"
+msgstr ""
+"Se ci sono degli ostacoli per l'adozione di un app Snap (a parte alcune "
+"applicazioni disponibili nel formato) sappi che i pacchetti Snap sono "
+"disponibili nell'App Store. Beh, non mi meraviglio. Basta apri un terminale "
+"ed esegui il seguente comando:"
+
+#: recommendations.html:270
+msgid ""
+"The find command lets you quickly search for and discover snaps available to"
+" install from the command line. It can be run with a query after it (e.g., "
+"‘snap find email‘, ‘snap find media’, ‘snap find messaging‘) or without."
+msgstr ""
+"Il comando find consente di cercare rapidamente e scoprire gli snap "
+"disponibili da installare dalla riga di comando. Può essere eseguito con una"
+" query dopo di essa (ad esempio, \"snap find email\", \"snap find media\", "
+"\"snap find messaging\") o senza."
+
+#: recommendations.html:273
+msgid "When run without a query you’ll instead see a list of featured snaps."
+msgstr ""
+"Quando si esegue senza una query, verrà visualizzata una lista di snap "
+"disponibili."
+
+#: recommendations.html:274
+msgid "See installed apps"
+msgstr "Guarda applicazioni installate"
+
+#: recommendations.html:275
+msgid ""
+"Installed some Snaps but can’t remember what? Don’t panic. Use the list "
+"command to see an up-to-date list of all Snap apps installed on your system:"
+msgstr ""
+"Installato alcuni Snap ma non riesco a ricordare cosa? Niente panico. "
+"Utilizza l'elenco dei comandi per visualizzare un elenco aggiornato di tutte"
+" le applicazioni Snap installate nel sistema:"
+
+#: recommendations.html:278
+msgid ""
+"This list also shows you their version number, revision number and the name "
+"of the developer who uploaded it (handy when there are multiple versions of "
+"the same app in the store, e.g., Telegram)."
+msgstr ""
+"Questa lista mostra anche il numero di versione, il numero di revisione e il"
+" nome dello sviluppatore che lo ha caricato (utile quando sono presenti più "
+"versioni della stessa applicazione nell'archivio, ad esempio Telegram)."
+
+#: recommendations.html:281
+msgid "Install & Remove Snap Apps"
+msgstr "Installa e Rimuovi Applicazioni Snap"
+
+#: recommendations.html:282
+msgid ""
+"If you’re used to managing software using apt you’ll instantly find the "
+"analogous snap commands easy to remember. You install snap apps with the "
+"‘install’ command, and remove them using the ‘remove’ command."
+msgstr ""
+"Se sei abituato a gestire il software utilizzando apt, troverai "
+"istantaneamente i comandi di snap analoghi facilmente mnemonici. Installi le"
+" applicazioni snap con il comando 'install' e le rimuovi usando il comando "
+"'remove'."
+
+#: recommendations.html:287
+msgid "See details of an App"
+msgstr "Guarda i dettagli di un applicazione"
+
+#: recommendations.html:288
+msgid ""
+"You can use this to see detailed information about any snap application, "
+"whether it is installed or not. This info includes the application’s release"
+" channel, confinement status, size, number of revisions, and more. The snap "
+"info --verbose offers a greater overview."
+msgstr ""
+"Puoi utilizzare questo per visualizzare informazioni dettagliate su "
+"qualsiasi applicazione snap, sia installata o meno. Questa informazione "
+"include il canale di rilascio dell'applicazione, lo stato di confinamento, "
+"la dimensione, il numero di revisioni e altro ancora. Le informazioni di "
+"snap --verbose offrono una panoramica maggiore."
+
+#: recommendations.html:294
+msgid "Update a Snap App"
+msgstr "Aggiorna un'applicazione Snap"
+
+#: recommendations.html:296
+msgid ""
+"Rather helpfully you probably won’t ever need to remember to install an "
+"update to a Snap app. This is because Snapd runs in the background and "
+"handles updates automatically (you can, ofc, revert a Snap update or install"
+" a specific revision)."
+msgstr ""
+"Piuttosto utile probabilmente non avrai mai bisogno di ricordare di "
+"installare un aggiornamento di un'applicazione Snap. Questo perché Snapd "
+"viene eseguito in background e gestisce gli aggiornamenti automaticamente (è"
+" possibile, ofc, ripristinare un aggiornamento Snap o installare una "
+"revisione specifica)."
+
+#: recommendations.html:302
+msgid "Reference"
+msgstr "Riferimento"
+
+#: recommendations.html:305
+msgid "Snap is already installed"
+msgstr "Snap è già installato"
+
+#: recommendations.html:308
+msgid "Install Snap"
+msgstr "Installare Snap"

@@ -1,0 +1,51 @@
+{
+  "default": [
+    {
+      "panel-attrib": {
+        "enable-shadow": true,
+        "size": 39,
+        "transparency": "none"
+      }
+    },
+    {
+      "SCHEMA": "org.gnome.desktop.interface",
+      "VALUES": {
+        "cursor-theme": "Colloid-white-cursors",
+        "gtk-theme": "Colloid-Orange",
+        "icon-theme": "Colloid-orange",
+        "monospace-font-name": "Ubuntu Mono Regular 13",
+        "font-name": "Ubuntu Regular 11",
+        "document-font-name": "Sans Regular 11"
+      }
+    },
+    {
+      "SCHEMA": "org.gnome.desktop.background",
+      "VALUES": {
+        "color-shading-type": "solid",
+        "picture-options": "stretched",
+        "picture-uri": "file:////usr/share/backgrounds/budgie/ubuntu_budgie_wallpaper1.jpg",
+        "primary-color": "#008094"
+      }
+    },
+    {
+      "SCHEMA": "com.solus-project.budgie-panel",
+      "VALUES": {
+        "builtin-theme": false,
+        "dark-theme": false
+      }
+    },
+    {
+      "SCHEMA": "org.gnome.desktop.wm.preferences",
+      "VALUES": {
+        "titlebar-font": "Ubuntu Bold 11",
+        "theme": "Colloid-Orange"
+      }
+    },
+    {
+      "SCHEMA": "org.nemo.desktop",
+      "VALUES": {
+        "font": "Ubuntu Regular 11"
+      }
+    }
+  ]
+}
