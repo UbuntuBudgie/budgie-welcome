@@ -1,0 +1,100 @@
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Astro</title>
+		<script>import "preline/dist/preline.js";</script>
+
+	</head>
+	<body>
+
+		<div class="container mx-auto px-4">
+			<div class="text-center mb-8">
+			  <h1 class="text-3xl font-bold">Get Involved</h1>
+			</div>
+			
+			<div class="space-y-8">
+			  <section>
+				<h2 class="text-2xl font-semibold mb-4">Thanks for Your Support</h2>
+				<p class="mb-4">Ubuntu Budgie receives a great deal of support from its community of users and we would like to thank each and every contributor for participating. We are growing at a steady pace and our distribution is getting better every day thanks to you.</p>
+				<p>It is very easy to make a difference. Depending on your skill set, your availability you can help Ubuntu Budgie in one or more of the following ways:</p>
+			  </section>
+		  
+			  <hr class="my-8">
+		  
+			  <section>
+				<h2 class="text-2xl font-semibold mb-4">Support & Promotion</h2>
+				<h3 class="text-xl font-semibold mb-2">Spreading the word</h3>
+				<p class="mb-4">If you like Ubuntu Budgie, let people know. Blog, add comments in forums and talk about it with your friends and the people around you.</p>
+		  
+				<h3 class="text-xl font-semibold mb-2">Joining the Community</h3>
+				<p class="mb-4">Ubuntu Budgie isn't just an operating system, it's also a dynamic community of people who enjoy, gather, and interact with a free and open project. Whether it's by helping others sort through issues, by making them feel welcome, or simply by meeting and talking to other Ubuntu Budgie users, we recommend you join the community and participate in making Ubuntu Budgie better.</p>
+		  
+				<h3 class="text-xl font-semibold mb-2">Helping others</h3>
+				<p>If you have some spare time and you're willing to help other users with technical problems, you should seriously consider reading the forums and/or joining the community chat-room and helping other Ubuntu Budgie users solve the problems you know how to fix.</p>
+			  </section>
+		  
+			  <hr class="my-8">
+		  
+			  <section>
+				<h2 class="text-2xl font-semibold mb-4">Project contributions</h2>
+				<h3 class="text-xl font-semibold mb-2">Bug reports</h3>
+				<p class="mb-4">If you've noticed something that doesn't work properly while using Ubuntu Budgie, let us know. The problem you have discovered is likely to affect others as well; The sooner we know about it, the sooner we're able to fix it.</p>
+		  
+				<h3 class="text-xl font-semibold mb-2">New ideas</h3>
+				<p class="mb-4">The vast majority of improvements included in each release come from the community. If there's something that you think is missing or that could be done better, please tell us. Whether it's the inclusion of a missing software application that should be part of a stock installation or if you have any other ideas on how to make Ubuntu Budgie better, we're always interested in hearing them.</p>
+		  
+				<h3 class="text-xl font-semibold mb-2">Artwork</h3>
+				<p class="mb-4">If you are talented in graphic design and willing to contribute to the project, please send us your creations and artwork. Whether it's a simple wallpaper, an icon set, a splash screen, or even a new logo, we're always interested to hear from you about new artwork.</p>
+		  
+				<h3 class="text-xl font-semibold mb-2">Code</h3>
+				<p class="mb-4">Most of our development is done in GTK+3, C++, Vala, Python and HTML5/CSS. We also use Git for version control and .deb for packaging. If you're comfortable with any of these technologies, don't hesitate to have a look at the code. If you think you can improve our applications or write new ones don't hesitate to suggest patches or to fork our git repositories.</p>
+				<p>Upstream to us is budgie-desktop. Created by BuddiesOfBudgie, they are looking for developers - so please help if you can.</p>
+			  </section>
+		  
+			  <div class="bg-yellow-100 border-l-4 border-yellow-500 text-yellow-700 p-4 my-8" role="alert">
+				<h5 class="font-bold">It appears you are not connected to the Internet. Please check your connection to access this content.</h5>
+				<div id="reconnectFailed" class="mt-2">
+				  <p><span class="inline-block mr-1">⚠️</span> Sorry, Welcome was unable to establish a connection.</p>
+				</div>
+				<button onclick="cmd('checkInternetConnection');reconnectTimeout()" class="mt-2 bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded">
+				  <span class="mr-2">🔄</span> Retry
+				</button>
+			  </div>
+		  
+			  <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+				<div>
+				  <a href="#" onclick="cmd('link?https://launchpad.net/ubuntubudgie');" class="block">
+					<img class="mx-auto" src="img/logos/launchpad.png" alt="Distribution on Launchpad"/>
+					<p class="mt-2 font-bold">Ubuntu Budgie Launchpad</p>
+				  </a>
+				</div>
+				<div>
+				  <a href="#" onclick="cmd('link?https://github.com/ubuntubudgie');" class="block">
+					<img class="mx-auto" src="img/logos/github.png" alt="Distribution on Github"/>
+					<p class="mt-2 font-bold">Ubuntu Budgie GitHub</p>
+				  </a>
+				</div>
+				<div>
+				  <a href="#" onclick="cmd('link?https://github.com/buddiesofbudgie/budgie-desktop');" class="block">
+					<img class="mx-auto" src="img/logos/github.png" alt="Budgie Desktop on GitHub"/>
+					<p class="mt-2 font-bold">Budgie Desktop GitHub</p>
+				  </a>
+				</div>
+			  </div>
+		  
+			  <div class="mt-8 text-center">
+				<p class="mb-4">Also, we have published a complete list of available opportunities on our website. Please feel free to visit our website and find out in which way you can contribute to our mission.</p>
+				<a href="#" onclick="cmd('link?https://ubuntubudgie.org/opportunities/');" class="inline-flex items-center px-4 py-2 bg-gray-800 text-white rounded hover:bg-gray-700">
+				  <img class="w-6 h-6 mr-2" src="img/distro-icon-inverted.svg" alt=""/>
+				  <span>Opportunities</span>
+				</a>
+			  </div>
+			</div>
+		  </div>
+		</br>
+
+
+	</body>

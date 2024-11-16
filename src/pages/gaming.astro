@@ -1,0 +1,125 @@
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Astro</title>
+		<script>import "preline/dist/preline.js";</script>
+	</head>
+    <body>
+        <body class="bg-gray-100">
+            <div id="wrapper" class="container mx-auto px-4">
+                <h1 id="title-inject" class="text-4xl font-bold text-center my-8">Gaming</h1>
+        
+                <div id="content" class="bg-white shadow-md rounded-lg p-6">
+                    <ul class="flex border-b mb-6">
+                        <li class="mr-1">
+                            <a class="bg-white inline-block py-2 px-4 text-blue-500 hover:text-blue-800 font-semibold" href="#game-clients">Gaming Clients</a>
+                        </li>
+                        <li class="mr-1">
+                            <a class="bg-white inline-block py-2 px-4 text-blue-500 hover:text-blue-800 font-semibold" href="#game-tools">Gaming Tools</a>
+                        </li>
+                        <li class="mr-1">
+                            <a class="bg-white inline-block py-2 px-4 text-blue-500 hover:text-blue-800 font-semibold" href="#games">Games List</a>
+                        </li>
+                    </ul>
+        
+                    <div id="game-clients" class="mb-8">
+                        <h2 class="text-2xl font-bold mb-4">Gaming Clients</h2>
+                        <p class="mb-4">A gaming client will help you download, install and manage your games.</p>
+        
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div class="lutris">
+                                <h3 class="text-xl font-semibold mb-2">Lutris</h3>
+                                <div class="bg-gray-100 p-4 rounded-lg mb-4">
+                                    <img src="img/logos/lutris.png" alt="Lutris" class="mx-auto h-32 w-auto">
+                                    <p class="mt-2">Lutris is a gaming client for Linux. It gives you access to (almost) all your video games.</p>
+                                </div>
+                                <div class="text-right">
+                                    <button id="lutris-remove" class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600">Remove</button>
+                                    <button id="lutris-install" class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">Install</button>
+                                </div>
+                                <p class="text-sm mt-2">Click on the help icon to learn how to install your games.</p>
+                            </div>
+        
+                            <div id="steamid" class="steam">
+                                <h3 class="text-xl font-semibold mb-2">Steam</h3>
+                                <div class="bg-gray-100 p-4 rounded-lg mb-4">
+                                    <img src="img/logos/steam_app_icon.png" alt="Steam" class="mx-auto h-32 w-auto">
+                                    <p class="mt-2">Steam is the ultimate destination for playing, discussing, and creating games.</p>
+                                </div>
+                                <div class="text-right">
+                                    <button id="steam-remove" class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600">Remove</button>
+                                    <button id="steam-install" class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">Install</button>
+                                </div>
+                                <p class="text-sm mt-2">Please reboot to complete installation.</p>
+                            </div>
+        
+                            <!-- Add more gaming clients here -->
+                        </div>
+                    </div>
+        
+                    <div id="game-tools" class="mb-8">
+                        <h2 class="text-2xl font-bold mb-4">Gaming Tools</h2>
+                        <p class="mb-4">Tools to have a more comfortable and feature-rich gaming experience.</p>
+        
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <h3 class="text-xl font-semibold mb-2">Piper</h3>
+                                <div class="bg-gray-100 p-4 rounded-lg mb-4">
+                                    <img src="img/screenshots/piper-resolutionpage.png" alt="Piper" class="mx-auto h-32 w-auto">
+                                    <p class="mt-2">Piper is a GTK+ application to configure gaming mice using ratbagd.</p>
+                                </div>
+                                <div class="text-right">
+                                    <button id="piper-remove" class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600">Remove</button>
+                                    <button id="piper-install" class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">Install</button>
+                                </div>
+                                <p class="text-sm mt-2">Check project by clicking the help button.</p>
+                            </div>
+        
+                            <!-- Add more gaming tools here -->
+                        </div>
+                    </div>
+        
+                    <div id="games" class="mb-8">
+                        <h2 class="text-2xl font-bold mb-4">Games List</h2>
+                        <p class="mb-4">A community curated list of game suggestions</p>
+        
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <h3 class="text-xl font-semibold mb-2">Xonotic</h3>
+                                <div class="bg-gray-100 p-4 rounded-lg mb-4">
+                                    <img src="img/logos/xonotic.png" alt="Xonotic" class="mx-auto h-32 w-auto">
+                                    <p class="mt-2">Xonotic - Free & Open Source Multiplayer FPS.</p>
+                                </div>
+                                <div class="text-right">
+                                    <button id="xonotic-watch" class="bg-gray-500 text-white px-4 py-2 rounded hover:bg-gray-600">Watch</button>
+                                    <button id="xonotic-remove" class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600">Remove</button>
+                                    <button id="xonotic-install" class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">Install</button>
+                                </div>
+                                <p class="text-sm mt-2">Visit website by clicking the help icon.</p>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold mb-2">Valheim</h3>
+                                <div class="bg-gray-100 p-4 rounded-lg mb-4">
+                                    <img src="img/screenshots/valheim.jpg" alt="Valheim" class="mx-auto h-32 w-auto">
+                                    <p class="mt-2">Valheim - Survival RPG.</p>
+                                </div>
+                                <div class="text-right">
+                                    <button id="valheim-watch" class="bg-gray-500 text-white px-3 py-2 rounded hover:bg-gray-600 flex items-center justify-center">
+                                        <img src="img/logos/youtube.png" alt="YouTube" class="w-5 h-5 mr-1">
+                                        Watch
+                                    </button>
+                                    <button id="valheim-install" class="bg-gray-500 text-white px-3 py-2 rounded hover:bg-gray-600 flex items-center justify-center">
+                                        <img src="img/distro-icon-inverted.svg" alt="Install Steam" class="w-5 h-5 mr-1">
+                                        Install Steam
+                                    </button>
+                                    <button id="valheim-launch" class="bg-green-500 text-white px-3 py-2 rounded hover:bg-green-600 flex items-center justify-center">
+                                        <img src="img/logos/steam.png" alt="Steam" class="w-5 h-5 mr-1">
+                                        Launch
+                                    </button>
+                                </div>
+                            </div>
+        
+    </body>

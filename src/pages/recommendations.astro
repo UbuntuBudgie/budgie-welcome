@@ -1,0 +1,132 @@
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Astro</title>
+		<script>import "preline/dist/preline.js";</script>
+
+	</head>
+	<body>
+		<div id="wrapper">
+			<div id="title-inject">&zwnj;Recommendations&zwnj;</div>
+			<div id="content" class="container entire-page-fade">
+				<div class="row wow fadeIn">
+					<div class="col-md-12" id="recommendation-list">
+	
+						<section class="backport-repo">
+							<h2>&zwnj;Backports repository&zwnj;</h2>
+							<div class="card card-block">
+								<p class="card-text">&zwnj;To provide the most up-to-date versions of budgie-desktop and other associated packages, we recommend enabling the Ubuntu Budgie backports repository.&zwnj;</p>
+							</div>
+							<div class="text-md-right">
+								<span id="backport-remove" class="alert alert-success"><i class="material-icons">&#xE876;</i>&zwnj;Repository is installed&zwnj;</span>
+								<a id="backport-install" class="btn btn-success hvr-shadow" onclick="cmd('install?backport');">
+									<span class="material-icons">&#xE2C0;</span>&zwnj;Enable Ubuntu Budgie backports repository&zwnj;
+								</a>
+								<span id="backport-status" class="hidden"><img src="img/welcome/processing.gif" width="24px" height="24px" /> &zwnj;Applying Changes...&zwnj;</span>
+							</div>
+						</section>
+	
+						<section class="firmware-updater">
+							<h2>&zwnj;Firmware Updater&zwnj;</h2>
+							<div class="card card-block">
+								<p class="card-text">&zwnj;Component manufacturers issue firmware updates to correct stability issues and improve component performance regarding their interaction with hardware and software. For example, BIOS updates are issued directly to the hardware, writing the new information onto their memory chip.&zwnj;</p>
+							</div>
+							<div class="text-md-right">
+								<span id="firmware-remove" class="alert alert-success"><i class="material-icons">&#xE876;</i>&zwnj;Firmware Updater is installed&zwnj;</span>
+								<a id="firmware-install" class="btn btn-success hvr-shadow" onclick="cmd('install?firmware');">
+									<span class="material-icons">&#xE2C0;</span>&zwnj;Install Firmware Updater&zwnj;
+								</a>
+								<span id="firmware-status" class="hidden"><img src="img/welcome/processing.gif" width="24px" height="24px" /> &zwnj;Applying Changes...&zwnj;</span>
+							</div>
+						</section>
+	
+						<section class="backups">
+							<h2>&zwnj;Backups&zwnj;</h2>
+							<div class="card card-block">
+								<div class="card-image text-md-center">
+									<img src="img/applications/deja-dup.png" style="width: 64px; max-height: 64px" />
+								</div>
+								<p class="card-text">&zwnj;<strong>Deja-Dup</strong> is a powerful backup utility that can be installed in Ubuntu Budgie and supports backups to local devices as well as online cloud-based services.&zwnj;</p>
+								<p class="card-text">&zwnj;Nothing is more important than having a backup of your personal files, just in case something disastrous happens to your computer.&zwnj;</p>
+							</div>
+							<div class="text-md-right">
+								<div id="backup-remove">
+									<a class="btn btn-inverse" onclick="cmd('deja-dup');">
+										<img class="button-icon" src="img/applications/deja-dup.png" />
+										<span class="button-text">&zwnj;Configure Backup&zwnj;</span>
+									</a>
+									<a class="btn btn-danger" onclick="cmd('remove?backup');">
+										<span class="material-icons">&#xE872;</span><span class="button-text">&zwnj;Remove&zwnj;</span>
+									</a>
+									<span id="backup-hint" class="center"><small>
+										<p><i class="material-icons">&#xE88F;</i> &zwnj;<b>Backups</b> can be found later in the menu <b>Utilities <i class="material-icons">&#xE315;</i> Backups</b>.&zwnj;</p>
+									</small></span>
+								</div>
+								<a id="backup-install" class="btn btn-success" onclick="cmd('install?backup');">
+									<span class="material-icons">&#xE2C0;</span><span class="button-text">&zwnj;Install Deja-Dup&zwnj;</span>
+								</a>
+								<span id="backup-status" class="hidden"><img src="img/welcome/processing.gif" width="24px" height="24px" /> &zwnj;Applying Changes...&zwnj;</span>
+							</div>
+							<hr>
+						</section>
+	
+						<section class="firewall">
+							<h2>&zwnj;Firewall&zwnj;</h2>
+							<div class="card card-block">
+								<div class="card-image text-md-center">
+									<img src="img/applications/gufw.png" style="width: 64px; max-height: 64px" />
+								</div>
+								<p class="card-text">&zwnj;<strong>Gufw</strong> provides a graphical frontend to <code>ufw</code> (Uncomplicated Firewall). If security is important to you, there are more ways to stay secure.&zwnj;</p>
+								<a onclick="cmd('link?https://wiki.ubuntu.com/BasicSecurity')" class="btn btn-inverse">&zwnj;Click to learn more about security.&zwnj;</a>
+								<p>&zwnj;Firewalls prevent malicious connections entering and leaving your computer. By default, the firewall is disabled.&zwnj;</p>
+								<a onclick="cmd('link?https://help.ubuntu.com/community/DoINeedAFirewall')" class="btn btn-inverse">&zwnj;Click to learn more about firewalls.&zwnj;</a>
+							</div>
+							<div class="text-md-right">
+								<div id="firewall-remove">
+									<a class="btn btn-inverse" onclick="cmd('firewall');">
+										<img class="button-icon" src="img/applications/gufw.png" />
+										<span class="button-text">&zwnj;Configure Firewall&zwnj;</span>
+									</a>
+									<a class="btn btn-danger" onclick="cmd('remove?firewall');">
+										<span class="material-icons">&#xE872;</span><span class="button-text">&zwnj;Remove&zwnj;</span>
+									</a>
+									<span id="firewall-hint" class="center"><small>
+										<p><i class="material-icons">&#xE88F;</i> <b>&zwnj;Firewall Configuration</b> can be found later in the menu <b>System Tools <i class="material-icons">&#xE315;</i> Firewall Configuration</i></b>.&zwnj;</p>
+									</small></span>
+								</div>
+								<a id="firewall-install" class="btn btn-success" onclick="cmd('install?firewall');">
+									<span class="material-icons">&#xE2C0;</span><span class="button-text">&zwnj;Install Firewall&zwnj;</span>
+								</a>
+								<span id="firewall-status" class="hidden"><img src="img/welcome/processing.gif" width="24px" height="24px" /> &zwnj;Applying Changes...&zwnj;</span>
+							</div>
+							<hr>
+						</section>
+	
+						<section class="clamav">
+							<h2>&zwnj;ClamAV and ClamTK&zwnj;</h2>
+							<div class="card card-block">
+								<div class="card-image text-md-center">
+									<img src="img/logos/clamtk_300x300.png" style="width: 64px; max-height: 64px" />
+								</div>
+								<p class="card-text">&zwnj;ClamTk is a frontend for ClamAV (Clam Antivirus). It is intended to be an easy-to-use, lightweight, on-demand scanner for Linux systems.&zwnj;</p>
+							</div>
+							<div class="text-md-right">
+								<span id="clamav-remove" class="alert alert-success"><i class="material-icons">&#xE876;</i>&zwnj;ClamAV is installed&zwnj;</span>
+								<a class="btn btn-danger" onclick="cmd('remove?clamav');">
+									<span class="material-icons">&#xE872;</span><span class="button-text">&zwnj;Remove&zwnj;</span>
+								</a>
+								<a id="clamav-install" class="btn btn-success" onclick="cmd('install?clamav');">
+									<span class="material-icons">&#xE2C0;</span><span class="button-text">&zwnj;Install ClamAV&zwnj;</span>
+								</a>
+								<span id="clamav-status" class="hidden"><img src="img/welcome/processing.gif" width="24px" height="24px" /> &zwnj;Applying Changes...&zwnj;</span>
+							</div>
+						</section>
+	
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>

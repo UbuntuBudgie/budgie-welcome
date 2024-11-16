@@ -1,0 +1,139 @@
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Astro</title>
+		<script>import "preline/dist/preline.js";</script>
+
+	</head>
+	<body>
+        <body class="bg-gray-100 animate-fade">
+            <div class="container mx-auto px-4">
+              <br>
+              <div id="title-inject" class="text-center mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">&zwnj;Community&zwnj;</div>  
+              <div class="space-y-8">
+                <section>
+                  <h2 class="text-2xl font-semibold mb-4">Get Support</h2>
+                  <p class="mb-4">To get support for Ubuntu Budgie specific issues, the Ubuntu Budgie Discourse website is the best place to go. You can raise issues and help other members of our growing community.</p>
+                  
+                  <div class="bg-yellow-100 border-l-4 border-yellow-500 text-yellow-700 p-4 my-4 hidden" id="offlineAlert" role="alert">
+                    <h5 class="font-bold">It appears you are not connected to the Internet. Please check your connection to access this content.</h5>
+                    <div id="reconnectFailed" class="mt-2 hidden">
+                      <p><span class="material-icons mr-1">error</span> Sorry, Welcome was unable to establish a connection.</p>
+                    </div>
+                    <button onclick="checkInternetConnection();" class="mt-2 bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded">
+                      <span class="material-icons mr-1">refresh</span> Retry
+                    </button>
+                  </div>
+                  
+                  <div class="text-center">
+                    <a href="#" onclick="cmd('link?https://discourse.ubuntubudgie.org/');" class="inline-flex items-center px-4 py-2 bg-gray-800 text-white rounded hover:bg-gray-700">
+                      <img class="w-6 h-6 mr-2" src="img/distro-icon-inverted.svg" alt=""/>
+                      <span>Ubuntu Budgie Discourse</span>
+                    </a>
+                  </div>
+                </section>
+          
+                <hr class="my-8">
+          
+                <section>
+                  <p class="mb-4">An alternative way to get in touch is via our official IRC (Internet Relay Chat) channel.</p>
+                  <div class="bg-blue-100 border-l-4 border-blue-500 text-blue-700 p-4 my-4">
+                    If you disconnect from the channel you will not receive a notification of any reply. So either leave an IRC session open - or we recommend connecting to all ubuntu IRC channels via an IRC bouncer.
+                  </div>
+                  <div class="text-center">
+                    <a href="#" onclick="cmd('link?https://ubuntubudgie.org/irc');" class="inline-flex items-center px-4 py-2 bg-gray-800 text-white rounded hover:bg-gray-700">
+                      <img class="w-6 h-6 mr-2" src="img/social/irc.svg" alt=""/>
+                      <span>#ubuntu-budgie on Libera Chat</span>
+                    </a>
+                  </div>
+                </section>
+          
+                <hr class="my-8">
+          
+                <section>
+                  <h2 class="text-2xl font-semibold mb-4">Forum</h2>
+                  <p class="mb-4">You can also get support for Ubuntu Budgie through these official Ubuntu forums:</p>
+                  <ul class="list-disc list-inside">
+                    <li><a href="#" onclick="cmd('link?https://askubuntu.com/');" class="text-blue-600 hover:text-blue-800">Ask Ubuntu</a></li>
+                    <li><a href="#" onclick="cmd('link?https://ubuntuforums.org/');" class="text-blue-600 hover:text-blue-800">Ubuntu Forums</a></li>
+                  </ul>
+                </section>
+          
+                <hr class="my-8">
+          
+                <section>
+                  <h2 class="text-2xl font-semibold mb-4">Social Networks</h2>
+                  <p class="mb-4">Ubuntu Budgie is active on the following social networks.</p>
+                  
+                  <div class="flex justify-center space-x-8">
+                    <div class="relative group">
+                      <img src="img/social/facebook.svg" alt="Facebook" class="w-12 h-12 bg-blue-400 fill-curent"/>
+                      <ul class="absolute hidden group-hover:block bg-white shadow-md rounded-md p-2">
+                        <li><a href="#" onclick="cmd('link?https://www.facebook.com/groups/UbuntuBudgie');" class="block px-4 py-2 hover:bg-gray-100">Facebook Group</a></li>
+                        <li><a href="#" onclick="cmd('link?https://www.facebook.com/UbuntuBudgie');" class="block px-4 py-2 hover:bg-gray-100">Facebook Page</a></li>
+                      </ul>
+                    </div>
+                    <div class="relative group">
+                      <img src="img/social/github.svg" alt="GitHub" class="w-12 h-12"/>
+                      <ul class="absolute hidden group-hover:block bg-white shadow-md rounded-md p-2">
+                        <li><a href="#" onclick="cmd('link?https://github.com/ubuntubudgie');" class="block px-4 py-2 hover:bg-gray-100">GitHub</a></li>
+                      </ul>
+                    </div>
+                    <div class="relative group">
+                      <img src="img/social/twitter.svg" alt="Twitter" class="w-12 h-12"/>
+                      <ul class="absolute hidden group-hover:block bg-white shadow-md rounded-md p-2">
+                        <li><a href="#" onclick="cmd('link?https://twitter.com/ubuntubudgie');" class="block px-4 py-2 hover:bg-gray-100">X</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </section>
+          
+                <hr class="my-8">
+          
+                <section>
+                  <h2 class="text-2xl font-semibold mb-4">Local Communities</h2>
+                  <p class="mb-4">In addition to global communities, Ubuntu Budgie also encourages local communities to support users coming from diverse backgrounds. In this section, you can discover our local communities. If you are interested to manage a local community for Ubuntu Budgie please let us know, so that we can list it here and improve its visibility.</p>
+                  
+                  <div class="flex justify-center space-x-4">
+                    <a href="#" onclick="cmd('link?https://www.facebook.com/groups/161347137666671/');" class="inline-flex items-center px-4 py-2 bg-gray-800 text-white rounded hover:bg-gray-700">
+                      <img class="w-6 h-6 mr-2" src="img/social/facebook.svg" alt=""/>
+                      <span>Ubuntu Budgie Brasil</span>
+                    </a>
+                    <a href="#" onclick="cmd('link?https://telegram.me/UbuntuBudgie');" class="inline-flex items-center px-4 py-2 bg-gray-800 text-white rounded hover:bg-gray-700">
+                      <img class="w-6 h-6 mr-2" src="img/social/telegram.svg" alt=""/>
+                      <span>Ubuntu Budgie Brasil</span>
+                    </a>
+                  </div>
+                </section>
+              </div>
+            </div>
+<script>
+function checkInternetConnection() {
+  const offlineAlert = document.getElementById('offlineAlert');
+  const reconnectFailed = document.getElementById('reconnectFailed');
+
+  offlineAlert.classList.add('hidden');
+  reconnectFailed.classList.add('hidden');
+
+  fetch('https://example.com', { mode: 'no-cors' })
+    .then(() => {
+      // Internet connection is available
+      offlineAlert.classList.add('hidden');
+    })
+    .catch(() => {
+      // No internet connection
+      offlineAlert.classList.remove('hidden');
+      setTimeout(() => {
+        reconnectFailed.classList.remove('hidden');
+      }, 5000); // Show "reconnect failed" after 5 seconds
+    });
+}
+
+// Check internet connection when the page loads
+window.addEventListener('load', checkInternetConnection);
+
+    </script>
+    </body>
