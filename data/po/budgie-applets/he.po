@@ -41,27 +41,27 @@ msgstr ""
 #: budgie-applets.html34, 57, 80, 103, 126, 149, 172, 195, 218, 241, 264, 287,
 #: 310, 333, 356, 379, 402, 425, 448, 471, 494, 517, 540, 563, 586, 609, 632,
 #: 655, 678, 701, 724, 747, 770, 793, 816, 839, 862, 885, 908, 931, 954, 977,
-#: 1000, 1023
+#: 1000, 1023, 1046
 msgid "Remove"
 msgstr "מחיקה"
 
 #: budgie-applets.html37, 60, 83, 106, 129, 152, 175, 198, 221, 244, 267, 290,
 #: 313, 336, 359, 382, 405, 428, 451, 474, 497, 520, 543, 566, 589, 612, 635,
 #: 658, 681, 704, 727, 750, 773, 796, 819, 842, 865, 888, 911, 934, 957, 980,
-#: 1003, 1026
+#: 1003, 1026, 1049
 msgid "Install"
 msgstr "התקנה"
 
 #: budgie-applets.html40, 63, 86, 109, 132, 155, 178, 201, 224, 247, 270, 293,
 #: 316, 339, 362, 385, 408, 431, 454, 477, 500, 523, 546, 569, 592, 615, 638,
 #: 661, 684, 707, 730, 753, 776, 799, 822, 845, 868, 891, 914, 937, 960, 983,
-#: 1006, 1029
+#: 1006, 1029, 1052
 msgid "Applying changes..."
 msgstr "השינויים חלים…"
 
 #: budgie-applets.html42, 65, 88, 111, 134, 157, 180, 203, 226, 249, 272, 295,
-#: 341, 364, 387, 410, 433, 456, 479, 502, 548, 571, 594, 617, 640, 663, 686,
-#: 709, 732, 755, 778, 801, 824, 847, 870, 893, 916, 962, 985, 1031
+#: 341, 364, 387, 410, 433, 456, 479, 502, 525, 571, 594, 617, 640, 663, 686,
+#: 709, 732, 755, 778, 801, 824, 847, 870, 893, 916, 939, 985, 1008, 1054
 msgid ""
 "Logout and login after installing applets. From the menu - choose Budgie "
 "Desktop Settings and choose the Panel to add and configure applets."
@@ -169,7 +169,7 @@ msgstr "מערבל חלונות"
 msgid "Graphical and keyboard friendly window arranger."
 msgstr "מארגן חלונות גרפי שאפשר גם לשלוט בו בעזרת המקלדת."
 
-#: budgie-applets.html318, 525, 939, 1008
+#: budgie-applets.html318, 548, 962, 1031
 msgid ""
 "Logout and login after installing. Choose from the menu to configure this "
 "application."
@@ -192,7 +192,7 @@ msgstr "יישומון תדירות מעבד"
 msgid "Control the frequency of the processor (Sandy Bridge and newer)."
 msgstr "שליטה בתדירות המעבד (Sandy Bridge ומעלה)"
 
-#: budgie-applets.html370, 439
+#: budgie-applets.html370, 462
 msgid "System Monitor Applet"
 msgstr "יישומון צג המערכת"
 
@@ -201,32 +201,40 @@ msgid "Show frequency, ram, swap & network values."
 msgstr "הצגת התדירות, זיכרון ה־RAM, קובץ ההחלפה וערכי רשת."
 
 #: budgie-applets.html:393
-msgid "Pixel-Saver Applet"
+msgid "CPU Temperature Applet"
 msgstr ""
 
 #: budgie-applets.html:398
+msgid "Show CPU and various sensor temperature values."
+msgstr ""
+
+#: budgie-applets.html:416
+msgid "Pixel-Saver Applet"
+msgstr ""
+
+#: budgie-applets.html:421
 msgid ""
 "Hides the title bar from maximized windows and creates a new one inside the "
 "panel."
 msgstr ""
 
-#: budgie-applets.html:416
+#: budgie-applets.html:439
 msgid "Global Menu Applet"
 msgstr "יישומון תפריט גלובלי"
 
-#: budgie-applets.html:421
+#: budgie-applets.html:444
 msgid "Moves the menu from applications into the panel."
 msgstr "מעביר את התפריט מהיישומים ללוח."
 
-#: budgie-applets.html:444
+#: budgie-applets.html:467
 msgid "Customize and display system information on the panel."
 msgstr "התאמת והצגת פרטי המערכת בלוח."
 
-#: budgie-applets.html:462
+#: budgie-applets.html:485
 msgid "Hotcorners Applet"
 msgstr "יישומון פינות חמות"
 
-#: budgie-applets.html:467
+#: budgie-applets.html:490
 msgid ""
 "Allow user defined commands to be executed when the mouse cursor is pushed "
 "into a corner of the main desktop."
@@ -234,201 +242,201 @@ msgstr ""
 "לאפשר הפעלת פקודות שהוגדרו על ידי המשתמש כשסמן העכבר נדחף לפינה של שולחן "
 "העבודה הראשי."
 
-#: budgie-applets.html:485
+#: budgie-applets.html:508
 msgid "Quicknote Applet"
 msgstr "יישומון הערות מהירות"
 
-#: budgie-applets.html:490
+#: budgie-applets.html:513
 msgid "Quickly record a text based note."
 msgstr "לתעד במהרה פתקית כתובה."
 
-#: budgie-applets.html:508
+#: budgie-applets.html:531
 msgid "Previews"
 msgstr "תצוגות מקדימות"
 
-#: budgie-applets.html:513
+#: budgie-applets.html:536
 msgid "Show an overview of windows in an exposé like way."
 msgstr ""
 
-#: budgie-applets.html:531
+#: budgie-applets.html:554
 msgid "Workspace Overview Applet"
 msgstr "יישומון תצוגת מרחב העבודה"
 
-#: budgie-applets.html:536
+#: budgie-applets.html:559
 msgid "Quickly navigate workspaces using the applet's menu."
 msgstr "אפשר לעבור במהירות בין מרחבי העבודה מתוך תפריט היישומון."
 
-#: budgie-applets.html:554
+#: budgie-applets.html:577
 msgid "Workspace Wallpaper Applet"
 msgstr "יישומון רקעים למרחבי העבודה"
 
-#: budgie-applets.html:559
+#: budgie-applets.html:582
 msgid "Show a different wallpaper on each workspace."
 msgstr "להצגת רקע שונה בכל מרחב עבודה נפרד."
 
-#: budgie-applets.html:577
+#: budgie-applets.html:600
 msgid "Window Mover Applet"
 msgstr "יישומון העברת חלונות"
 
-#: budgie-applets.html:582
+#: budgie-applets.html:605
 msgid "Quickly move windows between workspaces."
 msgstr "העברת חלונות בין מרחבי העבודה במהירות."
 
-#: budgie-applets.html:600
+#: budgie-applets.html:623
 msgid "Desktop Showtime Applet"
 msgstr "יישומון הצגת השעה לשולחן העבודה"
 
-#: budgie-applets.html:605
+#: budgie-applets.html:628
 msgid "Display the date and time on the Desktop."
 msgstr "הצגת התאריך והשעה על שולחן העבודה."
 
-#: budgie-applets.html:623
+#: budgie-applets.html:646
 msgid "CountDown Applet"
 msgstr "יישומון ספירה לאחור"
 
-#: budgie-applets.html:628
+#: budgie-applets.html:651
 msgid "Set a timed countdown and run an action when the countdown completes."
 msgstr "התחלת ספירה לאחור והגדרת פעולה שתתבצע לאחר שהספירה תסתיים."
 
-#: budgie-applets.html:646
+#: budgie-applets.html:669
 msgid "Auto-Keyboard Switcher Applet"
 msgstr "יישומון להחלפה אוטומטית של פריסות מקלדת"
 
-#: budgie-applets.html:651
+#: budgie-applets.html:674
 msgid "Change the keyboard language automatically on a per application basis."
 msgstr "שינוי שפת המקלדת באופן אוטומטי לפי היישום שנמצא בשימוש."
 
-#: budgie-applets.html:669
+#: budgie-applets.html:692
 msgid "Screen Rotation Lock Applet"
 msgstr "יישומון למניעת סיבוב תצוגת המסך"
 
-#: budgie-applets.html:674
+#: budgie-applets.html:697
 msgid "Add the ability to unlock or lock the screen from rotating."
 msgstr "עם יישומון זה אפשר לאפשר או למנוע מתצוגת המסך להסתובב."
 
-#: budgie-applets.html:692
+#: budgie-applets.html:715
 msgid "Clockworks Applet"
 msgstr "יישומון שעונים עולמיים"
 
-#: budgie-applets.html:697
+#: budgie-applets.html:720
 msgid "Display the time across multiple time zones."
 msgstr "להצגת השעות שבאזורי זמן שונים."
 
-#: budgie-applets.html:715
+#: budgie-applets.html:738
 msgid "DropBy Applet"
 msgstr "יישומון DropBy"
 
-#: budgie-applets.html:720
+#: budgie-applets.html:743
 msgid "Display a pop-up window when a USB device is connected."
 msgstr ""
 
-#: budgie-applets.html:738
+#: budgie-applets.html:761
 msgid "Brightness Controller Applet"
 msgstr "יישומון שליטה בבהירות"
 
-#: budgie-applets.html:743
+#: budgie-applets.html:766
 msgid ""
 "Control the backlight via your graphics driver controller or GNOME's "
 "brightness controller."
 msgstr ""
 
-#: budgie-applets.html:761
+#: budgie-applets.html:784
 msgid "Browser Profile Launcher Applet"
 msgstr ""
 
-#: budgie-applets.html:766
+#: budgie-applets.html:789
 msgid "Launch and create multiple Chromium/Chrome profiles."
 msgstr "הפעלה ויצירת פרופילים מרובים לדפדפן כרום/כרומיום."
 
-#: budgie-applets.html:784
+#: budgie-applets.html:807
 msgid "Find Fast 'Kangaroo' Applet"
 msgstr "יישומון „Kangaroo” לחיפוש מהיר"
 
-#: budgie-applets.html:789
+#: budgie-applets.html:812
 msgid ""
 "Quick and easy browsing, across (possibly) many folder layers, without "
 "having to-do a single mouse click."
 msgstr "לדפדוף קל, מהיר ומיידי בין כל התיקיות."
 
-#: budgie-applets.html:807
+#: budgie-applets.html:830
 msgid "Weather and Forecast Applet"
 msgstr "יישומון מזג אוויר ותחזית"
 
-#: budgie-applets.html:812
+#: budgie-applets.html:835
 msgid "Weather forecast every three hours and over five days."
 msgstr "תחזית מזג האוויר לכל שלוש שעות ולמסך חמישה ימים."
 
-#: budgie-applets.html:830
+#: budgie-applets.html:853
 msgid "Recently Used Applet"
 msgstr "יישומון „בשימוש לאחרונה”"
 
-#: budgie-applets.html:835
+#: budgie-applets.html:858
 msgid "Show recently used items in a menu."
 msgstr "הפריטים שנפתחו לאחרונה מוצגים בתפריט."
 
-#: budgie-applets.html:853
+#: budgie-applets.html:876
 msgid "Trash Applet"
 msgstr "יישומון אשפה"
 
-#: budgie-applets.html:858
+#: budgie-applets.html:881
 msgid "Show, hide and restore trash items."
 msgstr "הצגה, הסתרה ושחזור של קבצים מהאשפה"
 
-#: budgie-applets.html:876
+#: budgie-applets.html:899
 msgid "Application Launcher Applet"
 msgstr "יישומון מפעיל היישומים"
 
-#: budgie-applets.html:881
+#: budgie-applets.html:904
 msgid "Display your favorite applications in a menu and on the panel."
 msgstr "להצגת היישומים המועדפים בתפריט ובלוח."
 
-#: budgie-applets.html:899
+#: budgie-applets.html:922
 msgid "Take-A-Break Applet"
 msgstr "יישומון זמן הפסקה"
 
-#: budgie-applets.html:904
+#: budgie-applets.html:927
 msgid ""
 "A pomodoro-like applet, to make sure you take regular breaks from working."
 msgstr ""
 
-#: budgie-applets.html:922
+#: budgie-applets.html:945
 msgid "Wallstreet"
 msgstr "וולסטריט"
 
-#: budgie-applets.html:927
+#: budgie-applets.html:950
 msgid "WallStreet is a mini-app to switch wallpapers at a regular interval."
 msgstr "וולסטריט הוא מיני יישום להחלפת תמונות הרקע במרווחי זמן קבועים."
 
-#: budgie-applets.html:945
+#: budgie-applets.html:968
 msgid "Fuzzy-Clock Applet"
 msgstr "יישומון שעון לא מדויק"
 
-#: budgie-applets.html:950
+#: budgie-applets.html:973
 msgid "Shows the time in a fuzzy way."
 msgstr "להצגת השעה בצורה עממית יותר."
 
-#: budgie-applets.html:968
+#: budgie-applets.html:991
 msgid "Workspace Stopwatch"
 msgstr "שעון עצר למרחב העבודה"
 
-#: budgie-applets.html:973
+#: budgie-applets.html:996
 msgid "Keep track of usage per workspace."
 msgstr "מעקב אחר זמן השימוש בכל מרחב עבודה נפרד."
 
-#: budgie-applets.html:991
+#: budgie-applets.html:1014
 msgid "Quick Character"
 msgstr "תווים מהירים"
 
-#: budgie-applets.html:996
+#: budgie-applets.html:1019
 msgid ""
 "Quickly find and choose the equivalent locale character for an ascii "
 "character."
 msgstr ""
 
-#: budgie-applets.html:1014
+#: budgie-applets.html:1037
 msgid "Status Notifier Tray Applet"
 msgstr ""
 
-#: budgie-applets.html:1019
+#: budgie-applets.html:1042
 msgid "System Tray in KDE StatusNotifierItem format."
 msgstr "מגש המערכת בפורמט StatusNotifierItem של KDE."

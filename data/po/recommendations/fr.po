@@ -1,23 +1,21 @@
 # 
 # Translators:
 # Jean-Elie ARGYRE <remy.argyre@gmail.com>, 2018
-# san gheet, 2018
-# Choops <choopsbd@gmail.com>, 2018
 # Squadz, 2019
 # Tanguy Maynard <tanguymaynard@pm.me>, 2021
+# wilmouths, 2021
 # roxfr <roxfr@outlook.fr>, 2023
 # Emmanuel Hermellin <hermellin@lirmm.fr>, 2023
 # Jean-Charles SPOR <jean-charles.spor@hotmail.fr>, 2023
 # b122b6c7ae15d2de30fcb20b2b87e128_f108328, 2023
-# Guillaume Fayard <guillaume2.fayard@wanadoo.fr>, 2023
-# wilmouths, 2023
+# Jean Cahuzac, 2024
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: Budgie Welcome\n"
 "POT-Creation-Date: 2016-02-27 12:48+0100\n"
 "PO-Revision-Date: 2017-03-22 21:33+0000\n"
-"Last-Translator: wilmouths, 2023\n"
+"Last-Translator: Jean Cahuzac, 2024\n"
 "Language-Team: French (https://app.transifex.com/ubuntu-budgie/teams/72251/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -32,7 +30,7 @@ msgstr "Recommandations"
 
 #: recommendations.html:20
 msgid "Backports repository"
-msgstr "Dépôt de rétro-portage "
+msgstr "Dépôt de rétroportage "
 
 #: recommendations.html:22
 msgid ""
@@ -40,14 +38,17 @@ msgid ""
 "associated packages, we recommend to enable the Ubuntu Budgie backports "
 "repository."
 msgstr ""
+"Pour obetnir les versions les plus récentes de \"budgie-desktop\" et des "
+"paquets associés, nous vous recommandons d'activer le dépôt de rétroportage "
+"(backports) d'Ubuntu Budgie."
 
 #: recommendations.html:27
 msgid "Repository is installed"
-msgstr "Le dépôt est installé"
+msgstr "Le dépôt est activé."
 
 #: recommendations.html:30
 msgid "Enable Ubuntu Budgie backports repository"
-msgstr ""
+msgstr "Activer le dépôt de rétroportage d'Ubuntu Budgie"
 
 #: recommendations.html33, 48, 84, 121, 143, 168, 183, 198, 215, 236, 310
 msgid "Applying Changes..."
@@ -55,7 +56,7 @@ msgstr "Application des changements..."
 
 #: recommendations.html:37
 msgid "Firmware Updater"
-msgstr ""
+msgstr "Gestionnaire de mises à jour du micrologiciel"
 
 #: recommendations.html:39
 msgid ""
@@ -64,14 +65,18 @@ msgid ""
 "and software. For example, BIOS updates are issued directly to the hardware,"
 " writing the new information onto their memory chip."
 msgstr ""
+"Les fabricants envoient des misest à jour de micrologiciels pour corriger "
+"les problèmes de stabilité et améliorer l'interaction des composants avec le"
+" matériel et les logiciels. Les mises à jour du BIOS, par exemple, "
+"inscrivent directement les nouvelles informations sur la puce mémoire."
 
 #: recommendations.html:43
 msgid "Firmware Updater is installed"
-msgstr ""
+msgstr "\"Firmware Updater\" est installé."
 
 #: recommendations.html:46
 msgid "Install Firmware Updater"
-msgstr ""
+msgstr "Installe \"Firmware Updater\""
 
 #: recommendations.html:52
 msgid "Backups"
@@ -83,14 +88,16 @@ msgid ""
 " in Ubuntu Budgie and supports backups to local devices as well as online "
 "cloud-based services."
 msgstr ""
+"<strong>Deja-Dup</strong> est un tpuissant utilitaire de sauvegarde aussi "
+"bien sur des périphériques locaux que dans le cloud."
 
 #: recommendations.html:61
 msgid ""
 "Nothing is more important than having a backup of your personal files, just "
 "in case something disastrous happens to your computer."
 msgstr ""
-"Rien n'est plus important que de sauvegarder vos fichiers personnels, juste "
-"au cas où quelque chose de grave arrive à votre ordinateur."
+"Rien n'est plus important que de sauvegarder vos fichiers personnels pour le"
+" cas où un événement désastreux se produirait sur votre ordinateur."
 
 #: recommendations.html:69
 msgid "Configure Backup"
@@ -105,12 +112,12 @@ msgid ""
 "<b>Backups</b> can be found later in the menu <b>Utilities <i "
 "class=\"material-icons\">&#xE315;</i> Backups</b>."
 msgstr ""
-"<b>Les sauvegardes</b> peuvent être retrouvées plus tard dans le menu "
-"<b>Utilitaires <i class=\"material-icons\">&#xE315;</i> Sauvegardes.</b>"
+"Vous retrouverez <b>Sauvegardes</b> dans la rubrique <b>Accessoires</b> du "
+"menu principal."
 
 #: recommendations.html:82
 msgid "Install Deja-Dup"
-msgstr ""
+msgstr "Installer Deja-Dup"
 
 #: recommendations.html:90
 msgid "Firewall"
@@ -122,10 +129,13 @@ msgid ""
 "(Uncomplicated Firewall). If security is important to you, there are more "
 "ways to stay secure."
 msgstr ""
+"<strong>Gufw</strong> fournit une interface graphique au pare-feu "
+"<strong>ufw</strong> (Uncomplicated Firewall). Si la sécurité est importante"
+" pour vous, il existe d'autres moyens de l'assurer."
 
 #: recommendations.html:98
 msgid "Click to learn more about security."
-msgstr ""
+msgstr "Cliquez pour en savoir plus sur la sécurité."
 
 #: recommendations.html:99
 msgid ""
@@ -135,7 +145,7 @@ msgstr ""
 
 #: recommendations.html:100
 msgid "Click to learn more about firewalls."
-msgstr ""
+msgstr "Cliquez pour en savoir plus sur les pare-feux."
 
 #: recommendations.html:106
 msgid "Configure Firewall"
@@ -152,21 +162,24 @@ msgstr ""
 
 #: recommendations.html:119
 msgid "Install Firewall"
-msgstr ""
+msgstr "Installer le pare-feu"
 
 #: recommendations.html:131
 msgid ""
 "ClamTk is a frontend for ClamAV (Clam Antivirus). It is intended to be an "
 "easy to use, light-weight, on-demand scanner for Linux systems."
 msgstr ""
+"<strong>ClamTk</strong> est une interface pour ClamAV (Clam Antivirus). Il "
+"fournit un scanner à la demande, léger et facile à utiliser pour les "
+"systèmes Linux."
 
 #: recommendations.html:137
 msgid "ClamAV is installed"
-msgstr ""
+msgstr "ClamAV est installé."
 
 #: recommendations.html:146
 msgid "Install & Configure ClamAV"
-msgstr ""
+msgstr "Installer et configuer ClamAV"
 
 #: recommendations.html:155
 msgid ""
@@ -174,9 +187,10 @@ msgid ""
 "from the Nemo file manager. Just press space to toggle the preview on and "
 "off."
 msgstr ""
-"Nemo Preview vous permet de visualiser rapidement le contenu d'un fichier en"
-" surbrillance à partir du gestionnaire de fichiers de Nemo. Il suffit "
-"d'appuyer sur l'espace pour activer ou désactiver l'aperçu."
+"<strong>Nemo Preview</strong> permet de visualiser rapidement le contenu "
+"d'un fichier depuis le gestionnaire de fichiers de Nemo. Il suffit d'appuyer"
+" sur la barre d'espace pour activer ou désactiver l'aperçu du fichier "
+"sélectionné."
 
 #: recommendations.html:158
 msgid "Nemo Preview is installed"
@@ -192,40 +206,47 @@ msgid ""
 "files from the Nemo file manager. Just right click, compare the first file, "
 "right click again and compare with the second file."
 msgstr ""
+"<strong>Nemo Compare</strong> affiche les différences entre deux versions "
+"d'un même fichier depuis le gestionnaire de fichiers Nemo. Cliquez droit sur"
+" le premier fichier et choisissez \"Comparer\", puis cliquez droit sur le "
+"second fichier et choisissez à nouveau \"Comparer\"."
 
 #: recommendations.html:178
 msgid "Nemo Compare is installed"
-msgstr ""
+msgstr "Nemo Compare est installé."
 
 #: recommendations.html:180
 msgid "Install Nemo Compare"
-msgstr ""
+msgstr "Installer Nemo Compare"
 
 #: recommendations.html:190
 msgid ""
 "Nemo Terminal embeds a terminal within the nemo file-manager. Press F4 to "
 "toggle the visibility of the terminal."
 msgstr ""
+"<strong>Nemo Terminal</strong> intègre un terminal dans le gestionnaire de "
+"fichiers Nemo. Appuyez sur F4 pour afficher le terminal ou le faire "
+"disparaître."
 
 #: recommendations.html:193
 msgid "Nemo Terminal is installed"
-msgstr ""
+msgstr "Nemo Terminal est installé."
 
 #: recommendations.html:195
 msgid "Install Nemo Terminal"
-msgstr ""
+msgstr "Installer Nemo Terminal"
 
 #: recommendations.html:205
 msgid ""
 "Nemo Share allows you to quickly share a folder from the Nemo file manager "
 "without requiring root access."
 msgstr ""
-"Nemo Share vous permet de partager rapidement un dossier à partir du "
-"gestionnaire de fichiers Nemo sans nécessiter un accès root."
+"<strong>Nemo Share</strong> permet de partager rapidement un dossier à "
+"partir du gestionnaire de fichiers Nemo sans nécessiter un accès root."
 
 #: recommendations.html:210
 msgid "Nemo Share is installed"
-msgstr "Nemo share est intallé"
+msgstr "Nemo share est intallé."
 
 #: recommendations.html:212
 msgid "Install Nemo Share"
@@ -246,7 +267,7 @@ msgstr ""
 
 #: recommendations.html:226
 msgid "Gutenprint is installed"
-msgstr "Gutenprint est installé"
+msgstr "Gutenprint est installé."
 
 #: recommendations.html:229
 msgid "Install Gutenprint"
@@ -271,10 +292,24 @@ msgid ""
 " packaging and providing updates have prevented us from delivering them in "
 "the past."
 msgstr ""
+"<strong>Snap</strong> est un format d'empaquetage d'applications de dernière"
+" génération développé par <em>Canonical</em>. Bien qu'il ait été "
+"initialement conçu pour les différentes plateformes Ubuntu, il fonctionne "
+"actuellement sur de nombreuses autres distributions GNU/Linux. Il aidera les"
+" développeurs d'applications à fournir un format de paquet unifié "
+"susceptible de fonctionner sur différentes plateformes. Avec le format Snap,"
+" les applications embarquent leur propre version des bibliothèques sans se "
+"préoccuper de celles qui sont déjà installées sur le système d'exploitation "
+"hôte. Les paquets Snap permettent d'installer des versions d'applications "
+"plus récentes sur Ubuntu Budgie. En règle générale, les nouvelles versions "
+"de KDE ou de GNOME, des navigateurs ou d'autres applications d'environnement"
+" de bureau s'intègrent sans problème dans les anciennes versions LTS du "
+"système d'exploitation, mais la complexité de l'empaquetage et de la "
+"fourniture de mises à jour empêchait de les proposer par le passé."
 
 #: recommendations.html:259
 msgid "Learn more"
-msgstr "En apprendre plus"
+msgstr "En savoir plus"
 
 #: recommendations.html:261
 msgid "Snap user guide"
@@ -291,10 +326,9 @@ msgid ""
 "Snap app store. Well, wonder not. Simply pop open a terminal and run the "
 "following command:"
 msgstr ""
-"S'il y a un obstacle à l'adoption des paquets Snap, c'est de savoir quels "
-"sont justement les paquets disponibles dans ce format dans le centre de "
-"logiciels Snap. Pour le savoir, il suffit simplement d'ouvrir un terminal et"
-" d'exécuter la commande suivante:"
+"Le seul obstacle à l'adoption des paquets Snap, c'est de connaître les "
+"paquets disponibles dans ce format. Pour le savoir, il suffit d'ouvrir le "
+"terminal et d'entrer la commande suivante : "
 
 #: recommendations.html:270
 msgid ""
@@ -302,14 +336,15 @@ msgid ""
 " install from the command line. It can be run with a query after it (e.g., "
 "‘snap find email‘, ‘snap find media’, ‘snap find messaging‘) or without."
 msgstr ""
-"La commande find vous permet de rechercher rapidement et de découvrir les "
-"snaps disponibles et installables à partir de la ligne de commande. Elle "
-"peut être exécutée avec une requête en complément (ex: ‘snap find email‘, "
-"‘snap find media’, ‘snap find messaging‘) ou sans."
+"La commande <i>snap find</i> permet de trouver rapidement les snaps "
+"disponibles. On peut lui ajouter un paramètre : <i>snap find email</i>, "
+"<i>snap find media</i>, <i>snap find messaging</i>, par exemple."
 
 #: recommendations.html:273
 msgid "When run without a query you’ll instead see a list of featured snaps."
-msgstr "Exécutée sans requête, la commande affichera une liste de Snaps."
+msgstr ""
+"Exécutée sans autre précision, la commande affichera une liste de Snaps "
+"recommandés."
 
 #: recommendations.html:274
 msgid "See installed apps"
@@ -321,8 +356,8 @@ msgid ""
 "command to see an up-to-date list of all Snap apps installed on your system:"
 msgstr ""
 "Vous avez installé des paquets Snap mais vous ne vous rappelez plus lesquels"
-" ? Pas de panique. Utilisez la commande list pour voir une liste à jour de "
-"toutes les applications Snap installées sur votre système :"
+" ? Pas de panique, utilisez la commande <i>snap list</i> pour avoir une "
+"liste à jour des applications Snap installées sur votre système :"
 
 #: recommendations.html:278
 msgid ""
@@ -331,9 +366,9 @@ msgid ""
 "the same app in the store, e.g., Telegram)."
 msgstr ""
 "Cette liste vous montre également le numéro de version, le numéro de "
-"révision et le nom du développeur qui l'a téléversé (pratique lorsqu'il "
-"existe plusieurs versions de la même application dans le centre des "
-"logiciels)."
+"révision et le nom du développeur qui l'a téléversé (c'est pratique "
+"lorsqu'il existe plusieurs versions de la même application dans le centre "
+"des logiciels)."
 
 #: recommendations.html:281
 msgid "Install & Remove Snap Apps"
@@ -345,11 +380,10 @@ msgid ""
 "analogous snap commands easy to remember. You install snap apps with the "
 "‘install’ command, and remove them using the ‘remove’ command."
 msgstr ""
-"Si vous avez l'habitude de gérer vos logiciels à l'aide d'apt, vous "
+"Si vous avez l'habitude de gérer vos logiciels à l'aide d'APT, vous "
 "trouverez de manière intuitive les commandes analogues pour le faire avec "
-"Snap. Ainsi, vous installez des applications grâce à la commande "
-"'installer', et supprimez ces applications en utilisant la commande "
-"'supprimer'."
+"Snap. Par exemple, on installe les applications avec la commande <i>snap "
+"install</i>' et on les supprime avec <i>snap remove</i>."
 
 #: recommendations.html:287
 msgid "See details of an App"
@@ -362,11 +396,10 @@ msgid ""
 " channel, confinement status, size, number of revisions, and more. The snap "
 "info --verbose offers a greater overview."
 msgstr ""
-"Vous pouvez utiliser ceci pour voir des informations détaillées sur toute "
-"application Snap, installée ou non. Ces informations comprennent le canal de"
-" diffusion de l'application, son état de confinement, sa taille, son nombre "
-"de révisions et plus encore. L'option --verbose offre une meilleure vue "
-"d'ensemble."
+"Utilisez la commande <i>snap info</i> pour obtenir des informations "
+"détaillées sur une application Snap, installée ou non : canal de diffusion, "
+"état de confinement, taille, nombre de révisions... L'option <i>snap info "
+"--verbose</i> affiche encore plus d'informations."
 
 #: recommendations.html:294
 msgid "Update a Snap App"
@@ -379,11 +412,10 @@ msgid ""
 "handles updates automatically (you can, ofc, revert a Snap update or install"
 " a specific revision)."
 msgstr ""
-"Plutôt utile, vous n'aurez probablement jamais à vous souvenir d'installer "
-"une mise à jour d'une application Snap. Cela s'explique par le fait que "
-"Snapd s'exécute en arrière-plan et gère les mises à jour automatiquement "
-"(vous pouvez si besoin rétablir une mise à jour Snap ou installer une "
-"révision spécifique)."
+"Vous n'aurez probablement jamais à vous utiliser la commande <i>snap "
+"refresh</i> grâce à <b>Snapd</b> qui s'exécute en arrière-plan et gère "
+"automatiquement les mises à jour (on peut bien sûr annuler une mise à jour "
+"ou installer une révision spécifique)."
 
 #: recommendations.html:302
 msgid "Reference"
@@ -391,7 +423,7 @@ msgstr "Référence"
 
 #: recommendations.html:305
 msgid "Snap is already installed"
-msgstr "Snap est déjà installé"
+msgstr "Snap est déjà installé."
 
 #: recommendations.html:308
 msgid "Install Snap"
