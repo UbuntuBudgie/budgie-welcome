@@ -4,8 +4,6 @@
 # Emmanuel Hermellin <hermellin@lirmm.fr>, 2023
 # Jean-Charles SPOR <jean-charles.spor@hotmail.fr>, 2023
 # b122b6c7ae15d2de30fcb20b2b87e128_f108328, 2023
-# Guillaume Fayard <guillaume2.fayard@wanadoo.fr>, 2023
-# wilmouths, 2023
 # Jean Cahuzac, 2024
 # 
 msgid ""
@@ -50,7 +48,7 @@ msgstr "Activer le dépôt de rétroportage d'Ubuntu Budgie"
 
 #: recommendations.html33, 48, 84, 121, 143, 168, 183, 198, 215, 236, 310
 msgid "Applying Changes..."
-msgstr "Modification en cours..."
+msgstr "Application des changements..."
 
 #: recommendations.html:37
 msgid "Firmware Updater"
@@ -94,8 +92,8 @@ msgid ""
 "Nothing is more important than having a backup of your personal files, just "
 "in case something disastrous happens to your computer."
 msgstr ""
-"Rien n'est plus important que de sauvegarder vos fichiers personnels, juste "
-"au cas où quelque chose de grave arrive à votre ordinateur."
+"Rien n'est plus important que de sauvegarder vos fichiers personnels pour le"
+" cas où un événement désastreux se produirait sur votre ordinateur."
 
 #: recommendations.html:69
 msgid "Configure Backup"
@@ -110,8 +108,8 @@ msgid ""
 "<b>Backups</b> can be found later in the menu <b>Utilities <i "
 "class=\"material-icons\">&#xE315;</i> Backups</b>."
 msgstr ""
-"<b>Les sauvegardes</b> peuvent être retrouvées plus tard dans le menu "
-"<b>Utilitaires <i class=\"material-icons\">&#xE315;</i> Sauvegardes.</b>"
+"Vous retrouverez <b>Sauvegardes</b> dans la rubrique <b>Accessoires</b> du "
+"menu principal."
 
 #: recommendations.html:82
 msgid "Install Deja-Dup"
@@ -140,6 +138,8 @@ msgid ""
 "Firewalls prevent malicious connections entering and leaving your computer. "
 "By default, the firewall is disabled."
 msgstr ""
+"Un pare-feu empêche les connexions malveillantes d'entrer dans votre "
+"ordinateur et d'en sortir. Il est désactivé par défaut. "
 
 #: recommendations.html:100
 msgid "Click to learn more about firewalls."
@@ -192,11 +192,11 @@ msgstr ""
 
 #: recommendations.html:158
 msgid "Nemo Preview is installed"
-msgstr ""
+msgstr "Nemo preview est installé"
 
 #: recommendations.html:160
 msgid "Install Nemo Preview"
-msgstr ""
+msgstr "Installer Nemo Preview"
 
 #: recommendations.html:175
 msgid ""
@@ -248,7 +248,7 @@ msgstr "Nemo share est intallé."
 
 #: recommendations.html:212
 msgid "Install Nemo Share"
-msgstr ""
+msgstr "Installer Nemo Share"
 
 #: recommendations.html:222
 msgid ""
@@ -257,6 +257,11 @@ msgid ""
 "drivers which includes drivers for Epson and Canon printers. Gutenprint "
 "supports only the printer part of multi-function devices."
 msgstr ""
+"Gutenprint est une suite de <a onclick=\"cmd('link?http://gimp-"
+"print.sourceforge.net/p_Supported_Printers.php')\">milliers</a> de pilotes "
+"d'imprimantes qui comprend des pilotes pour les imprimantes Epson et Canon. "
+"Gutenprint ne supporte que la partie imprimante des appareils "
+"multifonctions."
 
 #: recommendations.html:226
 msgid "Gutenprint is installed"
@@ -264,11 +269,11 @@ msgstr "Gutenprint est installé."
 
 #: recommendations.html:229
 msgid "Install Gutenprint"
-msgstr ""
+msgstr "Installer Gutenprint"
 
 #: recommendations.html:241
 msgid "Snap Applications"
-msgstr ""
+msgstr "Applications Snap"
 
 #: recommendations.html:246
 msgid ""
@@ -306,11 +311,11 @@ msgstr "En savoir plus"
 
 #: recommendations.html:261
 msgid "Snap user guide"
-msgstr ""
+msgstr "Guide d'utilisation du gestionnaire de paquets Snap"
 
 #: recommendations.html:263
 msgid "Search Snap Apps"
-msgstr ""
+msgstr "Rechercher des applications Snap"
 
 #: recommendations.html:264
 msgid ""
@@ -341,7 +346,7 @@ msgstr ""
 
 #: recommendations.html:274
 msgid "See installed apps"
-msgstr ""
+msgstr "Voir les applications installées"
 
 #: recommendations.html:275
 msgid ""
@@ -365,7 +370,7 @@ msgstr ""
 
 #: recommendations.html:281
 msgid "Install & Remove Snap Apps"
-msgstr ""
+msgstr "Installer et supprimer des paquets Snap"
 
 #: recommendations.html:282
 msgid ""
@@ -380,7 +385,7 @@ msgstr ""
 
 #: recommendations.html:287
 msgid "See details of an App"
-msgstr ""
+msgstr "Voir les détails d'une application"
 
 #: recommendations.html:288
 msgid ""
@@ -396,7 +401,7 @@ msgstr ""
 
 #: recommendations.html:294
 msgid "Update a Snap App"
-msgstr ""
+msgstr "Mettre à jour une application Snap"
 
 #: recommendations.html:296
 msgid ""
@@ -412,7 +417,7 @@ msgstr ""
 
 #: recommendations.html:302
 msgid "Reference"
-msgstr ""
+msgstr "Référence"
 
 #: recommendations.html:305
 msgid "Snap is already installed"
@@ -420,4 +425,4 @@ msgstr "Snap est déjà installé."
 
 #: recommendations.html:308
 msgid "Install Snap"
-msgstr ""
+msgstr "Installer Snap"
