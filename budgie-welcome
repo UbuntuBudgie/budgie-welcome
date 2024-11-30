@@ -2076,11 +2076,12 @@ class WelcomeApp(object):
         try:
             width, height, xoffset, yoffset = self._get_resolution()
 
-            dbg.stdout('debug', "width " + str(width) + " height " + str(height) + " xoffset " + str(xoffset) + " yoffset "+str(yoffset), 0, 0)
             if systemstate.scale_factor == 0:
                 if width >= 1280:
                     w.set_default_size(992, 500)
-                    mv.set_zoom_level(0.98)
+                    cmd = 'gsettings get org.gnome.desktop.interface text-scaling-factor'
+                    text_dpi =  subprocess.check_output(["/bin/bash", "-c", cmd]).decode("utf-8")
+                    mv.set_zoom_level(double(text_dpi))
                 elif width <= 900:
                     w.set_default_size(680, 340)
                     mv.set_zoom_level(0.68)
