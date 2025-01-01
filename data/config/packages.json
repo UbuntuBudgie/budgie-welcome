@@ -1218,6 +1218,56 @@
 				]
 			}
 		},
+		"evolution": {
+			"packages": [
+				"evolution"
+			],
+			"repos": {
+				"all": [
+					"universe"
+				]
+			}
+		},
+		"geary": {
+			"packages": [
+				"geary"
+			],
+			"repos": {
+				"all": [
+					"universe"
+				]
+			}
+		},
+		"kontact": {
+			"packages": [
+				"kontact"
+			],
+			"repos": {
+				"all": [
+					"universe"
+				]
+			}
+		},
+		"astroid": {
+			"packages": [
+				"astroid"
+			],
+			"repos": {
+				"all": [
+					"universe"
+				]
+			}
+		},
+		"claws": {
+			"packages": [
+				"claws-mail"
+			],
+			"repos": {
+				"all": [
+					"universe"
+				]
+			}
+		},
 		"chromium": {
 			"packages": [
 				"chromium-browser"
@@ -1286,6 +1336,14 @@
 		"firefox-snap": {
 			"snap": [
 				"firefox"
+			],
+			"arch": [
+				"amd64"
+			]
+		},
+		"thunderbird-snap": {
+			"snap": [
+				"thunderbird"
 			],
 			"arch": [
 				"amd64"
