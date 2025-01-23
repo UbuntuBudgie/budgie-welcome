@@ -11,14 +11,14 @@
 # Willian Eduardo <willianeduardot@gmail.com>, 2023
 # 253a1e0a7f8c1d7b08db02a8901848d4_8f72d51, 2023
 # Lynx Medeiros <lynxmedeiros@gmail.com>, 2023
-# Hugo Carvalho <hugokarvalho@hotmail.com>, 2024
+# Hugo Carvalho <hugokarvalho@hotmail.com>, 2025
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: Budgie Welcome\n"
 "POT-Creation-Date: 2016-02-27 12:48+0100\n"
 "PO-Revision-Date: 2017-03-15 13:49+0000\n"
-"Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>, 2024\n"
+"Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>, 2025\n"
 "Language-Team: Portuguese (Brazil) (https://app.transifex.com/ubuntu-budgie/teams/72251/pt_BR/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -35,7 +35,7 @@ msgstr "Começando"
 msgid "Prerequisites"
 msgstr "Pré-requisitos"
 
-#: gettingstarted.html26, 196
+#: gettingstarted.html26, 201
 msgid "System Requirements"
 msgstr "Recomendações do Sistema"
 
@@ -43,7 +43,7 @@ msgstr "Recomendações do Sistema"
 msgid "Installation Preparation"
 msgstr "Preparação da Instalação"
 
-#: gettingstarted.html32, 199, 209
+#: gettingstarted.html32, 204, 214
 msgid "Dual Booting"
 msgstr "Dual Boot"
 
@@ -59,51 +59,55 @@ msgstr "Familiridade"
 msgid "Browser Ballot"
 msgstr "Escolha outro Navegador "
 
-#: gettingstarted.html46, 854, 1714
+#: gettingstarted.html:47
+msgid "Email Ballot"
+msgstr "Escolha de email"
+
+#: gettingstarted.html51, 855, 1810
 msgid "Customization"
 msgstr "Customização"
 
-#: gettingstarted.html49, 1092
+#: gettingstarted.html54, 1188
 msgid "Keyboard Shortcuts"
 msgstr "Atalhos de Teclado"
 
-#: gettingstarted.html:53
+#: gettingstarted.html:58
 msgid "Post-Installation"
 msgstr "Pós-Instalação"
 
-#: gettingstarted.html55, 408, 657
+#: gettingstarted.html60, 413, 662
 msgid "Updates & Extras"
 msgstr "Atualizações & Extras"
 
-#: gettingstarted.html58, 488, 498, 764
+#: gettingstarted.html63, 493, 503, 769
 msgid "Drivers"
 msgstr "Drivers"
 
-#: gettingstarted.html:61
+#: gettingstarted.html:66
 msgid "Language & Input"
 msgstr "Idioma & Entrada"
 
-#: gettingstarted.html64, 766
+#: gettingstarted.html69, 771
 msgid "Optional Tasks"
 msgstr "Tarefas Opcionais"
 
-#: gettingstarted.html:68
+#: gettingstarted.html:73
 msgid "Troubleshooting"
 msgstr "Solução de Problemas"
 
-#: gettingstarted.html:70
+#: gettingstarted.html:75
 msgid "System Specifications"
 msgstr "Especificações do Sistema"
 
-#: gettingstarted.html:79
+#: gettingstarted.html:84
 msgid "Please choose a topic to get started."
 msgstr "Por favor escolha um item para começar"
 
-#: gettingstarted.html:87
+#: gettingstarted.html:92
 msgid "Modest System Requirements"
 msgstr "Requerimentos de Sistema Simples"
 
-#: gettingstarted.html:88
+#: gettingstarted.html:93
 msgid ""
 "Ubuntu Budgie works well on both high-end to older computers, optimized to "
 "be functional, while light on system resources."
@@ -112,51 +116,51 @@ msgstr ""
 "computadores mais antigos, otimizado para ser funcional, sem consumir muitos"
 " recursos do sistema."
 
-#: gettingstarted.html:91
+#: gettingstarted.html:96
 msgid "Minimum"
 msgstr "Mínimo"
 
-#: gettingstarted.html:93
+#: gettingstarted.html:98
 msgid "Pentium i3 - approximately created in 2013"
 msgstr "Pentium i3 - aproximadamente criado em 2013"
 
-#: gettingstarted.html94, 98
+#: gettingstarted.html99, 103
 msgid "2 gigabytes (GB) of RAM"
 msgstr "2 gigabytes (GB) de RAM"
 
-#: gettingstarted.html:95
+#: gettingstarted.html:100
 msgid "32 gigabytes (GB) of disk space"
 msgstr "32 gigabytes (GB) de espaço em disco"
 
-#: gettingstarted.html97, 108
+#: gettingstarted.html102, 113
 msgid "Raspberry Pi4B"
 msgstr "Raspberry Pi4B"
 
-#: gettingstarted.html:99
+#: gettingstarted.html:104
 msgid "32 gigabytes (GB) SD Card"
 msgstr "Cartão SD de 32 gigabytes (GB)"
 
-#: gettingstarted.html:102
+#: gettingstarted.html:107
 msgid "Recommended"
 msgstr "Recomendado"
 
-#: gettingstarted.html:104
+#: gettingstarted.html:109
 msgid "Pentium i5 - approximately created in 2017"
 msgstr "Pentium i5 - criado aproximadamente em 2017"
 
-#: gettingstarted.html105, 109
+#: gettingstarted.html110, 114
 msgid "4 gigabytes (GB) of RAM"
 msgstr "4 gigabytes (GB) de RAM"
 
-#: gettingstarted.html:106
+#: gettingstarted.html:111
 msgid "60 gigabytes (GB) of disk space"
 msgstr "60 gigabytes (GB) de espaço em disco"
 
-#: gettingstarted.html:110
+#: gettingstarted.html:115
 msgid "60 gigabytes (GB) SSD"
 msgstr "SSD de 60 gigabytes (GB)"
 
-#: gettingstarted.html:113
+#: gettingstarted.html:118
 msgid ""
 "The operating system will run much more efficiently if your computer meets "
 "or surpasses the recommended requirements."
@@ -164,19 +168,19 @@ msgstr ""
 "O sistema operacional funcionará muito mais eficientemente se seu computador"
 " atende ou ultrapassa os requisitos recomendados."
 
-#: gettingstarted.html118, 1724
+#: gettingstarted.html123, 1820
 msgid "What's inside my computer?"
 msgstr "O que tem dentro do meu computador?"
 
-#: gettingstarted.html:124
+#: gettingstarted.html:129
 msgid "Installation Preparations"
 msgstr "Preparativos para Instalação"
 
-#: gettingstarted.html:134
+#: gettingstarted.html:139
 msgid "Preparing to Install"
 msgstr "Preparando para Instalar"
 
-#: gettingstarted.html:135
+#: gettingstarted.html:140
 msgid ""
 "Ubuntu Budgie is relatively simple to set up, whether you're looking to "
 "replace your existing operating system or install Ubuntu Budgie alongside an"
@@ -190,17 +194,17 @@ msgstr ""
 "windows\"></span> Microsoft Windows ou outra <span class=\"fa fa-"
 "linux\"></span> distribuição GNU/Linux."
 
-#: gettingstarted.html:141
+#: gettingstarted.html:146
 msgid "For the best results:"
 msgstr "Para melhores resultados:"
 
-#: gettingstarted.html:143
+#: gettingstarted.html:148
 msgid "<u><b>Back up</b></u> any important data to another storage device."
 msgstr ""
 "<u><b>Faça Backup</b></u> de qualquer dado importante para outra unidade de "
 "armazenamento."
 
-#: gettingstarted.html:144
+#: gettingstarted.html:149
 msgid ""
 "Connect to the Internet to install all available updates during "
 "installation."
@@ -208,18 +212,18 @@ msgstr ""
 "Conecte à Internet para instalar todas as atualizações disponíveis durante a"
 " instalação."
 
-#: gettingstarted.html:146
+#: gettingstarted.html:151
 msgid "Stay connected to the Internet to install all available updates."
 msgstr ""
 "Permaneça conectado a Internet para instalar todas as atualizações "
 "disponíveis."
 
-#: gettingstarted.html:147
+#: gettingstarted.html:152
 msgid "Plug in your device to the mains if it is running on battery power."
 msgstr ""
 "Conecte o dispositivo à rede elétrica se estiver funcionando com bateria."
 
-#: gettingstarted.html:152
+#: gettingstarted.html:157
 msgid ""
 "The live session you are currently in right now is a good opportunity to "
 "test Ubuntu Budgie without modifying your computer, allowing you to test all"
@@ -233,11 +237,11 @@ msgstr ""
 "comprometer a instalá-lo na sua máquina. Quando estiver pronto, clique duas "
 "vezes no ícone de instalação no ambiente de trabalho."
 
-#: gettingstarted.html:159
+#: gettingstarted.html:164
 msgid "Modern UEFI-based computers"
 msgstr "Computadores modernos baseados em UEFI"
 
-#: gettingstarted.html:160
+#: gettingstarted.html:165
 msgid ""
 "If you have a modern PC that uses the Unified Extended Firmware Interface "
 "(UEFI), you may need to disable <b>Secure Boot</b> (or enable the <b>Unlock "
@@ -249,12 +253,12 @@ msgstr ""
 " habilite a opção <b>Unlock Bootloader</b> ) antes da instalação, "
 "especialmente se um sistema operacional estiver pré-instalado."
 
-#: gettingstarted.html:164
+#: gettingstarted.html:169
 msgid "If you are using a legacy BIOS machine, you do not need to do this."
 msgstr ""
 "Se você estiver usando uma máquina BIOS legacy, não precisa fazer isso."
 
-#: gettingstarted.html:167
+#: gettingstarted.html:172
 msgid ""
 "Especially when dual booting, it is important that you boot your system in "
 "the correct mode and use the <b> 64-bit image</b> , as you cannot boot an "
@@ -267,7 +271,7 @@ msgstr ""
 " instalar um funcionamento habilitado para sistema operacional UEFI ou vice-"
 "versa."
 
-#: gettingstarted.html:173
+#: gettingstarted.html:178
 msgid ""
 "Booting in BIOS mode on a UEFI system with a GPT-formatted disk will also "
 "show a \"protection layer\". <b>Do not worry,</b> your data is not lost or "
@@ -277,7 +281,7 @@ msgstr ""
 " também mostrará uma \"camada de proteção\". <b>Não se preocupe,</b> seus "
 "dados não estão perdidos ou corrompidos!"
 
-#: gettingstarted.html:178
+#: gettingstarted.html:183
 msgid ""
 "Your system is currently running in <b><span id=\"boot-mode\"></span> "
 "mode</b>."
@@ -285,11 +289,11 @@ msgstr ""
 "Seu sistema está rodando atualmente no <b>modo <span id=\"boot-"
 "mode\"></span></b>."
 
-#: gettingstarted.html:183
+#: gettingstarted.html:188
 msgid "Swap"
 msgstr "Swap"
 
-#: gettingstarted.html:184
+#: gettingstarted.html:189
 msgid ""
 "For computers that start to run low on memory (RAM), the operating system "
 "will start swapping to disk. Known as a \"paging file\" in Windows. "
@@ -301,7 +305,7 @@ msgstr ""
 "com pouca memória RAM rodariam o sistema com lentidão e possíveis "
 "travamentos.  "
 
-#: gettingstarted.html:188
+#: gettingstarted.html:193
 msgid ""
 "By default, a swap file is created based on the size of your RAM. For "
 "example, if you have 2 GiB of RAM, then 2 GiB of hard disk space will be "
@@ -313,11 +317,11 @@ msgstr ""
 "serão reservados para o arquivo swap. Uma partição swap separada não é mais "
 "necessária para ser criada."
 
-#: gettingstarted.html196, 397, 764, 1713
+#: gettingstarted.html201, 402, 769, 1809
 msgid "Previous:"
 msgstr "Anterior:"
 
-#: gettingstarted.html:210
+#: gettingstarted.html:215
 msgid ""
 "Should you wish to install Ubuntu Budgie alongside your existing operating "
 "system, your partitions need to be shrunk. This results in sections of your "
@@ -327,56 +331,56 @@ msgstr ""
 "suas partições precisam de ser encolhidas. Isto resulta em secções do seu "
 "disco rígido sendo divididas entre vários sistemas operativos."
 
-#: gettingstarted.html:216
+#: gettingstarted.html:221
 msgid "I'm dual booting with"
 msgstr "Estou em dual boot com"
 
-#: gettingstarted.html:219
+#: gettingstarted.html:224
 msgid "To minimize the risk of data loss or failure, ensure that:"
 msgstr ""
 "Para minimizar o risco de perda ou falha de dados, certifique-se de que:"
 
-#: gettingstarted.html:221
+#: gettingstarted.html:226
 msgid "There is enough free space. 10 GB minimum is recommended."
 msgstr "Há espaço livre suficiente. Recomenda-se um mínimo de 10 GB."
 
-#: gettingstarted.html:223
+#: gettingstarted.html:228
 msgid "<b><u>Back up</u></b> important data to another drive."
 msgstr ""
 "<b><u>Faça Backup</u></b> de qualquer dado importante para outra unidade de "
 "armazenamento."
 
-#: gettingstarted.html:225
+#: gettingstarted.html:230
 msgid "Defragment the hard drive."
 msgstr "Desfragmentar o disco rígido."
 
-#: gettingstarted.html:226
+#: gettingstarted.html:231
 msgid "Ensure Windows has been cleanly shut down (not hibernated)."
 msgstr ""
 "Certifique-se de que o Windows foi desligado de forma limpa (sem "
 "hibernação)."
 
-#: gettingstarted.html:231
+#: gettingstarted.html:236
 msgid "Which approach would you prefer?"
 msgstr "Qual abordagem você prefere?"
 
-#: gettingstarted.html:234
+#: gettingstarted.html:239
 msgid "Simple"
 msgstr "Simples"
 
-#: gettingstarted.html:236
+#: gettingstarted.html:241
 msgid "Advanced"
 msgstr "Avançado"
 
-#: gettingstarted.html:238
+#: gettingstarted.html:243
 msgid "Safest"
 msgstr "Seguro"
 
-#: gettingstarted.html:243
+#: gettingstarted.html:248
 msgid "The simplest method is to use the installer."
 msgstr "O método mais simples é usar o instalador."
 
-#: gettingstarted.html:245
+#: gettingstarted.html:250
 msgid ""
 "The installer scans your disks for existing operating systems and provides a"
 " choice on what you'd like to do."
@@ -384,21 +388,21 @@ msgstr ""
 "O instalador verifica seus discos por sistemas operacionais existentes e "
 "fornece uma escolha sobre o que você gostaria de fazer."
 
-#: gettingstarted.html:248
+#: gettingstarted.html:253
 msgid "You will see an option similar to this:"
 msgstr "Você verá uma opção semelhante a esta:"
 
-#: gettingstarted.html:252
+#: gettingstarted.html:257
 msgid "Followed by:"
 msgstr "Seguido por:"
 
-#: gettingstarted.html:258
+#: gettingstarted.html:263
 msgid "Do not interrupt or power off the computer during a resize operation."
 msgstr ""
 "Não interrompa ou desligue o computador durante a operação de "
 "reparticionamento."
 
-#: gettingstarted.html:260
+#: gettingstarted.html:265
 msgid ""
 "If you do, data loss or a partition table corruption could occur. Please "
 "double check your changes before proceeding."
@@ -406,7 +410,7 @@ msgstr ""
 "Se você fizer isso, pode ocorrer perda de dados ou corrupção na tabela de "
 "partição. Verifique as alterações antes de prosseguir."
 
-#: gettingstarted.html:262
+#: gettingstarted.html:267
 msgid ""
 "The installer may show a <span class=\"fa fa-spinner\"></span> spinner "
 "cursor for a long period of time, depending on the size of your disk."
@@ -414,7 +418,7 @@ msgstr ""
 "O instalador pode mostrar um <span class=\"fa fa-spinner\"></span> cursor "
 "giratório por um longo período de tempo, dependendo do tamanho do seu disco."
 
-#: gettingstarted.html:266
+#: gettingstarted.html:271
 msgid ""
 "<b>When you next boot Windows, run</b> <code>chkdsk /f</code> from the "
 "command prompt to check the file system for errors. Windows may schedule "
@@ -425,11 +429,11 @@ msgstr ""
 "erros. O Windows pode programar isso automaticamente. Isso garante a "
 "consistência do sistema de arquivos NTFS."
 
-#: gettingstarted.html:274
+#: gettingstarted.html:279
 msgid "Use GParted or the installer's \"Custom\" option."
 msgstr "Use GParted ou a opção \"Personalizada\" do instalador."
 
-#: gettingstarted.html:277
+#: gettingstarted.html:282
 msgid ""
 "<b>GParted</b> is available during the live session only. It is located "
 "under the <b>System Tools <i class=\"material-icons\">&#xE315;</i></b>menu. "
@@ -443,11 +447,11 @@ msgstr ""
 "para usuários experientes que sabem como particionar seus discos. Este "
 "método faz mudanças nas partiçoes antes da instalação"
 
-#: gettingstarted.html:285
+#: gettingstarted.html:290
 msgid "Open GParted"
 msgstr "Abrir GParted"
 
-#: gettingstarted.html:288
+#: gettingstarted.html:293
 msgid ""
 "After completing operations to your disk, you can leave the remaining space "
 "unallocated, whereby the installer will detect this unused space to install "
@@ -457,11 +461,11 @@ msgstr ""
 "não atribuído, pelo que o instalador irá detetar esse espaço não utilizado "
 "para instalar o Ubuntu Budgie."
 
-#: gettingstarted.html:292
+#: gettingstarted.html:297
 msgid "Using the Installer's \"Custom\" option."
 msgstr "Usando a opção \"Personalizada\" do instalador."
 
-#: gettingstarted.html:293
+#: gettingstarted.html:298
 msgid ""
 "Instead or in addition to GParted, the <b>Custom</b> option during the "
 "installation wizard can also configure and resize your partitions as well as"
@@ -474,27 +478,27 @@ msgstr ""
 "tornar mais fácil a reinstalação do sistema operacional mais tarde, se "
 "desejado."
 
-#: gettingstarted.html:298
+#: gettingstarted.html:303
 msgid "You can specify these mount points:"
 msgstr "Você pode especificar esses pontos de montagem:"
 
-#: gettingstarted.html:300
+#: gettingstarted.html:305
 msgid "The base for Ubuntu Budgie"
 msgstr "A base para o Ubuntu Budgie"
 
-#: gettingstarted.html:301
+#: gettingstarted.html:306
 msgid "Bootloader and kernels"
 msgstr "Bootloader e kernels"
 
-#: gettingstarted.html:302
+#: gettingstarted.html:307
 msgid "Your personal files and folders"
 msgstr "Seus arquivos pessoais e pastas"
 
-#: gettingstarted.html:303
+#: gettingstarted.html:308
 msgid "Temporary files"
 msgstr "Arquivos temporários"
 
-#: gettingstarted.html:304
+#: gettingstarted.html:309
 msgid ""
 "Contains most of the applications <i> (binaries, documentation, libraries, "
 "etc)</i>"
@@ -502,26 +506,26 @@ msgstr ""
 "Contém a maioria dos programas <i> (binários, documentação, bibliotecas, "
 "etc)</i>"
 
-#: gettingstarted.html:306
+#: gettingstarted.html:311
 msgid "Variable data <i>(such as system logs)</i>"
 msgstr "Dados variáveis <i>(como logs do sistema)</i>"
 
-#: gettingstarted.html:307
+#: gettingstarted.html:312
 msgid ""
 "Data for System Services <i>(typically used for server configurations)</i>"
 msgstr ""
 "Dados para Serviços de Sistema <i>(normalmente usado para configurações de "
 "servidor)</i>"
 
-#: gettingstarted.html:309
+#: gettingstarted.html:314
 msgid "Additional software unmanaged by the package manager"
 msgstr "Software adicional não gerenciado pelo gerenciador de pacotes"
 
-#: gettingstarted.html:310
+#: gettingstarted.html:315
 msgid "such as"
 msgstr "tal como"
 
-#: gettingstarted.html:314
+#: gettingstarted.html:319
 msgid ""
 "Creating separate partitions for all above mount points is not necessary. "
 "The commonly partitioned directories being <code>/</code>, "
@@ -537,15 +541,15 @@ msgstr ""
 "quiser o sistema operacional <code>/</code> em um SSD, mas seus arquivos "
 "pessoais <code>/home</code> em um disco rígido mecânico."
 
-#: gettingstarted.html:322
+#: gettingstarted.html:327
 msgid "Shrink your system disk within Windows."
 msgstr "Reduzir o seu disco do sistema no Windows."
 
-#: gettingstarted.html:324
+#: gettingstarted.html:329
 msgid "Applies to Windows Vista and later."
 msgstr "Aplica-se ao Windows Vista e posterior."
 
-#: gettingstarted.html:326
+#: gettingstarted.html:331
 msgid ""
 "If you are using Windows XP or earlier, you will need to use the "
 "<b>Simple</b> or <b>Advanced</b> method to shrink your disk."
@@ -553,7 +557,7 @@ msgstr ""
 "Se você estiver usando o Windows XP ou anterior, você precisará usar o "
 "método <b>Simples</b> ou <b>Avançado</b> para diminuir o seu disco."
 
-#: gettingstarted.html:331
+#: gettingstarted.html:336
 msgid ""
 "Newer versions of Windows provide a tool to shrink the NTFS volume from "
 "within Windows. This is a safer bet if it's essential that Windows still "
@@ -564,11 +568,11 @@ msgstr ""
 "Windows ainda arranque no seu computador enquanto experimenta o Ubuntu "
 "Budgie."
 
-#: gettingstarted.html:335
+#: gettingstarted.html:340
 msgid "Open <b>Disk Management</b> from the start menu."
 msgstr "Abrar o <b>Gerenciamento de Disco</b> no menu de início."
 
-#: gettingstarted.html:340
+#: gettingstarted.html:345
 msgid ""
 "Right click your desired drive and choose <b>Shrink Partition</b> from the "
 "context menu."
@@ -576,20 +580,20 @@ msgstr ""
 "Clique com o botão direito do mouse na unidade desejada e escolha "
 "<b>Encolher Partição</b> no menu de contexto."
 
-#: gettingstarted.html:346
+#: gettingstarted.html:351
 msgid "Enter the amount to shrink your system partition by."
 msgstr "Digite o valor para diminuir a partição do sistema."
 
-#: gettingstarted.html:352
+#: gettingstarted.html:357
 msgid "Remember, Ubuntu Budgie needs at minimum 32 GB of disk space."
 msgstr ""
 "Lembre-se, o Ubuntu Budgie precisa no mínimo de 32 GB de espaço em disco."
 
-#: gettingstarted.html:357
+#: gettingstarted.html:362
 msgid "Further Reading"
 msgstr "Leitura adicional"
 
-#: gettingstarted.html:358
+#: gettingstarted.html:363
 msgid ""
 "For further information on the best practices to modify partitions "
 "containing Windows, see the following <a "
@@ -601,11 +605,11 @@ msgstr ""
 "onclick=\"cmd('link?https://help.ubuntu.com/community/HowtoResizeWindowsPartitions')\">"
 " artigo de ajuda</a> online."
 
-#: gettingstarted.html:366
+#: gettingstarted.html:371
 msgid "Repairing Boot Problems"
 msgstr "Reparando problemas de Boot"
 
-#: gettingstarted.html:368
+#: gettingstarted.html:373
 msgid ""
 "Linux distributions use a boot loader known as <code>grub</code>, which "
 "looks for and bootstraps the operating system. However, some operating "
@@ -619,7 +623,7 @@ msgstr ""
 " de arranque existentes e os substituirá, com o potencial de perder o acesso"
 " temporalmente ao Ubuntu Budgie."
 
-#: gettingstarted.html:374
+#: gettingstarted.html:379
 msgid ""
 "Fortunately, you can use the <b>Boot Repair</b> tool to repair common "
 "problems caused by other operating systems."
@@ -627,40 +631,40 @@ msgstr ""
 "Felizmente, você pode usar o <b>Boot Repair</b>, ferramenta para reparar "
 "problemas comuns causados por outros sistemas operacionais."
 
-#: gettingstarted.html:379
+#: gettingstarted.html:384
 msgid "Requires downloading a package."
 msgstr "Requer o download de um pacote."
 
-#: gettingstarted.html:380
+#: gettingstarted.html:385
 msgid "Please connect to the Internet to download and use this utility."
 msgstr "Conecte-se à Internet para baixar e usar este utilitário."
 
-#: gettingstarted.html:382
+#: gettingstarted.html:387
 msgid "Sorry, Welcome was unable to establish a connection."
 msgstr "Desculpe, Boas-Vindas foi incapaz de estabelecer uma conexão."
 
-#: gettingstarted.html:390
+#: gettingstarted.html:395
 msgid "Download Boot Repair"
 msgstr "Baixar Boot Repair"
 
-#: gettingstarted.html:392
+#: gettingstarted.html:397
 msgid "Open Boot-Repair"
 msgstr "Abrir Boot-Repair"
 
-#: gettingstarted.html:397
+#: gettingstarted.html:402
 msgid "Install Preparations"
 msgstr "Preparativos para instalação"
 
-#: gettingstarted.html:411
+#: gettingstarted.html:416
 msgid "An Internet connection is required to download and install updates."
 msgstr ""
 "É necessária uma conexão com a Internet para baixar e instalar atualizações."
 
-#: gettingstarted.html:420
+#: gettingstarted.html:425
 msgid "Software Updater"
 msgstr "Atualizador de software"
 
-#: gettingstarted.html:421
+#: gettingstarted.html:426
 msgid ""
 "Ubuntu Budgie periodically will check to see if new software and security "
 "updates are available for your computer. If you have just installed Ubuntu "
@@ -670,7 +674,7 @@ msgstr ""
 "atualizações de segurança disponíveis para o seu computador. Se acabou de "
 "instalar o Ubuntu Budgie, talvez queira fazer isto agora."
 
-#: gettingstarted.html:427
+#: gettingstarted.html:432
 msgid ""
 "<b>Software Updater</b> can be found later in the menu <strong>System "
 "Tools</strong>"
@@ -678,15 +682,15 @@ msgstr ""
 "O <b>Atualizações</b> pode ser encontrado mais tarde no menu de "
 "<strong>Ferramentas do sistema</strong>"
 
-#: gettingstarted.html:434
+#: gettingstarted.html:439
 msgid "Check for Updates"
 msgstr "Procurar Atualizações"
 
-#: gettingstarted.html:447
+#: gettingstarted.html:452
 msgid "Restricted Extras"
 msgstr "Extras Restritos"
 
-#: gettingstarted.html:448
+#: gettingstarted.html:453
 msgid ""
 "<strong>Ubuntu</strong> (the base distribution of Ubuntu Budgie) strives to "
 "make all of the most important software available to its users "
@@ -699,7 +703,7 @@ msgstr ""
 "(ver Política de Licenças do Ubuntu) complicam a distribuição de software "
 "para suportar formatos não livres."
 
-#: gettingstarted.html:454
+#: gettingstarted.html:459
 msgid ""
 "However, you can install the ability to play popular non-free media formats,"
 " including DVD, MP3, Quicktime, and Windows Media formats, by following the "
@@ -709,7 +713,7 @@ msgstr ""
 "populares não-livres, incluindo formatos de DVD, MP3, Quicktime e Windows "
 "Media, seguindo as instruções abaixo."
 
-#: gettingstarted.html:458
+#: gettingstarted.html:463
 msgid ""
 "Ubuntu’s commitment to only include completely free software by default "
 "means that proprietary media formats are not configured “out of the box”. "
@@ -722,7 +726,7 @@ msgstr ""
 " e a página Formatos Livres para uma discussão mais abrangente sobre essas "
 "questões."
 
-#: gettingstarted.html:465
+#: gettingstarted.html:470
 msgid ""
 "<strong>Legal Notice</strong> Patent and copyright laws operate differently "
 "depending on which country you are in. Please obtain legal advice if you are"
@@ -735,24 +739,26 @@ msgstr ""
 "ou restrição se aplica a um formato de mídia que você deseja usar em seu "
 "país."
 
-#: gettingstarted.html474, 617, 683, 692, 736, 747, 758, 791, 813, 879, 895,
-#: 911, 926, 965, 980, 990, 1010, 1030
+#: gettingstarted.html479, 622, 688, 697, 741, 752, 763, 796, 814, 880, 896,
+#: 912, 927, 966, 981, 991, 1011, 1031, 1055, 1070, 1084, 1098, 1112, 1126
 msgid "Applying Changes..."
 msgstr "A aplicar alterações"
 
-#: gettingstarted.html477, 731, 742, 753, 889, 904, 974
+#: gettingstarted.html482, 736, 747, 758, 890, 905, 975, 1064, 1078, 1092,
+#: 1106, 1120
 msgid "Install"
 msgstr "Instalar"
 
-#: gettingstarted.html480, 734, 745, 756, 892, 907, 962, 977, 987, 1007, 1027
+#: gettingstarted.html485, 739, 750, 761, 893, 908, 963, 978, 988, 1008, 1028,
+#: 1067, 1081, 1095, 1109, 1123
 msgid "Remove"
 msgstr "Remover"
 
-#: gettingstarted.html488, 766, 854
+#: gettingstarted.html493, 771, 855
 msgid "Next:"
 msgstr "Próximo:"
 
-#: gettingstarted.html:499
+#: gettingstarted.html:504
 msgid ""
 "While a wide range of hardware is compatible with Ubuntu Budgie , there are "
 "some components and peripherals that require proprietary drivers to function"
@@ -765,26 +771,26 @@ msgstr ""
 "muitas vezes necessária para que alguns dispositivos, normalmente Bluetooth "
 "e Wi-Fi, funcionem corretamente."
 
-#: gettingstarted.html:505
+#: gettingstarted.html:510
 msgid "An Internet connection is required to download and install drivers."
 msgstr ""
 "É necessária uma conexão internet para descarregar e instalar drivers."
 
-#: gettingstarted.html:510
+#: gettingstarted.html:515
 msgid "Additional Drivers"
 msgstr "Drivers Adicionais"
 
-#: gettingstarted.html:515
+#: gettingstarted.html:520
 msgid "<b>Additional Drivers</b> can be found later in <b>System Tools</b>"
 msgstr ""
 "O <b>Controladores adicionais</b> pode ser encontrado mais tarde em "
 "<b>Ferramentas do sistema</b>"
 
-#: gettingstarted.html:523
+#: gettingstarted.html:528
 msgid "Graphics"
 msgstr "Gráficos"
 
-#: gettingstarted.html:529
+#: gettingstarted.html:534
 msgid ""
 "Sorry, Welcome was unable to automatically identify the graphics vendor on "
 "this system."
@@ -792,19 +798,19 @@ msgstr ""
 "Desculpe, não conseguimos identificar automáticamente a placa gráfica deste "
 "sistema."
 
-#: gettingstarted.html532, 540, 548, 554
+#: gettingstarted.html537, 545, 553, 559
 msgid "Card/Chipset:"
 msgstr "Placa/Chipset:"
 
-#: gettingstarted.html532, 540, 548, 554
+#: gettingstarted.html537, 545, 553, 559
 msgid "Unknown"
 msgstr "Desconhecido"
 
-#: gettingstarted.html:536
+#: gettingstarted.html:541
 msgid "NVIDIA Graphics Card Detected."
 msgstr "Placa Gráfica NVIDIA Detectada."
 
-#: gettingstarted.html:537
+#: gettingstarted.html:542
 msgid ""
 "NVIDIA may have drivers for your card that can boost performance for 3D "
 "applications and games as well as deliver improvements to power management."
@@ -813,11 +819,11 @@ msgstr ""
 "desempenho para aplicativos 3D e jogos, além de oferecer melhorias no "
 "gerenciamento de energia."
 
-#: gettingstarted.html:544
+#: gettingstarted.html:549
 msgid "AMD Graphics Card Detected."
 msgstr "Placa Gráfica AMD Detectada."
 
-#: gettingstarted.html:545
+#: gettingstarted.html:550
 msgid ""
 "AMD's drivers are no longer supported on Ubuntu. The open source drivers you"
 " are currently using will deliver the most stable performance out of your "
@@ -827,20 +833,20 @@ msgstr ""
 "aberto que você está usando atualmente fornecerão o desempenho mais estável "
 "para a sua placa de vídeo."
 
-#: gettingstarted.html:552
+#: gettingstarted.html:557
 msgid "You're already good to go."
 msgstr "Você já está pronto para seguir"
 
-#: gettingstarted.html:553
+#: gettingstarted.html:558
 msgid ""
 "Intel's drivers are open source and are maintained/updated in the kernel."
 msgstr "Drivers Intel são open source e são otimizados/atualizados no kernel."
 
-#: gettingstarted.html:558
+#: gettingstarted.html:563
 msgid "VirtualBox Guest Additions"
 msgstr "Adicionais de Convidado VirtualBox"
 
-#: gettingstarted.html:559
+#: gettingstarted.html:564
 msgid ""
 "To accelerate graphics performance inside the virtual machine, please "
 "install Guest Additions."
@@ -848,11 +854,11 @@ msgstr ""
 "Para acelerar a performance gráfica dentro da máquina virtual, por favor "
 "instale os Adicionais de Convidado."
 
-#: gettingstarted.html:564
+#: gettingstarted.html:569
 msgid "Proprietary or Open Source Drivers?"
 msgstr "Drivers Proprietários ou Open Source?"
 
-#: gettingstarted.html:565
+#: gettingstarted.html:570
 msgid ""
 "Proprietary drivers come directly from the manufacturer. As they are not "
 "open source, Ubuntu developers are <b>unable to review and improve driver "
@@ -863,7 +869,7 @@ msgstr ""
 "código do driver</b>, o que significa que você terá que contar com a "
 "fabricante para suporte."
 
-#: gettingstarted.html:570
+#: gettingstarted.html:575
 msgid ""
 "In addition, proprietary drivers can <b>significantly improve graphics "
 "performance</b> and as a result, the entire system. Users may wish to "
@@ -873,11 +879,11 @@ msgstr ""
 "desempenho de gráficos</b> e como resultado de todo o sistema. Os usuários "
 "podem querer instalar esses drivers para: "
 
-#: gettingstarted.html:575
+#: gettingstarted.html:580
 msgid "Run 3D applications and games."
 msgstr "Roda aplicações 3D e jogos."
 
-#: gettingstarted.html:576
+#: gettingstarted.html:581
 msgid ""
 "Improve power management, particularly if the device experiences overheating"
 " problems under open source drivers."
@@ -885,17 +891,17 @@ msgstr ""
 "Melhora o gerenciamento de energia, especialmente se o dispositivo tiver "
 "problemas de superaquecimento em drivers de código aberto."
 
-#: gettingstarted.html:579
+#: gettingstarted.html:584
 msgid "Improve support for high resolutions and multiple monitors."
 msgstr ""
 "Melhora o suporte para monitores de alta-resolução tal como o uso de "
 "múltiplos monitores."
 
-#: gettingstarted.html:580
+#: gettingstarted.html:585
 msgid "Fix blank screen issues."
 msgstr "Corrije os problemas da tela em branco."
 
-#: gettingstarted.html:583
+#: gettingstarted.html:588
 msgid ""
 "Proprietary drivers are known as \"binary blobs\". Certain hardware may "
 "experience adverse behavior, causing more issues than the open source "
@@ -905,24 +911,24 @@ msgstr ""
 "hardware podem sofrer comportamentos adversos, causando mais problemas do "
 "que os drivers de código aberto, como:"
 
-#: gettingstarted.html:587
+#: gettingstarted.html:592
 msgid "Failing to boot to the graphical desktop."
 msgstr "Falha a inicialização para o desktop gráfico."
 
-#: gettingstarted.html:588
+#: gettingstarted.html:593
 msgid "Broken drivers after an upgrade."
 msgstr "Drivers danificados após uma atualização."
 
-#: gettingstarted.html:589
+#: gettingstarted.html:594
 msgid "Severe graphical glitches."
 msgstr "Falhas gráficas graves."
 
-#: gettingstarted.html:590
+#: gettingstarted.html:595
 msgid "Problems with applications/games requiring hardware acceleration."
 msgstr ""
 "Problemas com as aplicações/jogos que requerem acelaração por hardware."
 
-#: gettingstarted.html:594
+#: gettingstarted.html:599
 msgid ""
 "<code id=\"graphics-open-driver-name\"></code> is the open source driver for"
 " your card."
@@ -930,11 +936,11 @@ msgstr ""
 "<code id=\"graphics-open-driver-name\"></code> é o driver de código aberto "
 "para a sua placa de vídeo."
 
-#: gettingstarted.html:599
+#: gettingstarted.html:604
 msgid "What about the latest NVIDIA drivers?"
 msgstr "E os últimos drivers da NVIDIA?"
 
-#: gettingstarted.html:600
+#: gettingstarted.html:605
 msgid ""
 "<b>Additional Drivers</b> fetches the latest tested driver from the Ubuntu "
 "repositories. Advanced users and gamers who would like newer versions may "
@@ -952,7 +958,7 @@ msgstr ""
 "oferece os mais recentes drivers da NVIDIA para o Ubuntu. Esses pacotes não "
 "são tão bem testados."
 
-#: gettingstarted.html:609
+#: gettingstarted.html:614
 msgid ""
 "This only applies for actively supported cards, and not older cards using "
 "the legacy driver."
@@ -960,11 +966,11 @@ msgstr ""
 "Isso aplica-se apenas as placas gráficas ativamente suportadas, e não as "
 "placas mais antigas usando o driver antigo."
 
-#: gettingstarted.html:613
+#: gettingstarted.html:618
 msgid "Add Repository"
 msgstr "Adicionar Repositório"
 
-#: gettingstarted.html:622
+#: gettingstarted.html:627
 msgid ""
 "After the PPA is added, newer versions are presented to install in <a "
 "onclick=\"cmd('drivers')\">Additional Drivers:</a>"
@@ -972,11 +978,11 @@ msgstr ""
 "Depois que a PPA for adicionada, novas versões estarão disponíveis para a "
 "instalação em: <a onclick=\"cmd('drivers')\">Drivers Adicionais</a>"
 
-#: gettingstarted.html:631
+#: gettingstarted.html:636
 msgid "Wireless, Bluetooth and Other Devices"
 msgstr "Rede sem fio, Bluetooth e outros dispositivos"
 
-#: gettingstarted.html:634
+#: gettingstarted.html:639
 msgid ""
 "If there were no additional drivers found for the hardware nor did it work "
 "after installing the firmware packages, you may need to research your device"
@@ -986,7 +992,7 @@ msgstr ""
 "de instalar os pacotes de firmware, talvez seja necessário pesquisar por seu"
 " dispositivo para encontrar o driver apropriado."
 
-#: gettingstarted.html:638
+#: gettingstarted.html:643
 msgid ""
 "Unfortunately, this is due to the fact the manufacturer for your hardware "
 "hasn't provided any source code for developers to freely use, or there is "
@@ -998,7 +1004,7 @@ msgstr ""
 "documentação suficiente para criar drivers para sua marca e modelo "
 "específicos."
 
-#: gettingstarted.html:644
+#: gettingstarted.html:649
 msgid ""
 "Some manufacturers may provide closed source drivers provided by themselves "
 "directly. If you require assistance, feel free to <a "
@@ -1008,19 +1014,19 @@ msgstr ""
 "eles diretamente. Se você precisar de assistência, sinta-se à vontade para "
 "<a onclick=\"smoothPageFade('community.html')\">pergunte à comunidade</a>."
 
-#: gettingstarted.html:650
+#: gettingstarted.html:655
 msgid "Read more on troubleshooting wireless hardware."
 msgstr "Leia mais sobre como solucionar problemas de hardware sem fio."
 
-#: gettingstarted.html659, 852
+#: gettingstarted.html664, 853
 msgid "Language Input"
 msgstr "Entrada de idioma"
 
-#: gettingstarted.html:669
+#: gettingstarted.html:674
 msgid "Input method"
 msgstr "Método de entrada"
 
-#: gettingstarted.html:670
+#: gettingstarted.html:675
 msgid ""
 "In Ubuntu Budgie, we provide an option to switch between two widely used "
 "keyboard entry layouts. IBus(Intelligent Input Bus) and Fcitx(Free Chinese "
@@ -1030,27 +1036,27 @@ msgstr ""
 "entrada de teclado amplamente utilizados. IBus (Intelligent Input Bus) e "
 "Fcitx (Free Chinese Input Toy para X)."
 
-#: gettingstarted.html:677
+#: gettingstarted.html:682
 msgid "Install & Configure IBus"
 msgstr "Instale e configure o IBus"
 
-#: gettingstarted.html:680
+#: gettingstarted.html:685
 msgid "IBus is active now"
 msgstr "IBus está ativo"
 
-#: gettingstarted.html:687
+#: gettingstarted.html:692
 msgid "Install & Configure Fcitx"
 msgstr "Instale e configure o Fcitx"
 
-#: gettingstarted.html:689
+#: gettingstarted.html:694
 msgid "Fcitx is active now"
 msgstr "Fcitx está ativo"
 
-#: gettingstarted.html698, 705
+#: gettingstarted.html703, 710
 msgid "Language Support"
 msgstr "Suporte de Idioma"
 
-#: gettingstarted.html:699
+#: gettingstarted.html:704
 msgid ""
 "Your computer may require updates to your language and localization "
 "settings, or you may want to install additional language support."
@@ -1058,42 +1064,42 @@ msgstr ""
 "Seu computador pode exigir atualizações para suas configurações de idioma e "
 "localização, ou você pode querer instalar suporte a idiomas adicionais."
 
-#: gettingstarted.html:711
+#: gettingstarted.html:716
 msgid ""
 "<b>Language Support</b> can be found later in the menu <b>System Tools</b>"
 msgstr ""
 "O <b>Suporte do idioma</b> pode ser encontrado mais tarde no menu "
 "<b>Ferramentas do Sistema</b>."
 
-#: gettingstarted.html:722
+#: gettingstarted.html:727
 msgid "Complex Input"
 msgstr "Método de Entrada Complexo"
 
-#: gettingstarted.html:723
+#: gettingstarted.html:728
 msgid "Some regions of the world require complex inputs."
 msgstr "Algumas regiões do mundo nessecitam de métodos de entrada complexos."
 
-#: gettingstarted.html:728
+#: gettingstarted.html:733
 msgid "Chinese"
 msgstr "Chinês"
 
-#: gettingstarted.html:739
+#: gettingstarted.html:744
 msgid "Japanese"
 msgstr "Japonês"
 
-#: gettingstarted.html:750
+#: gettingstarted.html:755
 msgid "Korean"
 msgstr "Coreano"
 
-#: gettingstarted.html:774
+#: gettingstarted.html:779
 msgid "Flatpak, Dropbox and User Management"
 msgstr "Flatpak, Dropbox e Gestão de Utilizadores"
 
-#: gettingstarted.html:784
+#: gettingstarted.html:789
 msgid "Flatpak"
 msgstr "Flatpak"
 
-#: gettingstarted.html:785
+#: gettingstarted.html:790
 msgid ""
 "<strong>Flatpak</strong> is a new generation application distribution "
 "framework. It introduces a unified packaging format across various GNU/Linux"
@@ -1105,37 +1111,27 @@ msgstr ""
 "distribuições GNU/Linux. Note-se que as aplicações Flatpak não fazem parte "
 "do núcleo da experiência Ubuntu."
 
-#: gettingstarted.html:788
+#: gettingstarted.html:793
 msgid "Learn more"
 msgstr "Aprenda mais"
 
-#: gettingstarted.html:793
+#: gettingstarted.html:798
 msgid "Install & Configure Flatpak"
 msgstr "Instale & Configure Flatpak"
 
-#: gettingstarted.html:794
+#: gettingstarted.html:799
 msgid "Flatpak is installed."
 msgstr "O Flatpak está instalado."
 
-#: gettingstarted.html:795
+#: gettingstarted.html:800
 msgid "Please reboot for the service to start."
 msgstr "Reinicie para que o serviço seja iniciado."
 
-#: gettingstarted.html:797
-msgid ""
-"Being a user friendly distribution, Ubuntu Budgie allows you to install "
-"Flatpak with a single click. After setup, you can use "
-"<strong>Software</strong> to install Flatpak applications."
-msgstr ""
-"Sendo uma distribuição de fácil utilização, o Ubuntu Budgie permite-lhe "
-"instalar o Flatpak com um único clique. Após a instalação, pode usar o "
-"<strong>Software</strong> para instalar aplicações Flatpak."
-
-#: gettingstarted.html:810
+#: gettingstarted.html:811
 msgid "Dropbox"
 msgstr "Dropbox"
 
-#: gettingstarted.html:811
+#: gettingstarted.html:812
 msgid ""
 "<strong>Dropbox</strong> is a popular proprietary file sharing and storage "
 "solution."
@@ -1143,15 +1139,15 @@ msgstr ""
 "<strong>Dropbox</strong> é uma solução proprietária popular de armazenamento"
 " e compartilhamento de arquivos"
 
-#: gettingstarted.html:815
+#: gettingstarted.html:816
 msgid "Install & Configure Dropbox"
 msgstr "Instalar & Configurar o Dropbox"
 
-#: gettingstarted.html:816
+#: gettingstarted.html:817
 msgid "Dropbox is installed."
 msgstr "O Dropbox está instalado."
 
-#: gettingstarted.html:817
+#: gettingstarted.html:818
 msgid ""
 "After installing, logout and login and follow the dropbox instructions that "
 "are then displayed."
@@ -1159,11 +1155,11 @@ msgstr ""
 "Após a instalação, reinicie a sessão e siga as instruções do dropbox que são"
 " exibidas."
 
-#: gettingstarted.html:829
+#: gettingstarted.html:830
 msgid "Users"
 msgstr "Usuários"
 
-#: gettingstarted.html:831
+#: gettingstarted.html:832
 msgid ""
 "Share your computer with others? Set up a separate user account for each "
 "user to protect the individual privacy of each user sharing the same "
@@ -1173,7 +1169,7 @@ msgstr ""
 "separada para cada usuário para proteger a privacidade individual de cada "
 "usuário que compartilha o mesmo computador."
 
-#: gettingstarted.html:834
+#: gettingstarted.html:835
 msgid ""
 "You can also log in to a <b>Guest Session</b> if someone is using your "
 "computer as a one-off."
@@ -1181,18 +1177,18 @@ msgstr ""
 "Você também pode fazer um login em <b> Sessão de convidado </b> se alguém "
 "estiver usando seu computador  uma única vez. "
 
-#: gettingstarted.html:839
+#: gettingstarted.html:840
 msgid "Configure Users"
 msgstr "Configurar Usuários"
 
-#: gettingstarted.html:842
+#: gettingstarted.html:843
 msgid ""
 "<b>Users</b> can be found later in the menu by typing<i> Users</i></b>."
 msgstr ""
 "Os <b>Utilizadores</b> podem ser encontrados mais tarde no menu ao "
 "escrever<i> Utilizadores</i></b>."
 
-#: gettingstarted.html:860
+#: gettingstarted.html:861
 msgid ""
 "To improve the amount of customizability, Ubuntu Budgie allows you to "
 "install/remove popular web browsers."
@@ -1200,11 +1196,11 @@ msgstr ""
 "Para melhorar a quantidade de personalização, o Ubuntu Budgie permite-lhe "
 "instalar/remover navegadores web populares."
 
-#: gettingstarted.html:865
+#: gettingstarted.html:866
 msgid "Firefox"
 msgstr "Firefox"
 
-#: gettingstarted.html:867
+#: gettingstarted.html:868
 msgid ""
 "Mozilla Firefox is a free and open-source web browser, developed by the "
 "Mozilla Foundation - a not for profit organization. It is highly popular "
@@ -1214,19 +1210,19 @@ msgstr ""
 "desenvolvido pela Fundação Mozilla - uma organização sem fins lucrativos. É "
 "altamente popular visando múltiplas plataformas."
 
-#: gettingstarted.html873, 920, 959, 984, 1004, 1024
+#: gettingstarted.html874, 921, 960, 985, 1005, 1025, 1049
 msgid "Snap Install"
 msgstr "Snap install"
 
-#: gettingstarted.html876, 923
+#: gettingstarted.html877, 924, 1052
 msgid "Snap Remove"
 msgstr "Snap Remove"
 
-#: gettingstarted.html:884
+#: gettingstarted.html:885
 msgid "Firefox ESR"
 msgstr "Firefox ESR"
 
-#: gettingstarted.html:886
+#: gettingstarted.html:887
 msgid ""
 "Mozilla Firefox is a free and open-source web browser, developed by the "
 "Mozilla Foundation - a not for profit organization. This is the Extended "
@@ -1237,7 +1233,7 @@ msgstr ""
 "Este é o navegador da versão de suporte estendido para segurança e proteção "
 "de dados abrangentes."
 
-#: gettingstarted.html:901
+#: gettingstarted.html:902
 msgid ""
 "Mozilla Firefox is a free and open-source web browser, developed by the "
 "Mozilla Foundation - a not for profit organization. This is the stable "
@@ -1249,7 +1245,7 @@ msgstr ""
 "Este é o navegador de versão estável disponibilizado diretamente pela "
 "Mozilla através do seu próprio repositório."
 
-#: gettingstarted.html:909
+#: gettingstarted.html:910
 msgid ""
 "Click Remove first to uninstall the current firefox package, followed by "
 "Install to add the Mozilla repository and package."
@@ -1257,7 +1253,7 @@ msgstr ""
 "Clique em Remover primeiro para desinstalar o pacote atual do firefox, "
 "seguido de Instalar para adicionar o repositório e o pacote da Mozilla."
 
-#: gettingstarted.html:917
+#: gettingstarted.html:918
 msgid ""
 "Chromium is an open-source browser project that aims to build a safer, "
 "faster, and more stable way for all Internet users to experience the web."
@@ -1266,7 +1262,7 @@ msgstr ""
 "maneira mais segura, rápida e estável para todos os usuários da Internet "
 "experimentarem a web."
 
-#: gettingstarted.html:932
+#: gettingstarted.html:933
 msgid ""
 "Google Chrome is a modern web browser backed by internet giant Google. It "
 "offers a smooth browsing experience plus integration with Google's "
@@ -1276,11 +1272,11 @@ msgstr ""
 "Google. Oferece uma experiência de navegação suave e integração com os "
 "serviços proprietários do Google."
 
-#: gettingstarted.html935, 942, 950
+#: gettingstarted.html936, 943, 951
 msgid "Downloads Page"
 msgstr "Página de transferências"
 
-#: gettingstarted.html:940
+#: gettingstarted.html:941
 msgid ""
 "Microsoft Edge is a cross-platform web browser created and developed by "
 "Microsoft. It is a Chromium based browser."
@@ -1288,7 +1284,7 @@ msgstr ""
 "O Microsoft Edge é um navegador web multiplataforma criado e desenvolvido "
 "pela Microsoft. É um navegador baseado no Chromium."
 
-#: gettingstarted.html:947
+#: gettingstarted.html:948
 msgid ""
 "Vivaldi Web Browser is a free, fully customizable web browser. Feature rich,"
 " powerful, secure and fun! Browse the Web your way"
@@ -1297,7 +1293,7 @@ msgstr ""
 "Recursos ricos, poderosos, seguros e divertidos! Navegue na Web do seu "
 "jeito."
 
-#: gettingstarted.html:956
+#: gettingstarted.html:957
 msgid ""
 "Opera is a fast and secure browser. Developed in Europe, used by millions "
 "around the world. Now with a built-in ad blocker and free VPN."
@@ -1305,12 +1301,12 @@ msgstr ""
 "Opera é um navegador rápido e seguro. Desenvolvido na Europa, usado por "
 "milhões ao redor do mundo. Agora com bloqueado de anúncios e VPN grátis."
 
-#: gettingstarted.html:972
+#: gettingstarted.html:973
 msgid "A browser that blocks tracking and intrusive ads by default."
 msgstr ""
 "Um navegador que bloqueia o rastreio e anúncios intrusivos por predefinição."
 
-#: gettingstarted.html:997
+#: gettingstarted.html:998
 msgid ""
 "Midori is a lightweight yet powerful web browser which runs just as well on "
 "little embedded computers named for delicious pastries as it does on beefy "
@@ -1323,7 +1319,7 @@ msgstr ""
 "superior à do planeta Terra. E parece bom fazer isso também. Ah, e claro, é "
 "software livre."
 
-#: gettingstarted.html:1017
+#: gettingstarted.html:1018
 msgid ""
 "The web browser for GNOME, featuring tight integration with the desktop and "
 "a simple and intuitive user interface that allows you to focus on your web "
@@ -1337,11 +1333,109 @@ msgstr ""
 " clara e bonita da Web, este é o navegador para você. O GNOME Web é "
 "frequentemente referido por seu nome de código, Epiphany."
 
-#: gettingstarted.html:1039
+#: gettingstarted.html:1038
+msgid ""
+"To improve the amount of customizability, Ubuntu Budgie allows you to "
+"install/remove popular email clients."
+msgstr ""
+"Para melhorar a quantidade de personalização, o Ubuntu Budgie permite-lhe "
+"instalar/remover clientes de correio eletrónico populares."
+
+#: gettingstarted.html:1043
+msgid "Thunderbird"
+msgstr "Thunderbird"
+
+#: gettingstarted.html:1045
+msgid ""
+"Access all your messages, calendars, and contacts in one fast app. Filter "
+"and organize the way you like. Manage all accounts separately or in a "
+"unified inbox. Thunderbird simply makes your life simpler."
+msgstr ""
+"Aceda a todas as suas mensagens, calendários e contactos numa única "
+"aplicação rápida. Filtre e organize da forma que preferir. Faça a gestão de "
+"todas as contas separadamente ou numa caixa de entrada unificada. O "
+"Thunderbird simplesmente simplifica a sua vida"
+
+#: gettingstarted.html:1060
+msgid "Evolution"
+msgstr "Evolution"
+
+#: gettingstarted.html:1062
+msgid ""
+"Evolution is a personal information management application that provides "
+"integrated mail, calendaring and address book functionality."
+msgstr ""
+"O Evolution é uma aplicação de gestão de informações pessoais que fornece "
+"correio integrado, calendário e funcionalidade de livro de endereços."
+
+#: gettingstarted.html:1074
+msgid "Geary"
+msgstr "Geary"
+
+#: gettingstarted.html:1076
+msgid ""
+"Geary is an email application built around conversations for the GNOME "
+"desktop."
+msgstr ""
+"O Geary é uma aplicação de correio eletrónico criada em torno de conversação"
+" para o ambiente de trabalho GNOME."
+
+#: gettingstarted.html:1088
+msgid "Kontact"
+msgstr "Kontact"
+
+#: gettingstarted.html:1090
+msgid ""
+"Handle your email, calendar, contacts and other personal data with Kontact. "
+"Kontact groups everything together in one place and helps you manage your "
+"communications, organize your day and work with your colleagues. Become more"
+" productive with Kontact."
+msgstr ""
+"Trate do seu correio eletrónico, calendário, contactos e outros dados "
+"pessoais com o Kontact. O Kontact agrupa tudo num único local e ajuda-o a "
+"gerir as suas comunicações, a organizar o seu dia e a trabalhar com os seus "
+"colegas. Torne-se mais produtivo com o Kontact."
+
+#: gettingstarted.html:1102
+msgid "Astroid"
+msgstr "Astroid"
+
+#: gettingstarted.html:1104
+msgid ""
+"Astroid is a lightweight and fast Mail User Agent that provides a graphical "
+"interface to searching, display and composing email, organized in thread and"
+" tags. Astroid uses the notmuch backend for blazingly fast searches through "
+"tons of email. Astroid searches, displays and compose emails — and relies on"
+" other programs for fetching, syncing and sending email."
+msgstr ""
+"O Astroid é um agente de utilizador de correio eletrónico leve e rápido que "
+"fornece uma interface gráfica para pesquisar, apresentar e compor correio "
+"eletrónico, organizado em tópicos e etiquetas. O Astroid usa o backend "
+"notmuch para pesquisas incrivelmente rápidas através de toneladas de correio"
+" eletrónico. O Astroid pesquisa, exibe e compõe e-mails - e depende de "
+"outros programas para buscar, sincronizar e enviar e-mails."
+
+#: gettingstarted.html:1116
+msgid "Claws-Mail"
+msgstr "Claws-Mail"
+
+#: gettingstarted.html:1118
+msgid ""
+"Claws Mail is an email client (and news reader), based on GTK+, featuring "
+"quick response, graceful and sophisticated interface, easy configuration, "
+"intuitive operation, abundant features, extensibility, robustness and "
+"stability."
+msgstr ""
+"O Claws Mail é um cliente de correio eletrónico (e leitor de notícias), "
+"baseado em GTK+, com resposta rápida, interface elegante e sofisticada, "
+"configuração fácil, funcionamento intuitivo, funcionalidades abundantes, "
+"extensibilidade, robustez e estabilidade."
+
+#: gettingstarted.html:1135
 msgid "User Interface"
 msgstr "Interface do usuário"
 
-#: gettingstarted.html:1040
+#: gettingstarted.html:1136
 msgid ""
 "Ubuntu Budgie provides a unique tool to transform the user interface. It can"
 " be used to quickly setup the user interface to broadly reflect how other "
@@ -1352,11 +1446,11 @@ msgstr ""
 "utilizador de modo a refletir amplamente o aspeto e a sensação de outros "
 "sistemas operativos populares."
 
-#: gettingstarted.html:1047
+#: gettingstarted.html:1143
 msgid "Budgie Desktop Settings"
 msgstr "Configurações do Budgie Desktop "
 
-#: gettingstarted.html:1050
+#: gettingstarted.html:1146
 msgid ""
 "<b>Budgie Desktop Settings</b> can be found later in the menu <b>System "
 "Tools</b>."
@@ -1364,11 +1458,11 @@ msgstr ""
 "As configurações do Budgie Desktop podem ser encontradas mais tarde no menu "
 "Ferramentas do Sistema. "
 
-#: gettingstarted.html1058, 1063
+#: gettingstarted.html1154, 1159
 msgid "Budgie Control Center"
 msgstr "Centro de Controlo Budgie"
 
-#: gettingstarted.html:1059
+#: gettingstarted.html:1155
 msgid ""
 "You can configure just about every aspect of your computer from Budgie "
 "Control Center."
@@ -1376,7 +1470,7 @@ msgstr ""
 "Pode configurar praticamente todos os aspetos do seu computador a partir do "
 "Centro de Contro Budgie."
 
-#: gettingstarted.html:1068
+#: gettingstarted.html:1164
 msgid ""
 "<b>Budgie Control Center</b> can be found later in the menu <b>System "
 "Tools</b>."
@@ -1384,7 +1478,7 @@ msgstr ""
 "O <b>Centro de Controlo Budgie</b> pode ser encontrado no menu "
 "<b>Ferramentas do Sistema</b>."
 
-#: gettingstarted.html:1093
+#: gettingstarted.html:1189
 msgid ""
 "Ubuntu Budgie has many keyboard shortcuts that help make using your computer"
 " more efficient."
@@ -1392,7 +1486,7 @@ msgstr ""
 "O Ubuntu Budgie tem muitas teclas de atalho que ajudam a tornar o computador"
 " mais eficiente."
 
-#: gettingstarted.html:1097
+#: gettingstarted.html:1193
 msgid ""
 "The <b><img src=\"img/welcome/super-key.svg\" /> Super</b> key is your "
 "Windows key. For Mac keyboards, this is the ⌘ Command key."
@@ -1400,113 +1494,113 @@ msgstr ""
 "A tecla <b><img src=\"img/welcome/super-key.svg\" /> super</b> é a tecla do "
 "Windows. Em teclados Mac esta é a tecla Command ⌘."
 
-#: gettingstarted.html:1100
+#: gettingstarted.html:1196
 msgid "Budgie Desktop shortcuts"
 msgstr "Atalhos do Budgie Desktop"
 
-#: gettingstarted.html:1101
+#: gettingstarted.html:1197
 msgid "Some common shortcuts used in Budgie Desktop"
 msgstr "Alguns atalhos comuns usados no Budgie Desktop"
 
-#: gettingstarted.html:1111
+#: gettingstarted.html:1207
 msgid "Open notifications in Raven"
 msgstr "Abrir notificações no Raven"
 
-#: gettingstarted.html:1120
+#: gettingstarted.html:1216
 msgid "Open applet Settings in Raven"
 msgstr "Abrir applet de Configurações no Raven"
 
-#: gettingstarted.html:1125
+#: gettingstarted.html:1221
 msgid "Common application shortcuts"
 msgstr "Atalhos comuns de programas"
 
-#: gettingstarted.html:1126
+#: gettingstarted.html:1222
 msgid "These shortcuts apply in most applications."
 msgstr "Esses atalhos se aplicam na maioria dos programas."
 
-#: gettingstarted.html:1135
+#: gettingstarted.html:1231
 msgid "Toggle Tilix Quake Mode"
 msgstr "Toggle Tilix Quake Mode"
 
-#: gettingstarted.html1139, 1147, 1155, 1163, 1171, 1179, 1187, 1195, 1203,
-#: 1211, 1219, 1227, 1235, 1243, 1251, 1283, 1299, 1329, 1348, 1362, 1393,
-#: 1403, 1413, 1425, 1608, 1618, 1628, 1638, 1648, 1658, 1668, 1678, 1688
+#: gettingstarted.html1235, 1243, 1251, 1259, 1267, 1275, 1283, 1291, 1299,
+#: 1307, 1315, 1323, 1331, 1339, 1347, 1379, 1395, 1425, 1444, 1458, 1489,
+#: 1499, 1509, 1521, 1704, 1714, 1724, 1734, 1744, 1754, 1764, 1774, 1784
 msgid "Ctrl"
 msgstr "Ctrl"
 
-#: gettingstarted.html:1143
+#: gettingstarted.html:1239
 msgid "Copy the selected text/object"
 msgstr "Copiar o texto/objeto selecionado"
 
-#: gettingstarted.html:1151
+#: gettingstarted.html:1247
 msgid "Cut the selected text/object"
 msgstr "Cortar o texto/objeto selecionado"
 
-#: gettingstarted.html:1159
+#: gettingstarted.html:1255
 msgid "Paste/insert the selected text/object"
 msgstr "Colar/inserir o texto/objeto selecionado"
 
-#: gettingstarted.html:1167
+#: gettingstarted.html:1263
 msgid "Select all text"
 msgstr "Selecionar todo o texto"
 
-#: gettingstarted.html:1175
+#: gettingstarted.html:1271
 msgid "Find words"
 msgstr "Localizar palavras"
 
-#: gettingstarted.html:1183
+#: gettingstarted.html:1279
 msgid "Find and replace words"
 msgstr "Localizar e substituir palavras"
 
-#: gettingstarted.html:1191
+#: gettingstarted.html:1287
 msgid "Make the selected text bold"
 msgstr "Tornar o texto selecionado em negrito"
 
-#: gettingstarted.html:1199
+#: gettingstarted.html:1295
 msgid "Make the selected text italic"
 msgstr "Tornar o texto selecionado em itálico"
 
-#: gettingstarted.html:1207
+#: gettingstarted.html:1303
 msgid "Underline the selected text"
 msgstr "Sublinhar o texto selecionado"
 
-#: gettingstarted.html:1215
+#: gettingstarted.html:1311
 msgid "Open a new document or window"
 msgstr "Abrir um novo documento ou janela"
 
-#: gettingstarted.html:1223
+#: gettingstarted.html:1319
 msgid "Save the current document"
 msgstr "Salvar o documento atual"
 
-#: gettingstarted.html:1231
+#: gettingstarted.html:1327
 msgid "Open another document"
 msgstr "Abrir outro documento"
 
-#: gettingstarted.html:1239
+#: gettingstarted.html:1335
 msgid "Print the current document"
 msgstr "Imprimir o documento atual"
 
-#: gettingstarted.html:1247
+#: gettingstarted.html:1343
 msgid "Undo the last change you made"
 msgstr "Desfazer a última alteração feita"
 
-#: gettingstarted.html1253, 1281, 1291, 1417, 1428, 1444, 1455, 1466, 1477
+#: gettingstarted.html1349, 1377, 1387, 1513, 1524, 1540, 1551, 1562, 1573
 msgid "Shift"
 msgstr "Shift"
 
-#: gettingstarted.html:1257
+#: gettingstarted.html:1353
 msgid "Redo a change that you just undid"
 msgstr "Refazer uma alteração que você acabou de desfazer"
 
-#: gettingstarted.html:1263
+#: gettingstarted.html:1359
 msgid "Toggle the current application between full-screen and windowed"
 msgstr "Alternar o programa atual entre tela cheia e janelas"
 
-#: gettingstarted.html:1267
+#: gettingstarted.html:1363
 msgid "Desktop shortcuts"
 msgstr "Atalhos da área de trabalho"
 
-#: gettingstarted.html:1268
+#: gettingstarted.html:1364
 msgid ""
 "This section lists common keyboard shortcuts which you can use to operate "
 "parts of the desktop."
@@ -1514,81 +1608,81 @@ msgstr ""
 "Esta seção lista os atalhos de teclado comuns que você pode usar para operar"
 " partes da área de trabalho."
 
-#: gettingstarted.html:1277
+#: gettingstarted.html:1373
 msgid "Open Applications menu"
 msgstr "Abrir o menu de Programas"
 
-#: gettingstarted.html:1287
+#: gettingstarted.html:1383
 msgid "Copy a screenshot of an area to clipboard"
 msgstr "Copiar uma captura de tela de uma área para área de transferência"
 
-#: gettingstarted.html:1295
+#: gettingstarted.html:1391
 msgid "Save a screenshot of an area to the Pictures directory"
 msgstr "Salve uma captura de tela de uma área no diretório Imagens"
 
-#: gettingstarted.html:1303
+#: gettingstarted.html:1399
 msgid "Copy a screenshot of a window to clipboard"
 msgstr "Copiar uma captura de tela de uma janela para a área de transferência"
 
-#: gettingstarted.html1307, 1321, 1331, 1350, 1364, 1378, 1395, 1405, 1415,
-#: 1427, 1436, 1488, 1496, 1504, 1539, 1610, 1620, 1630, 1640, 1650, 1660,
-#: 1670, 1680, 1690
+#: gettingstarted.html1403, 1417, 1427, 1446, 1460, 1474, 1491, 1501, 1511,
+#: 1523, 1532, 1584, 1592, 1600, 1635, 1706, 1716, 1726, 1736, 1746, 1756,
+#: 1766, 1776, 1786
 msgid "Alt"
 msgstr "Alt"
 
-#: gettingstarted.html:1311
+#: gettingstarted.html:1407
 msgid "Save a screenshot of a window to the Pictures directory"
 msgstr "Salve uma captura de tela de uma janela no diretório Imagens"
 
-#: gettingstarted.html:1317
+#: gettingstarted.html:1413
 msgid "Save a screenshot to the Pictures directory"
 msgstr "Salve uma captura de tela no diretório Imagens"
 
-#: gettingstarted.html:1325
+#: gettingstarted.html:1421
 msgid "Run an application by typing its name in the box which appears"
 msgstr "Execute um programa digitando seu nome na caixa que aparece"
 
-#: gettingstarted.html:1333
+#: gettingstarted.html:1429
 msgid "Delete"
 msgstr "Excluir"
 
-#: gettingstarted.html:1335
+#: gettingstarted.html:1431
 msgid "Logout"
 msgstr "Sair"
 
-#: gettingstarted.html:1344
+#: gettingstarted.html:1440
 msgid "Lock your screen."
 msgstr "Bloquear a tela."
 
-#: gettingstarted.html:1354
+#: gettingstarted.html:1450
 msgid "Open a terminal."
 msgstr "Abrir um terminal."
 
-#: gettingstarted.html:1358
+#: gettingstarted.html:1454
 msgid "Window shortcuts - general"
 msgstr "Atalhos de janela - geral"
 
-#: gettingstarted.html:1368
+#: gettingstarted.html:1464
 msgid "Call Window Shuffler gui (window tiling grid)."
 msgstr "Chamar o \"gui\" do Window Shuffler (grade de janelas lado a lado)."
 
-#: gettingstarted.html:1372
+#: gettingstarted.html:1468
 msgid "Video Demonstration"
 msgstr "Demonstração de Vídeo"
 
-#: gettingstarted.html:1380
+#: gettingstarted.html:1476
 msgid "Tab"
 msgstr "Tab"
 
-#: gettingstarted.html:1383
+#: gettingstarted.html:1479
 msgid "Switch between currently-open windows."
 msgstr "Alternar entre janelas atualmente abertas."
 
-#: gettingstarted.html:1385
+#: gettingstarted.html:1481
 msgid "Press Alt + Tab and then release Tab (but continue to hold Alt)."
 msgstr "Pressione Alt + tab e então solte o Tab (mas continue segurando Alt)."
 
-#: gettingstarted.html:1386
+#: gettingstarted.html:1482
 msgid ""
 "Press Tab repeatedly to cycle through the list of available windows which "
 "appears on the screen."
@@ -1596,88 +1690,88 @@ msgstr ""
 "Pressione Tab repetidamente para percorrer a lista de janelas disponíveis "
 "que aparece na tela."
 
-#: gettingstarted.html1397, 1419, 1551
+#: gettingstarted.html1493, 1515, 1647
 msgid "Left"
 msgstr "Esquerda"
 
-#: gettingstarted.html:1399
+#: gettingstarted.html:1495
 msgid "Switch to the previous workspace."
 msgstr "Trocar para área de trabalho anterior."
 
-#: gettingstarted.html1407, 1430, 1560
+#: gettingstarted.html1503, 1526, 1656
 msgid "Right"
 msgstr "Direita"
 
-#: gettingstarted.html:1409
+#: gettingstarted.html:1505
 msgid "Switch to the next workspace."
 msgstr "Mude para a próxima área de trabalho."
 
-#: gettingstarted.html:1421
+#: gettingstarted.html:1517
 msgid "Move the current window to the previous workspace."
 msgstr "Mover a janela atual para a área de trabalho anterior."
 
-#: gettingstarted.html:1432
+#: gettingstarted.html:1528
 msgid "Move the current window to the next workspace."
 msgstr "Mova a janela atual para a próxima área de trabalho."
 
-#: gettingstarted.html:1440
+#: gettingstarted.html:1536
 msgid "Move the current window to the monitor above."
 msgstr "Mova a janela atual para o monitor acima."
 
-#: gettingstarted.html:1451
+#: gettingstarted.html:1547
 msgid "Move the current window to the monitor below."
 msgstr "Mova a janela atual para o monitor abaixo."
 
-#: gettingstarted.html:1462
+#: gettingstarted.html:1558
 msgid "Move the current window to the monitor to the left."
 msgstr "Mova a janela atual para o monitor à esquerda."
 
-#: gettingstarted.html:1473
+#: gettingstarted.html:1569
 msgid "Move the current window to the monitor to the right."
 msgstr "Mova a janela atual para o monitor à direita."
 
-#: gettingstarted.html:1484
+#: gettingstarted.html:1580
 msgid "Closes window."
 msgstr "Fecha a janela."
 
-#: gettingstarted.html:1492
+#: gettingstarted.html:1588
 msgid "Returns window to 'normal' or previous size."
 msgstr "Retorna a janela para o tamanho \"normal\" ou anterior."
 
-#: gettingstarted.html:1500
+#: gettingstarted.html:1596
 msgid "Moves the current window (can be moved with mouse or keyboard)."
 msgstr "Move a janela atual (pode ser movida com mouse ou teclado)."
 
-#: gettingstarted.html:1508
+#: gettingstarted.html:1604
 msgid "Resizes current window (again, can be moved with mouse or keyboard)."
 msgstr ""
 "Redimensiona janela atual (novamente, pode ser movido com mouse ou teclado)."
 
-#: gettingstarted.html:1517
+#: gettingstarted.html:1613
 msgid "Minimizes current window."
 msgstr "Maximiza a janela atual."
 
-#: gettingstarted.html:1524
+#: gettingstarted.html:1620
 msgid "Up"
 msgstr "Acima"
 
-#: gettingstarted.html:1526
+#: gettingstarted.html:1622
 msgid "Maximizes current window."
 msgstr "Maximiza a janela atual."
 
-#: gettingstarted.html:1533
+#: gettingstarted.html:1629
 msgid "Down"
 msgstr "Abaixo"
 
-#: gettingstarted.html:1535
+#: gettingstarted.html:1631
 msgid "Unmaximizes current window."
 msgstr "Desmaximiza a janela atual."
 
-#: gettingstarted.html:1541
+#: gettingstarted.html:1637
 msgid "Space"
 msgstr "Espaço"
 
-#: gettingstarted.html:1543
+#: gettingstarted.html:1639
 msgid ""
 "Displays the window menu with options such as 'Always on Top' and 'Minimize'"
 " and 'Maximize' and above commands."
@@ -1685,115 +1779,115 @@ msgstr ""
 "Exibe o menu da janela com opções como 'Sempre na parte superior' e "
 "'Minimizar' e 'Maximizar' e comandos acima."
 
-#: gettingstarted.html:1553
+#: gettingstarted.html:1649
 msgid "Place window on left side of screen."
 msgstr "Coloque a janela no lado esquerdo da tela."
 
-#: gettingstarted.html:1562
+#: gettingstarted.html:1658
 msgid "Place window on right side of screen."
 msgstr "Coloque a janela no lado direito da tela."
 
-#: gettingstarted.html1569, 1642
+#: gettingstarted.html1665, 1738
 msgid "1"
 msgstr "1"
 
-#: gettingstarted.html:1571
+#: gettingstarted.html:1667
 msgid "Quarter tiling: top left."
 msgstr "Lado a lado: canto superior esquerdo."
 
-#: gettingstarted.html1578, 1672
+#: gettingstarted.html1674, 1768
 msgid "2"
 msgstr "2"
 
-#: gettingstarted.html:1580
+#: gettingstarted.html:1676
 msgid "Quarter tiling: top right."
 msgstr "Lado a lado: canto superior direito."
 
-#: gettingstarted.html1587, 1632
+#: gettingstarted.html1683, 1728
 msgid "3"
 msgstr "3"
 
-#: gettingstarted.html:1589
+#: gettingstarted.html:1685
 msgid "Quarter tiling: bottom left."
 msgstr "Lado a lado: canto inferior esquerdo."
 
-#: gettingstarted.html1596, 1682
+#: gettingstarted.html1692, 1778
 msgid "4"
 msgstr "4"
 
-#: gettingstarted.html:1598
+#: gettingstarted.html:1694
 msgid "Quarter tiling: bottom right."
 msgstr "Lado a lado: canto inferior direito."
 
-#: gettingstarted.html:1603
+#: gettingstarted.html:1699
 msgid "Window shortcuts - numeric keypad"
 msgstr "Atalhos da janela - teclado numérico"
 
-#: gettingstarted.html:1604
+#: gettingstarted.html:1700
 msgid "Tiling shortcuts on the numeric keypad."
 msgstr "Atalhos de lado a lado no teclado numérico."
 
-#: gettingstarted.html:1612
+#: gettingstarted.html:1708
 msgid "7"
 msgstr "7"
 
-#: gettingstarted.html:1614
+#: gettingstarted.html:1710
 msgid "Quarter top left."
 msgstr "Canto superior esquerdo."
 
-#: gettingstarted.html:1622
+#: gettingstarted.html:1718
 msgid "9"
 msgstr "9"
 
-#: gettingstarted.html:1624
+#: gettingstarted.html:1720
 msgid "Quarter top right."
 msgstr "Canto superior direito."
 
-#: gettingstarted.html:1634
+#: gettingstarted.html:1730
 msgid "Quarter bottom right."
 msgstr "Canto inferior direito."
 
-#: gettingstarted.html:1644
+#: gettingstarted.html:1740
 msgid "Quarter bottom left."
 msgstr "Canto inferior esquerdo."
 
-#: gettingstarted.html:1652
+#: gettingstarted.html:1748
 msgid "8"
 msgstr "8"
 
-#: gettingstarted.html:1654
+#: gettingstarted.html:1750
 msgid "Half top."
 msgstr "Metade superior."
 
-#: gettingstarted.html:1662
+#: gettingstarted.html:1758
 msgid "6"
 msgstr "6"
 
-#: gettingstarted.html:1664
+#: gettingstarted.html:1760
 msgid "Half right."
 msgstr "Metade direita."
 
-#: gettingstarted.html:1674
+#: gettingstarted.html:1770
 msgid "Half bottom."
 msgstr "Metade inferior"
 
-#: gettingstarted.html:1684
+#: gettingstarted.html:1780
 msgid "Half left."
 msgstr "Metade esqueda."
 
-#: gettingstarted.html:1692
+#: gettingstarted.html:1788
 msgid "5"
 msgstr "5"
 
-#: gettingstarted.html:1694
+#: gettingstarted.html:1790
 msgid "Toggle maximize."
 msgstr "Alternar maximizar."
 
-#: gettingstarted.html:1703
+#: gettingstarted.html:1799
 msgid "Update shortcuts in the Settings App"
 msgstr "Atualizar atalhos no aplicativo Configurações"
 
-#: gettingstarted.html:1725
+#: gettingstarted.html:1821
 msgid ""
 "Your machine is made up of various components that interact with one "
 "another. This information is useful when providing support to ensure "
@@ -1803,133 +1897,133 @@ msgstr ""
 "outros. Essas informações são úteis ao fornecer suporte para garantir que o "
 "hardware e o software funcionem em sua máquina."
 
-#: gettingstarted.html:1733
+#: gettingstarted.html:1829
 msgid "Gathering Information.."
 msgstr "Juntando informações.."
 
-#: gettingstarted.html:1742
+#: gettingstarted.html:1838
 msgid "System"
 msgstr "Sistema"
 
-#: gettingstarted.html:1745
+#: gettingstarted.html:1841
 msgid "Distribution:"
 msgstr "Distribuição:"
 
-#: gettingstarted.html:1749
+#: gettingstarted.html:1845
 msgid "Kernel:"
 msgstr "Kernel:"
 
-#: gettingstarted.html:1753
+#: gettingstarted.html:1849
 msgid "The Linux kernel is the heart of Ubuntu."
 msgstr "O kernel Linux é o coração do Ubuntu."
 
-#: gettingstarted.html:1759
+#: gettingstarted.html:1855
 msgid "Motherboard:"
 msgstr "Placa mãe:"
 
-#: gettingstarted.html:1763
+#: gettingstarted.html:1859
 msgid "Boot Mode:"
 msgstr "Modo de inicialização:"
 
-#: gettingstarted.html:1767
+#: gettingstarted.html:1863
 msgid "Displays the mode that OS is communicating with the firmware."
 msgstr "Exibe o modo em que o SO está se comunicando com o firmware."
 
-#: gettingstarted.html:1775
+#: gettingstarted.html:1871
 msgid "Processor"
 msgstr "Processador"
 
-#: gettingstarted.html:1778
+#: gettingstarted.html:1874
 msgid "Model:"
 msgstr "Modelo:"
 
-#: gettingstarted.html:1782
+#: gettingstarted.html:1878
 msgid "Speed:"
 msgstr "Velocidade:"
 
-#: gettingstarted.html:1786
+#: gettingstarted.html:1882
 msgid "Architecture in use:"
 msgstr "Arquitetura em uso:"
 
-#: gettingstarted.html:1790
+#: gettingstarted.html:1886
 msgid ""
 "The operating system's architecture in use. For instance, i386 = 32-bit."
 msgstr ""
 "A arquitetura do sistema operacional em uso. Por exemplo, i386 = 32-bit."
 
-#: gettingstarted.html:1798
+#: gettingstarted.html:1894
 msgid "Components"
 msgstr "Componentes"
 
-#: gettingstarted.html:1801
+#: gettingstarted.html:1897
 msgid "Memory (RAM):"
 msgstr "Memória (RAM):"
 
-#: gettingstarted.html:1805
+#: gettingstarted.html:1901
 msgid "More RAM allows more applications to run simultaneously."
 msgstr ""
 "Mais RAM permite que mais aplicativos sejam executados simultaneamente."
 
-#: gettingstarted.html:1811
+#: gettingstarted.html:1907
 msgid "Graphics:"
 msgstr "Gráficos:"
 
-#: gettingstarted.html:1815
+#: gettingstarted.html:1911
 msgid "Internet Access:"
 msgstr "Acesso à Internet:"
 
-#: gettingstarted.html:1818
+#: gettingstarted.html:1914
 msgid "Connected"
 msgstr "Conectado"
 
-#: gettingstarted.html:1819
+#: gettingstarted.html:1915
 msgid "Not Connected"
 msgstr "Não Conectado"
 
-#: gettingstarted.html:1827
+#: gettingstarted.html:1923
 msgid "Storage"
 msgstr "Armazenamento"
 
-#: gettingstarted.html:1831
+#: gettingstarted.html:1927
 msgid "Root File System:"
 msgstr "Sistema de Arquivos Raiz:"
 
-#: gettingstarted.html:1835
+#: gettingstarted.html:1931
 msgid "The file system where OS is installed."
 msgstr "O sistema de arquivos onde o SO está instalado."
 
-#: gettingstarted.html:1841
+#: gettingstarted.html:1937
 msgid "Entire Disk Capacity:"
 msgstr "Capacidade Total do Disco:"
 
-#: gettingstarted.html:1847
+#: gettingstarted.html:1943
 msgid "OS Usage"
 msgstr "Uso do SO"
 
-#: gettingstarted.html:1852
+#: gettingstarted.html:1948
 msgid "Other Usage"
 msgstr "Outro Uso"
 
-#: gettingstarted.html:1857
+#: gettingstarted.html:1953
 msgid "Allocated for Ubuntu Budgie:"
 msgstr "Atribuído ao Ubuntu Budgie:"
 
-#: gettingstarted.html:1861
+#: gettingstarted.html:1957
 msgid "The size of your operating system partition."
 msgstr "O tamanho da partição do sistema operacional."
 
-#: gettingstarted.html:1868
+#: gettingstarted.html:1964
 msgid "Used Space:"
 msgstr "Espaço Usado:"
 
-#: gettingstarted.html:1876
+#: gettingstarted.html:1972
 msgid "Free Space:"
 msgstr "Espaço Livre:"
 
-#: gettingstarted.html:1884
+#: gettingstarted.html:1980
 msgid "Other Usage:"
 msgstr "Outro Uso:"
 
-#: gettingstarted.html:1889
+#: gettingstarted.html:1985
 msgid "Reserved by system, other partitions, unallocated or swap."
 msgstr "Reservado pelo sistema, outras partições, não alocado ou swap."
