@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Ubuntu Budgie Welcome - Astro version
 
 
@@ -37,7 +36,7 @@ All commands are run from the root of the project, from a terminal:
 
 ## 👀 Want to learn more?
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Feel free to check Astro Documentation (https://docs.astro.build) or jump into their [Discord server](https://astro.build/chat).
 =======
 Budgie Welcome
 ==============
@@ -55,37 +54,7 @@ help-out - visit:
 
 https://www.transifex.com/ubuntu-budgie/budgie-welcome/
 
-### Installation
 
-```sh
-sudo apt install gir1.2-webkit2-4.1 python3-notify2 node-uglify sassc
-git clone https://github.com/UbuntuBudgie/budgie-welcome.git
-
-cd budgie-welcome
-
-uglifyjs -o data/js/bootstrap.min.js data/js/bootstrap.js
-uglifyjs -o data/js/baguetteBox.min.js data/js/baguetteBox.js
-uglifyjs -o data/js/popper.min.js data/js/popper.js
-
-bash sassc-compile.sh
-```
-
-### Testing
-
-```sh
-cd budgie-welcome
-./budgie-welcome -d
-```
-
-To test the live session
-
-    ./budgie-welcome --force-session=live -d
-    
-To test a language or locale
-
-    ./budgie-welcome --locale=pl
-    
-change "pl" to your language i18n shortcode
 
 ### Screenshot
 #### Live session
