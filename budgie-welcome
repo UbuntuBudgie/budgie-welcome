@@ -2451,7 +2451,8 @@ class Translations(object):
 
         self.pages_dir = self.get_pages_path()
         # Should this locale not exist, try a non-specific region. (e.g. "en_GB" → "en")
-        if self.pages_dir == data_path:
+        if self.localized == False:
+            dbg.stdout("i18n", "not a localized path", 2, 2)
             self.localized = False
             self.locale = self.locale.split("_")[0]
             self.pages_dir = self.get_pages_path()
