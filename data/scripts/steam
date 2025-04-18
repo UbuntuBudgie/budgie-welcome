@@ -1,4 +1,9 @@
 #!/bin/sh
 
 wget https://steamcdn-a.akamaihd.net/client/installer/steam.deb -O /tmp/steam.deb
-gnome-software --local-filename=/tmp/steam.deb &
+if command -v gnome-software 2>&1 > /dev/null
+then
+    gnome-software --local-filename=/tmp/steam.deb &
+else
+    xdg-open /tmp/steam.deb &
+fi
