@@ -165,9 +165,6 @@ class AppView(WebKit2.WebView):
             else:
                 app.update_page('#autostart', 'html', '&#xE836;')
 
-            app.run_javascript(
-                '$("#wordmark").attr("src","' + translations.res_dir + 'img/welcome/' + systemstate.distro_wordmark + '");')
-
         if current_page == 'default':
             systemstate.first_run = False
             if self.back_signal_handler:

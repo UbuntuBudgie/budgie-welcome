@@ -4,13 +4,14 @@
 # Jacob Vlijm <vlijm@planet.nl>, 2019
 # F Ratering <franck.ratering@gmail.com>, 2023
 # Machiel Heinen, 2023
+# Stephan Paternotte <stephan@paternottes.net>, 2025
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: Budgie Welcome\n"
 "POT-Creation-Date: 2016-02-27 12:48+0100\n"
 "PO-Revision-Date: 2017-03-15 13:49+0000\n"
-"Last-Translator: Machiel Heinen, 2023\n"
+"Last-Translator: Stephan Paternotte <stephan@paternottes.net>, 2025\n"
 "Language-Team: Dutch (Netherlands) (https://app.transifex.com/ubuntu-budgie/teams/72251/nl_NL/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -53,7 +54,7 @@ msgstr "Browser kiezen"
 
 #: gettingstarted.html:47
 msgid "Email Ballot"
-msgstr ""
+msgstr "Stemming verzenden"
 
 #: gettingstarted.html51, 855, 1810
 msgid "Customization"
@@ -104,6 +105,9 @@ msgid ""
 "Ubuntu Budgie works well on both high-end to older computers, optimized to "
 "be functional, while light on system resources."
 msgstr ""
+"Ubuntu Budgie werkt goed op zowel high-end als oudere computers, en is "
+"geoptimaliseerd voor functionaliteit, terwijl het weinig systeembronnen "
+"verbruikt."
 
 #: gettingstarted.html:96
 msgid "Minimum"
@@ -119,15 +123,15 @@ msgstr "2 gigabytes (Gb) RAM"
 
 #: gettingstarted.html:100
 msgid "32 gigabytes (GB) of disk space"
-msgstr ""
+msgstr "32 gigabytes (GB) schijfruimte"
 
 #: gettingstarted.html102, 113
 msgid "Raspberry Pi4B"
-msgstr ""
+msgstr "Raspberry Pi4B"
 
 #: gettingstarted.html:104
 msgid "32 gigabytes (GB) SD Card"
-msgstr ""
+msgstr "32 gigabytes (GB) SD Card"
 
 #: gettingstarted.html:107
 msgid "Recommended"
@@ -135,7 +139,7 @@ msgstr "Aanbevolen"
 
 #: gettingstarted.html:109
 msgid "Pentium i5 - approximately created in 2017"
-msgstr ""
+msgstr "Pentium i5 - zo ongeveer uit 2017"
 
 #: gettingstarted.html110, 114
 msgid "4 gigabytes (GB) of RAM"
@@ -143,11 +147,11 @@ msgstr "4 gigabyte (Gb) RAM"
 
 #: gettingstarted.html:111
 msgid "60 gigabytes (GB) of disk space"
-msgstr ""
+msgstr "60 gigabytes (GB) schijfruimte"
 
 #: gettingstarted.html:115
 msgid "60 gigabytes (GB) SSD"
-msgstr ""
+msgstr "60 gigabytes (GB) SSD"
 
 #: gettingstarted.html:118
 msgid ""
@@ -177,6 +181,11 @@ msgid ""
 "Microsoft Windows or another <span class=\"fa fa-linux\"></span> GNU/Linux "
 "distribution."
 msgstr ""
+"Ubuntu Budgie is relatief eenvoudig in te stellen, of u nu uw bestaande "
+"besturingssysteem wilt vervangen of Ubuntu Budgie naast een bestaand "
+"besturingssysteem wilt installeren, zoals &nbsp;<span class=\"fa fa-"
+"windows\"></span> Microsoft Windows of een andere <span class=\"fa fa-"
+"linux\"></span> GNU/Linux distributie."
 
 #: gettingstarted.html:146
 msgid "For the best results:"
@@ -215,6 +224,11 @@ msgid ""
 " it on your machine. Once you are ready, double click the installation icon "
 "from the desktop."
 msgstr ""
+"De live-sessie waarin u zich momenteel bevindt, is een goede gelegenheid om "
+"Ubuntu Budgie te testen zonder uw computer aan te passen, zodat u kunt "
+"testen of al uw randapparatuur werkt zoals bedoeld voordat u zich ertoe "
+"verbindt deze op uw computer te installeren. Als u klaar bent, kunt het "
+"installatiepictogram starten vanaf het bureaublad."
 
 #: gettingstarted.html:164
 msgid "Modern UEFI-based computers"
@@ -303,6 +317,9 @@ msgid ""
 "system, your partitions need to be shrunk. This results in sections of your "
 "hard disk being split between multiple operating systems."
 msgstr ""
+"Als u Ubuntu Budgie naast uw bestaande besturingssysteem wilt installeren, "
+"moeten uw partities worden verkleind. Dit leidt ertoe dat delen van uw harde"
+" schijf worden verdeeld over meerdere besturingssystemen."
 
 #: gettingstarted.html:221
 msgid "I'm dual booting with"
@@ -413,6 +430,12 @@ msgid ""
 "power users who know how they'd like to layout their disks. This method "
 "makes changes to partitions prior to installation."
 msgstr ""
+"<b>GParted</b> is alleen beschikbaar tijdens de live sessie. Het is te "
+"vinden in het menu <b>Systeemtools <i class=\"material-"
+"icons\">&#xE315;</i></b>. GParted biedt volledige flexibiliteit over uw "
+"partities, voornamelijk voor ervaren gebruikers die weten hoe ze hun "
+"schijven willen opmaken. Met deze methode worden wijzigingen aangebracht in "
+"partities voorafgaand aan de installatie."
 
 #: gettingstarted.html:290
 msgid "Open GParted"
@@ -424,6 +447,9 @@ msgid ""
 "unallocated, whereby the installer will detect this unused space to install "
 "Ubuntu Budgie to."
 msgstr ""
+"Nadat u de bewerkingen op uw schijf hebt voltooid, kunt u de resterende "
+"ruimte niet toegewezen laten, waarbij het installatieprogramma deze "
+"ongebruikte ruimte zal detecteren om Ubuntu Budgie op te installeren."
 
 #: gettingstarted.html:297
 msgid "Using the Installer's \"Custom\" option."
@@ -437,9 +463,10 @@ msgid ""
 "install the operating system later if desired."
 msgstr ""
 "In de plaats van of in aanvulling op GParted, kan de optie <b>Aangepast</b> "
-"tijdens de installatiewizard uw partities configureren en van grootte "
-"veranderen en mountpunten kiezen. Door de schijven te verdelen kan het wat "
-"eenvoudiger worden om het besturingssysteem later opnieuw te installeren."
+"tijdens de installatie-assistent ook uw partities configureren en vergroten "
+"of verkleinen en koppelpunten kiezen. Het verdelen van uw schijven kan het "
+"iets gemakkelijker maken om het besturingssysteem desgewenst later opnieuw "
+"te installeren."
 
 #: gettingstarted.html:303
 msgid "You can specify these mount points:"
@@ -447,7 +474,7 @@ msgstr "Deze mountpunten zijn beschikbaar:"
 
 #: gettingstarted.html:305
 msgid "The base for Ubuntu Budgie"
-msgstr ""
+msgstr "De basis voor Ubuntu Budgie"
 
 #: gettingstarted.html:306
 msgid "Bootloader and kernels"
@@ -526,6 +553,10 @@ msgid ""
 "within Windows. This is a safer bet if it's essential that Windows still "
 "boots on your computer while experiencing Ubuntu Budgie."
 msgstr ""
+"Nieuwere versies van Windows bieden een hulpmiddel om het NTFS-volume vanuit"
+" Windows te verkleinen. Dit is een veiligere manier als het essentieel is "
+"dat Windows nog steeds op uw computer opstart tijdens het uittesten van "
+"Ubuntu Budgie."
 
 #: gettingstarted.html:340
 msgid "Open <b>Disk Management</b> from the start menu."
@@ -546,6 +577,7 @@ msgstr "Voer het bedrag in waarmee u uw systeempartitie wilt verkleinen."
 #: gettingstarted.html:357
 msgid "Remember, Ubuntu Budgie needs at minimum 32 GB of disk space."
 msgstr ""
+"Vergeet niet dat Ubuntu Budgie minimaal 32 GB schijfruimte nodig heeft."
 
 #: gettingstarted.html:362
 msgid "Further Reading"
@@ -575,6 +607,11 @@ msgid ""
 "will overwrite them, with the potential to lose access to Ubuntu Budgie "
 "temporarily."
 msgstr ""
+"Linux-distributies gebruiken een bootloader genaamd <code>grub</code>, die "
+"het besturingssysteem zoekt en opstart. Sommige besturingssystemen (zoals "
+"Windows) integreren echter niet met bestaande bootloaders en zullen deze "
+"overschrijven, met het risico om tijdelijk de toegang tot Ubuntu Budgie te "
+"verliezen."
 
 #: gettingstarted.html:379
 msgid ""
@@ -625,12 +662,17 @@ msgid ""
 "updates are available for your computer. If you have just installed Ubuntu "
 "Budgie, you might want to do this now."
 msgstr ""
+"Ubuntu Budgie controleert regelmatig of er nieuwe software en "
+"beveiligingsupdates beschikbaar zijn voor je computer. Als je Ubuntu Budgie "
+"net hebt geïnstalleerd, wil je dit misschien nu doen."
 
 #: gettingstarted.html:432
 msgid ""
 "<b>Software Updater</b> can be found later in the menu <strong>System "
 "Tools</strong>"
 msgstr ""
+"<b>Software Updater</b> is later terug te vinden in het menu "
+"<strong>Systeemtools</strong>"
 
 #: gettingstarted.html:439
 msgid "Check for Updates"
@@ -647,6 +689,11 @@ msgid ""
 "automatically. However patent and copyright restrictions (see Ubuntu License"
 " Policy) complicate distribution of software to support non-free formats."
 msgstr ""
+"<strong>Ubuntu</strong> (de basisdistributie van Ubuntu Budgie) streeft "
+"ernaar om alle belangrijke software automatisch beschikbaar te maken voor "
+"zijn gebruikers. Patent- en auteursrechtbeperkingen (zie Ubuntu-"
+"licentiebeleid) bemoeilijken echter de distributie van software om niet-"
+"vrije formaten te ondersteunen."
 
 #: gettingstarted.html:459
 msgid ""
@@ -708,6 +755,11 @@ msgid ""
 " properly. Installing the firmware package is often required to get some "
 "devices, typically Bluetooth and Wi-Fi, to work correctly."
 msgstr ""
+"Hoewel een breed scala aan hardware compatibel is met Ubuntu Budgie, is er "
+"een aantal componenten en randapparatuur waarvoor specifieke "
+"stuurprogramma's nodig zijn om goed te functioneren. Het installeren van het"
+" firmwarepakket is vaak nodig om sommige apparaten, zoals Bluetooth en Wi-"
+"Fi, correct te laten werken."
 
 #: gettingstarted.html:510
 msgid "An Internet connection is required to download and install drivers."
@@ -721,6 +773,8 @@ msgstr "Additionele drivers"
 #: gettingstarted.html:520
 msgid "<b>Additional Drivers</b> can be found later in <b>System Tools</b>"
 msgstr ""
+"<b>Aanvullende stuurprogramma's</b> zijn later terug te vinden in "
+"<b>Systeemtools</b>"
 
 #: gettingstarted.html:528
 msgid "Graphics"
@@ -969,6 +1023,9 @@ msgid ""
 "keyboard entry layouts. IBus(Intelligent Input Bus) and Fcitx(Free Chinese "
 "Input Toy for X)."
 msgstr ""
+"In Ubuntu Budgie bieden we een optie om te schakelen tussen twee "
+"veelgebruikte toetsenbordinvoerlay-outs. IBus (Intelligent Input Bus) en "
+"fcitx (Free Chinese Input Toy for X)."
 
 #: gettingstarted.html:682
 msgid "Install & Configure IBus"
@@ -1002,6 +1059,8 @@ msgstr ""
 msgid ""
 "<b>Language Support</b> can be found later in the menu <b>System Tools</b>"
 msgstr ""
+"<b>Ondersteuning voor talen</b> is later terug te vinden in "
+"<b>Systeemtools</b>"
 
 #: gettingstarted.html:727
 msgid "Complex Input"
@@ -1025,7 +1084,7 @@ msgstr "Koreaans"
 
 #: gettingstarted.html:779
 msgid "Flatpak, Dropbox and User Management"
-msgstr ""
+msgstr "Flatpak, Dropbox en Gebruikersbeheer"
 
 #: gettingstarted.html:789
 msgid "Flatpak"
@@ -1038,6 +1097,10 @@ msgid ""
 " distributions. Please note that Flatpak applications are not part of the "
 "core Ubuntu experience."
 msgstr ""
+"<strong>Flatpak</strong> is een framework voor de distributie van nieuwe "
+"generatie applicaties. Het introduceert een uniform verpakkingsformaat voor "
+"verschillende GNU/Linux-distributies. Houd er rekening mee dat Flatpak-"
+"applicaties geen deel uitmaken van de kernervaring van Ubuntu."
 
 #: gettingstarted.html:793
 msgid "Learn more"
@@ -1049,21 +1112,23 @@ msgstr "Installeer & Configureer Flatpak"
 
 #: gettingstarted.html:799
 msgid "Flatpak is installed."
-msgstr ""
+msgstr "Flatpak is geïnstalleerd."
 
 #: gettingstarted.html:800
 msgid "Please reboot for the service to start."
-msgstr ""
+msgstr "Start opnieuw op om de service te starten."
 
 #: gettingstarted.html:811
 msgid "Dropbox"
-msgstr ""
+msgstr "Dropbox"
 
 #: gettingstarted.html:812
 msgid ""
 "<strong>Dropbox</strong> is a popular proprietary file sharing and storage "
 "solution."
 msgstr ""
+"<strong>Dropbox</strong> is een populaire eigen oplossing voor het delen en "
+"opslaan van bestanden."
 
 #: gettingstarted.html:816
 msgid "Install & Configure Dropbox"
@@ -1071,7 +1136,7 @@ msgstr "Installeer & Configureer Dropbox"
 
 #: gettingstarted.html:817
 msgid "Dropbox is installed."
-msgstr ""
+msgstr "Dropbox is geïnstalleerd."
 
 #: gettingstarted.html:818
 msgid ""
@@ -1111,12 +1176,16 @@ msgstr "Configureer gebruikers"
 msgid ""
 "<b>Users</b> can be found later in the menu by typing<i> Users</i></b>."
 msgstr ""
+"<b>Gebruikers</b> zijn later terug te vinden in het menu door<i> "
+"Gebruikers</i> te typen</b>."
 
 #: gettingstarted.html:861
 msgid ""
 "To improve the amount of customizability, Ubuntu Budgie allows you to "
 "install/remove popular web browsers."
 msgstr ""
+"Ter verbetering van de aanpasbaarheid, maakt Ubuntu Budgie het mogelijk om "
+"populaire webbrowsers te installeren of te verwijderen."
 
 #: gettingstarted.html:866
 msgid "Firefox"
@@ -1128,18 +1197,21 @@ msgid ""
 "Mozilla Foundation - a not for profit organization. It is highly popular "
 "targeting multiple platforms."
 msgstr ""
+"Mozilla Firefox is een gratis en open-source webbrowser, ontwikkeld door de "
+"Mozilla Foundation - een non-profit organisatie. Het is erg populair en "
+"richt zich op meerdere platforms."
 
 #: gettingstarted.html874, 921, 960, 985, 1005, 1025, 1049
 msgid "Snap Install"
-msgstr ""
+msgstr "Snap installeren"
 
 #: gettingstarted.html877, 924, 1052
 msgid "Snap Remove"
-msgstr ""
+msgstr "Snap verwijderen"
 
 #: gettingstarted.html:885
 msgid "Firefox ESR"
-msgstr ""
+msgstr "Firefox ESR"
 
 #: gettingstarted.html:887
 msgid ""
@@ -1147,6 +1219,9 @@ msgid ""
 "Mozilla Foundation - a not for profit organization. This is the Extended "
 "Support Release browser for comprehensive data security and data protection."
 msgstr ""
+"Mozilla Firefox is een gratis en open-source webbrowser, ontwikkeld door de "
+"Mozilla Foundation - een non-profit organisatie. Dit is de Extended Support "
+"Release-browser voor uitgebreide gegevensbeveiliging en gegevensbescherming."
 
 #: gettingstarted.html:902
 msgid ""
@@ -1155,12 +1230,19 @@ msgid ""
 "release browser made available directly by Mozilla thru their own "
 "repository."
 msgstr ""
+"Mozilla Firefox is een gratis en open-source webbrowser, ontwikkeld door de "
+"Mozilla Foundation - een non-profit organisatie. Dit is de stabiele release-"
+"browser die rechtstreeks door Mozilla beschikbaar wordt gesteld via hun "
+"eigen opslagplaats."
 
 #: gettingstarted.html:910
 msgid ""
 "Click Remove first to uninstall the current firefox package, followed by "
 "Install to add the Mozilla repository and package."
 msgstr ""
+"Klik eerst op Verwijderen om het huidige firefox-pakket te verwijderen, "
+"gevolgd door Installeren om de Mozilla-opslagplaats en het pakket toe te "
+"voegen."
 
 #: gettingstarted.html:918
 msgid ""
@@ -1183,13 +1265,15 @@ msgstr ""
 
 #: gettingstarted.html936, 943, 951
 msgid "Downloads Page"
-msgstr ""
+msgstr "Downloads-pagina"
 
 #: gettingstarted.html:941
 msgid ""
 "Microsoft Edge is a cross-platform web browser created and developed by "
 "Microsoft. It is a Chromium based browser."
 msgstr ""
+"Microsoft Edge is een platformonafhankelijke webbrowser die is gemaakt en "
+"ontwikkeld door Microsoft. Deze browser is gebaseerd op Chromium."
 
 #: gettingstarted.html:948
 msgid ""
@@ -1211,6 +1295,7 @@ msgstr ""
 #: gettingstarted.html:973
 msgid "A browser that blocks tracking and intrusive ads by default."
 msgstr ""
+"Een browser die standaard tracking en opdringerige advertenties blokkeert."
 
 #: gettingstarted.html:998
 msgid ""
@@ -1219,6 +1304,11 @@ msgid ""
 "machines with a core temperature exceeding that of planet earth. And it "
 "looks good doing that, too. Oh, and of course it's free software."
 msgstr ""
+"Midori is een krachtige, lichtgewicht webbrowser die net zo goed draait op "
+"kleine embedded computers die zijn vernoemd naar heerlijk gebak als op "
+"stevige machines met een kerntemperatuur die hoger is dan die van planeet "
+"aarde. En daarbij ziet het er ook goed uit. Oh, en natuurlijk is het gratis "
+"software."
 
 #: gettingstarted.html:1018
 msgid ""
@@ -1228,16 +1318,23 @@ msgid ""
 "this is the browser for you. GNOME Web is often referred to by its code "
 "name, Epiphany."
 msgstr ""
+"De webbrowser voor GNOME, met nauwe integratie met het bureaublad en een "
+"eenvoudige en intuïtieve gebruikersinterface waarmee u zich kunt "
+"concentreren op uw webpagina's. Als u op zoek bent naar een eenvoudige, "
+"schone en mooie weergave van het web, dan is dit de browser voor u. GNOME "
+"Web wordt vaak aangeduid met de codenaam, Epiphany."
 
 #: gettingstarted.html:1038
 msgid ""
 "To improve the amount of customizability, Ubuntu Budgie allows you to "
 "install/remove popular email clients."
 msgstr ""
+"Ter verbetering van de aanpasbaarheid, maakt Ubuntu Budgie het mogelijk om "
+"populaire e-mailclients te installeren of te verwijderen."
 
 #: gettingstarted.html:1043
 msgid "Thunderbird"
-msgstr ""
+msgstr "Thunderbird"
 
 #: gettingstarted.html:1045
 msgid ""
@@ -1245,30 +1342,37 @@ msgid ""
 "and organize the way you like. Manage all accounts separately or in a "
 "unified inbox. Thunderbird simply makes your life simpler."
 msgstr ""
+"Toegang tot al je berichten, agenda's en contacten in één snelle app. Filter"
+" en organiseer naar wens. Beheer alle accounts afzonderlijk of in een "
+"uniforme inbox. Thunderbird maakt het leven gemakkelijk."
 
 #: gettingstarted.html:1060
 msgid "Evolution"
-msgstr ""
+msgstr "Evolution"
 
 #: gettingstarted.html:1062
 msgid ""
 "Evolution is a personal information management application that provides "
 "integrated mail, calendaring and address book functionality."
 msgstr ""
+"Evolution is een applicatie voor het beheer van persoonlijke informatie met "
+"geïntegreerde e-mail-, agenda- en adresboekfunctionaliteit."
 
 #: gettingstarted.html:1074
 msgid "Geary"
-msgstr ""
+msgstr "Geary"
 
 #: gettingstarted.html:1076
 msgid ""
 "Geary is an email application built around conversations for the GNOME "
 "desktop."
 msgstr ""
+"Geary is een e-mailtoepassing die is gebouwd rond gesprekken voor de GNOME-"
+"desktop."
 
 #: gettingstarted.html:1088
 msgid "Kontact"
-msgstr ""
+msgstr "Kontact"
 
 #: gettingstarted.html:1090
 msgid ""
@@ -1277,10 +1381,14 @@ msgid ""
 "communications, organize your day and work with your colleagues. Become more"
 " productive with Kontact."
 msgstr ""
+"Behandel je e-mail, agenda, contacten en andere persoonsgegevens met "
+"Kontact. Kontact groepeert alles op één plek en helpt je bij het beheren van"
+" je communicatie, het organiseren van je dag en het samenwerken met je "
+"collega's. Word productiever met Kontact."
 
 #: gettingstarted.html:1102
 msgid "Astroid"
-msgstr ""
+msgstr "Astroid"
 
 #: gettingstarted.html:1104
 msgid ""
@@ -1290,10 +1398,16 @@ msgid ""
 "tons of email. Astroid searches, displays and compose emails — and relies on"
 " other programs for fetching, syncing and sending email."
 msgstr ""
+"Astroid is een snelle, lichtgewicht Mail User Agent die een grafische "
+"interface biedt voor het zoeken, weergeven en opstellen van e-mail, "
+"georganiseerd in gesprekken en labels. Astroid gebruikt de notmuch backend "
+"voor razendsnelle zoekopdrachten door tonnen e-mail. Astroïde zoekt, toont "
+"en stelt e-mails op - en vertrouwt op andere programma's voor het ophalen, "
+"synchroniseren en verzenden van e-mail."
 
 #: gettingstarted.html:1116
 msgid "Claws-Mail"
-msgstr ""
+msgstr "Claws-Mail"
 
 #: gettingstarted.html:1118
 msgid ""
@@ -1302,6 +1416,10 @@ msgid ""
 "intuitive operation, abundant features, extensibility, robustness and "
 "stability."
 msgstr ""
+"Claws Mail is een e-mailclient (en nieuwslezer), gebaseerd op GTK+, met een "
+"snelle reactie, een sierlijke en geavanceerde interface, eenvoudige "
+"configuratie, intuïtieve bediening, een overvloed aan functies, "
+"uitbreidbaarheid, robuustheid en stabiliteit."
 
 #: gettingstarted.html:1135
 msgid "User Interface"
@@ -1313,6 +1431,10 @@ msgid ""
 " be used to quickly setup the user interface to broadly reflect how other "
 "popular operating systems look and feel."
 msgstr ""
+"Ubuntu Budgie biedt een unieke tool om de gebruikersinterface te "
+"transformeren. Het kan worden gebruikt om snel de gebruikersinterface in te "
+"stellen om in grote lijnen weer te geven hoe andere populaire "
+"besturingssystemen eruitzien en aanvoelen."
 
 #: gettingstarted.html:1143
 msgid "Budgie Desktop Settings"
@@ -1328,31 +1450,39 @@ msgstr ""
 
 #: gettingstarted.html1154, 1159
 msgid "Budgie Control Center"
-msgstr ""
+msgstr "Budgie Controlecentrum"
 
 #: gettingstarted.html:1155
 msgid ""
 "You can configure just about every aspect of your computer from Budgie "
 "Control Center."
 msgstr ""
+"Je kunt vrijwel elk aspect van je computer configureren vanuit Budgie "
+"Controlecentrum."
 
 #: gettingstarted.html:1164
 msgid ""
 "<b>Budgie Control Center</b> can be found later in the menu <b>System "
 "Tools</b>."
 msgstr ""
+"<b>Budgie Controecentrum</b> is later terug te vinden in het menu "
+"<b>Systeemtools</b>."
 
 #: gettingstarted.html:1189
 msgid ""
 "Ubuntu Budgie has many keyboard shortcuts that help make using your computer"
 " more efficient."
 msgstr ""
+"Ubuntu Budgie heeft veel sneltoetsen die helpen het gebruik van je computer "
+"efficiënter te maken."
 
 #: gettingstarted.html:1193
 msgid ""
 "The <b><img src=\"img/welcome/super-key.svg\" /> Super</b> key is your "
 "Windows key. For Mac keyboards, this is the ⌘ Command key."
 msgstr ""
+"De <b><img src=\"img/welcome/super-key.svg\" /> Super</b> toets is de "
+"Windows-toets. Voor Mac-toetsenborden is dit de ⌘ Command-toets."
 
 #: gettingstarted.html:1196
 msgid "Budgie Desktop shortcuts"
@@ -1474,15 +1604,15 @@ msgstr "Open Applicatie menu"
 
 #: gettingstarted.html:1383
 msgid "Copy a screenshot of an area to clipboard"
-msgstr ""
+msgstr "Kopieer een schermopname van een gebied naar het klembord"
 
 #: gettingstarted.html:1391
 msgid "Save a screenshot of an area to the Pictures directory"
-msgstr ""
+msgstr "Sla een schermopname van een gebied op in de map Afbeeldingen"
 
 #: gettingstarted.html:1399
 msgid "Copy a screenshot of a window to clipboard"
-msgstr ""
+msgstr "Kopieer een schermopname van een venster naar het klembord"
 
 #: gettingstarted.html1403, 1417, 1427, 1446, 1460, 1474, 1491, 1501, 1511,
 #: 1523, 1532, 1584, 1592, 1600, 1635, 1706, 1716, 1726, 1736, 1746, 1756,
@@ -1492,11 +1622,11 @@ msgstr "Alt"
 
 #: gettingstarted.html:1407
 msgid "Save a screenshot of a window to the Pictures directory"
-msgstr ""
+msgstr "Sla een schermopname van een venster op in de map Afbeeldingen"
 
 #: gettingstarted.html:1413
 msgid "Save a screenshot to the Pictures directory"
-msgstr ""
+msgstr "Sla een schermopname op in de map Afbeeldingen"
 
 #: gettingstarted.html:1421
 msgid "Run an application by typing its name in the box which appears"
@@ -1522,7 +1652,7 @@ msgstr "Open een terminal."
 
 #: gettingstarted.html:1454
 msgid "Window shortcuts - general"
-msgstr ""
+msgstr "Sneltoetsen voor vensters - algemeen"
 
 #: gettingstarted.html:1464
 msgid "Call Window Shuffler gui (window tiling grid)."
