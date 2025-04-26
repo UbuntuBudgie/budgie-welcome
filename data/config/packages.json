@@ -1646,7 +1646,8 @@
 				]
 			},
 			"key-commands": [
-				"sudo dpkg --add-architecture i386"
+				"sudo dpkg --add-architecture i386",
+				"sudo apt update"
 			]
 		},
 		"steam": {
