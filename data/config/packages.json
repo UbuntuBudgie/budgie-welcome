@@ -1638,7 +1638,8 @@
 	"gaming": {
 		"lutris": {
 			"packages": [
-				"lutris"
+				"lutris",
+				"icoextract-thumbnailer"
 			],
 			"repos": {
 				"all": [
@@ -1648,6 +1649,12 @@
 			"key-commands": [
 				"sudo dpkg --add-architecture i386",
 				"sudo apt update"
+			],
+			"removekey-commands": [
+				"sudo apt autoremove lutris -y",
+				"sudo apt autoremove icoextract-thumbnailer -y",
+				"rm -r /home/*/.local/share/lutris",
+				"rm -r /home/*/.cache/lutris"
 			]
 		},
 		"steam": {
@@ -1661,6 +1668,12 @@
 			},
 			"key-commands": [
 				"sudo dpkg --add-architecture i386"
+			],
+			"removekey-commands": [
+				"sudo apt autoremove steam:i386 -y",
+				"rm -r /home/*/.steam",
+				"rm /home/*/.steampath",
+				"rm /home/*/.steampid"
 			]
 		},
 		"retroarch": {
