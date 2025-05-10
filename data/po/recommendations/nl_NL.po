@@ -1,15 +1,16 @@
 # 
 # Translators:
-# Machiel Heinen, 2023
+# F Ratering <franck.ratering@gmail.com>, 2018
 # Ronald van Zuijlen, 2023
-# F Ratering <franck.ratering@gmail.com>, 2023
+# Machiel Heinen, 2023
+# Stephan Paternotte <stephan@paternottes.net>, 2025
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: Budgie Welcome\n"
 "POT-Creation-Date: 2016-02-27 12:48+0100\n"
 "PO-Revision-Date: 2017-03-22 21:33+0000\n"
-"Last-Translator: F Ratering <franck.ratering@gmail.com>, 2023\n"
+"Last-Translator: Stephan Paternotte <stephan@paternottes.net>, 2025\n"
 "Language-Team: Dutch (Netherlands) (https://app.transifex.com/ubuntu-budgie/teams/72251/nl_NL/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -32,6 +33,9 @@ msgid ""
 "associated packages, we recommend to enable the Ubuntu Budgie backports "
 "repository."
 msgstr ""
+"Om de meest up-to-date versies van budgie-desktop en andere bijbehorende "
+"pakketten te bieden, raden we aan om de Ubuntu Budgie-backportsrepository in"
+" te schakelen."
 
 #: recommendations.html:27
 msgid "Repository is installed"
@@ -39,7 +43,7 @@ msgstr "Repository is geïnstalleerd"
 
 #: recommendations.html:30
 msgid "Enable Ubuntu Budgie backports repository"
-msgstr ""
+msgstr "Ubuntu Budgie backports repository inschakelen"
 
 #: recommendations.html33, 48, 84, 121, 143, 168, 183, 198, 215, 236, 310
 msgid "Applying Changes..."
@@ -47,7 +51,7 @@ msgstr "Veranderingen worden toegepast..."
 
 #: recommendations.html:37
 msgid "Firmware Updater"
-msgstr ""
+msgstr "Firmware-updater"
 
 #: recommendations.html:39
 msgid ""
@@ -56,18 +60,23 @@ msgid ""
 "and software. For example, BIOS updates are issued directly to the hardware,"
 " writing the new information onto their memory chip."
 msgstr ""
+"Fabrikanten van componenten geven firmware-updates uit om "
+"stabiliteitsproblemen op te lossen en de prestaties van componenten te "
+"verbeteren met betrekking tot hun interactie met hardware en software. BIOS-"
+"updates worden bijvoorbeeld rechtstreeks naar de hardware gestuurd, waardoor"
+" de nieuwe informatie op hun geheugenchip wordt geschreven."
 
 #: recommendations.html:43
 msgid "Firmware Updater is installed"
-msgstr ""
+msgstr "Firmware-updater is geïnstalleerd"
 
 #: recommendations.html:46
 msgid "Install Firmware Updater"
-msgstr ""
+msgstr "Firmware-updater installeren"
 
 #: recommendations.html:52
 msgid "Backups"
-msgstr "Backups"
+msgstr "Back-ups"
 
 #: recommendations.html:57
 msgid ""
@@ -75,32 +84,37 @@ msgid ""
 " in Ubuntu Budgie and supports backups to local devices as well as online "
 "cloud-based services."
 msgstr ""
+"<strong>Deja-Dup</strong> is een krachtig back-upprogramma dat kan worden "
+"geïnstalleerd in Ubuntu Budgie en ondersteunt back-ups naar lokale apparaten"
+" en online cloudgebaseerde diensten."
 
 #: recommendations.html:61
 msgid ""
 "Nothing is more important than having a backup of your personal files, just "
 "in case something disastrous happens to your computer."
 msgstr ""
-"Niets is belangrijker dan een backup hebben van uw persoonlijke bestanden, "
-"in het geval dat er iets gebeurt met uw computer."
+"Niets is belangrijker dan een back-up van uw persoonlijke bestanden, voor "
+"het geval dat er iets gebeurt met uw computer."
 
 #: recommendations.html:69
 msgid "Configure Backup"
-msgstr "Configureer Back-up"
+msgstr "Back-up configureren"
 
 #: recommendations.html73, 110, 140, 165, 233
 msgid "Remove"
-msgstr "Verwijder"
+msgstr "Verwijderen"
 
 #: recommendations.html:76
 msgid ""
 "<b>Backups</b> can be found later in the menu <b>Utilities <i "
 "class=\"material-icons\">&#xE315;</i> Backups</b>."
 msgstr ""
+"<b>Back-ups</b> zijn later terug te vinden in het menu Hulpmiddelen <i "
+"class=\"material-icons\">&#xE315;</i> Back-ups</b>."
 
 #: recommendations.html:82
 msgid "Install Deja-Dup"
-msgstr ""
+msgstr "Deja-Dup installeren"
 
 #: recommendations.html:90
 msgid "Firewall"
@@ -112,52 +126,62 @@ msgid ""
 "(Uncomplicated Firewall). If security is important to you, there are more "
 "ways to stay secure."
 msgstr ""
+"<strong>Gufw</strong> biedt een grafische frontend voor <code>ufw</code> "
+"(Uncomplicated Firewall). Als beveiliging belangrijk voor u is, zijn er veel"
+" manieren om veilig te blijven."
 
 #: recommendations.html:98
 msgid "Click to learn more about security."
-msgstr ""
+msgstr "Klik hier voor meer informatie over beveiliging."
 
 #: recommendations.html:99
 msgid ""
 "Firewalls prevent malicious connections entering and leaving your computer. "
 "By default, the firewall is disabled."
 msgstr ""
+"Firewalls voorkomen dat kwaadwillende verbindingen uw computer binnenkomen "
+"en verlaten. Standaard is de firewall uitgeschakeld."
 
 #: recommendations.html:100
 msgid "Click to learn more about firewalls."
-msgstr ""
+msgstr "Klik hier voor meer informatie over firewalls."
 
 #: recommendations.html:106
 msgid "Configure Firewall"
-msgstr "Configureer Firewall"
+msgstr "Firewall configureren"
 
 #: recommendations.html:113
 msgid ""
 "Firewall Configuration</b> can be found later in the menu <b>System Tools<i "
 "class=\"material-icons\">&#xE315;</i> Firewall Configuration</i></b>."
 msgstr ""
+"Firewall-configuratie</b>kan later terug gevonden worden in het menu "
+"<b>Systeemtools<i class=\"material-icons\">&#xE315;</i> Firewall-"
+"configuratie</i></b>."
 
 #: recommendations.html:119
 msgid "Install Firewall"
-msgstr ""
+msgstr "Firewall installeren"
 
 #: recommendations.html:126
 msgid "ClamAV and ClamTK"
-msgstr ""
+msgstr "ClamAV en ClamTK"
 
 #: recommendations.html:131
 msgid ""
 "ClamTk is a frontend for ClamAV (Clam Antivirus). It is intended to be an "
 "easy to use, light-weight, on-demand scanner for Linux systems."
 msgstr ""
+"ClamTk is een frontend voor ClamAV (Clam Antivirus). Het is bedoeld als een "
+"gebruiksvriendelijke, lichtgewicht, on-demand scanner voor Linux-systemen."
 
 #: recommendations.html:137
 msgid "ClamAV is installed"
-msgstr ""
+msgstr "ClamAV is geïnstalleerd"
 
 #: recommendations.html:146
 msgid "Install & Configure ClamAV"
-msgstr ""
+msgstr "ClamAV installeren & configureren"
 
 #: recommendations.html:155
 msgid ""
@@ -165,14 +189,17 @@ msgid ""
 "from the Nemo file manager. Just press space to toggle the preview on and "
 "off."
 msgstr ""
+"Met Nemo Preview kunt u snel de inhoud van een gemarkeerd bestand bekijken "
+"vanuit de Nemo-bestandsbeheerder. Druk gewoon op de spatiebalk om het "
+"voorbeeld in en uit te schakelen."
 
 #: recommendations.html:158
 msgid "Nemo Preview is installed"
-msgstr ""
+msgstr "Nemo Preview is geïnstalleerd"
 
 #: recommendations.html:160
 msgid "Install Nemo Preview"
-msgstr ""
+msgstr "Nemo Preview installeren"
 
 #: recommendations.html:175
 msgid ""
@@ -180,42 +207,50 @@ msgid ""
 "files from the Nemo file manager. Just right click, compare the first file, "
 "right click again and compare with the second file."
 msgstr ""
+"Met Nemo Compare kunt u de verschillen tussen twee nauw verwante bestanden "
+"uit de Nemo-bestandsbeheerder laten zien. Klik met de rechtermuisknop en "
+"vergelijk het eerste bestand, klik nogmaals met de rechtermuisknop en "
+"vergelijk met het tweede bestand."
 
 #: recommendations.html:178
 msgid "Nemo Compare is installed"
-msgstr ""
+msgstr "Nemo Compare is geïnstalleerd"
 
 #: recommendations.html:180
 msgid "Install Nemo Compare"
-msgstr ""
+msgstr "Nemo Compare installeren"
 
 #: recommendations.html:190
 msgid ""
 "Nemo Terminal embeds a terminal within the nemo file-manager. Press F4 to "
 "toggle the visibility of the terminal."
 msgstr ""
+"Nemo Terminal integreert een terminal in de nemo file-manager. Druk op F4 om"
+" de zichtbaarheid van de terminal in te schakelen."
 
 #: recommendations.html:193
 msgid "Nemo Terminal is installed"
-msgstr ""
+msgstr "Nemo Terminal is geïnstalleerd"
 
 #: recommendations.html:195
 msgid "Install Nemo Terminal"
-msgstr ""
+msgstr "Nemo Terminal installeren"
 
 #: recommendations.html:205
 msgid ""
 "Nemo Share allows you to quickly share a folder from the Nemo file manager "
 "without requiring root access."
 msgstr ""
+"Met Nemo Share kunt u snel een map delen vanuit de Nemo-bestandsbeheerder "
+"zonder de noodzaak van root-toegang."
 
 #: recommendations.html:210
 msgid "Nemo Share is installed"
-msgstr ""
+msgstr "Nemo Share is geïnstalleerd"
 
 #: recommendations.html:212
 msgid "Install Nemo Share"
-msgstr ""
+msgstr "Nemo Share installeren"
 
 #: recommendations.html:222
 msgid ""
@@ -224,14 +259,18 @@ msgid ""
 "drivers which includes drivers for Epson and Canon printers. Gutenprint "
 "supports only the printer part of multi-function devices."
 msgstr ""
+"Gutenprint is een pakket van <a onclick=\"cmd('link?http://gimp-"
+"print.sourceforge.net/p_Supported_Printers.php')\">duizenden </a> printer-"
+"stuurprogramma's voor o.a. printers van Epson en Canon. Gutenprint "
+"ondersteunt alleen het printergedeelte van multifunctionele apparaten."
 
 #: recommendations.html:226
 msgid "Gutenprint is installed"
-msgstr ""
+msgstr "Gutenprint is geïnstalleerd"
 
 #: recommendations.html:229
 msgid "Install Gutenprint"
-msgstr ""
+msgstr "Gutenprint installeren"
 
 #: recommendations.html:241
 msgid "Snap Applications"
@@ -252,6 +291,20 @@ msgid ""
 " packaging and providing updates have prevented us from delivering them in "
 "the past."
 msgstr ""
+"<strong>Snap</strong> is een nieuwe generatie applicatieverpakkingsformaat "
+"ontwikkeld door <em>Canonical</em>. Hoewel het in eerste instantie alleen "
+"voor verschillende Ubuntu-platforms is ontwikkeld, werkt het momenteel in "
+"veel andere GNU/Linux-distributies. Het zal applicatieontwikkelaars helpen "
+"om een uniform pakket te bieden dat op verschillende platforms kan werken. "
+"Door gebruik te maken van het snap-pakketformaat kunnen applicaties hun "
+"eigen versie van bibliotheken hebben en hoef je je zich geen zorgen te maken"
+" over bibliotheken die in het onderliggende besturingssysteem zijn "
+"geïnstalleerd. Met Snap-pakketten kunnen ontwikkelaars veel nieuwere versies"
+" van apps naar Ubuntu Budgie brengen. Nieuwere versies van KDE, GNOME, "
+"browsers of andere apps voor desktopomgevingen kunnen meestal gemakkelijk "
+"voortbouwen op oudere LTS-releases, maar de complexiteit van het verpakken "
+"en leveren van updates heeft ons er in het verleden van weerhouden ze te "
+"leveren."
 
 #: recommendations.html:259
 msgid "Learn more"

@@ -50,11 +50,11 @@ msgstr "Vertrouwd"
 
 #: gettingstarted.html:42
 msgid "Browser Ballot"
-msgstr "Browser kiezen"
+msgstr "Browser-formulier"
 
 #: gettingstarted.html:47
 msgid "Email Ballot"
-msgstr "Stemming verzenden"
+msgstr "Formulier verzenden"
 
 #: gettingstarted.html51, 855, 1810
 msgid "Customization"
@@ -105,9 +105,9 @@ msgid ""
 "Ubuntu Budgie works well on both high-end to older computers, optimized to "
 "be functional, while light on system resources."
 msgstr ""
-"Ubuntu Budgie werkt goed op zowel high-end als oudere computers, en is "
-"geoptimaliseerd voor functionaliteit, terwijl het weinig systeembronnen "
-"verbruikt."
+"Ubuntu Budgie werkt net zo goed op nieuwe hoogwaardige computers als op "
+"oudjes, en is geoptimaliseerd voor functionaliteit met een laag verbruik aan"
+" systeembronnen."
 
 #: gettingstarted.html:96
 msgid "Minimum"
@@ -158,8 +158,8 @@ msgid ""
 "The operating system will run much more efficiently if your computer meets "
 "or surpasses the recommended requirements."
 msgstr ""
-"Het besturingssysteem zal veel efficiënter werken als je computer voldoet "
-"aan of hoger is dan de aanbevolen vereisten."
+"Het besturingssysteem zal veel efficiënter werken als uw computer voldoet "
+"aan de aanbevolen vereisten."
 
 #: gettingstarted.html123, 1820
 msgid "What's inside my computer?"
@@ -183,9 +183,9 @@ msgid ""
 msgstr ""
 "Ubuntu Budgie is relatief eenvoudig in te stellen, of u nu uw bestaande "
 "besturingssysteem wilt vervangen of Ubuntu Budgie naast een bestaand "
-"besturingssysteem wilt installeren, zoals &nbsp;<span class=\"fa fa-"
-"windows\"></span> Microsoft Windows of een andere <span class=\"fa fa-"
-"linux\"></span> GNU/Linux distributie."
+"besturingssysteem wilt installeren, zoals <span class=\"fa fa-"
+"windows\">Microsoft&nbsp;Windows</span> of een andere <span class=\"fa fa-"
+"linux\">GNU/Linux</span> distributie."
 
 #: gettingstarted.html:146
 msgid "For the best results:"
@@ -226,8 +226,8 @@ msgid ""
 msgstr ""
 "De live-sessie waarin u zich momenteel bevindt, is een goede gelegenheid om "
 "Ubuntu Budgie te testen zonder uw computer aan te passen, zodat u kunt "
-"testen of al uw randapparatuur werkt zoals bedoeld voordat u zich ertoe "
-"verbindt deze op uw computer te installeren. Als u klaar bent, kunt het "
+"controleren of al uw randapparatuur werkt zoals bedoeld voordat u ertoe "
+"overgaat om het op uw computer te installeren. Als u klaar bent, kunt het "
 "installatiepictogram starten vanaf het bureaublad."
 
 #: gettingstarted.html:164
@@ -248,7 +248,7 @@ msgstr ""
 
 #: gettingstarted.html:169
 msgid "If you are using a legacy BIOS machine, you do not need to do this."
-msgstr "Indien u een legacy BIOS machine gebruikt, hoeft u dit niet te doen."
+msgstr "Gebruikt u een verouderde BIOS-machine, dan hoeft u dit niet te doen."
 
 #: gettingstarted.html:172
 msgid ""
@@ -257,8 +257,8 @@ msgid ""
 "operating system installed in BIOS mode after installing a UEFI-enabled "
 "operating system or vice versa."
 msgstr ""
-"Vooral bij dubbel opstarten is het belangrijk dat u uw systeem opstart in de"
-" juiste modus en de <b>64-bits afbeelding</b> gebruikt, omdat u een "
+"Met name bij dual booten is het belangrijk dat u uw systeem opstart in de "
+"juiste modus en de <b>64-bits image</b> gebruikt, omdat u een "
 "besturingssysteem niet kunt opstarten dat is geïnstalleerd in de BIOS-modus "
 "na installatie van een UEFI-compatibel besturingssysteem of omgekeerd."
 
@@ -290,10 +290,10 @@ msgid ""
 "freeze if you completely run out of memory without anywhere to swap."
 msgstr ""
 "Voor systemen waarvan de beschikbare geheugen (RAM) afneemt, zal het "
-"besturingssysteem data naar de swap schrijven. In Windows heet dat de "
-"\"paging file\". De prestaties nemen af wanneer er te weinig geheugen "
-"beschikbaar is en het systeem kan bevriezen als u zonder geheugen niet naar "
-"de swap kan schrijven. "
+"besturingssysteem gegevens naar het wisselbestand schrijven. In Windows heet"
+" dat de \"paging file\". De prestaties nemen af wanneer er te weinig "
+"geheugen beschikbaar is en het systeem kan bevriezen als er geen geheugen "
+"meer beschikbaar is om het wisselbestand te schrijven. "
 
 #: gettingstarted.html:193
 msgid ""
@@ -302,10 +302,10 @@ msgid ""
 "reserved for the swap file. A separate swap partition is no longer required "
 "to be created."
 msgstr ""
-"Standaard wordt een swappartitie gemaakt op basis van de grootte van uw RAM."
-" Als u bijvoorbeeld 2 gigabyte aan RAM hebt, wordt er 2 gigabyte ruimte op "
-"de harde schijf gereserveerd voor verwisseling aan het einde van de rit. Er "
-"hoeft niet langer een aparte swappartitie te worden gemaakt."
+"Standaard wordt een wisselbestand aangemaakt op basis van de grootte van uw "
+"RAM. Als u bijvoorbeeld 2 GiB RAM heeft, wordt er 2 GiB harde schijfruimte "
+"gereserveerd voor het wisselbestand. Er hoeft geen aparte swappartitie meer "
+"te worden aangemaakt."
 
 #: gettingstarted.html201, 402, 769, 1809
 msgid "Previous:"
@@ -328,21 +328,21 @@ msgstr "Ik dual boot met"
 #: gettingstarted.html:224
 msgid "To minimize the risk of data loss or failure, ensure that:"
 msgstr ""
-"Om het risico op dataverlies of fouten te minimaliseren, wees er zeker van "
-"dat:"
+"Om het risico op dataverlies of fouten te minimaliseren, zorg ervoor dat:"
 
 #: gettingstarted.html:226
 msgid "There is enough free space. 10 GB minimum is recommended."
-msgstr "Er is genoeg vrije schijfruimte. Minimaal 10 GB is aangeraden."
+msgstr "er voldoende vrije schijfruimte is. Minimaal 10 GB wordt aangeraden."
 
 #: gettingstarted.html:228
 msgid "<b><u>Back up</u></b> important data to another drive."
 msgstr ""
-"Maak een <b><u>back-up</u></b> van belangrijke data naar een andere schijf."
+"er een <b><u>back-up</u></b> van belangrijke data is gemaakt naar een andere"
+" schijf."
 
 #: gettingstarted.html:230
 msgid "Defragment the hard drive."
-msgstr "Defragmenteer de hardeschijf."
+msgstr "de hardeschijf is gedefragmenteerd."
 
 #: gettingstarted.html:231
 msgid "Ensure Windows has been cleanly shut down (not hibernated)."
@@ -362,11 +362,11 @@ msgstr "Geavanceerd"
 
 #: gettingstarted.html:243
 msgid "Safest"
-msgstr "Veiligst"
+msgstr "Meest veilig"
 
 #: gettingstarted.html:248
 msgid "The simplest method is to use the installer."
-msgstr "De eenvoudigste methode is om het installatie programma te gebruiken."
+msgstr "De eenvoudigste methode is om het installatieprogramma te gebruiken."
 
 #: gettingstarted.html:250
 msgid ""
@@ -374,7 +374,7 @@ msgid ""
 " choice on what you'd like to do."
 msgstr ""
 "Het installatieprogramma scant uw schijven op bestaande besturingssystemen "
-"en biedt een keuze voor wat u zou willen doen."
+"en biedt een keuze voor wat u zou kunnen doen."
 
 #: gettingstarted.html:253
 msgid "You will see an option similar to this:"
@@ -395,17 +395,18 @@ msgid ""
 "If you do, data loss or a partition table corruption could occur. Please "
 "double check your changes before proceeding."
 msgstr ""
-"Als u dit doet, kan er gegevensverlies of corruptie van een partitietabel "
-"optreden. Controleer uw wijzigingen voordat u verder gaat."
+"Als u dit toch doet, kan er gegevensverlies of corruptie van een "
+"partitietabel optreden. Controleer nogmaals uw aanpassingen voordat u verder"
+" gaat."
 
 #: gettingstarted.html:267
 msgid ""
 "The installer may show a <span class=\"fa fa-spinner\"></span> spinner "
 "cursor for a long period of time, depending on the size of your disk."
 msgstr ""
-"Het installatieprogramma kan een draaiende <span class=\"fa fa-"
-"spinner\"></span> cursor voor een lange tijd laten zien, afhankelijk van de "
-"grootte van uw schijf."
+"Het installatieprogramma kan voor een lange tijd een draaiende cursor <span "
+"class=\"fa fa-spinner\"></span> weergeven, afhankelijk van de grootte van uw"
+" schijf."
 
 #: gettingstarted.html:271
 msgid ""
@@ -413,8 +414,8 @@ msgid ""
 "command prompt to check the file system for errors. Windows may schedule "
 "this automatically. This ensures consistency for the NTFS file system."
 msgstr ""
-"<b>Wanneer u Windows weer voor het eerst opstart, voer dan</b><code> chkdsk "
-"/f</code> uit vanaf de opdrachtprompt om het bestandssysteem op fouten te "
+"<b>Wanneer u Windows voor het eerst weer opstart, voer dan</b><code> chkdsk "
+"/f</code> uit vanaf de opdrachtregel om het bestandssysteem op fouten te "
 "controleren. Windows kan dit automatisch plannen. Dit zorgt voor "
 "consistentie voor het NTFS-bestandssysteem."
 
@@ -470,7 +471,7 @@ msgstr ""
 
 #: gettingstarted.html:303
 msgid "You can specify these mount points:"
-msgstr "Deze mountpunten zijn beschikbaar:"
+msgstr "Deze koppelpunten zijn beschikbaar:"
 
 #: gettingstarted.html:305
 msgid "The base for Ubuntu Budgie"
@@ -567,8 +568,8 @@ msgid ""
 "Right click your desired drive and choose <b>Shrink Partition</b> from the "
 "context menu."
 msgstr ""
-"Klik met de rechtermuisknop op de gewenste schijf en kies <b>Verklein "
-"Partitie</b>in het contextmenu."
+"Klik met de rechtermuisknop op de gewenste schijf en kies <b>Partitie "
+"verkleinen</b>in het contextmenu."
 
 #: gettingstarted.html:351
 msgid "Enter the amount to shrink your system partition by."
@@ -663,8 +664,8 @@ msgid ""
 "Budgie, you might want to do this now."
 msgstr ""
 "Ubuntu Budgie controleert regelmatig of er nieuwe software en "
-"beveiligingsupdates beschikbaar zijn voor je computer. Als je Ubuntu Budgie "
-"net hebt geïnstalleerd, wil je dit misschien nu doen."
+"beveiligingsupdates beschikbaar zijn voor uw computer. Als u Ubuntu Budgie "
+"net hebt geïnstalleerd, wilt u dit misschien nu doen."
 
 #: gettingstarted.html:432
 msgid ""
@@ -1156,8 +1157,8 @@ msgid ""
 "user to protect the individual privacy of each user sharing the same "
 "computer."
 msgstr ""
-"Deel uw computer met anderen? Stel een afzonderlijke gebruikersaccount in "
-"voor elke gebruiker om de privacy te beschermen van elke gebruiker die "
+"Een computer delen met anderen? Stel voor elke gebruiker een afzonderlijke "
+"gebruikersaccount in om de privacy te beschermen van elke gebruiker die "
 "dezelfde computer deelt."
 
 #: gettingstarted.html:835
@@ -1165,7 +1166,7 @@ msgid ""
 "You can also log in to a <b>Guest Session</b> if someone is using your "
 "computer as a one-off."
 msgstr ""
-"Aanmelden kan ook via een gastsessie als iemand de computer eenmalig "
+"Aanmelden kan ook via een <b>gastsessie</b> als iemand de computer eenmalig "
 "gebruikt."
 
 #: gettingstarted.html:840
@@ -1342,7 +1343,7 @@ msgid ""
 "and organize the way you like. Manage all accounts separately or in a "
 "unified inbox. Thunderbird simply makes your life simpler."
 msgstr ""
-"Toegang tot al je berichten, agenda's en contacten in één snelle app. Filter"
+"Toegang tot al uw berichten, agenda's en contacten in één snelle app. Filter"
 " en organiseer naar wens. Beheer alle accounts afzonderlijk of in een "
 "uniforme inbox. Thunderbird maakt het leven gemakkelijk."
 
@@ -1381,9 +1382,9 @@ msgid ""
 "communications, organize your day and work with your colleagues. Become more"
 " productive with Kontact."
 msgstr ""
-"Behandel je e-mail, agenda, contacten en andere persoonsgegevens met "
-"Kontact. Kontact groepeert alles op één plek en helpt je bij het beheren van"
-" je communicatie, het organiseren van je dag en het samenwerken met je "
+"Behandel uw e-mail, agenda, contacten en andere persoonsgegevens met "
+"Kontact. Kontact groepeert alles op één plek en helpt u bij het beheren van "
+"uw communicatie, het organiseren van de dag en het samenwerken met "
 "collega's. Word productiever met Kontact."
 
 #: gettingstarted.html:1102
@@ -1445,8 +1446,8 @@ msgid ""
 "<b>Budgie Desktop Settings</b> can be found later in the menu <b>System "
 "Tools</b>."
 msgstr ""
-"<b>Budgie Desktop-instellingen</b> zijn later te vinden in het menu "
-"<b>Systeem werkset</b>."
+"<b>Budgie Desktop-instellingen</b> zijn later terug te vinden in het menu "
+"<b>Systeemtools</b>."
 
 #: gettingstarted.html1154, 1159
 msgid "Budgie Control Center"
@@ -1457,7 +1458,7 @@ msgid ""
 "You can configure just about every aspect of your computer from Budgie "
 "Control Center."
 msgstr ""
-"Je kunt vrijwel elk aspect van je computer configureren vanuit Budgie "
+"U kunt vrijwel elk aspect van uw computer configureren vanuit Budgie "
 "Controlecentrum."
 
 #: gettingstarted.html:1164
@@ -1465,7 +1466,7 @@ msgid ""
 "<b>Budgie Control Center</b> can be found later in the menu <b>System "
 "Tools</b>."
 msgstr ""
-"<b>Budgie Controecentrum</b> is later terug te vinden in het menu "
+"<b>Budgie Controlecentrum</b> is later terug te vinden in het menu "
 "<b>Systeemtools</b>."
 
 #: gettingstarted.html:1189
@@ -1473,7 +1474,7 @@ msgid ""
 "Ubuntu Budgie has many keyboard shortcuts that help make using your computer"
 " more efficient."
 msgstr ""
-"Ubuntu Budgie heeft veel sneltoetsen die helpen het gebruik van je computer "
+"Ubuntu Budgie heeft veel sneltoetsen die helpen het gebruik van uw computer "
 "efficiënter te maken."
 
 #: gettingstarted.html:1193
@@ -1520,59 +1521,59 @@ msgstr "Ctrl"
 
 #: gettingstarted.html:1239
 msgid "Copy the selected text/object"
-msgstr "Kopieer de geselecteerde tekst/object"
+msgstr "Geselecteerde tekst/object kopiëren"
 
 #: gettingstarted.html:1247
 msgid "Cut the selected text/object"
-msgstr "Knip de geselecteerde tekst/object"
+msgstr "Geselecteerde tekst/object knippen"
 
 #: gettingstarted.html:1255
 msgid "Paste/insert the selected text/object"
-msgstr "Plak de geselecteerde tekst/object"
+msgstr "Geselecteerde tekst/object plakken/invoegen"
 
 #: gettingstarted.html:1263
 msgid "Select all text"
-msgstr "Selecteer alle tekst"
+msgstr "Alle tekst selecteren"
 
 #: gettingstarted.html:1271
 msgid "Find words"
-msgstr "Zoek woorden"
+msgstr "Woorden zoeken"
 
 #: gettingstarted.html:1279
 msgid "Find and replace words"
-msgstr "Zoek en vervang woorden"
+msgstr "Woorden soeken en vervangen"
 
 #: gettingstarted.html:1287
 msgid "Make the selected text bold"
-msgstr "Maak de geselecteerde tekst vetgedrukt"
+msgstr "Geselecteerde tekst vetgedrukt maken"
 
 #: gettingstarted.html:1295
 msgid "Make the selected text italic"
-msgstr "Maak de geselecteerde tekst cursief"
+msgstr "Geselecteerde tekst cursief maken"
 
 #: gettingstarted.html:1303
 msgid "Underline the selected text"
-msgstr "Onderstreep de geselecteerde tekst"
+msgstr "Geselecteerde tekst onderstrepen"
 
 #: gettingstarted.html:1311
 msgid "Open a new document or window"
-msgstr "Open een nieuw document of venster"
+msgstr "Nieuw document of venster openen"
 
 #: gettingstarted.html:1319
 msgid "Save the current document"
-msgstr "Sla het huidige document op"
+msgstr "Huidige document opslaan"
 
 #: gettingstarted.html:1327
 msgid "Open another document"
-msgstr "Open een ander document"
+msgstr "Ander document openen"
 
 #: gettingstarted.html:1335
 msgid "Print the current document"
-msgstr "Print het huidig document"
+msgstr "Huidig document afdrukken"
 
 #: gettingstarted.html:1343
 msgid "Undo the last change you made"
-msgstr "Maak de laatste wijziging ongedaan"
+msgstr "Laatste wijziging ongedaan maken"
 
 #: gettingstarted.html1349, 1377, 1387, 1513, 1524, 1540, 1551, 1562, 1573
 msgid "Shift"
@@ -1580,11 +1581,11 @@ msgstr "Shift"
 
 #: gettingstarted.html:1353
 msgid "Redo a change that you just undid"
-msgstr "Voer een wijziging opnieuw uit die u ongedaan hebt gemaakt"
+msgstr "Wijziging die net ongedaan is gemaakt, opnieuw uitvoeren"
 
 #: gettingstarted.html:1359
 msgid "Toggle the current application between full-screen and windowed"
-msgstr "Schakel de huidige applicatie tussen volledig scherm en venster"
+msgstr "Huidige applicatie schakelen tussen volledig scherm en venster"
 
 #: gettingstarted.html:1363
 msgid "Desktop shortcuts"
@@ -1604,15 +1605,15 @@ msgstr "Open Applicatie menu"
 
 #: gettingstarted.html:1383
 msgid "Copy a screenshot of an area to clipboard"
-msgstr "Kopieer een schermopname van een gebied naar het klembord"
+msgstr "Schermopname van een gebied kopiëren naar klembord"
 
 #: gettingstarted.html:1391
 msgid "Save a screenshot of an area to the Pictures directory"
-msgstr "Sla een schermopname van een gebied op in de map Afbeeldingen"
+msgstr "Schermopname van een gebied opslaan in map Afbeeldingen"
 
 #: gettingstarted.html:1399
 msgid "Copy a screenshot of a window to clipboard"
-msgstr "Kopieer een schermopname van een venster naar het klembord"
+msgstr "Schermopname van een venster kopiëren naar klembord"
 
 #: gettingstarted.html1403, 1417, 1427, 1446, 1460, 1474, 1491, 1501, 1511,
 #: 1523, 1532, 1584, 1592, 1600, 1635, 1706, 1716, 1726, 1736, 1746, 1756,
@@ -1622,7 +1623,7 @@ msgstr "Alt"
 
 #: gettingstarted.html:1407
 msgid "Save a screenshot of a window to the Pictures directory"
-msgstr "Sla een schermopname van een venster op in de map Afbeeldingen"
+msgstr "Schermopname van een venster opslaan in map Afbeeldingen"
 
 #: gettingstarted.html:1413
 msgid "Save a screenshot to the Pictures directory"
@@ -1630,9 +1631,7 @@ msgstr "Sla een schermopname op in de map Afbeeldingen"
 
 #: gettingstarted.html:1421
 msgid "Run an application by typing its name in the box which appears"
-msgstr ""
-"Voer een toepassing uit door de naam ervan in te voeren in het vak dat wordt"
-" weergegeven"
+msgstr "Voer een applicatie uit door de naam ervan te typen"
 
 #: gettingstarted.html:1429
 msgid "Delete"
@@ -1644,7 +1643,7 @@ msgstr "Uitloggen"
 
 #: gettingstarted.html:1440
 msgid "Lock your screen."
-msgstr "Vergrendel scherm."
+msgstr "Scherm vergrendelen."
 
 #: gettingstarted.html:1450
 msgid "Open a terminal."
@@ -1656,11 +1655,11 @@ msgstr "Sneltoetsen voor vensters - algemeen"
 
 #: gettingstarted.html:1464
 msgid "Call Window Shuffler gui (window tiling grid)."
-msgstr ""
+msgstr "Window Shuffler gui aanroepen (window tiling grid)."
 
 #: gettingstarted.html:1468
 msgid "Video Demonstration"
-msgstr ""
+msgstr "Video-demonstratie"
 
 #: gettingstarted.html:1476
 msgid "Tab"
@@ -1668,11 +1667,11 @@ msgstr "Tab"
 
 #: gettingstarted.html:1479
 msgid "Switch between currently-open windows."
-msgstr "Schakel tussen geopende vensters."
+msgstr "Schakelen tussen geopende vensters."
 
 #: gettingstarted.html:1481
 msgid "Press Alt + Tab and then release Tab (but continue to hold Alt)."
-msgstr "Druk op Alt + Tab en laat Tab los (maar blijf Alt ingedrukt houden)."
+msgstr "Druk op Alt + Tab en laat Tab los (maar houd Alt ingedrukt)."
 
 #: gettingstarted.html:1482
 msgid ""
@@ -1688,7 +1687,7 @@ msgstr "Links"
 
 #: gettingstarted.html:1495
 msgid "Switch to the previous workspace."
-msgstr "Schakel over naar de vorige werkruimte."
+msgstr "Overschakelen naar vorig werkblad."
 
 #: gettingstarted.html1503, 1526, 1656
 msgid "Right"
@@ -1696,55 +1695,51 @@ msgstr "Rechts"
 
 #: gettingstarted.html:1505
 msgid "Switch to the next workspace."
-msgstr "Schakel over naar de volgende werkruimte."
+msgstr "Overschakelen naar volgend werkblad."
 
 #: gettingstarted.html:1517
 msgid "Move the current window to the previous workspace."
-msgstr "Verplaats het huidige venster naar de vorige werkruimte."
+msgstr "Huidig venster naar vorig werkblad verplaatsen."
 
 #: gettingstarted.html:1528
 msgid "Move the current window to the next workspace."
-msgstr "Verplaats het huidige venster naar de volgende werkruimte."
+msgstr "Huidig venster naar volgend werkblad verplaatsen."
 
 #: gettingstarted.html:1536
 msgid "Move the current window to the monitor above."
-msgstr ""
+msgstr "Huidig venster naar bovenste monitor verplaatsen."
 
 #: gettingstarted.html:1547
 msgid "Move the current window to the monitor below."
-msgstr ""
+msgstr "Huidig venster naar onderste monitor verplaatsen."
 
 #: gettingstarted.html:1558
 msgid "Move the current window to the monitor to the left."
-msgstr ""
+msgstr "Huidig venster naar linker monitor verplaatsen."
 
 #: gettingstarted.html:1569
 msgid "Move the current window to the monitor to the right."
-msgstr ""
+msgstr "Huidig venster naar rechter monitor verplaatsen."
 
 #: gettingstarted.html:1580
 msgid "Closes window."
-msgstr "Sluit venster"
+msgstr "Venster sluiten."
 
 #: gettingstarted.html:1588
 msgid "Returns window to 'normal' or previous size."
-msgstr "Herstel het venster naar 'normale' of vorige grootte."
+msgstr "Venster herstellen naar 'normale' of vorige grootte."
 
 #: gettingstarted.html:1596
 msgid "Moves the current window (can be moved with mouse or keyboard)."
-msgstr ""
-"Verplaatst het huidige venster (kan worden verplaatst met muis of "
-"toetsenbord)."
+msgstr "Huidige venster verplaatsen (met muis of toetsenbord)."
 
 #: gettingstarted.html:1604
 msgid "Resizes current window (again, can be moved with mouse or keyboard)."
-msgstr ""
-"Verander formaat van huidig ​​venster (kan worden verplaatst met muis of "
-"toetsenbord)."
+msgstr "Huidige venster vergroten/verkleinen (met muis of toetsenbord)."
 
 #: gettingstarted.html:1613
 msgid "Minimizes current window."
-msgstr "Minimaliseert het huidige venster."
+msgstr "Huidige venster minimaliseren."
 
 #: gettingstarted.html:1620
 msgid "Up"
@@ -1752,15 +1747,15 @@ msgstr "Omhoog"
 
 #: gettingstarted.html:1622
 msgid "Maximizes current window."
-msgstr "Maximaliseert het huidige venster."
+msgstr "Huidige venster maximaliseren."
 
 #: gettingstarted.html:1629
 msgid "Down"
-msgstr ""
+msgstr "Omlaag"
 
 #: gettingstarted.html:1631
 msgid "Unmaximizes current window."
-msgstr ""
+msgstr "Maximalisering van huidige venster opheffen."
 
 #: gettingstarted.html:1637
 msgid "Space"
@@ -1771,116 +1766,116 @@ msgid ""
 "Displays the window menu with options such as 'Always on Top' and 'Minimize'"
 " and 'Maximize' and above commands."
 msgstr ""
-"Toont het venstermenu met opties zoals 'Altijd op voorgrond' en "
-"'Minimaliseren' en 'Maximaliseren' inclusief bovenstaande opdrachten."
+"Venstermenu met opties zoals 'Altijd op voorgrond' en 'Minimaliseren' en "
+"'Maximaliseren' inclusief bovenstaande opdrachten."
 
 #: gettingstarted.html:1649
 msgid "Place window on left side of screen."
-msgstr "Plaats het venster aan de linkerkant van het scherm."
+msgstr "Venster plaatsen aan de linkerkant van het scherm."
 
 #: gettingstarted.html:1658
 msgid "Place window on right side of screen."
-msgstr "Plaats het venster aan de rechterkant van het scherm."
+msgstr "Venster plaatsen aan de rechterkant van het scherm."
 
 #: gettingstarted.html1665, 1738
 msgid "1"
-msgstr ""
+msgstr "1"
 
 #: gettingstarted.html:1667
 msgid "Quarter tiling: top left."
-msgstr ""
+msgstr "Betegeling in kwarten: linksboven."
 
 #: gettingstarted.html1674, 1768
 msgid "2"
-msgstr ""
+msgstr "2"
 
 #: gettingstarted.html:1676
 msgid "Quarter tiling: top right."
-msgstr ""
+msgstr "Betegeling in kwarten: rechtsboven."
 
 #: gettingstarted.html1683, 1728
 msgid "3"
-msgstr ""
+msgstr "3"
 
 #: gettingstarted.html:1685
 msgid "Quarter tiling: bottom left."
-msgstr ""
+msgstr "Betegeling in kwarten: linksonder."
 
 #: gettingstarted.html1692, 1778
 msgid "4"
-msgstr ""
+msgstr "4"
 
 #: gettingstarted.html:1694
 msgid "Quarter tiling: bottom right."
-msgstr ""
+msgstr "Betegeling in kwarten: rechtsonder."
 
 #: gettingstarted.html:1699
 msgid "Window shortcuts - numeric keypad"
-msgstr ""
+msgstr "Sneltoetsen voor vensters - numeriek toetsenbord"
 
 #: gettingstarted.html:1700
 msgid "Tiling shortcuts on the numeric keypad."
-msgstr ""
+msgstr "Sneltoetsen op het numerieke toetsenbord voor vensterplaatsing."
 
 #: gettingstarted.html:1708
 msgid "7"
-msgstr ""
+msgstr "7"
 
 #: gettingstarted.html:1710
 msgid "Quarter top left."
-msgstr ""
+msgstr "Kwart linksboven."
 
 #: gettingstarted.html:1718
 msgid "9"
-msgstr ""
+msgstr "9"
 
 #: gettingstarted.html:1720
 msgid "Quarter top right."
-msgstr ""
+msgstr "Kwart rechtsboven."
 
 #: gettingstarted.html:1730
 msgid "Quarter bottom right."
-msgstr ""
+msgstr "Kwart rechtsonder."
 
 #: gettingstarted.html:1740
 msgid "Quarter bottom left."
-msgstr ""
+msgstr "Kwart linksonder."
 
 #: gettingstarted.html:1748
 msgid "8"
-msgstr ""
+msgstr "8"
 
 #: gettingstarted.html:1750
 msgid "Half top."
-msgstr ""
+msgstr "Helft bovenaan."
 
 #: gettingstarted.html:1758
 msgid "6"
-msgstr ""
+msgstr "6"
 
 #: gettingstarted.html:1760
 msgid "Half right."
-msgstr ""
+msgstr "Helft rechts."
 
 #: gettingstarted.html:1770
 msgid "Half bottom."
-msgstr ""
+msgstr "Helft onderaan."
 
 #: gettingstarted.html:1780
 msgid "Half left."
-msgstr ""
+msgstr "Helft links."
 
 #: gettingstarted.html:1788
 msgid "5"
-msgstr ""
+msgstr "5"
 
 #: gettingstarted.html:1790
 msgid "Toggle maximize."
-msgstr ""
+msgstr "Maximalisering wisselen."
 
 #: gettingstarted.html:1799
 msgid "Update shortcuts in the Settings App"
-msgstr ""
+msgstr "Sneltoetsen bijwerken in de app Instellingen"
 
 #: gettingstarted.html:1821
 msgid ""
@@ -1894,7 +1889,7 @@ msgstr ""
 
 #: gettingstarted.html:1829
 msgid "Gathering Information.."
-msgstr "Informatie verzamelen.."
+msgstr "Informatie verzamelen…"
 
 #: gettingstarted.html:1838
 msgid "System"
@@ -1918,7 +1913,7 @@ msgstr "Moederbord:"
 
 #: gettingstarted.html:1859
 msgid "Boot Mode:"
-msgstr "Opstart modus:"
+msgstr "Opstartmodus:"
 
 #: gettingstarted.html:1863
 msgid "Displays the mode that OS is communicating with the firmware."
@@ -1938,13 +1933,13 @@ msgstr "Snelheid:"
 
 #: gettingstarted.html:1882
 msgid "Architecture in use:"
-msgstr "Architectuur in gebruik:"
+msgstr "Toegepaste architectuur:"
 
 #: gettingstarted.html:1886
 msgid ""
 "The operating system's architecture in use. For instance, i386 = 32-bit."
 msgstr ""
-"De architectuur van het gebruikte besturingssysteem. Bijvoorbeeld, i386 = "
+"De architectuur van het huidige besturingssysteem. Bijvoorbeeld, i386 = "
 "32-bits."
 
 #: gettingstarted.html:1894
@@ -1958,8 +1953,8 @@ msgstr "Geheugen (RAM):"
 #: gettingstarted.html:1901
 msgid "More RAM allows more applications to run simultaneously."
 msgstr ""
-"Meer RAM maakt het mogelijk dat meerdere applicaties gelijktijdig kunnen "
-"worden uitgevoerd."
+"Meer RAM maakt het mogelijk om meerdere applicaties gelijktijdig te kunnen "
+"uitvoeren."
 
 #: gettingstarted.html:1907
 msgid "Graphics:"
@@ -1967,7 +1962,7 @@ msgstr "Grafische weergave:"
 
 #: gettingstarted.html:1911
 msgid "Internet Access:"
-msgstr "Internet toegang:"
+msgstr "Toegang tot internet:"
 
 #: gettingstarted.html:1914
 msgid "Connected"
@@ -1999,15 +1994,15 @@ msgstr "OS-gebruik"
 
 #: gettingstarted.html:1948
 msgid "Other Usage"
-msgstr "Ander gebruik"
+msgstr "Overig gebruik"
 
 #: gettingstarted.html:1953
 msgid "Allocated for Ubuntu Budgie:"
-msgstr ""
+msgstr "Toegewezen voor Ubuntu Budgie:"
 
 #: gettingstarted.html:1957
 msgid "The size of your operating system partition."
-msgstr "De grootte van uw besturingssysteem partitie."
+msgstr "De grootte van de partitie voor uw besturingssysteem."
 
 #: gettingstarted.html:1964
 msgid "Used Space:"
@@ -2019,9 +2014,9 @@ msgstr "Beschikbare schijfruimte:"
 
 #: gettingstarted.html:1980
 msgid "Other Usage:"
-msgstr "Ander gebruik:"
+msgstr "Overig gebruik:"
 
 #: gettingstarted.html:1985
 msgid "Reserved by system, other partitions, unallocated or swap."
 msgstr ""
-"Gereserveerd voor het systeem, andere partities, niet toegewezen of de swap."
+"Gereserveerd door het systeem, overige partities, niet toegewezen of swap."
