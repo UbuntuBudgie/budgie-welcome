@@ -1,2 +1,11 @@
 #!/bin/sh
-flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+flatpak install flathub org.gtk.Gtk3theme.Pocillo/x86_64/3.22 -y --system
+flatpak install flathub org.gtk.Gtk3theme.Pocillo-dark/x86_64/3.22 -y --system
+flatpak install flathub org.gtk.Gtk3theme.Pocillo-light/x86_64/3.22 -y --system
+flatpak install flathub org.gtk.Gtk3theme.Pocillo-slim/x86_64/3.22 -y --system
+flatpak install flathub org.gtk.Gtk3theme.Pocillo-slim-dark/x86_64/3.22 -y --system
+flatpak install flathub org.gtk.Gtk3theme.Pocillo-slim-light/x86_64/3.22 -y --system
+flatpak install flathub org.gtk.Gtk3theme.QogirBudgie/x86_64/3.22 -y --system
+flatpak install flathub org.gtk.Gtk3theme.QogirBudgie-Dark/x86_64/3.22 -y --system
+flatpak install flathub org.gtk.Gtk3theme.QogirBudgie-Light/x86_64/3.22 -y --system
