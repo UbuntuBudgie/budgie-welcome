@@ -101,12 +101,11 @@ parts:
       cp -a hicolor/* $SNAPCRAFT_PART_INSTALL/usr/share/icons/hicolor/
       # Modify the icon paths for the snap.
       mkdir -p $SNAPCRAFT_PART_INSTALL/usr/share/applications/
-      # sed 's|Icon=distributor-logo-ubuntu-budgie|Icon=${SNAP}/usr/share/icons/hicolor/scalable/apps/distributor-logo-ubuntu-budgie\.svg|' desktop/budgie-welcome.desktop > $SNAPCRAFT_PART_INSTALL/usr/share/applications/budgie-welcome.desktop
-      # sed 's|Icon=distributor-logo-ubuntu-budgie|Icon=${SNAP}/usr/share/icons/hicolor/scalable/apps/distributor-logo-ubuntu-budgie\.svg|' desktop/budgie-applets.desktop > $SNAPCRAFT_PART_INSTALL/usr/share/applications/budgie-applets.desktop
-      # sed 's|Icon=distributor-logo-ubuntu-budgie|Icon=${SNAP}/usr/share/icons/hicolor/scalable/apps/distributor-logo-ubuntu-budgie\.svg|' desktop/budgie-themes.desktop > $SNAPCRAFT_PART_INSTALL/usr/share/applications/budgie-themes.desktop
-      # sed 's|Icon=distributor-logo-ubuntu-budgie|Icon=${SNAP}/usr/share/icons/hicolor/scalable/apps/distributor-logo-ubuntu-budgie\.svg|' desktop/budgie-discourse.desktop > $SNAPCRAFT_PART_INSTALL/usr/share/applications/budgie-discourse.desktop
-
       cp desktop/*.desktop $SNAPCRAFT_PART_INSTALL/usr/share/applications/
+      sed -i 's|Icon=distributor-logo-ubuntu-budgie|Icon=${SNAP}/usr/share/icons/hicolor/scalable/apps/distributor-logo-ubuntu-budgie.svg|' $SNAPCRAFT_PART_INSTALL/usr/share/applications/budgie-welcome.desktop
+      sed -i 's|Icon=distributor-logo-ubuntu-budgie|Icon=${SNAP}/usr/share/icons/hicolor/scalable/apps/distributor-logo-ubuntu-budgie.svg|' $SNAPCRAFT_PART_INSTALL/usr/share/applications/budgie-applets.desktop
+      sed -i 's|Icon=distributor-logo-ubuntu-budgie|Icon=${SNAP}/usr/share/icons/hicolor/scalable/apps/distributor-logo-ubuntu-budgie.svg|' $SNAPCRAFT_PART_INSTALL/usr/share/applications/budgie-themes.desktop
+      sed -i 's|Icon=distributor-logo-ubuntu-budgie|Icon=${SNAP}/usr/share/icons/hicolor/scalable/apps/distributor-logo-ubuntu-budgie.svg|' $SNAPCRAFT_PART_INSTALL/usr/share/applications/budgie-discourse.desktop
     prime:
       - usr/bin/
       - usr/share/budgie-welcome/
