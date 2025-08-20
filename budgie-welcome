@@ -1308,7 +1308,12 @@ class PackageData(object):
 
     def __init__(self):
         with open(app.json_path) as file:
-            self.data = json.load(file)
+            try:
+                self.data = json.load(file)
+            except json.JSONDecodeError as e:
+                print(f"JSON decode error: {e}" + app.json_path)
+            except Exception as e:
+                print(f"Other error: {e}" + app.json_path)
 
     def getShortCodes(self, filename):
         return self.data[filename].keys()
@@ -1980,7 +1985,7 @@ class WelcomeApp(object):
                             'jammy'  : '2025-04-22',
                             'noble'  : '2027-04-22'}
 
-        app_code_names = { 'xenial', 'bionic', 'focal', 'jammy', 'kinetic', 'lunar', 'mantic', 'noble', 'oracular', 'plucky'}
+        app_code_names = { 'xenial', 'bionic', 'focal', 'jammy', 'kinetic', 'lunar', 'mantic', 'noble', 'oracular', 'plucky', 'questing'}
 
         if systemstate.codename not in app_code_names:
             dialog = Gtk.MessageDialog( parent=self._window,
