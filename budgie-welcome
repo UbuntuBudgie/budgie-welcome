@@ -1983,9 +1983,10 @@ class WelcomeApp(object):
                             'bionic' : '2021-04-22',
                             'focal'  : '2023-04-22',
                             'jammy'  : '2025-04-22',
-                            'noble'  : '2027-04-22'}
+                            'noble'  : '2027-04-22',
+                            'resolute' : '2029-04-22'}
 
-        app_code_names = { 'xenial', 'bionic', 'focal', 'jammy', 'kinetic', 'lunar', 'mantic', 'noble', 'oracular', 'plucky', 'questing'}
+        app_code_names = { 'xenial', 'bionic', 'focal', 'jammy', 'kinetic', 'lunar', 'mantic', 'noble', 'oracular', 'plucky', 'questing', 'resolute'}
 
         if systemstate.codename not in app_code_names:
             dialog = Gtk.MessageDialog( parent=self._window,
@@ -2430,7 +2431,9 @@ def find_app_version(cache=apt.Cache()):
     cmd = "budgie-desktop --version"
     stream = os.popen(cmd)
     output = stream.readlines()
-    versions.append(output[0].split(' ')[1])
+    #versions.append(output[0].split(' ')[1])
+    m = re.search(r'(\d+\.\d+)', output[0].split(' ')[1])
+    versions.append(m.group(1))
 
     return versions
 
