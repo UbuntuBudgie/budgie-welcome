@@ -1,148 +1,400 @@
+---
+// Ubuntu Budgie Welcome — Features, macOS-style, no sidebar
+---
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-		<script>import "preline/dist/preline.js";</script>
-	</head>
-	<body class="bg-gray-100 transition-opacity duration-1000">
-        <div id="wrapper">
-        <br>  
-            <div id="title-inject" class="text-center mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">&zwnj;Features&zwnj;</div>  
-            <div id="content" class="container mx-auto fade-in">
-                <div class="fade-in">
-                    <div class="w-full">
-                        <!-- Body content -->
-                        <h2 class="text-3xl font-semibold mb-4">&zwnj;Modern and Full-Featured&zwnj;</h2>
-                        <p class="mb-8">&zwnj;Ubuntu Budgie is a modern computer operating system, with an attractive and easy to understand user interface. Its update manager keeps not only the operating system itself, but all of its installed applications updated to the current release. The operating system is more secure, and better supported than operating systems that come pre-installed on most home computer hardware today.&zwnj;</p>
-                    </div>
-                </div>
-                <hr class="my-8">
-                <h3 class="fade-in text-2xl font-semibold mb-4">&zwnj;Pre-Configured Yet Flexible&zwnj;</h3>
-                <div class="fade-in flex items-center mb-8">
-                    <div class="w-1/6 flex justify-center">
-                        <img class="w-16 h-16" src="img/applications/gnome-settings.svg" alt="Settings Icon">
-                    </div>
-                    <div class="w-5/6">
-                        <p>&zwnj;Using Ubuntu Budgie provides you with the freedom to run a complete, full-featured operating system, pre-configured with most, if not all, of the applications you will need for your daily computing - or to change anything about the way it looks, the way it works, or the applications it runs to suit your taste.&zwnj;</p>
-                    </div>
-                </div>
-                <hr class="my-8">
-                <h3 class="fade-in text-2xl font-semibold mb-4">&zwnj;Built-In Security&zwnj;</h3>
-                <div class="fade-in flex items-center mb-8">
-                    <div class="w-1/6 flex justify-center">
-                        <img class="w-16 h-16" src="img/applications/updation.svg" alt="Updation Icon">
-                    </div>
-                    <div class="w-5/6">
-                        <p>&zwnj;Ubuntu Budgie is designed with security in mind. Unlike operating systems that update only once a month, Ubuntu Budgie receives updates continuously. The updates include security patches for Ubuntu Budgie and all of its components. Security updates for all of its installed applications are also provided on the same schedule. This ensures that you have the latest protection for all of your computer's software -- as soon as it's available!&zwnj;</p>
-                    </div>
-                </div>
-                <hr class="my-8">
-                <div class="fade-in flex items-center mb-8">
-                    <div class="w-1/6 flex justify-center">
-                        <img class="w-16 h-16" src="img/applications/protection.svg" alt="Protection Icon">
-                    </div>
-                    <div class="w-5/6">
-                        <p>&zwnj;Ubuntu Budgie can get viruses and other infections... but it is rare. Rapid and timely updates make it difficult for viruses, root kits and other malware to be installed and run without conscious intervention by you, the user. Even if you do accidentally invite in an infection, chances are it's designed to attack Windows and won't do much, if any damage to Ubuntu Budgie.&zwnj;</p>
-                    </div>
-                </div>
-                <hr class="my-8">
-                <div class="fade-in flex items-center mb-8">
-                    <div class="w-1/6 flex justify-center">
-                        <img class="w-16 h-16" src="img/applications/security.svg" alt="Security Icon">
-                    </div>
-                    <div class="w-5/6">
-                        <p>&zwnj;Another significant security feature of Ubuntu Budgie is that its users are not superusers by default. Superusers (also known as "root" users or administrators) on any computer system have permission to do anything they want, including the ability to damage the system.&zwnj;</p>
-                        <p>&zwnj;For example, other operating systems look at the name of a file to determine which program should open it, then immediately attempt to open it. That design makes it easy for an intruder to attack a computer. Ubuntu Budgie opens a file based on what the file is, not based on its name. So even if a malicious program disguises its identity by using the name "Last Will and Testament.txt" Ubuntu Budgie will recognize the file as a program. The system provides a warning that the file is not a text file, but that it is a program that will be run if you give it permission to continue. To be extra secure, Ubuntu Budgie requires you to provide your administrator password before that permission is granted. Every single time.&zwnj;</p>
-                    </div>
-                </div>
-                <hr class="my-8">
-                <div class="fade-in">
-                    <div class="w-full">
-                        <h2 class="text-3xl font-semibold mb-4">&zwnj;Powerful Applications&zwnj;</h2>
-                        <p class="mb-8">&zwnj;While budgie-desktop provides the essential user interface to control and use a computer, Ubuntu Budgie adds a collection of additional applications to turn your computer into a truly powerful workstation.&zwnj;</p>
-                        <h3 class="text-2xl font-semibold mb-4">&zwnj;Productivity&zwnj;</h3>
-                    </div>
-                </div>
-                <div class="fade-in flex items-center mb-8">
-                    <div class="w-1/6 flex justify-center">
-                        <img class="w-16 h-16" src="img/applications/firefox.png" alt="Firefox Icon">
-                    </div>
-                    <div class="w-5/6">
-                        <p>&zwnj;<span class="font-semibold">Firefox</span> delivers safe, easy web browsing. A familiar user interface, enhanced security features including protection from online identity theft, and an integrated search to let you get the most out of the web.&zwnj;</p>
-                    </div>
-                </div>
-                <hr class="my-8">
-                <div class="fade-in flex items-center mb-8">
-                    <div class="w-1/6 flex justify-center">
-                        <img class="w-16 h-16" src="img/applications/libreoffice.svg" alt="LibreOffice Icon">
-                    </div>
-                    <div class="w-5/6">
-                        <p>&zwnj;<span class="font-semibold">LibreOffice</span> is a full-featured office productivity suite that provides a near drop-in replacement for Microsoft(R) Office; its clean interface and powerful tools let you unleash your creativity and grow your productivity. LibreOffice embeds several applications that make it the most powerful Free and Open Source Office suite on the market:&zwnj;</p>
-                        <ul class="list-disc list-inside pl-4">
-                            <li class="flex items-center"><img class="w-5 h-5 mr-2" src="img/applications/libreoffice/libreoffice-writer.svg" alt="Writer Icon"> &zwnj;Writer, the word processor.&zwnj;</li>
-                            <li class="flex items-center"><img class="w-5 h-5 mr-2" src="img/applications/libreoffice/libreoffice-calc.svg" alt="Calc Icon"> &zwnj;Calc, the spreadsheet application.&zwnj;</li>
-                            <li class="flex items-center"><img class="w-5 h-5 mr-2" src="img/applications/libreoffice/libreoffice-impress.svg" alt="Impress Icon"> &zwnj;Impress, the presentation engine.&zwnj;</li>
-                            <li class="flex items-center"><img class="w-5 h-5 mr-2" src="img/applications/libreoffice/libreoffice-draw.svg" alt="Draw Icon"> &zwnj;Draw, the drawing and flowcharting application&zwnj;</li>
-                            <li class="flex items-center"><img class="w-5 h-5 mr-2" src="img/applications/libreoffice/libreoffice-math.svg" alt="Math Icon"> &zwnj;Math, for editing mathematics.&zwnj;</li>
-                        </ul>
-                    </div>
-                </div>
-                <hr class="my-8">
-                <h3 class="fade-in text-2xl font-semibold mb-4">&zwnj;Entertainment&zwnj;</h3>
-                <div class="fade-in flex items-center mb-8">
-                    <div class="w-1/6 flex justify-center">
-                        <img class="w-16 h-16" src="img/applications/rhythmbox.svg" alt="Rhythmbox Icon">
-                    </div>
-                    <div class="w-5/6">
-                        <p>&zwnj;<span class="before:content-['Rhythmbox'] after:hidden">Lollypop</span> is a very easy to use music playing and management program which supports a wide range of audio formats (including mp3 and ogg).&zwnj;</p>
-                        <p>&zwnj;Goodvibes supports Internet Radio.&zwnj;</p>
-                        <p>&zwnj;gPodder supports Podcasts.&zwnj;</p>
-                    </div>
-                </div>
-                <hr class="my-8">
-                <div class="fade-in flex items-center mb-8">
-                    <div class="w-1/6 flex justify-center">
-                        <img class="w-16 h-16" src="img/applications/gnome-photos.svg" alt="Photos Icon">
-                    </div>
-                    <div class="w-5/6">
-                        <p>&zwnj;<span class="font-semibold">gThumb</span> is a digital photo organizer. It allows you to import photos from disk or camera, organize them in various ways, view them in full-window or fullscreen mode, and export them to share with others. It is able to manage a lot of different image formats.&zwnj;</p>
-                    </div>
-                </div>
-                <hr class="my-8">
-                <div class="fade-in flex items-center mb-8">
-                    <div class="w-1/6 flex justify-center">
-                        <img class="w-16 h-16" src="img/applications/gnome-mpv.png" alt="Media Player Icon">
-                    </div>
-                    <div class="w-5/6">
-                        <p>&zwnj;<span class="before:content-['Celluloid'] after:hidden">Parole</span> is a media player. It plays MPEG, MPEG-2, MPEG-4, DivX, MOV, WMV, QuickTime, WebM, FLAC, MP3, Ogg/Vorbis files, DVDs, VCDs, podcasts, and multimedia streams from various network sources.&zwnj;</p>
-                    </div>
-                </div>
-                <hr class="my-8">
-                <div class="fade-in text-center">
-                    <h4 class="text-xl font-semibold mb-4">&zwnj;... And a whole lot more!&zwnj;</h4>
-                    <p>&zwnj;Naturally you'll also find a document/photo scanner and printer management all included in Ubuntu Budgie. And this is just the start. <a href="#" class="text-blue-500 underline" onclick="cmd('software-center');"><span name="software-center"></span></a> includes best-in-class applications for most tasks and a single click will give you access to thousands of applications suitable for just about any professional or recreational pursuit.&zwnj;</p>
-                </div>
-                <hr class="my-8">
-                <h3 class="fade-in text-2xl font-semibold mb-4">&zwnj;Games&zwnj;</h3>
-                <div class="fade-in flex items-center mb-8">
-                    <div class="w-1/6 flex justify-center">
-                        <img class="w-16 h-16" src="img/applications/steam.svg" alt="Steam Icon">
-                    </div>
-                    <div class="w-5/6">
-                        <p>&zwnj;In the last couple of years Linux has become a first-class gaming platform thanks to <a href="https://www.valvesoftware.com" class="text-blue-500 underline">Valve</a> bringing their <a href="https://store.steampowered.com" class="text-blue-500 underline">Steam</a> platform to Linux. At the time of writing Steam has more than 2000 high quality indie and AAA titles available for Linux. Ubuntu Budgie is fully compatible with Steam for Linux.&zwnj;</p>
-                        <p>&zwnj;While Steam is a major step forward for gaming on Linux, there are also many high quality and enjoyable Open Source games titles available for Ubuntu Budgie. It doesn't matter if you like flight simulators, motor racing, first person shooters, jump and run or card games, you'll find something to keep you entertained.&zwnj;</p>
-                    </div>
-                </div>
-                <br><br>
-            </div>
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="viewport" content="width=device-width" />
+  <title>Ubuntu Budgie Welcome — Features</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:            #e8e8e8;
+      --win-bg:        #ffffff;
+      --bar-bg:        #f5f5f5;
+      --bar-border:    #e0e0e0;
+      --text-primary:  #1a1a1a;
+      --text-secondary:#6b6b6b;
+      --text-tertiary: #9b9b9b;
+      --accent:        #2563eb;
+      --hover-bg:      #ebebeb;
+      --card-border:   #e8e8e8;
+      --shadow-sm:     0 1px 3px rgba(0,0,0,.06), 0 1px 2px rgba(0,0,0,.04);
+      --shadow-md:     0 4px 12px rgba(0,0,0,.08), 0 2px 4px rgba(0,0,0,.04);
+      --shadow-win:    0 20px 60px rgba(0,0,0,.18), 0 8px 24px rgba(0,0,0,.10);
+      --radius-sm:     6px;
+      --radius-md:     10px;
+      --radius-win:    14px;
+      --font:          'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+
+    html, body {
+      height: 100%; overflow: hidden;
+      background: var(--bg); font-family: var(--font);
+      display: flex; align-items: center; justify-content: center;
+      padding: 24px;
+    }
+
+    /* ── Window ── */
+    .window {
+      width: 860px; max-width: 100%;
+      height: calc(100vh - 48px);
+      max-height: 680px; min-height: 480px;
+      background: var(--win-bg); border-radius: var(--radius-win);
+      box-shadow: var(--shadow-win); overflow: hidden;
+      display: flex; flex-direction: column;
+      animation: fadeUp .3s ease both;
+    }
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(6px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ── Title Bar ── */
+    .titlebar {
+      height: 44px; background: var(--bar-bg);
+      border-bottom: 1px solid var(--bar-border);
+      display: flex; align-items: center;
+      padding: 0 16px; gap: 8px;
+      flex-shrink: 0; position: relative; user-select: none;
+    }
+
+    /* Back button — replaces traffic lights on sub-pages */
+    .back-btn {
+      display: flex; align-items: center; gap: 5px;
+      background: none; border: none; cursor: pointer;
+      color: var(--accent); font-family: var(--font);
+      font-size: 13px; font-weight: 500;
+      padding: 4px 6px 4px 2px;
+      border-radius: var(--radius-sm);
+      transition: background .12s, opacity .12s;
+      text-decoration: none;
+      line-height: 1;
+    }
+    .back-btn:hover { background: rgba(37,99,235,.08); }
+    .back-btn:active { opacity: .7; }
+    .back-btn svg { width: 16px; height: 16px; flex-shrink: 0; }
+
+    .titlebar-label {
+      position: absolute; left: 50%; transform: translateX(-50%);
+      font-size: 13px; font-weight: 500;
+      color: var(--text-secondary); letter-spacing: -.01em; pointer-events: none;
+    }
+
+    /* ── Main ── */
+    .main { flex: 1; display: flex; flex-direction: column; overflow: hidden; min-height: 0; }
+
+    /* ── Page Header ── */
+    .page-header {
+      padding: 22px 32px 16px; border-bottom: 1px solid var(--card-border); flex-shrink: 0;
+    }
+    .page-header h1 {
+      font-size: 21px; font-weight: 600;
+      color: var(--text-primary); letter-spacing: -.02em;
+    }
+    .page-header p {
+      margin-top: 4px; font-size: 13px;
+      color: var(--text-secondary); line-height: 1.55; max-width: 580px;
+    }
+
+    /* ── Scroll body ── */
+    .scroll-body { flex: 1; overflow-y: auto; min-height: 0; padding: 22px 32px 24px; }
+    .scroll-body::-webkit-scrollbar { width: 6px; }
+    .scroll-body::-webkit-scrollbar-track { background: transparent; }
+    .scroll-body::-webkit-scrollbar-thumb { background: #d4d4d4; border-radius: 3px; }
+    .scroll-body::-webkit-scrollbar-thumb:hover { background: #aaa; }
+
+    /* ── Section block ── */
+    .section { margin-bottom: 24px; }
+    .section-head {
+      display: flex; align-items: center; gap: 10px; margin-bottom: 10px;
+    }
+    .section-icon {
+      width: 30px; height: 30px; border-radius: 8px;
+      display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+    }
+    .section-icon img { width: 20px; height: 20px; object-fit: contain; }
+    .section-icon.blue   { background: #dbeafe; }
+    .section-icon.purple { background: #ede9fe; }
+    .section-icon.green  { background: #dcfce7; }
+    .section-icon.orange { background: #ffedd5; }
+    .section-icon.teal   { background: #ccfbf1; }
+    .section-icon.amber  { background: #fef3c7; }
+    .section-title { font-size: 14px; font-weight: 600; color: var(--text-primary); }
+    .section-sub   { font-size: 11px; color: var(--text-tertiary); margin-top: 1px; }
+    .section-body  { font-size: 13px; color: var(--text-secondary); line-height: 1.65; }
+    .section-body p + p { margin-top: 8px; }
+    .section-body a { color: var(--accent); text-decoration: none; }
+    .section-body a:hover { text-decoration: underline; }
+    .section-body strong { color: var(--text-primary); font-weight: 500; }
+
+    /* ── Feature cards ── */
+    .feature-card {
+      display: flex; align-items: flex-start; gap: 14px;
+      padding: 14px 16px; border-radius: var(--radius-md);
+      border: 1px solid var(--card-border); background: #fafafa;
+      margin-bottom: 8px;
+      transition: box-shadow .15s, transform .12s;
+      animation: fadeUp .28s ease both;
+    }
+    .feature-card:hover { box-shadow: var(--shadow-sm); transform: translateY(-1px); }
+    .feature-card:nth-child(1) { animation-delay: .03s; }
+    .feature-card:nth-child(2) { animation-delay: .06s; }
+    .feature-card:nth-child(3) { animation-delay: .09s; }
+    .feature-card:nth-child(4) { animation-delay: .12s; }
+    .feature-card:nth-child(5) { animation-delay: .15s; }
+    .feature-card:nth-child(6) { animation-delay: .18s; }
+    .feature-card:nth-child(7) { animation-delay: .21s; }
+
+    .feature-icon {
+      width: 42px; height: 42px; border-radius: 10px; flex-shrink: 0;
+      display: flex; align-items: center; justify-content: center; background: #efefef;
+      overflow: hidden;
+    }
+    .feature-icon img { width: 34px; height: 34px; object-fit: contain; }
+    .feature-text { flex: 1; min-width: 0; }
+    .feature-name { font-size: 13.5px; font-weight: 500; color: var(--text-primary); margin-bottom: 3px; }
+    .feature-desc { font-size: 12.5px; color: var(--text-secondary); line-height: 1.6; }
+    .feature-desc a { color: var(--accent); text-decoration: none; }
+    .feature-desc a:hover { text-decoration: underline; }
+    .feature-desc strong { color: var(--text-primary); font-weight: 500; }
+
+    /* LibreOffice pills */
+    .app-pills { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+    .app-pill {
+      display: inline-flex; align-items: center; gap: 4px;
+      padding: 3px 9px; background: #eff4ff; border: 1px solid #dbeafe;
+      border-radius: 20px; font-size: 11.5px; color: #2563eb; font-weight: 500;
+    }
+    .app-pill img { width: 13px; height: 13px; }
+
+    /* ── Category divider ── */
+    .cat-divider {
+      display: flex; align-items: center; gap: 10px;
+      margin: 22px 0 12px;
+    }
+    .cat-label {
+      font-size: 10.5px; font-weight: 600; letter-spacing: .07em;
+      text-transform: uppercase; color: var(--text-tertiary); white-space: nowrap;
+    }
+    .cat-line { flex: 1; height: 1px; background: var(--card-border); }
+
+    /* ── CTA banner ── */
+    .cta-banner {
+      background: linear-gradient(135deg, #eff6ff 0%, #f5f3ff 100%);
+      border: 1px solid #dbeafe; border-radius: var(--radius-md);
+      padding: 16px 20px; margin-top: 20px; text-align: center;
+    }
+    .cta-banner h4 { font-size: 14px; font-weight: 600; color: var(--text-primary); margin-bottom: 5px; }
+    .cta-banner p  { font-size: 12.5px; color: var(--text-secondary); line-height: 1.6; }
+    .cta-banner a  { color: var(--accent); text-decoration: none; font-weight: 500; }
+    .cta-banner a:hover { text-decoration: underline; }
+
+    /* ── Footer ── */
+    .win-footer {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 9px 24px; border-top: 1px solid var(--card-border);
+      background: var(--bar-bg); flex-shrink: 0;
+    }
+    .discourse-link {
+      display: flex; align-items: center; gap: 7px;
+      text-decoration: none; font-size: 12px; color: var(--text-secondary);
+    }
+    .discourse-link img { height: 18px; }
+    .social-links { display: flex; gap: 4px; }
+    .social-link {
+      width: 28px; height: 28px; border-radius: 6px;
+      display: flex; align-items: center; justify-content: center;
+      color: var(--text-tertiary); text-decoration: none;
+      transition: background .12s, color .12s;
+      border: none; background: transparent; cursor: pointer;
+    }
+    .social-link:hover { background: var(--hover-bg); color: var(--text-primary); }
+    .social-link svg { width: 14px; height: 14px; }
+  </style>
+</head>
+<body>
+<div class="window">
+
+  <!-- Title Bar — sub-page: back arrow instead of traffic lights -->
+  <div class="titlebar">
+    <a href="index" class="back-btn" title="Back to Home">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.2" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+      </svg>
+      Back
+    </a>
+    <span class="titlebar-label">Features</span>
+  </div>
+
+  <div class="main">
+
+    <div class="page-header">
+      <h1>Features</h1>
+      <p>Ubuntu Budgie is a modern, attractive operating system — pre-configured, secure, and packed with powerful applications for everyday use.</p>
+    </div>
+
+    <div class="scroll-body">
+
+      <!-- Overview -->
+      <div class="section">
+        <div class="section-head">
+          <div class="section-icon blue"><img src="img/applications/gnome-settings.svg" alt="" /></div>
+          <div>
+            <div class="section-title">Modern &amp; Full-Featured</div>
+            <div class="section-sub">An OS built for today's computing</div>
+          </div>
         </div>
-    </body>
+        <div class="section-body">
+          <p>Ubuntu Budgie is a modern computer operating system, with an attractive and easy to understand user interface. Its update manager keeps not only the operating system itself, but all of its installed applications updated to the current release. The operating system is more secure, and better supported than operating systems that come pre-installed on most home computer hardware today.</p>
+        </div>
+      </div>
 
+      <!-- Pre-configured -->
+      <div class="feature-card">
+        <div class="feature-icon"><img src="img/applications/gnome-settings.svg" alt="Settings" /></div>
+        <div class="feature-text">
+          <div class="feature-name">Pre-Configured Yet Flexible</div>
+          <div class="feature-desc">Ubuntu Budgie comes pre-configured with most applications you need for daily computing — and gives you complete freedom to change how it looks, how it works, and what it runs to suit your taste.</div>
+        </div>
+      </div>
 
+      <!-- Security -->
+      <div class="cat-divider">
+        <span class="cat-label">Security</span>
+        <div class="cat-line"></div>
+      </div>
 
+      <div class="feature-card">
+        <div class="feature-icon"><img src="img/applications/updation.svg" alt="Updates" /></div>
+        <div class="feature-text">
+          <div class="feature-name">Continuous Security Updates</div>
+          <div class="feature-desc">Unlike operating systems that update once a month, Ubuntu Budgie receives updates continuously. Security patches for the OS and all installed applications are delivered on the same schedule — protection as soon as it's available.</div>
+        </div>
+      </div>
 
+      <div class="feature-card">
+        <div class="feature-icon"><img src="img/applications/protection.svg" alt="Protection" /></div>
+        <div class="feature-text">
+          <div class="feature-name">Resistant to Malware</div>
+          <div class="feature-desc">Viruses and malware are rare on Ubuntu Budgie. Rapid updates make it difficult for malware to be installed without your explicit intervention. Even if something slips through, it's most likely built for Windows and will cause little or no damage.</div>
+        </div>
+      </div>
 
-    </body>
+      <div class="feature-card">
+        <div class="feature-icon"><img src="img/applications/security.svg" alt="Security" /></div>
+        <div class="feature-text">
+          <div class="feature-name">Privilege-Based Permissions</div>
+          <div class="feature-desc">Users are not superusers by default. Ubuntu Budgie opens files based on <em>what</em> they are, not their name — a malicious program disguised as a text file is identified and flagged. Your administrator password is required every single time elevated access is needed.</div>
+        </div>
+      </div>
+
+      <!-- Applications -->
+      <div class="cat-divider">
+        <span class="cat-label">Powerful Applications</span>
+        <div class="cat-line"></div>
+      </div>
+
+      <div class="section-body" style="margin-bottom:14px;">
+        <p>While budgie-desktop provides the essential user interface, Ubuntu Budgie adds a curated collection of applications to turn your computer into a truly powerful workstation.</p>
+      </div>
+
+      <div class="cat-divider" style="margin-top:4px;">
+        <span class="cat-label" style="font-size:10px;color:#bbb;">Productivity</span>
+        <div class="cat-line"></div>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon"><img src="img/applications/firefox.png" alt="Firefox" /></div>
+        <div class="feature-text">
+          <div class="feature-name">Firefox</div>
+          <div class="feature-desc">Safe, easy web browsing with a familiar interface, enhanced security including protection from online identity theft, and an integrated search to get the most out of the web.</div>
+        </div>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon"><img src="img/applications/libreoffice.svg" alt="LibreOffice" /></div>
+        <div class="feature-text">
+          <div class="feature-name">LibreOffice</div>
+          <div class="feature-desc">A full-featured office suite and near drop-in replacement for Microsoft Office. Clean interface, powerful tools, and everything you need for documents, spreadsheets, and presentations.</div>
+          <div class="app-pills">
+            <span class="app-pill"><img src="img/applications/libreoffice/libreoffice-writer.svg" alt="" /> Writer</span>
+            <span class="app-pill"><img src="img/applications/libreoffice/libreoffice-calc.svg" alt="" /> Calc</span>
+            <span class="app-pill"><img src="img/applications/libreoffice/libreoffice-impress.svg" alt="" /> Impress</span>
+            <span class="app-pill"><img src="img/applications/libreoffice/libreoffice-draw.svg" alt="" /> Draw</span>
+            <span class="app-pill"><img src="img/applications/libreoffice/libreoffice-math.svg" alt="" /> Math</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="cat-divider" style="margin-top:18px;">
+        <span class="cat-label" style="font-size:10px;color:#bbb;">Entertainment</span>
+        <div class="cat-line"></div>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon"><img src="img/applications/rhythmbox.svg" alt="Music" /></div>
+        <div class="feature-text">
+          <div class="feature-name">Music &amp; Podcasts</div>
+          <div class="feature-desc"><strong>Lollypop</strong> handles music in a wide range of formats including MP3 and Ogg. <strong>Goodvibes</strong> supports internet radio, and <strong>gPodder</strong> manages your podcast subscriptions.</div>
+        </div>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon"><img src="img/applications/gnome-photos.svg" alt="Photos" /></div>
+        <div class="feature-text">
+          <div class="feature-name">gThumb Photo Manager</div>
+          <div class="feature-desc">Import photos from disk or camera, organize, view in fullscreen, and export to share. Handles a wide range of image formats.</div>
+        </div>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon"><img src="img/applications/gnome-mpv.png" alt="Video" /></div>
+        <div class="feature-text">
+          <div class="feature-name">Celluloid Media Player</div>
+          <div class="feature-desc">Plays MPEG, MPEG-4, DivX, MOV, WMV, QuickTime, WebM, FLAC, MP3, Ogg/Vorbis, DVDs, VCDs, podcasts, and multimedia streams from network sources.</div>
+        </div>
+      </div>
+
+      <div class="cat-divider" style="margin-top:18px;">
+        <span class="cat-label" style="font-size:10px;color:#bbb;">Games</span>
+        <div class="cat-line"></div>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon"><img src="img/applications/steam.svg" alt="Steam" /></div>
+        <div class="feature-text">
+          <div class="feature-name">Steam &amp; Linux Gaming</div>
+          <div class="feature-desc">Linux is now a first-class gaming platform thanks to <a href="https://store.steampowered.com">Valve's Steam</a>, with thousands of indie and AAA titles. Ubuntu Budgie is fully compatible, plus a rich selection of open-source games across every genre.</div>
+        </div>
+      </div>
+
+      <div class="cta-banner">
+        <h4>… and a whole lot more</h4>
+        <p>Ubuntu Budgie includes a document &amp; photo scanner, printer management, and countless pre-installed tools. A single click in the <a href="#" onclick="cmd('software-center')">Software Center</a> opens access to thousands of additional applications for any professional or recreational pursuit.</p>
+      </div>
+
+    </div><!-- end scroll-body -->
+
+    <div class="win-footer">
+      <a href="#" class="discourse-link">
+        <span style="font-size:12px;color:#9b9b9b;">Get support on</span>
+        <img src="public/img/logos/discourse-logo-dark.svg" alt="Discourse" />
+      </a>
+      <div class="social-links">
+        <a href="#" class="social-link" title="Blog"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width=".3" d="M19 7h1v12a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h11.5M7 14h6m-6 3h6m0-10h.5m-.5 3h.5M7 7h3v3H7V7Z"/></svg></a>
+        <a href="#" class="social-link" title="Twitter"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/></svg></a>
+        <a href="#" class="social-link" title="GitHub"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg></a>
+        <a href="#" class="social-link" title="Slack"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M3.362 10.11c0 .926-.756 1.681-1.681 1.681S0 11.036 0 10.111C0 9.186.756 8.43 1.68 8.43h1.682v1.68zm.846 0c0-.924.756-1.68 1.681-1.68s1.681.756 1.681 1.68v4.21c0 .924-.756 1.68-1.68 1.68a1.685 1.685 0 0 1-1.682-1.68v-4.21zM5.89 3.362c-.926 0-1.682-.756-1.682-1.681S4.964 0 5.89 0s1.68.756 1.68 1.68v1.682H5.89zm0 .846c.924 0 1.68.756 1.68 1.681S6.814 7.57 5.89 7.57H1.68C.757 7.57 0 6.814 0 5.89c0-.926.756-1.682 1.68-1.682h4.21zm6.749 1.682c0-.926.755-1.682 1.68-1.682.925 0 1.681.756 1.681 1.681s-.756 1.681-1.68 1.681h-1.681V5.89zm-.848 0c0 .924-.755 1.68-1.68 1.68A1.685 1.685 0 0 1 8.43 5.89V1.68C8.43.757 9.186 0 10.11 0c.926 0 1.681.756 1.681 1.68v4.21zm-1.681 6.748c.926 0 1.682.756 1.682 1.681S11.036 16 10.11 16s-1.681-.756-1.681-1.68v-1.682h1.68zm0-.847c-.924 0-1.68-.755-1.68-1.68 0-.925.756-1.681 1.68-1.681h4.21c.924 0 1.68.756 1.68 1.68 0 .926-.756 1.681-1.68 1.681h-4.21z"/></svg></a>
+      </div>
+    </div>
+
+  </div>
+</div>
+</body>
+</html>

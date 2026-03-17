@@ -1,100 +1,518 @@
+---
+// Ubuntu Budgie Welcome — Get Involved
+---
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-		<script>import "preline/dist/preline.js";</script>
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="viewport" content="width=device-width" />
+  <title>Ubuntu Budgie Welcome — Get Involved</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-	</head>
-	<body>
+    :root {
+      --bg:            #e8e8e8;
+      --win-bg:        #ffffff;
+      --bar-bg:        #f5f5f5;
+      --bar-border:    #e0e0e0;
+      --text-primary:  #1a1a1a;
+      --text-secondary:#6b6b6b;
+      --text-tertiary: #9b9b9b;
+      --accent:        #2563eb;
+      --accent-light:  #dbeafe;
+      --hover-bg:      #ebebeb;
+      --card-border:   #e8e8e8;
+      --shadow-sm:     0 1px 3px rgba(0,0,0,.06), 0 1px 2px rgba(0,0,0,.04);
+      --shadow-md:     0 4px 12px rgba(0,0,0,.08), 0 2px 4px rgba(0,0,0,.04);
+      --shadow-win:    0 20px 60px rgba(0,0,0,.18), 0 8px 24px rgba(0,0,0,.10);
+      --radius-sm:     6px;
+      --radius-md:     10px;
+      --radius-lg:     14px;
+      --radius-win:    14px;
+      --font:          'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    }
 
-		<div class="container mx-auto px-4">
-			<div class="text-center mb-8">
-			  <h1 class="text-3xl font-bold">Get Involved</h1>
-			</div>
-			
-			<div class="space-y-8">
-			  <section>
-				<h2 class="text-2xl font-semibold mb-4">Thanks for Your Support</h2>
-				<p class="mb-4">Ubuntu Budgie receives a great deal of support from its community of users and we would like to thank each and every contributor for participating. We are growing at a steady pace and our distribution is getting better every day thanks to you.</p>
-				<p>It is very easy to make a difference. Depending on your skill set, your availability you can help Ubuntu Budgie in one or more of the following ways:</p>
-			  </section>
-		  
-			  <hr class="my-8">
-		  
-			  <section>
-				<h2 class="text-2xl font-semibold mb-4">Support & Promotion</h2>
-				<h3 class="text-xl font-semibold mb-2">Spreading the word</h3>
-				<p class="mb-4">If you like Ubuntu Budgie, let people know. Blog, add comments in forums and talk about it with your friends and the people around you.</p>
-		  
-				<h3 class="text-xl font-semibold mb-2">Joining the Community</h3>
-				<p class="mb-4">Ubuntu Budgie isn't just an operating system, it's also a dynamic community of people who enjoy, gather, and interact with a free and open project. Whether it's by helping others sort through issues, by making them feel welcome, or simply by meeting and talking to other Ubuntu Budgie users, we recommend you join the community and participate in making Ubuntu Budgie better.</p>
-		  
-				<h3 class="text-xl font-semibold mb-2">Helping others</h3>
-				<p>If you have some spare time and you're willing to help other users with technical problems, you should seriously consider reading the forums and/or joining the community chat-room and helping other Ubuntu Budgie users solve the problems you know how to fix.</p>
-			  </section>
-		  
-			  <hr class="my-8">
-		  
-			  <section>
-				<h2 class="text-2xl font-semibold mb-4">Project contributions</h2>
-				<h3 class="text-xl font-semibold mb-2">Bug reports</h3>
-				<p class="mb-4">If you've noticed something that doesn't work properly while using Ubuntu Budgie, let us know. The problem you have discovered is likely to affect others as well; The sooner we know about it, the sooner we're able to fix it.</p>
-		  
-				<h3 class="text-xl font-semibold mb-2">New ideas</h3>
-				<p class="mb-4">The vast majority of improvements included in each release come from the community. If there's something that you think is missing or that could be done better, please tell us. Whether it's the inclusion of a missing software application that should be part of a stock installation or if you have any other ideas on how to make Ubuntu Budgie better, we're always interested in hearing them.</p>
-		  
-				<h3 class="text-xl font-semibold mb-2">Artwork</h3>
-				<p class="mb-4">If you are talented in graphic design and willing to contribute to the project, please send us your creations and artwork. Whether it's a simple wallpaper, an icon set, a splash screen, or even a new logo, we're always interested to hear from you about new artwork.</p>
-		  
-				<h3 class="text-xl font-semibold mb-2">Code</h3>
-				<p class="mb-4">Most of our development is done in GTK+3, C++, Vala, Python and HTML5/CSS. We also use Git for version control and .deb for packaging. If you're comfortable with any of these technologies, don't hesitate to have a look at the code. If you think you can improve our applications or write new ones don't hesitate to suggest patches or to fork our git repositories.</p>
-				<p>Upstream to us is budgie-desktop. Created by BuddiesOfBudgie, they are looking for developers - so please help if you can.</p>
-			  </section>
-		  
-			  <div class="bg-yellow-100 border-l-4 border-yellow-500 text-yellow-700 p-4 my-8" role="alert">
-				<h5 class="font-bold">It appears you are not connected to the Internet. Please check your connection to access this content.</h5>
-				<div id="reconnectFailed" class="mt-2">
-				  <p><span class="inline-block mr-1">⚠️</span> Sorry, Welcome was unable to establish a connection.</p>
-				</div>
-				<button onclick="cmd('checkInternetConnection');reconnectTimeout()" class="mt-2 bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded">
-				  <span class="mr-2">🔄</span> Retry
-				</button>
-			  </div>
-		  
-			  <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-				<div>
-				  <a href="#" onclick="cmd('link?https://launchpad.net/ubuntubudgie');" class="block">
-					<img class="mx-auto" src="img/logos/launchpad.png" alt="Distribution on Launchpad"/>
-					<p class="mt-2 font-bold">Ubuntu Budgie Launchpad</p>
-				  </a>
-				</div>
-				<div>
-				  <a href="#" onclick="cmd('link?https://github.com/ubuntubudgie');" class="block">
-					<img class="mx-auto" src="img/logos/github.png" alt="Distribution on Github"/>
-					<p class="mt-2 font-bold">Ubuntu Budgie GitHub</p>
-				  </a>
-				</div>
-				<div>
-				  <a href="#" onclick="cmd('link?https://github.com/buddiesofbudgie/budgie-desktop');" class="block">
-					<img class="mx-auto" src="img/logos/github.png" alt="Budgie Desktop on GitHub"/>
-					<p class="mt-2 font-bold">Budgie Desktop GitHub</p>
-				  </a>
-				</div>
-			  </div>
-		  
-			  <div class="mt-8 text-center">
-				<p class="mb-4">Also, we have published a complete list of available opportunities on our website. Please feel free to visit our website and find out in which way you can contribute to our mission.</p>
-				<a href="#" onclick="cmd('link?https://ubuntubudgie.org/opportunities/');" class="inline-flex items-center px-4 py-2 bg-gray-800 text-white rounded hover:bg-gray-700">
-				  <img class="w-6 h-6 mr-2" src="img/distro-icon-inverted.svg" alt=""/>
-				  <span>Opportunities</span>
-				</a>
-			  </div>
-			</div>
-		  </div>
-		</br>
+    html, body {
+      height: 100%; overflow: hidden;
+      background: var(--bg); font-family: var(--font);
+      display: flex; align-items: center; justify-content: center;
+      padding: 24px;
+    }
 
+    /* ── Window ── */
+    .window {
+      width: 860px; max-width: 100%;
+      height: calc(100vh - 48px);
+      max-height: 680px; min-height: 480px;
+      background: var(--win-bg); border-radius: var(--radius-win);
+      box-shadow: var(--shadow-win); overflow: hidden;
+      display: flex; flex-direction: column;
+      animation: fadeUp .3s ease both;
+    }
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(6px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
 
-	</body>
+    /* ── Title Bar ── */
+    .titlebar {
+      height: 44px; background: var(--bar-bg);
+      border-bottom: 1px solid var(--bar-border);
+      display: flex; align-items: center;
+      padding: 0 16px; gap: 8px;
+      flex-shrink: 0; position: relative; user-select: none;
+    }
+    .back-btn {
+      display: flex; align-items: center; gap: 5px;
+      background: none; border: none; cursor: pointer;
+      color: var(--accent); font-family: var(--font);
+      font-size: 13px; font-weight: 500;
+      padding: 4px 6px 4px 2px; border-radius: var(--radius-sm);
+      transition: background .12s; text-decoration: none;
+    }
+    .back-btn:hover { background: var(--accent-light); }
+    .back-btn svg { width: 16px; height: 16px; }
+    .titlebar-label {
+      position: absolute; left: 50%; transform: translateX(-50%);
+      font-size: 13px; font-weight: 500;
+      color: var(--text-secondary); letter-spacing: -.01em; pointer-events: none;
+    }
+
+    /* ── Page header ── */
+    .page-header {
+      padding: 22px 28px 16px;
+      border-bottom: 1px solid var(--card-border);
+      flex-shrink: 0;
+    }
+    .page-header h1 {
+      font-size: 21px; font-weight: 600;
+      color: var(--text-primary); letter-spacing: -.02em; margin-bottom: 4px;
+    }
+    .page-header p {
+      font-size: 13px; color: var(--text-secondary); line-height: 1.55;
+    }
+
+    /* ── Scroll body ── */
+    .scroll-body {
+      flex: 1; overflow-y: auto; min-height: 0;
+      padding: 22px 28px 28px;
+    }
+    .scroll-body::-webkit-scrollbar { width: 6px; }
+    .scroll-body::-webkit-scrollbar-track { background: transparent; }
+    .scroll-body::-webkit-scrollbar-thumb { background: #d4d4d4; border-radius: 3px; }
+    .scroll-body::-webkit-scrollbar-thumb:hover { background: #aaa; }
+
+    /* ── Cat divider ── */
+    .cat-divider {
+      display: flex; align-items: center; gap: 10px;
+      margin: 22px 0 14px;
+    }
+    .cat-divider:first-child { margin-top: 0; }
+    .cat-label {
+      font-size: 10.5px; font-weight: 600; letter-spacing: .07em;
+      text-transform: uppercase; color: var(--text-tertiary); white-space: nowrap;
+    }
+    .cat-line { flex: 1; height: 1px; background: var(--card-border); }
+
+    /* ── Way cards grid ── */
+    .ways-grid {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 10px;
+      margin-bottom: 4px;
+    }
+    .way-card {
+      display: flex; align-items: flex-start; gap: 13px;
+      padding: 14px 15px; border-radius: var(--radius-md);
+      border: 1px solid var(--card-border); background: #fafafa;
+      transition: box-shadow .14s, transform .12s;
+      animation: fadeUp .26s ease both;
+    }
+    .way-card:hover { box-shadow: var(--shadow-sm); transform: translateY(-1px); }
+    .way-card:nth-child(1) { animation-delay: .04s; }
+    .way-card:nth-child(2) { animation-delay: .07s; }
+    .way-card:nth-child(3) { animation-delay: .10s; }
+    .way-card:nth-child(4) { animation-delay: .13s; }
+    .way-card:nth-child(5) { animation-delay: .16s; }
+    .way-card:nth-child(6) { animation-delay: .19s; }
+    .way-card:nth-child(7) { animation-delay: .22s; }
+
+    .way-icon {
+      width: 36px; height: 36px; border-radius: 9px; flex-shrink: 0;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .way-icon svg { width: 18px; height: 18px; }
+    .way-icon.blue   { background: #dbeafe; color: #2563eb; }
+    .way-icon.purple { background: #ede9fe; color: #7c3aed; }
+    .way-icon.green  { background: #dcfce7; color: #16a34a; }
+    .way-icon.orange { background: #ffedd5; color: #ea580c; }
+    .way-icon.pink   { background: #fce7f3; color: #db2777; }
+    .way-icon.teal   { background: #ccfbf1; color: #0d9488; }
+    .way-icon.amber  { background: #fef3c7; color: #d97706; }
+
+    .way-text { flex: 1; min-width: 0; }
+    .way-title { font-size: 13.5px; font-weight: 500; color: var(--text-primary); margin-bottom: 3px; }
+    .way-desc  { font-size: 12.5px; color: var(--text-secondary); line-height: 1.6; }
+    .way-desc code {
+      background: #f0f0f0; border: 1px solid var(--card-border);
+      border-radius: 4px; padding: 1px 5px;
+      font-size: 11.5px; font-family: monospace;
+    }
+
+    /* ── Offline alert ── */
+    .alert-warn {
+      display: none; align-items: flex-start; gap: 10px;
+      padding: 11px 14px; border-radius: var(--radius-sm);
+      background: #fffbeb; border: 1px solid #fcd34d; color: #92400e;
+      font-size: 12.5px; line-height: 1.55; margin-bottom: 16px;
+    }
+    .alert-warn.visible { display: flex; }
+    .alert-warn svg { width: 15px; height: 15px; flex-shrink: 0; margin-top: 1px; }
+    .retry-btn {
+      display: inline-flex; align-items: center; gap: 5px;
+      margin-top: 8px; padding: 5px 12px;
+      background: #f59e0b; color: #fff;
+      font-size: 12px; font-weight: 500; font-family: var(--font);
+      border-radius: var(--radius-sm); border: none; cursor: pointer;
+      transition: background .12s;
+    }
+    .retry-btn:hover { background: #d97706; }
+    .retry-btn svg { width: 13px; height: 13px; }
+
+    /* ── Repo cards ── */
+    .repo-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px;
+      margin-bottom: 20px;
+    }
+    .repo-card {
+      background: #fafafa; border: 1px solid var(--card-border);
+      border-radius: var(--radius-md); padding: 16px 14px 14px;
+      display: flex; flex-direction: column; align-items: center; gap: 10px;
+      cursor: pointer; text-decoration: none;
+      transition: box-shadow .14s, transform .12s, border-color .14s;
+      animation: fadeUp .28s ease both;
+    }
+    .repo-card:hover {
+      box-shadow: var(--shadow-sm); transform: translateY(-1px);
+      border-color: var(--accent);
+    }
+    .repo-card:nth-child(1) { animation-delay: .05s; }
+    .repo-card:nth-child(2) { animation-delay: .09s; }
+    .repo-card:nth-child(3) { animation-delay: .13s; }
+    .repo-logo {
+      width: 48px; height: 48px; border-radius: 12px;
+      display: flex; align-items: center; justify-content: center;
+      overflow: hidden;
+    }
+    .repo-logo img { width: 32px; height: 32px; object-fit: contain; }
+    .repo-logo.github   { background: #24292e; }
+    .repo-logo.github img { filter: brightness(0) invert(1); }
+    .repo-logo.launchpad { background: #f26b00; }
+    .repo-logo.launchpad img { filter: brightness(0) invert(1); }
+    .repo-name { font-size: 13px; font-weight: 500; color: var(--text-primary); text-align: center; }
+    .repo-sub  { font-size: 11.5px; color: var(--text-tertiary); text-align: center; }
+    .repo-arrow {
+      display: flex; align-items: center; gap: 3px;
+      font-size: 11.5px; color: var(--accent); font-weight: 500;
+    }
+    .repo-arrow svg { width: 11px; height: 11px; }
+
+    /* ── CTA strip ── */
+    .cta-strip {
+      display: flex; align-items: center; justify-content: space-between;
+      gap: 16px; flex-wrap: wrap;
+      background: linear-gradient(135deg, #eff6ff 0%, #f5f3ff 100%);
+      border: 1px solid #dbeafe; border-radius: var(--radius-md);
+      padding: 16px 20px;
+    }
+    .cta-text h4 { font-size: 14px; font-weight: 600; color: var(--text-primary); margin-bottom: 3px; }
+    .cta-text p  { font-size: 12.5px; color: var(--text-secondary); line-height: 1.5; }
+    .cta-btn {
+      display: inline-flex; align-items: center; gap: 7px;
+      padding: 8px 18px; background: var(--accent); color: #fff;
+      font-family: var(--font); font-size: 13px; font-weight: 500;
+      border-radius: var(--radius-sm); border: none; cursor: pointer;
+      white-space: nowrap; flex-shrink: 0; text-decoration: none;
+      transition: background .12s, transform .1s;
+    }
+    .cta-btn:hover { background: #1d4ed8; }
+    .cta-btn:active { transform: scale(.98); }
+    .cta-btn img { width: 16px; height: 16px; filter: brightness(0) invert(1); }
+    .cta-btn svg { width: 13px; height: 13px; }
+
+    /* ── Win Footer ── */
+    .win-footer {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 9px 24px; border-top: 1px solid var(--card-border);
+      background: var(--bar-bg); flex-shrink: 0;
+    }
+    .discourse-link {
+      display: flex; align-items: center; gap: 7px;
+      text-decoration: none; font-size: 12px; color: var(--text-secondary);
+    }
+    .discourse-link img { height: 18px; }
+    .social-links { display: flex; gap: 4px; }
+    .social-link {
+      width: 28px; height: 28px; border-radius: 6px;
+      display: flex; align-items: center; justify-content: center;
+      color: var(--text-tertiary); text-decoration: none;
+      transition: background .12s, color .12s;
+      border: none; background: transparent; cursor: pointer;
+    }
+    .social-link:hover { background: var(--hover-bg); color: var(--text-primary); }
+    .social-link svg { width: 14px; height: 14px; }
+  </style>
+</head>
+<body>
+<div class="window">
+
+  <!-- Title Bar -->
+  <div class="titlebar">
+    <a href="index" class="back-btn">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.2" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5"/>
+      </svg>
+      Back
+    </a>
+    <span class="titlebar-label">Get Involved</span>
+  </div>
+
+  <!-- Page Header -->
+  <div class="page-header">
+    <h1>Get Involved</h1>
+    <p>Ubuntu Budgie is built by its community. Every contribution — big or small — makes a real difference. Here's how you can help.</p>
+  </div>
+
+  <!-- Scroll Body -->
+  <div class="scroll-body">
+
+    <!-- Support & Promotion -->
+    <div class="cat-divider">
+      <span class="cat-label">Support &amp; Promotion</span>
+      <div class="cat-line"></div>
+    </div>
+
+    <div class="ways-grid">
+
+      <div class="way-card">
+        <div class="way-icon blue">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M10.34 15.84c-.688-.06-1.386-.09-2.09-.09H7.5a4.5 4.5 0 1 1 0-9h.75c.704 0 1.402-.03 2.09-.09m0 9.18c.253.962.584 1.892.985 2.783.247.55.06 1.21-.463 1.511l-.657.38c-.551.318-1.26.117-1.527-.461a20.845 20.845 0 0 1-1.44-4.282m3.102.069a18.03 18.03 0 0 1-.59-4.59c0-1.586.205-3.124.59-4.59m0 9.18a23.848 23.848 0 0 1 8.835 2.535M10.34 6.66a23.847 23.847 0 0 1 8.835-2.535m0 0A23.74 23.74 0 0 1 18.795 3m.38 1.125a23.91 23.91 0 0 1 1.014 5.395m-1.014 8.855c-.118.38-.245.754-.38 1.125m.38-1.125a23.91 23.91 0 0 0 1.014-5.395m0-3.46c.495.413.811 1.035.811 1.73 0 .695-.316 1.317-.811 1.73m0-3.46a24.347 24.347 0 0 1 0 3.46"/>
+          </svg>
+        </div>
+        <div class="way-text">
+          <div class="way-title">Spread the Word</div>
+          <div class="way-desc">If you love Ubuntu Budgie, tell people. Blog about it, share it on social media, mention it in forums, and recommend it to friends and colleagues.</div>
+        </div>
+      </div>
+
+      <div class="way-card">
+        <div class="way-icon purple">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z"/>
+          </svg>
+        </div>
+        <div class="way-text">
+          <div class="way-title">Join the Community</div>
+          <div class="way-desc">Ubuntu Budgie is more than an OS — it's a dynamic community. Help others feel welcome, meet fellow users, and participate in discussions that make the project better.</div>
+        </div>
+      </div>
+
+      <div class="way-card">
+        <div class="way-icon teal">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z"/>
+          </svg>
+        </div>
+        <div class="way-text">
+          <div class="way-title">Help Others</div>
+          <div class="way-desc">Have spare time and technical knowledge? Read the forums and join the community chat to help other Ubuntu Budgie users solve problems you already know how to fix.</div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Project Contributions -->
+    <div class="cat-divider">
+      <span class="cat-label">Project Contributions</span>
+      <div class="cat-line"></div>
+    </div>
+
+    <div class="ways-grid">
+
+      <div class="way-card">
+        <div class="way-icon orange">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 12.75c1.148 0 2.278.08 3.383.237 1.037.146 1.866.966 1.866 2.013 0 3.728-2.35 6.75-5.25 6.75S6.75 18.728 6.75 15c0-1.047.83-1.867 1.866-2.013A24.204 24.204 0 0 1 12 12.75Zm0 0c2.883 0 5.647.508 8.207 1.44a23.91 23.91 0 0 1-1.152 6.06M12 12.75c-2.883 0-5.647.508-8.208 1.44a23.916 23.916 0 0 0 1.152 6.06M12 12.75a2.25 2.25 0 0 0 2.248-2.354M12 12.75a2.25 2.25 0 0 1-2.248-2.354M12 8.25c.995 0 1.971-.08 2.922-.236.403-.066.74-.358.795-.762a3.778 3.778 0 0 0-.399-2.25M12 8.25c-.995 0-1.97-.08-2.922-.236-.402-.066-.74-.358-.795-.762a3.734 3.734 0 0 1 .4-2.253M12 8.25a2.25 2.25 0 0 0-2.248 2.146M12 8.25a2.25 2.25 0 0 1 2.248 2.146M8.683 5a6.032 6.032 0 0 1-1.155-1.002c.07-.63.27-1.222.574-1.747m.581 2.749A3.75 3.75 0 0 1 15.318 5m0 0c.427-.283.815-.62 1.155-.999a4.471 4.471 0 0 0-.575-1.752M4.921 6a24.048 24.048 0 0 0-.392 3.314c1.668.546 3.416.914 5.223 1.082M19.08 6c.205 1.08.337 2.187.392 3.314a23.882 23.882 0 0 1-5.223 1.082"/>
+          </svg>
+        </div>
+        <div class="way-text">
+          <div class="way-title">Report Bugs</div>
+          <div class="way-desc">Noticed something that doesn't work? Let us know. The problem likely affects others too — the sooner we know, the sooner we can fix it.</div>
+        </div>
+      </div>
+
+      <div class="way-card">
+        <div class="way-icon green">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 18v-5.25m0 0a6.01 6.01 0 0 0 1.5-.189m-1.5.189a6.01 6.01 0 0 1-1.5-.189m3.75 7.478a12.06 12.06 0 0 1-4.5 0m3.75 2.383a14.406 14.406 0 0 1-3 0M14.25 18v-.192c0-.983.658-1.823 1.508-2.316a7.5 7.5 0 1 0-7.517 0c.85.493 1.509 1.333 1.509 2.316V18"/>
+          </svg>
+        </div>
+        <div class="way-text">
+          <div class="way-title">Share Ideas</div>
+          <div class="way-desc">Most improvements in each release come from community suggestions. Think something is missing or could be done better? We're always interested to hear your ideas.</div>
+        </div>
+      </div>
+
+      <div class="way-card">
+        <div class="way-icon pink">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9.53 16.122a3 3 0 0 0-5.78 1.128 2.25 2.25 0 0 1-2.4 2.245 4.5 4.5 0 0 0 8.4-2.245c0-.399-.078-.78-.22-1.128Zm0 0a15.998 15.998 0 0 0 3.388-1.62m-5.043-.025a15.994 15.994 0 0 1 1.622-3.395m3.42 3.42a15.995 15.995 0 0 0 4.764-4.648l3.876-5.814a1.151 1.151 0 0 0-1.597-1.597L14.146 6.32a15.996 15.996 0 0 0-4.649 4.763m3.42 3.42a6.776 6.776 0 0 0-3.42-3.42"/>
+          </svg>
+        </div>
+        <div class="way-text">
+          <div class="way-title">Contribute Artwork</div>
+          <div class="way-desc">Talented in graphic design? Share your creations — wallpapers, icon sets, splash screens, or new logos. We're always excited to see fresh artwork from the community.</div>
+        </div>
+      </div>
+
+      <div class="way-card" style="grid-column: span 2;">
+        <div class="way-icon amber">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5"/>
+          </svg>
+        </div>
+        <div class="way-text">
+          <div class="way-title">Write Code</div>
+          <div class="way-desc">Most development is done in <code>GTK+3</code>, <code>C++</code>, <code>Vala</code>, <code>Python</code>, and <code>HTML5/CSS</code> with <code>Git</code> for version control and <code>.deb</code> packaging. If you're comfortable with any of these, explore the code, suggest patches, or fork a repository. Upstream is <strong>budgie-desktop</strong> by BuddiesOfBudgie — they're looking for developers too.</div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Offline banner -->
+    <div class="alert-warn" id="offlineBanner">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z"/>
+      </svg>
+      <div>
+        <strong>No internet connection.</strong> Please check your connection to access the links below.
+        <div id="reconnectFailed" style="margin-top:4px;display:none;font-size:12px;">Unable to establish a connection.</div>
+        <button class="retry-btn" id="retryBtn">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99"/></svg>
+          Retry
+        </button>
+      </div>
+    </div>
+
+    <!-- Repositories -->
+    <div class="cat-divider">
+      <span class="cat-label">Code Repositories</span>
+      <div class="cat-line"></div>
+    </div>
+
+    <div class="repo-grid">
+
+      <button class="repo-card" data-cmd="link?https://launchpad.net/ubuntubudgie">
+        <div class="repo-logo launchpad">
+          <img src="img/logos/launchpad.png" alt="Launchpad" />
+        </div>
+        <div class="repo-name">Ubuntu Budgie</div>
+        <div class="repo-sub">on Launchpad</div>
+        <span class="repo-arrow">
+          View →
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
+        </span>
+      </button>
+
+      <button class="repo-card" data-cmd="link?https://github.com/ubuntubudgie">
+        <div class="repo-logo github">
+          <img src="img/logos/github.png" alt="GitHub" />
+        </div>
+        <div class="repo-name">Ubuntu Budgie</div>
+        <div class="repo-sub">on GitHub</div>
+        <span class="repo-arrow">
+          View →
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
+        </span>
+      </button>
+
+      <button class="repo-card" data-cmd="link?https://github.com/buddiesofbudgie/budgie-desktop">
+        <div class="repo-logo github">
+          <img src="img/logos/github.png" alt="GitHub" />
+        </div>
+        <div class="repo-name">Budgie Desktop</div>
+        <div class="repo-sub">BuddiesOfBudgie on GitHub</div>
+        <span class="repo-arrow">
+          View →
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
+        </span>
+      </button>
+
+    </div>
+
+    <!-- CTA strip -->
+    <div class="cta-strip">
+      <div class="cta-text">
+        <h4>Browse all opportunities</h4>
+        <p>We publish a full list of open contribution opportunities on our website — find exactly where you can make the most impact.</p>
+      </div>
+      <a href="https://ubuntubudgie.org/opportunities/" class="cta-btn">
+        <img src="img/distro-icon-inverted.svg" alt="" />
+        View Opportunities
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
+      </a>
+    </div>
+
+  </div><!-- end scroll-body -->
+
+  <!-- Footer -->
+  <div class="win-footer">
+    <a href="#" class="discourse-link">
+      <span style="font-size:12px;color:#9b9b9b;">Get support on</span>
+      <img src="public/img/logos/discourse-logo-dark.svg" alt="Discourse" />
+    </a>
+    <div class="social-links">
+      <a href="#" class="social-link" title="Blog"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width=".3" d="M19 7h1v12a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h11.5M7 14h6m-6 3h6m0-10h.5m-.5 3h.5M7 7h3v3H7V7Z"/></svg></a>
+      <a href="#" class="social-link" title="Twitter"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/></svg></a>
+      <a href="#" class="social-link" title="GitHub"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg></a>
+      <a href="#" class="social-link" title="Slack"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M3.362 10.11c0 .926-.756 1.681-1.681 1.681S0 11.036 0 10.111C0 9.186.756 8.43 1.68 8.43h1.682v1.68zm.846 0c0-.924.756-1.68 1.681-1.68s1.681.756 1.681 1.68v4.21c0 .924-.756 1.68-1.68 1.68a1.685 1.685 0 0 1-1.682-1.68v-4.21zM5.89 3.362c-.926 0-1.682-.756-1.682-1.681S4.964 0 5.89 0s1.68.756 1.68 1.68v1.682H5.89zm0 .846c.924 0 1.68.756 1.68 1.681S6.814 7.57 5.89 7.57H1.68C.757 7.57 0 6.814 0 5.89c0-.926.756-1.682 1.68-1.682h4.21zm6.749 1.682c0-.926.755-1.682 1.68-1.682.925 0 1.681.756 1.681 1.681s-.756 1.681-1.68 1.681h-1.681V5.89zm-.848 0c0 .924-.755 1.68-1.68 1.68A1.685 1.685 0 0 1 8.43 5.89V1.68C8.43.757 9.186 0 10.11 0c.926 0 1.681.756 1.681 1.68v4.21zm-1.681 6.748c.926 0 1.682.756 1.682 1.681S11.036 16 10.11 16s-1.681-.756-1.681-1.68v-1.682h1.68zm0-.847c-.924 0-1.68-.755-1.68-1.68 0-.925.756-1.681 1.68-1.681h4.21c.924 0 1.68.756 1.68 1.68 0 .926-.756 1.681-1.68 1.681h-4.21z"/></svg></a>
+    </div>
+  </div>
+
+</div>
+
+<script is:inline>
+(function () {
+  function cmd(command) { console.log('cmd:', command); }
+  window.cmd = cmd;
+
+  function checkConnection() {
+    var banner = document.getElementById('offlineBanner');
+    var failMsg = document.getElementById('reconnectFailed');
+    fetch('https://example.com', { mode: 'no-cors' })
+      .then(function () { banner.classList.remove('visible'); })
+      .catch(function () {
+        banner.classList.add('visible');
+        setTimeout(function () { failMsg.style.display = 'block'; }, 5000);
+      });
+  }
+
+  document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('[data-cmd]').forEach(function (el) {
+      el.addEventListener('click', function () { cmd(el.dataset.cmd); });
+    });
+    var retryBtn = document.getElementById('retryBtn');
+    if (retryBtn) {
+      retryBtn.addEventListener('click', function () {
+        document.getElementById('reconnectFailed').style.display = 'none';
+        checkConnection();
+      });
+    }
+    checkConnection();
+  });
+})();
+</script>
+</body>
+</html>

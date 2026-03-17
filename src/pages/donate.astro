@@ -1,36 +1,314 @@
+---
+// Ubuntu Budgie Welcome — Donate
+---
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-		<script>import "preline/dist/preline.js";</script>
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="viewport" content="width=device-width" />
+  <title>Ubuntu Budgie Welcome — Donate</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-	</head>
+    :root {
+      --bg:            #e8e8e8;
+      --win-bg:        #ffffff;
+      --bar-bg:        #f5f5f5;
+      --bar-border:    #e0e0e0;
+      --text-primary:  #1a1a1a;
+      --text-secondary:#6b6b6b;
+      --text-tertiary: #9b9b9b;
+      --accent:        #2563eb;
+      --accent-light:  #dbeafe;
+      --hover-bg:      #ebebeb;
+      --card-border:   #e8e8e8;
+      --shadow-sm:     0 1px 3px rgba(0,0,0,.06), 0 1px 2px rgba(0,0,0,.04);
+      --shadow-md:     0 4px 12px rgba(0,0,0,.08), 0 2px 4px rgba(0,0,0,.04);
+      --shadow-win:    0 20px 60px rgba(0,0,0,.18), 0 8px 24px rgba(0,0,0,.10);
+      --radius-sm:     6px;
+      --radius-md:     10px;
+      --radius-lg:     14px;
+      --radius-win:    14px;
+      --font:          'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    }
 
-  <body class="bg-gray-100 fade-in duration-1000">
-    <div id="wrapper" class="min-h-screen flex flex-col items-center justify-center">
-      <div id="title-inject" class="text-2xl font-bold mb-4">&zwnj;Donate&zwnj;</div>
-      <div id="content" class="container mx-auto p-4 bg-white shadow-md rounded">
-        <div class="mb-4">
-          <p class="mb-4">&zwnj;<strong>Ubuntu Budgie</strong> is a community-driven GNU/Linux distribution that combines the powerful Ubuntu base with the beautiful Budgie Desktop to provide a user-friendly, modern desktop operating system.&zwnj;</p>
-  
-          <p class="mb-4">&zwnj;The goal of Ubuntu Budgie is to provide a stable operating system that offers a familiar user experience, and usable for both newbies and advanced users alike. We are part of the official Ubuntu community, which provides for you better visibility and support. However, we don't get any funding from Canonical (the company that pays for Ubuntu up-keep and development).&zwnj;</p>
-  
-          <p class="mb-4">&zwnj;Ubuntu Budgie is an open-source project and any money raised will be used to meet maintenance costs of the project, support the project and give back to all projects that make up Ubuntu Budgie. Every contributor will be displayed proudly on our website. How your money is spent is displayed so you can be assured your contributions are being used wisely. Patreon donations will be made visible on confirmation of the donation received at the beginning of the next month. Paypal donations will appear ASAP after the donation is received.&zwnj;</p>
-  
-          <p>&zwnj;If you believe that our cause is worthy and it is something that needs to go on without any barriers, then please consider contributing to the project.&zwnj;</p>
+    html, body {
+      height: 100%; overflow: hidden;
+      background: var(--bg); font-family: var(--font);
+      display: flex; align-items: center; justify-content: center;
+      padding: 24px;
+    }
+
+    /* ── Window ── */
+    .window {
+      width: 760px; max-width: 100%;
+      height: calc(100vh - 48px);
+      max-height: 620px; min-height: 440px;
+      background: var(--win-bg); border-radius: var(--radius-win);
+      box-shadow: var(--shadow-win); overflow: hidden;
+      display: flex; flex-direction: column;
+      animation: fadeUp .3s ease both;
+    }
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(6px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ── Title Bar ── */
+    .titlebar {
+      height: 44px; background: var(--bar-bg);
+      border-bottom: 1px solid var(--bar-border);
+      display: flex; align-items: center;
+      padding: 0 16px; gap: 8px;
+      flex-shrink: 0; position: relative; user-select: none;
+    }
+    .back-btn {
+      display: flex; align-items: center; gap: 5px;
+      background: none; border: none; cursor: pointer;
+      color: var(--accent); font-family: var(--font);
+      font-size: 13px; font-weight: 500;
+      padding: 4px 6px 4px 2px; border-radius: var(--radius-sm);
+      transition: background .12s; text-decoration: none;
+    }
+    .back-btn:hover { background: var(--accent-light); }
+    .back-btn svg { width: 16px; height: 16px; }
+    .titlebar-label {
+      position: absolute; left: 50%; transform: translateX(-50%);
+      font-size: 13px; font-weight: 500;
+      color: var(--text-secondary); letter-spacing: -.01em; pointer-events: none;
+    }
+
+    /* ── Scroll body ── */
+    .scroll-body {
+      flex: 1; overflow-y: auto; min-height: 0;
+      padding: 32px 40px 32px;
+    }
+    .scroll-body::-webkit-scrollbar { width: 6px; }
+    .scroll-body::-webkit-scrollbar-track { background: transparent; }
+    .scroll-body::-webkit-scrollbar-thumb { background: #d4d4d4; border-radius: 3px; }
+    .scroll-body::-webkit-scrollbar-thumb:hover { background: #aaa; }
+
+    /* ── Heart icon header ── */
+    .page-header {
+      display: flex; flex-direction: column; align-items: center;
+      text-align: center; margin-bottom: 28px;
+    }
+    .heart-icon {
+      width: 52px; height: 52px; border-radius: 14px;
+      background: #fee2e2; display: flex; align-items: center; justify-content: center;
+      margin-bottom: 14px; box-shadow: var(--shadow-sm);
+    }
+    .heart-icon svg { width: 26px; height: 26px; color: #dc2626; }
+    .page-title {
+      font-size: 21px; font-weight: 600;
+      color: var(--text-primary); letter-spacing: -.02em; margin-bottom: 8px;
+    }
+    .page-intro {
+      font-size: 13.5px; color: var(--text-secondary); line-height: 1.65;
+      max-width: 520px;
+    }
+
+    /* ── Info cards row ── */
+    .info-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px;
+      margin-bottom: 28px;
+    }
+    .info-card {
+      background: #fafafa; border: 1px solid var(--card-border);
+      border-radius: var(--radius-md); padding: 14px 14px 12px;
+      display: flex; flex-direction: column; gap: 7px;
+      animation: fadeUp .28s ease both;
+    }
+    .info-card:nth-child(1) { animation-delay: .04s; }
+    .info-card:nth-child(2) { animation-delay: .08s; }
+    .info-card:nth-child(3) { animation-delay: .12s; }
+    .info-icon {
+      width: 30px; height: 30px; border-radius: 8px;
+      display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+    }
+    .info-icon svg { width: 15px; height: 15px; }
+    .info-icon.red    { background: #fee2e2; color: #dc2626; }
+    .info-icon.blue   { background: #dbeafe; color: #2563eb; }
+    .info-icon.green  { background: #dcfce7; color: #16a34a; }
+    .info-card-title { font-size: 12.5px; font-weight: 600; color: var(--text-primary); }
+    .info-card-desc  { font-size: 12px; color: var(--text-secondary); line-height: 1.5; }
+
+    /* ── Divider ── */
+    .divider { height: 1px; background: var(--card-border); margin: 4px 0 24px; }
+
+    /* ── Donation platforms ── */
+    .platforms-title {
+      font-size: 13px; font-weight: 600; color: var(--text-primary);
+      margin-bottom: 12px; text-align: center;
+    }
+    .platform-grid {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 12px;
+      max-width: 440px; margin: 0 auto;
+    }
+    .platform-card {
+      display: flex; flex-direction: column; align-items: center; gap: 10px;
+      padding: 20px 16px 16px;
+      background: #fafafa; border: 1px solid var(--card-border);
+      border-radius: var(--radius-lg);
+      text-decoration: none;
+      transition: box-shadow .15s, transform .12s, border-color .15s;
+      animation: fadeUp .3s ease both;
+    }
+    .platform-card:nth-child(1) { animation-delay: .1s; }
+    .platform-card:nth-child(2) { animation-delay: .16s; }
+    .platform-card:hover {
+      box-shadow: var(--shadow-md);
+      transform: translateY(-2px);
+      border-color: var(--accent);
+    }
+    .platform-logo {
+      height: 36px; width: auto; object-fit: contain;
+      filter: none; transition: filter .15s;
+    }
+    .platform-card:hover .platform-logo { filter: none; }
+    .platform-label {
+      font-size: 12px; color: var(--text-secondary); font-weight: 500;
+    }
+    .platform-arrow {
+      font-size: 11px; color: var(--accent); font-weight: 500;
+      display: flex; align-items: center; gap: 3px;
+    }
+    .platform-arrow svg { width: 11px; height: 11px; }
+
+    /* ── Footer note ── */
+    .footer-note {
+      font-size: 11.5px; color: var(--text-tertiary);
+      text-align: center; margin-top: 20px; line-height: 1.6;
+    }
+
+    /* ── Win Footer ── */
+    .win-footer {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 9px 24px; border-top: 1px solid var(--card-border);
+      background: var(--bar-bg); flex-shrink: 0;
+    }
+    .discourse-link {
+      display: flex; align-items: center; gap: 7px;
+      text-decoration: none; font-size: 12px; color: var(--text-secondary);
+    }
+    .discourse-link img { height: 18px; }
+    .social-links { display: flex; gap: 4px; }
+    .social-link {
+      width: 28px; height: 28px; border-radius: 6px;
+      display: flex; align-items: center; justify-content: center;
+      color: var(--text-tertiary); text-decoration: none;
+      transition: background .12s, color .12s;
+      border: none; background: transparent; cursor: pointer;
+    }
+    .social-link:hover { background: var(--hover-bg); color: var(--text-primary); }
+    .social-link svg { width: 14px; height: 14px; }
+  </style>
+</head>
+<body>
+<div class="window">
+
+  <!-- Title Bar -->
+  <div class="titlebar">
+    <a href="index" class="back-btn">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.2" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5"/>
+      </svg>
+      Back
+    </a>
+    <span class="titlebar-label">Donate</span>
+  </div>
+
+  <!-- Scrollable Content -->
+  <div class="scroll-body">
+
+    <!-- Header -->
+    <div class="page-header">
+      <div class="heart-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+          <path d="m11.645 20.91-.007-.003-.022-.012a15.247 15.247 0 0 1-.383-.218 25.18 25.18 0 0 1-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0 1 12 5.052 5.5 5.5 0 0 1 16.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 0 1-4.244 3.17 15.247 15.247 0 0 1-.383.219l-.022.012-.007.004-.003.001a.752.752 0 0 1-.704 0l-.003-.001Z"/>
+        </svg>
+      </div>
+      <div class="page-title">Support Ubuntu Budgie</div>
+      <p class="page-intro">Ubuntu Budgie is a community-driven project that receives no funding from Canonical. Every contribution — large or small — goes directly towards keeping the project alive and growing.</p>
+    </div>
+
+    <!-- Info cards -->
+    <div class="info-grid">
+      <div class="info-card">
+        <div class="info-icon red">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z"/></svg>
         </div>
-        <div class="flex justify-center space-x-8 mt-8">
-          <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=ZZZLS8W5QC8US">
-            <img src="img/logos/paypal.svg" class="w-24 h-auto">
-          </a>
-          <a href="https://www.patreon.com/user?u=3038166&ty=h&u=3038166">
-            <img src="img/logos/patreon.png" class="w-24 h-auto">
-          </a>
+        <div class="info-card-title">Community-Driven</div>
+        <div class="info-card-desc">Built entirely by volunteers — no corporate backing. Your support keeps the project independent and focused on users.</div>
+      </div>
+
+      <div class="info-card">
+        <div class="info-icon blue">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18.75a60.07 60.07 0 0 1 15.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 0 1 3 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 0 0-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 0 1-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 0 0 3 15h-.75M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm3 0h.008v.008H18V10.5Zm-12 0h.008v.008H6V10.5Z"/></svg>
         </div>
+        <div class="info-card-title">Transparent Spending</div>
+        <div class="info-card-desc">How every penny is spent is displayed publicly on our website so you can see exactly where your money goes.</div>
+      </div>
+
+      <div class="info-card">
+        <div class="info-icon green">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z"/></svg>
+        </div>
+        <div class="info-card-title">Contributors Recognised</div>
+        <div class="info-card-desc">Every contributor is proudly displayed on our website. Patreon donors appear at the start of the following month.</div>
       </div>
     </div>
-  </body>
-  
+
+    <div class="divider"></div>
+
+    <!-- Donation platforms -->
+    <p class="platforms-title">Choose how you'd like to contribute</p>
+    <div class="platform-grid">
+
+      <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=ZZZLS8W5QC8US" class="platform-card">
+        <img src="img/logos/paypal.svg" alt="PayPal" class="platform-logo" />
+        <span class="platform-label">One-time or recurring</span>
+        <span class="platform-arrow">
+          Donate via PayPal
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
+        </span>
+      </a>
+
+      <a href="https://www.patreon.com/user?u=3038166&ty=h&u=3038166" class="platform-card">
+        <img src="img/logos/patreon.png" alt="Patreon" class="platform-logo" />
+        <span class="platform-label">Monthly membership</span>
+        <span class="platform-arrow">
+          Support on Patreon
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
+        </span>
+      </a>
+
+    </div>
+
+    <p class="footer-note">
+      If you believe this project is worthy of continued support, please consider contributing.<br>
+      Funds go towards server costs, development resources, and giving back to upstream projects.
+    </p>
+
+  </div><!-- end scroll-body -->
+
+  <!-- Footer -->
+  <div class="win-footer">
+    <a href="#" class="discourse-link">
+      <span style="font-size:12px;color:#9b9b9b;">Get support on</span>
+      <img src="public/img/logos/discourse-logo-dark.svg" alt="Discourse" />
+    </a>
+    <div class="social-links">
+      <a href="#" class="social-link" title="Blog"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width=".3" d="M19 7h1v12a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h11.5M7 14h6m-6 3h6m0-10h.5m-.5 3h.5M7 7h3v3H7V7Z"/></svg></a>
+      <a href="#" class="social-link" title="Twitter"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/></svg></a>
+      <a href="#" class="social-link" title="GitHub"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg></a>
+      <a href="#" class="social-link" title="Slack"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M3.362 10.11c0 .926-.756 1.681-1.681 1.681S0 11.036 0 10.111C0 9.186.756 8.43 1.68 8.43h1.682v1.68zm.846 0c0-.924.756-1.68 1.681-1.68s1.681.756 1.681 1.68v4.21c0 .924-.756 1.68-1.68 1.68a1.685 1.685 0 0 1-1.682-1.68v-4.21zM5.89 3.362c-.926 0-1.682-.756-1.682-1.681S4.964 0 5.89 0s1.68.756 1.68 1.68v1.682H5.89zm0 .846c.924 0 1.68.756 1.68 1.681S6.814 7.57 5.89 7.57H1.68C.757 7.57 0 6.814 0 5.89c0-.926.756-1.682 1.68-1.682h4.21zm6.749 1.682c0-.926.755-1.682 1.68-1.682.925 0 1.681.756 1.681 1.681s-.756 1.681-1.68 1.681h-1.681V5.89zm-.848 0c0 .924-.755 1.68-1.68 1.68A1.685 1.685 0 0 1 8.43 5.89V1.68C8.43.757 9.186 0 10.11 0c.926 0 1.681.756 1.681 1.68v4.21zm-1.681 6.748c.926 0 1.682.756 1.682 1.681S11.036 16 10.11 16s-1.681-.756-1.681-1.68v-1.682h1.68zm0-.847c-.924 0-1.68-.755-1.68-1.68 0-.925.756-1.681 1.68-1.681h4.21c.924 0 1.68.756 1.68 1.68 0 .926-.756 1.681-1.68 1.681h-4.21z"/></svg></a>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>

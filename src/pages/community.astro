@@ -1,139 +1,552 @@
+---
+// Ubuntu Budgie Welcome — Community
+---
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-		<script>import "preline/dist/preline.js";</script>
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="viewport" content="width=device-width" />
+  <title>Ubuntu Budgie Welcome — Community</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-	</head>
-	<body>
-        <body class="bg-gray-100 animate-fade">
-            <div class="container mx-auto px-4">
-              <br>
-              <div id="title-inject" class="text-center mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">&zwnj;Community&zwnj;</div>  
-              <div class="space-y-8">
-                <section>
-                  <h2 class="text-2xl font-semibold mb-4">Get Support</h2>
-                  <p class="mb-4">To get support for Ubuntu Budgie specific issues, the Ubuntu Budgie Discourse website is the best place to go. You can raise issues and help other members of our growing community.</p>
-                  
-                  <div class="bg-yellow-100 border-l-4 border-yellow-500 text-yellow-700 p-4 my-4 hidden" id="offlineAlert" role="alert">
-                    <h5 class="font-bold">It appears you are not connected to the Internet. Please check your connection to access this content.</h5>
-                    <div id="reconnectFailed" class="mt-2 hidden">
-                      <p><span class="material-icons mr-1">error</span> Sorry, Welcome was unable to establish a connection.</p>
-                    </div>
-                    <button onclick="checkInternetConnection();" class="mt-2 bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded">
-                      <span class="material-icons mr-1">refresh</span> Retry
-                    </button>
-                  </div>
-                  
-                  <div class="text-center">
-                    <a href="#" onclick="cmd('link?https://discourse.ubuntubudgie.org/');" class="inline-flex items-center px-4 py-2 bg-gray-800 text-white rounded hover:bg-gray-700">
-                      <img class="w-6 h-6 mr-2" src="img/distro-icon-inverted.svg" alt=""/>
-                      <span>Ubuntu Budgie Discourse</span>
-                    </a>
-                  </div>
-                </section>
-          
-                <hr class="my-8">
-          
-                <section>
-                  <p class="mb-4">An alternative way to get in touch is via our official IRC (Internet Relay Chat) channel.</p>
-                  <div class="bg-blue-100 border-l-4 border-blue-500 text-blue-700 p-4 my-4">
-                    If you disconnect from the channel you will not receive a notification of any reply. So either leave an IRC session open - or we recommend connecting to all ubuntu IRC channels via an IRC bouncer.
-                  </div>
-                  <div class="text-center">
-                    <a href="#" onclick="cmd('link?https://ubuntubudgie.org/irc');" class="inline-flex items-center px-4 py-2 bg-gray-800 text-white rounded hover:bg-gray-700">
-                      <img class="w-6 h-6 mr-2" src="img/social/irc.svg" alt=""/>
-                      <span>#ubuntu-budgie on Libera Chat</span>
-                    </a>
-                  </div>
-                </section>
-          
-                <hr class="my-8">
-          
-                <section>
-                  <h2 class="text-2xl font-semibold mb-4">Forum</h2>
-                  <p class="mb-4">You can also get support for Ubuntu Budgie through these official Ubuntu forums:</p>
-                  <ul class="list-disc list-inside">
-                    <li><a href="#" onclick="cmd('link?https://askubuntu.com/');" class="text-blue-600 hover:text-blue-800">Ask Ubuntu</a></li>
-                    <li><a href="#" onclick="cmd('link?https://ubuntuforums.org/');" class="text-blue-600 hover:text-blue-800">Ubuntu Forums</a></li>
-                  </ul>
-                </section>
-          
-                <hr class="my-8">
-          
-                <section>
-                  <h2 class="text-2xl font-semibold mb-4">Social Networks</h2>
-                  <p class="mb-4">Ubuntu Budgie is active on the following social networks.</p>
-                  
-                  <div class="flex justify-center space-x-8">
-                    <div class="relative group">
-                      <img src="img/social/facebook.svg" alt="Facebook" class="w-12 h-12 bg-blue-400 fill-curent"/>
-                      <ul class="absolute hidden group-hover:block bg-white shadow-md rounded-md p-2">
-                        <li><a href="#" onclick="cmd('link?https://www.facebook.com/groups/UbuntuBudgie');" class="block px-4 py-2 hover:bg-gray-100">Facebook Group</a></li>
-                        <li><a href="#" onclick="cmd('link?https://www.facebook.com/UbuntuBudgie');" class="block px-4 py-2 hover:bg-gray-100">Facebook Page</a></li>
-                      </ul>
-                    </div>
-                    <div class="relative group">
-                      <img src="img/social/github.svg" alt="GitHub" class="w-12 h-12"/>
-                      <ul class="absolute hidden group-hover:block bg-white shadow-md rounded-md p-2">
-                        <li><a href="#" onclick="cmd('link?https://github.com/ubuntubudgie');" class="block px-4 py-2 hover:bg-gray-100">GitHub</a></li>
-                      </ul>
-                    </div>
-                    <div class="relative group">
-                      <img src="img/social/twitter.svg" alt="Twitter" class="w-12 h-12"/>
-                      <ul class="absolute hidden group-hover:block bg-white shadow-md rounded-md p-2">
-                        <li><a href="#" onclick="cmd('link?https://twitter.com/ubuntubudgie');" class="block px-4 py-2 hover:bg-gray-100">X</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </section>
-          
-                <hr class="my-8">
-          
-                <section>
-                  <h2 class="text-2xl font-semibold mb-4">Local Communities</h2>
-                  <p class="mb-4">In addition to global communities, Ubuntu Budgie also encourages local communities to support users coming from diverse backgrounds. In this section, you can discover our local communities. If you are interested to manage a local community for Ubuntu Budgie please let us know, so that we can list it here and improve its visibility.</p>
-                  
-                  <div class="flex justify-center space-x-4">
-                    <a href="#" onclick="cmd('link?https://www.facebook.com/groups/161347137666671/');" class="inline-flex items-center px-4 py-2 bg-gray-800 text-white rounded hover:bg-gray-700">
-                      <img class="w-6 h-6 mr-2" src="img/social/facebook.svg" alt=""/>
-                      <span>Ubuntu Budgie Brasil</span>
-                    </a>
-                    <a href="#" onclick="cmd('link?https://telegram.me/UbuntuBudgie');" class="inline-flex items-center px-4 py-2 bg-gray-800 text-white rounded hover:bg-gray-700">
-                      <img class="w-6 h-6 mr-2" src="img/social/telegram.svg" alt=""/>
-                      <span>Ubuntu Budgie Brasil</span>
-                    </a>
-                  </div>
-                </section>
-              </div>
-            </div>
-<script>
-function checkInternetConnection() {
-  const offlineAlert = document.getElementById('offlineAlert');
-  const reconnectFailed = document.getElementById('reconnectFailed');
+    :root {
+      --bg:            #e8e8e8;
+      --win-bg:        #ffffff;
+      --bar-bg:        #f5f5f5;
+      --bar-border:    #e0e0e0;
+      --text-primary:  #1a1a1a;
+      --text-secondary:#6b6b6b;
+      --text-tertiary: #9b9b9b;
+      --accent:        #2563eb;
+      --accent-light:  #dbeafe;
+      --hover-bg:      #ebebeb;
+      --card-border:   #e8e8e8;
+      --shadow-sm:     0 1px 3px rgba(0,0,0,.06), 0 1px 2px rgba(0,0,0,.04);
+      --shadow-md:     0 4px 12px rgba(0,0,0,.08), 0 2px 4px rgba(0,0,0,.04);
+      --shadow-win:    0 20px 60px rgba(0,0,0,.18), 0 8px 24px rgba(0,0,0,.10);
+      --radius-sm:     6px;
+      --radius-md:     10px;
+      --radius-lg:     14px;
+      --radius-win:    14px;
+      --font:          'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    }
 
-  offlineAlert.classList.add('hidden');
-  reconnectFailed.classList.add('hidden');
+    html, body {
+      height: 100%; overflow: hidden;
+      background: var(--bg); font-family: var(--font);
+      display: flex; align-items: center; justify-content: center;
+      padding: 24px;
+    }
 
-  fetch('https://example.com', { mode: 'no-cors' })
-    .then(() => {
-      // Internet connection is available
-      offlineAlert.classList.add('hidden');
-    })
-    .catch(() => {
-      // No internet connection
-      offlineAlert.classList.remove('hidden');
-      setTimeout(() => {
-        reconnectFailed.classList.remove('hidden');
-      }, 5000); // Show "reconnect failed" after 5 seconds
+    /* ── Window ── */
+    .window {
+      width: 860px; max-width: 100%;
+      height: calc(100vh - 48px);
+      max-height: 680px; min-height: 480px;
+      background: var(--win-bg); border-radius: var(--radius-win);
+      box-shadow: var(--shadow-win); overflow: hidden;
+      display: flex; flex-direction: column;
+      animation: fadeUp .3s ease both;
+    }
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(6px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ── Title Bar ── */
+    .titlebar {
+      height: 44px; background: var(--bar-bg);
+      border-bottom: 1px solid var(--bar-border);
+      display: flex; align-items: center;
+      padding: 0 16px; gap: 8px;
+      flex-shrink: 0; position: relative; user-select: none;
+    }
+    .back-btn {
+      display: flex; align-items: center; gap: 5px;
+      background: none; border: none; cursor: pointer;
+      color: var(--accent); font-family: var(--font);
+      font-size: 13px; font-weight: 500;
+      padding: 4px 6px 4px 2px; border-radius: var(--radius-sm);
+      transition: background .12s; text-decoration: none;
+    }
+    .back-btn:hover { background: var(--accent-light); }
+    .back-btn svg { width: 16px; height: 16px; }
+    .titlebar-label {
+      position: absolute; left: 50%; transform: translateX(-50%);
+      font-size: 13px; font-weight: 500;
+      color: var(--text-secondary); letter-spacing: -.01em; pointer-events: none;
+    }
+
+    /* ── Page header ── */
+    .page-header {
+      padding: 22px 28px 16px;
+      border-bottom: 1px solid var(--card-border);
+      flex-shrink: 0;
+    }
+    .page-header h1 {
+      font-size: 21px; font-weight: 600;
+      color: var(--text-primary); letter-spacing: -.02em; margin-bottom: 4px;
+    }
+    .page-header p {
+      font-size: 13px; color: var(--text-secondary); line-height: 1.55;
+    }
+
+    /* ── Scroll body ── */
+    .scroll-body {
+      flex: 1; overflow-y: auto; min-height: 0;
+      padding: 22px 28px 28px;
+    }
+    .scroll-body::-webkit-scrollbar { width: 6px; }
+    .scroll-body::-webkit-scrollbar-track { background: transparent; }
+    .scroll-body::-webkit-scrollbar-thumb { background: #d4d4d4; border-radius: 3px; }
+    .scroll-body::-webkit-scrollbar-thumb:hover { background: #aaa; }
+
+    /* ── Cat divider ── */
+    .cat-divider {
+      display: flex; align-items: center; gap: 10px;
+      margin: 22px 0 14px;
+    }
+    .cat-divider:first-child { margin-top: 0; }
+    .cat-label {
+      font-size: 10.5px; font-weight: 600; letter-spacing: .07em;
+      text-transform: uppercase; color: var(--text-tertiary); white-space: nowrap;
+    }
+    .cat-line { flex: 1; height: 1px; background: var(--card-border); }
+
+    /* ── Channel cards (primary support) ── */
+    .channel-card {
+      display: flex; align-items: flex-start; gap: 14px;
+      padding: 15px 16px; border-radius: var(--radius-md);
+      border: 1px solid var(--card-border); background: #fafafa;
+      margin-bottom: 8px;
+      transition: box-shadow .14s, transform .12s, border-color .14s;
+      animation: fadeUp .28s ease both;
+    }
+    .channel-card:hover {
+      box-shadow: var(--shadow-sm);
+      transform: translateY(-1px);
+      border-color: #d0d7de;
+    }
+    .channel-icon {
+      width: 40px; height: 40px; border-radius: 10px; flex-shrink: 0;
+      display: flex; align-items: center; justify-content: center;
+      overflow: hidden; background: #f0f0f0;
+    }
+    .channel-icon img { width: 26px; height: 26px; object-fit: contain; }
+    .channel-icon svg { width: 20px; height: 20px; }
+    .channel-icon.blue   { background: #dbeafe; color: #2563eb; }
+    .channel-icon.purple { background: #ede9fe; color: #7c3aed; }
+    .channel-icon.teal   { background: #ccfbf1; color: #0d9488; }
+    .channel-icon.orange { background: #ffedd5; color: #ea580c; }
+
+    .channel-body { flex: 1; min-width: 0; }
+    .channel-name {
+      font-size: 13.5px; font-weight: 500;
+      color: var(--text-primary); margin-bottom: 3px;
+    }
+    .channel-desc {
+      font-size: 12.5px; color: var(--text-secondary); line-height: 1.6;
+    }
+    .channel-link {
+      display: inline-flex; align-items: center; gap: 5px;
+      margin-top: 9px; padding: 5px 12px;
+      background: var(--accent); color: #fff;
+      font-size: 12px; font-weight: 500; font-family: var(--font);
+      border-radius: var(--radius-sm); border: none; cursor: pointer;
+      text-decoration: none; transition: background .12s, transform .1s;
+    }
+    .channel-link:hover { background: #1d4ed8; }
+    .channel-link:active { transform: scale(.97); }
+    .channel-link svg { width: 12px; height: 12px; }
+    .channel-link.outline {
+      background: transparent; color: var(--accent);
+      border: 1px solid var(--accent-light);
+    }
+    .channel-link.outline:hover { background: var(--accent-light); }
+
+    /* ── Alert banner ── */
+    .alert-banner {
+      display: flex; align-items: flex-start; gap: 10px;
+      padding: 11px 14px; border-radius: var(--radius-sm);
+      font-size: 12.5px; line-height: 1.55;
+      margin-bottom: 8px;
+    }
+    .alert-banner.warn  { background: #fffbeb; border: 1px solid #fcd34d; color: #92400e; }
+    .alert-banner.info  { background: #eff6ff; border: 1px solid #bfdbfe; color: #1e40af; }
+    .alert-banner svg   { width: 15px; height: 15px; flex-shrink: 0; margin-top: 1px; }
+    .offline-banner { display: none; }
+    .offline-banner.visible { display: flex; }
+
+    .retry-btn {
+      display: inline-flex; align-items: center; gap: 5px;
+      margin-top: 8px; padding: 5px 12px;
+      background: #f59e0b; color: #fff;
+      font-size: 12px; font-weight: 500; font-family: var(--font);
+      border-radius: var(--radius-sm); border: none; cursor: pointer;
+      transition: background .12s;
+    }
+    .retry-btn:hover { background: #d97706; }
+    .retry-btn svg { width: 13px; height: 13px; }
+
+    /* ── Social grid ── */
+    .social-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px;
+    }
+    .social-card {
+      background: #fafafa; border: 1px solid var(--card-border);
+      border-radius: var(--radius-md); padding: 16px 14px 14px;
+      display: flex; flex-direction: column; align-items: center; gap: 8px;
+      transition: box-shadow .14s, transform .12s, border-color .14s;
+      animation: fadeUp .28s ease both;
+    }
+    .social-card:hover {
+      box-shadow: var(--shadow-sm); transform: translateY(-1px);
+      border-color: #d0d7de;
+    }
+    .social-logo {
+      width: 48px; height: 48px; border-radius: 12px;
+      display: flex; align-items: center; justify-content: center;
+      overflow: hidden; flex-shrink: 0;
+    }
+    /* true brand colours */
+    .social-logo.facebook { background: #1877F2; }
+    .social-logo.github   { background: #24292e; }
+    .social-logo.twitter  { background: #f0f0f0; }
+    .social-logo.telegram { background: #29a9eb; }
+    /* white icons on dark brand backgrounds — exclude twitter (dark icon on light bg) */
+    .social-logo.facebook img,
+    .social-logo.github   img,
+    .social-logo.telegram img { filter: brightness(0) invert(1); }
+    .social-logo img { width: 26px; height: 26px; object-fit: contain; }
+    .social-name {
+      font-size: 13px; font-weight: 500; color: var(--text-primary);
+      text-align: center;
+    }
+    .social-links-list {
+      display: flex; flex-direction: column; gap: 4px; width: 100%;
+    }
+    .social-link-btn {
+      display: flex; align-items: center; justify-content: center; gap: 5px;
+      padding: 5px 10px; border-radius: var(--radius-sm);
+      font-size: 12px; font-weight: 500; font-family: var(--font);
+      background: #f0f0f0; color: var(--text-secondary);
+      border: none; cursor: pointer; text-decoration: none;
+      transition: background .12s, color .12s;
+    }
+    .social-link-btn:hover { background: var(--accent-light); color: var(--accent); }
+    .social-link-btn svg { width: 11px; height: 11px; }
+
+    /* ── Local community grid ── */
+    .local-grid {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 10px;
+    }
+    .local-card {
+      display: flex; align-items: center; gap: 12px;
+      padding: 13px 15px; border-radius: var(--radius-md);
+      border: 1px solid var(--card-border); background: #fafafa;
+      text-decoration: none;
+      transition: box-shadow .14s, transform .12s, border-color .14s;
+      animation: fadeUp .28s ease both;
+    }
+    .local-card:hover {
+      box-shadow: var(--shadow-sm); transform: translateY(-1px);
+      border-color: var(--accent);
+    }
+    .local-flag {
+      font-size: 24px; line-height: 1; flex-shrink: 0;
+    }
+    .local-info { min-width: 0; }
+    .local-name { font-size: 13px; font-weight: 500; color: var(--text-primary); }
+    .local-platform { font-size: 11.5px; color: var(--text-tertiary); margin-top: 2px; }
+
+    /* ── Win Footer ── */
+    .win-footer {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 9px 24px; border-top: 1px solid var(--card-border);
+      background: var(--bar-bg); flex-shrink: 0;
+    }
+    .discourse-link {
+      display: flex; align-items: center; gap: 7px;
+      text-decoration: none; font-size: 12px; color: var(--text-secondary);
+    }
+    .discourse-link img { height: 18px; }
+    .footer-social-links { display: flex; gap: 4px; }
+    .footer-social-link {
+      width: 28px; height: 28px; border-radius: 6px;
+      display: flex; align-items: center; justify-content: center;
+      color: var(--text-tertiary); text-decoration: none;
+      transition: background .12s, color .12s;
+      border: none; background: transparent; cursor: pointer;
+    }
+    .footer-social-link:hover { background: var(--hover-bg); color: var(--text-primary); }
+    .footer-social-link svg { width: 14px; height: 14px; }
+  </style>
+</head>
+<body>
+<div class="window">
+
+  <!-- Title Bar -->
+  <div class="titlebar">
+    <a href="index" class="back-btn">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.2" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5"/>
+      </svg>
+      Back
+    </a>
+    <span class="titlebar-label">Community</span>
+  </div>
+
+  <!-- Page Header -->
+  <div class="page-header">
+    <h1>Community</h1>
+    <p>Connect with the Ubuntu Budgie community — get help, share ideas, and stay in touch.</p>
+  </div>
+
+  <!-- Scroll Body -->
+  <div class="scroll-body">
+
+    <!-- ── Get Support ── -->
+    <div class="cat-divider">
+      <span class="cat-label">Get Support</span>
+      <div class="cat-line"></div>
+    </div>
+
+    <!-- Offline banner -->
+    <div class="alert-banner warn offline-banner" id="offlineBanner">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z"/>
+      </svg>
+      <div>
+        <strong>No internet connection.</strong> Please check your connection to access these links.
+        <div id="reconnectFailed" style="margin-top:4px;display:none;font-size:12px;">
+          Unable to establish a connection.
+        </div>
+        <button class="retry-btn" id="retryBtn">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99"/>
+          </svg>
+          Retry
+        </button>
+      </div>
+    </div>
+
+    <div class="channel-card">
+      <div class="channel-icon blue">
+        <img src="img/distro-icon.svg" alt="Ubuntu Budgie" />
+      </div>
+      <div class="channel-body">
+        <div class="channel-name">Ubuntu Budgie Discourse</div>
+        <div class="channel-desc">The best place for Ubuntu Budgie-specific support. Raise issues, ask questions, and help other members of our growing community.</div>
+        <button class="channel-link" data-cmd="link?https://discourse.ubuntubudgie.org/">
+          Open Discourse
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="channel-card">
+      <div class="channel-icon teal">
+        <img src="img/social/irc.svg" alt="IRC" />
+      </div>
+      <div class="channel-body">
+        <div class="channel-name">#ubuntu-budgie on Libera Chat</div>
+        <div class="channel-desc">Our official IRC channel for real-time chat and quick questions. Note: if you disconnect you won't receive replies — consider using an IRC bouncer to stay connected.</div>
+        <div class="alert-banner info" style="margin-top:10px;margin-bottom:0;">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z"/></svg>
+          We recommend an IRC bouncer to stay connected to all Ubuntu IRC channels and receive replies when offline.
+        </div>
+        <button class="channel-link" style="margin-top:9px;" data-cmd="link?https://ubuntubudgie.org/irc">
+          Join on Libera Chat
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- ── Forums ── -->
+    <div class="cat-divider">
+      <span class="cat-label">Forums</span>
+      <div class="cat-line"></div>
+    </div>
+
+    <div class="channel-card">
+      <div class="channel-icon orange">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 0 1-.825-.242m9.345-8.334a2.126 2.126 0 0 0-.476-.095 48.64 48.64 0 0 0-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0 0 11.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155"/>
+        </svg>
+      </div>
+      <div class="channel-body">
+        <div class="channel-name">Official Ubuntu Forums</div>
+        <div class="channel-desc">Get support through these official Ubuntu community forums, which cover Ubuntu Budgie as an official flavour.</div>
+        <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:9px;">
+          <button class="channel-link" data-cmd="link?https://askubuntu.com/">
+            Ask Ubuntu
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
+          </button>
+          <button class="channel-link outline" data-cmd="link?https://ubuntuforums.org/">
+            Ubuntu Forums
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── Social Networks ── -->
+    <div class="cat-divider">
+      <span class="cat-label">Social Networks</span>
+      <div class="cat-line"></div>
+    </div>
+
+    <div class="social-grid">
+
+      <div class="social-card">
+        <div class="social-logo facebook">
+          <img src="img/social/facebook.svg" alt="Facebook" />
+        </div>
+        <div class="social-name">Facebook</div>
+        <div class="social-links-list">
+          <button class="social-link-btn" data-cmd="link?https://www.facebook.com/groups/UbuntuBudgie">
+            UB Group
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
+          </button>
+          <button class="social-link-btn" data-cmd="link?https://www.facebook.com/UbuntuBudgie">
+            UB Page
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="social-card">
+        <div class="social-logo github">
+          <img src="img/social/github.svg" alt="GitHub" />
+        </div>
+        <div class="social-name">GitHub</div>
+        <div class="social-links-list">
+          <button class="social-link-btn" data-cmd="link?https://github.com/ubuntubudgie">
+            ubuntubudgie
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="social-card">
+        <div class="social-logo twitter">
+          <img src="img/social/twitter.svg" alt="X / Twitter" />
+        </div>
+        <div class="social-name">X (Twitter)</div>
+        <div class="social-links-list">
+          <button class="social-link-btn" data-cmd="link?https://twitter.com/ubuntubudgie">
+            @ubuntubudgie
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
+          </button>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ── Local Communities ── -->
+    <div class="cat-divider">
+      <span class="cat-label">Local Communities</span>
+      <div class="cat-line"></div>
+    </div>
+
+    <p style="font-size:13px;color:var(--text-secondary);line-height:1.65;margin-bottom:10px;">
+      Ubuntu Budgie supports local communities for users from diverse backgrounds. Interested in managing a local community for Ubuntu Budgie? Let us know and we'll list it here to improve its visibility.
+    </p>
+    <div style="margin-bottom:16px;">
+      <button class="channel-link outline" data-cmd="link?https://discourse.ubuntubudgie.org/">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor" style="width:13px;height:13px;">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 0 1 .865-.501 48.172 48.172 0 0 0 3.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0 0 12 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018Z"/>
+        </svg>
+        Get in touch on Discourse
+      </button>
+    </div>
+
+    <div class="local-grid">
+
+      <button class="local-card" data-cmd="link?https://www.facebook.com/groups/161347137666671/">
+        <div class="local-flag">🇧🇷</div>
+        <div class="local-info">
+          <div class="local-name">Ubuntu Budgie Brasil</div>
+          <div class="local-platform">Facebook Group</div>
+        </div>
+        <svg style="margin-left:auto;width:14px;height:14px;color:var(--text-tertiary);flex-shrink:0;" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5"/></svg>
+      </button>
+
+      <button class="local-card" data-cmd="link?https://telegram.me/UbuntuBudgie">
+        <div class="local-flag">🇧🇷</div>
+        <div class="local-info">
+          <div class="local-name">Ubuntu Budgie Brasil</div>
+          <div class="local-platform">Telegram</div>
+        </div>
+        <svg style="margin-left:auto;width:14px;height:14px;color:var(--text-tertiary);flex-shrink:0;" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5"/></svg>
+      </button>
+
+    </div>
+
+  </div><!-- end scroll-body -->
+
+  <!-- Footer -->
+  <div class="win-footer">
+    <a href="#" class="discourse-link">
+      <span style="font-size:12px;color:#9b9b9b;">Get support on</span>
+      <img src="public/img/logos/discourse-logo-dark.svg" alt="Discourse" />
+    </a>
+    <div class="footer-social-links">
+      <a href="#" class="footer-social-link" title="Blog"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width=".3" d="M19 7h1v12a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h11.5M7 14h6m-6 3h6m0-10h.5m-.5 3h.5M7 7h3v3H7V7Z"/></svg></a>
+      <a href="#" class="footer-social-link" title="Twitter"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/></svg></a>
+      <a href="#" class="footer-social-link" title="GitHub"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg></a>
+      <a href="#" class="footer-social-link" title="Slack"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M3.362 10.11c0 .926-.756 1.681-1.681 1.681S0 11.036 0 10.111C0 9.186.756 8.43 1.68 8.43h1.682v1.68zm.846 0c0-.924.756-1.68 1.681-1.68s1.681.756 1.681 1.68v4.21c0 .924-.756 1.68-1.68 1.68a1.685 1.685 0 0 1-1.682-1.68v-4.21zM5.89 3.362c-.926 0-1.682-.756-1.682-1.681S4.964 0 5.89 0s1.68.756 1.68 1.68v1.682H5.89zm0 .846c.924 0 1.68.756 1.68 1.681S6.814 7.57 5.89 7.57H1.68C.757 7.57 0 6.814 0 5.89c0-.926.756-1.682 1.68-1.682h4.21zm6.749 1.682c0-.926.755-1.682 1.68-1.682.925 0 1.681.756 1.681 1.681s-.756 1.681-1.68 1.681h-1.681V5.89zm-.848 0c0 .924-.755 1.68-1.68 1.68A1.685 1.685 0 0 1 8.43 5.89V1.68C8.43.757 9.186 0 10.11 0c.926 0 1.681.756 1.681 1.68v4.21zm-1.681 6.748c.926 0 1.682.756 1.682 1.681S11.036 16 10.11 16s-1.681-.756-1.681-1.68v-1.682h1.68zm0-.847c-.924 0-1.68-.755-1.68-1.68 0-.925.756-1.681 1.68-1.681h4.21c.924 0 1.68.756 1.68 1.68 0 .926-.756 1.681-1.68 1.681h-4.21z"/></svg></a>
+    </div>
+  </div>
+
+</div>
+
+<script is:inline>
+(function () {
+
+  function cmd(command) { console.log('cmd:', command); }
+  window.cmd = cmd;
+
+  /* ── Internet check ── */
+  function checkConnection() {
+    var banner = document.getElementById('offlineBanner');
+    var failMsg = document.getElementById('reconnectFailed');
+    fetch('https://example.com', { mode: 'no-cors' })
+      .then(function () {
+        banner.classList.remove('visible');
+      })
+      .catch(function () {
+        banner.classList.add('visible');
+        setTimeout(function () {
+          failMsg.style.display = 'block';
+        }, 5000);
+      });
+  }
+
+  document.addEventListener('DOMContentLoaded', function () {
+
+    /* cmd() buttons */
+    document.querySelectorAll('[data-cmd]').forEach(function (el) {
+      el.addEventListener('click', function () { cmd(el.dataset.cmd); });
     });
-}
 
-// Check internet connection when the page loads
-window.addEventListener('load', checkInternetConnection);
+    /* Retry button */
+    var retryBtn = document.getElementById('retryBtn');
+    if (retryBtn) {
+      retryBtn.addEventListener('click', function () {
+        document.getElementById('reconnectFailed').style.display = 'none';
+        checkConnection();
+      });
+    }
 
-    </script>
-    </body>
+    checkConnection();
+  });
+
+})();
+</script>
+</body>
+</html>

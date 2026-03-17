@@ -1,1588 +1,859 @@
-
+---
+// Ubuntu Budgie Welcome — Budgie Desktop Extras
+---
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-		<script>import "preline/dist/preline.js";</script>
-	</head>
-  <body class="bg-white dark:bg-gray-900 transition-colors duration-300" onload="sortAppletList();">
-  
-   <div id="wrapper" class="max-w-3x3 w-full bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6">
-      <div id="title-inject" class="text-2xl font-semibold text-center text-gray-800 dark:text-gray-200 mb-6">
-          Budgie Desktop Extras
-      </div>
-      <div id="content" class="container entire-page-fade">
-          <div class="flex justify-center">
-              <button onclick="cmd('budgie-desktop-settings'); smoothFade('', '#drivers-hint');"
-                  class="px-6 py-2 bg-gray-800 text-white font-medium rounded-md shadow hover:bg-gray-700 transition duration-300">
-                 Budgie Desktop Settings
-              </button>
-          </div>
-      </div>
-  </div>
-        <br>
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="viewport" content="width=device-width" />
+  <title>Ubuntu Budgie Welcome — Budgie Desktop Extras</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-<!-- Card Blog -->
-<div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+    :root {
+      --bg:            #e8e8e8;
+      --win-bg:        #ffffff;
+      --bar-bg:        #f5f5f5;
+      --bar-border:    #e0e0e0;
+      --text-primary:  #1a1a1a;
+      --text-secondary:#6b6b6b;
+      --text-tertiary: #9b9b9b;
+      --accent:        #2563eb;
+      --accent-light:  #dbeafe;
+      --hover-bg:      #ebebeb;
+      --card-border:   #e8e8e8;
+      --green:         #16a34a;
+      --green-light:   #dcfce7;
+      --red:           #dc2626;
+      --red-light:     #fee2e2;
+      --shadow-sm:     0 1px 3px rgba(0,0,0,.06), 0 1px 2px rgba(0,0,0,.04);
+      --shadow-md:     0 4px 12px rgba(0,0,0,.08), 0 2px 4px rgba(0,0,0,.04);
+      --shadow-win:    0 20px 60px rgba(0,0,0,.18), 0 8px 24px rgba(0,0,0,.10);
+      --radius-sm:     6px;
+      --radius-md:     10px;
+      --radius-lg:     14px;
+      --radius-win:    14px;
+      --font:          'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+
+    html, body {
+      height: 100%; overflow: hidden;
+      background: var(--bg); font-family: var(--font);
+      display: flex; align-items: center; justify-content: center;
+      padding: 24px;
+    }
+
+    /* ── Window ── */
+    .window {
+      width: 900px; max-width: 100%;
+      height: calc(100vh - 48px);
+      max-height: 700px; min-height: 480px;
+      background: var(--win-bg); border-radius: var(--radius-win);
+      box-shadow: var(--shadow-win); overflow: hidden;
+      display: flex; flex-direction: column;
+      animation: fadeUp .3s ease both;
+    }
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(6px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ── Title Bar ── */
+    .titlebar {
+      height: 44px; background: var(--bar-bg);
+      border-bottom: 1px solid var(--bar-border);
+      display: flex; align-items: center;
+      padding: 0 16px; gap: 8px;
+      flex-shrink: 0; position: relative; user-select: none;
+    }
+    .back-btn {
+      display: flex; align-items: center; gap: 5px;
+      background: none; border: none; cursor: pointer;
+      color: var(--accent); font-family: var(--font);
+      font-size: 13px; font-weight: 500;
+      padding: 4px 6px 4px 2px; border-radius: var(--radius-sm);
+      transition: background .12s; text-decoration: none;
+    }
+    .back-btn:hover { background: var(--accent-light); }
+    .back-btn svg { width: 16px; height: 16px; }
+    .titlebar-label {
+      position: absolute; left: 50%; transform: translateX(-50%);
+      font-size: 13px; font-weight: 500;
+      color: var(--text-secondary); letter-spacing: -.01em; pointer-events: none;
+    }
+
+    /* ── Toolbar (search + settings btn) ── */
+    .toolbar {
+      display: flex; align-items: center; gap: 10px;
+      padding: 12px 20px; border-bottom: 1px solid var(--card-border);
+      background: var(--win-bg); flex-shrink: 0;
+    }
+    .search-wrap {
+      flex: 1; position: relative;
+    }
+    .search-wrap svg {
+      position: absolute; left: 10px; top: 50%; transform: translateY(-50%);
+      width: 14px; height: 14px; color: var(--text-tertiary); pointer-events: none;
+    }
+    .search-input {
+      width: 100%; padding: 7px 12px 7px 32px;
+      border: 1px solid var(--card-border); border-radius: var(--radius-sm);
+      font-family: var(--font); font-size: 13px; color: var(--text-primary);
+      background: #fafafa; outline: none;
+      transition: border-color .12s, box-shadow .12s;
+    }
+    .search-input:focus { border-color: var(--accent); box-shadow: 0 0 0 3px rgba(37,99,235,.1); background: #fff; }
+    .search-input::placeholder { color: var(--text-tertiary); }
+
+    .settings-btn {
+      display: inline-flex; align-items: center; gap: 6px;
+      padding: 7px 14px; background: var(--accent); color: #fff;
+      font-family: var(--font); font-size: 12.5px; font-weight: 500;
+      border-radius: var(--radius-sm); border: none; cursor: pointer;
+      white-space: nowrap; transition: background .12s;
+      flex-shrink: 0;
+    }
+    .settings-btn:hover { background: #1d4ed8; }
+    .settings-btn svg { width: 14px; height: 14px; }
+
+    .count-label {
+      font-size: 12px; color: var(--text-tertiary); white-space: nowrap;
+      flex-shrink: 0;
+    }
+
+    /* ── Scroll grid ── */
+    .scroll-body {
+      flex: 1; overflow-y: auto; min-height: 0;
+      padding: 16px 20px 20px;
+    }
+    .scroll-body::-webkit-scrollbar { width: 6px; }
+    .scroll-body::-webkit-scrollbar-track { background: transparent; }
+    .scroll-body::-webkit-scrollbar-thumb { background: #d4d4d4; border-radius: 3px; }
+    .scroll-body::-webkit-scrollbar-thumb:hover { background: #aaa; }
+
+    /* empty state */
+    .empty-state {
+      display: none; flex-direction: column; align-items: center;
+      justify-content: center; padding: 48px 20px; gap: 10px;
+      color: var(--text-tertiary);
+    }
+    .empty-state.visible { display: flex; }
+    .empty-state svg { width: 36px; height: 36px; opacity: .4; }
+    .empty-state p { font-size: 13px; }
+
+    /* ── Cards grid ── */
+    .cards-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px;
+    }
+
+    /* ── Applet card ── */
+    .applet-card {
+      background: #fafafa; border: 1px solid var(--card-border);
+      border-radius: var(--radius-lg); overflow: hidden;
+      display: flex; flex-direction: column;
+      transition: box-shadow .14s, transform .12s;
+      animation: fadeUp .24s ease both;
+    }
+    .applet-card:hover { box-shadow: var(--shadow-md); transform: translateY(-1px); }
+
+    /* screenshot */
+    .card-thumb {
+      height: 120px; overflow: hidden; background: #f0f0f0;
+      flex-shrink: 0; position: relative;
+    }
+    .card-thumb img {
+      width: 100%; height: 100%; object-fit: cover; display: block;
+      transition: transform .3s ease;
+    }
+    .applet-card:hover .card-thumb img { transform: scale(1.04); }
+
+    /* body */
+    .card-body {
+      padding: 11px 12px 8px; flex: 1; display: flex; flex-direction: column; gap: 4px;
+    }
+    .card-name { font-size: 13px; font-weight: 600; color: var(--text-primary); line-height: 1.3; }
+    .card-desc { font-size: 11.5px; color: var(--text-secondary); line-height: 1.55; flex: 1; }
+
+    /* actions footer */
+    .card-footer {
+      display: flex; border-top: 1px solid var(--card-border); flex-shrink: 0;
+    }
+    .card-btn {
+      flex: 1; padding: 8px 10px;
+      display: flex; align-items: center; justify-content: center; gap: 5px;
+      font-family: var(--font); font-size: 12px; font-weight: 500;
+      border: none; cursor: pointer; transition: background .12s;
+    }
+    .card-btn svg { width: 12px; height: 12px; }
+    .card-btn + .card-btn { border-left: 1px solid var(--card-border); }
+
+    .btn-install { background: var(--green-light); color: var(--green); }
+    .btn-install:hover { background: #bbf7d0; }
+    .btn-remove  { background: var(--red-light);   color: var(--red);   display: none; }
+    .btn-remove:hover  { background: #fecaca; }
+    .btn-applying { background: #fafafa; color: var(--text-tertiary); display: none; pointer-events: none; }
+
+    /* installed state */
+    .applet-card.installed .btn-install  { display: none; }
+    .applet-card.installed .btn-remove   { display: flex; }
+    .applet-card.installed .card-thumb::after {
+      content: '✓ Installed';
+      position: absolute; top: 7px; right: 7px;
+      padding: 2px 8px; border-radius: 20px;
+      background: var(--green-light); color: var(--green);
+      font-size: 10px; font-weight: 700; letter-spacing: .04em;
+      border: 1px solid rgba(22,163,74,.2);
+    }
+    .applet-card.applying .btn-install  { display: none; }
+    .applet-card.applying .btn-remove   { display: none; }
+    .applet-card.applying .btn-applying { display: flex; }
+
+    /* ── Spinner animation ── */
+    @keyframes spin { to { transform: rotate(360deg); } }
+    .spinner-icon {
+      width: 12px; height: 12px; border: 2px solid #d1d1d1;
+      border-top-color: var(--text-tertiary); border-radius: 50%;
+      animation: spin .7s linear infinite;
+    }
+
+    /* ── Win Footer ── */
+    .win-footer {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 9px 24px; border-top: 1px solid var(--card-border);
+      background: var(--bar-bg); flex-shrink: 0;
+    }
+    .discourse-link {
+      display: flex; align-items: center; gap: 7px;
+      text-decoration: none; font-size: 12px; color: var(--text-secondary);
+    }
+    .discourse-link img { height: 18px; }
+    .social-links { display: flex; gap: 4px; }
+    .social-link {
+      width: 28px; height: 28px; border-radius: 6px;
+      display: flex; align-items: center; justify-content: center;
+      color: var(--text-tertiary); text-decoration: none;
+      transition: background .12s, color .12s;
+      border: none; background: transparent; cursor: pointer;
+    }
+    .social-link:hover { background: var(--hover-bg); color: var(--text-primary); }
+    .social-link svg { width: 14px; height: 14px; }
+  </style>
+</head>
+<body>
+<div class="window">
+
+  <!-- Title Bar -->
+  <div class="titlebar">
+    <a href="index" class="back-btn">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.2" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5"/>
+      </svg>
+      Back
+    </a>
+    <span class="titlebar-label">Budgie Desktop Extras</span>
+  </div>
+
+  <!-- Toolbar -->
+  <div class="toolbar">
+    <div class="search-wrap">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"/>
+      </svg>
+      <input type="text" class="search-input" id="searchInput" placeholder="Search applets…" />
+    </div>
+    <span class="count-label" id="countLabel"></span>
+    <button class="settings-btn" id="settingsBtn">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M9.594 3.94c.09-.542.56-.94 1.11-.94h2.593c.55 0 1.02.398 1.11.94l.213 1.281c.063.374.313.686.645.87.074.04.147.083.22.127.325.196.72.257 1.075.124l1.217-.456a1.125 1.125 0 0 1 1.37.49l1.296 2.247a1.125 1.125 0 0 1-.26 1.431l-1.003.827c-.293.241-.438.613-.43.992a7.723 7.723 0 0 1 0 .255c-.008.378.137.75.43.991l1.004.827c.424.35.534.955.26 1.43l-1.298 2.247a1.125 1.125 0 0 1-1.369.491l-1.217-.456c-.355-.133-.75-.072-1.076.124a6.47 6.47 0 0 1-.22.128c-.331.183-.581.495-.644.869l-.213 1.281c-.09.543-.56.94-1.11.94h-2.594c-.55 0-1.019-.398-1.11-.94l-.213-1.281c-.062-.374-.312-.686-.644-.87a6.52 6.52 0 0 1-.22-.127c-.325-.196-.72-.257-1.076-.124l-1.217.456a1.125 1.125 0 0 1-1.369-.49l-1.297-2.247a1.125 1.125 0 0 1 .26-1.431l1.004-.827c.292-.24.437-.613.43-.991a6.932 6.932 0 0 1 0-.255c.007-.38-.138-.751-.43-.992l-1.004-.827a1.125 1.125 0 0 1-.26-1.43l1.297-2.247a1.125 1.125 0 0 1 1.37-.491l1.216.456c.356.133.751.072 1.076-.124.072-.044.146-.086.22-.128.332-.183.582-.495.644-.869l.214-1.28Z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
+      </svg>
+      Desktop Settings
+    </button>
+  </div>
+
   <!-- Grid -->
-  <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-   <div class="group flex flex-col h-full bg-white border border-gray-200 shadow-sm rounded-xl dark:bg-neutral-900 dark:border-neutral-700 dark:shadow-neutral-700/70">
-      <div class="h-48 overflow-hidden rounded-t-xl">
-         <a href="/img/screenshots/haste-applet.jpg" data-lightbox="haste-applet">
-         <img src="/img/screenshots/haste-applet.jpg" class="w-full h-full object-cover object-center" alt="Haste Applet Screenshot">
-       </a></div>
-      <div class="p-4 md:p-6">
-          <span class="block mb-1 text-xs font-semibold uppercase text-blue-600 dark:text-blue-500">
-              Budgie Applet
-          </span>
-          <h3 class="text-xl font-semibold text-gray-800 dark:text-neutral-300 dark:hover:text-white">
-              Haste Applet
-          </h3>
-          <p class="mt-3 text-gray-500 dark:text-neutral-500">
-              ‌Post any text – be it code or prose – to various services directly from your desktop.‌
-          </p>
-      </div>
-      <div class="mt-auto flex border-t border-gray-200 divide-x divide-gray-200 dark:border-neutral-700 dark:divide-neutral-700">
-         <button class="installButton w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-es-xl bg-green-500 text-white shadow-sm hover:bg-green-600 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800">
-             Install
-         </button>
-         <div class="spinner hidden w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-es-xl bg-white text-gray-800 shadow-sm dark:bg-neutral-900 dark:border-neutral-700 dark:text-white">
-             <div class="spinner"></div> Applying changes...
-         </div>
-         <button class="removeButton hidden w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-ee-xl bg-red-500 text-white shadow-sm hover:bg-red-600 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800">
-             Remove
-         </button>
-     </div>
-  </div>
-    <!-- End Card -->
+  <div class="scroll-body" id="scrollBody">
+    <div class="cards-grid" id="cardsGrid">
 
-    <!-- Card -->
-    <div class="group flex flex-col h-full bg-white border border-gray-200 shadow-sm rounded-xl dark:bg-neutral-900 dark:border-neutral-700 dark:shadow-neutral-700/70">
-      <div class="h-48 overflow-hidden rounded-t-xl bg-black">
-          <a href="img/screenshots/mediaplayer-applet.jpg" data-lightbox="haste-applet">
-              <img src="img/screenshots/mediaplayer-applet.jpg" class="w-full h-full object-scale-down object-center" alt="Media Applet Screenshot">
-          </a>
-      </div>
-      <div class="p-4 md:p-6">
-          <span class="block mb-1 text-xs font-semibold uppercase text-blue-600 dark:text-blue-500">
-              Budgie Applet
-          </span>
-          <h3 class="text-xl font-semibold text-gray-800 dark:text-neutral-300 dark:hover:text-white">
-              Media Applet
-          </h3>
-          <p class="mt-3 text-gray-500 dark:text-neutral-500">
-              ‌Applet for the budgie panel for controlling all of your playing media.‌
-          </p>
-      </div>
-      <div class="mt-auto flex border-t border-gray-200 divide-x divide-gray-200 dark:border-neutral-700 dark:divide-neutral-700">
-         <button class="installButton w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-es-xl bg-green-500 text-white shadow-sm hover:bg-green-600 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800">
-             Install
-         </button>
-         <div class="spinner hidden w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-es-xl bg-white text-gray-800 shadow-sm dark:bg-neutral-900 dark:border-neutral-700 dark:text-white">
-             <div class="spinner"></div> Applying changes...
-         </div>
-         <button class="removeButton hidden w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-ee-xl bg-red-500 text-white shadow-sm hover:bg-red-600 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800">
-             Remove
-         </button>
-     </div>
-  </div>
-    <!-- End Card -->
+      <!-- macro: each card has data-name for search -->
 
-    <!-- Card -->
-    <div class="group flex flex-col h-full bg-white border border-gray-200 shadow-sm rounded-xl dark:bg-neutral-900 dark:border-neutral-700 dark:shadow-neutral-700/70">
-      <div class="h-48 overflow-hidden rounded-t-xl">
-         <a href="/img/screenshots/lightpad-applet.jpg" data-lightbox="haste-applet">
-         <img src="/img/screenshots/lightpad-applet.jpg" class="w-full h-full object-cover object-center" alt="Haste Applet Screenshot">
-       </a></div>
-      <div class="p-4 md:p-6">
-          <span class="block mb-1 text-xs font-semibold uppercase text-blue-600 dark:text-blue-500">
-              Budgie Applet
-          </span>
-          <h3 class="text-xl font-semibold text-gray-800 dark:text-neutral-300 dark:hover:text-white">
-Lightpad Applet          </h3>
-          <p class="mt-3 text-gray-500 dark:text-neutral-500">
-            ‌A full-screen application launcher.‌
-         </p>
+      <div class="applet-card" data-name="haste applet post text code prose services">
+        <div class="card-thumb"><img src="img/screenshots/haste-applet.jpg" alt="Haste Applet" /></div>
+        <div class="card-body">
+          <div class="card-name">Haste Applet</div>
+          <div class="card-desc">Post any text — code or prose — to various paste services directly from your desktop panel.</div>
+        </div>
+        <div class="card-footer">
+          <button class="card-btn btn-install"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>Install</button>
+          <button class="card-btn btn-applying"><div class="spinner-icon"></div>Applying…</button>
+          <button class="card-btn btn-remove"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 12H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>Remove</button>
+        </div>
       </div>
-      <div class="mt-auto flex border-t border-gray-200 divide-x divide-gray-200 dark:border-neutral-700 dark:divide-neutral-700">
-         <button class="installButton w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-es-xl bg-green-500 text-white shadow-sm hover:bg-green-600 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800">
-             Install
-         </button>
-         <div class="spinner hidden w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-es-xl bg-white text-gray-800 shadow-sm dark:bg-neutral-900 dark:border-neutral-700 dark:text-white">
-             <div class="spinner"></div> Applying changes...
-         </div>
-         <button class="removeButton hidden w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-ee-xl bg-red-500 text-white shadow-sm hover:bg-red-600 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800">
-             Remove
-         </button>
-     </div>
+
+      <div class="applet-card" data-name="media applet player music audio panel control">
+        <div class="card-thumb"><img src="img/screenshots/mediaplayer-applet.jpg" alt="Media Applet" /></div>
+        <div class="card-body">
+          <div class="card-name">Media Player Applet</div>
+          <div class="card-desc">Control all of your playing media from the Budgie panel without switching windows.</div>
+        </div>
+        <div class="card-footer">
+          <button class="card-btn btn-install"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>Install</button>
+          <button class="card-btn btn-applying"><div class="spinner-icon"></div>Applying…</button>
+          <button class="card-btn btn-remove"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 12H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>Remove</button>
+        </div>
+      </div>
+
+      <div class="applet-card" data-name="lightpad applet launcher fullscreen applications">
+        <div class="card-thumb"><img src="img/screenshots/lightpad-applet.jpg" alt="Lightpad Applet" /></div>
+        <div class="card-body">
+          <div class="card-name">Lightpad Applet</div>
+          <div class="card-desc">A full-screen application launcher overlay for quick app access from the panel.</div>
+        </div>
+        <div class="card-footer">
+          <button class="card-btn btn-install"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>Install</button>
+          <button class="card-btn btn-applying"><div class="spinner-icon"></div>Applying…</button>
+          <button class="card-btn btn-remove"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 12H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>Remove</button>
+        </div>
+      </div>
+
+      <div class="applet-card" data-name="user indicator session manage login logout panel">
+        <div class="card-thumb"><img src="img/screenshots/user-indicator-redux-applet.jpg" alt="User Indicator Applet" /></div>
+        <div class="card-body">
+          <div class="card-name">User Indicator Applet</div>
+          <div class="card-desc">Manage the user session — log out, switch users — directly from the Budgie panel.</div>
+        </div>
+        <div class="card-footer">
+          <button class="card-btn btn-install"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>Install</button>
+          <button class="card-btn btn-applying"><div class="spinner-icon"></div>Applying…</button>
+          <button class="card-btn btn-remove"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 12H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>Remove</button>
+        </div>
+      </div>
+
+      <div class="applet-card" data-name="performance gauge cpu memory storage panel monitor">
+        <div class="card-thumb"><img src="img/screenshots/performance-gauge-applet.jpg" alt="Performance Gauge" /></div>
+        <div class="card-body">
+          <div class="card-name">Performance Gauge</div>
+          <div class="card-desc">Shows a CPU, memory or storage gauge directly on your Budgie panel at a glance.</div>
+        </div>
+        <div class="card-footer">
+          <button class="card-btn btn-install"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>Install</button>
+          <button class="card-btn btn-applying"><div class="spinner-icon"></div>Applying…</button>
+          <button class="card-btn btn-remove"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 12H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>Remove</button>
+        </div>
+      </div>
+
+      <div class="applet-card" data-name="screenshot applet capture screen image utility">
+        <div class="card-thumb"><img src="img/screenshots/screenshot-applet.jpg" alt="Screenshot Applet" /></div>
+        <div class="card-body">
+          <div class="card-name">Screenshot Applet</div>
+          <div class="card-desc">Advanced screenshot utility for capturing, organizing and sharing screenshots from the panel.</div>
+        </div>
+        <div class="card-footer">
+          <button class="card-btn btn-install"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>Install</button>
+          <button class="card-btn btn-applying"><div class="spinner-icon"></div>Applying…</button>
+          <button class="card-btn btn-remove"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 12H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>Remove</button>
+        </div>
+      </div>
+
+      <div class="applet-card" data-name="clipboard applet manager store content copy paste">
+        <div class="card-thumb"><img src="img/screenshots/clipboard-applet.jpg" alt="Clipboard Applet" /></div>
+        <div class="card-body">
+          <div class="card-name">Clipboard Applet</div>
+          <div class="card-desc">A clipboard manager to store and manage clipboard content — never lose a copied item again.</div>
+        </div>
+        <div class="card-footer">
+          <button class="card-btn btn-install"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>Install</button>
+          <button class="card-btn btn-applying"><div class="spinner-icon"></div>Applying…</button>
+          <button class="card-btn btn-remove"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 12H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>Remove</button>
+        </div>
+      </div>
+
+      <div class="applet-card" data-name="calendar applet date time clock popover">
+        <div class="card-thumb"><img src="img/screenshots/calendar-applet.jpg" alt="Calendar Applet" /></div>
+        <div class="card-body">
+          <div class="card-name">Calendar Applet</div>
+          <div class="card-desc">Shows the date and time in the panel; click to reveal a full calendar popover.</div>
+        </div>
+        <div class="card-footer">
+          <button class="card-btn btn-install"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>Install</button>
+          <button class="card-btn btn-applying"><div class="spinner-icon"></div>Applying…</button>
+          <button class="card-btn btn-remove"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 12H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>Remove</button>
+        </div>
+      </div>
+
+      <div class="applet-card" data-name="network applet connectivity wifi ethernet internet">
+        <div class="card-thumb"><img src="img/screenshots/network-applet.jpg" alt="Network Applet" /></div>
+        <div class="card-body">
+          <div class="card-name">Network Applet</div>
+          <div class="card-desc">Network connectivity management applet for the Budgie panel — Wi-Fi, VPN and more.</div>
+        </div>
+        <div class="card-footer">
+          <button class="card-btn btn-install"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>Install</button>
+          <button class="card-btn btn-applying"><div class="spinner-icon"></div>Applying…</button>
+          <button class="card-btn btn-remove"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 12H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>Remove</button>
+        </div>
+      </div>
+
+      <div class="applet-card" data-name="carbon tray legacy xembed system tray icons">
+        <div class="card-thumb"><img src="img/screenshots/carbon-tray-applet.jpg" alt="Carbon Tray Applet" /></div>
+        <div class="card-body">
+          <div class="card-name">Carbon Tray Applet</div>
+          <div class="card-desc">Displays XEmbed icons from legacy applications that don't support the modern StatusNotifier spec.</div>
+        </div>
+        <div class="card-footer">
+          <button class="card-btn btn-install"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>Install</button>
+          <button class="card-btn btn-applying"><div class="spinner-icon"></div>Applying…</button>
+          <button class="card-btn btn-remove"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 12H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>Remove</button>
+        </div>
+      </div>
+
+      <div class="applet-card" data-name="cpu frequency applet processor sandy bridge performance">
+        <div class="card-thumb"><img src="img/screenshots/cpufreq-applet.jpg" alt="CPU Frequency Applet" /></div>
+        <div class="card-body">
+          <div class="card-name">CPU Frequency Applet</div>
+          <div class="card-desc">Control the CPU frequency (Sandy Bridge and newer) for on-demand performance switching.</div>
+        </div>
+        <div class="card-footer">
+          <button class="card-btn btn-install"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>Install</button>
+          <button class="card-btn btn-applying"><div class="spinner-icon"></div>Applying…</button>
+          <button class="card-btn btn-remove"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 12H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>Remove</button>
+        </div>
+      </div>
+
+      <div class="applet-card" data-name="system monitor applet ram swap network frequency">
+        <div class="card-thumb"><img src="img/screenshots/sys-monitor-applet.jpg" alt="System Monitor" /></div>
+        <div class="card-body">
+          <div class="card-name">System Monitor Applet</div>
+          <div class="card-desc">Show CPU frequency, RAM, swap and network values directly on your panel at a glance.</div>
+        </div>
+        <div class="card-footer">
+          <button class="card-btn btn-install"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>Install</button>
+          <button class="card-btn btn-applying"><div class="spinner-icon"></div>Applying…</button>
+          <button class="card-btn btn-remove"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 12H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>Remove</button>
+        </div>
+      </div>
+
+      <div class="applet-card" data-name="pixel saver title bar maximized windows panel">
+        <div class="card-thumb"><img src="img/screenshots/pixel-saver-applet.jpg" alt="Pixel-Saver Applet" /></div>
+        <div class="card-body">
+          <div class="card-name">Pixel-Saver Applet</div>
+          <div class="card-desc">Hides the title bar of maximized windows and moves window controls into the panel to save space.</div>
+        </div>
+        <div class="card-footer">
+          <button class="card-btn btn-install"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>Install</button>
+          <button class="card-btn btn-applying"><div class="spinner-icon"></div>Applying…</button>
+          <button class="card-btn btn-remove"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 12H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>Remove</button>
+        </div>
+      </div>
+
+      <div class="applet-card" data-name="global menu applet appmenu application menu panel">
+        <div class="card-thumb"><img src="img/screenshots/budgie-appmenu-applet.jpg" alt="Global Menu Applet" /></div>
+        <div class="card-body">
+          <div class="card-name">Global Menu Applet</div>
+          <div class="card-desc">Moves the application menu bar from the window into the Budgie panel, macOS-style.</div>
+        </div>
+        <div class="card-footer">
+          <button class="card-btn btn-install"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>Install</button>
+          <button class="card-btn btn-applying"><div class="spinner-icon"></div>Applying…</button>
+          <button class="card-btn btn-remove"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 12H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>Remove</button>
+        </div>
+      </div>
+
+      <div class="applet-card" data-name="system monitor 2 customize display panel information">
+        <div class="card-thumb"><img src="img/screenshots/sysmonitor-applet.jpg" alt="System Monitor Applet 2" /></div>
+        <div class="card-body">
+          <div class="card-name">System Monitor Applet 2</div>
+          <div class="card-desc">Customizable panel display for system information — highly configurable with graphs and text.</div>
+        </div>
+        <div class="card-footer">
+          <button class="card-btn btn-install"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>Install</button>
+          <button class="card-btn btn-applying"><div class="spinner-icon"></div>Applying…</button>
+          <button class="card-btn btn-remove"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 12H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>Remove</button>
+        </div>
+      </div>
+
+      <div class="applet-card" data-name="hotcorners applet mouse corner commands desktop trigger">
+        <div class="card-thumb"><img src="img/screenshots/hotcorners-applet.jpg" alt="Hotcorners Applet" /></div>
+        <div class="card-body">
+          <div class="card-name">Hotcorners Applet</div>
+          <div class="card-desc">Trigger user-defined commands when the mouse cursor is pushed into a corner of the desktop.</div>
+        </div>
+        <div class="card-footer">
+          <button class="card-btn btn-install"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>Install</button>
+          <button class="card-btn btn-applying"><div class="spinner-icon"></div>Applying…</button>
+          <button class="card-btn btn-remove"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 12H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>Remove</button>
+        </div>
+      </div>
+
+      <div class="applet-card" data-name="quicknote applet note text quick record write">
+        <div class="card-thumb"><img src="img/screenshots/quicknote-applet.jpg" alt="Quicknote Applet" /></div>
+        <div class="card-body">
+          <div class="card-name">Quicknote Applet</div>
+          <div class="card-desc">Quickly record a text-based note from the panel — no need to open a full text editor.</div>
+        </div>
+        <div class="card-footer">
+          <button class="card-btn btn-install"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>Install</button>
+          <button class="card-btn btn-applying"><div class="spinner-icon"></div>Applying…</button>
+          <button class="card-btn btn-remove"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 12H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>Remove</button>
+        </div>
+      </div>
+
+      <div class="applet-card" data-name="previews applet windows expose overview overview switcher">
+        <div class="card-thumb"><img src="img/screenshots/previews-applet.jpg" alt="Previews" /></div>
+        <div class="card-body">
+          <div class="card-name">Previews Applet</div>
+          <div class="card-desc">Shows an overview of open windows in an Exposé-like way — quickly jump to any window.</div>
+        </div>
+        <div class="card-footer">
+          <button class="card-btn btn-install"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>Install</button>
+          <button class="card-btn btn-applying"><div class="spinner-icon"></div>Applying…</button>
+          <button class="card-btn btn-remove"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 12H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>Remove</button>
+        </div>
+      </div>
+
+      <div class="applet-card" data-name="workspace overview applet navigate menu panel">
+        <div class="card-thumb"><img src="img/screenshots/workspace-overview-applet.jpg" alt="Workspace Overview" /></div>
+        <div class="card-body">
+          <div class="card-name">Workspace Overview</div>
+          <div class="card-desc">Quickly navigate between workspaces using the applet's panel menu.</div>
+        </div>
+        <div class="card-footer">
+          <button class="card-btn btn-install"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>Install</button>
+          <button class="card-btn btn-applying"><div class="spinner-icon"></div>Applying…</button>
+          <button class="card-btn btn-remove"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 12H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>Remove</button>
+        </div>
+      </div>
+
+      <div class="applet-card" data-name="workspace wallpaper applet different background each">
+        <div class="card-thumb"><img src="img/screenshots/workspace-wallpaper-applet.jpg" alt="Workspace Wallpaper" /></div>
+        <div class="card-body">
+          <div class="card-name">Workspace Wallpaper</div>
+          <div class="card-desc">Set a different wallpaper on each workspace for a distinct look per virtual desktop.</div>
+        </div>
+        <div class="card-footer">
+          <button class="card-btn btn-install"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>Install</button>
+          <button class="card-btn btn-applying"><div class="spinner-icon"></div>Applying…</button>
+          <button class="card-btn btn-remove"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 12H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>Remove</button>
+        </div>
+      </div>
+
+      <div class="applet-card" data-name="window mover applet workspaces move quickly">
+        <div class="card-thumb"><img src="img/screenshots/window-mover-applet.jpg" alt="Window Mover" /></div>
+        <div class="card-body">
+          <div class="card-name">Window Mover Applet</div>
+          <div class="card-desc">Quickly move the active window between workspaces without dragging or using keyboard shortcuts.</div>
+        </div>
+        <div class="card-footer">
+          <button class="card-btn btn-install"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>Install</button>
+          <button class="card-btn btn-applying"><div class="spinner-icon"></div>Applying…</button>
+          <button class="card-btn btn-remove"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 12H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>Remove</button>
+        </div>
+      </div>
+
+      <div class="applet-card" data-name="desktop showtime applet date time display clock">
+        <div class="card-thumb"><img src="img/screenshots/showtime-applet.jpg" alt="Desktop Showtime" /></div>
+        <div class="card-body">
+          <div class="card-name">Desktop Showtime</div>
+          <div class="card-desc">Display the date and time as an elegant overlay directly on the desktop background.</div>
+        </div>
+        <div class="card-footer">
+          <button class="card-btn btn-install"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>Install</button>
+          <button class="card-btn btn-applying"><div class="spinner-icon"></div>Applying…</button>
+          <button class="card-btn btn-remove"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 12H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>Remove</button>
+        </div>
+      </div>
+
+      <div class="applet-card" data-name="countdown applet timer action timed run complete">
+        <div class="card-thumb"><img src="img/screenshots/countdown-applet.jpg" alt="CountDown Applet" /></div>
+        <div class="card-body">
+          <div class="card-name">CountDown Applet</div>
+          <div class="card-desc">Set a timed countdown and run a custom action when the countdown completes.</div>
+        </div>
+        <div class="card-footer">
+          <button class="card-btn btn-install"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>Install</button>
+          <button class="card-btn btn-applying"><div class="spinner-icon"></div>Applying…</button>
+          <button class="card-btn btn-remove"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 12H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>Remove</button>
+        </div>
+      </div>
+
+      <div class="applet-card" data-name="auto keyboard switcher language per application input">
+        <div class="card-thumb"><img src="img/screenshots/keyboard-language-applet.jpg" alt="Auto-Keyboard Switcher" /></div>
+        <div class="card-body">
+          <div class="card-name">Auto-Keyboard Switcher</div>
+          <div class="card-desc">Automatically change the keyboard language on a per-application basis as you switch windows.</div>
+        </div>
+        <div class="card-footer">
+          <button class="card-btn btn-install"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>Install</button>
+          <button class="card-btn btn-applying"><div class="spinner-icon"></div>Applying…</button>
+          <button class="card-btn btn-remove"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 12H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>Remove</button>
+        </div>
+      </div>
+
+      <div class="applet-card" data-name="screen rotation lock applet tablet landscape portrait">
+        <div class="card-thumb"><img src="img/screenshots/rotation-lock-applet.jpg" alt="Screen Rotation Lock" /></div>
+        <div class="card-body">
+          <div class="card-name">Screen Rotation Lock</div>
+          <div class="card-desc">Lock or unlock screen rotation from the panel — useful for tablet and convertible devices.</div>
+        </div>
+        <div class="card-footer">
+          <button class="card-btn btn-install"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>Install</button>
+          <button class="card-btn btn-applying"><div class="spinner-icon"></div>Applying…</button>
+          <button class="card-btn btn-remove"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 12H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>Remove</button>
+        </div>
+      </div>
+
+      <div class="applet-card" data-name="clockworks applet multiple time zones world clock">
+        <div class="card-thumb"><img src="img/screenshots/clockworks-applet.jpg" alt="Clockworks Applet" /></div>
+        <div class="card-body">
+          <div class="card-name">Clockworks Applet</div>
+          <div class="card-desc">Display the time across multiple time zones simultaneously in the panel.</div>
+        </div>
+        <div class="card-footer">
+          <button class="card-btn btn-install"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>Install</button>
+          <button class="card-btn btn-applying"><div class="spinner-icon"></div>Applying…</button>
+          <button class="card-btn btn-remove"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 12H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>Remove</button>
+        </div>
+      </div>
+
+      <div class="applet-card" data-name="dropby applet usb device connected popup window">
+        <div class="card-thumb"><img src="img/screenshots/dropby-window-applet.jpg" alt="DropBy Applet" /></div>
+        <div class="card-body">
+          <div class="card-name">DropBy Applet</div>
+          <div class="card-desc">Displays a pop-up window when a USB device is connected — quickly manage removable media.</div>
+        </div>
+        <div class="card-footer">
+          <button class="card-btn btn-install"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>Install</button>
+          <button class="card-btn btn-applying"><div class="spinner-icon"></div>Applying…</button>
+          <button class="card-btn btn-remove"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 12H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>Remove</button>
+        </div>
+      </div>
+
+      <div class="applet-card" data-name="brightness controller applet backlight screen display">
+        <div class="card-thumb"><img src="img/screenshots/brightness-controller-applet.jpg" alt="Brightness Controller" /></div>
+        <div class="card-body">
+          <div class="card-name">Brightness Controller</div>
+          <div class="card-desc">Control screen backlight via your graphics driver or GNOME's brightness controller from the panel.</div>
+        </div>
+        <div class="card-footer">
+          <button class="card-btn btn-install"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>Install</button>
+          <button class="card-btn btn-applying"><div class="spinner-icon"></div>Applying…</button>
+          <button class="card-btn btn-remove"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 12H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>Remove</button>
+        </div>
+      </div>
+
+      <div class="applet-card" data-name="browser profile launcher chromium chrome profiles">
+        <div class="card-thumb"><img src="img/screenshots/browser-profile-launcher-applet.jpg" alt="Browser Profile Launcher" /></div>
+        <div class="card-body">
+          <div class="card-name">Browser Profile Launcher</div>
+          <div class="card-desc">Launch and create multiple Chromium/Chrome browser profiles from the panel.</div>
+        </div>
+        <div class="card-footer">
+          <button class="card-btn btn-install"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>Install</button>
+          <button class="card-btn btn-applying"><div class="spinner-icon"></div>Applying…</button>
+          <button class="card-btn btn-remove"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 12H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>Remove</button>
+        </div>
+      </div>
+
+      <div class="applet-card" data-name="trash applet show hide restore items bin delete">
+        <div class="card-thumb"><img src="img/screenshots/trash-applet.jpg" alt="Trash Applet" /></div>
+        <div class="card-body">
+          <div class="card-name">Trash Applet</div>
+          <div class="card-desc">Show, hide and restore trash items from the panel without opening the file manager.</div>
+        </div>
+        <div class="card-footer">
+          <button class="card-btn btn-install"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>Install</button>
+          <button class="card-btn btn-applying"><div class="spinner-icon"></div>Applying…</button>
+          <button class="card-btn btn-remove"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 12H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>Remove</button>
+        </div>
+      </div>
+
+      <div class="applet-card" data-name="application launcher applet favourites menu panel display">
+        <div class="card-thumb"><img src="img/screenshots/applauncher-applet.jpg" alt="Application Launcher" /></div>
+        <div class="card-body">
+          <div class="card-name">Application Launcher</div>
+          <div class="card-desc">Display your favourite applications in a panel menu for one-click access.</div>
+        </div>
+        <div class="card-footer">
+          <button class="card-btn btn-install"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>Install</button>
+          <button class="card-btn btn-applying"><div class="spinner-icon"></div>Applying…</button>
+          <button class="card-btn btn-remove"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 12H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>Remove</button>
+        </div>
+      </div>
+
+      <div class="applet-card" data-name="take a break applet pomodoro rest timer regular">
+        <div class="card-thumb"><img src="img/screenshots/takeabreak-applet.jpg" alt="Take-A-Break Applet" /></div>
+        <div class="card-body">
+          <div class="card-name">Take-A-Break Applet</div>
+          <div class="card-desc">A pomodoro-style applet that reminds you to take regular breaks while working.</div>
+        </div>
+        <div class="card-footer">
+          <button class="card-btn btn-install"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>Install</button>
+          <button class="card-btn btn-applying"><div class="spinner-icon"></div>Applying…</button>
+          <button class="card-btn btn-remove"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 12H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>Remove</button>
+        </div>
+      </div>
+
+      <div class="applet-card" data-name="wallstreet applet wallpaper switch interval rotate">
+        <div class="card-thumb"><img src="img/screenshots/wallstreet.jpg" alt="Wallstreet" /></div>
+        <div class="card-body">
+          <div class="card-name">Wallstreet</div>
+          <div class="card-desc">Automatically switch wallpapers at a regular interval — a mini rotating wallpaper manager.</div>
+        </div>
+        <div class="card-footer">
+          <button class="card-btn btn-install"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>Install</button>
+          <button class="card-btn btn-applying"><div class="spinner-icon"></div>Applying…</button>
+          <button class="card-btn btn-remove"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 12H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>Remove</button>
+        </div>
+      </div>
+
+      <div class="applet-card" data-name="fuzzy clock applet time approximate show panel">
+        <div class="card-thumb"><img src="img/screenshots/fuzzyclock-applet.jpg" alt="Fuzzy-Clock Applet" /></div>
+        <div class="card-body">
+          <div class="card-name">Fuzzy-Clock Applet</div>
+          <div class="card-desc">Shows the time in a friendly, approximate "fuzzy" way — e.g. "quarter past ten".</div>
+        </div>
+        <div class="card-footer">
+          <button class="card-btn btn-install"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>Install</button>
+          <button class="card-btn btn-applying"><div class="spinner-icon"></div>Applying…</button>
+          <button class="card-btn btn-remove"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 12H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>Remove</button>
+        </div>
+      </div>
+
+      <div class="applet-card" data-name="workspace stopwatch applet usage track per workspace time">
+        <div class="card-thumb"><img src="img/screenshots/workspace-stopwatch-applet.jpg" alt="Workspace Stopwatch" /></div>
+        <div class="card-body">
+          <div class="card-name">Workspace Stopwatch</div>
+          <div class="card-desc">Tracks and displays how much time you've spent on each workspace — useful for time management.</div>
+        </div>
+        <div class="card-footer">
+          <button class="card-btn btn-install"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>Install</button>
+          <button class="card-btn btn-applying"><div class="spinner-icon"></div>Applying…</button>
+          <button class="card-btn btn-remove"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 12H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>Remove</button>
+        </div>
+      </div>
+
+      <div class="applet-card" data-name="quick character applet locale ascii unicode special symbol">
+        <div class="card-thumb"><img src="img/screenshots/quickchar.jpg" alt="Quick Character" /></div>
+        <div class="card-body">
+          <div class="card-name">Quick Character</div>
+          <div class="card-desc">Quickly find and insert the locale equivalent character for any ASCII character.</div>
+        </div>
+        <div class="card-footer">
+          <button class="card-btn btn-install"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>Install</button>
+          <button class="card-btn btn-applying"><div class="spinner-icon"></div>Applying…</button>
+          <button class="card-btn btn-remove"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 12H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>Remove</button>
+        </div>
+      </div>
+
+      <div class="applet-card" data-name="status notifier tray applet kde kde system tray sni">
+        <div class="card-thumb"><img src="img/screenshots/sntray-applet.jpg" alt="Status Notifier Tray" /></div>
+        <div class="card-body">
+          <div class="card-name">Status Notifier Tray</div>
+          <div class="card-desc">System tray applet in the KDE StatusNotifierItem format for modern tray icon support.</div>
+        </div>
+        <div class="card-footer">
+          <button class="card-btn btn-install"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>Install</button>
+          <button class="card-btn btn-applying"><div class="spinner-icon"></div>Applying…</button>
+          <button class="card-btn btn-remove"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 12H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>Remove</button>
+        </div>
+      </div>
+
+    </div><!-- end cards-grid -->
+
+    <!-- Empty state -->
+    <div class="empty-state" id="emptyState">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"/>
+      </svg>
+      <p>No applets match "<span id="emptyQuery"></span>"</p>
+    </div>
+
+  </div><!-- end scroll-body -->
+
+  <!-- Footer -->
+  <div class="win-footer">
+    <a href="#" class="discourse-link">
+      <span style="font-size:12px;color:#9b9b9b;">Get support on</span>
+      <img src="public/img/logos/discourse-logo-dark.svg" alt="Discourse" />
+    </a>
+    <div class="social-links">
+      <a href="#" class="social-link" title="Blog"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width=".3" d="M19 7h1v12a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h11.5M7 14h6m-6 3h6m0-10h.5m-.5 3h.5M7 7h3v3H7V7Z"/></svg></a>
+      <a href="#" class="social-link" title="Twitter"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/></svg></a>
+      <a href="#" class="social-link" title="GitHub"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg></a>
+      <a href="#" class="social-link" title="Slack"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M3.362 10.11c0 .926-.756 1.681-1.681 1.681S0 11.036 0 10.111C0 9.186.756 8.43 1.68 8.43h1.682v1.68zm.846 0c0-.924.756-1.68 1.681-1.68s1.681.756 1.681 1.68v4.21c0 .924-.756 1.68-1.68 1.68a1.685 1.685 0 0 1-1.682-1.68v-4.21zM5.89 3.362c-.926 0-1.682-.756-1.682-1.681S4.964 0 5.89 0s1.68.756 1.68 1.68v1.682H5.89zm0 .846c.924 0 1.68.756 1.68 1.681S6.814 7.57 5.89 7.57H1.68C.757 7.57 0 6.814 0 5.89c0-.926.756-1.682 1.68-1.682h4.21zm6.749 1.682c0-.926.755-1.682 1.68-1.682.925 0 1.681.756 1.681 1.681s-.756 1.681-1.68 1.681h-1.681V5.89zm-.848 0c0 .924-.755 1.68-1.68 1.68A1.685 1.685 0 0 1 8.43 5.89V1.68C8.43.757 9.186 0 10.11 0c.926 0 1.681.756 1.681 1.68v4.21zm-1.681 6.748c.926 0 1.682.756 1.682 1.681S11.036 16 10.11 16s-1.681-.756-1.681-1.68v-1.682h1.68zm0-.847c-.924 0-1.68-.755-1.68-1.68 0-.925.756-1.681 1.68-1.681h4.21c.924 0 1.68.756 1.68 1.68 0 .926-.756 1.681-1.68 1.681h-4.21z"/></svg></a>
+    </div>
   </div>
-    <!-- End Card -->
-  </div>
-  <!-- End Grid -->
+
 </div>
 
-<!-- Card Blog 2 -->
-<div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
-   <!-- Grid -->
-   <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-    <div class="group flex flex-col h-full bg-white border border-gray-200 shadow-sm rounded-xl dark:bg-neutral-900 dark:border-neutral-700 dark:shadow-neutral-700/70">
-       <div class="h-48 overflow-hidden rounded-t-xl">
-          <a href="/img/screenshots/user-indicator-redux-applet.jpg" data-lightbox="haste-applet">
-          <img src="/img/screenshots/user-indicator-redux-applet.jpg" class="w-full h-full object-cover object-center" alt="Haste Applet Screenshot">
-        </a></div>
-       <div class="p-4 md:p-6">
-           <span class="block mb-1 text-xs font-semibold uppercase text-blue-600 dark:text-blue-500">
-               Budgie Applet
-           </span>
-           <h3 class="text-xl font-semibold text-gray-800 dark:text-neutral-300 dark:hover:text-white">
-User Indicator Applet           </h3>
-           <p class="mt-3 text-gray-500 dark:text-neutral-500">
-            ‌Manage the user session from the Budgie panel.‌
+<script is:inline>
+(function () {
+  function cmd(command) { console.log('cmd:', command); }
+  window.cmd = cmd;
 
-         </p>
-       </div>
-       <div class="mt-auto flex border-t border-gray-200 divide-x divide-gray-200 dark:border-neutral-700 dark:divide-neutral-700">
-         <button class="installButton w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-es-xl bg-green-500 text-white shadow-sm hover:bg-green-600 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800">
-             Install
-         </button>
-         <div class="spinner hidden w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-es-xl bg-white text-gray-800 shadow-sm dark:bg-neutral-900 dark:border-neutral-700 dark:text-white">
-             <div class="spinner"></div> Applying changes...
-         </div>
-         <button class="removeButton hidden w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-ee-xl bg-red-500 text-white shadow-sm hover:bg-red-600 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800">
-             Remove
-         </button>
-     </div>
-   </div>
-     <!-- End Card -->
- 
-     <!-- Card -->
-     <div class="group flex flex-col h-full bg-white border border-gray-200 shadow-sm rounded-xl dark:bg-neutral-900 dark:border-neutral-700 dark:shadow-neutral-700/70">
-       <div class="h-48 overflow-hidden rounded-t-xl bg-black">
-          <a href="img/screenshots/performance-gauge-applet.jpg" data-lightbox="haste-applet">
-          <img src="img/screenshots/performance-gauge-applet.jpg" class="w-full h-full object-scale-down object-center" alt="Haste Applet Screenshot">
-        </a></div>
-       <div class="p-4 md:p-6">
-           <span class="block mb-1 text-xs font-semibold uppercase text-blue-600 dark:text-blue-500">
-               Budgie Applet
-           </span>
-           <h3 class="text-xl font-semibold text-gray-800 dark:text-neutral-300 dark:hover:text-white">
-            Performance Gauge Applet‌        </h3>
-           <p class="mt-3 text-gray-500 dark:text-neutral-500">
-            ‌This applet shows a CPU, Memory or Storage gauge on your budgie panel          </p>
-       </div>
-       <div class="mt-auto flex border-t border-gray-200 divide-x divide-gray-200 dark:border-neutral-700 dark:divide-neutral-700">
-         <button class="installButton w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-es-xl bg-green-500 text-white shadow-sm hover:bg-green-600 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800">
-             Install
-         </button>
-         <div class="spinner hidden w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-es-xl bg-white text-gray-800 shadow-sm dark:bg-neutral-900 dark:border-neutral-700 dark:text-white">
-             <div class="spinner"></div> Applying changes...
-         </div>
-         <button class="removeButton hidden w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-ee-xl bg-red-500 text-white shadow-sm hover:bg-red-600 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800">
-             Remove
-         </button>
-     </div>
-   </div>
-     <!-- End Card -->
- 
-     <!-- Card -->
-     <div class="group flex flex-col h-full bg-white border border-gray-200 shadow-sm rounded-xl dark:bg-neutral-900 dark:border-neutral-700 dark:shadow-neutral-700/70">
-       <div class="h-48 overflow-hidden rounded-t-xl">
-          <a href="/img/screenshots/screenshot-applet.jpg" data-lightbox="haste-applet">
-          <img src="/img/screenshots/screenshot-applet.jpg" class="w-full h-full object-cover object-center" alt="Haste Applet Screenshot">
-        </a></div>
-       <div class="p-4 md:p-6">
-           <span class="block mb-1 text-xs font-semibold uppercase text-blue-600 dark:text-blue-500">
-               Budgie Applet
-           </span>
-           <h3 class="text-xl font-semibold text-gray-800 dark:text-neutral-300 dark:hover:text-white">
-            Screenshot Applet‌        </h3>
-           <p class="mt-3 text-gray-500 dark:text-neutral-500">
-            ‌An advanced screenshot utility for capturing and organizing screenshots.‌
+  document.addEventListener('DOMContentLoaded', function () {
+    var cards = Array.from(document.querySelectorAll('.applet-card'));
+    var grid = document.getElementById('cardsGrid');
+    var empty = document.getElementById('emptyState');
+    var emptyQuery = document.getElementById('emptyQuery');
+    var countLabel = document.getElementById('countLabel');
+    var searchInput = document.getElementById('searchInput');
 
-         </p>
-       </div>
-       <div class="mt-auto flex border-t border-gray-200 divide-x divide-gray-200 dark:border-neutral-700 dark:divide-neutral-700">
-         <button class="installButton w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-es-xl bg-green-500 text-white shadow-sm hover:bg-green-600 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800">
-             Install
-         </button>
-         <div class="spinner hidden w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-es-xl bg-white text-gray-800 shadow-sm dark:bg-neutral-900 dark:border-neutral-700 dark:text-white">
-             <div class="spinner"></div> Applying changes...
-         </div>
-         <button class="removeButton hidden w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-ee-xl bg-red-500 text-white shadow-sm hover:bg-red-600 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800">
-             Remove
-         </button>
-     </div>
-   </div>
-     <!-- End Card -->
-   </div>
-   <!-- End Grid -->
- </div>
+    function updateCount(visible) {
+      countLabel.textContent = visible + ' of ' + cards.length + ' applets';
+    }
+    updateCount(cards.length);
 
+    /* ── Search / filter ── */
+    searchInput.addEventListener('input', function () {
+      var q = searchInput.value.trim().toLowerCase();
+      var visible = 0;
+      cards.forEach(function (card) {
+        var haystack = (card.dataset.name || '') + ' ' + (card.querySelector('.card-name').textContent).toLowerCase();
+        var show = !q || haystack.indexOf(q) !== -1;
+        card.style.display = show ? '' : 'none';
+        if (show) visible++;
+      });
+      updateCount(visible);
+      if (visible === 0) {
+        empty.classList.add('visible');
+        emptyQuery.textContent = searchInput.value.trim();
+        grid.style.display = 'none';
+      } else {
+        empty.classList.remove('visible');
+        grid.style.display = '';
+      }
+    });
 
- <!-- Card Blog 3 -->
-<div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
-   <!-- Grid -->
-   <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-    <div class="group flex flex-col h-full bg-white border border-gray-200 shadow-sm rounded-xl dark:bg-neutral-900 dark:border-neutral-700 dark:shadow-neutral-700/70">
-       <div class="h-48 overflow-hidden rounded-t-xl">
-          <a href="/img/screenshots/clipboard-applet.jpg" data-lightbox="haste-applet">
-          <img src="/img/screenshots/clipboard-applet.jpg" class="w-full h-full object-cover object-center" alt="Haste Applet Screenshot">
-        </a></div>
-       <div class="p-4 md:p-6">
-           <span class="block mb-1 text-xs font-semibold uppercase text-blue-600 dark:text-blue-500">
-            BudgieApplet‌           </span>
-           <h3 class="text-xl font-semibold text-gray-800 dark:text-neutral-300 dark:hover:text-white">
-            ‌Clipboard Applet‌           </h3>
-           <p class="mt-3 text-gray-500 dark:text-neutral-500">
-            ‌A clipboard manager applet that can help you to store and manage clipboard content.‌
+    /* ── Install / Remove toggling ── */
+    cards.forEach(function (card) {
+      var installBtn = card.querySelector('.btn-install');
+      var removeBtn  = card.querySelector('.btn-remove');
 
+      installBtn.addEventListener('click', function () {
+        card.classList.add('applying');
+        // simulate async install
+        setTimeout(function () {
+          card.classList.remove('applying');
+          card.classList.add('installed');
+          cmd('install?' + (card.querySelector('.card-name').textContent.trim().toLowerCase().replace(/\s+/g, '-')));
+        }, 1800);
+      });
 
-         </p>
-       </div>
-       <div class="mt-auto flex border-t border-gray-200 divide-x divide-gray-200 dark:border-neutral-700 dark:divide-neutral-700">
-         <button class="installButton w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-es-xl bg-green-500 text-white shadow-sm hover:bg-green-600 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800">
-             Install
-         </button>
-         <div class="spinner hidden w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-es-xl bg-white text-gray-800 shadow-sm dark:bg-neutral-900 dark:border-neutral-700 dark:text-white">
-             <div class="spinner"></div> Applying changes...
-         </div>
-         <button class="removeButton hidden w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-ee-xl bg-red-500 text-white shadow-sm hover:bg-red-600 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800">
-             Remove
-         </button>
-     </div>
-   </div>
-     <!-- End Card -->
- 
-     <!-- Card -->
-     <div class="group flex flex-col h-full bg-white border border-gray-200 shadow-sm rounded-xl dark:bg-neutral-900 dark:border-neutral-700 dark:shadow-neutral-700/70">
-       <div class="h-48 overflow-hidden rounded-t-xl bg-black">
-          <a href="img/screenshots/calendar-applet.jpg" data-lightbox="haste-applet">
-          <img src="img/screenshots/calendar-applet.jpg" class="w-full h-full object-scale-down object-center" alt="Haste Applet Screenshot">
-        </a></div>
-       <div class="p-4 md:p-6">
-           <span class="block mb-1 text-xs font-semibold uppercase text-blue-600 dark:text-blue-500">
-               Budgie Applet
-           </span>
-           <h3 class="text-xl font-semibold text-gray-800 dark:text-neutral-300 dark:hover:text-white">
-            Calendar Applet‌      </h3>
-           <p class="mt-3 text-gray-500 dark:text-neutral-500">
-            ‌Show date and time and when clicked show a calendar in a popover.‌
-         </p>
-       </div>
-       <div class="mt-auto flex border-t border-gray-200 divide-x divide-gray-200 dark:border-neutral-700 dark:divide-neutral-700">
-         <button class="installButton w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-es-xl bg-green-500 text-white shadow-sm hover:bg-green-600 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800">
-             Install
-         </button>
-         <div class="spinner hidden w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-es-xl bg-white text-gray-800 shadow-sm dark:bg-neutral-900 dark:border-neutral-700 dark:text-white">
-             <div class="spinner"></div> Applying changes...
-         </div>
-         <button class="removeButton hidden w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-ee-xl bg-red-500 text-white shadow-sm hover:bg-red-600 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800">
-             Remove
-         </button>
-     </div>
-   </div>
-     <!-- End Card -->
- 
-     <!-- Card -->
-     <div class="group flex flex-col h-full bg-white border border-gray-200 shadow-sm rounded-xl dark:bg-neutral-900 dark:border-neutral-700 dark:shadow-neutral-700/70">
-       <div class="h-48 overflow-hidden rounded-t-xl">
-          <a href="/img/screenshots/network-applet.jpg" data-lightbox="haste-applet">
-          <img src="/img/screenshots/network-applet.jpg" class="w-full h-full object-cover object-center" alt="Haste Applet Screenshot">
-        </a></div>
-       <div class="p-4 md:p-6">
-           <span class="block mb-1 text-xs font-semibold uppercase text-blue-600 dark:text-blue-500">
-               Budgie Applet
-           </span>
-           <h3 class="text-xl font-semibold text-gray-800 dark:text-neutral-300 dark:hover:text-white">
-            Network Applet‌      </h3>
-           <p class="mt-3 text-gray-500 dark:text-neutral-500">
-            ‌Network connectivity applet.‌
+      removeBtn.addEventListener('click', function () {
+        card.classList.remove('installed');
+        cmd('remove?' + (card.querySelector('.card-name').textContent.trim().toLowerCase().replace(/\s+/g, '-')));
+      });
+    });
 
-         </p>
-       </div>
-       <div class="mt-auto flex border-t border-gray-200 divide-x divide-gray-200 dark:border-neutral-700 dark:divide-neutral-700">
-         <button class="installButton w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-es-xl bg-green-500 text-white shadow-sm hover:bg-green-600 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800">
-             Install
-         </button>
-         <div class="spinner hidden w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-es-xl bg-white text-gray-800 shadow-sm dark:bg-neutral-900 dark:border-neutral-700 dark:text-white">
-             <div class="spinner"></div> Applying changes...
-         </div>
-         <button class="removeButton hidden w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-ee-xl bg-red-500 text-white shadow-sm hover:bg-red-600 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800">
-             Remove
-         </button>
-     </div>
-   </div>
-     <!-- End Card -->
-   </div>
-   <!-- End Grid -->
- </div>
-
- <!-- Card Blog 4 -->
- <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
-   <!-- Grid -->
-   <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-    <div class="group flex flex-col h-full bg-white border border-gray-200 shadow-sm rounded-xl dark:bg-neutral-900 dark:border-neutral-700 dark:shadow-neutral-700/70">
-       <div class="h-48 overflow-hidden rounded-t-xl">
-          <a href="/img/screenshots/carbon-tray-applet.jpg" data-lightbox="haste-applet">
-          <img src="/img/screenshots/carbon-tray-applet.jpg" class="w-full h-full object-cover object-center" alt="Haste Applet Screenshot">
-        </a></div>
-       <div class="p-4 md:p-6">
-           <span class="block mb-1 text-xs font-semibold uppercase text-blue-600 dark:text-blue-500">
-            Budgie Applet‌           </span>
-           <h3 class="text-xl font-semibold text-gray-800 dark:text-neutral-300 dark:hover:text-white">
-            Carbon Tray Applet‌        </h3>
-           <p class="mt-3 text-gray-500 dark:text-neutral-500">
-            ‌Display xembed icons from legacy applications.‌
-
-         </p>
-       </div>
-       <div class="mt-auto flex border-t border-gray-200 divide-x divide-gray-200 dark:border-neutral-700 dark:divide-neutral-700">
-         <button class="installButton w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-es-xl bg-green-500 text-white shadow-sm hover:bg-green-600 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800">
-             Install
-         </button>
-         <div class="spinner hidden w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-es-xl bg-white text-gray-800 shadow-sm dark:bg-neutral-900 dark:border-neutral-700 dark:text-white">
-             <div class="spinner"></div> Applying changes...
-         </div>
-         <button class="removeButton hidden w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-ee-xl bg-red-500 text-white shadow-sm hover:bg-red-600 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800">
-             Remove
-         </button>
-     </div>
-   </div>
-     <!-- End Card -->
- 
-     <!-- Card -->
-     <div class="group flex flex-col h-full bg-white border border-gray-200 shadow-sm rounded-xl dark:bg-neutral-900 dark:border-neutral-700 dark:shadow-neutral-700/70">
-       <div class="h-48 overflow-hidden rounded-t-xl bg-black">
-          <a href="img/screenshots/visualspace-applet.jpg" data-lightbox="haste-applet">
-          <img src="img/screenshots/visualspace-applet.jpg" class="w-full h-full object-scale-down object-center" alt="Haste Applet Screenshot">
-        </a></div>
-       <div class="p-4 md:p-6">
-           <span class="block mb-1 text-xs font-semibold uppercase text-blue-600 dark:text-blue-500">
-               Budgie Applet
-           </span>
-           <h3 class="text-xl font-semibold text-gray-800 dark:text-neutral-300 dark:hover:text-white">
-            VisualSpace Applet‌    </h3>
-           <p class="mt-3 text-gray-500 dark:text-neutral-500">
-            ‌Display application windows across multiple workspaces.‌
-         </p>
-       </div>
-       <div class="mt-auto flex border-t border-gray-200 divide-x divide-gray-200 dark:border-neutral-700 dark:divide-neutral-700">
-         <button class="installButton w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-es-xl bg-green-500 text-white shadow-sm hover:bg-green-600 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800">
-             Install
-         </button>
-         <div class="spinner hidden w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-es-xl bg-white text-gray-800 shadow-sm dark:bg-neutral-900 dark:border-neutral-700 dark:text-white">
-             <div class="spinner"></div> Applying changes...
-         </div>
-         <button class="removeButton hidden w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-ee-xl bg-red-500 text-white shadow-sm hover:bg-red-600 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800">
-             Remove
-         </button>
-     </div>
-   </div>
-     <!-- End Card -->
- 
-     <!-- Card -->
-     <div class="group flex flex-col h-full bg-white border border-gray-200 shadow-sm rounded-xl dark:bg-neutral-900 dark:border-neutral-700 dark:shadow-neutral-700/70">
-       <div class="h-48 overflow-hidden rounded-t-xl">
-          <a href="/img/screenshots/analogue-clock-applet.jpg" data-lightbox="haste-applet">
-          <img src="/img/screenshots/analogue-clock-applet.jpg" class="w-full h-full object-scale-down object-center" alt="Haste Applet Screenshot">
-        </a></div>
-       <div class="p-4 md:p-6">
-           <span class="block mb-1 text-xs font-semibold uppercase text-blue-600 dark:text-blue-500">
-               Budgie Applet
-           </span>
-           <h3 class="text-xl font-semibold text-gray-800 dark:text-neutral-300 dark:hover:text-white">
-            Analog Clock Applet‌ </h3>
-           <p class="mt-3 text-gray-500 dark:text-neutral-500">
-            ‌Display the time using a traditional dial-face clock.‌
-
-            ‌
-
-         </p>
-       </div>
-       <div class="mt-auto flex border-t border-gray-200 divide-x divide-gray-200 dark:border-neutral-700 dark:divide-neutral-700">
-         <button class="installButton w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-es-xl bg-green-500 text-white shadow-sm hover:bg-green-600 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800">
-             Install
-         </button>
-         <div class="spinner hidden w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-es-xl bg-white text-gray-800 shadow-sm dark:bg-neutral-900 dark:border-neutral-700 dark:text-white">
-             <div class="spinner"></div> Applying changes...
-         </div>
-         <button class="removeButton hidden w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-ee-xl bg-red-500 text-white shadow-sm hover:bg-red-600 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800">
-             Remove
-         </button>
-     </div>
-   </div>
-     <!-- End Card -->
-   </div>
-   <!-- End Grid -->
- </div>
-
- <!-- Card Blog 5 -->
- <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
-   <!-- Grid -->
-   <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-    <div class="group flex flex-col h-full bg-white border border-gray-200 shadow-sm rounded-xl dark:bg-neutral-900 dark:border-neutral-700 dark:shadow-neutral-700/70">
-       <div class="h-48 overflow-hidden rounded-t-xl">
-          <a href="/img/screenshots/applications-menu-applet.jpg" data-lightbox="haste-applet">
-          <img src="/img/screenshots/applications-menu-applet.jpg" class="w-full h-full object-contain object-center" alt="Haste Applet Screenshot">
-        </a></div>
-       <div class="p-4 md:p-6">
-           <span class="block mb-1 text-xs font-semibold uppercase text-blue-600 dark:text-blue-500">
-            Budgie Applet‌           </span>
-           <h3 class="text-xl font-semibold text-gray-800 dark:text-neutral-300 dark:hover:text-white">
-            Applications Menu applet‌     </h3>
-           <p class="mt-3 text-gray-500 dark:text-neutral-500">
-            ‌Stylish applications menu applet.‌
-         </p>
-       </div>
-       <div class="mt-auto flex border-t border-gray-200 divide-x divide-gray-200 dark:border-neutral-700 dark:divide-neutral-700">
-         <button class="installButton w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-es-xl bg-green-500 text-white shadow-sm hover:bg-green-600 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800">
-             Install
-         </button>
-         <div class="spinner hidden w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-es-xl bg-white text-gray-800 shadow-sm dark:bg-neutral-900 dark:border-neutral-700 dark:text-white">
-             <div class="spinner"></div> Applying changes...
-         </div>
-         <button class="removeButton hidden w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-ee-xl bg-red-500 text-white shadow-sm hover:bg-red-600 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800">
-             Remove
-         </button>
-     </div>
-   </div>
-     <!-- End Card -->
- 
-     <!-- Card -->
-     <div class="group flex flex-col h-full bg-white border border-gray-200 shadow-sm rounded-xl dark:bg-neutral-900 dark:border-neutral-700 dark:shadow-neutral-700/70">
-       <div class="h-48 overflow-hidden rounded-t-xl bg-black">
-          <a href="img/screenshots/window-shuffler.jpg" data-lightbox="haste-applet">
-          <img src="img/screenshots/window-shuffler.jpg" class="w-full h-full object-scale-down object-center" alt="Haste Applet Screenshot">
-        </a></div>
-       <div class="p-4 md:p-6">
-           <span class="block mb-1 text-xs font-semibold uppercase text-blue-600 dark:text-blue-500">
-               Budgie Applet
-           </span>
-           <h3 class="text-xl font-semibold text-gray-800 dark:text-neutral-300 dark:hover:text-white">
-            Window Shuffler‌ </h3>
-           <p class="mt-3 text-gray-500 dark:text-neutral-500">
-            ‌Graphical and keyboard friendly window arranger.‌         </p>
-       </div>
-       <div class="mt-auto flex border-t border-gray-200 divide-x divide-gray-200 dark:border-neutral-700 dark:divide-neutral-700">
-         <button class="installButton w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-es-xl bg-green-500 text-white shadow-sm hover:bg-green-600 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800">
-             Install
-         </button>
-         <div class="spinner hidden w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-es-xl bg-white text-gray-800 shadow-sm dark:bg-neutral-900 dark:border-neutral-700 dark:text-white">
-             <div class="spinner"></div> Applying changes...
-         </div>
-         <button class="removeButton hidden w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-ee-xl bg-red-500 text-white shadow-sm hover:bg-red-600 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800">
-             Remove
-         </button>
-     </div>
-   </div>
-     <!-- End Card -->
- 
-     <!-- Card -->
-     <div class="group flex flex-col h-full bg-white border border-gray-200 shadow-sm rounded-xl dark:bg-neutral-900 dark:border-neutral-700 dark:shadow-neutral-700/70">
-       <div class="h-48 overflow-hidden rounded-t-xl">
-          <a href="/img/screenshots/cpufreq-applet.jpg" data-lightbox="haste-applet">
-          <img src="/img/screenshots/cpufreq-applet.jpg" class="w-full h-full object-scale-down object-center" alt="Haste Applet Screenshot">
-        </a></div>
-       <div class="p-4 md:p-6">
-           <span class="block mb-1 text-xs font-semibold uppercase text-blue-600 dark:text-blue-500">
-               Budgie Applet
-           </span>
-           <h3 class="text-xl font-semibold text-gray-800 dark:text-neutral-300 dark:hover:text-white">
-            ‌CPU Frequency Applet‌</h3>
-           <p class="mt-3 text-gray-500 dark:text-neutral-500">
-            ‌Control the frequency of the processor (Sandy Bridge and newer).‌
-         </p>
-       </div>
-       <div class="mt-auto flex border-t border-gray-200 divide-x divide-gray-200 dark:border-neutral-700 dark:divide-neutral-700">
-         <button class="installButton w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-es-xl bg-green-500 text-white shadow-sm hover:bg-green-600 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800">
-             Install
-         </button>
-         <div class="spinner hidden w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-es-xl bg-white text-gray-800 shadow-sm dark:bg-neutral-900 dark:border-neutral-700 dark:text-white">
-             <div class="spinner"></div> Applying changes...
-         </div>
-         <button class="removeButton hidden w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-ee-xl bg-red-500 text-white shadow-sm hover:bg-red-600 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800">
-             Remove
-         </button>
-     </div>
-   </div>
-     <!-- End Card -->
-   </div>
-   <!-- End Grid -->
- </div>
-
-
- <!-- Card Blog 6 -->
- <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
-   <!-- Grid -->
-   <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-    <div class="group flex flex-col h-full bg-white border border-gray-200 shadow-sm rounded-xl dark:bg-neutral-900 dark:border-neutral-700 dark:shadow-neutral-700/70">
-       <div class="h-48 overflow-hidden rounded-t-xl">
-          <a href="/img/screenshots/sys-monitor-applet.jpg" data-lightbox="haste-applet">
-          <img src="/img/screenshots/sys-monitor-applet.jpg" class="w-full h-full object-contain object-center" alt="Haste Applet Screenshot">
-        </a></div>
-       <div class="p-4 md:p-6">
-           <span class="block mb-1 text-xs font-semibold uppercase text-blue-600 dark:text-blue-500">
-            Budgie Applet‌           </span>
-           <h3 class="text-xl font-semibold text-gray-800 dark:text-neutral-300 dark:hover:text-white">
-            System Monitor Applet‌    </h3>
-           <p class="mt-3 text-gray-500 dark:text-neutral-500">
-            ‌Show frequency, ram, swap & network values.‌
-         </p>
-       </div>
-       <div class="mt-auto flex border-t border-gray-200 divide-x divide-gray-200 dark:border-neutral-700 dark:divide-neutral-700">
-         <button class="installButton w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-es-xl bg-green-500 text-white shadow-sm hover:bg-green-600 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800">
-             Install
-         </button>
-         <div class="spinner hidden w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-es-xl bg-white text-gray-800 shadow-sm dark:bg-neutral-900 dark:border-neutral-700 dark:text-white">
-             <div class="spinner"></div> Applying changes...
-         </div>
-         <button class="removeButton hidden w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-ee-xl bg-red-500 text-white shadow-sm hover:bg-red-600 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800">
-             Remove
-         </button>
-     </div>
-   </div>
-     <!-- End Card -->
- 
-     <!-- Card -->
-     <div class="group flex flex-col h-full bg-white border border-gray-200 shadow-sm rounded-xl dark:bg-neutral-900 dark:border-neutral-700 dark:shadow-neutral-700/70">
-       <div class="h-48 overflow-hidden rounded-t-xl bg-black">
-          <a href="img/screenshots/pixel-saver-applet.jpg" data-lightbox="haste-applet">
-          <img src="img/screenshots/pixel-saver-applet.jpg" class="w-full h-full object-scale-down object-center" alt="Haste Applet Screenshot">
-        </a></div>
-       <div class="p-4 md:p-6">
-           <span class="block mb-1 text-xs font-semibold uppercase text-blue-600 dark:text-blue-500">
-               Budgie Applet
-           </span>
-           <h3 class="text-xl font-semibold text-gray-800 dark:text-neutral-300 dark:hover:text-white">
-            Pixel-Saver Applet‌</h3>
-           <p class="mt-3 text-gray-500 dark:text-neutral-500">
-            ‌Hides the title bar from maximized windows and creates a new one inside the panel.‌
-         </p>
-       </div>
-       <div class="mt-auto flex border-t border-gray-200 divide-x divide-gray-200 dark:border-neutral-700 dark:divide-neutral-700">
-         <button class="installButton w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-es-xl bg-green-500 text-white shadow-sm hover:bg-green-600 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800">
-             Install
-         </button>
-         <div class="spinner hidden w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-es-xl bg-white text-gray-800 shadow-sm dark:bg-neutral-900 dark:border-neutral-700 dark:text-white">
-             <div class="spinner"></div> Applying changes...
-         </div>
-         <button class="removeButton hidden w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-ee-xl bg-red-500 text-white shadow-sm hover:bg-red-600 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800">
-             Remove
-         </button>
-     </div>
-   </div>
-     <!-- End Card -->
- 
-     <!-- Card -->
-     <div class="group flex flex-col h-full bg-white border border-gray-200 shadow-sm rounded-xl dark:bg-neutral-900 dark:border-neutral-700 dark:shadow-neutral-700/70">
-       <div class="h-48 overflow-hidden rounded-t-xl">
-          <a href="/img/screenshots/budgie-appmenu-applet.jpg" data-lightbox="haste-applet">
-          <img src="/img/screenshots/budgie-appmenu-applet.jpg" class="w-full h-full object-cover object-center" alt="Haste Applet Screenshot">
-        </a></div>
-       <div class="p-4 md:p-6">
-           <span class="block mb-1 text-xs font-semibold uppercase text-blue-600 dark:text-blue-500">
-               Budgie Applet
-           </span>
-           <h3 class="text-xl font-semibold text-gray-800 dark:text-neutral-300 dark:hover:text-white">
-            Global Menu Applet‌‌</h3>
-           <p class="mt-3 text-gray-500 dark:text-neutral-500">
-            ‌Moves the menu from applications into the panel.‌
-         </p>
-       </div>
-       <div class="mt-auto flex border-t border-gray-200 divide-x divide-gray-200 dark:border-neutral-700 dark:divide-neutral-700">
-         <button class="installButton w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-es-xl bg-green-500 text-white shadow-sm hover:bg-green-600 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800">
-             Install
-         </button>
-         <div class="spinner hidden w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-es-xl bg-white text-gray-800 shadow-sm dark:bg-neutral-900 dark:border-neutral-700 dark:text-white">
-             <div class="spinner"></div> Applying changes...
-         </div>
-         <button class="removeButton hidden w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-ee-xl bg-red-500 text-white shadow-sm hover:bg-red-600 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800">
-             Remove
-         </button>
-     </div>
-   </div>
-     <!-- End Card -->
-   </div>
-   <!-- End Grid -->
- </div>
-
- <!-- Card Blog 7 -->
- <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
-   <!-- Grid -->
-   <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-    <div class="group flex flex-col h-full bg-white border border-gray-200 shadow-sm rounded-xl dark:bg-neutral-900 dark:border-neutral-700 dark:shadow-neutral-700/70">
-       <div class="h-48 overflow-hidden rounded-t-xl">
-          <a href="/img/screenshots/sysmonitor-applet.jpg" data-lightbox="haste-applet">
-          <img src="/img/screenshots/sysmonitor-applet.jpg" class="w-full h-full object-contain object-center" alt="Haste Applet Screenshot">
-        </a></div>
-       <div class="p-4 md:p-6">
-           <span class="block mb-1 text-xs font-semibold uppercase text-blue-600 dark:text-blue-500">
-            Budgie Applet‌           </span>
-           <h3 class="text-xl font-semibold text-gray-800 dark:text-neutral-300 dark:hover:text-white">
-            System Monitor Applet‌ 2    </h3>
-           <p class="mt-3 text-gray-500 dark:text-neutral-500">
-            ‌Customize and display system information on the panel.‌
-
-         </p>
-       </div>
-       <div class="mt-auto flex border-t border-gray-200 divide-x divide-gray-200 dark:border-neutral-700 dark:divide-neutral-700">
-         <button class="installButton w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-es-xl bg-green-500 text-white shadow-sm hover:bg-green-600 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800">
-             Install
-         </button>
-         <div class="spinner hidden w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-es-xl bg-white text-gray-800 shadow-sm dark:bg-neutral-900 dark:border-neutral-700 dark:text-white">
-             <div class="spinner"></div> Applying changes...
-         </div>
-         <button class="removeButton hidden w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-ee-xl bg-red-500 text-white shadow-sm hover:bg-red-600 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800">
-             Remove
-         </button>
-     </div>
-   </div>
-     <!-- End Card -->
- 
-     <!-- Card -->
-     <div class="group flex flex-col h-full bg-white border border-gray-200 shadow-sm rounded-xl dark:bg-neutral-900 dark:border-neutral-700 dark:shadow-neutral-700/70">
-       <div class="h-48 overflow-hidden rounded-t-xl bg-black">
-          <a href="img/screenshots/hotcorners-applet.jpg" data-lightbox="haste-applet">
-          <img src="img/screenshots/hotcorners-applet.jpg" class="w-full h-full object-scale-down object-center" alt="Haste Applet Screenshot">
-        </a></div>
-       <div class="p-4 md:p-6">
-           <span class="block mb-1 text-xs font-semibold uppercase text-blue-600 dark:text-blue-500">
-               Budgie Applet
-           </span>
-           <h3 class="text-xl font-semibold text-gray-800 dark:text-neutral-300 dark:hover:text-white">
-            Hotcorners Applet</h3>
-           <p class="mt-3 text-gray-500 dark:text-neutral-500">
-            ‌Allow user defined commands to be executed when the mouse cursor is pushed into a corner of the main desktop.‌
-         </p>
-       </div>
-       <div class="mt-auto flex border-t border-gray-200 divide-x divide-gray-200 dark:border-neutral-700 dark:divide-neutral-700">
-         <button class="installButton w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-es-xl bg-green-500 text-white shadow-sm hover:bg-green-600 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800">
-             Install
-         </button>
-         <div class="spinner hidden w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-es-xl bg-white text-gray-800 shadow-sm dark:bg-neutral-900 dark:border-neutral-700 dark:text-white">
-             <div class="spinner"></div> Applying changes...
-         </div>
-         <button class="removeButton hidden w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-ee-xl bg-red-500 text-white shadow-sm hover:bg-red-600 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800">
-             Remove
-         </button>
-     </div>
-   </div>
-     <!-- End Card -->
- 
-     <!-- Card -->
-     <div class="group flex flex-col h-full bg-white border border-gray-200 shadow-sm rounded-xl dark:bg-neutral-900 dark:border-neutral-700 dark:shadow-neutral-700/70">
-       <div class="h-48 overflow-hidden rounded-t-xl">
-          <a href="/img/screenshots/quicknote-applet.jpg" data-lightbox="haste-applet">
-          <img src="/img/screenshots/quicknote-applet.jpg" class="w-full h-full object-cover object-center" alt="Haste Applet Screenshot">
-        </a></div>
-       <div class="p-4 md:p-6">
-           <span class="block mb-1 text-xs font-semibold uppercase text-blue-600 dark:text-blue-500">
-               Budgie Applet
-           </span>
-           <h3 class="text-xl font-semibold text-gray-800 dark:text-neutral-300 dark:hover:text-white">
-            Quicknote Applet‌‌</h3>
-           <p class="mt-3 text-gray-500 dark:text-neutral-500">
-            ‌Quickly record a text based note.‌
-
-         </p>
-       </div>
-       <div class="mt-auto flex border-t border-gray-200 divide-x divide-gray-200 dark:border-neutral-700 dark:divide-neutral-700">
-         <button class="installButton w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-es-xl bg-green-500 text-white shadow-sm hover:bg-green-600 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800">
-             Install
-         </button>
-         <div class="spinner hidden w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-es-xl bg-white text-gray-800 shadow-sm dark:bg-neutral-900 dark:border-neutral-700 dark:text-white">
-             <div class="spinner"></div> Applying changes...
-         </div>
-         <button class="removeButton hidden w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-ee-xl bg-red-500 text-white shadow-sm hover:bg-red-600 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800">
-             Remove
-         </button>
-     </div>
-   </div>
-     <!-- End Card -->
-   </div>
-   <!-- End Grid -->
- </div>
-
-
- <!-- Card Blog 8 -->
- <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
-   <!-- Grid -->
-   <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-    <div class="group flex flex-col h-full bg-white border border-gray-200 shadow-sm rounded-xl dark:bg-neutral-900 dark:border-neutral-700 dark:shadow-neutral-700/70">
-       <div class="h-48 overflow-hidden rounded-t-xl">
-          <a href="/img/screenshots/previews-applet.jpg" data-lightbox="haste-applet">
-          <img src="/img/screenshots/previews-applet.jpg" class="w-full h-full object-contain object-center" alt="Haste Applet Screenshot">
-        </a></div>
-       <div class="p-4 md:p-6">
-           <span class="block mb-1 text-xs font-semibold uppercase text-blue-600 dark:text-blue-500">
-            Budgie Applet‌           </span>
-           <h3 class="text-xl font-semibold text-gray-800 dark:text-neutral-300 dark:hover:text-white">
-           Previews   </h3>
-           <p class="mt-3 text-gray-500 dark:text-neutral-500">
-            ‌Show an overview of windows in an exposé like way.‌
-
-         </p>
-       </div>
-       <div class="mt-auto flex border-t border-gray-200 divide-x divide-gray-200 dark:border-neutral-700 dark:divide-neutral-700">
-         <button class="installButton w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-es-xl bg-green-500 text-white shadow-sm hover:bg-green-600 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800">
-             Install
-         </button>
-         <div class="spinner hidden w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-es-xl bg-white text-gray-800 shadow-sm dark:bg-neutral-900 dark:border-neutral-700 dark:text-white">
-             <div class="spinner"></div> Applying changes...
-         </div>
-         <button class="removeButton hidden w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-ee-xl bg-red-500 text-white shadow-sm hover:bg-red-600 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800">
-             Remove
-         </button>
-     </div>
-   </div>
-     <!-- End Card -->
- 
-     <!-- Card -->
-     <div class="group flex flex-col h-full bg-white border border-gray-200 shadow-sm rounded-xl dark:bg-neutral-900 dark:border-neutral-700 dark:shadow-neutral-700/70">
-       <div class="h-48 overflow-hidden rounded-t-xl bg-black">
-          <a href="img/screenshots/workspace-overview-applet.jpg" data-lightbox="haste-applet">
-          <img src="img/screenshots/workspace-overview-applet.jpg" class="w-full h-full object-scale-down object-center" alt="Haste Applet Screenshot">
-        </a></div>
-       <div class="p-4 md:p-6">
-           <span class="block mb-1 text-xs font-semibold uppercase text-blue-600 dark:text-blue-500">
-               Budgie Applet
-           </span>
-           <h3 class="text-xl font-semibold text-gray-800 dark:text-neutral-300 dark:hover:text-white">
-            Workspace Overview Applet‌</h3>
-           <p class="mt-3 text-gray-500 dark:text-neutral-500">
-            ‌Quickly navigate workspaces using the applet's menu.‌
-
-         </p>
-       </div>
-       <div class="mt-auto flex border-t border-gray-200 divide-x divide-gray-200 dark:border-neutral-700 dark:divide-neutral-700">
-         <button class="installButton w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-es-xl bg-green-500 text-white shadow-sm hover:bg-green-600 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800">
-             Install
-         </button>
-         <div class="spinner hidden w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-es-xl bg-white text-gray-800 shadow-sm dark:bg-neutral-900 dark:border-neutral-700 dark:text-white">
-             <div class="spinner"></div> Applying changes...
-         </div>
-         <button class="removeButton hidden w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-ee-xl bg-red-500 text-white shadow-sm hover:bg-red-600 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800">
-             Remove
-         </button>
-     </div>
-   </div>
-     <!-- End Card -->
- 
-     <!-- Card -->
-     <div class="group flex flex-col h-full bg-white border border-gray-200 shadow-sm rounded-xl dark:bg-neutral-900 dark:border-neutral-700 dark:shadow-neutral-700/70">
-       <div class="h-48 overflow-hidden rounded-t-xl">
-          <a href="/img/screenshots/workspace-wallpaper-applet.jpg" data-lightbox="haste-applet">
-          <img src="/img/screenshots/workspace-wallpaper-applet.jpg" class="w-full h-full object-cover object-center" alt="Haste Applet Screenshot">
-        </a></div>
-       <div class="p-4 md:p-6">
-           <span class="block mb-1 text-xs font-semibold uppercase text-blue-600 dark:text-blue-500">
-               Budgie Applet
-           </span>
-           <h3 class="text-xl font-semibold text-gray-800 dark:text-neutral-300 dark:hover:text-white">
-            Workspace Wallpaper Applet‌           </h3>
-           <p class="mt-3 text-gray-500 dark:text-neutral-500">
-            ‌Show a different wallpaper on each workspace.‌
-
-
-         </p>
-       </div>
-       <div class="mt-auto flex border-t border-gray-200 divide-x divide-gray-200 dark:border-neutral-700 dark:divide-neutral-700">
-         <button class="installButton w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-es-xl bg-green-500 text-white shadow-sm hover:bg-green-600 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800">
-             Install
-         </button>
-         <div class="spinner hidden w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-es-xl bg-white text-gray-800 shadow-sm dark:bg-neutral-900 dark:border-neutral-700 dark:text-white">
-             <div class="spinner"></div> Applying changes...
-         </div>
-         <button class="removeButton hidden w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-ee-xl bg-red-500 text-white shadow-sm hover:bg-red-600 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800">
-             Remove
-         </button>
-     </div>
-   </div>
-     <!-- End Card -->
-   </div>
-   <!-- End Grid -->
- </div>
-
- <!-- Card Blog 9 -->
- <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
-   <!-- Grid -->
-   <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-    <div class="group flex flex-col h-full bg-white border border-gray-200 shadow-sm rounded-xl dark:bg-neutral-900 dark:border-neutral-700 dark:shadow-neutral-700/70">
-       <div class="h-48 overflow-hidden rounded-t-xl">
-          <a href="/img/screenshots/window-mover-applet.jpg-" data-lightbox="haste-applet">
-          <img src="/img/screenshots/window-mover-applet.jpg" class="w-full h-full object-contain object-center" alt="Haste Applet Screenshot">
-        </a></div>
-       <div class="p-4 md:p-6">
-           <span class="block mb-1 text-xs font-semibold uppercase text-blue-600 dark:text-blue-500">
-            Budgie Applet‌           </span>
-           <h3 class="text-xl font-semibold text-gray-800 dark:text-neutral-300 dark:hover:text-white">
-            Window Mover Applet‌ </h3>
-           <p class="mt-3 text-gray-500 dark:text-neutral-500">
-            ‌Quickly move windows between workspaces.‌
-
-
-         </p>
-       </div>
-       <div class="mt-auto flex border-t border-gray-200 divide-x divide-gray-200 dark:border-neutral-700 dark:divide-neutral-700">
-         <button class="installButton w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-es-xl bg-green-500 text-white shadow-sm hover:bg-green-600 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800">
-             Install
-         </button>
-         <div class="spinner hidden w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-es-xl bg-white text-gray-800 shadow-sm dark:bg-neutral-900 dark:border-neutral-700 dark:text-white">
-             <div class="spinner"></div> Applying changes...
-         </div>
-         <button class="removeButton hidden w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-ee-xl bg-red-500 text-white shadow-sm hover:bg-red-600 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800">
-             Remove
-         </button>
-     </div>
-   </div>
-     <!-- End Card -->
- 
-     <!-- Card -->
-     <div class="group flex flex-col h-full bg-white border border-gray-200 shadow-sm rounded-xl dark:bg-neutral-900 dark:border-neutral-700 dark:shadow-neutral-700/70">
-       <div class="h-48 overflow-hidden rounded-t-xl bg-black">
-          <a href="img/screenshots/showtime-applet.jpg" data-lightbox="haste-applet">
-          <img src="img/screenshots/showtime-applet.jpg" class="w-full h-full object-scale-down object-center" alt="Haste Applet Screenshot">
-        </a></div>
-       <div class="p-4 md:p-6">
-           <span class="block mb-1 text-xs font-semibold uppercase text-blue-600 dark:text-blue-500">
-               Budgie Applet
-           </span>
-           <h3 class="text-xl font-semibold text-gray-800 dark:text-neutral-300 dark:hover:text-white">
-            Desktop Showtime Applet‌</h3>
-           <p class="mt-3 text-gray-500 dark:text-neutral-500">
-            ‌Display the date and time on the Desktop.‌
-
-         </p>
-       </div>
-       <div class="mt-auto flex border-t border-gray-200 divide-x divide-gray-200 dark:border-neutral-700 dark:divide-neutral-700">
-         <button class="installButton w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-es-xl bg-green-500 text-white shadow-sm hover:bg-green-600 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800">
-             Install
-         </button>
-         <div class="spinner hidden w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-es-xl bg-white text-gray-800 shadow-sm dark:bg-neutral-900 dark:border-neutral-700 dark:text-white">
-             <div class="spinner"></div> Applying changes...
-         </div>
-         <button class="removeButton hidden w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-ee-xl bg-red-500 text-white shadow-sm hover:bg-red-600 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800">
-             Remove
-         </button>
-     </div>
-   </div>
-     <!-- End Card -->
- 
-     <!-- Card -->
-     <div class="group flex flex-col h-full bg-white border border-gray-200 shadow-sm rounded-xl dark:bg-neutral-900 dark:border-neutral-700 dark:shadow-neutral-700/70">
-       <div class="h-48 overflow-hidden rounded-t-xl">
-          <a href="/img/screenshots/countdown-applet.jpg" data-lightbox="haste-applet">
-          <img src="/img/screenshots/countdown-applet.jpg" class="w-full h-full object-cover object-center" alt="Haste Applet Screenshot">
-        </a></div>
-       <div class="p-4 md:p-6">
-           <span class="block mb-1 text-xs font-semibold uppercase text-blue-600 dark:text-blue-500">
-               Budgie Applet
-           </span>
-           <h3 class="text-xl font-semibold text-gray-800 dark:text-neutral-300 dark:hover:text-white">
-            CountDown Applet‌          </h3>
-           <p class="mt-3 text-gray-500 dark:text-neutral-500">
-            ‌Set a timed countdown and run an action when the countdown completes.‌
-
-         </p>
-       </div>
-       <div class="mt-auto flex border-t border-gray-200 divide-x divide-gray-200 dark:border-neutral-700 dark:divide-neutral-700">
-         <button class="installButton w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-es-xl bg-green-500 text-white shadow-sm hover:bg-green-600 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800">
-             Install
-         </button>
-         <div class="spinner hidden w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-es-xl bg-white text-gray-800 shadow-sm dark:bg-neutral-900 dark:border-neutral-700 dark:text-white">
-             <div class="spinner"></div> Applying changes...
-         </div>
-         <button class="removeButton hidden w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-ee-xl bg-red-500 text-white shadow-sm hover:bg-red-600 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800">
-             Remove
-         </button>
-     </div>
-   </div>
-     <!-- End Card -->
-   </div>
-   <!-- End Grid -->
- </div>
-
-
- <!-- Card Blog 10 -->
- <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
-   <!-- Grid -->
-   <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-    <div class="group flex flex-col h-full bg-white border border-gray-200 shadow-sm rounded-xl dark:bg-neutral-900 dark:border-neutral-700 dark:shadow-neutral-700/70">
-       <div class="h-48 overflow-hidden rounded-t-xl">
-          <a href="/img/screenshots/keyboard-language-applet.jpg" data-lightbox="haste-applet">
-          <img src="/img/screenshots/keyboard-language-applet.jpg" class="w-full h-full object-contain object-center" alt="Haste Applet Screenshot">
-        </a></div>
-       <div class="p-4 md:p-6">
-           <span class="block mb-1 text-xs font-semibold uppercase text-blue-600 dark:text-blue-500">
-            Budgie Applet‌           </span>
-           <h3 class="text-xl font-semibold text-gray-800 dark:text-neutral-300 dark:hover:text-white">
-            Auto-Keyboard Switcher Applet‌</h3>
-           <p class="mt-3 text-gray-500 dark:text-neutral-500">
-            ‌Change the keyboard language automatically on a per application basis.‌
-
-         </p>
-       </div>
-       <div class="mt-auto flex border-t border-gray-200 divide-x divide-gray-200 dark:border-neutral-700 dark:divide-neutral-700">
-         <button class="installButton w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-es-xl bg-green-500 text-white shadow-sm hover:bg-green-600 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800">
-             Install
-         </button>
-         <div class="spinner hidden w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-es-xl bg-white text-gray-800 shadow-sm dark:bg-neutral-900 dark:border-neutral-700 dark:text-white">
-             <div class="spinner"></div> Applying changes...
-         </div>
-         <button class="removeButton hidden w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-ee-xl bg-red-500 text-white shadow-sm hover:bg-red-600 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800">
-             Remove
-         </button>
-     </div>
-   </div>
-     <!-- End Card -->
- 
-     <!-- Card -->
-     <div class="group flex flex-col h-full bg-white border border-gray-200 shadow-sm rounded-xl dark:bg-neutral-900 dark:border-neutral-700 dark:shadow-neutral-700/70">
-       <div class="h-48 overflow-hidden rounded-t-xl bg-black">
-          <a href="img/screenshots/rotation-lock-applet.jpg" data-lightbox="haste-applet">
-          <img src="img/screenshots/rotation-lock-applet.jpg" class="w-full h-full object-scale-down object-center" alt="Haste Applet Screenshot">
-        </a></div>
-       <div class="p-4 md:p-6">
-           <span class="block mb-1 text-xs font-semibold uppercase text-blue-600 dark:text-blue-500">
-               Budgie Applet
-           </span>
-           <h3 class="text-xl font-semibold text-gray-800 dark:text-neutral-300 dark:hover:text-white">
-            Screen Rotation Lock Applet‌</h3>
-           <p class="mt-3 text-gray-500 dark:text-neutral-500">
-            ‌Add the ability to unlock or lock the screen from rotating.‌
-
-         </p>
-       </div>
-       <div class="mt-auto flex border-t border-gray-200 divide-x divide-gray-200 dark:border-neutral-700 dark:divide-neutral-700">
-         <button class="installButton w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-es-xl bg-green-500 text-white shadow-sm hover:bg-green-600 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800">
-             Install
-         </button>
-         <div class="spinner hidden w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-es-xl bg-white text-gray-800 shadow-sm dark:bg-neutral-900 dark:border-neutral-700 dark:text-white">
-             <div class="spinner"></div> Applying changes...
-         </div>
-         <button class="removeButton hidden w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-ee-xl bg-red-500 text-white shadow-sm hover:bg-red-600 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800">
-             Remove
-         </button>
-     </div>
-   </div>
-     <!-- End Card -->
- 
-     <!-- Card -->
-     <div class="group flex flex-col h-full bg-white border border-gray-200 shadow-sm rounded-xl dark:bg-neutral-900 dark:border-neutral-700 dark:shadow-neutral-700/70">
-       <div class="h-48 overflow-hidden rounded-t-xl">
-          <a href="/img/screenshots/clockworks-applet.jpg" data-lightbox="haste-applet">
-          <img src="/img/screenshots/clockworks-applet.jpg" class="w-full h-full object-cover object-center" alt="Haste Applet Screenshot">
-        </a></div>
-       <div class="p-4 md:p-6">
-           <span class="block mb-1 text-xs font-semibold uppercase text-blue-600 dark:text-blue-500">
-               Budgie Applet
-           </span>
-           <h3 class="text-xl font-semibold text-gray-800 dark:text-neutral-300 dark:hover:text-white">
-            Clockworks Applet‌       </h3>
-           <p class="mt-3 text-gray-500 dark:text-neutral-500">
-            ‌Display the time across multiple time zones.‌
-         </p>
-       </div>
-       <div class="mt-auto flex border-t border-gray-200 divide-x divide-gray-200 dark:border-neutral-700 dark:divide-neutral-700">
-         <button class="installButton w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-es-xl bg-green-500 text-white shadow-sm hover:bg-green-600 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800">
-             Install
-         </button>
-         <div class="spinner hidden w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-es-xl bg-white text-gray-800 shadow-sm dark:bg-neutral-900 dark:border-neutral-700 dark:text-white">
-             <div class="spinner"></div> Applying changes...
-         </div>
-         <button class="removeButton hidden w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-ee-xl bg-red-500 text-white shadow-sm hover:bg-red-600 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800">
-             Remove
-         </button>
-     </div>
-   </div>
-     <!-- End Card -->
-   </div>
-   <!-- End Grid -->
- </div>
-
- <!-- Card Blog 11 -->
- <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
-   <!-- Grid -->
-   <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-    <div class="group flex flex-col h-full bg-white border border-gray-200 shadow-sm rounded-xl dark:bg-neutral-900 dark:border-neutral-700 dark:shadow-neutral-700/70">
-       <div class="h-48 overflow-hidden rounded-t-xl">
-          <a href="/img/screenshots/dropby-window-applet.jpg" data-lightbox="haste-applet">
-          <img src="/img/screenshots/dropby-window-applet.jpg" class="w-full h-full object-contain object-center" alt="Haste Applet Screenshot">
-        </a></div>
-       <div class="p-4 md:p-6">
-           <span class="block mb-1 text-xs font-semibold uppercase text-blue-600 dark:text-blue-500">
-            Budgie Applet‌           </span>
-           <h3 class="text-xl font-semibold text-gray-800 dark:text-neutral-300 dark:hover:text-white">
-            DropBy Applet‌</h3>
-           <p class="mt-3 text-gray-500 dark:text-neutral-500">
-            ‌Display a pop-up window when a USB device is connected.‌
-
-         </p>
-       </div>
-       <div class="mt-auto flex border-t border-gray-200 divide-x divide-gray-200 dark:border-neutral-700 dark:divide-neutral-700">
-         <button class="installButton w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-es-xl bg-green-500 text-white shadow-sm hover:bg-green-600 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800">
-             Install
-         </button>
-         <div class="spinner hidden w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-es-xl bg-white text-gray-800 shadow-sm dark:bg-neutral-900 dark:border-neutral-700 dark:text-white">
-             <div class="spinner"></div> Applying changes...
-         </div>
-         <button class="removeButton hidden w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-ee-xl bg-red-500 text-white shadow-sm hover:bg-red-600 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800">
-             Remove
-         </button>
-     </div>
-   </div>
-     <!-- End Card -->
- 
-     <!-- Card -->
-     <div class="group flex flex-col h-full bg-white border border-gray-200 shadow-sm rounded-xl dark:bg-neutral-900 dark:border-neutral-700 dark:shadow-neutral-700/70">
-       <div class="h-48 overflow-hidden rounded-t-xl bg-black">
-          <a href="img/screenshots/brightness-controller-applet.jpg" data-lightbox="haste-applet">
-          <img src="img/screenshots/brightness-controller-applet.jpg" class="w-full h-full object-scale-down object-center" alt="Haste Applet Screenshot">
-        </a></div>
-       <div class="p-4 md:p-6">
-           <span class="block mb-1 text-xs font-semibold uppercase text-blue-600 dark:text-blue-500">
-               Budgie Applet
-           </span>
-           <h3 class="text-xl font-semibold text-gray-800 dark:text-neutral-300 dark:hover:text-white">
-            Brightness Controller Applet‌‌</h3>
-           <p class="mt-3 text-gray-500 dark:text-neutral-500">
-            ‌Control the backlight via your graphics driver controller or GNOME's brightness controller.‌
-
-         </p>
-       </div>
-       <div class="mt-auto flex border-t border-gray-200 divide-x divide-gray-200 dark:border-neutral-700 dark:divide-neutral-700">
-         <button class="installButton w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-es-xl bg-green-500 text-white shadow-sm hover:bg-green-600 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800">
-             Install
-         </button>
-         <div class="spinner hidden w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-es-xl bg-white text-gray-800 shadow-sm dark:bg-neutral-900 dark:border-neutral-700 dark:text-white">
-             <div class="spinner"></div> Applying changes...
-         </div>
-         <button class="removeButton hidden w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-ee-xl bg-red-500 text-white shadow-sm hover:bg-red-600 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800">
-             Remove
-         </button>
-     </div>
-   </div>
-     <!-- End Card -->
- 
-     <!-- Card -->
-     <div class="group flex flex-col h-full bg-white border border-gray-200 shadow-sm rounded-xl dark:bg-neutral-900 dark:border-neutral-700 dark:shadow-neutral-700/70">
-       <div class="h-48 overflow-hidden rounded-t-xl">
-          <a href="/img/screenshots/browser-profile-launcher-applet.jpg" data-lightbox="haste-applet">
-          <img src="/img/screenshots/browser-profile-launcher-applet.jpg" class="w-full h-full object-cover object-center" alt="Haste Applet Screenshot">
-        </a></div>
-       <div class="p-4 md:p-6">
-           <span class="block mb-1 text-xs font-semibold uppercase text-blue-600 dark:text-blue-500">
-               Budgie Applet
-           </span>
-           <h3 class="text-xl font-semibold text-gray-800 dark:text-neutral-300 dark:hover:text-white">
-            ‌Browser Profile Launcher Applet‌     </h3>
-           <p class="mt-3 text-gray-500 dark:text-neutral-500">
-            Launch and create multiple Chromium/Chrome profiles.‌
-         </p>
-       </div>
-       <div class="mt-auto flex border-t border-gray-200 divide-x divide-gray-200 dark:border-neutral-700 dark:divide-neutral-700">
-         <button class="installButton w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-es-xl bg-green-500 text-white shadow-sm hover:bg-green-600 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800">
-             Install
-         </button>
-         <div class="spinner hidden w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-es-xl bg-white text-gray-800 shadow-sm dark:bg-neutral-900 dark:border-neutral-700 dark:text-white">
-             <div class="spinner"></div> Applying changes...
-         </div>
-         <button class="removeButton hidden w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-ee-xl bg-red-500 text-white shadow-sm hover:bg-red-600 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800">
-             Remove
-         </button>
-     </div>
-   </div>
-     <!-- End Card -->
-   </div>
-   <!-- End Grid -->
- </div>
-
-<!-- Card Blog 12 -->
-<div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
-   <!-- Grid -->
-   <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-    <div class="group flex flex-col h-full bg-white border border-gray-200 shadow-sm rounded-xl dark:bg-neutral-900 dark:border-neutral-700 dark:shadow-neutral-700/70">
-       <div class="h-48 overflow-hidden rounded-t-xl">
-          <a href="/img/screenshots/kangaroo-applet.jpg" data-lightbox="haste-applet">
-          <img src="/img/screenshots/kangaroo-applet.jpg" class="w-full h-full object-contain object-center" alt="Haste Applet Screenshot">
-        </a></div>
-       <div class="p-4 md:p-6">
-           <span class="block mb-1 text-xs font-semibold uppercase text-blue-600 dark:text-blue-500">
-            Budgie Applet‌           </span>
-           <h3 class="text-xl font-semibold text-gray-800 dark:text-neutral-300 dark:hover:text-white">
-            ‌Find Fast 'Kangaroo' Applet‌‌</h3>
-           <p class="mt-3 text-gray-500 dark:text-neutral-500">
-            ‌Quick and easy browsing, across (possibly) many folder layers, without having to-do a single mouse click.‌
-
-         </p>
-       </div>
-       <div class="mt-auto flex border-t border-gray-200 divide-x divide-gray-200 dark:border-neutral-700 dark:divide-neutral-700">
-         <button class="installButton w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-es-xl bg-green-500 text-white shadow-sm hover:bg-green-600 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800">
-             Install
-         </button>
-         <div class="spinner hidden w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-es-xl bg-white text-gray-800 shadow-sm dark:bg-neutral-900 dark:border-neutral-700 dark:text-white">
-             <div class="spinner"></div> Applying changes...
-         </div>
-         <button class="removeButton hidden w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-ee-xl bg-red-500 text-white shadow-sm hover:bg-red-600 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800">
-             Remove
-         </button>
-     </div>
-   </div>
-     <!-- End Card -->
- 
-     <!-- Card -->
-     <div class="group flex flex-col h-full bg-white border border-gray-200 shadow-sm rounded-xl dark:bg-neutral-900 dark:border-neutral-700 dark:shadow-neutral-700/70">
-       <div class="h-48 overflow-hidden rounded-t-xl bg-black">
-          <a href="img/screenshots/weathershow-applet.jpg" data-lightbox="haste-applet">
-          <img src="img/screenshots/weathershow-applet.jpg" class="w-full h-full object-scale-down object-center" alt="Haste Applet Screenshot">
-        </a></div>
-       <div class="p-4 md:p-6">
-           <span class="block mb-1 text-xs font-semibold uppercase text-blue-600 dark:text-blue-500">
-               Budgie Applet
-           </span>
-           <h3 class="text-xl font-semibold text-gray-800 dark:text-neutral-300 dark:hover:text-white">
-            Weather and Forecast Applet‌</h3>
-           <p class="mt-3 text-gray-500 dark:text-neutral-500">
-            ‌Weather forecast every three hours and over five days.‌
-
-
-         </p>
-       </div>
-       <div class="mt-auto flex border-t border-gray-200 divide-x divide-gray-200 dark:border-neutral-700 dark:divide-neutral-700">
-         <button class="installButton w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-es-xl bg-green-500 text-white shadow-sm hover:bg-green-600 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800">
-             Install
-         </button>
-         <div class="spinner hidden w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-es-xl bg-white text-gray-800 shadow-sm dark:bg-neutral-900 dark:border-neutral-700 dark:text-white">
-             <div class="spinner"></div> Applying changes...
-         </div>
-         <button class="removeButton hidden w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-ee-xl bg-red-500 text-white shadow-sm hover:bg-red-600 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800">
-             Remove
-         </button>
-     </div>
-   </div>
-     <!-- End Card -->
- 
-     <!-- Card -->
-     <div class="group flex flex-col h-full bg-white border border-gray-200 shadow-sm rounded-xl dark:bg-neutral-900 dark:border-neutral-700 dark:shadow-neutral-700/70">
-       <div class="h-48 overflow-hidden rounded-t-xl">
-          <a href="/img/screenshots/recentlyused-applet.jpg" data-lightbox="haste-applet">
-          <img src="/img/screenshots/recentlyused-applet.jpg" class="w-full h-full object-cover object-center" alt="Haste Applet Screenshot">
-        </a></div>
-       <div class="p-4 md:p-6">
-           <span class="block mb-1 text-xs font-semibold uppercase text-blue-600 dark:text-blue-500">
-               Budgie Applet
-           </span>
-           <h3 class="text-xl font-semibold text-gray-800 dark:text-neutral-300 dark:hover:text-white">
-            ‌‌Recently Used Applet‌‌     </h3>
-           <p class="mt-3 text-gray-500 dark:text-neutral-500">
-            ‌Show recently used items in a menu.‌
-
-
-         </p>
-       </div>
-       <div class="mt-auto flex border-t border-gray-200 divide-x divide-gray-200 dark:border-neutral-700 dark:divide-neutral-700">
-         <button class="installButton w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-es-xl bg-green-500 text-white shadow-sm hover:bg-green-600 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800">
-             Install
-         </button>
-         <div class="spinner hidden w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-es-xl bg-white text-gray-800 shadow-sm dark:bg-neutral-900 dark:border-neutral-700 dark:text-white">
-             <div class="spinner"></div> Applying changes...
-         </div>
-         <button class="removeButton hidden w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-ee-xl bg-red-500 text-white shadow-sm hover:bg-red-600 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800">
-             Remove
-         </button>
-     </div>
-   </div>
-     <!-- End Card -->
-   </div>
-   <!-- End Grid -->
- </div>
-
-<!-- Card Blog 13 -->
-<div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
-   <!-- Grid -->
-   <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-    <div class="group flex flex-col h-full bg-white border border-gray-200 shadow-sm rounded-xl dark:bg-neutral-900 dark:border-neutral-700 dark:shadow-neutral-700/70">
-       <div class="h-48 overflow-hidden rounded-t-xl">
-          <a href="/img/screenshots/dropby-window-applet.jpg" data-lightbox="haste-applet">
-          <img src="/img/screenshots/dropby-window-applet.jpg" class="w-full h-full object-contain object-center" alt="Haste Applet Screenshot">
-        </a></div>
-       <div class="p-4 md:p-6">
-           <span class="block mb-1 text-xs font-semibold uppercase text-blue-600 dark:text-blue-500">
-            Budgie Applet‌           </span>
-           <h3 class="text-xl font-semibold text-gray-800 dark:text-neutral-300 dark:hover:text-white">
-            DropBy Applet‌</h3>
-           <p class="mt-3 text-gray-500 dark:text-neutral-500">
-            ‌Display a pop-up window when a USB device is connected.‌
-
-         </p>
-       </div>
-       <div class="mt-auto flex border-t border-gray-200 divide-x divide-gray-200 dark:border-neutral-700 dark:divide-neutral-700">
-         <button class="installButton w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-es-xl bg-green-500 text-white shadow-sm hover:bg-green-600 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800">
-             Install
-         </button>
-         <div class="spinner hidden w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-es-xl bg-white text-gray-800 shadow-sm dark:bg-neutral-900 dark:border-neutral-700 dark:text-white">
-             <div class="spinner"></div> Applying changes...
-         </div>
-         <button class="removeButton hidden w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-ee-xl bg-red-500 text-white shadow-sm hover:bg-red-600 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800">
-             Remove
-         </button>
-     </div>
-   </div>
-     <!-- End Card -->
- 
-     <!-- Card -->
-     <div class="group flex flex-col h-full bg-white border border-gray-200 shadow-sm rounded-xl dark:bg-neutral-900 dark:border-neutral-700 dark:shadow-neutral-700/70">
-       <div class="h-48 overflow-hidden rounded-t-xl bg-black">
-          <a href="img/screenshots/brightness-controller-applet.jpg" data-lightbox="haste-applet">
-          <img src="img/screenshots/brightness-controller-applet.jpg" class="w-full h-full object-scale-down object-center" alt="Haste Applet Screenshot">
-        </a></div>
-       <div class="p-4 md:p-6">
-           <span class="block mb-1 text-xs font-semibold uppercase text-blue-600 dark:text-blue-500">
-               Budgie Applet
-           </span>
-           <h3 class="text-xl font-semibold text-gray-800 dark:text-neutral-300 dark:hover:text-white">
-            Brightness Controller Applet‌‌</h3>
-           <p class="mt-3 text-gray-500 dark:text-neutral-500">
-            ‌Control the backlight via your graphics driver controller or GNOME's brightness controller.‌
-
-         </p>
-       </div>
-       <div class="mt-auto flex border-t border-gray-200 divide-x divide-gray-200 dark:border-neutral-700 dark:divide-neutral-700">
-         <button class="installButton w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-es-xl bg-green-500 text-white shadow-sm hover:bg-green-600 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800">
-             Install
-         </button>
-         <div class="spinner hidden w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-es-xl bg-white text-gray-800 shadow-sm dark:bg-neutral-900 dark:border-neutral-700 dark:text-white">
-             <div class="spinner"></div> Applying changes...
-         </div>
-         <button class="removeButton hidden w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-ee-xl bg-red-500 text-white shadow-sm hover:bg-red-600 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800">
-             Remove
-         </button>
-     </div>
-   </div>
-     <!-- End Card -->
- 
-     <!-- Card -->
-     <div class="group flex flex-col h-full bg-white border border-gray-200 shadow-sm rounded-xl dark:bg-neutral-900 dark:border-neutral-700 dark:shadow-neutral-700/70">
-       <div class="h-48 overflow-hidden rounded-t-xl">
-          <a href="/img/screenshots/browser-profile-launcher-applet.jpg" data-lightbox="haste-applet">
-          <img src="/img/screenshots/browser-profile-launcher-applet.jpg" class="w-full h-full object-cover object-center" alt="Haste Applet Screenshot">
-        </a></div>
-       <div class="p-4 md:p-6">
-           <span class="block mb-1 text-xs font-semibold uppercase text-blue-600 dark:text-blue-500">
-               Budgie Applet
-           </span>
-           <h3 class="text-xl font-semibold text-gray-800 dark:text-neutral-300 dark:hover:text-white">
-            ‌Browser Profile Launcher Applet‌     </h3>
-           <p class="mt-3 text-gray-500 dark:text-neutral-500">
-            Launch and create multiple Chromium/Chrome profiles.‌
-         </p>
-       </div>
-       <div class="mt-auto flex border-t border-gray-200 divide-x divide-gray-200 dark:border-neutral-700 dark:divide-neutral-700">
-         <button class="installButton w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-es-xl bg-green-500 text-white shadow-sm hover:bg-green-600 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800">
-             Install
-         </button>
-         <div class="spinner hidden w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-es-xl bg-white text-gray-800 shadow-sm dark:bg-neutral-900 dark:border-neutral-700 dark:text-white">
-             <div class="spinner"></div> Applying changes...
-         </div>
-         <button class="removeButton hidden w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-ee-xl bg-red-500 text-white shadow-sm hover:bg-red-600 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800">
-             Remove
-         </button>
-     </div>
-   </div>
-     <!-- End Card -->
-   </div>
-   <!-- End Grid -->
- </div>
-
- <!-- Card Blog 14 -->
- <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
-   <!-- Grid -->
-   <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-    <div class="group flex flex-col h-full bg-white border border-gray-200 shadow-sm rounded-xl dark:bg-neutral-900 dark:border-neutral-700 dark:shadow-neutral-700/70">
-       <div class="h-48 overflow-hidden rounded-t-xl">
-          <a href="/img/screenshots/trash-applet.jpg" data-lightbox="haste-applet">
-          <img src="/img/screenshots/trash-applet.jpg" class="w-full h-full object-contain object-center" alt="Haste Applet Screenshot">
-        </a></div>
-       <div class="p-4 md:p-6">
-           <span class="block mb-1 text-xs font-semibold uppercase text-blue-600 dark:text-blue-500">
-            Budgie Applet‌           </span>
-           <h3 class="text-xl font-semibold text-gray-800 dark:text-neutral-300 dark:hover:text-white">
-            Trash Applet‌     </h3>
-           <p class="mt-3 text-gray-500 dark:text-neutral-500">
-            ‌Show, hide and restore trash items.‌
-
-         </p>
-       </div>
-       <div class="mt-auto flex border-t border-gray-200 divide-x divide-gray-200 dark:border-neutral-700 dark:divide-neutral-700">
-         <button class="installButton w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-es-xl bg-green-500 text-white shadow-sm hover:bg-green-600 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800">
-             Install
-         </button>
-         <div class="spinner hidden w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-es-xl bg-white text-gray-800 shadow-sm dark:bg-neutral-900 dark:border-neutral-700 dark:text-white">
-             <div class="spinner"></div> Applying changes...
-         </div>
-         <button class="removeButton hidden w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-ee-xl bg-red-500 text-white shadow-sm hover:bg-red-600 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800">
-             Remove
-         </button>
-     </div>
-   </div>
-     <!-- End Card -->
- 
-     <!-- Card -->
-     <div class="group flex flex-col h-full bg-white border border-gray-200 shadow-sm rounded-xl dark:bg-neutral-900 dark:border-neutral-700 dark:shadow-neutral-700/70">
-       <div class="h-48 overflow-hidden rounded-t-xl bg-black">
-          <a href="img/screenshots/applauncher-applet.jpg" data-lightbox="haste-applet">
-          <img src="img/screenshots/applauncher-applet.jpg" class="w-full h-full object-scale-down object-center" alt="Haste Applet Screenshot">
-        </a></div>
-       <div class="p-4 md:p-6">
-           <span class="block mb-1 text-xs font-semibold uppercase text-blue-600 dark:text-blue-500">
-               Budgie Applet
-           </span>
-           <h3 class="text-xl font-semibold text-gray-800 dark:text-neutral-300 dark:hover:text-white">
-            Application Launcher Applet‌‌</h3>
-           <p class="mt-3 text-gray-500 dark:text-neutral-500">
-            ‌Display your favorite applications in a menu and on the panel.‌
-
-         </p>
-       </div>
-       <div class="mt-auto flex border-t border-gray-200 divide-x divide-gray-200 dark:border-neutral-700 dark:divide-neutral-700">
-         <button class="installButton w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-es-xl bg-green-500 text-white shadow-sm hover:bg-green-600 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800">
-             Install
-         </button>
-         <div class="spinner hidden w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-es-xl bg-white text-gray-800 shadow-sm dark:bg-neutral-900 dark:border-neutral-700 dark:text-white">
-             <div class="spinner"></div> Applying changes...
-         </div>
-         <button class="removeButton hidden w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-ee-xl bg-red-500 text-white shadow-sm hover:bg-red-600 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800">
-             Remove
-         </button>
-     </div>
-   </div>
-     <!-- End Card -->
- 
-     <!-- Card -->
-     <div class="group flex flex-col h-full bg-white border border-gray-200 shadow-sm rounded-xl dark:bg-neutral-900 dark:border-neutral-700 dark:shadow-neutral-700/70">
-       <div class="h-48 overflow-hidden rounded-t-xl">
-          <a href="/img/screenshots/takeabreak-applet.jpg" data-lightbox="haste-applet">
-          <img src="/img/screenshots/takeabreak-applet.jpg" class="w-full h-full object-cover object-center" alt="Haste Applet Screenshot">
-        </a></div>
-       <div class="p-4 md:p-6">
-           <span class="block mb-1 text-xs font-semibold uppercase text-blue-600 dark:text-blue-500">
-               Budgie Applet
-           </span>
-           <h3 class="text-xl font-semibold text-gray-800 dark:text-neutral-300 dark:hover:text-white">
-            Take-A-Break Applet‌  </h3>
-           <p class="mt-3 text-gray-500 dark:text-neutral-500">
-            ‌A pomodoro-like applet, to make sure you take regular breaks from working.‌
-         </p>
-       </div>
-       <div class="mt-auto flex border-t border-gray-200 divide-x divide-gray-200 dark:border-neutral-700 dark:divide-neutral-700">
-         <button class="installButton w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-es-xl bg-green-500 text-white shadow-sm hover:bg-green-600 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800">
-             Install
-         </button>
-         <div class="spinner hidden w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-es-xl bg-white text-gray-800 shadow-sm dark:bg-neutral-900 dark:border-neutral-700 dark:text-white">
-             <div class="spinner"></div> Applying changes...
-         </div>
-         <button class="removeButton hidden w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-ee-xl bg-red-500 text-white shadow-sm hover:bg-red-600 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800">
-             Remove
-         </button>
-     </div>
-   </div>
-     <!-- End Card -->
-   </div>
-   <!-- End Grid -->
- </div>
-
- <!-- Card Blog 15 -->
- <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
-   <!-- Grid -->
-   <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-    <div class="group flex flex-col h-full bg-white border border-gray-200 shadow-sm rounded-xl dark:bg-neutral-900 dark:border-neutral-700 dark:shadow-neutral-700/70">
-       <div class="h-48 overflow-hidden rounded-t-xl">
-          <a href="/img/screenshots/wallstreet.jpg" data-lightbox="haste-applet">
-          <img src="/img/screenshots/wallstreet.jpg" class="w-full h-full object-contain object-center" alt="Haste Applet Screenshot">
-        </a></div>
-       <div class="p-4 md:p-6">
-           <span class="block mb-1 text-xs font-semibold uppercase text-blue-600 dark:text-blue-500">
-            Budgie Applet‌           </span>
-           <h3 class="text-xl font-semibold text-gray-800 dark:text-neutral-300 dark:hover:text-white">
-            Wallstreet    </h3>
-           <p class="mt-3 text-gray-500 dark:text-neutral-500">
-            ‌WallStreet is a mini-app to switch wallpapers at a regular interval.‌
-         </p>
-       </div>
-       <div class="mt-auto flex border-t border-gray-200 divide-x divide-gray-200 dark:border-neutral-700 dark:divide-neutral-700">
-         <button class="installButton w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-es-xl bg-green-500 text-white shadow-sm hover:bg-green-600 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800">
-             Install
-         </button>
-         <div class="spinner hidden w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-es-xl bg-white text-gray-800 shadow-sm dark:bg-neutral-900 dark:border-neutral-700 dark:text-white">
-             <div class="spinner"></div> Applying changes...
-         </div>
-         <button class="removeButton hidden w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-ee-xl bg-red-500 text-white shadow-sm hover:bg-red-600 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800">
-             Remove
-         </button>
-     </div>
-   </div>
-     <!-- End Card -->
- 
-     <!-- Card -->
-     <div class="group flex flex-col h-full bg-white border border-gray-200 shadow-sm rounded-xl dark:bg-neutral-900 dark:border-neutral-700 dark:shadow-neutral-700/70">
-       <div class="h-48 overflow-hidden rounded-t-xl bg-black">
-          <a href="img/screenshots/fuzzyclock-applet.jpg" data-lightbox="haste-applet">
-          <img src="img/screenshots/fuzzyclock-applet.jpg" class="w-full h-full object-scale-down object-center" alt="Haste Applet Screenshot">
-        </a></div>
-       <div class="p-4 md:p-6">
-           <span class="block mb-1 text-xs font-semibold uppercase text-blue-600 dark:text-blue-500">
-               Budgie Applet
-           </span>
-           <h3 class="text-xl font-semibold text-gray-800 dark:text-neutral-300 dark:hover:text-white">
-            Fuzzy-Clock Applet‌   </h3>
-           <p class="mt-3 text-gray-500 dark:text-neutral-500">
-            ‌Shows the time in a fuzzy way.‌
-
-         </p>
-       </div>
-       <div class="mt-auto flex border-t border-gray-200 divide-x divide-gray-200 dark:border-neutral-700 dark:divide-neutral-700">
-         <button class="installButton w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-es-xl bg-green-500 text-white shadow-sm hover:bg-green-600 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800">
-             Install
-         </button>
-         <div class="spinner hidden w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-es-xl bg-white text-gray-800 shadow-sm dark:bg-neutral-900 dark:border-neutral-700 dark:text-white">
-             <div class="spinner"></div> Applying changes...
-         </div>
-         <button class="removeButton hidden w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-ee-xl bg-red-500 text-white shadow-sm hover:bg-red-600 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800">
-             Remove
-         </button>
-     </div>
-   </div>
-     <!-- End Card -->
- 
-     <!-- Card -->
-     <div class="group flex flex-col h-full bg-white border border-gray-200 shadow-sm rounded-xl dark:bg-neutral-900 dark:border-neutral-700 dark:shadow-neutral-700/70">
-       <div class="h-48 overflow-hidden rounded-t-xl">
-          <a href="/img/screenshots/workspace-stopwatch-applet.jpg" data-lightbox="haste-applet">
-          <img src="/img/screenshots/workspace-stopwatch-applet.jpg" class="w-full h-full object-cover object-center" alt="Haste Applet Screenshot">
-        </a></div>
-       <div class="p-4 md:p-6">
-           <span class="block mb-1 text-xs font-semibold uppercase text-blue-600 dark:text-blue-500">
-               Budgie Applet
-           </span>
-           <h3 class="text-xl font-semibold text-gray-800 dark:text-neutral-300 dark:hover:text-white">
-            Workspace Stopwatch‌ </h3>
-           <p class="mt-3 text-gray-500 dark:text-neutral-500">
-            ‌Keep track of usage per workspace.‌
-         </p>
-       </div>
-       <div class="mt-auto flex border-t border-gray-200 divide-x divide-gray-200 dark:border-neutral-700 dark:divide-neutral-700">
-         <button class="installButton w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-es-xl bg-green-500 text-white shadow-sm hover:bg-green-600 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800">
-             Install
-         </button>
-         <div class="spinner hidden w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-es-xl bg-white text-gray-800 shadow-sm dark:bg-neutral-900 dark:border-neutral-700 dark:text-white">
-             <div class="spinner"></div> Applying changes...
-         </div>
-         <button class="removeButton hidden w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-ee-xl bg-red-500 text-white shadow-sm hover:bg-red-600 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800">
-             Remove
-         </button>
-     </div>
-   </div>
-     <!-- End Card -->
-   </div>
-   <!-- End Grid -->
- </div>
-
-  <!-- Card Blog 16 -->
-  <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
-   <!-- Grid -->
-   <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-    <div class="group flex flex-col h-full bg-white border border-gray-200 shadow-sm rounded-xl dark:bg-neutral-900 dark:border-neutral-700 dark:shadow-neutral-700/70">
-       <div class="h-48 overflow-hidden rounded-t-xl">
-          <a href="/img/screenshots/quickchar.jpg" data-lightbox="haste-applet">
-          <img src="/img/screenshots/quickchar.jpg" class="w-full h-full object-contain object-center" alt="Haste Applet Screenshot">
-        </a></div>
-       <div class="p-4 md:p-6">
-           <span class="block mb-1 text-xs font-semibold uppercase text-blue-600 dark:text-blue-500">
-            Budgie Applet‌           </span>
-           <h3 class="text-xl font-semibold text-gray-800 dark:text-neutral-300 dark:hover:text-white">
-            ‌Quick Character‌  </h3>
-           <p class="mt-3 text-gray-500 dark:text-neutral-500">
-            ‌Quickly find and choose the equivalent locale character for an ASCII character.‌
-
-         </p>
-       </div>
-       <div class="mt-auto flex border-t border-gray-200 divide-x divide-gray-200 dark:border-neutral-700 dark:divide-neutral-700">
-         <button class="installButton w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-es-xl bg-green-500 text-white shadow-sm hover:bg-green-600 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800">
-             Install
-         </button>
-         <div class="spinner hidden w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-es-xl bg-white text-gray-800 shadow-sm dark:bg-neutral-900 dark:border-neutral-700 dark:text-white">
-             <div class="spinner"></div> Applying changes...
-         </div>
-         <button class="removeButton hidden w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-ee-xl bg-red-500 text-white shadow-sm hover:bg-red-600 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800">
-             Remove
-         </button>
-     </div>
-   </div>
-     <!-- End Card -->
- 
-     <!-- Card -->
-     <div class="group flex flex-col h-full bg-white border border-gray-200 shadow-sm rounded-xl dark:bg-neutral-900 dark:border-neutral-700 dark:shadow-neutral-700/70">
-       <div class="h-48 overflow-hidden rounded-t-xl bg-black">
-          <a href="img/screenshots/sntray-applet.jpg" data-lightbox="haste-applet">
-          <img src="img/screenshots/sntray-applet.jpg" class="w-full h-full object-scale-down object-center" alt="Haste Applet Screenshot">
-        </a></div>
-       <div class="p-4 md:p-6">
-           <span class="block mb-1 text-xs font-semibold uppercase text-blue-600 dark:text-blue-500">
-               Budgie Applet
-           </span>
-           <h3 class="text-xl font-semibold text-gray-800 dark:text-neutral-300 dark:hover:text-white">
-            ‌Status Notifier Tray Applet‌  </h3>
-           <p class="mt-3 text-gray-500 dark:text-neutral-500">
-            ‌System Tray in KDE StatusNotifierItem format.‌
-
-         </p>
-       </div>
-       <div class="mt-auto flex border-t border-gray-200 divide-x divide-gray-200 dark:border-neutral-700 dark:divide-neutral-700">
-         <button class="installButton w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-es-xl bg-green-500 text-white shadow-sm hover:bg-green-600 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800">
-             Install
-         </button>
-         <div class="spinner hidden w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-es-xl bg-white text-gray-800 shadow-sm dark:bg-neutral-900 dark:border-neutral-700 dark:text-white">
-             <div class="spinner"></div> Applying changes...
-         </div>
-         <button class="removeButton hidden w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-ee-xl bg-red-500 text-white shadow-sm hover:bg-red-600 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800">
-             Remove
-         </button>
-     </div>
-   </div>
-     <!-- End Card -->
-   </div>
-   <!-- End Grid -->
- </div>
-
-
-<!-- End Card Blog -->
-
-<script>
-   document.querySelectorAll('.group').forEach(group => {
-       const installButton = group.querySelector('.installButton');
-       const spinner = group.querySelector('.spinner');
-       const removeButton = group.querySelector('.removeButton');
-
-       if (installButton && spinner && removeButton) {
-           installButton.addEventListener('click', function() {
-               installButton.classList.add('hidden');
-               spinner.classList.remove('hidden');
-               setTimeout(() => {
-                   spinner.classList.add('hidden');
-                   removeButton.classList.remove('hidden');
-               }, 2000); // Simulate time for applying changes
-           });
-
-           removeButton.addEventListener('click', function() {
-               removeButton.classList.add('hidden');
-               installButton.classList.remove('hidden');
-           });
-       }
-   });
+    /* ── Desktop Settings button ── */
+    document.getElementById('settingsBtn').addEventListener('click', function () {
+      cmd('budgie-desktop-settings');
+    });
+  });
+})();
 </script>
-
-
 </body>
+</html>

@@ -1,132 +1,427 @@
+---
+// Ubuntu Budgie Welcome — Recommendations
+---
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-		<script>import "preline/dist/preline.js";</script>
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="viewport" content="width=device-width" />
+  <title>Ubuntu Budgie Welcome — Recommendations</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-	</head>
-	<body>
-		<div id="wrapper">
-			<div id="title-inject">&zwnj;Recommendations&zwnj;</div>
-			<div id="content" class="container entire-page-fade">
-				<div class="row wow fadeIn">
-					<div class="col-md-12" id="recommendation-list">
-	
-						<section class="backport-repo">
-							<h2>&zwnj;Backports repository&zwnj;</h2>
-							<div class="card card-block">
-								<p class="card-text">&zwnj;To provide the most up-to-date versions of budgie-desktop and other associated packages, we recommend enabling the Ubuntu Budgie backports repository.&zwnj;</p>
-							</div>
-							<div class="text-md-right">
-								<span id="backport-remove" class="alert alert-success"><i class="material-icons">&#xE876;</i>&zwnj;Repository is installed&zwnj;</span>
-								<a id="backport-install" class="btn btn-success hvr-shadow" onclick="cmd('install?backport');">
-									<span class="material-icons">&#xE2C0;</span>&zwnj;Enable Ubuntu Budgie backports repository&zwnj;
-								</a>
-								<span id="backport-status" class="hidden"><img src="img/welcome/processing.gif" width="24px" height="24px" /> &zwnj;Applying Changes...&zwnj;</span>
-							</div>
-						</section>
-	
-						<section class="firmware-updater">
-							<h2>&zwnj;Firmware Updater&zwnj;</h2>
-							<div class="card card-block">
-								<p class="card-text">&zwnj;Component manufacturers issue firmware updates to correct stability issues and improve component performance regarding their interaction with hardware and software. For example, BIOS updates are issued directly to the hardware, writing the new information onto their memory chip.&zwnj;</p>
-							</div>
-							<div class="text-md-right">
-								<span id="firmware-remove" class="alert alert-success"><i class="material-icons">&#xE876;</i>&zwnj;Firmware Updater is installed&zwnj;</span>
-								<a id="firmware-install" class="btn btn-success hvr-shadow" onclick="cmd('install?firmware');">
-									<span class="material-icons">&#xE2C0;</span>&zwnj;Install Firmware Updater&zwnj;
-								</a>
-								<span id="firmware-status" class="hidden"><img src="img/welcome/processing.gif" width="24px" height="24px" /> &zwnj;Applying Changes...&zwnj;</span>
-							</div>
-						</section>
-	
-						<section class="backups">
-							<h2>&zwnj;Backups&zwnj;</h2>
-							<div class="card card-block">
-								<div class="card-image text-md-center">
-									<img src="img/applications/deja-dup.png" style="width: 64px; max-height: 64px" />
-								</div>
-								<p class="card-text">&zwnj;<strong>Deja-Dup</strong> is a powerful backup utility that can be installed in Ubuntu Budgie and supports backups to local devices as well as online cloud-based services.&zwnj;</p>
-								<p class="card-text">&zwnj;Nothing is more important than having a backup of your personal files, just in case something disastrous happens to your computer.&zwnj;</p>
-							</div>
-							<div class="text-md-right">
-								<div id="backup-remove">
-									<a class="btn btn-inverse" onclick="cmd('deja-dup');">
-										<img class="button-icon" src="img/applications/deja-dup.png" />
-										<span class="button-text">&zwnj;Configure Backup&zwnj;</span>
-									</a>
-									<a class="btn btn-danger" onclick="cmd('remove?backup');">
-										<span class="material-icons">&#xE872;</span><span class="button-text">&zwnj;Remove&zwnj;</span>
-									</a>
-									<span id="backup-hint" class="center"><small>
-										<p><i class="material-icons">&#xE88F;</i> &zwnj;<b>Backups</b> can be found later in the menu <b>Utilities <i class="material-icons">&#xE315;</i> Backups</b>.&zwnj;</p>
-									</small></span>
-								</div>
-								<a id="backup-install" class="btn btn-success" onclick="cmd('install?backup');">
-									<span class="material-icons">&#xE2C0;</span><span class="button-text">&zwnj;Install Deja-Dup&zwnj;</span>
-								</a>
-								<span id="backup-status" class="hidden"><img src="img/welcome/processing.gif" width="24px" height="24px" /> &zwnj;Applying Changes...&zwnj;</span>
-							</div>
-							<hr>
-						</section>
-	
-						<section class="firewall">
-							<h2>&zwnj;Firewall&zwnj;</h2>
-							<div class="card card-block">
-								<div class="card-image text-md-center">
-									<img src="img/applications/gufw.png" style="width: 64px; max-height: 64px" />
-								</div>
-								<p class="card-text">&zwnj;<strong>Gufw</strong> provides a graphical frontend to <code>ufw</code> (Uncomplicated Firewall). If security is important to you, there are more ways to stay secure.&zwnj;</p>
-								<a onclick="cmd('link?https://wiki.ubuntu.com/BasicSecurity')" class="btn btn-inverse">&zwnj;Click to learn more about security.&zwnj;</a>
-								<p>&zwnj;Firewalls prevent malicious connections entering and leaving your computer. By default, the firewall is disabled.&zwnj;</p>
-								<a onclick="cmd('link?https://help.ubuntu.com/community/DoINeedAFirewall')" class="btn btn-inverse">&zwnj;Click to learn more about firewalls.&zwnj;</a>
-							</div>
-							<div class="text-md-right">
-								<div id="firewall-remove">
-									<a class="btn btn-inverse" onclick="cmd('firewall');">
-										<img class="button-icon" src="img/applications/gufw.png" />
-										<span class="button-text">&zwnj;Configure Firewall&zwnj;</span>
-									</a>
-									<a class="btn btn-danger" onclick="cmd('remove?firewall');">
-										<span class="material-icons">&#xE872;</span><span class="button-text">&zwnj;Remove&zwnj;</span>
-									</a>
-									<span id="firewall-hint" class="center"><small>
-										<p><i class="material-icons">&#xE88F;</i> <b>&zwnj;Firewall Configuration</b> can be found later in the menu <b>System Tools <i class="material-icons">&#xE315;</i> Firewall Configuration</i></b>.&zwnj;</p>
-									</small></span>
-								</div>
-								<a id="firewall-install" class="btn btn-success" onclick="cmd('install?firewall');">
-									<span class="material-icons">&#xE2C0;</span><span class="button-text">&zwnj;Install Firewall&zwnj;</span>
-								</a>
-								<span id="firewall-status" class="hidden"><img src="img/welcome/processing.gif" width="24px" height="24px" /> &zwnj;Applying Changes...&zwnj;</span>
-							</div>
-							<hr>
-						</section>
-	
-						<section class="clamav">
-							<h2>&zwnj;ClamAV and ClamTK&zwnj;</h2>
-							<div class="card card-block">
-								<div class="card-image text-md-center">
-									<img src="img/logos/clamtk_300x300.png" style="width: 64px; max-height: 64px" />
-								</div>
-								<p class="card-text">&zwnj;ClamTk is a frontend for ClamAV (Clam Antivirus). It is intended to be an easy-to-use, lightweight, on-demand scanner for Linux systems.&zwnj;</p>
-							</div>
-							<div class="text-md-right">
-								<span id="clamav-remove" class="alert alert-success"><i class="material-icons">&#xE876;</i>&zwnj;ClamAV is installed&zwnj;</span>
-								<a class="btn btn-danger" onclick="cmd('remove?clamav');">
-									<span class="material-icons">&#xE872;</span><span class="button-text">&zwnj;Remove&zwnj;</span>
-								</a>
-								<a id="clamav-install" class="btn btn-success" onclick="cmd('install?clamav');">
-									<span class="material-icons">&#xE2C0;</span><span class="button-text">&zwnj;Install ClamAV&zwnj;</span>
-								</a>
-								<span id="clamav-status" class="hidden"><img src="img/welcome/processing.gif" width="24px" height="24px" /> &zwnj;Applying Changes...&zwnj;</span>
-							</div>
-						</section>
-	
-					</div>
-				</div>
-			</div>
-		</div>
-	</body>
+    :root {
+      --bg:            #e8e8e8;
+      --win-bg:        #ffffff;
+      --bar-bg:        #f5f5f5;
+      --bar-border:    #e0e0e0;
+      --text-primary:  #1a1a1a;
+      --text-secondary:#6b6b6b;
+      --text-tertiary: #9b9b9b;
+      --accent:        #2563eb;
+      --accent-light:  #dbeafe;
+      --hover-bg:      #ebebeb;
+      --card-border:   #e8e8e8;
+      --green:         #16a34a;
+      --green-light:   #dcfce7;
+      --red:           #dc2626;
+      --red-light:     #fee2e2;
+      --amber:         #d97706;
+      --amber-light:   #fef3c7;
+      --shadow-sm:     0 1px 3px rgba(0,0,0,.06), 0 1px 2px rgba(0,0,0,.04);
+      --shadow-md:     0 4px 12px rgba(0,0,0,.08), 0 2px 4px rgba(0,0,0,.04);
+      --shadow-win:    0 20px 60px rgba(0,0,0,.18), 0 8px 24px rgba(0,0,0,.10);
+      --radius-sm:     6px;
+      --radius-md:     10px;
+      --radius-lg:     14px;
+      --radius-win:    14px;
+      --font:          'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+
+    html, body {
+      height: 100%; overflow: hidden;
+      background: var(--bg); font-family: var(--font);
+      display: flex; align-items: center; justify-content: center;
+      padding: 24px;
+    }
+
+    /* ── Window ── */
+    .window {
+      width: 860px; max-width: 100%;
+      height: calc(100vh - 48px);
+      max-height: 680px; min-height: 480px;
+      background: var(--win-bg); border-radius: var(--radius-win);
+      box-shadow: var(--shadow-win); overflow: hidden;
+      display: flex; flex-direction: column;
+      animation: fadeUp .3s ease both;
+    }
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(6px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ── Title Bar ── */
+    .titlebar {
+      height: 44px; background: var(--bar-bg);
+      border-bottom: 1px solid var(--bar-border);
+      display: flex; align-items: center;
+      padding: 0 16px; gap: 8px;
+      flex-shrink: 0; position: relative; user-select: none;
+    }
+    .back-btn {
+      display: flex; align-items: center; gap: 5px;
+      background: none; border: none; cursor: pointer;
+      color: var(--accent); font-family: var(--font);
+      font-size: 13px; font-weight: 500;
+      padding: 4px 6px 4px 2px; border-radius: var(--radius-sm);
+      transition: background .12s; text-decoration: none;
+    }
+    .back-btn:hover { background: var(--accent-light); }
+    .back-btn svg { width: 16px; height: 16px; }
+    .titlebar-label {
+      position: absolute; left: 50%; transform: translateX(-50%);
+      font-size: 13px; font-weight: 500;
+      color: var(--text-secondary); letter-spacing: -.01em; pointer-events: none;
+    }
+
+    /* ── Page header ── */
+    .page-header {
+      padding: 22px 28px 16px;
+      border-bottom: 1px solid var(--card-border);
+      flex-shrink: 0;
+    }
+    .page-header h1 {
+      font-size: 21px; font-weight: 600;
+      color: var(--text-primary); letter-spacing: -.02em; margin-bottom: 4px;
+    }
+    .page-header p {
+      font-size: 13px; color: var(--text-secondary); line-height: 1.55;
+    }
+
+    /* ── Scroll body ── */
+    .scroll-body {
+      flex: 1; overflow-y: auto; min-height: 0;
+      padding: 20px 28px 28px;
+    }
+    .scroll-body::-webkit-scrollbar { width: 6px; }
+    .scroll-body::-webkit-scrollbar-track { background: transparent; }
+    .scroll-body::-webkit-scrollbar-thumb { background: #d4d4d4; border-radius: 3px; }
+    .scroll-body::-webkit-scrollbar-thumb:hover { background: #aaa; }
+
+    /* ── Recommendation card ── */
+    .rec-card {
+      display: flex; align-items: flex-start; gap: 16px;
+      padding: 16px 18px; border-radius: var(--radius-lg);
+      border: 1px solid var(--card-border); background: #fafafa;
+      margin-bottom: 10px;
+      transition: box-shadow .14s, transform .12s;
+      animation: fadeUp .28s ease both;
+    }
+    .rec-card:nth-child(1) { animation-delay: .04s; }
+    .rec-card:nth-child(2) { animation-delay: .08s; }
+    .rec-card:nth-child(3) { animation-delay: .12s; }
+    .rec-card:nth-child(4) { animation-delay: .16s; }
+    .rec-card:nth-child(5) { animation-delay: .20s; }
+    .rec-card:hover { box-shadow: var(--shadow-sm); transform: translateY(-1px); }
+
+    /* icon container */
+    .rec-icon {
+      width: 46px; height: 46px; border-radius: 12px;
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+    }
+    .rec-icon img { width: 32px; height: 32px; object-fit: contain; }
+    .rec-icon svg { width: 22px; height: 22px; }
+    .rec-icon.blue   { background: #dbeafe; color: #2563eb; }
+    .rec-icon.green  { background: #dcfce7; color: #16a34a; }
+    .rec-icon.orange { background: #ffedd5; color: #ea580c; }
+    .rec-icon.red    { background: #fee2e2; color: #dc2626; }
+    .rec-icon.purple { background: #ede9fe; color: #7c3aed; }
+
+    /* text side */
+    .rec-body { flex: 1; min-width: 0; }
+    .rec-header {
+      display: flex; align-items: center; justify-content: space-between;
+      gap: 12px; margin-bottom: 5px;
+      flex-wrap: wrap;
+    }
+    .rec-title {
+      font-size: 14px; font-weight: 600; color: var(--text-primary);
+    }
+    .rec-desc {
+      font-size: 12.5px; color: var(--text-secondary);
+      line-height: 1.65; margin-bottom: 10px;
+    }
+    .rec-desc strong { color: var(--text-primary); font-weight: 500; }
+    .rec-desc code {
+      background: #f0f0f0; border: 1px solid var(--card-border);
+      border-radius: 4px; padding: 1px 5px;
+      font-size: 11.5px; font-family: monospace;
+    }
+    .rec-desc a { color: var(--accent); text-decoration: none; cursor: pointer; }
+    .rec-desc a:hover { text-decoration: underline; }
+
+    /* installed badge */
+    .badge-installed {
+      display: inline-flex; align-items: center; gap: 5px;
+      padding: 4px 10px; border-radius: 20px;
+      background: var(--green-light); color: var(--green);
+      border: 1px solid rgba(22,163,74,.2);
+      font-size: 11.5px; font-weight: 600;
+    }
+    .badge-installed svg { width: 13px; height: 13px; }
+
+    /* actions row */
+    .rec-actions { display: flex; gap: 7px; flex-wrap: wrap; align-items: center; }
+
+    /* buttons */
+    .btn {
+      display: inline-flex; align-items: center; gap: 6px;
+      padding: 6px 14px; border-radius: var(--radius-sm);
+      font-family: var(--font); font-size: 12.5px; font-weight: 500;
+      cursor: pointer; border: none; transition: background .12s, transform .1s;
+      text-decoration: none; white-space: nowrap;
+    }
+    .btn:active { transform: scale(.97); }
+    .btn img { width: 15px; height: 15px; object-fit: contain; }
+    .btn svg { width: 13px; height: 13px; }
+
+    .btn-install  { background: var(--green-light);  color: var(--green);  border: 1px solid rgba(22,163,74,.25); }
+    .btn-install:hover  { background: #bbf7d0; border-color: var(--green); }
+    .btn-remove   { background: var(--red-light);    color: var(--red);    border: 1px solid rgba(220,38,38,.2); }
+    .btn-remove:hover   { background: #fecaca; border-color: var(--red); }
+    .btn-configure { background: var(--accent-light); color: var(--accent); border: 1px solid rgba(37,99,235,.2); }
+    .btn-configure:hover { background: #bfdbfe; border-color: var(--accent); }
+    .btn-link     { background: #f0f0f0;            color: var(--text-secondary); border: 1px solid var(--card-border); }
+    .btn-link:hover     { background: var(--hover-bg); color: var(--text-primary); }
+
+    /* hint text */
+    .rec-hint {
+      font-size: 11.5px; color: var(--text-tertiary);
+      margin-top: 7px; line-height: 1.5;
+    }
+
+    /* ── Win Footer ── */
+    .win-footer {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 9px 24px; border-top: 1px solid var(--card-border);
+      background: var(--bar-bg); flex-shrink: 0;
+    }
+    .discourse-link {
+      display: flex; align-items: center; gap: 7px;
+      text-decoration: none; font-size: 12px; color: var(--text-secondary);
+    }
+    .discourse-link img { height: 18px; }
+    .social-links { display: flex; gap: 4px; }
+    .social-link {
+      width: 28px; height: 28px; border-radius: 6px;
+      display: flex; align-items: center; justify-content: center;
+      color: var(--text-tertiary); text-decoration: none;
+      transition: background .12s, color .12s;
+      border: none; background: transparent; cursor: pointer;
+    }
+    .social-link:hover { background: var(--hover-bg); color: var(--text-primary); }
+    .social-link svg { width: 14px; height: 14px; }
+  </style>
+</head>
+<body>
+<div class="window">
+
+  <!-- Title Bar -->
+  <div class="titlebar">
+    <a href="index" class="back-btn">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.2" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5"/>
+      </svg>
+      Back
+    </a>
+    <span class="titlebar-label">Recommendations</span>
+  </div>
+
+  <!-- Page Header -->
+  <div class="page-header">
+    <h1>Recommendations</h1>
+    <p>A curated set of extras to improve security, keep your system up to date, and protect your data.</p>
+  </div>
+
+  <!-- Scroll Body -->
+  <div class="scroll-body">
+
+    <!-- Backports -->
+    <div class="rec-card">
+      <div class="rec-icon blue">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 6.375c0 2.278-3.694 4.125-8.25 4.125S3.75 8.653 3.75 6.375m16.5 0c0-2.278-3.694-4.125-8.25-4.125S3.75 4.097 3.75 6.375m16.5 0v11.25c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125V6.375m16.5 2.625c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125m16.5 2.625c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125"/>
+        </svg>
+      </div>
+      <div class="rec-body">
+        <div class="rec-header">
+          <div class="rec-title">Backports Repository</div>
+          <span id="backport-remove" class="badge-installed">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg>
+            Repository enabled
+          </span>
+        </div>
+        <p class="rec-desc">To provide the most up-to-date versions of budgie-desktop and other associated packages, we recommend enabling the Ubuntu Budgie backports repository.</p>
+        <div class="rec-actions">
+          <button id="backport-install" class="btn btn-install" data-cmd="install?backport">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>
+            Enable Backports Repository
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Firmware Updater -->
+    <div class="rec-card">
+      <div class="rec-icon orange">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 3v1.5M4.5 8.25H3m18 0h-1.5M4.5 12H3m18 0h-1.5m-15 3.75H3m18 0h-1.5M8.25 19.5V21M12 3v1.5m0 15V21m3.75-18v1.5m0 15V21m-9-1.5h10.5a2.25 2.25 0 0 0 2.25-2.25V6.75a2.25 2.25 0 0 0-2.25-2.25H6.75A2.25 2.25 0 0 0 4.5 6.75v10.5a2.25 2.25 0 0 0 2.25 2.25Zm.75-12h9v9h-9v-9Z"/>
+        </svg>
+      </div>
+      <div class="rec-body">
+        <div class="rec-header">
+          <div class="rec-title">Firmware Updater</div>
+          <span id="firmware-remove" class="badge-installed">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg>
+            Installed
+          </span>
+        </div>
+        <p class="rec-desc">Component manufacturers issue firmware updates to correct stability issues and improve performance. For example, BIOS updates are written directly to the hardware's memory chip. Keeping firmware current ensures maximum compatibility and reliability.</p>
+        <div class="rec-actions">
+          <button id="firmware-install" class="btn btn-install" data-cmd="install?firmware">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>
+            Install Firmware Updater
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Backups -->
+    <div class="rec-card">
+      <div class="rec-icon green">
+        <img src="img/applications/deja-dup.png" alt="Déjà Dup" />
+      </div>
+      <div class="rec-body">
+        <div class="rec-header">
+          <div class="rec-title">Backups — Déjà Dup</div>
+        </div>
+        <p class="rec-desc"><strong>Déjà Dup</strong> is a powerful backup utility that supports backups to local devices as well as online cloud-based services. Nothing is more important than having a backup of your personal files — just in case something disastrous happens to your computer. Find it later under <strong>Utilities → Backups</strong>.</p>
+        <div class="rec-actions">
+          <button id="backup-install" class="btn btn-install" data-cmd="install?backup">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>
+            Install Déjà Dup
+          </button>
+          <div id="backup-remove" style="display:contents;">
+            <button class="btn btn-configure" data-cmd="deja-dup">
+              <img src="img/applications/deja-dup.png" alt="" />
+              Configure Backup
+            </button>
+            <button class="btn btn-remove" data-cmd="remove?backup">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m14.74 9-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 0 1-2.244 2.077H8.084a2.25 2.25 0 0 1-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 0 0-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 0 1 3.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 0 0-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 0 0-7.5 0"/></svg>
+              Remove
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Firewall -->
+    <div class="rec-card">
+      <div class="rec-icon red">
+        <img src="img/applications/gufw.png" alt="Gufw" />
+      </div>
+      <div class="rec-body">
+        <div class="rec-header">
+          <div class="rec-title">Firewall — Gufw</div>
+        </div>
+        <p class="rec-desc"><strong>Gufw</strong> is a graphical frontend for <code>ufw</code> (Uncomplicated Firewall). Firewalls prevent malicious connections entering and leaving your computer — by default, the firewall is disabled. Find it later under <strong>System Tools → Firewall Configuration</strong>.</p>
+        <div class="rec-actions">
+          <button id="firewall-install" class="btn btn-install" data-cmd="install?firewall">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>
+            Install Firewall
+          </button>
+          <div id="firewall-remove" style="display:contents;">
+            <button class="btn btn-configure" data-cmd="firewall">
+              <img src="img/applications/gufw.png" alt="" />
+              Configure Firewall
+            </button>
+            <button class="btn btn-remove" data-cmd="remove?firewall">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m14.74 9-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 0 1-2.244 2.077H8.084a2.25 2.25 0 0 1-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 0 0-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 0 1 3.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 0 0-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 0 0-7.5 0"/></svg>
+              Remove
+            </button>
+          </div>
+          <button class="btn btn-link" data-cmd="link?https://wiki.ubuntu.com/BasicSecurity">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"/></svg>
+            Basic Security
+          </button>
+          <button class="btn btn-link" data-cmd="link?https://help.ubuntu.com/community/DoINeedAFirewall">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"/></svg>
+            Do I Need a Firewall?
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ClamAV -->
+    <div class="rec-card">
+      <div class="rec-icon purple">
+        <img src="img/logos/clamtk_300x300.png" alt="ClamTK" />
+      </div>
+      <div class="rec-body">
+        <div class="rec-header">
+          <div class="rec-title">Antivirus — ClamAV &amp; ClamTK</div>
+          <span id="clamav-remove" class="badge-installed">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg>
+            ClamAV installed
+          </span>
+        </div>
+        <p class="rec-desc"><strong>ClamTK</strong> is an easy-to-use graphical frontend for <strong>ClamAV</strong> (Clam Antivirus) — a lightweight, on-demand virus scanner for Linux systems. Useful for scanning files shared with Windows users or checking downloaded content.</p>
+        <div class="rec-actions">
+          <button id="clamav-install" class="btn btn-install" data-cmd="install?clamav">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>
+            Install ClamAV
+          </button>
+          <button class="btn btn-remove" data-cmd="remove?clamav">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m14.74 9-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 0 1-2.244 2.077H8.084a2.25 2.25 0 0 1-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 0 0-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 0 1 3.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 0 0-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 0 0-7.5 0"/></svg>
+            Remove
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- end scroll-body -->
+
+  <!-- Footer -->
+  <div class="win-footer">
+    <a href="#" class="discourse-link">
+      <span style="font-size:12px;color:#9b9b9b;">Get support on</span>
+      <img src="public/img/logos/discourse-logo-dark.svg" alt="Discourse" />
+    </a>
+    <div class="social-links">
+      <a href="#" class="social-link" title="Blog"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width=".3" d="M19 7h1v12a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h11.5M7 14h6m-6 3h6m0-10h.5m-.5 3h.5M7 7h3v3H7V7Z"/></svg></a>
+      <a href="#" class="social-link" title="Twitter"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/></svg></a>
+      <a href="#" class="social-link" title="GitHub"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg></a>
+      <a href="#" class="social-link" title="Slack"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M3.362 10.11c0 .926-.756 1.681-1.681 1.681S0 11.036 0 10.111C0 9.186.756 8.43 1.68 8.43h1.682v1.68zm.846 0c0-.924.756-1.68 1.681-1.68s1.681.756 1.681 1.68v4.21c0 .924-.756 1.68-1.68 1.68a1.685 1.685 0 0 1-1.682-1.68v-4.21zM5.89 3.362c-.926 0-1.682-.756-1.682-1.681S4.964 0 5.89 0s1.68.756 1.68 1.68v1.682H5.89zm0 .846c.924 0 1.68.756 1.68 1.681S6.814 7.57 5.89 7.57H1.68C.757 7.57 0 6.814 0 5.89c0-.926.756-1.682 1.68-1.682h4.21zm6.749 1.682c0-.926.755-1.682 1.68-1.682.925 0 1.681.756 1.681 1.681s-.756 1.681-1.68 1.681h-1.681V5.89zm-.848 0c0 .924-.755 1.68-1.68 1.68A1.685 1.685 0 0 1 8.43 5.89V1.68C8.43.757 9.186 0 10.11 0c.926 0 1.681.756 1.681 1.68v4.21zm-1.681 6.748c.926 0 1.682.756 1.682 1.681S11.036 16 10.11 16s-1.681-.756-1.681-1.68v-1.682h1.68zm0-.847c-.924 0-1.68-.755-1.68-1.68 0-.925.756-1.681 1.68-1.681h4.21c.924 0 1.68.756 1.68 1.68 0 .926-.756 1.681-1.68 1.681h-4.21z"/></svg></a>
+    </div>
+  </div>
+
+</div>
+
+<script is:inline>
+(function () {
+  function cmd(command) { console.log('cmd:', command); }
+  window.cmd = cmd;
+
+  document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('[data-cmd]').forEach(function (el) {
+      el.addEventListener('click', function () { cmd(el.dataset.cmd); });
+    });
+  });
+})();
+</script>
+</body>
+</html>

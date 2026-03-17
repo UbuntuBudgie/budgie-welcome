@@ -1,809 +1,781 @@
+---
+// Ubuntu Budgie Welcome — Gaming, dark gaming aesthetic
+---
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-		<script>import "preline/dist/preline.js";</script>
-	</head>
-   
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="viewport" content="width=device-width" />
+  <title>Ubuntu Budgie Welcome — Gaming</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-    <body class="bg-gray-100 fade fade-1s">
-        <div id="wrapper">
-            <div id="title-inject" class="text-4xl text-center font-bold my-4">‌Gaming‌</div>
-            <div id="content" class="container mx-auto entire-page-fade">
-                <ul class="flex border-b" role="tablist">
-                    <li class="mr-2">
-                        <a class="inline-block px-4 py-2 font-medium text-gray-800 bg-white rounded-t-lg border border-gray-200 border-b-0  active"
-                         role="tab" data-toggle="tab" href="#game-clients">‌Gaming
-                            Clients‌</a>
-                    </li>
-                    <li class="mr-2">
-                        <a class="inline-block px-4 py-2 font-medium text-gray-600 hover:text-gray-800 hover:bg-gray-100 rounded-t-lg border border-gray-200 border-b-0"
-                         role="tab" data-toggle="tab" href="#game-tools">‌Gaming Tools‌</a>
-                    </li>
-                    <li class="mr-2">
-                        <a class="inline-block px-4 py-2 font-medium text-gray-600 hover:text-gray-800 hover:bg-gray-100 rounded-t-lg border border-gray-200 border-b-0"
-                         role="tab" data-toggle="tab" href="#games">‌Games List‌</a>
-                    </li>
-                </ul>
-                <div class="tab-content">
-                    <div class="tab-pane active p-4" id="game-clients" role="tabpanel">
-                        <div class="grid grid-cols-1 md:grid-cols-1 gap-4">
-                            <div class="col-md-12">
-                                <h2 class="text-2xl font-semibold mb-2">‌Gaming Clients‌</h2>
-                                <p class="text-gray-700">‌A gaming client will help you download, install and manage
-                                    your games.‌</p>
-                                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-center">
-                                    <div class="lutris">
-                                        <div class="mt-4">
-                                            <h2 class="text-xl font-semibold mb-2">
-                                                <a onclick="cmd('link?https://forums.lutris.net/t/very-brief-tutorial-on-manually-installing-a-game-in-lutris/2028')"
-                                                    class="text-gray-800 hover:text-gray-600">
-                                                    <span class="material-icons align-middle">help</span>
-                                                </a>
-                                                Lutris
-                                            </h2>
-                                            <div class="bg-white rounded-lg shadow-md p-4">
-                                                <div class="card-image text-center mb-2">
-                                                    <img src="img/logos/lutris.png" class="mx-auto" style="max-height: 128px" />
-                                                </div>
-                                                <p class="text-gray-700 text-base">‌Lutris is a gaming client for Linux.
-                                                    It gives you
-                                                    access to
-                                                    (almost) all your video games.‌</p>
-                                            </div>
-                                            <div class="text-right mt-2">
-                                                <a id="lutris-remove" class="bg-red-500 text-white py-2 px-4 rounded hover:bg-red-600 inline-flex items-center"
-                                                    onclick="cmd('remove?lutris');">
-                                                    <span class="material-icons mr-1"></span><span
-                                                        class="button-text">‌Remove‌</span>
-                                                </a>
-                                                <a id="lutris-install" class="bg-green-500 text-white py-2 px-4 rounded hover:bg-green-600 inline-flex items-center shadow"
-                                                    onclick="cmd('install?lutris');">
-                                                    <span class="material-icons mr-1"></span>‌Install‌
-                                                </a>
-                                                <span id="lutris-status" class="hidden ml-2">
-                                                    <img src="img/welcome/processing.gif" class="inline-block w-6 h-6 align-middle" />
-                                                    ‌Applying
-                                                    Changes...‌
-                                                </span>
-                                                <p id="lutris-instruction" class="hidden text-gray-500 text-sm mt-1"><small>‌Click on the
-                                                    help icon to
-                                                    learn
-                                                    how to install your games.‌</small></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="steam" id="steamid">
-                                        <div class="mt-4">
-                                            <h2 class="text-xl font-semibold mb-2">
-                                                <a onclick="cmd('link?https://help.steampowered.com/en/')"
-                                                    class="text-gray-800 hover:text-gray-600">
-                                                    <span class="material-icons align-middle">help</span>
-                                                </a>
-                                                Steam
-                                            </h2>
-                                            <div class="bg-white rounded-lg shadow-md p-4">
-                                                <div class="card-image text-center mb-2">
-                                                    <img src="img/logos/steam_app_icon.png" class="mx-auto"
-                                                         style="max-height: 128px" />
-                                                </div>
-                                                <p class="text-gray-700 text-base">‌Steam is the ultimate destination for
-                                                    playing,
-                                                    discussing,
-                                                    and creating games.‌</p>
-                                            </div>
-                                            <div class="text-right mt-2">
-                                                <a id="steam-remove" class="bg-red-500 text-white py-2 px-4 rounded hover:bg-red-600 inline-flex items-center"
-                                                    onclick="cmd('remove?steam');">
-                                                    <span class="material-icons mr-1"></span><span
-                                                        class="button-text">‌Remove‌</span>
-                                                </a>
-                                                <a id="steam-install" class="bg-green-500 text-white py-2 px-4 rounded hover:bg-green-600 inline-flex items-center shadow"
-                                                    onclick="cmd('install?steam');">
-                                                    <span class="material-icons mr-1"></span>‌Install‌
-                                                </a>
-                                                <span id="steam-status" class="hidden ml-2">
-                                                    <img src="img/welcome/processing.gif" class="inline-block w-6 h-6 align-middle" />
-                                                    ‌Applying
-                                                    Changes...‌
-                                                </span>
-                                                <p id="steam-instruction" class="hidden text-gray-500 text-sm mt-1"><small>‌Please
-                                                    reboot to complete
-                                                    installation.‌</small></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-center mt-4">
-                                    <div class="retroarch">
-                                        <div class="mt-4">
-                                            <h2 class="text-xl font-semibold mb-2">
-                                                <a onclick="cmd('link?https://www.retroarch.com/')"
-                                                    class="text-gray-800 hover:text-gray-600">
-                                                    <span class="material-icons align-middle">help</span>
-                                                </a>
-                                                RetroArch
-                                            </h2>
-                                            <div class="bg-white rounded-lg shadow-md p-4">
-                                                <div class="card-image text-center mb-2">
-                                                    <img src="img/logos/retroarch.jpg" class="mx-auto" style="max-height: 128px" />
-                                                </div>
-                                                <p class="text-gray-700 text-base">‌RetroArch is a frontend for emulators,
-                                                    game engines
-                                                    and media players.‌</p>
-                                            </div>
-                                            <div class="text-right mt-2">
-                                                <a id="retroarch-remove" class="bg-red-500 text-white py-2 px-4 rounded hover:bg-red-600 inline-flex items-center"
-                                                    onclick="cmd('remove?retroarch');">
-                                                    <span class="material-icons mr-1"></span><span
-                                                        class="button-text">‌Remove‌</span>
-                                                </a>
-                                                <a id="retroarch-install" class="bg-green-500 text-white py-2 px-4 rounded hover:bg-green-600 inline-flex items-center shadow"
-                                                    onclick="cmd('install?retroarch');">
-                                                    <span class="material-icons mr-1"></span>‌Install‌
-                                                </a>
-                                                <span id="retroarch-status" class="hidden ml-2">
-                                                    <img src="img/welcome/processing.gif" class="inline-block w-6 h-6 align-middle" />
-                                                    ‌Applying
-                                                    Changes...‌
-                                                </span>
-                                                <p id="retroarch-instruction" class="hidden text-gray-500 text-sm mt-1"><small>‌Just
-                                                    play. If you need
-                                                    help, please reach out to the <a
-                                                        onclick="cmd('link?https://www.retroarch.com/?page=faq')" class="text-blue-500 hover:text-blue-700">
-                                                         FAQ page.
-                                                    </a>‌
-                                                </small></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="minigalaxy">
-                                        <div class="mt-4">
-                                            <h2 class="text-xl font-semibold mb-2">
-                                                <a onclick="cmd('link?https://www.gog.com/galaxy')"
-                                                    class="text-gray-800 hover:text-gray-600">
-                                                    <span class="material-icons align-middle">help</span>
-                                                </a>
-                                                Mini Galaxy
-                                            </h2>
-                                            <div class="bg-white rounded-lg shadow-md p-4">
-                                                <div class="card-image text-center mb-2">
-                                                    <img src="img/screenshots/minigalaxy.jpg" class="mx-auto"
-                                                         style="max-height: 128px" />
-                                                </div>
-                                                <p class="text-gray-700 text-base">‌Minigalaxy is a GOG client for Linux.
-                                                    It can install,
-                                                    manage, and update native and windows games, including their <i
-                                                        title="DLC: Downloadable Content">DLCs</i>.‌
-                                                </p>
-                                            </div>
-                                            <div class="text-right mt-2">
-                                                <a id="minigalaxy-remove" class="bg-red-500 text-white py-2 px-4 rounded hover:bg-red-600 inline-flex items-center"
-                                                    onclick="cmd('remove?minigalaxy');">
-                                                    <span class="material-icons mr-1"></span><span
-                                                        class="button-text">‌Remove‌</span>
-                                                </a>
-                                                <a id="minigalaxy-install" class="bg-green-500 text-white py-2 px-4 rounded hover:bg-green-600 inline-flex items-center shadow"
-                                                    onclick="cmd('install?minigalaxy');">
-                                                    <span class="material-icons mr-1"></span>‌Install‌
-                                                </a>
-                                                <span id="minigalaxy-status" class="hidden ml-2">
-                                                    <img src="img/welcome/processing.gif" class="inline-block w-6 h-6 align-middle" />
-                                                    ‌Applying
-                                                    Changes...‌
-                                                </span>
-                                                <p id="minigalaxy-instruction" class="hidden text-gray-500 text-sm mt-1"><small>‌Please
-                                                    reboot to complete
-                                                    installation.‌</small></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tab-pane p-4" id="game-tools" role="tabpanel">
-                        <div class="grid grid-cols-1 md:grid-cols-1 gap-4">
-                            <div class="col-md-12">
-                                <h2 class="text-2xl font-semibold mb-2">‌Gaming Tools‌</h2>
-                                <p class="text-gray-700">‌Tools to have a more comfortable and feature-rich gaming
-                                    experience.‌</p>
-                                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-center">
-                                    <div class="mt-4">
-                                        <h2 class="text-xl font-semibold mb-2">
-                                            <a onclick="cmd('link?https://github.com/libratbag/piper')"
-                                                class="text-gray-800 hover:text-gray-600">
-                                                <span class="material-icons align-middle">help</span>
-                                            </a>
-                                            Piper
-                                        </h2>
-                                        <div class="bg-white rounded-lg shadow-md p-4">
-                                            <div class="card-image text-center mb-2">
-                                                <img src="img/screenshots/piper-resolutionpage.png" class="mx-auto"
-                                                     style="max-height: 128px" />
-                                            </div>
-                                            <p class="text-gray-700 text-base">‌Piper is a GTK+ application to configure
-                                                gaming mice
-                                                using ratbagd.‌</p>
-                                        </div>
-                                        <div class="text-right mt-2">
-                                            <a id="piper-remove" class="bg-red-500 text-white py-2 px-4 rounded hover:bg-red-600 inline-flex items-center"
-                                                onclick="cmd('remove?piper');">
-                                                <span class="material-icons mr-1"></span><span
-                                                    class="button-text">‌Remove‌</span>
-                                            </a>
-                                            <a id="piper-install" class="bg-green-500 text-white py-2 px-4 rounded hover:bg-green-600 inline-flex items-center shadow"
-                                                onclick="cmd('install?piper');">
-                                                <span class="material-icons mr-1"></span>‌Install‌
-                                            </a>
-                                            <span id="piper-status" class="hidden ml-2">
-                                                <img src="img/welcome/processing.gif" class="inline-block w-6 h-6 align-middle" />
-                                                ‌Applying
-                                                Changes...‌
-                                            </span>
-                                            <p id="piper-instruction" class="hidden text-gray-500 text-sm mt-1"><small>‌Check
-                                                project by
-                                                clicking the help button.‌</small></p>
-                                        </div>
-                                    </div>
-                                    <div class="mt-4">
-                                        <h2 class="text-xl font-semibold mb-2">
-                                            <a onclick="cmd('link?https://github.com/Dirli/budgie-cpufreq-applet')"
-                                                class="text-gray-800 hover:text-gray-600">
-                                                <span class="material-icons align-middle">help</span>
-                                            </a>
-                                            ‌CPU Frequency Applet‌
-                                        </h2>
-                                        <div class="bg-white rounded-lg shadow-md p-4">
-                                            <div class="card-image text-center mb-2">
-                                                <img src="img/screenshots/cpufreq-applet.jpg" class="mx-auto"
-                                                     style="max-height: 128px" />
-                                            </div>
-                                            <p class="text-gray-700 text-base">‌Control the frequency of the processor
-                                                (Sandy Bridge
-                                                and newer).‌</p>
-                                        </div>
-                                        <div class="text-right mt-2">
-                                            <a class="bg-gray-700 text-white py-2 px-4 rounded hover:bg-gray-800 inline-flex items-center"
-                                                href="budgie-applets.html#anchor1">
-                                                <img class="button-icon w-5 h-5 mr-1" src="img/distro-icon-inverted.svg"> 
-                                                <span class="button-text">‌Install from Budgie Extras‌</span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <hr class="my-4 border-gray-300"/>
-                                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-center">
-                                    <div class="mt-4">
-                                        <h2 class="text-xl font-semibold mb-2">
-                                            <a onclick="cmd('link?https://openrgb.org/')"
-                                                class="text-gray-800 hover:text-gray-600">
-                                                <span class="material-icons align-middle">help</span>
-                                            </a>
-                                            OpenRGB
-                                        </h2>
-                                        <div class="bg-white rounded-lg shadow-md p-4">
-                                            <div class="card-image text-center mb-2">
-                                                <img src="img/logos/OpenRGB.png" class="mx-auto" style="max-height: 128px" />
-                                            </div>
-                                            <p class="text-gray-700 text-base">‌Generic RGB management tool for linux.
-                                                Fully open
-                                                source and aims to remove hardware specific vendor apps.‌</p>
-                                        </div>
-                                        <div class="text-right mt-2">
-                                            <a id="openrbg-remove" class="bg-red-500 text-white py-2 px-4 rounded hover:bg-red-600 inline-flex items-center"
-                                                onclick="cmd('remove?openrbg');">
-                                                <span class="material-icons mr-1"></span><span
-                                                    class="button-text">‌Remove‌</span>
-                                            </a>
-                                            <a id="openrbg-install" class="bg-green-500 text-white py-2 px-4 rounded hover:bg-green-600 inline-flex items-center shadow"
-                                                onclick="cmd('install?openrbg');">
-                                                <span class="material-icons mr-1"></span>‌Install‌
-                                            </a>
-                                            <span id="openrbg-status" class="hidden ml-2">
-                                                <img src="img/welcome/processing.gif" class="inline-block w-6 h-6 align-middle" />
-                                                ‌Applying
-                                                Changes...‌
-                                            </span>
-                                            <p id="openrbg-instruction" class="hidden text-gray-500 text-sm mt-1"><small>‌Check
-                                                website by
-                                                clicking the help button.‌</small></p>
-                                        </div>
-                                    </div>
-                                    <div class="mt-4">
-                                        <h2 class="text-xl font-semibold mb-2">
-                                            <a onclick="cmd('link?https://polychromatic.app/')"
-                                                class="text-gray-800 hover:text-gray-600">
-                                                <span class="material-icons align-middle">help</span>
-                                            </a>
-                                            Polychromatic &
-                                            OpenRazer
-                                        </h2>
-                                        <div class="bg-white rounded-lg shadow-md p-4">
-                                            <div class="card-image text-center mb-2">
-                                                <img src="img/logos/openrazer.jpg" class="mx-auto"
-                                                     style="max-height: 128px" />
-                                            </div>
-                                            <p class="text-gray-700 text-base">‌Polychromatic is a frontend for OpenRazer
-                                                that
-                                                enables Razer devices to control lighting effects and more on
-                                                Linux.‌</p>
-                                        </div>
-                                        <div class="text-right mt-2">
-                                            <a id="polychromatic-remove" class="bg-red-500 text-white py-2 px-4 rounded hover:bg-red-600 inline-flex items-center"
-                                                onclick="cmd('remove?polychromatic');">
-                                                <span class="material-icons mr-1"></span><span
-                                                    class="button-text">‌Remove‌</span>
-                                            </a>
-                                            <a id="polychromatic-install" class="bg-green-500 text-white py-2 px-4 rounded hover:bg-green-600 inline-flex items-center shadow"
-                                                onclick="cmd('install?polychromatic');">
-                                                <span class="material-icons mr-1"></span>‌Install‌
-                                            </a>
-                                            <span id="polychromatic-status" class="hidden ml-2">
-                                                <img src="img/welcome/processing.gif" class="inline-block w-6 h-6 align-middle" />
-                                                ‌Applying
-                                                Changes...‌
-                                            </span>
-                                            <p id="polychromatic-instruction" class="hidden text-gray-500 text-sm mt-1"><small>‌Please
-                                                reboot
-                                                after install as well as removal.‌</small></p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <hr class="my-4 border-gray-300"/>
-                                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-center">
-                                    <div class="mt-4">
-                                        <h2 class="text-xl font-semibold mb-2">
-                                            <a onclick="cmd('link?https://discord.com/')"
-                                                class="text-gray-800 hover:text-gray-600">
-                                                <span class="material-icons align-middle">help</span>
-                                            </a>
-                                            Discord
-                                        </h2>
-                                        <div class="bg-white rounded-lg shadow-md p-4">
-                                            <div class="card-image text-center mb-2">
-                                                <img src="img/logos/discord.png" class="mx-auto" style="max-height: 128px" />
-                                            </div>
-                                            <p class="text-gray-700 text-base">‌Discord is a <i
-                                                    title="VoIP: Voice Over Internet Protocol">VoIP</i>, instant messaging
-                                                and digital
-                                                distribution platform.‌</p>
-                                        </div>
-                                        <div class="text-right mt-2">
-                                            <a id="discord-remove" class="bg-red-500 text-white py-2 px-4 rounded hover:bg-red-600 inline-flex items-center"
-                                                onclick="cmd('remove?discord');">
-                                                <span class="material-icons mr-1"></span><span
-                                                    class="button-text">‌Remove‌</span>
-                                            </a>
-                                            <a id="discord-install" class="bg-green-500 text-white py-2 px-4 rounded hover:bg-green-600 inline-flex items-center shadow"
-                                                onclick="cmd('install?discord');">
-                                                <span class="material-icons mr-1"></span>‌Install‌
-                                            </a>
-                                            <span id="discord-status" class="hidden ml-2">
-                                                <img src="img/welcome/processing.gif" class="inline-block w-6 h-6 align-middle" />
-                                                ‌Applying
-                                                Changes...‌
-                                            </span>
-                                            <p id="discord-instruction" class="hidden text-gray-500 text-sm mt-1"><small>‌Check
-                                                website by
-                                                clicking the help button.‌</small></p>
-                                        </div>
-                                    </div>
-                                    <div class="mt-4">
-                                        <h2 class="text-xl font-semibold mb-2">
-                                            <a onclick="cmd('link?https://obsproject.com/')"
-                                                class="text-gray-800 hover:text-gray-600">
-                                                <span class="material-icons align-middle">help</span>
-                                            </a>
-                                            OBS Studio
-                                        </h2>
-                                        <div class="bg-white rounded-lg shadow-md p-4">
-                                            <div class="card-image text-center mb-2">
-                                                <img src="img/logos/obs-studio.png" class="mx-auto"
-                                                     style="max-height: 128px" />
-                                            </div>
-                                            <p class="text-gray-700 text-base">‌Free and open source software for video
-                                                recording and
-                                                live streaming.‌</p>
-                                        </div>
-                                        <div class="text-right mt-2">
-                                            <a id="obs-studio-remove" class="bg-red-500 text-white py-2 px-4 rounded hover:bg-red-600 inline-flex items-center"
-                                                onclick="cmd('remove?obs-studio');">
-                                                <span class="material-icons mr-1"></span><span
-                                                    class="button-text">‌Remove‌</span>
-                                            </a>
-                                            <a id="obs-studio-install" class="bg-green-500 text-white py-2 px-4 rounded hover:bg-green-600 inline-flex items-center shadow"
-                                                onclick="cmd('install?obs-studio');">
-                                                <span class="material-icons mr-1"></span>‌Install‌
-                                            </a>
-                                            <span id="obs-studio-status" class="hidden ml-2">
-                                                <img src="img/welcome/processing.gif" class="inline-block w-6 h-6 align-middle" />
-                                                ‌Applying
-                                                Changes...‌
-                                            </span>
-                                            <p id="obs-studio-instruction" class="hidden text-gray-500 text-sm mt-1"><small>‌Check
-                                                website by
-                                                clicking the help button.‌</small></p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <hr class="my-4 border-gray-300"/>
-                                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-center">
-                                    <div class="mt-4">
-                                        <h2 class="text-xl font-semibold mb-2">
-                                            <a
-                                                onclick="cmd('link?https://github.com/flightlessmango/MangoHud#normal-usage')"
-                                                class="text-gray-800 hover:text-gray-600">
-                                                <span class="material-icons align-middle">help</span>
-                                            </a>
-                                            GOverlay + Mango HUD
-                                        </h2>
-                                        <div class="bg-white rounded-lg shadow-md p-4">
-                                            <div class="card-image text-center mb-2">
-                                                <img src="img/screenshots/MangoHUD.gif" class="mx-auto"
-                                                     style="max-height: 128px" />
-                                            </div>
-                                            <p class="text-gray-700 text-base">‌A Vulkan and OpenGL overlay for
-                                                monitoring <i title="FPS: Frames Per Second">FPS</i>,
-                                                temperatures, CPU/GPU load and more. Comes with GOverlay as <i
-                                                    title="GUI: Graphical User Interface (things you can interact with a mouse)">GUI</i>.‌
-                                            </p>
-                                        </div>
-                                        <div class="text-right mt-2">
-                                            <a id="mangohud-remove" class="bg-red-500 text-white py-2 px-4 rounded hover:bg-red-600 inline-flex items-center"
-                                                onclick="cmd('remove?mangohud');">
-                                                <span class="material-icons mr-1"></span><span
-                                                    class="button-text">‌Remove‌</span>
-                                            </a>
-                                            <a id="mangohud-install" class="bg-green-500 text-white py-2 px-4 rounded hover:bg-green-600 inline-flex items-center shadow"
-                                                onclick="cmd('install?mangohud');">
-                                                <span class="material-icons mr-1"></span>‌Install‌
-                                            </a>
-                                            <span id="mangohud-status" class="hidden ml-2">
-                                                <img src="img/welcome/processing.gif" class="inline-block w-6 h-6 align-middle" />
-                                                ‌Applying
-                                                Changes...‌
-                                            </span>
-                                            <p id="mangohud-instruction" class="hidden text-gray-500 text-sm mt-1"><small>‌Please
-                                                check help
-                                                section for usage information. Example config at:
-                                                /usr/share/doc/mangohud.‌</small></p>
-                                        </div>
-                                    </div>
-                                    <div class="corectrlppa hidden mt-4">
-                                        <h2 class="text-xl font-semibold mb-2">
-                                            <a onclick="cmd('link?https://gitlab.com/corectrl/corectrl')"
-                                                class="text-gray-800 hover:text-gray-600">
-                                                <span class="material-icons align-middle">help</span>
-                                            </a>
-                                            CoreCtrl
-                                        </h2>
-                                        <div class="bg-white rounded-lg shadow-md p-4">
-                                            <div class="card-image text-center mb-2">
-                                                <img src="img/logos/corectrl.png" class="mx-auto" style="max-height: 128px" />
-                                            </div>
-                                            <p class="text-gray-700 text-base">‌CoreCTRL allows you to control hardware
-                                                performance
-                                                using application profiles.‌
-                                            </p>
-                                        </div>
-                                        <div class="text-right mt-2">
-                                            <a id="corectrlppa-remove" class="bg-red-500 text-white py-2 px-4 rounded hover:bg-red-600 inline-flex items-center"
-                                                onclick="cmd('remove?corectrlppa');">
-                                                <span class="material-icons mr-1"></span><span
-                                                    class="button-text">‌Remove‌</span>
-                                            </a>
-                                            <a id="corectrlppa-install" class="bg-green-500 text-white py-2 px-4 rounded hover:bg-green-600 inline-flex items-center shadow"
-                                                onclick="cmd('install?corectrlppa');">
-                                                <span class="material-icons mr-1"></span>‌Install‌
-                                            </a>
-                                            <span id="corectrlppa-status" class="hidden ml-2">
-                                                <img src="img/welcome/processing.gif" class="inline-block w-6 h-6 align-middle" />
-                                            ‌Applying
-                                            Changes...‌
-                                        </span>
-                                        <p id="corectrlppa-instruction" class="hidden text-gray-500 text-sm mt-1"><small>‌Check
-                                            website by
-                                            clicking the help button.‌</small></p>
-                                    </div>
-                                </div>
-                                <div class="corectrl hidden mt-4">
-                                    <h2 class="text-xl font-semibold mb-2">
-                                        <a onclick="cmd('link?https://gitlab.com/corectrl/corectrl')"
-                                            class="text-gray-800 hover:text-gray-600">
-                                            <span class="material-icons align-middle">help</span>
-                                        </a>
-                                        CoreCtrl
-                                    </h2>
-                                    <div class="bg-white rounded-lg shadow-md p-4">
-                                        <div class="card-image text-center mb-2">
-                                            <img src="img/logos/corectrl.png" class="mx-auto" style="max-height: 128px" />
-                                        </div>
-                                        <p class="text-gray-700 text-base">‌CoreCTRL allows you to control hardware
-                                            performance
-                                            using application profiles.‌
-                                        </p>
-                                    </div>
-                                    <div class="text-right mt-2">
-                                        <a id="corectrl-remove" class="bg-red-500 text-white py-2 px-4 rounded hover:bg-red-600 inline-flex items-center"
-                                            onclick="cmd('remove?corectrl');">
-                                            <span class="material-icons mr-1"></span><span
-                                                class="button-text">‌Remove‌</span>
-                                        </a>
-                                        <a id="corectrl-install" class="bg-green-500 text-white py-2 px-4 rounded hover:bg-green-600 inline-flex items-center shadow"
-                                            onclick="cmd('install?corectrl');">
-                                            <span class="material-icons mr-1"></span>‌Install‌
-                                        </a>
-                                        <span id="corectrl-status" class="hidden ml-2">
-                                            <img src="img/welcome/processing.gif" class="inline-block w-6 h-6 align-middle" />
-                                            ‌Applying
-                                            Changes...‌
-                                        </span>
-                                        <p id="corectrl-instruction" class="hidden text-gray-500 text-sm mt-1"><small>‌Check
-                                            website by
-                                            clicking the help button.‌</small></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="tab-pane p-4" id="games" role="tabpanel">
-                    <div class="grid grid-cols-1 md:grid-cols-1 gap-4">
-                        <div class="col-md-12">
-                            <h2 class="text-2xl font-semibold mb-2">‌Games List‌</h2>
-                            <p class="text-gray-700">‌A community curated list of game suggestions‌</p>
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-center">
-                                <div class="mt-4">
-                                    <h2 class="text-xl font-semibold mb-2">
-                                        <a onclick="cmd('link?https://xonotic.org/')"
-                                            class="text-gray-800 hover:text-gray-600">
-                                            <span class="material-icons align-middle">help</span>
-                                        </a>
-                                        Xonotic
-                                    </h2>
-                                    <div class="bg-white rounded-lg shadow-md p-4">
-                                        <div class="card-image text-center mb-2">
-                                            <img src="img/logos/xonotic.png" class="mx-auto" style="max-height: 128px" />
-                                        </div>
-                                        <p class="text-gray-700 text-base">‌Xonotic - Free & Open Source Multiplayer
-                                            <i title="FPS: First Person Shooter">FPS</i>.‌
-                                        </p>
-                                    </div>
-                                    <div class="text-right mt-2">
-                                        <a id="xonotic-watch" class="bg-gray-700 text-white py-2 px-4 rounded hover:bg-gray-800 inline-flex items-center shadow"
-                                            onclick="cmd('link?https://www.youtube.com/watch?v=jijLut9GqrY');">
-                                            <img class="button-icon w-6 h-6 mr-1" src="img/logos/youtube.png"
-                                                 style="padding: 5px;">
-                                            <span class="button-text">‌Watch‌</span>
-                                        </a>
-                                        <a id="xonotic-remove" class="bg-red-500 text-white py-2 px-4 rounded hover:bg-red-600 inline-flex items-center"
-                                            onclick="cmd('remove?xonotic');">
-                                            <span class="material-icons mr-1"></span><span
-                                                class="button-text">‌Remove‌</span>
-                                        </a>
-                                        <a id="xonotic-install" class="bg-green-500 text-white py-2 px-4 rounded hover:bg-green-600 inline-flex items-center shadow"
-                                            onclick="cmd('install?xonotic');">
-                                            <span class="material-icons mr-1"></span>‌Install‌
-                                        </a>
-                                        <span id="xonotic-status" class="hidden ml-2">
-                                            <img src="img/welcome/processing.gif" class="inline-block w-6 h-6 align-middle" />
-                                            ‌Applying
-                                            Changes...‌
-                                        </span>
-                                        <p id="xonotic-instruction" class="hidden text-gray-500 text-sm mt-1"><small>‌Visit
-                                            website by
-                                            clicking the help icon.‌</small></p>
-                                    </div>
-                                </div>
-                                <div class="mt-4">
-                                    <h2 class="text-xl font-semibold mb-2">
-                                        <a onclick="cmd('link?https://store.steampowered.com/app/892970/Valheim/')"
-                                            class="text-gray-800 hover:text-gray-600">
-                                            <span class="material-icons align-middle">help</span>
-                                        </a>
-                                        Valheim
-                                    </h2>
-                                    <div class="bg-white rounded-lg shadow-md p-4">
-                                        <div class="card-image text-center mb-2">
-                                            <img src="img/screenshots/valheim.jpg" class="mx-auto"
-                                                 style="max-height: 128px" />
-                                        </div>
-                                        <p class="text-gray-700 text-base">‌Valheim - Survival <i
-                                                title="RPG: Role Playing Game">RPG</i>.‌</p>
-                                    </div>
-                                    <div class="text-right mt-2">
-                                        <a id="valheim-watch" class="bg-gray-700 text-white py-2 px-4 rounded hover:bg-gray-800 inline-flex items-center shadow"
-                                            onclick="cmd('link?https://www.youtube.com/watch?v=5mHRJ1KFe20');">
-                                            <img class="button-icon w-6 h-6 mr-1" src="img/logos/youtube.png"
-                                                 style="padding: 5px;">
-                                            <span class="button-text">‌Watch‌</span>
-                                        </a>
-                                         <a id="valheim-install" class="bg-gray-700 text-white py-2 px-4 rounded hover:bg-gray-800 inline-flex items-center" onclick="client_tab()">
-                                            <img class="button-icon w-5 h-5 mr-1" src="img/distro-icon-inverted.svg"> 
-                                            <span class="button-text">‌Install Steam‌</span>
-                                        </a>
-                                         <a id="valheim-remove" class="bg-green-500 text-white py-2 px-4 rounded hover:bg-green-600 inline-flex items-center shadow"
-                                            onclick="cmd('steam?892970');">
-                                            <img class="button-icon w-6 h-6 mr-1" src="img/logos/steam.png"
-                                                 style="padding: 2px;">
-                                            <span class="button-text">‌Launch‌</span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-center mt-4">
-                                <div class="mt-4">
-                                    <h2 class="text-xl font-semibold mb-2">
-                                        <a onclick="cmd('link?https://store.steampowered.com/app/1282730/Loop_Hero/')"
-                                            class="text-gray-800 hover:text-gray-600">
-                                            <span class="material-icons align-middle">help</span>
-                                        </a>
-                                        Loop Hero
-                                    </h2>
-                                    <div class="bg-white rounded-lg shadow-md p-4">
-                                        <div class="card-image text-center mb-2">
-                                            <img src="img/screenshots/loop-hero.jpg" class="mx-auto"
-                                                 style="max-height: 128px" />
-                                        </div>
-                                        <p class="text-gray-700 text-base">‌Loop Hero - 8 bit retro-styled Deck
-                                            building
-                                            game.‌</p>
-                                    </div>
-                                    <div class="text-right mt-2">
-                                        <a id="loop-hero-watch" class="bg-gray-700 text-white py-2 px-4 rounded hover:bg-gray-800 inline-flex items-center shadow"
-                                            onclick="cmd('link?https://www.youtube.com/watch?v=lt_T8LhmnT8');">
-                                            <img class="button-icon w-6 h-6 mr-1" src="img/logos/youtube.png"
-                                                 style="padding: 5px;">
-                                            <span class="button-text">‌Watch‌</span>
-                                        </a>
-                                       <a id="loop-hero-install" class="bg-gray-700 text-white py-2 px-4 rounded hover:bg-gray-800 inline-flex items-center" onclick="client_tab()">
-                                            <img class="button-icon w-5 h-5 mr-1" src="img/distro-icon-inverted.svg"> 
-                                            <span class="button-text">‌Install Steam‌</span>
-                                        </a>
-                                         <a id="loop-hero-remove" class="bg-green-500 text-white py-2 px-4 rounded hover:bg-green-600 inline-flex items-center shadow"
-                                            onclick="cmd('steam?1282730');">
-                                            <img class="button-icon w-6 h-6 mr-1" src="img/logos/steam.png"
-                                                 style="padding: 2px;">
-                                            <span class="button-text">‌Launch‌</span>
-                                        </a>
-                                    </div>
-                                </div>
-                                 <div class="mt-4">
-                                    <h2 class="text-xl font-semibold mb-2">
-                                        <a
-                                            onclick="cmd('link?https://store.steampowered.com/app/651490/No_Longer_Home/')"
-                                            class="text-gray-800 hover:text-gray-600">
-                                            <span class="material-icons align-middle">help</span>
-                                        </a>
-                                        No Longer Home
-                                    </h2>
-                                    <div class="bg-white rounded-lg shadow-md p-4">
-                                        <div class="card-image text-center mb-2">
-                                            <img src="img/screenshots/no-longer-home.jpg" class="mx-auto"
-                                                 style="max-height: 128px" />
-                                        </div>
-                                        <p class="text-gray-700 text-base">‌No Longer Home - Point & Click,
-                                            semi-auto-biographical.‌</p>
-                                    </div>
-                                     <div class="text-right mt-2">
-                                        <a id="no-longer-home-watch" class="bg-gray-700 text-white py-2 px-4 rounded hover:bg-gray-800 inline-flex items-center shadow"
-                                            onclick="cmd('link?https://www.youtube.com/watch?v=4_D2vUNj3vs');">
-                                            <img class="button-icon w-6 h-6 mr-1" src="img/logos/youtube.png"
-                                                 style="padding: 5px;">
-                                            <span class="button-text">‌Watch‌</span>
-                                        </a>
-                                        <a id="no-longer-home-install" class="bg-gray-700 text-white py-2 px-4 rounded hover:bg-gray-800 inline-flex items-center" onclick="client_tab()">
-                                            <img class="button-icon w-5 h-5 mr-1" src="img/distro-icon-inverted.svg"> 
-                                            <span class="button-text">‌Install Steam‌</span>
-                                        </a>
-                                         <a id="no-longer-home-remove" class="bg-green-500 text-white py-2 px-4 rounded hover:bg-green-600 inline-flex items-center shadow"
-                                            onclick="cmd('steam?651490');">
-                                            <img class="button-icon w-6 h-6 mr-1" src="img/logos/steam.png"
-                                                 style="padding: 2px;">
-                                            <span class="button-text">‌Launch‌</span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-center mt-4">
-                                 <div class="mt-4">
-                                    <h2 class="text-xl font-semibold mb-2">
-                                        <a
-                                            onclick="cmd('link?https://store.steampowered.com/app/674930/Boyfriend_Dungeon/')"
-                                            class="text-gray-800 hover:text-gray-600">
-                                            <span class="material-icons align-middle">help</span>
-                                        </a>
-                                        Boyfriend Dungeon
-                                    </h2>
-                                    <div class="bg-white rounded-lg shadow-md p-4">
-                                        <div class="card-image text-center mb-2">
-                                            <img src="img/screenshots/boyfriend-dungeon.jpg" class="mx-auto"
-                                                 style="max-height: 128px" />
-                                        </div>
-                                        <p class="text-gray-700 text-base">‌Boyfriend Dungeon - Dating SIM, Hack &
-                                            Slash.‌
-                                        </p>
-                                    </div>
-                                     <div class="text-right mt-2">
-                                        <a id="boyfriend-dungeon-watch" class="bg-gray-700 text-white py-2 px-4 rounded hover:bg-gray-800 inline-flex items-center shadow"
-                                            onclick="cmd('link?https://www.youtube.com/watch?v=wOhVJuN_3Ao');">
-                                            <img class="button-icon w-6 h-6 mr-1" src="img/logos/youtube.png"
-                                                 style="padding: 5px;">
-                                            <span class="button-text">‌Watch‌</span>
-                                        </a>
-                                         <a id="boyfriend-dungeon-install" class="bg-gray-700 text-white py-2 px-4 rounded hover:bg-gray-800 inline-flex items-center" onclick="client_tab()">
-                                            <img class="button-icon w-5 h-5 mr-1" src="img/distro-icon-inverted.svg"> 
-                                            <span class="button-text">‌Install Steam‌</span>
-                                        </a>
-                                          <a id="boyfriend-dungeon-remove" class="bg-green-500 text-white py-2 px-4 rounded hover:bg-green-600 inline-flex items-center shadow"
-                                            onclick="cmd('steam?674930');">
-                                            <img class="button-icon w-6 h-6 mr-1" src="img/logos/steam.png"
-                                                 style="padding: 2px;">
-                                            <span class="button-text">‌Launch‌</span>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="mt-4">
-                                    <h2 class="text-xl font-semibold mb-2">
-                                        <a
-                                            onclick="cmd('link?https://store.steampowered.com/app/250900/The_Binding_of_Isaac_Rebirth/')"
-                                            class="text-gray-800 hover:text-gray-600">
-                                            <span class="material-icons align-middle">help</span>
-                                        </a>
-                                        Binding Of Isaac -
-                                        Rebirth
-                                    </h2>
-                                    <div class="bg-white rounded-lg shadow-md p-4">
-                                        <div class="card-image text-center mb-2">
-                                            <img src="img/screenshots/binding-of-issac-rebirth.jpg" class="mx-auto"
-                                                 style="max-height: 128px" />
-                                        </div>
-                                        <p class="text-gray-700 text-base">‌Binding of Isaac - Top Down Dungeon
-                                            Crawler, high
-                                            difficulty.‌</p>
-                                    </div>
-                                     <div class="text-right mt-2">
-                                        <a id="binding-of-isaac-watch" class="bg-gray-700 text-white py-2 px-4 rounded hover:bg-gray-800 inline-flex items-center shadow"
-                                            onclick="cmd('link?https://www.youtube.com/watch?v=oG1CC8x873M');">
-                                            <img class="button-icon w-6 h-6 mr-1" src="img/logos/youtube.png"
-                                                 style="padding: 5px;">
-                                            <span class="button-text">‌Watch‌</span>
-                                        </a>
-                                        <a id="binding-of-isaac-install" class="bg-gray-700 text-white py-2 px-4 rounded hover:bg-gray-800 inline-flex items-center" onclick="client_tab()">
-                                            <img class="button-icon w-5 h-5 mr-1" src="img/distro-icon-inverted.svg"> 
-                                            <span class="button-text">‌Install Steam‌</span>
-                                        </a>
-                                          <a id="binding-of-isaac-remove" class="bg-green-500 text-white py-2 px-4 rounded hover:bg-green-600 inline-flex items-center shadow"
-                                            onclick="cmd('steam?250900');">
-                                            <img class="button-icon w-6 h-6 mr-1" src="img/logos/steam.png"
-                                                 style="padding: 2px;">
-                                            <span class="button-text">‌Launch‌</span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    :root {
+      --bg:            #e8e8e8;
+      --win-bg:        #ffffff;
+      --bar-bg:        #f5f5f5;
+      --bar-border:    #e0e0e0;
+      --surface:       #fafafa;
+      --surface-2:     #f5f5f5;
+      --surface-3:     #efefef;
+      --border:        #e8e8e8;
+      --border-soft:   #f0f0f0;
+      --text-primary:  #1a1a1a;
+      --text-secondary:#6b6b6b;
+      --text-tertiary: #9b9b9b;
+      --accent:        #2563eb;
+      --accent-light:  #dbeafe;
+      --green:         #16a34a;
+      --green-light:   #dcfce7;
+      --red:           #dc2626;
+      --red-light:     #fee2e2;
+      --amber:         #d97706;
+      --amber-light:   #fef3c7;
+      --purple:        #7c3aed;
+      --purple-light:  #ede9fe;
+      --shadow-sm:     0 1px 3px rgba(0,0,0,.06), 0 1px 2px rgba(0,0,0,.04);
+      --shadow-md:     0 4px 12px rgba(0,0,0,.08), 0 2px 4px rgba(0,0,0,.04);
+      --shadow-win:    0 20px 60px rgba(0,0,0,.18), 0 8px 24px rgba(0,0,0,.10);
+      --radius-sm:     6px;
+      --radius-md:     10px;
+      --radius-lg:     14px;
+      --radius-win:    14px;
+      --font-ui:       'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      --font-display:  'Space Grotesk', sans-serif;
+    }
+
+    html, body {
+      height: 100%; overflow: hidden;
+      background: var(--bg);
+      font-family: var(--font-ui);
+      display: flex; align-items: center; justify-content: center;
+      padding: 24px;
+    }
+
+    /* ── Window ── */
+    .window {
+      width: 920px; max-width: 100%;
+      height: calc(100vh - 48px);
+      max-height: 700px; min-height: 500px;
+      background: var(--win-bg);
+      border-radius: var(--radius-win);
+      box-shadow: var(--shadow-win);
+      overflow: hidden; display: flex; flex-direction: column;
+      animation: fadeUp .3s ease both;
+    }
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(8px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ── Title Bar ── */
+    .titlebar {
+      height: 44px; background: var(--bar-bg);
+      border-bottom: 1px solid var(--bar-border);
+      display: flex; align-items: center;
+      padding: 0 16px; gap: 10px;
+      flex-shrink: 0; position: relative; user-select: none;
+    }
+    .back-btn {
+      display: flex; align-items: center; gap: 5px;
+      background: none; border: none; cursor: pointer;
+      color: var(--accent); font-family: var(--font-ui);
+      font-size: 13px; font-weight: 500;
+      padding: 4px 8px 4px 2px; border-radius: var(--radius-sm);
+      transition: background .12s; text-decoration: none;
+    }
+    .back-btn:hover { background: var(--accent-light); }
+    .back-btn svg { width: 16px; height: 16px; }
+    .titlebar-label {
+      position: absolute; left: 50%; transform: translateX(-50%);
+      font-family: var(--font-display);
+      font-size: 13px; font-weight: 600;
+      color: var(--text-secondary); letter-spacing: .01em; pointer-events: none;
+    }
+    /* decorative accent dots */
+    .titlebar-dots { margin-left: auto; display: flex; gap: 5px; align-items: center; }
+    .titlebar-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--border); }
+    .titlebar-dot.a { background: #ff5f57; }
+    .titlebar-dot.b { background: #febc2e; }
+    .titlebar-dot.c { background: #28c840; }
+
+    /* ── Tab bar ── */
+    .tab-bar {
+      display: flex; gap: 2px; padding: 0 20px;
+      background: var(--bar-bg);
+      border-bottom: 1px solid var(--bar-border);
+      flex-shrink: 0;
+    }
+    .tab-btn {
+      display: flex; align-items: center; gap: 7px;
+      padding: 10px 16px;
+      font-family: var(--font-ui); font-size: 13px; font-weight: 500;
+      color: var(--text-tertiary); cursor: pointer;
+      background: none; border: none;
+      border-bottom: 2px solid transparent;
+      transition: color .15s, border-color .15s;
+      position: relative; top: 1px; white-space: nowrap;
+    }
+    .tab-btn .tab-icon { font-size: 15px; }
+    .tab-btn:hover { color: var(--text-secondary); }
+    .tab-btn.active { color: var(--accent); border-bottom-color: var(--accent); }
+
+    /* ── Body: full scrollable content ── */
+    .body-scroll {
+      flex: 1; overflow-y: auto; min-height: 0;
+      background: var(--win-bg);
+    }
+    .body-scroll::-webkit-scrollbar { width: 6px; }
+    .body-scroll::-webkit-scrollbar-track { background: transparent; }
+    .body-scroll::-webkit-scrollbar-thumb { background: #d4d4d4; border-radius: 3px; }
+    .body-scroll::-webkit-scrollbar-thumb:hover { background: #aaa; }
+
+    /* ── Tab pages ── */
+    .tab-page { display: none; padding: 24px 24px 28px; }
+    .tab-page.active { display: block; animation: fadeUp .2s ease both; }
+
+    /* ── Section header ── */
+    .section-intro { margin-bottom: 20px; }
+    .section-intro h2 {
+      font-family: var(--font-display);
+      font-size: 18px; font-weight: 700;
+      color: var(--text-primary); letter-spacing: -.01em; margin-bottom: 4px;
+    }
+    .section-intro p { font-size: 13px; color: var(--text-secondary); line-height: 1.55; }
+
+    /* ── Category divider ── */
+    .cat-divider {
+      display: flex; align-items: center; gap: 10px; margin: 24px 0 14px;
+    }
+    .cat-label {
+      font-size: 10px; font-weight: 700; letter-spacing: .1em;
+      text-transform: uppercase; color: var(--text-tertiary); white-space: nowrap;
+    }
+    .cat-line { flex: 1; height: 1px; background: var(--border-soft); }
+
+    /* ── Client grid — 2 col ── */
+    .client-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+
+    /* ── Client card ── */
+    .client-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      transition: border-color .2s, box-shadow .2s;
+    }
+    .client-card:hover {
+      border-color: var(--accent);
+      box-shadow: var(--shadow-md);
+    }
+    .client-card-img {
+      width: 100%; height: 90px;
+      display: flex; align-items: center; justify-content: center;
+      background: var(--surface-2);
+      border-bottom: 1px solid var(--border-soft);
+      padding: 16px;
+    }
+    .client-card-img img { max-height: 58px; max-width: 100%; object-fit: contain; }
+    .client-card-body { padding: 14px 16px 12px; }
+    .client-card-name {
+      font-family: var(--font-display);
+      font-size: 14px; font-weight: 600;
+      color: var(--text-primary); margin-bottom: 5px;
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .client-card-desc { font-size: 12px; color: var(--text-secondary); line-height: 1.55; margin-bottom: 12px; }
+    .client-actions { display: flex; gap: 6px; flex-wrap: wrap; }
+
+    /* ── Tool grid — 3 col ── */
+    .tool-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+    .tool-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 14px 14px 12px;
+      display: flex; flex-direction: column; gap: 8px;
+      transition: border-color .18s, box-shadow .18s;
+    }
+    .tool-card:hover { border-color: var(--accent); box-shadow: var(--shadow-sm); }
+    .tool-icon {
+      width: 40px; height: 40px; border-radius: 10px;
+      background: var(--surface-2);
+      display: flex; align-items: center; justify-content: center;
+      overflow: hidden;
+    }
+    .tool-icon img { width: 32px; height: 32px; object-fit: contain; }
+    .tool-name {
+      font-family: var(--font-display);
+      font-size: 13px; font-weight: 600; color: var(--text-primary);
+    }
+    .tool-desc { font-size: 11.5px; color: var(--text-secondary); line-height: 1.55; flex: 1; }
+    .tool-actions { display: flex; gap: 5px; flex-wrap: wrap; margin-top: 2px; }
+    .tool-help-link {
+      font-size: 11px; color: var(--text-tertiary); text-decoration: none;
+      cursor: pointer; transition: color .12s;
+    }
+    .tool-help-link:hover { color: var(--accent); }
+
+    /* ── Game grid — 3 col ── */
+    .game-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+    .game-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      display: flex; flex-direction: column;
+      transition: border-color .18s, transform .18s, box-shadow .18s;
+    }
+    .game-card:hover {
+      border-color: var(--accent);
+      box-shadow: var(--shadow-md);
+      transform: translateY(-2px);
+    }
+    .game-thumb {
+      width: 100%; height: 110px; overflow: hidden;
+      background: var(--surface-2); position: relative;
+    }
+    .game-thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .game-thumb-placeholder {
+      width: 100%; height: 100%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 32px;
+    }
+    .game-genre {
+      position: absolute; top: 6px; right: 6px;
+      padding: 2px 7px; border-radius: 20px;
+      font-size: 9.5px; font-weight: 700; letter-spacing: .05em; text-transform: uppercase;
+      background: rgba(0,0,0,.52); color: #fff;
+    }
+    .free-badge {
+      position: absolute; top: 6px; left: 6px;
+      padding: 2px 7px; border-radius: 20px;
+      font-size: 9.5px; font-weight: 700; letter-spacing: .05em; text-transform: uppercase;
+      background: var(--green-light); color: var(--green);
+      border: 1px solid rgba(22,163,74,.25);
+    }
+    .game-body { padding: 12px 12px 10px; flex: 1; display: flex; flex-direction: column; gap: 6px; }
+    .game-name {
+      font-family: var(--font-display);
+      font-size: 13px; font-weight: 600; color: var(--text-primary);
+    }
+    .game-desc { font-size: 11.5px; color: var(--text-secondary); line-height: 1.5; flex: 1; }
+    .game-actions { display: flex; gap: 5px; flex-wrap: wrap; margin-top: 4px; }
+
+    /* ── Buttons ── */
+    .btn {
+      display: inline-flex; align-items: center; gap: 5px;
+      padding: 5px 11px; border-radius: var(--radius-sm);
+      font-family: var(--font-ui); font-size: 11.5px; font-weight: 500;
+      cursor: pointer; border: none; transition: all .12s;
+      text-decoration: none; white-space: nowrap;
+    }
+    .btn:active { transform: scale(.97); }
+    .btn img { width: 13px; height: 13px; object-fit: contain; }
+
+    .btn-install  { background: var(--green-light); color: var(--green); border: 1px solid rgba(22,163,74,.25); }
+    .btn-install:hover  { background: #bbf7d0; border-color: var(--green); }
+    .btn-remove   { background: var(--red-light); color: var(--red); border: 1px solid rgba(220,38,38,.2); }
+    .btn-remove:hover   { background: #fecaca; border-color: var(--red); }
+    .btn-launch   { background: var(--purple-light); color: var(--purple); border: 1px solid rgba(124,58,237,.2); }
+    .btn-launch:hover   { background: #ddd6fe; border-color: var(--purple); }
+    .btn-watch    { background: #fee2e2; color: #b91c1c; border: 1px solid rgba(185,28,28,.18); }
+    .btn-watch:hover    { background: #fecaca; border-color: #b91c1c; }
+    .btn-neutral  { background: var(--surface-2); color: var(--text-secondary); border: 1px solid var(--border); }
+    .btn-neutral:hover  { background: var(--surface-3); color: var(--text-primary); }
+    .btn-neon     { background: var(--accent-light); color: var(--accent); border: 1px solid rgba(37,99,235,.2); }
+    .btn-neon:hover     { background: #bfdbfe; border-color: var(--accent); }
+
+    /* ── Help link ── */
+    .help-link {
+      display: inline-flex; align-items: center; gap: 3px;
+      font-size: 11px; color: var(--text-tertiary);
+      cursor: pointer; background: none; border: none;
+      padding: 0; font-family: var(--font-ui); transition: color .12s;
+    }
+    .help-link:hover { color: var(--accent); }
+    .help-link svg { width: 12px; height: 12px; }
+
+    /* ── Footer ── */
+    .win-footer {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 9px 22px; border-top: 1px solid var(--bar-border);
+      background: var(--bar-bg); flex-shrink: 0;
+    }
+    .discourse-link {
+      display: flex; align-items: center; gap: 7px;
+      text-decoration: none; font-size: 12px; color: var(--text-tertiary);
+    }
+    .discourse-link img { height: 16px; opacity: .7; }
+    .social-links { display: flex; gap: 4px; }
+    .social-link {
+      width: 26px; height: 26px; border-radius: var(--radius-sm);
+      display: flex; align-items: center; justify-content: center;
+      color: var(--text-tertiary); text-decoration: none;
+      transition: background .12s, color .12s;
+      border: none; background: transparent; cursor: pointer;
+    }
+    .social-link:hover { background: #ebebeb; color: var(--text-primary); }
+    .social-link svg { width: 13px; height: 13px; }
+  </style>
+</head>
+<body>
+<div class="window">
+
+  <!-- ── Title Bar ── -->
+  <div class="titlebar">
+    <a href="index" class="back-btn">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.2" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5"/>
+      </svg>
+      Back
+    </a>
+    <span class="titlebar-label">Gaming</span>
+    <div class="titlebar-dots">
+      <div class="titlebar-dot a"></div>
+      <div class="titlebar-dot b"></div>
+      <div class="titlebar-dot c"></div>
     </div>
-    <script>
-        function client_tab() {
-            $('[href="#game-clients"]').tab('show');
-            location.href = "#"; location.href = "#steamid"
-        }
-    </script>
-     <!-- <script src="js/jquery-2.1.4.js"></script>
-   <script src="js/tether.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/janimate.js"></script>
-   <script src="js/confetti.js"></script>--> <!-- Confetti only appears on special events -->
-     <!-- <script src="js/welcome.js"></script> -->
-</body>
+  </div>
 
+  <!-- ── Tab Bar ── -->
+  <div class="tab-bar">
+    <button class="tab-btn active" data-tab="clients">
+      <span class="tab-icon">🎮</span> Gaming Clients
+    </button>
+    <button class="tab-btn" data-tab="tools">
+      <span class="tab-icon">🔧</span> Gaming Tools
+    </button>
+    <button class="tab-btn" data-tab="games">
+      <span class="tab-icon">🕹️</span> Games List
+    </button>
+  </div>
+
+  <!-- ── Scrollable Content ── -->
+  <div class="body-scroll">
+
+    <!-- ══════════ CLIENTS ══════════ -->
+    <div class="tab-page active" id="page-clients">
+      <div class="section-intro">
+        <h2>Gaming Clients</h2>
+        <p>Download, install and manage your games from one place.</p>
+      </div>
+
+      <div class="client-grid">
+
+        <!-- Steam -->
+        <div class="client-card" id="steamid">
+          <div class="client-card-img">
+            <img src="img/logos/steam_app_icon.png" alt="Steam" />
+          </div>
+          <div class="client-card-body">
+            <div class="client-card-name">
+              Steam
+              <button class="help-link" data-cmd="link?https://help.steampowered.com/en/">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z"/></svg>
+                Docs
+              </button>
+            </div>
+            <div class="client-card-desc">The ultimate destination for playing, discussing, and creating games. Thousands of Linux-native and Proton-compatible titles.</div>
+            <div class="client-actions">
+              <button class="btn btn-install" id="steam-install" data-cmd="install?steam">▼ Install</button>
+              <button class="btn btn-remove"  id="steam-remove"  data-cmd="remove?steam">✕ Remove</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Lutris -->
+        <div class="client-card">
+          <div class="client-card-img">
+            <img src="img/logos/lutris.png" alt="Lutris" />
+          </div>
+          <div class="client-card-body">
+            <div class="client-card-name">
+              Lutris
+              <button class="help-link" data-cmd="link?https://forums.lutris.net/t/very-brief-tutorial-on-manually-installing-a-game-in-lutris/2028">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z"/></svg>
+                Guide
+              </button>
+            </div>
+            <div class="client-card-desc">Open gaming platform for Linux. Manage almost all your games — GOG, Epic, Humble Bundle, and more — in one place.</div>
+            <div class="client-actions">
+              <button class="btn btn-install" id="lutris-install" data-cmd="install?lutris">▼ Install</button>
+              <button class="btn btn-remove"  id="lutris-remove"  data-cmd="remove?lutris">✕ Remove</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- RetroArch -->
+        <div class="client-card">
+          <div class="client-card-img">
+            <img src="img/logos/retroarch.jpg" alt="RetroArch" />
+          </div>
+          <div class="client-card-body">
+            <div class="client-card-name">
+              RetroArch
+              <button class="help-link" data-cmd="link?https://www.retroarch.com/">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z"/></svg>
+                FAQ
+              </button>
+            </div>
+            <div class="client-card-desc">A powerful frontend for emulators, game engines and media players. Play classic consoles on your modern machine.</div>
+            <div class="client-actions">
+              <button class="btn btn-install" id="retroarch-install" data-cmd="install?retroarch">▼ Install</button>
+              <button class="btn btn-remove"  id="retroarch-remove"  data-cmd="remove?retroarch">✕ Remove</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- MiniGalaxy -->
+        <div class="client-card">
+          <div class="client-card-img">
+            <img src="img/screenshots/minigalaxy.jpg" alt="MiniGalaxy" style="height:90px;width:100%;object-fit:cover;" />
+          </div>
+          <div class="client-card-body">
+            <div class="client-card-name">
+              MiniGalaxy
+              <button class="help-link" data-cmd="link?https://www.gog.com/galaxy">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z"/></svg>
+                GOG
+              </button>
+            </div>
+            <div class="client-card-desc">A GOG client for Linux. Install, manage and update native and Windows games including DLCs straight from your GOG library.</div>
+            <div class="client-actions">
+              <button class="btn btn-install" id="minigalaxy-install" data-cmd="install?minigalaxy">▼ Install</button>
+              <button class="btn btn-remove"  id="minigalaxy-remove"  data-cmd="remove?minigalaxy">✕ Remove</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ══════════ TOOLS ══════════ -->
+    <div class="tab-page" id="page-tools">
+      <div class="section-intro">
+        <h2>Gaming Tools</h2>
+        <p>Enhance your experience with peripherals, performance overlays, RGB control and streaming.</p>
+      </div>
+
+      <div class="cat-divider"><span class="cat-label">Peripherals</span><div class="cat-line"></div></div>
+      <div class="tool-grid">
+
+        <div class="tool-card">
+          <div class="tool-icon"><img src="img/screenshots/piper-resolutionpage.png" alt="Piper" /></div>
+          <div class="tool-name">Piper</div>
+          <div class="tool-desc">GTK+ application to configure gaming mice using ratbagd. Fine-tune DPI, buttons and lighting on supported hardware.</div>
+          <div class="tool-actions">
+            <button class="btn btn-install" id="piper-install" data-cmd="install?piper">▼ Install</button>
+            <button class="btn btn-remove"  id="piper-remove"  data-cmd="remove?piper">✕ Remove</button>
+            <button class="help-link" data-cmd="link?https://github.com/libratbag/piper">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z"/></svg>
+              GitHub
+            </button>
+          </div>
+        </div>
+
+        <div class="tool-card">
+          <div class="tool-icon"><img src="img/screenshots/cpufreq-applet.jpg" alt="CPU Freq" /></div>
+          <div class="tool-name">CPU Frequency Applet</div>
+          <div class="tool-desc">Control processor frequency (Sandy Bridge and newer) directly from the Budgie panel for instant performance switching.</div>
+          <div class="tool-actions">
+            <button class="btn btn-neon" data-cmd="link?budgie-applets.html#anchor1">Install from Budgie Extras</button>
+            <button class="help-link" data-cmd="link?https://github.com/Dirli/budgie-cpufreq-applet">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z"/></svg>
+              GitHub
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="cat-divider"><span class="cat-label">RGB &amp; Lighting</span><div class="cat-line"></div></div>
+      <div class="tool-grid">
+
+        <div class="tool-card">
+          <div class="tool-icon"><img src="img/logos/OpenRGB.png" alt="OpenRGB" /></div>
+          <div class="tool-name">OpenRGB</div>
+          <div class="tool-desc">Generic open-source RGB management for Linux. Control any RGB hardware without vendor lock-in or proprietary bloatware.</div>
+          <div class="tool-actions">
+            <button class="btn btn-install" id="openrbg-install" data-cmd="install?openrbg">▼ Install</button>
+            <button class="btn btn-remove"  id="openrbg-remove"  data-cmd="remove?openrbg">✕ Remove</button>
+            <button class="help-link" data-cmd="link?https://openrgb.org/">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z"/></svg>
+              Website
+            </button>
+          </div>
+        </div>
+
+        <div class="tool-card">
+          <div class="tool-icon"><img src="img/logos/openrazer.jpg" alt="OpenRazer" /></div>
+          <div class="tool-name">Polychromatic &amp; OpenRazer</div>
+          <div class="tool-desc">Polychromatic frontend for OpenRazer — enables Razer devices to control RGB lighting effects and macros on Linux.</div>
+          <div class="tool-actions">
+            <button class="btn btn-install" id="polychromatic-install" data-cmd="install?polychromatic">▼ Install</button>
+            <button class="btn btn-remove"  id="polychromatic-remove"  data-cmd="remove?polychromatic">✕ Remove</button>
+            <button class="help-link" data-cmd="link?https://polychromatic.app/">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z"/></svg>
+              Website
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="cat-divider"><span class="cat-label">Performance &amp; Monitoring</span><div class="cat-line"></div></div>
+      <div class="tool-grid">
+
+        <div class="tool-card">
+          <div class="tool-icon"><img src="img/screenshots/MangoHUD.gif" alt="MangoHUD" /></div>
+          <div class="tool-name">GOverlay + MangoHUD</div>
+          <div class="tool-desc">Vulkan and OpenGL overlay for monitoring FPS, temperatures, CPU/GPU load and more. GOverlay provides a GUI for easy configuration.</div>
+          <div class="tool-actions">
+            <button class="btn btn-install" id="mangohud-install" data-cmd="install?mangohud">▼ Install</button>
+            <button class="btn btn-remove"  id="mangohud-remove"  data-cmd="remove?mangohud">✕ Remove</button>
+            <button class="help-link" data-cmd="link?https://github.com/flightlessmango/MangoHud#normal-usage">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z"/></svg>
+              GitHub
+            </button>
+          </div>
+        </div>
+
+        <div class="tool-card corectrlppa">
+          <div class="tool-icon"><img src="img/logos/corectrl.png" alt="CoreCtrl" /></div>
+          <div class="tool-name">CoreCtrl</div>
+          <div class="tool-desc">Control hardware performance using application profiles. Overclock, set fan curves and power limits per-application for AMD GPUs.</div>
+          <div class="tool-actions">
+            <button class="btn btn-install" id="corectrlppa-install" data-cmd="install?corectrlppa">▼ Install</button>
+            <button class="btn btn-remove"  id="corectrlppa-remove"  data-cmd="remove?corectrlppa">✕ Remove</button>
+            <button class="help-link" data-cmd="link?https://gitlab.com/corectrl/corectrl">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z"/></svg>
+              GitLab
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="cat-divider"><span class="cat-label">Communication &amp; Streaming</span><div class="cat-line"></div></div>
+      <div class="tool-grid">
+
+        <div class="tool-card">
+          <div class="tool-icon"><img src="img/logos/discord.png" alt="Discord" /></div>
+          <div class="tool-name">Discord</div>
+          <div class="tool-desc">VoIP, instant messaging and digital distribution platform. The go-to for gaming communities, voice chat and screen sharing.</div>
+          <div class="tool-actions">
+            <button class="btn btn-install" id="discord-install" data-cmd="install?discord">▼ Install</button>
+            <button class="btn btn-remove"  id="discord-remove"  data-cmd="remove?discord">✕ Remove</button>
+            <button class="help-link" data-cmd="link?https://discord.com/">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z"/></svg>
+              Website
+            </button>
+          </div>
+        </div>
+
+        <div class="tool-card">
+          <div class="tool-icon"><img src="img/logos/obs-studio.png" alt="OBS" /></div>
+          <div class="tool-name">OBS Studio</div>
+          <div class="tool-desc">Free and open-source software for video recording and live streaming. The industry standard for content creators on Linux.</div>
+          <div class="tool-actions">
+            <button class="btn btn-install" id="obs-studio-install" data-cmd="install?obs-studio">▼ Install</button>
+            <button class="btn btn-remove"  id="obs-studio-remove"  data-cmd="remove?obs-studio">✕ Remove</button>
+            <button class="help-link" data-cmd="link?https://obsproject.com/">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z"/></svg>
+              Website
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ══════════ GAMES LIST ══════════ -->
+    <div class="tab-page" id="page-games">
+      <div class="section-intro">
+        <h2>Games List</h2>
+        <p>A community-curated selection of great Linux-native and Steam games.</p>
+      </div>
+
+      <div class="cat-divider"><span class="cat-label">Free &amp; Open Source</span><div class="cat-line"></div></div>
+      <div class="game-grid">
+
+        <div class="game-card">
+          <div class="game-thumb">
+            <img src="img/logos/xonotic.png" alt="Xonotic" />
+            <span class="game-genre">FPS</span>
+            <span class="free-badge">FREE</span>
+          </div>
+          <div class="game-body">
+            <div class="game-name">Xonotic</div>
+            <div class="game-desc">Free &amp; open-source multiplayer first-person shooter. Fast-paced arena combat with full mod support.</div>
+            <div class="game-actions">
+              <button class="btn btn-watch" data-cmd="link?https://www.youtube.com/watch?v=jijLut9GqrY">▶ Watch</button>
+              <button class="btn btn-install" id="xonotic-install" data-cmd="install?xonotic">▼ Install</button>
+              <button class="btn btn-remove"  id="xonotic-remove"  data-cmd="remove?xonotic">✕ Remove</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="cat-divider"><span class="cat-label">Steam Games</span><div class="cat-line"></div></div>
+      <div class="game-grid">
+
+        <div class="game-card">
+          <div class="game-thumb">
+            <img src="img/screenshots/valheim.jpg" alt="Valheim" />
+            <span class="game-genre">Survival RPG</span>
+          </div>
+          <div class="game-body">
+            <div class="game-name">Valheim</div>
+            <div class="game-desc">Norse mythology survival game. Explore, build, and conquer the tenth world with friends.</div>
+            <div class="game-actions">
+              <button class="btn btn-watch"  data-cmd="link?https://www.youtube.com/watch?v=5mHRJ1KFe20">▶ Watch</button>
+              <button class="btn btn-launch" id="valheim-remove" data-cmd="steam?892970">
+                <img src="img/logos/steam.png" alt="" /> Launch
+              </button>
+              <button class="btn btn-neon"   id="valheim-install" data-goto-clients="steam">Install Steam</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="game-card">
+          <div class="game-thumb">
+            <img src="img/screenshots/loop-hero.jpg" alt="Loop Hero" />
+            <span class="game-genre">Deck Builder</span>
+          </div>
+          <div class="game-body">
+            <div class="game-name">Loop Hero</div>
+            <div class="game-desc">8-bit retro-styled deck-building game. Place cards to shape the world and power up your hero on an infinite loop.</div>
+            <div class="game-actions">
+              <button class="btn btn-watch"  data-cmd="link?https://www.youtube.com/watch?v=lt_T8LhmnT8">▶ Watch</button>
+              <button class="btn btn-launch" id="loop-hero-remove" data-cmd="steam?1282730">
+                <img src="img/logos/steam.png" alt="" /> Launch
+              </button>
+              <button class="btn btn-neon"   id="loop-hero-install" data-goto-clients="steam">Install Steam</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="game-card">
+          <div class="game-thumb">
+            <img src="img/screenshots/no-longer-home.jpg" alt="No Longer Home" />
+            <span class="game-genre">Point &amp; Click</span>
+          </div>
+          <div class="game-body">
+            <div class="game-name">No Longer Home</div>
+            <div class="game-desc">Semi-autobiographical point &amp; click adventure exploring themes of belonging, identity and leaving home.</div>
+            <div class="game-actions">
+              <button class="btn btn-watch"  data-cmd="link?https://www.youtube.com/watch?v=4_D2vUNj3vs">▶ Watch</button>
+              <button class="btn btn-launch" id="no-longer-home-remove" data-cmd="steam?651490">
+                <img src="img/logos/steam.png" alt="" /> Launch
+              </button>
+              <button class="btn btn-neon"   id="no-longer-home-install" data-goto-clients="steam">Install Steam</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="game-card">
+          <div class="game-thumb">
+            <img src="img/screenshots/boyfriend-dungeon.jpg" alt="Boyfriend Dungeon" />
+            <span class="game-genre">Hack &amp; Slash</span>
+          </div>
+          <div class="game-body">
+            <div class="game-name">Boyfriend Dungeon</div>
+            <div class="game-desc">Dating sim meets hack-and-slash dungeon crawler. Romance your weapons and battle through stylish floors.</div>
+            <div class="game-actions">
+              <button class="btn btn-watch"  data-cmd="link?https://www.youtube.com/watch?v=wOhVJuN_3Ao">▶ Watch</button>
+              <button class="btn btn-launch" id="boyfriend-dungeon-remove" data-cmd="steam?674930">
+                <img src="img/logos/steam.png" alt="" /> Launch
+              </button>
+              <button class="btn btn-neon"   id="boyfriend-dungeon-install" data-goto-clients="steam">Install Steam</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="game-card">
+          <div class="game-thumb">
+            <img src="img/screenshots/binding-of-issac-rebirth.jpg" alt="Binding of Isaac" />
+            <span class="game-genre">Roguelike</span>
+          </div>
+          <div class="game-body">
+            <div class="game-name">Binding of Isaac: Rebirth</div>
+            <div class="game-desc">Top-down dungeon crawler roguelike. High difficulty, hundreds of items, and near-infinite replayability.</div>
+            <div class="game-actions">
+              <button class="btn btn-watch"  data-cmd="link?https://www.youtube.com/watch?v=oG1CC8x873M">▶ Watch</button>
+              <button class="btn btn-launch" id="binding-of-isaac-remove" data-cmd="steam?250900">
+                <img src="img/logos/steam.png" alt="" /> Launch
+              </button>
+              <button class="btn btn-neon"   id="binding-of-isaac-install" data-goto-clients="steam">Install Steam</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div><!-- end body-scroll -->
+
+  <!-- ── Footer ── -->
+  <div class="win-footer">
+    <a href="#" class="discourse-link">
+      <span style="font-size:11px;color:#9b9b9b;">Get support on</span>
+      <img src="public/img/logos/discourse-logo-dark.svg" alt="Discourse" />
+    </a>
+    <div class="social-links">
+      <a href="#" class="social-link" title="Blog"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width=".3" d="M19 7h1v12a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h11.5M7 14h6m-6 3h6m0-10h.5m-.5 3h.5M7 7h3v3H7V7Z"/></svg></a>
+      <a href="#" class="social-link" title="Twitter"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/></svg></a>
+      <a href="#" class="social-link" title="GitHub"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg></a>
+      <a href="#" class="social-link" title="Slack"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M3.362 10.11c0 .926-.756 1.681-1.681 1.681S0 11.036 0 10.111C0 9.186.756 8.43 1.68 8.43h1.682v1.68zm.846 0c0-.924.756-1.68 1.681-1.68s1.681.756 1.681 1.68v4.21c0 .924-.756 1.68-1.68 1.68a1.685 1.685 0 0 1-1.682-1.68v-4.21zM5.89 3.362c-.926 0-1.682-.756-1.682-1.681S4.964 0 5.89 0s1.68.756 1.68 1.68v1.682H5.89zm0 .846c.924 0 1.68.756 1.68 1.681S6.814 7.57 5.89 7.57H1.68C.757 7.57 0 6.814 0 5.89c0-.926.756-1.682 1.68-1.682h4.21zm6.749 1.682c0-.926.755-1.682 1.68-1.682.925 0 1.681.756 1.681 1.681s-.756 1.681-1.68 1.681h-1.681V5.89zm-.848 0c0 .924-.755 1.68-1.68 1.68A1.685 1.685 0 0 1 8.43 5.89V1.68C8.43.757 9.186 0 10.11 0c.926 0 1.681.756 1.681 1.68v4.21zm-1.681 6.748c.926 0 1.682.756 1.682 1.681S11.036 16 10.11 16s-1.681-.756-1.681-1.68v-1.682h1.68zm0-.847c-.924 0-1.68-.755-1.68-1.68 0-.925.756-1.681 1.68-1.681h4.21c.924 0 1.68.756 1.68 1.68 0 .926-.756 1.681-1.68 1.681h-4.21z"/></svg></a>
+    </div>
+  </div>
+
+</div><!-- end .window -->
+
+<script is:inline>
+(function () {
+  function cmd(command) { console.log('cmd:', command); }
+  window.cmd = cmd;
+
+  document.addEventListener('DOMContentLoaded', function () {
+
+    /* ── Tab switching ── */
+    document.querySelectorAll('.tab-btn[data-tab]').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var tab = btn.dataset.tab;
+        document.querySelectorAll('.tab-btn').forEach(function (b) { b.classList.remove('active'); });
+        document.querySelectorAll('.tab-page').forEach(function (p) { p.classList.remove('active'); });
+        btn.classList.add('active');
+        var page = document.getElementById('page-' + tab);
+        if (page) { page.classList.add('active'); }
+        document.querySelector('.body-scroll').scrollTop = 0;
+      });
+    });
+
+    /* ── cmd() buttons ── */
+    document.querySelectorAll('[data-cmd]').forEach(function (el) {
+      el.addEventListener('click', function () { cmd(el.dataset.cmd); });
+    });
+
+    /* ── "Install Steam" → jump to Clients tab & scroll to Steam ── */
+    document.querySelectorAll('[data-goto-clients]').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        document.querySelectorAll('.tab-btn').forEach(function (b) { b.classList.remove('active'); });
+        document.querySelectorAll('.tab-page').forEach(function (p) { p.classList.remove('active'); });
+        var clientTab = document.querySelector('.tab-btn[data-tab="clients"]');
+        if (clientTab) clientTab.classList.add('active');
+        var clientPage = document.getElementById('page-clients');
+        if (clientPage) clientPage.classList.add('active');
+        var target = document.getElementById('steamid');
+        if (target) { target.scrollIntoView({ behavior: 'smooth', block: 'center' }); }
+      });
+    });
+
+  });
+})();
+</script>
+</body>
 </html>

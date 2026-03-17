@@ -1,11 +1,415 @@
+---
+// Ubuntu Budgie Welcome — Introduction
+---
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-		<script>import "preline/dist/preline.js";</script>
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="viewport" content="width=device-width" />
+  <title>Ubuntu Budgie Welcome — Introduction</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-	</head>
-	<body></body>
+    :root {
+      --bg:            #e8e8e8;
+      --win-bg:        #ffffff;
+      --bar-bg:        #f5f5f5;
+      --bar-border:    #e0e0e0;
+      --text-primary:  #1a1a1a;
+      --text-secondary:#6b6b6b;
+      --text-tertiary: #9b9b9b;
+      --accent:        #2563eb;
+      --accent-light:  #dbeafe;
+      --hover-bg:      #ebebeb;
+      --card-border:   #e8e8e8;
+      --shadow-sm:     0 1px 3px rgba(0,0,0,.06), 0 1px 2px rgba(0,0,0,.04);
+      --shadow-md:     0 4px 12px rgba(0,0,0,.08), 0 2px 4px rgba(0,0,0,.04);
+      --shadow-win:    0 20px 60px rgba(0,0,0,.18), 0 8px 24px rgba(0,0,0,.10);
+      --radius-sm:     6px;
+      --radius-md:     10px;
+      --radius-lg:     14px;
+      --radius-win:    14px;
+      --font:          'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+
+    html, body {
+      height: 100%; overflow: hidden;
+      background: var(--bg); font-family: var(--font);
+      display: flex; align-items: center; justify-content: center;
+      padding: 24px;
+    }
+
+    /* ── Window ── */
+    .window {
+      width: 860px; max-width: 100%;
+      height: calc(100vh - 48px);
+      max-height: 680px; min-height: 480px;
+      background: var(--win-bg); border-radius: var(--radius-win);
+      box-shadow: var(--shadow-win); overflow: hidden;
+      display: flex; flex-direction: column;
+      animation: fadeUp .3s ease both;
+    }
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(6px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ── Title Bar ── */
+    .titlebar {
+      height: 44px; background: var(--bar-bg);
+      border-bottom: 1px solid var(--bar-border);
+      display: flex; align-items: center;
+      padding: 0 16px; gap: 8px;
+      flex-shrink: 0; position: relative; user-select: none;
+    }
+    .back-btn {
+      display: flex; align-items: center; gap: 5px;
+      background: none; border: none; cursor: pointer;
+      color: var(--accent); font-family: var(--font);
+      font-size: 13px; font-weight: 500;
+      padding: 4px 6px 4px 2px; border-radius: var(--radius-sm);
+      transition: background .12s; text-decoration: none;
+    }
+    .back-btn:hover { background: var(--accent-light); }
+    .back-btn svg { width: 16px; height: 16px; }
+    .titlebar-label {
+      position: absolute; left: 50%; transform: translateX(-50%);
+      font-size: 13px; font-weight: 500;
+      color: var(--text-secondary); letter-spacing: -.01em; pointer-events: none;
+    }
+
+    /* ── Main layout: hero strip left, scroll right ── */
+    .main { flex: 1; display: flex; overflow: hidden; min-height: 0; }
+
+    /* ── Hero sidebar ── */
+    .hero-panel {
+      width: 220px; flex-shrink: 0;
+      background: linear-gradient(160deg, #eff6ff 0%, #f5f3ff 100%);
+      border-right: 1px solid var(--card-border);
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: center;
+      padding: 28px 20px; gap: 16px;
+      position: relative; overflow: hidden;
+    }
+    /* subtle decorative circles */
+    .hero-panel::before {
+      content: '';
+      position: absolute; top: -60px; right: -60px;
+      width: 180px; height: 180px; border-radius: 50%;
+      background: rgba(37,99,235,.06); pointer-events: none;
+    }
+    .hero-panel::after {
+      content: '';
+      position: absolute; bottom: -40px; left: -40px;
+      width: 140px; height: 140px; border-radius: 50%;
+      background: rgba(124,58,237,.05); pointer-events: none;
+    }
+    .bird-wrap {
+      width: 86px; height: 86px;
+      background: #ffffff;
+      border-radius: 22px;
+      display: flex; align-items: center; justify-content: center;
+      box-shadow: var(--shadow-md), 0 0 0 1px rgba(0,0,0,.05);
+      position: relative; z-index: 1;
+    }
+    .bird-wrap img { width: 68px; height: 68px; object-fit: contain; }
+    .hero-wordmark { height: 22px; position: relative; z-index: 1; }
+    .hero-tagline {
+      font-size: 12px; color: var(--text-secondary);
+      text-align: center; line-height: 1.55;
+      position: relative; z-index: 1;
+    }
+    .hero-version {
+      font-size: 11px; font-weight: 600;
+      color: var(--accent); background: var(--accent-light);
+      padding: 3px 10px; border-radius: 20px;
+      position: relative; z-index: 1;
+    }
+
+    /* ── Scroll content ── */
+    .content-scroll {
+      flex: 1; overflow-y: auto; min-height: 0;
+      padding: 26px 28px 28px;
+    }
+    .content-scroll::-webkit-scrollbar { width: 6px; }
+    .content-scroll::-webkit-scrollbar-track { background: transparent; }
+    .content-scroll::-webkit-scrollbar-thumb { background: #d4d4d4; border-radius: 3px; }
+    .content-scroll::-webkit-scrollbar-thumb:hover { background: #aaa; }
+
+    /* ── Page heading ── */
+    .page-title {
+      font-size: 20px; font-weight: 600;
+      color: var(--text-primary); letter-spacing: -.02em; margin-bottom: 4px;
+    }
+    .page-subtitle {
+      font-size: 13px; color: var(--text-secondary); line-height: 1.55;
+      margin-bottom: 22px; max-width: 480px;
+    }
+
+    /* ── Highlight row — 3 pillars across the top ── */
+    .pillars { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-bottom: 22px; }
+    .pillar {
+      background: #fafafa; border: 1px solid var(--card-border);
+      border-radius: var(--radius-md); padding: 14px 14px 12px;
+      display: flex; flex-direction: column; gap: 7px;
+      animation: fadeUp .28s ease both;
+    }
+    .pillar:nth-child(1) { animation-delay: .04s; }
+    .pillar:nth-child(2) { animation-delay: .08s; }
+    .pillar:nth-child(3) { animation-delay: .12s; }
+    .pillar:hover { box-shadow: var(--shadow-sm); }
+    .pillar-icon {
+      width: 32px; height: 32px; border-radius: 8px;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .pillar-icon svg { width: 17px; height: 17px; }
+    .pillar-icon.blue   { background: #dbeafe; color: #2563eb; }
+    .pillar-icon.purple { background: #ede9fe; color: #7c3aed; }
+    .pillar-icon.green  { background: #dcfce7; color: #16a34a; }
+    .pillar-title { font-size: 13px; font-weight: 600; color: var(--text-primary); }
+    .pillar-desc  { font-size: 12px; color: var(--text-secondary); line-height: 1.5; }
+
+    /* ── Cat divider ── */
+    .cat-divider {
+      display: flex; align-items: center; gap: 10px; margin: 20px 0 14px;
+    }
+    .cat-label {
+      font-size: 10.5px; font-weight: 600; letter-spacing: .07em;
+      text-transform: uppercase; color: var(--text-tertiary); white-space: nowrap;
+    }
+    .cat-line { flex: 1; height: 1px; background: var(--card-border); }
+
+    /* ── Feature rows ── */
+    .feature-row {
+      display: flex; align-items: flex-start; gap: 13px;
+      padding: 13px 15px; border-radius: var(--radius-md);
+      border: 1px solid var(--card-border); background: #fafafa;
+      margin-bottom: 8px;
+      transition: box-shadow .14s, transform .12s;
+      animation: fadeUp .28s ease both;
+    }
+    .feature-row:hover { box-shadow: var(--shadow-sm); transform: translateY(-1px); }
+    .feature-row:nth-of-type(1) { animation-delay: .05s; }
+    .feature-row:nth-of-type(2) { animation-delay: .09s; }
+    .feature-row:nth-of-type(3) { animation-delay: .13s; }
+    .feature-row:nth-of-type(4) { animation-delay: .17s; }
+
+    .feat-icon {
+      width: 36px; height: 36px; border-radius: 9px; flex-shrink: 0;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .feat-icon svg { width: 18px; height: 18px; }
+    .feat-icon.blue   { background: #dbeafe; color: #2563eb; }
+    .feat-icon.teal   { background: #ccfbf1; color: #0d9488; }
+    .feat-icon.amber  { background: #fef3c7; color: #d97706; }
+    .feat-icon.pink   { background: #fce7f3; color: #db2777; }
+    .feat-icon.orange { background: #ffedd5; color: #ea580c; }
+    .feat-icon.purple { background: #ede9fe; color: #7c3aed; }
+
+    .feat-text { flex: 1; min-width: 0; }
+    .feat-name { font-size: 13.5px; font-weight: 500; color: var(--text-primary); margin-bottom: 3px; }
+    .feat-desc { font-size: 12.5px; color: var(--text-secondary); line-height: 1.6; }
+
+    /* ── CTA strip ── */
+    .cta-strip {
+      display: flex; align-items: center; justify-content: space-between;
+      gap: 14px;
+      background: linear-gradient(135deg, #eff6ff 0%, #f5f3ff 100%);
+      border: 1px solid #dbeafe; border-radius: var(--radius-md);
+      padding: 16px 20px; margin-top: 22px;
+    }
+    .cta-text h4 { font-size: 14px; font-weight: 600; color: var(--text-primary); margin-bottom: 3px; }
+    .cta-text p  { font-size: 12.5px; color: var(--text-secondary); line-height: 1.5; }
+    .cta-btn {
+      display: inline-flex; align-items: center; gap: 7px;
+      padding: 8px 18px; background: var(--accent); color: #fff;
+      font-family: var(--font); font-size: 13px; font-weight: 500;
+      border-radius: var(--radius-sm); border: none; cursor: pointer;
+      white-space: nowrap; flex-shrink: 0;
+      transition: background .12s, transform .1s; text-decoration: none;
+    }
+    .cta-btn:hover { background: #1d4ed8; }
+    .cta-btn:active { transform: scale(.98); }
+    .cta-btn svg { width: 14px; height: 14px; }
+
+    /* ── Footer ── */
+    .win-footer {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 9px 24px; border-top: 1px solid var(--card-border);
+      background: var(--bar-bg); flex-shrink: 0;
+    }
+    .discourse-link {
+      display: flex; align-items: center; gap: 7px;
+      text-decoration: none; font-size: 12px; color: var(--text-secondary);
+    }
+    .discourse-link img { height: 18px; }
+    .social-links { display: flex; gap: 4px; }
+    .social-link {
+      width: 28px; height: 28px; border-radius: 6px;
+      display: flex; align-items: center; justify-content: center;
+      color: var(--text-tertiary); text-decoration: none;
+      transition: background .12s, color .12s;
+      border: none; background: transparent; cursor: pointer;
+    }
+    .social-link:hover { background: var(--hover-bg); color: var(--text-primary); }
+    .social-link svg { width: 14px; height: 14px; }
+  </style>
+</head>
+<body>
+<div class="window">
+
+  <!-- Title Bar -->
+  <div class="titlebar">
+    <a href="index" class="back-btn">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.2" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5"/>
+      </svg>
+      Back
+    </a>
+    <span class="titlebar-label">Introduction</span>
+  </div>
+
+  <div class="main">
+
+    <!-- ── Hero Panel ── -->
+    <div class="hero-panel">
+      <div class="bird-wrap">
+        <img src="thebirdonright.png" alt="Ubuntu Budgie mascot" />
+      </div>
+      <img src="wordmark.svg" alt="Ubuntu Budgie" class="hero-wordmark" />
+      <p class="hero-tagline">A distro with a<br>unique & carefully<br>crafted experience</p>
+      <span class="hero-version">LTS Release</span>
+    </div>
+
+    <!-- ── Scrollable Content ── -->
+    <div class="content-scroll">
+
+      <div class="page-title">Welcome to Ubuntu Budgie</div>
+      <p class="page-subtitle">Ubuntu Budgie combines the rock-solid Ubuntu base with the elegant, resource-efficient Budgie desktop to create a modern computing experience for everyone.</p>
+
+      <!-- Three pillars -->
+      <div class="pillars">
+        <div class="pillar">
+          <div class="pillar-icon blue">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z"/></svg>
+          </div>
+          <div class="pillar-title">Secure by Default</div>
+          <div class="pillar-desc">Continuous security updates, no superuser by default, and intelligent file-type handling.</div>
+        </div>
+        <div class="pillar">
+          <div class="pillar-icon purple">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09Z"/></svg>
+          </div>
+          <div class="pillar-title">Beautifully Designed</div>
+          <div class="pillar-desc">The Budgie desktop is crafted for elegance — clean, minimal, and instantly familiar.</div>
+        </div>
+        <div class="pillar">
+          <div class="pillar-icon green">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z"/></svg>
+          </div>
+          <div class="pillar-title">Light &amp; Fast</div>
+          <div class="pillar-desc">Runs well on modest hardware and keeps your system snappy with low memory overhead.</div>
+        </div>
+      </div>
+
+      <!-- What is Ubuntu Budgie -->
+      <div class="cat-divider"><span class="cat-label">What is Ubuntu Budgie</span><div class="cat-line"></div></div>
+
+      <div class="feature-row">
+        <div class="feat-icon blue">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 17.25v1.007a3 3 0 0 1-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0 1 15 18.257V17.25m6-12V15a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 15V5.25m18 0A2.25 2.25 0 0 0 18.75 3H5.25A2.25 2.25 0 0 0 3 5.25m18 0H3"/></svg>
+        </div>
+        <div class="feat-text">
+          <div class="feat-name">Ubuntu Base, Budgie Desktop</div>
+          <div class="feat-desc">Ubuntu Budgie is an official Ubuntu flavour that pairs the trusted Ubuntu foundation — used by millions worldwide — with the Budgie desktop environment, originally developed by the Solus project and now maintained by the Budgie Desktop project.</div>
+        </div>
+      </div>
+
+      <div class="feature-row">
+        <div class="feat-icon purple">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M10.5 6h9.75M10.5 6a1.5 1.5 0 1 1-3 0m3 0a1.5 1.5 0 1 0-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-9.75 0h9.75"/></svg>
+        </div>
+        <div class="feat-text">
+          <div class="feat-name">Highly Customisable</div>
+          <div class="feat-desc">Budgie's panel system, applets, and Raven sidebar give you fine-grained control over your workspace. Change themes, layouts, widgets, and keyboard shortcuts to suit how you work — without needing to tinker with config files.</div>
+        </div>
+      </div>
+
+      <div class="feature-row">
+        <div class="feat-icon teal">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99"/></svg>
+        </div>
+        <div class="feat-text">
+          <div class="feat-name">Always Up to Date</div>
+          <div class="feat-desc">As an Ubuntu flavour, Ubuntu Budgie ships on Ubuntu's standard release cadence — Long Term Support (LTS) releases every two years with 5-year support, and interim releases every six months for those who want the latest features sooner.</div>
+        </div>
+      </div>
+
+      <!-- Desktop highlights -->
+      <div class="cat-divider"><span class="cat-label">Desktop Highlights</span><div class="cat-line"></div></div>
+
+      <div class="feature-row">
+        <div class="feat-icon amber">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6A2.25 2.25 0 0 1 6 3.75h2.25A2.25 2.25 0 0 1 10.5 6v2.25a2.25 2.25 0 0 1-2.25 2.25H6a2.25 2.25 0 0 1-2.25-2.25V6ZM3.75 15.75A2.25 2.25 0 0 1 6 13.5h2.25a2.25 2.25 0 0 1 2.25 2.25V18a2.25 2.25 0 0 1-2.25 2.25H6A2.25 2.25 0 0 1 3.75 18v-2.25ZM13.5 6a2.25 2.25 0 0 1 2.25-2.25H18A2.25 2.25 0 0 1 20.25 6v2.25A2.25 2.25 0 0 1 18 10.5h-2.25a2.25 2.25 0 0 1-2.25-2.25V6ZM13.5 15.75a2.25 2.25 0 0 1 2.25-2.25H18a2.25 2.25 0 0 1 2.25 2.25V18A2.25 2.25 0 0 1 18 20.25h-2.25A2.25 2.25 0 0 1 13.5 18v-2.25Z"/></svg>
+        </div>
+        <div class="feat-text">
+          <div class="feat-name">Raven Sidebar</div>
+          <div class="feat-desc">Raven is Budgie's unique notification and settings centre — slide it open from the right edge to access quick settings, volume and media controls, notifications, and a clock calendar, all in one place.</div>
+        </div>
+      </div>
+
+      <div class="feature-row">
+        <div class="feat-icon pink">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"/></svg>
+        </div>
+        <div class="feat-text">
+          <div class="feat-name">Budgie Menu &amp; Run Dialog</div>
+          <div class="feat-desc">A fast, searchable application menu lets you find and launch any app in seconds. The Run Dialog (Alt+F2) lets power users launch apps and commands without touching the mouse.</div>
+        </div>
+      </div>
+
+      <div class="feature-row">
+        <div class="feat-icon orange">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.594 3.94c.09-.542.56-.94 1.11-.94h2.593c.55 0 1.02.398 1.11.94l.213 1.281c.063.374.313.686.645.87.074.04.147.083.22.127.325.196.72.257 1.075.124l1.217-.456a1.125 1.125 0 0 1 1.37.49l1.296 2.247a1.125 1.125 0 0 1-.26 1.431l-1.003.827c-.293.241-.438.613-.43.992a7.723 7.723 0 0 1 0 .255c-.008.378.137.75.43.991l1.004.827c.424.35.534.955.26 1.43l-1.298 2.247a1.125 1.125 0 0 1-1.369.491l-1.217-.456c-.355-.133-.75-.072-1.076.124a6.47 6.47 0 0 1-.22.128c-.331.183-.581.495-.644.869l-.213 1.281c-.09.543-.56.94-1.11.94h-2.594c-.55 0-1.019-.398-1.11-.94l-.213-1.281c-.062-.374-.312-.686-.644-.87a6.52 6.52 0 0 1-.22-.127c-.325-.196-.72-.257-1.076-.124l-1.217.456a1.125 1.125 0 0 1-1.369-.49l-1.297-2.247a1.125 1.125 0 0 1 .26-1.431l1.004-.827c.292-.24.437-.613.43-.991a6.932 6.932 0 0 1 0-.255c.007-.38-.138-.751-.43-.992l-1.004-.827a1.125 1.125 0 0 1-.26-1.43l1.297-2.247a1.125 1.125 0 0 1 1.37-.491l1.216.456c.356.133.751.072 1.076-.124.072-.044.146-.086.22-.128.332-.183.582-.495.644-.869l.214-1.28Z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/></svg>
+        </div>
+        <div class="feat-text">
+          <div class="feat-name">Budgie Desktop Settings</div>
+          <div class="feat-desc">A single, unified settings panel for the entire desktop — change your panel layout and position, add or remove applets, switch themes, adjust fonts, and configure window behaviour, all from one intuitive interface.</div>
+        </div>
+      </div>
+
+      <!-- CTA -->
+      <div class="cta-strip">
+        <div class="cta-text">
+          <h4>Ready to explore more?</h4>
+          <p>Check out the Features page for a full breakdown of what Ubuntu Budgie includes out of the box.</p>
+        </div>
+        <a href="features" class="cta-btn">
+          Explore Features
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
+        </a>
+      </div>
+
+    </div><!-- end content-scroll -->
+  </div><!-- end main -->
+
+  <!-- Footer -->
+  <div class="win-footer">
+    <a href="#" class="discourse-link">
+      <span style="font-size:12px;color:#9b9b9b;">Get support on</span>
+      <img src="public/img/logos/discourse-logo-dark.svg" alt="Discourse" />
+    </a>
+    <div class="social-links">
+      <a href="#" class="social-link" title="Blog"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width=".3" d="M19 7h1v12a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h11.5M7 14h6m-6 3h6m0-10h.5m-.5 3h.5M7 7h3v3H7V7Z"/></svg></a>
+      <a href="#" class="social-link" title="Twitter"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/></svg></a>
+      <a href="#" class="social-link" title="GitHub"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg></a>
+      <a href="#" class="social-link" title="Slack"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M3.362 10.11c0 .926-.756 1.681-1.681 1.681S0 11.036 0 10.111C0 9.186.756 8.43 1.68 8.43h1.682v1.68zm.846 0c0-.924.756-1.68 1.681-1.68s1.681.756 1.681 1.68v4.21c0 .924-.756 1.68-1.68 1.68a1.685 1.685 0 0 1-1.682-1.68v-4.21zM5.89 3.362c-.926 0-1.682-.756-1.682-1.681S4.964 0 5.89 0s1.68.756 1.68 1.68v1.682H5.89zm0 .846c.924 0 1.68.756 1.68 1.681S6.814 7.57 5.89 7.57H1.68C.757 7.57 0 6.814 0 5.89c0-.926.756-1.682 1.68-1.682h4.21zm6.749 1.682c0-.926.755-1.682 1.68-1.682.925 0 1.681.756 1.681 1.681s-.756 1.681-1.68 1.681h-1.681V5.89zm-.848 0c0 .924-.755 1.68-1.68 1.68A1.685 1.685 0 0 1 8.43 5.89V1.68C8.43.757 9.186 0 10.11 0c.926 0 1.681.756 1.681 1.68v4.21zm-1.681 6.748c.926 0 1.682.756 1.682 1.681S11.036 16 10.11 16s-1.681-.756-1.681-1.68v-1.682h1.68zm0-.847c-.924 0-1.68-.755-1.68-1.68 0-.925.756-1.681 1.68-1.681h4.21c.924 0 1.68.756 1.68 1.68 0 .926-.756 1.681-1.68 1.681h-4.21z"/></svg></a>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
