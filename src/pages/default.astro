@@ -1,0 +1,861 @@
+---
+// Ubuntu Budgie Welcome — Budgie Makeovers & Layouts
+---
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="viewport" content="width=device-width" />
+  <title>Ubuntu Budgie Welcome — Themes &amp; Layouts</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:            #e8e8e8;
+      --win-bg:        #ffffff;
+      --bar-bg:        #f5f5f5;
+      --bar-border:    #e0e0e0;
+      --text-primary:  #1a1a1a;
+      --text-secondary:#6b6b6b;
+      --text-tertiary: #9b9b9b;
+      --accent:        #2563eb;
+      --accent-light:  #dbeafe;
+      --hover-bg:      #ebebeb;
+      --card-border:   #e8e8e8;
+      --green:         #16a34a;
+      --green-light:   #dcfce7;
+      --amber:         #d97706;
+      --amber-light:   #fef3c7;
+      --red:           #dc2626;
+      --red-light:     #fee2e2;
+      --shadow-sm:     0 1px 3px rgba(0,0,0,.06), 0 1px 2px rgba(0,0,0,.04);
+      --shadow-md:     0 4px 12px rgba(0,0,0,.08), 0 2px 4px rgba(0,0,0,.04);
+      --shadow-win:    0 20px 60px rgba(0,0,0,.18), 0 8px 24px rgba(0,0,0,.10);
+      --radius-sm:     6px;
+      --radius-md:     10px;
+      --radius-lg:     14px;
+      --radius-win:    14px;
+      --font:          'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+
+    html, body {
+      height: 100%; overflow: hidden;
+      background: var(--bg); font-family: var(--font);
+      display: flex; align-items: center; justify-content: center;
+      padding: 24px;
+    }
+
+    /* ── Window ── */
+    .window {
+      width: 900px; max-width: 100%;
+      height: calc(100vh - 48px);
+      max-height: 700px; min-height: 480px;
+      background: var(--win-bg); border-radius: var(--radius-win);
+      box-shadow: var(--shadow-win); overflow: hidden;
+      display: flex; flex-direction: column;
+      animation: fadeUp .3s ease both;
+    }
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(6px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ── Title Bar ── */
+    .titlebar {
+      height: 44px; background: var(--bar-bg);
+      border-bottom: 1px solid var(--bar-border);
+      display: flex; align-items: center;
+      padding: 0 16px; gap: 8px;
+      flex-shrink: 0; position: relative; user-select: none;
+    }
+    .back-btn {
+      display: flex; align-items: center; gap: 5px;
+      background: none; border: none; cursor: pointer;
+      color: var(--accent); font-family: var(--font);
+      font-size: 13px; font-weight: 500;
+      padding: 4px 6px 4px 2px; border-radius: var(--radius-sm);
+      transition: background .12s; text-decoration: none;
+    }
+    .back-btn:hover { background: var(--accent-light); }
+    .back-btn svg { width: 16px; height: 16px; }
+    .titlebar-label {
+      position: absolute; left: 50%; transform: translateX(-50%);
+      font-size: 13px; font-weight: 500;
+      color: var(--text-secondary); letter-spacing: -.01em; pointer-events: none;
+    }
+
+    /* ── Tab bar ── */
+    .tab-bar {
+      display: flex; gap: 2px; padding: 0 20px;
+      background: var(--bar-bg); border-bottom: 1px solid var(--bar-border);
+      flex-shrink: 0;
+    }
+    .tab-btn {
+      display: flex; align-items: center; gap: 7px;
+      padding: 10px 16px;
+      font-family: var(--font); font-size: 13px; font-weight: 500;
+      color: var(--text-tertiary); cursor: pointer;
+      background: none; border: none;
+      border-bottom: 2px solid transparent;
+      transition: color .15s, border-color .15s;
+      position: relative; top: 1px; white-space: nowrap;
+    }
+    .tab-btn:hover { color: var(--text-secondary); }
+    .tab-btn.active { color: var(--accent); border-bottom-color: var(--accent); }
+
+    /* ── Tab pages ── */
+    .tab-page { display: none; }
+    .tab-page.active { display: block; animation: fadeUp .2s ease both; }
+
+    /* ── Scroll body ── */
+    .scroll-body {
+      flex: 1; overflow-y: auto; min-height: 0;
+    }
+    .scroll-body::-webkit-scrollbar { width: 6px; }
+    .scroll-body::-webkit-scrollbar-track { background: transparent; }
+    .scroll-body::-webkit-scrollbar-thumb { background: #d4d4d4; border-radius: 3px; }
+    .scroll-body::-webkit-scrollbar-thumb:hover { background: #aaa; }
+
+    /* ── Page header ── */
+    .page-header { padding: 20px 24px 14px; border-bottom: 1px solid var(--card-border); }
+    .page-header h2 { font-size: 17px; font-weight: 600; color: var(--text-primary); letter-spacing: -.01em; margin-bottom: 3px; }
+    .page-header p  { font-size: 12.5px; color: var(--text-secondary); line-height: 1.55; }
+
+    /* ── Cards grid ── */
+    .cards-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px;
+      padding: 18px 24px 220px;
+      overflow: visible;
+    }
+
+    /* ── Theme / layout card ── */
+    .item-card {
+      background: #fafafa; border: 1px solid var(--card-border);
+      border-radius: var(--radius-lg); overflow: visible;
+      display: flex; flex-direction: column;
+      transition: box-shadow .14s, transform .12s;
+      animation: fadeUp .24s ease both;
+    }
+    .item-card:hover { box-shadow: var(--shadow-md); transform: translateY(-1px); }
+
+    /* thumbnail — clip here, not on the whole card */
+    .card-thumb {
+      height: 120px; overflow: hidden; background: #e8e8e8; flex-shrink: 0;
+      border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+    }
+    .card-thumb img {
+      width: 100%; height: 100%; object-fit: cover; display: block;
+      transition: transform .3s ease;
+    }
+    .item-card:hover .card-thumb img { transform: scale(1.03); }
+
+    /* card body */
+    .card-body { padding: 10px 12px 12px; flex: 1; }
+    .card-name  { font-size: 13px; font-weight: 600; color: var(--text-primary); margin-bottom: 10px; }
+
+    /* ── Action buttons row ── */
+    .card-actions { display: flex; gap: 6px; flex-wrap: wrap; align-items: center; }
+
+    /* base button */
+    .btn {
+      display: inline-flex; align-items: center; gap: 5px;
+      padding: 5px 11px; border-radius: var(--radius-sm);
+      font-family: var(--font); font-size: 12px; font-weight: 500;
+      cursor: pointer; border: none; transition: background .12s, transform .1s;
+      white-space: nowrap;
+    }
+    .btn:active { transform: scale(.97); }
+    .btn svg { width: 13px; height: 13px; }
+
+    .btn-install  { background: var(--green-light);  color: var(--green);  border: 1px solid rgba(22,163,74,.25); }
+    .btn-install:hover  { background: #bbf7d0; border-color: var(--green); }
+    .btn-apply    { background: var(--accent-light); color: var(--accent); border: 1px solid rgba(37,99,235,.2); }
+    .btn-apply:hover    { background: #bfdbfe; border-color: var(--accent); }
+    .btn-reset    { background: var(--amber-light);  color: var(--amber);  border: 1px solid rgba(217,119,6,.2); }
+    .btn-reset:hover    { background: #fde68a; border-color: var(--amber); }
+
+    /* split apply+dropdown for themes */
+    .split-wrap { position: relative; display: inline-flex; }
+    .split-main {
+      border-radius: var(--radius-sm) 0 0 var(--radius-sm);
+      border-right: none !important;
+    }
+    .split-arrow {
+      display: inline-flex; align-items: center; justify-content: center;
+      width: 26px; padding: 0;
+      background: var(--accent-light); color: var(--accent);
+      border: 1px solid rgba(37,99,235,.2);
+      border-left: 1px solid rgba(37,99,235,.15);
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+      cursor: pointer; font-size: 0; transition: background .12s;
+    }
+    .split-arrow:hover { background: #bfdbfe; }
+    .split-arrow svg { width: 11px; height: 11px; transition: transform .18s; }
+    .split-arrow.open svg { transform: rotate(180deg); }
+
+    /* dropdown — position absolute, grid has padding-bottom room */
+    .theme-menu {
+      display: none; position: absolute;
+      top: calc(100% + 4px); left: 0; z-index: 200;
+      min-width: 190px;
+      background: var(--win-bg);
+      border: 1px solid var(--card-border);
+      border-radius: var(--radius-md);
+      box-shadow: var(--shadow-md);
+      overflow: hidden;
+      animation: fadeUp .14s ease both;
+    }
+    .theme-menu.open { display: block; }
+    .theme-menu-item {
+      display: flex; align-items: center; gap: 8px;
+      padding: 8px 13px; width: 100%;
+      background: none; border: none; cursor: pointer;
+      font-family: var(--font); font-size: 12.5px; color: var(--text-primary);
+      text-align: left; transition: background .1s, color .1s;
+    }
+    .theme-menu-item:hover { background: var(--hover-bg); color: var(--accent); }
+    .theme-menu-item svg { width: 13px; height: 13px; color: var(--text-tertiary); flex-shrink: 0; }
+    .theme-menu-item:hover svg { color: var(--accent); }
+    .theme-menu-divider { height: 1px; background: var(--card-border); margin: 3px 0; }
+
+    /* applying spinner */
+    @keyframes spin { to { transform: rotate(360deg); } }
+    .applying-badge {
+      display: none; align-items: center; gap: 6px;
+      font-size: 11.5px; color: var(--text-tertiary);
+    }
+    .applying-badge.visible { display: inline-flex; }
+    .spin-ring {
+      width: 12px; height: 12px; border: 2px solid #d1d1d1;
+      border-top-color: var(--text-tertiary); border-radius: 50%;
+      animation: spin .7s linear infinite;
+    }
+
+    /* ── Restore Panels section ── */
+    .restore-section { padding: 24px; }
+    .restore-card {
+      background: #fafafa; border: 1px solid var(--card-border);
+      border-radius: var(--radius-lg); padding: 20px 22px;
+    }
+    .restore-card h3 { font-size: 15px; font-weight: 600; color: var(--text-primary); margin-bottom: 6px; }
+    .restore-card p  { font-size: 13px; color: var(--text-secondary); line-height: 1.65; margin-bottom: 14px; }
+    .restore-warn {
+      display: flex; align-items: flex-start; gap: 9px;
+      padding: 10px 13px; border-radius: var(--radius-sm);
+      background: var(--amber-light); border: 1px solid rgba(217,119,6,.2); color: #92400e;
+      font-size: 12.5px; line-height: 1.55; margin-bottom: 16px;
+    }
+    .restore-warn svg { width: 14px; height: 14px; flex-shrink: 0; margin-top: 1px; }
+
+    /* ── Win Footer ── */
+    .win-footer {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 9px 24px; border-top: 1px solid var(--card-border);
+      background: var(--bar-bg); flex-shrink: 0;
+    }
+    .discourse-link {
+      display: flex; align-items: center; gap: 7px;
+      text-decoration: none; font-size: 12px; color: var(--text-secondary);
+    }
+    .discourse-link img { height: 18px; }
+    .social-links { display: flex; gap: 4px; }
+    .social-link {
+      width: 28px; height: 28px; border-radius: 6px;
+      display: flex; align-items: center; justify-content: center;
+      color: var(--text-tertiary); text-decoration: none;
+      transition: background .12s, color .12s;
+      border: none; background: transparent; cursor: pointer;
+    }
+    .social-link:hover { background: var(--hover-bg); color: var(--text-primary); }
+    .social-link svg { width: 14px; height: 14px; }
+  </style>
+</head>
+<body>
+<div class="window">
+
+  <!-- Title Bar -->
+  <div class="titlebar">
+    <a href="index" class="back-btn">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.2" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5"/>
+      </svg>
+      Back
+    </a>
+    <span class="titlebar-label">Budgie Makeovers &amp; Layouts</span>
+  </div>
+
+  <!-- Tab Bar -->
+  <div class="tab-bar">
+    <button class="tab-btn active" data-tab="themes">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor" style="width:14px;height:14px"><path stroke-linecap="round" stroke-linejoin="round" d="M4.098 19.902a3.75 3.75 0 0 0 5.304 0l6.401-6.402M6.75 21A3.75 3.75 0 0 1 3 17.25V4.125C3 3.504 3.504 3 4.125 3h5.25c.621 0 1.125.504 1.125 1.125v4.072M6.75 21a3.75 3.75 0 0 0 3.75-3.75V8.197M6.75 21h13.125c.621 0 1.125-.504 1.125-1.125v-5.25c0-.621-.504-1.125-1.125-1.125h-4.072M10.5 8.197l2.88-2.88c.438-.439 1.15-.439 1.59 0l3.712 3.713c.44.44.44 1.152 0 1.59l-2.879 2.88M6.75 17.25h.008v.008H6.75v-.008Z"/></svg>
+      Switch Appearance
+    </button>
+    <button class="tab-btn" data-tab="layout">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor" style="width:14px;height:14px"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6A2.25 2.25 0 0 1 6 3.75h2.25A2.25 2.25 0 0 1 10.5 6v2.25a2.25 2.25 0 0 1-2.25 2.25H6a2.25 2.25 0 0 1-2.25-2.25V6ZM3.75 15.75A2.25 2.25 0 0 1 6 13.5h2.25a2.25 2.25 0 0 1 2.25 2.25V18a2.25 2.25 0 0 1-2.25 2.25H6A2.25 2.25 0 0 1 3.75 18v-2.25ZM13.5 6a2.25 2.25 0 0 1 2.25-2.25H18A2.25 2.25 0 0 1 20.25 6v2.25A2.25 2.25 0 0 1 18 10.5h-2.25a2.25 2.25 0 0 1-2.25-2.25V6ZM13.5 15.75a2.25 2.25 0 0 1 2.25-2.25H18a2.25 2.25 0 0 1 2.25 2.25V18A2.25 2.25 0 0 1 18 20.25h-2.25A2.25 2.25 0 0 1 13.5 18v-2.25Z"/></svg>
+      Desktop Layout
+    </button>
+    <button class="tab-btn" data-tab="settings">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor" style="width:14px;height:14px"><path stroke-linecap="round" stroke-linejoin="round" d="M9.594 3.94c.09-.542.56-.94 1.11-.94h2.593c.55 0 1.02.398 1.11.94l.213 1.281c.063.374.313.686.645.87.074.04.147.083.22.127.325.196.72.257 1.075.124l1.217-.456a1.125 1.125 0 0 1 1.37.49l1.296 2.247a1.125 1.125 0 0 1-.26 1.431l-1.003.827c-.293.241-.438.613-.43.992a7.723 7.723 0 0 1 0 .255c-.008.378.137.75.43.991l1.004.827c.424.35.534.955.26 1.43l-1.298 2.247a1.125 1.125 0 0 1-1.369.491l-1.217-.456c-.355-.133-.75-.072-1.076.124a6.47 6.47 0 0 1-.22.128c-.331.183-.581.495-.644.869l-.213 1.281c-.09.543-.56.94-1.11.94h-2.594c-.55 0-1.019-.398-1.11-.94l-.213-1.281c-.062-.374-.312-.686-.644-.87a6.52 6.52 0 0 1-.22-.127c-.325-.196-.72-.257-1.076-.124l-1.217.456a1.125 1.125 0 0 1-1.369-.49l-1.297-2.247a1.125 1.125 0 0 1 .26-1.431l1.004-.827c.292-.24.437-.613.43-.991a6.932 6.932 0 0 1 0-.255c.007-.38-.138-.751-.43-.992l-1.004-.827a1.125 1.125 0 0 1-.26-1.43l1.297-2.247a1.125 1.125 0 0 1 1.37-.491l1.216.456c.356.133.751.072 1.076-.124.072-.044.146-.086.22-.128.332-.183.582-.495.644-.869l.214-1.28Z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/></svg>
+      Panel Settings
+    </button>
+  </div>
+
+  <!-- Scrollable body -->
+  <div class="scroll-body">
+
+    <!-- ══ THEMES TAB ══ -->
+    <div class="tab-page active" id="page-themes">
+      <div class="page-header">
+        <h2>Switch Appearance</h2>
+        <p>Choose a theme to change your desktop appearance — including icons, fonts, wallpaper, and GTK style — with a single click.</p>
+      </div>
+      <div class="cards-grid">
+
+        <!-- helper macro: each card has data-id for the cmd() calls -->
+
+        <div class="item-card" data-id="pocillo">
+          <div class="card-thumb"><img src="img/screenshots/pocillo-style.jpg" alt="Pocillo theme" /></div>
+          <div class="card-body">
+            <div class="card-name">Pocillo</div>
+            <div class="card-actions">
+              <button class="btn btn-install install-btn" data-install="pocillo-theme">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>Install
+              </button>
+              <div class="split-wrap apply-group" style="display:none;">
+                <button class="btn btn-apply split-main" data-makeover="pocillo">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.53 16.122a3 3 0 0 0-5.78 1.128 2.25 2.25 0 0 1-2.4 2.245 4.5 4.5 0 0 0 8.4-2.245c0-.399-.078-.78-.22-1.128Zm0 0a15.998 15.998 0 0 0 3.388-1.62m-5.043-.025a15.994 15.994 0 0 1 1.622-3.395m3.42 3.42a15.995 15.995 0 0 0 4.764-4.648l3.876-5.814a1.151 1.151 0 0 0-1.597-1.597L14.146 6.32a15.996 15.996 0 0 0-4.649 4.763m3.42 3.42a6.776 6.776 0 0 0-3.42-3.42"/></svg>Apply Makeover
+                </button>
+                <button class="split-arrow" aria-label="More options"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"/></svg></button>
+                <div class="theme-menu">
+                  <button class="theme-menu-item" data-makeover="pocillo"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.53 16.122a3 3 0 0 0-5.78 1.128 2.25 2.25 0 0 1-2.4 2.245 4.5 4.5 0 0 0 8.4-2.245c0-.399-.078-.78-.22-1.128Zm0 0a15.998 15.998 0 0 0 3.388-1.62m-5.043-.025a15.994 15.994 0 0 1 1.622-3.395m3.42 3.42a15.995 15.995 0 0 0 4.764-4.648l3.876-5.814a1.151 1.151 0 0 0-1.597-1.597L14.146 6.32a15.996 15.996 0 0 0-4.649 4.763m3.42 3.42a6.776 6.776 0 0 0-3.42-3.42"/></svg>Apply makeover</button>
+                  <div class="theme-menu-divider"></div>
+                  <button class="theme-menu-item" data-theme="pocillo"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.098 19.902a3.75 3.75 0 0 0 5.304 0l6.401-6.402M6.75 21A3.75 3.75 0 0 1 3 17.25V4.125C3 3.504 3.504 3 4.125 3h5.25c.621 0 1.125.504 1.125 1.125v4.072M6.75 21a3.75 3.75 0 0 0 3.75-3.75V8.197"/></svg>Apply theme</button>
+                  <button class="theme-menu-item" data-font="pocillo"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3.744h-.753v8.25m0 0h-.75v8.25m.75-8.25H7.5m-1.503 0H6m0 0h6m0 0h.75v-8.25m0 0h-.75M12 3.744h6m0 0h.75v8.25m0 0h-.75M18 12H6"/></svg>Apply fonts</button>
+                  <button class="theme-menu-item" data-icon="pocillo"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m2.25 15.75 5.159-5.159a2.25 2.25 0 0 1 3.182 0l5.159 5.159m-1.5-1.5 1.409-1.409a2.25 2.25 0 0 1 3.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 0 0 1.5-1.5V6a1.5 1.5 0 0 0-1.5-1.5H3.75A1.5 1.5 0 0 0 2.25 6v12a1.5 1.5 0 0 0 1.5 1.5Zm10.5-11.25h.008v.008h-.008V8.25Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"/></svg>Apply icons</button>
+                  <button class="theme-menu-item" data-desktop="pocillo"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 17.25v1.007a3 3 0 0 1-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0 1 15 18.257V17.25m6-12V15a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 15V5.25m18 0A2.25 2.25 0 0 0 18.75 3H5.25A2.25 2.25 0 0 0 3 5.25m18 0H3"/></svg>Make desktop changes</button>
+                </div>
+              </div>
+              <span class="applying-badge"><div class="spin-ring"></div>Applying…</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="item-card" data-id="mojave">
+          <div class="card-thumb"><img src="img/screenshots/mojave-style.jpg" alt="Mojave theme" /></div>
+          <div class="card-body">
+            <div class="card-name">Mojave</div>
+            <div class="card-actions">
+              <button class="btn btn-install install-btn" data-install="mojave-theme">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>Install
+              </button>
+              <div class="split-wrap apply-group" style="display:none;">
+                <button class="btn btn-apply split-main" data-makeover="mojave">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.53 16.122a3 3 0 0 0-5.78 1.128 2.25 2.25 0 0 1-2.4 2.245 4.5 4.5 0 0 0 8.4-2.245c0-.399-.078-.78-.22-1.128Zm0 0a15.998 15.998 0 0 0 3.388-1.62m-5.043-.025a15.994 15.994 0 0 1 1.622-3.395m3.42 3.42a15.995 15.995 0 0 0 4.764-4.648l3.876-5.814a1.151 1.151 0 0 0-1.597-1.597L14.146 6.32a15.996 15.996 0 0 0-4.649 4.763m3.42 3.42a6.776 6.776 0 0 0-3.42-3.42"/></svg>Apply Makeover
+                </button>
+                <button class="split-arrow" aria-label="More options"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"/></svg></button>
+                <div class="theme-menu">
+                  <button class="theme-menu-item" data-makeover="mojave">Apply makeover</button>
+                  <div class="theme-menu-divider"></div>
+                  <button class="theme-menu-item" data-theme="mojave">Apply theme</button>
+                  <button class="theme-menu-item" data-font="mojave">Apply fonts</button>
+                  <button class="theme-menu-item" data-icon="mojave">Apply icons</button>
+                  <button class="theme-menu-item" data-desktop="mojave">Make desktop changes</button>
+                </div>
+              </div>
+              <span class="applying-badge"><div class="spin-ring"></div>Applying…</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="item-card" data-id="whitesur">
+          <div class="card-thumb"><img src="img/screenshots/whitesur-style.jpg" alt="WhiteSur theme" /></div>
+          <div class="card-body">
+            <div class="card-name">WhiteSur</div>
+            <div class="card-actions">
+              <button class="btn btn-install install-btn" data-install="whitesur-theme"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>Install</button>
+              <div class="split-wrap apply-group" style="display:none;">
+                <button class="btn btn-apply split-main" data-makeover="whitesur"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.53 16.122a3 3 0 0 0-5.78 1.128 2.25 2.25 0 0 1-2.4 2.245 4.5 4.5 0 0 0 8.4-2.245c0-.399-.078-.78-.22-1.128Zm0 0a15.998 15.998 0 0 0 3.388-1.62m-5.043-.025a15.994 15.994 0 0 1 1.622-3.395m3.42 3.42a15.995 15.995 0 0 0 4.764-4.648l3.876-5.814a1.151 1.151 0 0 0-1.597-1.597L14.146 6.32a15.996 15.996 0 0 0-4.649 4.763m3.42 3.42a6.776 6.776 0 0 0-3.42-3.42"/></svg>Apply Makeover</button>
+                <button class="split-arrow" aria-label="More options"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"/></svg></button>
+                <div class="theme-menu">
+                  <button class="theme-menu-item" data-makeover="whitesur">Apply makeover</button>
+                  <div class="theme-menu-divider"></div>
+                  <button class="theme-menu-item" data-theme="whitesur">Apply theme</button>
+                  <button class="theme-menu-item" data-font="whitesur">Apply fonts</button>
+                  <button class="theme-menu-item" data-icon="whitesur">Apply icons</button>
+                  <button class="theme-menu-item" data-desktop="whitesur">Make desktop changes</button>
+                </div>
+              </div>
+              <span class="applying-badge"><div class="spin-ring"></div>Applying…</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="item-card" data-id="orchis">
+          <div class="card-thumb"><img src="img/screenshots/orchis-style.jpg" alt="Orchis theme" /></div>
+          <div class="card-body">
+            <div class="card-name">Orchis</div>
+            <div class="card-actions">
+              <button class="btn btn-install install-btn" data-install="orchis-theme"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>Install</button>
+              <div class="split-wrap apply-group" style="display:none;">
+                <button class="btn btn-apply split-main" data-makeover="orchis"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.53 16.122a3 3 0 0 0-5.78 1.128 2.25 2.25 0 0 1-2.4 2.245 4.5 4.5 0 0 0 8.4-2.245c0-.399-.078-.78-.22-1.128Zm0 0a15.998 15.998 0 0 0 3.388-1.62m-5.043-.025a15.994 15.994 0 0 1 1.622-3.395m3.42 3.42a15.995 15.995 0 0 0 4.764-4.648l3.876-5.814a1.151 1.151 0 0 0-1.597-1.597L14.146 6.32a15.996 15.996 0 0 0-4.649 4.763m3.42 3.42a6.776 6.776 0 0 0-3.42-3.42"/></svg>Apply Makeover</button>
+                <button class="split-arrow" aria-label="More options"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"/></svg></button>
+                <div class="theme-menu">
+                  <button class="theme-menu-item" data-makeover="orchis">Apply makeover</button>
+                  <div class="theme-menu-divider"></div>
+                  <button class="theme-menu-item" data-theme="orchis">Apply theme</button>
+                  <button class="theme-menu-item" data-font="orchis">Apply fonts</button>
+                  <button class="theme-menu-item" data-icon="orchis">Apply icons</button>
+                  <button class="theme-menu-item" data-desktop="orchis">Make desktop changes</button>
+                </div>
+              </div>
+              <span class="applying-badge"><div class="spin-ring"></div>Applying…</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="item-card" data-id="fluent">
+          <div class="card-thumb"><img src="img/screenshots/fluent-style.jpg" alt="Fluent theme" /></div>
+          <div class="card-body">
+            <div class="card-name">Fluent</div>
+            <div class="card-actions">
+              <button class="btn btn-install install-btn" data-install="fluent-theme"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>Install</button>
+              <div class="split-wrap apply-group" style="display:none;">
+                <button class="btn btn-apply split-main" data-makeover="fluent"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.53 16.122a3 3 0 0 0-5.78 1.128 2.25 2.25 0 0 1-2.4 2.245 4.5 4.5 0 0 0 8.4-2.245c0-.399-.078-.78-.22-1.128Zm0 0a15.998 15.998 0 0 0 3.388-1.62m-5.043-.025a15.994 15.994 0 0 1 1.622-3.395m3.42 3.42a15.995 15.995 0 0 0 4.764-4.648l3.876-5.814a1.151 1.151 0 0 0-1.597-1.597L14.146 6.32a15.996 15.996 0 0 0-4.649 4.763m3.42 3.42a6.776 6.776 0 0 0-3.42-3.42"/></svg>Apply Makeover</button>
+                <button class="split-arrow" aria-label="More options"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"/></svg></button>
+                <div class="theme-menu">
+                  <button class="theme-menu-item" data-makeover="fluent">Apply makeover</button>
+                  <div class="theme-menu-divider"></div>
+                  <button class="theme-menu-item" data-theme="fluent">Apply theme</button>
+                  <button class="theme-menu-item" data-font="fluent">Apply fonts</button>
+                  <button class="theme-menu-item" data-icon="fluent">Apply icons</button>
+                  <button class="theme-menu-item" data-desktop="fluent">Make desktop changes</button>
+                </div>
+              </div>
+              <span class="applying-badge"><div class="spin-ring"></div>Applying…</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="item-card" data-id="colloid">
+          <div class="card-thumb"><img src="img/screenshots/colloid-style.jpg" alt="Colloid theme" /></div>
+          <div class="card-body">
+            <div class="card-name">Colloid</div>
+            <div class="card-actions">
+              <button class="btn btn-install install-btn" data-install="colloid-theme"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>Install</button>
+              <div class="split-wrap apply-group" style="display:none;">
+                <button class="btn btn-apply split-main" data-makeover="colloid"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.53 16.122a3 3 0 0 0-5.78 1.128 2.25 2.25 0 0 1-2.4 2.245 4.5 4.5 0 0 0 8.4-2.245c0-.399-.078-.78-.22-1.128Zm0 0a15.998 15.998 0 0 0 3.388-1.62m-5.043-.025a15.994 15.994 0 0 1 1.622-3.395m3.42 3.42a15.995 15.995 0 0 0 4.764-4.648l3.876-5.814a1.151 1.151 0 0 0-1.597-1.597L14.146 6.32a15.996 15.996 0 0 0-4.649 4.763m3.42 3.42a6.776 6.776 0 0 0-3.42-3.42"/></svg>Apply Makeover</button>
+                <button class="split-arrow" aria-label="More options"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"/></svg></button>
+                <div class="theme-menu">
+                  <button class="theme-menu-item" data-makeover="colloid">Apply makeover</button>
+                  <div class="theme-menu-divider"></div>
+                  <button class="theme-menu-item" data-theme="colloid">Apply theme</button>
+                  <button class="theme-menu-item" data-font="colloid">Apply fonts</button>
+                  <button class="theme-menu-item" data-icon="colloid">Apply icons</button>
+                  <button class="theme-menu-item" data-desktop="colloid">Make desktop changes</button>
+                </div>
+              </div>
+              <span class="applying-badge"><div class="spin-ring"></div>Applying…</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="item-card" data-id="qogirbudgie">
+          <div class="card-thumb"><img src="img/screenshots/qogirbudgie-style.jpg" alt="QogirBudgie theme" /></div>
+          <div class="card-body">
+            <div class="card-name">QogirBudgie</div>
+            <div class="card-actions">
+              <button class="btn btn-install install-btn" data-install="qogirbudgie-theme"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>Install</button>
+              <div class="split-wrap apply-group" style="display:none;">
+                <button class="btn btn-apply split-main" data-makeover="qogirbudgie"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.53 16.122a3 3 0 0 0-5.78 1.128 2.25 2.25 0 0 1-2.4 2.245 4.5 4.5 0 0 0 8.4-2.245c0-.399-.078-.78-.22-1.128Zm0 0a15.998 15.998 0 0 0 3.388-1.62m-5.043-.025a15.994 15.994 0 0 1 1.622-3.395m3.42 3.42a15.995 15.995 0 0 0 4.764-4.648l3.876-5.814a1.151 1.151 0 0 0-1.597-1.597L14.146 6.32a15.996 15.996 0 0 0-4.649 4.763m3.42 3.42a6.776 6.776 0 0 0-3.42-3.42"/></svg>Apply Makeover</button>
+                <button class="split-arrow" aria-label="More options"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"/></svg></button>
+                <div class="theme-menu">
+                  <button class="theme-menu-item" data-makeover="qogirbudgie">Apply makeover</button>
+                  <div class="theme-menu-divider"></div>
+                  <button class="theme-menu-item" data-theme="qogirbudgie">Apply theme</button>
+                  <button class="theme-menu-item" data-font="qogirbudgie">Apply fonts</button>
+                  <button class="theme-menu-item" data-icon="qogirbudgie">Apply icons</button>
+                  <button class="theme-menu-item" data-desktop="qogirbudgie">Make desktop changes</button>
+                </div>
+              </div>
+              <span class="applying-badge"><div class="spin-ring"></div>Applying…</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="item-card" data-id="arc">
+          <div class="card-thumb"><img src="img/screenshots/arc-style.jpg" alt="Arc Design theme" /></div>
+          <div class="card-body">
+            <div class="card-name">Arc Design</div>
+            <div class="card-actions">
+              <button class="btn btn-install install-btn" data-install="arc-theme"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>Install</button>
+              <div class="split-wrap apply-group" style="display:none;">
+                <button class="btn btn-apply split-main" data-makeover="arc"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.53 16.122a3 3 0 0 0-5.78 1.128 2.25 2.25 0 0 1-2.4 2.245 4.5 4.5 0 0 0 8.4-2.245c0-.399-.078-.78-.22-1.128Zm0 0a15.998 15.998 0 0 0 3.388-1.62m-5.043-.025a15.994 15.994 0 0 1 1.622-3.395m3.42 3.42a15.995 15.995 0 0 0 4.764-4.648l3.876-5.814a1.151 1.151 0 0 0-1.597-1.597L14.146 6.32a15.996 15.996 0 0 0-4.649 4.763m3.42 3.42a6.776 6.776 0 0 0-3.42-3.42"/></svg>Apply Makeover</button>
+                <button class="split-arrow" aria-label="More options"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"/></svg></button>
+                <div class="theme-menu">
+                  <button class="theme-menu-item" data-makeover="arc">Apply makeover</button>
+                  <div class="theme-menu-divider"></div>
+                  <button class="theme-menu-item" data-theme="arc">Apply theme</button>
+                  <button class="theme-menu-item" data-font="arc">Apply fonts</button>
+                  <button class="theme-menu-item" data-icon="arc">Apply icons</button>
+                  <button class="theme-menu-item" data-desktop="arc">Make desktop changes</button>
+                </div>
+              </div>
+              <span class="applying-badge"><div class="spin-ring"></div>Applying…</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="item-card" data-id="material">
+          <div class="card-thumb"><img src="img/screenshots/material-style.jpg" alt="Material Adapta theme" /></div>
+          <div class="card-body">
+            <div class="card-name">Material Design — Adapta</div>
+            <div class="card-actions">
+              <button class="btn btn-install install-btn" data-install="material-theme"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>Install</button>
+              <div class="split-wrap apply-group" style="display:none;">
+                <button class="btn btn-apply split-main" data-makeover="material"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.53 16.122a3 3 0 0 0-5.78 1.128 2.25 2.25 0 0 1-2.4 2.245 4.5 4.5 0 0 0 8.4-2.245c0-.399-.078-.78-.22-1.128Zm0 0a15.998 15.998 0 0 0 3.388-1.62m-5.043-.025a15.994 15.994 0 0 1 1.622-3.395m3.42 3.42a15.995 15.995 0 0 0 4.764-4.648l3.876-5.814a1.151 1.151 0 0 0-1.597-1.597L14.146 6.32a15.996 15.996 0 0 0-4.649 4.763m3.42 3.42a6.776 6.776 0 0 0-3.42-3.42"/></svg>Apply Makeover</button>
+                <button class="split-arrow" aria-label="More options"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"/></svg></button>
+                <div class="theme-menu">
+                  <button class="theme-menu-item" data-makeover="material">Apply makeover</button>
+                  <div class="theme-menu-divider"></div>
+                  <button class="theme-menu-item" data-theme="material">Apply theme</button>
+                  <button class="theme-menu-item" data-font="material">Apply fonts</button>
+                  <button class="theme-menu-item" data-icon="material">Apply icons</button>
+                  <button class="theme-menu-item" data-desktop="material">Make desktop changes</button>
+                </div>
+              </div>
+              <span class="applying-badge"><div class="spin-ring"></div>Applying…</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="item-card" data-id="evopop">
+          <div class="card-thumb"><img src="img/screenshots/evopop-style.jpg" alt="EvoPop theme" /></div>
+          <div class="card-body">
+            <div class="card-name">EvoPop</div>
+            <div class="card-actions">
+              <button class="btn btn-install install-btn" data-install="evopop-theme"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>Install</button>
+              <div class="split-wrap apply-group" style="display:none;">
+                <button class="btn btn-apply split-main" data-makeover="evopop"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.53 16.122a3 3 0 0 0-5.78 1.128 2.25 2.25 0 0 1-2.4 2.245 4.5 4.5 0 0 0 8.4-2.245c0-.399-.078-.78-.22-1.128Zm0 0a15.998 15.998 0 0 0 3.388-1.62m-5.043-.025a15.994 15.994 0 0 1 1.622-3.395m3.42 3.42a15.995 15.995 0 0 0 4.764-4.648l3.876-5.814a1.151 1.151 0 0 0-1.597-1.597L14.146 6.32a15.996 15.996 0 0 0-4.649 4.763m3.42 3.42a6.776 6.776 0 0 0-3.42-3.42"/></svg>Apply Makeover</button>
+                <button class="split-arrow" aria-label="More options"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"/></svg></button>
+                <div class="theme-menu">
+                  <button class="theme-menu-item" data-makeover="evopop">Apply makeover</button>
+                  <div class="theme-menu-divider"></div>
+                  <button class="theme-menu-item" data-theme="evopop">Apply theme</button>
+                  <button class="theme-menu-item" data-font="evopop">Apply fonts</button>
+                  <button class="theme-menu-item" data-icon="evopop">Apply icons</button>
+                  <button class="theme-menu-item" data-desktop="evopop">Make desktop changes</button>
+                </div>
+              </div>
+              <span class="applying-badge"><div class="spin-ring"></div>Applying…</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="item-card" data-id="ant">
+          <div class="card-thumb"><img src="img/screenshots/ant-style.jpg" alt="Ant theme" /></div>
+          <div class="card-body">
+            <div class="card-name">Ant</div>
+            <div class="card-actions">
+              <button class="btn btn-install install-btn" data-install="ant-theme"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>Install</button>
+              <div class="split-wrap apply-group" style="display:none;">
+                <button class="btn btn-apply split-main" data-makeover="ant"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.53 16.122a3 3 0 0 0-5.78 1.128 2.25 2.25 0 0 1-2.4 2.245 4.5 4.5 0 0 0 8.4-2.245c0-.399-.078-.78-.22-1.128Zm0 0a15.998 15.998 0 0 0 3.388-1.62m-5.043-.025a15.994 15.994 0 0 1 1.622-3.395m3.42 3.42a15.995 15.995 0 0 0 4.764-4.648l3.876-5.814a1.151 1.151 0 0 0-1.597-1.597L14.146 6.32a15.996 15.996 0 0 0-4.649 4.763m3.42 3.42a6.776 6.776 0 0 0-3.42-3.42"/></svg>Apply Makeover</button>
+                <button class="split-arrow" aria-label="More options"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"/></svg></button>
+                <div class="theme-menu">
+                  <button class="theme-menu-item" data-makeover="ant">Apply makeover</button>
+                  <div class="theme-menu-divider"></div>
+                  <button class="theme-menu-item" data-theme="ant">Apply theme</button>
+                  <button class="theme-menu-item" data-font="ant">Apply fonts</button>
+                  <button class="theme-menu-item" data-icon="ant">Apply icons</button>
+                  <button class="theme-menu-item" data-desktop="ant">Make desktop changes</button>
+                </div>
+              </div>
+              <span class="applying-badge"><div class="spin-ring"></div>Applying…</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="item-card" data-id="plata">
+          <div class="card-thumb"><img src="img/screenshots/plata-style.jpg" alt="Plata theme" /></div>
+          <div class="card-body">
+            <div class="card-name">Plata</div>
+            <div class="card-actions">
+              <button class="btn btn-install install-btn" data-install="plata-theme"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>Install</button>
+              <div class="split-wrap apply-group" style="display:none;">
+                <button class="btn btn-apply split-main" data-makeover="plata"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.53 16.122a3 3 0 0 0-5.78 1.128 2.25 2.25 0 0 1-2.4 2.245 4.5 4.5 0 0 0 8.4-2.245c0-.399-.078-.78-.22-1.128Zm0 0a15.998 15.998 0 0 0 3.388-1.62m-5.043-.025a15.994 15.994 0 0 1 1.622-3.395m3.42 3.42a15.995 15.995 0 0 0 4.764-4.648l3.876-5.814a1.151 1.151 0 0 0-1.597-1.597L14.146 6.32a15.996 15.996 0 0 0-4.649 4.763m3.42 3.42a6.776 6.776 0 0 0-3.42-3.42"/></svg>Apply Makeover</button>
+                <button class="split-arrow" aria-label="More options"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"/></svg></button>
+                <div class="theme-menu">
+                  <button class="theme-menu-item" data-makeover="plata">Apply makeover</button>
+                  <div class="theme-menu-divider"></div>
+                  <button class="theme-menu-item" data-theme="plata">Apply theme</button>
+                  <button class="theme-menu-item" data-font="plata">Apply fonts</button>
+                  <button class="theme-menu-item" data-icon="plata">Apply icons</button>
+                  <button class="theme-menu-item" data-desktop="plata">Make desktop changes</button>
+                </div>
+              </div>
+              <span class="applying-badge"><div class="spin-ring"></div>Applying…</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ══ LAYOUT TAB ══ -->
+    <div class="tab-page" id="page-layout">
+      <div class="page-header">
+        <h2>Desktop Layout</h2>
+        <p>Switch the layout of your desktop to suit your preferred workflow. Each layout repositions panels, docks, and controls.</p>
+      </div>
+      <div class="cards-grid">
+
+        <div class="item-card" data-id="ubuntubudgie">
+          <div class="card-thumb"><img src="img/screenshots/ubuntubudgie_layout.png" alt="Ubuntu Budgie layout" /></div>
+          <div class="card-body">
+            <div class="card-name">Ubuntu Budgie</div>
+            <div class="card-actions">
+              <button class="btn btn-install install-btn" data-install="ubuntubudgie-layout"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>Install Layout</button>
+              <button class="btn btn-apply apply-btn" data-layout="ubuntubudgie"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.53 16.122a3 3 0 0 0-5.78 1.128 2.25 2.25 0 0 1-2.4 2.245 4.5 4.5 0 0 0 8.4-2.245c0-.399-.078-.78-.22-1.128Zm0 0a15.998 15.998 0 0 0 3.388-1.62m-5.043-.025a15.994 15.994 0 0 1 1.622-3.395m3.42 3.42a15.995 15.995 0 0 0 4.764-4.648l3.876-5.814a1.151 1.151 0 0 0-1.597-1.597L14.146 6.32a15.996 15.996 0 0 0-4.649 4.763m3.42 3.42a6.776 6.776 0 0 0-3.42-3.42"/></svg>Apply Layout</button>
+              <span class="applying-badge"><div class="spin-ring"></div>Applying…</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="item-card" data-id="classicubuntubudgie">
+          <div class="card-thumb"><img src="img/screenshots/classicubuntubudgie_layout.png" alt="Classic Ubuntu Budgie layout" /></div>
+          <div class="card-body">
+            <div class="card-name">Classic Ubuntu Budgie</div>
+            <div class="card-actions">
+              <button class="btn btn-install install-btn" data-install="classicubuntubudgie-layout"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>Install Layout</button>
+              <button class="btn btn-apply apply-btn" data-layout="classicubuntubudgie"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.53 16.122a3 3 0 0 0-5.78 1.128 2.25 2.25 0 0 1-2.4 2.245 4.5 4.5 0 0 0 8.4-2.245c0-.399-.078-.78-.22-1.128Zm0 0a15.998 15.998 0 0 0 3.388-1.62m-5.043-.025a15.994 15.994 0 0 1 1.622-3.395m3.42 3.42a15.995 15.995 0 0 0 4.764-4.648l3.876-5.814a1.151 1.151 0 0 0-1.597-1.597L14.146 6.32a15.996 15.996 0 0 0-4.649 4.763m3.42 3.42a6.776 6.776 0 0 0-3.42-3.42"/></svg>Apply Layout</button>
+              <span class="applying-badge"><div class="spin-ring"></div>Applying…</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="item-card" data-id="redmond">
+          <div class="card-thumb"><img src="img/screenshots/redmond_layout.png" alt="Redmond layout" /></div>
+          <div class="card-body">
+            <div class="card-name">Redmond</div>
+            <div class="card-actions">
+              <button class="btn btn-install install-btn" data-install="redmond-layout"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>Install Layout</button>
+              <button class="btn btn-apply apply-btn" data-layout="redmond"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.53 16.122a3 3 0 0 0-5.78 1.128 2.25 2.25 0 0 1-2.4 2.245 4.5 4.5 0 0 0 8.4-2.245c0-.399-.078-.78-.22-1.128Zm0 0a15.998 15.998 0 0 0 3.388-1.62m-5.043-.025a15.994 15.994 0 0 1 1.622-3.395m3.42 3.42a15.995 15.995 0 0 0 4.764-4.648l3.876-5.814a1.151 1.151 0 0 0-1.597-1.597L14.146 6.32a15.996 15.996 0 0 0-4.649 4.763m3.42 3.42a6.776 6.776 0 0 0-3.42-3.42"/></svg>Apply Layout</button>
+              <span class="applying-badge"><div class="spin-ring"></div>Applying…</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="item-card" data-id="eleven">
+          <div class="card-thumb"><img src="img/screenshots/eleven_layout.png" alt="Eleven layout" /></div>
+          <div class="card-body">
+            <div class="card-name">Eleven</div>
+            <div class="card-actions">
+              <button class="btn btn-install install-btn" data-install="eleven-layout"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>Install Layout</button>
+              <button class="btn btn-apply apply-btn" data-layout="eleven"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.53 16.122a3 3 0 0 0-5.78 1.128 2.25 2.25 0 0 1-2.4 2.245 4.5 4.5 0 0 0 8.4-2.245c0-.399-.078-.78-.22-1.128Zm0 0a15.998 15.998 0 0 0 3.388-1.62m-5.043-.025a15.994 15.994 0 0 1 1.622-3.395m3.42 3.42a15.995 15.995 0 0 0 4.764-4.648l3.876-5.814a1.151 1.151 0 0 0-1.597-1.597L14.146 6.32a15.996 15.996 0 0 0-4.649 4.763m3.42 3.42a6.776 6.776 0 0 0-3.42-3.42"/></svg>Apply Layout</button>
+              <span class="applying-badge"><div class="spin-ring"></div>Applying…</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="item-card" data-id="chrome">
+          <div class="card-thumb"><img src="img/screenshots/chrome_layout.jpg" alt="Chrome layout" /></div>
+          <div class="card-body">
+            <div class="card-name">Chrome</div>
+            <div class="card-actions">
+              <button class="btn btn-install install-btn" data-install="chrome-layout"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>Install Layout</button>
+              <button class="btn btn-apply apply-btn" data-layout="chrome"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.53 16.122a3 3 0 0 0-5.78 1.128 2.25 2.25 0 0 1-2.4 2.245 4.5 4.5 0 0 0 8.4-2.245c0-.399-.078-.78-.22-1.128Zm0 0a15.998 15.998 0 0 0 3.388-1.62m-5.043-.025a15.994 15.994 0 0 1 1.622-3.395m3.42 3.42a15.995 15.995 0 0 0 4.764-4.648l3.876-5.814a1.151 1.151 0 0 0-1.597-1.597L14.146 6.32a15.996 15.996 0 0 0-4.649 4.763m3.42 3.42a6.776 6.776 0 0 0-3.42-3.42"/></svg>Apply Layout</button>
+              <span class="applying-badge"><div class="spin-ring"></div>Applying…</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="item-card" data-id="traditional">
+          <div class="card-thumb"><img src="img/screenshots/traditional_layout.png" alt="Traditional layout" /></div>
+          <div class="card-body">
+            <div class="card-name">Traditional Budgie</div>
+            <div class="card-actions">
+              <button class="btn btn-install install-btn" data-install="traditional-layout"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>Install Layout</button>
+              <button class="btn btn-apply apply-btn" data-layout="traditional"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.53 16.122a3 3 0 0 0-5.78 1.128 2.25 2.25 0 0 1-2.4 2.245 4.5 4.5 0 0 0 8.4-2.245c0-.399-.078-.78-.22-1.128Zm0 0a15.998 15.998 0 0 0 3.388-1.62m-5.043-.025a15.994 15.994 0 0 1 1.622-3.395m3.42 3.42a15.995 15.995 0 0 0 4.764-4.648l3.876-5.814a1.151 1.151 0 0 0-1.597-1.597L14.146 6.32a15.996 15.996 0 0 0-4.649 4.763m3.42 3.42a6.776 6.776 0 0 0-3.42-3.42"/></svg>Apply Layout</button>
+              <span class="applying-badge"><div class="spin-ring"></div>Applying…</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="item-card" data-id="theone">
+          <div class="card-thumb"><img src="img/screenshots/theone_layout.png" alt="The One layout" /></div>
+          <div class="card-body">
+            <div class="card-name">The One</div>
+            <div class="card-actions">
+              <button class="btn btn-install install-btn" data-install="theone-layout"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>Install Layout</button>
+              <button class="btn btn-apply apply-btn" data-layout="theone"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.53 16.122a3 3 0 0 0-5.78 1.128 2.25 2.25 0 0 1-2.4 2.245 4.5 4.5 0 0 0 8.4-2.245c0-.399-.078-.78-.22-1.128Zm0 0a15.998 15.998 0 0 0 3.388-1.62m-5.043-.025a15.994 15.994 0 0 1 1.622-3.395m3.42 3.42a15.995 15.995 0 0 0 4.764-4.648l3.876-5.814a1.151 1.151 0 0 0-1.597-1.597L14.146 6.32a15.996 15.996 0 0 0-4.649 4.763m3.42 3.42a6.776 6.776 0 0 0-3.42-3.42"/></svg>Apply Layout</button>
+              <span class="applying-badge"><div class="spin-ring"></div>Applying…</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="item-card" data-id="cupertino">
+          <div class="card-thumb"><img src="img/screenshots/cupertino_layout.png" alt="Cupertino layout" /></div>
+          <div class="card-body">
+            <div class="card-name">Cupertino</div>
+            <div class="card-actions">
+              <button class="btn btn-install install-btn" data-install="cupertino-layout"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>Install Layout</button>
+              <button class="btn btn-apply apply-btn" data-layout="cupertino"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.53 16.122a3 3 0 0 0-5.78 1.128 2.25 2.25 0 0 1-2.4 2.245 4.5 4.5 0 0 0 8.4-2.245c0-.399-.078-.78-.22-1.128Zm0 0a15.998 15.998 0 0 0 3.388-1.62m-5.043-.025a15.994 15.994 0 0 1 1.622-3.395m3.42 3.42a15.995 15.995 0 0 0 4.764-4.648l3.876-5.814a1.151 1.151 0 0 0-1.597-1.597L14.146 6.32a15.996 15.996 0 0 0-4.649 4.763m3.42 3.42a6.776 6.776 0 0 0-3.42-3.42"/></svg>Apply Layout</button>
+              <span class="applying-badge"><div class="spin-ring"></div>Applying…</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ══ PANEL SETTINGS TAB ══ -->
+    <div class="tab-page" id="page-settings">
+      <div class="restore-section">
+        <div class="restore-card">
+          <h3>Restore Panels</h3>
+          <p>Lost your panels while customising Ubuntu Budgie? Unhappy with changes you've made to the panel layout? Don't worry — you can restore everything to the default configuration with a single click.</p>
+          <div class="restore-warn">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z"/></svg>
+            This will undo all changes made to any panel and reset back to the initial default panel layout configuration.
+          </div>
+          <div style="display:flex;align-items:center;gap:10px;">
+            <button class="btn btn-reset" id="panelResetBtn">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor" style="width:14px;height:14px"><path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99"/></svg>
+              Reset Budgie Panel
+            </button>
+            <span class="applying-badge" id="panelApplying"><div class="spin-ring"></div>Applying…</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- end scroll-body -->
+
+  <!-- Footer -->
+  <div class="win-footer">
+    <a href="#" class="discourse-link">
+      <span style="font-size:12px;color:#9b9b9b;">Get support on</span>
+      <img src="public/img/logos/discourse-logo-dark.svg" alt="Discourse" />
+    </a>
+    <div class="social-links">
+      <a href="#" class="social-link" title="Blog"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width=".3" d="M19 7h1v12a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h11.5M7 14h6m-6 3h6m0-10h.5m-.5 3h.5M7 7h3v3H7V7Z"/></svg></a>
+      <a href="#" class="social-link" title="Twitter"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/></svg></a>
+      <a href="#" class="social-link" title="GitHub"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg></a>
+      <a href="#" class="social-link" title="Slack"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M3.362 10.11c0 .926-.756 1.681-1.681 1.681S0 11.036 0 10.111C0 9.186.756 8.43 1.68 8.43h1.682v1.68zm.846 0c0-.924.756-1.68 1.681-1.68s1.681.756 1.681 1.68v4.21c0 .924-.756 1.68-1.68 1.68a1.685 1.685 0 0 1-1.682-1.68v-4.21zM5.89 3.362c-.926 0-1.682-.756-1.682-1.681S4.964 0 5.89 0s1.68.756 1.68 1.68v1.682H5.89zm0 .846c.924 0 1.68.756 1.68 1.681S6.814 7.57 5.89 7.57H1.68C.757 7.57 0 6.814 0 5.89c0-.926.756-1.682 1.68-1.682h4.21zm6.749 1.682c0-.926.755-1.682 1.68-1.682.925 0 1.681.756 1.681 1.681s-.756 1.681-1.68 1.681h-1.681V5.89zm-.848 0c0 .924-.755 1.68-1.68 1.68A1.685 1.685 0 0 1 8.43 5.89V1.68C8.43.757 9.186 0 10.11 0c.926 0 1.681.756 1.681 1.68v4.21zm-1.681 6.748c.926 0 1.682.756 1.682 1.681S11.036 16 10.11 16s-1.681-.756-1.681-1.68v-1.682h1.68zm0-.847c-.924 0-1.68-.755-1.68-1.68 0-.925.756-1.681 1.68-1.681h4.21c.924 0 1.68.756 1.68 1.68 0 .926-.756 1.681-1.68 1.681h-4.21z"/></svg></a>
+    </div>
+  </div>
+
+</div>
+
+<script is:inline>
+(function () {
+  function cmd(c) { console.log('cmd:', c); }
+  window.cmd = cmd;
+
+  document.addEventListener('DOMContentLoaded', function () {
+
+    /* ── Tab switching ── */
+    document.querySelectorAll('.tab-btn[data-tab]').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        document.querySelectorAll('.tab-btn').forEach(function (b) { b.classList.remove('active'); });
+        document.querySelectorAll('.tab-page').forEach(function (p) { p.classList.remove('active'); });
+        btn.classList.add('active');
+        var page = document.getElementById('page-' + btn.dataset.tab);
+        if (page) page.classList.add('active');
+        document.querySelector('.scroll-body').scrollTop = 0;
+      });
+    });
+
+    /* ── Theme split-button dropdowns ── */
+    document.querySelectorAll('.split-arrow').forEach(function (arrow) {
+      arrow.addEventListener('click', function (e) {
+        e.stopPropagation();
+        var menu = arrow.nextElementSibling;
+        var isOpen = menu.classList.toggle('open');
+        arrow.classList.toggle('open', isOpen);
+        // close all other open menus
+        document.querySelectorAll('.theme-menu.open').forEach(function (m) {
+          if (m !== menu) { m.classList.remove('open'); m.previousElementSibling.classList.remove('open'); }
+        });
+      });
+    });
+
+    /* close dropdowns on outside click */
+    document.addEventListener('click', function () {
+      document.querySelectorAll('.theme-menu.open').forEach(function (m) {
+        m.classList.remove('open');
+        m.previousElementSibling.classList.remove('open');
+      });
+    });
+
+    /* ── Install buttons ── */
+    document.querySelectorAll('.install-btn').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var card = btn.closest('.item-card');
+        var badge = card.querySelector('.applying-badge');
+        var applyGroup = card.querySelector('.apply-group');
+        var applyBtn   = card.querySelector('.apply-btn');
+        btn.style.display = 'none';
+        if (badge) badge.classList.add('visible');
+        cmd('install?' + btn.dataset.install);
+        setTimeout(function () {
+          if (badge) badge.classList.remove('visible');
+          if (applyGroup) applyGroup.style.display = '';
+          if (applyBtn)   applyBtn.style.display = '';
+        }, 1800);
+      });
+    });
+
+    /* ── Makeover main button ── */
+    document.querySelectorAll('.split-main[data-makeover]').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        showApplying(btn.closest('.item-card'));
+        cmd('makeover?' + btn.dataset.makeover);
+      });
+    });
+
+    /* ── Theme menu items ── */
+    document.querySelectorAll('.theme-menu-item[data-makeover]').forEach(function (btn) {
+      btn.addEventListener('click', function () { showApplying(btn.closest('.item-card')); cmd('makeover?' + btn.dataset.makeover); });
+    });
+    document.querySelectorAll('.theme-menu-item[data-theme]').forEach(function (btn) {
+      btn.addEventListener('click', function () { showApplying(btn.closest('.item-card')); cmd('theme?' + btn.dataset.theme); });
+    });
+    document.querySelectorAll('.theme-menu-item[data-font]').forEach(function (btn) {
+      btn.addEventListener('click', function () { showApplying(btn.closest('.item-card')); cmd('font?' + btn.dataset.font); });
+    });
+    document.querySelectorAll('.theme-menu-item[data-icon]').forEach(function (btn) {
+      btn.addEventListener('click', function () { showApplying(btn.closest('.item-card')); cmd('icon?' + btn.dataset.icon); });
+    });
+    document.querySelectorAll('.theme-menu-item[data-desktop]').forEach(function (btn) {
+      btn.addEventListener('click', function () { showApplying(btn.closest('.item-card')); cmd('desktop?' + btn.dataset.desktop); });
+    });
+
+    /* ── Layout apply buttons ── */
+    document.querySelectorAll('.apply-btn[data-layout]').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        showApplying(btn.closest('.item-card'));
+        cmd('layout?' + btn.dataset.layout);
+      });
+    });
+
+    /* ── Panel reset ── */
+    document.getElementById('panelResetBtn').addEventListener('click', function () {
+      document.getElementById('panelApplying').classList.add('visible');
+      cmd('panel-reset');
+      setTimeout(function () { document.getElementById('panelApplying').classList.remove('visible'); }, 2000);
+    });
+
+    function showApplying(card) {
+      var badge = card.querySelector('.applying-badge');
+      if (!badge) return;
+      badge.classList.add('visible');
+      setTimeout(function () { badge.classList.remove('visible'); }, 2000);
+    }
+  });
+})();
+</script>
+</body>
+</html>
