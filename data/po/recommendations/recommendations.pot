@@ -34,7 +34,7 @@ msgstr ""
 msgid "Enable Ubuntu Budgie backports repository"
 msgstr ""
 
-#: recommendations.html:33, 48, 84, 121, 143, 168, 183, 198, 215, 236, 310
+#: recommendations.html:33, 48, 84, 116, 139, 164, 179, 194, 211, 232, 306
 msgid "Applying Changes..."
 msgstr ""
 
@@ -79,7 +79,7 @@ msgstr ""
 msgid "Configure Backup"
 msgstr ""
 
-#: recommendations.html:73, 110, 140, 165, 233
+#: recommendations.html:73, 110, 136, 161, 229
 msgid "Remove"
 msgstr ""
 
@@ -122,93 +122,93 @@ msgstr ""
 msgid "Configure Firewall"
 msgstr ""
 
-#: recommendations.html:113
-msgid ""
-"Firewall Configuration</b> can be found later in the menu <b>System Tools<i "
-"class=\"material-icons\">&#xE315;</i> Firewall Configuration</i></b>."
-msgstr ""
-
-#: recommendations.html:119
+#: recommendations.html:114
 msgid "Install Firewall"
 msgstr ""
 
-#: recommendations.html:126
+#: recommendations.html:117
+msgid ""
+"Under wayland type xhost +si:localuser:root in a terminal and then type gufw"
+" in the same terminal to launch."
+msgstr ""
+
+#: recommendations.html:122
 msgid "ClamAV and ClamTK"
 msgstr ""
 
-#: recommendations.html:131
+#: recommendations.html:127
 msgid ""
 "ClamTk is a frontend for ClamAV (Clam Antivirus). It is intended to be an "
 "easy to use, light-weight, on-demand scanner for Linux systems."
 msgstr ""
 
-#: recommendations.html:137
+#: recommendations.html:133
 msgid "ClamAV is installed"
 msgstr ""
 
-#: recommendations.html:146
+#: recommendations.html:142
 msgid "Install & Configure ClamAV"
 msgstr ""
 
-#: recommendations.html:155
+#: recommendations.html:151
 msgid ""
 "Nemo Preview allows you to quickly view the contents of a highlighted file "
 "from the Nemo file manager. Just press space to toggle the preview on and "
 "off."
 msgstr ""
 
-#: recommendations.html:158
+#: recommendations.html:154
 msgid "Nemo Preview is installed"
 msgstr ""
 
-#: recommendations.html:160
+#: recommendations.html:156
 msgid "Install Nemo Preview"
 msgstr ""
 
-#: recommendations.html:175
+#: recommendations.html:171
 msgid ""
 "Nemo Compare allows you to show the differences between two closely related "
 "files from the Nemo file manager. Just right click, compare the first file, "
 "right click again and compare with the second file."
 msgstr ""
 
-#: recommendations.html:178
+#: recommendations.html:174
 msgid "Nemo Compare is installed"
 msgstr ""
 
-#: recommendations.html:180
+#: recommendations.html:176
 msgid "Install Nemo Compare"
 msgstr ""
 
-#: recommendations.html:190
+#: recommendations.html:186
 msgid ""
 "Nemo Terminal embeds a terminal within the nemo file-manager. Press F4 to "
 "toggle the visibility of the terminal."
 msgstr ""
 
-#: recommendations.html:193
+#: recommendations.html:189
 msgid "Nemo Terminal is installed"
 msgstr ""
 
-#: recommendations.html:195
+#: recommendations.html:191
 msgid "Install Nemo Terminal"
 msgstr ""
 
-#: recommendations.html:205
+#: recommendations.html:201
 msgid ""
 "Nemo Share allows you to quickly share a folder from the Nemo file manager "
 "without requiring root access."
 msgstr ""
 
-#: recommendations.html:210
+#: recommendations.html:206
 msgid "Nemo Share is installed"
 msgstr ""
 
-#: recommendations.html:212
+#: recommendations.html:208
 msgid "Install Nemo Share"
 msgstr ""
 
-#: recommendations.html:222
+#: recommendations.html:218
 msgid ""
 "Gutenprint is a suite of <a onclick=\"cmd('link?http://gimp-"
 "print.sourceforge.net/p_Supported_Printers.php')\">thousands</a> of printer "
@@ -216,19 +216,19 @@ msgid ""
 "supports only the printer part of multi-function devices."
 msgstr ""
 
-#: recommendations.html:226
+#: recommendations.html:222
 msgid "Gutenprint is installed"
 msgstr ""
 
-#: recommendations.html:229
+#: recommendations.html:225
 msgid "Install Gutenprint"
 msgstr ""
 
-#: recommendations.html:241
+#: recommendations.html:237
 msgid "Snap Applications"
 msgstr ""
 
-#: recommendations.html:246
+#: recommendations.html:242
 msgid ""
 "<strong>Snap</strong> is a new generation application packaging format "
 "developed by <em>Canonical</em>. Even though it was initially developed just"
@@ -244,19 +244,19 @@ msgid ""
 "the past."
 msgstr ""
 
-#: recommendations.html:259
+#: recommendations.html:255
 msgid "Learn more"
 msgstr ""
 
-#: recommendations.html:261
+#: recommendations.html:257
 msgid "Snap user guide"
 msgstr ""
 
-#: recommendations.html:263
+#: recommendations.html:259
 msgid "Search Snap Apps"
 msgstr ""
 
-#: recommendations.html:264
+#: recommendations.html:260
 msgid ""
 "If there’s a barrier to Snap app adoption (aside from few apps being made "
 "available in the format) it’s knowing which packages are available in the "
@@ -264,50 +264,50 @@ msgid ""
 "following command:"
 msgstr ""
 
-#: recommendations.html:270
+#: recommendations.html:266
 msgid ""
 "The find command lets you quickly search for and discover snaps available to"
 " install from the command line. It can be run with a query after it (e.g., "
 "‘snap find email‘, ‘snap find media’, ‘snap find messaging‘) or without."
 msgstr ""
 
-#: recommendations.html:273
+#: recommendations.html:269
 msgid "When run without a query you’ll instead see a list of featured snaps."
 msgstr ""
 
-#: recommendations.html:274
+#: recommendations.html:270
 msgid "See installed apps"
 msgstr ""
 
-#: recommendations.html:275
+#: recommendations.html:271
 msgid ""
 "Installed some Snaps but can’t remember what? Don’t panic. Use the list "
 "command to see an up-to-date list of all Snap apps installed on your system:"
 msgstr ""
 
-#: recommendations.html:278
+#: recommendations.html:274
 msgid ""
 "This list also shows you their version number, revision number and the name "
 "of the developer who uploaded it (handy when there are multiple versions of "
 "the same app in the store, e.g., Telegram)."
 msgstr ""
 
-#: recommendations.html:281
+#: recommendations.html:277
 msgid "Install & Remove Snap Apps"
 msgstr ""
 
-#: recommendations.html:282
+#: recommendations.html:278
 msgid ""
 "If you’re used to managing software using apt you’ll instantly find the "
 "analogous snap commands easy to remember. You install snap apps with the "
 "‘install’ command, and remove them using the ‘remove’ command."
 msgstr ""
 
-#: recommendations.html:287
+#: recommendations.html:283
 msgid "See details of an App"
 msgstr ""
 
-#: recommendations.html:288
+#: recommendations.html:284
 msgid ""
 "You can use this to see detailed information about any snap application, "
 "whether it is installed or not. This info includes the application’s release"
@@ -315,11 +315,11 @@ msgid ""
 "info --verbose offers a greater overview."
 msgstr ""
 
-#: recommendations.html:294
+#: recommendations.html:290
 msgid "Update a Snap App"
 msgstr ""
 
-#: recommendations.html:296
+#: recommendations.html:292
 msgid ""
 "Rather helpfully you probably won’t ever need to remember to install an "
 "update to a Snap app. This is because Snapd runs in the background and "
@@ -327,14 +327,14 @@ msgid ""
 " a specific revision)."
 msgstr ""
 
-#: recommendations.html:302
+#: recommendations.html:298
 msgid "Reference"
 msgstr ""
 
-#: recommendations.html:305
+#: recommendations.html:301
 msgid "Snap is already installed"
 msgstr ""
 
-#: recommendations.html:308
+#: recommendations.html:304
 msgid "Install Snap"
 msgstr ""

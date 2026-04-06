@@ -109,16 +109,12 @@
                                     <span class="material-icons">&#xE872;</span><span
                                         class="button-text">&zwnj;Remove&zwnj;</span>
                                 </a>
-                                <span id="firewall-hint" class="center"><small>
-                                    <p><i class="material-icons">&#xE88F;</i> <b>&zwnj;Firewall Configuration</b> can be found later in the menu
-                                        <b>System Tools<i class="material-icons">&#xE315;</i> Firewall Configuration</i></b>.&zwnj;
-                                    </p>
-                                    </small></span>
                             </div>
                             <a id="firewall-install" class="btn btn-success" onclick="cmd('install?firewall');">&nbsp;<span
                                 class="material-icons">&#xE2C0;</span><span class="button-text">&zwnj;Install Firewall&zwnj;</span>&nbsp;</a>
                             <span id="firewall-status" class="hidden"><img src="img/welcome/processing.gif" width="24px" height="24px" />
                             &zwnj;Applying Changes...&zwnj;</span>
+                            <p id="firewall-instruction"><small>&zwnj;Under wayland type xhost +si:localuser:root in a terminal and then type gufw in the same terminal to launch.&zwnj;</small></p>
                         </div>
                         <hr>
                     </div>
