@@ -244,6 +244,7 @@ class AppView(WebKit2.WebView):
                 config = json.load(file)
 
             for applet in config['budgie-applets']:
+                #print("applet " + applet)
                 show_applet=True
                 if "budgie-version" in config['budgie-applets'][applet]:
                     test_caveat = config['budgie-applets'][applet]['budgie-version']
@@ -252,13 +253,16 @@ class AppView(WebKit2.WebView):
 
                 if 'session-type' in config['budgie-applets'][applet]:
                     show_applet = systemstate.xdg_session in config['budgie-applets'][applet]['session-type']
+                    #print("here1")
                 else:
                     show_applet = systemstate.xdg_session == 'x11'
 
                 if systemstate.codename in config['budgie-applets'][applet]['repos'] and show_applet:
                     app.update_page("." + applet, 'show')
+                    #print("show")
                 else:
                     app.update_page("." + applet, 'hide')
+                    #print("hide")
 
             if systemstate.bde_version == 'NA':
                 app.update_page(".showhide", 'show')
@@ -302,6 +306,7 @@ class AppView(WebKit2.WebView):
                     # some package names are codename specific
                     # so the buttons on page needs the string
                     # without the codename
+                    #print("current_page " + current_page + " code "+ code)
                     code = code.split("#")[0]
                     installed = pm.hasInstalled(current_page, code)
 
@@ -887,6 +892,7 @@ class AppView(WebKit2.WebView):
         # we need to display a PopUp message describing what is being installed and
         # getting a positive yes from the user in that they have understood the risks
 
+        #print("fname "+ fname + " code "+code)
         installed = pm.hasInstalled(fname, code)
 
         if installed:
@@ -1319,6 +1325,7 @@ class PackageData(object):
         return self.data[filename].keys()
 
     def getPackages(self, filename, code):
+        #print ("f " + filename + " c " + code)
         try:
             full_code = code + "#" + systemstate.codename
             if full_code in self.data[filename]:

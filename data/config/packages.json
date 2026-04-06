@@ -340,6 +340,19 @@
         ]
       }
     },
+    "workspace-wallpaper-widget": {
+      "packages": [
+        "budgie-workspace-wallpaper-widget"
+      ],
+      "repos": {
+        "resolute": [
+          "universe"
+        ]
+      },
+      "session-type": [
+        "wayland"
+      ]
+    },
     "showtime-applet": {
       "packages": [
         "budgie-showtime-applet"
@@ -356,14 +369,24 @@
         ],
         "questing": [
           "universe"
-        ],
-        "resolute": [
-          "universe"
         ]
       },
       "session-type": [
         "wayland",
         "x11"
+      ]
+    },
+    "showtime-widget": {
+      "packages": [
+        "budgie-showtime-widget"
+      ],
+      "repos": {
+        "resolute": [
+          "universe"
+        ]
+      },
+      "session-type": [
+        "wayland"
       ]
     },
     "countdown-applet": {
@@ -390,6 +413,19 @@
       "session-type": [
         "wayland",
         "x11"
+      ]
+    },
+    "screencast-applet": {
+      "packages": [
+        "budgie-screencast-applet"
+      ],
+      "repos": {
+        "resolute": [
+          "universe"
+        ]
+      },
+      "session-type": [
+        "wayland"
       ]
     },
     "keyboard-language-applet": {
@@ -932,9 +968,6 @@
         ],
         "plucky": [
           "universe"
-        ],
-        "resolute": [
-          "universe"
         ]
       },
       "session-type": [
@@ -986,11 +1019,39 @@
         ]
       }
     },
+    "ubuntubudgie-layout#resolute": {
+      "packages": [
+        "budgie-applications-menu-applet",
+        "budgie-indicator-applet",
+        "budgie-dropby-applet",
+        "budgie-network-manager-applet",
+        "budgie-showtime-widget",
+        "budgie-quicknote-applet"
+      ],
+      "repos": {
+        "all": [
+          "universe"
+        ]
+      }
+    },
     "classicubuntubudgie-layout": {
       "packages": [
         "budgie-indicator-applet",
         "budgie-dropby-applet",
         "budgie-showtime-applet",
+        "budgie-quicknote-applet"
+      ],
+      "repos": {
+        "all": [
+          "universe"
+        ]
+      }
+    },
+    "classicubuntubudgie-layout#resolute": {
+      "packages": [
+        "budgie-indicator-applet",
+        "budgie-dropby-applet",
+        "budgie-showtime-widget",
         "budgie-quicknote-applet"
       ],
       "repos": {
@@ -1226,140 +1287,6 @@
           "ppa:ubuntubudgie/backports"
         ]
       }
-    }
-  },
-  "resolute": {
-    "ubuntubudgie-layout": {
-      "packages": [
-        "budgie-applications-menu-applet",
-        "budgie-indicator-applet",
-        "budgie-dropby-applet",
-        "budgie-network-manager-applet",
-        "budgie-showtime-widget",
-        "budgie-visualspace-applet",
-        "budgie-quicknote-applet"
-      ],
-      "repos": {
-        "all": [
-          "universe"
-        ]
-      }
-    },
-    "classicubuntubudgie-layout": {
-      "packages": [
-        "budgie-applications-menu-applet",
-        "budgie-indicator-applet",
-        "budgie-dropby-applet",
-        "budgie-network-manager-applet",
-        "budgie-showtime-widget",
-        "budgie-visualspace-applet",
-        "budgie-quicknote-applet"
-      ],
-      "repos": {
-        "all": [
-          "universe"
-        ]
-      }
-    },
-    "redmond-layout": {
-      "packages": [
-        "budgie-applications-menu-applet",
-        "budgie-indicator-applet",
-        "budgie-dropby-applet",
-        "budgie-network-manager-applet"
-      ],
-      "repos": {
-        "all": [
-          "universe"
-        ]
-      }
-    },
-    "eleven-layout": {
-      "packages": [
-        "budgie-applications-menu-applet",
-        "budgie-indicator-applet",
-        "budgie-dropby-applet",
-        "budgie-network-manager-applet"
-      ],
-      "repos": {
-        "all": [
-          "universe"
-        ]
-      }
-    },
-    "chrome-layout": {
-      "packages": [
-        "budgie-lightpad-applet",
-        "budgie-indicator-applet",
-        "budgie-dropby-applet",
-        "budgie-network-manager-applet"
-      ],
-      "repos": {
-        "all": [
-          "universe",
-          "ppa:ubuntubudgie/backports"
-        ]
-      }
-    },
-    "cupertino-layout": {
-      "packages": [
-        "budgie-applications-menu-applet",
-        "budgie-indicator-applet",
-        "budgie-dropby-applet",
-        "budgie-network-manager-applet"
-      ],
-      "repos": {
-        "all": [
-          "universe"
-        ]
-      }
-    },
-    "theone-layout": {
-      "packages": [
-        "budgie-applications-menu-applet",
-        "budgie-indicator-applet",
-        "budgie-dropby-applet",
-        "budgie-network-manager-applet",
-        "budgie-recentlyused-applet"
-      ],
-      "repos": {
-        "all": [
-          "universe"
-        ]
-      }
-    },
-    "traditional-layout": {
-      "packages": [
-        "budgie-indicator-applet",
-        "budgie-dropby-applet",
-        "budgie-network-manager-applet"
-      ],
-      "repos": {
-        "all": [
-          "universe"
-        ]
-      }
-    },
-    "pocillo-theme": {
-      "packages": [
-        "ubuntu-budgie-themes",
-        "pocillo-icon-theme"
-      ],
-      "size": 60
-    },
-    "arc-theme": {
-      "packages": [
-        "arc-theme",
-        "pocillo-icon-theme"
-      ],
-      "size": 60
-    },
-    "qogirbudgie-theme": {
-      "packages": [
-        "ubuntu-budgie-themes",
-        "pocillo-icon-theme"
-      ],
-      "size": 60
     }
   },
   "gettingstarted": {

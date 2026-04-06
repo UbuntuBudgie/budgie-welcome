@@ -549,29 +549,6 @@
                   </div>
                   <hr/>
                </div>
-               <div class="col-md-6 workspace-overview-applet">
-                  <br>
-                  <h2><a onclick="cmd('link?https://github.com/UbuntuBudgie/budgie-extras')"><span class="material-icons">help</span></a>Workspace Overview Applet</h2>
-                  <div class="card card-block">
-                     <div class="card-image text-md-center">
-                        <a href="../../img/screenshots/workspace-overview-applet.jpg" data-toggle="lightbox"><img src="../../img/screenshots/workspace-overview-applet.jpg" style="width: auto; max-height: 128px" /></a>
-                     </div>
-                     <p class="card-text">Quickly navigate workspaces using the applet's menu.</p>
-                  </div>
-                  <div class="text-md-right">
-                     <a id="workspace-overview-applet-remove" class="btn btn-danger" onclick="cmd('remove?workspace-overview-applet');">
-                     <span class="material-icons">&#xE872;</span><span class="button-text">Remove</span>
-                     </a>
-                     <a id="workspace-overview-applet-install" class="btn btn-success hvr-shadow" onclick="cmd('install?workspace-overview-applet');"> &nbsp;
-                     <span class="material-icons">&#xE2C0;</span>Install&nbsp;
-                     </a>
-                     <span id="workspace-overview-status" class="hidden">
-                     <img src="../../img/welcome/processing.gif" width="24px" height="24px" /> Applying changes...
-                     </span>
-                     <p id="workspace-overview-instruction" class="hidden"><small>Logout and login after installing applets. From the menu - choose Budgie Desktop Settings and choose the Panel to add and configure applets.</small></p>
-                  </div>
-                  <hr/>
-               </div>
                <div class="col-md-6 workspace-wallpaper-applet">
                   <br>
                   <h2><a onclick="cmd('link?https://github.com/UbuntuBudgie/budgie-extras')"><span class="material-icons">help</span></a>Workspace Wallpaper Applet</h2>
@@ -595,26 +572,26 @@
                   </div>
                   <hr/>
                </div>
-               <div class="col-md-6 window-mover-applet">
+               <div class="col-md-6 workspace-wallpaper-widget">
                   <br>
-                  <h2><a onclick="cmd('link?https://github.com/UbuntuBudgie/budgie-extras')"><span class="material-icons">help</span></a>Window Mover Applet</h2>
+                  <h2><a onclick="cmd('link?https://github.com/UbuntuBudgie/budgie-extras')"><span class="material-icons">help</span></a>Workspace Wallpaper Widget</h2>
                   <div class="card card-block">
                      <div class="card-image text-md-center">
-                        <a href="../../img/screenshots/window-mover-applet.jpg" data-toggle="lightbox"><img src="../../img/screenshots/window-mover-applet.jpg" style="width: auto; max-height: 128px" /></a>
+                        <a href="../../img/screenshots/workspace-wallpaper-applet.jpg" data-toggle="lightbox"><img src="../../img/screenshots/workspace-wallpaper-applet.jpg" style="width: auto; max-height: 128px" /></a>
                      </div>
-                     <p class="card-text">Quickly move windows between workspaces.</p>
+                     <p class="card-text">Show a different wallpaper on each workspace.</p>
                   </div>
                   <div class="text-md-right">
-                     <a id="window-mover-applet-remove" class="btn btn-danger" onclick="cmd('remove?window-mover-applet');">
+                     <a id="workspace-wallpaper-widget-remove" class="btn btn-danger" onclick="cmd('remove?workspace-wallpaper-widget');">
                      <span class="material-icons">&#xE872;</span><span class="button-text">Remove</span>
                      </a>
-                     <a id="window-mover-applet-install" class="btn btn-success hvr-shadow" onclick="cmd('install?window-mover-applet');"> &nbsp;
+                     <a id="workspace-wallpaper-widget-install" class="btn btn-success hvr-shadow" onclick="cmd('install?workspace-wallpaper-widget');"> &nbsp;
                      <span class="material-icons">&#xE2C0;</span>Install&nbsp;
                      </a>
-                     <span id="window-mover-status" class="hidden">
+                     <span id="workspace-wallpaper-status" class="hidden">
                      <img src="../../img/welcome/processing.gif" width="24px" height="24px" /> Applying changes...
                      </span>
-                     <p id="window-mover-instruction" class="hidden"><small>Logout and login after installing applets. From the menu - choose Budgie Desktop Settings and choose the Panel to add and configure applets.</small></p>
+                     <p id="workspace-wallpaper-widget-instruction" class="hidden"><small>Logout and login after installing Widgets. From the menu - choose Budgie Desktop Settings and choose Raven to add and configure widgets.</small></p>
                   </div>
                   <hr/>
                </div>
@@ -638,6 +615,52 @@
                      <img src="../../img/welcome/processing.gif" width="24px" height="24px" /> Applying changes...
                      </span>
                      <p id="showtime-instruction" class="hidden"><small>Logout and login after installing applets. From the menu - choose Budgie Desktop Settings and choose the Panel to add and configure applets.</small></p>
+                  </div>
+                  <hr/>
+               </div>
+               <div class="col-md-6 showtime-widget showhide">
+                  <br>
+                  <h2><a onclick="cmd('link?https://github.com/UbuntuBudgie/budgie-extras')"><span class="material-icons">help</span></a>Desktop Showtime Widget</h2>
+                  <div class="card card-block">
+                     <div class="card-image text-md-center">
+                        <a href="../../img/screenshots/showtime-applet.jpg" data-toggle="lightbox"><img src="../../img/screenshots/showtime-applet.jpg" style="width: auto; max-height: 128px" /></a>
+                     </div>
+                     <p class="card-text">Display the date and time on the Desktop.</p>
+                  </div>
+                  <div class="text-md-right">
+                     <a id="showtime-widget-remove" class="btn btn-danger" onclick="cmd('remove?showtime-widget');">
+                     <span class="material-icons">&#xE872;</span><span class="button-text">Remove</span>
+                     </a>
+                     <a id="showtime-widget-install" class="btn btn-success hvr-shadow" onclick="cmd('install?showtime-widget');"> &nbsp;
+                     <span class="material-icons">&#xE2C0;</span>Install&nbsp;
+                     </a>
+                     <span id="showtime-status" class="hidden">
+                     <img src="../../img/welcome/processing.gif" width="24px" height="24px" /> Applying changes...
+                     </span>
+                     <p id="showtime-widget-instruction" class="hidden"><small>Logout and login after installing widgets. From the menu - choose Budgie Desktop Settings and choose Raven to add and configure widgets.</small></p>
+                  </div>
+                  <hr/>
+               </div>
+               <div class="col-md-6 screencast-applet">
+                  <br>
+                  <h2><a onclick="cmd('link?https://github.com/UbuntuBudgie/budgie-extras')"><span class="material-icons">help</span></a>Screencast Applet</h2>
+                  <div class="card card-block">
+                     <div class="card-image text-md-center">
+                        <a href="../../img/screenshots/screencast-applet.jpg" data-toggle="lightbox"><img src="../../img/screenshots/screencast-applet.jpg" style="width: auto; max-height: 128px" /></a>
+                     </div>
+                     <p class="card-text">Grab video and capture audio for desktop displays and screen areas.</p>
+                  </div>
+                  <div class="text-md-right">
+                     <a id="screencast-applet-remove" class="btn btn-danger" onclick="cmd('remove?screencast-applet');">
+                     <span class="material-icons">&#xE872;</span><span class="button-text">Remove</span>
+                     </a>
+                     <a id="screencast-applet-install" class="btn btn-success hvr-shadow" onclick="cmd('install?screencast-applet');"> &nbsp;
+                     <span class="material-icons">&#xE2C0;</span>Install&nbsp;
+                     </a>
+                     <span id="screencast-status" class="hidden">
+                     <img src="../../img/welcome/processing.gif" width="24px" height="24px" /> Applying changes...
+                     </span>
+                     <p id="screencast-applet-instruction" class="hidden"><small>Logout and login after installing applets. From the menu - choose Budgie Desktop Settings and choose the Panel to add and configure applets.</small></p>
                   </div>
                   <hr/>
                </div>
