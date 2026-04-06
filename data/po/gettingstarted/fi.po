@@ -1,15 +1,14 @@
-# 
 # Translators:
 # Oi Suomi On! <oisuomion@protonmail.com>, 2023
-# Tinde (Joke), 2024
 # David Mohammed <fossfreedom@ubuntu.com>, 2024
+# Tinde (Joke), 2026
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: Budgie Welcome\n"
 "POT-Creation-Date: 2016-02-27 12:48+0100\n"
 "PO-Revision-Date: 2017-03-15 13:49+0000\n"
-"Last-Translator: David Mohammed <fossfreedom@ubuntu.com>, 2024\n"
+"Last-Translator: Tinde (Joke), 2026\n"
 "Language-Team: Finnish (https://app.transifex.com/ubuntu-budgie/teams/72251/fi/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -52,7 +51,7 @@ msgstr "Selaintarjonta"
 
 #: gettingstarted.html:47
 msgid "Email Ballot"
-msgstr ""
+msgstr "Email Ballot"
 
 #: gettingstarted.html51, 855, 1810
 msgid "Customization"
@@ -117,7 +116,7 @@ msgstr "Pentium i3 - tuotiin markkinoille karkeasti vuonna 2013"
 
 #: gettingstarted.html99, 103
 msgid "2 gigabytes (GB) of RAM"
-msgstr "2 gigatavua (Gt) keskusmuistia (RAM)"
+msgstr "2 gigatavua (GB) keskusmuistia (RAM)"
 
 #: gettingstarted.html:100
 msgid "32 gigabytes (GB) of disk space"
@@ -141,7 +140,7 @@ msgstr "Pentium i5 - luotu suunnilleen vuonna 2017"
 
 #: gettingstarted.html110, 114
 msgid "4 gigabytes (GB) of RAM"
-msgstr "4 gigatavua keskusmuistia"
+msgstr "4 gigatavua (GB) keskusmuistia"
 
 #: gettingstarted.html:111
 msgid "60 gigabytes (GB) of disk space"
@@ -1318,10 +1317,12 @@ msgid ""
 "To improve the amount of customizability, Ubuntu Budgie allows you to "
 "install/remove popular email clients."
 msgstr ""
+"Mukautettavuuden parantamiseksi Ubuntu Budgie antaa sinun asentaa/poistaa "
+"suosittuja sähköpostiohjelmia."
 
 #: gettingstarted.html:1043
 msgid "Thunderbird"
-msgstr ""
+msgstr "Thunderbird"
 
 #: gettingstarted.html:1045
 msgid ""
@@ -1329,30 +1330,38 @@ msgid ""
 "and organize the way you like. Manage all accounts separately or in a "
 "unified inbox. Thunderbird simply makes your life simpler."
 msgstr ""
+"Käytä kaikkia viestejäsi, kalentereitasi ja yhteystietojasi yhdessä nopeassa"
+" sovelluksessa. Suodata ja järjestä haluamallasi tavalla. Hallitse kaikkia "
+"tilejä erikseen tai keskitetyssä postilaatikossa. Thunderbird "
+"yksinkertaisesti yksinkertaistaa elämääsi."
 
 #: gettingstarted.html:1060
 msgid "Evolution"
-msgstr ""
+msgstr "Evolution"
 
 #: gettingstarted.html:1062
 msgid ""
 "Evolution is a personal information management application that provides "
 "integrated mail, calendaring and address book functionality."
 msgstr ""
+"Evolution on henkilökohtaisten tietojen hallintasovellus, joka tarjoaa "
+"integroidut sähköposti-, kalenteri- ja osoitekirjatoiminnot."
 
 #: gettingstarted.html:1074
 msgid "Geary"
-msgstr ""
+msgstr "Geary"
 
 #: gettingstarted.html:1076
 msgid ""
 "Geary is an email application built around conversations for the GNOME "
 "desktop."
 msgstr ""
+"Geary on sähköpostisovellus, joka on rakennettu GNOME-työpöydälle "
+"tarkoitettujen keskustelujen ympärille."
 
 #: gettingstarted.html:1088
 msgid "Kontact"
-msgstr ""
+msgstr "Kontact"
 
 #: gettingstarted.html:1090
 msgid ""
@@ -1361,10 +1370,14 @@ msgid ""
 "communications, organize your day and work with your colleagues. Become more"
 " productive with Kontact."
 msgstr ""
+"Hallitse sähköpostiasi, kalenteriasi, yhteystietojasi ja muita "
+"henkilökohtaisia ​​tietojasi Kontactin avulla. Kontact kokoaa kaiken yhteen "
+"paikkaan ja auttaa sinua hallitsemaan viestintääsi, järjestämään päiväsi ja "
+"työskentelemään työtovereidesi kanssa. Tule tuottavammaksi Kontactin avulla."
 
 #: gettingstarted.html:1102
 msgid "Astroid"
-msgstr ""
+msgstr "Astroid"
 
 #: gettingstarted.html:1104
 msgid ""
@@ -1374,10 +1387,16 @@ msgid ""
 "tons of email. Astroid searches, displays and compose emails — and relies on"
 " other programs for fetching, syncing and sending email."
 msgstr ""
+"Astroid on kevyt ja nopea sähköpostiohjelma, joka tarjoaa graafisen "
+"käyttöliittymän sähköpostien hakemiseen, näyttämiseen ja kirjoittamiseen. "
+"Sähköpostit on järjestetty ketjuihin ja tunnisteisiin. Astroid käyttää "
+"notmuch-taustajärjestelmää salamannopeaan hakuun valtavien sähköpostimäärien"
+" läpi. Astroid hakee, näyttää ja kirjoittaa sähköposteja – ja luottaa muihin"
+" ohjelmiin sähköpostien hakemiseen, synkronointiin ja lähettämiseen."
 
 #: gettingstarted.html:1116
 msgid "Claws-Mail"
-msgstr ""
+msgstr "Claws-Mail"
 
 #: gettingstarted.html:1118
 msgid ""
@@ -1386,6 +1405,10 @@ msgid ""
 "intuitive operation, abundant features, extensibility, robustness and "
 "stability."
 msgstr ""
+"Claws Mail on GTK+-pohjainen sähköpostiohjelma (ja uutistenlukija), joka "
+"tarjoaa nopean vasteajan, tyylikkään ja hienostuneen käyttöliittymän, helpon"
+" konfiguroinnin, intuitiivisen käytön, runsaasti ominaisuuksia, "
+"laajennettavuuden, kestävyyden ja vakauden."
 
 #: gettingstarted.html:1135
 msgid "User Interface"
