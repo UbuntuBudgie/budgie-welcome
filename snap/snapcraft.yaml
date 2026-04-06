@@ -1,5 +1,5 @@
 name: ubuntu-budgie-welcome
-version: '0.26.2'
+version: '0.26.3'
 summary: Welcome screen to greet new Ubuntu Budgie users on their first login.
 description: |
   The ubuntu-budgie-welcome application was designed to greet a new user at the
@@ -10,7 +10,7 @@ description: |
 
 grade: stable
 confinement: classic
-base: core22
+base: core24
 
 # this line enables LZO compression for the snap
 compression: lzo
@@ -80,8 +80,7 @@ parts:
     stage-packages:
       - python3-apt
       - xdg-utils
-      - mesa-utils 
-      - libgl1-mesa-glx
+      - mesa-utils
     override-build: |
       snapcraftctl build
       cd $SNAPCRAFT_PROJECT_DIR
