@@ -1,16 +1,16 @@
 {
-  "bionic" : [
+  "resolute" : [
     {
         "panel-attrib" : {
           "enable-shadow": true,
-          "size" : 39,
+          "size" : 37,
           "transparency": "none"
       }
     },
     {
       "SCHEMA": "org.gnome.desktop.interface",
       "VALUES": {
-        "cursor-theme": "DMZ-White",
+        "cursor-theme": "Breeze_Light",
         "gtk-theme": "Arc-Darker",
         "icon-theme": "Pocillo",
         "monospace-font-name": "Ubuntu Mono 13",
@@ -30,7 +30,7 @@
     {
       "SCHEMA": "com.solus-project.budgie-panel",
       "VALUES": {
-        "builtin-theme": true,
+        "builtin-theme": false,
         "dark-theme": true
       }
     },
@@ -42,7 +42,7 @@
       }
     },
     {
-      "SCHEMA": "org.gnome.nautilus.desktop",
+      "SCHEMA": "org.nemo.desktop",
       "VALUES": {
         "font": "Ubuntu 10"
       }
@@ -79,7 +79,7 @@
     {
       "SCHEMA": "com.solus-project.budgie-panel",
       "VALUES": {
-        "builtin-theme": true,
+        "builtin-theme": false,
         "dark-theme": true
       }
     },

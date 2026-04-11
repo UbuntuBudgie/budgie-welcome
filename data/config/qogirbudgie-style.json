@@ -1,20 +1,20 @@
 {
-  "bionic": [
+  "resolute": [
     {
       "panel-attrib": {
         "enable-shadow": true,
-        "size": 39,
+        "size": 37,
         "transparency": "dynamic"
       }
     },
     {
       "SCHEMA": "org.gnome.desktop.interface",
       "VALUES": {
-        "cursor-theme": "DMZ-White",
+        "cursor-theme": "Breeze_Light",
         "gtk-theme": "QogirBudgie",
         "icon-theme": "Pocillo",
         "monospace-font-name": "Ubuntu Mono 13",
-        "font-name": "Ubuntu 11",
+        "font-name": "Noto Sans 11",
         "document-font-name": "Sans 11"
       }
     },
@@ -23,7 +23,7 @@
       "VALUES": {
         "color-shading-type": "solid",
         "picture-options": "stretched",
-        "picture-uri": "file:////usr/share/backgrounds/Xplo_by_Hugo_Cliff.png",
+        "picture-uri": "file:////usr/share/backgrounds/budgie/ubuntu_budgie_wallpaper1.jpg",
         "primary-color": "#008094"
       }
     },
@@ -31,20 +31,20 @@
       "SCHEMA": "com.solus-project.budgie-panel",
       "VALUES": {
         "builtin-theme": false,
-        "dark-theme": false
+        "dark-theme": true
       }
     },
     {
       "SCHEMA": "org.gnome.desktop.wm.preferences",
       "VALUES": {
-        "titlebar-font": "Ubuntu Bold 11",
+        "titlebar-font": "Noto Sans Bold 11",
         "theme": "Pocillo"
       }
     },
     {
-      "SCHEMA": "org.gnome.nautilus.desktop",
+      "SCHEMA": "org.nemo.desktop",
       "VALUES": {
-        "font": "Ubuntu 10"
+        "font": "Noto Sans 11"
       }
     }
   ],
@@ -80,7 +80,7 @@
       "SCHEMA": "com.solus-project.budgie-panel",
       "VALUES": {
         "builtin-theme": false,
-        "dark-theme": false
+        "dark-theme": true
       }
     },
     {
