@@ -44,7 +44,7 @@ msgstr "Repository is geïnstalleerd"
 msgid "Enable Ubuntu Budgie backports repository"
 msgstr "Ubuntu Budgie backports repository inschakelen"
 
-#: recommendations.html33, 48, 84, 121, 143, 168, 183, 198, 215, 236, 310
+#: recommendations.html33, 48, 84, 116, 139, 164, 179, 194, 211, 232, 306
 msgid "Applying Changes..."
 msgstr "Veranderingen worden toegepast..."
 
@@ -99,7 +99,7 @@ msgstr ""
 msgid "Configure Backup"
 msgstr "Back-up configureren"
 
-#: recommendations.html73, 110, 140, 165, 233
+#: recommendations.html73, 110, 136, 161, 229
 msgid "Remove"
 msgstr "Verwijderen"
 
@@ -149,24 +149,21 @@ msgstr "Klik hier voor meer informatie over firewalls."
 msgid "Configure Firewall"
 msgstr "Firewall configureren"
 
-#: recommendations.html:113
-msgid ""
-"Firewall Configuration</b> can be found later in the menu <b>System Tools<i "
-"class=\"material-icons\">&#xE315;</i> Firewall Configuration</i></b>."
-msgstr ""
-"Firewall-configuratie</b>kan later terug gevonden worden in het menu "
-"<b>Systeemtools<i class=\"material-icons\">&#xE315;</i> Firewall-"
-"configuratie</i></b>."
-
-#: recommendations.html:119
+#: recommendations.html:114
 msgid "Install Firewall"
 msgstr "Firewall installeren"
 
-#: recommendations.html:126
+#: recommendations.html:117
+msgid ""
+"Under wayland type xhost +si:localuser:root in a terminal and then type gufw"
+" in the same terminal to launch."
+msgstr ""
+
+#: recommendations.html:122
 msgid "ClamAV and ClamTK"
 msgstr "ClamAV en ClamTK"
 
-#: recommendations.html:131
+#: recommendations.html:127
 msgid ""
 "ClamTk is a frontend for ClamAV (Clam Antivirus). It is intended to be an "
 "easy to use, light-weight, on-demand scanner for Linux systems."
@@ -174,15 +171,15 @@ msgstr ""
 "ClamTk is een frontend voor ClamAV (Clam Antivirus). Het is bedoeld als een "
 "gebruiksvriendelijke, lichtgewicht, on-demand scanner voor Linux-systemen."
 
-#: recommendations.html:137
+#: recommendations.html:133
 msgid "ClamAV is installed"
 msgstr "ClamAV is geïnstalleerd"
 
-#: recommendations.html:146
+#: recommendations.html:142
 msgid "Install & Configure ClamAV"
 msgstr "ClamAV installeren & configureren"
 
-#: recommendations.html:155
+#: recommendations.html:151
 msgid ""
 "Nemo Preview allows you to quickly view the contents of a highlighted file "
 "from the Nemo file manager. Just press space to toggle the preview on and "
@@ -192,15 +189,15 @@ msgstr ""
 "vanuit de Nemo-bestandsbeheerder. Druk gewoon op de spatiebalk om het "
 "voorbeeld in en uit te schakelen."
 
-#: recommendations.html:158
+#: recommendations.html:154
 msgid "Nemo Preview is installed"
 msgstr "Nemo Preview is geïnstalleerd"
 
-#: recommendations.html:160
+#: recommendations.html:156
 msgid "Install Nemo Preview"
 msgstr "Nemo Preview installeren"
 
-#: recommendations.html:175
+#: recommendations.html:171
 msgid ""
 "Nemo Compare allows you to show the differences between two closely related "
 "files from the Nemo file manager. Just right click, compare the first file, "
@@ -211,15 +208,15 @@ msgstr ""
 "vergelijk het eerste bestand, klik nogmaals met de rechtermuisknop en "
 "vergelijk met het tweede bestand."
 
-#: recommendations.html:178
+#: recommendations.html:174
 msgid "Nemo Compare is installed"
 msgstr "Nemo Compare is geïnstalleerd"
 
-#: recommendations.html:180
+#: recommendations.html:176
 msgid "Install Nemo Compare"
 msgstr "Nemo Compare installeren"
 
-#: recommendations.html:190
+#: recommendations.html:186
 msgid ""
 "Nemo Terminal embeds a terminal within the nemo file-manager. Press F4 to "
 "toggle the visibility of the terminal."
@@ -227,15 +224,15 @@ msgstr ""
 "Nemo Terminal integreert een terminal in de nemo file-manager. Druk op F4 om"
 " de zichtbaarheid van de terminal in te schakelen."
 
-#: recommendations.html:193
+#: recommendations.html:189
 msgid "Nemo Terminal is installed"
 msgstr "Nemo Terminal is geïnstalleerd"
 
-#: recommendations.html:195
+#: recommendations.html:191
 msgid "Install Nemo Terminal"
 msgstr "Nemo Terminal installeren"
 
-#: recommendations.html:205
+#: recommendations.html:201
 msgid ""
 "Nemo Share allows you to quickly share a folder from the Nemo file manager "
 "without requiring root access."
@@ -243,15 +240,15 @@ msgstr ""
 "Met Nemo Share kunt u snel een map delen vanuit de Nemo-bestandsbeheerder "
 "zonder de noodzaak van root-toegang."
 
-#: recommendations.html:210
+#: recommendations.html:206
 msgid "Nemo Share is installed"
 msgstr "Nemo Share is geïnstalleerd"
 
-#: recommendations.html:212
+#: recommendations.html:208
 msgid "Install Nemo Share"
 msgstr "Nemo Share installeren"
 
-#: recommendations.html:222
+#: recommendations.html:218
 msgid ""
 "Gutenprint is a suite of <a onclick=\"cmd('link?http://gimp-"
 "print.sourceforge.net/p_Supported_Printers.php')\">thousands</a> of printer "
@@ -263,19 +260,19 @@ msgstr ""
 "stuurprogramma's voor o.a. printers van Epson en Canon. Gutenprint "
 "ondersteunt alleen het printergedeelte van multifunctionele apparaten."
 
-#: recommendations.html:226
+#: recommendations.html:222
 msgid "Gutenprint is installed"
 msgstr "Gutenprint is geïnstalleerd"
 
-#: recommendations.html:229
+#: recommendations.html:225
 msgid "Install Gutenprint"
 msgstr "Gutenprint installeren"
 
-#: recommendations.html:241
+#: recommendations.html:237
 msgid "Snap Applications"
 msgstr "Snap Apps"
 
-#: recommendations.html:246
+#: recommendations.html:242
 msgid ""
 "<strong>Snap</strong> is a new generation application packaging format "
 "developed by <em>Canonical</em>. Even though it was initially developed just"
@@ -305,19 +302,19 @@ msgstr ""
 "en leveren van updates heeft ons er in het verleden van weerhouden ze te "
 "leveren."
 
-#: recommendations.html:259
+#: recommendations.html:255
 msgid "Learn more"
 msgstr "Leer meer"
 
-#: recommendations.html:261
+#: recommendations.html:257
 msgid "Snap user guide"
 msgstr "Snap gebruikershandleiding"
 
-#: recommendations.html:263
+#: recommendations.html:259
 msgid "Search Snap Apps"
 msgstr "Zoek Snap Apps"
 
-#: recommendations.html:264
+#: recommendations.html:260
 msgid ""
 "If there’s a barrier to Snap app adoption (aside from few apps being made "
 "available in the format) it’s knowing which packages are available in the "
@@ -329,7 +326,7 @@ msgstr ""
 "pakketten beschikbaar zijn in de Snap-app store. Dit is eenvoudig op te "
 "vragen door terminal te openen en de volgende opdracht uit te voeren:"
 
-#: recommendations.html:270
+#: recommendations.html:266
 msgid ""
 "The find command lets you quickly search for and discover snaps available to"
 " install from the command line. It can be run with a query after it (e.g., "
@@ -340,16 +337,16 @@ msgstr ""
 "zoekopdracht erna (bijv. 'snap find email', 'snap find media', 'snap find "
 "messaging') of zonder."
 
-#: recommendations.html:273
+#: recommendations.html:269
 msgid "When run without a query you’ll instead see a list of featured snaps."
 msgstr ""
 "Wanneer u zonder query zoekt wordt een lijst met aanbevolen snaps getoond."
 
-#: recommendations.html:274
+#: recommendations.html:270
 msgid "See installed apps"
 msgstr "Bekijk geïnstalleerde apps"
 
-#: recommendations.html:275
+#: recommendations.html:271
 msgid ""
 "Installed some Snaps but can’t remember what? Don’t panic. Use the list "
 "command to see an up-to-date list of all Snap apps installed on your system:"
@@ -358,7 +355,7 @@ msgstr ""
 "lijstopdracht om een actuele lijst te bekijken van alle Snap-apps die op uw "
 "systeem zijn geïnstalleerd:"
 
-#: recommendations.html:278
+#: recommendations.html:274
 msgid ""
 "This list also shows you their version number, revision number and the name "
 "of the developer who uploaded it (handy when there are multiple versions of "
@@ -368,11 +365,11 @@ msgstr ""
 "ontwikkelaar die het heeft geüpload (handig als er meerdere versies van "
 "dezelfde app in de winkel zijn, bijvoorbeeld Telegram)."
 
-#: recommendations.html:281
+#: recommendations.html:277
 msgid "Install & Remove Snap Apps"
 msgstr "Installeer & verwijder Snap Apps"
 
-#: recommendations.html:282
+#: recommendations.html:278
 msgid ""
 "If you’re used to managing software using apt you’ll instantly find the "
 "analogous snap commands easy to remember. You install snap apps with the "
@@ -382,11 +379,11 @@ msgstr ""
 "commando's gemakkelijk kunnen onthouden. U installeert snelle apps met de "
 "opdracht 'install' en verwijdert ze met de opdracht 'remove'."
 
-#: recommendations.html:287
+#: recommendations.html:283
 msgid "See details of an App"
 msgstr "Bekijk details van een App"
 
-#: recommendations.html:288
+#: recommendations.html:284
 msgid ""
 "You can use this to see detailed information about any snap application, "
 "whether it is installed or not. This info includes the application’s release"
@@ -399,11 +396,11 @@ msgstr ""
 " het aantal revisies en meer. De snap info --verbose biedt een groter "
 "overzicht."
 
-#: recommendations.html:294
+#: recommendations.html:290
 msgid "Update a Snap App"
 msgstr "Update een Snap App"
 
-#: recommendations.html:296
+#: recommendations.html:292
 msgid ""
 "Rather helpfully you probably won’t ever need to remember to install an "
 "update to a Snap app. This is because Snapd runs in the background and "
@@ -415,14 +412,14 @@ msgstr ""
 "automatisch verwerkt (u kunt uiteraard een Snap-update ongedaan maken of een"
 " specifieke revisie installeren)."
 
-#: recommendations.html:302
+#: recommendations.html:298
 msgid "Reference"
 msgstr "Referentie"
 
-#: recommendations.html:305
+#: recommendations.html:301
 msgid "Snap is already installed"
 msgstr "Snap is reeds geïnstalleerd"
 
-#: recommendations.html:308
+#: recommendations.html:304
 msgid "Install Snap"
 msgstr "Installeer Snap"
