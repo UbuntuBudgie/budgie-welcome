@@ -56,6 +56,20 @@
       },
       "budgie-version": "versiontuple(systemstate.budgie_desktop_version) >= versiontuple('10.8') and versiontuple(systemstate.budgie_desktop_version) < versiontuple('10.10')"
     },
+    "webcam-applet": {
+      "packages": [
+        "budgie-webcam-applet"
+      ],
+      "repos": {
+        "resolute": [
+          "ppa:ubuntubudgie/backports"
+        ]
+      },
+      "session-type": [
+        "wayland",
+        "x11"
+      ]
+    },
     "user-indicator-redux-applet": {
       "packages": [
         "budgie-user-indicator-redux-applet"
