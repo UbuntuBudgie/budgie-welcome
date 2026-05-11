@@ -40,27 +40,27 @@ msgstr ""
 #: budgie-applets.html34, 57, 80, 103, 126, 149, 172, 195, 218, 241, 264, 287,
 #: 310, 333, 356, 379, 402, 425, 448, 471, 494, 517, 540, 563, 586, 609, 632,
 #: 655, 678, 701, 724, 747, 770, 793, 816, 839, 862, 885, 908, 931, 954, 977,
-#: 1000, 1023, 1046, 1069, 1092
+#: 1000, 1023, 1046, 1069, 1092, 1115
 msgid "Remove"
 msgstr "Remover"
 
 #: budgie-applets.html37, 60, 83, 106, 129, 152, 175, 198, 221, 244, 267, 290,
 #: 313, 336, 359, 382, 405, 428, 451, 474, 497, 520, 543, 566, 589, 612, 635,
 #: 658, 681, 704, 727, 750, 773, 796, 819, 842, 865, 888, 911, 934, 957, 980,
-#: 1003, 1026, 1049, 1072, 1095
+#: 1003, 1026, 1049, 1072, 1095, 1118
 msgid "Install"
 msgstr "Instalar"
 
 #: budgie-applets.html40, 63, 86, 109, 132, 155, 178, 201, 224, 247, 270, 293,
 #: 316, 339, 362, 385, 408, 431, 454, 477, 500, 523, 546, 569, 592, 615, 638,
 #: 661, 684, 707, 730, 753, 776, 799, 822, 845, 868, 891, 914, 937, 960, 983,
-#: 1006, 1029, 1052, 1075, 1098
+#: 1006, 1029, 1052, 1075, 1098, 1121
 msgid "Applying changes..."
 msgstr "A aplicar alterações..."
 
 #: budgie-applets.html42, 65, 88, 111, 134, 157, 180, 203, 226, 249, 272, 295,
-#: 318, 364, 387, 410, 433, 456, 479, 502, 525, 548, 594, 640, 686, 709, 732,
-#: 755, 778, 801, 824, 847, 870, 893, 916, 939, 962, 985, 1031, 1054, 1100
+#: 318, 364, 387, 410, 433, 456, 479, 502, 525, 548, 594, 640, 709, 732, 755,
+#: 778, 801, 824, 847, 870, 893, 916, 939, 962, 985, 1008, 1054, 1077, 1123
 msgid ""
 "Logout and login after installing applets. From the menu - choose Budgie "
 "Desktop Settings and choose the Panel to add and configure applets."
@@ -186,7 +186,7 @@ msgstr "Window Shuffler"
 msgid "Graphical and keyboard friendly window arranger."
 msgstr "Organizador de janelas gráfico e de teclado amigável."
 
-#: budgie-applets.html341, 571, 1008, 1077
+#: budgie-applets.html341, 571, 1031, 1100
 msgid ""
 "Logout and login after installing. Choose from the menu to configure this "
 "application."
@@ -290,7 +290,7 @@ msgstr "Mostra diferentes papéis de parede em cada área de trabalho."
 msgid "Workspace Wallpaper Widget"
 msgstr ""
 
-#: budgie-applets.html617, 663
+#: budgie-applets.html617, 663, 686
 msgid ""
 "Logout and login after installing widgets. From the menu - choose Budgie "
 "Desktop Settings and choose Raven to add and configure widgets."
@@ -309,61 +309,69 @@ msgid "Desktop Showtime Widget"
 msgstr ""
 
 #: budgie-applets.html:669
-msgid "Screencast Applet"
+msgid "Radio Browser Widget"
 msgstr ""
 
 #: budgie-applets.html:674
-msgid "Grab video and capture audio for desktop displays and screen areas."
+msgid "Browse and play from thousands of radio stations."
 msgstr ""
 
 #: budgie-applets.html:692
+msgid "Screencast Applet"
+msgstr ""
+
+#: budgie-applets.html:697
+msgid "Grab video and capture audio for desktop displays and screen areas."
+msgstr ""
+
+#: budgie-applets.html:715
 msgid "CountDown Applet"
 msgstr "Mini-aplicação de contagem decrescente"
 
-#: budgie-applets.html:697
+#: budgie-applets.html:720
 msgid "Set a timed countdown and run an action when the countdown completes."
 msgstr ""
 "Determina uma contagem decrescente e executa uma ação quando a contagem for "
 "concluída."
 
-#: budgie-applets.html:715
+#: budgie-applets.html:738
 msgid "Auto-Keyboard Switcher Applet"
 msgstr "Mini-aplicação de troca automática de teclado"
 
-#: budgie-applets.html:720
+#: budgie-applets.html:743
 msgid "Change the keyboard language automatically on a per application basis."
 msgstr "Altera o idioma do teclado automaticamente com base na aplicação."
 
-#: budgie-applets.html:738
+#: budgie-applets.html:761
 msgid "Screen Rotation Lock Applet"
 msgstr "Mini-aplicação de bloqueio da rotação do ecrã"
 
-#: budgie-applets.html:743
+#: budgie-applets.html:766
 msgid "Add the ability to unlock or lock the screen from rotating."
 msgstr ""
 "Adiciona a possibilidade de bloquear ou desbloquear a rotação do ecrã."
 
-#: budgie-applets.html:761
+#: budgie-applets.html:784
 msgid "Clockworks Applet"
 msgstr "Mini-aplicação de relógios de ponto"
 
-#: budgie-applets.html:766
+#: budgie-applets.html:789
 msgid "Display the time across multiple time zones."
 msgstr "Mostra a hora em várias zonas horárias."
 
-#: budgie-applets.html:784
+#: budgie-applets.html:807
 msgid "DropBy Applet"
 msgstr "Mini-aplicação de visita"
 
-#: budgie-applets.html:789
+#: budgie-applets.html:812
 msgid "Display a pop-up window when a USB device is connected."
 msgstr "Mostra uma janela de notificação quando um dispositivo USB é ligado."
 
-#: budgie-applets.html:807
+#: budgie-applets.html:830
 msgid "Brightness Controller Applet"
 msgstr "Mini-aplicação de controlo de luminosidade"
 
-#: budgie-applets.html:812
+#: budgie-applets.html:835
 msgid ""
 "Control the backlight via your graphics driver controller or GNOME's "
 "brightness controller."
@@ -371,19 +379,19 @@ msgstr ""
 "Controla a luz de fundo através do controlador gráfico ou do controlador de "
 "luminosidade do GNOME."
 
-#: budgie-applets.html:830
+#: budgie-applets.html:853
 msgid "Browser Profile Launcher Applet"
 msgstr "Mini-aplicação de lançador de perfil do navegador"
 
-#: budgie-applets.html:835
+#: budgie-applets.html:858
 msgid "Launch and create multiple Chromium/Chrome profiles."
 msgstr "Lança e cria vários perfis do Chromium/Chrome."
 
-#: budgie-applets.html:853
+#: budgie-applets.html:876
 msgid "Find Fast 'Kangaroo' Applet"
 msgstr "Mini-aplicação de procura rápida 'Kangaroo'"
 
-#: budgie-applets.html:858
+#: budgie-applets.html:881
 msgid ""
 "Quick and easy browsing, across (possibly) many folder layers, without "
 "having to-do a single mouse click."
@@ -391,80 +399,80 @@ msgstr ""
 "Navegação rápida e fácil, através de (possivelmente) muitas camadas de "
 "pastas, sem ter que fazer um único clique do rato."
 
-#: budgie-applets.html:876
+#: budgie-applets.html:899
 msgid "Weather and Forecast Applet"
 msgstr "Mini-aplicação de previsão e meteorologia"
 
-#: budgie-applets.html:881
+#: budgie-applets.html:904
 msgid "Weather forecast every three hours and over five days."
 msgstr "Previsão da meteorologia a cada três horas e durante cinco dias."
 
-#: budgie-applets.html:899
+#: budgie-applets.html:922
 msgid "Recently Used Applet"
 msgstr "Mini-aplicação de utilizados recentemente"
 
-#: budgie-applets.html:904
+#: budgie-applets.html:927
 msgid "Show recently used items in a menu."
 msgstr "Mostra itens utilizados recentemente no menu."
 
-#: budgie-applets.html:922
+#: budgie-applets.html:945
 msgid "Trash Applet"
 msgstr "Mini-aplicação de lixo"
 
-#: budgie-applets.html:927
+#: budgie-applets.html:950
 msgid "Show, hide and restore trash items."
 msgstr "Mostra, oculta e restaura itens do lixo."
 
-#: budgie-applets.html:945
+#: budgie-applets.html:968
 msgid "Application Launcher Applet"
 msgstr "Mini-aplicação de lançador de aplicações"
 
-#: budgie-applets.html:950
+#: budgie-applets.html:973
 msgid "Display your favorite applications in a menu and on the panel."
 msgstr "Mostra as suas aplicações favoritas num menu e no painel."
 
-#: budgie-applets.html:968
+#: budgie-applets.html:991
 msgid "Take-A-Break Applet"
 msgstr "Mini-aplicação de fazer uma pausa"
 
-#: budgie-applets.html:973
+#: budgie-applets.html:996
 msgid ""
 "A pomodoro-like applet, to make sure you take regular breaks from working."
 msgstr ""
 "Uma mini-aplicação parecida com um pomodoro, para garantir que faça pausas "
 "regulares durante o trabalho."
 
-#: budgie-applets.html:991
+#: budgie-applets.html:1014
 msgid "Wallstreet"
 msgstr "Wallstreet"
 
-#: budgie-applets.html:996
+#: budgie-applets.html:1019
 msgid "WallStreet is a mini-app to switch wallpapers at a regular interval."
 msgstr ""
 "O WallStreet é uma mini-aplicação para mudar o papel de parede num intervalo"
 " regular."
 
-#: budgie-applets.html:1014
+#: budgie-applets.html:1037
 msgid "Fuzzy-Clock Applet"
 msgstr "Mini-aplicação de relógio confuso"
 
-#: budgie-applets.html:1019
+#: budgie-applets.html:1042
 msgid "Shows the time in a fuzzy way."
 msgstr "Mostra a hora de uma forma confusa."
 
-#: budgie-applets.html:1037
+#: budgie-applets.html:1060
 msgid "Workspace Stopwatch"
 msgstr "Cronómetro da área de trabalho"
 
-#: budgie-applets.html:1042
+#: budgie-applets.html:1065
 msgid "Keep track of usage per workspace."
 msgstr "Mantenha-se a par da utilização por área de trabalho."
 
-#: budgie-applets.html:1060
+#: budgie-applets.html:1083
 msgid "Quick Character"
 msgstr "Carater rápido"
 
-#: budgie-applets.html:1065
+#: budgie-applets.html:1088
 msgid ""
 "Quickly find and choose the equivalent locale character for an ascii "
 "character."
@@ -472,10 +480,10 @@ msgstr ""
 "Encontre e escolha rapidamente o caracter de localização equivalente para um"
 " carater ascii."
 
-#: budgie-applets.html:1083
+#: budgie-applets.html:1106
 msgid "Status Notifier Tray Applet"
 msgstr "Mini-aplicação de área de notificação para notificar o estado"
 
-#: budgie-applets.html:1088
+#: budgie-applets.html:1111
 msgid "System Tray in KDE StatusNotifierItem format."
 msgstr "Área de notificação no formato Item Notificador do estado KDE."
