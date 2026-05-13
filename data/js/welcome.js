@@ -247,8 +247,8 @@ if (current_page == 'index.html') {
 
         // Project Birthday - 01/02/2017
         var age = today.getFullYear() - 2017;
-        dd = 01;
-        mm = 02;
+        dd = 0o1;
+        mm = 0o2;
         yyyy = null;
         specialEventCheck(dateAsNumber(dd, mm, yyyy) - 7, project_birthday_future + ' ' + age + ' ' + years_old + ' ' + days_in + ' 7 ' + future_days, false, 'calendar');
         specialEventCheck(dateAsNumber(dd, mm, yyyy) - 6, project_birthday_future + ' ' + age + ' ' + years_old + ' ' + days_in + ' 6 ' + future_days, false, 'birthday-cake');
@@ -268,11 +268,11 @@ if (current_page == 'index.html') {
 
         // Holiday Celebrations
         specialEventCheck(dateAsNumber(31, 12, null), celebrate_new_year, true, 'calendar');
-        specialEventCheck(dateAsNumber(01, 01, null), celebrate_new_year, true, 'calendar');
+        specialEventCheck(dateAsNumber(0o1, 0o1, null), celebrate_new_year, true, 'calendar');
 
         // 18.04 Beta 2
         dd = 24;
-        mm = 03;
+        mm = 0o3;
         yyyy = 2018;
         release = 'Ubuntu MATE 18.04 Beta 2';
         specialEventCheck(dateAsNumber(dd, mm, yyyy) - 3, release + ' ' + project_release_future + ' ' + days_in + ' 3 ' + future_days, false, 'bug');
@@ -285,7 +285,7 @@ if (current_page == 'index.html') {
 
         // 16.04 Final Release
         dd = 21;
-        mm = 04;
+        mm = 0o4;
         yyyy = 2018;
         release = 'Ubuntu Budgie 18.04 LTS';
         specialEventCheck(dateAsNumber(dd, mm, yyyy) - 7, release + ' ' + project_release_future + ' ' + days_in + ' 7 ' + future_days, false, 'calendar');

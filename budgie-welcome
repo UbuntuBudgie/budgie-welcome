@@ -55,6 +55,8 @@ try:
 except:
     import platform
 
+from http.server import ThreadingHTTPServer, SimpleHTTPRequestHandler
+import posixpath
 
 # global variable - path inc the suffix / of where the app is being executed
 start_location = "./"  # path defined on app startup
@@ -1965,6 +1967,33 @@ class WelcomeApp(object):
 
         self.json_path = self._data_path + "/config/packages.json"
 
+        # Start HTTP server for Astro dist files
+        dist_path = os.path.join(self._data_path, 'dist')
+        if os.path.exists(dist_path):
+            print(f'DEBUG: Found dist path at {dist_path}')
+            class DistRequestHandler(SimpleHTTPRequestHandler):
+                def __init__(self, *args, **kwargs):
+                    super().__init__(*args, directory=dist_path, **kwargs)
+
+                def translate_path(self, path):
+                    # Override to serve from dist directory
+                    path = posixpath.normpath(urllib.parse.unquote(path))
+                    words = path.split('/')
+                    words = filter(None, words)
+                    path = dist_path
+                    for word in words:
+                        path = os.path.join(path, word)
+                    return path
+
+            self._server = ThreadingHTTPServer(("127.0.0.1", 0), DistRequestHandler)
+            self._port = self._server.server_address[1]
+            server_thread = Thread(target=self._server.serve_forever, daemon=True)
+            server_thread.start()
+            self._use_http = True
+            print(f'DEBUG: HTTP server started on port {self._port}')
+            print(f'DEBUG: _use_http flag set to {self._use_http}')
+            dbg.stdout('Welcome', f'HTTP server started on port {self._port}', 1, 0)
+
         if arg.jump_to:
             self._start_page = arg.jump_to + ".html"
         elif systemstate.first_run:
@@ -2101,9 +2130,16 @@ class WelcomeApp(object):
         status_btn.connect("clicked", self._show_status)
 
         # load our index file
-        file = os.path.abspath(os.path.join(
-            translations.get_pages_path(), self._start_page))
-        uri = 'file://' + urllib.request.pathname2url(file)
+        if hasattr(self, '_use_http') and self._use_http:
+            print(f'DEBUG: Using HTTP - hasattr={hasattr(self, "_use_http")}, _use_http={self._use_http}')
+            uri = f'http://127.0.0.1:{self._port}/{self._start_page}'
+            print(f'DEBUG: Loading URI: {uri}')
+            dbg.stdout('Welcome', f'Loading URI: {uri}', 1, 0)
+        else:
+            print(f'DEBUG: Using file:// - hasattr={hasattr(self, "_use_http")}')
+            file = os.path.abspath(os.path.join(
+                translations.get_pages_path(), self._start_page))
+            uri = 'file://' + urllib.request.pathname2url(file)
         mv.load_uri(uri)
 
         # build scrolled window widget and add our appview container
@@ -2117,6 +2153,7 @@ class WelcomeApp(object):
 
         # add the box to the parent window and show
         w.add(b)
+
         w.connect('delete-event', self.close)
         w.show_all()
 
@@ -2151,6 +2188,9 @@ class WelcomeApp(object):
         self.webkit._do_command("status")
 
     def close(self, p1=None, p2=None):
+        # Shutdown HTTP server
+        if hasattr(self, '_server'):
+            self._server.shutdown()
 
         pm.running = False
         # Reduce race condition as much as possible

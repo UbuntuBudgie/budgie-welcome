@@ -1,12 +1,12 @@
 import { defineConfig } from 'astro/config';
-import basicSsl from '@vitejs/plugin-basic-ssl'
-import tailwind from "@astrojs/tailwind";
+import basicSsl from '@vitejs/plugin-basic-ssl';
+import tailwindcss from '@tailwindcss/vite'; // Import the Vite variant instead
 
-// https://astro.build/config
 export default defineConfig({
-  integrations: [tailwind()],
   vite: {
-    plugins: [ basicSsl() ]
+    plugins: [
+      basicSsl(),
+      tailwindcss() // Add it directly as a Vite plugin here
+    ]
   }
 });
-
