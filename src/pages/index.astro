@@ -36,46 +36,21 @@
     html, body {
       height: 100%; overflow: hidden;
       background: var(--bg); font-family: var(--font);
-      display: flex; align-items: center; justify-content: center;
-      padding: 24px;
+      display: flex; align-items: stretch; justify-content: stretch;
+      padding: 0;
     }
 
     /* ── Window ── */
     .window {
-      width: 860px; max-width: 100%;
-      height: calc(100vh - 48px);
-      max-height: 680px; min-height: 480px;
-      background: var(--win-bg); border-radius: var(--radius-win);
-      box-shadow: var(--shadow-win); overflow: hidden;
+      width: 100%; height: 100%;
+      background: var(--win-bg); border-radius: 0;
+      box-shadow: none; overflow: hidden;
       display: flex; flex-direction: column;
       animation: fadeUp .3s ease both;
     }
     @keyframes fadeUp {
       from { opacity: 0; transform: translateY(6px); }
       to   { opacity: 1; transform: translateY(0); }
-    }
-
-    /* ── Title Bar ── */
-    .titlebar {
-      height: 44px; background: var(--bar-bg);
-      border-bottom: 1px solid var(--bar-border);
-      display: flex; align-items: center;
-      padding: 0 16px; gap: 8px;
-      flex-shrink: 0; position: relative; user-select: none;
-    }
-    .traffic-lights { display: flex; gap: 7px; align-items: center; }
-    .tl {
-      width: 12px; height: 12px; border-radius: 50%;
-      cursor: default; transition: filter .15s;
-    }
-    .tl:hover { filter: brightness(.82); }
-    .tl-close { background: #ff5f57; }
-    .tl-min   { background: #febc2e; }
-    .tl-max   { background: #28c840; }
-    .titlebar-label {
-      position: absolute; left: 50%; transform: translateX(-50%);
-      font-size: 13px; font-weight: 500;
-      color: var(--text-secondary); letter-spacing: -.01em; pointer-events: none;
     }
 
     /* ── Main ── */
@@ -265,16 +240,6 @@
 </head>
 <body>
 <div class="window">
-
-  <!-- Title Bar — home: traffic lights, no back arrow -->
-  <div class="titlebar">
-    <div class="traffic-lights">
-      <div class="tl tl-close"></div>
-      <div class="tl tl-min"></div>
-      <div class="tl tl-max"></div>
-    </div>
-    <span class="titlebar-label">Ubuntu Budgie Welcome</span>
-  </div>
 
   <div class="main">
 
